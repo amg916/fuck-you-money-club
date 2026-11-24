@@ -1,755 +1,818 @@
 from __future__ import annotations
 
-CHAPTER_1 = {
-    "id": "Q1",
-    "chapter_id": "Q1",
-    "chapter_number": 1,
-    "question_number": 1,
-    "slug": "what-exactly-is-commercial-cleaning-contracts",
-    "question_prompt": "What exactly is commercial cleaning contracts, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
-    "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
-    "title": "What Exactly Is Commercial Cleaning Contracts?",
-    "subtitle": "ISSA-Based Bids, Recurring Office and Medical Routes, W-2 Crew Economics, and Disclosed Public-Sector Subcontracting",
-    "layout_template": "opportunity_overview",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #10, Commercial Cleaning Contracts, ranks #23 with a Money-to-Manpower "
-        "Score of 82/100: a recurring service business whose growth still consumes paid "
-        "crew hours. Sell measurable cleaning outcomes, recognize earned contract revenue, "
-        "and keep client property values and procurement budgets outside operator sales. "
-        "This chapter maps four operating plays: dense office routes, medical zoning "
-        "contracts, supervisor pods, and disclosed GSA or municipal facility coordination. "
-        "Only the last has a supplied catalog identifier; the other three are chapter "
-        "operating labels. Canonical annual owner profits are $20,000 Conservative, "
-        "$87,000 Base, and $192,000 Scaled. Durable advantage comes from measured "
-        "production, stable staffing, documented inspections, accurate scope boundaries, "
-        "and contracts that price exceptions before crews absorb them."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual earned cleaning contract revenue, excluding client property value",
-            "note": "8% net margin; $20,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$725,000",
-            "context": "Annual earned cleaning contract revenue, excluding client procurement budgets",
-            "note": "12.0% net margin; $87,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual earned cleaning contract revenue, supported by additional paid crew hours",
-            "note": "16% net margin; $192,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Define the service obligation before counting the revenue",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Commercial cleaning contracts exchange scheduled labor, supplies, equipment, "
-                    "and supervision for a recurring business payment. The customer buys an "
-                    "agreed condition of designated spaces, not an unlimited promise that "
-                    "everything will always look new. A workable scope identifies cleanable "
-                    "square footage, room types, frequencies, access windows, consumable "
-                    "responsibility, inspection criteria, and excluded restoration work. "
-                    "Nightly trash removal, restroom sanitation, and traffic-lane vacuuming "
-                    "belong in the recurring specification; stripping floors, cleaning "
-                    "construction residue, and emergency spill response require separate "
-                    "pricing unless expressly included. ISSA cleaning-time resources provide "
-                    "a starting vocabulary for estimating tasks, but the operator must "
-                    "validate production inside the actual building. Badge delays, occupied "
-                    "rooms, elevator queues, and furniture density can defeat an attractive "
-                    "square-foot estimate. The five archetypes below share this contract "
-                    "discipline while differing in access friction, training, equipment, "
-                    "and purchasing cycles. Candidate #10 earns its 82/100 score because "
-                    "repeat demand is real but delivery remains labor intensive. Scheduling "
-                    "software can remove dispatch work; it cannot empty another wastebasket. "
-                    "A defensible offer therefore specifies who cleans, what they clean, "
-                    "how completion is checked, and which changes create additional charges "
-                    "before the first crew enters."
-                ),
-                (
-                    "The revenue boundary follows the operator's actual promise. A cleaning "
-                    "company that controls the service before delivery generally records "
-                    "the customer consideration as gross service revenue and records wages, "
-                    "supplies, and subcontract delivery as costs. Hiring another business "
-                    "does not automatically convert a principal into an agent. Conversely, "
-                    "a coordinator that only arranges another provider's service generally "
-                    "records its earned coordination fee, not the entire provider invoice. "
-                    "Apply the principal-versus-agent analysis to the contract and facts "
-                    "under ASC 606 rather than choosing whichever presentation looks larger. "
-                    "A twelve-month, $36,000 stand-ready cleaning arrangement might produce "
-                    "$3,000 monthly revenue when performance is even and that pattern "
-                    "faithfully represents delivery. Advance collections remain a contract "
-                    "liability until earned; an annual signature does not create immediate "
-                    "annual revenue. Variable service credits reduce expected consideration "
-                    "when the recognition requirements apply. Customer rent rolls, building "
-                    "valuations, medical collections, and procurement ceilings never become "
-                    "cleaner revenue merely because the cleaner serves that customer. "
-                    "Separate revenue, invoices, receivables, and bank receipts in QuickBooks "
-                    "Online. Reconcile each to completed service periods and approved "
-                    "extras so cash timing cannot conceal poor contract economics."
-                ),
-                (
-                    "The first chapter operating play is dense office routes: cluster "
-                    "repeatable sites so paid travel does not swallow productive hours. "
-                    "Consider 20,000 cleanable square feet at an illustrative 4,000 square "
-                    "feet per productive hour. Five production hours plus one paid hour "
-                    "for setup, transfers, and closeout produces six hours per visit. "
-                    "At three visits weekly for 52 weeks, the account consumes 936 "
-                    "paid hours. A $23 loaded hourly cost produces $21,528 of labor "
-                    "against $36,000 annual revenue. Allocate another $10,152 to supplies, "
-                    "equipment, supervision, insurance, selling, and administration, leaving "
-                    "$4,320, or 12%, under these stated assumptions. This account example "
-                    "illustrates bidding mechanics rather than replacing the canonical "
-                    "company scenarios. At $26 loaded hourly cost, unchanged scope adds "
-                    "$2,808 of cost and reduces the remainder to $1,512. The fallback "
-                    "is a documented scope revision, contractual repricing, or orderly "
-                    "nonrenewal, not unpaid work. Verify whether the production benchmark "
-                    "already includes restrooms and detail tasks before adding allowances. "
-                    "The moat is a measured route with backup access and reliable "
-                    "coverage, not a spreadsheet that assumes every building is empty, "
-                    "unfurnished, and next door."
-                ),
-            ],
-            "table": {
-                "caption": "Five commercial cleaning operator archetypes and their contractual boundaries",
-                "headers": [
-                    "Operator archetype",
-                    "Actual purchase and fee structure",
-                    "Repeatable operating advantage",
-                    "Failure trigger and practical fallback",
-                ],
-                "rows": [
-                    [
-                        "Dense suburban office routes with recurring evening service",
-                        "Monthly fixed service fee with separately priced periodic floor projects",
-                        "Adjacent buildings share trained relief coverage and standardized supply carts",
-                        "Access delays exceed allowance; revise windows or remove distant accounts",
-                    ],
-                    [
-                        "Outpatient medical practices with documented environmental cleaning zones",
-                        "Monthly room-based scope with separately authorized enhanced cleaning events",
-                        "Facility-specific procedures preserve separation between ordinary and exposure-prone tasks",
-                        "Unpriced exposure duties appear; stop affected tasks and revise scope",
-                    ],
-                    [
-                        "Industrial administrative areas beside active production operations",
-                        "Recurring office and welfare-area fees excluding process equipment maintenance",
-                        "Site orientation and segregation prevent accidental entry into hazardous operations",
-                        "Customer adds production machinery; require specialized capability before accepting work",
-                    ],
-                    [
-                        "Multifamily common areas purchased by professional property managers",
-                        "Building-level monthly fees with separately scheduled turnover and restoration work",
-                        "Portfolio routing and key custody reduce manager coordination effort",
-                        "Resident-unit work expands informally; require written orders before dispatch",
-                    ],
-                    [
-                        "Disclosed public-sector subcontracting and documented facility coordination services",
-                        "Earned delivery charges or coordination fees according to actual responsibility",
-                        "Accurate eligibility records and transparent subcontract files support repeat procurement",
-                        "Bid structure violates applicable terms; withdraw and pursue unrestricted subcontracting",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Price what the walkthrough reveals",
-                "body": (
-                    "Experienced operators turn physical observations into measurable contract "
-                    "assumptions before sending a recurring price."
-                ),
-                "items": [
-                    "Count restroom fixtures and dispenser types separately; equal floor areas can require radically different service times.",
-                    "Walk the proposed shift window, not just daytime reception; measure locked-door delays and actual elevator availability.",
-                    "Mark damaged flooring during mobilization with customer-authorized photographs so inherited defects do not become service deductions.",
-                    "Keep customer-specific keys in numbered custody records and test the relief cleaner's access before the first absence.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Choose sub-verticals by delivery friction, not headline contract size",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The second chapter operating play is medical zoning contracts. "
-                    "Separate reception and administrative cleaning from treatment-room "
-                    "environmental cleaning, blood-spill response, instrument processing, and "
-                    "regulated waste handling. Do not sell those categories as interchangeable. "
-                    "A facility-approved room map should identify surfaces, products, "
-                    "frequencies, restricted areas, and escalation contacts. Where employees "
-                    "have occupational exposure to blood or other potentially infectious "
-                    "materials, 29 CFR 1910.1030 creates concrete duties including an "
-                    "exposure control plan, training, appropriate protective equipment, "
-                    "hepatitis B vaccination provisions, and post-exposure procedures. "
-                    "An illustrative 2,000-square-foot treatment-area scope at 1,000 square "
-                    "feet per hour takes two productive hours per visit. Five weekly "
-                    "visits over 52 weeks require 520 hours before additional allowances. "
-                    "At $26 loaded hourly cost, that component costs $13,520. A "
-                    "$24,000 contract allocating another $7,600 to remaining delivery "
-                    "and overhead costs leaves $2,880, or 12%. Validate those allowances "
-                    "through observed shifts rather than presenting them as medical "
-                    "industry averages. If required dwell times, exposure precautions, "
-                    "or occupied-room delays break the estimate, narrow the service "
-                    "boundary or reprice before launch. Stop an untrained crew from "
-                    "improvising a response to sharps or uncontrolled biological contamination."
-                ),
-                (
-                    "The comparison matrix pairs real products with purchasing and "
-                    "delivery mechanics; it does not imply that a software subscription "
-                    "creates customers or certifies clinical competence. Swept can support "
-                    "janitorial communication and inspections; Aspire can support estimating "
-                    "and job management; ServiceChannel can route work orders for "
-                    "participating facilities. Obtain current vendor quotes instead of "
-                    "hard-coding subscription prices that depend on package, seats, or "
-                    "customer agreements. Customer fees should reflect the service: "
-                    "monthly recurring charges for stable specifications, per-visit charges "
-                    "for variable schedules, and separately authorized project prices "
-                    "for restoration. Distinguish a service credit from a clawback. "
-                    "A contractual credit reduces the amount earned for a missed "
-                    "standard; a refund returns cash already collected; a disputed "
-                    "invoice may remain unpaid while evidence is reviewed. Specify "
-                    "notice, inspection, cure periods, evidence, and deduction limits "
-                    "instead of permitting unlimited unilateral offsets. A photograph "
-                    "should show the relevant surface and timestamp without exposing "
-                    "patient records or confidential customer material. Get customer "
-                    "permission for inspection capture, restrict access, and retain "
-                    "only what the service dispute process requires. Better evidence "
-                    "protects both parties; indiscriminate photography creates another "
-                    "operating problem rather than stronger proof of delivery."
-                ),
-                (
-                    "The supplied mapped play is "
-                    "gsa_municipal_set_aside_facility_ghost_brokering, designated TRACK_1. "
-                    "Its permitted implementation matches eligible primes with disclosed, "
-                    "qualified subcontractors and earns documented coordination fees; "
-                    "opaque pass-through arrangements and false eligibility claims are "
-                    "excluded. Treat the colorful catalog name as a label, not an "
-                    "instruction to hide participation. For an illustrative unrestricted "
-                    "engagement, a separately contracted coordinator earns $500 monthly "
-                    "for scheduling reconciliation and inspection reporting. Eight hours "
-                    "at $35 cost $280; another $120 of allocated administration leaves "
-                    "$100 monthly, or $1,200 annually, on $6,000 earned fee revenue. "
-                    "The underlying cleaning contract is not that coordinator's sales. "
-                    "This example is separate from the canonical cleaning-company cases. "
-                    "For applicable federal service set-asides, FAR 52.219-14 limits "
-                    "payments to nonsimilarly situated subcontractors to 50% of the "
-                    "amount paid by the Government for performance, subject to the "
-                    "clause's exclusions and measurement rules. Eligibility alone does "
-                    "not satisfy performance limitations. Review FAR 52.203-5 where "
-                    "applicable before using award-contingent compensation. Municipal "
-                    "programs require their own ordinance and solicitation analysis. "
-                    "The fallback is to withdraw noncompliant bids and operate "
-                    "as a disclosed subcontractor on unrestricted work."
-                ),
-            ],
-            "table": {
-                "caption": "Sixteen sub-verticals: named platforms, customer fees, durable moats, and loss triggers",
-                "headers": [
-                    "Sub-vertical and usable platform",
-                    "Customer fee and purchasing structure",
-                    "Defensible delivery or retention mechanism",
-                    "Credit, clawback, or operating failure trigger",
-                ],
-                "rows": [
-                    [
-                        "Professional office suites using Swept for recurring inspections",
-                        "Monthly fixed fee with explicit weekly visits and periodic extras",
-                        "Stable cleaner assignments preserve tenant preferences and reliable access knowledge",
-                        "Repeated missed visits trigger documented credits and contract cure procedures",
-                    ],
-                    [
-                        "Outpatient clinics using SafetyCulture for facility-approved cleaning checklists",
-                        "Monthly zone-based fees with separately authorized exposure-response services",
-                        "Room-specific instructions and trained relief staff preserve consistent surface protocols",
-                        "Incorrect disinfectant contact time requires rework and customer incident escalation",
-                    ],
-                    [
-                        "Dental practices using Jobber for scheduling and service records",
-                        "Recurring environmental cleaning fee excluding instrument processing and clinical duties",
-                        "Clear treatment-room boundaries prevent unsafe expansion of ordinary janitorial work",
-                        "Sharps discovered in general waste require isolation and facility notification",
-                    ],
-                    [
-                        "Physical therapy centers using Swept for equipment-area task instructions",
-                        "Per-visit or monthly fees tied to agreed equipment-surface responsibilities",
-                        "After-hours access and documented material compatibility reduce equipment damage claims",
-                        "Wrong product damages upholstery; invoke incident reporting and insurance procedures",
-                    ],
-                    [
-                        "Childcare facilities using SafetyCulture for room-specific inspection evidence",
-                        "Monthly service fee separating routine cleaning from outbreak-response additions",
-                        "Secure chemical storage and age-sensitive access procedures support dependable renewal",
-                        "Unlocked chemicals or incomplete room service prompts immediate corrective action",
-                    ],
-                    [
-                        "Private schools using FMX for maintenance and cleaning requests",
-                        "School-year recurring fees with separately priced holiday restoration projects",
-                        "Calendar-aware staffing absorbs exam periods without losing scheduled core service",
-                        "Unpriced event cleanup consumes capacity and requires authorized scope changes",
-                    ],
-                    [
-                        "Municipal offices using OpenGov Procurement for available solicitations",
-                        "Awarded schedule pricing follows solicitation quantities and authorized modifications",
-                        "Transparent labor assumptions and complete public-contract records strengthen repeat performance",
-                        "Unsupported eligibility representations risk rejection, termination, and recovery proceedings",
-                    ],
-                    [
-                        "Federal facilities using SAM.gov for public opportunity discovery",
-                        "Contract line-item pricing follows actual awarded terms and applicable clauses",
-                        "Accurate wage determinations and subcontract tracking support credible delivery capacity",
-                        "Wage underpayments or subcontract-limit breaches require prompt corrective handling",
-                    ],
-                    [
-                        "Multifamily common areas using AppFolio for manager work-order coordination",
-                        "Building-level monthly fees exclude separately ordered apartment turnover services",
-                        "Portfolio density and controlled key access reduce repeated mobilization costs",
-                        "Informal unit additions erode margin unless captured as authorized extras",
-                    ],
-                    [
-                        "Condominium associations using BuildingLink for participating building service communication",
-                        "Association-approved recurring fee with distinct seasonal and restoration line items",
-                        "Consistent inspection evidence helps managers answer resident complaints with specifics",
-                        "Board-directed scope changes exceed authority; secure the designated buyer's authorization",
-                    ],
-                    [
-                        "Industrial office zones using MaintainX for approved cleaning work orders",
-                        "Recurring administrative-area fee excludes machinery decontamination and hazardous process cleaning",
-                        "Site orientation and physical work boundaries reduce production disruption risk",
-                        "Unauthorized entry into process areas triggers stop-work and supervisor review",
-                    ],
-                    [
-                        "Warehouse welfare areas using Aspire for estimating and job costing",
-                        "Monthly restroom and breakroom fees reflect shifts and employee traffic",
-                        "Usage-based replenishment records reveal volume changes before supplies exceed budget",
-                        "Added operating shifts overwhelm allowances and require revised visit frequencies",
-                    ],
-                    [
-                        "Retail chains using ServiceChannel where the buyer routes vendor work",
-                        "Per-location recurring charges plus authorized work-order extras and stated deductions",
-                        "Standardized proof of service supports consistent multi-location invoice acceptance",
-                        "Missing work-order evidence delays payment under the buyer's stated rules",
-                    ],
-                    [
-                        "Fitness centers using Jobber for scheduled visits and customer communication",
-                        "Monthly locker-room and floor fees exclude separately scoped equipment maintenance",
-                        "Odor-source tracking and drainage escalation solve problems beyond cosmetic wiping",
-                        "Persistent moisture defects require building repairs rather than endless free rework",
-                    ],
-                    [
-                        "Places of worship using Google Workspace for shared event calendars",
-                        "Recurring base fee plus separately scheduled event and holiday cleaning",
-                        "Calendar integration reserves coverage before unusually large gatherings consume capacity",
-                        "Unreported events create missed standards; activate the agreed extra-service process",
-                    ],
-                    [
-                        "Dealership showrooms using Aspire for recurring and periodic floor estimates",
-                        "Monthly showroom fees with separately priced machine scrubbing and restoration",
-                        "Floor-finish knowledge and vehicle-safe work methods reduce visible damage risk",
-                        "Incorrect pads or chemicals damage finishes and trigger documented claims",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Reconcile the scorecard to paid hours and supervisor capacity",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The canonical Conservative scenario is $250,000 annual gross revenue "
-                    "at an 8% net margin, producing $20,000 annual owner net profit "
-                    "with 5 FT plus 4 C. Base is $725,000 at 12.0%, "
-                    "producing $87,000 with the same stated roster. Scaled is "
-                    "$1,200,000 at 16%, producing $192,000 with 6 FT plus 5 C, "
-                    "or eleven people. The implied annual expense envelopes are "
-                    "$230,000, $638,000, and $1,008,000 respectively. These are scorecard "
-                    "targets, not evidence that the listed staff can be funded at "
-                    "every wage rate or workload. FT denotes full-time people and "
-                    "C denotes contractors; neither label supplies actual hours, pay, "
-                    "geography, or owner compensation treatment. Five full-time employees "
-                    "at 2,080 paid hours each and $23 loaded hourly cost already "
-                    "cost $239,200 before contractors or other expenses. That exceeds "
-                    "the Conservative total expense envelope. Preserve the canonical "
-                    "numbers while explicitly flagging this unresolved staffing feasibility "
-                    "problem; do not quietly relabel full-time workers as part-time "
-                    "or omit wages. Build a local wage-and-hours schedule before "
-                    "treating any scenario as executable. The source figures alone "
-                    "cannot demonstrate that the Conservative staffing configuration "
-                    "supports its stated profit."
-                ),
-                (
-                    "The third chapter operating play is supervisor pods: assign "
-                    "a working lead to a compact group of accounts, cross-train "
-                    "relief coverage, and reserve paid inspection time. Suppose three "
-                    "cleaners each work an eight-hour shift containing seven productive "
-                    "hours and one hour of paid transfers, setup, and closeout. "
-                    "That supplies 21 productive hours from 24 paid hours. A "
-                    "route demanding 24 productive hours therefore does not fit; "
-                    "add paid capacity, improve the physical process, or remove "
-                    "scope rather than pressuring people to work off the clock. "
-                    "At an illustrative $23 loaded hourly cost, those 24 paid "
-                    "hours cost $552 before any separately scheduled lead time. "
-                    "The fallback for an absence is a trained relief assignment "
-                    "with measured travel and lawful overtime, followed by customer "
-                    "notice when the promised window cannot be met. A pod "
-                    "becomes a moat when the lead catches recurring defects, "
-                    "coaches technique, and maintains access knowledge across workers. "
-                    "It becomes overhead when supervision means driving between "
-                    "scattered buildings to photograph already obvious failures. Track "
-                    "productive hours, total paid hours, rework hours, complaints, "
-                    "and supervisor load by route. Never count automation savings "
-                    "as removed cleaning labor without observing the changed task."
-                ),
-                (
-                    "Working capital determines whether a profitable contract survives "
-                    "its first billing cycle. The supplied startup capital range "
-                    "is $10,000 to $50,000, monthly operating outlay range is "
-                    "$3,000 to $14,000, and time to first deal is one "
-                    "to four months. Those outlay figures cannot represent total "
-                    "steady-state company expenses for every canonical case: the "
-                    "implied average monthly expenses are about $19,167 Conservative, "
-                    "$53,167 Base, and $84,000 Scaled. Treat the supplied range "
-                    "as requiring clarification about launch stage and included "
-                    "cost categories, not as a substitute for payroll budgeting. "
-                    "At a hypothetical $40,000 monthly cash operating cost, a "
-                    "45-day collection cycle exposes roughly $60,000 before considering "
-                    "billing delays, deposits, taxes, or seasonal timing. Use a "
-                    "thirteen-week cash forecast with payroll dates, customer invoice "
-                    "acceptance dates, equipment payments, and overdue balances. QuickBooks "
-                    "Online can track receivables; Deputy or a comparable scheduling "
-                    "system can support shift planning, subject to configuration "
-                    "and privacy controls. Neither replaces a supervisor's confirmation "
-                    "that a site is staffed. Customer concentration deserves its "
-                    "own stress test: remove the largest account's contribution, "
-                    "retain unavoidable costs, and identify the cash runway before "
-                    "committing to another vehicle or permanent supervisory hire."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical annual cases and the operating tests needed before deployment",
-                "headers": [
-                    "Scenario or operating test",
-                    "Revenue and cost reconciliation",
-                    "Staffing and capacity interpretation",
-                    "Required decision before committing resources",
-                ],
-                "rows": [
-                    [
-                        "Conservative canonical case with the original scorecard staffing",
-                        "$250,000 revenue less $230,000 expenses yields $20,000 profit at 8%",
-                        "Five full-time people plus four contractors require explicit local payroll validation",
-                        "Resolve the demonstrated wage-envelope conflict before treating this roster as executable",
-                    ],
-                    [
-                        "Base canonical case with the original scorecard staffing",
-                        "$725,000 revenue less $638,000 expenses yields $87,000 profit at 12.0%",
-                        "Five full-time people plus four contractors need separately documented paid hours",
-                        "Match each account's service requirement to actual available delivery capacity",
-                    ],
-                    [
-                        "Scaled canonical case with eleven total listed people",
-                        "$1,200,000 revenue less $1,008,000 expenses yields $192,000 profit at 16%",
-                        "Six full-time people plus five contractors still require growing delivery hours",
-                        "Validate supervisory load and contractor availability before adding recurring promises",
-                    ],
-                    [
-                        "Local wage sensitivity using the office-route illustration",
-                        "A $3 hourly increase across 936 hours adds $2,808 annual cost",
-                        "Unchanged staffing and service scope leave only $1,512 account remainder",
-                        "Use contractual repricing or reduce agreed scope instead of suppressing wages",
-                    ],
-                    [
-                        "Receivables stress test using an explicit cash-cost assumption",
-                        "$40,000 monthly cash cost across 45 days exposes approximately $60,000",
-                        "Payroll dates arrive even when customer invoice acceptance remains delayed",
-                        "Reserve working capital and correct billing defects before expanding route obligations",
-                    ],
-                    [
-                        "Customer concentration test using account-specific contribution rather than sales",
-                        "Remove lost revenue and only genuinely avoidable delivery costs together",
-                        "Retained supervisors and committed equipment can outlast terminated customer contracts",
-                        "Set a cash-runway response before accepting dependence on one large buyer",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Build the operating system that survives turnover and disputes",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Labor discipline starts with the actual employment relationship. "
-                    "A worker does not become an independent business because "
-                    "the operator requests an invoice or signs a contractor "
-                    "form. Analyze federal wage-law status, payroll-tax treatment, and "
-                    "applicable state tests separately; they need not use identical "
-                    "standards. California Labor Code section 2775 establishes an "
-                    "ABC framework subject to statutory exceptions and other "
-                    "conditions, making casual substitution of contractors for core "
-                    "cleaning employees especially risky. Under the Fair Labor "
-                    "Standards Act, covered nonexempt employees generally receive "
-                    "overtime after forty hours in a workweek; state rules "
-                    "can require more. Capture required setup, travel between "
-                    "jobs during the workday, closing duties, and required "
-                    "training rather than recording only time inside the "
-                    "customer's suite. Use a correction process that lets "
-                    "workers report missed time without retaliation. For genuine "
-                    "subcontract businesses, verify their service responsibility, staffing "
-                    "control, insurance, invoicing, and classification facts without "
-                    "assuming those documents settle every legal test. On "
-                    "covered federal service contracts, the Service Contract Labor "
-                    "Standards statute and incorporated wage determination can impose "
-                    "prevailing wages and fringe benefits. A cheap subcontract "
-                    "quote does not erase the prime's applicable duties "
-                    "or make an underpriced award profitable."
-                ),
-                (
-                    "Chemical safety is an operating specification, not a "
-                    "binder purchased after an incident. Under 29 CFR "
-                    "1910.1200, implement the applicable hazard communication program, "
-                    "maintain accessible safety data sheets, label workplace "
-                    "containers as required, and train employees on relevant "
-                    "hazards and protective measures. Keep products in compatible "
-                    "storage and prohibit improvised mixing, especially bleach "
-                    "with acids or ammonia-containing products. Select gloves "
-                    "and other protection through the actual exposure assessment "
-                    "rather than buying one generic kit for every "
-                    "task. For EPA-registered disinfectants, match the product "
-                    "label to the intended surface, use site, dilution, "
-                    "and contact time; FIFRA makes inconsistent use "
-                    "unlawful subject to its statutory exceptions. Follow "
-                    "required precleaning instructions and keep the surface "
-                    "wet for the specified duration. Ordinary janitorial "
-                    "insurance may exclude some pollution, biological exposure, "
-                    "or specialized restoration activities, so check the "
-                    "actual policy and endorsements before adding services. "
-                    "Certificates summarize coverage but do not rewrite "
-                    "policy terms. Workers' compensation obligations depend on "
-                    "jurisdiction and employment facts. Record an incident's "
-                    "time, location, products, actions, and notifications without "
-                    "speculating about fault. Safe task boundaries protect "
-                    "workers while preventing a routine account from "
-                    "becoming an uninsured specialty operation."
-                ),
-                (
-                    "A durable small-team moat is the accumulated ability "
-                    "to deliver the same agreed outcome when the "
-                    "usual cleaner is absent, the buyer changes, or "
-                    "a complaint arrives. Store site instructions, access "
-                    "contacts, product assignments, and approved scope changes "
-                    "in a controlled operating record rather than "
-                    "one person's phone. Inspect a rotating sample "
-                    "of rooms against observable standards and record "
-                    "both defects and successful corrections. Tie recurring "
-                    "defects to training, tools, time allowances, or "
-                    "scope ambiguity instead of repeatedly telling crews "
-                    "to be more careful. Invoice from the "
-                    "contract schedule and authorized extras, attach only "
-                    "the evidence the buyer needs, and investigate "
-                    "deductions while records are fresh. The pre-flight "
-                    "checks below convert that discipline into a "
-                    "repeatable mobilization process. Scheduling, inspection logs, "
-                    "and billing are the principal automation levers; "
-                    "use them to shorten administrative loops while "
-                    "preserving accountable human supervision. Reject beginner "
-                    "hype that promises passive income from selling "
-                    "work to the cheapest available crew. Renewals "
-                    "depend on service continuity, accurate wages, safe "
-                    "chemicals, and credible correction of failures. Grow "
-                    "only when the next signed account has "
-                    "a priced labor plan, funded payroll, and "
-                    "a named person responsible for delivery."
-                ),
-            ],
-            "table": {
-                "caption": "Operating controls that connect statutory duties to evidence and corrective action",
-                "headers": [
-                    "Control and primary authority",
-                    "Evidence retained in the operating record",
-                    "Failure that requires immediate attention",
-                    "Concrete corrective response and responsible owner",
-                ],
-                "rows": [
-                    [
-                        "Covered employee overtime under 29 U.S.C. 207",
-                        "Complete weekly time records include required preparation and intersite travel",
-                        "Clocked site time omits other compensable work performed that week",
-                        "Payroll lead corrects recorded hours and pays all resulting amounts",
-                    ],
-                    [
-                        "California classification analysis under Labor Code section 2775",
-                        "Documented factual review addresses applicable tests and any claimed exception",
-                        "Core cleaners are labeled contractors without supporting relationship analysis",
-                        "Operator obtains jurisdiction-specific review and corrects the engagement and payroll treatment",
-                    ],
-                    [
-                        "Hazard communication duties under 29 CFR 1910.1200",
-                        "Written program, accessible safety data sheets, labels, and training records",
-                        "Unlabeled diluted chemicals or inaccessible hazard information appear during inspection",
-                        "Supervisor removes unsafe supplies and restores labeling and training controls",
-                    ],
-                    [
-                        "Occupational exposure controls under 29 CFR 1910.1030",
-                        "Exposure assessment and applicable plan document training and response arrangements",
-                        "Untrained worker encounters sharps or potentially infectious material during service",
-                        "Supervisor isolates the task and activates the facility-specific exposure response",
-                    ],
-                    [
-                        "Disinfectant use restrictions under 7 U.S.C. 136j",
-                        "Current product label and task instruction specify dilution and contact time",
-                        "Crew shortens required wet time or uses an unsuitable surface application",
-                        "Lead corrects the procedure and arranges appropriate rework with customer coordination",
-                    ],
-                    [
-                        "Applicable service subcontract limits under FAR 52.219-14",
-                        "Payment tracking distinguishes qualifying similarly situated entities and relevant exclusions",
-                        "Projected subcontract payments exceed the applicable limitation during performance measurement",
-                        "Prime restructures lawful delivery or withdraws before submitting an untenable bid",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify the account before promising its start date",
-                "body": (
-                    "Each check needs an accountable owner and retained evidence. "
-                    "A signed sales proposal alone does not establish delivery readiness."
-                ),
-                "items": [
-                    "Confirm measured cleanable area, room-level tasks, service windows, exclusions, and authorized change-order contacts against the signed scope.",
-                    "Reconcile paid hours, applicable wages, overtime, relief coverage, and contractor facts to the account's actual cost envelope.",
-                    "Verify site-specific chemical instructions, exposure procedures, access permissions, and applicable insurance terms before assigning workers.",
-                    "Confirm billing acceptance requirements and funded payroll; for public work, verify eligibility, wage determinations, and applicable subcontract limitations.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Survey and establish the task inventory",
-                    "action": "Walk the actual service window with the customer's authorized site contact.",
-                    "detail": (
-                        "Measure cleanable areas, count fixtures, identify restricted tasks, "
-                        "test access, and record inherited surface damage with permission."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Build the paid-hour bid",
-                    "action": "Translate tasks into validated production time and all additional paid time.",
-                    "detail": (
-                        "Apply local loaded wages, applicable public-contract requirements, "
-                        "supervision, supplies, equipment, insurance, and overhead before setting price."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Mobilize the crew and relief plan",
-                    "action": "Assign trained workers, a responsible lead, and an operational backup.",
-                    "detail": (
-                        "Test keys, review site instructions, stage labeled products, "
-                        "and observe initial shifts against the estimated task durations."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Close the service and billing loop",
-                    "action": "Reconcile completed work, inspection defects, paid time, and earned invoices.",
-                    "detail": (
-                        "Correct defects promptly, document authorized extras, investigate "
-                        "deductions, and update the next payroll and cash forecast."
-                    ),
-                },
-            ],
-        },
-    ],
-    "pull_quote": "A cleaning contract is only as profitable as the paid hours required to keep its promise.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Choose one initial sub-vertical and define five nearby target accounts with compatible service windows and access requirements.",
-        "Build a room-level scope and validate ISSA-based production assumptions through an observed, authorized trial or comparable completed work.",
-        "Reconcile the canonical revenue and profit cases to local paid hours, explicitly resolving the Conservative roster's wage-envelope conflict.",
-        "Separate principal cleaning revenue from coordination fees and configure earned revenue, deposits, credits, and receivables distinctly.",
-        "Document classification, wage, chemical, exposure, insurance, and public-contract requirements applicable to the selected account.",
-        "Launch with a trained relief worker, inspection schedule, authorized change-order process, and thirteen-week payroll cash forecast.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "29 U.S.C. 207 — Maximum hours",
-            "url": "https://www.law.cornell.edu/uscode/text/29/207",
-            "relevance": (
-                "Establishes federal overtime requirements for covered nonexempt employees; "
-                "route costing must include compensable hours across the workweek."
-            ),
-        },
-        {
-            "title": "29 CFR 785.38 — Travel that is all in the day's work",
-            "url": "https://www.ecfr.gov/current/title-29/section-785.38",
-            "relevance": (
-                "Explains treatment of travel between job sites during the workday "
-                "as work time rather than ordinary home-to-work commuting."
-            ),
-        },
-        {
-            "title": "29 CFR 1910.1200 — Hazard communication",
-            "url": "https://www.ecfr.gov/current/title-29/section-1910.1200",
-            "relevance": (
-                "Governs applicable chemical hazard communication, workplace labeling, "
-                "safety data sheets, written programs, and employee training."
-            ),
-        },
-        {
-            "title": "29 CFR 1910.1030 — Bloodborne pathogens",
-            "url": "https://www.ecfr.gov/current/title-29/section-1910.1030",
-            "relevance": (
-                "Defines occupational-exposure controls relevant to assigned medical "
-                "cleaning tasks, including prevention and post-exposure procedures."
-            ),
-        },
-        {
-            "title": "7 U.S.C. 136j — Unlawful acts under FIFRA",
-            "url": "https://www.law.cornell.edu/uscode/text/7/136j",
-            "relevance": (
-                "Restricts use of registered pesticides, including disinfectants, "
-                "in a manner inconsistent with labeling, subject to statutory exceptions."
-            ),
-        },
-        {
-            "title": "California Labor Code section 2775 — Employment status framework",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=2775.",
-            "relevance": (
-                "Provides California's statutory classification framework, including "
-                "the ABC test subject to exceptions and applicable conditions."
-            ),
-        },
-        {
-            "title": "41 U.S.C. 6703 — Required service contract terms",
-            "url": "https://www.law.cornell.edu/uscode/text/41/6703",
-            "relevance": (
-                "Requires specified wage, fringe-benefit, and other terms in covered "
-                "federal service contracts; bids must fund the applicable obligations."
-            ),
-        },
-        {
-            "title": "FAR 52.219-14 — Limitations on Subcontracting",
-            "url": "https://www.acquisition.gov/far/52.219-14",
-            "relevance": (
-                "Sets applicable subcontract performance limitations, including treatment "
-                "of similarly situated entities, measurement periods, and stated exclusions."
-            ),
-        },
-        {
-            "title": "FAR 52.203-5 — Covenant Against Contingent Fees",
-            "url": "https://www.acquisition.gov/far/52.203-5",
-            "relevance": (
-                "Addresses contingent arrangements for securing federal contracts where "
-                "the clause applies, including its stated exceptions and remedies."
-            ),
-        },
-    ],
-}
+CHAPTER_1 = {'id': 'Q1',
+ 'chapter_id': 'Q1',
+ 'chapter_number': 1,
+ 'question_number': 1,
+ 'slug': 'starting-lean-founder-playbooks-zero-to-seven-figures',
+ 'question_prompt': 'How do practitioners actually start a cleaning business from little or no money, and '
+                    'what did the founders who scaled to six and seven figures do differently?',
+ 'kicker': 'Q1 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Starting Lean: Founder Playbooks from Zero to Seven Figures',
+ 'subtitle': 'Launching under $1,000 or with no money, solo operation, essential supplies and equipment, '
+             'top-to-bottom commercial cleaning training, UK business plans, and founder case studies from '
+             'million-dollar cleaning, Queen Bee, and pool-cleaning operators',
+ 'layout_template': 'opportunity_overview',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Founders building from zero toward seven figures agree on a lean sequence: learn '
+                      'the work hands-on, price for the labor you will eventually hire, and win recurring '
+                      'contracts through reputation and fast follow-up. AJ Simmons runs a sub-$1,000 '
+                      'launch built on a $99 CBN membership, a $200 LLC budget, a $25 domain and 400 cold '
+                      'calls in week one, deferring insurance and supplies until a deal closes. DJ The '
+                      'Boss landed a first lead for $1.75 in Google Ads that grew into roughly $500K over '
+                      "seven years, then burned $6K on the same campaign. UpFlip's operator runs 60% labor "
+                      'and nets 15-20%. Practitioners split on whether owners must clean first or whether '
+                      'inexperience is an advantage, and on paperwork: Nicole Thomas holds seven '
+                      'commercial buildings without an LLC, EIN, insurance or website.',
+ 'key_metrics': [{'label': 'Cost of First Google Ads Lead',
+                  'metric': 'Cost of First Google Ads Lead',
+                  'value': '$1.75 of ad spend',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "DJ The Boss ran Google's free $100 ad credit on a misconfigured campaign "
+                             'drawing clicks from the Philippines and China; the first lead form became '
+                             'the gymnastics facility they still clean.',
+                  'source': 'DJ The Boss ([ZVDOV6jG8Dw @ 00:06:17])'},
+                 {'label': 'Lifetime Revenue From First Contract',
+                  'metric': 'Lifetime Revenue From First Contract',
+                  'value': 'About $500K over 7 years',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'The first signed 12-month account grew from 2 to 5 days a week, and the '
+                             'client now pays roughly triple the original rate.',
+                  'source': 'DJ The Boss ([ZVDOV6jG8Dw @ 00:11:22])'},
+                 {'label': 'Cold-Call Funnel Yield',
+                  'metric': 'Cold-Call Funnel Yield',
+                  'value': '400 calls -> 1-4 walkthroughs in week one; 1,500 more -> 1-4 contracts, about '
+                           '$2K/month recurring',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "AJ Simmons's sub-$1,000 launch plan calls 100 businesses Monday through "
+                             'Friday to land a first customer within 30 days.',
+                  'source': 'AJ SIMMONS ([VrlDbQP4iQI @ 00:14:20])'},
+                 {'label': 'Cleaning Business Cost Structure',
+                  'metric': 'Cleaning Business Cost Structure',
+                  'value': 'Labor 60%, supplies 10%, marketing/ops 10%, net 15-20%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "UpFlip's operator, who grew from $60K to $120K monthly revenue, reported "
+                             'this split across recurring, move-out and Airbnb work.',
+                  'source': 'UpFlip ([d4Iip7BHXwg @ 00:08:13])'}],
+ 'sections': [{'section': 1,
+               'heading': 'The Practitioner Consensus',
+               'paragraphs': ['Scaled operators keep returning to one premise: you must understand the '
+                              'work before you can sell or manage it. The $15M owner interviewed by AJ '
+                              'Simmons tells first-year founders to do everything themselves first, '
+                              'mastering chemicals, equipment, supplies, training and hiring, and warns '
+                              'that owners who have never cleaned are not going to make it far '
+                              '[7pVd69Als0I @ 00:00:57]. That company forces every six-figure management '
+                              'hire, including the CTO of its software arm, to clean for 30 days so they '
+                              'learn changed locks, forgotten keys and locked supply closets in the field. '
+                              'AJ backs that up from their own franchise start at 19, when no training '
+                              "meant smeared windows and skipped tasks on a children's clinic worth about "
+                              '$2K+ per month [srB5UatlJlU @ 00:07:49]. Clean Ops Guide frames the same '
+                              'lesson from the buyer side: commercial cleaning is a professional service '
+                              'business, not just cleaning buildings, and property managers are paying for '
+                              'reliability, communication and peace of mind so they never have to chase '
+                              'the crew [IgZO8_dFaeU @ 00:00:16]. The shared baseline is simple: know the '
+                              'labor, know the site problems, and sell certainty rather than mop strokes '
+                              'to every buyer.',
+                              'The second point of agreement is that the real asset is the recurring '
+                              'contract, not the one-off job. Clean Ops Guide lays out the commercial '
+                              'cadence, an office three evenings a week, a medical facility five nights, a '
+                              'large building daily, and notes that a single client can mean hundreds of '
+                              'visits over several years [IgZO8_dFaeU @ 00:02:35]. DJ The Boss proves the '
+                              'compounding: a gymnastics facility signed on a 12-month agreement grew from '
+                              'two days to five days a week, and when the point of contact moved to '
+                              'another facility, the contact brought the company along, turning client one '
+                              'into contract two [ZVDOV6jG8Dw @ 00:00:53]. AJ Simmons tells owners to '
+                              'optimize for keeping a contract five years rather than squeezing profit '
+                              'from it today, backed by a policy that a no-call/no-show is an automatic '
+                              'firing [srB5UatlJlU @ 00:21:19]. The threat to that asset is rarely '
+                              'cleaning quality. AJ warns that a competitor met at a Chamber of Commerce '
+                              'event can take an account on relationship alone, so solo operators still '
+                              'run daytime inspections at least quarterly and keep communication constant '
+                              '[mp0PpDrOpYM @ 00:04:57]. Retention, in this playbook, is a sales activity '
+                              'that never stops after the signature.',
+                              'Speed and public reputation close the loop. Ricky Regalado, running a '
+                              'roughly $10M Chicago operation, says walkthroughs die when proposals are '
+                              'not turned around quickly, so the proposal goes out within two to three '
+                              'hours of the walkthrough [QBuGc_Q36dg @ 00:05:39]. AJ Simmons pushes the '
+                              'same discipline downstream: call within 24 hours, tell the prospect to '
+                              'check spam, follow up again after about a week, and keep going until there '
+                              'is a clear yes or no, because deals have closed six months later and many '
+                              'owners lose business simply by not following up [pqTeTRcPhKg @ 00:20:13]. '
+                              'Reputation is the other half. Joel Davis says Google reviews are what sells '
+                              'the business, with the web page plus Google PPC and reviews producing the '
+                              "best return on their pool route [j3l2-xKJKb8 @ 00:29:01]. UpFlip's "
+                              '$120K-per-month residential operator calls clients the next day for '
+                              'feedback and responds to every review, crediting the protected online '
+                              'reputation as one of the keys to fast growth [d4Iip7BHXwg @ 00:18:25]. '
+                              'Across commercial, residential and pool service, the consensus is '
+                              'identical: answer fast, follow up until the prospect decides, and treat '
+                              'star ratings as the storefront prospects actually check before calling.'],
+               'table': {'caption': 'Where Founders Agree: The Baseline Rules for Starting Lean',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner Reports',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Clean the buildings yourself before you manage',
+                                   'Owner says do everything yourself first, including chemicals, '
+                                   'equipment, training and hiring',
+                                   'Founders who never cleaned are warned they will not make it far',
+                                   'AJ SIMMONS ([7pVd69Als0I @ 00:00:57])'],
+                                  ['Recurring contracts compound into new contracts',
+                                   'First gymnastics client grew from 2 to 5 days weekly and produced '
+                                   'contract two',
+                                   'One well-served point of contact can carry you into new facilities',
+                                   'DJ The Boss ([ZVDOV6jG8Dw @ 00:00:53])'],
+                                  ['Trust is the product actually being sold',
+                                   'Property managers buy reliability, communication and peace of mind, '
+                                   'not just clean floors',
+                                   'Missed visits and slow replies lose accounts even with excellent '
+                                   'cleaning',
+                                   'Clean Ops Guide ([IgZO8_dFaeU @ 00:01:07])'],
+                                  ['Relationships defend accounts better than cleaning quality',
+                                   'A competitor met at a Chamber of Commerce event can take your account',
+                                   'Run daytime inspections at least quarterly and keep communication '
+                                   'constant',
+                                   'AJ SIMMONS ([mp0PpDrOpYM @ 00:04:57])'],
+                                  ['Google reviews drive the inbound lead flow',
+                                   'Ricky Regalado says every new inbound lead mentions seeing the Google '
+                                   'reviews',
+                                   'Office and property managers check Google and Yelp star counts before '
+                                   'calling',
+                                   'AJ SIMMONS ([QBuGc_Q36dg @ 00:03:06])'],
+                                  ['Persistent follow-up wins delayed commercial deals',
+                                   'Call within 24 hours, follow up after a week, deals closed six months '
+                                   'later',
+                                   'Keep chasing until the prospect gives a clear yes or no',
+                                   'AJ SIMMONS ([pqTeTRcPhKg @ 00:20:13])'],
+                                  ['Start small instead of chasing the biggest building',
+                                   'A 50,000 sq ft building needs multiple employees, supervision and '
+                                   'payroll cash',
+                                   'Learn walkthroughs and labor estimates on an office under 5,000 sq ft',
+                                   'Clean Ops Guide ([IgZO8_dFaeU @ 00:03:14])']]}},
+              {'section': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['AJ Simmons lays out a launch target of under $1,000 and a first customer '
+                              'inside 30 days. Step one is the $99 CBN membership through a special link '
+                              'to dodge the setup fee, canceled if no customer lands in 30 days; '
+                              'bookkeeping runs on free waveapps.com; the LLC typically costs $100 to $125 '
+                              'with $200 budgeted, while the EIN and BOI filing are free; five bid '
+                              'appointments cost $625 at $125 each; the domain runs $25 max and a Canva '
+                              "print order about $50 [VrlDbQP4iQI @ 00:05:27]. AJ's 2026 course adds the "
+                              'insurance spec to quote but not yet buy: $1M per incident and $2M '
+                              'aggregate, with the line that the business should pay for itself '
+                              '[pqTeTRcPhKg @ 00:06:01]. The residential benchmark from UpFlip ran higher '
+                              'at $5K: $4K for a 2003 Accord, a $500 vacuum, $300 in supplies and the rest '
+                              'on flyers, or about $1K for anyone who already owns a car [d4Iip7BHXwg @ '
+                              '00:03:07]. Kadz Money started UK domestic work with a Home Bargains box of '
+                              'about £20, sponges and five or six cloths, carrying no vacuum or mop '
+                              'because the insurance did not cover a vacuum [dEkotRT-f90 @ 00:01:36]. '
+                              'Capital is not the bottleneck in any of these builds.',
+                              "The acquisition math is explicit. AJ's calling plan is 100 businesses "
+                              'Monday through Friday: 400 calls in week one should yield one to four '
+                              'walkthroughs, and 1,500 more over the remaining weeks should produce four '
+                              'to 20 appointments, one to four contracts and about $2K per month recurring '
+                              '[VrlDbQP4iQI @ 00:14:20]. DJ The Boss went paid instead: after wasting $600 '
+                              'on door hangers, they built a website because competitors had no online '
+                              "presence, ran Google's free $100 ad credit on a badly configured campaign "
+                              'drawing clicks from the Philippines and China, and still caught the first '
+                              "lead at $1.75 of spend [ZVDOV6jG8Dw @ 00:06:17]. UpFlip's operator budgets "
+                              'roughly $4K a month on Google Local Leads, which bills per call and allows '
+                              'disputed leads, plus $1K on Facebook and $700 to $750 on Yelp, with Google '
+                              'performing best; in slow December-to-February months they text a $50-off '
+                              'offer to 1,500 contacts through HighLevel and see at least 10% reply '
+                              "[d4Iip7BHXwg @ 00:04:21]. Kadz Money's cheap UK channels mirror this: a "
+                              'Gumtree ad at £5 to £10 a month pulled about 28 inquiries, and a £10 '
+                              'Mumsnet ad still generates calls years later [dEkotRT-f90 @ 00:03:01].',
+                              'Pricing starts at the walkthrough, and the practitioners script it tightly. '
+                              "Ricky Regalado arrives on time, shakes hands, asks about the client's hot "
+                              'points, never requests a scope of work, prices the facility and the '
+                              "person's expectations, and closes with a same-type reference, restaurant to "
+                              'restaurant or luxury high-rise to luxury high-rise [QBuGc_Q36dg @ '
+                              '00:04:54]. AJ Simmons wears a logo shirt, brings a second person to measure '
+                              'and record, asks about pain points, budget and frequency, never promises a '
+                              'delivery time, never prices on the spot, and runs the numbers through '
+                              'calculatedclean.app afterward [pqTeTRcPhKg @ 00:17:46]. Measurement drives '
+                              "the bid: AJ's supply list puts a laser measure on the cleanable square "
+                              'footage only, because a 10,000-foot building where you clean 2,000 feet '
+                              'will get bid way too high [mk-8avM72Ms @ 00:02:52]. DJ The Boss adds the '
+                              "margin rule that built a $500K account: ask the client's budget, price it "
+                              'to include the employees you will eventually put in, come in under the '
+                              'incumbent ServiceMaster after its roughly 35% hike, bill in advance and '
+                              'collect upfront; that client now pays about triple the original rate '
+                              '[ZVDOV6jG8Dw @ 00:09:39]. Price for future labor, not for your own free '
+                              'hours.'],
+               'table': {'caption': 'Launch Stack, Lead Math and Bid Mechanics With Exact Numbers',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Tool',
+                                     'How Practitioners Use It',
+                                     'Expert Source'],
+                         'rows': [['CBN membership as the launch hub',
+                                   '$99 through the special link to skip the setup fee',
+                                   'Includes LLC-to-hiring course, funnels and forms; cancel without a '
+                                   'customer in 30 days',
+                                   'AJ SIMMONS ([VrlDbQP4iQI @ 00:02:29])'],
+                                  ['Legal entity and tax ID setup',
+                                   'LLC typically $100 to $125, budget $200; EIN and BOI free',
+                                   'File the LLC, pull the free EIN, then open the business bank account',
+                                   'AJ SIMMONS ([VrlDbQP4iQI @ 00:05:27])'],
+                                  ['Cold-call funnel for first contracts',
+                                   '400 calls in week one, then 1,500 more over remaining weeks',
+                                   'Target one to four contracts and about $2K per month recurring',
+                                   'AJ SIMMONS ([VrlDbQP4iQI @ 00:14:20])'],
+                                  ['Google Ads on the free credit',
+                                   'First lead at $1.75 of spend from the $100 credit',
+                                   'The same campaign later burned $6K and produced only a few '
+                                   'walkthroughs',
+                                   'DJ The Boss ([ZVDOV6jG8Dw @ 00:06:17])'],
+                                  ['Cleaning business cost structure benchmark',
+                                   'Labor 60%, supplies 10%, marketing and operations 10% of revenue',
+                                   'Net margin lands at roughly 15 to 20 percent of revenue',
+                                   'UpFlip ([d4Iip7BHXwg @ 00:08:13])'],
+                                  ['Slow-season text blast to past clients',
+                                   '$50-off offer texted to 1,500 contacts through HighLevel CRM',
+                                   'At least 10% reply, with about 90% open rate on segmented lists',
+                                   'UpFlip ([d4Iip7BHXwg @ 00:14:09])'],
+                                  ['Laser measure on cleanable square footage',
+                                   'Measure only the cleaned area, never the whole building footprint',
+                                   'Measuring 10,000 feet when cleaning 2,000 inflates the bid way too '
+                                   'high',
+                                   'AJ SIMMONS ([mk-8avM72Ms @ 00:02:52])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Cash-Light Moves the Operators Actually Run',
+                           'body': 'These are the street-level shortcuts practitioners use to close before '
+                                   'spending and to reopen dead deals.',
+                           'items': ['Buy no cleaning supplies until a deal closes; push for upfront '
+                                     'payment, otherwise net 10 or net 15, and if cash is short, borrow or '
+                                     'sub the job out while working alongside the subcontractor [AJ '
+                                     'SIMMONS — VrlDbQP4iQI @ 00:16:03]',
+                                     'Get insurance quoted but hold the purchase: AJ advises answering '
+                                     "'yes' when asked about insurance and buying the policy only when a "
+                                     'deal is ready to close [AJ SIMMONS — VrlDbQP4iQI @ 00:15:12]',
+                                     'When a lost bid resurfaces, resend the same proposal with a couple '
+                                     'percent added for inflation; Ricky Regalado had the contract signed '
+                                     'in two hours [AJ SIMMONS — QBuGc_Q36dg @ 00:08:07]',
+                                     'Pull up on construction trailers at 5 to 6 AM to catch project '
+                                     'managers and general contractors in person, the way Charles Banks '
+                                     'fed post-construction work [AJ SIMMONS — du4OAGZv9AE @ 00:15:26]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Stand Up the Business for Under $1,000',
+                              'action': 'Join CBN at $99, set up free bookkeeping, file the LLC, pull the '
+                                        'EIN and open a business bank account.',
+                              'detail': 'Budget $200 for the LLC, take the free EIN and BOI, run books on '
+                                        'waveapps.com, and cancel the membership if no customer arrives in '
+                                        '30 days [AJ SIMMONS — VrlDbQP4iQI @ 00:05:27]'},
+                             {'step': 2,
+                              'title': 'Generate Walkthroughs on Volume',
+                              'action': 'Call 100 businesses Monday through Friday and track walkthroughs '
+                                        'booked against calls made.',
+                              'detail': '400 calls in week one should yield one to four walkthroughs; '
+                                        '1,500 more should produce one to four contracts and about $2K per '
+                                        'month recurring [AJ SIMMONS — VrlDbQP4iQI @ 00:14:06]'},
+                             {'step': 3,
+                              'title': 'Run a Scripted Walkthrough',
+                              'action': 'Arrive on time, ask about hot points, price the facility and '
+                                        'expectations, and close with a same-type reference.',
+                              'detail': 'Ricky Regalado admits lateness ruined one walkthrough; use a firm '
+                                        'handshake and eye contact, never ask for a scope of work, and '
+                                        'cite a matching reference account [AJ SIMMONS — QBuGc_Q36dg @ '
+                                        '00:04:26]'},
+                             {'step': 4,
+                              'title': 'Send the Proposal and Onboard',
+                              'action': 'Make the agreement the last page of the proposal, then send the '
+                                        'W-9 and proof of insurance once signed.',
+                              'detail': 'Run an onboarding walkthrough covering keys and alarm, water '
+                                        'source, closet, dumpster, consumables and emergency contact '
+                                        'before the first clean [AJ SIMMONS — pqTeTRcPhKg @ 00:22:05]'}]},
+              {'heading': '3. Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split in the founder playbook is how much legal scaffolding '
+                              'goes up before the first invoice. AJ Simmons tells even solo operators to '
+                              'still form an LLC, both to shield personal assets when someone slips on a '
+                              'wet floor with no sign posted and because businesses prefer paying licensed '
+                              'and insured vendors [mp0PpDrOpYM @ 00:01:28]. The 2026 course runs the full '
+                              'stack: articles of organization for a single-member LLC, a free EIN, a '
+                              'business bank account for deductions, and a business license or sales-tax '
+                              'registration only where required [pqTeTRcPhKg @ 00:03:33]. Nicole Thomas in '
+                              'Lake Charles runs the opposite experiment and reports seven commercial '
+                              'buildings with nobody asking for an LLC, an EIN, insurance, or a website, '
+                              'while still admitting "I know I need to do that" [NHWdv_WG2B8 @ 00:05:46]. '
+                              'Insurance timing splits even inside the AJ camp: the under-$1,000 plan says '
+                              'answer yes when a prospect asks about coverage but only buy the policy once '
+                              'a deal is ready to close, and buy no supplies until then either '
+                              '[VrlDbQP4iQI @ 00:15:12]. The working read for an operator: the lean camp '
+                              'defers spending, not structure, and every speaker who skipped paperwork '
+                              'still treats it as a debt to settle once contracts land. Thomas covers the '
+                              'gap with client references instead of a website and has clients order '
+                              "Thomas's preferred supplies.",
+                              'Whether the founder needs to have pushed a mop is the second live '
+                              'disagreement. The $15 million cleaning company owner interviewed by AJ '
+                              'Simmons says new owners have to do everything themselves first, covering '
+                              'cleaning, chemicals, equipment, supplies, training and hiring, and that '
+                              'owners who have never cleaned are not going to make it that far '
+                              '[7pVd69Als0I @ 00:00:57]. That owner sends every six-figure management '
+                              'hire, including the CTO of the software company, into the field for 30 days '
+                              'to learn changed locks, forgotten keys, locked supply closets and alarm '
+                              'issues [7pVd69Als0I @ 00:01:29]. Jazmine Tates flips the premise: never '
+                              'having cleaned professionally might be the advantage, because experienced '
+                              'cleaners think like a cleaner and not like a CEO, and cleaning skills can '
+                              'be outsourced while systems cannot [g8OVdfYHogY @ 00:01:19]. AJ lands '
+                              'between the two, having cleaned roughly nine years personally yet telling '
+                              'founders to hire people from day one and to drive Uber or take a job rather '
+                              "than live off the company too early [srB5UatlJlU @ 00:16:38]. Tates's own "
+                              'hiring filter demands contractors with at least two years of residential '
+                              'experience, their own supplies and reliable transport, so field knowledge '
+                              'still enters the business. It just does not have to live in the owner, '
+                              'whose job becomes coordination rather than supervision.',
+                              'Customer acquisition splits into an outbound grind and an inbound '
+                              'reputation play. AJ Simmons scripts the grind: 100 business calls Monday '
+                              'through Friday, roughly 400 in week one for one to four walkthroughs, then '
+                              '1,500 more for four to twenty appointments, one to four contracts and about '
+                              '$2,000 a month recurring [VrlDbQP4iQI @ 00:14:20]. Ricky Regalado, running '
+                              'about a $10 million Chicago operation, says the company does no marketing, '
+                              'cold calling or email campaigns, names Google reviews as the number one '
+                              'source, and says every new caller mentions the reviews [QBuGc_Q36dg @ '
+                              '00:03:06]. Paid search sits in the middle and cuts both ways: DJ The Boss '
+                              'landed the gymnastics facility off a lead that cost $1.75 in ad spend, then '
+                              'burned $6,000 on the same campaign with no other business to speak of '
+                              '[ZVDOV6jG8Dw @ 00:08:47]. The UpFlip residential operator spends about '
+                              '$4,000 a month on Google Local Leads, pays per call, disputes junk leads, '
+                              'and ranks Google above Facebook at $1,000 and Yelp at $700 to $750 '
+                              "[d4Iip7BHXwg @ 00:04:21]. DJ's verdict reconciles the camps: Google Ads is "
+                              'the answer but not the answer, because you still have to be good at Google '
+                              'Ads, and cost per click drops when your SEO is at least somewhat set up.'],
+               'table': {'caption': 'Side-by-side founder playbooks where practitioners split',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Legal setup before the first contract',
+                                   'LLC, EIN, business bank account and an insurance quote handled up '
+                                   'front',
+                                   'Seven commercial buildings run with no LLC, EIN, insurance or website '
+                                   'requested',
+                                   'AJ SIMMONS ([pqTeTRcPhKg @ 00:03:33]); AJ SIMMONS ([NHWdv_WG2B8 @ '
+                                   '00:05:46])'],
+                                  ['Founder cleaning experience required or optional',
+                                   'Owner must clean everything first; six-figure hires clean for 30 days',
+                                   'Never cleaning professionally is an advantage; systems cannot be '
+                                   'outsourced like cleaning',
+                                   'AJ SIMMONS ([7pVd69Als0I @ 00:00:57]); Jazmine Tates ([g8OVdfYHogY @ '
+                                   '00:00:00])'],
+                                  ['Primary lead engine for commercial accounts',
+                                   '100 cold calls daily plus purchased bid appointments at $125 each',
+                                   'No cold calls or campaigns; Google reviews drive every inbound lead',
+                                   'AJ SIMMONS ([VrlDbQP4iQI @ 00:14:20]); AJ SIMMONS ([QBuGc_Q36dg @ '
+                                   '00:03:06])'],
+                                  ['Franchise versus independent launch',
+                                   'First franchise gave AJ no cleaning training; Banks kept about half of '
+                                   '$30K monthly',
+                                   'Joel Davis estimates ASP saved 2 to 4 years versus going solo',
+                                   'AJ SIMMONS ([srB5UatlJlU @ 00:07:49]); UpFlip ([j3l2-xKJKb8 @ '
+                                   '00:07:11])'],
+                                  ['How to scope a commercial bid',
+                                   'Never ask for a scope of work; price the facility and expectations, '
+                                   'close with references',
+                                   'Learn to evaluate the facility, understand the scope of work and '
+                                   'calculate costs',
+                                   'AJ SIMMONS ([QBuGc_Q36dg @ 00:04:54]); Clean Ops Guide ([IgZO8_dFaeU @ '
+                                   '00:02:52])'],
+                                  ['Labor model for scaling crews',
+                                   'Banks moved mostly to W-2 to scale, accepting heavy taxes and leaning '
+                                   'on a CPA',
+                                   'Thomas runs 1099 workers in branded uniforms recruited from Sunday '
+                                   'hotel housekeeping shifts',
+                                   'AJ SIMMONS ([du4OAGZv9AE @ 00:10:16]); AJ SIMMONS ([NHWdv_WG2B8 @ '
+                                   '00:17:33])'],
+                                  ['Which marketing platform to launch on',
+                                   'Launch on Thumbtack, Yelp and Google in week four and skip Instagram '
+                                   'entirely',
+                                   'Instagram was not popping, so switch to TikTok and ride the viral '
+                                   'reach',
+                                   'Jazmine Tates ([g8OVdfYHogY @ 00:07:19]); AJ SIMMONS ([NHWdv_WG2B8 @ '
+                                   '00:20:24])']]}},
+              {'heading': '4. Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most common first-year loss is money spent on the wrong channel or a '
+                              'price set before the operator knows the job. DJ The Boss opened with $600 '
+                              'of door hangers and calls it a dumb move, because hangers suit residential '
+                              'and the target was commercial; flyers in mailboxes did produce the first '
+                              'post-construction jobs [ZVDOV6jG8Dw @ 00:04:14]. The Google Ads campaign '
+                              'that followed ran with negative-keyword problems and the wrong '
+                              'geo-targeting, pulling clicks from the Philippines and China before the '
+                              '$1.75 lead arrived [ZVDOV6jG8Dw @ 00:05:59]. Underpricing hits just as '
+                              "hard. The UpFlip operator's first move-out paid $90 for about 12 hours of "
+                              'work, and the fix was calling competitors for a three-bed, two-bath quote '
+                              'before pricing again [d4Iip7BHXwg @ 00:17:26]. Kadz Money started at £10 to '
+                              '£12 an hour in the UK, now recommends £15 to £20 with the first clean at '
+                              'half price, and pushes per-job or annual pricing such as £600 a year '
+                              '[dEkotRT-f90 @ 00:05:57]. Kadz also flags clients who try to squeeze a '
+                              'three-to-six-hour clean into two hours, countered with a free walkthrough '
+                              'using a room-by-room clipboard and a direct question about what the last '
+                              'cleaner failed at, which is usually reliability.',
+                              'Cash conversion is where lean founders get squeezed. Charles Banks hit '
+                              '$30,000 a month inside a franchise yet kept roughly half after deductions '
+                              'and fees, with a crew still to pay out of that half [du4OAGZv9AE @ '
+                              '00:06:12]. Banks also reports jobs that went unpaid and says they are still '
+                              'waiting on the money [du4OAGZv9AE @ 00:10:53]. AJ Simmons puts the timing '
+                              'bluntly: commercial franchise work pays effectively net 60, so everything '
+                              'you do this month arrives at the end of next month, while residential pays '
+                              'faster with better margins [srB5UatlJlU @ 00:32:58]. Clean Ops Guide warns '
+                              'that a 50,000 square foot building demands multiple employees, more '
+                              'equipment, supervision, and enough cash to cover payroll before the invoice '
+                              'is paid, and tells new owners to start under 5,000 square feet [IgZO8_dFaeU '
+                              '@ 00:03:14]. The counter-moves practitioners actually used: DJ The Boss '
+                              'billed in advance and got paid upfront after pricing under a ServiceMaster '
+                              'that had raised rates about 35 percent, and AJ asks for upfront payment or '
+                              "net 10 to net 15. AJ's own exit from field cleaning came with debt and "
+                              'repossessed cars, offset only by having a system that finally ran without '
+                              'AJ in it.',
+                              'The failure that does not show up on a profit sheet is people. DJ The Boss, '
+                              'roughly seven years and about $500,000 into a single contract, says sales '
+                              'is easy and managing people is the hard part [ZVDOV6jG8Dw @ 00:10:51]. AJ '
+                              'Simmons warns solo operators that even great cleaning loses to a '
+                              'relationship: a competitor met at a Chamber of Commerce event can take the '
+                              'account, so daytime inspections at least quarterly and steady communication '
+                              'are the defense [mp0PpDrOpYM @ 00:04:57]. Ricky Regalado names the '
+                              'sales-side version, walkthroughs wasted because the proposal did not go out '
+                              'quickly, and sets a two-to-three-hour turnaround; Regalado also admits '
+                              'showing up late ruined one walkthrough [QBuGc_Q36dg @ 00:05:39]. Nicole '
+                              'Thomas hit the reverse problem: clients got too attached to Thomas '
+                              "personally, which blocks handing off accounts, so Thomas's daughter now "
+                              "comes along from the first visit [NHWdv_WG2B8 @ 00:18:21]. AJ's "
+                              'no-call/no-show rule is automatic firing, and a nine-hour relocation forced '
+                              'backup plans B, C and D plus invoice credits to keep contracts alive. The '
+                              'goal AJ sets is keeping a contract five years rather than squeezing profit '
+                              'from it today.'],
+               'table': {'caption': 'Firsthand losses, traps and the economics fix each practitioner '
+                                    'applied',
+                         'headers': ['Failure Mode',
+                                     'What Happened',
+                                     'Operator Fix / Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Wrong first marketing spend',
+                                   '$600 spent on door hangers aimed at commercial buyers',
+                                   'Match channel to buyer; mailbox flyers landed the first '
+                                   'post-construction jobs',
+                                   'DJ The Boss ([ZVDOV6jG8Dw @ 00:04:14])'],
+                                  ['Unmanaged paid search campaign',
+                                   '$6,000 burned on the same campaign after one $1.75 lead',
+                                   'Fix negative keywords, geo-targeting and SEO before scaling ad spend',
+                                   'DJ The Boss ([ZVDOV6jG8Dw @ 00:08:47])'],
+                                  ['Subcontractor misclassification',
+                                   'Fined $12,000 for misclassifying subcontractors on the payroll side',
+                                   'Get an accountant or bookkeeper in place at the very beginning',
+                                   'UpFlip ([d4Iip7BHXwg @ 00:24:43])'],
+                                  ['Franchise fee drag on revenue',
+                                   'Reached $30K monthly inside a franchise but kept about half after fees',
+                                   'Low $100Ks paying out 50 percent plus franchise fees is not that much',
+                                   'AJ SIMMONS ([du4OAGZv9AE @ 00:06:12])'],
+                                  ['Slow proposal turnaround after walkthrough',
+                                   'Walkthroughs wasted when proposals sit; one walkthrough ruined by '
+                                   'arriving late',
+                                   'Send the proposal within two to three hours of the walkthrough',
+                                   'AJ SIMMONS ([QBuGc_Q36dg @ 00:05:39])'],
+                                  ['Chasing an oversized first building',
+                                   'A 50,000 square foot site needs crew, equipment, supervision and '
+                                   'payroll cash',
+                                   'Start under 5,000 square feet and learn estimates, inspections and '
+                                   'recurring service',
+                                   'Clean Ops Guide ([IgZO8_dFaeU @ 00:03:14])'],
+                                  ['Seasonal and pandemic revenue drops',
+                                   'Lost over half of clients March to June; December to February runs '
+                                   'slow',
+                                   'Text a $50-off offer to 1,500 contacts and expect at least 10 percent '
+                                   'replies',
+                                   'UpFlip ([d4Iip7BHXwg @ 00:14:09])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before signing or scaling a contract',
+                           'body': 'Each gate comes straight from a loss or near-miss a practitioner took '
+                                   'personally. Clear all four before the next bid goes out or the next '
+                                   'helper starts.',
+                           'items': ['No proposal leaves later than two to three hours after the '
+                                     'walkthrough, because slow turnaround turns the walkthrough into '
+                                     'wasted time [AJ SIMMONS — QBuGc_Q36dg @ 00:05:39].',
+                                     'Measure only cleanable square footage with a laser measure before '
+                                     'bidding, since bidding the whole building sends the price way too '
+                                     'high [AJ SIMMONS — mk-8avM72Ms @ 00:02:52].',
+                                     'Settle worker classification with an accountant or bookkeeper before '
+                                     'the first helper starts; one operator paid a $12,000 '
+                                     'misclassification fine [UpFlip — d4Iip7BHXwg @ 00:24:43].',
+                                     'Price every contract for the labor it will eventually need, the way '
+                                     'DJ priced the first account to have employees in there [DJ The Boss '
+                                     '— ZVDOV6jG8Dw @ 00:09:55].']}}],
+ 'pull_quote': '"A recurring contract is only valuable if you price it correctly and can deliver the '
+               'service profitably." — Clean Ops Guide (IgZO8_dFaeU @ 00:02:52).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Call 100 businesses Monday through Friday, targeting one to four walkthroughs from '
+                      'the first 400 dials [AJ SIMMONS — VrlDbQP4iQI @ 00:14:06].',
+                      'Pull an insurance quote for $1M per incident and $2M aggregate, but let the '
+                      'business pay for the policy once a deal is closing [AJ SIMMONS — pqTeTRcPhKg @ '
+                      '00:06:01].',
+                      'On every walkthrough, ask about pain points, budget and frequency, and never price '
+                      'on the spot [AJ SIMMONS — pqTeTRcPhKg @ 00:16:54].',
+                      'Follow up within 24 hours, again after about a week, and keep going until you get a '
+                      'clear yes or no [AJ SIMMONS — pqTeTRcPhKg @ 00:20:13].',
+                      'Call clients the day after service for feedback and respond to every online review '
+                      'to protect the reputation [UpFlip — d4Iip7BHXwg @ 00:18:25].',
+                      'Run daytime inspections monthly to quarterly with a tablet, white gloves and the '
+                      'CBN app inspection report [AJ SIMMONS — mOnf6pk37_c @ 00:18:21].'],
+ 'statutory_citations': [{'title': 'AJ SIMMONS — How To Start A Commercial Cleaning Business Today Under '
+                                   '$1000 and Get Customers FAST! [00:14:20]',
+                          'url': 'https://www.youtube.com/watch?v=VrlDbQP4iQI&t=860s',
+                          'relevance': 'Primary practitioner testimony on the cold-call volume math behind '
+                                       'a first commercial contract.'},
+                         {'title': 'AJ SIMMONS — How To Get Commercial Cleaning Customers - Million Dollar '
+                                   'Cleaning Company Shares Secret!!! [00:04:54]',
+                          'url': 'https://www.youtube.com/watch?v=QBuGc_Q36dg&t=294s',
+                          'relevance': 'Primary practitioner testimony on review-driven inbound leads and '
+                                       'pricing without a scope of work.'},
+                         {'title': 'UpFlip — Starting a $120K/Month Cleaning Business From Scratch '
+                                   '[00:24:43]',
+                          'url': 'https://www.youtube.com/watch?v=d4Iip7BHXwg&t=1483s',
+                          'relevance': 'Primary practitioner testimony on unit economics and the $12,000 '
+                                       'subcontractor misclassification fine.'},
+                         {'title': 'DJ The Boss — How i got my First Commercial Cleaning contract: how to '
+                                   'start a commercial cleaning business [00:08:47]',
+                          'url': 'https://www.youtube.com/watch?v=ZVDOV6jG8Dw&t=527s',
+                          'relevance': 'Primary practitioner testimony on wasted marketing spend and '
+                                       'pricing a first contract for future employees.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'ZVDOV6jG8Dw',
+                       'title': 'How i got my First Commercial Cleaning contract: how to start a '
+                                'commercial cleaning business',
+                       'channel': 'DJ The Boss',
+                       'author': 'DJ The Boss',
+                       'text': 'after getting that client i actually wasted six thousand dollars on that '
+                               'same campaign and got no other business to speak of.',
+                       'tip': 'after getting that client i actually wasted six thousand dollars on that '
+                              'same campaign and got no other business to speak of.',
+                       'timestamp': 527,
+                       'timestamp_seconds': 527,
+                       'timestamp_label': '[00:08:47]',
+                       'url': 'https://www.youtube.com/watch?v=ZVDOV6jG8Dw&t=527s',
+                       'markdown': '[00:08:47](https://www.youtube.com/watch?v=ZVDOV6jG8Dw&t=527s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZVDOV6jG8Dw',
+                       'title': 'How i got my First Commercial Cleaning contract: how to start a '
+                                'commercial cleaning business',
+                       'channel': 'DJ The Boss',
+                       'author': 'DJ The Boss',
+                       'text': 'i knew i was going to eventually put employees in there so i priced it to '
+                               'have employees in there.',
+                       'tip': 'i knew i was going to eventually put employees in there so i priced it to '
+                              'have employees in there.',
+                       'timestamp': 595,
+                       'timestamp_seconds': 595,
+                       'timestamp_label': '[00:09:55]',
+                       'url': 'https://www.youtube.com/watch?v=ZVDOV6jG8Dw&t=595s',
+                       'markdown': '[00:09:55](https://www.youtube.com/watch?v=ZVDOV6jG8Dw&t=595s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7pVd69Als0I',
+                       'title': "$15 Million Dollar Cleaning Company Owner's Advice To New Cleaning "
+                                'Business Owners',
+                       'channel': 'AJ SIMMONS',
+                       'author': 'AJ SIMMONS',
+                       'text': 'you have to do everything yourself first.',
+                       'tip': 'you have to do everything yourself first.',
+                       'timestamp': 57,
+                       'timestamp_seconds': 57,
+                       'timestamp_label': '[00:00:57]',
+                       'url': 'https://www.youtube.com/watch?v=7pVd69Als0I&t=57s',
+                       'markdown': '[00:00:57](https://www.youtube.com/watch?v=7pVd69Als0I&t=57s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QBuGc_Q36dg',
+                       'title': 'How To Get Commercial Cleaning Customers - Million Dollar Cleaning '
+                                'Company Shares Secret!!!',
+                       'channel': 'AJ SIMMONS',
+                       'author': 'AJ SIMMONS',
+                       'text': "that's what happens is people don't turn a proposal around quickly and the "
+                               'the walkthrough was a waste.',
+                       'tip': "that's what happens is people don't turn a proposal around quickly and the "
+                              'the walkthrough was a waste.',
+                       'timestamp': 339,
+                       'timestamp_seconds': 339,
+                       'timestamp_label': '[00:05:39]',
+                       'url': 'https://www.youtube.com/watch?v=QBuGc_Q36dg&t=339s',
+                       'markdown': '[00:05:39](https://www.youtube.com/watch?v=QBuGc_Q36dg&t=339s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QBuGc_Q36dg',
+                       'title': 'How To Get Commercial Cleaning Customers - Million Dollar Cleaning '
+                                'Company Shares Secret!!!',
+                       'channel': 'AJ SIMMONS',
+                       'author': 'AJ SIMMONS',
+                       'text': "i never ask for a scope of work i mean it's if you start pricing scope of "
+                               "work you're going down the rabbit hole like you know price the facility "
+                               "price this person's expectations close with references.",
+                       'tip': "i never ask for a scope of work i mean it's if you start pricing scope of "
+                              "work you're going down the rabbit hole like you know price the facility "
+                              "price this person's expectations close with references.",
+                       'timestamp': 294,
+                       'timestamp_seconds': 294,
+                       'timestamp_label': '[00:04:54]',
+                       'url': 'https://www.youtube.com/watch?v=QBuGc_Q36dg&t=294s',
+                       'markdown': '[00:04:54](https://www.youtube.com/watch?v=QBuGc_Q36dg&t=294s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'srB5UatlJlU',
+                       'title': 'I Built a Million-Dollar Cleaning Brand — Here’s What It Really Takes | '
+                                'AJ Simmons x Jazmine Tates',
+                       'channel': 'AJ SIMMONS',
+                       'author': 'AJ SIMMONS',
+                       'text': 'Hire people from day one.',
+                       'tip': 'Hire people from day one.',
+                       'timestamp': 998,
+                       'timestamp_seconds': 998,
+                       'timestamp_label': '[00:16:38]',
+                       'url': 'https://www.youtube.com/watch?v=srB5UatlJlU&t=998s',
+                       'markdown': '[00:16:38](https://www.youtube.com/watch?v=srB5UatlJlU&t=998s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mp0PpDrOpYM',
+                       'title': 'How To Start A Cleaning Business SOLO!',
+                       'channel': 'AJ SIMMONS',
+                       'author': 'AJ SIMMONS',
+                       'text': 'Even if your cleaning is great a relationship can make them fire you.',
+                       'tip': 'Even if your cleaning is great a relationship can make them fire you.',
+                       'timestamp': 297,
+                       'timestamp_seconds': 297,
+                       'timestamp_label': '[00:04:57]',
+                       'url': 'https://www.youtube.com/watch?v=mp0PpDrOpYM&t=297s',
+                       'markdown': '[00:04:57](https://www.youtube.com/watch?v=mp0PpDrOpYM&t=297s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'du4OAGZv9AE',
+                       'title': 'How He Built A Million Dollar Cleaning Business!',
+                       'channel': 'AJ SIMMONS',
+                       'author': 'AJ SIMMONS',
+                       'text': 'At one point, I was up to 30k a month.',
+                       'tip': 'At one point, I was up to 30k a month.',
+                       'timestamp': 18,
+                       'timestamp_seconds': 18,
+                       'timestamp_label': '[00:00:18]',
+                       'url': 'https://www.youtube.com/watch?v=du4OAGZv9AE&t=18s',
+                       'markdown': '[00:00:18](https://www.youtube.com/watch?v=du4OAGZv9AE&t=18s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mk-8avM72Ms',
+                       'title': 'Cleaning Supplies Needed For Cleaning Business',
+                       'channel': 'AJ SIMMONS',
+                       'author': 'AJ SIMMONS',
+                       'text': "so if they got a 10,000 foot building but you're only cleaning 2,000 of it "
+                               "then you're going to bid way too high.",
+                       'tip': "so if they got a 10,000 foot building but you're only cleaning 2,000 of it "
+                              "then you're going to bid way too high.",
+                       'timestamp': 198,
+                       'timestamp_seconds': 198,
+                       'timestamp_label': '[00:03:18]',
+                       'url': 'https://www.youtube.com/watch?v=mk-8avM72Ms&t=198s',
+                       'markdown': '[00:03:18](https://www.youtube.com/watch?v=mk-8avM72Ms&t=198s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VrlDbQP4iQI',
+                       'title': 'How To Start A Commercial Cleaning Business Today Under $1000 and Get '
+                                'Customers FAST!',
+                       'channel': 'AJ SIMMONS',
+                       'author': 'AJ SIMMONS',
+                       'text': "If I was starting today, I wouldn't get no cleaning supplies yet until I "
+                               'close a deal.',
+                       'tip': "If I was starting today, I wouldn't get no cleaning supplies yet until I "
+                              'close a deal.',
+                       'timestamp': 951,
+                       'timestamp_seconds': 951,
+                       'timestamp_label': '[00:15:51]',
+                       'url': 'https://www.youtube.com/watch?v=VrlDbQP4iQI&t=951s',
+                       'markdown': '[00:15:51](https://www.youtube.com/watch?v=VrlDbQP4iQI&t=951s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NHWdv_WG2B8',
+                       'title': 'How To Start A Cleaning Business With NO MONEY, NO SUPPLIES, NO WEBSITE!',
+                       'channel': 'AJ SIMMONS',
+                       'author': 'AJ SIMMONS',
+                       'text': "don't stick to one platform that's what I did Instagram wasn't popping so "
+                               'I went over to tick tock and I started going viral.',
+                       'tip': "don't stick to one platform that's what I did Instagram wasn't popping so I "
+                              'went over to tick tock and I started going viral.',
+                       'timestamp': 1242,
+                       'timestamp_seconds': 1242,
+                       'timestamp_label': '[00:20:42]',
+                       'url': 'https://www.youtube.com/watch?v=NHWdv_WG2B8&t=1242s',
+                       'markdown': '[00:20:42](https://www.youtube.com/watch?v=NHWdv_WG2B8&t=1242s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pqTeTRcPhKg',
+                       'title': 'How To Start A Cleaning Business in 2026 (NO BS) Step By Step FREE FULL '
+                                'COURSE',
+                       'channel': 'AJ SIMMONS',
+                       'author': 'AJ SIMMONS',
+                       'text': "A lot of times people lose the the business because they simply don't "
+                               'follow up.',
+                       'tip': "A lot of times people lose the the business because they simply don't "
+                              'follow up.',
+                       'timestamp': 1229,
+                       'timestamp_seconds': 1229,
+                       'timestamp_label': '[00:20:29]',
+                       'url': 'https://www.youtube.com/watch?v=pqTeTRcPhKg&t=1229s',
+                       'markdown': '[00:20:29](https://www.youtube.com/watch?v=pqTeTRcPhKg&t=1229s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mOnf6pk37_c',
+                       'title': 'All Cleaners Need To Watch THIS! (Commercial Cleaning Training)',
+                       'channel': 'AJ SIMMONS',
+                       'author': 'AJ SIMMONS',
+                       'text': 'And then how you do anything is how you do everything.',
+                       'tip': 'And then how you do anything is how you do everything.',
+                       'timestamp': 1033,
+                       'timestamp_seconds': 1033,
+                       'timestamp_label': '[00:17:13]',
+                       'url': 'https://www.youtube.com/watch?v=mOnf6pk37_c&t=1033s',
+                       'markdown': '[00:17:13](https://www.youtube.com/watch?v=mOnf6pk37_c&t=1033s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'd4Iip7BHXwg',
+                       'title': 'Starting a $120K/Month Cleaning Business From Scratch',
+                       'channel': 'UpFlip',
+                       'author': 'UpFlip',
+                       'text': 'And if you take care of that at the beginning, you will save so much '
+                               'trouble in the end.',
+                       'tip': 'And if you take care of that at the beginning, you will save so much '
+                              'trouble in the end.',
+                       'timestamp': 1526,
+                       'timestamp_seconds': 1526,
+                       'timestamp_label': '[00:25:26]',
+                       'url': 'https://www.youtube.com/watch?v=d4Iip7BHXwg&t=1526s',
+                       'markdown': '[00:25:26](https://www.youtube.com/watch?v=d4Iip7BHXwg&t=1526s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'g8OVdfYHogY',
+                       'title': 'How to Start a Cleaning Business With No Experience (2026 Beginner Guide)',
+                       'channel': 'Jazmine Tates',
+                       'author': 'Jazmine Tates',
+                       'text': 'Slow hiring, you guys, creates stable businesses.',
+                       'tip': 'Slow hiring, you guys, creates stable businesses.',
+                       'timestamp': 418,
+                       'timestamp_seconds': 418,
+                       'timestamp_label': '[00:06:58]',
+                       'url': 'https://www.youtube.com/watch?v=g8OVdfYHogY&t=418s',
+                       'markdown': '[00:06:58](https://www.youtube.com/watch?v=g8OVdfYHogY&t=418s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dEkotRT-f90',
+                       'title': 'How To Start A Cleaning Business In The UK For 2025 | Cleaning Business '
+                                'Plan',
+                       'channel': 'Kadz Money',
+                       'author': 'Kadz Money',
+                       'text': 'I would start off at 15 to20 per hour yeah and you can do the first clean '
+                               'half price.',
+                       'tip': 'I would start off at 15 to20 per hour yeah and you can do the first clean '
+                              'half price.',
+                       'timestamp': 408,
+                       'timestamp_seconds': 408,
+                       'timestamp_label': '[00:06:48]',
+                       'url': 'https://www.youtube.com/watch?v=dEkotRT-f90&t=408s',
+                       'markdown': '[00:06:48](https://www.youtube.com/watch?v=dEkotRT-f90&t=408s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'j3l2-xKJKb8',
+                       'title': 'Most Underrated Service Business?! (Makes $851K/Year)',
+                       'channel': 'UpFlip',
+                       'author': 'UpFlip',
+                       'text': 'We probably convert maybe 1 out of 3 visits, which is 33%.',
+                       'tip': 'We probably convert maybe 1 out of 3 visits, which is 33%.',
+                       'timestamp': 1013,
+                       'timestamp_seconds': 1013,
+                       'timestamp_label': '[00:16:53]',
+                       'url': 'https://www.youtube.com/watch?v=j3l2-xKJKb8&t=1013s',
+                       'markdown': '[00:16:53](https://www.youtube.com/watch?v=j3l2-xKJKb8&t=1013s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IgZO8_dFaeU',
+                       'title': 'Starting a Commercial Cleaning Business? Understand This First',
+                       'channel': 'Clean Ops Guide',
+                       'author': 'Clean Ops Guide',
+                       'text': 'A recurring contract is only valuable if you price it correctly and can '
+                               'deliver the service profitably.',
+                       'tip': 'A recurring contract is only valuable if you price it correctly and can '
+                              'deliver the service profitably.',
+                       'timestamp': 172,
+                       'timestamp_seconds': 172,
+                       'timestamp_label': '[00:02:52]',
+                       'url': 'https://www.youtube.com/watch?v=IgZO8_dFaeU&t=172s',
+                       'markdown': '[00:02:52](https://www.youtube.com/watch?v=IgZO8_dFaeU&t=172s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'}]}

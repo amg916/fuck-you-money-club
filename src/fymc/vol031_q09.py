@@ -1,737 +1,856 @@
 from __future__ import annotations
 
-CHAPTER_9 = {
-    "id": "Q9",
-    "chapter_id": "Q9",
-    "chapter_number": 9,
-    "question_number": 9,
-    "slug": "contracts-statutory-guardrails-licensing-outreach-scripts",
-    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern uber & commercial fleet arbitrage?",
-    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
-    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
-    "subtitle": "Driver Leases, TCP and TLC Authority, Period 1-2-3 Insurance, Investor Waterfalls, Safe Telematics, and Permission-Based Outreach",
-    "layout_template": "legal_compliance_notes",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #31, Uber & Commercial Fleet Arbitrage, ranks #15 of 36 with an "
-        "89/100 Money-to-Manpower Score. This chapter maps 10 operator plays to "
-        "executable contracts, transportation authority, insurance evidence, and "
-        "truthful acquisition scripts. The edge is collecting enforceable fleet "
-        "fees without accidentally becoming an uninsured carrier, unlawful debt "
-        "collector, or seller of platform influence. Formula v2.0 produces annual "
-        "owner profits of $25,200 Conservative, $144,900 Base, and $336,000 Scaled. "
-        "Gross billings of $180,000, $690,000, and $1,200,000 translate into retained "
-        "revenue of $99,000, $379,500, and $660,000 at the specified 55% share. "
-        "Build around permitted vehicles, documented coverage transitions, transparent "
-        "driver charges, and investor settlements that reconcile to actual collections."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$180,000",
-            "context": "Annual gross fleet billings; $99,000 retained revenue at 55%.",
-            "note": "14% gross-basis net margin; 25.45% retained net margin; $25,200 annual owner net profit; 1 FT + 3 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$690,000",
-            "context": "Annual gross fleet billings; $379,500 retained revenue at 55%.",
-            "note": "21.0% gross-basis net margin; 38.18% retained net margin; $144,900 annual owner net profit; 1 FT + 3 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual gross fleet billings; $660,000 retained revenue at 55%.",
-            "note": "28% gross-basis net margin; 50.91% retained net margin; $336,000 annual owner net profit; 2 FT + 4 C.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Define the actual business before selecting licenses or quoting fees",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start every fleet file with a role diagram naming the titled owner, "
-                    "lessor, transportation provider, dispatcher, platform account holder, "
-                    "driver, insurer, and passenger contracting party. A vehicle manager "
-                    "does not acquire passenger operating authority merely because an "
-                    "investor owns the SUV. California Public Utilities Code section 5371 "
-                    "generally requires charter-party carrier authority for covered carrier "
-                    "operations; the TNC framework in sections 5430 onward addresses a "
-                    "different operating model. New York City separately licenses relevant "
-                    "drivers, vehicles, and bases through TLC. An airport can require its "
-                    "own commercial access credentials even when state or city authority "
-                    "is active. Before advertising Black SUV service, establish who accepts "
-                    "the reservation, sets the transportation price, dispatches the trip, "
-                    "and bears carriage obligations. Record each answer against the actual "
-                    "contract and permit rather than the marketing label. A commercial "
-                    "fleet account, eligible vehicle, and successful platform upload do not "
-                    "replace these determinations. For interstate work, separately evaluate "
-                    "FMCSA passenger-carrier authority and insurance rules, including "
-                    "applicable exemptions and vehicle thresholds. Stop at the authorized "
-                    "service boundary: a leasing business can continue leasing while an "
-                    "unlicensed transportation offering remains unavailable. Assign one "
-                    "employee responsibility for renewing every credential."
-                ),
-                (
-                    "Use ten chapter-level operating mappings: weekly driver leasing, Black "
-                    "SUV shift dispatch, investor vehicle co-hosting, approved replacement "
-                    "rentals, scheduled corporate transfers, airport-authorized pickup "
-                    "coordination, maintenance scheduling administration, toll reconciliation "
-                    "administration, driver qualification administration, and "
-                    "platform_privilege_tier_account_arbitrage. The last identifier comes "
-                    "from the supplied mapping; the other labels organize this chapter's "
-                    "fleet workflows rather than imply additional supplied catalog IDs. "
-                    "Keep the authority-account play narrowly focused on truthful local "
-                    "information services. Google Local Guides levels, Wikipedia editor "
-                    "permissions, Product Hunt activity, and review-site verification confer "
-                    "neither transportation authority nor a transferable commercial asset. "
-                    "Do not sell accounts, promise ranking influence, manufacture reviews, "
-                    "or conceal paid advocacy. Wikipedia paid contributors must follow "
-                    "applicable disclosure and conflict procedures; Google contributions "
-                    "must satisfy current conflict and content policies. Some proposed "
-                    "paid contributions are therefore unsuitable even when a factual "
-                    "statement is accurate. Charge for documented research or owner-authorized "
-                    "listing maintenance where permitted, not privileged placement. Keep "
-                    "Local Guide work inside its native metropolitan area and submit only "
-                    "factually verifiable, secondary-source-backed edits. When a platform "
-                    "forbids the contribution, deliver the evidence packet without posting. "
-                    "Review current platform terms before renewing any such service."
-                ),
-                (
-                    "Underwrite every workflow against the supplied Formula v2.0 rather "
-                    "than adding attractive side fees to the forecast. Conservative gross "
-                    "billings of $180,000 retain $99,000 after the specified 45% owner "
-                    "splits and pass-through allocation; $25,200 profit leaves $73,800 "
-                    "for remaining modeled expenses. Base gross billings of $690,000 "
-                    "retain $379,500; $144,900 profit leaves $234,600. Scaled gross "
-                    "billings of $1,200,000 retain $660,000; $336,000 profit leaves "
-                    "$324,000. These residual expenses include the model's full remaining "
-                    "cost burden, not merely the stated monthly operating budget. Gross-basis "
-                    "net margins remain 14%, 21.0%, and 28%; retained-basis margins round "
-                    "to 25.45%, 38.18%, and 50.91%. The table's unit examples explain "
-                    "individual transactions and are alternatives or components, not "
-                    "incremental forecast revenue. Passenger fares processed elsewhere, "
-                    "investor vehicle values, refundable deposits, and loan principal are "
-                    "not operator revenue. The scorecard uses a 55% retained presentation; "
-                    "ASC 606 principal-versus-agent conclusions still require a documented "
-                    "assessment of control for each promised service. Do not mechanically "
-                    "net every invoice merely because a management agreement uses the "
-                    "word agent. Reconcile collections, liabilities, retained fees, and "
-                    "expenses in separate ledger accounts before distributing cash."
-                ),
-            ],
-            "table": {
-                "caption": "Ten Fleet Workflow Mappings: Illustrative Units, Contract Boundaries, and Failure Fallbacks",
-                "headers": [
-                    "Mapped play and permitted operating scope",
-                    "Illustrative transaction math before remaining expenses",
-                    "Contract evidence required before collecting charges",
-                    "Failure fallback preserving the operating boundary",
-                ],
-                "rows": [
-                    [
-                        "Weekly driver leasing of eligible insured vehicles",
-                        "Four vehicles at $450 weekly produce $1,800 gross billings",
-                        "Signed lease identifies vehicle, weekly fee, authorized drivers, and coverage",
-                        "Suspend new placements when eligibility or coverage evidence expires",
-                    ],
-                    [
-                        "Black SUV shift dispatch through authorized transportation operations",
-                        "Twenty completed shifts at $40 produce $800 dispatch billings",
-                        "Dispatch agreement identifies licensed carrier and completed shift trigger",
-                        "Refer transportation to an authorized carrier without representing yourself as carrier",
-                    ],
-                    [
-                        "Investor vehicle co-hosting under documented owner management authority",
-                        "$4,000 collected billings retain $2,200 at the modeled 55% share",
-                        "Owner agreement specifies collections waterfall, repair authority, and settlement timing",
-                        "Pause distributions during unresolved ledger discrepancies rather than advancing estimates",
-                    ],
-                    [
-                        "Approved replacement rentals during covered vehicle repair downtime",
-                        "Seven authorized rental days at $65 produce $455 gross billings",
-                        "Replacement agreement confirms platform eligibility and specific substitute vehicle coverage",
-                        "Credit unusable rental days when no eligible replacement exists",
-                    ],
-                    [
-                        "Scheduled corporate transfers fulfilled by the authorized carrier",
-                        "Ten reservations at $25 produce $250 disclosed coordination fees",
-                        "Customer terms identify carrier responsibility and separate coordination charges",
-                        "Return unearned coordination charges when the contracted service cannot proceed",
-                    ],
-                    [
-                        "Airport-authorized pickup coordination within current commercial access permissions",
-                        "Thirty pickups at $8 produce $240 disclosed coordination billings",
-                        "Airport access evidence accompanies carrier dispatch records and pickup instructions",
-                        "Exclude airport pickups until the operating carrier has valid access",
-                    ],
-                    [
-                        "Maintenance scheduling administration for investor-owned commercial fleet vehicles",
-                        "Twelve completed appointments at $20 produce $240 administration billings",
-                        "Owner authorization separates actual garage invoices from administration charges",
-                        "Route urgent safety defects directly to repair and suspend dispatch",
-                    ],
-                    [
-                        "Toll reconciliation administration using identifiable vehicle trip records",
-                        "Forty reconciled events at $2 produce $80 permitted administration fees",
-                        "Lease discloses lawful fee method and supplies underlying toll evidence",
-                        "Pass through supported toll amounts without unauthorized administration markups",
-                    ],
-                    [
-                        "Driver qualification administration for authorized fleet screening decisions",
-                        "Six completed files at $30 produce $180 administration billings",
-                        "Screening terms identify permissible purpose, payer, notices, and decision responsibility",
-                        "Bill the fleet client instead when charging drivers is restricted",
-                    ],
-                    [
-                        "platform_privilege_tier_account_arbitrage restricted to truthful permitted local research services",
-                        "Three evidence research packages at $200 produce $600 service billings",
-                        "Scope excludes account sales, fabricated reviews, and promised ranking outcomes",
-                        "Deliver secondary-source evidence only when platform policies prohibit paid posting",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy evidence before buying more vehicles",
-                "body": "Experienced fleet operators price permissions, insurance transitions, and settlement exceptions before expanding weekly commitments.",
-                "items": [
-                    "Have the broker describe coverage for a named VIN across app-off, waiting, accepted-trip, passenger, and maintenance movements; retain the policy forms supporting the answer.",
-                    "Maintain an airport-specific dispatch profile that blocks unsupported pickup zones instead of relying on a driver's memory.",
-                    "Give investors a settlement sample showing actual collected rent, reserves, pass-through costs, and the retained share before accepting their vehicles.",
-                    "Sell local-information research by completed evidence packet, never by account tier, promised search position, or guaranteed publication.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Build a jurisdiction and coverage file for every vehicle and driver",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build an insurance state machine instead of accepting a certificate "
-                    "as complete coverage evidence. Document app-off possession, Period 1 "
-                    "availability, Period 2 accepted-trip travel, Period 3 passenger carriage, "
-                    "maintenance movements, and storage. California Public Utilities Code "
-                    "section 5433 establishes TNC coverage requirements by operating period; "
-                    "commercial livery policies and platform arrangements must match the "
-                    "actual business rather than a personal-use assumption. Ask the broker "
-                    "to identify covered autos, permitted drivers, rental or lease exclusions, "
-                    "physical-damage conditions, deductibles, territorial limits, and applicable "
-                    "endorsements. A certificate summarizes information but does not amend "
-                    "the policy or resolve an exclusion. Confirm how platform-provided "
-                    "coverage interacts with the fleet policy and whether physical damage "
-                    "depends on underlying coverage. If a $2,500 collision deductible hits "
-                    "a vehicle generating $550 weekly retained contribution, approximately "
-                    "4.55 weeks of that contribution disappear before downtime expenses. "
-                    "A contract allocation cannot make an insolvent driver fund that "
-                    "deductible. Maintain an actual reserve and a documented claim protocol. "
-                    "Require drivers to report platform deactivation and policy changes "
-                    "immediately; a vehicle that remains mechanically available may no "
-                    "longer be economically or legally dispatchable. Recheck evidence "
-                    "whenever a vehicle changes operating mode."
-                ),
-                (
-                    "Treat California, New York City, airport property, and interstate "
-                    "routes as separate rule layers. California Civil Code section 1936 "
-                    "governs covered rental transactions, including specified disclosures "
-                    "and restrictions; applicability depends on the vehicle and agreement. "
-                    "A weekly fleet document labeled commercial lease does not settle "
-                    "that question. New York City Administrative Code section 19-504 "
-                    "and TLC rules require the appropriate licenses for covered services, "
-                    "with distinct driver, vehicle, and base responsibilities. Airport "
-                    "access must be checked with the airport operator rather than inferred "
-                    "from a TCP certificate or TLC license. For trips crossing state "
-                    "lines, evaluate federal passenger-carrier requirements under 49 CFR "
-                    "Parts 365 and 387 where applicable, including exemptions. Separately "
-                    "review driver classification: a lease and independent-contractor "
-                    "heading do not determine employment status. California Labor Code "
-                    "section 2775 and applicable exceptions require a relationship-specific "
-                    "analysis; app-based driver provisions do not automatically resolve "
-                    "a separate fleet employer's obligations. If dispatch controls hours, "
-                    "routes, uniforms, and discipline, assess wage, reimbursement, and "
-                    "workers' compensation exposure before quoting margin. Maintain "
-                    "jurisdiction-specific addenda rather than exporting one state's form "
-                    "into every market. Record the responsible reviewer and effective "
-                    "date for each operating determination."
-                ),
-                (
-                    "Screen drivers and deploy telematics through separate, explicit "
-                    "processes. A motor vehicle report obtained from a consumer reporting "
-                    "agency requires a valid FCRA permissible purpose; employment screening "
-                    "has additional disclosure, authorization, and adverse-action procedures. "
-                    "Determine the proper route for contractor or rental screening rather "
-                    "than assuming employment paperwork fits every relationship. Direct "
-                    "DMV information also implicates the Driver's Privacy Protection Act, "
-                    "18 U.S.C. sections 2721 through 2725, and state access requirements. "
-                    "Record purpose, authorization where required, access permissions, "
-                    "retention, and deletion. GPS history can expose home addresses, "
-                    "medical visits, and passenger movements; disclose collection, restrict "
-                    "staff access, and use trip-level data only for defined operational "
-                    "needs. Evaluate California privacy duties when statutory coverage "
-                    "thresholds or contractual obligations apply. Never make remote "
-                    "immobilization an automatic response to a failed payment. Before "
-                    "any starter-interrupt action, establish jurisdictional permissibility, "
-                    "contract authority, required notices, verified stationary status, "
-                    "an unoccupied vehicle, and a safe location. Do not disable an "
-                    "operating engine or use recovery tactics that create confrontation. "
-                    "If location or safety is uncertain, preserve access logs and use "
-                    "lawful recovery procedures instead. Safety overrides the collection "
-                    "queue and remains a named manager's responsibility."
-                ),
-            ],
-            "table": {
-                "caption": "Jurisdiction, Insurance, Screening, and Telematics Evidence Matrix",
-                "headers": [
-                    "Operating exposure requiring a separate determination",
-                    "Primary authority or governing evidence source",
-                    "Evidence retained in the operating file",
-                    "Required response when supporting evidence fails",
-                ],
-                "rows": [
-                    [
-                        "California charter-party transportation sold directly to passengers",
-                        "California Public Utilities Code section 5371 and applicable CPUC requirements",
-                        "Current carrier authority, operating scope, insurance evidence, and carrier identity",
-                        "Remove direct transportation offers until required authority becomes effective",
-                    ],
-                    [
-                        "California TNC activity across distinct application operating periods",
-                        "California Public Utilities Code section 5433 and applicable policy endorsements",
-                        "Coverage chart links every operating period to actual policy provisions",
-                        "Suspend affected vehicle activity instead of assuming personal coverage applies",
-                    ],
-                    [
-                        "New York City for-hire driver vehicle and base operations",
-                        "New York City Administrative Code section 19-504 and applicable TLC rules",
-                        "Current driver credentials, licensed vehicle details, and required base affiliation",
-                        "Stop affected dispatches until each required credential is restored",
-                    ],
-                    [
-                        "Airport pickups involving separate commercial property access requirements",
-                        "Applicable airport operating rules and issued commercial access permissions",
-                        "Permit identifier, expiration, authorized pickup zones, and applicable trip fees",
-                        "Exclude unauthorized airport pickups from driver assignments and customer quotes",
-                    ],
-                    [
-                        "Covered rental charges including toll and administrative fee treatment",
-                        "California Civil Code section 1936 where the rental transaction qualifies",
-                        "Executed disclosures, toll statements, fee method, and transaction applicability review",
-                        "Reverse unsupported fees and correct the agreement before further charges",
-                    ],
-                    [
-                        "Driver reports used for eligibility or employment decisions",
-                        "15 U.S.C. sections 1681b and 1681m plus applicable DMV restrictions",
-                        "Permissible purpose, required authorization, decision basis, and applicable notice records",
-                        "Pause the decision workflow until required rights and notices are satisfied",
-                    ],
-                    [
-                        "Vehicle location collection and remotely controlled starter interruption",
-                        "Applicable state privacy, rental, recovery, and equipment safety requirements",
-                        "Device disclosure, access logs, safety protocol, and jurisdiction-specific recovery instructions",
-                        "Keep vehicle operable when occupancy, movement, location, or authority is uncertain",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before releasing keys or accepting a trip",
-                "body": "A named manager records these checks against the actual driver, VIN, service type, and operating jurisdiction.",
-                "items": [
-                    "Verify current driver, vehicle, carrier or base, platform, and airport permissions applicable to the proposed service.",
-                    "Match the driver and VIN to coverage evidence for every expected operating state, including off-app possession and maintenance travel.",
-                    "Confirm signed pricing disclosures, deductible allocation, deposit handling, toll treatment, and the investor's authority to place the vehicle.",
-                    "Test emergency contact, crash reporting, telematics access restrictions, and the prohibition on unsafe automated immobilization.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Draft enforceable fee triggers and a settlement waterfall that survives disputes",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Separate the driver lease, investor management agreement, carrier "
-                    "dispatch agreement, and customer coordination terms. Each should "
-                    "identify parties, vehicles or services, permitted use, geography, "
-                    "term, renewal, termination, and the precise event earning a fee. "
-                    "A weekly lease might accrue after documented vehicle delivery; "
-                    "a dispatch fee might accrue only after a completed qualifying "
-                    "shift. Do not use those triggers interchangeably. Specify whether "
-                    "payment processing is authorized through platform-supported fleet "
-                    "tools, separate invoicing, or another approved mechanism. Describe "
-                    "a top-of-waterfall priority as contractual and dependent on available "
-                    "collections and platform functionality, not an invincible claim "
-                    "against every dollar. Driver deductions remain subject to applicable "
-                    "wage, rental, and payment rules. For a $4,000 collected-billings "
-                    "illustration, the scorecard's 45% allocation is $1,800 and retained "
-                    "revenue is $2,200 before remaining expenses. Actual owner distributions "
-                    "and pass-through payments need separate subledger entries within "
-                    "that allocation. Refundable security deposits remain liabilities "
-                    "until lawfully applied or returned. Include delivery photographs, "
-                    "odometer readings, existing damage, keys, charging or fuel level, "
-                    "and return inspection evidence. Attach the pricing schedule actually "
-                    "accepted, not a web page that can change silently after signature. "
-                    "Preserve the signed version with its acceptance timestamp."
-                ),
-                (
-                    "Write risk clauses around controllable events. Allocate collision "
-                    "deductibles, towing, impoundment, cleaning, lost keys, maintenance, "
-                    "and downtime with clear causation, evidence, lawful limits, and "
-                    "dispute rights. Distinguish normal wear from negligent damage and "
-                    "scheduled maintenance from unauthorized commercial use. A seven-day "
-                    "repair at $450 weekly rent creates $450 of interrupted gross "
-                    "billings; charging a driver that amount requires an enforceable "
-                    "basis, not merely a spreadsheet loss. Define any service credit "
-                    "or replacement obligation and its limits. The Graves Amendment, "
-                    "49 U.S.C. section 30106, can restrict certain owner-vicarious-liability "
-                    "claims for qualifying rental or leasing businesses, but it does "
-                    "not erase negligent maintenance or other preserved exposure. "
-                    "Insurance, inspection records, and competent driver placement "
-                    "remain essential. Negotiate liability caps with stated exclusions "
-                    "and applicable statutory limits rather than declaring every claim "
-                    "capped at one week's rent. Indemnities should follow responsibility "
-                    "and available insurance without shifting nontransferable duties. "
-                    "Do not market an incidental damage waiver as insurance or sell "
-                    "coverage without determining licensing requirements. Where a lessor's "
-                    "vehicle financing prohibits subleasing or commercial use, secure "
-                    "written permission before onboarding; investor ownership alone "
-                    "does not cure lender restrictions or policy exclusions."
-                ),
-                (
-                    "Limit anti-circumvention provisions to identifiable introductions, "
-                    "defined transactions, a reasonable duration, and lawful remedies. "
-                    "A provision protecting a documented corporate account is different "
-                    "from a blanket restriction on a driver's livelihood. Examine state "
-                    "restraint-of-trade rules before using noncompetition language, "
-                    "especially California Business and Professions Code section 16600. "
-                    "Define dispute escalation, governing law, forum, notice addresses, "
-                    "and any arbitration process with attention to statutory rights "
-                    "and enforceability. A payment dispute should open an evidence "
-                    "workflow, not trigger immediate vehicle immobilization. Specify "
-                    "ownership and permitted use of booking records, photographs, "
-                    "maintenance histories, customer lists, and internally developed "
-                    "dispatch templates. Platform accounts remain subject to platform "
-                    "terms; contractual language cannot transfer privileges the platform "
-                    "does not permit transferring. Give investors access to vehicle-level "
-                    "settlements without exposing unrelated drivers or passengers. "
-                    "Set retention schedules that distinguish tax and claim records "
-                    "from raw location trails, with preservation for active disputes. "
-                    "Require vendor access removal when a contractor leaves. Finally, "
-                    "make contract changes prospective through a documented acceptance "
-                    "process where required. Surprise toll markups, retroactive insurance "
-                    "surcharges, and silent data-sharing changes create collection "
-                    "friction that overwhelms a small team's theoretical efficiency."
-                ),
-            ],
-            "table": {
-                "caption": "Fleet Contract Clause Checklist with Evidence and Collection Consequences",
-                "headers": [
-                    "Clause family and specific operating purpose",
-                    "Required drafting content before first service",
-                    "Evidence supporting the proposed contractual charge",
-                    "Dispute fallback protecting cash and service continuity",
-                ],
-                "rows": [
-                    [
-                        "Scope and authority for leasing versus passenger transportation",
-                        "Identify contracting parties, authorized services, territory, vehicles, and exclusions",
-                        "Executed agreement matches licenses, owner authority, and actual dispatch behavior",
-                        "Stop the unsupported service while preserving separately authorized lease operations",
-                    ],
-                    [
-                        "Fee trigger and waterfall for collected fleet receipts",
-                        "Define earned events, payment priority, refunds, reserves, and settlement timing",
-                        "Delivery records and completed shifts reconcile with actual received funds",
-                        "Hold disputed allocations separately instead of distributing estimated investor returns",
-                    ],
-                    [
-                        "Anti-circumvention protection for documented customer introductions only",
-                        "Identify protected introductions, covered transactions, reasonable duration, and lawful remedies",
-                        "Dated introduction records establish the relationship and specific covered transaction",
-                        "Use ordinary contract remedies without restricting unrelated lawful driver work",
-                    ],
-                    [
-                        "Liability cap and indemnity tied to controllable operational risks",
-                        "Specify negotiated caps, exclusions, insurance coordination, and preserved statutory duties",
-                        "Incident records connect conduct, claimed loss, and applicable insurance response",
-                        "Tender covered claims promptly and reserve disputed responsibility for review",
-                    ],
-                    [
-                        "Dispute resolution and orderly vehicle recovery procedures",
-                        "State notice methods, escalation deadlines, governing law, and enforceable forum",
-                        "Itemized invoices and correspondence establish the dispute and requested remedy",
-                        "Use lawful recovery procedures without unsafe disabling or confrontational collection",
-                    ],
-                    [
-                        "Intellectual property and operational data access boundaries",
-                        "Allocate template rights, customer record use, retention, and platform restrictions",
-                        "Access register identifies authorized users and vehicle-specific information sharing",
-                        "Export permitted records and revoke access without transferring restricted accounts",
-                    ],
-                    [
-                        "Deposits tolls damage and maintenance charge documentation",
-                        "Disclose applicable pricing, evidence standards, deposit return timing, and credits",
-                        "Dated inspections and original toll statements substantiate each proposed assessment",
-                        "Reverse unsupported charges while retaining records for legitimate remaining claims",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Classify the transaction",
-                    "action": "Identify the lessor, owner, carrier, dispatcher, driver, and customer.",
-                    "detail": "Select the jurisdiction-specific agreement only after matching the service to its permits, insurance, and rental-law treatment.",
-                },
-                {
-                    "step": 2,
-                    "title": "Attach current evidence",
-                    "action": "Assemble credentials, policy support, owner permission, and vehicle condition records.",
-                    "detail": "Record expiration dates and the exact accepted pricing schedule; prevent delivery when a required document is missing or expired.",
-                },
-                {
-                    "step": 3,
-                    "title": "Test one settlement",
-                    "action": "Walk every party through a collected-billings example and a disputed-charge example.",
-                    "detail": "Reconcile gross receipts, the modeled 45% allocation, 55% retained revenue, deposit liabilities, credits, and remaining operating expenses.",
-                },
-                {
-                    "step": 4,
-                    "title": "Release and monitor",
-                    "action": "Release keys only after documented checks, then monitor changes and exceptions.",
-                    "detail": "Assign ownership for renewals, platform deactivation, claims, disputed tolls, and access removal; preserve the evidence behind each financial adjustment.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Use truthful outreach scripts and discovery questions that expose deal-breaking facts",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build outreach around an identifiable sender, a specific operating "
-                    "proposal, and a truthful limitation. Commercial email, including "
-                    "business-to-business email, is subject to CAN-SPAM requirements "
-                    "under 15 U.S.C. section 7704: accurate routing information, "
-                    "nondeceptive subjects, required identification, a valid postal "
-                    "address, and a functioning opt-out honored within ten business "
-                    "days. The scripts below are spoken or email-body language; the "
-                    "sending system must append the actual sender identity, postal "
-                    "address, and unsubscribe mechanism where required. Do not "
-                    "invent an address or conceal the commercial purpose. Calls "
-                    "and texts require a separate analysis under 47 U.S.C. section "
-                    "227, FCC rules, applicable do-not-call requirements, and state "
-                    "restrictions. A publicly listed number is not blanket permission "
-                    "for automated marketing. Start with requested introductions "
-                    "and individually researched business contacts through appropriate "
-                    "channels; log source, channel, permission where required, "
-                    "suppression status, and the exact message sent. Do not claim "
-                    "Uber affiliation beyond an actual authorized relationship "
-                    "or imply airport access before it exists. A fleet solicitation "
-                    "should sell a defined service, not guaranteed weekly driver "
-                    "earnings, guaranteed investor distributions, or automatic "
-                    "platform acceptance. Suppress opt-outs across contractors "
-                    "and tools, not just one employee's inbox."
-                ),
-                (
-                    "Use discovery to uncover constraints before discussing yield. "
-                    "Ask an investor whether financing permits commercial use, "
-                    "who holds title, which drivers are insured, and who can "
-                    "authorize repairs. Ask a driver which platform and market "
-                    "they actually use, whether credentials are current, how "
-                    "vehicle possession will work off-app, and what happens "
-                    "after a collision. Ask a corporate buyer which party "
-                    "must act as carrier and whether accessibility, airport "
-                    "access, or procurement insurance requirements change the "
-                    "service. Keep screening questions relevant and apply "
-                    "eligibility criteria consistently. Do not ask prospects "
-                    "to email identity documents or complete driving histories "
-                    "through an unsecured general inbox. Move screening into "
-                    "an access-controlled workflow with appropriate notices. "
-                    "For qualification economics, six completed files at $30 "
-                    "yield $180 of administration billings before vendor "
-                    "costs; abandoned applications do not become completed "
-                    "files merely because staff opened them. For maintenance "
-                    "coordination, twelve completed appointments at $20 yield "
-                    "$240, but deferred safety work is not a margin strategy. "
-                    "For toll reconciliation, forty permitted $2 fees yield "
-                    "$80; disputed or prohibited charges are excluded. These "
-                    "small line items work only when event evidence, price "
-                    "disclosure, and collection rules are cheaper to operate "
-                    "than the fee itself."
-                ),
-                (
-                    "Keep local-authority outreach separate from driver acquisition "
-                    "and investor solicitation. The mapped "
-                    "platform_privilege_tier_account_arbitrage play becomes usable "
-                    "only when the deliverable is permitted research, transparent "
-                    "participation, or authorized listing administration. The FTC's "
-                    "16 CFR Part 465 prohibits specified fake-review and testimonial "
-                    "practices; 16 CFR Part 255 addresses endorsements and "
-                    "material connections. Never tie an incentive to a positive "
-                    "review, disguise staff as independent customers, or imply "
-                    "that an editor's account status guarantees publication. "
-                    "A $200 evidence package should contain dated sources, "
-                    "the exact proposed factual correction, the authorized "
-                    "submission route, and a record of disposition. Three "
-                    "packages produce $600 of service billings, not a claim "
-                    "to recurring platform influence. If secondary sources "
-                    "conflict, report the conflict instead of editing toward "
-                    "the client's preferred story. End every discovery call "
-                    "with a concrete next step and a clear stop condition: "
-                    "documents to inspect, responsible reviewer, proposed "
-                    "service scope, and a date for confirming feasibility. "
-                    "Track qualified opportunities separately from vehicles "
-                    "actually released and cash actually collected. A signed "
-                    "investor proposal with unresolved insurance is pipeline, "
-                    "not operating capacity; a promised driver start is "
-                    "not earned weekly lease revenue."
-                ),
-            ],
-            "table": {
-                "caption": "Verbatim Outreach and Discovery Language for Fleet Operators",
-                "headers": [
-                    "Audience and appropriate contact situation",
-                    "Verbatim opening message for the conversation",
-                    "Verbatim discovery question exposing material constraints",
-                    "Verbatim boundary or fallback when requirements fail",
-                ],
-                "rows": [
-                    [
-                        "Vehicle investor responding to a requested management introduction",
-                        "'We manage eligible commercial vehicles under written owner agreements. May we review title authority, insurance, and a sample settlement before discussing placement?'",
-                        "'Does your financing permit this use, and who can authorize repairs and fund the collision deductible?'",
-                        "'We will not place the vehicle until ownership permissions and applicable coverage are documented.'",
-                    ],
-                    [
-                        "Driver requesting information about weekly vehicle availability",
-                        "'We offer eligible vehicles under a written weekly lease with itemized charges. Would you like the current terms and eligibility requirements?'",
-                        "'Which market and service type will you use, and are your required driver credentials currently active?'",
-                        "'We cannot promise platform acceptance or earnings; we can explain the vehicle terms and verify the required documents.'",
-                    ],
-                    [
-                        "Licensed carrier discussing commercial Black SUV dispatch support",
-                        "'We provide defined dispatch administration for authorized operators. May we compare your permitted service area with our proposed shift workflow?'",
-                        "'Which entity accepts passenger bookings, holds the operating authority, and carries the applicable transportation coverage?'",
-                        "'We will limit our work to the documented administrative scope until carrier responsibilities are confirmed.'",
-                    ],
-                    [
-                        "Corporate transportation buyer seeking scheduled airport transfer coordination",
-                        "'We coordinate reservations with appropriately authorized transportation providers and disclose our coordination fee separately. May we review your routes and service requirements?'",
-                        "'Which airports, accessibility needs, insurance limits, and procurement requirements must the operating carrier satisfy?'",
-                        "'We will exclude any route or airport pickup that the proposed carrier is not authorized to perform.'",
-                    ],
-                    [
-                        "Driver disputing a toll or vehicle damage assessment",
-                        "'We received your dispute and will review the underlying records before treating the disputed amount as resolved.'",
-                        "'Which trip, timestamp, or inspection item do you believe is incorrect, and what supporting record can you provide securely?'",
-                        "'We will reverse unsupported charges and explain any remaining amount with the underlying evidence and applicable agreement provision.'",
-                    ],
-                    [
-                        "Local fleet business requesting factual listing research",
-                        "'We prepare source-backed local information corrections and use permitted submission channels. We do not sell accounts, reviews, rankings, or publication promises.'",
-                        "'Which factual statement is inaccurate, and which independent sources establish the correct information for this metropolitan area?'",
-                        "'If platform rules prohibit our participation, we will deliver the research packet without posting or using another person's account.'",
-                    ],
-                    [
-                        "Prospect declining further commercial contact or requesting removal",
-                        "'Understood. We will record your request and stop further outreach through the channels covered by your request.'",
-                        "'Would you like the request applied to this address only or to the other contact details you previously provided?'",
-                        "'Your request takes effect without answering another question; we will retain only the records needed to honor it.'",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The strongest fleet contract turns every collected dollar into an authorized service, an evidenced event, and a reconcilable settlement.",
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Create a role-and-authority map for every service, identifying the owner, lessor, carrier, dispatcher, driver, platform relationship, and airport permissions.",
-        "Obtain VIN-specific coverage support for app-off possession, Periods 1-2-3, maintenance travel, physical damage, deductibles, and permitted drivers.",
-        "Execute jurisdiction-specific driver and investor agreements covering fee triggers, deposits, tolls, repairs, liability, disputes, data, and lawful recovery.",
-        "Reconcile $180,000, $690,000, and $1,200,000 gross cases to 55% retained revenue and the exact $25,200, $144,900, and $336,000 owner profits.",
-        "Implement documented screening, restricted telematics access, required notices, and a safety-controlled recovery process without automatic payment-triggered immobilization.",
-        "Deploy the outreach scripts with actual sender details, channel-specific permission controls, suppression handling, and a research-only fallback for prohibited platform contributions.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "California Public Utilities Code section 5371 — Charter-party carrier authority",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=5371.&lawCode=PUC",
-            "relevance": "Determine whether the actual passenger transportation operation requires CPUC authority rather than relying on a vehicle lease or platform account.",
-        },
-        {
-            "title": "California Public Utilities Code section 5433 — TNC insurance requirements",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=5433.&lawCode=PUC",
-            "relevance": "Map applicable TNC insurance obligations to the relevant operating periods and verify the policies supporting each transition.",
-        },
-        {
-            "title": "California Civil Code section 1936 — Covered vehicle rental agreements",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1936.&lawCode=CIV",
-            "relevance": "Assess applicability and implement required rental disclosures, damage treatment, electronic surveillance restrictions, and applicable toll-related provisions.",
-        },
-        {
-            "title": "California Labor Code section 2775 — Worker classification framework",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2775.&lawCode=LAB",
-            "relevance": "Evaluate the actual fleet work relationship and applicable exceptions instead of treating a contractor label as dispositive.",
-        },
-        {
-            "title": "California Business and Professions Code section 16600 — Restraints on lawful work",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=16600.&lawCode=BPC",
-            "relevance": "Review anti-circumvention and restrictive terms for enforceability without using broad prohibitions on lawful driver work.",
-        },
-        {
-            "title": "49 U.S.C. section 30106 — Rented or leased motor vehicle liability",
-            "url": "https://www.law.cornell.edu/uscode/text/49/30106",
-            "relevance": "Distinguish qualifying limits on owner-vicarious liability from preserved negligence, criminal wrongdoing, and financial responsibility requirements.",
-        },
-        {
-            "title": "49 CFR Part 365 — Rules governing operating authority applications",
-            "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-365",
-            "relevance": "Evaluate applicable federal operating authority requirements before adding interstate passenger transportation.",
-        },
-        {
-            "title": "49 CFR Part 387 — Minimum levels of financial responsibility",
-            "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387",
-            "relevance": "Determine applicable passenger-carrier financial responsibility requirements, including the governing scope and exceptions.",
-        },
-        {
-            "title": "15 U.S.C. section 1681b — Permissible purposes of consumer reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681b",
-            "relevance": "Establish a valid report purpose and apply employment-specific disclosure, authorization, and pre-adverse-action procedures when relevant.",
-        },
-        {
-            "title": "15 U.S.C. section 1681m — Duties of users of consumer reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681m",
-            "relevance": "Provide applicable adverse-action notices when report information contributes to an unfavorable eligibility decision.",
-        },
-        {
-            "title": "18 U.S.C. section 2721 — Driver motor vehicle record privacy",
-            "url": "https://www.law.cornell.edu/uscode/text/18/2721",
-            "relevance": "Identify a permitted basis for accessing and using protected DMV information and restrict downstream disclosure.",
-        },
-        {
-            "title": "California Civil Code section 1798.100 — Personal information collection duties",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.100.&lawCode=CIV",
-            "relevance": "Apply relevant notice, purpose, retention, and collection requirements when the business is subject to the California privacy framework.",
-        },
-        {
-            "title": "15 U.S.C. section 7704 — Commercial electronic mail requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Use accurate commercial email identification, a valid postal address, a functioning opt-out, and timely suppression.",
-        },
-        {
-            "title": "47 U.S.C. section 227 — Telephone solicitation restrictions",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Evaluate channel, technology, recipient, consent, and do-not-call restrictions before initiating marketing calls or texts.",
-        },
-        {
-            "title": "16 CFR Part 465 — Consumer reviews and testimonials rule",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-465",
-            "relevance": "Exclude fabricated reviews, specified undisclosed insider practices, sentiment-conditioned review incentives, and other prohibited review activities.",
-        },
-        {
-            "title": "16 CFR Part 255 — Guides concerning endorsements and testimonials",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255",
-            "relevance": "Identify material connections and avoid presenting compensated or affiliated advocacy as independent customer opinion.",
-        },
-    ],
-}
+CHAPTER_9 = {'id': 'Q9',
+ 'chapter_id': 'Q9',
+ 'chapter_number': 9,
+ 'question_number': 9,
+ 'slug': 'vol031-q09-insuring-the-fleet-rideshare-commercial-rental-coverage',
+ 'question_prompt': 'How do I properly insure rideshare, black car, and rental fleet vehicles and limit my '
+                    'liability?',
+ 'kicker': 'Q9 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Insuring the Fleet: Rideshare, Commercial, and Rental Coverage and Liability',
+ 'subtitle': 'Rideshare endorsement vs commercial insurance, comparing quotes, Uber Black commercial '
+             'policy costs, Period X and HyreCar coverage, LLC side-hustle commercial auto, rental fleet '
+             'and Turo/private commercial policies, supplemental liability gaps, how many vehicles make a '
+             'fleet, insurance tax splits, and Graves Amendment liability cases',
+ 'layout_template': 'tool_resource_directory',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners agree the personal auto policy that gets a driver or host onboarded '
+                      'collapses once the car earns money. Rideshare drivers face a Period 1 gap with thin '
+                      'platform limits and no collision, while Turo and HyreCar hosts lose coverage the '
+                      'moment the rental ends. The fix ladder is concrete: rideshare endorsements at $15 '
+                      'to $40 a month, all-in rideshare insurance at $50 to $200 a month, commercial at '
+                      '$2,500 to $5,500 a year for a rideshare fleet, and roughly $8,161 a year for an '
+                      'Uber Black sedan. Rental operators split between Period X gap cover, Lula fleet '
+                      'policies near $130 per car monthly, and cheap commercial liability paired with '
+                      'renter-paid damage waivers at $15 to $30 a day. Speakers disagree on whether '
+                      'full-coverage commercial is worth it, given reports of carriers dropping small '
+                      'fleets after a single claim.',
+ 'key_metrics': [{'label': 'Rideshare endorsement monthly cost',
+                  'metric': 'Rideshare endorsement monthly cost',
+                  'value': '$15 to $40 per month',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Add-on to an existing personal policy that extends coverage into Period 1; '
+                             'one example driver paid an extra $340 a year on a $1,480 base premium.',
+                  'source': "Freelancer's Wealth Blueprint ([Hxl9pLAo8c0 @ 00:02:17])"},
+                 {'label': 'Uber Black sedan commercial premium',
+                  'metric': 'Uber Black sedan commercial premium',
+                  'value': '$8,161 per year cash price, $2,155 down',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Lancer Insurance quote through a referred agent; the financed balance '
+                             'carried a 23.8 percent APR and $611 in finance charges.',
+                  'source': 'Khushnud Numonov ([IqvMzwtwzrI @ 00:05:26])'},
+                 {'label': 'Lula commercial fleet price per car',
+                  'metric': 'Lula commercial fleet price per car',
+                  'value': 'About $130 per car per month at two cars; under $100 at six to seven cars',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Commercial fleet policy for private rentals and business errands, with a '
+                             '$1,000 collision and $3,000 comprehensive deductible.',
+                  'source': 'Mike_Thebusinessman ([XGJGK0LyMno @ 00:13:30])'},
+                 {'label': 'Platform contingent physical damage deductible',
+                  'metric': 'Platform contingent physical damage deductible',
+                  'value': '$2,500',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Uber and Lyft contingent damage cover for the driver's own car in Periods 2 "
+                             'and 3 applies only if the driver carries comprehensive and collision.',
+                  'source': 'Fin Saint ([kyXtImFfyxA @ 00:01:38])'}],
+ 'sections': [{'section_number': 1,
+               'heading': 'The Practitioner Consensus',
+               'paragraphs': ['Every rideshare voice lands on the same opening fact: the personal auto '
+                              'policy that gets you onboarded is the wrong tool the moment the app goes '
+                              'live. Harry of The Rideshare Guy notes that Uber and Lyft only require a '
+                              'regular personal policy to sign up, but platform coverage is not '
+                              'continuous, and Period 1 (app on, no request accepted) runs at much lower '
+                              'limits with no collision coverage while the personal carrier refuses to pay '
+                              'because you are technically working [F6U-c7e7avY @ 00:00:54]. Fin Saint '
+                              'frames the same trap from the quote side: personal policies often exclude '
+                              'paid rideshare activity, and platform liability in the waiting window '
+                              'protects other people but does not automatically pay to repair your own car '
+                              "[kyXtImFfyxA @ 00:00:40]. Freelancer's Wealth Blueprint points to the exact "
+                              'clause that kills claims, a livery or ride-for-hire exclusion that can deny '
+                              'an app-on crash outright, discovered at the worst possible moment '
+                              '[Hxl9pLAo8c0 @ 00:01:07]. The Finance Blueprint puts a number on the thin '
+                              'layer, saying platform Period 1 bodily injury coverage can sit around '
+                              '$50,000, which leaves a massive financial shortfall if the personal carrier '
+                              'walks away after a serious crash [_J5NloENKR8 @ 00:02:52]. The baseline '
+                              'prerequisite every one of them teaches is identical: map Period 1, Period '
+                              '2, and Period 3 against your own policy before driving a single paid shift, '
+                              'and buy whatever fills the waiting window rather than trusting the lowest '
+                              'monthly premium.',
+                              'The Turo and HyreCar side reports the mirror image of the Period 1 gap: the '
+                              'platform covers the trip, and nobody covers the car once it is back in the '
+                              "owner's hands. Conrad Layn, who says they have been insurance licensed for "
+                              'over nine years, warns that HyreCar coverage typically applies only while '
+                              'the vehicle is rented, so an oil change, gas run, detail, or curbside hit '
+                              'can be denied by the personal carrier because the car is now seen as a '
+                              'money-making commercial asset [ePOpmhuk-EQ @ 00:00:12]. In a follow-up, '
+                              'Conrad Layn repeats that Turo protection ends with the rental, and that '
+                              'insurers who learn the car is rented out may decline coverage even on a '
+                              'date night or while it sits parked [9A9ySyt-LZQ @ 00:00:40]. '
+                              'Mike_Thebusinessman confirms the platform layer itself is solid while you '
+                              'stay on Turo, Getaround, or HyreCar, since Turo partners with Liberty '
+                              'Mutual to underwrite host coverage [XGJGK0LyMno @ 00:01:04]. The speakers '
+                              'also agree lying is the fastest way to lose everything: Conrad Layn calls '
+                              'it material misrepresentation on a recorded line, and The Finance Blueprint '
+                              'calls insurance a contract of utmost good faith that hands the carrier a '
+                              'get-out-of-jail-free card if you hide Uber or LLC use [_J5NloENKR8 @ '
+                              '00:09:36].',
+                              'For black car, SUV, and fleet operators, the consensus flips from '
+                              'endorsement to full commercial, and every speaker says the price only comes '
+                              'down by shopping hard. Khushnud Numonov says Uber Black and the TCP permit '
+                              'require commercial coverage of at least $750,000, with annual ballparks '
+                              'near $8,000 to $8,300 for a sedan and roughly $9,500 for an SUV '
+                              '[IqvMzwtwzrI @ 00:00:33]. Rideshare Professor warns that Los Angeles has '
+                              'shut Black and SUV entry and Orange County has closed too, so confirm with '
+                              'the local office before buying the big vehicle, then pull multiple quotes '
+                              'because the pricing range across agents is mind-blowing [Y9-zVxm18W0 @ '
+                              '00:00:19]. Rideshare Professor ended up with a small independent agent in '
+                              'New York covering a California fleet. Insurance Brokers of Arizona says any '
+                              'owner with more than one vehicle technically has a fleet, that fleet '
+                              'coverage is typically cheaper per vehicle, and that some carriers demand 10 '
+                              'vehicles while others accept two or three [03bV3jW-Yqc @ 00:00:40]. Their '
+                              'play is a specialized independent fleet broker plus a maintenance and '
+                              'driver program, including annual MVR checks, to unlock discounts. The '
+                              'Rideshare Guy adds that commercial buyers generally need a broker pulling '
+                              'quotes on their behalf, and that New York City requires commercial coverage '
+                              'outright [F6U-c7e7avY @ 00:05:58].'],
+               'table': {'caption': 'Where the practitioners agree on coverage prerequisites before the '
+                                    'car earns a dollar',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Personal policy fails once the app turns on',
+                                   'Livery or ride-for-hire exclusion can deny an app-on crash outright',
+                                   'Add a rideshare endorsement before the first logged-in shift',
+                                   "Freelancer's Wealth Blueprint ([Hxl9pLAo8c0 @ 00:01:07])"],
+                                  ['Period 1 waiting time is the true gap',
+                                   'Platforms cover at much lower limits with no collision coverage at all',
+                                   'Buy coverage that specifically fills the app-on waiting window',
+                                   'The Rideshare Guy ([F6U-c7e7avY @ 00:00:54])'],
+                                  ['Platform damage coverage is only contingent',
+                                   'Own-car damage cover needs your comprehensive and collision plus a '
+                                   '$2,500 deductible',
+                                   'Keep comprehensive and collision active on your own policy at all '
+                                   'times',
+                                   'Fin Saint ([kyXtImFfyxA @ 00:01:38])'],
+                                  ['Rental platform coverage stops at car return',
+                                   'HyreCar and Turo cover the trip but not owner-possession time '
+                                   'afterward',
+                                   'Separately cover gas runs, washes, maintenance trips, and renter '
+                                   'handoffs',
+                                   'Conrad Layn ([ePOpmhuk-EQ @ 00:08:26])'],
+                                  ['Never hide business use from the carrier',
+                                   'Omitting Uber or LLC use gives the insurer a legal reason to deny',
+                                   'Disclose every platform and every entity on every single application',
+                                   'The Finance Blueprint ([_J5NloENKR8 @ 00:09:36])'],
+                                  ['Black and SUV tiers require commercial coverage',
+                                   'Uber Black and the TCP permit need commercial coverage of at least '
+                                   '$750,000',
+                                   'Budget the commercial premium before committing to the Black vehicle '
+                                   'purchase',
+                                   'Khushnud Numonov ([IqvMzwtwzrI @ 00:00:15])'],
+                                  ['Shop small independent brokers, even out of state',
+                                   'Quote ranges vary wildly and a New York agent covered a California '
+                                   'fleet',
+                                   'Spend half a day collecting multiple independent broker quotes',
+                                   'Rideshare Professor ([Y9-zVxm18W0 @ 00:01:52])']]}},
+              {'section_number': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The rideshare pricing ladder has three rungs, and the speakers quote each '
+                              "one. Freelancer's Wealth Blueprint puts a rideshare endorsement at roughly "
+                              '$15 to $40 a month, calls full commercial auto several thousand dollars a '
+                              'year and overkill for part-timers, and walks through one driver whose '
+                              'endorsement added exactly $340 a year to a $1,480 base premium [Hxl9pLAo8c0 '
+                              '@ 00:02:17]. The Rideshare Guy quotes $50 to $200 a month all-in for '
+                              'rideshare insurance, and $3,000 to $5,000 a year for commercial, which only '
+                              'pencils for full-timers or drivers running lots of private rides '
+                              '[F6U-c7e7avY @ 00:01:37]. Rideshare Professor saw California commercial '
+                              'packages from $2,500 to $4,500, stretching to $5,000 or even $5,500, with '
+                              'each added fleet vehicle raising the premium only slightly [Y9-zVxm18W0 @ '
+                              '00:01:15]. Khushnud Numonov shows the Uber Black math: biBERK quoted $2,878 '
+                              'a month, while a Lancer Insurance policy came in at $8,161 cash with $2,155 '
+                              'down, a $150 agent fee, and the $6,006 balance financed at 23.8 percent APR '
+                              'for $611 in finance charges and $735 monthly for nine months. Paying '
+                              'upfront on a 0 percent APR card cost a $340 fee but returned $170 in 2 '
+                              'percent cash back, netting about $441 saved and roughly $694 a month '
+                              'effective [IqvMzwtwzrI @ 00:08:41].',
+                              'On the rental side, the mechanics revolve around three products: '
+                              'possession-gap cover, a commercial fleet policy, and renter-paid damage '
+                              'waivers. Conrad Layn lays out Period X as an all-50-state product with no '
+                              'minimum car count and no dealer license, mandatory GPS tracking with a kill '
+                              'switch, same-day setup, and limits of $50,000 bodily injury per person, '
+                              '$100,000 per accident, $30,000 property damage, and collision plus '
+                              'specified perils up to a $90,000 vehicle value, paid only for time the car '
+                              "sits in the owner's possession [ePOpmhuk-EQ @ 00:09:06]. "
+                              'Mike_Thebusinessman runs Lula instead: a commercial fleet policy written '
+                              'through United that covers private rentals and business errands like '
+                              'deliveries and car washes, for cars under $75,000 and under 120,000 miles, '
+                              'with a $1,000 collision and $3,000 comprehensive deductible, starting near '
+                              '$130 a month per car at two cars and dropping under $100 at six or seven '
+                              '[XGJGK0LyMno @ 00:13:30]. Alex Auto quotes commercial fleet policies at $80 '
+                              'liability-only to about $150 full coverage, Romley at $60 to $120 or $130, '
+                              'then shifts damage risk to renters through Bonzah, Rental Cover, or Allianz '
+                              'waivers at $15 to $30 per day [k3tFtA9SWv4 @ 00:05:06]. DGOTEXOTICS says '
+                              'Rental Cover requires 2016-or-newer vehicles and names GMI, Romly, and '
+                              'Adify as the stack [7d0XER3HAlQ @ 00:16:10].',
+                              'The paperwork is where speakers say coverage and deductions are won or '
+                              "lost. Fin Saint's Credit Karma script: enter zip code, age, current "
+                              'insurance status, and vehicle count, treat the results as standard quote '
+                              'leads, then tell each carrier you drive for Uber, Lyft, or both and demand '
+                              'the endorsement name plus written confirmation that the exact quote covers '
+                              'waiting time and active trips [kyXtImFfyxA @ 00:04:36]. Fin Saint also says '
+                              'to ask whether the policy covers both platforms and delivery apps, since '
+                              "one platform's policy does not protect you on another. The Finance "
+                              'Blueprint says to show up with your EIN, estimated business mileage, and a '
+                              'clear description of what or who you haul, to title and insure in the same '
+                              'LLC name so the named insured matches the legal owner, and to go commercial '
+                              'if clients will demand certificates of insurance [_J5NloENKR8 @ 00:09:21]. '
+                              "On taxes, Freelancer's Wealth Blueprint runs one driver at 23,000 app miles "
+                              'out of 33,800 total, a 68 percent business share that turns a $1,820 '
+                              'premium into $1,237.60 deductible under actual expenses, against a $17,095 '
+                              'standard mileage deduction where insurance is already baked in and claiming '
+                              'the premium again is a double dip [Hxl9pLAo8c0 @ 00:05:23].'],
+               'table': {'caption': 'Products, prices, and deductibles quoted by the practitioners',
+                         'headers': ['Product or Tactic',
+                                     'Exact Numbers Quoted',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Rideshare endorsement on a personal policy',
+                                   '$15 to $40 per month; one driver paid $340 per year',
+                                   'Plugs the Period 1 gap for part-time UberX and Lyft drivers',
+                                   "Freelancer's Wealth Blueprint ([Hxl9pLAo8c0 @ 00:02:17])"],
+                                  ['All-in rideshare insurance policy',
+                                   '$50 to $200 per month depending on driving history',
+                                   'Default choice for UberX and Lyft drivers comparing state marketplace '
+                                   'options',
+                                   'The Rideshare Guy ([F6U-c7e7avY @ 00:01:37])'],
+                                  ['Rideshare commercial policy, 24/7 coverage',
+                                   '$3,000 to $5,000 per year with multiple drivers allowed',
+                                   'Reserved for full-timers, Black, SUV, taxi, and heavy private-client '
+                                   'drivers',
+                                   'The Rideshare Guy ([F6U-c7e7avY @ 00:02:55])'],
+                                  ['Uber Black commercial through Lancer Insurance',
+                                   '$8,161 cash, $2,155 down, 23.8 percent APR if financed',
+                                   'Paid upfront on a 0 percent card to dodge $611 in finance charges',
+                                   'Khushnud Numonov ([IqvMzwtwzrI @ 00:05:26])'],
+                                  ['Period X owner-possession gap coverage',
+                                   '$50,000 / $100,000 / $30,000 limits; $90,000 max physical damage value',
+                                   'Covers HyreCar and Turo cars during gas runs, washes, and handoffs',
+                                   'Conrad Layn ([ePOpmhuk-EQ @ 00:09:06])'],
+                                  ['Lula commercial fleet policy for private rentals',
+                                   'About $130 per car monthly; $1,000 collision and $3,000 comprehensive '
+                                   'deductibles',
+                                   'Covers private rentals and business errands, never Turo trips or date '
+                                   'nights',
+                                   'Mike_Thebusinessman ([XGJGK0LyMno @ 00:13:30])'],
+                                  ['Renter-purchased collision damage waivers',
+                                   '$15 to $30 per day through Bonzah, Rental Cover, or Allianz',
+                                   'Renters buy damage cover so the owner never files on commercial',
+                                   'Alex Auto ([k3tFtA9SWv4 @ 00:05:06])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Street-Level Moves That Cut Premiums and Protect Claims',
+                           'body': 'Four moves the practitioners used firsthand to lower cost, recover '
+                                   'premium, or keep a claim payable.',
+                           'items': ['Refuse premium financing: paying the $8,161 Uber Black premium '
+                                     'upfront on a 0 percent APR card cost a $340 card fee but earned $170 '
+                                     'cash back, saving about $441 versus the 23.8 percent APR loan '
+                                     '[Khushnud Numonov — IqvMzwtwzrI @ 00:10:07].',
+                                     'Before buying a fleet car, have the Lula underwriters run the VIN on '
+                                     'their Black Book database, because Carfax and AutoCheck can miss '
+                                     'salvage titles; Mike was sold a supposedly clean car that turned out '
+                                     'salvage and forced the dealer to refund [Mike_Thebusinessman — '
+                                     'XGJGK0LyMno @ 00:15:12].',
+                                     "Pass the fleet premium straight to renters: Mike's mentees charge "
+                                     'renters $30 per day for insurance coverage, turning a roughly $130 '
+                                     'monthly per-car cost into a profit line [Mike_Thebusinessman — '
+                                     'XGJGK0LyMno @ 00:13:47].',
+                                     'Write down the exact dollar increase your insurer quotes for the '
+                                     'rideshare endorsement and log your odometer on the first and last '
+                                     'day of the year so the business-use percentage is measured, not '
+                                     "guessed [Freelancer's Wealth Blueprint — Hxl9pLAo8c0 @ 00:07:03]."]},
+               'sop_steps': [{'step': 1,
+                              'title': 'Map every coverage window',
+                              'action': 'Pull the insurance certificate from the Uber or Lyft driver app '
+                                        'and lay it beside your personal policy, or list rental and '
+                                        'owner-possession windows for Turo and HyreCar cars.',
+                              'detail': 'Confirm what applies with the app off, while waiting, and after '
+                                        'accepting a ride, then flag any window with no own-car damage '
+                                        'cover [Fin Saint — kyXtImFfyxA @ 00:04:54].'},
+                             {'step': 2,
+                              'title': 'Collect disclosed, comparable quotes',
+                              'action': 'Gather quotes from Credit Karma leads and several small '
+                                        'independent agents, disclosing every platform and entity up '
+                                        'front.',
+                              'detail': 'Get the endorsement name and written confirmation of waiting and '
+                                        'active-trip coverage [Fin Saint — kyXtImFfyxA @ 00:04:36], and '
+                                        'spend half a day hitting multiple independent agencies, even out '
+                                        'of state [Rideshare Professor — Y9-zVxm18W0 @ 00:02:08].'},
+                             {'step': 3,
+                              'title': 'Bind the product that fits the model',
+                              'action': 'Choose an endorsement or rideshare policy for UberX, commercial '
+                                        'for Black, SUV, or heavy private clients, and Period X or Lula '
+                                        'for rental fleets.',
+                              'detail': 'UberX and Lyft drivers almost always go rideshare insurance while '
+                                        'Black, SUV, taxi, and private-client drivers go commercial '
+                                        'through a broker [The Rideshare Guy — F6U-c7e7avY @ 00:05:46].'},
+                             {'step': 4,
+                              'title': 'Pay smart and document for claims',
+                              'action': 'Pay the premium upfront where possible, keep rental agreements '
+                                        'and police reports for every rental, and log odometer readings.',
+                              'detail': 'Lula wants your rental agreement and any police report before '
+                                        'paying a claim, so never skip rental software and signed '
+                                        'agreements [Mike_Thebusinessman — XGJGK0LyMno @ 00:09:51].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split in the rental-fleet camp is over which policy actually '
+                              'carries the car. Conrad Layn, who says they have been insurance licensed '
+                              'for over nine years, pushes Period X as the gap-filler for HyreCar and Turo '
+                              "owners: it covers the car while it is back in the owner's possession, "
+                              'accepts a single vehicle with no dealer or rental license, can get an owner '
+                              'running the same day, and requires a GPS tracker that doubles as a kill '
+                              'switch [ePOpmhuk-EQ @ 00:06:04] [9A9ySyt-LZQ @ 00:01:07]. '
+                              'Mike_Thebusinessman waves that model off. They describe a product that only '
+                              'covers the window between rentals, while the car rides to the car wash or '
+                              'sits in the warehouse, and say flatly that it does not help an operator '
+                              'running private rentals; their pick is Lula, a commercial fleet policy '
+                              'written through United that covers the car on a private rental and during '
+                              'business errands, starting at two cars and about $130 a month per car '
+                              '[XGJGK0LyMno @ 00:13:01]. Alex Auto takes a third route entirely: put the '
+                              'fleet on cheap commercial coverage and push physical damage onto renters '
+                              'through third-party collision damage waivers from Bonzah, Rental Cover, or '
+                              'Alliance at $15 to $30 per day, sold to the renter for however long the car '
+                              'is out [k3tFtA9SWv4 @ 00:05:06].',
+                              'Whether a commercial policy should ever be claimed against is the second '
+                              'fault line. Alex Auto insists commercial carriers are in the business of '
+                              'making money, not paying claims: file one claim in the first year and they '
+                              'drop you, which is why they frame the $80 liability-only to $150 '
+                              'full-coverage premium as the price of a policy an operator cannot lean on '
+                              '[k3tFtA9SWv4 @ 00:02:49]. DGOTEXOTICS agrees an early claim can get a one- '
+                              'or two-car operator dropped, but tells beginners to start on a full '
+                              'coverage policy and says a parked-car hit-and-run with no cameras can be '
+                              'filed through the personal policy, dismissing critics of that move as '
+                              'people shaming newcomers out of starting [7d0XER3HAlQ @ 00:12:37]. That '
+                              'collides head-on with Conrad Layn, who warns that once a personal carrier '
+                              'even smells rental income, a car parked at the house and not being used can '
+                              'still be denied [ePOpmhuk-EQ @ 00:11:32]. DGOTEXOTICS also undercuts Alex '
+                              "Auto's waiver list: of Allianz and Bonza, they say one is priced too high "
+                              'to make sense for the renter and the other has stopped going for it because '
+                              'claims volume outran it, and they steer 2016-and-newer cars to Rental Cover '
+                              'as the weekly renter coverage instead [7d0XER3HAlQ @ 00:07:28].',
+                              'For rideshare drivers the argument is how far up the coverage ladder to '
+                              'climb. The Rideshare Guy splits it cleanly: UberX and Lyft drivers buy '
+                              'rideshare insurance, typically $50 to $200 a month all-in, to plug the '
+                              'Period 1 gap, while commercial at roughly $3,000 to $5,000 a year only pays '
+                              'for full-timers, Uber Black, SUV, taxi, or drivers with a deep private '
+                              "client list [F6U-c7e7avY @ 00:02:55]. Freelancer's Wealth Blueprint prices "
+                              'the endorsement lower, at $15 to $40 a month, and calls full commercial '
+                              'genuine overkill for a part-timer [Hxl9pLAo8c0 @ 00:02:17]. The Finance '
+                              'Blueprint pushes the other way, arguing that once the hustle is a formal '
+                              'LLC or anyone outside the family drives the car, a full commercial policy '
+                              'is mandatory, and that an extra $20 to $50 a month beats a $50,000 denied '
+                              'claim [_J5NloENKR8 @ 00:05:58]. On off-app private rides, The Rideshare Guy '
+                              'reports drivers running them on personal insurance and planning to lie to '
+                              'the carrier after a crash, says getting caught is tough because stings '
+                              'mostly target people grabbing strangers off the street, and offers a '
+                              'cleaner workaround: schedule repeat clients through an app like Userve or '
+                              'by text, then complete the trip on the UberX platform so platform coverage '
+                              'still applies [F6U-c7e7avY @ 00:04:23].'],
+               'table': {'caption': 'Competing coverage playbooks for rideshare and rental fleets, side by '
+                                    'side',
+                         'headers': ['Decision Point',
+                                     'Playbook A',
+                                     'Playbook B / Counterpoint',
+                                     'Expert Source'],
+                         'rows': [['Covering the rental car when it is not on a trip',
+                                   'Period X covers owner possession, accepts one car, activates same day, '
+                                   'requires GPS tracker',
+                                   'Lula fleet policy covers private rentals and business errands, two-car '
+                                   'start, about $130 monthly per car',
+                                   'Conrad Layn ([ePOpmhuk-EQ @ 00:07:41]); Mike_Thebusinessman '
+                                   '([XGJGK0LyMno @ 00:13:30])'],
+                                  ['Filing physical damage claims on a commercial policy',
+                                   'Alex Auto: one first-year claim gets you dropped, so sell renters '
+                                   'waivers at $15-$30 daily',
+                                   'DGOTEXOTICS: start on full coverage, eat $2,000-$3,000 accidents out '
+                                   'of pocket to protect the record',
+                                   'Alex Auto ([k3tFtA9SWv4 @ 00:02:49]); DGOTEXOTICS ([7d0XER3HAlQ @ '
+                                   '00:08:17])'],
+                                  ['How many cars before a fleet or commercial policy',
+                                   'Alex Auto: minimum of five cars, because five cars on a personal '
+                                   'policy looks like business',
+                                   'Insurance Brokers of Arizona: over one vehicle is a fleet; some '
+                                   'carriers want 10, others only 2-3',
+                                   'Alex Auto ([k3tFtA9SWv4 @ 00:03:59]); Insurance Brokers of Arizona '
+                                   '([03bV3jW-Yqc @ 00:00:40])'],
+                                  ['Coverage tier for a working rideshare driver',
+                                   'Endorsement at $15-$40 monthly or rideshare insurance at $50-$200 '
+                                   'monthly for UberX and Lyft',
+                                   'Commercial at $3,000-$5,000 yearly for Black, SUV, taxi; Uber Black '
+                                   'ballpark runs $8,000-$9,500 yearly',
+                                   "Freelancer's Wealth Blueprint ([Hxl9pLAo8c0 @ 00:02:17]); The "
+                                   'Rideshare Guy ([F6U-c7e7avY @ 00:02:55]); Khushnud Numonov '
+                                   '([IqvMzwtwzrI @ 00:00:54])'],
+                                  ['Graves Amendment shield for a one-car Turo host',
+                                   'Appellant: host was an IT worker, not in the business of renting motor '
+                                   'vehicles, plural',
+                                   'Appellee: money and a fee make it a rental; one car across repeated '
+                                   'transactions is a business',
+                                   'Florida Trust, Real Estate, Probate, & Foreclosure ([28RNMngtROc @ '
+                                   '00:21:14]; [28RNMngtROc @ 00:28:09])'],
+                                  ['Who should carry liability when a rideshare driver causes harm',
+                                   'Host argues the Graves Amendment should pass so trial lawyers cannot '
+                                   'drive ride prices up',
+                                   'Co-host Eustace wants platforms to keep skin in the game over who they '
+                                   'let drive',
+                                   'Cactus Crossfire ([oPWng_p3MLE @ 00:03:26]; [oPWng_p3MLE @ 00:04:35])'],
+                                  ['Where to shop for commercial auto quotes',
+                                   'Small independent agents win, even out of state: a California fleet '
+                                   'placed through New York',
+                                   "Direct carriers: biBERK claims 20% savings, yet Khushnud's biBERK "
+                                   'quote came back at $2,878 monthly',
+                                   'Rideshare Professor ([Y9-zVxm18W0 @ 00:01:52]); Merchant Maverick '
+                                   '([1Nm_1fEmKUk @ 00:02:52]); Khushnud Numonov ([IqvMzwtwzrI @ '
+                                   '00:01:33])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The rental-fleet failures are concrete. Mike_Thebusinessman bought a car a '
+                              "seller swore was clean-titled, ran it past Lula's underwriters, who pull a "
+                              'Black Book database instead of trusting Carfax or AutoCheck, and learned it '
+                              'was salvage; they had to go back and force the dealer to return the money, '
+                              'and now tell operators to ask the underwriters before buying anything '
+                              '[XGJGK0LyMno @ 00:15:45]. The same operator warns Lula rejects salvage and '
+                              'rebuilt titles, cars over $75,000, Hellcats and Chargers, and anything past '
+                              'roughly 120,000 miles without maintenance records, though they personally '
+                              'pushed a 175,000-mile car through underwriting by proving it was fully '
+                              'maintained; a claim then lives or dies on the rental agreement and police '
+                              'report [XGJGK0LyMno @ 00:09:13]. Conrad Layn flags a quieter trap: HyreCar '
+                              'coverage does not report insurance to the DMV, so an owner leaning on it '
+                              'alone can be breaking the law and get registration suspended or '
+                              'non-renewed, which Period X fixes by reporting [ePOpmhuk-EQ @ 00:11:00]. '
+                              'DGOTEXOTICS, who launched with four financed cars at $0 down and stayed on '
+                              'Turo until they understood insurance, warns that operators who claim early '
+                              'on a thin fleet get dropped and end up starting a new LLC and restarting '
+                              '[7d0XER3HAlQ @ 00:16:26].',
+                              "Commercial premiums hide finance costs. Khushnud Numonov's Uber Black quote "
+                              'came to $8,161 with $2,155 down, but the $6,006 balance was a loan at 23.8 '
+                              'percent APR, adding $611 in finance charges and $735 monthly payments for '
+                              'nine months; they paid in full on an American Express business card '
+                              'instead, ate a $340 card fee, clawed back $170 in 2 percent cash back on a '
+                              '0 percent APR promo, and say they saved $441 [IqvMzwtwzrI @ 00:06:54]. They '
+                              'also nearly got shut out because Lancer Insurance writes drivers aged 25 to '
+                              '65, after an earlier referred agent took the application and went silent. '
+                              'Fin Saint warns that Uber and Lyft contingent physical damage only pays if '
+                              'the driver already carries comprehensive and collision, with a $2,500 '
+                              'deductible, so a cheap liability-only quote leaves the car itself exposed '
+                              '[kyXtImFfyxA @ 00:01:38]. The Finance Blueprint flags operators who retitle '
+                              'a car into an LLC but keep the personal policy: the named insured no longer '
+                              'matches the owner, and the policy is technically invalid from day one '
+                              '[_J5NloENKR8 @ 00:07:47]. Rideshare Professor adds a pre-purchase trap: Los '
+                              'Angeles shut down Black and SUV entry and Orange County closed too, so '
+                              'confirm with the local office before buying the big vehicle [Y9-zVxm18W0 @ '
+                              '00:00:00].',
+                              "Two more traps hit the wallet after the policy is bought. Freelancer's "
+                              'Wealth Blueprint says drivers who take the standard mileage rate and also '
+                              'deduct their premium are double dipping, because the rate already bakes in '
+                              'insurance; in their worked example a $1,820 premium at 68 percent business '
+                              'use yields $1,237.60 under actual expenses, against a $17,095 mileage '
+                              'deduction with zero separate insurance line, and starting on actual '
+                              'expenses in year one locks that car out of the mileage rate for as long as '
+                              'it is owned [Hxl9pLAo8c0 @ 00:06:48]. Their fix is to log the odometer on '
+                              'the first and last day of the year and total both methods every year. '
+                              'quartytypo, weighing dropping their own car for Uber plus rentals, found '
+                              "Enterprise's $13 supplemental liability insurance only pays the other "
+                              'driver if the renter is not at fault, which they call a 50-50 bet on '
+                              'getting sued [1-02Nj4vD78 @ 00:01:03]. On honesty, Conrad Layn and The '
+                              'Finance Blueprint agree: carriers record calls, lying about income use is '
+                              'material misrepresentation that can be used in court, and omitting Uber or '
+                              'the LLC hands the insurer a get-out-of-jail-free card to deny the claim '
+                              'later [ePOpmhuk-EQ @ 00:03:09] [_J5NloENKR8 @ 00:09:36].'],
+               'table': {'caption': 'Firsthand losses, traps, and the countermoves practitioners used',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics / Countermove',
+                                     'Expert Source'],
+                         'rows': [['Hidden salvage title on a newly bought fleet car',
+                                   "Seller claimed clean title; Lula's Black Book check showed salvage "
+                                   'after purchase',
+                                   'Dealer forced to refund; now ask underwriters to check the car before '
+                                   'buying',
+                                   'Mike_Thebusinessman ([XGJGK0LyMno @ 00:15:58])'],
+                                  ['Financing the annual commercial premium through the agent',
+                                   'Balance of $6,006 at 23.8 percent APR meant $611 extra and $735 '
+                                   'monthly',
+                                   'Paid in full on a 0 percent card: $340 fee minus $170 cashback, $441 '
+                                   'saved',
+                                   'Khushnud Numonov ([IqvMzwtwzrI @ 00:10:07])'],
+                                  ['Filing an early claim on a thin commercial fleet',
+                                   'One first-year claim gets you dropped; claim history works like a '
+                                   'credit score',
+                                   'Self-pay $2,000-$3,000 accidents and have renters buy third-party '
+                                   'damage waivers',
+                                   'Alex Auto ([k3tFtA9SWv4 @ 00:02:49]); DGOTEXOTICS ([7d0XER3HAlQ @ '
+                                   '00:08:33])'],
+                                  ['Relying on HyreCar coverage alone for DMV compliance',
+                                   "HyreCar coverage does not report insurance to the DMV on the owner's "
+                                   'behalf',
+                                   'Registration can be suspended or non-renewed; Period X reports to the '
+                                   'DMV',
+                                   'Conrad Layn ([ePOpmhuk-EQ @ 00:10:35])'],
+                                  ['Buying cheap supplemental liability at the rental counter',
+                                   'Enterprise offered supplemental liability for $13, but fine print '
+                                   'excluded at-fault accidents',
+                                   'Renter stays exposed on a 50-50 fault bet, unlike an owned policy that '
+                                   'pays regardless',
+                                   'quartytypo ([1-02Nj4vD78 @ 00:00:21])'],
+                                  ['Deducting the premium on top of standard mileage',
+                                   'Mileage driver deducted $17,095 and claimed insurance again, which is '
+                                   'a double dip',
+                                   'Pick one method; actual expenses deduct 68 percent of the full $1,820 '
+                                   'premium',
+                                   "Freelancer's Wealth Blueprint ([Hxl9pLAo8c0 @ 00:05:44])"],
+                                  ['Driving Period 1 on a bare personal policy',
+                                   'Platform coverage sits near $50,000 bodily injury with no collision '
+                                   'while waiting',
+                                   'Personal carrier also refuses the claim, so add a rideshare '
+                                   'endorsement to close the gap',
+                                   'The Finance Blueprint ([_J5NloENKR8 @ 00:02:52]); The Rideshare Guy '
+                                   '([F6U-c7e7avY @ 00:00:54])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear these four checks before a car earns a dollar',
+                           'body': 'Each gate comes straight from a loss, denial, or near-miss an operator '
+                                   'reported on camera.',
+                           'items': ["Run every candidate car past the insurer's underwriters before "
+                                     'buying, because salvage and rebuilt titles get rejected and sellers '
+                                     'hide title history [Mike_Thebusinessman — XGJGK0LyMno @ 00:15:12].',
+                                     'Hold a $2,000-$3,000 out-of-pocket reserve for small accidents so a '
+                                     'thin fleet never files the early claim that gets it dropped '
+                                     '[DGOTEXOTICS — 7d0XER3HAlQ @ 00:08:33].',
+                                     'Confirm the policy reports insurance to the DMV, since HyreCar '
+                                     'coverage alone does not and registration can be suspended [Conrad '
+                                     'Layn — ePOpmhuk-EQ @ 00:10:35].',
+                                     'Get written confirmation that the exact quote covers app-on waiting '
+                                     'and active trips, including the endorsement name [Fin Saint — '
+                                     'kyXtImFfyxA @ 00:04:36].']}}],
+ 'pull_quote': '"Commercial auto insurance companies are in the business of making money, not paying out '
+               'claims." — Alex Auto (k3tFtA9SWv4 @ 00:03:05).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Ask every insurer who covers you while waiting, during the passenger trip, and for '
+                      'damage to your own car, then get the endorsement name in writing [Fin Saint — '
+                      'kyXtImFfyxA @ 00:04:36].',
+                      'Pull commercial quotes from multiple small independent agents and brokerages, even '
+                      'out of state, and compare deductibles line by line [Rideshare Professor — '
+                      'Y9-zVxm18W0 @ 00:01:52].',
+                      'Before paying a commercial down payment, read the financing page and price paying '
+                      'in full on a 0 percent APR card against the loan [Khushnud Numonov — IqvMzwtwzrI @ '
+                      '00:08:18].',
+                      'Pass fleet insurance cost to renters, for example $30 per day or folded into the '
+                      'rental rate [Mike_Thebusinessman — XGJGK0LyMno @ 00:13:47].',
+                      'Make the named insured match the titled owner, putting LLC-titled cars on a '
+                      'commercial policy instead of a personal one [The Finance Blueprint — _J5NloENKR8 @ '
+                      '00:08:04].',
+                      'Write down the exact endorsement increase, log odometer readings on the first and '
+                      "last day of the year, and total both deduction methods [Freelancer's Wealth "
+                      'Blueprint — Hxl9pLAo8c0 @ 00:07:03].'],
+ 'statutory_citations': [{'title': 'Conrad Layn — How To Get Commercial PERIOD X HyreCar Insurance 💡 '
+                                   '[00:06:04]',
+                          'url': 'https://www.youtube.com/watch?v=ePOpmhuk-EQ&t=364s',
+                          'relevance': 'Primary practitioner testimony on Period X owner-possession '
+                                       'coverage, GPS tracker requirement, and DMV reporting.'},
+                         {'title': 'Mike_Thebusinessman — How To Get Commercial Fleet  Insurance For Car '
+                                   'Rental Business [00:13:30]',
+                          'url': 'https://www.youtube.com/watch?v=XGJGK0LyMno&t=810s',
+                          'relevance': 'Primary practitioner testimony on Lula fleet pricing, underwriting '
+                                       'limits, deductibles, and salvage-title risk.'},
+                         {'title': 'Florida Trust, Real Estate, Probate, & Foreclosure — 🔍 Turo '
+                                   'Peer-to-Peer Car Sharing Graves Amendment Liability | Case No. 24-0266 '
+                                   '| FL Appellate [00:21:14]',
+                          'url': 'https://www.youtube.com/watch?v=28RNMngtROc&t=1274s',
+                          'relevance': 'Primary practitioner testimony on whether a one-car Turo host '
+                                       'falls under the Graves Amendment.'},
+                         {'title': 'Alex Auto — The Best Commercial Insurance For Car Rental Business | '
+                                   'TURO & Private [00:02:49]',
+                          'url': 'https://www.youtube.com/watch?v=k3tFtA9SWv4&t=169s',
+                          'relevance': 'Primary practitioner testimony on commercial claim drops, five-car '
+                                       'threshold, and renter damage waivers.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'kyXtImFfyxA',
+                       'title': '𝗨𝗯𝗲𝗿 & 𝗟𝘆𝗳𝘁 𝗗𝗿𝗶𝘃𝗲𝗿𝘀: How to Compare Rideshare Insurance on Credit Karma',
+                       'channel': 'Fin Saint',
+                       'author': 'Fin Saint',
+                       'text': 'Uber and Lyft publish higher third-party liability protection for covered '
+                               'trips, commonly around $1 million in most markets.',
+                       'tip': 'Uber and Lyft publish higher third-party liability protection for covered '
+                              'trips, commonly around $1 million in most markets.',
+                       'timestamp': 81,
+                       'timestamp_seconds': 81,
+                       'timestamp_label': '[00:01:21]',
+                       'url': 'https://www.youtube.com/watch?v=kyXtImFfyxA&t=81s',
+                       'markdown': '[00:01:21](https://www.youtube.com/watch?v=kyXtImFfyxA&t=81s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'F6U-c7e7avY',
+                       'title': 'What’s the difference between rideshare insurance and commercial '
+                                'insurance?',
+                       'channel': 'The Rideshare Guy',
+                       'author': 'The Rideshare Guy',
+                       'text': 'Commercial insurance costs about $3 to $5,000 a year, so it really only '
+                               "makes sense if you're a full-time driver.",
+                       'tip': 'Commercial insurance costs about $3 to $5,000 a year, so it really only '
+                              "makes sense if you're a full-time driver.",
+                       'timestamp': 175,
+                       'timestamp_seconds': 175,
+                       'timestamp_label': '[00:02:55]',
+                       'url': 'https://www.youtube.com/watch?v=F6U-c7e7avY&t=175s',
+                       'markdown': '[00:02:55](https://www.youtube.com/watch?v=F6U-c7e7avY&t=175s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ePOpmhuk-EQ',
+                       'title': 'How To Get Commercial PERIOD X HyreCar Insurance 💡',
+                       'channel': 'Conrad Layn',
+                       'author': 'Conrad Layn',
+                       'text': 'Period X will actually give you a GPS tracker so you could track the car, '
+                               "and it's actually a requirement by Period X.",
+                       'tip': 'Period X will actually give you a GPS tracker so you could track the car, '
+                              "and it's actually a requirement by Period X.",
+                       'timestamp': 364,
+                       'timestamp_seconds': 364,
+                       'timestamp_label': '[00:06:04]',
+                       'url': 'https://www.youtube.com/watch?v=ePOpmhuk-EQ&t=364s',
+                       'markdown': '[00:06:04](https://www.youtube.com/watch?v=ePOpmhuk-EQ&t=364s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Y9-zVxm18W0',
+                       'title': "Let's talk about commercial insurance for your rideshare vehicles, Uber "
+                                'and Lyft',
+                       'channel': 'Rideshare Professor',
+                       'author': 'Rideshare Professor',
+                       'text': 'The little independent agents are pretty much the way to go, so I '
+                               'eventually found one in New York that covered the fleet of cars.',
+                       'tip': 'The little independent agents are pretty much the way to go, so I '
+                              'eventually found one in New York that covered the fleet of cars.',
+                       'timestamp': 112,
+                       'timestamp_seconds': 112,
+                       'timestamp_label': '[00:01:52]',
+                       'url': 'https://www.youtube.com/watch?v=Y9-zVxm18W0&t=112s',
+                       'markdown': '[00:01:52](https://www.youtube.com/watch?v=Y9-zVxm18W0&t=112s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Hxl9pLAo8c0',
+                       'title': 'Uber Driver Taxes 2026: Your Car Insurance Split Between Two Uses',
+                       'channel': "Freelancer's Wealth Blueprint",
+                       'author': "Freelancer's Wealth Blueprint",
+                       'text': 'If you claim the standard mileage rate, you cannot deduct one cent of your '
+                               'car insurance.',
+                       'tip': 'If you claim the standard mileage rate, you cannot deduct one cent of your '
+                              'car insurance.',
+                       'timestamp': 18,
+                       'timestamp_seconds': 18,
+                       'timestamp_label': '[00:00:18]',
+                       'url': 'https://www.youtube.com/watch?v=Hxl9pLAo8c0&t=18s',
+                       'markdown': '[00:00:18](https://www.youtube.com/watch?v=Hxl9pLAo8c0&t=18s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IqvMzwtwzrI',
+                       'title': 'How To Get The BEST Commercial Insurance | Uber Black Commercial '
+                                'Insurance',
+                       'channel': 'Khushnud Numonov',
+                       'author': 'Khushnud Numonov',
+                       'text': 'The rest principal balance that you have is six thousand dollars and is '
+                               'actually a loan, and you will pay a loan for a 23.8 percent APR.',
+                       'tip': 'The rest principal balance that you have is six thousand dollars and is '
+                              'actually a loan, and you will pay a loan for a 23.8 percent APR.',
+                       'timestamp': 414,
+                       'timestamp_seconds': 414,
+                       'timestamp_label': '[00:06:54]',
+                       'url': 'https://www.youtube.com/watch?v=IqvMzwtwzrI&t=414s',
+                       'markdown': '[00:06:54](https://www.youtube.com/watch?v=IqvMzwtwzrI&t=414s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_J5NloENKR8',
+                       'title': 'Commercial Auto Insurance for Side Hustles (LLCs & Uber)',
+                       'channel': 'The Finance Blueprint',
+                       'author': 'The Finance Blueprint',
+                       'text': "If you've titled your vehicle in the name of your LLC, you cannot insure "
+                               'it with a personal policy, period.',
+                       'tip': "If you've titled your vehicle in the name of your LLC, you cannot insure it "
+                              'with a personal policy, period.',
+                       'timestamp': 467,
+                       'timestamp_seconds': 467,
+                       'timestamp_label': '[00:07:47]',
+                       'url': 'https://www.youtube.com/watch?v=_J5NloENKR8&t=467s',
+                       'markdown': '[00:07:47](https://www.youtube.com/watch?v=_J5NloENKR8&t=467s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9A9ySyt-LZQ',
+                       'title': 'Period X & Personal Insurance For Turo Biz 🤔',
+                       'channel': 'Conrad Layn',
+                       'author': 'Conrad Layn',
+                       'text': "What's worked for me is typically the company gives you insurance when the "
+                               'car is not being rented out.',
+                       'tip': "What's worked for me is typically the company gives you insurance when the "
+                              'car is not being rented out.',
+                       'timestamp': 94,
+                       'timestamp_seconds': 94,
+                       'timestamp_label': '[00:01:34]',
+                       'url': 'https://www.youtube.com/watch?v=9A9ySyt-LZQ&t=94s',
+                       'markdown': '[00:01:34](https://www.youtube.com/watch?v=9A9ySyt-LZQ&t=94s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'k3tFtA9SWv4',
+                       'title': 'The Best Commercial Insurance For Car Rental Business | TURO & Private',
+                       'channel': 'Alex Auto',
+                       'author': 'Alex Auto',
+                       'text': 'If you have a commercial auto insurance policy and you file too many '
+                               'claims, they will drop you, and if you file one claim the first year, they '
+                               'will drop you.',
+                       'tip': 'If you have a commercial auto insurance policy and you file too many '
+                              'claims, they will drop you, and if you file one claim the first year, they '
+                              'will drop you.',
+                       'timestamp': 169,
+                       'timestamp_seconds': 169,
+                       'timestamp_label': '[00:02:49]',
+                       'url': 'https://www.youtube.com/watch?v=k3tFtA9SWv4&t=169s',
+                       'markdown': '[00:02:49](https://www.youtube.com/watch?v=k3tFtA9SWv4&t=169s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1Nm_1fEmKUk',
+                       'title': 'Best Commercial Auto Insurance',
+                       'channel': 'Merchant Maverick',
+                       'author': 'Merchant Maverick',
+                       'text': "With two or more policies, you can save 10% on NEXT's already competitive "
+                               'pricing.',
+                       'tip': "With two or more policies, you can save 10% on NEXT's already competitive "
+                              'pricing.',
+                       'timestamp': 129,
+                       'timestamp_seconds': 129,
+                       'timestamp_label': '[00:02:09]',
+                       'url': 'https://www.youtube.com/watch?v=1Nm_1fEmKUk&t=129s',
+                       'markdown': '[00:02:09](https://www.youtube.com/watch?v=1Nm_1fEmKUk&t=129s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XGJGK0LyMno',
+                       'title': 'How To Get Commercial Fleet  Insurance For Car Rental Business',
+                       'channel': 'Mike_Thebusinessman',
+                       'author': 'Mike_Thebusinessman',
+                       'text': 'They started me off with two cars, and they started off charging me 130 a '
+                               'month per car.',
+                       'tip': 'They started me off with two cars, and they started off charging me 130 a '
+                              'month per car.',
+                       'timestamp': 810,
+                       'timestamp_seconds': 810,
+                       'timestamp_label': '[00:13:30]',
+                       'url': 'https://www.youtube.com/watch?v=XGJGK0LyMno&t=810s',
+                       'markdown': '[00:13:30](https://www.youtube.com/watch?v=XGJGK0LyMno&t=810s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XGJGK0LyMno',
+                       'title': 'How To Get Commercial Fleet  Insurance For Car Rental Business',
+                       'channel': 'Mike_Thebusinessman',
+                       'author': 'Mike_Thebusinessman',
+                       'text': 'These guys selling cars on Facebook Marketplace have creative ways of '
+                               "hiding the condition of the title, and they'll even lie to you sometimes.",
+                       'tip': 'These guys selling cars on Facebook Marketplace have creative ways of '
+                              "hiding the condition of the title, and they'll even lie to you sometimes.",
+                       'timestamp': 945,
+                       'timestamp_seconds': 945,
+                       'timestamp_label': '[00:15:45]',
+                       'url': 'https://www.youtube.com/watch?v=XGJGK0LyMno&t=945s',
+                       'markdown': '[00:15:45](https://www.youtube.com/watch?v=XGJGK0LyMno&t=945s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '28RNMngtROc',
+                       'title': '🔍 Turo Peer-to-Peer Car Sharing Graves Amendment Liability | Case No. '
+                                '24-0266 | FL Appellate',
+                       'channel': 'Florida Trust, Real Estate, Probate, & Foreclosure',
+                       'author': 'Florida Trust, Real Estate, Probate, & Foreclosure',
+                       'text': "You're engaging in the trade or business of renting the motor vehicles; "
+                               "it's multiple transactions, and it doesn't have to necessarily be multiple "
+                               'vehicles.',
+                       'tip': "You're engaging in the trade or business of renting the motor vehicles; "
+                              "it's multiple transactions, and it doesn't have to necessarily be multiple "
+                              'vehicles.',
+                       'timestamp': 1274,
+                       'timestamp_seconds': 1274,
+                       'timestamp_label': '[00:21:14]',
+                       'url': 'https://www.youtube.com/watch?v=28RNMngtROc&t=1274s',
+                       'markdown': '[00:21:14](https://www.youtube.com/watch?v=28RNMngtROc&t=1274s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oPWng_p3MLE',
+                       'title': '🌵❌🔥Uber, the Graves Amendment, and the Rideshare Liability Fight #nevada '
+                                '#policy #GRAVESAMENDMENT',
+                       'channel': 'Cactus Crossfire',
+                       'author': 'Cactus Crossfire',
+                       'text': 'What we did do is we required for the driver to carry an additional rider '
+                               'of insurance.',
+                       'tip': 'What we did do is we required for the driver to carry an additional rider '
+                              'of insurance.',
+                       'timestamp': 221,
+                       'timestamp_seconds': 221,
+                       'timestamp_label': '[00:03:41]',
+                       'url': 'https://www.youtube.com/watch?v=oPWng_p3MLE&t=221s',
+                       'markdown': '[00:03:41](https://www.youtube.com/watch?v=oPWng_p3MLE&t=221s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1-02Nj4vD78',
+                       'title': 'supplemental liability insurance on car rental problem',
+                       'channel': 'quartytypo',
+                       'author': 'quartytypo',
+                       'text': 'It covers the other driver only if you are not at fault in the accident.',
+                       'tip': 'It covers the other driver only if you are not at fault in the accident.',
+                       'timestamp': 63,
+                       'timestamp_seconds': 63,
+                       'timestamp_label': '[00:01:03]',
+                       'url': 'https://www.youtube.com/watch?v=1-02Nj4vD78&t=63s',
+                       'markdown': '[00:01:03](https://www.youtube.com/watch?v=1-02Nj4vD78&t=63s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7d0XER3HAlQ',
+                       'title': 'How To Insure Your Rental Car Fleet 🚘📈',
+                       'channel': 'DGOTEXOTICS',
+                       'author': 'DGOTEXOTICS',
+                       'text': 'Are you willing to pay out of pocket $2 to $3,000, which is what most of '
+                               'us are open to, because filing a claim your accident report is like your '
+                               'credit score.',
+                       'tip': 'Are you willing to pay out of pocket $2 to $3,000, which is what most of us '
+                              'are open to, because filing a claim your accident report is like your '
+                              'credit score.',
+                       'timestamp': 497,
+                       'timestamp_seconds': 497,
+                       'timestamp_label': '[00:08:17]',
+                       'url': 'https://www.youtube.com/watch?v=7d0XER3HAlQ&t=497s',
+                       'markdown': '[00:08:17](https://www.youtube.com/watch?v=7d0XER3HAlQ&t=497s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '03bV3jW-Yqc',
+                       'title': 'How Many Vehicles Make a Fleet for Insurance?',
+                       'channel': 'Insurance Brokers of Arizona',
+                       'author': 'Insurance Brokers of Arizona',
+                       'text': 'Some insurance carriers do require a minimum of 10 vehicles in order to be '
+                               'considered a fleet, however there are carriers that only require two to '
+                               'three vehicles.',
+                       'tip': 'Some insurance carriers do require a minimum of 10 vehicles in order to be '
+                              'considered a fleet, however there are carriers that only require two to '
+                              'three vehicles.',
+                       'timestamp': 40,
+                       'timestamp_seconds': 40,
+                       'timestamp_label': '[00:00:40]',
+                       'url': 'https://www.youtube.com/watch?v=03bV3jW-Yqc&t=40s',
+                       'markdown': '[00:00:40](https://www.youtube.com/watch?v=03bV3jW-Yqc&t=40s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'}]}

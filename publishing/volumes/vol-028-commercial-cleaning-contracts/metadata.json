@@ -9,49 +9,49 @@
       "CONTRACTS"
     ],
     "deck": [
-      "BID BY PRODUCTION RATE. VERIFY CLOCK-INS.",
-      "RETAIN RECURRING ACCOUNTS."
+      "PRODUCTION-RATE BIDDING, 30% MARGIN FLOORS, AND PROPOSALS SENT WITHIN HOURS OF THE WALKTHROUGH",
+      "100-CALL-A-DAY PROSPECTING, PAIN-DECISION-BUDGET QUALIFYING, AND RECURRING CONTRACTS WON ON DEPENDABILITY, NOT THE LOWEST BID"
     ],
-    "lead": "Building a $1.2M ARR B2B Facility & Medical Office Cleaning Operation Without Predatory Franchise Fees or Owner Night-Shift Labor",
-    "summary": "Price square-footage walkthroughs on ISSA labor standards, prevent 1099 misclassification, and lock in high-margin floor/consumable add-ons.",
+    "lead": "Operators who launched under $1,000 and grew to seven figures show how to bid by production rates instead of square footage, turn proposals around within hours of the walkthrough, and win recurring contracts even though roughly 90% of prospects already have a cleaner.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies covering lean launches, first-contract closes, prospecting, bidding formulas, government bids, specialty work, software, OSHA compliance, workforce classification, insurance, and franchise traps. Every claim, metric, pro-tip, and quote carries timestamped inline attribution to the practitioner and video it came from.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "Starting Lean: Founder Playbooks from Zero to Seven Figures",
+      "Landing the First Contract: Walkthrough, Proposal, Close, Onboard",
+      "Prospecting Engine: Cold Calls, Cold Email, Doors, and Paid Search",
+      "Bidding Methods: Production Rates, Square Footage, and Hourly Formulas",
+      "Worked Bids and Pricing Calculators",
+      "Big Accounts and High-Profit Niches",
+      "Government and Public-Sector Janitorial Bids",
+      "Post-Construction Cleaning, Floor Care, and Specialty Add-Ons",
+      "Janitorial Software, QR Verification, and Selling with Systems",
+      "Bloodborne Pathogens: OSHA Compliance and Spill Cleanup",
+      "Workforce Classification, Insurance, and Bonding",
+      "Franchises, Remote Models, and Ownership Traps"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Mine high-intent deal triggers"
+        "PROSPECT",
+        "Build a qualified list from Google Maps and call 100 businesses a day; 2,000 calls a month projects 10-20 appointments and 1-2 closes."
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "QUALIFY",
+        "Screen every lead on pain, decision, and budget, and offer a complimentary quote to keep on file when the prospect already has a cleaner."
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "WALKTHROUGH",
+        "Arrive 20 minutes early, scan for ledge dust, cobwebs, and floor smudges, and laser-measure only cleanable square footage."
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "PRICE",
+        "Convert footage to labor hours with production rates such as 3,500-4,000 sq ft per hour for offices and hold a 30% margin floor."
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "PROPOSE",
+        "Send a forwardable proposal within two to three hours that shows facility understanding, systems, scope, and security procedures."
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "CLOSE AND ONBOARD",
+        "Set work-order and billing rules up front, price for the employees the account will need, and expand only when current accounts run smoothly."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "COMMERCIAL CLEANING CONTRACTS",
-  "subtitle": "The Complete Playbook for Commercial Cleaning Contracts: $250,000–$1,200,000 USD in Annual Contract Revenue, from a 1 FT + 3 C (4 People) Pod to a 6-Person Team",
+  "subtitle": "From a sub-$1,000 launch and 100 calls a day to production-rate bids, loaded-wage margins, porter and medical accounts, public bids, QR-verified quality, BBP-ready teams, W2 control, and the franchise fee traps that turn owners into glorified employees",
   "chapter_count": 12,
-  "total_word_count": 74656,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 74034,
+  "expert_youtube_link_count": 210,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:02Z"
+  "updated_at": "2026-11-24T22:21:28Z"
 }

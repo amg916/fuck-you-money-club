@@ -9,49 +9,49 @@
       "AUCTIONS"
     ],
     "deck": [
-      "CAP ALL-IN LANDED BID. CLEAR DEMIL/SF-97.",
-      "TURN INVENTORY FAST."
+      "FLEET CARS, POLICE UNITS, HUMVEES, AND HEAVY IRON BID ON ACROSS GSA AUCTIONS, GOVDEALS, PUBLIC SURPLUS, AND MUNICIBID",
+      "SOLD-PRICE MATH, LIQUIDATION PALLETS, CIRCUIT-BOARD SCRAP, AND SELLER'S PERMITS FOR FLIPPING THE LOTS"
     ],
-    "lead": "Sourcing Undervalued Municipal Fleet, Heavy Equipment & Laboratory Lots and Remarketing to End-User Commercial Buyers",
-    "summary": "Price buyer premiums, rigging, deadlines, and defect reserves before bidding, and enforce strict DEMIL/ITAR and title compliance.",
+    "lead": "Government surplus inventory is real, public, and fragmented across GSA Auctions, GovDeals, Public Surplus, and Municibid, and practitioners show how buyer's premiums of 5% to 15%, short pickup windows, and as-is condition decide whether a $900 Expedition or a $4,150 F-250 turns into profit.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, each claim carrying timestamped inline attribution to the channel and video it came from. The chapters move from finding sales and bidding on fleet vehicles, heavy equipment, and military disposition lots to titles, liquidation pallets, electronics scrap, seller's permits, and compliance.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "Finding the Sales: Government Auction Platforms and How Bidding Works",
+      "Buying Fleet Cars, Trucks, and Police Vehicles",
+      "Sold-Price Walkthroughs: Real Hammer Prices From GSA and State Auctions",
+      "Heavy Equipment and IronPlanet: Bidding on Iron",
+      "The GovPlanet Humvee Purchase",
+      "Titles, Street-Legal Registration, and True Build Cost",
+      "Military Disposition, Scrap Codes, and Diesel Generators",
+      "Local Surplus Sales and Flipping the Lots",
+      "Liquidation Pallets: Sourcing, Freight, and Unboxing Math",
+      "Electronics, Test Equipment, and Circuit-Board Scrap",
+      "Getting Your Seller's Permit and Resale Certificate",
+      "Compliance, Contracts, and Claims"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Mine high-intent deal triggers"
+        "FIND THE SALE",
+        "Search GSA Auctions, GovDeals radius listings, Public Surplus, and Municibid, and pull years of US Gov Bid past-auction prices before setting a max."
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "READ THE TERMS",
+        "Check payment method and deadline, the 5% to 12.5% buyer's premium, the pickup window, and whether you get a title or a bill of sale."
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "INSPECT ON PREVIEW",
+        "Scan with an OBD reader, check every tire and the door sticker, match the VIN, walk from poke-through rust or flood signs, or hire a mobile ASE inspector."
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "SET A STOP PRICE",
+        "Build a KBB-based ceiling that includes premium, sales tax, and shipping, write it down, and let the lot go if bidding passes it."
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "BID THE CLOSE",
+        "Use proxy bids and expect soft-close extensions that blunt sniping, watching Monday through Thursday afternoon and evening end times."
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "PAY AND REMOVE",
+        "Pay inside the 5 to 15 business day window and pull the unit within a removal window as short as two days by temporary tag or tow, or risk losing it and being blocked."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "GOVERNMENT SURPLUS AUCTIONS",
-  "subtitle": "The Complete Playbook for $150,000–$1,000,000 USD in Annual Government Surplus Resale: Start with 2 FT + 3 C (5 People), Scale to 7",
+  "subtitle": "Fee-stacked bid ceilings, in-person inspections, SF-97 title paperwork, hammer-to-landed cost math, pallet freight traps, and resale-certificate discipline from the operators who buy at the government block",
   "chapter_count": 12,
-  "total_word_count": 77752,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 73916,
+  "expert_youtube_link_count": 212,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:02Z"
+  "updated_at": "2026-11-24T22:21:28Z"
 }

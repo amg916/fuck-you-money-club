@@ -1,810 +1,462 @@
-from __future__ import annotations
+"""Volume 030 diagrams: Lending & Flash-Funding Arbitrage."""
 
-VOLUME_030_SUBTITLE = (
-    "The Complete Playbook for Lending & Flash-Funding Arbitrage: "
-    "$120,000–$950,000 USD in Annual Earned Revenue; "
-    "a 1 FT + 2 C Three-Person Pod, Expanding to Five People at Scale"
+from typing import Dict, List
+
+VOLUME_030_SUBTITLE: str = (
+    "Back-to-back double closes, 1% transactional funding, Gator EMD chunks, "
+    "title and wire controls, first-lien private money, exit-first bridge debt, "
+    "and 0% business credit stacks"
 )
 
-VOLUME_030_POSITIONING_ALTERNATIVES = [
+
+def build_volume_030_diagrams_data() -> List[Dict]:
+    return [
+        {
+            "diagram_id": "diag-01-double-close-sequence",
+            "chapter_number": 1,
+            "chart_type": "process_flow",
+            "title": "The Two-Contract Double Close Sequence",
+            "subtitle": "Two contracts, two independent closings, the end buyer's cash in escrow first",
+            "caption": (
+                "Wholesalers, title operators and transactional lenders run the same five moves "
+                "so the seller never sees the resale price and the end buyer never sees the buy price."
+            ),
+            "assumptions_note": (
+                "Fees shown are the quoted rates of Flip Lab Capital (1% to 3% of purchase) and "
+                "Bright Closings (1% plus $100 above $75,000, flat $850 below). Practitioners split "
+                "on whether leg one must close with outside cash or with the end buyer's wire."
+            ),
+            "note": (
+                "Attributed to Jerry Norton (Flipping Mastery TV), Ricky (Flip Lab), Jasper Cool, "
+                "Ryan Schrope and Game Changer Real Estate Insights."
+            ),
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Lock the cash buyer deposit",
+                    "value": "Step 1",
+                    "detail": (
+                        "Jerry Norton requires a $2,500 minimum non-refundable deposit, $5,000 to "
+                        "$10,000 preferred, backed by a release clause needing no further escrow instruction."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Write the closer into both contracts",
+                    "value": "Step 2",
+                    "detail": (
+                        "Insert 'seller or buyer agrees to use the closing services of' plus an "
+                        "investor-friendly title company, because the wrong title company will kill the deal."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Screen REO and short sale deed limits",
+                    "value": "Step 3",
+                    "detail": (
+                        "Game Changer Real Estate Insights checks bank-owned and short sale deeds for "
+                        "resale bans of 30, 60 or 90 days before promising a double close."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "Confirm end buyer cash in escrow",
+                    "value": "Step 4",
+                    "detail": (
+                        "Flip Lab funds only after title confirms the end buyer's funds are there; "
+                        "Ryan Schrope moves no money on the A leg until B-to-C funds land."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "Fund leg A and repay from leg B-to-C",
+                    "value": "Step 5",
+                    "detail": (
+                        "Funder wires the A-to-B purchase and is repaid on the B-to-C leg, often within "
+                        "an hour; a $100,000 purchase at Bright Closings costs $1,100 out of the second closing."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-02-proof-of-funds-acceptance",
+            "chapter_number": 6,
+            "chart_type": "funnel",
+            "title": "Soft Proof of Funds Acceptance Funnel",
+            "subtitle": "How listing agents respond to a soft letter, and what operators do with holdouts",
+            "caption": (
+                "Across 20 years of the agent model, Jerry Norton reports about 90% of agents accept a "
+                "soft letter; the remaining holdouts get a contingency or a downgraded offer."
+            ),
+            "assumptions_note": (
+                "Values are normalized to 100 offers using Norton's about 90% versus about 10% split. "
+                "Stages 4 and 5 are two competing practitioner responses to the same holdout group, "
+                "not further attrition."
+            ),
+            "note": (
+                "Attributed to Jerry Norton (Flipping Mastery TV), Steph Davis (FlipThisWholesaler), "
+                "Brent Daniels (Wholesaling Inc) and Foreclosure University."
+            ),
+            "stages": [
+                {
+                    "label": "Offers backed by a soft proof letter",
+                    "value": 100,
+                    "display": "100 offers (normalized base)",
+                    "conversion": "Base",
+                    "detail": (
+                        "Letters from local hard money lenders or Tailwind at $1.99 each or $9.99 a month; "
+                        "the name on the proof must match the name on the offer."
+                    ),
+                },
+                {
+                    "label": "Listing agent accepts the soft letter",
+                    "value": 90,
+                    "display": "About 90 of 100",
+                    "conversion": "About 90% accept",
+                    "detail": "Norton says a soft letter checks the box for most listing agents.",
+                },
+                {
+                    "label": "Holdouts demanding hard proof",
+                    "value": 10,
+                    "display": "About 10 of 100",
+                    "conversion": "About 10% push back",
+                    "detail": "Agents tie bank statements to the buyer named on the offer.",
+                },
+                {
+                    "label": "Holdouts given a 5-7 day contingency",
+                    "value": 10,
+                    "display": "Five-to-seven-day contingency",
+                    "conversion": "Norton's response",
+                    "detail": "Norton offers the contingency and fires agents who still reject soft letters.",
+                },
+                {
+                    "label": "Holdouts moved to a financed offer",
+                    "value": 10,
+                    "display": "Financing contingency",
+                    "conversion": "Davis's response",
+                    "detail": "Steph Davis still makes the offer but uses a financing contingency.",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-03-tennessee-no-money-net",
+            "chapter_number": 3,
+            "chart_type": "waterfall",
+            "title": "Tennessee No-Money Wholesale Net",
+            "subtitle": "$38,000 A-to-B purchase resold at $72,900 with transactional funding",
+            "caption": (
+                "Dave Dinkel's deal netted $30,070.71 at 1% plus a $50 wire fee, with $39,727.93 of "
+                "transactional funding covering the buy and no earnest money from the investor."
+            ),
+            "assumptions_note": (
+                "The 1% fee is applied to the $39,727.93 funded amount. Remaining closing costs are the "
+                "residual between the reported spread and the reported net, not a separately itemized figure."
+            ),
+            "note": "Attributed to Dave Dinkel (LearnREInvesting).",
+            "bars": [
+                {"label": "B-to-C resale price", "value": 72900, "display": "$72,900", "kind": "total"},
+                {"label": "A-to-B purchase price", "value": -38000, "display": "-$38,000", "kind": "deduction"},
+                {"label": "Funding fee at 1%", "value": -397.28, "display": "-$397.28", "kind": "deduction"},
+                {"label": "Wire fee", "value": -50, "display": "-$50", "kind": "deduction"},
+                {
+                    "label": "Remaining closing costs (residual)",
+                    "value": -4382.01,
+                    "display": "-$4,382.01",
+                    "kind": "deduction",
+                },
+                {"label": "Net profit", "value": 30070.71, "display": "$30,070.71", "kind": "result"},
+            ],
+        },
+        {
+            "diagram_id": "diag-04-assign-vs-double-close-costs",
+            "chapter_number": 2,
+            "chart_type": "horizontal_bars",
+            "title": "What a Double Close Costs Versus an Assignment",
+            "subtitle": "Funding fees, closing hits and the spread where operators switch",
+            "caption": (
+                "Assignment is the cheap default exit; operators switch to a double close only when the "
+                "spread is fat enough to absorb two closings and a funding fee."
+            ),
+            "assumptions_note": (
+                "Where no single figure was cited, the typical marker is the range midpoint. The switch "
+                "point spans Lex Levinrad at $10,000, Brent Daniels at $15,000 and Jamil Damji at $20,000."
+            ),
+            "note": (
+                "Attributed to Michael (The Virtual Investor), Brent Daniels (Wholesaling Inc), "
+                "David Olds REI, Jamil Damji and Lex Levinrad."
+            ),
+            "unit": "USD",
+            "bars": [
+                {
+                    "label": "Funding fee on a $100,000 loan",
+                    "min": 1000,
+                    "max": 3000,
+                    "typical": 2000,
+                    "display": "$1,000-$3,000 (1% to 3%)",
+                },
+                {
+                    "label": "Flat transactional funding quotes",
+                    "min": 1500,
+                    "max": 5000,
+                    "typical": 3250,
+                    "display": "$1,500-$5,000 flat",
+                },
+                {
+                    "label": "Purchase-side closing cost hit",
+                    "min": 2500,
+                    "max": 4000,
+                    "typical": 3250,
+                    "display": "$2,500-$4,000 plus 1%-2% origination",
+                },
+                {
+                    "label": "Profit lost to title on a double close",
+                    "min": 6000,
+                    "max": 7000,
+                    "typical": 6000,
+                    "display": "$14,000 net vs $20,000 assigned",
+                },
+                {
+                    "label": "Double-close switch point",
+                    "min": 10000,
+                    "max": 20000,
+                    "typical": 15000,
+                    "display": "$10,000-$20,000 spread",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-05-emd-protection-gates",
+            "chapter_number": 5,
+            "chart_type": "decision_tree",
+            "title": "Earnest Money Protection Gates",
+            "subtitle": "Neutral holder, verified wire, seasoned cash, live contingency",
+            "caption": (
+                "The deposit is only recoverable through a live, written contingency; miss a date or "
+                "waive a clause and the money is exposed."
+            ),
+            "assumptions_note": (
+                "Gate order follows the deposit's path from funding to closing. The 60-day seasoning "
+                "rule applies to conventional, FHA, USDA and Fannie- and Freddie-backed loans."
+            ),
+            "note": (
+                "Attributed to The Treasure Valley Home Show, Larry Mastropieri, Charles Nedder, "
+                "Katie Anderson, Yanowitz Law Firm and Andrew Finney Team."
+            ),
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": "Is the deposit going to a neutral holder such as title, a brokerage trust account or attorney escrow?",
+                    "pass_next": "G2",
+                    "fail_action": "Do not send it; in Connecticut both attorneys must agree to release the funds.",
+                },
+                {
+                    "gate": "G2",
+                    "question": "Did the wire instructions come directly from the title company and get confirmed by your own call?",
+                    "pass_next": "G3",
+                    "fail_action": "Stop and call title yourself; intercepted funds are gone.",
+                },
+                {
+                    "gate": "G3",
+                    "question": "Has the cash sat in the bank account for 60 days?",
+                    "pass_next": "G4",
+                    "fail_action": "Treat it as non-sourceable; the closing credit can be backed out.",
+                },
+                {
+                    "gate": "G4",
+                    "question": "Is a written contingency still live, with cancellation by day 9 or 10 of a 10-day inspection period?",
+                    "pass_next": "Deposit stays recoverable and becomes a closing credit.",
+                    "fail_action": "Deposit is exposed; a buyer cancelling out of compliance loses it to the seller.",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-06-bridge-and-credit-line-architecture",
+            "chapter_number": 11,
+            "chart_type": "org_architecture",
+            "title": "Exit-First Bridge and Credit Line Architecture",
+            "subtitle": "Short-term, equity-sized debt underwritten on the sale or refinance",
+            "caption": (
+                "Every bridge loan has an exit, and the lender asks about it before almost anything else; "
+                "each capital route around it is priced and capped differently."
+            ),
+            "assumptions_note": (
+                "Leverage caps conflict across practitioners, from 70% to 80% combined LTV. Line of credit "
+                "costs assume interest only on a $20K draw from a $50K line over 6 months."
+            ),
+            "note": (
+                "Attributed to Michael Daniel Investments, SEI Mortgage (Ryan Marks), Easy Lending USA, "
+                "Rene Nelson, Fast Business Lending and The Mortgage Man (Steve Ferguson)."
+            ),
+            "center": {
+                "role": "Bridge lender underwriting the exit",
+                "headcount": "Single lender seat per loan",
+                "focus": "Primary exit plus a second exit matched to slow or hot market conditions",
+            },
+            "spokes": [
+                {
+                    "role": "Buy-before-you-sell homeowner",
+                    "type": "Residential bridge",
+                    "kpi": "70% to 80% combined LTV over 6 to 12 months; SEI caps at 75%",
+                },
+                {
+                    "role": "Investor LLC borrower",
+                    "type": "Investor bridge",
+                    "kpi": "75% at 2+ deals and FICO 620+, 72.5% at 1 deal, 70% new; 12 to 18 months",
+                },
+                {
+                    "role": "Private bridge capital",
+                    "type": "Private lender",
+                    "kpi": "11% to 12%, not index-tied; interest-only about 1% of balance per month",
+                },
+                {
+                    "role": "Business line of credit",
+                    "type": "Revolving credit",
+                    "kpi": "About $583 at a bank vs $1,800 to $3,488 online on a $20K draw",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-07-title-side-fee-hygiene",
+            "chapter_number": 4,
+            "chart_type": "stacked_comparison",
+            "title": "Title-Side Fee Hygiene",
+            "subtitle": "What title bills, what it costs, and what an operator can claw back",
+            "caption": (
+                "Rick treats the lien search as highly negotiable and asks for the reissue credit on every "
+                "double close; Jerry Norton locks the cash buyer with a $5,000 non-refundable deposit."
+            ),
+            "assumptions_note": (
+                "Buckets are independent line items, not a summed closing statement. The reissue credit "
+                "range applies the 50 to 55% discount to the $2,000 policy example."
+            ),
+            "note": "Attributed to Rick (Flip With Rick) and Jerry Norton (Flipping Mastery TV).",
+            "total_range": "$50 to $5,000 per line item on a $25,000 assignment deal",
+            "buckets": [
+                {
+                    "label": "Lien search actual title cost",
+                    "low": 50,
+                    "high": 100,
+                    "notes": "Rick keeps the written report in every file as proof if liens surface later.",
+                },
+                {
+                    "label": "Lien search as billed",
+                    "low": 75,
+                    "high": 250,
+                    "notes": "The gap over actual cost is the negotiating room.",
+                },
+                {
+                    "label": "Reissue credit on a $2,000 policy",
+                    "low": 1000,
+                    "high": 1100,
+                    "notes": "50 to 55% off the second-side policy, offered only when asked.",
+                },
+                {
+                    "label": "Cash buyer non-refundable deposit",
+                    "low": 5000,
+                    "high": 5000,
+                    "notes": "Posted at title on a $206,000 contract assigned at $231,000.",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-08-zero-percent-stack-roadmap",
+            "chapter_number": 12,
+            "chart_type": "timeline_roadmap",
+            "title": "0% Business Credit Stack Roadmap",
+            "subtitle": "Personal file first, Chase next, sequenced banks, exit written before deployment",
+            "caption": (
+                "The stack is won or lost on the personal file; one 0% round on a fresh entity runs about "
+                "$100K on average and about $225K at the top end."
+            ),
+            "assumptions_note": (
+                "Week labels order the practitioner gates into a sequence; no practitioner reported a "
+                "four-week calendar. Bank count splits from three to four up to eleven."
+            ),
+            "note": (
+                "Attributed to Colin Matthew, Jack McColl (BetterWealth), HowToCredit, Cal Barton, "
+                "Marvin Francois and Gap Funding."
+            ),
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Audit the personal credit profile",
+                    "deliverable": "680 minimum, 720-plus preferred, utilization near 10%, two or fewer recent inquiries",
+                    "gate": "Under three hard inquiries on every bureau",
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Apply at Chase first",
+                    "deliverable": "Ink Unlimited at $30-40K plus Ink Preferred at $40-60K for $70-100K at Chase",
+                    "gate": "Confirm the 0% covers purchases, balance transfers or both",
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Sequence the remaining banks",
+                    "deliverable": "Chase then US Bank; ask Navy Federal and PNC for multiple cards on one hard pull",
+                    "gate": "Stop at three to four banks or run up to eleven",
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Deploy with the exit written first",
+                    "deliverable": "Liquidate at 2.5% to about 6% depending on the route",
+                    "gate": "Borrow only what could be repaid within six months if the deal stalls",
+                },
+            ],
+        },
+    ]
+
+
+VOLUME_030_POSITIONING_ALTERNATIVES: List[Dict] = [
     {
-        "title": "The Escrow-Locked Liquidity Desk",
-        "subtitle": (
-            "Operate 24-to-72-hour transactional double-close funding through "
-            "verified settlement agents, deposited buyer cash, and reconciled payoffs."
-        ),
-        "audience": (
-            "Experienced real-estate operators with title relationships, "
-            "$25,000–$100,000 in startup capital, and documented capital-provider terms."
-        ),
+        "title": "The Two-Leg Close",
+        "subtitle": "Double closes and 1% transactional funding for spreads too fat to assign",
+        "audience": "Wholesalers hitting no-assignment REO paper or spreads above $10,000 to $20,000",
         "research_basis": (
-            "Business-purpose credit can be exempt from federal consumer-credit "
-            "disclosure requirements under 15 U.S.C. 1603(1) and "
-            "12 CFR 1026.3(a). That exemption does not resolve state lender "
-            "licensing, permissible charges, or settlement-agent authority. "
-            "California Financial Code section 22100 supplies a concrete "
-            "licensing inquiry; New York General Obligations Law section "
-            "5-501 supplies a separate rate-and-charge inquiry."
+            "Flip Lab, Jasper Cool, Jamil Damji and Dave Dinkel on funding fees, double-close triggers "
+            "and a $30,070.71 no-money net."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/15/1603",
-            "https://www.ecfr.gov/current/title-12/chapter-X/part-1026/section-1026.3",
-            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=22100.&lawCode=FIN",
-            "https://www.nysenate.gov/legislation/laws/GOB/5-501",
+            "https://www.youtube.com/watch?v=Qk7hhsytc9Y&t=472s",
+            "https://www.youtube.com/watch?v=EUE6UWl2qBA&t=199s",
+            "https://www.youtube.com/watch?v=KMD0dZIIYwc&t=132s",
+            "https://www.youtube.com/watch?v=0u7L7Q7CE5o&t=71s",
+            "https://www.youtube.com/watch?v=BbugvWp8qsA&t=42s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 030 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Earned-Fee Funding Pod",
-        "subtitle": (
-            "Build a three-person funding operation around earned fees and "
-            "contractual EMD JV splits, never escrow principal or property sale prices."
-        ),
-        "audience": (
-            "Small private-capital teams that need transaction-level underwriting, "
-            "a principal-versus-fee ledger, and a repeatable owner-profit model."
-        ),
+        "title": "Money Out Over Breakfast, Back Over Lunch",
+        "subtitle": "Becoming the transactional and Gator EMD lender",
+        "audience": "Capital holders who want same-day chunks instead of long-dated interest",
         "research_basis": (
-            "An earnest-money deposit, abbreviated EMD, does not become outside "
-            "lending law merely because documents call its return a JV split. "
-            "California Financial Code section 22100 and New York General "
-            "Obligations Law section 5-501 support substance-first review of "
-            "licensing and charges. UCC 9-109(d)(11) generally excludes creation "
-            "or transfer of real-property interests from Article 9, subject to "
-            "listed exceptions; a UCC filing alone is not a real-estate lien."
+            "Ryan Schrope's $3.7M funded in 30 days, Pace Morby's EMD chunk returns, Abdiel Garcia "
+            "Rodriguez's day-rate pricing and the Oroton volume ladder."
         ),
         "sources": [
-            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=22100.&lawCode=FIN",
-            "https://www.nysenate.gov/legislation/laws/GOB/5-501",
-            "https://www.law.cornell.edu/ucc/9/9-109",
+            "https://www.youtube.com/watch?v=wpikXXbAYnE&t=1485s",
+            "https://www.youtube.com/watch?v=xdTSPoFABEY&t=30s",
+            "https://www.youtube.com/watch?v=-9RSC5hpr9o&t=269s",
+            "https://www.youtube.com/watch?v=iVg9EsSij2c&t=46s",
+            "https://www.youtube.com/watch?v=min0RpX32uc&t=429s",
+            "https://www.youtube.com/watch?v=vtoojcHUwHU&t=149s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 030 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Verified Liquidity-Velocity Playbook",
-        "subtitle": (
-            "Separate lawful corporate-credit liquidity from purchase-only "
-            "promotions, then control every escrow release and repayment deadline."
-        ),
-        "audience": (
-            "Operators evaluating corporate-credit facilities alongside committed "
-            "cash, with issuer-permitted transfers and independently verified escrow accounts."
-        ),
+        "title": "Capital Before the Contract",
+        "subtitle": "Proof of funds, exit-first bridge debt and 0% business credit stacks",
+        "audience": "Investors building borrowing capacity before a deal or a crisis arrives",
         "research_basis": (
-            "Business-purpose treatment under 12 CFR 1026.3(a) does not make "
-            "purchase-rate promotions applicable to cash advances or transfers. "
-            "The controlling issuer agreement must establish permitted use, "
-            "transaction classification, fees, and repricing dates. "
-            "18 U.S.C. 1014 addresses covered false statements made to influence "
-            "specified institutions; applications and proof-of-funds records "
-            "must accurately describe resources and borrowing arrangements."
+            "Jerry Norton's soft-letter acceptance rate, Easy Lending USA's bridge leverage tiers, "
+            "Colin Matthew's Chase Ink stack and Naam Wynn's bank relationship limit gap."
         ),
         "sources": [
-            "https://www.ecfr.gov/current/title-12/chapter-X/part-1026/section-1026.3",
-            "https://www.law.cornell.edu/uscode/text/18/1014",
-            "https://www.law.cornell.edu/uscode/text/15/1603",
+            "https://www.youtube.com/watch?v=9NXVYf_SZCA&t=214s",
+            "https://www.youtube.com/watch?v=GcefOZxHIAg&t=233s",
+            "https://www.youtube.com/watch?v=WAqBw-d5K44&t=147s",
+            "https://www.youtube.com/watch?v=ojWjbXNf-HI&t=2116s",
+            "https://www.youtube.com/watch?v=LktXzMB-Sis&t=304s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 030 YouTube practitioner transcripts.",
     },
 ]
-
-
-def build_volume_030_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-escrow-locked-funding-workflow",
-            "process_flow",
-            "Five Controls Between Intake and Repaid Capital",
-            (
-                "A 24-to-72-hour funding interval begins at confirmed outbound "
-                "settlement, not at the first borrower inquiry."
-            ),
-            1,
-            "operating_framework",
-            (
-                "This workflow authorizes releases only to bonded title or "
-                "settlement agents after independently verifying unconditional "
-                "end-buyer cash on deposit. Traditional early EMD requests "
-                "without that cash fail this release standard. The workflow "
-                "does not equate a wire receipt with settled, available funds."
-            ),
-            (
-                "Keep principal movements, earned funding fees, and capital-provider "
-                "repayments in separate ledger accounts; close each exposure only "
-                "after the return wire and fee allocation reconcile."
-            ),
-            [
-                (
-                    "Document the transaction",
-                    "Collect contracts, entity records, and funding requests.",
-                    1.0,
-                    (
-                        "Use a structured intake form and permission-restricted "
-                        "document room. Capture both purchase contracts, borrower "
-                        "authority, property jurisdiction, requested principal, "
-                        "expected payoff, and the proposed 24-to-72-hour interval. "
-                        "Issue proof of funds only against verified available "
-                        "cash or a documented, drawable capital commitment."
-                    ),
-                ),
-                (
-                    "Underwrite repayment",
-                    "Match buyer cash against every required disbursement.",
-                    2.0,
-                    (
-                        "Obtain the settlement statement and agent-confirmed "
-                        "available buyer cash. Test whether unconditional proceeds "
-                        "cover funded principal, earned charges, liens, taxes, "
-                        "and closing costs without another sale or unfunded loan. "
-                        "Reject dry-closing assumptions and conditional buyer deposits."
-                    ),
-                ),
-                (
-                    "Authenticate the settlement agent",
-                    "Verify authority, bond coverage, and bank coordinates.",
-                    3.0,
-                    (
-                        "Check the applicable regulator's license record, bond "
-                        "or coverage evidence, and title-underwriter relationship "
-                        "where relevant. Call a previously verified number, not "
-                        "one supplied in a changed wire email. Independently "
-                        "match beneficiary ownership and account details."
-                    ),
-                ),
-                (
-                    "Release under written instructions",
-                    "Require independent verification before owner-authorized wiring.",
-                    4.0,
-                    (
-                        "The underwriting contractor records verification; the "
-                        "owner separately authorizes the wire. Written escrow "
-                        "instructions specify permitted disbursements, closing "
-                        "conditions, payoff order, and return handling. A changed "
-                        "beneficiary or missing cash confirmation stops release."
-                    ),
-                ),
-                (
-                    "Reconcile payoff and earnings",
-                    "Close principal exposure before distributing earned returns.",
-                    5.0,
-                    (
-                        "Match bank settlement identifiers to the Qualia or "
-                        "SoftPro closing file and the QuickBooks payoff ledger. "
-                        "Record principal as recovery of funding, not revenue. "
-                        "Recognize only earned contractual fees, operator EMD "
-                        "JV allocations, and origination points under the "
-                        "applicable revenue-recognition assessment."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-base-case-nested-funding-cohorts",
-            "funnel",
-            "From 250 Inquiries to 50 Earned-Fee Closings",
-            (
-                "An illustrative annual nested cohort reconciles exactly "
-                "to $535,000 in Base-Case recognized operator revenue."
-            ),
-            6,
-            "illustrative_model",
-            (
-                "Every downstream count is a subset of the preceding count; "
-                "each funded closing represents one distinct inquiry. "
-                "The assumed earned-fee mix is 30 transactional closings at "
-                "$12,500, 15 operator EMD JV allocations at $8,000, and "
-                "five separate origination engagements at $8,000. "
-                "These assumptions are illustrative, not observed conversion rates. "
-                "EMD allocations require transactions satisfying this desk's "
-                "cash-on-deposit release standard and appropriate legal characterization."
-            ),
-            (
-                "30 × $12,500 + 15 × $8,000 + 5 × $8,000 = $535,000. "
-                "Average earned revenue is $10,700 per completed engagement; "
-                "neither property value nor escrow principal enters that total."
-            ),
-            [
-                (
-                    "Received funding inquiries",
-                    "250 unique annual requests enter the intake ledger.",
-                    250.0,
-                    (
-                        "Deduplicate by borrower entity, property, and closing "
-                        "event. Capture referral source and requested timing "
-                        "without counting repeat emails or revised applications "
-                        "as additional opportunities."
-                    ),
-                ),
-                (
-                    "Complete commercial-purpose files",
-                    "150 complete files retain sixty percent of inquiries.",
-                    150.0,
-                    (
-                        "Require executed transaction documents, entity authority, "
-                        "stated business purpose, and a named settlement agent. "
-                        "Remove 100 incomplete or out-of-scope inquiries before "
-                        "spending contractor time on detailed payoff analysis."
-                    ),
-                ),
-                (
-                    "Underwritten eligible transactions",
-                    "100 eligible files retain two-thirds of complete submissions.",
-                    100.0,
-                    (
-                        "Resolve state licensing and charge treatment, available "
-                        "capital, collateral characterization, and repayment "
-                        "economics. Remove 50 files with unresolved legal scope, "
-                        "weak documents, or insufficient risk-adjusted fee contribution."
-                    ),
-                ),
-                (
-                    "Verified escrow-ready transactions",
-                    "75 release-ready files retain seventy-five percent of eligibility.",
-                    75.0,
-                    (
-                        "Require authenticated beneficiary details, verified "
-                        "settlement-agent authority and coverage, unconditional "
-                        "buyer cash, and signed disbursement instructions. "
-                        "Twenty-five eligible files do not satisfy every release condition."
-                    ),
-                ),
-                (
-                    "Completed earned-fee engagements",
-                    "50 completed engagements retain two-thirds of release-ready files.",
-                    50.0,
-                    (
-                        "Twenty-five release-ready opportunities lapse or withdraw "
-                        "before funding and generate no assumed revenue. "
-                        "The remaining 50 produce the specified $535,000 fee mix "
-                        "after completion; conditional fee quotes are excluded."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-case-earned-revenue-waterfall",
-            "waterfall",
-            "Base Case: $535,000 Earned Revenue to $227,375 Owner Profit",
-            (
-                "Six bars reconcile recognized gross operator revenue, "
-                "four expense deductions, and the exact 42.5% net margin."
-            ),
-            3,
-            "illustrative_model",
-            (
-                "The opening and closing bars are totals; the four intervening "
-                "bars are signed deductions, not cumulative balances. "
-                "Expense categories are an illustrative allocation of the "
-                "canonical $307,625 total costs. Recognized gross revenue "
-                "excludes escrow principal and amounts collected for other "
-                "principals. Operator EMD JV allocations are already limited "
-                "to the earned contractual operator share; no additional "
-                "retained-share multiplier is supplied or applied."
-            ),
-            (
-                "$535,000 − $107,000 − $80,250 − $64,200 − $56,175 "
-                "= $227,375; $227,375 ÷ $535,000 = 42.5%. "
-                "Conservative: $120,000 × 30% = $36,000 with 1 FT + 2 C. "
-                "Scaled: $950,000 × 55% = $522,500 with 2 FT + 3 C. "
-                "Principal-versus-agent presentation follows the applicable "
-                "ASC 606 assessment, not the size of the escrow wire."
-            ),
-            [
-                (
-                    "Recognized gross operator revenue",
-                    "$535,000 earned fees and operator JV allocations.",
-                    535000.0,
-                    (
-                        "Opening total: $375,000 transactional funding fees, "
-                        "$120,000 earned operator EMD JV allocations, and "
-                        "$40,000 separate origination fees. Do not add property "
-                        "sale prices, escrow principal, unearned points, or "
-                        "another participant's beneficial share."
-                    ),
-                ),
-                (
-                    "Capital access and carrying costs",
-                    "Subtract $107,000 for documented funding-capital expenses.",
-                    -107000.0,
-                    (
-                        "Illustrative deduction of 20% of revenue leaves "
-                        "$428,000. Includes contracted facility interest, "
-                        "commitment charges, and deployment carry; excludes "
-                        "repayment of borrowed principal and distributions "
-                        "already excluded from recognized operator revenue."
-                    ),
-                ),
-                (
-                    "Contractor delivery and specialist costs",
-                    "Subtract $80,250 for the three-person operating pod.",
-                    -80250.0,
-                    (
-                        "Illustrative deduction of 15% of revenue leaves "
-                        "$347,750. Covers the two contractors and directly "
-                        "attributable outside specialist work. The owner's "
-                        "residual profit is not deducted again as a distribution."
-                    ),
-                ),
-                (
-                    "Recurring operating overhead",
-                    "Subtract $64,200, equivalent to $5,350 monthly overhead.",
-                    -64200.0,
-                    (
-                        "Illustrative deduction of 12% of revenue leaves "
-                        "$283,550. Covers software, insurance, bookkeeping, "
-                        "secure communications, and recurring operating services. "
-                        "$5,350 falls within the canonical $2,000–$12,000 "
-                        "monthly operating-expense range."
-                    ),
-                ),
-                (
-                    "Loss allowance and transaction friction",
-                    "Subtract $56,175 for modeled losses and closing friction.",
-                    -56175.0,
-                    (
-                        "Illustrative deduction of 10.5% of revenue leaves "
-                        "$227,375. Models credit-loss expense, failed-file "
-                        "costs, wire charges, and unrecovered closing expenses. "
-                        "Moving cash into a reserve account alone is not "
-                        "an additional expense."
-                    ),
-                ),
-                (
-                    "Annual owner net profit",
-                    "$227,375 residual profit at exactly 42.5% margin.",
-                    227375.0,
-                    (
-                        "Closing total, not an additional positive movement: "
-                        "the Base-Case 1 FT + 2 C pod retains 42.5 cents "
-                        "per earned revenue dollar after the modeled costs. "
-                        "The figure is owner profit, not gross billings "
-                        "or deployed funding capacity."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-funding-lane-earned-fee-yields",
-            "horizontal_bars",
-            "Compare Earned Fee Yield, Not Escrow Throughput",
-            (
-                "Five hypothetical lane quotes express operator fees "
-                "as a percentage of $100,000 deployed principal."
-            ),
-            2,
-            "illustrative_model",
-            (
-                "Numeric values are fee-yield percentage points per deployment, "
-                "not annual returns or net margins. Each example assumes "
-                "$100,000 principal and a 72-hour exposure solely to standardize "
-                "comparison. Prices are editorial assumptions, not market "
-                "benchmarks or recommended charges. Payment rails do not "
-                "themselves create yield. These unit examples are separate "
-                "from the annual Base-Case cohort and must not be summed "
-                "into its $535,000 revenue."
-            ),
-            (
-                "Fee yield = earned operator fee ÷ deployed principal × 100. "
-                "A 1.25% fee produces $1,250 revenue, not $101,250. "
-                "Applicable charge limits, minimum bank charges, capital carry, "
-                "and failed-closing losses determine whether any quote is usable."
-            ),
-            [
-                (
-                    "Complex double-close through Fedwire",
-                    "$1,250 earned fee per $100,000 deployed principal.",
-                    1.25,
-                    (
-                        "Assume a hypothetical 1.25% fee for a document-intensive "
-                        "72-hour double close. Both closing legs must be "
-                        "executable, buyer cash unconditional, and the beneficiary "
-                        "verified. Complexity does not excuse an impermissible charge."
-                    ),
-                ),
-                (
-                    "Repeat-borrower double-close through Fedwire",
-                    "$1,000 earned fee per $100,000 deployed principal.",
-                    1.0,
-                    (
-                        "Assume a hypothetical 1.00% fee where reusable entity "
-                        "records reduce intake work. Reconfirm bank coordinates "
-                        "and available buyer cash for every transaction; "
-                        "a repeat relationship never substitutes for wire authentication."
-                    ),
-                ),
-                (
-                    "Escrow-controlled EMD JV allocation",
-                    "$800 operator allocation per $100,000 deployed principal.",
-                    0.8,
-                    (
-                        "Assume a hypothetical 0.80% earned operator allocation "
-                        "on a 72-hour escrow-controlled transaction. Reject early "
-                        "EMD requests lacking unconditional end-buyer cash under "
-                        "this desk's mandate. A JV label does not settle "
-                        "whether lending rules apply."
-                    ),
-                ),
-                (
-                    "Same-bank commercial escrow transfer",
-                    "$600 earned fee per $100,000 deployed principal.",
-                    0.6,
-                    (
-                        "Assume a hypothetical 0.60% fee and confirmed "
-                        "settlement-agent acceptance of an internal bank transfer. "
-                        "Verify funds availability and the legal beneficiary; "
-                        "a same-bank route does not eliminate mistaken-recipient "
-                        "or fraudulent-instruction risk."
-                    ),
-                ),
-                (
-                    "Issuer-permitted credit-funded escrow wire",
-                    "$400 earned fee per $100,000 deployed principal.",
-                    0.4,
-                    (
-                        "Assume a hypothetical 0.40% fee only where the issuer "
-                        "expressly permits the actual credit-to-cash transaction "
-                        "and the settlement agent accepts its documented source. "
-                        "Do not treat a 0%-APR purchase promotion as cash-advance "
-                        "pricing or use fabricated merchant purchases. Deduct "
-                        "transfer fees and actual borrowing charges separately."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-statutory-and-release-decision-tree",
-            "decision_tree",
-            "Four Pre-Flight Decisions Before Capital Leaves",
-            (
-                "All four checks must pass; unresolved evidence "
-                "means no release, not a higher-priced exception."
-            ),
-            5,
-            "operating_framework",
-            (
-                "Render four sequential decision nodes with pass and fail "
-                "branches described in each detail. Numeric values indicate "
-                "decision order, not risk scores. State examples illustrate "
-                "jurisdiction-specific analysis and are not nationwide exemptions."
-            ),
-            (
-                "Federal business-purpose treatment, state lending authority, "
-                "escrow safety, and usable liquidity are separate questions. "
-                "Passing one never substitutes for passing the remaining three."
-            ),
-            [
-                (
-                    "Commercial purpose and transaction substance",
-                    "Pass documented business-purpose facts; stop unsupported classifications.",
-                    1.0,
-                    (
-                        "Apply 15 U.S.C. 1603(1) and 12 CFR 1026.3(a) "
-                        "to the actual credit purpose where relevant. "
-                        "An LLC borrower alone does not establish business "
-                        "purpose. If consumer-purpose facts emerge, stop this "
-                        "commercial workflow and assess the applicable consumer regime."
-                    ),
-                ),
-                (
-                    "State authority, charges, and security",
-                    "Pass verified licensing and charge analysis; stop unresolved scope.",
-                    2.0,
-                    (
-                        "Identify relevant state connections and document the "
-                        "applicable license or exemption. Examine California "
-                        "Financial Code section 22100 when applicable; examine "
-                        "New York General Obligations Law section 5-501 and "
-                        "Penal Law section 190.40 when applicable. Include "
-                        "origination and fixed fees in the legally required "
-                        "charge analysis. UCC 9-109(d)(11) prevents treating an "
-                        "ordinary Article 9 filing as a substitute for real-property security."
-                    ),
-                ),
-                (
-                    "Escrow authority and unconditional buyer cash",
-                    "Pass verified agent and cash evidence; stop dry closings.",
-                    3.0,
-                    (
-                        "Verify settlement-agent licensing where required, "
-                        "current bond or coverage evidence, beneficiary ownership, "
-                        "and independently confirmed buyer cash. Check coverage "
-                        "limits and exclusions rather than assuming every fraud "
-                        "loss is covered. Conditional deposits, changed bank "
-                        "details, or missing payoff authority stop disbursement."
-                    ),
-                ),
-                (
-                    "Permitted liquidity and repayment control",
-                    "Pass actual facility terms; stop promotional-rate assumptions.",
-                    4.0,
-                    (
-                        "Verify issuer-permitted use, cash-transfer eligibility, "
-                        "transaction fees, available limits, and repayment dates. "
-                        "Keep applications and proof-of-funds statements accurate; "
-                        "18 U.S.C. 1014 applies to covered false statements. "
-                        "If promotional pricing expires before a credible payoff "
-                        "buffer, or repayment depends on new borrowing, reject "
-                        "that source and use an independently acceptable facility."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-three-to-five-person-funding-pod",
-            "org_architecture",
-            "A Three-Person Core with Two Explicit Scale Additions",
-            (
-                "Conservative and Base Case use 1 FT + 2 C; "
-                "Scaled Small-Team uses 2 FT + 3 C."
-            ),
-            11,
-            "operating_framework",
-            (
-                "FT means full-time operator; C means contractor. Each node "
-                "represents one person, not one full-time equivalent. "
-                "The first three seats form the core pod; the last two "
-                "are added only for the Scaled Small-Team scenario. "
-                "Settlement agents and capital providers remain external "
-                "counterparties rather than hidden pod headcount."
-            ),
-            (
-                "Owner authorization and independent wire verification remain "
-                "separate at both sizes. Automation assembles evidence and "
-                "flags exceptions; it never independently changes beneficiary "
-                "instructions or releases capital."
-            ),
-            [
-                (
-                    "Core seat: owner and capital lead",
-                    "One full-time owner controls pricing and capital authorization.",
-                    1.0,
-                    (
-                        "Own counterparty selection, capacity limits, charge "
-                        "economics, and final wire authorization. Maintain "
-                        "capital-provider agreements and decide whether a file "
-                        "meets the desk's mandate. Receive verification evidence "
-                        "from another person before authorizing funds."
-                    ),
-                ),
-                (
-                    "Core seat: underwriting contractor",
-                    "One contractor verifies transaction evidence and wire instructions.",
-                    1.0,
-                    (
-                        "Review contracts, business-purpose facts, jurisdiction "
-                        "findings, payoff coverage, and settlement-agent records. "
-                        "Perform independent callbacks and preserve the evidence "
-                        "trail. In the core pod, this person verifies the "
-                        "beneficiary while the owner authorizes release."
-                    ),
-                ),
-                (
-                    "Core seat: escrow-ledger contractor",
-                    "One contractor reconciles principal, earned fees, and repayments.",
-                    1.0,
-                    (
-                        "Maintain the QuickBooks subledger and reconcile it "
-                        "against Qualia or SoftPro statements and bank records. "
-                        "Separate principal assets and obligations from revenue, "
-                        "track aged payoffs, and report unresolved variances "
-                        "without editing bank beneficiaries."
-                    ),
-                ),
-                (
-                    "Scale addition: full-time operations lead",
-                    "Add one full-time operator only in the scaled scenario.",
-                    1.0,
-                    (
-                        "Own queue discipline, funding calendars, exposure "
-                        "aggregation, contractor scheduling, and escalation timing. "
-                        "Add this seat when measured file concurrency exceeds "
-                        "documented core-pod capacity, rather than treating "
-                        "the $950,000 revenue case as a three-person result."
-                    ),
-                ),
-                (
-                    "Scale addition: wire-control contractor",
-                    "Add one contractor for independent settlement verification capacity.",
-                    1.0,
-                    (
-                        "Take primary responsibility for authenticated callbacks, "
-                        "beneficiary-change review, and archived verification "
-                        "records. The owner retains release authority; the "
-                        "underwriter retains transaction review. This addition "
-                        "brings the scaled pod to two full-time people "
-                        "and three contractors."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-startup-capital-four-bucket-allocation",
-            "stacked_comparison",
-            "Allocate a $75,000 Startup Budget Before Quoting Capacity",
-            (
-                "Four non-overlapping buckets sit inside the canonical "
-                "$25,000–$100,000 USD startup range."
-            ),
-            4,
-            "illustrative_model",
-            (
-                "Render one stacked $75,000 startup allocation with four "
-                "segments. Numeric values are dollars, not annual expenses "
-                "or scenario revenue. This selected budget does not imply "
-                "that every operation needs the same proportions. "
-                "Additional deployment capacity requires documented capital "
-                "commitments; undrawn commitments and credit limits are "
-                "not startup cash."
-            ),
-            (
-                "$40,000 + $15,000 + $10,000 + $10,000 = $75,000. "
-                "Only $40,000 is initially designated for deployment. "
-                "Committed external capital and actual repayment timing "
-                "must support any larger transaction volume."
-            ),
-            [
-                (
-                    "Deployable risk capital",
-                    "$40,000 remains available for approved escrow funding.",
-                    40000.0,
-                    (
-                        "Represent 53.33% of startup cash as deployable capital. "
-                        "Set per-file and aggregate exposure limits below "
-                        "available liquidity after outstanding wires. Returning "
-                        "principal replenishes capacity; it does not create "
-                        "recognized operator revenue."
-                    ),
-                ),
-                (
-                    "Operating runway",
-                    "$15,000 supports recurring operations before reliable fee collections.",
-                    15000.0,
-                    (
-                        "Represent 20.00% of startup cash as operating runway. "
-                        "At the illustrative $5,350 monthly Base-Case overhead "
-                        "allocation, this covers about 2.8 months of overhead "
-                        "only, not capital carry or every contractor charge. "
-                        "A four-month first-deal interval requires additional "
-                        "runway or lower initial burn."
-                    ),
-                ),
-                (
-                    "Documentation and control setup",
-                    "$10,000 funds jurisdiction work and secure operating setup.",
-                    10000.0,
-                    (
-                        "Represent 13.33% of startup cash as a setup budget "
-                        "for applicable licensing work, transaction documents, "
-                        "insurance placement, secure intake, hardware security "
-                        "keys, and restricted bank permissions. Obtain actual "
-                        "quotes before committing deployment capacity."
-                    ),
-                ),
-                (
-                    "Contingency and liquidity reserve",
-                    "$10,000 stays uncommitted for delays and operating shocks.",
-                    10000.0,
-                    (
-                        "Represent 13.33% of startup cash as a segregated "
-                        "liquidity reserve. Do not count it simultaneously "
-                        "as committed loan funding. Reserve cash does not "
-                        "replace the annual loss-expense assumption or make "
-                        "a disputed escrow release acceptable."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-thirty-day-controlled-launch-roadmap",
-            "timeline_roadmap",
-            "Thirty Days to a Documented Funding Desk",
-            (
-                "Four weekly milestones establish operating readiness; "
-                "the canonical first-deal window remains one to four months."
-            ),
-            12,
-            "operating_framework",
-            (
-                "Numeric values are milestone end days: 7, 14, 21, and 30. "
-                "The final interval intentionally spans nine days. "
-                "A day-30 pilot may remain an unfunded rehearsal if transaction, "
-                "legal, capital, or escrow evidence is incomplete."
-            ),
-            (
-                "Measure readiness through completed evidence, segregated "
-                "permissions, and reconciled test files. Never compress "
-                "underwriting or release conditions to satisfy a calendar target."
-            ),
-            [
-                (
-                    "Days 1-7: define the operating mandate",
-                    "Finish jurisdiction scope, fee logic, and capital-source terms.",
-                    7.0,
-                    (
-                        "Choose the initial state and transaction type, document "
-                        "commercial-purpose facts, and establish applicable lender "
-                        "and settlement requirements. Build the $75,000 startup "
-                        "allocation and the exact three-scenario scorecard. "
-                        "Record every facility's usable amount, charges, permitted "
-                        "uses, and repayment timing."
-                    ),
-                ),
-                (
-                    "Days 8-14: implement evidence and permissions",
-                    "Configure intake, independent callbacks, and a principal-separated ledger.",
-                    14.0,
-                    (
-                        "Create restricted intake storage, a transaction checklist, "
-                        "and QuickBooks accounts separating principal, fees, "
-                        "capital costs, and losses. Assign owner authorization "
-                        "and contractor verification permissions. Test a changed "
-                        "beneficiary alert and document why the simulated "
-                        "wire remains unreleased."
-                    ),
-                ),
-                (
-                    "Days 15-21: rehearse complete closing files",
-                    "Complete two unfunded rehearsals and one failure exercise.",
-                    21.0,
-                    (
-                        "Walk two sample files from contract intake through "
-                        "Qualia or SoftPro statement review and payoff "
-                        "reconciliation. Simulate missing buyer cash, a callback "
-                        "mismatch, and a delayed return wire. Verify that "
-                        "exception ownership and escalation timestamps remain visible."
-                    ),
-                ),
-                (
-                    "Days 22-30: pilot only a qualified transaction",
-                    "Run one bounded pilot or preserve an unfunded readiness file.",
-                    30.0,
-                    (
-                        "If all four pre-flight checks pass, use a documented "
-                        "exposure cap, independently verified settlement instructions, "
-                        "and daily payoff tracking. Otherwise continue sourcing "
-                        "without disbursement. Compare actual earned fees and "
-                        "costs with the Base-Case model; do not extrapolate "
-                        "one closing into proven annual performance."
-                    ),
-                ),
-            ],
-        ),
-    ]
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for (
-            identifier,
-            kind,
-            title,
-            subtitle,
-            chapter,
-            tag,
-            note,
-            caption,
-            stages,
-        ) in specs
-    ]

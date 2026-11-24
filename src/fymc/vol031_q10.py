@@ -1,686 +1,868 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "automation-ai-leverage-and-scalable-distribution-flywheels",
-    "question_prompt": "How does a 1 FT + 3 C (4 people) uber & commercial fleet arbitrage team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Python Event Queues, Authorized Fleet Waterfalls, FCRA MVR Review, Safe Telematics, and Investor Co-Hosting Acquisition",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #31, Uber & Commercial Fleet Arbitrage, ranks #15 of 36 with an "
-        "89/100 Money-to-Manpower Score. This chapter maps 10 operating plays into "
-        "a Python-led system spanning public-record intelligence, driver qualification, "
-        "lease waterfalls, telematics, billing, and distribution. A 1 FT + 3 C team "
-        "targets automation of at least 70% of measured repetitive work while retaining "
-        "human decisions on screening, money movement, coverage, and vehicle controls. "
-        "Canonical annual owner profits are $25,200 Conservative, $144,900 Base, and "
-        "$336,000 Scaled; the last case uses 2 FT + 4 C. Gross billings remain distinct "
-        "from the 55% retained contribution. Instrument every run, price every exception, "
-        "and expand only after reconciliation and recovery tests pass."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$180,000",
-            "context": "Annual gross billings; $99,000 retained at 55%",
-            "note": (
-                "14% gross-billings net margin; 25.45% retained net margin; "
-                "$25,200 annual owner net profit; 1 FT + 3 C"
-            ),
-        },
-        {
-            "label": "Base",
-            "value": "$690,000",
-            "context": "Annual gross billings; $379,500 retained at 55%",
-            "note": (
-                "21.0% gross-billings net margin; 38.18% retained net margin; "
-                "$144,900 annual owner net profit; 1 FT + 3 C"
-            ),
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual gross billings; $660,000 retained at 55%",
-            "note": (
-                "28% gross-billings net margin; 50.91% retained net margin; "
-                "$336,000 annual owner net profit; 2 FT + 4 C"
-            ),
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Map ten plays onto one measurable fleet event spine",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build the operating spine around a vehicle, a driver, an investor, and a "
-                    "contract version, rather than around disconnected spreadsheets. The ten "
-                    "mapped plays below are this chapter's implementation map; "
-                    "public_record_api_intelligence preserves the supplied catalog identifier, "
-                    "while the other labels describe local workflow components. Assign the "
-                    "full-time operator responsibility for cash reconciliation, insurance "
-                    "exceptions, and release decisions. Allocate the three contractors to "
-                    "driver onboarding, dispatch and vehicle coordination, and bookkeeping "
-                    "with acquisition support. These are work assignments, not assumptions "
-                    "that contractor classification follows automatically from a label. "
-                    "Record each task's baseline handling time before automating it. A "
-                    "sample week containing 1,000 repetitive tasks at three minutes each "
-                    "represents 50 hours. Completing 750 without manual re-entry removes "
-                    "37.5 baseline hours, but reviewing 100 exceptions for four minutes "
-                    "and auditing 50 outputs for two minutes consumes 8.33 hours. Net "
-                    "time reduction is therefore 29.17 hours, or 58.3%, despite 75% "
-                    "straight-through task completion. Report both measures and exclude "
-                    "driving, physical inspections, and collision response from the "
-                    "repetitive-task denominator. The 70% target concerns verified task "
-                    "completion, not an assertion that a four-person operation can "
-                    "ignore safety or eliminate judgment."
-                ),
-                (
-                    "Implement ingestion with Python's urllib.request, json, sqlite3, hashlib, "
-                    "hmac, and logging modules. Use a production HTTPS receiver supplied "
-                    "by the hosting environment; Python's basic development server is not "
-                    "the public production endpoint. Verify each vendor's documented signature "
-                    "against the original request bytes, check its timestamp and replay rules, "
-                    "then persist the event before acknowledging receipt. Where no webhook "
-                    "exists, fetch an authorized report with a scheduled job and hash the "
-                    "file. Give every event a provider identifier, external event identifier, "
-                    "vehicle identifier, observed timestamp, contract version, and processing "
-                    "state. Enforce uniqueness on the provider and event identifiers in "
-                    "SQLite, and keep monetary values as integer cents. An event marked "
-                    "received becomes validated, proposed, reviewed when necessary, posted, "
-                    "and reconciled. Separate the proposed state from ledger posting so "
-                    "an LLM cannot move money merely by generating convincing text. Use "
-                    "a transactional outbox for downstream requests, with an idempotency "
-                    "key where the receiving service supports one. After a timeout, query "
-                    "the provider's transaction status before retrying a payment. A "
-                    "single-writer queue suits the initial footprint; migrate storage "
-                    "only when measured lock contention or recovery objectives justify "
-                    "the operational burden."
-                ),
-                (
-                    "Run public_record_api_intelligence against fleet-relevant business triggers: "
-                    "new transportation permits, municipal surplus notices, commercial entity "
-                    "registrations, and published airport operator directories. Fragmented county "
-                    "dockets, probate registries, and unclaimed-property ledgers require narrower "
-                    "handling. A record may suggest a business ownership change or an asset "
-                    "requiring an authorized representative, but it does not establish an "
-                    "uncontested claim, available vehicle title, or permission to contact "
-                    "beneficiaries. Resolve identity and business relevance before outreach; "
-                    "exclude household distress targeting and do not substitute public records "
-                    "for a driving report. Illustratively, processing 2,000 permitted records "
-                    "at $0.015 each costs $30. If 80 records become plausible business "
-                    "matches and 20 survive human verification, the data cost is $1.50 "
-                    "per verified lead, before labor. Add 40 minutes of review at $30 "
-                    "per hour and the combined cost becomes $2.50 per verified lead. "
-                    "Attach the official source URL, retrieval date, permitted use, and "
-                    "entity matching evidence to each record. When access changes, stop "
-                    "the connector rather than bypassing restrictions. Switch to scheduled "
-                    "bulk FOIA/public-record exports, official data feeds, and low-frequency "
-                    "cached queues; mark stale records ineligible for outreach until a "
-                    "fresh business-status check succeeds."
-                ),
-            ],
-            "table": {
-                "caption": "Ten Mapped Plays With Explicit Units and Recovery Paths",
-                "headers": [
-                    "Mapped operating play and concrete purpose",
-                    "Input and human decision boundary",
-                    "Illustrative unit measurement for weekly review",
-                    "Failure recovery and operating fallback",
-                ],
-                "rows": [
-                    [
-                        "public_record_api_intelligence identifies documented fleet business opportunity triggers",
-                        "Official records establish leads, while people verify ownership relevance",
-                        "Two thousand records produce twenty verified leads for fifty dollars",
-                        "Use scheduled public-record exports and cached queues when access fails",
-                    ],
-                    [
-                        "Driver intake normalization structures applications without making eligibility decisions",
-                        "Driver submissions populate fields, while reviewers resolve identity mismatches",
-                        "Sixty applications at two extraction cents consume one dollar twenty",
-                        "Return unreadable submissions to staff for direct document confirmation",
-                    ],
-                    [
-                        "Authorized MVR orchestration orders reports and assembles review packets",
-                        "Permissible purpose and required authorization precede every report request",
-                        "Thirty reports at an assumed twelve dollars cost three hundred sixty",
-                        "Pause qualification and request vendor correction for mismatched identities",
-                    ],
-                    [
-                        "Lease waterfall reconciliation proposes contract-specific driver and investor allocations",
-                        "Executed agreements govern allocations, while staff authorize consequential postings",
-                        "One thousand gross dollars retain five hundred fifty model dollars",
-                        "Hold disputed lines and reconstruct allocations from signed contracts",
-                    ],
-                    [
-                        "Telematics exception routing prioritizes location and vehicle health discrepancies",
-                        "Authorized device events inform review without authorizing vehicle disablement",
-                        "Four hundred events at one cent cost four processing dollars",
-                        "Treat stale telemetry as unreliable and arrange physical verification",
-                    ],
-                    [
-                        "Toll and maintenance matching assigns evidenced charges to correct leases",
-                        "Timestamped statements and work orders support human-reviewed disputed charges",
-                        "Two hundred lines at three cents cost six processing dollars",
-                        "Suspend collection until trip windows and source evidence agree",
-                    ],
-                    [
-                        "Commercial shift dispatch matches available vehicles with qualified operators",
-                        "Current coverage and jurisdictional permissions constrain every dispatch proposal",
-                        "Forty shifts at five minutes saved recover two hundred minutes",
-                        "Use a staffed dispatch board when eligibility integrations fail",
-                    ],
-                    [
-                        "Investor evidence packaging converts operating records into co-hosting reports",
-                        "Reconciled statements support reports, while staff approve investor communications",
-                        "Twenty reports at ten drafting cents cost two processing dollars",
-                        "Issue reviewed ledger exports when narrative generation produces errors",
-                    ],
-                    [
-                        "Programmatic local publishing distributes verified fleet availability and requirements",
-                        "Current inventory and sourced rules support editor-reviewed useful pages",
-                        "Ten pages producing twenty qualified inquiries yield two inquiries each",
-                        "Unpublish stale availability and route visitors to staffed intake",
-                    ],
-                    [
-                        "Referral and outbound attribution connects introductions to collected contributions",
-                        "Permissioned contacts and documented referrals receive bounded outreach sequences",
-                        "Six hundred acquisition dollars over three activations equals two hundred",
-                        "Suppress opted-out contacts and stop channels with unrecovered acquisition cost",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Instrument the exception before automating the happy path",
-                "body": (
-                    "Small fleet teams lose their advantage when attractive dashboards hide "
-                    "uncollected leases, disputed tolls, or vehicles unavailable for service."
-                ),
-                "items": [
-                    "Keep a separate plate-history table; a reassigned plate can otherwise move an old toll onto the wrong driver's current lease.",
-                    "Record investor distributions separately from driver receivables so a missing driver payment cannot masquerade as an investor accounting discrepancy.",
-                    "Group vehicle downtime by cause and responsible vendor; recurring repair delays often matter more than shaving seconds from invoice generation.",
-                    "Keep the last reconciled roster available offline with restricted access, including dispatch contacts and coverage expiration dates, for vendor outages.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Automate qualification and telemetry without delegating consequential decisions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Treat driver qualification as evidence assembly followed by an accountable "
-                    "decision. Capture the applicant's identity, license jurisdiction, intended "
-                    "vehicle class, operating geography, and contract type before requesting "
-                    "an MVR through a properly contracted provider. The Driver's Privacy "
-                    "Protection Act, 18 U.S.C. 2721, restricts disclosure and use of personal "
-                    "information from motor vehicle records; the workflow must record the "
-                    "actual permitted purpose rather than a generic business justification. "
-                    "When a report is a consumer report, apply the relevant Fair Credit "
-                    "Reporting Act provisions, including 15 U.S.C. 1681b. Employment-purpose "
-                    "reports trigger specific disclosure, authorization, and pre-adverse-action "
-                    "requirements; do not assume every driver lease is employment or that "
-                    "a contractor label removes applicable duties. Configure the report "
-                    "provider and reviewer checklist for the actual relationship. An LLM "
-                    "may extract expiration dates and organize cited findings, but it must "
-                    "not invent disqualifying events or decide eligibility. Store the original "
-                    "report in a restricted repository, pass only necessary fields to the "
-                    "model, and maintain an access log. An identity mismatch stops the "
-                    "workflow. The reviewer requests correction, records the disposition, "
-                    "and follows the applicable notice process before an adverse decision "
-                    "is implemented."
-                ),
-                (
-                    "Make coverage and vehicle authority machine-readable, but keep binding "
-                    "interpretations with the broker and responsible operator. A certificate "
-                    "upload alone does not prove that a particular driver, vehicle, use, "
-                    "and territory are covered. Store the policy identifier, named insured, "
-                    "scheduled vehicle, authorized-driver conditions, effective times, "
-                    "deductibles, and relevant endorsements. California Insurance Code "
-                    "5433 addresses transportation network company insurance requirements "
-                    "across operating periods; it does not automatically satisfy every "
-                    "commercial livery assignment. California charter-party authority under "
-                    "Public Utilities Code 5371 and New York City TLC licensing requirements "
-                    "must be evaluated for the service actually sold. Airport permissions "
-                    "are a separate operating check, not a synonym for TCP or TLC status. "
-                    "The dispatch engine should require affirmative, current evidence "
-                    "matching the proposed shift and decline automatic assignment when "
-                    "evidence expires. Illustratively, reviewing 40 proposed shifts for "
-                    "two minutes each uses 80 minutes; verifying only eight flagged "
-                    "exceptions for five minutes uses 40 minutes, provided the remaining "
-                    "32 have complete validated evidence. The saved 40 minutes is the "
-                    "benefit, not an assumed reduction in insurance expense. During a "
-                    "carrier or licensing-system outage, preserve existing records and "
-                    "route new assignments to manual verification."
-                ),
-                (
-                    "Connect authorized OBD-II GPS and diagnostic feeds from a contracted "
-                    "telematics vendor such as Geotab or Samsara where the purchased "
-                    "hardware and service expose the required data. Never assume a GPS "
-                    "subscription includes starter-interrupt capability or that a location "
-                    "fix proves a vehicle is safely parked. Use telemetry first for "
-                    "maintenance triage, overdue return investigation, and dispatch readiness. "
-                    "Require freshness, device health, and vehicle association checks before "
-                    "promoting an event into a staff task. A low-voltage event should "
-                    "generate a battery inspection proposal, not an accusation against "
-                    "a driver. Starter-interrupt equipment, where lawful and contractually "
-                    "authorized, remains outside autonomous model control. Require documented "
-                    "human authorization, manufacturer-prescribed safeguards, verified safe "
-                    "stationary conditions, an emergency escalation route, and applicable "
-                    "notice requirements; never command a moving vehicle to stop or treat "
-                    "uncertain status as permission. The safest default on stale telemetry, "
-                    "conflicting sensors, or an unresolved emergency is no remote command. "
-                    "For an illustrative 400 daily events, $4 processing spend plus "
-                    "20 five-minute reviews at $30 per hour produces $54 total handling "
-                    "cost, or $0.135 per event. Track false alerts and repeat causes "
-                    "so sensor noise cannot silently consume the team's entire operating day."
-                ),
-            ],
-            "table": {
-                "caption": "Qualification, Coverage, and Telematics Evidence Matrix",
-                "headers": [
-                    "Operating decision requiring a defined owner",
-                    "Required evidence before proposing an action",
-                    "Automation permitted within the evidence boundary",
-                    "Human review and safe failure response",
-                ],
-                "rows": [
-                    [
-                        "Request an MVR for the actual driver relationship",
-                        "Document permitted purpose, identity match, and required applicant authorization",
-                        "Submit approved requests and track provider responses without eligibility scoring",
-                        "Reviewer resolves mismatches before any qualification decision becomes effective",
-                    ],
-                    [
-                        "Evaluate a potentially adverse driver qualification finding",
-                        "Original report and cited findings support the relationship-specific review",
-                        "Assemble notices and evidence packets without automatically sending decisions",
-                        "Responsible reviewer follows applicable pre-action and adverse-action notice requirements",
-                    ],
-                    [
-                        "Assign a vehicle to a commercial airport shift",
-                        "Current driver eligibility, vehicle authority, coverage, and airport permission align",
-                        "Compare structured expiration dates and flag incompatible operating territories",
-                        "Dispatcher confirms unresolved conditions before releasing any affected assignment",
-                    ],
-                    [
-                        "Escalate a diagnostic alert into a maintenance task",
-                        "Fresh device readings and correct vehicle association support the alert",
-                        "Cluster repeated codes and propose an inspection work order",
-                        "Vehicle coordinator confirms urgency and records actual mechanic findings",
-                    ],
-                    [
-                        "Consider a permitted stationary starter-interrupt equipment action",
-                        "Documented authority, safe stationary verification, and device safeguards remain essential",
-                        "Create a review ticket without exposing command capability to models",
-                        "Authorized person evaluates safety and withholds action whenever evidence conflicts",
-                    ],
-                    [
-                        "Respond to a telemetry vendor outage or stale feed",
-                        "Last successful synchronization and affected vehicle roster define the incident",
-                        "Mark data stale and suspend dependent automatic workflow transitions",
-                        "Use direct driver contact and physical checks for urgent decisions",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before unattended processing expands",
-                "body": (
-                    "Release repetitive processing only after a named operator records "
-                    "the evidence for each check. Safety and eligibility decisions remain assigned."
-                ),
-                "items": [
-                    "Verify that every MVR request has the correct permitted purpose, required authorization, restricted storage, and a tested correction-and-notice workflow.",
-                    "Verify that proposed dispatches match current driver, vehicle, coverage, commercial authority, and airport permissions for the actual service and location.",
-                    "Verify that vehicle-control capabilities are isolated from LLMs and routine automation, with human authorization and manufacturer safety constraints enforced.",
-                    "Verify that duplicate events, stale records, payment timeouts, and vendor outages all produce the intended hold or manual recovery outcome.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Reconcile lease waterfalls and price the full automation workload",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Preserve Formula v2.0's distinction between gross billings and the 55% "
-                    "retained contribution. Conservative gross billings of $180,000 become "
-                    "$99,000 retained, from which $73,800 of modeled remaining costs leave "
-                    "$25,200 owner profit. Base gross billings of $690,000 become $379,500 "
-                    "retained, with $234,600 remaining costs and $144,900 owner profit. "
-                    "Scaled gross billings of $1,200,000 become $660,000 retained, with "
-                    "$324,000 remaining costs and $336,000 owner profit. These reconcile "
-                    "to gross-billings net margins of 14%, 21.0%, and 28%, and retained "
-                    "net margins of 25.45%, 38.18%, and 50.91%. Remaining costs are an "
-                    "annual reconciliation envelope, not an assertion that every dollar "
-                    "is fixed monthly overhead. Allocate labor, insurance exposure, "
-                    "software, repairs, downtime, and other costs according to the "
-                    "actual contract, avoiding double counting costs already removed "
-                    "in the 45% share. For presentation, preserve the scorecard's "
-                    "ASC 606 retained-share convention while documenting the actual "
-                    "principal-versus-agent assessment for each revenue stream. Neither "
-                    "passenger fares earned by drivers nor investor vehicle values "
-                    "become operator revenue simply because they appear in imported "
-                    "reports. The Scaled team grows to 2 FT + 4 C; "
-                    "do not quietly keep the Base staffing assumption."
-                ),
-                (
-                    "Build the Uber Fleet Partner waterfall from actual agreements and "
-                    "authorized reporting access, not an imagined universal payout API. "
-                    "Where the account supports a relevant export or integration, import "
-                    "its settlement records; otherwise use controlled report downloads "
-                    "and reviewer-confirmed bank matching. Top-of-waterfall driver leases "
-                    "describe a negotiated collection position, not a blanket right "
-                    "to seize driver earnings or reorder platform payments. Model the "
-                    "contract's lease charge, investor entitlement, permitted pass-through "
-                    "costs, credits, and disputed amounts as separate ledger lines. "
-                    "At the scorecard's aggregate ratio, $1,000 gross billings leaves "
-                    "$550 retained after $450 allocated to investor splits and "
-                    "pass-through fleet costs; an individual contract can differ, so "
-                    "reconcile the portfolio rather than forcing every vehicle into "
-                    "the same split. Match tolls against plate history, transponder, "
-                    "trip timestamp, and the responsible lease window. Explain any "
-                    "permitted administrative fee in the contract and customer statement. "
-                    "Maintenance billing needs an approved work order, vendor invoice, "
-                    "vehicle identity, and contractual responsibility. Missing evidence "
-                    "creates a disputed item rather than an automatic debit. Reconcile "
-                    "the bank, platform settlement, driver receivable, and investor "
-                    "payable daily, and require a second review for changed payout "
-                    "destinations or material manual adjustments."
-                ),
-                (
-                    "Price each automated run as vendor charges plus model usage, "
-                    "infrastructure allocation, retries, and expected human review. "
-                    "Illustratively, a document workflow costing $0.02 extraction, "
-                    "$0.01 inference, and $0.01 queue and storage totals $0.04 "
-                    "before review. At a 12% exception rate, four minutes per "
-                    "exception, and $30 hourly labor, expected review adds $0.24, "
-                    "making the run $0.28. Ten thousand monthly runs therefore "
-                    "cost $2,800, not $400. These are planning assumptions rather "
-                    "than vendor quotations, and must fit within the canonical "
-                    "cost envelope rather than being added after declaring profit. "
-                    "Exclude MVR purchase charges from this document example and "
-                    "budget them separately to avoid hiding a material input. "
-                    "Record model identifier, prompt version, token counts, outcome, "
-                    "and reviewer corrections without logging unnecessary sensitive "
-                    "documents. Validate output against required keys, permitted "
-                    "values, source references, and arithmetic constraints; low "
-                    "confidence is not the only reason to review. Use bounded "
-                    "retries with exponential delay for transient read failures, "
-                    "then move exhausted jobs to a visible exception queue. "
-                    "A failed monetary write receives status reconciliation, "
-                    "not a blind replay. Restore a backup into a separate "
-                    "environment monthly and prove that ledger totals and "
-                    "event identifiers survive recovery."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Scenario Reconciliation and Automation Cost Controls",
-                "headers": [
-                    "Scenario or workflow and its measurement boundary",
-                    "Gross amount or direct processing cost basis",
-                    "Retained contribution or complete handling cost result",
-                    "Operating interpretation and required reconciliation evidence",
-                ],
-                "rows": [
-                    [
-                        "Conservative annual case uses one full-time operator and three contractors",
-                        "$180,000 gross billings less $81,000 allocated outside retained contribution",
-                        "$99,000 retained less $73,800 remaining costs leaves $25,200 owner profit",
-                        "14% gross margin and 25.45% retained margin reconcile identically",
-                    ],
-                    [
-                        "Base annual case uses one full-time operator and three contractors",
-                        "$690,000 gross billings less $310,500 allocated outside retained contribution",
-                        "$379,500 retained less $234,600 remaining costs leaves $144,900 owner profit",
-                        "21.0% gross margin and 38.18% retained margin reconcile identically",
-                    ],
-                    [
-                        "Scaled annual case uses two full-time operators and four contractors",
-                        "$1,200,000 gross billings less $540,000 allocated outside retained contribution",
-                        "$660,000 retained less $324,000 remaining costs leaves $336,000 owner profit",
-                        "28% gross margin and 50.91% retained margin reconcile identically",
-                    ],
-                    [
-                        "Illustrative document run excludes separately purchased driving record reports",
-                        "Extraction, inference, queue, and storage together cost four direct cents",
-                        "Expected human exception review adds twenty-four cents per processed run",
-                        "Ten thousand monthly runs require two thousand eight hundred dollars",
-                    ],
-                    [
-                        "Illustrative aggregate waterfall expresses the supplied retained-share model",
-                        "One thousand gross dollars includes four hundred fifty allocated dollars",
-                        "Five hundred fifty dollars remain before the remaining operating costs",
-                        "Actual contract lines must reconcile without forcing identical vehicle economics",
-                    ],
-                    [
-                        "Illustrative disputed toll remains separate from collected lease revenue",
-                        "Twenty-dollar toll requires statement evidence and correct lease-window matching",
-                        "No collection occurs until responsibility and permitted charges are established",
-                        "Preserve the dispute trail and reverse incorrect allocations with entries",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the source batch",
-                    "action": "Import authorized fleet settlements, bank records, toll statements, and approved maintenance invoices.",
-                    "detail": "Hash each source, record its retrieval time, and preserve immutable event identifiers before proposing ledger entries.",
-                },
-                {
-                    "step": 2,
-                    "title": "Construct contract-specific proposals",
-                    "action": "Match vehicles, drivers, lease windows, investor terms, and charge evidence using integer-cent calculations.",
-                    "detail": "Separate collectible amounts from disputed items and compare aggregate retained contribution with the scorecard model.",
-                },
-                {
-                    "step": 3,
-                    "title": "Review consequential exceptions",
-                    "action": "Assign changed payout destinations, unsupported fees, identity conflicts, and unusual adjustments to named reviewers.",
-                    "detail": "Record the evidence and decision; unresolved exceptions remain held rather than being silently netted against another party.",
-                },
-                {
-                    "step": 4,
-                    "title": "Post and reconcile safely",
-                    "action": "Submit authorized postings with supported idempotency controls and reconcile resulting balances against external records.",
-                    "detail": "Investigate timeouts before retrying, retain adjustment history, and publish only reconciled driver and investor statements.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Compound verified distribution while constraining acquisition and recovery risk",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build programmatic distribution from verified operating facts rather "
-                    "than mass-produced location pages. Maintain structured records for "
-                    "service area, available vehicle class, weekly lease components, "
-                    "deposit conditions, driver requirements, and staffed response hours. "
-                    "Publish a useful page only when the business genuinely serves "
-                    "that location and a reviewer checks its claims. Google Search "
-                    "Console can measure discovery and query relevance; a first-party "
-                    "intake form should attribute qualified inquiries without exposing "
-                    "driver documents to advertising systems. Refresh availability "
-                    "from reconciled inventory and withdraw stale offers automatically. "
-                    "An LLM can draft explanations of lease mechanics, but statutory "
-                    "statements need a cited primary source and human verification. "
-                    "Illustratively, ten maintained pages yield 100 visits each, "
-                    "20 qualified inquiries in total, and two activated leases. "
-                    "At $300 combined production and review cost, acquisition "
-                    "cost is $150 per activation, before ongoing maintenance. "
-                    "Do not describe 1,000 visits as demand proven profitable "
-                    "until collections and downtime are observed. Each successful "
-                    "onboarding should improve a reusable requirements page and "
-                    "an intake checklist. This feedback loop compounds useful "
-                    "content and reduces repeated questions without manufacturing "
-                    "testimonials, copying competitors, or representing that Uber "
-                    "endorses an independently operated leasing or co-hosting business."
-                ),
-                (
-                    "Combine permissioned referrals with narrow business outreach to "
-                    "investors, licensed operators, repair partners, and genuinely "
-                    "relevant fleet owners. Give each introduction a referral "
-                    "identifier and publish clear eligibility and payment terms; "
-                    "reward a verified commercial milestone rather than an "
-                    "unsupported earnings claim. Obtain permission before sharing "
-                    "a driver's story or identifiable vehicle performance records. "
-                    "For commercial email, implement accurate sender information, "
-                    "nondeceptive subjects, required identification and address "
-                    "information, and a working opt-out process under 15 U.S.C. "
-                    "7704. Honor opt-outs within the statutory period and "
-                    "suppress them immediately in the operating system. Calls "
-                    "and texts require a separate analysis under 47 U.S.C. "
-                    "227 and 47 CFR 64.1200; an email relationship does "
-                    "not automatically authorize automated promotional texts. "
-                    "Illustratively, $600 spent on referral administration and "
-                    "reviewed outreach produces three activated relationships, "
-                    "for $200 acquisition cost each. If each generates "
-                    "$120 weekly gross operator billings, the model retains "
-                    "$66 before remaining costs. With $26 incremental weekly "
-                    "servicing cost, weekly contribution toward acquisition "
-                    "is $40 and simple payback is five collected weeks. "
-                    "Track missed collections, early exits, and vehicle downtime "
-                    "by cohort; pause expansion when realized contribution "
-                    "cannot recover acquisition spending within the planned holding period."
-                ),
-                (
-                    "Close the flywheel with an investor evidence packet that "
-                    "turns reliable execution into additional authorized vehicle "
-                    "supply. Report collected operator billings, investor distributions, "
-                    "maintenance history, days available, days off-road, and "
-                    "unresolved claims separately. Never substitute gross passenger "
-                    "trip value for operator revenue or imply that vehicle "
-                    "depreciation disappears because the operator owns no metal. "
-                    "An investor still bears or allocates that exposure through "
-                    "the agreement, and poor asset economics eventually damage "
-                    "retention. Ask for introductions only after a reviewed "
-                    "statement and resolved service issues demonstrate execution. "
-                    "Run a weekly operating review covering straight-through "
-                    "completion, net minutes saved, exception aging, collection "
-                    "accuracy, downtime, acquisition payback, and vendor spend. "
-                    "A useful initial test processes 200 representative historical "
-                    "events in shadow mode, deliberately including duplicates, "
-                    "reassigned plates, expired documents, delayed webhooks, "
-                    "and payment timeouts. Compare every proposed monetary "
-                    "entry with an independently reviewed result before live "
-                    "posting expands. Maintain a staffed manual queue, "
-                    "restricted offline dispatch roster, and documented vendor "
-                    "escalation contacts. When automation fails, stop the "
-                    "affected transition instead of the whole business. "
-                    "Resume from reconciled checkpoints after correcting the "
-                    "cause, and report recovered transactions separately "
-                    "from new activity so apparent growth cannot conceal "
-                    "a backlog being replayed."
-                ),
-            ],
-            "table": {
-                "caption": "Distribution Flywheels With Collection-Based Unit Economics",
-                "headers": [
-                    "Distribution mechanism and qualifying commercial audience",
-                    "Useful output and controlled publication boundary",
-                    "Illustrative unit economics or operational success measure",
-                    "Stop condition and practical recovery action",
-                ],
-                "rows": [
-                    [
-                        "Local availability pages attract drivers within genuinely served territories",
-                        "Reviewed lease terms and current inventory support each published offer",
-                        "Three hundred production dollars across two activations equals $150 acquisition",
-                        "Withdraw stale offers and replace broken intake with staffed contact",
-                    ],
-                    [
-                        "Public-record business triggers support relevant investor and operator outreach",
-                        "Verified entity context supports personalized messages without exposing sensitive records",
-                        "Fifty research dollars across twenty verified leads equals $2.50 each",
-                        "Suspend stale-source outreach and refresh through authorized official exports",
-                    ],
-                    [
-                        "Permissioned introductions connect satisfied operators with qualified prospective partners",
-                        "Published referral terms connect rewards to documented eligible commercial milestones",
-                        "Six hundred channel dollars across three activations equals $200 acquisition",
-                        "Pause rewards when duplicate referrals or disputed attribution require investigation",
-                    ],
-                    [
-                        "Commercial email sequences address narrowly selected relevant business contacts",
-                        "Accurate identity and immediate suppression support controlled message delivery",
-                        "Measure collected contribution by cohort rather than opens or impressions",
-                        "Stop suppressed contacts and investigate unusual complaint or bounce patterns",
-                    ],
-                    [
-                        "Investor evidence packets support additional authorized co-hosted vehicle supply",
-                        "Reviewed collections and downtime reports support permissioned introduction requests",
-                        "Track additional active vehicles against retained contribution and servicing burden",
-                        "Resolve statement disputes before requesting further vehicle commitments or introductions",
-                    ],
-                    [
-                        "Historical replay tests validate workflow behavior before expanding live processing",
-                        "Two hundred representative events include duplicate, stale, and conflicting evidence",
-                        "Compare every proposed monetary entry against an independently reviewed result",
-                        "Correct failed cases and repeat affected tests before resuming transitions",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Automate the evidence trail, not the right to make a consequential decision.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Measure a baseline week of repetitive tasks, recording both straight-through completion and net labor saved after reviews and audits.",
-        "Implement authenticated ingestion, unique event identifiers, integer-cent ledgers, transactional outboxes, and an exception queue with named owners.",
-        "Configure relationship-specific MVR review, current coverage checks, jurisdictional operating permissions, and strict separation of vehicle controls from model outputs.",
-        "Reconcile all three canonical scenarios to 55% retained contribution, keeping investor splits, passenger fares, and remaining operating costs distinct.",
-        "Launch reviewed local pages, permissioned referral tracking, and bounded business outreach with suppression controls and collection-based acquisition payback.",
-        "Replay 200 representative historical events, test backup restoration, and prove manual dispatch and payment-status recovery before expanding unattended processing.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "18 U.S.C. 2721 — Prohibition on release and use of certain personal information from State motor vehicle records",
-            "url": "https://www.law.cornell.edu/uscode/text/18/2721",
-            "relevance": "Document the actual permitted purpose for obtaining and using protected motor vehicle record information.",
-        },
-        {
-            "title": "15 U.S.C. 1681b — Permissible purposes of consumer reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681b",
-            "relevance": "Establish the permissible purpose for consumer reports and apply employment-specific disclosure, authorization, and pre-adverse-action requirements when applicable.",
-        },
-        {
-            "title": "15 U.S.C. 1681m — Requirements on users of consumer reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681m",
-            "relevance": "Route applicable adverse-action notices through a reviewed process when a decision relies on a consumer report.",
-        },
-        {
-            "title": "California Insurance Code 5433 — Transportation network company insurance requirements",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=INS&sectionNum=5433.",
-            "relevance": "Check operating-period coverage for California transportation network company activity without assuming it covers separate commercial livery assignments.",
-        },
-        {
-            "title": "California Public Utilities Code 5371 — Charter-party carrier authority",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PUC&sectionNum=5371.",
-            "relevance": "Verify required authority before dispatching services within the statute's charter-party carrier scope.",
-        },
-        {
-            "title": "15 U.S.C. 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Build commercial email controls for sender accuracy, message identification, postal address, opt-out functionality, and suppression handling.",
-        },
-        {
-            "title": "47 U.S.C. 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Evaluate calling and texting methods separately from email before automating promotional contact.",
-        },
-        {
-            "title": "47 CFR 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": "Configure applicable calling, messaging, permission, identification, and do-not-call controls for the actual outreach method.",
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'vol031-q10-gps-trackers-kill-switches-rental-toolkit',
+ 'question_prompt': 'Which GPS trackers and kill switches should I install to protect rental and rideshare '
+                    'vehicles from theft and non-payment?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Protecting the Asset: GPS Trackers, Kill Switches, and the Rental Toolkit',
+ 'subtitle': 'Bouncie OBD2 tracker setup, reviews, and drawbacks, wired MooveTrax, TrackMate, Goldstar, '
+             'and Trackhawk kill-switch installs, drop-in no-start kill switches, choosing the right '
+             'tracker for rental cars, and the broader software, tracker, and automation toolkit',
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Rental and fleet operators agree that no car leaves without a tracker, and that a '
+                      'bare OBD2 plug-in like Bouncie is the easiest to install and the easiest for a '
+                      'thief or renter to yank. King of Rentals hides Bouncie behind a $12 splitter with a '
+                      'false-front port, while Alex Auto and Pitstop to Profits run hardwired Gold Star '
+                      'units with starter-cut kill switches. The hardwire job is three wires (constant '
+                      '12V, ignition sense, chassis ground) found with a multimeter, plus a relay spliced '
+                      'into the starter wire. Street numbers: $40 to $150 devices, $100 to $200 installs, '
+                      '$8 to $30 monthly, Gold Star at roughly $600 for five. The split is over necessity: '
+                      'King of Rentals says a 2010 Prius on Turo needs no kill switch, while Alex Auto '
+                      'calls it non-negotiable.',
+ 'key_metrics': [{'label': 'Hardwired Tracker Install Cost Per Device',
+                  'metric': 'Hardwired Tracker Install Cost Per Device',
+                  'value': '$100 to $200 per device',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "King of Rentals' range for a hardware install, against device costs of $40 "
+                             'to $150 and no install fee for an OBD2 splitter setup.',
+                  'source': 'King of Rentals ([294HBi50ud8 @ 00:06:17])'},
+                 {'label': 'Monthly Tracker Service Range',
+                  'metric': 'Monthly Tracker Service Range',
+                  'value': '$8 to $30 per month',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'The cheapest monthly rate King of Rentals has paid, against the most he has '
+                             'seen a device cost per month.',
+                  'source': 'King of Rentals ([294HBi50ud8 @ 00:06:32])'},
+                 {'label': 'Gold Star Bulk Order Price',
+                  'metric': 'Gold Star Bulk Order Price',
+                  'value': 'About $600 for five units',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Alex Auto's bulk price for Gold Star tracker and kill switch units, with "
+                             'bigger discounts at 10 or 20 units.',
+                  'source': 'Alex Auto ([6_-L6DOOZog @ 00:19:18])'},
+                 {'label': 'Bouncie Device Street Price',
+                  'metric': 'Bouncie Device Street Price',
+                  'value': '$89 new; $60 to $70 used',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "King of Rentals' online price for the Bouncie plug-in tracker that runs in "
+                             'every one of his gas cars.',
+                  'source': 'King of Rentals ([QpyPtquGmrk @ 00:00:11])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator running cars for other people lands on the same baseline: no '
+                              'vehicle leaves without a tracker. King of Rentals runs Bouncie in every gas '
+                              'car and a separate system on electric units, arguing that whether the car '
+                              'is worth $2,000 or $200,000 you need some sort of tracking system '
+                              '[QpyPtquGmrk @ 00:03:45]. Alex Auto goes harder, calling trackers and kill '
+                              'switches non-negotiable for any business that hands keys to strangers. He '
+                              'uses location history to find where a renter parks overnight before a '
+                              'repossession, pointing to a car that sat at the same Maryland address at '
+                              '12:50 a.m. and again at 4:00 a.m. [6_-L6DOOZog @ 00:16:35]. The same logic '
+                              'holds outside rentals. Will King scaled from one or two Bouncie units to '
+                              'roughly 13 across his contractor fleet. He uses one app to see every '
+                              'vehicle instead of texting crews to ask where they are, and says that alone '
+                              'justifies the eight dollars a month per vehicle [1iL0NKITYFA @ 00:03:05]. '
+                              'Trend Trader Clark plugs a Bouncie into each car during the same prep '
+                              'session where he washes it. Photos and adding it to his commercial '
+                              'insurance come next. He was actively using Bouncie to chase a car sitting '
+                              'in Orlando that was due back in Atlanta [laJpf5HhA8s @ 00:00:28].',
+                              'The second point of agreement is that a plug-in OBD2 tracker is the easiest '
+                              'to install and the easiest to defeat. King of Rentals admits that renters '
+                              'sometimes reach under the dash and feel around. A flashing green light '
+                              'gives the unit away, and units have been unplugged, which he calls rare but '
+                              'real [QpyPtquGmrk @ 00:01:18]. His fix is an OBD2 splitter with a false '
+                              'front. The factory port still looks untouched while the cord routes the '
+                              'Bouncie up into the dash wiring. 3doglife4real tracks a car driven by a '
+                              'college-age son and flags the same weakness: a thief could easily find the '
+                              'device and unplug it, and the tracking dies with it [YkcJvhapCds @ '
+                              '00:01:30]. Alex Auto draws the hard line. Bouncie or Samsara can ride on '
+                              'top of a hardwired tracker and kill switch for richer driving data, but '
+                              'they can never be the only layer, because anybody can unplug them and then '
+                              'you have no idea where the car is [6_-L6DOOZog @ 00:19:52]. Car Sharing Jho '
+                              'hardwires his TrackMateGPS behind the instrument cluster for exactly this '
+                              'reason: no renter can disconnect it without digging back to find the wires. '
+                              'He jokes that only someone who watched his video would know where they are '
+                              '[1_yscjNU-oM @ 00:05:06].',
+                              'Where a kill switch is installed, practitioners describe the same '
+                              'mechanism: interrupt the starter signal so the car will not crank. Alex '
+                              'Auto stresses that toggling starter disable on Gold Star does not stop a '
+                              'moving car. The vehicle keeps running until the driver shuts it off, and '
+                              'the next start attempt fails. He says that is what keeps cars from being '
+                              'driven to Mexico [6_-L6DOOZog @ 00:17:59]. Pitstop to Profits explains how '
+                              'the relay that ships with his Gold Star kit works: it gets a signal from '
+                              'the tracker and opens or closes the circuit so no electricity reaches the '
+                              'starter. He installs kill switches to make sure people pay on time '
+                              '[x4wy8hXqVbk @ 00:01:52]. Wires747 wants nothing from a MooveTrax unit '
+                              'except kill and unkill on a 2019 Kia, a model he calls notorious for theft. '
+                              'His reasoning: a thief stuck with a dead car usually walks away and leaves '
+                              'it for you to track and retrieve [YbO6R8RKS_8 @ 00:00:33]. 41.22 Inc. '
+                              'builds its drop-in product around the same end state. With the switch '
+                              'active, the dashboard lights up normally, no error messages appear and the '
+                              'RPMs stay at zero, even when the thief holds the factory key fob '
+                              '[87xqndlXO8o @ 00:02:02].'],
+               'table': {'caption': 'Where the tracker and kill switch operators line up',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Tracker installed in every rental car',
+                                   'King of Rentals runs Bouncie in every gas car and a separate system on '
+                                   'electric units',
+                                   'Budget a tracker before the car takes its first booking, whatever the '
+                                   'car is worth',
+                                   'King of Rentals ([QpyPtquGmrk @ 00:03:45])'],
+                                  ['Trackers plus kill switches are non-negotiable',
+                                   'Alex Auto says any business handing cars to other people needs both a '
+                                   'tracker and a kill switch',
+                                   'Treat the kill switch as core risk management for private rentals, not '
+                                   'an optional upgrade',
+                                   'Alex Auto ([6_-L6DOOZog @ 00:13:26])'],
+                                  ['OBD plug-ins get found and unplugged',
+                                   'Renters reach under the dash, a flashing green light gives the unit '
+                                   'away, and units have been unplugged',
+                                   'Hide any OBD tracker behind a false-front splitter routed up into the '
+                                   'dash cords',
+                                   'King of Rentals ([QpyPtquGmrk @ 00:01:18])'],
+                                  ['An OBD tracker alone loses the car',
+                                   'Anybody can unplug Bouncie or Samsara, so they belong on top of '
+                                   'hardwired units only',
+                                   'Use plug-ins for driving data while a hardwired unit handles theft '
+                                   'recovery',
+                                   'Alex Auto ([6_-L6DOOZog @ 00:19:52])'],
+                                  ['Hardwiring blocks renter tampering',
+                                   'With the TrackMateGPS mounted behind the cluster, a renter must dig '
+                                   'back to find the wires',
+                                   'Bury the hardwired unit inside the dash so removal means pulling trim '
+                                   'and panels',
+                                   'Car Sharing Jho ([1_yscjNU-oM @ 00:05:06])'],
+                                  ['The kill switch blocks the next start',
+                                   'The car keeps driving after a disable command; the next ignition '
+                                   'attempt simply fails',
+                                   'Disable remotely whenever activity looks suspicious and recover the '
+                                   'car once it stops',
+                                   'Alex Auto ([6_-L6DOOZog @ 00:17:59])'],
+                                  ['A car that will not start gets abandoned',
+                                   'A thief stuck with a car that will not start usually leaves it behind '
+                                   'for retrieval',
+                                   'Pair the kill command with live location so you can collect the '
+                                   'abandoned car fast',
+                                   'Wires747 ([YbO6R8RKS_8 @ 00:00:33])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['A hardwired tracker install comes down to three wires and a multimeter. '
+                              'Pitstop to Profits maps the Gold Star harness: black to chassis ground, red '
+                              'with its inline fuse to constant 12-volt power, white to ignition sense and '
+                              'green to the kill relay [x4wy8hXqVbk @ 00:04:28]. He goes straight to the '
+                              'ignition switch harness because on roughly 90% of the key-start cars he has '
+                              'worked on, everything you need is there. Push-to-start cars are just '
+                              'different. A probe on the constant wire reads 12 volts with no key in, '
+                              'while the ignition sense wire reads zero until someone tries to start the '
+                              'car. Car Sharing Jho begins with a safety step: he pulls the negative '
+                              'battery terminal before prying the dash. He mounts the TrackMateGPS behind '
+                              'the cluster on double-sided 3M tape, where it can still see satellites, and '
+                              'finds constant power behind the radio with a test light and voltmeter '
+                              '[1_yscjNU-oM @ 00:00:59]. On his previous Miata he ran that constant lead '
+                              'straight to the battery instead. Wires747 shortcuts the hunt on a 2019 '
+                              'Optima. The corner wire at the radio harness is constant 12 volts, the back '
+                              'blue wire goes hot with the car on, and any bare metal works as ground '
+                              '[YbO6R8RKS_8 @ 00:01:37]. Pitstop calls the whole job an hour to an hour '
+                              'and 15 minutes of work [x4wy8hXqVbk @ 00:10:05].',
+                              'The kill side means finding and cutting the starter wire. Wires747 '
+                              'identifies it by elimination. Every other ignition wire carries 12 volts '
+                              'either constantly or whenever the car is on. The starter wire only pulses '
+                              '12 volts for about a second while cranking, so the multimeter jumps and '
+                              'drops back to zero [YbO6R8RKS_8 @ 00:06:17]. He cuts it and lands one brown '
+                              'lead on the starter side and the other on the ignition side. MooveTrax '
+                              'builds the relay into the unit, he notes, while other kits ship a separate '
+                              'relay you have to wire in yourself. Pitstop to Profits slices the ignition '
+                              "wire, sends the relay's red lead toward the ignition and its white lead to "
+                              'the starter end. He then crimps and heat-shrinks the green tracker-to-relay '
+                              'wire, because if it ever separates you are stuck [x4wy8hXqVbk @ 00:12:12]. '
+                              'Trackhawk GPS works on a 2024 Dodge Challenger. It pulls the fuse box and '
+                              'integrates the relay into the factory box for a more covert look, then cuts '
+                              'the thick yellow-and-gray starter wire, joins relay pins 85 and 87a and '
+                              'solders the splice [cLo7rU35m3U @ 00:01:25]. 41.22 Inc. skips cutting '
+                              'entirely: pull the factory starter relay, drop in its bypass module and '
+                              'hide the micro toggle under the dash or seat [87xqndlXO8o @ 00:01:22].',
+                              'The unit economics are specific. King of Rentals prices devices from $40 '
+                              'for a cheap unit from a random online seller up to $150 for good telematics '
+                              'hardware. Hardwire installation runs $100 to $200 per device. Monthly '
+                              'service ranges from $8, the cheapest he has paid, to about $30 at the top. '
+                              'An OBD route with a splitter runs $80 to $100 with no install [294HBi50ud8 '
+                              '@ 00:06:17]. Alex Auto bulk orders Gold Star at about $600 for five units, '
+                              'with bigger discounts at 10 or 20, and says a stereo shop charges $100 to '
+                              '$200 to install. He left Trackhawk because its monthly fee across 12-plus '
+                              'cars would cost him a lot down the road [6_-L6DOOZog @ 00:19:18]. Pitstop '
+                              'to Profits pays a helper $100, sometimes $75. He calls quotes of $200, $250 '
+                              'and $300 a rip-off for a job he says a slow first-timer finishes in about '
+                              'two hours. He puts the full DIY tool kit at about $100, including a roughly '
+                              '$40 Harbor Freight voltmeter [x4wy8hXqVbk @ 00:00:32]. Onthedreside did not '
+                              'want to risk a botched push-start job on a 2013 Chrysler 300. He paid an '
+                              'official Trackhawk installer $116, split into a $50 deposit and $66 on '
+                              'arrival, for a unit he says runs $120 to $140 on Amazon [cWZEkq1vSIE @ '
+                              '00:03:18].'],
+               'table': {'caption': 'Wiring mechanics, tools and price points from the installers',
+                         'headers': ['Component or Tool',
+                                     'Exact Mechanic or Number',
+                                     'Field Detail',
+                                     'Expert Source'],
+                         'rows': [['Gold Star harness color code',
+                                   'Black to chassis ground, red to fused constant 12V, white to ignition '
+                                   'sense, green to the relay',
+                                   'Constant power reads 12 volts with no key; ignition sense reads zero '
+                                   'until cranking',
+                                   'Pitstop to Profits ([x4wy8hXqVbk @ 00:04:28])'],
+                                  ['Identifying the starter wire',
+                                   'Only the starter wire pulses 12 volts for about a second during '
+                                   'cranking',
+                                   'Watch the multimeter jump and fall back to zero while someone cranks '
+                                   'the engine',
+                                   'Wires747 ([YbO6R8RKS_8 @ 00:06:17])'],
+                                  ['Relay integrated into the fuse box',
+                                   'Cut the thick yellow-and-gray starter wire, join relay pins 85 and '
+                                   '87a, then solder',
+                                   'On a 2024 Challenger the relay sits inside the factory fuse box, out '
+                                   'of sight',
+                                   'Trackhawk GPS ([cLo7rU35m3U @ 00:01:25])'],
+                                  ['Drop-in relay bypass module',
+                                   'Pull the factory starter relay, plug in the bypass module, hide the '
+                                   'micro toggle in the cabin',
+                                   'No cutting into factory wiring, which 41.22 Inc. ties to warranty risk',
+                                   '41.22 Inc. ([87xqndlXO8o @ 00:00:34])'],
+                                  ['Hardware pricing bands',
+                                   'Devices $40 to $150, hardwire install $100 to $200, service $8 to $30 '
+                                   'monthly',
+                                   'The OBD splitter route runs $80 to $100 with no installation labor',
+                                   'King of Rentals ([294HBi50ud8 @ 00:06:17])'],
+                                  ['Gold Star bulk purchase',
+                                   'About $600 for five units, with bigger discounts at 10 or 20 units',
+                                   'Stereo shop installs cost about $100 to $200 if you skip DIY',
+                                   'Alex Auto ([6_-L6DOOZog @ 00:19:18])'],
+                                  ['Bouncie calibration drive',
+                                   'Activation requires a roughly 10-minute drive to complete the '
+                                   'calibration tasks',
+                                   'The first logged trip showed 4.4 miles, 89.7% efficiency and a max '
+                                   'speed of 43',
+                                   'CentraliaUS ([YflWar_YuYg @ 00:01:41])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Shortcuts From the Installers',
+                           'body': 'Small moves the operators use to install faster, hide better and get '
+                                   'more out of the hardware they already own.',
+                           'items': ['Pitstop to Profits pulls free wiring schematics for nearly any car '
+                                     "through his commercial account with O'Reilly, so he can double-check "
+                                     'which ignition harness wire is which before cutting [Pitstop to '
+                                     'Profits — x4wy8hXqVbk @ 00:14:07].',
+                                     'Bouncie must be firmly secured when hidden on an OBD2 extension '
+                                     'cable; if the device moves freely at the end of the cable, accident '
+                                     'notification may not function [CentraliaUS — YflWar_YuYg @ '
+                                     '00:03:06].',
+                                     'When the radio harness is hard to reach, the cigarette lighter is a '
+                                     'good source for the accessory-powered ignition lead that wakes the '
+                                     'GPS [Car Sharing Jho — 1_yscjNU-oM @ 00:08:58].',
+                                     'With a kill switch in place, Alex Auto leaves keys in the car for '
+                                     'verified renters and turns the car on remotely before pickup, which '
+                                     'automates handoffs [Alex Auto — 6_-L6DOOZog @ 00:21:41].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Classify renter risk before buying hardware',
+                              'action': 'Score each booking by city, renter type and booking time, then '
+                                        'pick an OBD or hardwired tier.',
+                              'detail': 'King of Rentals flags bookings made between 12:00 a.m. and 4:00 '
+                                        'a.m. as risky, and an airport pickup due within hours as the '
+                                        'riskiest class. He rates local and rideshare renters riskier than '
+                                        'three-day travelers. Leisure fleets need location and alerts; '
+                                        'high-risk fleets want hardwired kill switch units [King of '
+                                        'Rentals — 294HBi50ud8 @ 00:03:17].'},
+                             {'step': 2,
+                              'title': 'Map power with a multimeter',
+                              'action': 'Ground the meter on bare metal and probe the ignition harness for '
+                                        'constant power and ignition sense.',
+                              'detail': 'Pitstop to Profits confirms the constant wire holds 12 volts with '
+                                        'no key in the ignition. The ignition sense wire reads zero until '
+                                        'the key is turned. He then fixes the black ground to bare metal '
+                                        'and checks for green GPS and cell signal lights [Pitstop to '
+                                        'Profits — x4wy8hXqVbk @ 00:07:36].'},
+                             {'step': 3,
+                              'title': 'Cut and splice the starter wire',
+                              'action': 'Cut the starter wire and land one kill lead on the starter side '
+                                        'and the other on the ignition side.',
+                              'detail': 'On a 2019 Optima, Wires747 cuts the first yellow wire in the '
+                                        'corner of the ignition harness, the starter wire. He connects one '
+                                        'brown MooveTrax lead to the side running to the starter and the '
+                                        'other to the side running to the ignition [Wires747 — YbO6R8RKS_8 '
+                                        '@ 00:02:55].'},
+                             {'step': 4,
+                              'title': 'Test kill and unkill before closing the dash',
+                              'action': 'Send a disable command, confirm a no-start, re-enable, then tape '
+                                        'and zip-tie the harness.',
+                              'detail': 'Car Sharing Jho selects disable ignition in the TrackMateGPS app '
+                                        'and confirms the car will not start. He enables ignition again '
+                                        'and confirms it starts, then tapes and zip-ties the wires before '
+                                        'replacing the covers [Car Sharing Jho — 1_yscjNU-oM @ '
+                                        '00:07:40].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The loudest split in fleet protection is whether a kill switch is mandatory '
+                              'or a rookie overreaction. King of Rentals says new hosts get too '
+                              'protective, chasing hardware devices and kill switches they do not need: if '
+                              'somebody steals your 2010 Prius while it is on Turo, let Turo pay you out '
+                              'whatever it is worth, and run a Bouncie on an OBD-II splitter at about 100 '
+                              'bucks plus five to ten dollars a month [0qz2jiKB21I @ 00:01:16]. Alex Auto '
+                              'answers that trackers and kill switches are non-negotiable for any business '
+                              'that hands cars to other people, and that skipping them is going to cost '
+                              'you a lot of money [6_-L6DOOZog @ 00:13:26]. Pitstop to Profits sides with '
+                              'Alex Auto, installing a kill switch on every unit for obvious reasons and '
+                              'framing the relay as the lever that makes people pay on time [x4wy8hXqVbk @ '
+                              '00:10:22]. King of Rentals reconciles the fight by risk tier rather than '
+                              'ideology: renting Teslas to local ride share drivers from 8:00 a.m. to 4:00 '
+                              'p.m. carries a higher chance of renters stopping payment, so that fleet '
+                              'runs kill switch, location, alerts, and commands, while leisure travelers '
+                              'in three-day bookings get location and alerts only [294HBi50ud8 @ '
+                              '00:04:07].',
+                              'The second fault line is placement: a plug-in on the OBD-II port versus a '
+                              'hardwired unit buried in the dash. King of Rentals runs Bouncie in every '
+                              'gas car and hides it behind a roughly $12 OBD2 splitter with a false front, '
+                              'so the port still looks untouched while the device sits up in the cords '
+                              'away from the brake, gas, and shifter, a one-to-two-minute install '
+                              '[QpyPtquGmrk @ 00:01:31]. Alex Auto rejects that as a standalone setup: '
+                              'Bouncie or Samsara can ride on top of a real tracker for speed and braking '
+                              'data, but never alone, because anybody can just unplug it and you no longer '
+                              'know where the car is [6_-L6DOOZog @ 00:19:52]. 3doglife4real, running '
+                              'Bouncie on a family car sent to college, flags the same weakness, saying a '
+                              'thief could easily find the unit and unhook it, ending tracking on the spot '
+                              '[YkcJvhapCds @ 00:01:30]. Car Sharing Jho goes the other way entirely, '
+                              'mounting a TrackMate GPS behind the instrument cluster with 3M double-sided '
+                              'tape and tapping constant and accessory power behind the radio, because no '
+                              'renter can disconnect it without pulling the dash apart and hunting the '
+                              'wires [1_yscjNU-oM @ 00:05:06]. The trade is install effort against tamper '
+                              'resistance.',
+                              'Cost philosophy splits the field too. Alex Auto ran Trackhawk GPS, praised '
+                              'its kill switch, alerts, and live tracking, then dropped it because a '
+                              'monthly fee across 12-plus cars adds up, moving to Gold Star with no '
+                              'monthly fee [6_-L6DOOZog @ 00:14:20]. King of Rentals waves off that math, '
+                              'saying hosts point to paying $2 a month when it does not make a big '
+                              'difference; what matters is provider quality, and their team opens Standard '
+                              'Fleet five to ten times a day each [294HBi50ud8 @ 00:05:25]. Installation '
+                              'splits the same way. Pitstop to Profits calls $200, $250, and $300 install '
+                              'quotes a rip-off for an hour to an hour and 15 minutes of work, insists '
+                              'three wires get the tracker live, and says a first-timer finishes in two '
+                              'hours [x4wy8hXqVbk @ 00:10:05]. Trackhawk GPS, selling the hardware, pushes '
+                              'the reverse: every vehicle is different, so line up a certified technician '
+                              'with prior car audio or alarm installs, and their 2024 Dodge Challenger job '
+                              'integrates the relay into the factory fuse box so it stays covert '
+                              '[cLo7rU35m3U @ 00:03:01]. Pick the lane that matches your wiring '
+                              'confidence, your free time, and the size of the fleet you are protecting.'],
+               'table': {'caption': 'Competing Tracker and Kill Switch Playbooks Side by Side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Kill switch on every rental car',
+                                   'Skip it on cheap units like a 2010 Prius and let Turo pay out whatever '
+                                   'it is worth',
+                                   'Treat tracker plus kill switch as non-negotiable for any car handed to '
+                                   'other people',
+                                   'King of Rentals ([0qz2jiKB21I @ 00:01:16]); Alex Auto ([6_-L6DOOZog @ '
+                                   '00:13:26])'],
+                                  ['Where the tracker physically lives',
+                                   'Bouncie on an OBD2 splitter with a false front, roughly a two-minute '
+                                   'install',
+                                   'TrackMate hardwired behind the instrument cluster so renters cannot '
+                                   'find or disconnect it',
+                                   'King of Rentals ([QpyPtquGmrk @ 00:01:31]); Car Sharing Jho '
+                                   '([1_yscjNU-oM @ 00:05:06])'],
+                                  ['Monthly subscription versus no monthly fee',
+                                   'Drop the Trackhawk monthly fee at 12-plus cars and switch to Gold Star '
+                                   'hardware',
+                                   'Ignore $2-a-month price shopping and pay for a provider your team uses '
+                                   'daily',
+                                   'Alex Auto ([6_-L6DOOZog @ 00:14:20]); King of Rentals ([294HBi50ud8 @ '
+                                   '00:05:25])'],
+                                  ['Who performs the installation work',
+                                   'Do it yourself with three tracker wires plus the relay in one to two '
+                                   'hours',
+                                   'Hire a certified tech with car audio or alarm install history for '
+                                   'every vehicle',
+                                   'Pitstop to Profits ([x4wy8hXqVbk @ 00:10:05]); Trackhawk GPS '
+                                   '([cLo7rU35m3U @ 00:03:01])'],
+                                  ['Kill switch wiring method on the starter circuit',
+                                   'Cut the starter wire and splice the relay between the ignition and '
+                                   'starter sides',
+                                   'Swap a drop-in relay bypass module into the fuse box with zero wire '
+                                   'cutting',
+                                   'Wires747 ([YbO6R8RKS_8 @ 00:03:14]); 41.22 Inc. ([87xqndlXO8o @ '
+                                   '00:00:34])'],
+                                  ['How the relay is packaged with the tracker',
+                                   'Moovetrax has the relay built into the unit, leaving only two brown '
+                                   'wires to splice',
+                                   'Separate Gold Star relay with a green trigger wire running back to the '
+                                   'tracker',
+                                   'Wires747 ([YbO6R8RKS_8 @ 00:05:09]); Pitstop to Profits ([x4wy8hXqVbk '
+                                   '@ 00:01:52])'],
+                                  ['Tracking a car you would rather collect insurance on',
+                                   'Personal owners who want the payout can skip the tracker and let '
+                                   'insurers deal with it',
+                                   'Rental fleets running anything from a $2,000 to a $200,000 car need '
+                                   'some tracking system',
+                                   'King of Rentals ([QpyPtquGmrk @ 00:03:45]); King of Rentals '
+                                   '([QpyPtquGmrk @ 00:03:58])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The plug-in tracker most operators start with carries documented weak '
+                              'spots. King of Rentals admits that even with Bouncie tucked at the edge of '
+                              'the port, a flashing green light draws eyes, renters reach under and feel '
+                              'for it, and they have had units unplugged, rare but real [QpyPtquGmrk @ '
+                              '00:01:18]. Trend Trader Clark, running Bouncie on every car in the fleet, '
+                              'was working with Turo on a car sitting in Orlando that was supposed to be '
+                              'back in Atlanta, proof that seeing the dot does not return the vehicle '
+                              '[laJpf5HhA8s @ 00:00:28]. Critical Reviews stacks the knocks: an $89 device '
+                              'plus a $9 monthly fee, reports of inaccurate real-time location, '
+                              'compatibility gaps on newer vehicles like the Tesla Model Y, battery drain '
+                              'leading to multiple replacements, and hit-or-miss support [BbAy6S7Oz1I @ '
+                              '00:01:14]. How Master, after extended use, confirms the location data '
+                              'sometimes lags or shows a delay when the car moves even though the app '
+                              'refreshes every 15 seconds, and says support answers can take a day or two '
+                              '[gmU1WdF-DCo @ 00:00:52]. If your recovery plan depends on precise '
+                              'real-time pings from a device a renter can yank by hand, these are the '
+                              'failure points that hit first.',
+                              'Kill switch installs fail on details. Alex Auto warns that the Gold Star '
+                              'starter disable does not stop a moving car; it only blocks the next start '
+                              'after the driver shuts off the ignition, so do not expect a highway '
+                              'shutdown and plan recovery around where the car parks [6_-L6DOOZog @ '
+                              '00:17:59]. Pitstop to Profits crimps and then heat-shrinks the green '
+                              'trigger wire between relay and tracker, because if that connection ever '
+                              'shakes loose after you cut the car off, good luck getting it started again '
+                              '[x4wy8hXqVbk @ 00:11:08]. Car Sharing Jho pulls the negative battery '
+                              'terminal before prying the dash so nothing shocks you or fires the airbags, '
+                              'then disconnects it again before cutting the ignition wire [1_yscjNU-oM @ '
+                              '00:00:59]. Wires747 shows how to avoid splicing the wrong wire: every other '
+                              'ignition-harness wire reads 12 volts either constantly or whenever the car '
+                              'is on, but the starter wire only flashes 12 volts for a second while '
+                              'cranking, so it reads zero both with the car off and with the engine '
+                              'already running [YbO6R8RKS_8 @ 00:06:17]. Then do what Car Sharing Jho and '
+                              'Wires747 both do on camera: hit kill in the app and confirm the car will '
+                              'not crank before closing panels.',
+                              'Run the numbers before buying hardware. King of Rentals prices the field at '
+                              '$40 to $150 per device, $100 to $200 per hardwired install, and $8 to $30 a '
+                              'month, versus $80 to $100 for an OBD2 unit with a splitter and no install '
+                              'cost but less functionality [294HBi50ud8 @ 00:06:00]. The bigger leak is '
+                              'software sprawl: the same operator ran roughly five Turo add-ons, paid '
+                              'about $400 a month for reservations and $350 for a CRM before phone '
+                              'numbers, and estimates 5 to 10 grand a month across everything [0qz2jiKB21I '
+                              '@ 00:02:58]. Will King of High Cotton Homes justifies $8 a month per '
+                              'Bouncie on 13 contractor vehicles simply by seeing which truck is closest '
+                              "to Lowe's instead of texting everybody, plus exportable mileage logs and "
+                              'curfew alerts [1iL0NKITYFA @ 00:02:49]. Onthedreside shows the cost of '
+                              'delay: four to six months parked without a kill switch on a 2013 Chrysler '
+                              '300, then $116 at an official Trackhawk installer, $50 deposit up front, a '
+                              'nine-and-a-half-minute hold, a 50-minute drive, and a few hours in the bay '
+                              'on top of a unit listed around $120 to $140 on Amazon [cWZEkq1vSIE @ '
+                              '00:03:18].'],
+               'table': {'caption': 'Firsthand Tracker and Kill Switch Failures With Field Countermeasures',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Countermeasure Taught',
+                                     'Expert Source'],
+                         'rows': [['OBD tracker spotted and unplugged',
+                                   'Renters noticed the flashing green light, felt around under the dash, '
+                                   'and unplugged Bouncie units',
+                                   'Hide the device behind a false-front OBD2 splitter tucked up in the '
+                                   'dash cords',
+                                   'King of Rentals ([QpyPtquGmrk @ 00:01:18])'],
+                                  ['OBD-only fleet goes completely dark',
+                                   'Anybody can unplug a Bouncie or Samsara and the car location '
+                                   'disappears instantly',
+                                   'Run plug-ins only on top of a hardwired tracker with a working kill '
+                                   'switch',
+                                   'Alex Auto ([6_-L6DOOZog @ 00:19:52])'],
+                                  ['Rental car stranded out of market',
+                                   'A Turo car sat in Orlando when it was supposed to be back in Atlanta',
+                                   'Keep Bouncie live on every car and work the case directly with Turo',
+                                   'Trend Trader Clark ([laJpf5HhA8s @ 00:00:28])'],
+                                  ['Expecting a mid-drive engine shutdown',
+                                   'The Gold Star kill switch never stops a car that is already moving on '
+                                   'the road',
+                                   'Disable remotely and catch the car at its next attempted restart after '
+                                   'parking',
+                                   'Alex Auto ([6_-L6DOOZog @ 00:18:13])'],
+                                  ['Loose relay trigger wire after cutoff',
+                                   'A disconnected green relay wire can leave a cut-off car unable to '
+                                   'restart at all',
+                                   'Crimp the tracker-to-relay connection and seal it with heat shrink '
+                                   'tubing',
+                                   'Pitstop to Profits ([x4wy8hXqVbk @ 00:11:08])'],
+                                  ['Battery drain and subscription creep',
+                                   'Users report Bouncie draining car batteries while the $9 monthly fee '
+                                   'keeps stacking up',
+                                   'Budget the monthly fee per car and watch battery status inside the '
+                                   'Bouncie app',
+                                   'Critical Reviews ([BbAy6S7Oz1I @ 00:01:14]); King of Rentals '
+                                   '([QpyPtquGmrk @ 00:02:45])'],
+                                  ['Kill switch left unarmed by mistake',
+                                   'Onthedreside tested on camera and found the switch was not activated '
+                                   'as believed',
+                                   'Press enable, confirm command sent in the app, then crank-test the car',
+                                   'Onthedreside ([cWZEkq1vSIE @ 00:09:39])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Pre-Deployment Gate for Trackers and Kill Switches',
+                           'body': 'Clear all four checks before any car with new tracking hardware goes '
+                                   'out on rental.',
+                           'items': ['Do not run an OBD plug-in as the only tracker on cars handed to '
+                                     'renters, because anybody can just unplug it [Alex Auto — 6_-L6DOOZog '
+                                     '@ 00:19:52].',
+                                     'Crank-test every kill switch from the app in both kill and unkill '
+                                     'states before the panels go back on [Wires747 — YbO6R8RKS_8 @ '
+                                     '00:04:44].',
+                                     'Crimp and heat-shrink the tracker-to-relay trigger wire so a loose '
+                                     'splice cannot strand a disabled car [Pitstop to Profits — '
+                                     'x4wy8hXqVbk @ 00:11:08].',
+                                     'Match hardware spend to renter risk: late-night airport bookings and '
+                                     'local ride share renters justify kill switch hardware [King of '
+                                     'Rentals — 294HBi50ud8 @ 00:03:04].']}}],
+ 'pull_quote': 'You can have this on top of your trackers and kill switch, but you cannot have just this '
+               "alone because anybody can just unplug it and now you don't know where your car is. "
+               'Attributed to Alex Auto (6_-L6DOOZog @ 00:19:52).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Score renter risk by city, local versus traveler, ride share use, and midnight-to-4 '
+                      'a.m. airport bookings before choosing tracker hardware [King of Rentals — '
+                      '294HBi50ud8 @ 00:02:10].',
+                      'Buy a voltmeter and automatic wire strippers from Harbor Freight, Amazon, or eBay, '
+                      'keeping the full tool kit at or under 100 bucks [Pitstop to Profits — x4wy8hXqVbk @ '
+                      '00:02:30].',
+                      'Pull the negative battery terminal, then find constant 12-volt and accessory power '
+                      'behind the radio with a test light and multimeter [Car Sharing Jho — 1_yscjNU-oM @ '
+                      '00:03:33].',
+                      'Locate the starter wire by its crank-only 12-volt spike, cut it, and splice the '
+                      'relay between the ignition side and the starter side [Wires747 — YbO6R8RKS_8 @ '
+                      '00:06:17].',
+                      'Hide any Bouncie behind an OBD2 extension, secure it firmly, and complete the '
+                      '10-minute calibration drive before renting the car [CentraliaUS — YflWar_YuYg @ '
+                      '00:01:41].',
+                      'Set geofences around your market and use overnight location history to pinpoint '
+                      'where a renter stays before a repossession [Alex Auto — 6_-L6DOOZog @ 00:16:06].'],
+ 'statutory_citations': [{'title': 'Alex Auto — The Car Rental Toolkit: Software, Trackers, & Automation '
+                                   '[00:13:26]',
+                          'url': 'https://www.youtube.com/watch?v=6_-L6DOOZog&t=806s',
+                          'relevance': 'Primary practitioner testimony on treating GPS trackers and kill '
+                                       'switches as non-negotiable and rejecting OBD-only tracking.'},
+                         {'title': 'King of Rentals — How to Choose the Right GPS Tracker for Your Rental '
+                                   'Cars! [00:06:00]',
+                          'url': 'https://www.youtube.com/watch?v=294HBi50ud8&t=360s',
+                          'relevance': 'Primary practitioner testimony on matching tracker features to '
+                                       'renter risk and on device, install, and monthly cost ranges.'},
+                         {'title': 'Pitstop to Profits — How I Installed a Goldstar GPS Tracker and Kill '
+                                   'Switch In My Rental Car Fleet [00:10:05]',
+                          'url': 'https://www.youtube.com/watch?v=x4wy8hXqVbk&t=605s',
+                          'relevance': 'Primary practitioner testimony on DIY three-wire tracker installs, '
+                                       'relay splicing, and overpriced install quotes.'},
+                         {'title': 'Wires747 — How To Install Moovetrax GPS Tracker With Kill Switch Kia '
+                                   'Optima or Huyndai [00:00:16]',
+                          'url': 'https://www.youtube.com/watch?v=YbO6R8RKS_8&t=16s',
+                          'relevance': 'Primary practitioner testimony on remote kill and unkill wiring '
+                                       'for theft-prone Kia and Hyundai models.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '0qz2jiKB21I',
+                       'title': 'Best Software Tools to Grow Your Car Rental Fleet (Turo & Private)',
+                       'channel': 'King of Rentals',
+                       'author': 'King of Rentals',
+                       'text': 'I think a lot of people in the beginning get really protective. They want '
+                               'to do hardware devices, they want kill switches. If you have a 2010 Prius, '
+                               "you don't need that.",
+                       'tip': 'I think a lot of people in the beginning get really protective. They want '
+                              'to do hardware devices, they want kill switches. If you have a 2010 Prius, '
+                              "you don't need that.",
+                       'timestamp': 76,
+                       'timestamp_seconds': 76,
+                       'timestamp_label': '[00:01:16]',
+                       'url': 'https://www.youtube.com/watch?v=0qz2jiKB21I&t=76s',
+                       'markdown': '[00:01:16](https://www.youtube.com/watch?v=0qz2jiKB21I&t=76s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YbO6R8RKS_8',
+                       'title': 'How To Install Moovetrax GPS Tracker With Kill Switch Kia Optima or '
+                                'Huyndai',
+                       'channel': 'Wires747',
+                       'author': 'Wires747',
+                       'text': 'This is a 2019 Kia and these things are notorious for being stolen. All I '
+                               'care about is killing the car in the case that it gets stolen.',
+                       'tip': 'This is a 2019 Kia and these things are notorious for being stolen. All I '
+                              'care about is killing the car in the case that it gets stolen.',
+                       'timestamp': 16,
+                       'timestamp_seconds': 16,
+                       'timestamp_label': '[00:00:16]',
+                       'url': 'https://www.youtube.com/watch?v=YbO6R8RKS_8&t=16s',
+                       'markdown': '[00:00:16](https://www.youtube.com/watch?v=YbO6R8RKS_8&t=16s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1_yscjNU-oM',
+                       'title': 'How To Install TrackMateGPS Tracker and Kill Switch for Turo Cars',
+                       'channel': 'Car Sharing Jho',
+                       'author': 'Car Sharing Jho',
+                       'text': "That's pretty much how you hardwire a GPS system and the benefit of that "
+                               "is that no renter can disconnect it because they'd have to come back here "
+                               'and actually look for the wires.',
+                       'tip': "That's pretty much how you hardwire a GPS system and the benefit of that is "
+                              "that no renter can disconnect it because they'd have to come back here and "
+                              'actually look for the wires.',
+                       'timestamp': 306,
+                       'timestamp_seconds': 306,
+                       'timestamp_label': '[00:05:06]',
+                       'url': 'https://www.youtube.com/watch?v=1_yscjNU-oM&t=306s',
+                       'markdown': '[00:05:06](https://www.youtube.com/watch?v=1_yscjNU-oM&t=306s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QpyPtquGmrk',
+                       'title': 'The Best Car Tracking Device: Bouncie GPS!!!',
+                       'channel': 'King of Rentals',
+                       'author': 'King of Rentals',
+                       'text': "Sometimes people will reach at them and like try to feel if there's "
+                               "something. We've had them unplugged. It's rare but it happens.",
+                       'tip': "Sometimes people will reach at them and like try to feel if there's "
+                              "something. We've had them unplugged. It's rare but it happens.",
+                       'timestamp': 78,
+                       'timestamp_seconds': 78,
+                       'timestamp_label': '[00:01:18]',
+                       'url': 'https://www.youtube.com/watch?v=QpyPtquGmrk&t=78s',
+                       'markdown': '[00:01:18](https://www.youtube.com/watch?v=QpyPtquGmrk&t=78s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YflWar_YuYg',
+                       'title': 'STOP CAR THEFT! Installing the @Bouncie GPS Tracker Hidden in my 2015 '
+                                'Dodge Durango',
+                       'channel': 'CentraliaUS',
+                       'author': 'CentraliaUS',
+                       'text': "That way, a customer does not fiddle with it. It's just a deterrence, but "
+                               "we'll see how it goes.",
+                       'tip': "That way, a customer does not fiddle with it. It's just a deterrence, but "
+                              "we'll see how it goes.",
+                       'timestamp': 144,
+                       'timestamp_seconds': 144,
+                       'timestamp_label': '[00:02:24]',
+                       'url': 'https://www.youtube.com/watch?v=YflWar_YuYg&t=144s',
+                       'markdown': '[00:02:24](https://www.youtube.com/watch?v=YflWar_YuYg&t=144s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'x4wy8hXqVbk',
+                       'title': 'How I Installed a Goldstar GPS Tracker and Kill Switch In My Rental Car '
+                                'Fleet',
+                       'channel': 'Pitstop to Profits',
+                       'author': 'Pitstop to Profits',
+                       'text': "That's way too much money for an hour, an hour and 15 minutes of work.",
+                       'tip': "That's way too much money for an hour, an hour and 15 minutes of work.",
+                       'timestamp': 605,
+                       'timestamp_seconds': 605,
+                       'timestamp_label': '[00:10:05]',
+                       'url': 'https://www.youtube.com/watch?v=x4wy8hXqVbk&t=605s',
+                       'markdown': '[00:10:05](https://www.youtube.com/watch?v=x4wy8hXqVbk&t=605s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'x4wy8hXqVbk',
+                       'title': 'How I Installed a Goldstar GPS Tracker and Kill Switch In My Rental Car '
+                                'Fleet',
+                       'channel': 'Pitstop to Profits',
+                       'author': 'Pitstop to Profits',
+                       'text': 'I like to crimp them and then I put a heat shrink over that one right '
+                               'there because this one is a very important wire here.',
+                       'tip': 'I like to crimp them and then I put a heat shrink over that one right there '
+                              'because this one is a very important wire here.',
+                       'timestamp': 668,
+                       'timestamp_seconds': 668,
+                       'timestamp_label': '[00:11:08]',
+                       'url': 'https://www.youtube.com/watch?v=x4wy8hXqVbk&t=668s',
+                       'markdown': '[00:11:08](https://www.youtube.com/watch?v=x4wy8hXqVbk&t=668s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'laJpf5HhA8s',
+                       'title': 'DiY: HOW TO INSTALL A BOUNCIE CAR TRACKER DEVICE | STEP BY STEP',
+                       'channel': 'Trend Trader Clark',
+                       'author': 'Trend Trader Clark',
+                       'text': 'I have Bouncie on all my cars. You can pull up the app and you can see '
+                               'exactly where your car is right now.',
+                       'tip': 'I have Bouncie on all my cars. You can pull up the app and you can see '
+                              'exactly where your car is right now.',
+                       'timestamp': 13,
+                       'timestamp_seconds': 13,
+                       'timestamp_label': '[00:00:13]',
+                       'url': 'https://www.youtube.com/watch?v=laJpf5HhA8s&t=13s',
+                       'markdown': '[00:00:13](https://www.youtube.com/watch?v=laJpf5HhA8s&t=13s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YkcJvhapCds',
+                       'title': 'Good Option for Parents with Teens? Bouncie GPS Tracker for Vehicles',
+                       'channel': '3doglife4real',
+                       'author': '3doglife4real',
+                       'text': 'I think a thief could easily find this and just unhook it or unplug it.',
+                       'tip': 'I think a thief could easily find this and just unhook it or unplug it.',
+                       'timestamp': 90,
+                       'timestamp_seconds': 90,
+                       'timestamp_label': '[00:01:30]',
+                       'url': 'https://www.youtube.com/watch?v=YkcJvhapCds&t=90s',
+                       'markdown': '[00:01:30](https://www.youtube.com/watch?v=YkcJvhapCds&t=90s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BbAy6S7Oz1I',
+                       'title': 'Bouncie GPS Car Tracker | 5 Shocking Reasons NOT to Buy! 📉🚗',
+                       'channel': 'Critical Reviews',
+                       'author': 'Critical Reviews',
+                       'text': "Some users have reported that the Bouncie can drain their car's battery "
+                               'leading to multiple replacements.',
+                       'tip': "Some users have reported that the Bouncie can drain their car's battery "
+                              'leading to multiple replacements.',
+                       'timestamp': 74,
+                       'timestamp_seconds': 74,
+                       'timestamp_label': '[00:01:14]',
+                       'url': 'https://www.youtube.com/watch?v=BbAy6S7Oz1I&t=74s',
+                       'markdown': '[00:01:14](https://www.youtube.com/watch?v=BbAy6S7Oz1I&t=74s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gmU1WdF-DCo',
+                       'title': 'Bouncie Review — My Honest Experience Using This Smart GPS Car Tracker',
+                       'channel': 'How Master',
+                       'author': 'How Master',
+                       'text': 'Sometimes the location data lags or shows a delay when your car moves.',
+                       'tip': 'Sometimes the location data lags or shows a delay when your car moves.',
+                       'timestamp': 52,
+                       'timestamp_seconds': 52,
+                       'timestamp_label': '[00:00:52]',
+                       'url': 'https://www.youtube.com/watch?v=gmU1WdF-DCo&t=52s',
+                       'markdown': '[00:00:52](https://www.youtube.com/watch?v=gmU1WdF-DCo&t=52s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cLo7rU35m3U',
+                       'title': 'Trackhawk GPS Kill Switch Installation - Best Turo and Car Rental GPS '
+                                'Tracker',
+                       'channel': 'Trackhawk GPS',
+                       'author': 'Trackhawk GPS',
+                       'text': 'Make sure you have a certified technician, someone who has done car audio '
+                               'installations in the past, alarm installations in the past.',
+                       'tip': 'Make sure you have a certified technician, someone who has done car audio '
+                              'installations in the past, alarm installations in the past.',
+                       'timestamp': 181,
+                       'timestamp_seconds': 181,
+                       'timestamp_label': '[00:03:01]',
+                       'url': 'https://www.youtube.com/watch?v=cLo7rU35m3U&t=181s',
+                       'markdown': '[00:03:01](https://www.youtube.com/watch?v=cLo7rU35m3U&t=181s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '294HBi50ud8',
+                       'title': 'How to Choose the Right GPS Tracker for Your Rental Cars!',
+                       'channel': 'King of Rentals',
+                       'author': 'King of Rentals',
+                       'text': "Cheapest I've ever paid is $8 per month. Most I've seen devices cost is "
+                               'about $30 per month.',
+                       'tip': "Cheapest I've ever paid is $8 per month. Most I've seen devices cost is "
+                              'about $30 per month.',
+                       'timestamp': 392,
+                       'timestamp_seconds': 392,
+                       'timestamp_label': '[00:06:32]',
+                       'url': 'https://www.youtube.com/watch?v=294HBi50ud8&t=392s',
+                       'markdown': '[00:06:32](https://www.youtube.com/watch?v=294HBi50ud8&t=392s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '294HBi50ud8',
+                       'title': 'How to Choose the Right GPS Tracker for Your Rental Cars!',
+                       'channel': 'King of Rentals',
+                       'author': 'King of Rentals',
+                       'text': 'If they book anywhere from 12:00 a.m. to 4:00 a.m., I think this is a '
+                               'super risky window.',
+                       'tip': 'If they book anywhere from 12:00 a.m. to 4:00 a.m., I think this is a super '
+                              'risky window.',
+                       'timestamp': 170,
+                       'timestamp_seconds': 170,
+                       'timestamp_label': '[00:02:50]',
+                       'url': 'https://www.youtube.com/watch?v=294HBi50ud8&t=170s',
+                       'markdown': '[00:02:50](https://www.youtube.com/watch?v=294HBi50ud8&t=170s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '87xqndlXO8o',
+                       'title': 'The FIRST drop-in KILL SWITCH (anti-theft)',
+                       'channel': '41.22 Inc.',
+                       'author': '41.22 Inc.',
+                       'text': 'Cutting into factory wiring and possibly voiding my warranty is not '
+                               'something I like to do.',
+                       'tip': 'Cutting into factory wiring and possibly voiding my warranty is not '
+                              'something I like to do.',
+                       'timestamp': 17,
+                       'timestamp_seconds': 17,
+                       'timestamp_label': '[00:00:17]',
+                       'url': 'https://www.youtube.com/watch?v=87xqndlXO8o&t=17s',
+                       'markdown': '[00:00:17](https://www.youtube.com/watch?v=87xqndlXO8o&t=17s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6_-L6DOOZog',
+                       'title': 'The Car Rental Toolkit: Software, Trackers, & Automation',
+                       'channel': 'Alex Auto',
+                       'author': 'Alex Auto',
+                       'text': 'You can have this on top of your trackers and kill switch, but you cannot '
+                               'have just this alone because anybody can just unplug it.',
+                       'tip': 'You can have this on top of your trackers and kill switch, but you cannot '
+                              'have just this alone because anybody can just unplug it.',
+                       'timestamp': 1192,
+                       'timestamp_seconds': 1192,
+                       'timestamp_label': '[00:19:52]',
+                       'url': 'https://www.youtube.com/watch?v=6_-L6DOOZog&t=1192s',
+                       'markdown': '[00:19:52](https://www.youtube.com/watch?v=6_-L6DOOZog&t=1192s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6_-L6DOOZog',
+                       'title': 'The Car Rental Toolkit: Software, Trackers, & Automation',
+                       'channel': 'Alex Auto',
+                       'author': 'Alex Auto',
+                       'text': "Now, the car won't stop while they're driving. What will happen is "
+                               'whenever they stop and turn off the ignition, the next time they try to '
+                               "start the car up again, the car won't start.",
+                       'tip': "Now, the car won't stop while they're driving. What will happen is whenever "
+                              'they stop and turn off the ignition, the next time they try to start the '
+                              "car up again, the car won't start.",
+                       'timestamp': 1079,
+                       'timestamp_seconds': 1079,
+                       'timestamp_label': '[00:17:59]',
+                       'url': 'https://www.youtube.com/watch?v=6_-L6DOOZog&t=1079s',
+                       'markdown': '[00:17:59](https://www.youtube.com/watch?v=6_-L6DOOZog&t=1079s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cWZEkq1vSIE',
+                       'title': 'INSTALLING THE BEST KILLSWITCH ON MY 300C',
+                       'channel': 'Onthedreside',
+                       'author': 'Onthedreside',
+                       'text': 'They got official installers that officially install these and they only '
+                               'charge me $116 to install it.',
+                       'tip': 'They got official installers that officially install these and they only '
+                              'charge me $116 to install it.',
+                       'timestamp': 64,
+                       'timestamp_seconds': 64,
+                       'timestamp_label': '[00:01:04]',
+                       'url': 'https://www.youtube.com/watch?v=cWZEkq1vSIE&t=64s',
+                       'markdown': '[00:01:04](https://www.youtube.com/watch?v=cWZEkq1vSIE&t=64s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1iL0NKITYFA',
+                       'title': 'Bouncie, A GPS Vehicle Tracking For Your Fleet',
+                       'channel': 'Will King, High Cotton Homes',
+                       'author': 'Will King, High Cotton Homes',
+                       'text': 'That alone is worth the eight dollars a month that it costs you to have '
+                               'this per vehicle.',
+                       'tip': 'That alone is worth the eight dollars a month that it costs you to have '
+                              'this per vehicle.',
+                       'timestamp': 169,
+                       'timestamp_seconds': 169,
+                       'timestamp_label': '[00:02:49]',
+                       'url': 'https://www.youtube.com/watch?v=1iL0NKITYFA&t=169s',
+                       'markdown': '[00:02:49](https://www.youtube.com/watch?v=1iL0NKITYFA&t=169s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

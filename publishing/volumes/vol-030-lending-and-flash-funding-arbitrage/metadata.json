@@ -9,49 +9,49 @@
       "ARBITRAGE"
     ],
     "deck": [
-      "VERIFY ESCROW. UNDERWRITE THE EXIT.",
-      "RECYCLE CAPITAL WITH CONTROLS."
+      "WHOLESALERS, TITLE OPERATORS AND TRANSACTIONAL LENDERS TEST ASSIGNMENTS AGAINST BACK-TO-BACK DOUBLE CLOSES FUNDED AT 1% TO 3% OF PURCHASE",
+      "THEY BUILD CLOSER, ESCROW, LOAN-DOCUMENT AND LENDING PLAYBOOKS FROM SAME-DAY FLASH CASH TO PRIVATE MONEY, BRIDGE LOANS AND 0% BUSINESS CREDIT STACKING"
     ],
-    "lead": "Transactional Double-Close Funding, Earnest-Money Deposit Loans & Corporate Credit Liquidity for a Lean Lending Desk",
-    "summary": "Screen both closing legs, document earnest-money refund rights, and reconcile escrow-controlled disbursements while pricing credit costs, failed exits, and state lending requirements.",
+    "lead": "Practitioners show how to decide between assigning and double closing, price transactional funding at 1% to 3% of purchase or a flat $850 to $2,000, and wire nothing on the A leg until the end buyer's cash is sitting in escrow.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies on double closes, transactional funding, title and escrow, earnest money, and lending. Every claim, metric, pro-tip and operator gate carries timestamped inline attribution to the practitioner and video it came from.",
     "chapters": [
-      "Transactional funding vs EMD lending",
-      "Title partners & verified closing instructions",
-      "Funding fees, cost of capital & velocity",
-      "Corporate credit terms & liquidity reserves",
-      "Failed closings, wire fraud & deposit losses",
-      "Sourcing wholesalers & repeat borrowers",
-      "Double-close underwriting & escrow controls",
-      "EMD refund rights & release conditions",
-      "Lending licenses, usury & loan documents",
-      "Funding calendars & repayment reconciliation",
-      "Lean credit desk & concentration limits",
-      "First 30-day funded-deal launch sprint"
+      "The Double Close Playbook",
+      "Assign, Double Close, or Fund the Transaction",
+      "Transactional Funding Costs, Terms & Lender Selection",
+      "Title, Escrow & the Settlement Statement",
+      "Earnest Money Deposits: Holding, Protecting & Losing Them",
+      "Proof of Funds, Prorations & Wire Fraud",
+      "The Gator Method",
+      "Becoming the Transactional Lender",
+      "Private Money & Hard Money Lending",
+      "Loan Documents, Security & Usury",
+      "Bridge Loans & Lines of Credit",
+      "0% Business Credit Stacking"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Qualify borrowers & title partners"
+        "LOCK THE SELLER",
+        "Contract the A-to-B purchase, bake fees into the price at the table ($97,000 instead of $100,000), and screen bank-owned and short sale deals for 30, 60 or 90-day resale restrictions."
       ],
       [
-        "UNDERWRITE",
-        "Verify both closings & repayment exit"
+        "LOCK THE END BUYER",
+        "Sign the B-to-C contract first and secure a $2,500 minimum non-refundable deposit, $5,000 to $10,000 preferred, backed by a release clause."
       ],
       [
-        "DOCUMENT",
-        "Set loan terms & escrow conditions"
+        "PICK THE CLOSER",
+        "Write an investor-friendly title company or attorney into both contracts, confirm they actually do double escrows, and lock their wire instructions on the first call."
       ],
       [
-        "FUND",
-        "Confirm instructions before disbursement"
+        "CHOOSE THE EXIT",
+        "Assign by default; double close when the spread crosses roughly $10,000 to $20,000 or when REO, HUD or no-assignment paper blocks an assignment."
       ],
       [
-        "RECONCILE",
-        "Track principal, fees & exceptions"
+        "LINE UP FUNDING",
+        "Send both contracts to a transactional funder priced at 1% to 3% of purchase, flat $850 to $2,000, or 1% plus $100, and budget for fees if closing slips."
       ],
       [
-        "RECYCLE",
-        "Release capital within exposure caps"
+        "CLOSE BACK TO BACK",
+        "Fund the A leg only after the end buyer's B-to-C funds land in escrow, then repay the funder from the second closing, often within an hour."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "LENDING & FLASH-FUNDING ARBITRAGE",
-  "subtitle": "The Complete Playbook for Lending & Flash-Funding Arbitrage: $120,000–$950,000 USD in Annual Earned Revenue; a 1 FT + 2 C Three-Person Pod, Expanding to Five People at Scale",
+  "subtitle": "Back-to-back double closes, 1% transactional funding, Gator EMD chunks, title and wire controls, first-lien private money, exit-first bridge debt, and 0% business credit stacks",
   "chapter_count": 12,
-  "total_word_count": 78274,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 73954,
+  "expert_youtube_link_count": 208,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:02Z"
+  "updated_at": "2026-11-24T22:21:28Z"
 }

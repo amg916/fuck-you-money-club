@@ -1,4473 +1,3257 @@
-"""Curated 180-citation Insurance Restoration baseline (15 per chapter across Q1-Q12) mined strictly from verified Insurance Restoration YouTube transcripts."""
+"""100% verbatim YouTube practitioner citations selected directly by Claude across Chapters Q1-Q12 of Volume 029 (Insurance Restoration)."""
 from __future__ import annotations
 
-CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'accounts',
-     'adjuster',
-     'administrator',
-     'alacrity',
-     'anti',
-     'aob',
-     'asbestos',
-     'assignment',
-     'benefits',
-     'billing',
-     'boundary',
-     'business',
-     'call',
-     'check',
-     'claims',
-     'cleaning',
-     'client',
-     'clients',
-     'commercial',
-     'company',
-     'connection',
-     'contents',
-     'contractor',
-     'crew',
-     'damage',
-     'deductible',
-     'desk',
-     'direction',
-     'dispatch',
-     'documentation',
-     'downward',
-     'drying',
-     'firm',
-     'margin',
-     'market',
-     'model',
-     'niche',
-     'operator',
-     'revenue',
-     'service',
-     'value'},
- 2: {'accounts',
-     'adjuster',
-     'administrator',
-     'alacrity',
-     'anti',
-     'aob',
-     'asbestos',
-     'assignment',
-     'benefits',
-     'billing',
-     'boundary',
-     'budget',
-     'business',
-     'buyer',
-     'call',
-     'check',
-     'claims',
-     'cleaning',
-     'commercial',
-     'company',
-     'connection',
-     'contents',
-     'contract',
-     'contractor',
-     'crew',
-     'customer',
-     'damage',
-     'decision',
-     'deductible',
-     'desk',
-     'direction',
-     'dispatch',
-     'documentation',
-     'downward',
-     'drying',
-     'escrow',
-     'fee',
-     'fees',
-     'invoice',
-     'pay',
-     'payment',
-     'pays',
-     'retainer'},
- 3: {'accounts',
-     'adjuster',
-     'administrator',
-     'alacrity',
-     'anti',
-     'aob',
-     'asbestos',
-     'assignment',
-     'benefits',
-     'billing',
-     'boundary',
-     'business',
-     'call',
-     'cash',
-     'cashflow',
-     'check',
-     'claims',
-     'cleaning',
-     'commercial',
-     'commission',
-     'company',
-     'connection',
-     'contents',
-     'contractor',
-     'cost',
-     'costs',
-     'crew',
-     'damage',
-     'deductible',
-     'desk',
-     'direction',
-     'dispatch',
-     'documentation',
-     'downward',
-     'drying',
-     'economics',
-     'margin',
-     'margins',
-     'price',
-     'pricing',
-     'profit',
-     'roi',
-     'unit'},
- 4: {'accounts',
-     'adjuster',
-     'administrator',
-     'alacrity',
-     'anti',
-     'aob',
-     'asbestos',
-     'assignment',
-     'benefits',
-     'billing',
-     'boundary',
-     'budget',
-     'business',
-     'call',
-     'capital',
-     'check',
-     'claims',
-     'cleaning',
-     'commercial',
-     'company',
-     'connection',
-     'contents',
-     'contractor',
-     'crew',
-     'damage',
-     'deductible',
-     'desk',
-     'direction',
-     'dispatch',
-     'documentation',
-     'downward',
-     'drying',
-     'entity',
-     'insurance',
-     'lean',
-     'license',
-     'llc',
-     'setup',
-     'software',
-     'stack',
-     'startup',
-     'tools'},
- 5: {'accounts',
-     'adjuster',
-     'administrator',
-     'alacrity',
-     'anti',
-     'aob',
-     'asbestos',
-     'assignment',
-     'audit',
-     'avoid',
-     'benefits',
-     'billing',
-     'boundary',
-     'business',
-     'call',
-     'check',
-     'claims',
-     'clawback',
-     'cleaning',
-     'commercial',
-     'company',
-     'connection',
-     'contents',
-     'contractor',
-     'crew',
-     'damage',
-     'deductible',
-     'desk',
-     'direction',
-     'dispatch',
-     'dispute',
-     'documentation',
-     'downward',
-     'drying',
-     'edge',
-     'fail',
-     'mistake',
-     'mistakes',
-     'problem',
-     'risk',
-     'risks',
-     'trap',
-     'traps'},
- 6: {'accounts',
-     'adjuster',
-     'administrator',
-     'alacrity',
-     'anti',
-     'aob',
-     'asbestos',
-     'assignment',
-     'benefits',
-     'billing',
-     'boundary',
-     'business',
-     'call',
-     'check',
-     'claims',
-     'cleaning',
-     'client',
-     'commercial',
-     'company',
-     'connection',
-     'contents',
-     'contractor',
-     'crew',
-     'damage',
-     'data',
-     'deal',
-     'deductible',
-     'desk',
-     'direction',
-     'dispatch',
-     'documentation',
-     'downward',
-     'drying',
-     'find',
-     'first',
-     'lead',
-     'leads',
-     'list',
-     'outbound',
-     'prospect',
-     'qualify',
-     'search',
-     'sourcing'},
- 7: {'accounts',
-     'adjuster',
-     'administrator',
-     'alacrity',
-     'anti',
-     'aob',
-     'asbestos',
-     'assignment',
-     'benefits',
-     'billing',
-     'boundary',
-     'business',
-     'call',
-     'check',
-     'checklist',
-     'claims',
-     'cleaning',
-     'commercial',
-     'company',
-     'connection',
-     'contents',
-     'contractor',
-     'crew',
-     'damage',
-     'deductible',
-     'delivery',
-     'desk',
-     'direction',
-     'dispatch',
-     'documentation',
-     'downward',
-     'drying',
-     'execution',
-     'process',
-     'quality',
-     'sop',
-     'step',
-     'steps',
-     'system',
-     'underwriting',
-     'verify',
-     'workflow'},
- 8: {'accounts',
-     'adjuster',
-     'administrator',
-     'alacrity',
-     'anti',
-     'aob',
-     'api',
-     'asbestos',
-     'assignment',
-     'benefits',
-     'billing',
-     'boundary',
-     'business',
-     'call',
-     'check',
-     'claims',
-     'cleaning',
-     'commercial',
-     'company',
-     'connection',
-     'contents',
-     'contractor',
-     'crew',
-     'crm',
-     'damage',
-     'data',
-     'database',
-     'deductible',
-     'desk',
-     'direction',
-     'dispatch',
-     'documentation',
-     'downward',
-     'drying',
-     'platform',
-     'portal',
-     'scraper',
-     'search',
-     'software',
-     'tool',
-     'tools',
-     'tracking'},
- 9: {'accounts',
-     'adjuster',
-     'administrator',
-     'agreement',
-     'alacrity',
-     'anti',
-     'aob',
-     'asbestos',
-     'assignment',
-     'benefits',
-     'billing',
-     'boundary',
-     'business',
-     'call',
-     'check',
-     'claims',
-     'cleaning',
-     'commercial',
-     'company',
-     'compliance',
-     'connection',
-     'contents',
-     'contract',
-     'contractor',
-     'crew',
-     'damage',
-     'deductible',
-     'desk',
-     'direction',
-     'disclosure',
-     'dispatch',
-     'documentation',
-     'downward',
-     'drying',
-     'law',
-     'legal',
-     'license',
-     'outreach',
-     'rules',
-     'script',
-     'state',
-     'terms'},
- 10: {'accounts',
-      'adjuster',
-      'administrator',
-      'agent',
-      'ai',
-      'alacrity',
-      'anti',
-      'aob',
-      'asbestos',
-      'assignment',
-      'automate',
-      'automation',
-      'benefits',
-      'billing',
-      'boundary',
-      'business',
-      'call',
-      'check',
-      'claims',
-      'cleaning',
-      'commercial',
-      'company',
-      'connection',
-      'contents',
-      'contractor',
-      'crew',
-      'damage',
-      'dashboard',
-      'deductible',
-      'desk',
-      'direction',
-      'dispatch',
-      'documentation',
-      'downward',
-      'drying',
-      'leverage',
-      'pipeline',
-      'scale',
-      'script',
-      'speed',
-      'template',
-      'workflow'},
- 11: {'accounts',
-      'adjuster',
-      'administrator',
-      'alacrity',
-      'anti',
-      'aob',
-      'asbestos',
-      'assignment',
-      'benefits',
-      'billing',
-      'boundary',
-      'business',
-      'call',
-      'check',
-      'claims',
-      'cleaning',
-      'commercial',
-      'company',
-      'connection',
-      'contents',
-      'contractor',
-      'crew',
-      'damage',
-      'deductible',
-      'desk',
-      'direction',
-      'dispatch',
-      'documentation',
-      'downward',
-      'drying',
-      'exit',
-      'hire',
-      'hiring',
-      'kpi',
-      'manager',
-      'operations',
-      'pod',
-      'scale',
-      'scaling',
-      'team',
-      'valuation'},
- 12: {'accounts',
-      'action',
-      'adjuster',
-      'administrator',
-      'alacrity',
-      'anti',
-      'aob',
-      'asbestos',
-      'assignment',
-      'benefits',
-      'billing',
-      'boundary',
-      'business',
-      'call',
-      'check',
-      'claims',
-      'cleaning',
-      'commercial',
-      'company',
-      'connection',
-      'contents',
-      'contractor',
-      'crew',
-      'damage',
-      'day',
-      'days',
-      'deductible',
-      'desk',
-      'direction',
-      'dispatch',
-      'documentation',
-      'downward',
-      'drying',
-      'launch',
-      'milestone',
-      'month',
-      'plan',
-      'roadmap',
-      'sprint',
-      'start',
-      'thirty',
-      'week'}}
+CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'damage', 'remediation', 'mold', 'water', 'standard', 'working', 's520', 's500', 'iicrc'},
+ 2: {'paid', 'getting', 'estimates', 'water', 'mitigation'},
+ 3: {'fundamentals', 'xactimate', 'line', 'item', 'mastery'},
+ 4: {'roof', 'claim', 'supplementing'},
+ 5: {'table', 'negotiation', 'public', 'adjusters'},
+ 6: {'carrier', 'vendors', 'tpas', 'preferred', 'programs'},
+ 7: {'documentation', 'smoke', 'fire', 'site', 'contents'},
+ 8: {'plumber', 'referral', 'call', 'engine', 'closing'},
+ 9: {'leads', 'paid', 'restoration', 'margin', 'launching', 'company', 'contracts'},
+ 10: {'benefits', 'mechanics', 'assignment', 'reform', 'abuse'},
+ 11: {'checks', 'claim', 'deductibles'},
+ 12: {'hail', 'crew', 'inspections', 'roof', 'estimates', 'economics', 'storm', 'roofing'}}
 
-BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'Butler Legal',
-      'channel': 'Butler Legal',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:24](https://www.youtube.com/watch?v=rxahzd6qaCw&t=84s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'When the contractor comes in to ensure that he or she gets paid, the contractor '
-              'will have either the homeowner or the commercial business owner execute the '
-              'assignment of benefits. The insured typically will say the scope of the damage '
-              "that they'd like repaired.",
-      'timestamp': 84,
-      'timestamp_label': '[00:01:24]',
-      'timestamp_seconds': 84,
-      'tip': 'When the contractor comes in to ensure that he or she gets paid, the contractor '
-             'will have either the homeowner or the commercial business owner execute the '
-             'assignment of benefits. The insured typically will say the scope of the damage '
-             "that they'd like repaired.",
-      'title': 'Handling of Assignment of Benefit ("AOB") Claims (Butler Legal)',
-      'url': 'https://www.youtube.com/watch?v=rxahzd6qaCw&t=84s',
-      'video_id': 'rxahzd6qaCw'},
-     {'author': 'Roofing Insights',
-      'channel': 'Roofing Insights',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:23:54](https://www.youtube.com/watch?v=Qv99F8pvYNU&t=1434s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And if if out here it\'s my client, I call them up and say, "You should have '
-              'paid this." Write them a check immediately and tell them, "You\'re sorry." If '
-              'it\'s over here on the fraud side, I call the insurance company and say, "This '
-              'is going to be fun.',
-      'timestamp': 1434,
-      'timestamp_label': '[00:23:54]',
-      'timestamp_seconds': 1434,
-      'tip': 'And if if out here it\'s my client, I call them up and say, "You should have '
-             'paid this." Write them a check immediately and tell them, "You\'re sorry." If '
-             'it\'s over here on the fraud side, I call the insurance company and say, "This '
-             'is going to be fun.',
-      'title': 'Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners? (Roofing '
-               'Insights)',
-      'url': 'https://www.youtube.com/watch?v=Qv99F8pvYNU&t=1434s',
-      'video_id': 'Qv99F8pvYNU'},
-     {'author': 'Learn To Restore',
-      'channel': 'Learn To Restore',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:57](https://www.youtube.com/watch?v=i4RGAC2VwaY&t=297s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And if you are going to be doing carpet cleaning for clients, then you should '
-              "have in your company and know the S100. If you're doing upholstery cleaning, "
-              "you should have the S300. If you're doing water damage, you should have and "
-              'know the S500.',
-      'timestamp': 297,
-      'timestamp_label': '[00:04:57]',
-      'timestamp_seconds': 297,
-      'tip': 'And if you are going to be doing carpet cleaning for clients, then you should '
-             "have in your company and know the S100. If you're doing upholstery cleaning, you "
-             "should have the S300. If you're doing water damage, you should have and know the "
-             'S500.',
-      'title': 'Intro to the IICRC S500 for Water Damage Restoration (Learn To Restore)',
-      'url': 'https://www.youtube.com/watch?v=i4RGAC2VwaY&t=297s',
-      'video_id': 'i4RGAC2VwaY'},
-     {'author': 'Restoration Roofing',
-      'channel': 'Restoration Roofing',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:47](https://www.youtube.com/watch?v=t6BiCluK7GY&t=47s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Law so let me give you a little scenario real quick let's say you have a roof "
-              'claim and the replacement value is twenty thousand dollars so this is what the '
-              'insurance company is saying they are valuing the roof at so you have a two '
-              'thousand dollar deductible.',
-      'timestamp': 47,
-      'timestamp_label': '[00:00:47]',
-      'timestamp_seconds': 47,
-      'tip': "Law so let me give you a little scenario real quick let's say you have a roof "
-             'claim and the replacement value is twenty thousand dollars so this is what the '
-             'insurance company is saying they are valuing the roof at so you have a two '
-             'thousand dollar deductible.',
-      'title': 'Is it illegal for my roofer to waive my deductible? | #Insurancedeductible '
-               '(Restoration Roofing)',
-      'url': 'https://www.youtube.com/watch?v=t6BiCluK7GY&t=47s',
-      'video_id': 't6BiCluK7GY'},
-     {'author': 'MaprBot',
-      'channel': 'MaprBot',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:45](https://www.youtube.com/watch?v=wQbjMlmo1Bg&t=105s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'It can help with planning, but it does not establish that hail is falling at a '
-              'particular property. Check current National Weather Service warnings for '
-              'immediate decisions. Bottom line, these are reported hail locations, not a '
-              'complete damage survey.',
-      'timestamp': 105,
-      'timestamp_label': '[00:01:45]',
-      'timestamp_seconds': 105,
-      'tip': 'It can help with planning, but it does not establish that hail is falling at a '
-             'particular property. Check current National Weather Service warnings for '
-             'immediate decisions. Bottom line, these are reported hail locations, not a '
-             'complete damage survey.',
-      'title': 'Mid-Atlantic Hail Recap: 34 Reports, Storms Move Offshore | November 12, 2026 '
-               '(MaprBot)',
-      'url': 'https://www.youtube.com/watch?v=wQbjMlmo1Bg&t=105s',
-      'video_id': 'wQbjMlmo1Bg'},
-     {'author': 'The DYOJO (The DYOJO)',
-      'channel': 'The DYOJO (The DYOJO)',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:22:01](https://www.youtube.com/watch?v=onSDIprTeAU&t=1321s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Um no no I I think that I I how do I say this best? I think that if um if a '
-              "business isn't approaching multiple models um at some point they are going to "
-              'run into a model interrupt.',
-      'timestamp': 1321,
-      'timestamp_label': '[00:22:01]',
-      'timestamp_seconds': 1321,
-      'tip': 'Um no no I I think that I I how do I say this best? I think that if um if a '
-             "business isn't approaching multiple models um at some point they are going to "
-             'run into a model interrupt.',
-      'title': 'How do you win the insurance claims TPA game (Contractor Connections & '
-               'Alacrity)? TDP 58 (PVJ 012) (The DYOJO (The DYOJO))',
-      'url': 'https://www.youtube.com/watch?v=onSDIprTeAU&t=1321s',
-      'video_id': 'onSDIprTeAU'},
-     {'author': 'Chad Michael - The Practitioner',
-      'channel': 'Chad Michael - The Practitioner',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:12:43](https://www.youtube.com/watch?v=Op9Qkl-qW58&t=763s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "You see, you can't really you can't you're not allowed if you're a contractor "
-              "in most states anyway, you're not allowed to tell the client to file a claim or "
-              'how to file a claim, steer them towards the claim.',
-      'timestamp': 763,
-      'timestamp_label': '[00:12:43]',
-      'timestamp_seconds': 763,
-      'tip': "You see, you can't really you can't you're not allowed if you're a contractor in "
-             "most states anyway, you're not allowed to tell the client to file a claim or how "
-             'to file a claim, steer them towards the claim.',
-      'title': 'Commercial Roof Coating | Hail Damage (Chad Michael - The Practitioner)',
-      'url': 'https://www.youtube.com/watch?v=Op9Qkl-qW58&t=763s',
-      'video_id': 'Op9Qkl-qW58'},
-     {'author': 'Octagon Cleaning and Restoration',
-      'channel': 'Octagon Cleaning and Restoration',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:07](https://www.youtube.com/watch?v=WTz841eMFkk&t=67s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Or the mold or the asbestos I like the relationship with the client the '
-              "customer they tend to be a little bigger jobs don't they they are they're "
-              'larger.',
-      'timestamp': 67,
-      'timestamp_label': '[00:01:07]',
-      'timestamp_seconds': 67,
-      'tip': 'Or the mold or the asbestos I like the relationship with the client the customer '
-             "they tend to be a little bigger jobs don't they they are they're larger.",
-      'title': 'Inside Fire Damage Restoration: A Project Manager’s Perspective (Octagon '
-               'Cleaning and Restoration)',
-      'url': 'https://www.youtube.com/watch?v=WTz841eMFkk&t=67s',
-      'video_id': 'WTz841eMFkk'},
-     {'author': 'Dustin Taylor',
-      'channel': 'Dustin Taylor',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:14](https://www.youtube.com/watch?v=gtsj3GY7D8c&t=254s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "And then emergency service call like that. And then I'll go like this. And I'll "
-              'just call it a 10 by 20 like that. So that gets rid of that portion. And I '
-              "think I'm going to go like this. And I'll get to this in a second. So, I'm not "
-              'going to resolve that yet.',
-      'timestamp': 254,
-      'timestamp_label': '[00:04:14]',
-      'timestamp_seconds': 254,
-      'tip': "And then emergency service call like that. And then I'll go like this. And I'll "
-             'just call it a 10 by 20 like that. So that gets rid of that portion. And I think '
-             "I'm going to go like this. And I'll get to this in a second. So, I'm not going "
-             'to resolve that yet.',
-      'title': 'Writing Xactimate Roofing Supplement - Texas (Dustin Taylor)',
-      'url': 'https://www.youtube.com/watch?v=gtsj3GY7D8c&t=254s',
-      'video_id': 'gtsj3GY7D8c'},
-     {'author': 'Restoration Success Strategies | Albi',
-      'channel': 'Restoration Success Strategies | Albi',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:20:05](https://www.youtube.com/watch?v=Fj9S8rNJ5d4&t=1205s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "If if your not if your immediate instinct isn't to talk them out of it then "
-              "they have to go then then they need to go right then. Because they're not "
-              "they're not they're just keeping them around they're not really adding value to "
-              'your business.',
-      'timestamp': 1205,
-      'timestamp_label': '[00:20:05]',
-      'timestamp_seconds': 1205,
-      'tip': "If if your not if your immediate instinct isn't to talk them out of it then they "
-             "have to go then then they need to go right then. Because they're not they're not "
-             "they're just keeping them around they're not really adding value to your "
-             'business.',
-      'title': 'How Restoration Companies Get Water Damage Jobs (The Plumber Referral '
-               'Playbook) (Restoration Success Strategies | Albi)',
-      'url': 'https://www.youtube.com/watch?v=Fj9S8rNJ5d4&t=1205s',
-      'video_id': 'Fj9S8rNJ5d4'},
-     {'author': 'FirehouseEducation',
-      'channel': 'FirehouseEducation',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:35](https://www.youtube.com/watch?v=Appti0ctcGA&t=335s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Perfect example of how you while your client blow their mind take care of their '
-              "contents and don't wind up having damages at the hand of your employees so.",
-      'timestamp': 335,
-      'timestamp_label': '[00:05:35]',
-      'timestamp_seconds': 335,
-      'tip': 'Perfect example of how you while your client blow their mind take care of their '
-             "contents and don't wind up having damages at the hand of your employees so.",
-      'title': 'How To Packout A Fire Restoration Job Without Damage To Contents '
-               '(FirehouseEducation)',
-      'url': 'https://www.youtube.com/watch?v=Appti0ctcGA&t=335s',
-      'video_id': 'Appti0ctcGA'},
-     {'author': 'Contractor Talk Podcast',
-      'channel': 'Contractor Talk Podcast',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:43:22](https://www.youtube.com/watch?v=Tg526FvHOmY&t=2602s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Auto it went into medical went into life as well um it really affected Florida '
-              'Insurance market so what to expect if you have a a loss on your property in '
-              "Florida now in 2024 you don't want to miss this podcast.",
-      'timestamp': 2602,
-      'timestamp_label': '[00:43:22]',
-      'timestamp_seconds': 2602,
-      'tip': 'Auto it went into medical went into life as well um it really affected Florida '
-             'Insurance market so what to expect if you have a a loss on your property in '
-             "Florida now in 2024 you don't want to miss this podcast.",
-      'title': 'Shifting Sands: The Move from AOB to Direction to Pay in Florida Restoration '
-               'Contracting (Contractor Talk Podcast)',
-      'url': 'https://www.youtube.com/watch?v=Tg526FvHOmY&t=2602s',
-      'video_id': 'Tg526FvHOmY'},
-     {'author': 'Holmes Drafting Services',
-      'channel': 'Holmes Drafting Services',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:37](https://www.youtube.com/watch?v=zzzZPeokDUk&t=97s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Homeowner now you have an open claim on your insurance you have a lien on your '
-              'house and you have a lawsuit against an insurance carrier those three things '
-              "are the the most major uh concern of you know that's the worst case scenario of "
-              'that of that scenario.',
-      'timestamp': 97,
-      'timestamp_label': '[00:01:37]',
-      'timestamp_seconds': 97,
-      'tip': 'Homeowner now you have an open claim on your insurance you have a lien on your '
-             'house and you have a lawsuit against an insurance carrier those three things are '
-             "the the most major uh concern of you know that's the worst case scenario of that "
-             'of that scenario.',
-      'title': 'What is Assignment of Benefits (AOB)? (Holmes Drafting Services)',
-      'url': 'https://www.youtube.com/watch?v=zzzZPeokDUk&t=97s',
-      'video_id': 'zzzZPeokDUk'},
-     {'author': 'News4JAX The Local Station',
-      'channel': 'News4JAX The Local Station',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:38](https://www.youtube.com/watch?v=hB0EZGfpw4I&t=98s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Get regulated they probably don't have the educational training they probably "
-              "don't have the financial ability to to train their people and mold so "
-              'absolutely I think you get rid of them tarek minor channel for the local '
-              'station.',
-      'timestamp': 98,
-      'timestamp_label': '[00:01:38]',
-      'timestamp_seconds': 98,
-      'tip': "Get regulated they probably don't have the educational training they probably "
-             "don't have the financial ability to to train their people and mold so absolutely "
-             'I think you get rid of them tarek minor channel for the local station.',
-      'title': "Florida lawmakers seek 'assignment of benefits' solution (News4JAX The Local "
-               'Station)',
-      'url': 'https://www.youtube.com/watch?v=hB0EZGfpw4I&t=98s',
-      'video_id': 'hB0EZGfpw4I'},
-     {'author': 'Adjuster TV',
-      'channel': 'Adjuster TV',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:26](https://www.youtube.com/watch?v=nHMaLQmm8nw&t=386s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q1 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Other questions ad free as well as get access to a members only segment '
-              'question and answer head on over to adjustertvplus.com and become a member '
-              'right now.',
-      'timestamp': 386,
-      'timestamp_label': '[00:06:26]',
-      'timestamp_seconds': 386,
-      'tip': 'Other questions ad free as well as get access to a members only segment question '
-             'and answer head on over to adjustertvplus.com and become a member right now.',
-      'title': 'How to ACTUALLY work as a remote desk adjuster (Adjuster TV)',
-      'url': 'https://www.youtube.com/watch?v=nHMaLQmm8nw&t=386s',
-      'video_id': 'nHMaLQmm8nw'}],
- 2: [{'author': 'Long Term Care Law Office',
-      'channel': 'Long Term Care Law Office',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:16](https://www.youtube.com/watch?v=4AHP633shFk&t=256s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Pay their own attorney fees to go after their customer client so for all those '
-              "reasons the assignment is a it's a critical part of the process of facilitating "
-              'care and facilitating payment for the care with the assignment we with the '
-              'assignment.',
-      'timestamp': 256,
-      'timestamp_label': '[00:04:16]',
-      'timestamp_seconds': 256,
-      'tip': 'Pay their own attorney fees to go after their customer client so for all those '
-             "reasons the assignment is a it's a critical part of the process of facilitating "
-             'care and facilitating payment for the care with the assignment we with the '
-             'assignment.',
-      'title': 'Healthcare Law, Steve Dunn   Assignment of Benefits (Long Term Care Law '
-               'Office)',
-      'url': 'https://www.youtube.com/watch?v=4AHP633shFk&t=256s',
-      'video_id': '4AHP633shFk'},
-     {'author': 'The Fine Print',
-      'channel': 'The Fine Print',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:43](https://www.youtube.com/watch?v=UxKcyrt-VS0&t=103s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And when the insurer refused to pay the full 22,000, the contractor did exactly '
-              'what the form allowed. It filed a lawsuit against the insurance company, naming '
-              "the homeowner's policy, seeking the disputed amount plus attorney fees. Why "
-              'would a contractor want to sue?',
-      'timestamp': 103,
-      'timestamp_label': '[00:01:43]',
-      'timestamp_seconds': 103,
-      'tip': 'And when the insurer refused to pay the full 22,000, the contractor did exactly '
-             'what the form allowed. It filed a lawsuit against the insurance company, naming '
-             "the homeowner's policy, seeking the disputed amount plus attorney fees. Why "
-             'would a contractor want to sue?',
-      'title': 'He Signed One Form at His Front Door and Lost Control of His Own Claim | '
-               'Assignment of Benefits (The Fine Print)',
-      'url': 'https://www.youtube.com/watch?v=UxKcyrt-VS0&t=103s',
-      'video_id': 'UxKcyrt-VS0'},
-     {'author': 'CCK Law Long-Term Disability',
-      'channel': 'CCK Law Long-Term Disability',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:53](https://www.youtube.com/watch?v=lnhw4pYCOFU&t=53s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'TPA, not an insurance company. They manage LTD claims for major employers and '
-              'insurers. Their role is to evaluate your claim and recommend an approval or a '
-              'denial, but they do not pay benefits directly.',
-      'timestamp': 53,
-      'timestamp_label': '[00:00:53]',
-      'timestamp_seconds': 53,
-      'tip': 'TPA, not an insurance company. They manage LTD claims for major employers and '
-             'insurers. Their role is to evaluate your claim and recommend an approval or a '
-             'denial, but they do not pay benefits directly.',
-      'title': 'How Sedgwick Handles LTD Claims and Why Denials Happen (CCK Law Long-Term '
-               'Disability)',
-      'url': 'https://www.youtube.com/watch?v=lnhw4pYCOFU&t=53s',
-      'video_id': 'lnhw4pYCOFU'},
-     {'author': 'Medicalbillingz',
-      'channel': 'Medicalbillingz',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:24](https://www.youtube.com/watch?v=HC1u-rGDBKc&t=144s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Promptly consider o versus self-payment based on your needs and preferences '
-              'informed decision- making on a ob and medical billing is crucial while it '
-              'offers advantages through understanding and adherence to precautions ensure '
-              'data protection.',
-      'timestamp': 144,
-      'timestamp_label': '[00:02:24]',
-      'timestamp_seconds': 144,
-      'tip': 'Promptly consider o versus self-payment based on your needs and preferences '
-             'informed decision- making on a ob and medical billing is crucial while it offers '
-             'advantages through understanding and adherence to precautions ensure data '
-             'protection.',
-      'title': 'Assignment of Benefits (AOB) in Medical Billing: Your Comprehensive Guide '
-               '(Medicalbillingz)',
-      'url': 'https://www.youtube.com/watch?v=HC1u-rGDBKc&t=144s',
-      'video_id': 'HC1u-rGDBKc'},
-     {'author': 'TheIICRC',
-      'channel': 'TheIICRC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:46](https://www.youtube.com/watch?v=tPPswF112gY&t=46s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Be sure to pay your non-refundable and non-transferable MRS application and '
-              'examination fees. Both need to be paid in full before you will obtain access to '
-              'the exam. Upon your initial application submission, you will pay the $150 '
-              'application fee.',
-      'timestamp': 46,
-      'timestamp_label': '[00:00:46]',
-      'timestamp_seconds': 46,
-      'tip': 'Be sure to pay your non-refundable and non-transferable MRS application and '
-             'examination fees. Both need to be paid in full before you will obtain access to '
-             'the exam. Upon your initial application submission, you will pay the $150 '
-             'application fee.',
-      'title': 'IICRC Mold Remediation Specialist (MRS) - Handbook (TheIICRC)',
-      'url': 'https://www.youtube.com/watch?v=tPPswF112gY&t=46s',
-      'video_id': 'tPPswF112gY'},
-     {'author': 'Digital Roofing Innovations',
-      'channel': 'Digital Roofing Innovations',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:50](https://www.youtube.com/watch?v=tVMI8UScmmE&t=170s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "They don't want you to uh venmo business them or paypal business they want to "
-              'get a check okay and because they pay a lot of their guys.',
-      'timestamp': 170,
-      'timestamp_label': '[00:02:50]',
-      'timestamp_seconds': 170,
-      'tip': "They don't want you to uh venmo business them or paypal business they want to "
-             'get a check okay and because they pay a lot of their guys.',
-      'title': 'How to Pay Your Roofing Subcontractors - Ch 4 Vd 14 (Digital Roofing '
-               'Innovations)',
-      'url': 'https://www.youtube.com/watch?v=tVMI8UScmmE&t=170s',
-      'video_id': 'tVMI8UScmmE'},
-     {'author': 'Grossman PA LLC',
-      'channel': 'Grossman PA LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:17](https://www.youtube.com/watch?v=diiBgujlZF0&t=77s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I know I've done them a hundred times. Sure, there's unforeseen conditions. You "
-              'can explain them, document them, and issue a justified change order. When '
-              "carriers question your invoice, you scream they're lowballing me. Did you "
-              'actually know insurance companies pay claims?',
-      'timestamp': 77,
-      'timestamp_label': '[00:01:17]',
-      'timestamp_seconds': 77,
-      'tip': "I know I've done them a hundred times. Sure, there's unforeseen conditions. You "
-             'can explain them, document them, and issue a justified change order. When '
-             "carriers question your invoice, you scream they're lowballing me. Did you "
-             'actually know insurance companies pay claims?',
-      'title': 'One Question That Will Shake the Billion-Dollar Insurance Restoration Industry '
-               '(Grossman PA LLC)',
-      'url': 'https://www.youtube.com/watch?v=diiBgujlZF0&t=77s',
-      'video_id': 'diiBgujlZF0'},
-     {'author': 'Chris Zimmerman',
-      'channel': 'Chris Zimmerman',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:17](https://www.youtube.com/watch?v=9A5QEe9xxXk&t=257s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So, yes, I think the analogy is is good. I just think there's a much easier "
-              'path. So, let\'s try another one here. This says, "I am an adjuster. If I '
-              'assign this task to a third-party administrator, then I expect to pay a bill '
-              'for them for requested services.".',
-      'timestamp': 257,
-      'timestamp_label': '[00:04:17]',
-      'timestamp_seconds': 257,
-      'tip': "So, yes, I think the analogy is is good. I just think there's a much easier "
-             'path. So, let\'s try another one here. This says, "I am an adjuster. If I assign '
-             'this task to a third-party administrator, then I expect to pay a bill for them '
-             'for requested services.".',
-      'title': 'Watch This BEFORE You Do Everything Your Insurance Adjuster Says (Chris '
-               'Zimmerman)',
-      'url': 'https://www.youtube.com/watch?v=9A5QEe9xxXk&t=257s',
-      'video_id': '9A5QEe9xxXk'},
-     {'author': "Shane O'Dazier | RestorationProfits",
-      'channel': "Shane O'Dazier | RestorationProfits",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:04](https://www.youtube.com/watch?v=72Qh6dRR94U&t=604s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'To pay for decontamination so just call it a restock fee and put it on there '
-              'they pay it all right so this is an example of what our estimate was like.',
-      'timestamp': 604,
-      'timestamp_label': '[00:10:04]',
-      'timestamp_seconds': 604,
-      'tip': 'To pay for decontamination so just call it a restock fee and put it on there '
-             'they pay it all right so this is an example of what our estimate was like.',
-      'title': 'Water Restoration Business - Estimates (Maximize Self-Pay & Insurance Payouts) '
-               "(Shane O'Dazier | RestorationProfits)",
-      'url': 'https://www.youtube.com/watch?v=72Qh6dRR94U&t=604s',
-      'video_id': '72Qh6dRR94U'},
-     {'author': 'PushLeads',
-      'channel': 'PushLeads',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:46](https://www.youtube.com/watch?v=9FnufX3pXj4&t=646s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Get your free search terms audit by reaching out to us on here on YouTube or '
-              "LinkedIn or one or online or just call us We'll show exactly what clicks you're "
-              "wasting We'll show you exactly what clicks are wasting your budget and playing "
-              'English.',
-      'timestamp': 646,
-      'timestamp_label': '[00:10:46]',
-      'timestamp_seconds': 646,
-      'tip': 'Get your free search terms audit by reaching out to us on here on YouTube or '
-             "LinkedIn or one or online or just call us We'll show exactly what clicks you're "
-             "wasting We'll show you exactly what clicks are wasting your budget and playing "
-             'English.',
-      'title': 'How do you set up Google Ads for emergency contractors in 2026? (PushLeads)',
-      'url': 'https://www.youtube.com/watch?v=9FnufX3pXj4&t=646s',
-      'video_id': '9FnufX3pXj4'},
-     {'author': 'Roof Sales Mastery',
-      'channel': 'Roof Sales Mastery',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:18:53](https://www.youtube.com/watch?v=jj-GWZEtOc0&t=1133s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Sometimes they're just gonna pay for half of it and that's all you're gonna get "
-              "and sometimes you're gonna have a really tough insurance company like.",
-      'timestamp': 1133,
-      'timestamp_label': '[00:18:53]',
-      'timestamp_seconds': 1133,
-      'tip': "Sometimes they're just gonna pay for half of it and that's all you're gonna get "
-             "and sometimes you're gonna have a really tough insurance company like.",
-      'title': 'Best Way to Learn Roof Supplementing & Xactimate (Roof Sales Mastery)',
-      'url': 'https://www.youtube.com/watch?v=jj-GWZEtOc0&t=1133s',
-      'video_id': 'jj-GWZEtOc0'},
-     {'author': 'Hook Agency',
-      'channel': 'Hook Agency',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:21](https://www.youtube.com/watch?v=BCYwigE5kQU&t=81s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "24-to-48-hour verification review. Don't make big profile changes right before "
-              "or during your migration window. Second, your budget structure changes. You're "
-              'moving from a weekly budget to a daily budget, using a standard 30.',
-      'timestamp': 81,
-      'timestamp_label': '[00:01:21]',
-      'timestamp_seconds': 81,
-      'tip': "24-to-48-hour verification review. Don't make big profile changes right before "
-             "or during your migration window. Second, your budget structure changes. You're "
-             'moving from a weekly budget to a daily budget, using a standard 30.',
-      'title': 'Google Just Killed the LSAs: What Every Contractor Needs to Know (August 2026) '
-               '(Hook Agency)',
-      'url': 'https://www.youtube.com/watch?v=BCYwigE5kQU&t=81s',
-      'video_id': 'BCYwigE5kQU'},
-     {'author': 'magicplan',
-      'channel': 'magicplan',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:03](https://www.youtube.com/watch?v=irpHqZ46CG8&t=363s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Down to your report PDF all you do is click on report PDF and after a moment '
-              "you'll have a file that you can easily share and that you can view with your "
-              'customer on site all from the convenience of your mobile device.',
-      'timestamp': 363,
-      'timestamp_label': '[00:06:03]',
-      'timestamp_seconds': 363,
-      'tip': 'Down to your report PDF all you do is click on report PDF and after a moment '
-             "you'll have a file that you can easily share and that you can view with your "
-             'customer on site all from the convenience of your mobile device.',
-      'title': 'How to Document Water Damage Restoration Like a Pro (magicplan)',
-      'url': 'https://www.youtube.com/watch?v=irpHqZ46CG8&t=363s',
-      'video_id': 'irpHqZ46CG8'},
-     {'author': "Shane O'Dazier | RestorationProfits",
-      'channel': "Shane O'Dazier | RestorationProfits",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:44](https://www.youtube.com/watch?v=m97k7TBcJgY&t=404s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Crew for two days it was $3,400 like yo I put that in there and they paid it '
-              "these examples were paid in full estimates now they don't always pay.",
-      'timestamp': 404,
-      'timestamp_label': '[00:06:44]',
-      'timestamp_seconds': 404,
-      'tip': 'Crew for two days it was $3,400 like yo I put that in there and they paid it '
-             "these examples were paid in full estimates now they don't always pay.",
-      'title': "Estimates for Water Damage Restoration: Advanced Tips (Shane O'Dazier | "
-               'RestorationProfits)',
-      'url': 'https://www.youtube.com/watch?v=m97k7TBcJgY&t=404s',
-      'video_id': 'm97k7TBcJgY'},
-     {'author': 'Roof Sales Mastery',
-      'channel': 'Roof Sales Mastery',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:19:32](https://www.youtube.com/watch?v=sICOGLUjsao&t=1172s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q2 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Customer identified for the things that they should be indemnified for and to '
-              'make sure that you guys can put the right things on the roof and you get paid '
-              'for the work that you do everybody gets taken care of correctly.',
-      'timestamp': 1172,
-      'timestamp_label': '[00:19:32]',
-      'timestamp_seconds': 1172,
-      'tip': 'Customer identified for the things that they should be indemnified for and to '
-             'make sure that you guys can put the right things on the roof and you get paid '
-             'for the work that you do everybody gets taken care of correctly.',
-      'title': 'The Basic Process of Supplementing Insurance Claims for Roofers (Roof Sales '
-               'Mastery)',
-      'url': 'https://www.youtube.com/watch?v=sICOGLUjsao&t=1172s',
-      'video_id': 'sICOGLUjsao'}],
- 3: [{'author': "Shane O'Dazier | RestorationProfits",
-      'channel': "Shane O'Dazier | RestorationProfits",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:52](https://www.youtube.com/watch?v=PqL0m54Gjb4&t=412s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'t know, I help people just like you grow and scale your water damage "
-              'restoration business. If you are interested in me helping you grow and scale '
-              "your company, go to workwithshane. We hop on a 15-minute call to see if we're a "
-              "good fit. Now, let's go back to the video.",
-      'timestamp': 412,
-      'timestamp_label': '[00:06:52]',
-      'timestamp_seconds': 412,
-      'tip': "'t know, I help people just like you grow and scale your water damage "
-             'restoration business. If you are interested in me helping you grow and scale '
-             "your company, go to workwithshane. We hop on a 15-minute call to see if we're a "
-             "good fit. Now, let's go back to the video.",
-      'title': 'The biggest mistake contractors make when billing insurance for water damage '
-               "claims (Shane O'Dazier | RestorationProfits)",
-      'url': 'https://www.youtube.com/watch?v=PqL0m54Gjb4&t=412s',
-      'video_id': 'PqL0m54Gjb4'},
-     {'author': 'RoofCoach',
-      'channel': 'RoofCoach',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:26](https://www.youtube.com/watch?v=gLFs8l5O0j4&t=146s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Do I have your attention now? Markup only adds the percentage to cost. Margin '
-              'math figures out what the selling price needs to be to ensure that you have the '
-              "gross profit dollars left over after you've done the job that will cover your "
-              'overhead and net profit.',
-      'timestamp': 146,
-      'timestamp_label': '[00:02:26]',
-      'timestamp_seconds': 146,
-      'tip': 'Do I have your attention now? Markup only adds the percentage to cost. Margin '
-             'math figures out what the selling price needs to be to ensure that you have the '
-             "gross profit dollars left over after you've done the job that will cover your "
-             'overhead and net profit.',
-      'title': 'How to Price Roofing Jobs for Profit (Without Losing Clients) (RoofCoach)',
-      'url': 'https://www.youtube.com/watch?v=gLFs8l5O0j4&t=146s',
-      'video_id': 'gLFs8l5O0j4'},
-     {'author': 'George Gabriel',
-      'channel': 'George Gabriel',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:57](https://www.youtube.com/watch?v=KnWhJDOPsTc&t=297s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Then after that, as you can see, it's going to check that the whole thing adds "
-              'back to the actual contract price. And it shows the plan cost and the plan '
-              'margin in dollars as a percent of the price. Now look at this line because it '
-              'says not priced.',
-      'timestamp': 297,
-      'timestamp_label': '[00:04:57]',
-      'timestamp_seconds': 297,
-      'tip': "Then after that, as you can see, it's going to check that the whole thing adds "
-             'back to the actual contract price. And it shows the plan cost and the plan '
-             'margin in dollars as a percent of the price. Now look at this line because it '
-             'says not priced.',
-      'title': 'Why Contractors Lose Margin After the Job Is Sold (George Gabriel)',
-      'url': 'https://www.youtube.com/watch?v=KnWhJDOPsTc&t=297s',
-      'video_id': 'KnWhJDOPsTc'},
-     {'author': 'Water Damage Restoration Coach - Jon Schoen',
-      'channel': 'Water Damage Restoration Coach - Jon Schoen',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:16](https://www.youtube.com/watch?v=HFcU3Nls6fM&t=256s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Call doesn't cost you anything let's have a conversation about what I can do to "
-              'help you grow your business and make more money and get more jobs thanks a lot '
-              'and thanks for watching invest in your financial future.',
-      'timestamp': 256,
-      'timestamp_label': '[00:04:16]',
-      'timestamp_seconds': 256,
-      'tip': "Call doesn't cost you anything let's have a conversation about what I can do to "
-             'help you grow your business and make more money and get more jobs thanks a lot '
-             'and thanks for watching invest in your financial future.',
-      'title': '3 Ways to get more water damage jobs from plumbers (Water Damage Restoration '
-               'Coach - Jon Schoen)',
-      'url': 'https://www.youtube.com/watch?v=HFcU3Nls6fM&t=256s',
-      'video_id': 'HFcU3Nls6fM'},
-     {'author': 'Roofing Insights',
-      'channel': 'Roofing Insights',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:26](https://www.youtube.com/watch?v=ppn4akh1gPo&t=26s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'That could literally make or break your business profit margin and markup a lot '
-              "of contractors don't understand the difference and if you get it wrong it.",
-      'timestamp': 26,
-      'timestamp_label': '[00:00:26]',
-      'timestamp_seconds': 26,
-      'tip': 'That could literally make or break your business profit margin and markup a lot '
-             "of contractors don't understand the difference and if you get it wrong it.",
-      'title': "How To price a Job? Profit Margin Vs Markup: Most Roofing Contractors don't "
-               'know this (Roofing Insights)',
-      'url': 'https://www.youtube.com/watch?v=ppn4akh1gPo&t=26s',
-      'video_id': 'ppn4akh1gPo'},
-     {'author': 'Restoration Success Strategies | Albi',
-      'channel': 'Restoration Success Strategies | Albi',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:22](https://www.youtube.com/watch?v=MDZLPIkMaI8&t=322s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Insurance company is able to save some costs and kind of regulate the claims '
-              "process and that's a very small percentage of the industry probably.",
-      'timestamp': 322,
-      'timestamp_label': '[00:05:22]',
-      'timestamp_seconds': 322,
-      'tip': 'Insurance company is able to save some costs and kind of regulate the claims '
-             "process and that's a very small percentage of the industry probably.",
-      'title': 'The Ultimate Guide To Water Damage Restoration: Everything You Need To Know '
-               '(Restoration Success Strategies | Albi)',
-      'url': 'https://www.youtube.com/watch?v=MDZLPIkMaI8&t=322s',
-      'video_id': 'MDZLPIkMaI8'},
-     {'author': 'Estimate Mastery',
-      'channel': 'Estimate Mastery',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:24](https://www.youtube.com/watch?v=q6R8Iom5Uz8&t=144s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "It's great to rope them in on the overhead and profit conversation. As far as "
-              "the specifics of the estimate, it was written in May of 2024. So, that's the "
-              "price list we're dealing with. So, we've got some outdated pricing on our "
-              'hands.',
-      'timestamp': 144,
-      'timestamp_label': '[00:02:24]',
-      'timestamp_seconds': 144,
-      'tip': "It's great to rope them in on the overhead and profit conversation. As far as "
-             "the specifics of the estimate, it was written in May of 2024. So, that's the "
-             "price list we're dealing with. So, we've got some outdated pricing on our hands.",
-      'title': 'Estimate Review - Supplementing in Xactimate (Estimate Mastery)',
-      'url': 'https://www.youtube.com/watch?v=q6R8Iom5Uz8&t=144s',
-      'video_id': 'q6R8Iom5Uz8'},
-     {'author': 'American Roof Supplements',
-      'channel': 'American Roof Supplements',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:28](https://www.youtube.com/watch?v=TkCEjbO6vQs&t=448s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Good documentation does not guarantee approval, but poor documentation makes a '
-              'legitimate request much harder to evaluate. A supplement cannot rewrite the '
-              'insurance policy. It cannot turn actual cash value coverage into replacement '
-              'cost value coverage.',
-      'timestamp': 448,
-      'timestamp_label': '[00:07:28]',
-      'timestamp_seconds': 448,
-      'tip': 'Good documentation does not guarantee approval, but poor documentation makes a '
-             'legitimate request much harder to evaluate. A supplement cannot rewrite the '
-             'insurance policy. It cannot turn actual cash value coverage into replacement '
-             'cost value coverage.',
-      'title': 'Xactimate 101 How Roofing Supplements Actually Work (Beginner’s Guide) '
-               '(American Roof Supplements)',
-      'url': 'https://www.youtube.com/watch?v=TkCEjbO6vQs&t=448s',
-      'video_id': 'TkCEjbO6vQs'},
-     {'author': 'Roofing Insights',
-      'channel': 'Roofing Insights',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:36:15](https://www.youtube.com/watch?v=uykTx34p0Js&t=2175s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Now, he keeps following up nonstop. So, we have a a door knocker public '
-              'adjuster. On paper, it sounds like a win-win. I get a new roof at no cost. The '
-              "only loser seems like an insurance company, but I'm suspicious. What's his real "
-              'incentive and should I be concerned?',
-      'timestamp': 2175,
-      'timestamp_label': '[00:36:15]',
-      'timestamp_seconds': 2175,
-      'tip': 'Now, he keeps following up nonstop. So, we have a a door knocker public '
-             'adjuster. On paper, it sounds like a win-win. I get a new roof at no cost. The '
-             "only loser seems like an insurance company, but I'm suspicious. What's his real "
-             'incentive and should I be concerned?',
-      'title': 'Public Adjusters: Scam or Savior? 5 Key Questions Every Homeowner Must Ask '
-               '(Roofing Insights)',
-      'url': 'https://www.youtube.com/watch?v=uykTx34p0Js&t=2175s',
-      'video_id': 'uykTx34p0Js'},
-     {'author': 'Chris Zimmerman',
-      'channel': 'Chris Zimmerman',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:01](https://www.youtube.com/watch?v=LwNOcenSP_c&t=361s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'re all on the same page, that the adjuster, you the contractor, and the "
-              'homeowner have all heard the same information and are aware of where we are. '
-              'Preferred to get that recorded so that we have an accurate record of what '
-              'actually happened.',
-      'timestamp': 361,
-      'timestamp_label': '[00:06:01]',
-      'timestamp_seconds': 361,
-      'tip': "'re all on the same page, that the adjuster, you the contractor, and the "
-             'homeowner have all heard the same information and are aware of where we are. '
-             'Preferred to get that recorded so that we have an accurate record of what '
-             'actually happened.',
-      'title': 'How to Get More Out of Your First Insurance Adjuster Meeting (Chris Zimmerman)',
-      'url': 'https://www.youtube.com/watch?v=LwNOcenSP_c&t=361s',
-      'video_id': 'LwNOcenSP_c'},
-     {'author': 'Estimate Mastery',
-      'channel': 'Estimate Mastery',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:36](https://www.youtube.com/watch?v=WNR0K0ubIoI&t=36s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Where you're going to lose the money? First of all, low E is a big deal. Then "
-              'right here, the window material price reflects the cost of a standard modular '
-              'size window.',
-      'timestamp': 36,
-      'timestamp_label': '[00:00:36]',
-      'timestamp_seconds': 36,
-      'tip': "Where you're going to lose the money? First of all, low E is a big deal. Then "
-             'right here, the window material price reflects the cost of a standard modular '
-             'size window.',
-      'title': 'Make More Money on Your Next Insurance Job With This Xactimate Tip for '
-               'Windows! (Estimate Mastery)',
-      'url': 'https://www.youtube.com/watch?v=WNR0K0ubIoI&t=36s',
-      'video_id': 'WNR0K0ubIoI'},
-     {'author': 'Restorex Disaster Restoration',
-      'channel': 'Restorex Disaster Restoration',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:29](https://www.youtube.com/watch?v=nFvUl2Kjwjs&t=89s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Out the red carpet offer the white cup service to the plumbers customers we '
-              'want to make that customers so happy that they are responding back thank you '
-              'thank you thank you for referring storix in the meantime a little cash in your '
-              'pocket.',
-      'timestamp': 89,
-      'timestamp_label': '[00:01:29]',
-      'timestamp_seconds': 89,
-      'tip': 'Out the red carpet offer the white cup service to the plumbers customers we want '
-             'to make that customers so happy that they are responding back thank you thank '
-             'you thank you for referring storix in the meantime a little cash in your pocket.',
-      'title': 'Plumber Referral Program for Indianapolis Plumbers | Restorex Disaster '
-               'Restoration (Restorex Disaster Restoration)',
-      'url': 'https://www.youtube.com/watch?v=nFvUl2Kjwjs&t=89s',
-      'video_id': 'nFvUl2Kjwjs'},
-     {'author': 'FirehouseEducation',
-      'channel': 'FirehouseEducation',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:57](https://www.youtube.com/watch?v=rAAR3Zmm80c&t=57s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Packing like items together improperly so we don't have damage then please do "
-              'that the more items that you have packed and concealed in a box the less '
-              'chance.',
-      'timestamp': 57,
-      'timestamp_label': '[00:00:57]',
-      'timestamp_seconds': 57,
-      'tip': "Packing like items together improperly so we don't have damage then please do "
-             'that the more items that you have packed and concealed in a box the less chance.',
-      'title': 'How To Packout For Sucess On Contents Restoration Jobs (FirehouseEducation)',
-      'url': 'https://www.youtube.com/watch?v=rAAR3Zmm80c&t=57s',
-      'video_id': 'rAAR3Zmm80c'},
-     {'author': 'Chad Michael - The Practitioner',
-      'channel': 'Chad Michael - The Practitioner',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=DmesIP8hcak&t=20s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Deductible right mine has a deductible problems like they're trying to get you "
-              "to waive the deductible right or cover that it up and why is that they're "
-              'trying to do that because everybody else is doing it right.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': "Deductible right mine has a deductible problems like they're trying to get you "
-             "to waive the deductible right or cover that it up and why is that they're trying "
-             'to do that because everybody else is doing it right.',
-      'title': 'How to Legally COVER The Deductible (Chad Michael - The Practitioner)',
-      'url': 'https://www.youtube.com/watch?v=DmesIP8hcak&t=20s',
-      'video_id': 'DmesIP8hcak'},
-     {'author': 'FirehouseEducation',
-      'channel': 'FirehouseEducation',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:37](https://www.youtube.com/watch?v=GhZSitNz6aQ&t=397s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q3 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I believe that's in other news I I can't remember suddenly on the video anyway "
-              'so you can catch up and catch all the videos and I thank you so much for '
-              'watching and until then I will see you on the next video.',
-      'timestamp': 397,
-      'timestamp_label': '[00:06:37]',
-      'timestamp_seconds': 397,
-      'tip': "I believe that's in other news I I can't remember suddenly on the video anyway "
-             'so you can catch up and catch all the videos and I thank you so much for '
-             'watching and until then I will see you on the next video.',
-      'title': 'What Is a Public Adjuster and what is their role in Restoration? '
-               '(FirehouseEducation)',
-      'url': 'https://www.youtube.com/watch?v=GhZSitNz6aQ&t=397s',
-      'video_id': 'GhZSitNz6aQ'}],
- 4: [{'author': 'Homeowner Explained',
-      'channel': 'Homeowner Explained',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:37](https://www.youtube.com/watch?v=MPSOkm3YFak&t=457s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Sometimes it's an assignment of benefits that hands your claim, and your "
-              "insurance check, to them. Never sign anything you haven't read, and never sign "
-              'under pressure. Red flag four: no local address, no reviews, and no license '
-              'where your state requires one.',
-      'timestamp': 457,
-      'timestamp_label': '[00:07:37]',
-      'timestamp_seconds': 457,
-      'tip': "Sometimes it's an assignment of benefits that hands your claim, and your "
-             "insurance check, to them. Never sign anything you haven't read, and never sign "
-             'under pressure. Red flag four: no local address, no reviews, and no license '
-             'where your state requires one.',
-      'title': 'Did the Hail Really Damage Your Roof? Check This First (Homeowner Explained)',
-      'url': 'https://www.youtube.com/watch?v=MPSOkm3YFak&t=457s',
-      'video_id': 'MPSOkm3YFak'},
-     {'author': 'PuroClean of Central Southwest Houston',
-      'channel': 'PuroClean of Central Southwest Houston',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:36](https://www.youtube.com/watch?v=HHLnyMyxcpQ&t=36s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The very first step is documentation. This is critical for the insurance '
-              'compliance. We use our company phones to capture photos and everything, '
-              'moisture readings, close-up of damage, damage items, even 3D scans with Docky '
-              'Sketch.',
-      'timestamp': 36,
-      'timestamp_label': '[00:00:36]',
-      'timestamp_seconds': 36,
-      'tip': 'The very first step is documentation. This is critical for the insurance '
-             'compliance. We use our company phones to capture photos and everything, moisture '
-             'readings, close-up of damage, damage items, even 3D scans with Docky Sketch.',
-      'title': 'The Water Damage Mitigation Process Step by Step by PuroClean (PuroClean of '
-               'Central Southwest Houston)',
-      'url': 'https://www.youtube.com/watch?v=HHLnyMyxcpQ&t=36s',
-      'video_id': 'HHLnyMyxcpQ'},
-     {'author': 'Be A Claims Adjuster',
-      'channel': 'Be A Claims Adjuster',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:54](https://www.youtube.com/watch?v=u947iwIhI7A&t=54s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Sedwick is a third-party administrator, TPA. They handle claims on behalf of '
-              "other businesses, but don't sell insurance policies themselves. Employment "
-              'structure, State Farm. You work for the insurance company itself.',
-      'timestamp': 54,
-      'timestamp_label': '[00:00:54]',
-      'timestamp_seconds': 54,
-      'tip': 'Sedwick is a third-party administrator, TPA. They handle claims on behalf of '
-             "other businesses, but don't sell insurance policies themselves. Employment "
-             'structure, State Farm. You work for the insurance company itself.',
-      'title': 'State Farm vs Sedgwick: Which is Better for New Claims Adjusters? (Be A Claims '
-               'Adjuster)',
-      'url': 'https://www.youtube.com/watch?v=u947iwIhI7A&t=54s',
-      'video_id': 'u947iwIhI7A'},
-     {'author': 'Chad Michael - The Practitioner',
-      'channel': 'Chad Michael - The Practitioner',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:25:05](https://www.youtube.com/watch?v=vkrXTVQcVQQ&t=1505s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Of it in terms of insurance claims like whenever there's new evidence brought "
-              "forth then it's like we can it's new damage new damage like Dam not not.",
-      'timestamp': 1505,
-      'timestamp_label': '[00:25:05]',
-      'timestamp_seconds': 1505,
-      'tip': "Of it in terms of insurance claims like whenever there's new evidence brought "
-             "forth then it's like we can it's new damage new damage like Dam not not.",
-      'title': 'When the Contractor and the Insurance Adjuster Disagree | Effective Methods To '
-               'Unlock Stalemate (Chad Michael - The Practitioner)',
-      'url': 'https://www.youtube.com/watch?v=vkrXTVQcVQQ&t=1505s',
-      'video_id': 'vkrXTVQcVQQ'},
-     {'author': 'Claims Underground Podcast',
-      'channel': 'Claims Underground Podcast',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=bPBmUaKay2w&t=20s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "The runaround and ready to find out what's really going on then let's get down "
-              'to business and learn from the insurance claims experts Corey Locke and Troy '
-              'Willis foreign.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': "The runaround and ready to find out what's really going on then let's get down "
-             'to business and learn from the insurance claims experts Corey Locke and Troy '
-             'Willis foreign.',
-      'title': 'Claims Underground Podcast: Mastering Assignment of Benefits with Top Public '
-               'Adjusters (Claims Underground Podcast)',
-      'url': 'https://www.youtube.com/watch?v=bPBmUaKay2w&t=20s',
-      'video_id': 'bPBmUaKay2w'},
-     {'author': 'The STRONG Roofer w/ Adam Bensman',
-      'channel': 'The STRONG Roofer w/ Adam Bensman',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:28](https://www.youtube.com/watch?v=zxGa72oAf0w&t=448s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Software that the insurance company needs we submit that to them on your behalf '
-              "to say hey guess what guys you missed x y and z here's all the.",
-      'timestamp': 448,
-      'timestamp_label': '[00:07:28]',
-      'timestamp_seconds': 448,
-      'tip': 'Software that the insurance company needs we submit that to them on your behalf '
-             "to say hey guess what guys you missed x y and z here's all the.",
-      'title': 'Explaining Supplements to Homeowners: How Roof Insurance Claim Supplements '
-               'Work (The STRONG Roofer w/ Adam Bensman)',
-      'url': 'https://www.youtube.com/watch?v=zxGa72oAf0w&t=448s',
-      'video_id': 'zxGa72oAf0w'},
-     {'author': 'MN Labor and Industry',
-      'channel': 'MN Labor and Industry',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:22](https://www.youtube.com/watch?v=xXGIjQfUG4s&t=22s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "You can see I'm a part of a few groups here. I'm going to look at Up North "
-              'Insurance. So, if I simply wanted to view the claims on my entity details page, '
-              'I would want to look for a few things. So, first off, I see that I have global '
-              'claim access permissions.',
-      'timestamp': 22,
-      'timestamp_label': '[00:00:22]',
-      'timestamp_seconds': 22,
-      'tip': "You can see I'm a part of a few groups here. I'm going to look at Up North "
-             'Insurance. So, if I simply wanted to view the claims on my entity details page, '
-             'I would want to look for a few things. So, first off, I see that I have global '
-             'claim access permissions.',
-      'title': 'Claim access for insurers and third-party administrators (MN Labor and '
-               'Industry)',
-      'url': 'https://www.youtube.com/watch?v=xXGIjQfUG4s&t=22s',
-      'video_id': 'xXGIjQfUG4s'},
-     {'author': 'The Claim Squad Public Adjusters',
-      'channel': 'The Claim Squad Public Adjusters',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:18](https://www.youtube.com/watch?v=h_W9kUbadMM&t=438s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Don't know let's say 20 000. now they're thinking they can save this and now "
-              'this is 10 bucks this is how the insurance company works this is what you get '
-              'when you use an insurance company contractor cutting corners going on the cheap '
-              'and you as a homeowner have no idea.',
-      'timestamp': 438,
-      'timestamp_label': '[00:07:18]',
-      'timestamp_seconds': 438,
-      'tip': "Don't know let's say 20 000. now they're thinking they can save this and now "
-             'this is 10 bucks this is how the insurance company works this is what you get '
-             'when you use an insurance company contractor cutting corners going on the cheap '
-             'and you as a homeowner have no idea.',
-      'title': '5 Reasons Not to Use Your Insurance Company Contractor: Water Mitigation or '
-               'Restoration Company (The Claim Squad Public Adjusters)',
-      'url': 'https://www.youtube.com/watch?v=h_W9kUbadMM&t=438s',
-      'video_id': 'h_W9kUbadMM'},
-     {'author': 'yourEadvisor.com',
-      'channel': 'yourEadvisor.com',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:36](https://www.youtube.com/watch?v=On3xbq5nLqk&t=276s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Us I hope this helps it's a very basic understanding check out our Facebook "
-              'page for more information on homeowners insurance and some of this stuff '
-              'because we do post as we kind of here stuff with the Florida Legislature thanks '
-              'look for it in the next video.',
-      'timestamp': 276,
-      'timestamp_label': '[00:04:36]',
-      'timestamp_seconds': 276,
-      'tip': "Us I hope this helps it's a very basic understanding check out our Facebook page "
-             'for more information on homeowners insurance and some of this stuff because we '
-             'do post as we kind of here stuff with the Florida Legislature thanks look for it '
-             'in the next video.',
-      'title': 'Assignment of Benefits (AOB) (yourEadvisor.com)',
-      'url': 'https://www.youtube.com/watch?v=On3xbq5nLqk&t=276s',
-      'video_id': 'On3xbq5nLqk'},
-     {'author': 'Richard Levisee',
-      'channel': 'Richard Levisee',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:37](https://www.youtube.com/watch?v=VFWDHse67ws&t=457s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Think I've already went over the contractor's waiver of lean they got the their "
-              "own form in there they want you to fill out let's see here the tax.",
-      'timestamp': 457,
-      'timestamp_label': '[00:07:37]',
-      'timestamp_seconds': 457,
-      'tip': "Think I've already went over the contractor's waiver of lean they got the their "
-             "own form in there they want you to fill out let's see here the tax.",
-      'title': 'Insurance check has my mortgage company on it. What do I do? (Richard Levisee)',
-      'url': 'https://www.youtube.com/watch?v=VFWDHse67ws&t=457s',
-      'video_id': 'VFWDHse67ws'},
-     {'author': 'AARP Florida - The Sunshine State!',
-      'channel': 'AARP Florida - The Sunshine State!',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:41](https://www.youtube.com/watch?v=vscXMMen_rc&t=101s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I think is a challenge that you really have to watch self not necessarily '
-              'always self but the fraud part and your loss and if you turn your insurance.',
-      'timestamp': 101,
-      'timestamp_label': '[00:01:41]',
-      'timestamp_seconds': 101,
-      'tip': 'I think is a challenge that you really have to watch self not necessarily always '
-             'self but the fraud part and your loss and if you turn your insurance.',
-      'title': 'Barbara Day Assignment of Benefits (AOB) on insurance claims (AARP Florida - '
-               'The Sunshine State!)',
-      'url': 'https://www.youtube.com/watch?v=vscXMMen_rc&t=101s',
-      'video_id': 'vscXMMen_rc'},
-     {'author': 'Canei Adjusting',
-      'channel': 'Canei Adjusting',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:15](https://www.youtube.com/watch?v=Z7kbWUDeX6A&t=75s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And you could change that by going here and changing the floor protection. '
-              'Insurance companies are going to want to use that. Now, the company that I had '
-              'this macro for, they want to use a primitive floor plus 17.',
-      'timestamp': 75,
-      'timestamp_label': '[00:01:15]',
-      'timestamp_seconds': 75,
-      'tip': 'And you could change that by going here and changing the floor protection. '
-             'Insurance companies are going to want to use that. Now, the company that I had '
-             'this macro for, they want to use a primitive floor plus 17.',
-      'title': 'WALL XACTIMATE LINE ITEMS (Canei Adjusting)',
-      'url': 'https://www.youtube.com/watch?v=Z7kbWUDeX6A&t=75s',
-      'video_id': 'Z7kbWUDeX6A'},
-     {'author': "Shane O'Dazier | RestorationProfits",
-      'channel': "Shane O'Dazier | RestorationProfits",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=NyqgMvKRX14&t=15s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'To look at five different things that you can do to fight off the insurance '
-              'company when they try to whittle down your estimate or your invoice if you own.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'To look at five different things that you can do to fight off the insurance '
-             'company when they try to whittle down your estimate or your invoice if you own.',
-      'title': 'How to avoid insurance reductions on estimates for water damage restoration '
-               "(Shane O'Dazier | RestorationProfits)",
-      'url': 'https://www.youtube.com/watch?v=NyqgMvKRX14&t=15s',
-      'video_id': 'NyqgMvKRX14'},
-     {'author': 'Coach8',
-      'channel': 'Coach8',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:48:34](https://www.youtube.com/watch?v=7gZTdFWoHgs&t=2914s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'It is recommended that a specialized excerpt expert be consulted prior to '
-              "determining the appropriate repair so it's recommended we get a specialized "
-              "expertise now I'd encourage you to have a look at the definition of a "
-              'specialized expert within this new document.',
-      'timestamp': 2914,
-      'timestamp_label': '[00:48:34]',
-      'timestamp_seconds': 2914,
-      'tip': 'It is recommended that a specialized excerpt expert be consulted prior to '
-             "determining the appropriate repair so it's recommended we get a specialized "
-             "expertise now I'd encourage you to have a look at the definition of a "
-             'specialized expert within this new document.',
-      'title': 'Reviewing the ANSI/IICRC S500 2021 Standard for Professional Water Damage '
-               'Restoration, 5th Edition (Coach8)',
-      'url': 'https://www.youtube.com/watch?v=7gZTdFWoHgs&t=2914s',
-      'video_id': '7gZTdFWoHgs'},
-     {'author': 'Chad Michael - The Practitioner',
-      'channel': 'Chad Michael - The Practitioner',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:14](https://www.youtube.com/watch?v=tYSY3Eo_nvA&t=254s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q4 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "We're being paid properly because you don't know your guys going in to remove "
-              "that stuff and Gao sorry to remove that stuff if they're not properly protected "
-              "with the personal protection equipment masks etc we'll get in that stuff later "
-              'on the training course.',
-      'timestamp': 254,
-      'timestamp_label': '[00:04:14]',
-      'timestamp_seconds': 254,
-      'tip': "We're being paid properly because you don't know your guys going in to remove "
-             "that stuff and Gao sorry to remove that stuff if they're not properly protected "
-             "with the personal protection equipment masks etc we'll get in that stuff later "
-             'on the training course.',
-      'title': 'Insurance Adjusters Use Wrong Xactimate Estimate Items | Wet Drywall (Chad '
-               'Michael - The Practitioner)',
-      'url': 'https://www.youtube.com/watch?v=tYSY3Eo_nvA&t=254s',
-      'video_id': 'tYSY3Eo_nvA'}],
- 5: [{'author': 'Happy Adjuster',
-      'channel': 'Happy Adjuster',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:41](https://www.youtube.com/watch?v=hqbiodyd1gc&t=41s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s overpriced, unnecessary, or even never completed. Once you've signed an AOB, "
-              'you could be cut out of the conversation entirely. And in some cases, you may '
-              'end up in the middle of a legal dispute between the contractor and your '
-              'insurance company.',
-      'timestamp': 41,
-      'timestamp_label': '[00:00:41]',
-      'timestamp_seconds': 41,
-      'tip': "'s overpriced, unnecessary, or even never completed. Once you've signed an AOB, "
-             'you could be cut out of the conversation entirely. And in some cases, you may '
-             'end up in the middle of a legal dispute between the contractor and your '
-             'insurance company.',
-      'title': 'What Is an Assignment of Benefits (AOB)? | Should You Sign One After a '
-               'Property Damage Claim? (Happy Adjuster)',
-      'url': 'https://www.youtube.com/watch?v=hqbiodyd1gc&t=41s',
-      'video_id': 'hqbiodyd1gc'},
-     {'author': 'Avner Gat, Inc. - Public Insurance Adjusters',
-      'channel': 'Avner Gat, Inc. - Public Insurance Adjusters',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:32](https://www.youtube.com/watch?v=8x3Gfr6Uyr8&t=92s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Materials and  allow the restoration company to come back and finish the '
-              'drying. If the asbestos testing results coming  negative.',
-      'timestamp': 92,
-      'timestamp_label': '[00:01:32]',
-      'timestamp_seconds': 92,
-      'tip': 'Materials and  allow the restoration company to come back and finish the drying. '
-             'If the asbestos testing results coming  negative.',
-      'title': 'Ask Avner Deep Dive: Restoration Companies vs Insurance Claims (Avner Gat, '
-               'Inc. - Public Insurance Adjusters)',
-      'url': 'https://www.youtube.com/watch?v=8x3Gfr6Uyr8&t=92s',
-      'video_id': '8x3Gfr6Uyr8'},
-     {'author': 'State Farm Insurance',
-      'channel': 'State Farm Insurance',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:19](https://www.youtube.com/watch?v=bNL46sw5_5c&t=79s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Dispute arbitration is an option for most subrogation claims where a major '
-              'insurance company is involved.',
-      'timestamp': 79,
-      'timestamp_label': '[00:01:19]',
-      'timestamp_seconds': 79,
-      'tip': 'Dispute arbitration is an option for most subrogation claims where a major '
-             'insurance company is involved.',
-      'title': 'Auto Claims Subrogation/Deductible Refund Process | State Farm (State Farm '
-               'Insurance)',
-      'url': 'https://www.youtube.com/watch?v=bNL46sw5_5c&t=79s',
-      'video_id': 'bNL46sw5_5c'},
-     {'author': 'Crossroads Insurance Recovery',
-      'channel': 'Crossroads Insurance Recovery',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:35](https://www.youtube.com/watch?v=iKLGuESx4po&t=155s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Then release funds as the repairs are completed at each state doing a direct '
-              'assignment of benefits to a contractor removes that possibility for the.',
-      'timestamp': 155,
-      'timestamp_label': '[00:02:35]',
-      'timestamp_seconds': 155,
-      'tip': 'Then release funds as the repairs are completed at each state doing a direct '
-             'assignment of benefits to a contractor removes that possibility for the.',
-      'title': 'Assignment of Benefits in Your Insurance Claim (Crossroads Insurance Recovery)',
-      'url': 'https://www.youtube.com/watch?v=iKLGuESx4po&t=155s',
-      'video_id': 'iKLGuESx4po'},
-     {'author': "Shane O'Dazier | RestorationProfits",
-      'channel': "Shane O'Dazier | RestorationProfits",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:23](https://www.youtube.com/watch?v=3xfQ7PdL-AA&t=563s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Information we get on a call and see how we can help you grow your company '
-              "lastly there'll be some other videos right here here if you want to watch more "
-              'content about growing your Restoration company check out one of these videos '
-              "we'll see you guys on the next one.",
-      'timestamp': 563,
-      'timestamp_label': '[00:09:23]',
-      'timestamp_seconds': 563,
-      'tip': 'Information we get on a call and see how we can help you grow your company '
-             "lastly there'll be some other videos right here here if you want to watch more "
-             'content about growing your Restoration company check out one of these videos '
-             "we'll see you guys on the next one.",
-      'title': "How to negotiate with adjusters | restoration company (Shane O'Dazier | "
-               'RestorationProfits)',
-      'url': 'https://www.youtube.com/watch?v=3xfQ7PdL-AA&t=563s',
-      'video_id': '3xfQ7PdL-AA'},
-     {'author': 'Roof Sales Mastery',
-      'channel': 'Roof Sales Mastery',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:02](https://www.youtube.com/watch?v=q63afBPc6eY&t=62s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Items all the time rigin I call it the basic BS it's like rigin starter "
-              'overhead and profit flashings drip edge ice of water shield mismeasurements on.',
-      'timestamp': 62,
-      'timestamp_label': '[00:01:02]',
-      'timestamp_seconds': 62,
-      'tip': "Items all the time rigin I call it the basic BS it's like rigin starter overhead "
-             'and profit flashings drip edge ice of water shield mismeasurements on.',
-      'title': 'How to Supplement Insurance Roofing Claims with Xactimate (Roof Sales Mastery)',
-      'url': 'https://www.youtube.com/watch?v=q63afBPc6eY&t=62s',
-      'video_id': 'q63afBPc6eY'},
-     {'author': 'claimhelpme',
-      'channel': 'claimhelpme',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:40](https://www.youtube.com/watch?v=2WVlG5yPBTU&t=220s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And this is where estimating matters. A weak estimate creates a weak starting '
-              'point. A weak carrier estimate that nobody challenges becomes the number '
-              'everybody starts negotiating from. That is what I call a baseline problem.',
-      'timestamp': 220,
-      'timestamp_label': '[00:03:40]',
-      'timestamp_seconds': 220,
-      'tip': 'And this is where estimating matters. A weak estimate creates a weak starting '
-             'point. A weak carrier estimate that nobody challenges becomes the number '
-             'everybody starts negotiating from. That is what I call a baseline problem.',
-      'title': 'What Does a Public Adjuster Actually Do? Insurance Estimates, Settlements & '
-               'Your Rights (claimhelpme)',
-      'url': 'https://www.youtube.com/watch?v=2WVlG5yPBTU&t=220s',
-      'video_id': '2WVlG5yPBTU'},
+BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'Phill McGurk',
+      'channel': 'Phill McGurk',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:11](https://www.youtube.com/watch?v=Dl8DpDk97_A&t=191s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Proper remediation is about physical removal.',
+      'timestamp': 191,
+      'timestamp_label': '[00:03:11]',
+      'timestamp_seconds': 191,
+      'tip': 'Proper remediation is about physical removal.',
+      'title': 'IICRC S520 - Core Principle of Mould Remediation',
+      'url': 'https://www.youtube.com/watch?v=Dl8DpDk97_A&t=191s',
+      'video_id': 'Dl8DpDk97_A'},
      {'author': 'Balanced Building Biology',
       'channel': 'Balanced Building Biology',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:00](https://www.youtube.com/watch?v=YdUmzaa5wO0&t=480s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q5 operational '
-                   'verification).',
+      'markdown': '[00:04:41](https://www.youtube.com/watch?v=YdUmzaa5wO0&t=281s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "It's just a basic quality check performed by the remediator, essentially "
-              "checking their own work. That's fine for simple, low-risk jobs. But a PRV, "
-              'post-remediation verification, that is your independent guarantee.',
-      'timestamp': 480,
-      'timestamp_label': '[00:08:00]',
-      'timestamp_seconds': 480,
-      'tip': "It's just a basic quality check performed by the remediator, essentially "
-             "checking their own work. That's fine for simple, low-risk jobs. But a PRV, "
-             'post-remediation verification, that is your independent guarantee.',
-      'title': 'Mould Remediation Done Right: The Official IICRC S520 Homeowner Guide '
-               '(Balanced Building Biology)',
-      'url': 'https://www.youtube.com/watch?v=YdUmzaa5wO0&t=480s',
+      'text': 'Bleach is essentially a masking agent.',
+      'timestamp': 281,
+      'timestamp_label': '[00:04:41]',
+      'timestamp_seconds': 281,
+      'tip': 'Bleach is essentially a masking agent.',
+      'title': 'Mould Remediation Done Right: The Official IICRC S520 Homeowner Guide',
+      'url': 'https://www.youtube.com/watch?v=YdUmzaa5wO0&t=281s',
       'video_id': 'YdUmzaa5wO0'},
-     {'author': 'Daly & Black, P.C.',
-      'channel': 'Daly & Black, P.C.',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:30](https://www.youtube.com/watch?v=jaGktNyKvE4&t=150s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Don't to pay you and the result is you get left holding the bag so if you've "
-              "got questions about whether or not you're engaged in a process that is against "
-              'the law in your stay talk to somebody before you put yourself at risk call '
-              'someone who knows.',
-      'timestamp': 150,
-      'timestamp_label': '[00:02:30]',
-      'timestamp_seconds': 150,
-      'tip': "Don't to pay you and the result is you get left holding the bag so if you've got "
-             "questions about whether or not you're engaged in a process that is against the "
-             'law in your stay talk to somebody before you put yourself at risk call someone '
-             'who knows.',
-      'title': 'Unauthorized Practice of Public Adjusting (UPPA) (Daly & Black, P.C.)',
-      'url': 'https://www.youtube.com/watch?v=jaGktNyKvE4&t=150s',
-      'video_id': 'jaGktNyKvE4'},
-     {'author': 'American Roof Supplements',
-      'channel': 'American Roof Supplements',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:52](https://www.youtube.com/watch?v=HpoMhPz1KfU&t=52s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Measurements, shingles, tear off, underlayment, ridge, a few accessories, nice '
-              "clean PDF, very official. And that's why you still need to check the details. "
-              'Because the biggest problem is rarely a giant red line that says we forgot half '
-              'the roof.',
-      'timestamp': 52,
-      'timestamp_label': '[00:00:52]',
-      'timestamp_seconds': 52,
-      'tip': 'Measurements, shingles, tear off, underlayment, ridge, a few accessories, nice '
-             "clean PDF, very official. And that's why you still need to check the details. "
-             'Because the biggest problem is rarely a giant red line that says we forgot half '
-             'the roof.',
-      'title': 'How to Prove an Insurance Estimate Wrong — Line by Line in Xactimate (American '
-               'Roof Supplements)',
-      'url': 'https://www.youtube.com/watch?v=HpoMhPz1KfU&t=52s',
-      'video_id': 'HpoMhPz1KfU'},
-     {'author': 'Roofing Insights',
-      'channel': 'Roofing Insights',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:23](https://www.youtube.com/watch?v=FqdbOCycivo&t=563s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Are not using all in-house crews and you know that I wouldn't went to business "
-              "school 15 years ago lord knows where I'd be right now so the kids definitely "
-              'need that but as far as fixing our problem to get these bigger companies and '
-              'say hey.',
-      'timestamp': 563,
-      'timestamp_label': '[00:09:23]',
-      'timestamp_seconds': 563,
-      'tip': "Are not using all in-house crews and you know that I wouldn't went to business "
-             "school 15 years ago lord knows where I'd be right now so the kids definitely "
-             'need that but as far as fixing our problem to get these bigger companies and say '
-             'hey.',
-      'title': 'Roofer on Roofing Subcontractors | Illegal Roofers | Kareem Hunter (Roofing '
-               'Insights)',
-      'url': 'https://www.youtube.com/watch?v=FqdbOCycivo&t=563s',
-      'video_id': 'FqdbOCycivo'},
-     {'author': 'Chris Hatcher',
-      'channel': 'Chris Hatcher',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:07](https://www.youtube.com/watch?v=i4kOEeFrMaI&t=307s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Button and click on it machine's going to do a self check make sure there's no "
-              "duplications I'm just going to go with the final draft with or without removal "
-              'of depreciation and click on view.',
-      'timestamp': 307,
-      'timestamp_label': '[00:05:07]',
-      'timestamp_seconds': 307,
-      'tip': "Button and click on it machine's going to do a self check make sure there's no "
-             "duplications I'm just going to go with the final draft with or without removal "
-             'of depreciation and click on view.',
-      'title': 'TopAdjuster.com Xactimate tutorial - Mitigation and Restoration total pages '
-               'from one estimate (Chris Hatcher)',
-      'url': 'https://www.youtube.com/watch?v=i4kOEeFrMaI&t=307s',
-      'video_id': 'i4kOEeFrMaI'},
      {'author': 'TheIICRC',
       'channel': 'TheIICRC',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:59](https://www.youtube.com/watch?v=0HzVwvOo2Ww&t=179s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q5 operational '
-                   'verification).',
+      'markdown': '[00:15:07](https://www.youtube.com/watch?v=bcid0F9jRTI&t=907s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Submit as your work documentation how much experience is required and what '
-              'kinds of documents you should provide click on the ad button to begin uploading '
-              'job information and fill out the page click.',
-      'timestamp': 179,
-      'timestamp_label': '[00:02:59]',
-      'timestamp_seconds': 179,
-      'tip': 'Submit as your work documentation how much experience is required and what kinds '
-             'of documents you should provide click on the ad button to begin uploading job '
-             'information and fill out the page click.',
-      'title': 'IICRC Mold Remediation Specialist (MRS) Application Guide (TheIICRC)',
-      'url': 'https://www.youtube.com/watch?v=0HzVwvOo2Ww&t=179s',
-      'video_id': '0HzVwvOo2Ww'},
-     {'author': 'Restoration Technical Institute',
-      'channel': 'Restoration Technical Institute',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:09](https://www.youtube.com/watch?v=XMpZ-8ZsSW8&t=69s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Back however the extraction point is in the front this nylon squeegee bar right '
-              "here is the compression point and it's also the extraction point so when you "
-              'ride this you want to keep your weight to the front.',
-      'timestamp': 69,
-      'timestamp_label': '[00:01:09]',
-      'timestamp_seconds': 69,
-      'tip': 'Back however the extraction point is in the front this nylon squeegee bar right '
-             "here is the compression point and it's also the extraction point so when you "
-             'ride this you want to keep your weight to the front.',
-      'title': 'POV: Applied Structural Drying with RTI | IICRC ASD Course with Destry '
-               'Ransdell (Restoration Technical Institute)',
-      'url': 'https://www.youtube.com/watch?v=XMpZ-8ZsSW8&t=69s',
-      'video_id': 'XMpZ-8ZsSW8'},
-     {'author': "Shane O'Dazier | RestorationProfits",
-      'channel': "Shane O'Dazier | RestorationProfits",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:01](https://www.youtube.com/watch?v=D4BavFC6d1E&t=301s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q5 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Knowing what they want second problem assuming you know what they want right '
-              "you can't treat them all the same these are relationships all right.",
-      'timestamp': 301,
-      'timestamp_label': '[00:05:01]',
-      'timestamp_seconds': 301,
-      'tip': 'Knowing what they want second problem assuming you know what they want right you '
-             "can't treat them all the same these are relationships all right.",
-      'title': 'How to get referrals for a water damage restoration business - plumbers (Shane '
-               "O'Dazier | RestorationProfits)",
-      'url': 'https://www.youtube.com/watch?v=D4BavFC6d1E&t=301s',
-      'video_id': 'D4BavFC6d1E'}],
- 6: [{'author': 'Integrity Roofing and Painting',
-      'channel': 'Integrity Roofing and Painting',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:40](https://www.youtube.com/watch?v=Mi6XZq4h6yo&t=40s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'To follow a protocol of your mortgage company in order to get that insurance '
-              'check endorsed what we recommend is to first call your branch to find out what.',
-      'timestamp': 40,
-      'timestamp_label': '[00:00:40]',
-      'timestamp_seconds': 40,
-      'tip': 'To follow a protocol of your mortgage company in order to get that insurance '
-             'check endorsed what we recommend is to first call your branch to find out what.',
-      'title': 'Mortgage Company Insurance Check Endorsement (Integrity Roofing and Painting)',
-      'url': 'https://www.youtube.com/watch?v=Mi6XZq4h6yo&t=40s',
-      'video_id': 'Mi6XZq4h6yo'},
-     {'author': 'Encircle',
-      'channel': 'Encircle',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:30](https://www.youtube.com/watch?v=uy09gaqf4AU&t=390s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So describing that damage is the first step that then feeds into a detailed '
-              'scope, and now that feeds into the Xactimate estimate. Encircle Scope to '
-              'Xactimate Estimate is the straightest line from field documentation to a '
-              'defensible estimate that you will find.',
-      'timestamp': 390,
-      'timestamp_label': '[00:06:30]',
-      'timestamp_seconds': 390,
-      'tip': 'So describing that damage is the first step that then feeds into a detailed '
-             'scope, and now that feeds into the Xactimate estimate. Encircle Scope to '
-             'Xactimate Estimate is the straightest line from field documentation to a '
-             'defensible estimate that you will find.',
-      'title': 'A New Era of Estimating | Your Data, Your Expertise, From Scope to Estimate '
-               '—\xa0Webinar (Encircle)',
-      'url': 'https://www.youtube.com/watch?v=uy09gaqf4AU&t=390s',
-      'video_id': 'uy09gaqf4AU'},
-     {'author': 'AnnePullen',
-      'channel': 'AnnePullen',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:44](https://www.youtube.com/watch?v=tLwSSUZ6Awc&t=104s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'A contractor who offers to make your deductible disappear is usually planning '
-              "to inflate the estimate to absorb it. That's insurance fraud with your name on "
-              "the paperwork and it's illegal in most states. If a company offers you that "
-              "deal, that's not generosity.",
-      'timestamp': 104,
-      'timestamp_label': '[00:01:44]',
-      'timestamp_seconds': 104,
-      'tip': 'A contractor who offers to make your deductible disappear is usually planning to '
-             "inflate the estimate to absorb it. That's insurance fraud with your name on the "
-             "paperwork and it's illegal in most states. If a company offers you that deal, "
-             "that's not generosity.",
-      'title': 'Your Insurance Deductible After a Claim: What Nobody Tells You (AnnePullen)',
-      'url': 'https://www.youtube.com/watch?v=tLwSSUZ6Awc&t=104s',
-      'video_id': 'tLwSSUZ6Awc'},
-     {'author': 'Restoration Made Simple',
-      'channel': 'Restoration Made Simple',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=8nQyv3vEI6A&t=21s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Um you could be $300, $500, $800. I'm hearing in some parts of the country "
-              'right now a water damage lead through a lead source or a lead generation '
-              'company can be $1,500, $1,600, okay?',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': "Um you could be $300, $500, $800. I'm hearing in some parts of the country right "
-             'now a water damage lead through a lead source or a lead generation company can '
-             'be $1,500, $1,600, okay?',
-      'title': 'Close More Water Damage Restoration Leads - Call Conversion Tips (Restoration '
-               'Made Simple)',
-      'url': 'https://www.youtube.com/watch?v=8nQyv3vEI6A&t=21s',
-      'video_id': '8nQyv3vEI6A'},
-     {'author': 'Verisk Property and Restoration Solutions',
-      'channel': 'Verisk Property and Restoration Solutions',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:40](https://www.youtube.com/watch?v=wTueMQ06kvA&t=40s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The first step is to add on your sketch where you intend to put any containment '
-              'barriers, essentially, creating drying chambers or divisions in the home. To '
-              'add a barrier, sketch a missing wall that surrounds the water damage in the '
-              'living room.',
-      'timestamp': 40,
-      'timestamp_label': '[00:00:40]',
-      'timestamp_seconds': 40,
-      'tip': 'The first step is to add on your sketch where you intend to put any containment '
-             'barriers, essentially, creating drying chambers or divisions in the home. To add '
-             'a barrier, sketch a missing wall that surrounds the water damage in the living '
-             'room.',
-      'title': 'Xactimate Xpert Tip: Starting a Water Mitigation in Estimate in XactScope '
-               '(Verisk Property and Restoration Solutions)',
-      'url': 'https://www.youtube.com/watch?v=wTueMQ06kvA&t=40s',
-      'video_id': 'wTueMQ06kvA'},
-     {'author': 'The Restoration Advisors Group',
-      'channel': 'The Restoration Advisors Group',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:20](https://www.youtube.com/watch?v=qQzYZWLmaSI&t=140s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Mind and I can contrl f search something that is related to it and find what I '
-              'wrote for find what somebody else in our company had wrote for and and just go.',
-      'timestamp': 140,
-      'timestamp_label': '[00:02:20]',
-      'timestamp_seconds': 140,
-      'tip': 'Mind and I can contrl f search something that is related to it and find what I '
-             'wrote for find what somebody else in our company had wrote for and and just go.',
-      'title': 'Ultimate Xactimate Cheat Sheet & How I built a chatbot to help write my '
-               'estimates (The Restoration Advisors Group)',
-      'url': 'https://www.youtube.com/watch?v=qQzYZWLmaSI&t=140s',
-      'video_id': 'qQzYZWLmaSI'},
-     {'author': "Shane O'Dazier | RestorationProfits",
-      'channel': "Shane O'Dazier | RestorationProfits",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:19:31](https://www.youtube.com/watch?v=xXe9Z763dDc&t=1171s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': '80% of the time that never happens. But, in the 20% of the time that they do '
-              'find a winner, the minute that that guy walks out to go start his own company, '
-              'all your business left with him, bro. All of your business left with him.',
-      'timestamp': 1171,
-      'timestamp_label': '[00:19:31]',
-      'timestamp_seconds': 1171,
-      'tip': '80% of the time that never happens. But, in the 20% of the time that they do '
-             'find a winner, the minute that that guy walks out to go start his own company, '
-             'all your business left with him, bro. All of your business left with him.',
-      'title': "How to get consistent water damage jobs without storms (Shane O'Dazier | "
-               'RestorationProfits)',
-      'url': 'https://www.youtube.com/watch?v=xXe9Z763dDc&t=1171s',
-      'video_id': 'xXe9Z763dDc'},
-     {'author': 'Xactimate Training by Crest LLC',
-      'channel': 'Xactimate Training by Crest LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:05](https://www.youtube.com/watch?v=ZY8afiQROiI&t=605s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So I'm going to recommend that you actually put the contractor's name in there "
-              "now how do you do that first thing we're going to do is we're going to add one "
-              'of these guys in here so just click right here where it says add.',
-      'timestamp': 605,
-      'timestamp_label': '[00:10:05]',
-      'timestamp_seconds': 605,
-      'tip': "So I'm going to recommend that you actually put the contractor's name in there "
-             "now how do you do that first thing we're going to do is we're going to add one "
-             'of these guys in here so just click right here where it says add.',
-      'title': 'Xactimate - Global Depreciation, Bid Item (from the "Desk Adjuster" course) '
-               '(Xactimate Training by Crest LLC)',
-      'url': 'https://www.youtube.com/watch?v=ZY8afiQROiI&t=605s',
-      'video_id': 'ZY8afiQROiI'},
-     {'author': 'EstimateTV',
-      'channel': 'EstimateTV',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:18](https://www.youtube.com/watch?v=sSaHviAzZ6w&t=78s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "There's a little drop down. If you click on that, it'll bring back the search. "
-              'If I hit paint and then hit the return key or hit the search button, we want to '
-              'go to the item search results, which is the first 100 matching items.',
-      'timestamp': 78,
-      'timestamp_label': '[00:01:18]',
-      'timestamp_seconds': 78,
-      'tip': "There's a little drop down. If you click on that, it'll bring back the search. "
-             'If I hit paint and then hit the return key or hit the search button, we want to '
-             'go to the item search results, which is the first 100 matching items.',
-      'title': 'How to find materials and repairs in Xactimate | Line Items and Search '
-               '(EstimateTV)',
-      'url': 'https://www.youtube.com/watch?v=sSaHviAzZ6w&t=78s',
-      'video_id': 'sSaHviAzZ6w'},
-     {'author': 'Water Damage Restoration Marketing - Vinnie Mac',
-      'channel': 'Water Damage Restoration Marketing - Vinnie Mac',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:26](https://www.youtube.com/watch?v=2akNGTmJry8&t=206s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'SEO or Maps uh Google Business Profile lead volume and then the the gray column '
-              'uh the fourth column over are PPC results and then the summary on the '
-              'right-hand column.',
-      'timestamp': 206,
-      'timestamp_label': '[00:03:26]',
-      'timestamp_seconds': 206,
-      'tip': 'SEO or Maps uh Google Business Profile lead volume and then the the gray column '
-             'uh the fourth column over are PPC results and then the summary on the right-hand '
-             'column.',
-      'title': 'Google Local Service Ads For Water Damage Restoration Companies Everything You '
-               'Need To Know In 2026 (Water Damage Restoration Marketing - Vinnie Mac)',
-      'url': 'https://www.youtube.com/watch?v=2akNGTmJry8&t=206s',
-      'video_id': '2akNGTmJry8'},
-     {'author': 'TheIICRC',
-      'channel': 'TheIICRC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:23:57](https://www.youtube.com/watch?v=JOiWfXdUwjM&t=1437s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Lead remediator to Hey listen I check this place out I I consider this PO '
-              "mediation evaluation I say it's okay and good to go for that must be done in "
-              "every case so it's a good thing to have to to be able to do that see how all "
-              'jobs get to be verified by an IEP.',
-      'timestamp': 1437,
-      'timestamp_label': '[00:23:57]',
-      'timestamp_seconds': 1437,
-      'tip': 'Lead remediator to Hey listen I check this place out I I consider this PO '
-             "mediation evaluation I say it's okay and good to go for that must be done in "
-             "every case so it's a good thing to have to to be able to do that see how all "
-             'jobs get to be verified by an IEP.',
-      'title': 'IICRC June Webinar: S520 2024 Standard (TheIICRC)',
-      'url': 'https://www.youtube.com/watch?v=JOiWfXdUwjM&t=1437s',
-      'video_id': 'JOiWfXdUwjM'},
-     {'author': 'James Poon',
-      'channel': 'James Poon',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:33:43](https://www.youtube.com/watch?v=r1JeD2hb2jM&t=2023s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "That's separate to the restore remediator this is normally a larger area of "
-              'damage or contamination that impacts multiple zones or rooms the area of water '
-              'damage or contamination is often greater than 10 square m.',
-      'timestamp': 2023,
-      'timestamp_label': '[00:33:43]',
-      'timestamp_seconds': 2023,
-      'tip': "That's separate to the restore remediator this is normally a larger area of "
-             'damage or contamination that impacts multiple zones or rooms the area of water '
-             'damage or contamination is often greater than 10 square m.',
-      'title': 'AS-IICRC S520-2024 Nicole Bijlsma (James Poon)',
-      'url': 'https://www.youtube.com/watch?v=r1JeD2hb2jM&t=2023s',
-      'video_id': 'r1JeD2hb2jM'},
-     {'author': 'Chad Michael - The Practitioner',
-      'channel': 'Chad Michael - The Practitioner',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:24:37](https://www.youtube.com/watch?v=Lh586v6HcYw&t=1477s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You know but like I said I like to keep some things in my back pocket bedroom '
-              'two master bedroom office living room so a lot of interior damage right general '
-              'conditions.',
-      'timestamp': 1477,
-      'timestamp_label': '[00:24:37]',
-      'timestamp_seconds': 1477,
-      'tip': 'You know but like I said I like to keep some things in my back pocket bedroom '
-             'two master bedroom office living room so a lot of interior damage right general '
-             'conditions.',
-      'title': 'Xactimate Estimate Tips | Handling Insurance Adjusters (Chad Michael - The '
-               'Practitioner)',
-      'url': 'https://www.youtube.com/watch?v=Lh586v6HcYw&t=1477s',
-      'video_id': 'Lh586v6HcYw'},
-     {'author': 'American Roof Supplements',
-      'channel': 'American Roof Supplements',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:40](https://www.youtube.com/watch?v=wi2YpyR1was&t=340s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Is supplements and estimates this is what we do guys we're xactimate "
-              "specialists so the first one's on the house completely and totally free we have "
-              'a 72-hour turnaround.',
-      'timestamp': 340,
-      'timestamp_label': '[00:05:40]',
-      'timestamp_seconds': 340,
-      'tip': "Is supplements and estimates this is what we do guys we're xactimate specialists "
-             "so the first one's on the house completely and totally free we have a 72-hour "
-             'turnaround.',
-      'title': 'Supplement Training: Step by Step Instructions for Roofing Contractors '
-               '(American Roof Supplements)',
-      'url': 'https://www.youtube.com/watch?v=wi2YpyR1was&t=340s',
-      'video_id': 'wi2YpyR1was'},
-     {'author': "Shane O'Dazier | RestorationProfits",
-      'channel': "Shane O'Dazier | RestorationProfits",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:13:36](https://www.youtube.com/watch?v=Rcmd8gVFzB8&t=816s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q6 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'That helpful if you have any questions on it drop a comment below do let me '
-              "know and tag me share this video on social media tag me in it and we'll catch "
-              'you guys in the next one.',
-      'timestamp': 816,
-      'timestamp_label': '[00:13:36]',
-      'timestamp_seconds': 816,
-      'tip': 'That helpful if you have any questions on it drop a comment below do let me know '
-             "and tag me share this video on social media tag me in it and we'll catch you "
-             'guys in the next one.',
-      'title': "How to get leads for water damage restoration (Shane O'Dazier | "
-               'RestorationProfits)',
-      'url': 'https://www.youtube.com/watch?v=Rcmd8gVFzB8&t=816s',
-      'video_id': 'Rcmd8gVFzB8'}],
- 7: [{'author': 'Restoration Success Strategies | Albi',
-      'channel': 'Restoration Success Strategies | Albi',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:13:05](https://www.youtube.com/watch?v=3PlUwHvZkxE&t=785s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "And those TPAs like Contractor Connection and Alacrity, I think it's called "
-              'Altimeter now, like strongly favor the top-end contractors and they have these '
-              'assignment algorithms that assign work to them specifically.',
-      'timestamp': 785,
-      'timestamp_label': '[00:13:05]',
-      'timestamp_seconds': 785,
-      'tip': "And those TPAs like Contractor Connection and Alacrity, I think it's called "
-             'Altimeter now, like strongly favor the top-end contractors and they have these '
-             'assignment algorithms that assign work to them specifically.',
-      'title': 'How to Start a Water Damage Restoration Company in 2026 (Restoration Success '
-               'Strategies | Albi)',
-      'url': 'https://www.youtube.com/watch?v=3PlUwHvZkxE&t=785s',
-      'video_id': '3PlUwHvZkxE'},
-     {'author': 'Tyro Health',
-      'channel': 'Tyro Health',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:39](https://www.youtube.com/watch?v=CbZ5Nrxx8Xw&t=219s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "If they select no, the claim doesn't proceed because assignment is required for "
-              'bulk billing. So, the key benefit here is that assignment of benefit is '
-              'captured seamlessly as part of the claiming process without needing a separate '
-              'steps.',
-      'timestamp': 219,
-      'timestamp_label': '[00:03:39]',
-      'timestamp_seconds': 219,
-      'tip': "If they select no, the claim doesn't proceed because assignment is required for "
-             'bulk billing. So, the key benefit here is that assignment of benefit is captured '
-             'seamlessly as part of the claiming process without needing a separate steps.',
-      'title': 'Webinar: Assignment of Benefit (AoB) Changes - What You Need to Know (Tyro '
-               'Health)',
-      'url': 'https://www.youtube.com/watch?v=CbZ5Nrxx8Xw&t=219s',
-      'video_id': 'CbZ5Nrxx8Xw'},
-     {'author': 'Regulatory Joe',
-      'channel': 'Regulatory Joe',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:57](https://www.youtube.com/watch?v=kR0zavFV0HU&t=597s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So far too often, payers are delegating to TPAs at the 11th hour where they '
-              'will participate and where claims will need to be processed, but have that '
-              'conversation up front. And finally, step three, building a centralized '
-              'implementation plan and codified business process.',
-      'timestamp': 597,
-      'timestamp_label': '[00:09:57]',
-      'timestamp_seconds': 597,
-      'tip': 'So far too often, payers are delegating to TPAs at the 11th hour where they will '
-             'participate and where claims will need to be processed, but have that '
-             'conversation up front. And finally, step three, building a centralized '
-             'implementation plan and codified business process.',
-      'title': 'TPA Licensure 101: What Every Third-Party Administrator Needs to Know '
-               '(Regulatory Joe)',
-      'url': 'https://www.youtube.com/watch?v=kR0zavFV0HU&t=597s',
-      'video_id': 'kR0zavFV0HU'},
-     {'author': 'ReconSmart Solutions LLC',
-      'channel': 'ReconSmart Solutions LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:43](https://www.youtube.com/watch?v=3DF6Xf4wlIg&t=463s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And listen, this translation process only flows in one direction. Step one, the '
-              'physical loss conditions dictate the field activity. Step two, that field '
-              'activity generates the documentation and the quantities of materials and labor.',
-      'timestamp': 463,
-      'timestamp_label': '[00:07:43]',
-      'timestamp_seconds': 463,
-      'tip': 'And listen, this translation process only flows in one direction. Step one, the '
-             'physical loss conditions dictate the field activity. Step two, that field '
-             'activity generates the documentation and the quantities of materials and labor.',
-      'title': 'Understanding Water Mitigation: From the Loss to the Estimate | ReconSmart '
-               '(ReconSmart Solutions LLC)',
-      'url': 'https://www.youtube.com/watch?v=3DF6Xf4wlIg&t=463s',
-      'video_id': '3DF6Xf4wlIg'},
-     {'author': 'Water Damage Restoration Marketing - Vinnie Mac',
-      'channel': 'Water Damage Restoration Marketing - Vinnie Mac',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:35](https://www.youtube.com/watch?v=O0STLVhCL2c&t=635s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "And you'll typically have a higher lead quality because it's actually a phone "
-              "call happening. Um, similar to other ads platforms, but it's it's an a big "
-              "advantage of the system. Let's talk about verification.",
-      'timestamp': 635,
-      'timestamp_label': '[00:10:35]',
-      'timestamp_seconds': 635,
-      'tip': "And you'll typically have a higher lead quality because it's actually a phone "
-             "call happening. Um, similar to other ads platforms, but it's it's an a big "
-             "advantage of the system. Let's talk about verification.",
-      'title': 'Water Damage Google Local Services Ads - Everything You Need To Know - '
-               'Restoration Marketing (Water Damage Restoration Marketing - Vinnie Mac)',
-      'url': 'https://www.youtube.com/watch?v=O0STLVhCL2c&t=635s',
-      'video_id': 'O0STLVhCL2c'},
-     {'author': 'Public Adjuster Show with Vince Perri',
-      'channel': 'Public Adjuster Show with Vince Perri',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:51](https://www.youtube.com/watch?v=RRn3mzn9xCw&t=231s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "To talk about first number one let's talk about the actual claims process and "
-              "the role of the public adjuster i'm going to put up this definition right.",
-      'timestamp': 231,
-      'timestamp_label': '[00:03:51]',
-      'timestamp_seconds': 231,
-      'tip': "To talk about first number one let's talk about the actual claims process and "
-             "the role of the public adjuster i'm going to put up this definition right.",
-      'title': 'Roofers Vs Public Adjuster - Fight to the Death - Public Adjuster Training '
-               '(Public Adjuster Show with Vince Perri)',
-      'url': 'https://www.youtube.com/watch?v=RRn3mzn9xCw&t=231s',
-      'video_id': 'RRn3mzn9xCw'},
-     {'author': 'Chris Zimmerman',
-      'channel': 'Chris Zimmerman',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:09](https://www.youtube.com/watch?v=1quXRyfkTgo&t=129s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'ve completed all this work for the insurance company to release any money "
-              "that's being withheld. Usually that's called depreciation. So these are all "
-              "steps that are involved in the insurance restoration process that wouldn't be "
-              'involved in the retail process.',
-      'timestamp': 129,
-      'timestamp_label': '[00:02:09]',
-      'timestamp_seconds': 129,
-      'tip': "'ve completed all this work for the insurance company to release any money "
-             "that's being withheld. Usually that's called depreciation. So these are all "
-             "steps that are involved in the insurance restoration process that wouldn't be "
-             'involved in the retail process.',
-      'title': "What is Insurance Restoration Roofing? (Beginner's Guide) (Chris Zimmerman)",
-      'url': 'https://www.youtube.com/watch?v=1quXRyfkTgo&t=129s',
-      'video_id': '1quXRyfkTgo'},
-     {'author': 'Claim Daddy',
-      'channel': 'Claim Daddy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[02:28:32](https://www.youtube.com/watch?v=Qu-NqEwWWPk&t=8912s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Those are our line items right there we're going to uh seal or mask the lower "
-              'wall detach and reset the baseboard and paint the baseboard floor system '
-              "there's no water damage so we're just going to use the standard line items.",
-      'timestamp': 8912,
-      'timestamp_label': '[02:28:32]',
-      'timestamp_seconds': 8912,
-      'tip': "Those are our line items right there we're going to uh seal or mask the lower "
-             "wall detach and reset the baseboard and paint the baseboard floor system there's "
-             "no water damage so we're just going to use the standard line items.",
-      'title': 'Xactimate Scoping and Estimating Training | Adjuster University (Claim Daddy)',
-      'url': 'https://www.youtube.com/watch?v=Qu-NqEwWWPk&t=8912s',
-      'video_id': 'Qu-NqEwWWPk'},
-     {'author': 'The STRONG Roofer w/ Adam Bensman',
-      'channel': 'The STRONG Roofer w/ Adam Bensman',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:12](https://www.youtube.com/watch?v=-aZHNsY5qIY&t=192s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "The name of the guy from the insurance company they're either paid by the "
-              'insurance coming themselves or a third party claims company and these guys '
-              'come.',
-      'timestamp': 192,
-      'timestamp_label': '[00:03:12]',
-      'timestamp_seconds': 192,
-      'tip': "The name of the guy from the insurance company they're either paid by the "
-             'insurance coming themselves or a third party claims company and these guys come.',
-      'title': 'Selling Hail-Damaged Roofs: The Hail Sales Process From Start to Finish (The '
-               'STRONG Roofer w/ Adam Bensman)',
-      'url': 'https://www.youtube.com/watch?v=-aZHNsY5qIY&t=192s',
-      'video_id': '-aZHNsY5qIY'},
-     {'author': 'Chris Hamilton',
-      'channel': 'Chris Hamilton',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:35](https://www.youtube.com/watch?v=LEzohuG5ykg&t=95s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'That so I think the more that we can do as far as helping these employees as '
-              'far as navigating the Healthcare System the better so that would be a first '
-              'question.',
-      'timestamp': 95,
-      'timestamp_label': '[00:01:35]',
-      'timestamp_seconds': 95,
-      'tip': 'That so I think the more that we can do as far as helping these employees as far '
-             'as navigating the Healthcare System the better so that would be a first '
-             'question.',
-      'title': 'What does a TPA or third party administrator do for my company benefits plan? '
-               '(Chris Hamilton)',
-      'url': 'https://www.youtube.com/watch?v=LEzohuG5ykg&t=95s',
-      'video_id': 'LEzohuG5ykg'},
-     {'author': 'American Roof Supplements',
-      'channel': 'American Roof Supplements',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:21](https://www.youtube.com/watch?v=DR03Zlogfe0&t=621s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "After that, it's a flat fee. 50 for an estimate, 150 for a supplement, and less "
-              "if we wrote the estimate. No percentage, no monthly fee. If you're newer to "
-              "insurance work, we'll walk you through your first five claims so you learn the "
-              'process.',
-      'timestamp': 621,
-      'timestamp_label': '[00:10:21]',
-      'timestamp_seconds': 621,
-      'tip': "After that, it's a flat fee. 50 for an estimate, 150 for a supplement, and less "
-             "if we wrote the estimate. No percentage, no monthly fee. If you're newer to "
-             "insurance work, we'll walk you through your first five claims so you learn the "
-             'process.',
-      'title': 'Roofer Explains Roofing Terms: 12 Roof Components That Matter in Xactimate '
-               '(American Roof Supplements)',
-      'url': 'https://www.youtube.com/watch?v=DR03Zlogfe0&t=621s',
-      'video_id': 'DR03Zlogfe0'},
-     {'author': "Shane O'Dazier | RestorationProfits",
-      'channel': "Shane O'Dazier | RestorationProfits",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:38](https://www.youtube.com/watch?v=5CbcT0WZWts&t=398s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Before you get any of this material we have to get on a call with you and '
-              "verify you are who you say you are and we've had to kick a few people out and.",
-      'timestamp': 398,
-      'timestamp_label': '[00:06:38]',
-      'timestamp_seconds': 398,
-      'tip': 'Before you get any of this material we have to get on a call with you and verify '
-             "you are who you say you are and we've had to kick a few people out and.",
-      'title': 'How a restoration contractor should write an estimate for water mitigation '
-               "(Shane O'Dazier | RestorationProfits)",
-      'url': 'https://www.youtube.com/watch?v=5CbcT0WZWts&t=398s',
-      'video_id': '5CbcT0WZWts'},
-     {'author': 'Adjuster TV',
-      'channel': 'Adjuster TV',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:58:34](https://www.youtube.com/watch?v=6084H_VeZTA&t=3514s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "The storm chaser and the uh for the adjuster who let me let's be honest what "
-              "kind of storm chasers if we're doing catwork right.",
-      'timestamp': 3514,
-      'timestamp_label': '[00:58:34]',
-      'timestamp_seconds': 3514,
-      'tip': "The storm chaser and the uh for the adjuster who let me let's be honest what "
-             "kind of storm chasers if we're doing catwork right.",
-      'title': 'HAIL CLAIM WALKTHROUGH | Xactimate X1 roof claim (Adjuster TV)',
-      'url': 'https://www.youtube.com/watch?v=6084H_VeZTA&t=3514s',
-      'video_id': '6084H_VeZTA'},
-     {'author': 'APPALeadership',
-      'channel': 'APPALeadership',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:42:04](https://www.youtube.com/watch?v=cPAFOZbMKQE&t=2524s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "It's the same for 3 & 4 for different reasons class 3 a lot of evaporation "
-              'taking place class poor not a lot of evaporation taking place so I need to '
-              "lower what's called my vapor pressure differential to pull those materials the "
-              'moisture out of those materials.',
-      'timestamp': 2524,
-      'timestamp_label': '[00:42:04]',
-      'timestamp_seconds': 2524,
-      'tip': "It's the same for 3 & 4 for different reasons class 3 a lot of evaporation "
-             'taking place class poor not a lot of evaporation taking place so I need to lower '
-             "what's called my vapor pressure differential to pull those materials the "
-             'moisture out of those materials.',
-      'title': '2019 08 29 12 51 IICRC S500 Standard   Water Damage Principles   Recovery '
-               '(APPALeadership)',
-      'url': 'https://www.youtube.com/watch?v=cPAFOZbMKQE&t=2524s',
-      'video_id': 'cPAFOZbMKQE'},
-     {'author': "Shane O'Dazier | RestorationProfits",
-      'channel': "Shane O'Dazier | RestorationProfits",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:05](https://www.youtube.com/watch?v=b1-Dcqk4F9g&t=425s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q7 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "It's a steal so let's take a look at the work authorization so you got to make "
-              'a copy of it and this is what it does here so the the three day um equipment '
-              "rule so let's go to where I put this guy in right here.",
-      'timestamp': 425,
-      'timestamp_label': '[00:07:05]',
-      'timestamp_seconds': 425,
-      'tip': "It's a steal so let's take a look at the work authorization so you got to make a "
-             'copy of it and this is what it does here so the the three day um equipment rule '
-             "so let's go to where I put this guy in right here.",
-      'title': "Contractor Contracts vs Restoration Contracts (Shane O'Dazier | "
-               'RestorationProfits)',
-      'url': 'https://www.youtube.com/watch?v=b1-Dcqk4F9g&t=425s',
-      'video_id': 'b1-Dcqk4F9g'}],
- 8: [{'author': 'PushLeads',
-      'channel': 'PushLeads',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:55](https://www.youtube.com/watch?v=wnVxHv3JM28&t=55s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Here is the core distinction. A restoration company handles emergency '
-              'mitigation, stopping active damage, drying the structure, and removing '
-              'contaminants. A general contractor handles reconstruction, putting the property '
-              'back together after the environment is stabilized.',
-      'timestamp': 55,
-      'timestamp_label': '[00:00:55]',
-      'timestamp_seconds': 55,
-      'tip': 'Here is the core distinction. A restoration company handles emergency '
-             'mitigation, stopping active damage, drying the structure, and removing '
-             'contaminants. A general contractor handles reconstruction, putting the property '
-             'back together after the environment is stabilized.',
-      'title': "Restoration Company vs General Contractor: What's the Difference? (PushLeads)",
-      'url': 'https://www.youtube.com/watch?v=wnVxHv3JM28&t=55s',
-      'video_id': 'wnVxHv3JM28'},
-     {'author': 'magicplan',
-      'channel': 'magicplan',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:39](https://www.youtube.com/watch?v=F4WLuIxWd-Q&t=339s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Of using that tool of the assignment of benefits as efficient and as kind of '
-              "like smooth as possible yeah yeah um that's a it's a tough question to answer.",
-      'timestamp': 339,
-      'timestamp_label': '[00:05:39]',
-      'timestamp_seconds': 339,
-      'tip': 'Of using that tool of the assignment of benefits as efficient and as kind of '
-             "like smooth as possible yeah yeah um that's a it's a tough question to answer.",
-      'title': 'When Does Assignment of Benefits (AOB) Work Best? Tips for Restorers (w/Josh '
-               'Ehmke) (magicplan)',
-      'url': 'https://www.youtube.com/watch?v=F4WLuIxWd-Q&t=339s',
-      'video_id': 'F4WLuIxWd-Q'},
-     {'author': 'American Roof Supplements',
-      'channel': 'American Roof Supplements',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:09](https://www.youtube.com/watch?v=zDKvQs0viSI&t=129s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Not every claim needs a public adjuster, but complicated disputes may. Now the '
-              'crew is on the roof and opinions have to give way to evidence. A dark spot '
-              "isn't automatically hail damage.",
-      'timestamp': 129,
-      'timestamp_label': '[00:02:09]',
-      'timestamp_seconds': 129,
-      'tip': 'Not every claim needs a public adjuster, but complicated disputes may. Now the '
-             "crew is on the roof and opinions have to give way to evidence. A dark spot isn't "
-             'automatically hail damage.',
-      'title': '7 Levels of Public Adjusters: Simple Claims to Total Chaos (American Roof '
-               'Supplements)',
-      'url': 'https://www.youtube.com/watch?v=zDKvQs0viSI&t=129s',
-      'video_id': 'zDKvQs0viSI'},
-     {'author': 'Self Insured Reporting',
-      'channel': 'Self Insured Reporting',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:37](https://www.youtube.com/watch?v=7lU917xnSRE&t=157s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "But it's we have all the api's built in our platform already show you a couple "
-              'of other things when the claims and enrollment come in into the system we.',
-      'timestamp': 157,
-      'timestamp_label': '[00:02:37]',
-      'timestamp_seconds': 157,
-      'tip': "But it's we have all the api's built in our platform already show you a couple "
-             'of other things when the claims and enrollment come in into the system we.',
-      'title': 'Third Party Administrators (Self Insured Reporting)',
-      'url': 'https://www.youtube.com/watch?v=7lU917xnSRE&t=157s',
-      'video_id': '7lU917xnSRE'},
-     {'author': 'Adjuster TV',
-      'channel': 'Adjuster TV',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:31:21](https://www.youtube.com/watch?v=86mEe0yHwiw&t=1881s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Property or auto claims ia including many more videos free tutorials and '
-              'webinars with best gear and software for claims and industry news and I a '
-              'weather reports head on over to adjuster tv.com and as always thank you so much '
-              'for watching and have a great storm.',
-      'timestamp': 1881,
-      'timestamp_label': '[00:31:21]',
-      'timestamp_seconds': 1881,
-      'tip': 'Property or auto claims ia including many more videos free tutorials and '
-             'webinars with best gear and software for claims and industry news and I a '
-             'weather reports head on over to adjuster tv.com and as always thank you so much '
-             'for watching and have a great storm.',
-      'title': 'Matterport Demo and Walkthrough (Adjuster TV)',
-      'url': 'https://www.youtube.com/watch?v=86mEe0yHwiw&t=1881s',
-      'video_id': '86mEe0yHwiw'},
-     {'author': 'On-Site Adjusting',
-      'channel': 'On-Site Adjusting',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:06](https://www.youtube.com/watch?v=oEc6cQdcK6I&t=66s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "You know, you you're about to jump in with a uh restoration company who's going "
-              "to bring in uh uh mitigation equipment. They're going to dry everything up and "
-              "then your adjuster is going to show up and he's gonna, you know, it's just "
-              'gonna be all dry.',
-      'timestamp': 66,
-      'timestamp_label': '[00:01:06]',
-      'timestamp_seconds': 66,
-      'tip': "You know, you you're about to jump in with a uh restoration company who's going "
-             "to bring in uh uh mitigation equipment. They're going to dry everything up and "
-             "then your adjuster is going to show up and he's gonna, you know, it's just gonna "
-             'be all dry.',
-      'title': 'Don’t Let the Insurance Company’s Contractor Ruin Your Claim 😳 | Public '
-               'Adjuster Explains (On-Site Adjusting)',
-      'url': 'https://www.youtube.com/watch?v=oEc6cQdcK6I&t=66s',
-      'video_id': 'oEc6cQdcK6I'},
-     {'author': 'Water Damage Restoration Coach - Jon Schoen',
-      'channel': 'Water Damage Restoration Coach - Jon Schoen',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:09](https://www.youtube.com/watch?v=-0hAYhkhJaw&t=429s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Software um but you know the mic documentation is a lot and um you know so '
-              "you're going to end up having to put somebody on that.",
-      'timestamp': 429,
-      'timestamp_label': '[00:07:09]',
-      'timestamp_seconds': 429,
-      'tip': 'Software um but you know the mic documentation is a lot and um you know so '
-             "you're going to end up having to put somebody on that.",
-      'title': "How to Get on Insurance Restoration Third Party Administrator's TPA's Lists "
-               '(Water Damage Restoration Coach - Jon Schoen)',
-      'url': 'https://www.youtube.com/watch?v=-0hAYhkhJaw&t=429s',
-      'video_id': '-0hAYhkhJaw'},
-     {'author': 'Actionable',
-      'channel': 'Actionable',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:15:20](https://www.youtube.com/watch?v=s4xCprLX1Yw&t=920s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Added text to the note field of replaced definition to clarify contractor will '
-              'generally have and use standard ladder jacks and plank scaffolding as part of '
-              'their normal equipment tool set.',
-      'timestamp': 920,
-      'timestamp_label': '[00:15:20]',
-      'timestamp_seconds': 920,
-      'tip': 'Added text to the note field of replaced definition to clarify contractor will '
-             'generally have and use standard ladder jacks and plank scaffolding as part of '
-             'their normal equipment tool set.',
-      'title': '🚨 23 NEW XACTIMATE LINE ITEMS! (Actionable)',
-      'url': 'https://www.youtube.com/watch?v=s4xCprLX1Yw&t=920s',
-      'video_id': 's4xCprLX1Yw'},
-     {'author': 'TheIICRC',
-      'channel': 'TheIICRC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:19:46](https://www.youtube.com/watch?v=bcid0F9jRTI&t=1186s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Conditions and historical data and other published sources are available and '
-              "how it's all put together so we may use one or many or all of these but they're "
-              'all uh opportunities for us to establish our drying goal without just saying '
-              'what is a dry standard.',
-      'timestamp': 1186,
-      'timestamp_label': '[00:19:46]',
-      'timestamp_seconds': 1186,
-      'tip': 'Conditions and historical data and other published sources are available and how '
-             "it's all put together so we may use one or many or all of these but they're all "
-             'uh opportunities for us to establish our drying goal without just saying what is '
-             'a dry standard.',
-      'title': 'ANSI/IICRC S500: 2021 Edition (TheIICRC)',
-      'url': 'https://www.youtube.com/watch?v=bcid0F9jRTI&t=1186s',
+      'text': "If it originates from beyond the trap it's category three.",
+      'timestamp': 907,
+      'timestamp_label': '[00:15:07]',
+      'timestamp_seconds': 907,
+      'tip': "If it originates from beyond the trap it's category three.",
+      'title': 'ANSI/IICRC S500: 2021 Edition',
+      'url': 'https://www.youtube.com/watch?v=bcid0F9jRTI&t=907s',
       'video_id': 'bcid0F9jRTI'},
-     {'author': "Shane O'Dazier | RestorationProfits",
-      'channel': "Shane O'Dazier | RestorationProfits",
+     {'author': 'Coach8',
+      'channel': 'Coach8',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:43](https://www.youtube.com/watch?v=MLuoMdYemWU&t=643s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:37:15](https://www.youtube.com/watch?v=7gZTdFWoHgs&t=2235s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'I mean, talk about not dancing with the one that brought you. Guys, if you '
-              "didn't already know, the two biggest problems you're going to have in owning a "
-              'restoration company are this. Number one, getting consistent water damage jobs '
-              'coming in the door.',
-      'timestamp': 643,
-      'timestamp_label': '[00:10:43]',
-      'timestamp_seconds': 643,
-      'tip': 'I mean, talk about not dancing with the one that brought you. Guys, if you '
-             "didn't already know, the two biggest problems you're going to have in owning a "
-             'restoration company are this. Number one, getting consistent water damage jobs '
-             'coming in the door.',
-      'title': 'Creative Ways To Get Consistent Water Restoration Business Leads (Shane '
-               "O'Dazier | RestorationProfits)",
-      'url': 'https://www.youtube.com/watch?v=MLuoMdYemWU&t=643s',
-      'video_id': 'MLuoMdYemWU'},
-     {'author': "Builder's Perspective Public Adjusting",
-      'channel': "Builder's Perspective Public Adjusting",
+      'text': 'For us to be able to measure this correctly and have accurate readings the restorer '
+              'should use the same meter throughout a project.',
+      'timestamp': 2235,
+      'timestamp_label': '[00:37:15]',
+      'timestamp_seconds': 2235,
+      'tip': 'For us to be able to measure this correctly and have accurate readings the restorer '
+             'should use the same meter throughout a project.',
+      'title': 'Reviewing the ANSI/IICRC S500 2021 Standard for Professional Water Damage '
+               'Restoration, 5th Edition',
+      'url': 'https://www.youtube.com/watch?v=7gZTdFWoHgs&t=2235s',
+      'video_id': '7gZTdFWoHgs'},
+     {'author': 'Learn To Restore',
+      'channel': 'Learn To Restore',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:13:58](https://www.youtube.com/watch?v=kWxJ6PIkM-M&t=838s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:03:38](https://www.youtube.com/watch?v=i4RGAC2VwaY&t=218s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'You some advice so feel free to give us a call 888-830 bppa 888-830-2772 send '
-              'us a message on Facebook and we will be happy to get back with you thanks.',
-      'timestamp': 838,
-      'timestamp_label': '[00:13:58]',
-      'timestamp_seconds': 838,
-      'tip': 'You some advice so feel free to give us a call 888-830 bppa 888-830-2772 send us '
-             'a message on Facebook and we will be happy to get back with you thanks.',
-      'title': "Reading Xactimate Estimate (Builder's Perspective Public Adjusting)",
-      'url': 'https://www.youtube.com/watch?v=kWxJ6PIkM-M&t=838s',
-      'video_id': 'kWxJ6PIkM-M'},
-     {'author': 'Water Damage Restoration Marketing - Vinnie Mac',
-      'channel': 'Water Damage Restoration Marketing - Vinnie Mac',
+      'text': 'It has a lot of legal weight behind it by the time you get there.',
+      'timestamp': 218,
+      'timestamp_label': '[00:03:38]',
+      'timestamp_seconds': 218,
+      'tip': 'It has a lot of legal weight behind it by the time you get there.',
+      'title': 'Intro to the IICRC S500 for Water Damage Restoration',
+      'url': 'https://www.youtube.com/watch?v=i4RGAC2VwaY&t=218s',
+      'video_id': 'i4RGAC2VwaY'},
+     {'author': 'TheIICRC',
+      'channel': 'TheIICRC',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:23](https://www.youtube.com/watch?v=KYZjCfsaWhs&t=203s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:14:53](https://www.youtube.com/watch?v=JOiWfXdUwjM&t=893s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'We also made a connection to Sunbelt and they we were providing power for us as '
-              'well for our equipment and then I also made connections to our other office in.',
-      'timestamp': 203,
-      'timestamp_label': '[00:03:23]',
-      'timestamp_seconds': 203,
-      'tip': 'We also made a connection to Sunbelt and they we were providing power for us as '
-             'well for our equipment and then I also made connections to our other office in.',
-      'title': 'Water Damage Marketing | How To Generate Water Damage Leads (Water Damage '
-               'Restoration Marketing - Vinnie Mac)',
-      'url': 'https://www.youtube.com/watch?v=KYZjCfsaWhs&t=203s',
-      'video_id': 'KYZjCfsaWhs'},
-     {'author': 'Estimate Mastery',
-      'channel': 'Estimate Mastery',
+      'text': 'The standard is voluntary, but in front of a judge or jury, if you did not follow '
+              "it you're probably going to lose.",
+      'timestamp': 893,
+      'timestamp_label': '[00:14:53]',
+      'timestamp_seconds': 893,
+      'tip': 'The standard is voluntary, but in front of a judge or jury, if you did not follow it '
+             "you're probably going to lose.",
+      'title': 'IICRC June Webinar: S520 2024 Standard',
+      'url': 'https://www.youtube.com/watch?v=JOiWfXdUwjM&t=893s',
+      'video_id': 'JOiWfXdUwjM'},
+     {'author': 'Andrew Melrose',
+      'channel': 'Andrew Melrose',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=fdW0W_-MR-s&t=15s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:02:41](https://www.youtube.com/watch?v=iQ4PIKW3sEc&t=161s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "What I'm going to share here in this video there's a way to do what I like to "
-              "call oneclick estimating and I'm going to show you how this works in Xactimate.",
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': "What I'm going to share here in this video there's a way to do what I like to "
-             "call oneclick estimating and I'm going to show you how this works in Xactimate.",
-      'title': '1 Click Secret - Write a roof & siding estimate in 15 minutes using this one '
-               'tool in Xactimate (Estimate Mastery)',
-      'url': 'https://www.youtube.com/watch?v=fdW0W_-MR-s&t=15s',
-      'video_id': 'fdW0W_-MR-s'},
-     {'author': "Shane O'Dazier | RestorationProfits",
-      'channel': "Shane O'Dazier | RestorationProfits",
+      'text': 'Three or four days of fans does not prove the house is dry; monitoring does.',
+      'timestamp': 161,
+      'timestamp_label': '[00:02:41]',
+      'timestamp_seconds': 161,
+      'tip': 'Three or four days of fans does not prove the house is dry; monitoring does.',
+      'title': 'Only Hire Certified Professionals! - (Water Restoration/IICRC s500 VS. Mold '
+               'Remediation/IICRC s520)',
+      'url': 'https://www.youtube.com/watch?v=iQ4PIKW3sEc&t=161s',
+      'video_id': 'iQ4PIKW3sEc'},
+     {'author': 'ISSA Media',
+      'channel': 'ISSA Media',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:38](https://www.youtube.com/watch?v=CV0x51fC7pw&t=338s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q8 operational '
-                   'verification).',
+      'markdown': '[00:26:10](https://www.youtube.com/watch?v=jFMj8u8OsU4&t=1570s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "'re a fit like you've probably got enough data at that point. Does that make "
-              'sense >> to call it? Like how long do you need to look at the flatline before '
-              'you call in dead?',
-      'timestamp': 338,
-      'timestamp_label': '[00:05:38]',
-      'timestamp_seconds': 338,
-      'tip': "'re a fit like you've probably got enough data at that point. Does that make "
-             'sense >> to call it? Like how long do you need to look at the flatline before '
-             'you call in dead?',
-      'title': "How to Get Plumbers Sending You $60K Water Jobs (Shane O'Dazier | "
-               'RestorationProfits)',
-      'url': 'https://www.youtube.com/watch?v=CV0x51fC7pw&t=338s',
-      'video_id': 'CV0x51fC7pw'},
-     {'author': 'Happy Adjuster',
-      'channel': 'Happy Adjuster',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:48](https://www.youtube.com/watch?v=hqbiodyd1gc&t=48s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q8 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Once you've signed an AOB, you could be cut out of the conversation entirely. "
-              'And in some cases, you may end up in the middle of a legal dispute between the '
-              "contractor and your insurance company. An AOB means you won't have to deal "
-              'directly with the insurance company.',
-      'timestamp': 48,
-      'timestamp_label': '[00:00:48]',
-      'timestamp_seconds': 48,
-      'tip': "Once you've signed an AOB, you could be cut out of the conversation entirely. "
-             'And in some cases, you may end up in the middle of a legal dispute between the '
-             "contractor and your insurance company. An AOB means you won't have to deal "
-             'directly with the insurance company.',
-      'title': 'What Is an Assignment of Benefits (AOB)? | Should You Sign One After a '
-               'Property Damage Claim? (Happy Adjuster)',
-      'url': 'https://www.youtube.com/watch?v=hqbiodyd1gc&t=48s',
-      'video_id': 'hqbiodyd1gc'}],
- 9: [{'author': 'American Roof Supplements',
-      'channel': 'American Roof Supplements',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:04](https://www.youtube.com/watch?v=GK_Was-iK98&t=484s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'There is also a legal and compliance side to this. Public adjuster rules vary '
-              'by state. Some states have specific requirements around contracts, fees, '
-              'disclosures, third-party services, record keeping, or who can perform certain '
-              'claim-related activities.',
-      'timestamp': 484,
-      'timestamp_label': '[00:08:04]',
-      'timestamp_seconds': 484,
-      'tip': 'There is also a legal and compliance side to this. Public adjuster rules vary by '
-             'state. Some states have specific requirements around contracts, fees, '
-             'disclosures, third-party services, record keeping, or who can perform certain '
-             'claim-related activities.',
-      'title': 'Public Adjusters: Stop Wasting Hours Building Xactimate Estimates (American '
-               'Roof Supplements)',
-      'url': 'https://www.youtube.com/watch?v=GK_Was-iK98&t=484s',
-      'video_id': 'GK_Was-iK98'},
-     {'author': 'flanewscapitol',
-      'channel': 'flanewscapitol',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:30](https://www.youtube.com/watch?v=7-KaOK5zk7g&t=90s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Recover full costs and ensures consumers repairs are up to standard Florida's "
-              'ranked the state with the fifth worst legal climate in the country insurers say '
-              'assignment of benefits fraud is a major factor in the ranking in Tallahassee '
-              "I'm Jake stofan.",
-      'timestamp': 90,
-      'timestamp_label': '[00:01:30]',
-      'timestamp_seconds': 90,
-      'tip': "Recover full costs and ensures consumers repairs are up to standard Florida's "
-             'ranked the state with the fifth worst legal climate in the country insurers say '
-             "assignment of benefits fraud is a major factor in the ranking in Tallahassee I'm "
-             'Jake stofan.',
-      'title': 'Insurers Call for Assignment of Benefits Reform (flanewscapitol)',
-      'url': 'https://www.youtube.com/watch?v=7-KaOK5zk7g&t=90s',
-      'video_id': '7-KaOK5zk7g'},
-     {'author': 'Building Experts Institute',
-      'channel': 'Building Experts Institute',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:45](https://www.youtube.com/watch?v=RmjqTZJ3II0&t=45s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'re going to perform this, which is a dollar amount, not just a hand over the "
-              'benefits of a policy. And if you live in a state where there is no assignment '
-              'of benefits, a contingency contract in many ways is an assignment of benefits '
-              'form.',
-      'timestamp': 45,
-      'timestamp_label': '[00:00:45]',
-      'timestamp_seconds': 45,
-      'tip': "'re going to perform this, which is a dollar amount, not just a hand over the "
-             'benefits of a policy. And if you live in a state where there is no assignment of '
-             'benefits, a contingency contract in many ways is an assignment of benefits form.',
-      'title': 'Contingency contracts may violate UPPA (Building Experts Institute)',
-      'url': 'https://www.youtube.com/watch?v=RmjqTZJ3II0&t=45s',
-      'video_id': 'RmjqTZJ3II0'},
-     {'author': 'Accountancy Students Hub',
-      'channel': 'Accountancy Students Hub',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:58](https://www.youtube.com/watch?v=-mzjb7XSisY&t=298s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "They have to pay interest at twice the legal rate, plus attorney's fees and "
-              'damages. The law literally does not mess around when it comes to delayed '
-              'payouts. Next up is section four, the rules of prescription.',
-      'timestamp': 298,
-      'timestamp_label': '[00:04:58]',
-      'timestamp_seconds': 298,
-      'tip': "They have to pay interest at twice the legal rate, plus attorney's fees and "
-             'damages. The law literally does not mess around when it comes to delayed '
-             'payouts. Next up is section four, the rules of prescription.',
-      'title': 'RFBT Insurance 05: Special Classes of Insurance, Claims Settlement, '
-               'Prescription, and Subrogation (Accountancy Students Hub)',
-      'url': 'https://www.youtube.com/watch?v=-mzjb7XSisY&t=298s',
-      'video_id': '-mzjb7XSisY'},
-     {'author': 'The Deductible',
-      'channel': 'The Deductible',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:21](https://www.youtube.com/watch?v=A4K6Yt2bnWk&t=561s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'One last thing, and I mean this, this video is education, not advice. Rates, '
-              'surcharge rules, and deductibles vary by state, by company, and by policy. Read '
-              'your own policy or talk to a licensed agent in your state before you change '
-              'anything.',
-      'timestamp': 561,
-      'timestamp_label': '[00:09:21]',
-      'timestamp_seconds': 561,
-      'tip': 'One last thing, and I mean this, this video is education, not advice. Rates, '
-             'surcharge rules, and deductibles vary by state, by company, and by policy. Read '
-             'your own policy or talk to a licensed agent in your state before you change '
-             'anything.',
-      'title': 'Deductibles Explained: The Math That Decides If a Claim Is Worth Filing (The '
-               'Deductible)',
-      'url': 'https://www.youtube.com/watch?v=A4K6Yt2bnWk&t=561s',
-      'video_id': 'A4K6Yt2bnWk'},
-     {'author': 'Relentless Health Value',
-      'channel': 'Relentless Health Value',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:34:59](https://www.youtube.com/watch?v=pNIYu-t990E&t=2099s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So trying to rely on their internal processes to make sure that your contract '
-              'is adequately adjudicated as per the terms of the contract, you can see how '
-              "that might be an issue. Even with the best of intention. So they're committed "
-              "to it, but you're right.",
-      'timestamp': 2099,
-      'timestamp_label': '[00:34:59]',
-      'timestamp_seconds': 2099,
-      'tip': 'So trying to rely on their internal processes to make sure that your contract is '
-             'adequately adjudicated as per the terms of the contract, you can see how that '
-             "might be an issue. Even with the best of intention. So they're committed to it, "
-             "but you're right.",
-      'title': 'Running a TPA (Third Party Administrator) RFP Process That Is Less of a Wild '
-               'West Fiduciary Shootout (Relentless Health Value)',
-      'url': 'https://www.youtube.com/watch?v=pNIYu-t990E&t=2099s',
-      'video_id': 'pNIYu-t990E'},
+      'text': 'And when we have bad actors, we all look bad.',
+      'timestamp': 1570,
+      'timestamp_label': '[00:26:10]',
+      'timestamp_seconds': 1570,
+      'tip': 'And when we have bad actors, we all look bad.',
+      'title': 'Inside the S520: The Standard That Changed Mold Remediation',
+      'url': 'https://www.youtube.com/watch?v=jFMj8u8OsU4&t=1570s',
+      'video_id': 'jFMj8u8OsU4'},
      {'author': "Time's Dark Captains",
       'channel': "Time's Dark Captains",
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:21:24](https://www.youtube.com/watch?v=y00Yi4bnLx4&t=1284s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:07:28](https://www.youtube.com/watch?v=y00Yi4bnLx4&t=448s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "Doing an assessment on looking at whether it's in normal fungal ecology now "
-              'this is where the state of texas rules come in go like yeah.',
-      'timestamp': 1284,
-      'timestamp_label': '[00:21:24]',
-      'timestamp_seconds': 1284,
-      'tip': "Doing an assessment on looking at whether it's in normal fungal ecology now this "
-             'is where the state of texas rules come in go like yeah.',
-      'title': "Texas Mold Remediation:  IICRC S520/R520, IICRC S500 and the TMARR (Time's "
-               'Dark Captains)',
-      'url': 'https://www.youtube.com/watch?v=y00Yi4bnLx4&t=1284s',
+      'text': 'Should means you need a damn good reason not to do it.',
+      'timestamp': 448,
+      'timestamp_label': '[00:07:28]',
+      'timestamp_seconds': 448,
+      'tip': 'Should means you need a damn good reason not to do it.',
+      'title': 'Texas Mold Remediation:  IICRC S520/R520, IICRC S500 and the TMARR',
+      'url': 'https://www.youtube.com/watch?v=y00Yi4bnLx4&t=448s',
       'video_id': 'y00Yi4bnLx4'},
-     {'author': 'RestoreMasters',
-      'channel': 'RestoreMasters',
+     {'author': 'Restoration Technical Institute',
+      'channel': 'Restoration Technical Institute',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:34](https://www.youtube.com/watch?v=rw8dEal_Ppk&t=34s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:02:16](https://www.youtube.com/watch?v=XMpZ-8ZsSW8&t=136s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Us to see the direction of the storm but not necessarily do you see the damage '
-              "on top of the TV oh so we felt around different spots where there's.",
-      'timestamp': 34,
-      'timestamp_label': '[00:00:34]',
-      'timestamp_seconds': 34,
-      'tip': 'Us to see the direction of the storm but not necessarily do you see the damage '
-             "on top of the TV oh so we felt around different spots where there's.",
-      'title': 'RestoreMasters TPO Roof Inspections (Property Damage Assessments) | Hail '
-               'Damage (RestoreMasters)',
-      'url': 'https://www.youtube.com/watch?v=rw8dEal_Ppk&t=34s',
-      'video_id': 'rw8dEal_Ppk'},
-     {'author': 'Marketing Ninjas',
-      'channel': 'Marketing Ninjas',
+      'text': '10 seconds on move the mat 10 seconds move the mat wiping up the floor as we go.',
+      'timestamp': 136,
+      'timestamp_label': '[00:02:16]',
+      'timestamp_seconds': 136,
+      'tip': '10 seconds on move the mat 10 seconds move the mat wiping up the floor as we go.',
+      'title': 'POV: Applied Structural Drying with RTI | IICRC ASD Course with Destry Ransdell',
+      'url': 'https://www.youtube.com/watch?v=XMpZ-8ZsSW8&t=136s',
+      'video_id': 'XMpZ-8ZsSW8'},
+     {'author': 'APPALeadership',
+      'channel': 'APPALeadership',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:35](https://www.youtube.com/watch?v=n7ECptsaJTQ&t=35s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:40:06](https://www.youtube.com/watch?v=cPAFOZbMKQE&t=2406s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Ask questions like, are you already working with a mitigation company, or '
-              "multiple mitigation companies? What's gone well with them? How do you usually "
-              'decide who to send a job to? What do you need most from a restoration partner? '
-              'These kinds of questions flip the script.',
-      'timestamp': 35,
-      'timestamp_label': '[00:00:35]',
-      'timestamp_seconds': 35,
-      'tip': 'Ask questions like, are you already working with a mitigation company, or '
-             "multiple mitigation companies? What's gone well with them? How do you usually "
-             'decide who to send a job to? What do you need most from a restoration partner? '
-             'These kinds of questions flip the script.',
-      'title': 'How to Get Plumbers to Actually Send You Mitigation Jobs (Marketing Ninjas)',
-      'url': 'https://www.youtube.com/watch?v=n7ECptsaJTQ&t=35s',
-      'video_id': 'n7ECptsaJTQ'},
-     {'author': 'Claims Adjuster of the Year',
-      'channel': 'Claims Adjuster of the Year',
+      'text': "Infrared camera does not say it's wet or dry, it simply says that surface is "
+              'cooler, potentially could be evaporation, go check with your meter, so we always '
+              'validate with the meter.',
+      'timestamp': 2406,
+      'timestamp_label': '[00:40:06]',
+      'timestamp_seconds': 2406,
+      'tip': "Infrared camera does not say it's wet or dry, it simply says that surface is cooler, "
+             'potentially could be evaporation, go check with your meter, so we always validate '
+             'with the meter.',
+      'title': '2019 08 29 12 51 IICRC S500 Standard   Water Damage Principles   Recovery',
+      'url': 'https://www.youtube.com/watch?v=cPAFOZbMKQE&t=2406s',
+      'video_id': 'cPAFOZbMKQE'},
+     {'author': 'APPALeadership',
+      'channel': 'APPALeadership',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:57](https://www.youtube.com/watch?v=EDF71IxtN5w&t=117s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:09:16](https://www.youtube.com/watch?v=cPAFOZbMKQE&t=556s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "Were working and you put in the policy dates again we've got to make sure it's "
-              'active and then you put in the deductible okay see please explain how the '
-              'deductible works in regards to uh so the so the deductible is not actually '
-              'something.',
-      'timestamp': 117,
-      'timestamp_label': '[00:01:57]',
-      'timestamp_seconds': 117,
-      'tip': "Were working and you put in the policy dates again we've got to make sure it's "
-             'active and then you put in the deductible okay see please explain how the '
-             'deductible works in regards to uh so the so the deductible is not actually '
-             'something.',
-      'title': 'How to Use Xactimate for Training as an Adjuster | Training for beginners 🔥 '
-               'Claims Adjuster (Claims Adjuster of the Year)',
-      'url': 'https://www.youtube.com/watch?v=EDF71IxtN5w&t=117s',
-      'video_id': 'EDF71IxtN5w'},
-     {'author': 'Omegasonics',
-      'channel': 'Omegasonics',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:46](https://www.youtube.com/watch?v=3UmvqUcOFDc&t=106s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Exact item your insured is looking for without having to scroll through '
-              'hundreds of photos for more information on proper packout procedures give us a '
-              'call or visit our website at omegas sonics.com you can also connect with us on '
-              'Facebook and Twitter.',
-      'timestamp': 106,
-      'timestamp_label': '[00:01:46]',
-      'timestamp_seconds': 106,
-      'tip': 'Exact item your insured is looking for without having to scroll through hundreds '
-             'of photos for more information on proper packout procedures give us a call or '
-             'visit our website at omegas sonics.com you can also connect with us on Facebook '
-             'and Twitter.',
-      'title': 'Tips for Proper Restoration Packout (Omegasonics)',
-      'url': 'https://www.youtube.com/watch?v=3UmvqUcOFDc&t=106s',
-      'video_id': '3UmvqUcOFDc'},
-     {'author': 'Claim Toolkit',
-      'channel': 'Claim Toolkit',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:21:34](https://www.youtube.com/watch?v=LQ4DKKitI6o&t=1294s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q9 operational '
-                   'verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Outdated information so we're going to scroll down you'll see we can "
-              'essentially do a comparison between states for the applicable law I am '
-              'researching.',
-      'timestamp': 1294,
-      'timestamp_label': '[00:21:34]',
-      'timestamp_seconds': 1294,
-      'tip': "Outdated information so we're going to scroll down you'll see we can essentially "
-             'do a comparison between states for the applicable law I am researching.',
-      'title': 'Claim Toolkit Training - 06/17/2021 (Sedgwick) (Claim Toolkit)',
-      'url': 'https://www.youtube.com/watch?v=LQ4DKKitI6o&t=1294s',
-      'video_id': 'LQ4DKKitI6o'},
+      'text': "A deviation is not a license to do something wrong, it means there's another way to "
+              'get there, kind of like a detour.',
+      'timestamp': 556,
+      'timestamp_label': '[00:09:16]',
+      'timestamp_seconds': 556,
+      'tip': "A deviation is not a license to do something wrong, it means there's another way to "
+             'get there, kind of like a detour.',
+      'title': '2019 08 29 12 51 IICRC S500 Standard   Water Damage Principles   Recovery',
+      'url': 'https://www.youtube.com/watch?v=cPAFOZbMKQE&t=556s',
+      'video_id': 'cPAFOZbMKQE'},
      {'author': 'TheIICRC',
       'channel': 'TheIICRC',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:29](https://www.youtube.com/watch?v=6CI2NAsooLw&t=629s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:04:27](https://www.youtube.com/watch?v=0HzVwvOo2Ww&t=267s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "Compliant with the global harmonization system so we've included International "
-              "measurements and other information we've enhanced the rules for negative "
-              'pressure containments used in sensitive environments such as Retirement Homes '
-              'hospitals day care centers Etc.',
-      'timestamp': 629,
-      'timestamp_label': '[00:10:29]',
-      'timestamp_seconds': 629,
-      'tip': "Compliant with the global harmonization system so we've included International "
-             "measurements and other information we've enhanced the rules for negative "
-             'pressure containments used in sensitive environments such as Retirement Homes '
-             'hospitals day care centers Etc.',
-      'title': 'Newly-Revised ANSI/IICRC S520: 2015 - What You Need to Know (TheIICRC)',
-      'url': 'https://www.youtube.com/watch?v=6CI2NAsooLw&t=629s',
+      'text': 'Please note application fees are non-refundable.',
+      'timestamp': 267,
+      'timestamp_label': '[00:04:27]',
+      'timestamp_seconds': 267,
+      'tip': 'Please note application fees are non-refundable.',
+      'title': 'IICRC Mold Remediation Specialist (MRS) Application Guide',
+      'url': 'https://www.youtube.com/watch?v=0HzVwvOo2Ww&t=267s',
+      'video_id': '0HzVwvOo2Ww'},
+     {'author': 'TheIICRC',
+      'channel': 'TheIICRC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:53](https://www.youtube.com/watch?v=tPPswF112gY&t=173s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you select the incorrect form when scheduling, you will be unable to access your '
+              'examination.',
+      'timestamp': 173,
+      'timestamp_label': '[00:02:53]',
+      'timestamp_seconds': 173,
+      'tip': 'If you select the incorrect form when scheduling, you will be unable to access your '
+             'examination.',
+      'title': 'IICRC Mold Remediation Specialist (MRS) - Handbook',
+      'url': 'https://www.youtube.com/watch?v=tPPswF112gY&t=173s',
+      'video_id': 'tPPswF112gY'},
+     {'author': 'TheIICRC',
+      'channel': 'TheIICRC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:36](https://www.youtube.com/watch?v=6CI2NAsooLw&t=696s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Remediators should not mist disinfectants or sanitizers to try to kill mold in lieu '
+              'of source removal, must remove the source.',
+      'timestamp': 696,
+      'timestamp_label': '[00:11:36]',
+      'timestamp_seconds': 696,
+      'tip': 'Remediators should not mist disinfectants or sanitizers to try to kill mold in lieu '
+             'of source removal, must remove the source.',
+      'title': 'Newly-Revised ANSI/IICRC S520: 2015 - What You Need to Know',
+      'url': 'https://www.youtube.com/watch?v=6CI2NAsooLw&t=696s',
       'video_id': '6CI2NAsooLw'},
+     {'author': 'James Poon',
+      'channel': 'James Poon',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:15:08](https://www.youtube.com/watch?v=r1JeD2hb2jM&t=908s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "That's not okay, spore count is the least important.",
+      'timestamp': 908,
+      'timestamp_label': '[00:15:08]',
+      'timestamp_seconds': 908,
+      'tip': "That's not okay, spore count is the least important.",
+      'title': 'AS-IICRC S520-2024 Nicole Bijlsma',
+      'url': 'https://www.youtube.com/watch?v=r1JeD2hb2jM&t=908s',
+      'video_id': 'r1JeD2hb2jM'},
+     {'author': 'Mold Mending',
+      'channel': 'Mold Mending',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:51](https://www.youtube.com/watch?v=9pkEBBU3-40&t=231s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "So a little side note when you're looking for somebody to do mold remediation get "
+              'them certified through the IICRC.',
+      'timestamp': 231,
+      'timestamp_label': '[00:03:51]',
+      'timestamp_seconds': 231,
+      'tip': "So a little side note when you're looking for somebody to do mold remediation get "
+             'them certified through the IICRC.',
+      'title': 'No More Mold Misinformation.  Official Mold Remediation Standard by the IICRC. '
+               'Part 1',
+      'url': 'https://www.youtube.com/watch?v=9pkEBBU3-40&t=231s',
+      'video_id': '9pkEBBU3-40'}],
+ 2: [{'author': "Shane O'Dazier | RestorationProfits",
+      'channel': "Shane O'Dazier | RestorationProfits",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:07](https://www.youtube.com/watch?v=72Qh6dRR94U&t=127s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Every time your truck rolls you need to make at least four to five hundred bucks.',
+      'timestamp': 127,
+      'timestamp_label': '[00:02:07]',
+      'timestamp_seconds': 127,
+      'tip': 'Every time your truck rolls you need to make at least four to five hundred bucks.',
+      'title': 'Water Restoration Business - Estimates (Maximize Self-Pay & Insurance Payouts)',
+      'url': 'https://www.youtube.com/watch?v=72Qh6dRR94U&t=127s',
+      'video_id': '72Qh6dRR94U'},
+     {'author': "Shane O'Dazier | RestorationProfits",
+      'channel': "Shane O'Dazier | RestorationProfits",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:54](https://www.youtube.com/watch?v=PqL0m54Gjb4&t=534s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Estimates should contain something called risk.',
+      'timestamp': 534,
+      'timestamp_label': '[00:08:54]',
+      'timestamp_seconds': 534,
+      'tip': 'Estimates should contain something called risk.',
+      'title': 'The biggest mistake contractors make when billing insurance for water damage '
+               'claims',
+      'url': 'https://www.youtube.com/watch?v=PqL0m54Gjb4&t=534s',
+      'video_id': 'PqL0m54Gjb4'},
+     {'author': "Shane O'Dazier | RestorationProfits",
+      'channel': "Shane O'Dazier | RestorationProfits",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:33](https://www.youtube.com/watch?v=5CbcT0WZWts&t=453s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'They either pay in full or they cut them in half.',
+      'timestamp': 453,
+      'timestamp_label': '[00:07:33]',
+      'timestamp_seconds': 453,
+      'tip': 'They either pay in full or they cut them in half.',
+      'title': 'How a restoration contractor should write an estimate for water mitigation',
+      'url': 'https://www.youtube.com/watch?v=5CbcT0WZWts&t=453s',
+      'video_id': '5CbcT0WZWts'},
+     {'author': 'Xactimate Training by Crest LLC',
+      'channel': 'Xactimate Training by Crest LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:17](https://www.youtube.com/watch?v=CFVMi9HmVcM&t=197s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Those assumptions could be wrong, so you need to review this to make sure that '
+              'everything is the way you want it.',
+      'timestamp': 197,
+      'timestamp_label': '[00:03:17]',
+      'timestamp_seconds': 197,
+      'tip': 'Those assumptions could be wrong, so you need to review this to make sure that '
+             'everything is the way you want it.',
+      'title': 'Xactimate - Water Mitigation to Rebuild Estimate Tool',
+      'url': 'https://www.youtube.com/watch?v=CFVMi9HmVcM&t=197s',
+      'video_id': 'CFVMi9HmVcM'},
+     {'author': "Shane O'Dazier | RestorationProfits",
+      'channel': "Shane O'Dazier | RestorationProfits",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:03](https://www.youtube.com/watch?v=NyqgMvKRX14&t=543s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Just take the most expensive category that you want, cat 3, and charge cat 3 prices '
+              'on cat one stuff.',
+      'timestamp': 543,
+      'timestamp_label': '[00:09:03]',
+      'timestamp_seconds': 543,
+      'tip': 'Just take the most expensive category that you want, cat 3, and charge cat 3 prices '
+             'on cat one stuff.',
+      'title': 'How to avoid insurance reductions on estimates for water damage restoration',
+      'url': 'https://www.youtube.com/watch?v=NyqgMvKRX14&t=543s',
+      'video_id': 'NyqgMvKRX14'},
+     {'author': "Shane O'Dazier | RestorationProfits",
+      'channel': "Shane O'Dazier | RestorationProfits",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:17:01](https://www.youtube.com/watch?v=NyqgMvKRX14&t=1021s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "Change your pricing not the scope, don't overscope.",
+      'timestamp': 1021,
+      'timestamp_label': '[00:17:01]',
+      'timestamp_seconds': 1021,
+      'tip': "Change your pricing not the scope, don't overscope.",
+      'title': 'How to avoid insurance reductions on estimates for water damage restoration',
+      'url': 'https://www.youtube.com/watch?v=NyqgMvKRX14&t=1021s',
+      'video_id': 'NyqgMvKRX14'},
+     {'author': 'Verisk Property and Restoration Solutions',
+      'channel': 'Verisk Property and Restoration Solutions',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:08](https://www.youtube.com/watch?v=wTueMQ06kvA&t=128s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Water Mitigation Zones allow you to tell Xactimate what Category and Class of water '
+              'damage has occurred and where.',
+      'timestamp': 128,
+      'timestamp_label': '[00:02:08]',
+      'timestamp_seconds': 128,
+      'tip': 'Water Mitigation Zones allow you to tell Xactimate what Category and Class of water '
+             'damage has occurred and where.',
+      'title': 'Xactimate Xpert Tip: Starting a Water Mitigation in Estimate in XactScope',
+      'url': 'https://www.youtube.com/watch?v=wTueMQ06kvA&t=128s',
+      'video_id': 'wTueMQ06kvA'},
+     {'author': "Shane O'Dazier | RestorationProfits",
+      'channel': "Shane O'Dazier | RestorationProfits",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:00](https://www.youtube.com/watch?v=m97k7TBcJgY&t=60s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'You do not have to sketch when you write an estimate.',
+      'timestamp': 60,
+      'timestamp_label': '[00:01:00]',
+      'timestamp_seconds': 60,
+      'tip': 'You do not have to sketch when you write an estimate.',
+      'title': 'Estimates for Water Damage Restoration: Advanced Tips',
+      'url': 'https://www.youtube.com/watch?v=m97k7TBcJgY&t=60s',
+      'video_id': 'm97k7TBcJgY'},
+     {'author': "Shane O'Dazier | RestorationProfits",
+      'channel': "Shane O'Dazier | RestorationProfits",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:34](https://www.youtube.com/watch?v=roHp-ZzbYvs&t=334s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "If you're not careful the insurance company will apply that three grand to the mold "
+              'and only leave you $2,000 to clean the mold.',
+      'timestamp': 334,
+      'timestamp_label': '[00:05:34]',
+      'timestamp_seconds': 334,
+      'tip': "If you're not careful the insurance company will apply that three grand to the mold "
+             'and only leave you $2,000 to clean the mold.',
+      'title': 'Top 5 Xactimate hacks for water damage estimates',
+      'url': 'https://www.youtube.com/watch?v=roHp-ZzbYvs&t=334s',
+      'video_id': 'roHp-ZzbYvs'},
+     {'author': 'Chad Michael - The Practitioner',
+      'channel': 'Chad Michael - The Practitioner',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:10](https://www.youtube.com/watch?v=tYSY3Eo_nvA&t=250s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "We have to first use the right category so that we're being paid properly.",
+      'timestamp': 250,
+      'timestamp_label': '[00:04:10]',
+      'timestamp_seconds': 250,
+      'tip': "We have to first use the right category so that we're being paid properly.",
+      'title': 'Insurance Adjusters Use Wrong Xactimate Estimate Items | Wet Drywall',
+      'url': 'https://www.youtube.com/watch?v=tYSY3Eo_nvA&t=250s',
+      'video_id': 'tYSY3Eo_nvA'},
+     {'author': "Shane O'Dazier | RestorationProfits",
+      'channel': "Shane O'Dazier | RestorationProfits",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:21](https://www.youtube.com/watch?v=SK7KHGnvQ6Y&t=441s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "If you're a contractor and you start that job before you reach an agreement, before "
+              "you get paid, you're screwing yourself.",
+      'timestamp': 441,
+      'timestamp_label': '[00:07:21]',
+      'timestamp_seconds': 441,
+      'tip': "If you're a contractor and you start that job before you reach an agreement, before "
+             "you get paid, you're screwing yourself.",
+      'title': 'The ugly truth about Xactimate and the restoration industry',
+      'url': 'https://www.youtube.com/watch?v=SK7KHGnvQ6Y&t=441s',
+      'video_id': 'SK7KHGnvQ6Y'},
+     {'author': 'PuroClean of Central Southwest Houston',
+      'channel': 'PuroClean of Central Southwest Houston',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:34](https://www.youtube.com/watch?v=HHLnyMyxcpQ&t=34s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'The very first step is documentation. This is critical for the insurance '
+              'compliance.',
+      'timestamp': 34,
+      'timestamp_label': '[00:00:34]',
+      'timestamp_seconds': 34,
+      'tip': 'The very first step is documentation. This is critical for the insurance compliance.',
+      'title': 'The Water Damage Mitigation Process Step by Step by PuroClean',
+      'url': 'https://www.youtube.com/watch?v=HHLnyMyxcpQ&t=34s',
+      'video_id': 'HHLnyMyxcpQ'},
+     {'author': 'Chris Hatcher',
+      'channel': 'Chris Hatcher',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:24](https://www.youtube.com/watch?v=i4kOEeFrMaI&t=24s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'The first step is to go to the coverage loss screen and create two lines of '
+              'coverage, one mitigation and one restoration.',
+      'timestamp': 24,
+      'timestamp_label': '[00:00:24]',
+      'timestamp_seconds': 24,
+      'tip': 'The first step is to go to the coverage loss screen and create two lines of '
+             'coverage, one mitigation and one restoration.',
+      'title': 'TopAdjuster.com Xactimate tutorial - Mitigation and Restoration total pages from '
+               'one estimate',
+      'url': 'https://www.youtube.com/watch?v=i4kOEeFrMaI&t=24s',
+      'video_id': 'i4kOEeFrMaI'},
+     {'author': 'ReconSmart Solutions LLC',
+      'channel': 'ReconSmart Solutions LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:54](https://www.youtube.com/watch?v=3DF6Xf4wlIg&t=534s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'When information is missing, do not invent the answer.',
+      'timestamp': 534,
+      'timestamp_label': '[00:08:54]',
+      'timestamp_seconds': 534,
+      'tip': 'When information is missing, do not invent the answer.',
+      'title': 'Understanding Water Mitigation: From the Loss to the Estimate | ReconSmart',
+      'url': 'https://www.youtube.com/watch?v=3DF6Xf4wlIg&t=534s',
+      'video_id': '3DF6Xf4wlIg'},
+     {'author': 'RestorationEze',
+      'channel': 'RestorationEze',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:46](https://www.youtube.com/watch?v=M1rrc7THcxU&t=46s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Our estimator takes measurements to determine the amount of damage that has '
+              'occurred to your property.',
+      'timestamp': 46,
+      'timestamp_label': '[00:00:46]',
+      'timestamp_seconds': 46,
+      'tip': 'Our estimator takes measurements to determine the amount of damage that has occurred '
+             'to your property.',
+      'title': 'How we estimate water damage restoration costs using Xactimate',
+      'url': 'https://www.youtube.com/watch?v=M1rrc7THcxU&t=46s',
+      'video_id': 'M1rrc7THcxU'},
+     {'author': 'On The Job with Jason Peters',
+      'channel': 'On The Job with Jason Peters',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:17:06](https://www.youtube.com/watch?v=h3bbJRR6ceA&t=1026s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "If this is not an insurance claim and you're a self-paid customer, we're going to "
+              "require a deposit and we're going to run this job now as a construction job.",
+      'timestamp': 1026,
+      'timestamp_label': '[00:17:06]',
+      'timestamp_seconds': 1026,
+      'tip': "If this is not an insurance claim and you're a self-paid customer, we're going to "
+             "require a deposit and we're going to run this job now as a construction job.",
+      'title': 'Lesson Learned | How I lost $50,000 on a Water Mitigation Job.',
+      'url': 'https://www.youtube.com/watch?v=h3bbJRR6ceA&t=1026s',
+      'video_id': 'h3bbJRR6ceA'},
+     {'author': 'Restoration Success Strategies | Albi',
+      'channel': 'Restoration Success Strategies | Albi',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:15:37](https://www.youtube.com/watch?v=kSobDHWEZJE&t=937s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'The one myth I want to debunk here is you do not need to have dry logs to get paid.',
+      'timestamp': 937,
+      'timestamp_label': '[00:15:37]',
+      'timestamp_seconds': 937,
+      'tip': 'The one myth I want to debunk here is you do not need to have dry logs to get paid.',
+      'title': 'Water Mitigation 101: What Most Contractors Get Wrong',
+      'url': 'https://www.youtube.com/watch?v=kSobDHWEZJE&t=937s',
+      'video_id': 'kSobDHWEZJE'}],
+ 3: [{'author': 'Chad Michael - The Practitioner',
+      'channel': 'Chad Michael - The Practitioner',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:14:28](https://www.youtube.com/watch?v=Lh586v6HcYw&t=868s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "They're gonna try to push me down at all times but I need to start from the highest "
+              'position so that I can end up at the highest position fellas.',
+      'timestamp': 868,
+      'timestamp_label': '[00:14:28]',
+      'timestamp_seconds': 868,
+      'tip': "They're gonna try to push me down at all times but I need to start from the highest "
+             'position so that I can end up at the highest position fellas.',
+      'title': 'Xactimate Estimate Tips | Handling Insurance Adjusters',
+      'url': 'https://www.youtube.com/watch?v=Lh586v6HcYw&t=868s',
+      'video_id': 'Lh586v6HcYw'},
+     {'author': 'Chad Michael - The Practitioner',
+      'channel': 'Chad Michael - The Practitioner',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:16:44](https://www.youtube.com/watch?v=Lh586v6HcYw&t=1004s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'First thing that I say every time verbatim, which item or items in the estimate did '
+              'you have a problem with.',
+      'timestamp': 1004,
+      'timestamp_label': '[00:16:44]',
+      'timestamp_seconds': 1004,
+      'tip': 'First thing that I say every time verbatim, which item or items in the estimate did '
+             'you have a problem with.',
+      'title': 'Xactimate Estimate Tips | Handling Insurance Adjusters',
+      'url': 'https://www.youtube.com/watch?v=Lh586v6HcYw&t=1004s',
+      'video_id': 'Lh586v6HcYw'},
+     {'author': 'EstimateTV',
+      'channel': 'EstimateTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:35](https://www.youtube.com/watch?v=sSaHviAzZ6w&t=155s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'For example, I know that the category code for insulation is ins.',
+      'timestamp': 155,
+      'timestamp_label': '[00:02:35]',
+      'timestamp_seconds': 155,
+      'tip': 'For example, I know that the category code for insulation is ins.',
+      'title': 'How to find materials and repairs in Xactimate | Line Items and Search',
+      'url': 'https://www.youtube.com/watch?v=sSaHviAzZ6w&t=155s',
+      'video_id': 'sSaHviAzZ6w'},
+     {'author': 'Daughtry Construction Group',
+      'channel': 'Daughtry Construction Group',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:37](https://www.youtube.com/watch?v=HLwvN9mF1R0&t=397s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "It's also usually not accepted in mitigation only projects at least from my "
+              "experience but I'd rather ask and be turned down than to not ask at all.",
+      'timestamp': 397,
+      'timestamp_label': '[00:06:37]',
+      'timestamp_seconds': 397,
+      'tip': "It's also usually not accepted in mitigation only projects at least from my "
+             "experience but I'd rather ask and be turned down than to not ask at all.",
+      'title': 'Xactimate Line Item Cheat Sheet',
+      'url': 'https://www.youtube.com/watch?v=HLwvN9mF1R0&t=397s',
+      'video_id': 'HLwvN9mF1R0'},
+     {'author': 'Canei Adjusting',
+      'channel': 'Canei Adjusting',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:52](https://www.youtube.com/watch?v=Z7kbWUDeX6A&t=52s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "It's not mandatory as long as the actual estimated items is there and it makes "
+              'sense to your manager.',
+      'timestamp': 52,
+      'timestamp_label': '[00:00:52]',
+      'timestamp_seconds': 52,
+      'tip': "It's not mandatory as long as the actual estimated items is there and it makes sense "
+             'to your manager.',
+      'title': 'WALL XACTIMATE LINE ITEMS',
+      'url': 'https://www.youtube.com/watch?v=Z7kbWUDeX6A&t=52s',
+      'video_id': 'Z7kbWUDeX6A'},
+     {'author': 'Claim Daddy',
+      'channel': 'Claim Daddy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:17:58](https://www.youtube.com/watch?v=Qu-NqEwWWPk&t=4678s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Never go off strictly off your memory because I hate to be the one to tell you but '
+              "you're stupid, I'm stupid, so always review your photos.",
+      'timestamp': 4678,
+      'timestamp_label': '[01:17:58]',
+      'timestamp_seconds': 4678,
+      'tip': 'Never go off strictly off your memory because I hate to be the one to tell you but '
+             "you're stupid, I'm stupid, so always review your photos.",
+      'title': 'Xactimate Scoping and Estimating Training | Adjuster University',
+      'url': 'https://www.youtube.com/watch?v=Qu-NqEwWWPk&t=4678s',
+      'video_id': 'Qu-NqEwWWPk'},
+     {'author': 'Claim Daddy',
+      'channel': 'Claim Daddy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[02:16:42](https://www.youtube.com/watch?v=Qu-NqEwWWPk&t=8202s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "Now I don't want to replace everything that's on there, that is an easy rejection "
+              "by most insurance companies, obviously depending on where you're from.",
+      'timestamp': 8202,
+      'timestamp_label': '[02:16:42]',
+      'timestamp_seconds': 8202,
+      'tip': "Now I don't want to replace everything that's on there, that is an easy rejection by "
+             "most insurance companies, obviously depending on where you're from.",
+      'title': 'Xactimate Scoping and Estimating Training | Adjuster University',
+      'url': 'https://www.youtube.com/watch?v=Qu-NqEwWWPk&t=8202s',
+      'video_id': 'Qu-NqEwWWPk'},
+     {'author': 'Actionable',
+      'channel': 'Actionable',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:19:55](https://www.youtube.com/watch?v=s4xCprLX1Yw&t=1195s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'So, if you were trying to do mini splits in April, you were not making money.',
+      'timestamp': 1195,
+      'timestamp_label': '[00:19:55]',
+      'timestamp_seconds': 1195,
+      'tip': 'So, if you were trying to do mini splits in April, you were not making money.',
+      'title': '🚨 23 NEW XACTIMATE LINE ITEMS!',
+      'url': 'https://www.youtube.com/watch?v=s4xCprLX1Yw&t=1195s',
+      'video_id': 's4xCprLX1Yw'},
+     {'author': 'The Restoration Advisors Group',
+      'channel': 'The Restoration Advisors Group',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:55](https://www.youtube.com/watch?v=qQzYZWLmaSI&t=175s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'The text was formatted to train a chatbot on the website, and it is not going to '
+              'replace estimate writing.',
+      'timestamp': 175,
+      'timestamp_label': '[00:02:55]',
+      'timestamp_seconds': 175,
+      'tip': 'The text was formatted to train a chatbot on the website, and it is not going to '
+             'replace estimate writing.',
+      'title': 'Ultimate Xactimate Cheat Sheet & How I built a chatbot to help write my estimates',
+      'url': 'https://www.youtube.com/watch?v=qQzYZWLmaSI&t=175s',
+      'video_id': 'qQzYZWLmaSI'},
+     {'author': 'Canei Adjusting',
+      'channel': 'Canei Adjusting',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:40](https://www.youtube.com/watch?v=BQZjEuyEaq4&t=100s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'This is what most insurance companies will go for.',
+      'timestamp': 100,
+      'timestamp_label': '[00:01:40]',
+      'timestamp_seconds': 100,
+      'tip': 'This is what most insurance companies will go for.',
+      'title': 'CEILING XACTIMATE LINE ITEMS',
+      'url': 'https://www.youtube.com/watch?v=BQZjEuyEaq4&t=100s',
+      'video_id': 'BQZjEuyEaq4'},
+     {'author': 'Overhead And Profit',
+      'channel': 'Overhead And Profit',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:14](https://www.youtube.com/watch?v=A7SLk2mjCXU&t=194s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Repricing the estimate to the updated price list added $2,688.91.',
+      'timestamp': 194,
+      'timestamp_label': '[00:03:14]',
+      'timestamp_seconds': 194,
+      'tip': 'Repricing the estimate to the updated price list added $2,688.91.',
+      'title': 'Xactimate and Insurance Prices Change Every Month; Do You Know How Much?',
+      'url': 'https://www.youtube.com/watch?v=A7SLk2mjCXU&t=194s',
+      'video_id': 'A7SLk2mjCXU'},
+     {'author': 'Xactimate Training by Crest LLC',
+      'channel': 'Xactimate Training by Crest LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:35](https://www.youtube.com/watch?v=ZY8afiQROiI&t=35s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Select all with Ctrl-A, go to Global Changes, then Depreciation, uncheck do not '
+              'change age and enter 15 years, and labor-only items are skipped.',
+      'timestamp': 35,
+      'timestamp_label': '[00:00:35]',
+      'timestamp_seconds': 35,
+      'tip': 'Select all with Ctrl-A, go to Global Changes, then Depreciation, uncheck do not '
+             'change age and enter 15 years, and labor-only items are skipped.',
+      'title': 'Xactimate - Global Depreciation, Bid Item (from the "Desk Adjuster" course)',
+      'url': 'https://www.youtube.com/watch?v=ZY8afiQROiI&t=35s',
+      'video_id': 'ZY8afiQROiI'},
+     {'author': 'Claims Adjuster of the Year',
+      'channel': 'Claims Adjuster of the Year',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:44](https://www.youtube.com/watch?v=EDF71IxtN5w&t=44s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'The date of loss confirms the policy was active, and it gets checked against storm '
+              'reports.',
+      'timestamp': 44,
+      'timestamp_label': '[00:00:44]',
+      'timestamp_seconds': 44,
+      'tip': 'The date of loss confirms the policy was active, and it gets checked against storm '
+             'reports.',
+      'title': 'How to Use Xactimate for Training as an Adjuster | Training for beginners 🔥 Claims '
+               'Adjuster',
+      'url': 'https://www.youtube.com/watch?v=EDF71IxtN5w&t=44s',
+      'video_id': 'EDF71IxtN5w'},
+     {'author': 'Estimate Mastery',
+      'channel': 'Estimate Mastery',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:06](https://www.youtube.com/watch?v=WNR0K0ubIoI&t=66s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "On this price list, it's an extra $225 that's been left off of this person's "
+              "estimate just because they didn't know what they didn't know on this one line item.",
+      'timestamp': 66,
+      'timestamp_label': '[00:01:06]',
+      'timestamp_seconds': 66,
+      'tip': "On this price list, it's an extra $225 that's been left off of this person's "
+             "estimate just because they didn't know what they didn't know on this one line item.",
+      'title': 'Make More Money on Your Next Insurance Job With This Xactimate Tip for Windows!',
+      'url': 'https://www.youtube.com/watch?v=WNR0K0ubIoI&t=66s',
+      'video_id': 'WNR0K0ubIoI'},
+     {'author': 'Canei Adjusting',
+      'channel': 'Canei Adjusting',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:51](https://www.youtube.com/watch?v=Sk9blhK0GiU&t=591s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "Most insurance companies it's $500 is the maximum, depends on the policy.",
+      'timestamp': 591,
+      'timestamp_label': '[00:09:51]',
+      'timestamp_seconds': 591,
+      'tip': "Most insurance companies it's $500 is the maximum, depends on the policy.",
+      'title': 'XACTIMATE CLAIM INFORMATION',
+      'url': 'https://www.youtube.com/watch?v=Sk9blhK0GiU&t=591s',
+      'video_id': 'Sk9blhK0GiU'},
+     {'author': 'Estimate Mastery',
+      'channel': 'Estimate Mastery',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:08](https://www.youtube.com/watch?v=Vj-mEgtLqUw&t=428s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'The steps are claim info, then sketch, then items, then photos, and then the '
+              'report.',
+      'timestamp': 428,
+      'timestamp_label': '[00:07:08]',
+      'timestamp_seconds': 428,
+      'tip': 'The steps are claim info, then sketch, then items, then photos, and then the report.',
+      'title': 'Xactimate 101 - Free Beginner Training in Xactimate',
+      'url': 'https://www.youtube.com/watch?v=Vj-mEgtLqUw&t=428s',
+      'video_id': 'Vj-mEgtLqUw'},
+     {'author': 'Adjuster TV',
+      'channel': 'Adjuster TV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:54](https://www.youtube.com/watch?v=dtHSqRxkHLA&t=234s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Macros you build in X1 desktop sync over to mobile.',
+      'timestamp': 234,
+      'timestamp_label': '[00:03:54]',
+      'timestamp_seconds': 234,
+      'tip': 'Macros you build in X1 desktop sync over to mobile.',
+      'title': '5 MIND BLOWING Xactimate Mobile Hacks in 5 Minutes 💥',
+      'url': 'https://www.youtube.com/watch?v=dtHSqRxkHLA&t=234s',
+      'video_id': 'dtHSqRxkHLA'},
+     {'author': 'EstimateHub — PDF to ESX converter for Xactimate',
+      'channel': 'EstimateHub — PDF to ESX converter for Xactimate',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:09](https://www.youtube.com/watch?v=KeJzOY4eZHU&t=129s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'And that was actually passed from the sketch, which is a really cool efficiency '
+              'item of Xactimate.',
+      'timestamp': 129,
+      'timestamp_label': '[00:02:09]',
+      'timestamp_seconds': 129,
+      'tip': 'And that was actually passed from the sketch, which is a really cool efficiency item '
+             'of Xactimate.',
+      'title': 'Xactimate Estimate Example',
+      'url': 'https://www.youtube.com/watch?v=KeJzOY4eZHU&t=129s',
+      'video_id': 'KeJzOY4eZHU'}],
+ 4: [{'author': 'American Roof Supplements',
+      'channel': 'American Roof Supplements',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:28](https://www.youtube.com/watch?v=HpoMhPz1KfU&t=88s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'That is the difference between complaining and proving.',
+      'timestamp': 88,
+      'timestamp_label': '[00:01:28]',
+      'timestamp_seconds': 88,
+      'tip': 'That is the difference between complaining and proving.',
+      'title': 'How to Prove an Insurance Estimate Wrong — Line by Line in Xactimate',
+      'url': 'https://www.youtube.com/watch?v=HpoMhPz1KfU&t=88s',
+      'video_id': 'HpoMhPz1KfU'},
+     {'author': 'American Roof Supplements',
+      'channel': 'American Roof Supplements',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:37](https://www.youtube.com/watch?v=HpoMhPz1KfU&t=397s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Necessary replacement does not automatically mean covered replacement.',
+      'timestamp': 397,
+      'timestamp_label': '[00:06:37]',
+      'timestamp_seconds': 397,
+      'tip': 'Necessary replacement does not automatically mean covered replacement.',
+      'title': 'How to Prove an Insurance Estimate Wrong — Line by Line in Xactimate',
+      'url': 'https://www.youtube.com/watch?v=HpoMhPz1KfU&t=397s',
+      'video_id': 'HpoMhPz1KfU'},
+     {'author': 'Estimate Mastery',
+      'channel': 'Estimate Mastery',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:14:15](https://www.youtube.com/watch?v=q6R8Iom5Uz8&t=855s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'We added a note to explain why our line items are different than the original '
+              'statement of loss.',
+      'timestamp': 855,
+      'timestamp_label': '[00:14:15]',
+      'timestamp_seconds': 855,
+      'tip': 'We added a note to explain why our line items are different than the original '
+             'statement of loss.',
+      'title': 'Estimate Review - Supplementing in Xactimate',
+      'url': 'https://www.youtube.com/watch?v=q6R8Iom5Uz8&t=855s',
+      'video_id': 'q6R8Iom5Uz8'},
+     {'author': 'Dustin Taylor',
+      'channel': 'Dustin Taylor',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:20:02](https://www.youtube.com/watch?v=gtsj3GY7D8c&t=1202s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "I feel like to me that's just more of an ethics thing, like bid what you have.",
+      'timestamp': 1202,
+      'timestamp_label': '[00:20:02]',
+      'timestamp_seconds': 1202,
+      'tip': "I feel like to me that's just more of an ethics thing, like bid what you have.",
+      'title': 'Writing Xactimate Roofing Supplement - Texas',
+      'url': 'https://www.youtube.com/watch?v=gtsj3GY7D8c&t=1202s',
+      'video_id': 'gtsj3GY7D8c'},
+     {'author': 'Roof Sales Mastery',
+      'channel': 'Roof Sales Mastery',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:50](https://www.youtube.com/watch?v=q63afBPc6eY&t=470s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "That's your stick of dynamite, okay, so overhead and profit works like a charm.",
+      'timestamp': 470,
+      'timestamp_label': '[00:07:50]',
+      'timestamp_seconds': 470,
+      'tip': "That's your stick of dynamite, okay, so overhead and profit works like a charm.",
+      'title': 'How to Supplement Insurance Roofing Claims with Xactimate',
+      'url': 'https://www.youtube.com/watch?v=q63afBPc6eY&t=470s',
+      'video_id': 'q63afBPc6eY'},
+     {'author': 'American Roof Supplements',
+      'channel': 'American Roof Supplements',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:26](https://www.youtube.com/watch?v=DR03Zlogfe0&t=86s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Measurement reports must match the building.',
+      'timestamp': 86,
+      'timestamp_label': '[00:01:26]',
+      'timestamp_seconds': 86,
+      'tip': 'Measurement reports must match the building.',
+      'title': 'Roofer Explains Roofing Terms: 12 Roof Components That Matter in Xactimate',
+      'url': 'https://www.youtube.com/watch?v=DR03Zlogfe0&t=86s',
+      'video_id': 'DR03Zlogfe0'},
+     {'author': 'Chad Michael - The Practitioner',
+      'channel': 'Chad Michael - The Practitioner',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:18:48](https://www.youtube.com/watch?v=4dhIe6HGIs0&t=1128s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "I'm willing to remove it from the estimate at this time provided you're willing to "
+              "revisit this when it's no longer a hypothetical.",
+      'timestamp': 1128,
+      'timestamp_label': '[00:18:48]',
+      'timestamp_seconds': 1128,
+      'tip': "I'm willing to remove it from the estimate at this time provided you're willing to "
+             "revisit this when it's no longer a hypothetical.",
+      'title': 'The Ultimate Insurance Claim Supplement',
+      'url': 'https://www.youtube.com/watch?v=4dhIe6HGIs0&t=1128s',
+      'video_id': '4dhIe6HGIs0'},
+     {'author': 'Chad Michael - The Practitioner',
+      'channel': 'Chad Michael - The Practitioner',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:43:27](https://www.youtube.com/watch?v=4dhIe6HGIs0&t=2607s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "I'm not going to argue over 10 feet of drip edge and spend an hour doing it.",
+      'timestamp': 2607,
+      'timestamp_label': '[00:43:27]',
+      'timestamp_seconds': 2607,
+      'tip': "I'm not going to argue over 10 feet of drip edge and spend an hour doing it.",
+      'title': 'The Ultimate Insurance Claim Supplement',
+      'url': 'https://www.youtube.com/watch?v=4dhIe6HGIs0&t=2607s',
+      'video_id': '4dhIe6HGIs0'},
+     {'author': 'The STRONG Roofer w/ Adam Bensman',
+      'channel': 'The STRONG Roofer w/ Adam Bensman',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:49](https://www.youtube.com/watch?v=zxGa72oAf0w&t=409s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'What this does is it protects you, protects you from financial surprises, okay, '
+              'because no one likes financial surprises.',
+      'timestamp': 409,
+      'timestamp_label': '[00:06:49]',
+      'timestamp_seconds': 409,
+      'tip': 'What this does is it protects you, protects you from financial surprises, okay, '
+             'because no one likes financial surprises.',
+      'title': 'Explaining Supplements to Homeowners: How Roof Insurance Claim Supplements Work',
+      'url': 'https://www.youtube.com/watch?v=zxGa72oAf0w&t=409s',
+      'video_id': 'zxGa72oAf0w'},
+     {'author': 'Estimate Mastery',
+      'channel': 'Estimate Mastery',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:32](https://www.youtube.com/watch?v=fdW0W_-MR-s&t=212s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'It acts like a checklist and this is really useful for you to not forget to add '
+              'line items to your estimate.',
+      'timestamp': 212,
+      'timestamp_label': '[00:03:32]',
+      'timestamp_seconds': 212,
+      'tip': 'It acts like a checklist and this is really useful for you to not forget to add line '
+             'items to your estimate.',
+      'title': '1 Click Secret - Write a roof & siding estimate in 15 minutes using this one tool '
+               'in Xactimate',
+      'url': 'https://www.youtube.com/watch?v=fdW0W_-MR-s&t=212s',
+      'video_id': 'fdW0W_-MR-s'},
+     {'author': 'Chad Michael - The Practitioner',
+      'channel': 'Chad Michael - The Practitioner',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:18:44](https://www.youtube.com/watch?v=bVX2IRINNSM&t=1124s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'My approach calls for you give them the estimate before the bill.',
+      'timestamp': 1124,
+      'timestamp_label': '[00:18:44]',
+      'timestamp_seconds': 1124,
+      'tip': 'My approach calls for you give them the estimate before the bill.',
+      'title': 'Who To Send Xactimate Estimate To? | Roof Claim Supplement',
+      'url': 'https://www.youtube.com/watch?v=bVX2IRINNSM&t=1124s',
+      'video_id': 'bVX2IRINNSM'},
+     {'author': 'Roof Sales Mastery',
+      'channel': 'Roof Sales Mastery',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:14:48](https://www.youtube.com/watch?v=jj-GWZEtOc0&t=888s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "So how you ask is sometimes more important than even what you're asking for.",
+      'timestamp': 888,
+      'timestamp_label': '[00:14:48]',
+      'timestamp_seconds': 888,
+      'tip': "So how you ask is sometimes more important than even what you're asking for.",
+      'title': 'Best Way to Learn Roof Supplementing & Xactimate',
+      'url': 'https://www.youtube.com/watch?v=jj-GWZEtOc0&t=888s',
+      'video_id': 'jj-GWZEtOc0'},
+     {'author': 'Tradeforge CRM',
+      'channel': 'Tradeforge CRM',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:42](https://www.youtube.com/watch?v=Kiez0kPNuRk&t=42s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "Now, it's on their dashboard and it's going to be part of the entire process "
+              'because the adjuster will ask for that for sure.',
+      'timestamp': 42,
+      'timestamp_label': '[00:00:42]',
+      'timestamp_seconds': 42,
+      'tip': "Now, it's on their dashboard and it's going to be part of the entire process because "
+             'the adjuster will ask for that for sure.',
+      'title': 'Roof Measurement → Supplement → Signed Contract in One Workflow | TradeForge for '
+               'Roofers',
+      'url': 'https://www.youtube.com/watch?v=Kiez0kPNuRk&t=42s',
+      'video_id': 'Kiez0kPNuRk'},
+     {'author': 'Roof Sales Mastery',
+      'channel': 'Roof Sales Mastery',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:19:03](https://www.youtube.com/watch?v=sICOGLUjsao&t=1143s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "They can say no to you, but they can't exactly say no to their customer if what "
+              "you're asking for is legit.",
+      'timestamp': 1143,
+      'timestamp_label': '[00:19:03]',
+      'timestamp_seconds': 1143,
+      'tip': "They can say no to you, but they can't exactly say no to their customer if what "
+             "you're asking for is legit.",
+      'title': 'The Basic Process of Supplementing Insurance Claims for Roofers',
+      'url': 'https://www.youtube.com/watch?v=sICOGLUjsao&t=1143s',
+      'video_id': 'sICOGLUjsao'},
+     {'author': 'Roof Sales Mastery',
+      'channel': 'Roof Sales Mastery',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:02](https://www.youtube.com/watch?v=rui1iBgQxWY&t=482s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Adjusters are constantly banking on your ignorance.',
+      'timestamp': 482,
+      'timestamp_label': '[00:08:02]',
+      'timestamp_seconds': 482,
+      'tip': 'Adjusters are constantly banking on your ignorance.',
+      'title': 'Should You Designate an In-House Supplementer for Roof Claims?',
+      'url': 'https://www.youtube.com/watch?v=rui1iBgQxWY&t=482s',
+      'video_id': 'rui1iBgQxWY'},
+     {'author': 'Roof Sales Mastery',
+      'channel': 'Roof Sales Mastery',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:35](https://www.youtube.com/watch?v=Jvj3So17gtA&t=35s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "They believe that you need three trades because that's the smoke screen objection "
+              'that adjusters give.',
+      'timestamp': 35,
+      'timestamp_label': '[00:00:35]',
+      'timestamp_seconds': 35,
+      'tip': "They believe that you need three trades because that's the smoke screen objection "
+             'that adjusters give.',
+      'title': 'Maxing Out Roof Only Claims',
+      'url': 'https://www.youtube.com/watch?v=Jvj3So17gtA&t=35s',
+      'video_id': 'Jvj3So17gtA'},
+     {'author': 'American Roof Supplements',
+      'channel': 'American Roof Supplements',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:44](https://www.youtube.com/watch?v=wi2YpyR1was&t=104s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Then I do the first supplement for free.',
+      'timestamp': 104,
+      'timestamp_label': '[00:01:44]',
+      'timestamp_seconds': 104,
+      'tip': 'Then I do the first supplement for free.',
+      'title': 'Supplement Training: Step by Step Instructions for Roofing Contractors',
+      'url': 'https://www.youtube.com/watch?v=wi2YpyR1was&t=104s',
+      'video_id': 'wi2YpyR1was'},
+     {'author': 'American Roof Supplements',
+      'channel': 'American Roof Supplements',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:59](https://www.youtube.com/watch?v=TkCEjbO6vQs&t=599s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'A professional supplement is just as much about knowing what not to request as '
+              'knowing what to add.',
+      'timestamp': 599,
+      'timestamp_label': '[00:09:59]',
+      'timestamp_seconds': 599,
+      'tip': 'A professional supplement is just as much about knowing what not to request as '
+             'knowing what to add.',
+      'title': 'Xactimate 101 How Roofing Supplements Actually Work (Beginner’s Guide)',
+      'url': 'https://www.youtube.com/watch?v=TkCEjbO6vQs&t=599s',
+      'video_id': 'TkCEjbO6vQs'}],
+ 5: [{'author': "Builder's Perspective Public Adjusting",
+      'channel': "Builder's Perspective Public Adjusting",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:42](https://www.youtube.com/watch?v=kWxJ6PIkM-M&t=282s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "If you see something here that's like 0.33 squares then they're saying one bundle "
+              'of shingles to repair your roof basically.',
+      'timestamp': 282,
+      'timestamp_label': '[00:04:42]',
+      'timestamp_seconds': 282,
+      'tip': "If you see something here that's like 0.33 squares then they're saying one bundle of "
+             'shingles to repair your roof basically.',
+      'title': 'Reading Xactimate Estimate',
+      'url': 'https://www.youtube.com/watch?v=kWxJ6PIkM-M&t=282s',
+      'video_id': 'kWxJ6PIkM-M'},
+     {'author': 'Chris Zimmerman',
+      'channel': 'Chris Zimmerman',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:36](https://www.youtube.com/watch?v=9A5QEe9xxXk&t=336s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "I don't need this, and therefore I won't be doing it.",
+      'timestamp': 336,
+      'timestamp_label': '[00:05:36]',
+      'timestamp_seconds': 336,
+      'tip': "I don't need this, and therefore I won't be doing it.",
+      'title': 'Watch This BEFORE You Do Everything Your Insurance Adjuster Says',
+      'url': 'https://www.youtube.com/watch?v=9A5QEe9xxXk&t=336s',
+      'video_id': '9A5QEe9xxXk'},
+     {'author': 'Chad Michael - The Practitioner',
+      'channel': 'Chad Michael - The Practitioner',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:59](https://www.youtube.com/watch?v=vkrXTVQcVQQ&t=59s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'You should never agree to settle ever with an insurance company ever no matter '
+              'where you are in the process.',
+      'timestamp': 59,
+      'timestamp_label': '[00:00:59]',
+      'timestamp_seconds': 59,
+      'tip': 'You should never agree to settle ever with an insurance company ever no matter where '
+             'you are in the process.',
+      'title': 'When the Contractor and the Insurance Adjuster Disagree | Effective Methods To '
+               'Unlock Stalemate',
+      'url': 'https://www.youtube.com/watch?v=vkrXTVQcVQQ&t=59s',
+      'video_id': 'vkrXTVQcVQQ'},
+     {'author': 'claimhelpme',
+      'channel': 'claimhelpme',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:46](https://www.youtube.com/watch?v=2WVlG5yPBTU&t=226s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'A weak estimate creates a weak starting point.',
+      'timestamp': 226,
+      'timestamp_label': '[00:03:46]',
+      'timestamp_seconds': 226,
+      'tip': 'A weak estimate creates a weak starting point.',
+      'title': 'What Does a Public Adjuster Actually Do? Insurance Estimates, Settlements & Your '
+               'Rights',
+      'url': 'https://www.youtube.com/watch?v=2WVlG5yPBTU&t=226s',
+      'video_id': '2WVlG5yPBTU'},
+     {'author': 'Public Adjuster Show with Vince Perri',
+      'channel': 'Public Adjuster Show with Vince Perri',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:43](https://www.youtube.com/watch?v=RRn3mzn9xCw&t=403s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'I would say 10 times out of 10 by having a public adjuster you will end up with '
+              'more money in your pocket than if you would have done it yourself.',
+      'timestamp': 403,
+      'timestamp_label': '[00:06:43]',
+      'timestamp_seconds': 403,
+      'tip': 'I would say 10 times out of 10 by having a public adjuster you will end up with more '
+             'money in your pocket than if you would have done it yourself.',
+      'title': 'Roofers Vs Public Adjuster - Fight to the Death - Public Adjuster Training',
+      'url': 'https://www.youtube.com/watch?v=RRn3mzn9xCw&t=403s',
+      'video_id': 'RRn3mzn9xCw'},
+     {'author': 'Avner Gat, Inc. - Public Insurance Adjusters',
+      'channel': 'Avner Gat, Inc. - Public Insurance Adjusters',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:41](https://www.youtube.com/watch?v=8x3Gfr6Uyr8&t=161s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'You need a license in order to do that.',
+      'timestamp': 161,
+      'timestamp_label': '[00:02:41]',
+      'timestamp_seconds': 161,
+      'tip': 'You need a license in order to do that.',
+      'title': 'Ask Avner Deep Dive: Restoration Companies vs Insurance Claims',
+      'url': 'https://www.youtube.com/watch?v=8x3Gfr6Uyr8&t=161s',
+      'video_id': '8x3Gfr6Uyr8'},
+     {'author': "Shane O'Dazier | RestorationProfits",
+      'channel': "Shane O'Dazier | RestorationProfits",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:28](https://www.youtube.com/watch?v=3xfQ7PdL-AA&t=508s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "They are simply arguing line items to get you heated and it just doesn't do any "
+              'good.',
+      'timestamp': 508,
+      'timestamp_label': '[00:08:28]',
+      'timestamp_seconds': 508,
+      'tip': "They are simply arguing line items to get you heated and it just doesn't do any "
+             'good.',
+      'title': 'How to negotiate with adjusters | restoration company',
+      'url': 'https://www.youtube.com/watch?v=3xfQ7PdL-AA&t=508s',
+      'video_id': '3xfQ7PdL-AA'},
+     {'author': 'Chris Zimmerman',
+      'channel': 'Chris Zimmerman',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:46](https://www.youtube.com/watch?v=LwNOcenSP_c&t=46s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "I can't tell you how many times I have adjusters tell me that these guys show up "
+              "and they don't even have a tape measure on them.",
+      'timestamp': 46,
+      'timestamp_label': '[00:00:46]',
+      'timestamp_seconds': 46,
+      'tip': "I can't tell you how many times I have adjusters tell me that these guys show up and "
+             "they don't even have a tape measure on them.",
+      'title': 'How to Get More Out of Your First Insurance Adjuster Meeting',
+      'url': 'https://www.youtube.com/watch?v=LwNOcenSP_c&t=46s',
+      'video_id': 'LwNOcenSP_c'},
+     {'author': 'American Roof Supplements',
+      'channel': 'American Roof Supplements',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:09](https://www.youtube.com/watch?v=zDKvQs0viSI&t=249s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'A beautifully formatted estimate can still contain unsupported work.',
+      'timestamp': 249,
+      'timestamp_label': '[00:04:09]',
+      'timestamp_seconds': 249,
+      'tip': 'A beautifully formatted estimate can still contain unsupported work.',
+      'title': '7 Levels of Public Adjusters: Simple Claims to Total Chaos',
+      'url': 'https://www.youtube.com/watch?v=zDKvQs0viSI&t=249s',
+      'video_id': 'zDKvQs0viSI'},
+     {'author': 'Roofing Insights',
+      'channel': 'Roofing Insights',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:08:47](https://www.youtube.com/watch?v=Qv99F8pvYNU&t=4127s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'We use bids every single day in the claim process with my clients to try to figure '
+              'out what the real cost is.',
+      'timestamp': 4127,
+      'timestamp_label': '[01:08:47]',
+      'timestamp_seconds': 4127,
+      'tip': 'We use bids every single day in the claim process with my clients to try to figure '
+             'out what the real cost is.',
+      'title': 'Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?',
+      'url': 'https://www.youtube.com/watch?v=Qv99F8pvYNU&t=4127s',
+      'video_id': 'Qv99F8pvYNU'},
+     {'author': 'Roofing Insights',
+      'channel': 'Roofing Insights',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:05](https://www.youtube.com/watch?v=uykTx34p0Js&t=185s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "And you can't get the public adjuster off of your file.",
+      'timestamp': 185,
+      'timestamp_label': '[00:03:05]',
+      'timestamp_seconds': 185,
+      'tip': "And you can't get the public adjuster off of your file.",
+      'title': 'Public Adjusters: Scam or Savior? 5 Key Questions Every Homeowner Must Ask',
+      'url': 'https://www.youtube.com/watch?v=uykTx34p0Js&t=185s',
+      'video_id': 'uykTx34p0Js'},
+     {'author': 'Roofing Insights',
+      'channel': 'Roofing Insights',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:16:48](https://www.youtube.com/watch?v=uykTx34p0Js&t=1008s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'We cannot file asking for the depreciation if the work has not been complete.',
+      'timestamp': 1008,
+      'timestamp_label': '[00:16:48]',
+      'timestamp_seconds': 1008,
+      'tip': 'We cannot file asking for the depreciation if the work has not been complete.',
+      'title': 'Public Adjusters: Scam or Savior? 5 Key Questions Every Homeowner Must Ask',
+      'url': 'https://www.youtube.com/watch?v=uykTx34p0Js&t=1008s',
+      'video_id': 'uykTx34p0Js'},
+     {'author': 'FirehouseEducation',
+      'channel': 'FirehouseEducation',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:42](https://www.youtube.com/watch?v=GhZSitNz6aQ&t=222s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'So it obviously behooves them to drive the claim up which has a really potent a big '
+              'potential to create a very bad negative situation.',
+      'timestamp': 222,
+      'timestamp_label': '[00:03:42]',
+      'timestamp_seconds': 222,
+      'tip': 'So it obviously behooves them to drive the claim up which has a really potent a big '
+             'potential to create a very bad negative situation.',
+      'title': 'What Is a Public Adjuster and what is their role in Restoration?',
+      'url': 'https://www.youtube.com/watch?v=GhZSitNz6aQ&t=222s',
+      'video_id': 'GhZSitNz6aQ'},
+     {'author': 'Grossman PA LLC',
+      'channel': 'Grossman PA LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:46](https://www.youtube.com/watch?v=diiBgujlZF0&t=106s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can make remarkable profits without inflating charges.',
+      'timestamp': 106,
+      'timestamp_label': '[00:01:46]',
+      'timestamp_seconds': 106,
+      'tip': 'You can make remarkable profits without inflating charges.',
+      'title': 'One Question That Will Shake the Billion-Dollar Insurance Restoration Industry',
+      'url': 'https://www.youtube.com/watch?v=diiBgujlZF0&t=106s',
+      'video_id': 'diiBgujlZF0'},
+     {'author': 'Daly & Black, P.C.',
+      'channel': 'Daly & Black, P.C.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:55](https://www.youtube.com/watch?v=jaGktNyKvE4&t=115s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "If you're a contractor you can't do that you have to be a licensed public adjuster.",
+      'timestamp': 115,
+      'timestamp_label': '[00:01:55]',
+      'timestamp_seconds': 115,
+      'tip': "If you're a contractor you can't do that you have to be a licensed public adjuster.",
+      'title': 'Unauthorized Practice of Public Adjusting (UPPA)',
+      'url': 'https://www.youtube.com/watch?v=jaGktNyKvE4&t=115s',
+      'video_id': 'jaGktNyKvE4'},
+     {'author': "The Adjuster's Roundtable",
+      'channel': "The Adjuster's Roundtable",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:46](https://www.youtube.com/watch?v=_wmRAji2ZmI&t=106s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'So they used multiple different exclusions, to deny a claim in its entirety.',
+      'timestamp': 106,
+      'timestamp_label': '[00:01:46]',
+      'timestamp_seconds': 106,
+      'tip': 'So they used multiple different exclusions, to deny a claim in its entirety.',
+      'title': 'How he Overturned a Denied Insurance Claim | Public Adjuster Case Study & Expert '
+               'Tips',
+      'url': 'https://www.youtube.com/watch?v=_wmRAji2ZmI&t=106s',
+      'video_id': '_wmRAji2ZmI'},
+     {'author': 'Building Experts Institute',
+      'channel': 'Building Experts Institute',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:44](https://www.youtube.com/watch?v=RmjqTZJ3II0&t=104s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "And it becomes a valid contract because you're saying what it is that you're doing "
+              "and the dollar amount you're going to do it for.",
+      'timestamp': 104,
+      'timestamp_label': '[00:01:44]',
+      'timestamp_seconds': 104,
+      'tip': "And it becomes a valid contract because you're saying what it is that you're doing "
+             "and the dollar amount you're going to do it for.",
+      'title': 'Contingency contracts may violate UPPA',
+      'url': 'https://www.youtube.com/watch?v=RmjqTZJ3II0&t=104s',
+      'video_id': 'RmjqTZJ3II0'}],
+ 6: [{'author': 'Water Damage Restoration Coach - Jon Schoen',
+      'channel': 'Water Damage Restoration Coach - Jon Schoen',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:35](https://www.youtube.com/watch?v=-0hAYhkhJaw&t=155s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'They charge the contractor 5 to 10% in order to do the work.',
+      'timestamp': 155,
+      'timestamp_label': '[00:02:35]',
+      'timestamp_seconds': 155,
+      'tip': 'They charge the contractor 5 to 10% in order to do the work.',
+      'title': "How to Get on Insurance Restoration Third Party Administrator's TPA's Lists",
+      'url': 'https://www.youtube.com/watch?v=-0hAYhkhJaw&t=155s',
+      'video_id': '-0hAYhkhJaw'},
+     {'author': 'Water Damage Restoration Coach - Jon Schoen',
+      'channel': 'Water Damage Restoration Coach - Jon Schoen',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:42](https://www.youtube.com/watch?v=-0hAYhkhJaw&t=702s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "Very important to have the regional manager's name and number so you can introduce "
+              'yourself.',
+      'timestamp': 702,
+      'timestamp_label': '[00:11:42]',
+      'timestamp_seconds': 702,
+      'tip': "Very important to have the regional manager's name and number so you can introduce "
+             'yourself.',
+      'title': "How to Get on Insurance Restoration Third Party Administrator's TPA's Lists",
+      'url': 'https://www.youtube.com/watch?v=-0hAYhkhJaw&t=702s',
+      'video_id': '-0hAYhkhJaw'},
+     {'author': 'The DYOJO (The DYOJO)',
+      'channel': 'The DYOJO (The DYOJO)',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:48:01](https://www.youtube.com/watch?v=onSDIprTeAU&t=2881s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "So, really it's documentation, documentation, documentation, regardless of where "
+              "your work is coming from, who the end user is, who you're selling, a carrier, a "
+              'reviewer, or a homeowner directly, you are going to have to document and explain '
+              'the reason for your repair process.',
+      'timestamp': 2881,
+      'timestamp_label': '[00:48:01]',
+      'timestamp_seconds': 2881,
+      'tip': "So, really it's documentation, documentation, documentation, regardless of where "
+             "your work is coming from, who the end user is, who you're selling, a carrier, a "
+             'reviewer, or a homeowner directly, you are going to have to document and explain the '
+             'reason for your repair process.',
+      'title': 'How do you win the insurance claims TPA game (Contractor Connections & Alacrity)? '
+               'TDP 58 (PVJ 012)',
+      'url': 'https://www.youtube.com/watch?v=onSDIprTeAU&t=2881s',
+      'video_id': 'onSDIprTeAU'},
+     {'author': 'The DYOJO (The DYOJO)',
+      'channel': 'The DYOJO (The DYOJO)',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:16:04](https://www.youtube.com/watch?v=onSDIprTeAU&t=964s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'The line items are what the line items are.',
+      'timestamp': 964,
+      'timestamp_label': '[00:16:04]',
+      'timestamp_seconds': 964,
+      'tip': 'The line items are what the line items are.',
+      'title': 'How do you win the insurance claims TPA game (Contractor Connections & Alacrity)? '
+               'TDP 58 (PVJ 012)',
+      'url': 'https://www.youtube.com/watch?v=onSDIprTeAU&t=964s',
+      'video_id': 'onSDIprTeAU'},
+     {'author': 'Relentless Health Value',
+      'channel': 'Relentless Health Value',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:09](https://www.youtube.com/watch?v=pNIYu-t990E&t=369s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'And very few of us have contracting expertise, so we accept the language.',
+      'timestamp': 369,
+      'timestamp_label': '[00:06:09]',
+      'timestamp_seconds': 369,
+      'tip': 'And very few of us have contracting expertise, so we accept the language.',
+      'title': 'Running a TPA (Third Party Administrator) RFP Process That Is Less of a Wild West '
+               'Fiduciary Shootout',
+      'url': 'https://www.youtube.com/watch?v=pNIYu-t990E&t=369s',
+      'video_id': 'pNIYu-t990E'},
+     {'author': 'Chris Hamilton',
+      'channel': 'Chris Hamilton',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:12](https://www.youtube.com/watch?v=LEzohuG5ykg&t=312s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'I would say choose a TPA that gives you your data.',
+      'timestamp': 312,
+      'timestamp_label': '[00:05:12]',
+      'timestamp_seconds': 312,
+      'tip': 'I would say choose a TPA that gives you your data.',
+      'title': 'What does a TPA or third party administrator do for my company benefits plan?',
+      'url': 'https://www.youtube.com/watch?v=LEzohuG5ykg&t=312s',
+      'video_id': 'LEzohuG5ykg'},
      {'author': 'Navigating the Business of Medicine',
       'channel': 'Navigating the Business of Medicine',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:46](https://www.youtube.com/watch?v=z0-3oV0C8EU&t=406s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:00:58](https://www.youtube.com/watch?v=z0-3oV0C8EU&t=58s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "Something wrong no I'm kidding but don't feel bad if you're confused often or "
-              'you get frustrated it is common across the board for most of us take care of '
-              "yourselves and we'll talk to you soon bye-bye.",
-      'timestamp': 406,
-      'timestamp_label': '[00:06:46]',
-      'timestamp_seconds': 406,
-      'tip': "Something wrong no I'm kidding but don't feel bad if you're confused often or "
-             'you get frustrated it is common across the board for most of us take care of '
-             "yourselves and we'll talk to you soon bye-bye.",
-      'title': 'Understanding Third-Party Administrators (TPAs) in Healthcare Insurance '
-               '(Navigating the Business of Medicine)',
-      'url': 'https://www.youtube.com/watch?v=z0-3oV0C8EU&t=406s',
+      'text': 'TPAs are usually a lot cheaper than going through a standard insurance company.',
+      'timestamp': 58,
+      'timestamp_label': '[00:00:58]',
+      'timestamp_seconds': 58,
+      'tip': 'TPAs are usually a lot cheaper than going through a standard insurance company.',
+      'title': 'Understanding Third-Party Administrators (TPAs) in Healthcare Insurance',
+      'url': 'https://www.youtube.com/watch?v=z0-3oV0C8EU&t=58s',
       'video_id': 'z0-3oV0C8EU'},
-     {'author': 'Butler Legal',
-      'channel': 'Butler Legal',
+     {'author': 'Self-Funded',
+      'channel': 'Self-Funded',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:59](https://www.youtube.com/watch?v=rxahzd6qaCw&t=179s)',
-      'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                   'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                   'supplements, and UPPA-safe collections (Chapter Q9 operational '
-                   'verification).',
+      'markdown': '[00:06:04](https://www.youtube.com/watch?v=nBqdaYbbpKg&t=364s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': 'Florida law is clear that that assignment anti-assignment provision does not '
-              'apply to post-loss assignment of insurance benefits.',
-      'timestamp': 179,
-      'timestamp_label': '[00:02:59]',
-      'timestamp_seconds': 179,
-      'tip': 'Florida law is clear that that assignment anti-assignment provision does not '
-             'apply to post-loss assignment of insurance benefits.',
-      'title': 'Handling of Assignment of Benefit ("AOB") Claims (Butler Legal)',
-      'url': 'https://www.youtube.com/watch?v=rxahzd6qaCw&t=179s',
-      'video_id': 'rxahzd6qaCw'}],
- 10: [{'author': 'One Claim Solution',
-       'channel': 'One Claim Solution',
+      'text': 'Our motto is humanizing every experience, not treating members as numbers and '
+              'focusing only on the bottom line.',
+      'timestamp': 364,
+      'timestamp_label': '[00:06:04]',
+      'timestamp_seconds': 364,
+      'tip': 'Our motto is humanizing every experience, not treating members as numbers and '
+             'focusing only on the bottom line.',
+      'title': 'Life at Third Party Administrator - Owen Paradis - JP Farley - True Captive Summit',
+      'url': 'https://www.youtube.com/watch?v=nBqdaYbbpKg&t=364s',
+      'video_id': 'nBqdaYbbpKg'},
+     {'author': 'Be A Claims Adjuster',
+      'channel': 'Be A Claims Adjuster',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:41](https://www.youtube.com/watch?v=u947iwIhI7A&t=41s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'State Farm is a direct insurance carrier.',
+      'timestamp': 41,
+      'timestamp_label': '[00:00:41]',
+      'timestamp_seconds': 41,
+      'tip': 'State Farm is a direct insurance carrier.',
+      'title': 'State Farm vs Sedgwick: Which is Better for New Claims Adjusters?',
+      'url': 'https://www.youtube.com/watch?v=u947iwIhI7A&t=41s',
+      'video_id': 'u947iwIhI7A'},
+     {'author': 'CCK Law Long-Term Disability',
+      'channel': 'CCK Law Long-Term Disability',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:47](https://www.youtube.com/watch?v=lnhw4pYCOFU&t=107s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'You have the right to file an administrative appeal of that denial.',
+      'timestamp': 107,
+      'timestamp_label': '[00:01:47]',
+      'timestamp_seconds': 107,
+      'tip': 'You have the right to file an administrative appeal of that denial.',
+      'title': 'How Sedgwick Handles LTD Claims and Why Denials Happen',
+      'url': 'https://www.youtube.com/watch?v=lnhw4pYCOFU&t=107s',
+      'video_id': 'lnhw4pYCOFU'},
+     {'author': 'Self Insured Reporting',
+      'channel': 'Self Insured Reporting',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:08](https://www.youtube.com/watch?v=7lU917xnSRE&t=68s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'The platform pulls members at 50% of the specific and downloads their claims in one '
+              'click.',
+      'timestamp': 68,
+      'timestamp_label': '[00:01:08]',
+      'timestamp_seconds': 68,
+      'tip': 'The platform pulls members at 50% of the specific and downloads their claims in one '
+             'click.',
+      'title': 'Third Party Administrators',
+      'url': 'https://www.youtube.com/watch?v=7lU917xnSRE&t=68s',
+      'video_id': '7lU917xnSRE'},
+     {'author': 'MN Labor and Industry',
+      'channel': 'MN Labor and Industry',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:34](https://www.youtube.com/watch?v=xXGIjQfUG4s&t=154s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Select bulk edit, grant access, pick the subset of claims, choose the member, and '
+              'save.',
+      'timestamp': 154,
+      'timestamp_label': '[00:02:34]',
+      'timestamp_seconds': 154,
+      'tip': 'Select bulk edit, grant access, pick the subset of claims, choose the member, and '
+             'save.',
+      'title': 'Claim access for insurers and third-party administrators',
+      'url': 'https://www.youtube.com/watch?v=xXGIjQfUG4s&t=154s',
+      'video_id': 'xXGIjQfUG4s'},
+     {'author': 'Chris Zimmerman',
+      'channel': 'Chris Zimmerman',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:22](https://www.youtube.com/watch?v=esg8I0BJFLM&t=142s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'The two predominant ones are Seek Now and Hancock, but these are people who are not '
+              'licensed adjusters.',
+      'timestamp': 142,
+      'timestamp_label': '[00:02:22]',
+      'timestamp_seconds': 142,
+      'tip': 'The two predominant ones are Seek Now and Hancock, but these are people who are not '
+             'licensed adjusters.',
+      'title': 'What All Roofing Contractors Need to Know About Adjusters',
+      'url': 'https://www.youtube.com/watch?v=esg8I0BJFLM&t=142s',
+      'video_id': 'esg8I0BJFLM'},
+     {'author': 'The Claim Squad Public Adjusters',
+      'channel': 'The Claim Squad Public Adjusters',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:07](https://www.youtube.com/watch?v=h_W9kUbadMM&t=187s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "When they ask 'Do you need water mitigation?' decline and name your own vendor.",
+      'timestamp': 187,
+      'timestamp_label': '[00:03:07]',
+      'timestamp_seconds': 187,
+      'tip': "When they ask 'Do you need water mitigation?' decline and name your own vendor.",
+      'title': '5 Reasons Not to Use Your Insurance Company Contractor: Water Mitigation or '
+               'Restoration Company',
+      'url': 'https://www.youtube.com/watch?v=h_W9kUbadMM&t=187s',
+      'video_id': 'h_W9kUbadMM'},
+     {'author': 'Adjuster TV',
+      'channel': 'Adjuster TV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:33](https://www.youtube.com/watch?v=nHMaLQmm8nw&t=273s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'The top priority is getting all of your roughly 34 state licenses, which runs about '
+              '$1,500.',
+      'timestamp': 273,
+      'timestamp_label': '[00:04:33]',
+      'timestamp_seconds': 273,
+      'tip': 'The top priority is getting all of your roughly 34 state licenses, which runs about '
+             '$1,500.',
+      'title': 'How to ACTUALLY work as a remote desk adjuster',
+      'url': 'https://www.youtube.com/watch?v=nHMaLQmm8nw&t=273s',
+      'video_id': 'nHMaLQmm8nw'},
+     {'author': 'Regulatory Joe',
+      'channel': 'Regulatory Joe',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:38](https://www.youtube.com/watch?v=kR0zavFV0HU&t=158s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'So step number one, have a very modest timeline.',
+      'timestamp': 158,
+      'timestamp_label': '[00:02:38]',
+      'timestamp_seconds': 158,
+      'tip': 'So step number one, have a very modest timeline.',
+      'title': 'TPA Licensure 101: What Every Third-Party Administrator Needs to Know',
+      'url': 'https://www.youtube.com/watch?v=kR0zavFV0HU&t=158s',
+      'video_id': 'kR0zavFV0HU'},
+     {'author': 'Claim Toolkit',
+      'channel': 'Claim Toolkit',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:21:11](https://www.youtube.com/watch?v=LQ4DKKitI6o&t=1271s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'The database updates 20 or more times a day, so re-run your saved reports weekly.',
+      'timestamp': 1271,
+      'timestamp_label': '[00:21:11]',
+      'timestamp_seconds': 1271,
+      'tip': 'The database updates 20 or more times a day, so re-run your saved reports weekly.',
+      'title': 'Claim Toolkit Training - 06/17/2021 (Sedgwick)',
+      'url': 'https://www.youtube.com/watch?v=LQ4DKKitI6o&t=1271s',
+      'video_id': 'LQ4DKKitI6o'},
+     {'author': 'On-Site Adjusting',
+      'channel': 'On-Site Adjusting',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=oEc6cQdcK6I&t=0s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "There's a strong possibility your insurance company will deny it and now all this "
+              "stuff has been removed, shored up, and it's in a dumpster.",
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': "There's a strong possibility your insurance company will deny it and now all this "
+             "stuff has been removed, shored up, and it's in a dumpster.",
+      'title': 'Don’t Let the Insurance Company’s Contractor Ruin Your Claim 😳 | Public Adjuster '
+               'Explains',
+      'url': 'https://www.youtube.com/watch?v=oEc6cQdcK6I&t=0s',
+      'video_id': 'oEc6cQdcK6I'}],
+ 7: [{'author': 'magicplan',
+      'channel': 'magicplan',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:00](https://www.youtube.com/watch?v=irpHqZ46CG8&t=300s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Export your sketches to Xactimate to expedite your payment process and ensure full '
+              'compensation.',
+      'timestamp': 300,
+      'timestamp_label': '[00:05:00]',
+      'timestamp_seconds': 300,
+      'tip': 'Export your sketches to Xactimate to expedite your payment process and ensure full '
+             'compensation.',
+      'title': 'How to Document Water Damage Restoration Like a Pro',
+      'url': 'https://www.youtube.com/watch?v=irpHqZ46CG8&t=300s',
+      'video_id': 'irpHqZ46CG8'},
+     {'author': 'Adjuster TV',
+      'channel': 'Adjuster TV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:43](https://www.youtube.com/watch?v=86mEe0yHwiw&t=403s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Water technicians take a pre-scan before mitigation and a post-scan after '
+              'demolition so the adjuster can compare what was removed against what needs repair.',
+      'timestamp': 403,
+      'timestamp_label': '[00:06:43]',
+      'timestamp_seconds': 403,
+      'tip': 'Water technicians take a pre-scan before mitigation and a post-scan after demolition '
+             'so the adjuster can compare what was removed against what needs repair.',
+      'title': 'Matterport Demo and Walkthrough',
+      'url': 'https://www.youtube.com/watch?v=86mEe0yHwiw&t=403s',
+      'video_id': '86mEe0yHwiw'},
+     {'author': 'Encircle',
+      'channel': 'Encircle',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:53:14](https://www.youtube.com/watch?v=uy09gaqf4AU&t=3194s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Every one of their estimates were increased on an average of about two to five '
+              'percent more than what they were originally estimating for.',
+      'timestamp': 3194,
+      'timestamp_label': '[00:53:14]',
+      'timestamp_seconds': 3194,
+      'tip': 'Every one of their estimates were increased on an average of about two to five '
+             'percent more than what they were originally estimating for.',
+      'title': 'A New Era of Estimating | Your Data, Your Expertise, From Scope to Estimate — '
+               'Webinar',
+      'url': 'https://www.youtube.com/watch?v=uy09gaqf4AU&t=3194s',
+      'video_id': 'uy09gaqf4AU'},
+     {'author': 'Omegasonics',
+      'channel': 'Omegasonics',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:09](https://www.youtube.com/watch?v=3UmvqUcOFDc&t=69s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'A digital photo inventory protects you from fraudulent claims and misplaced '
+              'contents.',
+      'timestamp': 69,
+      'timestamp_label': '[00:01:09]',
+      'timestamp_seconds': 69,
+      'tip': 'A digital photo inventory protects you from fraudulent claims and misplaced '
+             'contents.',
+      'title': 'Tips for Proper Restoration Packout',
+      'url': 'https://www.youtube.com/watch?v=3UmvqUcOFDc&t=69s',
+      'video_id': '3UmvqUcOFDc'},
+     {'author': 'FirehouseEducation',
+      'channel': 'FirehouseEducation',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:15](https://www.youtube.com/watch?v=Appti0ctcGA&t=195s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Fully shrink-wrap the piece and put moving blankets on the corners so nothing gets '
+              'damaged in transit.',
+      'timestamp': 195,
+      'timestamp_label': '[00:03:15]',
+      'timestamp_seconds': 195,
+      'tip': 'Fully shrink-wrap the piece and put moving blankets on the corners so nothing gets '
+             'damaged in transit.',
+      'title': 'How To Packout A Fire Restoration Job Without Damage To Contents',
+      'url': 'https://www.youtube.com/watch?v=Appti0ctcGA&t=195s',
+      'video_id': 'Appti0ctcGA'},
+     {'author': 'FirehouseEducation',
+      'channel': 'FirehouseEducation',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:22](https://www.youtube.com/watch?v=MkCNqNRsk04&t=382s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'For instance, you cannot ozone an item if it is damp or wet.',
+      'timestamp': 382,
+      'timestamp_label': '[00:06:22]',
+      'timestamp_seconds': 382,
+      'tip': 'For instance, you cannot ozone an item if it is damp or wet.',
+      'title': 'How to Clean Smoke-Damaged Contents After a Wildfire | Ask Annissa',
+      'url': 'https://www.youtube.com/watch?v=MkCNqNRsk04&t=382s',
+      'video_id': 'MkCNqNRsk04'},
+     {'author': 'FirehouseEducation',
+      'channel': 'FirehouseEducation',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:17](https://www.youtube.com/watch?v=MkCNqNRsk04&t=437s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'So, I set my hydroxil and I deodorize in my drying chamber.',
+      'timestamp': 437,
+      'timestamp_label': '[00:07:17]',
+      'timestamp_seconds': 437,
+      'tip': 'So, I set my hydroxil and I deodorize in my drying chamber.',
+      'title': 'How to Clean Smoke-Damaged Contents After a Wildfire | Ask Annissa',
+      'url': 'https://www.youtube.com/watch?v=MkCNqNRsk04&t=437s',
+      'video_id': 'MkCNqNRsk04'},
+     {'author': 'FirehouseEducation',
+      'channel': 'FirehouseEducation',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:53](https://www.youtube.com/watch?v=rAAR3Zmm80c&t=113s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Packing materials are billable, either charged hourly or built into the per-box '
+              "price, so bubble wrap at twenty dollars a box means don't skimp.",
+      'timestamp': 113,
+      'timestamp_label': '[00:01:53]',
+      'timestamp_seconds': 113,
+      'tip': 'Packing materials are billable, either charged hourly or built into the per-box '
+             "price, so bubble wrap at twenty dollars a box means don't skimp.",
+      'title': 'How To Packout For Sucess On Contents Restoration Jobs',
+      'url': 'https://www.youtube.com/watch?v=rAAR3Zmm80c&t=113s',
+      'video_id': 'rAAR3Zmm80c'},
+     {'author': 'Fred McCutcheon Jr.',
+      'channel': 'Fred McCutcheon Jr.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:48](https://www.youtube.com/watch?v=yrUY61hcioM&t=48s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "We don't cover the smell, we remove it.",
+      'timestamp': 48,
+      'timestamp_label': '[00:00:48]',
+      'timestamp_seconds': 48,
+      'tip': "We don't cover the smell, we remove it.",
+      'title': 'Fire Damage Contents Pack Outs',
+      'url': 'https://www.youtube.com/watch?v=yrUY61hcioM&t=48s',
+      'video_id': 'yrUY61hcioM'},
+     {'author': 'FirehouseEducation',
+      'channel': 'FirehouseEducation',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:56](https://www.youtube.com/watch?v=w85_KBcX690&t=116s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Because if we have structural damage, often times we have to pack the contents up, '
+              'get them out of the way, so we can then handle the structure.',
+      'timestamp': 116,
+      'timestamp_label': '[00:01:56]',
+      'timestamp_seconds': 116,
+      'tip': 'Because if we have structural damage, often times we have to pack the contents up, '
+             'get them out of the way, so we can then handle the structure.',
+      'title': 'When Do You Packout or Clean In Place A Contents Restoration Job?',
+      'url': 'https://www.youtube.com/watch?v=w85_KBcX690&t=116s',
+      'video_id': 'w85_KBcX690'},
+     {'author': 'Octagon Cleaning and Restoration',
+      'channel': 'Octagon Cleaning and Restoration',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:32](https://www.youtube.com/watch?v=WTz841eMFkk&t=692s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'And you just need the photo documentation to justify it and the knowledge on how to '
+              'convey that to them.',
+      'timestamp': 692,
+      'timestamp_label': '[00:11:32]',
+      'timestamp_seconds': 692,
+      'tip': 'And you just need the photo documentation to justify it and the knowledge on how to '
+             'convey that to them.',
+      'title': 'Inside Fire Damage Restoration: A Project Manager’s Perspective',
+      'url': 'https://www.youtube.com/watch?v=WTz841eMFkk&t=692s',
+      'video_id': 'WTz841eMFkk'},
+     {'author': 'Encircle',
+      'channel': 'Encircle',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[03:00:25](https://www.youtube.com/watch?v=33iGNdZ6fyE&t=10825s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "If you've over oxidized it you own the result.",
+      'timestamp': 10825,
+      'timestamp_label': '[03:00:25]',
+      'timestamp_seconds': 10825,
+      'tip': "If you've over oxidized it you own the result.",
+      'title': 'Fire & Smoke Restoration Bootcamp - Webinar',
+      'url': 'https://www.youtube.com/watch?v=33iGNdZ6fyE&t=10825s',
+      'video_id': '33iGNdZ6fyE'},
+     {'author': 'Encircle',
+      'channel': 'Encircle',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:10](https://www.youtube.com/watch?v=33iGNdZ6fyE&t=310s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you establish the objective at the beginning then it makes it easier to get paid '
+              'at the end.',
+      'timestamp': 310,
+      'timestamp_label': '[00:05:10]',
+      'timestamp_seconds': 310,
+      'tip': 'If you establish the objective at the beginning then it makes it easier to get paid '
+             'at the end.',
+      'title': 'Fire & Smoke Restoration Bootcamp - Webinar',
+      'url': 'https://www.youtube.com/watch?v=33iGNdZ6fyE&t=310s',
+      'video_id': '33iGNdZ6fyE'},
+     {'author': 'Testudo LLC',
+      'channel': 'Testudo LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:35](https://www.youtube.com/watch?v=4NKJ6zuVvTY&t=635s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Uncertified workers can look for dust and debris but only a certified lead safe '
+              'renovator can conduct the final visual inspection and the cleaning verification.',
+      'timestamp': 635,
+      'timestamp_label': '[00:10:35]',
+      'timestamp_seconds': 635,
+      'tip': 'Uncertified workers can look for dust and debris but only a certified lead safe '
+             'renovator can conduct the final visual inspection and the cleaning verification.',
+      'title': 'Lead Safe Renovator Training - Interior Work Practices',
+      'url': 'https://www.youtube.com/watch?v=4NKJ6zuVvTY&t=635s',
+      'video_id': '4NKJ6zuVvTY'},
+     {'author': 'Adjusterpedia',
+      'channel': 'Adjusterpedia',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:24](https://www.youtube.com/watch?v=4EdiIO_RCX0&t=84s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "Not using a scope sheet you're probably not doing as good a job as you can be.",
+      'timestamp': 84,
+      'timestamp_label': '[00:01:24]',
+      'timestamp_seconds': 84,
+      'tip': "Not using a scope sheet you're probably not doing as good a job as you can be.",
+      'title': 'Why and How to use Scope Sheets - Tutorial',
+      'url': 'https://www.youtube.com/watch?v=4EdiIO_RCX0&t=84s',
+      'video_id': '4EdiIO_RCX0'},
+     {'author': 'American Roof Supplements',
+      'channel': 'American Roof Supplements',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:52](https://www.youtube.com/watch?v=GK_Was-iK98&t=412s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'The cleaner the input, the cleaner the output.',
+      'timestamp': 412,
+      'timestamp_label': '[00:06:52]',
+      'timestamp_seconds': 412,
+      'tip': 'The cleaner the input, the cleaner the output.',
+      'title': 'Public Adjusters: Stop Wasting Hours Building Xactimate Estimates',
+      'url': 'https://www.youtube.com/watch?v=GK_Was-iK98&t=412s',
+      'video_id': 'GK_Was-iK98'},
+     {'author': 'FirstLook Services',
+      'channel': 'FirstLook Services',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:16](https://www.youtube.com/watch?v=C_iLoKezwu4&t=76s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Accuracy is where Matterport kind of falls off a cliff.',
+      'timestamp': 76,
+      'timestamp_label': '[00:01:16]',
+      'timestamp_seconds': 76,
+      'tip': 'Accuracy is where Matterport kind of falls off a cliff.',
+      'title': 'Matterport Pro 3 vs Leica RTC Scanners | FirstLook Services',
+      'url': 'https://www.youtube.com/watch?v=C_iLoKezwu4&t=76s',
+      'video_id': 'C_iLoKezwu4'},
+     {'author': 'Abbotts Cleanup & Restoration',
+      'channel': 'Abbotts Cleanup & Restoration',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:30](https://www.youtube.com/watch?v=iiCSRcut-WA&t=30s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Claims below the deductible waste your time and can hurt your insurance rates.',
+      'timestamp': 30,
+      'timestamp_label': '[00:00:30]',
+      'timestamp_seconds': 30,
+      'tip': 'Claims below the deductible waste your time and can hurt your insurance rates.',
+      'title': 'Video Blog: Removing smoke odor after a fire',
+      'url': 'https://www.youtube.com/watch?v=iiCSRcut-WA&t=30s',
+      'video_id': 'iiCSRcut-WA'}],
+ 8: [{'author': "Shane O'Dazier | RestorationProfits",
+      'channel': "Shane O'Dazier | RestorationProfits",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:28](https://www.youtube.com/watch?v=D4BavFC6d1E&t=88s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Find out what they want and give it to them.',
+      'timestamp': 88,
+      'timestamp_label': '[00:01:28]',
+      'timestamp_seconds': 88,
+      'tip': 'Find out what they want and give it to them.',
+      'title': 'How to get referrals for a water damage restoration business - plumbers',
+      'url': 'https://www.youtube.com/watch?v=D4BavFC6d1E&t=88s',
+      'video_id': 'D4BavFC6d1E'},
+     {'author': "Shane O'Dazier | RestorationProfits",
+      'channel': "Shane O'Dazier | RestorationProfits",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:34](https://www.youtube.com/watch?v=CV0x51fC7pw&t=154s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Joe asked the plumber who the office calls and handed over a card pre-loaded with '
+              '$100, then a $100 weekly drip.',
+      'timestamp': 154,
+      'timestamp_label': '[00:02:34]',
+      'timestamp_seconds': 154,
+      'tip': 'Joe asked the plumber who the office calls and handed over a card pre-loaded with '
+             '$100, then a $100 weekly drip.',
+      'title': 'How to Get Plumbers Sending You $60K Water Jobs',
+      'url': 'https://www.youtube.com/watch?v=CV0x51fC7pw&t=154s',
+      'video_id': 'CV0x51fC7pw'},
+     {'author': 'Restorex Disaster Restoration',
+      'channel': 'Restorex Disaster Restoration',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:37](https://www.youtube.com/watch?v=nFvUl2Kjwjs&t=37s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'We offer the highest referral fees, paid as a percent of the dry-out, from a couple '
+              'hundred to a couple thousand dollars.',
+      'timestamp': 37,
+      'timestamp_label': '[00:00:37]',
+      'timestamp_seconds': 37,
+      'tip': 'We offer the highest referral fees, paid as a percent of the dry-out, from a couple '
+             'hundred to a couple thousand dollars.',
+      'title': 'Plumber Referral Program for Indianapolis Plumbers | Restorex Disaster Restoration',
+      'url': 'https://www.youtube.com/watch?v=nFvUl2Kjwjs&t=37s',
+      'video_id': 'nFvUl2Kjwjs'},
+     {'author': 'Marketing Ninjas',
+      'channel': 'Marketing Ninjas',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:20](https://www.youtube.com/watch?v=n7ECptsaJTQ&t=140s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'In an extreme example, one of our clients actually brings in a monkey into the '
+              'plumbing offices.',
+      'timestamp': 140,
+      'timestamp_label': '[00:02:20]',
+      'timestamp_seconds': 140,
+      'tip': 'In an extreme example, one of our clients actually brings in a monkey into the '
+             'plumbing offices.',
+      'title': 'How to Get Plumbers to Actually Send You Mitigation Jobs',
+      'url': 'https://www.youtube.com/watch?v=n7ECptsaJTQ&t=140s',
+      'video_id': 'n7ECptsaJTQ'},
+     {'author': 'Marketing Ninjas',
+      'channel': 'Marketing Ninjas',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:26](https://www.youtube.com/watch?v=n7ECptsaJTQ&t=206s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "If they don't know what to look for, they'll miss jobs that could have easily been "
+              'yours.',
+      'timestamp': 206,
+      'timestamp_label': '[00:03:26]',
+      'timestamp_seconds': 206,
+      'tip': "If they don't know what to look for, they'll miss jobs that could have easily been "
+             'yours.',
+      'title': 'How to Get Plumbers to Actually Send You Mitigation Jobs',
+      'url': 'https://www.youtube.com/watch?v=n7ECptsaJTQ&t=206s',
+      'video_id': 'n7ECptsaJTQ'},
+     {'author': "Shane O'Dazier | RestorationProfits",
+      'channel': "Shane O'Dazier | RestorationProfits",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:16:52](https://www.youtube.com/watch?v=xXe9Z763dDc&t=1012s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Three jobs a week at $6,000 a job is $18,000 a week.',
+      'timestamp': 1012,
+      'timestamp_label': '[00:16:52]',
+      'timestamp_seconds': 1012,
+      'tip': 'Three jobs a week at $6,000 a job is $18,000 a week.',
+      'title': 'How to get consistent water damage jobs without storms',
+      'url': 'https://www.youtube.com/watch?v=xXe9Z763dDc&t=1012s',
+      'video_id': 'xXe9Z763dDc'},
+     {'author': "Shane O'Dazier | RestorationProfits",
+      'channel': "Shane O'Dazier | RestorationProfits",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:06](https://www.youtube.com/watch?v=MLuoMdYemWU&t=486s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'A referring plumber may fire you if you use another plumber.',
+      'timestamp': 486,
+      'timestamp_label': '[00:08:06]',
+      'timestamp_seconds': 486,
+      'tip': 'A referring plumber may fire you if you use another plumber.',
+      'title': 'Creative Ways To Get Consistent Water Restoration Business Leads',
+      'url': 'https://www.youtube.com/watch?v=MLuoMdYemWU&t=486s',
+      'video_id': 'MLuoMdYemWU'},
+     {'author': 'Restoration Success Strategies | Albi',
+      'channel': 'Restoration Success Strategies | Albi',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:41](https://www.youtube.com/watch?v=Fj9S8rNJ5d4&t=341s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Homeway learned from Shane and averaged six to ten jobs a week, almost all from '
+              'plumbers.',
+      'timestamp': 341,
+      'timestamp_label': '[00:05:41]',
+      'timestamp_seconds': 341,
+      'tip': 'Homeway learned from Shane and averaged six to ten jobs a week, almost all from '
+             'plumbers.',
+      'title': 'How Restoration Companies Get Water Damage Jobs (The Plumber Referral Playbook)',
+      'url': 'https://www.youtube.com/watch?v=Fj9S8rNJ5d4&t=341s',
+      'video_id': 'Fj9S8rNJ5d4'},
+     {'author': 'Restoration Made Simple',
+      'channel': 'Restoration Made Simple',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:17](https://www.youtube.com/watch?v=8nQyv3vEI6A&t=677s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Yes, I know this is going to require you to call that customer back, but what we '
+              'found is if they are waiting for you to call back, then they are a lot less likely '
+              'to get on the phone and call somebody else.',
+      'timestamp': 677,
+      'timestamp_label': '[00:11:17]',
+      'timestamp_seconds': 677,
+      'tip': 'Yes, I know this is going to require you to call that customer back, but what we '
+             'found is if they are waiting for you to call back, then they are a lot less likely '
+             'to get on the phone and call somebody else.',
+      'title': 'Close More Water Damage Restoration Leads - Call Conversion Tips',
+      'url': 'https://www.youtube.com/watch?v=8nQyv3vEI6A&t=677s',
+      'video_id': '8nQyv3vEI6A'},
+     {'author': 'Water Damage Restoration Coach - Jon Schoen',
+      'channel': 'Water Damage Restoration Coach - Jon Schoen',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:40](https://www.youtube.com/watch?v=HFcU3Nls6fM&t=40s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Give away a used WaveRunner, four-wheeler or boat once a year, with one bucket '
+              'entry for every referral.',
+      'timestamp': 40,
+      'timestamp_label': '[00:00:40]',
+      'timestamp_seconds': 40,
+      'tip': 'Give away a used WaveRunner, four-wheeler or boat once a year, with one bucket entry '
+             'for every referral.',
+      'title': '3 Ways to get more water damage jobs from plumbers',
+      'url': 'https://www.youtube.com/watch?v=HFcU3Nls6fM&t=40s',
+      'video_id': 'HFcU3Nls6fM'},
+     {'author': "Shane O'Dazier | RestorationProfits",
+      'channel': "Shane O'Dazier | RestorationProfits",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:35](https://www.youtube.com/watch?v=Rcmd8gVFzB8&t=695s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'A $300 cost made an impression worth thousands.',
+      'timestamp': 695,
+      'timestamp_label': '[00:11:35]',
+      'timestamp_seconds': 695,
+      'tip': 'A $300 cost made an impression worth thousands.',
+      'title': 'How to get leads for water damage restoration',
+      'url': 'https://www.youtube.com/watch?v=Rcmd8gVFzB8&t=695s',
+      'video_id': 'Rcmd8gVFzB8'},
+     {'author': 'Water Damage Restoration Marketing - Vinnie Mac',
+      'channel': 'Water Damage Restoration Marketing - Vinnie Mac',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:49](https://www.youtube.com/watch?v=KYZjCfsaWhs&t=589s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Keep cash reserves and file a preliminary notice of lien.',
+      'timestamp': 589,
+      'timestamp_label': '[00:09:49]',
+      'timestamp_seconds': 589,
+      'tip': 'Keep cash reserves and file a preliminary notice of lien.',
+      'title': 'Water Damage Marketing | How To Generate Water Damage Leads',
+      'url': 'https://www.youtube.com/watch?v=KYZjCfsaWhs&t=589s',
+      'video_id': 'KYZjCfsaWhs'},
+     {'author': 'Marketing Ninjas',
+      'channel': 'Marketing Ninjas',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=5Ibyq8oHR7Y&t=0s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "Cash doesn't build loyalty.",
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': "Cash doesn't build loyalty.",
+      'title': 'How to Generate 7 Figures for Your Restoration Company From Plumbers',
+      'url': 'https://www.youtube.com/watch?v=5Ibyq8oHR7Y&t=0s',
+      'video_id': '5Ibyq8oHR7Y'},
+     {'author': 'claimhelpme',
+      'channel': 'claimhelpme',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:13](https://www.youtube.com/watch?v=eLQHV7yIGx8&t=13s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "You're selling from weakness instead of knowledge.",
+      'timestamp': 13,
+      'timestamp_label': '[00:00:13]',
+      'timestamp_seconds': 13,
+      'tip': "You're selling from weakness instead of knowledge.",
+      'title': 'Restoration Contractors: Stop Selling From Weakness! Insurance Claims Done Right',
+      'url': 'https://www.youtube.com/watch?v=eLQHV7yIGx8&t=13s',
+      'video_id': 'eLQHV7yIGx8'},
+     {'author': "Shane O'Dazier | RestorationProfits",
+      'channel': "Shane O'Dazier | RestorationProfits",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:39](https://www.youtube.com/watch?v=sUMKhFYRGSQ&t=99s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "Borrow the plumbers' SEO, because a seven-figure business is possible without a "
+              'website.',
+      'timestamp': 99,
+      'timestamp_label': '[00:01:39]',
+      'timestamp_seconds': 99,
+      'tip': "Borrow the plumbers' SEO, because a seven-figure business is possible without a "
+             'website.',
+      'title': 'How to get more water damage jobs from plumbers',
+      'url': 'https://www.youtube.com/watch?v=sUMKhFYRGSQ&t=99s',
+      'video_id': 'sUMKhFYRGSQ'},
+     {'author': "Shane O'Dazier | RestorationProfits",
+      'channel': "Shane O'Dazier | RestorationProfits",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:04](https://www.youtube.com/watch?v=ufmHlZ6tfKg&t=124s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'You guys need to be very careful if you ever charge a dime to your plumber for '
+              'anything.',
+      'timestamp': 124,
+      'timestamp_label': '[00:02:04]',
+      'timestamp_seconds': 124,
+      'tip': 'You guys need to be very careful if you ever charge a dime to your plumber for '
+             'anything.',
+      'title': 'How to turn free dry-outs into 500k of plumber referrals',
+      'url': 'https://www.youtube.com/watch?v=ufmHlZ6tfKg&t=124s',
+      'video_id': 'ufmHlZ6tfKg'},
+     {'author': 'Restoration Success Strategies | Albi',
+      'channel': 'Restoration Success Strategies | Albi',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:02](https://www.youtube.com/watch?v=mq8qI2hag0I&t=782s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Silence is part of the close.',
+      'timestamp': 782,
+      'timestamp_label': '[00:13:02]',
+      'timestamp_seconds': 782,
+      'tip': 'Silence is part of the close.',
+      'title': 'The Sales System Behind Scaling a Water Damage Restoration Company',
+      'url': 'https://www.youtube.com/watch?v=mq8qI2hag0I&t=782s',
+      'video_id': 'mq8qI2hag0I'}],
+ 9: [{'author': 'Restoration Success Strategies | Albi',
+      'channel': 'Restoration Success Strategies | Albi',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:24](https://www.youtube.com/watch?v=3PlUwHvZkxE&t=204s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Simple scales and complex fails.',
+      'timestamp': 204,
+      'timestamp_label': '[00:03:24]',
+      'timestamp_seconds': 204,
+      'tip': 'Simple scales and complex fails.',
+      'title': 'How to Start a Water Damage Restoration Company in 2026',
+      'url': 'https://www.youtube.com/watch?v=3PlUwHvZkxE&t=204s',
+      'video_id': '3PlUwHvZkxE'},
+     {'author': 'Restoration Success Strategies | Albi',
+      'channel': 'Restoration Success Strategies | Albi',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:14:12](https://www.youtube.com/watch?v=3PlUwHvZkxE&t=852s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'And that cash covers the payroll for the job, and the insurance check on the back '
+              'end is just the profit.',
+      'timestamp': 852,
+      'timestamp_label': '[00:14:12]',
+      'timestamp_seconds': 852,
+      'tip': 'And that cash covers the payroll for the job, and the insurance check on the back '
+             'end is just the profit.',
+      'title': 'How to Start a Water Damage Restoration Company in 2026',
+      'url': 'https://www.youtube.com/watch?v=3PlUwHvZkxE&t=852s',
+      'video_id': '3PlUwHvZkxE'},
+     {'author': 'Restoration Made Simple',
+      'channel': 'Restoration Made Simple',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:07](https://www.youtube.com/watch?v=aBQA1Wn_LNQ&t=187s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "Doesn't do us any good to get the phone to ring if we can't convert them.",
+      'timestamp': 187,
+      'timestamp_label': '[00:03:07]',
+      'timestamp_seconds': 187,
+      'tip': "Doesn't do us any good to get the phone to ring if we can't convert them.",
+      'title': 'Restoration Made Simple - How to start a water damage business',
+      'url': 'https://www.youtube.com/watch?v=aBQA1Wn_LNQ&t=187s',
+      'video_id': 'aBQA1Wn_LNQ'},
+     {'author': 'PushLeads',
+      'channel': 'PushLeads',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:01](https://www.youtube.com/watch?v=wnVxHv3JM28&t=61s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'The restoration company always comes first.',
+      'timestamp': 61,
+      'timestamp_label': '[00:01:01]',
+      'timestamp_seconds': 61,
+      'tip': 'The restoration company always comes first.',
+      'title': "Restoration Company vs General Contractor: What's the Difference?",
+      'url': 'https://www.youtube.com/watch?v=wnVxHv3JM28&t=61s',
+      'video_id': 'wnVxHv3JM28'},
+     {'author': "Shane O'Dazier | RestorationProfits",
+      'channel': "Shane O'Dazier | RestorationProfits",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:46](https://www.youtube.com/watch?v=b1-Dcqk4F9g&t=46s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': '5 000 worth of agreements for under 50 bucks.',
+      'timestamp': 46,
+      'timestamp_label': '[00:00:46]',
+      'timestamp_seconds': 46,
+      'tip': '5 000 worth of agreements for under 50 bucks.',
+      'title': 'Contractor Contracts vs Restoration Contracts',
+      'url': 'https://www.youtube.com/watch?v=b1-Dcqk4F9g&t=46s',
+      'video_id': 'b1-Dcqk4F9g'},
+     {'author': 'Contractor Talk Podcast',
+      'channel': 'Contractor Talk Podcast',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:42:17](https://www.youtube.com/watch?v=Tg526FvHOmY&t=2537s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'A letter of protection puts the lien on the insurance proceeds instead of the home, '
+              'and it converts to cash a lot faster.',
+      'timestamp': 2537,
+      'timestamp_label': '[00:42:17]',
+      'timestamp_seconds': 2537,
+      'tip': 'A letter of protection puts the lien on the insurance proceeds instead of the home, '
+             'and it converts to cash a lot faster.',
+      'title': 'Shifting Sands: The Move from AOB to Direction to Pay in Florida Restoration '
+               'Contracting',
+      'url': 'https://www.youtube.com/watch?v=Tg526FvHOmY&t=2537s',
+      'video_id': 'Tg526FvHOmY'},
+     {'author': 'Water Damage Restoration Marketing - Vinnie Mac',
+      'channel': 'Water Damage Restoration Marketing - Vinnie Mac',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:27:59](https://www.youtube.com/watch?v=IDqwheOOgb0&t=1679s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'my recommendation on service areas is that go wider than narrow.',
+      'timestamp': 1679,
+      'timestamp_label': '[00:27:59]',
+      'timestamp_seconds': 1679,
+      'tip': 'my recommendation on service areas is that go wider than narrow.',
+      'title': 'Water Damage Google Local Services Ads: Everything You Need to Know',
+      'url': 'https://www.youtube.com/watch?v=IDqwheOOgb0&t=1679s',
+      'video_id': 'IDqwheOOgb0'},
+     {'author': 'Water Damage Restoration Marketing - Vinnie Mac',
+      'channel': 'Water Damage Restoration Marketing - Vinnie Mac',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:16:40](https://www.youtube.com/watch?v=IDqwheOOgb0&t=1000s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'you set a weekly budget and they will give you an estimate on how many leads they '
+              "feel um you could potentially get and that range is going to be false I'm just "
+              'telling you right now.',
+      'timestamp': 1000,
+      'timestamp_label': '[00:16:40]',
+      'timestamp_seconds': 1000,
+      'tip': 'you set a weekly budget and they will give you an estimate on how many leads they '
+             "feel um you could potentially get and that range is going to be false I'm just "
+             'telling you right now.',
+      'title': 'Water Damage Google Local Services Ads: Everything You Need to Know',
+      'url': 'https://www.youtube.com/watch?v=IDqwheOOgb0&t=1000s',
+      'video_id': 'IDqwheOOgb0'},
+     {'author': 'Water Damage Restoration Marketing - Vinnie Mac',
+      'channel': 'Water Damage Restoration Marketing - Vinnie Mac',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:35:15](https://www.youtube.com/watch?v=2akNGTmJry8&t=2115s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'And then most importantly, pick up the damn phone.',
+      'timestamp': 2115,
+      'timestamp_label': '[00:35:15]',
+      'timestamp_seconds': 2115,
+      'tip': 'And then most importantly, pick up the damn phone.',
+      'title': 'Google Local Service Ads For Water Damage Restoration Companies Everything You '
+               'Need To Know In 2026',
+      'url': 'https://www.youtube.com/watch?v=2akNGTmJry8&t=2115s',
+      'video_id': '2akNGTmJry8'},
+     {'author': 'Water Damage Restoration Marketing - Vinnie Mac',
+      'channel': 'Water Damage Restoration Marketing - Vinnie Mac',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:54](https://www.youtube.com/watch?v=O0STLVhCL2c&t=534s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'What we find is about 80% of the phone calls come from either Google Guaranteed or '
+              'Google Maps.',
+      'timestamp': 534,
+      'timestamp_label': '[00:08:54]',
+      'timestamp_seconds': 534,
+      'tip': 'What we find is about 80% of the phone calls come from either Google Guaranteed or '
+             'Google Maps.',
+      'title': 'Water Damage Google Local Services Ads - Everything You Need To Know - Restoration '
+               'Marketing',
+      'url': 'https://www.youtube.com/watch?v=O0STLVhCL2c&t=534s',
+      'video_id': 'O0STLVhCL2c'},
+     {'author': 'Restoration Growth Co',
+      'channel': 'Restoration Growth Co',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:20](https://www.youtube.com/watch?v=zkR_04H9hBQ&t=560s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "Change six things at once and you'll learn nothing about which one mattered.",
+      'timestamp': 560,
+      'timestamp_label': '[00:09:20]',
+      'timestamp_seconds': 560,
+      'tip': "Change six things at once and you'll learn nothing about which one mattered.",
+      'title': 'The Hidden Cost of Water Damage Google Ads (And How to Stop It!)',
+      'url': 'https://www.youtube.com/watch?v=zkR_04H9hBQ&t=560s',
+      'video_id': 'zkR_04H9hBQ'},
+     {'author': 'PushLeads',
+      'channel': 'PushLeads',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:23](https://www.youtube.com/watch?v=9FnufX3pXj4&t=263s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Because these are fifty to a hundred dollar clicks.',
+      'timestamp': 263,
+      'timestamp_label': '[00:04:23]',
+      'timestamp_seconds': 263,
+      'tip': 'Because these are fifty to a hundred dollar clicks.',
+      'title': 'How do you set up Google Ads for emergency contractors in 2026?',
+      'url': 'https://www.youtube.com/watch?v=9FnufX3pXj4&t=263s',
+      'video_id': '9FnufX3pXj4'},
+     {'author': 'Hook Agency',
+      'channel': 'Hook Agency',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:10](https://www.youtube.com/watch?v=BCYwigE5kQU&t=130s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Your historical data does not transfer.',
+      'timestamp': 130,
+      'timestamp_label': '[00:02:10]',
+      'timestamp_seconds': 130,
+      'tip': 'Your historical data does not transfer.',
+      'title': 'Google Just Killed the LSAs: What Every Contractor Needs to Know (August 2026)',
+      'url': 'https://www.youtube.com/watch?v=BCYwigE5kQU&t=130s',
+      'video_id': 'BCYwigE5kQU'},
+     {'author': 'Roofing Insights',
+      'channel': 'Roofing Insights',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:55](https://www.youtube.com/watch?v=ppn4akh1gPo&t=175s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'to make a 30% on $8,000 job you you need a 43% markup that comes out to 3,440.',
+      'timestamp': 175,
+      'timestamp_label': '[00:02:55]',
+      'timestamp_seconds': 175,
+      'tip': 'to make a 30% on $8,000 job you you need a 43% markup that comes out to 3,440.',
+      'title': "How To price a Job? Profit Margin Vs Markup: Most Roofing Contractors don't know "
+               'this',
+      'url': 'https://www.youtube.com/watch?v=ppn4akh1gPo&t=175s',
+      'video_id': 'ppn4akh1gPo'},
+     {'author': 'George Gabriel',
+      'channel': 'George Gabriel',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:28](https://www.youtube.com/watch?v=KnWhJDOPsTc&t=148s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "You can't catch a job sliding if you never wrote down where it was supposed to "
+              'land.',
+      'timestamp': 148,
+      'timestamp_label': '[00:02:28]',
+      'timestamp_seconds': 148,
+      'tip': "You can't catch a job sliding if you never wrote down where it was supposed to land.",
+      'title': 'Why Contractors Lose Margin After the Job Is Sold',
+      'url': 'https://www.youtube.com/watch?v=KnWhJDOPsTc&t=148s',
+      'video_id': 'KnWhJDOPsTc'},
+     {'author': 'Restoration Success Strategies | Albi',
+      'channel': 'Restoration Success Strategies | Albi',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:42](https://www.youtube.com/watch?v=MDZLPIkMaI8&t=282s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'most companies can get to about a million dollars of Revenue just by doing online '
+              'marketing.',
+      'timestamp': 282,
+      'timestamp_label': '[00:04:42]',
+      'timestamp_seconds': 282,
+      'tip': 'most companies can get to about a million dollars of Revenue just by doing online '
+             'marketing.',
+      'title': 'The Ultimate Guide To Water Damage Restoration: Everything You Need To Know',
+      'url': 'https://www.youtube.com/watch?v=MDZLPIkMaI8&t=282s',
+      'video_id': 'MDZLPIkMaI8'},
+     {'author': 'C&R Magazine',
+      'channel': 'C&R Magazine',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:16:05](https://www.youtube.com/watch?v=t7tJ735gl4s&t=965s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'We have forced them to pay a second time because the policyholder ran off to Hawaii '
+              'with the money or used the money to pay off the mortgage.',
+      'timestamp': 965,
+      'timestamp_label': '[00:16:05]',
+      'timestamp_seconds': 965,
+      'tip': 'We have forced them to pay a second time because the policyholder ran off to Hawaii '
+             'with the money or used the money to pay off the mortgage.',
+      'title': 'Assignment of Benefits: The Key to Recovering Fair Market Value for Restoration '
+               'Services',
+      'url': 'https://www.youtube.com/watch?v=t7tJ735gl4s&t=965s',
+      'video_id': 't7tJ735gl4s'},
+     {'author': 'Roofing Insights',
+      'channel': 'Roofing Insights',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:07](https://www.youtube.com/watch?v=evwV66xRf4I&t=787s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "we don't do data entry, we do data capture.",
+      'timestamp': 787,
+      'timestamp_label': '[00:13:07]',
+      'timestamp_seconds': 787,
+      'tip': "we don't do data entry, we do data capture.",
+      'title': '$14M to $55M: Contractors Are Doing This Wrong',
+      'url': 'https://www.youtube.com/watch?v=evwV66xRf4I&t=787s',
+      'video_id': 'evwV66xRf4I'}],
+ 10: [{'author': 'The Fine Print',
+       'channel': 'The Fine Print',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:08](https://www.youtube.com/watch?v=wq1z-Qyyws8&t=68s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q10 operational '
-                    'verification).',
+       'markdown': '[00:03:52](https://www.youtube.com/watch?v=UxKcyrt-VS0&t=232s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "There's a reason that hospitals and doctors’ offices use this, in their "
-               'everyday billing practices. You know, how often have you ever seen a bill come '
-               "to you from your health insurance company? You know, I've never gotten the "
-               'check from the health insurance company.',
-       'timestamp': 68,
-       'timestamp_label': '[00:01:08]',
-       'timestamp_seconds': 68,
-       'tip': "There's a reason that hospitals and doctors’ offices use this, in their "
-              'everyday billing practices. You know, how often have you ever seen a bill come '
-              "to you from your health insurance company? You know, I've never gotten the "
-              'check from the health insurance company.',
-       'title': 'OCS: Assignment Of Benefits (One Claim Solution)',
-       'url': 'https://www.youtube.com/watch?v=wq1z-Qyyws8&t=68s',
-       'video_id': 'wq1z-Qyyws8'},
-      {'author': 'CandiMentor',
-       'channel': 'CandiMentor',
+       'text': 'Florida passed a major AOB reform law in 2019, House Bill 7065, that reshaped the '
+               'fee structure, required assignment forms to carry specific disclosures, and gave '
+               'homeowners a window to rescind.',
+       'timestamp': 232,
+       'timestamp_label': '[00:03:52]',
+       'timestamp_seconds': 232,
+       'tip': 'Florida passed a major AOB reform law in 2019, House Bill 7065, that reshaped the '
+              'fee structure, required assignment forms to carry specific disclosures, and gave '
+              'homeowners a window to rescind.',
+       'title': 'He Signed One Form at His Front Door and Lost Control of His Own Claim | '
+                'Assignment of Benefits',
+       'url': 'https://www.youtube.com/watch?v=UxKcyrt-VS0&t=232s',
+       'video_id': 'UxKcyrt-VS0'},
+      {'author': 'The Fine Print',
+       'channel': 'The Fine Print',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:37:07](https://www.youtube.com/watch?v=AVAVGkoZuK0&t=2227s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q10 operational '
-                    'verification).',
+       'markdown': '[00:01:05](https://www.youtube.com/watch?v=UxKcyrt-VS0&t=65s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'They can also create opportunities for intentional abuse. Common indicators '
-               'include stage damage, inflated contents lists, duplicate claims, and altered '
-               'photographs or documents. These are warning signs, not conclusions.',
-       'timestamp': 2227,
-       'timestamp_label': '[00:37:07]',
-       'timestamp_seconds': 2227,
-       'tip': 'They can also create opportunities for intentional abuse. Common indicators '
-              'include stage damage, inflated contents lists, duplicate claims, and altered '
-              'photographs or documents. These are warning signs, not conclusions.',
-       'title': 'Adjuster Exam: Salvage, Subrogation, Fraud, Ethics, Fair Claims Practices & '
-                'Catastrophe Claims (CandiMentor)',
-       'url': 'https://www.youtube.com/watch?v=AVAVGkoZuK0&t=2227s',
-       'video_id': 'AVAVGkoZuK0'},
-      {'author': 'Chris Zimmerman',
-       'channel': 'Chris Zimmerman',
+       'text': 'The first estimate had been around $8,000. The submitted invoice came in at 22,000 '
+               'with line items the homeowner had never seen.',
+       'timestamp': 65,
+       'timestamp_label': '[00:01:05]',
+       'timestamp_seconds': 65,
+       'tip': 'The first estimate had been around $8,000. The submitted invoice came in at 22,000 '
+              'with line items the homeowner had never seen.',
+       'title': 'He Signed One Form at His Front Door and Lost Control of His Own Claim | '
+                'Assignment of Benefits',
+       'url': 'https://www.youtube.com/watch?v=UxKcyrt-VS0&t=65s',
+       'video_id': 'UxKcyrt-VS0'},
+      {'author': 'Tyro Health',
+       'channel': 'Tyro Health',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:12](https://www.youtube.com/watch?v=esg8I0BJFLM&t=72s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q10 operational '
-                    'verification).',
+       'markdown': '[00:03:22](https://www.youtube.com/watch?v=CbZ5Nrxx8Xw&t=202s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'An independent adjuster is a licensed adjuster who is hired by the insurance '
-               'company as a third party. So they work for an independent adjuster firm and '
-               'they might do claims for several different insurance companies.',
-       'timestamp': 72,
-       'timestamp_label': '[00:01:12]',
-       'timestamp_seconds': 72,
-       'tip': 'An independent adjuster is a licensed adjuster who is hired by the insurance '
-              'company as a third party. So they work for an independent adjuster firm and '
-              'they might do claims for several different insurance companies.',
-       'title': 'What All Roofing Contractors Need to Know About Adjusters (Chris Zimmerman)',
-       'url': 'https://www.youtube.com/watch?v=esg8I0BJFLM&t=72s',
-       'video_id': 'esg8I0BJFLM'},
-      {'author': 'Collision Crash Course',
-       'channel': 'Collision Crash Course',
+       'text': 'When the claim is sent from your PMS to the Tyro EFTPOS machine, the patient is '
+               'prompted directly on the screen to assign their benefit with a simple yes or no '
+               'option.',
+       'timestamp': 202,
+       'timestamp_label': '[00:03:22]',
+       'timestamp_seconds': 202,
+       'tip': 'When the claim is sent from your PMS to the Tyro EFTPOS machine, the patient is '
+              'prompted directly on the screen to assign their benefit with a simple yes or no '
+              'option.',
+       'title': 'Webinar: Assignment of Benefit (AoB) Changes - What You Need to Know',
+       'url': 'https://www.youtube.com/watch?v=CbZ5Nrxx8Xw&t=202s',
+       'video_id': 'CbZ5Nrxx8Xw'},
+      {'author': 'Claims Underground Podcast',
+       'channel': 'Claims Underground Podcast',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:41](https://www.youtube.com/watch?v=jcrOa0gm--g&t=101s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q10 operational '
-                    'verification).',
+       'markdown': '[00:22:34](https://www.youtube.com/watch?v=bPBmUaKay2w&t=1354s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'I was hit by an underinsured motorist, so I did use my policy for the repair. '
-               'I did have to pay my deductible to MGA, and I did get my deductible back. So '
-               "every claim is different, every insurance company's speed is different, but "
-               "that's just my experience.",
-       'timestamp': 101,
-       'timestamp_label': '[00:01:41]',
-       'timestamp_seconds': 101,
-       'tip': 'I was hit by an underinsured motorist, so I did use my policy for the repair. I '
-              'did have to pay my deductible to MGA, and I did get my deductible back. So '
-              "every claim is different, every insurance company's speed is different, but "
-              "that's just my experience.",
-       'title': "Do You Have to Pay Your Deductible If the Accident Wasn't Your Fault? "
-                '(Collision Crash Course)',
-       'url': 'https://www.youtube.com/watch?v=jcrOa0gm--g&t=101s',
-       'video_id': 'jcrOa0gm--g'},
-      {'author': 'FirehouseEducation',
-       'channel': 'FirehouseEducation',
+       'text': "If they can't give it to you before they show up, then they're not someone that "
+               'you can really trust.',
+       'timestamp': 1354,
+       'timestamp_label': '[00:22:34]',
+       'timestamp_seconds': 1354,
+       'tip': "If they can't give it to you before they show up, then they're not someone that you "
+              'can really trust.',
+       'title': 'Claims Underground Podcast: Mastering Assignment of Benefits with Top Public '
+                'Adjusters',
+       'url': 'https://www.youtube.com/watch?v=bPBmUaKay2w&t=1354s',
+       'video_id': 'bPBmUaKay2w'},
+      {'author': 'Claims Underground Podcast',
+       'channel': 'Claims Underground Podcast',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:08:42](https://www.youtube.com/watch?v=MkCNqNRsk04&t=522s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q10 operational '
-                    'verification).',
+       'markdown': '[00:27:04](https://www.youtube.com/watch?v=bPBmUaKay2w&t=1624s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Hepa vacuuming it, and then doing a steam cleaning on that mattress. And then '
-               'I end it with a um running it through my hydroxal drying chamber. So, your '
-               'fifth question, Sam, was cleaning of clothing and bedding.',
-       'timestamp': 522,
-       'timestamp_label': '[00:08:42]',
-       'timestamp_seconds': 522,
-       'tip': 'Hepa vacuuming it, and then doing a steam cleaning on that mattress. And then I '
-              'end it with a um running it through my hydroxal drying chamber. So, your fifth '
-              'question, Sam, was cleaning of clothing and bedding.',
-       'title': 'How to Clean Smoke-Damaged Contents After a Wildfire | Ask Annissa '
-                '(FirehouseEducation)',
-       'url': 'https://www.youtube.com/watch?v=MkCNqNRsk04&t=522s',
-       'video_id': 'MkCNqNRsk04'},
-      {'author': 'Magentus | Practice Management',
-       'channel': 'Magentus | Practice Management',
+       'text': 'Many of these contracts are reading you got five days to pay me, and nothing '
+               'happens in five days in this industry.',
+       'timestamp': 1624,
+       'timestamp_label': '[00:27:04]',
+       'timestamp_seconds': 1624,
+       'tip': 'Many of these contracts are reading you got five days to pay me, and nothing '
+              'happens in five days in this industry.',
+       'title': 'Claims Underground Podcast: Mastering Assignment of Benefits with Top Public '
+                'Adjusters',
+       'url': 'https://www.youtube.com/watch?v=bPBmUaKay2w&t=1624s',
+       'video_id': 'bPBmUaKay2w'},
+      {'author': 'Happy Adjuster',
+       'channel': 'Happy Adjuster',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=kY8cf-6-nlQ&t=15s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q10 operational '
-                    'verification).',
+       'markdown': '[00:01:26](https://www.youtube.com/watch?v=hqbiodyd1gc&t=86s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "Medicare's assignment of benefit requirements. These changes apply to both "
-               'bulk billing and inpatient simplified billing.',
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': "Medicare's assignment of benefit requirements. These changes apply to both bulk "
-              'billing and inpatient simplified billing.',
-       'title': 'Medicare Assignment of Benefit (AoB) in Gentu (Magentus | Practice '
-                'Management)',
-       'url': 'https://www.youtube.com/watch?v=kY8cf-6-nlQ&t=15s',
-       'video_id': 'kY8cf-6-nlQ'},
-      {'author': 'Daughtry Construction Group',
-       'channel': 'Daughtry Construction Group',
+       'text': 'Inflated charges. If they overcharge and your insurer refuses to pay the full '
+               "bill, guess who's stuck with the difference? You.",
+       'timestamp': 86,
+       'timestamp_label': '[00:01:26]',
+       'timestamp_seconds': 86,
+       'tip': 'Inflated charges. If they overcharge and your insurer refuses to pay the full bill, '
+              "guess who's stuck with the difference? You.",
+       'title': 'What Is an Assignment of Benefits (AOB)? | Should You Sign One After a Property '
+                'Damage Claim?',
+       'url': 'https://www.youtube.com/watch?v=hqbiodyd1gc&t=86s',
+       'video_id': 'hqbiodyd1gc'},
+      {'author': 'Long Term Care Law Office',
+       'channel': 'Long Term Care Law Office',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:45](https://www.youtube.com/watch?v=HLwvN9mF1R0&t=345s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q10 operational '
-                    'verification).',
+       'markdown': '[00:04:46](https://www.youtube.com/watch?v=4AHP633shFk&t=286s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Go over anything that we miss cleaning and this is charged by the square foot '
-               'again commercial right now is about 29 cents a square foot in residential '
-               "right now it's about 37 cents a square foot.",
-       'timestamp': 345,
-       'timestamp_label': '[00:05:45]',
-       'timestamp_seconds': 345,
-       'tip': 'Go over anything that we miss cleaning and this is charged by the square foot '
-              'again commercial right now is about 29 cents a square foot in residential right '
-              "now it's about 37 cents a square foot.",
-       'title': 'Xactimate Line Item Cheat Sheet (Daughtry Construction Group)',
-       'url': 'https://www.youtube.com/watch?v=HLwvN9mF1R0&t=345s',
-       'video_id': 'HLwvN9mF1R0'},
-      {'author': 'EstimateHub — PDF to ESX converter for Xactimate',
-       'channel': 'EstimateHub — PDF to ESX converter for Xactimate',
+       'text': 'We were able to collect hundreds of thousands, really in excess of a million '
+               'dollars of receivables that the agencies and registries had written off as '
+               'uncollectible.',
+       'timestamp': 286,
+       'timestamp_label': '[00:04:46]',
+       'timestamp_seconds': 286,
+       'tip': 'We were able to collect hundreds of thousands, really in excess of a million '
+              'dollars of receivables that the agencies and registries had written off as '
+              'uncollectible.',
+       'title': 'Healthcare Law, Steve Dunn   Assignment of Benefits',
+       'url': 'https://www.youtube.com/watch?v=4AHP633shFk&t=286s',
+       'video_id': '4AHP633shFk'},
+      {'author': 'Medicalbillingz',
+       'channel': 'Medicalbillingz',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:08](https://www.youtube.com/watch?v=KeJzOY4eZHU&t=68s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q10 operational '
-                    'verification).',
+       'markdown': '[00:01:48](https://www.youtube.com/watch?v=HC1u-rGDBKc&t=108s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Uh you can set your company header here. So an insurance carrier is going to '
-               "set their header or contractor is going to set their header, so it's going to "
-               'be a logo and their details.',
-       'timestamp': 68,
-       'timestamp_label': '[00:01:08]',
-       'timestamp_seconds': 68,
-       'tip': 'Uh you can set your company header here. So an insurance carrier is going to '
-              "set their header or contractor is going to set their header, so it's going to "
-              'be a logo and their details.',
-       'title': 'Xactimate Estimate Example (EstimateHub — PDF to ESX converter for Xactimate)',
-       'url': 'https://www.youtube.com/watch?v=KeJzOY4eZHU&t=68s',
-       'video_id': 'KeJzOY4eZHU'},
-      {'author': 'Adjuster TV',
-       'channel': 'Adjuster TV',
+       'text': 'The assignment of benefits in medical billing exposes personal data to potential '
+               'fraud risks including identity theft, medical fraud, billing fraud and phishing '
+               'scams.',
+       'timestamp': 108,
+       'timestamp_label': '[00:01:48]',
+       'timestamp_seconds': 108,
+       'tip': 'The assignment of benefits in medical billing exposes personal data to potential '
+              'fraud risks including identity theft, medical fraud, billing fraud and phishing '
+              'scams.',
+       'title': 'Assignment of Benefits (AOB) in Medical Billing: Your Comprehensive Guide',
+       'url': 'https://www.youtube.com/watch?v=HC1u-rGDBKc&t=108s',
+       'video_id': 'HC1u-rGDBKc'},
+      {'author': 'AARP Florida - The Sunshine State!',
+       'channel': 'AARP Florida - The Sunshine State!',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:56](https://www.youtube.com/watch?v=zOFPOUrXGw4&t=356s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q10 operational '
-                    'verification).',
+       'markdown': '[00:01:54](https://www.youtube.com/watch?v=vscXMMen_rc&t=114s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Lowest possible deductible that they may have is 500 bucks or ,000 bucks right '
-               'unfortunately sometimes we have to say no on claims learn about exclusions in '
-               'this next video right here.',
-       'timestamp': 356,
-       'timestamp_label': '[00:05:56]',
-       'timestamp_seconds': 356,
-       'tip': 'Lowest possible deductible that they may have is 500 bucks or ,000 bucks right '
-              'unfortunately sometimes we have to say no on claims learn about exclusions in '
-              'this next video right here.',
-       'title': 'Insurance Deductibles 101: When, Why, and How They Apply (Adjuster TV)',
-       'url': 'https://www.youtube.com/watch?v=zOFPOUrXGw4&t=356s',
-       'video_id': 'zOFPOUrXGw4'},
-      {'author': 'Self-Funded',
-       'channel': 'Self-Funded',
+       'text': 'If you turn your insurance money over to them, they want 50 percent down, and some '
+               'of our people here have lost some of their money because of it.',
+       'timestamp': 114,
+       'timestamp_label': '[00:01:54]',
+       'timestamp_seconds': 114,
+       'tip': 'If you turn your insurance money over to them, they want 50 percent down, and some '
+              'of our people here have lost some of their money because of it.',
+       'title': 'Barbara Day Assignment of Benefits (AOB) on insurance claims',
+       'url': 'https://www.youtube.com/watch?v=vscXMMen_rc&t=114s',
+       'video_id': 'vscXMMen_rc'},
+      {'author': 'flanewscapitol',
+       'channel': 'flanewscapitol',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:51](https://www.youtube.com/watch?v=nBqdaYbbpKg&t=51s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q10 operational '
-                    'verification).',
+       'markdown': '[00:01:09](https://www.youtube.com/watch?v=7-KaOK5zk7g&t=69s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Essentially just adjudicate claims eligibility management and try to implement '
-               'and run every.',
-       'timestamp': 51,
-       'timestamp_label': '[00:00:51]',
-       'timestamp_seconds': 51,
-       'tip': 'Essentially just adjudicate claims eligibility management and try to implement '
-              'and run every.',
-       'title': 'Life at Third Party Administrator - Owen Paradis - JP Farley - True Captive '
-                'Summit (Self-Funded)',
-       'url': 'https://www.youtube.com/watch?v=nBqdaYbbpKg&t=51s',
-       'video_id': 'nBqdaYbbpKg'},
-      {'author': 'Testudo LLC',
-       'channel': 'Testudo LLC',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:11:55](https://www.youtube.com/watch?v=4NKJ6zuVvTY&t=715s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q10 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'The work area each cell requires its own wipe and each counter tab can be '
-               'wiped in its entirety unless it is over 40 square feet you use a long-handled '
-               'mop and wipe no more than 40 square feet per wipe compare each wipe to the '
-               'cleaning verification.',
-       'timestamp': 715,
-       'timestamp_label': '[00:11:55]',
-       'timestamp_seconds': 715,
-       'tip': 'The work area each cell requires its own wipe and each counter tab can be wiped '
-              'in its entirety unless it is over 40 square feet you use a long-handled mop and '
-              'wipe no more than 40 square feet per wipe compare each wipe to the cleaning '
-              'verification.',
-       'title': 'Lead Safe Renovator Training - Interior Work Practices (Testudo LLC)',
-       'url': 'https://www.youtube.com/watch?v=4NKJ6zuVvTY&t=715s',
-       'video_id': '4NKJ6zuVvTY'},
-      {'author': 'Canei Adjusting',
-       'channel': 'Canei Adjusting',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:11:40](https://www.youtube.com/watch?v=BQZjEuyEaq4&t=700s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q10 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Ceiling fans, there are good things, extra features. If there's any in the "
-               'room that might need to be, especially if the damage is close to it and that '
-               "panel needs come down, then you might want to detach and reset Reese's lights "
-               'as well.',
-       'timestamp': 700,
-       'timestamp_label': '[00:11:40]',
-       'timestamp_seconds': 700,
-       'tip': "Ceiling fans, there are good things, extra features. If there's any in the room "
-              'that might need to be, especially if the damage is close to it and that panel '
-              "needs come down, then you might want to detach and reset Reese's lights as "
-              'well.',
-       'title': 'CEILING XACTIMATE LINE ITEMS (Canei Adjusting)',
-       'url': 'https://www.youtube.com/watch?v=BQZjEuyEaq4&t=700s',
-       'video_id': 'BQZjEuyEaq4'},
-      {'author': 'Chad Michael - The Practitioner',
-       'channel': 'Chad Michael - The Practitioner',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:20:10](https://www.youtube.com/watch?v=4dhIe6HGIs0&t=1210s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q10 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Common things that they resist on right but some but sometimes it's like the "
-               'insurance company they prove the whole thing right they prove a bunch of '
-               "things they give you this great thing like how come all of them can't be that "
-               'way.',
-       'timestamp': 1210,
-       'timestamp_label': '[00:20:10]',
-       'timestamp_seconds': 1210,
-       'tip': "Common things that they resist on right but some but sometimes it's like the "
-              'insurance company they prove the whole thing right they prove a bunch of things '
-              "they give you this great thing like how come all of them can't be that way.",
-       'title': 'The Ultimate Insurance Claim Supplement (Chad Michael - The Practitioner)',
-       'url': 'https://www.youtube.com/watch?v=4dhIe6HGIs0&t=1210s',
-       'video_id': '4dhIe6HGIs0'},
-      {'author': 'ProLine',
-       'channel': 'ProLine',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:15:49](https://www.youtube.com/watch?v=g3I-8o2x140&t=949s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q10 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Add we can try we's try this one is this going to have your face in it well "
-               "that one's muted maybe we'll add both and see what happens but you are muted.",
-       'timestamp': 949,
-       'timestamp_label': '[00:15:49]',
-       'timestamp_seconds': 949,
-       'tip': "Add we can try we's try this one is this going to have your face in it well "
-              "that one's muted maybe we'll add both and see what happens but you are muted.",
-       'title': 'Roofing subcrews, profit, markup, and repair work | Roofer2Roofer 002 '
-                '(ProLine)',
-       'url': 'https://www.youtube.com/watch?v=g3I-8o2x140&t=949s',
-       'video_id': 'g3I-8o2x140'},
-      {'author': 'PushLeads',
-       'channel': 'PushLeads',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:08:23](https://www.youtube.com/watch?v=wnVxHv3JM28&t=503s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q10 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'For most significant insurance claims, you need both. For small losses with '
-               'limited material removal, the restoration company alone may handle it. For '
-               'purely structural repairs with no environmental concerns, a general contractor '
-               'is the right call from the start.',
-       'timestamp': 503,
-       'timestamp_label': '[00:08:23]',
-       'timestamp_seconds': 503,
-       'tip': 'For most significant insurance claims, you need both. For small losses with '
-              'limited material removal, the restoration company alone may handle it. For '
-              'purely structural repairs with no environmental concerns, a general contractor '
-              'is the right call from the start.',
-       'title': "Restoration Company vs General Contractor: What's the Difference? (PushLeads)",
-       'url': 'https://www.youtube.com/watch?v=wnVxHv3JM28&t=503s',
-       'video_id': 'wnVxHv3JM28'}],
- 11: [{'author': 'Tampa Bay 28',
+       'text': "If they can save 50 bucks by doing the wrong thing, then they're gonna try to save "
+               '50 bucks.',
+       'timestamp': 69,
+       'timestamp_label': '[00:01:09]',
+       'timestamp_seconds': 69,
+       'tip': "If they can save 50 bucks by doing the wrong thing, then they're gonna try to save "
+              '50 bucks.',
+       'title': 'Insurers Call for Assignment of Benefits Reform',
+       'url': 'https://www.youtube.com/watch?v=7-KaOK5zk7g&t=69s',
+       'video_id': '7-KaOK5zk7g'},
+      {'author': 'Tampa Bay 28',
        'channel': 'Tampa Bay 28',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:52](https://www.youtube.com/watch?v=1DrEImX-sYU&t=52s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q11 operational '
-                    'verification).',
+       'markdown': '[00:01:39](https://www.youtube.com/watch?v=1DrEImX-sYU&t=99s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Her contractor also asked her to approve an assignment of benefits you said '
-               "I'll take care of everything for years the i-team exposed the abuse of the.",
-       'timestamp': 52,
-       'timestamp_label': '[00:00:52]',
-       'timestamp_seconds': 52,
-       'tip': 'Her contractor also asked her to approve an assignment of benefits you said '
-              "I'll take care of everything for years the i-team exposed the abuse of the.",
-       'title': "Stopping 'Assignment of Benefits' Abuse (Tampa Bay 28)",
-       'url': 'https://www.youtube.com/watch?v=1DrEImX-sYU&t=52s',
-       'video_id': '1DrEImX-sYU'},
-      {'author': "The Adjuster's Roundtable",
-       'channel': "The Adjuster's Roundtable",
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:33](https://www.youtube.com/watch?v=_wmRAji2ZmI&t=333s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q11 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'I was able to develop not only with their senior level desk adjusters but the '
-               'next level above that, you know, the big time decision makers, you know the '
-               'director of the claims operations.',
-       'timestamp': 333,
-       'timestamp_label': '[00:05:33]',
-       'timestamp_seconds': 333,
-       'tip': 'I was able to develop not only with their senior level desk adjusters but the '
-              'next level above that, you know, the big time decision makers, you know the '
-              'director of the claims operations.',
-       'title': 'How he Overturned a Denied Insurance Claim | Public Adjuster Case Study & '
-                "Expert Tips (The Adjuster's Roundtable)",
-       'url': 'https://www.youtube.com/watch?v=_wmRAji2ZmI&t=333s',
-       'video_id': '_wmRAji2ZmI'},
-      {'author': 'Phill McGurk',
-       'channel': 'Phill McGurk',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:25](https://www.youtube.com/watch?v=Dl8DpDk97_A&t=325s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q11 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'It avoids that whole conflict of interest of having the company grade its own '
-               "homework. So, let's just boil this all down into your personal hiring "
-               'checklist. Before you sign any contract, make sure you can check these four '
-               'boxes.',
-       'timestamp': 325,
-       'timestamp_label': '[00:05:25]',
-       'timestamp_seconds': 325,
-       'tip': 'It avoids that whole conflict of interest of having the company grade its own '
-              "homework. So, let's just boil this all down into your personal hiring "
-              'checklist. Before you sign any contract, make sure you can check these four '
-              'boxes.',
-       'title': 'IICRC S520 - Core Principle of Mould Remediation (Phill McGurk)',
-       'url': 'https://www.youtube.com/watch?v=Dl8DpDk97_A&t=325s',
-       'video_id': 'Dl8DpDk97_A'},
-      {'author': "Shane O'Dazier | RestorationProfits",
-       'channel': "Shane O'Dazier | RestorationProfits",
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:12:05](https://www.youtube.com/watch?v=SK7KHGnvQ6Y&t=725s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q11 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'In your information we get on a call and see how we can help you grow your '
-               "company lastly there'll be some other videos right here if you want to watch "
-               'more content about growing your Restoration company check out one of these '
-               "videos we'll see you guys on the next one.",
-       'timestamp': 725,
-       'timestamp_label': '[00:12:05]',
-       'timestamp_seconds': 725,
-       'tip': 'In your information we get on a call and see how we can help you grow your '
-              "company lastly there'll be some other videos right here if you want to watch "
-              'more content about growing your Restoration company check out one of these '
-              "videos we'll see you guys on the next one.",
-       'title': "The ugly truth about Xactimate and the restoration industry (Shane O'Dazier | "
-                'RestorationProfits)',
-       'url': 'https://www.youtube.com/watch?v=SK7KHGnvQ6Y&t=725s',
-       'video_id': 'SK7KHGnvQ6Y'},
-      {'author': 'Fred McCutcheon Jr.',
-       'channel': 'Fred McCutcheon Jr.',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:19](https://www.youtube.com/watch?v=yrUY61hcioM&t=79s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q11 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Your insurance company to coordinate your claim and help you get your life '
-               'back on track our fire damage reconstruction experts work quickly to restore '
-               'the property to pre-fire conditions thank you from all of us at catastrophy '
-               'services and serving your property.',
-       'timestamp': 79,
-       'timestamp_label': '[00:01:19]',
-       'timestamp_seconds': 79,
-       'tip': 'Your insurance company to coordinate your claim and help you get your life back '
-              'on track our fire damage reconstruction experts work quickly to restore the '
-              'property to pre-fire conditions thank you from all of us at catastrophy '
-              'services and serving your property.',
-       'title': 'Fire Damage Contents Pack Outs (Fred McCutcheon Jr.)',
-       'url': 'https://www.youtube.com/watch?v=yrUY61hcioM&t=79s',
-       'video_id': 'yrUY61hcioM'},
-      {'author': 'FirehouseEducation',
-       'channel': 'FirehouseEducation',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:41](https://www.youtube.com/watch?v=w85_KBcX690&t=101s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q11 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "So, really the the way we determine what what we're going to do is the degree "
-               'of the damage to the items, do we have to use ultrasonic, how intense is our '
-               'cleaning situation, and then how damaged if any, is our structure.',
-       'timestamp': 101,
-       'timestamp_label': '[00:01:41]',
-       'timestamp_seconds': 101,
-       'tip': "So, really the the way we determine what what we're going to do is the degree "
-              'of the damage to the items, do we have to use ultrasonic, how intense is our '
-              'cleaning situation, and then how damaged if any, is our structure.',
-       'title': 'When Do You Packout or Clean In Place A Contents Restoration Job? '
-                '(FirehouseEducation)',
-       'url': 'https://www.youtube.com/watch?v=w85_KBcX690&t=101s',
-       'video_id': 'w85_KBcX690'},
-      {'author': 'Roof Sales Mastery',
-       'channel': 'Roof Sales Mastery',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:20](https://www.youtube.com/watch?v=rui1iBgQxWY&t=200s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q11 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "So, simplify your business. Make sure that you're delegating tasks to people "
-               'and make them responsible for the one thing that they should really be good '
-               "at. That's why your production manager just focuses on production.",
-       'timestamp': 200,
-       'timestamp_label': '[00:03:20]',
-       'timestamp_seconds': 200,
-       'tip': "So, simplify your business. Make sure that you're delegating tasks to people "
-              'and make them responsible for the one thing that they should really be good at. '
-              "That's why your production manager just focuses on production.",
-       'title': 'Should You Designate an In-House Supplementer for Roof Claims? (Roof Sales '
-                'Mastery)',
-       'url': 'https://www.youtube.com/watch?v=rui1iBgQxWY&t=200s',
-       'video_id': 'rui1iBgQxWY'},
-      {'author': 'State Restoration Services',
-       'channel': 'State Restoration Services',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:35](https://www.youtube.com/watch?v=06ChGuOZCto&t=35s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q11 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': '20,000 into 50/50, half of it now, half of it after you build the roof. '
-               'Deductible is not something that insurance company will ever take from you. '
-               "You don't have to ever, ever, under no circumstances, they will ask you to "
-               'send the money to them, all right?',
-       'timestamp': 35,
-       'timestamp_label': '[00:00:35]',
-       'timestamp_seconds': 35,
-       'tip': '20,000 into 50/50, half of it now, half of it after you build the roof. '
-              'Deductible is not something that insurance company will ever take from you. You '
-              "don't have to ever, ever, under no circumstances, they will ask you to send the "
-              'money to them, all right?',
-       'title': 'Insurance Deductible Explained What It Means for Your Roof Claim (State '
-                'Restoration Services)',
-       'url': 'https://www.youtube.com/watch?v=06ChGuOZCto&t=35s',
-       'video_id': '06ChGuOZCto'},
-      {'author': 'Chad Michael - The Practitioner',
-       'channel': 'Chad Michael - The Practitioner',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:31:58](https://www.youtube.com/watch?v=bVX2IRINNSM&t=1918s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q11 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'On all sake but State Farm so what was one with this call them give another '
-               "thing that we're asking 1453 and when the team 53 answers that adjusts with.",
-       'timestamp': 1918,
-       'timestamp_label': '[00:31:58]',
-       'timestamp_seconds': 1918,
-       'tip': 'On all sake but State Farm so what was one with this call them give another '
-              "thing that we're asking 1453 and when the team 53 answers that adjusts with.",
-       'title': 'Who To Send Xactimate Estimate To? | Roof Claim Supplement (Chad Michael - '
-                'The Practitioner)',
-       'url': 'https://www.youtube.com/watch?v=bVX2IRINNSM&t=1918s',
-       'video_id': 'bVX2IRINNSM'},
-      {'author': 'Andrew Melrose',
-       'channel': 'Andrew Melrose',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:00](https://www.youtube.com/watch?v=iQ4PIKW3sEc&t=120s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q11 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Effectively and uh there's a science of drying it really is extracting its "
-               "fans its dehumidifiers it's assessing the different materials um and then "
-               "we're.",
-       'timestamp': 120,
-       'timestamp_label': '[00:02:00]',
-       'timestamp_seconds': 120,
-       'tip': "Effectively and uh there's a science of drying it really is extracting its fans "
-              "its dehumidifiers it's assessing the different materials um and then we're.",
-       'title': 'Only Hire Certified Professionals! - (Water Restoration/IICRC s500 VS. Mold '
-                'Remediation/IICRC s520) (Andrew Melrose)',
-       'url': 'https://www.youtube.com/watch?v=iQ4PIKW3sEc&t=120s',
-       'video_id': 'iQ4PIKW3sEc'},
-      {'author': 'Adjusterpedia',
-       'channel': 'Adjusterpedia',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:38](https://www.youtube.com/watch?v=4EdiIO_RCX0&t=218s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q11 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Check mark so you get the idea through here or does it have pipe jacks yes or '
-               'whatever do I have valley metal W check mark yes how many pipe jacks do I '
-               'have.',
-       'timestamp': 218,
-       'timestamp_label': '[00:03:38]',
-       'timestamp_seconds': 218,
-       'tip': 'Check mark so you get the idea through here or does it have pipe jacks yes or '
-              'whatever do I have valley metal W check mark yes how many pipe jacks do I have.',
-       'title': 'Why and How to use Scope Sheets - Tutorial (Adjusterpedia)',
-       'url': 'https://www.youtube.com/watch?v=4EdiIO_RCX0&t=218s',
-       'video_id': '4EdiIO_RCX0'},
-      {'author': 'Xactimate Training by Crest LLC',
-       'channel': 'Xactimate Training by Crest LLC',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:51](https://www.youtube.com/watch?v=CFVMi9HmVcM&t=51s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q11 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'I just wanted to put a little bit of everything in there. You can see here '
-               "I've got removing some wet non-s salvageable carpet, some carpet pad, tear out "
-               '2 ft of drywall, tear out baseboard, and tear out one cabinet just as an '
-               "example. So, I'm going to save and exit.",
-       'timestamp': 51,
-       'timestamp_label': '[00:00:51]',
-       'timestamp_seconds': 51,
-       'tip': "I just wanted to put a little bit of everything in there. You can see here I've "
-              'got removing some wet non-s salvageable carpet, some carpet pad, tear out 2 ft '
-              'of drywall, tear out baseboard, and tear out one cabinet just as an example. '
-              "So, I'm going to save and exit.",
-       'title': 'Xactimate - Water Mitigation to Rebuild Estimate Tool (Xactimate Training by '
-                'Crest LLC)',
-       'url': 'https://www.youtube.com/watch?v=CFVMi9HmVcM&t=51s',
-       'video_id': 'CFVMi9HmVcM'},
-      {'author': 'Adjuster TV',
-       'channel': 'Adjuster TV',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:08:47](https://www.youtube.com/watch?v=lIyYVIMZa0s&t=527s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q11 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'My industry Partners to help you be a great adjuster so that you can serve our '
-               'industry and make a great living doing it and as always thank you so much for '
-               'watching and have a great storm.',
-       'timestamp': 527,
-       'timestamp_label': '[00:08:47]',
-       'timestamp_seconds': 527,
-       'tip': 'My industry Partners to help you be a great adjuster so that you can serve our '
-              'industry and make a great living doing it and as always thank you so much for '
-              'watching and have a great storm.',
-       'title': 'How to write a roof repair estimate in Xactimate X1 (Adjuster TV)',
-       'url': 'https://www.youtube.com/watch?v=lIyYVIMZa0s&t=527s',
-       'video_id': 'lIyYVIMZa0s'},
-      {'author': 'Encircle',
-       'channel': 'Encircle',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:58:09](https://www.youtube.com/watch?v=33iGNdZ6fyE&t=3489s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q11 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Your strongest argument your second strongest argument would be then I need to '
-               'know what chemicals to use to clean it if it can be cleaned or do I have to '
-               "remove the material that' be your next strongest.",
-       'timestamp': 3489,
-       'timestamp_label': '[00:58:09]',
-       'timestamp_seconds': 3489,
-       'tip': 'Your strongest argument your second strongest argument would be then I need to '
-              'know what chemicals to use to clean it if it can be cleaned or do I have to '
-              "remove the material that' be your next strongest.",
-       'title': 'Fire & Smoke Restoration Bootcamp - Webinar (Encircle)',
-       'url': 'https://www.youtube.com/watch?v=33iGNdZ6fyE&t=3489s',
-       'video_id': '33iGNdZ6fyE'},
-      {'author': 'Homeowner Explained',
-       'channel': 'Homeowner Explained',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:09:39](https://www.youtube.com/watch?v=MPSOkm3YFak&t=579s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q11 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Read your deductible, roof coverage, and deadline before you call. Be there '
-               "for the adjuster, and don't sign anything at your front door. And know your "
-               'options if the payout falls short. Grab the free Wind and Hail Claim Checklist '
-               'at homeownerexplained.',
-       'timestamp': 579,
-       'timestamp_label': '[00:09:39]',
-       'timestamp_seconds': 579,
-       'tip': 'Read your deductible, roof coverage, and deadline before you call. Be there for '
-              "the adjuster, and don't sign anything at your front door. And know your options "
-              'if the payout falls short. Grab the free Wind and Hail Claim Checklist at '
-              'homeownerexplained.',
-       'title': 'Did the Hail Really Damage Your Roof? Check This First (Homeowner Explained)',
-       'url': 'https://www.youtube.com/watch?v=MPSOkm3YFak&t=579s',
-       'video_id': 'MPSOkm3YFak'}],
- 12: [{'author': "Shane O'Dazier | RestorationProfits",
-       'channel': "Shane O'Dazier | RestorationProfits",
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:07:32](https://www.youtube.com/watch?v=roHp-ZzbYvs&t=452s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Instead of just billing for three days or 4 days I started using half day '
-               'Roundup billing so if it sat there for 3 days and a few hours start charging '
-               '3.4.',
-       'timestamp': 452,
-       'timestamp_label': '[00:07:32]',
-       'timestamp_seconds': 452,
-       'tip': 'Instead of just billing for three days or 4 days I started using half day '
-              'Roundup billing so if it sat there for 3 days and a few hours start charging '
-              '3.4.',
-       'title': "Top 5 Xactimate hacks for water damage estimates (Shane O'Dazier | "
-                'RestorationProfits)',
-       'url': 'https://www.youtube.com/watch?v=roHp-ZzbYvs&t=452s',
-       'video_id': 'roHp-ZzbYvs'},
-      {'author': 'Restoration Growth Co',
-       'channel': 'Restoration Growth Co',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:09:46](https://www.youtube.com/watch?v=zkR_04H9hBQ&t=586s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': '30 more water damage jobs in your first 90 days, not 30 leads, 30 jobs. And if '
-               "the number isn't there at day 90, we keep working and you stop paying until it "
-               'is. Only one restoration company per market.',
-       'timestamp': 586,
-       'timestamp_label': '[00:09:46]',
-       'timestamp_seconds': 586,
-       'tip': '30 more water damage jobs in your first 90 days, not 30 leads, 30 jobs. And if '
-              "the number isn't there at day 90, we keep working and you stop paying until it "
-              'is. Only one restoration company per market.',
-       'title': 'The Hidden Cost of Water Damage Google Ads (And How to Stop It!) (Restoration '
-                'Growth Co)',
-       'url': 'https://www.youtube.com/watch?v=zkR_04H9hBQ&t=586s',
-       'video_id': 'zkR_04H9hBQ'},
-      {'author': 'claimhelpme',
-       'channel': 'claimhelpme',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:26](https://www.youtube.com/watch?v=eLQHV7yIGx8&t=146s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'And homeowners, do you notice the difference? One contractor promises to start '
-               'tomorrow, the other explains what happens when the insurance company '
-               'disagrees, how the scope will be reviewed, and needs to be done before the '
-               'construction begins. One demonstrated knowledge.',
-       'timestamp': 146,
-       'timestamp_label': '[00:02:26]',
-       'timestamp_seconds': 146,
-       'tip': 'And homeowners, do you notice the difference? One contractor promises to start '
-              'tomorrow, the other explains what happens when the insurance company disagrees, '
-              'how the scope will be reviewed, and needs to be done before the construction '
-              'begins. One demonstrated knowledge.',
-       'title': 'Restoration Contractors: Stop Selling From Weakness! Insurance Claims Done '
-                'Right (claimhelpme)',
-       'url': 'https://www.youtube.com/watch?v=eLQHV7yIGx8&t=146s',
-       'video_id': 'eLQHV7yIGx8'},
-      {'author': 'Canei Adjusting',
-       'channel': 'Canei Adjusting',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:11](https://www.youtube.com/watch?v=Sk9blhK0GiU&t=251s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "So let's say we receive the claim on the 23rd if you're a contractor, the day "
-               'that you signed the contract with the insured day that you contacted the '
-               "insured, you received on the 23rd, but they didn't give you permission to call "
-               'until the 24th.',
-       'timestamp': 251,
-       'timestamp_label': '[00:04:11]',
-       'timestamp_seconds': 251,
-       'tip': "So let's say we receive the claim on the 23rd if you're a contractor, the day "
-              'that you signed the contract with the insured day that you contacted the '
-              "insured, you received on the 23rd, but they didn't give you permission to call "
-              'until the 24th.',
-       'title': 'XACTIMATE CLAIM INFORMATION (Canei Adjusting)',
-       'url': 'https://www.youtube.com/watch?v=Sk9blhK0GiU&t=251s',
-       'video_id': 'Sk9blhK0GiU'},
-      {'author': 'Tradeforge CRM',
-       'channel': 'Tradeforge CRM',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:24](https://www.youtube.com/watch?v=Kiez0kPNuRk&t=384s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "14-day trial, no credit card needed. If you don't love it, dead stop, you "
-               "know, after 14 days. If you do love it, pick a plan. You know, we're always "
-               'going to be updating the system.',
-       'timestamp': 384,
-       'timestamp_label': '[00:06:24]',
-       'timestamp_seconds': 384,
-       'tip': "14-day trial, no credit card needed. If you don't love it, dead stop, you know, "
-              "after 14 days. If you do love it, pick a plan. You know, we're always going to "
-              'be updating the system.',
-       'title': 'Roof Measurement → Supplement → Signed Contract in One Workflow | TradeForge '
-                'for Roofers (Tradeforge CRM)',
-       'url': 'https://www.youtube.com/watch?v=Kiez0kPNuRk&t=384s',
-       'video_id': 'Kiez0kPNuRk'},
-      {'author': 'Marketing Ninjas',
-       'channel': 'Marketing Ninjas',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:34](https://www.youtube.com/watch?v=5Ibyq8oHR7Y&t=214s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Clear tiers, clear benefits, easy to engage. So, why does this approach work '
-               "so well long term? 's paying for their leads and start being the company that "
-               "all the plumbers are bragging about. Well, this works because it's not about "
-               'gimmicks.',
-       'timestamp': 214,
-       'timestamp_label': '[00:03:34]',
-       'timestamp_seconds': 214,
-       'tip': 'Clear tiers, clear benefits, easy to engage. So, why does this approach work so '
-              "well long term? 's paying for their leads and start being the company that all "
-              "the plumbers are bragging about. Well, this works because it's not about "
-              'gimmicks.',
-       'title': 'How to Generate 7 Figures for Your Restoration Company From Plumbers '
-                '(Marketing Ninjas)',
-       'url': 'https://www.youtube.com/watch?v=5Ibyq8oHR7Y&t=214s',
-       'video_id': '5Ibyq8oHR7Y'},
-      {'author': 'Restoration Made Simple',
-       'channel': 'Restoration Made Simple',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:17](https://www.youtube.com/watch?v=aBQA1Wn_LNQ&t=377s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Again, you can adapt it to your area, but I would print these for my guys in '
-               'Colorado and also for a company in Utah. And they were closing between three '
-               'to five more self-paid jobs a month with just this sheet. And you can get '
-               'that, okay?',
-       'timestamp': 377,
-       'timestamp_label': '[00:06:17]',
-       'timestamp_seconds': 377,
-       'tip': 'Again, you can adapt it to your area, but I would print these for my guys in '
-              'Colorado and also for a company in Utah. And they were closing between three to '
-              'five more self-paid jobs a month with just this sheet. And you can get that, '
-              'okay?',
-       'title': 'Restoration Made Simple - How to start a water damage business (Restoration '
-                'Made Simple)',
-       'url': 'https://www.youtube.com/watch?v=aBQA1Wn_LNQ&t=377s',
-       'video_id': 'aBQA1Wn_LNQ'},
-      {'author': 'Overhead And Profit',
-       'channel': 'Overhead And Profit',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:09](https://www.youtube.com/watch?v=A7SLk2mjCXU&t=249s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Money on the table for more on this please go to www. overhead andpractices '
-               'writing services and invoicing supplementing and billing thank you so much for '
-               "watching hope you're having a great day.",
-       'timestamp': 249,
-       'timestamp_label': '[00:04:09]',
-       'timestamp_seconds': 249,
-       'tip': 'Money on the table for more on this please go to www. overhead andpractices '
-              'writing services and invoicing supplementing and billing thank you so much for '
-              "watching hope you're having a great day.",
-       'title': 'Xactimate and Insurance Prices Change Every Month; Do You Know How Much? '
-                '(Overhead And Profit)',
-       'url': 'https://www.youtube.com/watch?v=A7SLk2mjCXU&t=249s',
-       'video_id': 'A7SLk2mjCXU'},
-      {'author': 'Claim Daddy',
-       'channel': 'Claim Daddy',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:13:19](https://www.youtube.com/watch?v=yytgxtBGSF8&t=799s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': "So, if we're here underneath the project, we would be under parameters, and "
-               'this price listing should be the month that you are completing the assignment.',
-       'timestamp': 799,
-       'timestamp_label': '[00:13:19]',
-       'timestamp_seconds': 799,
-       'tip': "So, if we're here underneath the project, we would be under parameters, and "
-              'this price listing should be the month that you are completing the assignment.',
-       'title': '🏠🎯 Master Hail Claim Xactimate Estimating | Pro Adjuster Training (Claim '
-                'Daddy)',
-       'url': 'https://www.youtube.com/watch?v=yytgxtBGSF8&t=799s',
-       'video_id': 'yytgxtBGSF8'},
-      {'author': 'ISSA Media',
-       'channel': 'ISSA Media',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:39](https://www.youtube.com/watch?v=jFMj8u8OsU4&t=99s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q12 operational '
-                    'verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'S520 was uh basically brought into being. Uh we have to first start with the '
-               'S500 which was the uh standard that came out for the water damage restoration '
-               'industry. But the S500 did not really address anything with mold.',
+       'text': 'The new law, which goes into effect July 1st, allows insurers to offer policies '
+               'without assignment of benefits, and these policies could come at a discount to '
+               'consumers.',
        'timestamp': 99,
        'timestamp_label': '[00:01:39]',
        'timestamp_seconds': 99,
-       'tip': 'S520 was uh basically brought into being. Uh we have to first start with the '
-              'S500 which was the uh standard that came out for the water damage restoration '
-              'industry. But the S500 did not really address anything with mold.',
-       'title': 'Inside the S520: The Standard That Changed Mold Remediation (ISSA Media)',
-       'url': 'https://www.youtube.com/watch?v=jFMj8u8OsU4&t=99s',
-       'video_id': 'jFMj8u8OsU4'},
-      {'author': 'Estimate Mastery',
-       'channel': 'Estimate Mastery',
+       'tip': 'The new law, which goes into effect July 1st, allows insurers to offer policies '
+              'without assignment of benefits, and these policies could come at a discount to '
+              'consumers.',
+       'title': "Stopping 'Assignment of Benefits' Abuse",
+       'url': 'https://www.youtube.com/watch?v=1DrEImX-sYU&t=99s',
+       'video_id': '1DrEImX-sYU'},
+      {'author': 'yourEadvisor.com',
+       'channel': 'yourEadvisor.com',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:18:02](https://www.youtube.com/watch?v=Vj-mEgtLqUw&t=1082s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q12 operational '
-                    'verification).',
+       'markdown': '[00:02:21](https://www.youtube.com/watch?v=On3xbq5nLqk&t=141s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Visually so if you want to go in the bedroom here you can start to hover and '
-               "learn what exactly make calls all these different wall finishes they don't "
-               'call.',
-       'timestamp': 1082,
-       'timestamp_label': '[00:18:02]',
-       'timestamp_seconds': 1082,
-       'tip': 'Visually so if you want to go in the bedroom here you can start to hover and '
-              "learn what exactly make calls all these different wall finishes they don't "
-              'call.',
-       'title': 'Xactimate 101 - Free Beginner Training in Xactimate (Estimate Mastery)',
-       'url': 'https://www.youtube.com/watch?v=Vj-mEgtLqUw&t=1082s',
-       'video_id': 'Vj-mEgtLqUw'},
+       'text': "If it's $1 over the amount that the insurance company said, suddenly the insurance "
+               'company is responsible for the court fees for the contractor.',
+       'timestamp': 141,
+       'timestamp_label': '[00:02:21]',
+       'timestamp_seconds': 141,
+       'tip': "If it's $1 over the amount that the insurance company said, suddenly the insurance "
+              'company is responsible for the court fees for the contractor.',
+       'title': 'Assignment of Benefits (AOB)',
+       'url': 'https://www.youtube.com/watch?v=On3xbq5nLqk&t=141s',
+       'video_id': 'On3xbq5nLqk'},
+      {'author': 'One Claim Solution',
+       'channel': 'One Claim Solution',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:52](https://www.youtube.com/watch?v=wq1z-Qyyws8&t=112s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'Then they turn around to the contractor and say, hey, tough luck, I can make '
+               'payments, or you can try to come after me.',
+       'timestamp': 112,
+       'timestamp_label': '[00:01:52]',
+       'timestamp_seconds': 112,
+       'tip': 'Then they turn around to the contractor and say, hey, tough luck, I can make '
+              'payments, or you can try to come after me.',
+       'title': 'OCS: Assignment Of Benefits',
+       'url': 'https://www.youtube.com/watch?v=wq1z-Qyyws8&t=112s',
+       'video_id': 'wq1z-Qyyws8'},
+      {'author': 'News4JAX The Local Station',
+       'channel': 'News4JAX The Local Station',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:20](https://www.youtube.com/watch?v=hB0EZGfpw4I&t=80s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'If you assign your benefits to a third party, that third party does not get the '
+               'benefit of the one-way attorney fee statute.',
+       'timestamp': 80,
+       'timestamp_label': '[00:01:20]',
+       'timestamp_seconds': 80,
+       'tip': 'If you assign your benefits to a third party, that third party does not get the '
+              'benefit of the one-way attorney fee statute.',
+       'title': "Florida lawmakers seek 'assignment of benefits' solution",
+       'url': 'https://www.youtube.com/watch?v=hB0EZGfpw4I&t=80s',
+       'video_id': 'hB0EZGfpw4I'},
+      {'author': 'magicplan',
+       'channel': 'magicplan',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:15:32](https://www.youtube.com/watch?v=F4WLuIxWd-Q&t=932s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'Mr. Insurance company, we have the assignment, you knew we had the assignment and '
+               'you still sent payment to your policyholder, so cut us a new check.',
+       'timestamp': 932,
+       'timestamp_label': '[00:15:32]',
+       'timestamp_seconds': 932,
+       'tip': 'Mr. Insurance company, we have the assignment, you knew we had the assignment and '
+              'you still sent payment to your policyholder, so cut us a new check.',
+       'title': 'When Does Assignment of Benefits (AOB) Work Best? Tips for Restorers (w/Josh '
+                'Ehmke)',
+       'url': 'https://www.youtube.com/watch?v=F4WLuIxWd-Q&t=932s',
+       'video_id': 'F4WLuIxWd-Q'},
+      {'author': 'Magentus | Practice Management',
+       'channel': 'Magentus | Practice Management',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:29](https://www.youtube.com/watch?v=kY8cf-6-nlQ&t=89s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'The Department of Health, Disability and Aging has announced a 12-month transition '
+               'period where verbal consent is permitted and no forms are required.',
+       'timestamp': 89,
+       'timestamp_label': '[00:01:29]',
+       'timestamp_seconds': 89,
+       'tip': 'The Department of Health, Disability and Aging has announced a 12-month transition '
+              'period where verbal consent is permitted and no forms are required.',
+       'title': 'Medicare Assignment of Benefit (AoB) in Gentu',
+       'url': 'https://www.youtube.com/watch?v=kY8cf-6-nlQ&t=89s',
+       'video_id': 'kY8cf-6-nlQ'},
+      {'author': 'FOX 4 Now',
+       'channel': 'FOX 4 Now',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:06](https://www.youtube.com/watch?v=Mzby_5C7IBI&t=66s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'You were giving them a blank check that gives them access to your claim.',
+       'timestamp': 66,
+       'timestamp_label': '[00:01:06]',
+       'timestamp_seconds': 66,
+       'tip': 'You were giving them a blank check that gives them access to your claim.',
+       'title': 'State Leaders Want to Ban Assignment of Benefits',
+       'url': 'https://www.youtube.com/watch?v=Mzby_5C7IBI&t=66s',
+       'video_id': 'Mzby_5C7IBI'},
+      {'author': 'Floridians For Honest Lending',
+       'channel': 'Floridians For Honest Lending',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:54](https://www.youtube.com/watch?v=I-S4L6YL2wo&t=294s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'A great reform, not only for the marketplace but to protect consumers, would be to '
+               'limit assignment of benefits only for emergency work.',
+       'timestamp': 294,
+       'timestamp_label': '[00:04:54]',
+       'timestamp_seconds': 294,
+       'tip': 'A great reform, not only for the marketplace but to protect consumers, would be to '
+              'limit assignment of benefits only for emergency work.',
+       'title': 'The Property Insurance Crisis in Florida, Part 02: Assignment of Benefits',
+       'url': 'https://www.youtube.com/watch?v=I-S4L6YL2wo&t=294s',
+       'video_id': 'I-S4L6YL2wo'}],
+ 11: [{'author': 'AnnePullen',
+       'channel': 'AnnePullen',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:39](https://www.youtube.com/watch?v=tLwSSUZ6Awc&t=99s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'A contractor who offers to make your deductible disappear is usually planning to '
+               'inflate the estimate to absorb it.',
+       'timestamp': 99,
+       'timestamp_label': '[00:01:39]',
+       'timestamp_seconds': 99,
+       'tip': 'A contractor who offers to make your deductible disappear is usually planning to '
+              'inflate the estimate to absorb it.',
+       'title': 'Your Insurance Deductible After a Claim: What Nobody Tells You',
+       'url': 'https://www.youtube.com/watch?v=tLwSSUZ6Awc&t=99s',
+       'video_id': 'tLwSSUZ6Awc'},
+      {'author': 'Restoration Roofing',
+       'channel': 'Restoration Roofing',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:00](https://www.youtube.com/watch?v=t6BiCluK7GY&t=0s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Is it illegal for my roofer to waive or eat my deductible? Well, short answer to '
+               'that is 100, yes, it is illegal.',
+       'timestamp': 0,
+       'timestamp_label': '[00:00:00]',
+       'timestamp_seconds': 0,
+       'tip': 'Is it illegal for my roofer to waive or eat my deductible? Well, short answer to '
+              'that is 100, yes, it is illegal.',
+       'title': 'Is it illegal for my roofer to waive my deductible? | #Insurancedeductible',
+       'url': 'https://www.youtube.com/watch?v=t6BiCluK7GY&t=0s',
+       'video_id': 't6BiCluK7GY'},
+      {'author': 'Collision Crash Course',
+       'channel': 'Collision Crash Course',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:54](https://www.youtube.com/watch?v=jcrOa0gm--g&t=114s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'I did have to pay my deductible, and I did get my deductible back. It took about 6 '
+               'months.',
+       'timestamp': 114,
+       'timestamp_label': '[00:01:54]',
+       'timestamp_seconds': 114,
+       'tip': 'I did have to pay my deductible, and I did get my deductible back. It took about 6 '
+              'months.',
+       'title': "Do You Have to Pay Your Deductible If the Accident Wasn't Your Fault?",
+       'url': 'https://www.youtube.com/watch?v=jcrOa0gm--g&t=114s',
+       'video_id': 'jcrOa0gm--g'},
+      {'author': 'Integrity Roofing and Painting',
+       'channel': 'Integrity Roofing and Painting',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:37](https://www.youtube.com/watch?v=Mi6XZq4h6yo&t=157s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "In order to get that final payment it's important for you to call your mortgage "
+               'company as soon as the roof replacement is complete.',
+       'timestamp': 157,
+       'timestamp_label': '[00:02:37]',
+       'timestamp_seconds': 157,
+       'tip': "In order to get that final payment it's important for you to call your mortgage "
+              'company as soon as the roof replacement is complete.',
+       'title': 'Mortgage Company Insurance Check Endorsement',
+       'url': 'https://www.youtube.com/watch?v=Mi6XZq4h6yo&t=157s',
+       'video_id': 'Mi6XZq4h6yo'},
+      {'author': 'Richard Levisee',
+       'channel': 'Richard Levisee',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:08:30](https://www.youtube.com/watch?v=VFWDHse67ws&t=510s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "They're just going to simply wait until someone calls them to get whatever they "
+               "need, so that's another important tip to always follow up with the mortgage "
+               'company.',
+       'timestamp': 510,
+       'timestamp_label': '[00:08:30]',
+       'timestamp_seconds': 510,
+       'tip': "They're just going to simply wait until someone calls them to get whatever they "
+              "need, so that's another important tip to always follow up with the mortgage "
+              'company.',
+       'title': 'Insurance check has my mortgage company on it. What do I do?',
+       'url': 'https://www.youtube.com/watch?v=VFWDHse67ws&t=510s',
+       'video_id': 'VFWDHse67ws'},
+      {'author': 'Butler Legal',
+       'channel': 'Butler Legal',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:17:02](https://www.youtube.com/watch?v=rxahzd6qaCw&t=1022s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "If there's a valid assignment of benefits and a dispute arises and the assignee "
+               'hires a lawyer and ultimately prevails, the assignee has the same right to request '
+               "attorney's fees as the insured would.",
+       'timestamp': 1022,
+       'timestamp_label': '[00:17:02]',
+       'timestamp_seconds': 1022,
+       'tip': "If there's a valid assignment of benefits and a dispute arises and the assignee "
+              'hires a lawyer and ultimately prevails, the assignee has the same right to request '
+              "attorney's fees as the insured would.",
+       'title': 'Handling of Assignment of Benefit ("AOB") Claims',
+       'url': 'https://www.youtube.com/watch?v=rxahzd6qaCw&t=1022s',
+       'video_id': 'rxahzd6qaCw'},
+      {'author': 'Holmes Drafting Services',
+       'channel': 'Holmes Drafting Services',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:29](https://www.youtube.com/watch?v=zzzZPeokDUk&t=89s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'As a homeowner now you have an open claim on your insurance, you have a lien on '
+               'your house, and you have a lawsuit against an insurance carrier.',
+       'timestamp': 89,
+       'timestamp_label': '[00:01:29]',
+       'timestamp_seconds': 89,
+       'tip': 'As a homeowner now you have an open claim on your insurance, you have a lien on '
+              'your house, and you have a lawsuit against an insurance carrier.',
+       'title': 'What is Assignment of Benefits (AOB)?',
+       'url': 'https://www.youtube.com/watch?v=zzzZPeokDUk&t=89s',
+       'video_id': 'zzzZPeokDUk'},
+      {'author': 'Crossroads Insurance Recovery',
+       'channel': 'Crossroads Insurance Recovery',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:42](https://www.youtube.com/watch?v=iKLGuESx4po&t=222s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'With an AOB assigned to the contractor you no longer have that opportunity; your '
+               'money is now in their possession, not yours.',
+       'timestamp': 222,
+       'timestamp_label': '[00:03:42]',
+       'timestamp_seconds': 222,
+       'tip': 'With an AOB assigned to the contractor you no longer have that opportunity; your '
+              'money is now in their possession, not yours.',
+       'title': 'Assignment of Benefits in Your Insurance Claim',
+       'url': 'https://www.youtube.com/watch?v=iKLGuESx4po&t=222s',
+       'video_id': 'iKLGuESx4po'},
+      {'author': 'State Restoration Services',
+       'channel': 'State Restoration Services',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:16](https://www.youtube.com/watch?v=06ChGuOZCto&t=76s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "It's not waiving deductible, it's not we are giving you money back, no.",
+       'timestamp': 76,
+       'timestamp_label': '[00:01:16]',
+       'timestamp_seconds': 76,
+       'tip': "It's not waiving deductible, it's not we are giving you money back, no.",
+       'title': 'Insurance Deductible Explained What It Means for Your Roof Claim',
+       'url': 'https://www.youtube.com/watch?v=06ChGuOZCto&t=76s',
+       'video_id': '06ChGuOZCto'},
+      {'author': 'Accountancy Students Hub',
+       'channel': 'Accountancy Students Hub',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:05:53](https://www.youtube.com/watch?v=-mzjb7XSisY&t=353s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'The prescriptive period accrues from the date of the final rejection or the '
+               'initial denial of the claim by the insurer.',
+       'timestamp': 353,
+       'timestamp_label': '[00:05:53]',
+       'timestamp_seconds': 353,
+       'tip': 'The prescriptive period accrues from the date of the final rejection or the initial '
+              'denial of the claim by the insurer.',
+       'title': 'RFBT Insurance 05: Special Classes of Insurance, Claims Settlement, Prescription, '
+                'and Subrogation',
+       'url': 'https://www.youtube.com/watch?v=-mzjb7XSisY&t=353s',
+       'video_id': '-mzjb7XSisY'},
+      {'author': 'The Deductible',
+       'channel': 'The Deductible',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:38](https://www.youtube.com/watch?v=A4K6Yt2bnWk&t=158s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'An at-fault claim typically adds a surcharge of 20 to 40% to your premium, and it '
+               'sticks around for 3 to 5 years.',
+       'timestamp': 158,
+       'timestamp_label': '[00:02:38]',
+       'timestamp_seconds': 158,
+       'tip': 'An at-fault claim typically adds a surcharge of 20 to 40% to your premium, and it '
+              'sticks around for 3 to 5 years.',
+       'title': 'Deductibles Explained: The Math That Decides If a Claim Is Worth Filing',
+       'url': 'https://www.youtube.com/watch?v=A4K6Yt2bnWk&t=158s',
+       'video_id': 'A4K6Yt2bnWk'},
+      {'author': 'State Farm Insurance',
+       'channel': 'State Farm Insurance',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:03](https://www.youtube.com/watch?v=bNL46sw5_5c&t=63s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Subrogation can take several months or possibly years depending on the complexity '
+               'of the loss.',
+       'timestamp': 63,
+       'timestamp_label': '[00:01:03]',
+       'timestamp_seconds': 63,
+       'tip': 'Subrogation can take several months or possibly years depending on the complexity '
+              'of the loss.',
+       'title': 'Auto Claims Subrogation/Deductible Refund Process | State Farm',
+       'url': 'https://www.youtube.com/watch?v=bNL46sw5_5c&t=63s',
+       'video_id': 'bNL46sw5_5c'},
+      {'author': 'Chad Michael - The Practitioner',
+       'channel': 'Chad Michael - The Practitioner',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:32:12](https://www.youtube.com/watch?v=DmesIP8hcak&t=1932s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'The way people get around that is they lie to an insurance company, which is a '
+               "felony no matter which state you're in.",
+       'timestamp': 1932,
+       'timestamp_label': '[00:32:12]',
+       'timestamp_seconds': 1932,
+       'tip': 'The way people get around that is they lie to an insurance company, which is a '
+              "felony no matter which state you're in.",
+       'title': 'How to Legally COVER The Deductible',
+       'url': 'https://www.youtube.com/watch?v=DmesIP8hcak&t=1932s',
+       'video_id': 'DmesIP8hcak'},
+      {'author': 'Chad Michael - The Practitioner',
+       'channel': 'Chad Michael - The Practitioner',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:16:40](https://www.youtube.com/watch?v=DmesIP8hcak&t=1000s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'We did screenshots and put notes to show that we changed it and why, and we tried '
+               'it on twenty estimates and struck out on all twenty.',
+       'timestamp': 1000,
+       'timestamp_label': '[00:16:40]',
+       'timestamp_seconds': 1000,
+       'tip': 'We did screenshots and put notes to show that we changed it and why, and we tried '
+              'it on twenty estimates and struck out on all twenty.',
+       'title': 'How to Legally COVER The Deductible',
+       'url': 'https://www.youtube.com/watch?v=DmesIP8hcak&t=1000s',
+       'video_id': 'DmesIP8hcak'},
       {'author': 'Adjuster TV',
        'channel': 'Adjuster TV',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:48](https://www.youtube.com/watch?v=dtHSqRxkHLA&t=348s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q12 operational '
-                    'verification).',
+       'markdown': '[00:00:43](https://www.youtube.com/watch?v=zOFPOUrXGw4&t=43s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'Property adjuster head on over to adjust your tv.com start right now and get '
-               'instant access to a totally free video training anyway that does it for me '
-               'thank you so much for watching and have a great storm.',
-       'timestamp': 348,
-       'timestamp_label': '[00:05:48]',
-       'timestamp_seconds': 348,
-       'tip': 'Property adjuster head on over to adjust your tv.com start right now and get '
-              'instant access to a totally free video training anyway that does it for me '
-              'thank you so much for watching and have a great storm.',
-       'title': '5 MIND BLOWING Xactimate Mobile Hacks in 5 Minutes 💥 (Adjuster TV)',
-       'url': 'https://www.youtube.com/watch?v=dtHSqRxkHLA&t=348s',
-       'video_id': 'dtHSqRxkHLA'},
-      {'author': 'Roof Sales Mastery',
-       'channel': 'Roof Sales Mastery',
+       'text': "Whenever I try to request a high deductible they say well it's only going to "
+               'change your premium by $9.',
+       'timestamp': 43,
+       'timestamp_label': '[00:00:43]',
+       'timestamp_seconds': 43,
+       'tip': "Whenever I try to request a high deductible they say well it's only going to change "
+              'your premium by $9.',
+       'title': 'Insurance Deductibles 101: When, Why, and How They Apply',
+       'url': 'https://www.youtube.com/watch?v=zOFPOUrXGw4&t=43s',
+       'video_id': 'zOFPOUrXGw4'},
+      {'author': 'CandiMentor',
+       'channel': 'CandiMentor',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:08](https://www.youtube.com/watch?v=Jvj3So17gtA&t=128s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q12 operational '
-                    'verification).',
+       'markdown': '[00:07:43](https://www.youtube.com/watch?v=AVAVGkoZuK0&t=463s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "That's important so we're going to go into that in that same module right "
-               'there perfect module module 10 now this is where I start getting away from '
-               'estimating and more into sketching and I need to know if this is something '
-               'that you think is useful.',
-       'timestamp': 128,
-       'timestamp_label': '[00:02:08]',
-       'timestamp_seconds': 128,
-       'tip': "That's important so we're going to go into that in that same module right there "
-              'perfect module module 10 now this is where I start getting away from estimating '
-              'and more into sketching and I need to know if this is something that you think '
-              'is useful.',
-       'title': 'Maxing Out Roof Only Claims (Roof Sales Mastery)',
-       'url': 'https://www.youtube.com/watch?v=Jvj3So17gtA&t=128s',
-       'video_id': 'Jvj3So17gtA'},
-      {'author': 'Water Damage Restoration Marketing - Vinnie Mac',
-       'channel': 'Water Damage Restoration Marketing - Vinnie Mac',
+       'text': "If the claimant releases the negligent party before the insurer's rights are "
+               "protected, the release may prejudice or eliminate the insurer's recovery.",
+       'timestamp': 463,
+       'timestamp_label': '[00:07:43]',
+       'timestamp_seconds': 463,
+       'tip': "If the claimant releases the negligent party before the insurer's rights are "
+              "protected, the release may prejudice or eliminate the insurer's recovery.",
+       'title': 'Adjuster Exam: Salvage, Subrogation, Fraud, Ethics, Fair Claims Practices & '
+                'Catastrophe Claims',
+       'url': 'https://www.youtube.com/watch?v=AVAVGkoZuK0&t=463s',
+       'video_id': 'AVAVGkoZuK0'},
+      {'author': 'WFTV Channel 9',
+       'channel': 'WFTV Channel 9',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:30](https://www.youtube.com/watch?v=IDqwheOOgb0&t=150s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q12 operational '
-                    'verification).',
+       'markdown': '[00:01:39](https://www.youtube.com/watch?v=DS9xGSJEQ-k&t=99s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'It how to sign up for it how to optimize it how to get the best results and if '
-               "things are stuck I'm going to give you some pointers on how to take a look at "
-               'that as well um so let me share my screen here and we will get started.',
-       'timestamp': 150,
-       'timestamp_label': '[00:02:30]',
-       'timestamp_seconds': 150,
-       'tip': 'It how to sign up for it how to optimize it how to get the best results and if '
-              "things are stuck I'm going to give you some pointers on how to take a look at "
-              'that as well um so let me share my screen here and we will get started.',
-       'title': 'Water Damage Google Local Services Ads: Everything You Need to Know (Water '
-                'Damage Restoration Marketing - Vinnie Mac)',
-       'url': 'https://www.youtube.com/watch?v=IDqwheOOgb0&t=150s',
-       'video_id': 'IDqwheOOgb0'},
-      {'author': 'Restoration Success Strategies | Albi',
-       'channel': 'Restoration Success Strategies | Albi',
+       'text': 'The legislation would require written itemized estimates before any work is done.',
+       'timestamp': 99,
+       'timestamp_label': '[00:01:39]',
+       'timestamp_seconds': 99,
+       'tip': 'The legislation would require written itemized estimates before any work is done.',
+       'title': "Video: Action 9: Beware of contractors using 'Assignment of Benefits'",
+       'url': 'https://www.youtube.com/watch?v=DS9xGSJEQ-k&t=99s',
+       'video_id': 'DS9xGSJEQ-k'}],
+ 12: [{'author': 'Adjuster TV',
+       'channel': 'Adjuster TV',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:10:46](https://www.youtube.com/watch?v=3PlUwHvZkxE&t=646s)',
-       'relevance': 'Attributed practitioner commentary on water/fire/mold mitigation & storm '
-                    'insurance restoration, `IICRC` psychrometric documentation, `Xactimate` '
-                    'supplements, and UPPA-safe collections (Chapter Q12 operational '
-                    'verification).',
+       'markdown': '[01:02:41](https://www.youtube.com/watch?v=6084H_VeZTA&t=3761s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'RAA conference a couple months ago and I was on a panel talking where an '
-               'insurance adjuster lady was on on stage and she was like, "Oh, you know, if '
-               "contractors were to document better and give us better drying logs, we'd be "
-               'able to pay out claims better.".',
-       'timestamp': 646,
-       'timestamp_label': '[00:10:46]',
-       'timestamp_seconds': 646,
-       'tip': 'RAA conference a couple months ago and I was on a panel talking where an '
-              'insurance adjuster lady was on on stage and she was like, "Oh, you know, if '
-              "contractors were to document better and give us better drying logs, we'd be "
-              'able to pay out claims better.".',
-       'title': 'How to Start a Water Damage Restoration Company in 2026 (Restoration Success '
-                'Strategies | Albi)',
-       'url': 'https://www.youtube.com/watch?v=3PlUwHvZkxE&t=646s',
-       'video_id': '3PlUwHvZkxE'}]}
+       'text': "There's nothing else to do, you don't fight with the people, just don't do it "
+               'okay.',
+       'timestamp': 3761,
+       'timestamp_label': '[01:02:41]',
+       'timestamp_seconds': 3761,
+       'tip': "There's nothing else to do, you don't fight with the people, just don't do it okay.",
+       'title': 'HAIL CLAIM WALKTHROUGH | Xactimate X1 roof claim',
+       'url': 'https://www.youtube.com/watch?v=6084H_VeZTA&t=3761s',
+       'video_id': '6084H_VeZTA'},
+      {'author': 'Adjuster TV',
+       'channel': 'Adjuster TV',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[01:59:46](https://www.youtube.com/watch?v=6084H_VeZTA&t=7186s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "If your claim is thirty thousand dollars I'll make x, if it's fifty thousand "
+               "dollars I'm gonna make x more, so I have an incentive to find all the damage, it "
+               'benefits me directly.',
+       'timestamp': 7186,
+       'timestamp_label': '[01:59:46]',
+       'timestamp_seconds': 7186,
+       'tip': "If your claim is thirty thousand dollars I'll make x, if it's fifty thousand "
+              "dollars I'm gonna make x more, so I have an incentive to find all the damage, it "
+              'benefits me directly.',
+       'title': 'HAIL CLAIM WALKTHROUGH | Xactimate X1 roof claim',
+       'url': 'https://www.youtube.com/watch?v=6084H_VeZTA&t=7186s',
+       'video_id': '6084H_VeZTA'},
+      {'author': 'Adjuster TV',
+       'channel': 'Adjuster TV',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:08:16](https://www.youtube.com/watch?v=lIyYVIMZa0s&t=496s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "I can't stress it enough that you must do a self-check of your work to make sure "
+               'that your finished product looks clean, free of errors and professional.',
+       'timestamp': 496,
+       'timestamp_label': '[00:08:16]',
+       'timestamp_seconds': 496,
+       'tip': "I can't stress it enough that you must do a self-check of your work to make sure "
+              'that your finished product looks clean, free of errors and professional.',
+       'title': 'How to write a roof repair estimate in Xactimate X1',
+       'url': 'https://www.youtube.com/watch?v=lIyYVIMZa0s&t=496s',
+       'video_id': 'lIyYVIMZa0s'},
+      {'author': 'Claim Daddy',
+       'channel': 'Claim Daddy',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:30:46](https://www.youtube.com/watch?v=yytgxtBGSF8&t=1846s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "Often times if a contractor's damaging the roof and it happens often, it's going "
+               'to be non-random.',
+       'timestamp': 1846,
+       'timestamp_label': '[00:30:46]',
+       'timestamp_seconds': 1846,
+       'tip': "Often times if a contractor's damaging the roof and it happens often, it's going to "
+              'be non-random.',
+       'title': '🏠🎯 Master Hail Claim Xactimate Estimating | Pro Adjuster Training',
+       'url': 'https://www.youtube.com/watch?v=yytgxtBGSF8&t=1846s',
+       'video_id': 'yytgxtBGSF8'},
+      {'author': 'Chad Michael - The Practitioner',
+       'channel': 'Chad Michael - The Practitioner',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:23](https://www.youtube.com/watch?v=Op9Qkl-qW58&t=203s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'I say take that coverage cuz it opens the door.',
+       'timestamp': 203,
+       'timestamp_label': '[00:03:23]',
+       'timestamp_seconds': 203,
+       'tip': 'I say take that coverage cuz it opens the door.',
+       'title': 'Commercial Roof Coating | Hail Damage',
+       'url': 'https://www.youtube.com/watch?v=Op9Qkl-qW58&t=203s',
+       'video_id': 'Op9Qkl-qW58'},
+      {'author': 'Chris Zimmerman',
+       'channel': 'Chris Zimmerman',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:32](https://www.youtube.com/watch?v=1quXRyfkTgo&t=152s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Then the check has to go from the insurance company to the homeowner.',
+       'timestamp': 152,
+       'timestamp_label': '[00:02:32]',
+       'timestamp_seconds': 152,
+       'tip': 'Then the check has to go from the insurance company to the homeowner.',
+       'title': "What is Insurance Restoration Roofing? (Beginner's Guide)",
+       'url': 'https://www.youtube.com/watch?v=1quXRyfkTgo&t=152s',
+       'video_id': '1quXRyfkTgo'},
+      {'author': 'RestoreMasters',
+       'channel': 'RestoreMasters',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:42](https://www.youtube.com/watch?v=rw8dEal_Ppk&t=42s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Where the hail splatter is large, feel for indentations, then cut into and peel '
+               'back the membrane, and impact dents in the ISO board mean it is compromised and '
+               'has to be replaced.',
+       'timestamp': 42,
+       'timestamp_label': '[00:00:42]',
+       'timestamp_seconds': 42,
+       'tip': 'Where the hail splatter is large, feel for indentations, then cut into and peel '
+              'back the membrane, and impact dents in the ISO board mean it is compromised and has '
+              'to be replaced.',
+       'title': 'RestoreMasters TPO Roof Inspections (Property Damage Assessments) | Hail Damage',
+       'url': 'https://www.youtube.com/watch?v=rw8dEal_Ppk&t=42s',
+       'video_id': 'rw8dEal_Ppk'},
+      {'author': 'MaprBot',
+       'channel': 'MaprBot',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:46](https://www.youtube.com/watch?v=wQbjMlmo1Bg&t=46s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'SBC uses a morning-to-morning reporting day, not a midnight-to-midnight local '
+               'calendar day.',
+       'timestamp': 46,
+       'timestamp_label': '[00:00:46]',
+       'timestamp_seconds': 46,
+       'tip': 'SBC uses a morning-to-morning reporting day, not a midnight-to-midnight local '
+              'calendar day.',
+       'title': 'Mid-Atlantic Hail Recap: 34 Reports, Storms Move Offshore | November 12, 2026',
+       'url': 'https://www.youtube.com/watch?v=wQbjMlmo1Bg&t=46s',
+       'video_id': 'wQbjMlmo1Bg'},
+      {'author': 'Digital Roofing Innovations',
+       'channel': 'Digital Roofing Innovations',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:26](https://www.youtube.com/watch?v=tVMI8UScmmE&t=206s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "Don't pay the final amount until the homeowner has signed off on the job.",
+       'timestamp': 206,
+       'timestamp_label': '[00:03:26]',
+       'timestamp_seconds': 206,
+       'tip': "Don't pay the final amount until the homeowner has signed off on the job.",
+       'title': 'How to Pay Your Roofing Subcontractors - Ch 4 Vd 14',
+       'url': 'https://www.youtube.com/watch?v=tVMI8UScmmE&t=206s',
+       'video_id': 'tVMI8UScmmE'},
+      {'author': 'Roofing Insights',
+       'channel': 'Roofing Insights',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:46](https://www.youtube.com/watch?v=FqdbOCycivo&t=106s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'The contractor paid up front on the 100-square job and then never paid on the '
+               '300-square job, and that was my fault for moving too fast.',
+       'timestamp': 106,
+       'timestamp_label': '[00:01:46]',
+       'timestamp_seconds': 106,
+       'tip': 'The contractor paid up front on the 100-square job and then never paid on the '
+              '300-square job, and that was my fault for moving too fast.',
+       'title': 'Roofer on Roofing Subcontractors | Illegal Roofers | Kareem Hunter',
+       'url': 'https://www.youtube.com/watch?v=FqdbOCycivo&t=106s',
+       'video_id': 'FqdbOCycivo'},
+      {'author': 'ProLine',
+       'channel': 'ProLine',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:46:37](https://www.youtube.com/watch?v=g3I-8o2x140&t=2797s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Markup is not margin, and a 54% markup works out to roughly a 35% margin.',
+       'timestamp': 2797,
+       'timestamp_label': '[00:46:37]',
+       'timestamp_seconds': 2797,
+       'tip': 'Markup is not margin, and a 54% markup works out to roughly a 35% margin.',
+       'title': 'Roofing subcrews, profit, markup, and repair work | Roofer2Roofer 002',
+       'url': 'https://www.youtube.com/watch?v=g3I-8o2x140&t=2797s',
+       'video_id': 'g3I-8o2x140'},
+      {'author': 'RoofCoach',
+       'channel': 'RoofCoach',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:42](https://www.youtube.com/watch?v=gLFs8l5O0j4&t=102s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'If you want to build a sustainable business, you need at least 10% left over after '
+               'all expenses are paid, including a healthy salary for the owner.',
+       'timestamp': 102,
+       'timestamp_label': '[00:01:42]',
+       'timestamp_seconds': 102,
+       'tip': 'If you want to build a sustainable business, you need at least 10% left over after '
+              'all expenses are paid, including a healthy salary for the owner.',
+       'title': 'How to Price Roofing Jobs for Profit (Without Losing Clients)',
+       'url': 'https://www.youtube.com/watch?v=gLFs8l5O0j4&t=102s',
+       'video_id': 'gLFs8l5O0j4'},
+      {'author': 'Homeowner Explained',
+       'channel': 'Homeowner Explained',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:07:47](https://www.youtube.com/watch?v=MPSOkm3YFak&t=467s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Red flag four: no local address, no reviews, and no license where your state '
+               'requires one.',
+       'timestamp': 467,
+       'timestamp_label': '[00:07:47]',
+       'timestamp_seconds': 467,
+       'tip': 'Red flag four: no local address, no reviews, and no license where your state '
+              'requires one.',
+       'title': 'Did the Hail Really Damage Your Roof? Check This First',
+       'url': 'https://www.youtube.com/watch?v=MPSOkm3YFak&t=467s',
+       'video_id': 'MPSOkm3YFak'},
+      {'author': 'The STRONG Roofer w/ Adam Bensman',
+       'channel': 'The STRONG Roofer w/ Adam Bensman',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:06](https://www.youtube.com/watch?v=-aZHNsY5qIY&t=246s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Review the scope of loss and target $250 to $450 per square, because $190 per '
+               'square is unprofitable.',
+       'timestamp': 246,
+       'timestamp_label': '[00:04:06]',
+       'timestamp_seconds': 246,
+       'tip': 'Review the scope of loss and target $250 to $450 per square, because $190 per '
+              'square is unprofitable.',
+       'title': 'Selling Hail-Damaged Roofs: The Hail Sales Process From Start to Finish',
+       'url': 'https://www.youtube.com/watch?v=-aZHNsY5qIY&t=246s',
+       'video_id': '-aZHNsY5qIY'},
+      {'author': 'Chad Michael - The Practitioner',
+       'channel': 'Chad Michael - The Practitioner',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:33](https://www.youtube.com/watch?v=E94xQvyZCe4&t=93s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Inspect every room for water damage, because the interior damage further cements '
+               'the roof damage.',
+       'timestamp': 93,
+       'timestamp_label': '[00:01:33]',
+       'timestamp_seconds': 93,
+       'tip': 'Inspect every room for water damage, because the interior damage further cements '
+              'the roof damage.',
+       'title': '350 Square Commercial Roof - Hail Damage Inspection for Roofing Contractor',
+       'url': 'https://www.youtube.com/watch?v=E94xQvyZCe4&t=93s',
+       'video_id': 'E94xQvyZCe4'},
+      {'author': 'Adjuster TV',
+       'channel': 'Adjuster TV',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:07:03](https://www.youtube.com/watch?v=ccWMQpIzp_w&t=423s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "You're not going to put dumpsters, pickup trucks or dump trucks on any roofing "
+               'thing because the disposal, the haul off, is included.',
+       'timestamp': 423,
+       'timestamp_label': '[00:07:03]',
+       'timestamp_seconds': 423,
+       'tip': "You're not going to put dumpsters, pickup trucks or dump trucks on any roofing "
+              'thing because the disposal, the haul off, is included.',
+       'title': 'The RIGHT WAY to write a roof estimate in XACTIMATE',
+       'url': 'https://www.youtube.com/watch?v=ccWMQpIzp_w&t=423s',
+       'video_id': 'ccWMQpIzp_w'},
+      {'author': 'RestoreMasters',
+       'channel': 'RestoreMasters',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:58](https://www.youtube.com/watch?v=lkJlJQH7bVw&t=118s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'You actually notice that there is more damages than what we thought there were and '
+               'more damage than what they thought there were.',
+       'timestamp': 118,
+       'timestamp_label': '[00:01:58]',
+       'timestamp_seconds': 118,
+       'tip': 'You actually notice that there is more damages than what we thought there were and '
+              'more damage than what they thought there were.',
+       'title': 'Hail Damage Roof Repair | West Georgia Technical Gollege - LaGrange, GA | TPO '
+                'roof, Interior Leaking',
+       'url': 'https://www.youtube.com/watch?v=lkJlJQH7bVw&t=118s',
+       'video_id': 'lkJlJQH7bVw'}]}

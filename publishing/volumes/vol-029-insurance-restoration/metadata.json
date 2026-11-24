@@ -8,49 +8,49 @@
       "RESTORATION"
     ],
     "deck": [
-      "DOCUMENT PSYCHROMETRICS. SCOPE ACCURATELY.",
-      "FINANCE CARRIER FLOAT."
+      "REMOVE MOLD PHYSICALLY, HOLD -5 PA, AND CLOSE DRYING FILES ON MONITORED READINGS",
+      "WRITE, DOCUMENT, AND DEFEND EVERY LINE ITEM FROM XACTIMATE TO THE NEGOTIATION TABLE"
     ],
-    "lead": "High-Ticket Water Mitigation, Contents Packout & Commercial Storm Restoration Backed by Auditable Moisture Logs and Clean Carrier Billing",
-    "summary": "Separate licensed contracting from public adjusting, never rebate deductibles, and bridge mortgage two-party check float with strict AR controls.",
+    "lead": "Working restorers show how they hold containment at -5 pascals, prove dryness with the same meter from start to finish, and price every truck roll at $400 to $500 or more, then carry that discipline through Xactimate line items, roof supplements, adjuster negotiations, TPA programs, and assignment-of-benefits fights.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, from IICRC S500 and S520 field mechanics to mitigation billing, Xactimate, roof supplementing, adjusters, TPAs, fire and contents documentation, plumber referrals, company launch, assignment of benefits, claim law, and storm roofing. Every claim, metric, pro-tip, and operator gate carries timestamped inline attribution to the practitioner and video it came from.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "Working to the Standard: IICRC S500 Water Damage and S520 Mold Remediation",
+      "Water Mitigation Estimates and Getting Paid",
+      "Xactimate Fundamentals and Line-Item Mastery",
+      "Roof Claim Supplementing",
+      "Adjusters, Public Adjusters, and the Negotiation Table",
+      "TPAs, Carrier Programs, and Preferred Vendors",
+      "Fire, Smoke, Contents, and Job-Site Documentation",
+      "The Plumber Referral Engine and Closing the Call",
+      "Launching the Restoration Company: Contracts, Paid Leads, and Margin",
+      "Assignment of Benefits: Mechanics, Abuse, and Reform",
+      "Deductibles, Claim Checks, and Claim Law",
+      "Storm Roofing: Hail Inspections, Roof Estimates, and Crew Economics"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Mine high-intent deal triggers"
+        "RESPOND",
+        "Make at least $400-$500 every time the truck rolls, set a $2,000 floor on small cash-pay jobs, and require a deposit and a thirds payment schedule before self-pay mitigation starts."
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "CONTAIN",
+        "Seal 6 mil fire-retardant poly and confirm -5 pascals on a manometer before any demolition or air movers, never draw negative air from a crawlspace, and remove mold physically instead of fogging or bleaching it."
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "DRY",
+        "Extract water from the top of the floor and from underneath before mats go down, place 12-16 air movers for a 750 sq ft loss, take readings every 5 ft, and close the file on monitored readings from the same meter, not on fan-days."
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "DOCUMENT",
+        "Reconcile billed equipment against photos and equipment logs, write F9 notes explaining each charge, quantity, and duration, and get written owner authorization for any deviation from the standard."
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "ESTIMATE",
+        "Run one locked naming, bundling, and pricing protocol on every claim using saved templates, and change your pricing, never your scope, by never writing work the crew did not do."
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "GET PAID",
+        "Stop negotiating line by line: have the adjuster tally the attempted reductions, then offer a streamline discount capped at 10 percent in exchange for immediate payment."
       ]
     ]
   },
@@ -58,10 +58,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "INSURANCE RESTORATION",
-  "subtitle": "The Complete Playbook for Insurance Restoration: $500,000–$2,500,000 USD in Annual Gross Restoration Billings with a 2 FT + 2 C (4 People) Core Pod, Expanding to 3 FT + 3 C (6 People) at Scale",
+  "subtitle": "Remove It Physically, Prove It on the Meter, Price It Line by Line, Collect It Clean: S500/S520 Field Mechanics, Mitigation Billing, Xactimate Repricing, Roof Supplements, Adjuster and TPA Negotiation, Plumber Referrals, LSA Launches, AOB Risk, Legal Deductibles and Storm Crew Margins from the Operators Who Run Them",
   "chapter_count": 12,
-  "total_word_count": 75410,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 72975,
+  "expert_youtube_link_count": 210,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -76,5 +76,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:02Z"
+  "updated_at": "2026-11-24T22:21:28Z"
 }

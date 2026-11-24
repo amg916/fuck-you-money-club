@@ -1,728 +1,761 @@
 from __future__ import annotations
 
-CHAPTER_12 = {
-    "id": "Q12",
-    "chapter_id": "Q12",
-    "chapter_number": 12,
-    "question_number": 12,
-    "slug": "first-30-day-launch-sprint-kill-fix-scale",
-    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching lending & flash-funding arbitrage, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
-    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
-    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
-    "subtitle": "A Three-Person Escrow Launch Calendar: Verified Wires, UCC Article 4A Controls, State Lending Classification, and Measured Capital Velocity",
-    "layout_template": "thirty_day_plan",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #30, Lending & Flash-Funding Arbitrage, ranks #04 of 36 with a "
-        "93/100 Money-to-Manpower Score and 14 mapped plays. Launch one controlled "
-        "product with one full-time operator and two contractors, not fourteen "
-        "simultaneous experiments. This sprint converts state-law classification, "
-        "settlement-agent verification, documented capital, and buyer cash confirmation "
-        "into a repeatable funding desk. Days 1–30 establish evidence; Days 60 and 90 "
-        "test repeatability before expanding exposure. Canonical annual owner profit "
-        "is $36,000 Conservative, $227,375 Base, and $522,500 Scaled. These figures "
-        "derive from earned fees, splits, and points, never escrow principal. The "
-        "schedule caps operating burn, separates readiness from funded performance, "
-        "and assigns explicit Kill, Fix, or Scale thresholds without forcing a "
-        "premature first transaction."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual earned funding fees, EMD JV splits, and origination points; escrow principal excluded",
-            "note": "30% net margin; $36,000 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$535,000",
-            "context": "Annual earned funding fees, EMD JV splits, and origination points; escrow principal excluded",
-            "note": "42.5% net margin; $227,375 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$950,000",
-            "context": "Annual earned funding fees, EMD JV splits, and origination points; escrow principal excluded",
-            "note": "55% net margin; $522,500 annual owner net profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Days 1–7: Define One Fundable Product and Build the Evidence File",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start Day 1 by assigning the three-person pod explicit ownership. The "
-                    "full-time principal owns sourcing, underwriting, pricing, and capital "
-                    "allocation. Contractor one handles settlement coordination and independent "
-                    "wire callbacks; contractor two handles reconciliation and evidence retention. "
-                    "Obtain scoped state counsel separately when needed rather than pretending "
-                    "bookkeeping expertise resolves lending classification. For execution, map "
-                    "the volume's fourteen plays into a working launch register: P01 same-day "
-                    "double-close funding; P02 overnight transactional funding; P03 "
-                    "seventy-two-hour transactional funding; P04 refundable EMD advances; "
-                    "P05 EMD joint ventures; P06 EMD extensions; P07 documented origination "
-                    "points; P08 committed capital-partner participation; P09 promotional "
-                    "purchase-credit substitution; P10 issuer-permitted promotional cash "
-                    "transfer liquidity; P11 documented proof-of-funds issuance; P12 automated "
-                    "underwriting intake; P13 settlement-agent and wire verification; and "
-                    "P14 escrow payoff reconciliation. This chapter's register is an execution "
-                    "taxonomy, not fourteen independently additive revenue streams. P11–P14 "
-                    "are shared controls; they do not create additional scorecard revenue. "
-                    "Select P01 as the first live product and keep every other funding "
-                    "variant inactive until its distinct contract, liquidity, and state-law "
-                    "requirements are documented. Assign every incoming opportunity a play "
-                    "identifier so rejected files expose which expansion requests would "
-                    "actually change the desk's risk."
-                ),
-                (
-                    "Days 2–4 turn the selected product into a narrow written eligibility "
-                    "standard. Identify the borrower entity, beneficial owners, property "
-                    "state, collateral, business purpose, settlement agent, expected holding "
-                    "period, and repayment source. Regulation Z, 12 CFR 1026.3(a), excludes "
-                    "specified business-purpose credit from its coverage; that exclusion "
-                    "does not settle state licensing, rate limits, brokerage treatment, or "
-                    "escrow authority. For California activity, examine Financial Code "
-                    "sections 22100 and 22050 and Article XV, section 1 of the state "
-                    "constitution against actual facts. Do not label a loan a joint venture "
-                    "merely because the agreement shares fees. EMD funding also needs a "
-                    "contract-specific cancellation deadline, deposit-release instructions, "
-                    "and an enforceable repayment structure. Under this volume's strict "
-                    "release standard, an early EMD request without verified unconditional "
-                    "end-buyer cash remains outside the live pilot. Record that commercial "
-                    "limitation explicitly rather than quietly substituting speculative "
-                    "borrower repayment. Require a properly authorized settlement agent, "
-                    "verified applicable bond coverage, and relevant insurance; a title "
-                    "policy or closing protection letter is not interchangeable with a "
-                    "bond. If the proposed jurisdiction or transaction cannot satisfy "
-                    "these requirements, change the market or stop that product before "
-                    "marketing executable funding."
-                ),
-                (
-                    "Days 5–7 establish the cash firewall and rehearse the desk. The "
-                    "startup range is $25,000–$100,000, but that amount is not automatically "
-                    "deployable principal. Reserve $9,000 for ninety days of launch operating "
-                    "burn and another $5,000 for incidents; exclude both from funding "
-                    "capacity. Set a $3,000 cumulative operating-spend ceiling at Day 30, "
-                    "$6,000 at Day 60, and $9,000 at Day 90. These are this sprint's "
-                    "chosen ceilings within the volume's $2,000–$12,000 monthly operating "
-                    "range, not a promise that every jurisdiction fits them. Obtain fixed "
-                    "quotes for counsel, contractors, banking, and software; if essential "
-                    "work exceeds the ceiling, pause or explicitly recapitalize before "
-                    "continuing. Keep principal disbursements, principal returns, operating "
-                    "expenses, and earned fees in separate ledger accounts. Initial "
-                    "per-transaction exposure cannot exceed the lesser of $25,000 or "
-                    "20% of verified eligible funding capacity, with only one outstanding "
-                    "pilot. Eligible capacity includes documented, immediately callable "
-                    "partner commitments only where their permitted use matches the deal. "
-                    "A small balance may therefore support no viable closing. Complete "
-                    "two fictitious-file rehearsals, including a changed-wire attempt, "
-                    "before accepting a live funding obligation; never send a test wire "
-                    "to an unverified account."
-                ),
-            ],
-            "table": {
-                "caption": "Week One: Product Scope, State Classification, and Cash Firewall",
-                "headers": [
-                    "Execution day and concrete work package",
-                    "Accountable person and required operating artifact",
-                    "Objective completion evidence for the desk",
-                    "Failure response before another task proceeds",
-                ],
-                "rows": [
-                    [
-                        "Day 1: Select one state and one funding product",
-                        "Principal records P01–P14 ownership in the launch register",
-                        "P01 receives live scope; remaining funding variants stay inactive",
-                        "Reject opportunities requiring products outside the written scope",
-                    ],
-                    [
-                        "Day 2: Classify borrower purpose and lending activity",
-                        "Principal obtains a scoped assessment from state counsel",
-                        "Written analysis addresses licensing, rates, brokerage, and exemptions",
-                        "Suspend executable quotes until material classification questions resolve",
-                    ],
-                    [
-                        "Day 3: Vet the first settlement agent independently",
-                        "Settlement contractor collects authority, bond, and insurance evidence",
-                        "Independent issuer checks confirm applicable coverage and account identity",
-                        "Remove agents whose required evidence cannot be authenticated",
-                    ],
-                    [
-                        "Day 4: Draft transaction and repayment instruction packages",
-                        "Principal and counsel define funding conditions and payoff rights",
-                        "Settlement agent confirms permitted sequencing and executable instructions",
-                        "Reject circular funding sequences dependent on undisclosed buyer proceeds",
-                    ],
-                    [
-                        "Day 5: Ring-fence operating reserves and funding capacity",
-                        "Reconciliation contractor separates reserves, principal, fees, and expenses",
-                        "Bank balances support reserves and documented deployable capacity",
-                        "Reduce exposure limits whenever verified available capacity declines",
-                    ],
-                    [
-                        "Day 6: Configure intake records and independent callbacks",
-                        "Settlement contractor builds Airtable fields and restricted evidence folders",
-                        "Required fields capture source documents and verification timestamps",
-                        "Keep release capability disabled when mandatory fields remain incomplete",
-                    ],
-                    [
-                        "Day 7: Complete two controlled closing failure rehearsals",
-                        "Entire pod rehearses changed instructions and delayed buyer funding",
-                        "Both exercises stop correctly and produce complete audit trails",
-                        "Repeat failed controls before accepting any binding funding commitment",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Conditions Before Principal Leaves the Bank",
-                "body": (
-                    "Every live file must satisfy all four conditions. A signed contract, "
-                    "borrower urgency, or an attractive fee cannot replace missing evidence."
-                ),
-                "items": [
-                    "Confirm the exact product and jurisdiction fit the documented licensing, rate, brokerage, and escrow analysis.",
-                    "Verify the settlement agent's authority, applicable bond, relevant insurance, and account ownership through independent sources.",
-                    "Obtain authenticated settlement confirmation that unconditional end-buyer cash is deposited and available for the approved closing sequence.",
-                    "Match dual-reviewed wire details, signed payoff instructions, exposure limits, and current reserve balances before release.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Days 8–14: Build Qualified Demand Without Selling Unavailable Capital",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Week two tests whether counterparties will buy the narrowly defined "
-                    "service at a price that survives real operating costs. Build a "
-                    "forty-account prospect list: twenty repeat investors or wholesalers, "
-                    "ten settlement offices, and ten active deal sponsors with documented "
-                    "business-purpose pipelines. Complete twenty personalized contacts and "
-                    "eight discovery conversations by Day 14. Count a qualified submission "
-                    "only when it includes executed purchase contracts, the proposed closing "
-                    "sequence, settlement contact, requested principal, expected dates, "
-                    "borrower identity, and a credible end-buyer cash path. A social-media "
-                    "message asking for proof of funds is not a qualified submission. "
-                    "Target four complete submissions during this week and eight "
-                    "cumulatively by Day 30. These are test thresholds rather than market "
-                    "forecasts. Log why each file fails: missing buyer cash, insufficient "
-                    "capacity, unsupported jurisdiction, weak economics, settlement refusal, "
-                    "or timing. Use P11 proof-of-funds output only when it accurately "
-                    "describes verified resources and their conditions; never imply an "
-                    "unconditional commitment from a revocable indication. P12 intake "
-                    "automation should route evidence and flag omissions, not manufacture "
-                    "credit decisions. Keep personal identity documents out of prospecting "
-                    "systems when a restricted transaction repository serves the purpose. "
-                    "Measure qualified submissions per conversation to distinguish weak "
-                    "positioning from a genuinely incompatible market."
-                ),
-                (
-                    "Price the first eligible files from the bottom up. An illustrative "
-                    "$25,000 two-day advance earning $750 has a 3% transaction fee; its "
-                    "simple annualized arithmetic is 547.5% using 365 days, which is "
-                    "a classification and rate-review warning, not an expected portfolio "
-                    "return. Review fees, points, and partner compensation together under "
-                    "the applicable state's rules. If capital cost is $150, wires cost "
-                    "$40, allocated contractor processing costs $110, and an internal "
-                    "expected-loss allowance is $75, the file produces $375 contribution "
-                    "before fixed overhead. That allowance is a management pricing input, "
-                    "not automatically a booked accounting provision. Require at least "
-                    "$300 contribution and a 40% contribution margin on each proposed "
-                    "pilot using the same cost definition. Do not describe this "
-                    "transaction margin as the canonical annual owner margin. P07 "
-                    "origination points belong in revenue only when earned under the "
-                    "actual arrangement and applicable accounting policy. For P05 joint "
-                    "ventures and P08 partner participation, document whether the desk "
-                    "acts as principal or agent; recognize only its earned entitlement "
-                    "where agent presentation applies. Merchant volume, property price, "
-                    "loan principal, and capital-partner proceeds never become additional "
-                    "operator revenue merely because they cross an escrow ledger."
-                ),
-                (
-                    "Days 11–14 validate execution with the settlement office and capital "
-                    "source before promising dates. Ask the settlement officer to explain "
-                    "the complete A-to-B and B-to-C disbursement sequence, funding deadlines, "
-                    "recording dependencies, permitted use of buyer proceeds, and payoff "
-                    "priority. End-buyer cash must be unconditional and available, not "
-                    "a screenshot of a pending transfer or a lender commitment subject "
-                    "to additional conditions. Obtain written confirmation that the "
-                    "structure fits the agent's authority and instructions; do not "
-                    "circumvent restrictions by describing the same funds differently. "
-                    "For P09, promotional purchase credit may preserve cash only through "
-                    "issuer-permitted, genuine business purchases; it is not itself an "
-                    "escrow funding rail. For P10, verify whether an issuer actually "
-                    "permits a cash transfer, its fee, applicable promotional rate, "
-                    "credit limit, expiration, and repayment terms. A purchase promotion "
-                    "does not establish promotional treatment for cash advances. Keep "
-                    "both plays inactive during the first pilot unless independent "
-                    "repayment liquidity exists before the promotion expires. Never "
-                    "cycle fictitious purchases or conceal the transaction purpose. "
-                    "Finish the week with two independently verified settlement "
-                    "relationships, a fully priced sample file, and a documented "
-                    "capital availability window. If any component fails, continue "
-                    "discovery without representing that funding is immediately executable."
-                ),
-            ],
-            "table": {
-                "caption": "Week Two: Demand Qualification, Fee Economics, and Capital Availability",
-                "headers": [
-                    "Execution day and concrete market experiment",
-                    "Pod owner and deliverable produced today",
-                    "Numerical or documentary acceptance test applied",
-                    "Specific adjustment when the test fails",
-                ],
-                "rows": [
-                    [
-                        "Day 8: Assemble forty named counterparties for outreach",
-                        "Principal records twenty investors, ten offices, ten sponsors",
-                        "Each account includes contact provenance and product relevance",
-                        "Replace broad lists with counterparties matching the selected jurisdiction",
-                    ],
-                    [
-                        "Day 9: Begin twenty personalized contacts for the week",
-                        "Principal uses a factual product sheet with explicit conditions",
-                        "Every contact receives accurate capacity and eligibility language",
-                        "Remove claims implying unrestricted capital or assured closing availability",
-                    ],
-                    [
-                        "Day 10: Complete eight cumulative discovery conversations this week",
-                        "Principal captures requested sizes, dates, and settlement constraints",
-                        "Conversation records distinguish genuine demand from document-only requests",
-                        "Revise positioning when prospects consistently request unsupported products",
-                    ],
-                    [
-                        "Day 11: Collect four complete qualified transaction submissions",
-                        "Settlement contractor checks contracts, identities, sequencing, and cash path",
-                        "Each counted submission contains every required underwriting input",
-                        "Exclude incomplete submissions from conversion and readiness denominators",
-                    ],
-                    [
-                        "Day 12: Price sample files using identical cost definitions",
-                        "Reconciliation contractor computes fees, direct costs, and contribution",
-                        "Each proposed pilot clears $300 contribution and 40% margin",
-                        "Reprice or reject files failing either contribution threshold",
-                    ],
-                    [
-                        "Day 13: Verify two independent settlement office relationships",
-                        "Settlement contractor authenticates officers and documents closing mechanics",
-                        "Both offices acknowledge required cash and wire verification procedures",
-                        "Retain outreach status only when execution evidence remains incomplete",
-                    ],
-                    [
-                        "Day 14: Confirm capital windows and review promotional exclusions",
-                        "Principal records callable commitments and issuer-specific permitted uses",
-                        "Available capital matches transaction timing without consuming protected reserves",
-                        "Deactivate credit-funded variants lacking permitted access or independent repayment",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the Spread Before Chasing More Closings",
-                "body": (
-                    "Experienced desks price failed execution, respect settlement cutoffs, "
-                    "and distinguish reusable evidence from stale evidence."
-                ),
-                "items": [
-                    "Ask the settlement office for its actual outgoing-wire cutoff and recording dependencies before quoting a same-day repayment window.",
-                    "Maintain a verified callback directory outside incoming email threads; changed instructions restart verification even when the sender appears familiar.",
-                    "Measure contractor minutes on rejected files as well as funded files, then include that acquisition workload in monthly overhead.",
-                    "Refresh buyer-cash confirmation immediately before release; yesterday's escrow balance does not establish today's unrestricted availability.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Days 15–21: Execute One Controlled Pilot or Produce a Defensible No-Fund Decision",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Week three converts a promising file into a controlled decision. "
-                    "The volume's one-to-four-month first-deal window means a thirty-day "
-                    "sprint can succeed operationally without releasing principal. On "
-                    "Day 15 select the strongest eligible file, not the highest quoted "
-                    "fee. Day 16 confirms signed authority, transaction economics, "
-                    "settlement instructions, and partner availability. Day 17 refreshes "
-                    "buyer-cash evidence and checks all amounts against the approved "
-                    "closing statement. Verify wiring instructions through an independently "
-                    "sourced telephone number and retain the callback record. UCC "
-                    "Article 4A, as enacted by the relevant state, governs important "
-                    "commercial funds-transfer questions; California Commercial Code "
-                    "sections 11202 and 11207 address security procedures and beneficiary "
-                    "identification issues. Account-name familiarity does not make an "
-                    "incorrect account number safe. Use bank-supported dual control "
-                    "where available, with separate credentials and no shared approval "
-                    "tokens. Contractor one verifies beneficiary details; the principal "
-                    "authorizes release only after contractor two confirms ledger "
-                    "capacity and reserve integrity. If the bank cannot support the "
-                    "desired controls, document compensating controls and change banks "
-                    "before expanding transaction volume. A deadline missed because "
-                    "verification remained incomplete is a measured operational result, "
-                    "not permission to bypass the process or transfer money through "
-                    "the borrower."
-                ),
-                (
-                    "Release on Day 18 only if every funding condition is satisfied "
-                    "and the actual transaction is ready; the calendar never creates "
-                    "an obligation to fund. Send principal strictly to the verified "
-                    "bonded title or settlement agent, with the bank reference and "
-                    "approved destination captured in P13. P14 then tracks principal "
-                    "outstanding, fee receivable, expected payoff time, actual receipts, "
-                    "and exceptions as separate fields. Reconcile the settlement statement "
-                    "to the bank transaction, not merely to an emailed receipt. "
-                    "For a seventy-two-hour maximum product, set the contractual "
-                    "deadline explicitly and schedule same-day monitoring around it; "
-                    "overnight or weekend exposure still consumes capital and carries "
-                    "risk. A missed contractual payoff immediately freezes new releases "
-                    "and starts documented collection and settlement follow-up. Do "
-                    "not extend the facility automatically, capitalize unpaid fees "
-                    "without review, or relabel a troubled advance as a new product. "
-                    "For EMD variants, a refundable deposit is not cash until its "
-                    "release conditions are actually met; disputes can immobilize "
-                    "funds despite favorable contract language. Record any requested "
-                    "extension under P06 and keep it inactive pending separate "
-                    "authorization and analysis. Dry-closing fallout is precisely why "
-                    "unconditional buyer cash must precede the initial release."
-                ),
-                (
-                    "Days 19–21 close the evidence loop whether the pilot funded or "
-                    "was declined. Contractor two matches principal and fees to bank "
-                    "receipts, checks settlement deductions, and records actual capital "
-                    "days. The principal compares quoted contribution with realized "
-                    "contribution using identical categories; contractor one documents "
-                    "missing instructions, callbacks, and elapsed handling time. Track "
-                    "the principal's touch time separately from total pod time. The "
-                    "initial target is no more than three principal hours and five "
-                    "combined pod hours per clean funded file, excluding one-time "
-                    "system construction. These are capacity assumptions to test, "
-                    "not employee productivity claims. Require complete reconciliation "
-                    "by the next business day after payoff and evidence completeness "
-                    "of 100% before counting a file as clean. Maintain a separate "
-                    "cancellation cohort so declined files do not disappear from "
-                    "acquisition cost. If the week ends without funding, produce "
-                    "a signed no-fund memo naming the exact blocker, a responsible "
-                    "person, and a dated corrective action. Rehearsal files may "
-                    "demonstrate control readiness but cannot count as completed "
-                    "transactions, earned revenue, or measured capital turns. Close "
-                    "the week with a factual dashboard that separates readiness, "
-                    "pipeline, deployed principal, collected fees, and unresolved "
-                    "exceptions instead of compressing them into a misleading "
-                    "single success percentage."
-                ),
-            ],
-            "table": {
-                "caption": "Week Three: Pilot Release, Payoff, and Exception Evidence",
-                "headers": [
-                    "Execution day and controlled transaction milestone",
-                    "Required action assigned within the pod",
-                    "Evidence required before reporting milestone completion",
-                    "Stop condition or corrective operating response",
-                ],
-                "rows": [
-                    [
-                        "Day 15: Select the strongest fully eligible pilot file",
-                        "Principal compares repayment certainty, economics, and exposure capacity",
-                        "Selected file satisfies product scope and documented pricing thresholds",
-                        "Keep capital idle when no submission satisfies every requirement",
-                    ],
-                    [
-                        "Day 16: Finalize signed documents and available capital",
-                        "Settlement contractor aligns contracts, instructions, and partner funding windows",
-                        "Executed documents match the actual parties and closing sequence",
-                        "Reject mismatched parties or capital promises unavailable at closing",
-                    ],
-                    [
-                        "Day 17: Refresh cash evidence and beneficiary verification",
-                        "Independent reviewers authenticate cash status and wire account details",
-                        "Timestamped evidence supports unrestricted funds and correctly identified beneficiary",
-                        "Restart verification whenever instructions or material transaction facts change",
-                    ],
-                    [
-                        "Day 18: Release only the approved eligible principal",
-                        "Principal authorizes bank transfer after both contractor checks",
-                        "Bank reference matches approved amount, beneficiary, and funding ledger",
-                        "Do not fund merely to satisfy the sprint calendar",
-                    ],
-                    [
-                        "Day 19: Monitor repayment against the contractual deadline",
-                        "Settlement contractor confirms disbursement progress and expected payoff timing",
-                        "Current ledger distinguishes principal outstanding from separately earned fees",
-                        "Freeze new releases immediately after any contractual payoff breach",
-                    ],
-                    [
-                        "Day 20: Reconcile actual receipts and realized economics",
-                        "Reconciliation contractor matches bank entries against settlement statements",
-                        "Principal returns and fee receipts reconcile without unexplained differences",
-                        "Escalate every unmatched receipt before calling the file completed",
-                    ],
-                    [
-                        "Day 21: Publish pilot review or explicit no-fund memo",
-                        "Entire pod records handling time, exceptions, and corrective ownership",
-                        "Clean files contain complete evidence and next-business-day reconciliation",
-                        "Exclude rehearsals and declines from completed-deal performance statistics",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Establish product and repayment eligibility",
-                    "action": "Match the file to the approved state, product, capital source, and signed repayment structure.",
-                    "detail": "Record the play identifier, eligible capacity, fee calculation, deadline, and documentary basis for every material assumption.",
-                },
-                {
-                    "step": 2,
-                    "title": "Independently authenticate the settlement release",
-                    "action": "Verify agent authority, applicable bond, unconditional buyer cash, and beneficiary details outside the incoming email thread.",
-                    "detail": "Capture verification sources and timestamps; changed instructions invalidate prior beneficiary verification.",
-                },
-                {
-                    "step": 3,
-                    "title": "Release within documented exposure limits",
-                    "action": "Have the principal authorize the bank transfer only after separate settlement and ledger checks.",
-                    "detail": "Record the bank reference, amount, destination, payoff deadline, and outstanding exposure without treating principal as revenue.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile payoff and release the next file",
-                    "action": "Match bank receipts to principal, earned fees, partner obligations, and approved costs.",
-                    "detail": "Complete reconciliation by the next business day after payoff; unresolved differences or overdue principal block new releases.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Days 22–30 and Reviews at 60/90: Apply Kill, Fix, or Scale Without Distorting the Scorecard",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use the final nine days to establish decision quality rather "
-                    "than manufacture revenue. Days 22–24 repair the largest measured "
-                    "failure, retest controls, and finish the eight-submission target. "
-                    "Days 25–27 build a thirteen-week cash forecast, review source "
-                    "concentration, and calculate capacity from observed handling time. "
-                    "Days 28–30 reconcile every account, score the decision matrix, "
-                    "and authorize only the next bounded experiment. Kill means "
-                    "stop new funding for the affected product and manage existing "
-                    "obligations to resolution; it never means abandon receivables. "
-                    "Any suspected wire diversion, unlawful operating structure, "
-                    "unexplained ledger difference, missed payoff, or breached reserve "
-                    "floor triggers an immediate hold. Confirmed diversion, an "
-                    "unremedied legal prohibition, or aggregate realized principal "
-                    "losses exceeding $2,500 kills the pilot. A breached burn "
-                    "ceiling also stops discretionary spending until the owner "
-                    "explicitly resets the funded plan. Fix means retain current "
-                    "exposure limits and assign a fourteen-day corrective sprint. "
-                    "Scale means a measured increase in qualified outreach or "
-                    "capital deployment, not automatic activation of all fourteen "
-                    "plays. Day 30 readiness may support doubling outreach "
-                    "without increasing principal. No first deal at Day 30 "
-                    "is therefore a Fix outcome when qualified demand exists, "
-                    "not evidence that the entire opportunity has failed."
-                ),
-                (
-                    "Apply all Scale conditions together, using cumulative funded "
-                    "counts and the most recent ten funded files for operating "
-                    "quality, or all funded files when fewer exist. Day 30 "
-                    "deployment expansion requires at least two clean completed "
-                    "deals, eight qualified submissions, 100% on-time principal "
-                    "repayment, zero principal loss, and at least 40% realized "
-                    "aggregate contribution margin. Day 60 requires five completed "
-                    "deals; Day 90 requires ten, with at least five completed "
-                    "during Days 61–90. Both later reviews require the same "
-                    "repayment, loss, and contribution standards, full evidence, "
-                    "and no unresolved reconciliation exceptions. Day 90 also "
-                    "requires positive trailing-thirty-day operating profit after "
-                    "all desk expenses and accrued capital costs. An insufficient "
-                    "sample remains Fix, even when its single transaction was "
-                    "profitable. Kill the current acquisition channel at Day 30 "
-                    "if forty targeted contacts and twelve conversations produce "
-                    "zero qualified submissions; change the channel before "
-                    "rejecting the product. At Day 60, zero executable files "
-                    "from at least twelve qualified submissions kills that "
-                    "product-market configuration. At Day 90, zero executable "
-                    "files from twenty qualified submissions does likewise. "
-                    "Otherwise insufficient activity calls for a bounded Fix "
-                    "sprint, with the approaching four-month first-deal horizon "
-                    "explicitly reviewed rather than hidden."
-                ),
-                (
-                    "Reconcile ambition to Formula v2.0 without turning a pilot "
-                    "into an annual earnings claim. Conservative is $120,000 "
-                    "recognized operator revenue minus $84,000 total costs, "
-                    "producing $36,000 owner profit at 30%. Base is $535,000 "
-                    "minus $307,625, producing $227,375 at 42.5%. Scaled is "
-                    "$950,000 minus $427,500, producing $522,500 at 55%. "
-                    "The first two scenarios use 1 FT + 2 C; Scaled "
-                    "requires 2 FT + 3 C. Total scenario costs include "
-                    "more than the launch operating ceiling: capital expense, "
-                    "transaction costs, labor, and losses must fit the "
-                    "appropriate annual envelope. Illustrative throughput equivalents "
-                    "are sixty deals at $2,000 earned revenue, 214 at "
-                    "$2,500, and 380 at $2,500 respectively; these are "
-                    "arithmetic decompositions, not supplied deal forecasts. "
-                    "Apply principal-versus-agent assessment before assigning those "
-                    "fees to recognized revenue; the scorecard supplies no "
-                    "separate retained-share multiplier. Never haircut it arbitrarily "
-                    "or add partner billings on top. After a successful "
-                    "review, increase verified outstanding capacity by at most "
-                    "25%, subject to reserves, committed funds, and measured "
-                    "workload. Keep the one-pilot limit until five clean "
-                    "deals establish repeatability. Do not claim Scaled economics "
-                    "while retaining three-person staffing or excluding the "
-                    "additional team's costs from the profit calculation."
-                ),
-            ],
-            "table": {
-                "caption": "Final Nine Days and Quantitative Day-30/60/90 Decision Matrix",
-                "headers": [
-                    "Review window and required management decision",
-                    "Deliverable or minimum Scale evidence required",
-                    "Fix response preserving the existing exposure ceiling",
-                    "Kill threshold or immediate protective operating hold",
-                ],
-                "rows": [
-                    [
-                        "Day 22: Rank failures by frequency and cash exposure",
-                        "Principal selects one measurable bottleneck from the exception log",
-                        "Assign one owner and a fourteen-day correction deadline",
-                        "Hold funding immediately for unresolved control or repayment breaches",
-                    ],
-                    [
-                        "Day 23: Repair the highest-impact repeatable execution defect",
-                        "Responsible contractor updates instructions and preserves the previous version",
-                        "Retest the repaired procedure using a complete rehearsal file",
-                        "Disable any workflow still permitting unauthenticated beneficiary changes",
-                    ],
-                    [
-                        "Day 24: Finish the eight-qualified-submission Day-30 pipeline target",
-                        "Principal distinguishes complete submissions from incomplete expressions of interest",
-                        "Improve qualification questions when submissions repeatedly lack buyer evidence",
-                        "Reject files requiring false evidence or concealed funding arrangements",
-                    ],
-                    [
-                        "Day 25: Build the thirteen-week cash and reserve forecast",
-                        "Reconciliation contractor separates collections, principal, expenses, and partner obligations",
-                        "Delay new exposure when timing leaves inadequate liquidity headroom",
-                        "Hold releases whenever protected reserves would become unavailable",
-                    ],
-                    [
-                        "Day 26: Review counterparty dependence and concentration risks",
-                        "Principal reports exposure by borrower, agent, and referral source",
-                        "Develop alternative qualified sources before increasing dependent transaction volume",
-                        "Suspend compromised counterparties immediately after credible diversion evidence",
-                    ],
-                    [
-                        "Day 27: Test staffing capacity against measured handling time",
-                        "Pod targets three principal hours and five total hours",
-                        "Reduce file intake when measured workload exceeds available capacity",
-                        "Stop accepting deadlines that require bypassing independent verification",
-                    ],
-                    [
-                        "Day 28: Reconcile every bank and escrow ledger account",
-                        "Reconciliation contractor matches principal, fees, costs, and outstanding obligations",
-                        "Resolve timing differences with documented bank and settlement evidence",
-                        "Hold new releases for every unexplained ledger difference",
-                    ],
-                    [
-                        "Day 29: Draft the next bounded operating experiment",
-                        "Principal proposes scope, exposure, budget, owner, and success measures",
-                        "Keep funding limits unchanged when evidence remains too thin",
-                        "Reject expansion requiring unavailable capital or unsupported product authority",
-                    ],
-                    [
-                        "Day 30: Record the signed operating decision and rationale",
-                        "Owner records actual metrics against the complete review thresholds",
-                        "Assign dated fixes and preserve the existing principal ceiling",
-                        "Stop discretionary spending above $3,000 without a funded revision",
-                    ],
-                    [
-                        "Day 30 review: Separate outreach readiness from deployment scaling",
-                        "Require two clean deals, eight submissions, and every shared condition",
-                        "With fewer deals, repair pipeline while preserving current funding limits",
-                        "Kill channel after forty contacts, twelve conversations, zero qualified submissions",
-                    ],
-                    [
-                        "Day 60 review: Require repeatability before raising outstanding capacity",
-                        "Require five completed deals and every shared operating condition",
-                        "Use fourteen-day fixes when counts or contribution standards fall short",
-                        "Kill configuration after twelve qualified submissions yield zero executable files",
-                    ],
-                    [
-                        "Day 90 review: Require activity growth and actual operating profit",
-                        "Require ten deals, five recent deals, shared conditions, positive recent profit",
-                        "Maintain limits when profitable evidence or sufficient samples remain absent",
-                        "Kill configuration after twenty qualified submissions yield zero executable files",
-                    ],
-                    [
-                        "Every review: Apply shared conditions before any deployment increase",
-                        "Require 100% timely repayment, zero loss, 40% contribution, complete evidence",
-                        "Resolve every exception before requesting another measured capacity increase",
-                        "Kill pilot for confirmed diversion or principal losses exceeding $2,500",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Scale verified repayments and reconciled fees, never the size of the wires passing through escrow.",
-    "diagram_id": "diag-08",
-    "action_checklist": [
-        "Assign P01–P14 owners, activate only the documented pilot product, and record the selected jurisdiction's lending and escrow requirements.",
-        "Reserve $9,000 for ninety-day operating burn plus $5,000 for incidents, then calculate eligible funding capacity separately.",
-        "Authenticate two settlement relationships, rehearse changed-wire and delayed-cash failures, and require unconditional buyer cash before release.",
-        "Build forty named prospects, complete twenty contacts and eight conversations by Day 14, and target eight qualified submissions by Day 30.",
-        "Complete one controlled pilot or a signed no-fund memo, separating principal, earned fees, partner obligations, and actual contribution.",
-        "Record Day-30/60/90 Kill, Fix, or Scale decisions using the stated samples, repayment tests, burn ceilings, and canonical annual economics.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "12 CFR 1026.3(a) — Business, commercial, agricultural, and organizational credit",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1026/section-1026.3",
-            "relevance": (
-                "Determine whether the actual extension of credit falls within "
-                "Regulation Z's stated exemptions; separately analyze state lending "
-                "and escrow requirements."
-            ),
-        },
-        {
-            "title": "California Financial Code section 22100 — Finance lender and broker licensing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22100.",
-            "relevance": (
-                "Evaluate licensing obligations before operating a California finance "
-                "lending or brokering business; business purpose alone does not resolve "
-                "the licensing question."
-            ),
-        },
-        {
-            "title": "California Financial Code section 22050 — Specified exemptions",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22050.",
-            "relevance": (
-                "Test any claimed exemption against the identity and activities of "
-                "the actual lender rather than relying on product labels."
-            ),
-        },
-        {
-            "title": "California Constitution, Article XV, section 1 — Interest limits and exceptions",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CONS&division=&title=&part=&chapter=&article=XV",
-            "relevance": (
-                "Assess applicable interest limits and exceptions when evaluating "
-                "short-duration fees, points, and other compensation."
-            ),
-        },
-        {
-            "title": "California Commercial Code section 11202 — Authorized and verified payment orders",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=COM&sectionNum=11202.",
-            "relevance": (
-                "Examine agreed bank security procedures and authorization mechanics "
-                "when establishing commercial wire controls."
-            ),
-        },
-        {
-            "title": "California Commercial Code section 11207 — Beneficiary identification",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=COM&sectionNum=11207.",
-            "relevance": (
-                "Account for beneficiary-name and account-number discrepancies; "
-                "independently authenticate destination details before authorizing wires."
-            ),
-        },
-    ],
-}
+CHAPTER_12 = {'id': 'Q12',
+ 'chapter_id': 'Q12',
+ 'chapter_number': 12,
+ 'question_number': 12,
+ 'slug': 'q12-zero-percent-business-credit-stacking',
+ 'question_prompt': 'How do operators stack 0% business credit on new LLCs to fund rehabs, Airbnbs, and '
+                    'inventory without getting denied?',
+ 'kicker': 'Q12 / THE BIG MONEY PLAYBOOKS',
+ 'title': '0% Business Credit Stacking',
+ 'subtitle': '0% APR card lists for new LLCs, bank approval sequences, avoiding denials, long-runway vs. '
+             'many-card strategies, same-day stacks for real estate investors, CDFIs and the '
+             'funding-business model, and case studies funding rentals, Airbnb listings, and Amazon '
+             'arbitrage',
+ 'layout_template': 'action_worksheet_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators agree the stack is won or lost on the personal file: 680 minimum, '
+                      '720-plus preferred, utilization near 10%, two or fewer recent inquiries, and '
+                      'comparable personal limits that set the business ceiling. Chase goes first because '
+                      'it is the most inquiry-sensitive lender, and Colin Matthew turns an Ink Unlimited '
+                      'plus a transferred Ink Preferred limit into $70-100K at one bank. Seasoned checking '
+                      'deposits, in-branch applications and bureau-split sequencing move approvals from '
+                      '$5K to $50K tiers. Liquidation runs 2.5% to about 6% depending on the route. The '
+                      'splits are sharp: Gap Funding fires every application in one sitting while '
+                      'BetterWealth sequences Chase then US Bank; Colin Matthew disputes business '
+                      'inquiries off personal reports while Christopher Grant warns fraudulent disputes '
+                      'have closed accounts; Marvin Francois stops at three to four banks while Colin '
+                      'Matthew runs eleven.',
+ 'key_metrics': [{'label': 'Single Funding Round Ceiling',
+                  'metric': 'Single Funding Round Ceiling',
+                  'value': 'About $225K top end; about $100K average',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Jack McColl's reported range for one 0% funding round on a fresh entity, "
+                             'with two LLCs called the optimal structure.',
+                  'source': 'BetterWealth ([ojWjbXNf-HI @ 00:35:16])'},
+                 {'label': 'Chase Ink Stack After Limit Transfer',
+                  'metric': 'Chase Ink Stack After Limit Transfer',
+                  'value': '$70-100K at Chase alone',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Ink Unlimited at $30-40K plus Ink Preferred at $40-60K, with the Preferred '
+                             'limit moved onto the 0% card after a seasoned checking deposit.',
+                  'source': 'Colin Matthew ([WAqBw-d5K44 @ 00:02:27])'},
+                 {'label': 'Capital-To-Revenue Jump',
+                  'metric': 'Capital-To-Revenue Jump',
+                  'value': '$110K across first two cards; $100K/month in sales within 5 months',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Amazon online arbitrage seller Sadik was stuck at $20-30K/month on cash only '
+                             'before deploying 0% card capital into inventory.',
+                  'source': 'Christopher Grant ([-M4ZoYEoh3k @ 00:01:16])'},
+                 {'label': 'Bank Relationship Limit Gap',
+                  'metric': 'Bank Relationship Limit Gap',
+                  'value': '$20K cold versus $150K-plus with a relationship',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Naam Wynn's measured gap between applying cold and applying to banks that "
+                             'already know you, with Chase at $75K versus $5-10K.',
+                  'source': 'Naam Wynn ([LktXzMB-Sis @ 00:05:04])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Credit stacking, as the operators run it, is a sequenced blitz: you fire '
+                              'business card applications at several banks inside a tight window so each '
+                              "lender underwrites before the others' inquiries and new accounts show up. "
+                              "Radikal Marketer frames it as submitting applications 'in a specific order "
+                              "with multiple banks' to unlock large amounts of unsecured capital "
+                              '[Oa3bugxGPHE @ 00:00:17], and This Will Make You Rich names the engine '
+                              "outright: the reporting delay 'creates a very short window of time' "
+                              '[6D6yJ60Vi0k @ 00:01:39]. The reason operators chase cards instead of term '
+                              'debt is underwriting speed. Stephen Smith points out that loans want one to '
+                              'two years of revenue while cards run on stated income [UuM0MLm-2DU @ '
+                              '00:00:42], and Jack McColl on BetterWealth puts it bluntly: lenders need '
+                              "good credit, no tax returns, and 'the business can be a week old' "
+                              '[ojWjbXNf-HI @ 00:03:41]. The payoff is real working capital at 0% for a '
+                              'promo window, typically 12 to 18 months on the cards the crew rates '
+                              "highest, with personal guarantees tying every balance back to the founder's "
+                              'SSN. That guarantee is the price of admission: a brand-new LLC borrows on '
+                              "the owner's personal file, so the person, not the entity, is what the bank "
+                              'is actually pricing.',
+                              'The crew agrees the personal file, not the business, decides the size of '
+                              "the round. Marvin Francois's checklist is no negatives, utilization at 10%, "
+                              'two to three inquiries or fewer, two-plus years of history, and three to '
+                              'five cards carrying $5K-plus limits, because lenders underwrite on '
+                              'comparable credit: $1K personal limits produce $2-4K business approvals '
+                              '[6xdE38E2F8Q @ 00:02:42]. Naam Wynn sets the floor at 680 with no '
+                              'negatives, utilization under 30% and ideally under 10%, seven to ten '
+                              'primary accounts, and one tier-1 card at $10K from Chase, BofA, Citi or '
+                              'Wells [bdodeCpS6JI @ 00:09:13]. Jack McColl on BetterWealth wants no more '
+                              'than two inquiries in six months and four or more personal cards totaling '
+                              "at least $15K, ideally $40-80K [ojWjbXNf-HI @ 00:04:41]. Radikal Marketer's "
+                              "co-host compresses all of it into one line operators repeat: 'your profile "
+                              "is your resume... your score is your reputation,' and a 740-800 score alone "
+                              'does not carry the file [Oa3bugxGPHE @ 00:09:28]. The pattern across every '
+                              'speaker is the same: thin files, high balances, and fresh inquiries crush '
+                              'limits long before the score itself becomes the problem, so profile repair '
+                              'comes before the first application.',
+                              'Two more rules hold across nearly every playbook: spread pulls across the '
+                              'three bureaus, and warm the bank up before you apply. Marvin Francois '
+                              'illustrates the bureau rule with Person A, who hits three '
+                              'TransUnion-pulling banks and watches approvals slide from $25K to $15K to '
+                              '$7.5K, versus Person B, who splits Experian, TransUnion and Equifax '
+                              '[6xdE38E2F8Q @ 00:01:02]. Colin Matthew states the hard ceiling: most banks '
+                              "'flat out deny you' at three or more hard inquiries on any single bureau "
+                              '[WAqBw-d5K44 @ 00:01:42]. On relationships, Naam Wynn puts the gap at $20K '
+                              'versus $150K-plus, with Chase paying $75K to a known customer against '
+                              "$5-10K cold [LktXzMB-Sis @ 00:05:04]. Christopher Grant's guest Sadik "
+                              'routed Amazon deposits into a Chase checking account, seasoned it 30 days, '
+                              'and pulled $72.5K in one day [-M4ZoYEoh3k @ 00:24:54]. Chase leads the '
+                              'order for the same reason everywhere: it is the most inquiry-sensitive '
+                              'lender, so it gets the clean file before anyone else touches it. Cal Barton '
+                              "puts Chase alone in his S tier, Colin Matthew's bankers say Chase is the "
+                              'only bank to apply to before US Bank, and Jack McColl runs Chase first, '
+                              'then US Bank.'],
+               'table': {'caption': 'Consensus rules the operators converge on before round one',
+                         'headers': ['Consensus Rule', 'What The Operators Report', 'Expert Source'],
+                         'rows': [['Personal file drives limits, not the LLC',
+                                   'Profile is the resume and score is only the reputation; 740-800 alone '
+                                   'does not carry approvals',
+                                   'Radikal Marketer ([Oa3bugxGPHE @ 00:09:28])'],
+                                  ['Utilization pinned near 10% before applying',
+                                   'Checklist calls for 10% utilization, zero negatives, and two-plus '
+                                   'years of credit history',
+                                   'Marvin Francois ([6xdE38E2F8Q @ 00:02:54])'],
+                                  ['Comparable personal credit sets the business ceiling',
+                                   '$1K personal limits produce $2-4K business approvals; three to five '
+                                   'cards at $5K-plus needed',
+                                   'Marvin Francois ([6xdE38E2F8Q @ 00:03:16])'],
+                                  ['Three inquiries on one bureau kills the file',
+                                   'Most banks flat out deny applicants at three or more hard pulls on any '
+                                   'bureau',
+                                   'Colin Matthew ([WAqBw-d5K44 @ 00:01:42])'],
+                                  ['Chase gets the cleanest file and goes first',
+                                   'Chase is the most inquiry-sensitive lender, so it leads every round '
+                                   'with under three inquiries',
+                                   'Christopher Grant ([-M4ZoYEoh3k @ 00:20:42])'],
+                                  ['Known bank customers get dramatically bigger approvals',
+                                   'Relationship gap runs $20K versus $150K-plus; Chase pays $75K versus '
+                                   '$5-10K cold',
+                                   'Naam Wynn ([LktXzMB-Sis @ 00:05:04])'],
+                                  ['Brand-new entity qualifies on owner credit alone',
+                                   'Lenders need good personal credit, no tax returns, and the business '
+                                   'can be a week old',
+                                   'BetterWealth ([ojWjbXNf-HI @ 00:03:41])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The build starts before a single application. Naam Wynn says proper setup '
+                              'is the difference between a $5K and a $50K limit, and walks it step by '
+                              'step: a virtual business address through iPostal, Opus, Regus or Alliance '
+                              'instead of a PO box or UPS store, an 800 number with a 411 listing, a '
+                              'domain email at about $10 a month, and an EIN that takes about five '
+                              'minutes, with the address matching everywhere [bdodeCpS6JI @ 00:01:03]. He '
+                              'adds that nine of ten DUNS denials trace back to mismatched details, and '
+                              'that credit repair, cannabis, car dealers and travel are high-risk NAICS '
+                              'codes while consulting and B2B read low risk [bdodeCpS6JI @ 00:07:20]. '
+                              'Marvin Francois prices the full business checklist, name, EIN, operating '
+                              'agreement, address, email, phone and website, at under $300 [6xdE38E2F8Q @ '
+                              "00:03:38]. Colin Matthew's banned-industry list runs trucking, cannabis, "
+                              'restaurants and crypto [WAqBw-d5K44 @ 00:01:29]. Documentation rarely bites '
+                              'on the first round: Cal Barton says limits under $25K usually need none, '
+                              'and Jack McColl says Chase extends up to $150K before asking for tax '
+                              'returns. Every detail must match identically across every application.',
+                              "Sequencing is where the money gets made. Colin Matthew's round one opens a "
+                              'Chase business checking account with at least $4K, ideally $10K, lets it '
+                              'sit five business days, then takes the Ink Unlimited at $30-40K and the Ink '
+                              'Preferred at $40-60K, moving the Preferred limit onto the 0% card for '
+                              '$70-100K at Chase alone [WAqBw-d5K44 @ 00:02:27]. US Bank follows with a '
+                              '$2-4K deposit and a seven-day wait through a relationship manager, then '
+                              'Truist, Citizens, PNC, Wells Fargo and Amex. Christopher Grant runs the '
+                              'same Chase move under the 2/30 rule, two cards per 30 days, turning a $20K '
+                              'Ink Cash plus a $40K Ink Preferred into $60K at 0% [-M4ZoYEoh3k @ '
+                              '00:20:42]. Jack McColl on BetterWealth confirms limit moves work at Chase, '
+                              'BofA and Amex but not US Bank, citing $47K plus $5K into $52K, and says '
+                              'never close those cards [ojWjbXNf-HI @ 00:16:41]. Naam Wynn sizes the round '
+                              'at two to four approvals per bureau, six to twelve per round at about $10K '
+                              'each [LktXzMB-Sis @ 00:02:13]. For California applicants he runs Chase and '
+                              'Amex on Experian, US Bank on TransUnion, and Citizens on Equifax, capped at '
+                              'two inquiries per bureau.',
+                              'Turning limits into deployable cash has its own price sheet. Naam Wynn runs '
+                              'vendor payments through Plastiq or Melio at about 2.9%, so $30K costs about '
+                              '$900, and quotes MF Capital liquidation at about 6% for up to 90% of '
+                              'limits, against 10-20% loans [bdodeCpS6JI @ 00:12:29]. Andrew Kraft prices '
+                              'Plastiq-style processors at 2.5% to 4% [S_u_YpirRNM @ 00:04:28], and Gap '
+                              'Funding pays down payments, closing costs and contractor invoices through '
+                              'Plastiq by check, ACH or wire, then uses Kashoo to land cash in an account '
+                              'for proof of funds [ItOMPgJwT_4 @ 00:03:39]. Jack McColl on BetterWealth '
+                              'says liquidators run about 3% plus 2-3%, so the deal has to return well '
+                              'over 10% to justify it. Rounds repeat on a cycle: Naam Wynn reports '
+                              'Experian inquiry removals in about 48 hours and Equifax and TransUnion in '
+                              'one to two weeks, then a 90-day seasoning wait and manual limit reviews '
+                              'every 90 days, $30K to $60K to $100K [LktXzMB-Sis @ 00:10:02]. Christopher '
+                              'Grant staggers due dates weekly across nine cards using ChatGPT or Claude, '
+                              'and pockets the $750 Ink bonus on $6K spend before moving the limit.'],
+               'table': {'caption': 'Street-level levers, exact numbers and tools used in round one',
+                         'headers': ['Lever', 'Exact Number Or Tool', 'Expert Source'],
+                         'rows': [['Chase Ink stack with limit transfer',
+                                   'Ink Unlimited $30-40K plus Ink Preferred $40-60K moved over for '
+                                   '$70-100K total',
+                                   'Colin Matthew ([WAqBw-d5K44 @ 00:02:27])'],
+                                  ['Chase checking seasoning deposit before applying',
+                                   'Open business checking with $4K minimum, ideally $10K, then wait five '
+                                   'business days',
+                                   'Colin Matthew ([WAqBw-d5K44 @ 00:02:39])'],
+                                  ['Banks that allow same-bank limit moves',
+                                   'Chase, BofA and Amex allow moves while US Bank does not; $47K plus $5K '
+                                   'became $52K',
+                                   'BetterWealth ([ojWjbXNf-HI @ 00:16:41])'],
+                                  ['Deposit ramp to build a bank relationship',
+                                   '$500 weekly in month one, $1,000 weekly in month two, $1,200-1,500 '
+                                   'weekly in month three',
+                                   'Naam Wynn ([LktXzMB-Sis @ 00:05:31])'],
+                                  ['Same-sitting application blitz across issuers',
+                                   'Submit four to five applications in one sitting so no inquiry posts '
+                                   'before the next',
+                                   'Gap Funding | 100% Real Estate Financing ([ItOMPgJwT_4 @ 00:01:26])'],
+                                  ['Card-funded vendor payments for real expenses',
+                                   'Plastiq or Melio at about 2.9% fee, so $30K of payments costs about '
+                                   '$900',
+                                   'Naam Wynn ([bdodeCpS6JI @ 00:12:29])'],
+                                  ['In-branch applications at nearby regional banks',
+                                   'Bank Branch Locator within 20 miles; in-branch approvals run $25K '
+                                   'versus $5K online',
+                                   'Marvin Francois ([6xdE38E2F8Q @ 00:05:42])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small Moves That Separate $5K Approvals From $50K Approvals',
+                           'body': 'These are the quieter edges operators use to squeeze extra limit out '
+                                   'of the same file without burning extra inquiries or losing promo days.',
+                           'items': ['Existing Amex customers can land a business line of credit for '
+                                     '$10,000-plus with no hard pull, which Cal Barton calls zero risk to '
+                                     'the score [Cal Barton — Eh5z4F-toEI @ 00:13:35]',
+                                     'Ask whether multiple cards can ride on one hard pull; Navy Federal '
+                                     'and PNC will do it but only if you ask [Cal Barton — Eh5z4F-toEI @ '
+                                     '00:10:20]',
+                                     'Amex Blue Business Plus counts its 12-month 0% window from account '
+                                     'opening, while US Bank counts billing cycles, so a partial first '
+                                     'cycle can cost weeks [HowToCredit — 0jZD4_NoCTs @ 00:04:32]',
+                                     'Link your Stripe or merchant account to the target bank and let '
+                                     'checking and savings sit three to six months to raise your internal '
+                                     'bank rating [Marvin Francois — 6xdE38E2F8Q @ 00:11:44]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Rebuild The Personal File',
+                              'action': 'Drive utilization toward 10%, clear recent inquiries, and add '
+                                        'aged authorized-user tradelines.',
+                              'detail': "Andrew Kraft's prep phase lowers utilization, removes recent "
+                                        'inquiries and adds an AU tradeline, noting income over $80K helps '
+                                        '[Andrew Kraft — S_u_YpirRNM @ 00:06:55]; Naam Wynn says sub-10% '
+                                        'utilization can add 20-50 points in under 30 days [Naam Wynn — '
+                                        'LktXzMB-Sis @ 00:03:05].'},
+                             {'step': 2,
+                              'title': 'Stand Up The Entity And Season The Bank',
+                              'action': 'Form the LLC with matching address, phone and NAICS details, then '
+                                        'open and fund checking at the target banks.',
+                              'detail': 'Naam Wynn warns lenders treat the bank account opening date as '
+                                        'the business start date [Naam Wynn — bdodeCpS6JI @ 00:05:22]; '
+                                        'Colin Matthew lets a $4-10K Chase deposit sit five business days '
+                                        'minimum before applying [Colin Matthew — WAqBw-d5K44 @ '
+                                        '00:02:39].'},
+                             {'step': 3,
+                              'title': 'Fire Round One Chase First, Bureaus Split',
+                              'action': 'Apply to Chase on the cleanest file, then US Bank and the '
+                                        'remaining lenders across all three bureaus in a tight window.',
+                              'detail': "Colin Matthew's bankers say Chase is the only bank to apply to "
+                                        'before US Bank [Colin Matthew — WAqBw-d5K44 @ 00:03:55]; Gap '
+                                        'Funding submits four to five applications in one sitting so no '
+                                        'inquiry posts before the next [Gap Funding | 100% Real Estate '
+                                        'Financing — ItOMPgJwT_4 @ 00:01:26].'},
+                             {'step': 4,
+                              'title': 'Consolidate Limits And Reset For Round Two',
+                              'action': 'Move donor-card limits onto 0% cards, deploy capital, then season '
+                                        '90 days and request limit reviews.',
+                              'detail': 'Jack McColl moves limits between same-bank cards at Chase, BofA '
+                                        'and Amex [BetterWealth — ojWjbXNf-HI @ 00:16:41]; Naam Wynn waits '
+                                        '90 days and runs manual limit reviews every 90 days from $30K to '
+                                        '$60K to $100K [Naam Wynn — LktXzMB-Sis @ 00:11:04].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ["The sharpest split on the street is timing. Gap Funding's Mick Wadley "
+                              'teaches the same-day stack: submit four to five applications in one sitting '
+                              "so no issuer's inquiry posts before the next goes in, and calls applying "
+                              'for one card then going back three days later for another the wrong way to '
+                              'do it [ItOMPgJwT_4 @ 00:01:26]. This Will Make You Rich frames the whole '
+                              'play around that gap, describing stacking as applying to several lenders '
+                              "before they can see each other's approvals, because the reporting delay "
+                              'creates a very short window of time [6D6yJ60Vi0k @ 00:01:39]. Jack McColl '
+                              'on BetterWealth runs a deliberate order instead: Chase first, then US Bank, '
+                              'with Bank of America handing out better limits even without a relationship '
+                              'manager [ojWjbXNf-HI @ 00:24:19]. Colin Matthew backs that ordering with '
+                              'banker intel, saying his bankers told him the only bank you can apply '
+                              'before US Bank is Chase, and builds a pause into Round 1: if the first '
+                              'Chase approval lands under $30K, wait 30 days [WAqBw-d5K44 @ 00:03:55]. The '
+                              'practical read for an operator is that same-day blitzes maximize inquiry '
+                              'blindness across issuers, while sequenced rounds let early approvals and '
+                              'relationship deposits lift the limits on every later application in the '
+                              'chain.',
+                              "Practitioners also split on how wide to go. HowToCredit opens with 'Stop "
+                              "collecting 0% interest business credit cards,' arguing one card with a long "
+                              'enough runway can outbeat five short ones, and that picking the card is '
+                              'maybe 20% of the job while getting the limit is the other 80% [0jZD4_NoCTs '
+                              '@ 00:00:00]. Marvin Francois keeps the spread tight: three to four banks '
+                              'max gets $50K to $100K, and Francois holds two $50K cards from Chase alone '
+                              '[6xdE38E2F8Q @ 00:08:25]. Radikal Marketer puts the ceiling at four to '
+                              'seven banks with three to six as the sweet spot, built from two in-house '
+                              'underwriters like Chase and Amex, two regionals like Citizens and PNC, and '
+                              'two smaller banks or credit unions using third-party underwriters, then '
+                              'double-dipping at one bank to reach about 12 lines [Oa3bugxGPHE @ '
+                              '00:04:19]. Colin Matthew runs the opposite extreme, an 11-bank, two-round '
+                              'sequence that adds First Citizens, BofA, Elan and TCM after Chase, US Bank, '
+                              'Truist, Citizens, PNC, Wells Fargo and Amex, landing a conservative total '
+                              'of $258K-plus [WAqBw-d5K44 @ 00:09:41]. Wide stacks chase total exposure; '
+                              'narrow stacks chase runway and cleaner repayment math for operators who '
+                              'would rather service one balance than juggle many.',
+                              'Inquiry removal is where the playbooks clash hardest. Naam Wynn teaches '
+                              'that hard inquiries from business applications can be disputed and removed '
+                              'from the personal report, with Experian clearing in about 48 hours and '
+                              'Equifax and TransUnion in one to two weeks, followed by a 90-day seasoning '
+                              'wait before the next round [LktXzMB-Sis @ 00:10:02]. Colin Matthew bakes '
+                              'the same wipe into the gap between rounds, putting TransUnion and Equifax '
+                              'at roughly 14 days and calling Experian typically easy [WAqBw-d5K44 @ '
+                              '00:07:02]. Stephen Smith draws a hard line: if the card reports to personal '
+                              'credit, keep that hard inquiry; only when the account does not report is it '
+                              "okay to remove it [UuM0MLm-2DU @ 00:05:31]. Christopher Grant's guest Sadik "
+                              'reports the downside directly, warning that fraudulent disputes have gotten '
+                              'accounts closed [-M4ZoYEoh3k @ 00:31:04]. Seasoning windows diverge just as '
+                              'widely: Colin Matthew lets a funded Chase checking account sit five '
+                              'business days minimum [WAqBw-d5K44 @ 00:02:39], while Sadik routed Amazon '
+                              'deposits into Chase checking for 30 days before landing $72.5K in a single '
+                              'day [-M4ZoYEoh3k @ 00:24:54]. Operators pick a lane based on how many '
+                              'inquiries they already carry and how much calendar time they can afford to '
+                              'burn.'],
+               'table': {'caption': 'Competing playbooks on sequencing, width, liquidation, Amex entry, '
+                                    'seasoning, inquiries and Navy Federal',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Application timing across the target banks',
+                                   'Submit four to five applications in one sitting before any inquiry '
+                                   'posts',
+                                   'Apply Chase first, then US Bank, with Bank of America after that',
+                                   'Gap Funding | 100% Real Estate Financing ([ItOMPgJwT_4 @ 00:01:26]) vs '
+                                   'BetterWealth ([ojWjbXNf-HI @ 00:24:19])'],
+                                  ['Personal cards inside the same stack',
+                                   'Cap personal card applications at two per six months to protect the '
+                                   'profile',
+                                   'Add two personal 0% products alongside five business cards on a $50K '
+                                   'flip',
+                                   'BetterWealth ([ojWjbXNf-HI @ 00:06:00]) vs Gap Funding | 100% Real '
+                                   'Estate Financing ([ItOMPgJwT_4 @ 00:04:16])'],
+                                  ['Cost of liquidating card limits into cash',
+                                   'MF Capital liquidation runs about 6% on up to 90% of limits',
+                                   'Plastiq and similar processors charge between 2.5% and 4% to liquidate',
+                                   'Naam Wynn ([bdodeCpS6JI @ 00:13:07]) vs Andrew Kraft ([S_u_YpirRNM @ '
+                                   '00:04:45])'],
+                                  ['Fastest route into Amex business cards',
+                                   'Existing Amex customers get a soft pull after landing the Chase Ink '
+                                   'cards',
+                                   'Open a Delta Gold personal card, then return around day 60 for Blue '
+                                   'cards',
+                                   'Christopher Grant ([-M4ZoYEoh3k @ 00:22:23]) vs Colin Matthew '
+                                   '([WAqBw-d5K44 @ 00:05:52])'],
+                                  ['Bank relationship seasoning before applying for cards',
+                                   'Fund Chase checking with $4K to $10K and wait five business days',
+                                   'Open business checking and savings, then let it sit three to six '
+                                   'months',
+                                   'Colin Matthew ([WAqBw-d5K44 @ 00:02:39]) vs Marvin Francois '
+                                   '([6xdE38E2F8Q @ 00:11:55])'],
+                                  ['Hard inquiry tolerance on each credit bureau',
+                                   'Allow at most one inquiry per bureau over the prior 12 months',
+                                   'Three inquiries on any single bureau means flat denial at most banks',
+                                   'Naam Wynn ([LktXzMB-Sis @ 00:04:52]) vs Colin Matthew ([WAqBw-d5K44 @ '
+                                   '00:01:42])'],
+                                  ["Navy Federal's place in the funding stack",
+                                   'Skip Navy Federal entirely because it offers no 0% business card',
+                                   'Use Navy Federal relationship approvals around $20K inside the CRD '
+                                   'framework',
+                                   'BetterWealth ([ojWjbXNf-HI @ 00:13:31]) vs Marvin Francois '
+                                   '([Ksec0I8vpLQ @ 00:14:01])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive failure is the runway running out. HowToCredit warns '
+                              'that picking the wrong card means paying 20%-plus APR by month eight, and '
+                              'that a balance transfer onto a purchase-only card accrues full interest '
+                              'from day one, because the banks are betting on balances that never get '
+                              "cleared [0jZD4_NoCTs @ 00:02:00]. Zach Siegel's rule is blunt: never let "
+                              'the 0% periods expire with significant balances, since post-promo rates run '
+                              '16% to 28%, and late payments can cancel the promo outright [Fs38E_kSwxE @ '
+                              '00:08:14]. Jack McColl on BetterWealth pegs the post-promo range at 18% to '
+                              '25% and reminds operators that default lands on personal credit because the '
+                              'cards are personally guaranteed [ojWjbXNf-HI @ 00:41:53]. Gap Funding names '
+                              'the strategy-breaker directly: it fails when there is no equity play, and '
+                              'none of it works if balances are unpaid when the 0% period ends or a '
+                              'mortgage application goes in while the personal double stack is still maxed '
+                              '[ItOMPgJwT_4 @ 00:05:05]. The economics check is simple: map the sale, '
+                              'refinance or fixed repayment date before the first swipe, then size total '
+                              'exposure to what that exit can actually clear inside the promo window.',
+                              'Turning card limits into cash carries its own drag. Naam Wynn quotes '
+                              'Plastiq or Melio at about 2.9%, roughly $900 on a $30K payment, and MF '
+                              'Capital liquidation near 6% for up to 90% of limits, pitched as cheaper '
+                              'than 10% to 20% loans [bdodeCpS6JI @ 00:12:42]. Jack McColl on BetterWealth '
+                              'stacks the liquidator cost at about 3% plus another 2% to 3%, concluding '
+                              'the opportunity has to return well over 10% to justify it [ojWjbXNf-HI @ '
+                              '00:47:10]. Radikal Marketer adds that the systems are starting to get '
+                              'tighter for credit card liquidation, so the exit door itself is narrowing '
+                              '[Oa3bugxGPHE @ 00:01:26]. Balance transfers bleed too: HowToCredit flags '
+                              'that a 3% versus 5% transfer fee is a $400 gap on $20K, money straight out '
+                              'of savings, and that US Bank Shield transfers must land within 30 days '
+                              '[0jZD4_NoCTs @ 00:07:31]. Stack the fees together and the real cost of '
+                              'so-called free capital climbs fast: a 2.9% processor charge, a 3% to 5% '
+                              "transfer fee and a liquidator spread can eat a large slice of a deal's "
+                              'margin before the inventory, rehab or ad spend ever produces a dollar of '
+                              'return.',
+                              "Shutdowns and decay hit operators who push past a bank's tolerance. Cal "
+                              'Barton rates Amex A-tier with limits up to $50K but warns of financial '
+                              'reviews and shutdowns for cardholders who liquidate too early [Eh5z4F-toEI '
+                              "@ 00:06:08]. Christopher Grant's guest Sadik restricts 0% lines to proven "
+                              'inventory only, nothing for testing or lifestyle, after spending four '
+                              'months stuck at $20K to $30K a month on cash before $110K across two cards '
+                              'pushed the business to $100K a month [-M4ZoYEoh3k @ 00:19:54]. Jack McColl '
+                              'on BetterWealth cautions that a second round of funding is almost never as '
+                              'successful as the first, and wants a same-bank balance paid down to 50% '
+                              'before reapplying [ojWjbXNf-HI @ 00:42:14]. Stephen Smith reminds every '
+                              'startup founder that the personal guarantee means the balance is owed even '
+                              'if the business never earns a dollar [UuM0MLm-2DU @ 00:01:10]. The pattern '
+                              'across these reports is consistent: first-round approvals are the easy '
+                              'part, while repayment discipline, deployment into cash-producing assets '
+                              'with an exit already mapped, and patience between rounds decide whether the '
+                              'stack compounds or collapses into high-interest personal debt.'],
+               'table': {'caption': 'Firsthand traps with the mechanism behind each loss and the economics '
+                                    'check that prevents it',
+                         'headers': ['Failure Mode',
+                                     'Firsthand Mechanism',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Balance transfer onto a purchase-only 0% card',
+                                   'Transferred balance accrues full interest from day one while the promo '
+                                   'only shields purchases',
+                                   'Confirm whether 0% covers purchases, transfers or both before moving '
+                                   'any balance',
+                                   'HowToCredit ([0jZD4_NoCTs @ 00:02:00])'],
+                                  ['Liquidating Amex limits too soon after approval',
+                                   'Amex triggers financial reviews and account shutdowns when cardholders '
+                                   'liquidate too early',
+                                   'Treat Amex as an A-tier line worth up to $50K and protect it',
+                                   'Cal Barton ([Eh5z4F-toEI @ 00:06:08])'],
+                                  ['Hitting three banks that pull the same bureau',
+                                   'Person A hit three TransUnion banks and approvals fell from $25K to '
+                                   '$15K to $7.5K',
+                                   'Spread applications so each bank pulls Experian, TransUnion or Equifax '
+                                   'separately',
+                                   'Marvin Francois ([6xdE38E2F8Q @ 00:01:02])'],
+                                  ['Mortgage application while the personal double stack is maxed',
+                                   'Personal 0% cards raise reported utilization and can sink a mortgage '
+                                   'or HELOC approval',
+                                   'Pay personal cards first from sale proceeds and never run both '
+                                   'simultaneously',
+                                   'Gap Funding | 100% Real Estate Financing ([ItOMPgJwT_4 @ 00:05:21])'],
+                                  ['Building only arbitrage units with stacked capital',
+                                   'Mike St. Gene runs six Airbnb listings but calls arbitrage units not '
+                                   'sellable long term',
+                                   'Route 0% capital toward owned property with a cash-out refinance exit '
+                                   'planned',
+                                   'Jack McColl ([gUK5DvwuWnQ @ 00:07:28])'],
+                                  ['Funding desperate or overleveraged broker clients',
+                                   'Steedman Waiters says to run from prospects who just want money with '
+                                   'no plan',
+                                   'At a 10% broker fee, a $50K funding pays $5,000 only on qualified '
+                                   'clients',
+                                   'Marvin Francois ([Ksec0I8vpLQ @ 01:01:58])'],
+                                  ['Spending stacked credit on lifestyle purchases',
+                                   'Lifestyle spending turns stacked credit into high-interest debt with '
+                                   'no exit after promos lapse',
+                                   'Tie every dollar to inventory, marketing, equipment or cash flow '
+                                   'before applying',
+                                   'This Will Make You Rich ([6D6yJ60Vi0k @ 00:04:22])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Swiping the Stack',
+                           'body': 'Every one of these gates comes from a loss, denial or reversal '
+                                   'practitioners reported firsthand. Clear all four before the first '
+                                   'application goes in.',
+                           'items': ["Confirm whether each card's 0% covers purchases, balance transfers "
+                                     'or both before moving a single dollar [HowToCredit — 0jZD4_NoCTs @ '
+                                     '00:01:43].',
+                                     'Write the exit first: sale, refinance or a set repayment date that '
+                                     'clears balances before the promo ends [Gap Funding | 100% Real '
+                                     'Estate Financing — ItOMPgJwT_4 @ 00:05:21].',
+                                     'Hold every bureau under three hard inquiries, because three on any '
+                                     'single bureau means flat denial at most banks [Colin Matthew — '
+                                     'WAqBw-d5K44 @ 00:01:42].',
+                                     'Only borrow what could be repaid within six months if the deal '
+                                     'stalls [Marvin Francois — 6xdE38E2F8Q @ 00:04:43].']}}],
+ 'pull_quote': "Your profile is what's going to get you approved, not your score. Your profile is your "
+               'resume, your score is your reputation. Write that down. -- Radikal Marketer (Oa3bugxGPHE @ '
+               '00:09:28).',
+ 'diagram_id': 'diag-08',
+ 'action_checklist': ['Drive personal utilization down to 10% and keep inquiries at two to three or fewer '
+                      'before any application [Marvin Francois — 6xdE38E2F8Q @ 00:02:54].',
+                      'Lock in a virtual business address with matching name, EIN, phone and email '
+                      'everywhere the business appears [Naam Wynn — bdodeCpS6JI @ 00:01:42].',
+                      'Open Chase business checking with at least $4,000, ideally $10K, and let it sit '
+                      'five business days minimum [Colin Matthew — WAqBw-d5K44 @ 00:02:27].',
+                      'Apply to Chase first for the Ink Cash with fewer than three inquiries, then call to '
+                      'move an Ink Preferred limit onto the 0% card [Christopher Grant — -M4ZoYEoh3k @ '
+                      '00:20:42].',
+                      'Run rounds by bureau: Chase on Experian, Citizens on Equifax and US Bank on '
+                      'TransUnion, then Amex, First Citizens and Truist [Cal Barton — Eh5z4F-toEI @ '
+                      '00:12:39].',
+                      "Stagger every card's due date weekly so payments never stack up in the same week "
+                      '[Christopher Grant — -M4ZoYEoh3k @ 00:39:41].'],
+ 'statutory_citations': [{'title': 'Cal Barton — 0% APR Business Credit Stacking for New LLCs (20 Cards) '
+                                   '[00:07:03]',
+                          'url': 'https://www.youtube.com/watch?v=Eh5z4F-toEI&t=423s',
+                          'relevance': 'Primary practitioner testimony on the F-to-S bank tier ranking, '
+                                       'bureau pulls and the 9-card three-round stack.'},
+                         {'title': 'BetterWealth — How To Get $200,000 in Business Credit at 0% Interest '
+                                   '(With No Business History) | Jack McColl [00:16:41]',
+                          'url': 'https://www.youtube.com/watch?v=ojWjbXNf-HI&t=1001s',
+                          'relevance': 'Primary practitioner testimony on same-bank limit transfers, round '
+                                       'decay and liquidation economics.'},
+                         {'title': 'Colin Matthew — These 11 Banks approve up to $500k in Business Credit '
+                                   'with No Docs (My 2026 Funding Sequence) [00:02:27]',
+                          'url': 'https://www.youtube.com/watch?v=WAqBw-d5K44&t=147s',
+                          'relevance': 'Primary practitioner testimony on the 11-bank two-round sequence, '
+                                       'deposit seasoning and the three-inquiry rule.'},
+                         {'title': 'Christopher Grant — How He Built $385K in 0% Credit Lines to Scale '
+                                   'Amazon Online Arbitrage [00:20:42]',
+                          'url': 'https://www.youtube.com/watch?v=-M4ZoYEoh3k&t=1242s',
+                          'relevance': 'Primary practitioner testimony on Chase-first sequencing, the 2/30 '
+                                       'rule and deploying 0% lines into proven inventory.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'Eh5z4F-toEI',
+                       'title': '0% APR Business Credit Stacking for New LLCs (20 Cards)',
+                       'channel': 'Cal Barton',
+                       'author': 'Cal Barton',
+                       'text': "Anything under 9 months, that's really a treadmill.",
+                       'tip': "Anything under 9 months, that's really a treadmill.",
+                       'timestamp': 545,
+                       'timestamp_seconds': 545,
+                       'timestamp_label': '[00:09:05]',
+                       'url': 'https://www.youtube.com/watch?v=Eh5z4F-toEI&t=545s',
+                       'markdown': '[00:09:05](https://www.youtube.com/watch?v=Eh5z4F-toEI&t=545s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UuM0MLm-2DU',
+                       'title': 'How to Get 40 Business Credit Cards for a Startup | 0% APR (1M+ in '
+                                'Credit)',
+                       'channel': 'Stephen Smith',
+                       'author': 'Stephen Smith',
+                       'text': 'When they do not report, it is okay to remove the hard inquiry.',
+                       'tip': 'When they do not report, it is okay to remove the hard inquiry.',
+                       'timestamp': 344,
+                       'timestamp_seconds': 344,
+                       'timestamp_label': '[00:05:44]',
+                       'url': 'https://www.youtube.com/watch?v=UuM0MLm-2DU&t=344s',
+                       'markdown': '[00:05:44](https://www.youtube.com/watch?v=UuM0MLm-2DU&t=344s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bdodeCpS6JI',
+                       'title': 'How to Get $100,000+ in Business Credit at 0% APR (New LLCs)',
+                       'channel': 'Naam Wynn',
+                       'author': 'Naam Wynn',
+                       'text': 'Most lenders will treat your business as it just started last week.',
+                       'tip': 'Most lenders will treat your business as it just started last week.',
+                       'timestamp': 322,
+                       'timestamp_seconds': 322,
+                       'timestamp_label': '[00:05:22]',
+                       'url': 'https://www.youtube.com/watch?v=bdodeCpS6JI&t=322s',
+                       'markdown': '[00:05:22](https://www.youtube.com/watch?v=bdodeCpS6JI&t=322s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LktXzMB-Sis',
+                       'title': 'The $100,000 Business Credit LOOPHOLE That Feels ILLEGAL (But Works)',
+                       'channel': 'Naam Wynn',
+                       'author': 'Naam Wynn',
+                       'text': 'Banks give dramatically higher limits to people that they already know.',
+                       'tip': 'Banks give dramatically higher limits to people that they already know.',
+                       'timestamp': 304,
+                       'timestamp_seconds': 304,
+                       'timestamp_label': '[00:05:04]',
+                       'url': 'https://www.youtube.com/watch?v=LktXzMB-Sis&t=304s',
+                       'markdown': '[00:05:04](https://www.youtube.com/watch?v=LktXzMB-Sis&t=304s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0jZD4_NoCTs',
+                       'title': 'If You Need $50,000 Or More In Business Funding 0% Interest , Use These 5 '
+                                'Cards ASAP',
+                       'channel': 'HowToCredit',
+                       'author': 'HowToCredit',
+                       'text': 'One card with a long enough runway can outbeat five short ones.',
+                       'tip': 'One card with a long enough runway can outbeat five short ones.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=0jZD4_NoCTs&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=0jZD4_NoCTs&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ksec0I8vpLQ',
+                       'title': 'The $100K Funding Masterclass: 0% Credit Stacking, CDFIs, and Funding '
+                                'Businesses Explained',
+                       'channel': 'Marvin Francois',
+                       'author': 'Marvin Francois',
+                       'text': 'All you need is four months of business bank statements to qualify.',
+                       'tip': 'All you need is four months of business bank statements to qualify.',
+                       'timestamp': 1095,
+                       'timestamp_seconds': 1095,
+                       'timestamp_label': '[00:18:15]',
+                       'url': 'https://www.youtube.com/watch?v=Ksec0I8vpLQ&t=1095s',
+                       'markdown': '[00:18:15](https://www.youtube.com/watch?v=Ksec0I8vpLQ&t=1095s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gUK5DvwuWnQ',
+                       'title': 'How He Got $170K in 0% Credit and Built 6 Airbnb Listings',
+                       'channel': 'Jack McColl',
+                       'author': 'Jack McColl',
+                       'text': "And this what I've learned in Airbnb arbitrage, it you don't really get "
+                               'paid to wait or to move slowly.',
+                       'tip': "And this what I've learned in Airbnb arbitrage, it you don't really get "
+                              'paid to wait or to move slowly.',
+                       'timestamp': 550,
+                       'timestamp_seconds': 550,
+                       'timestamp_label': '[00:09:10]',
+                       'url': 'https://www.youtube.com/watch?v=gUK5DvwuWnQ&t=550s',
+                       'markdown': '[00:09:10](https://www.youtube.com/watch?v=gUK5DvwuWnQ&t=550s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ojWjbXNf-HI',
+                       'title': 'How To Get $200,000 in Business Credit at 0% Interest (With No Business '
+                                'History) | Jack McColl',
+                       'channel': 'BetterWealth',
+                       'author': 'BetterWealth',
+                       'text': 'So doing a second round of funding is almost never as successful as the '
+                               'first round.',
+                       'tip': 'So doing a second round of funding is almost never as successful as the '
+                              'first round.',
+                       'timestamp': 2534,
+                       'timestamp_seconds': 2534,
+                       'timestamp_label': '[00:42:14]',
+                       'url': 'https://www.youtube.com/watch?v=ojWjbXNf-HI&t=2534s',
+                       'markdown': '[00:42:14](https://www.youtube.com/watch?v=ojWjbXNf-HI&t=2534s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Oa3bugxGPHE',
+                       'title': 'CREDIT CARD STACKING EXPOSED 🔥 | TRUTH BEHIND 0% BUSINESS CREDIT CARD '
+                                'FUNDING!',
+                       'channel': 'Radikal Marketer',
+                       'author': 'Radikal Marketer',
+                       'text': "Your profile is what's going to get you approved, not your score; your "
+                               'profile is your resume, your score is your reputation.',
+                       'tip': "Your profile is what's going to get you approved, not your score; your "
+                              'profile is your resume, your score is your reputation.',
+                       'timestamp': 568,
+                       'timestamp_seconds': 568,
+                       'timestamp_label': '[00:09:28]',
+                       'url': 'https://www.youtube.com/watch?v=Oa3bugxGPHE&t=568s',
+                       'markdown': '[00:09:28](https://www.youtube.com/watch?v=Oa3bugxGPHE&t=568s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ItOMPgJwT_4',
+                       'title': 'Credit Card Stacking for Real Estate Investors: The Same-Day Stack Nobody '
+                                'Explains Right',
+                       'channel': 'Gap Funding | 100% Real Estate Financing',
+                       'author': 'Gap Funding | 100% Real Estate Financing',
+                       'text': 'The correct approach, submit four to five applications in the same '
+                               "sitting, so no issuer's inquiry is posted before the next goes in.",
+                       'tip': 'The correct approach, submit four to five applications in the same sitting, '
+                              "so no issuer's inquiry is posted before the next goes in.",
+                       'timestamp': 86,
+                       'timestamp_seconds': 86,
+                       'timestamp_label': '[00:01:26]',
+                       'url': 'https://www.youtube.com/watch?v=ItOMPgJwT_4&t=86s',
+                       'markdown': '[00:01:26](https://www.youtube.com/watch?v=ItOMPgJwT_4&t=86s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'S_u_YpirRNM',
+                       'title': '🚀 How to Get $50K–$250K in 0% Interest Business Credit Using Credit Card '
+                                'Stacking',
+                       'channel': 'Andrew Kraft',
+                       'author': 'Andrew Kraft',
+                       'text': 'It could be anywhere from 2 and a half to 4% to liquidate those cards.',
+                       'tip': 'It could be anywhere from 2 and a half to 4% to liquidate those cards.',
+                       'timestamp': 285,
+                       'timestamp_seconds': 285,
+                       'timestamp_label': '[00:04:45]',
+                       'url': 'https://www.youtube.com/watch?v=S_u_YpirRNM&t=285s',
+                       'markdown': '[00:04:45](https://www.youtube.com/watch?v=S_u_YpirRNM&t=285s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-M4ZoYEoh3k',
+                       'title': 'How He Built $385K in 0% Credit Lines to Scale Amazon Online Arbitrage',
+                       'channel': 'Christopher Grant',
+                       'author': 'Christopher Grant',
+                       'text': 'Chase is the most sensitive when it comes to inquiries.',
+                       'tip': 'Chase is the most sensitive when it comes to inquiries.',
+                       'timestamp': 1242,
+                       'timestamp_seconds': 1242,
+                       'timestamp_label': '[00:20:42]',
+                       'url': 'https://www.youtube.com/watch?v=-M4ZoYEoh3k&t=1242s',
+                       'markdown': '[00:20:42](https://www.youtube.com/watch?v=-M4ZoYEoh3k&t=1242s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Fs38E_kSwxE',
+                       'title': 'Best 0% APR Business Credit Cards 2026 (Unlock Up to $100K in '
+                                'Interest-Free Capital)',
+                       'channel': 'Zach Siegel',
+                       'author': 'Zach Siegel',
+                       'text': 'Never let the 0% periods expire with significant balances on these lines.',
+                       'tip': 'Never let the 0% periods expire with significant balances on these lines.',
+                       'timestamp': 494,
+                       'timestamp_seconds': 494,
+                       'timestamp_label': '[00:08:14]',
+                       'url': 'https://www.youtube.com/watch?v=Fs38E_kSwxE&t=494s',
+                       'markdown': '[00:08:14](https://www.youtube.com/watch?v=Fs38E_kSwxE&t=494s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6xdE38E2F8Q',
+                       'title': 'How to Stack Business Credit Cards Without Getting Denied',
+                       'channel': 'Marvin Francois',
+                       'author': 'Marvin Francois',
+                       'text': 'You only need three to four max to get 50 to 100K.',
+                       'tip': 'You only need three to four max to get 50 to 100K.',
+                       'timestamp': 505,
+                       'timestamp_seconds': 505,
+                       'timestamp_label': '[00:08:25]',
+                       'url': 'https://www.youtube.com/watch?v=6xdE38E2F8Q&t=505s',
+                       'markdown': '[00:08:25](https://www.youtube.com/watch?v=6xdE38E2F8Q&t=505s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WAqBw-d5K44',
+                       'title': 'These 11 Banks approve up to $500k in Business Credit with No Docs (My '
+                                '2026 Funding Sequence)',
+                       'channel': 'Colin Matthew',
+                       'author': 'Colin Matthew',
+                       'text': 'Most banks will flat out deny you if you have three or more hard inquiries '
+                               'on any single bureau.',
+                       'tip': 'Most banks will flat out deny you if you have three or more hard inquiries '
+                              'on any single bureau.',
+                       'timestamp': 102,
+                       'timestamp_seconds': 102,
+                       'timestamp_label': '[00:01:42]',
+                       'url': 'https://www.youtube.com/watch?v=WAqBw-d5K44&t=102s',
+                       'markdown': '[00:01:42](https://www.youtube.com/watch?v=WAqBw-d5K44&t=102s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6D6yJ60Vi0k',
+                       'title': "The Credit Stacking Secret For Business Banks Don't Want You to Know",
+                       'channel': 'This Will Make You Rich',
+                       'author': 'This Will Make You Rich',
+                       'text': "If it's used incorrectly, it becomes high-interest debt with no exit.",
+                       'tip': "If it's used incorrectly, it becomes high-interest debt with no exit.",
+                       'timestamp': 318,
+                       'timestamp_seconds': 318,
+                       'timestamp_label': '[00:05:18]',
+                       'url': 'https://www.youtube.com/watch?v=6D6yJ60Vi0k&t=318s',
+                       'markdown': '[00:05:18](https://www.youtube.com/watch?v=6D6yJ60Vi0k&t=318s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'}]}

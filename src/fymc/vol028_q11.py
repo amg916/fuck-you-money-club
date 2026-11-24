@@ -1,717 +1,852 @@
 from __future__ import annotations
 
-CHAPTER_11 = {
-    "id": "Q11",
-    "chapter_id": "Q11",
-    "chapter_number": 11,
-    "question_number": 11,
-    "slug": "pod-architecture-contractor-kpis-exit-valuation",
-    "question_prompt": "How do you structure a lean 1 FT + 3 C (4 people) -> 2 FT + 4 C (6 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
-    "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
-    "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
-    "subtitle": "Nine-Seat Janitorial Pods, ISSA Bid Controls, W-2 and Subcontractor SLAs, Accrual Cohorts, and Transferable Contract Earnings",
-    "layout_template": "action_checklist",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #10, Commercial Cleaning Contracts, holds Rank #23 with a "
-        "82/100 Money-to-Manpower Score because recurring contracts still require "
-        "paid crew hours. This chapter maps four operator plays: recurring B2B "
-        "route density, medical janitorial specialization, ISSA-based production-rate "
-        "bidding, and supervisor pods with scheduling, inspection, and billing "
-        "automation. Build five full-time seats plus four contractors before "
-        "expanding to six plus five; never hide extra labor inside subcontractor "
-        "labels. Canonical annual owner profits are $20,000 Conservative, $87,000 "
-        "Base, and $192,000 Scaled. Weekly labor, quality, collections, and "
-        "concentration controls protect those economics. Transferable contracts, "
-        "documented rights, and reconciled accrual cohorts support buyer diligence; "
-        "replacement management costs and customer retention determine whether "
-        "selling beats keeping a durable cash-producing operation."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual recognized cleaning contract revenue; total operating costs $230,000.",
-            "note": "8% net margin; $20,000 annual owner net profit; 1 FT + 3 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$725,000",
-            "context": "Annual recognized cleaning contract revenue; total operating costs $638,000.",
-            "note": "12.0% net margin; $87,000 annual owner net profit; 1 FT + 3 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual recognized cleaning contract revenue; total operating costs $1,008,000.",
-            "note": "16% net margin; $192,000 annual owner net profit; 2 FT + 4 C.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Assign every seat before promising another building",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Treat Candidate #10's pod as a capacity ledger, not an "
-                    "organization chart decorated with job titles. The four mapped "
-                    "plays used here are recurring B2B route density, medical "
-                    "janitorial specialization, ISSA-based production-rate bidding, "
-                    "and supervisor pods supported by scheduling, inspection, and "
-                    "billing automation. In the four-person configuration, FT1 is "
-                    "the working owner-supervisor, responsible for bids, account "
-                    "reviews, payroll review, dispatch exceptions, and selected "
-                    "production shifts. FT2 owns the first recurring route; FT3 "
-                    "owns the second route; FT4 handles medical-site execution; "
-                    "FT5 supplies floating coverage, equipment readiness, and "
-                    "documented inspection support. These are five people, not "
-                    "five departments. C1 performs scheduled floor restoration, "
-                    "C2 performs carpet extraction, C3 performs accessible "
-                    "commercial glass cleaning, and C4 accepts separately scoped "
-                    "overflow janitorial packages. Each contractor seat represents "
-                    "one identified individual operating an independent business "
-                    "for this headcount model. A subcontractor arriving with three "
-                    "helpers adds three people to the capacity analysis. Put "
-                    "building access, task qualifications, equipment ownership, "
-                    "and available service windows beside every seat. The owner "
-                    "cannot simultaneously inspect a clinic, cover an absence, "
-                    "and conduct a sales walkthrough; the dispatch board must "
-                    "show which promise moves when that conflict appears."
-                ),
-                (
-                    "Expand to eleven people only when a measured bottleneck "
-                    "justifies FT6 and C5. FT6 becomes a producing route lead "
-                    "who takes repeatable dispatch and inspection work away from "
-                    "FT1; C5 provides a second independently contracted relief "
-                    "specialty with a distinct service package. Do not convert "
-                    "permanent employee vacancies into nominal contractor seats. "
-                    "Price capacity from task inventories and ISSA production "
-                    "references, then replace reference assumptions with timed "
-                    "walkthroughs and actual first-month results. Include loading, "
-                    "paid intersite travel, security delays, restocking, and "
-                    "equipment cleanup when measuring available hours. A capacity "
-                    "stress test illustrates the burden: at an assumed $70 of "
-                    "recognized revenue per productive hour, the $725,000 Base "
-                    "case needs approximately 10,357 productive hours. Four "
-                    "producing employees at 1,600 hours each plus 600 owner "
-                    "production hours supply 7,000; contractors must supply the "
-                    "remaining 3,357. At an assumed $90 yield, the $1,200,000 "
-                    "Scaled case needs approximately 13,333 hours. Five producing "
-                    "employees at 1,600 hours plus 600 owner hours supply 8,600, "
-                    "leaving 4,733 contractor hours. These yields are planning "
-                    "inputs, not observed market rates. Verify that each named "
-                    "contractor can deliver their share without hidden helpers "
-                    "or overlapping service commitments."
-                ),
-                (
-                    "Preserve the canonical economics while challenging their "
-                    "operating feasibility. Conservative revenue of $250,000 less "
-                    "$230,000 total costs produces $20,000 owner net profit; Base "
-                    "revenue of $725,000 less $638,000 produces $87,000; Scaled "
-                    "revenue of $1,200,000 less $1,008,000 produces $192,000. Those "
-                    "are 8%, 12.0%, and 16% net margins respectively. The stated "
-                    "five-person employee team in both lower cases does not "
-                    "prove that local wage floors, benefits, contractor fees, "
-                    "and travel fit the cost envelope. Build a wage-loaded "
-                    "schedule before treating any case as executable. Under "
-                    "29 U.S.C. section 207, covered nonexempt employees generally "
-                    "receive overtime after forty hours in a workweek; apply "
-                    "stricter applicable state rules as well. Record compensable "
-                    "travel between work locations under 29 CFR 785.38 instead "
-                    "of deleting it to rescue a bid. Route density creates "
-                    "value only when it removes actual paid travel or unlocks "
-                    "saleable service capacity. Scheduling software cannot clean "
-                    "another restroom by itself. If the capacity ledger fails, "
-                    "reprice scope, improve route geometry, or decline the work; "
-                    "do not revise the published scorecard or disguise unpaid "
-                    "owner shifts as automation."
-                ),
-            ],
-            "table": {
-                "caption": "Named Seat Ownership and Four-Play Capacity Controls",
-                "headers": [
-                    "Seat assignment and primary operating responsibility",
-                    "Execution boundary within the stated headcount",
-                    "Evidence reviewed before adding another account",
-                    "Failure response preserving the canonical cost envelope",
-                ],
-                "rows": [
-                    [
-                        "FT1 working owner-supervisor owns bids and account escalation.",
-                        "Count owner production separately from sales and dispatch hours.",
-                        "Review weekly calendar conflicts and recorded site coverage hours.",
-                        "Delegate repeatable dispatch before accepting another overlapping service window.",
-                    ],
-                    [
-                        "FT2 recurring route owner delivers the first geographic cluster.",
-                        "Assign adjacent buildings with compatible entry and closing windows.",
-                        "Compare paid travel minutes against completed customer service hours.",
-                        "Recluster isolated buildings or quote their travel burden explicitly.",
-                    ],
-                    [
-                        "FT3 recurring route owner delivers the second geographic cluster.",
-                        "Maintain documented backup access without sharing personal alarm credentials.",
-                        "Inspect route completion records and current authorized access lists.",
-                        "Resolve access failures before promising tighter overnight completion deadlines.",
-                    ],
-                    [
-                        "FT4 medical technician and FT5 floater protect specialist continuity.",
-                        "Reserve medical task qualifications and planned absence coverage explicitly.",
-                        "Review training records, inspection findings, and equipment readiness checks.",
-                        "Reduce optional project work before sacrificing contracted medical coverage.",
-                    ],
-                    [
-                        "C1 floors, C2 carpets, C3 glass, C4 scoped relief.",
-                        "Count four named individuals rather than undisclosed subcontractor crews.",
-                        "Verify deliverables, business independence, availability, and applicable insurance evidence.",
-                        "Rebid discrete packages when independence or dependable coverage fails.",
-                    ],
-                    [
-                        "Scaled FT6 producing lead and C5 specialist expand capacity.",
-                        "Add two actual people with measurable incremental service capacity.",
-                        "Reconcile new hours against signed recurring work and yields.",
-                        "Delay expansion when added payroll exceeds credible contracted contribution.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect productive hours before buying more software",
-                "body": "Experienced janitorial operators remove small recurring losses before adding another account to the same night.",
-                "items": [
-                    "Time elevator waits and security sign-in during the actual service window; daytime walkthroughs routinely miss those paid minutes.",
-                    "Store color-coded site kits in authorized locked closets so technicians do not transport every consumable between nearby buildings.",
-                    "Quote floor restoration separately from nightly maintenance and record the finish system, cure window, and furniture-moving responsibility.",
-                    "Schedule FT5's inspection support around shift changes and known absence patterns rather than assigning a permanently idle daytime inspection block.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Buy defined contractor outcomes and verify medical-site quality",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Contractor compensation should purchase a defined result "
-                    "rather than imitate an employee timecard with a different "
-                    "tax form. Give C1 a measured floor area, finish specification, "
-                    "furniture responsibility, approved access window, and "
-                    "acceptance test; give C2 a carpet inventory, extraction "
-                    "method constraints, drying requirement, and spotting "
-                    "exceptions. Pay a fixed accepted-package price with a "
-                    "separate change-order rate for newly discovered conditions. "
-                    "For C3 and C4, define reachable surfaces or room-level "
-                    "service scope with equivalent specificity. An illustrative "
-                    "$1,000 periodic-service invoice might support a $550 "
-                    "contractor package, $80 supplies, and $70 allocated "
-                    "inspection and travel, leaving $300 contribution before "
-                    "central overhead. That example is job math, not an "
-                    "additional annual scenario. Require written authorization "
-                    "for extra scope and documented acceptance within two "
-                    "business days; pay undisputed accepted amounts on the "
-                    "agreed schedule. Specify reinspection and correction "
-                    "responsibility without arbitrary invoice penalties. Track "
-                    "correction costs separately so a cheap subcontractor does "
-                    "not appear profitable while FT5 repeatedly repairs the "
-                    "work. Where the company actually controls an individual's "
-                    "ongoing employment relationship, use the appropriate "
-                    "employee arrangement and wage treatment instead of "
-                    "relabeling the same job as a package."
-                ),
-                (
-                    "Evaluate worker status under each applicable wage, tax, "
-                    "unemployment, and workers' compensation test; a signed "
-                    "independent-business agreement does not decide all of "
-                    "them. The FLSA definitions in 29 U.S.C. section 203 "
-                    "and federal employment-tax rules in 26 U.S.C. section "
-                    "3121(d) address different statutory questions. California "
-                    "Labor Code section 2775 can make subcontracting the "
-                    "company's usual cleaning work especially difficult unless "
-                    "an applicable exception and its conditions are satisfied. "
-                    "Document the actual relationship, not merely incorporation "
-                    "papers and insurance certificates. Review who markets "
-                    "services, negotiates prices, supplies equipment, bears "
-                    "business risk, and serves other customers. Customer "
-                    "security procedures and acceptance standards still apply, "
-                    "but do not use those requirements to camouflage "
-                    "employee-like daily control. Before mobilization, obtain "
-                    "current liability evidence, applicable workers' compensation "
-                    "evidence, and required endorsements directly through a "
-                    "verifiable insurance channel. A certificate alone does "
-                    "not amend coverage. Track expiration dates and excluded "
-                    "operations against the actual scope, particularly floor "
-                    "treatments, elevated glass work, and medical environments. "
-                    "If the four-person model needs more reliable controlled "
-                    "labor than lawful contractor arrangements provide, "
-                    "identify the headcount conflict and rework the operation "
-                    "rather than claiming the same pod still fits."
-                ),
-                (
-                    "Make quality measurable at the room and task level. "
-                    "For routine offices, inspect entrances, restrooms, "
-                    "breakrooms, waste stations, and agreed high-touch points "
-                    "against a versioned checklist. For medical sites, obtain "
-                    "the facility's environmental-services protocol and define "
-                    "which rooms, isolation conditions, sharps situations, and "
-                    "regulated waste activities are excluded or separately "
-                    "qualified. Follow disinfectant label directions for "
-                    "surface compatibility, dilution, and wet contact time; "
-                    "7 U.S.C. section 136j addresses pesticide use inconsistent "
-                    "with labeling. Under 29 CFR 1910.1200, maintain the "
-                    "required hazard communication program, labeling, safety "
-                    "data sheets, and training. Where reasonably anticipated "
-                    "occupational exposure triggers 29 CFR 1910.1030, implement "
-                    "the applicable exposure-control, training, protective "
-                    "equipment, vaccination, and post-exposure requirements. "
-                    "Set an illustrative SLA of immediate isolation and "
-                    "notification for critical hazards, acknowledgment within "
-                    "thirty minutes during contracted coverage, and routine "
-                    "miss correction before the next agreed occupancy window. "
-                    "Specify who dispatches qualified help when that window "
-                    "cannot be met. Use timestamped inspection evidence without "
-                    "capturing patients, charts, screens, or access codes. "
-                    "A checklist score never overrides a critical failure: "
-                    "one unsecured chemical container can fail acceptance "
-                    "even when every other task passes."
-                ),
-            ],
-            "table": {
-                "caption": "Contractor Package, Acceptance, and Safety Evidence Matrix",
-                "headers": [
-                    "Service package and accountable delivery counterparty",
-                    "Compensation basis and written scope boundary",
-                    "Quality evidence and correction service commitment",
-                    "Failure mode requiring immediate operator intervention",
-                ],
-                "rows": [
-                    [
-                        "C1 floor specialist owns measured restoration work packages.",
-                        "Price measured area with finish system and furniture exclusions.",
-                        "Inspect finish uniformity and documented reopening readiness before acceptance.",
-                        "Stop reopening when cure conditions or slip controls fail.",
-                    ],
-                    [
-                        "C2 carpet specialist owns extraction and agreed spotting.",
-                        "Price documented carpet inventory with separately authorized difficult conditions.",
-                        "Verify moisture condition and agreed drying deadline before handover.",
-                        "Escalate persistent moisture instead of masking odor with fragrance.",
-                    ],
-                    [
-                        "C3 glass specialist owns explicitly reachable commercial surfaces.",
-                        "Separate accessible interior glass from elevated or restricted work.",
-                        "Inspect agreed sightlines under normal occupancy lighting after completion.",
-                        "Suspend out-of-scope access methods pending proper equipment and coverage.",
-                    ],
-                    [
-                        "C4 relief specialist accepts discrete janitorial service packages.",
-                        "Define rooms, tasks, access windows, and written change pricing.",
-                        "Log completed tasks and inspect material exceptions before acceptance.",
-                        "Reclassify the arrangement when actual control requires employee treatment.",
-                    ],
-                    [
-                        "Medical-site delivery lead owns protocol and chemical compatibility.",
-                        "Price required contact time and qualified coverage into scope.",
-                        "Verify label directions, exposure controls, and facility-specific training records.",
-                        "Isolate critical hazards and notify the facility contact immediately.",
-                    ],
-                    [
-                        "FT1 reviews contractor invoices against accepted service evidence.",
-                        "Pay undisputed packages under agreed terms without arbitrary deductions.",
-                        "Match approved changes, correction records, and current insurance evidence.",
-                        "Resolve disputed scope without silently assigning unpaid employee repairs.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four conditions before the next account starts",
-                "body": "Mobilize only when the named pod can perform the contracted work with documented capacity, lawful staffing, and an executable quality plan.",
-                "items": [
-                    "Reconcile signed scope to employee hours, contractor packages, paid travel, and absence coverage without exceeding the four-person or eleven-person model.",
-                    "Complete jurisdiction-specific worker-status review and verify required insurance terms against the actual services rather than relying on contract labels.",
-                    "Confirm site access, chemical inventory, safety data sheets, required training, and medical protocol ownership before issuing the first service schedule.",
-                    "Test the inspection-to-correction workflow and confirm that the proposed account leaves customer-group and contractor-counterparty exposure within the 25% caps.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Run one weekly scorecard and close accrual cohorts monthly",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Run a thirty-minute weekly operating review from a "
-                    "single frozen reporting cut, with FT1 accountable for "
-                    "decisions and FT5 preparing inspection exceptions. Use "
-                    "Connecteam or Swept for authorized schedules and field "
-                    "records, and QuickBooks Online or Xero for the accounting "
-                    "ledger; exports must share stable customer, building, "
-                    "contract, and service-period identifiers. Calculate "
-                    "labor-hour variance as actual paid service and travel "
-                    "hours minus bid hours, divided by bid hours. Keep "
-                    "productive-hour yield separate so reduced service does "
-                    "not masquerade as better efficiency. Track first-pass "
-                    "inspection acceptance, critical failures, callback hours, "
-                    "unfilled shifts, overtime hours, invoice disputes, "
-                    "days sales outstanding, and aged receivables. Initial "
-                    "management triggers can include labor variance above "
-                    "5%, first-pass acceptance below 95%, any critical failure, "
-                    "or any receivable exceeding its contractual due date "
-                    "by fifteen days. These are proposed controls, not "
-                    "historical performance claims. Every exception needs "
-                    "one owner, a dollar or hour exposure, a corrective "
-                    "action, and a dated verification. Review the same "
-                    "exception next week until evidence closes it. Do "
-                    "not average away a failing clinic inside a strong "
-                    "office route or reward a supervisor for low hours "
-                    "when skipped tasks explain the apparent improvement."
-                ),
-                (
-                    "Apply a maximum 25% customer concentration policy to "
-                    "each related customer group, measured on trailing "
-                    "twelve-month recognized revenue and again on signed "
-                    "forward recurring revenue. Aggregate buildings controlled "
-                    "by the same payer or termination decision-maker; six "
-                    "locations under one cancellable master agreement are "
-                    "one exposure. Measure each independent contractor "
-                    "counterparty against a separate 25% ceiling on total "
-                    "productive delivery hours and total direct delivery "
-                    "costs, using the larger percentage. Include affiliated "
-                    "contractor entities together and monitor critical "
-                    "specialty dependence even below the cap. The denominator "
-                    "includes employee delivery, so four contractors need "
-                    "not each consume one quarter of subcontractor spend. "
-                    "Model the immediate cash and coverage impact of "
-                    "losing the largest customer or contractor. At Base, "
-                    "25% of $725,000 is $181,250 annual revenue; that "
-                    "is the customer ceiling, not acceptable profit "
-                    "at risk. During startup, a first customer necessarily "
-                    "breaches a diversified-book target. Record the breach, "
-                    "limit additional exposure, and pursue unrelated "
-                    "accounts until the book qualifies; never report "
-                    "the target as achieved prematurely. Decline incremental "
-                    "scope that increases an existing breach unless a "
-                    "documented restructuring removes the shared termination "
-                    "risk. Diversification must exist in contracts and "
-                    "cash receipts, not just building names."
-                ),
-                (
-                    "Close the books by service period, not by the "
-                    "day an invoice happens to be sent. Recognize "
-                    "recurring cleaning revenue as contracted services "
-                    "are delivered; retain advance collections as "
-                    "liabilities until earned and accrue completed "
-                    "uninvoiced work when supported by enforceable "
-                    "contract terms and delivery evidence. Accrue "
-                    "earned payroll, payroll taxes, contractor services, "
-                    "and consumed supplies to the same period. Record "
-                    "equipment purchases, depreciation, deposits, credits, "
-                    "and expected collection losses consistently rather "
-                    "than moving them to improve a sale month. "
-                    "Create contract-start cohorts by month and "
-                    "separate offices from medical sites, recurring "
-                    "work from periodic projects, and original scope "
-                    "from approved changes. Each cohort should show "
-                    "opening accounts, retained accounts, recognized "
-                    "revenue, direct contribution, callback cost, and "
-                    "collection timing. Report gross revenue retention "
-                    "excluding expansion and net revenue retention "
-                    "including expansion, using the same opening "
-                    "customer set. Tie monthly cohort totals to the "
-                    "general ledger and reconcile receivables to "
-                    "subsequent bank deposits. Keep owner distributions "
-                    "outside operating expense and separately disclose "
-                    "owner wages and working hours. The canonical "
-                    "owner-profit figures remain fixed; this accounting "
-                    "bridge explains what was actually earned, what "
-                    "was collected, and which adjustments a buyer "
-                    "would need to evaluate."
-                ),
-            ],
-            "table": {
-                "caption": "Weekly Operator Scorecard With Explicit Denominators and Owners",
-                "headers": [
-                    "Metric definition and accountable operating owner",
-                    "Initial trigger or binding concentration ceiling",
-                    "Source records and required reconciliation evidence",
-                    "Corrective action recorded before the next review",
-                ],
-                "rows": [
-                    [
-                        "FT1 measures actual paid hours against original bid hours.",
-                        "Investigate unfavorable variance exceeding five percent for each contract.",
-                        "Match time records, travel entries, approved scope, and payroll.",
-                        "Retiming tasks or repricing scope must explain the variance.",
-                    ],
-                    [
-                        "FT5 measures first-pass acceptance across completed scheduled inspections.",
-                        "Investigate acceptance below ninety-five percent and every critical failure.",
-                        "Retain checklist versions, sampled locations, and timestamped correction evidence.",
-                        "Assign qualified correction coverage and verify completion before closure.",
-                    ],
-                    [
-                        "FT1 tracks callback hours and uncovered contracted service shifts.",
-                        "Escalate every uncovered shift and recurring same-task callback pattern.",
-                        "Match customer complaints to dispatch records and paid correction hours.",
-                        "Fix task training or route design before adding overtime.",
-                    ],
-                    [
-                        "FT1 groups related customers by shared payment and termination control.",
-                        "Keep trailing and forward customer-group revenue shares at twenty-five percent maximum.",
-                        "Reconcile grouped contracts to ledger revenue and signed recurring schedules.",
-                        "Reduce concentrated exposure through unrelated account wins or contract restructuring.",
-                    ],
-                    [
-                        "FT1 groups contractor affiliates across delivery hours and direct costs.",
-                        "Keep each counterparty within twenty-five percent on both denominators.",
-                        "Combine employee delivery records with accepted contractor packages and costs.",
-                        "Develop qualified alternative coverage before a specialist becomes indispensable.",
-                    ],
-                    [
-                        "FT1 reviews receivable aging alongside monthly cohort contribution bridges.",
-                        "Escalate balances fifteen days overdue and unexplained ledger reconciliation differences.",
-                        "Tie service evidence, invoices, credits, accruals, and subsequent deposits.",
-                        "Resolve disputed scope and correct period entries with documented support.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the service-week evidence",
-                    "action": "Export schedules, paid hours, inspection results, accepted packages, and customer exceptions.",
-                    "detail": "Use one cutoff and stable contract identifiers; record late corrections separately rather than silently replacing the reviewed data.",
-                },
-                {
-                    "step": 2,
-                    "title": "Price each exception",
-                    "action": "Calculate labor variance, callback cost, overdue exposure, and concentration shares.",
-                    "detail": "FT1 checks denominators and distinguishes recognized revenue, cash receipts, direct contribution, and annual owner profit.",
-                },
-                {
-                    "step": 3,
-                    "title": "Assign a verifiable correction",
-                    "action": "Name one responsible seat and a completion deadline for each material exception.",
-                    "detail": "Specify evidence such as corrected inspection results, an approved scope change, a reconciled accrual, or a collected invoice.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile and carry forward",
-                    "action": "Close verified actions and retain unresolved exceptions in the next review.",
-                    "detail": "At month-end, reconcile contract cohorts to the ledger, payroll, contractor accruals, receivables, and bank deposits.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Build a transferable earnings file before discussing a multiple",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "A buyer purchases enforceable customer relationships "
-                    "and reproducible delivery, not a folder labeled "
-                    "recurring revenue. Build a transfer register containing "
-                    "each signed agreement, current scope, pricing schedule, "
-                    "renewal date, termination rights, assignment language, "
-                    "change-of-control provisions, and required customer "
-                    "permissions. Track agreements held through property "
-                    "managers separately from agreements with building "
-                    "owners, because management changes can interrupt "
-                    "the relationship. Assemble inspection histories, "
-                    "insurance claims, employee records, contractor "
-                    "agreements, equipment ownership, and open disputes "
-                    "in a permission-controlled diligence room. Version "
-                    "your estimating templates, training materials, "
-                    "inspection forms, and operating manuals. Under "
-                    "17 U.S.C. section 204(a), a copyright ownership "
-                    "transfer generally requires a signed writing "
-                    "from the rights owner or authorized agent. "
-                    "Obtain explicit assignments for contractor-created "
-                    "materials where ownership is intended, identify "
-                    "preexisting materials, and secure sufficient "
-                    "licenses for embedded components. An assignment "
-                    "does not create copyright in facts, methods, "
-                    "or purely functional ideas. Document employee "
-                    "authorship and work-made-for-hire treatment where "
-                    "applicable rather than assuming every file "
-                    "belongs to the company. Keep customer access "
-                    "credentials out of buyer previews; transfer "
-                    "authorized access through controlled account "
-                    "changes at closing. Test whether FT6 can "
-                    "operate the service week without undocumented "
-                    "instructions from the owner."
-                ),
-                (
-                    "Use valuation ranges as negotiation illustrations, "
-                    "not asserted transaction comparables. A small "
-                    "owner-operated janitorial book might be screened "
-                    "at 2.0 to 3.0 times verified seller's discretionary "
-                    "earnings, while a genuinely management-supported "
-                    "operation might warrant a separate 3.0 to 4.0 "
-                    "times normalized EBITDA sensitivity. These are "
-                    "different earnings bases and cannot be swapped "
-                    "to obtain a higher headline. The canonical "
-                    "$20,000, $87,000, and $192,000 figures are owner "
-                    "net profit, not automatically either measure. "
-                    "As a transparent illustration only, if diligence "
-                    "establishes that each canonical profit equals "
-                    "verified discretionary earnings, the 2.0 to "
-                    "3.0 times screen produces $40,000 to $60,000 "
-                    "Conservative, $174,000 to $261,000 Base, and "
-                    "$384,000 to $576,000 Scaled enterprise values. "
-                    "Reject that shortcut if owner compensation, "
-                    "interest, taxes, depreciation, or genuine "
-                    "nonrecurring expenses require a bridge. For "
-                    "an absentee buyer, deduct the incremental "
-                    "market cost of replacing necessary owner "
-                    "work before applying a management-supported "
-                    "multiple. For example, a $75,000 replacement "
-                    "cost absent from the Scaled expense base "
-                    "reduces $192,000 to $117,000 before other "
-                    "normalizations. Never deduct it twice when "
-                    "equivalent management expense is already "
-                    "recorded in the operating accounts."
-                ),
-                (
-                    "Negotiate proceeds and obligations alongside "
-                    "the multiple. Enterprise value must be "
-                    "bridged to equity proceeds through agreed "
-                    "debt, cash, working-capital adjustments, "
-                    "transaction expenses, and any holdbacks. "
-                    "Distinguish cash paid at closing from "
-                    "seller notes and earnouts whose collection "
-                    "depends on future performance or buyer "
-                    "credit. A buyer may offer a larger "
-                    "headline price while shifting customer "
-                    "retention risk back to the seller; "
-                    "define retained revenue, service failures, "
-                    "pricing changes, and reporting access "
-                    "before accepting that structure. A premium "
-                    "requires evidence: contracts that can "
-                    "transfer, no customer or delivery "
-                    "counterparty above the stated 25% caps, "
-                    "credible route coverage, clean accruals, "
-                    "and limited dependence on the owner. "
-                    "Compare a sale with the cash-cow "
-                    "alternative using the same replacement "
-                    "labor, maintenance capital expenditure, "
-                    "tax assumptions, and working-capital needs. "
-                    "Neither the $87,000 Base profit nor "
-                    "the $192,000 Scaled profit is automatically "
-                    "distributable cash after equipment "
-                    "replacement and receivable growth. Run "
-                    "an owner-absence trial, document every "
-                    "intervention, and price the remaining "
-                    "dependency. Keep the business when "
-                    "risk-adjusted ongoing cash and manageable "
-                    "owner workload outweigh credible net "
-                    "sale proceeds; pursue an exit when "
-                    "the transfer file and competing funded "
-                    "offers demonstrate that ownership can "
-                    "change without breaking service."
-                ),
-            ],
-            "table": {
-                "caption": "Transferability Evidence and Illustrative Buyer Valuation Bridge",
-                "headers": [
-                    "Buyer diligence question and valuation input",
-                    "Required evidence supporting the earnings or transfer claim",
-                    "Explicit normalization or illustrative valuation treatment",
-                    "Operator action that protects realizable sale proceeds",
-                ],
-                "rows": [
-                    [
-                        "Can the buyer retain each material customer agreement?",
-                        "Produce signed contracts with assignment terms and termination rights.",
-                        "Separate transferable recurring revenue from relationships requiring customer permission.",
-                        "Resolve required permissions before treating the account as transferable.",
-                    ],
-                    [
-                        "Does the operating company own its authored delivery materials?",
-                        "Retain signed copyright assignments and documented third-party license permissions.",
-                        "Exclude unsupported ownership claims from the transferred asset description.",
-                        "Obtain missing signatures under section 204(a) before buyer diligence.",
-                    ],
-                    [
-                        "Does Conservative owner profit reconcile to verified discretionary earnings?",
-                        "Bridge the canonical $20,000 profit to ledger-supported earnings adjustments.",
-                        "Conditional 2.0 to 3.0 times illustration implies $40,000 to $60,000.",
-                        "Withdraw this screen if the earnings-equivalence assumption cannot hold.",
-                    ],
-                    [
-                        "Does Base owner profit reconcile to verified discretionary earnings?",
-                        "Bridge the canonical $87,000 profit to documented compensation and adjustments.",
-                        "Conditional 2.0 to 3.0 times illustration implies $174,000 to $261,000.",
-                        "Support recurring earnings with reconciled cohorts and subsequent collections.",
-                    ],
-                    [
-                        "Does Scaled delivery require additional replacement management expense?",
-                        "Document canonical $192,000 profit and necessary owner duties already expensed.",
-                        "Conditional discretionary-earnings illustration implies $384,000 to $576,000 before proceeds adjustments.",
-                        "Deduct incremental replacement management only when the selected earnings basis requires it.",
-                    ],
-                    [
-                        "How much enterprise value becomes collectible seller equity proceeds?",
-                        "Reconcile agreed debt, cash, working capital, expenses, and deferred consideration.",
-                        "Value closing cash separately from contingent or credit-exposed future payments.",
-                        "Compare credible net proceeds against normalized ongoing owner cash generation.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A transferable cleaning company sells documented service capacity and collectible earnings, not the owner's willingness to cover every missed shift.",
-    "diagram_id": "diag-06",
-    "action_checklist": [
-        "Assign FT1 through FT5 and C1 through C4 to named people, then reconcile their service windows and productive hours before approving another account.",
-        "Document the specific capacity bottleneck that justifies Scaled FT6 and C5, keeping every helper and owner production hour visible in the headcount model.",
-        "Execute scope-specific contractor packages with acceptance evidence, correction SLAs, worker-status review, and insurance verification for actual operations.",
-        "Run the weekly scorecard with labor, quality, coverage, receivables, and related-counterparty concentration measures capped at 25% using explicit denominators.",
-        "Close monthly accrual cohorts to the ledger and bank evidence, preserving the canonical $20,000, $87,000, and $192,000 annual owner-profit cases.",
-        "Assemble transferable contracts, signed IP assignments, an owner-replacement earnings bridge, and a proceeds comparison before soliciting buyer offers.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "29 U.S.C. section 207 — Maximum hours",
-            "url": "https://www.law.cornell.edu/uscode/text/29/207",
-            "relevance": "Price covered nonexempt employee overtime into route capacity and job costs rather than using unpaid extra hours to preserve margins.",
-        },
-        {
-            "title": "29 CFR 785.38 — Travel that is all in the day's work",
-            "url": "https://www.ecfr.gov/current/title-29/section-785.38",
-            "relevance": "Include compensable travel between work locations in paid-hour records, route-density analysis, and production-rate bidding.",
-        },
-        {
-            "title": "29 U.S.C. section 203 — FLSA definitions",
-            "url": "https://www.law.cornell.edu/uscode/text/29/203",
-            "relevance": "Evaluate the actual worker relationship under the applicable FLSA framework rather than treating contractor labels as determinative.",
-        },
-        {
-            "title": "26 U.S.C. section 3121(d) — Employee definition for employment taxes",
-            "url": "https://www.law.cornell.edu/uscode/text/26/3121",
-            "relevance": "Assess employment-tax treatment separately from commercial package pricing and maintain payroll treatment consistent with the actual relationship.",
-        },
-        {
-            "title": "California Labor Code section 2775 — Employee classification",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=2775.",
-            "relevance": "For California operations, examine the applicable classification test and any qualifying exception before subcontracting work within the cleaning company's usual business.",
-        },
-        {
-            "title": "29 CFR 1910.1200 — Hazard communication",
-            "url": "https://www.ecfr.gov/current/title-29/section-1910.1200",
-            "relevance": "Maintain applicable chemical hazard communication, labeling, safety data sheet access, and worker training for the products used at each site.",
-        },
-        {
-            "title": "29 CFR 1910.1030 — Bloodborne pathogens",
-            "url": "https://www.ecfr.gov/current/title-29/section-1910.1030",
-            "relevance": "Determine occupational exposure and implement applicable exposure-control, protective equipment, training, vaccination, and post-exposure procedures for medical-site work.",
-        },
-        {
-            "title": "7 U.S.C. section 136j — Unlawful acts under FIFRA",
-            "url": "https://www.law.cornell.edu/uscode/text/7/136j",
-            "relevance": "Build disinfectant label requirements, including approved use conditions and contact time, into task instructions and inspection acceptance.",
-        },
-        {
-            "title": "17 U.S.C. section 204(a) — Execution of transfers of copyright ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": "Obtain signed written transfers for intended ownership of contractor-authored materials and distinguish assigned rights from licensed preexisting components.",
-        },
-    ],
-}
+CHAPTER_11 = {'id': 'Q11',
+ 'chapter_id': 'Q11',
+ 'chapter_number': 11,
+ 'question_number': 11,
+ 'slug': 'workforce-classification-insurance-bonding',
+ 'question_prompt': 'Should my cleaners be W-2 employees or 1099 contractors, and what insurance and '
+                    'bonding protects the business?',
+ 'kicker': 'Q11 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Workforce Classification, Insurance, and Bonding',
+ 'subtitle': 'W-2 versus 1099 decisions for cleaning teams, misclassification case studies, janitorial '
+             'bonds, surety bonds and subcontractor default, general liability versus workers comp, and '
+             'New York workers comp for janitorial contractors',
+ 'layout_template': 'chapter_opener',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Cleaning operators, accountants, staffing veterans, and insurance agents converge '
+                      'on one rule: classification is decided by control, not by the label or the form. '
+                      'The IRS behavioral, financial, and relationship tests catch owners who hand 1099 '
+                      'cleaners schedules, supplies, uniforms, and training, and audits typically start '
+                      'when a released worker files for unemployment or an injured one claims workers '
+                      'comp. Street numbers are concrete: janitorial dishonesty bonds run about $100 to '
+                      '$171 a year at the $10,000 to $25,000 level, $328 for a $50,000 bond with 10 '
+                      'employees, and general liability costs $30 to $100 a month for $1 million '
+                      'aggregate. The split is strategic: Commercial Cleaning CEO goes W2 for brand '
+                      'control and retention, Jon Margalit runs an all-1099 network, and Janitorial '
+                      'Coaching Hub subcontracts to survive slow-paying clients.',
+ 'key_metrics': [{'label': 'Residential Janitorial Bond Premium (5 Employees)',
+                  'metric': 'Residential Janitorial Bond Premium (5 Employees)',
+                  'value': '$150 per year for a $15,000 bond; $171 per year for a $25,000 bond',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'One-year term pricing quoted for residential cleaning companies carrying '
+                             'five employees; premium is driven by chosen bond amount and headcount.',
+                  'source': 'Surety Bonds Direct ([uMW_ZJMW0ZU @ 00:03:46])'},
+                 {'label': 'Commercial Janitorial Bond Premium (10 Employees)',
+                  'metric': 'Commercial Janitorial Bond Premium (10 Employees)',
+                  'value': '$328 per year for a $50,000 bond; $547 per year for a $150,000 bond',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'One-year term pricing for commercial cleaning companies, which typically '
+                             'choose bond amounts from about $50,000 up to $250,000 depending on the '
+                             'property.',
+                  'source': 'Surety Bonds Direct ([uMW_ZJMW0ZU @ 00:04:12])'},
+                 {'label': 'Starter General Liability Coverage and Cost',
+                  'metric': 'Starter General Liability Coverage and Cost',
+                  'value': '$1,000,000 aggregate / $500,000 per occurrence at $30 to $100 per month',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Minimum general liability recommended for most cleaning business owners, '
+                             'with the monthly cost range reported at the time of filming.',
+                  'source': 'The Professional Cleaner ([DDLzG49aDvU @ 00:03:20])'},
+                 {'label': 'New York Janitorial Workers Comp Base Rates',
+                  'metric': 'New York Janitorial Workers Comp Base Rates',
+                  'value': '$12.31 down to $3.03 (2022, class codes 9026, 9027, 9028)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Moderately high base rate or loss cost range for janitorial and building '
+                             'maintenance class codes in New York; more employees and payroll mean '
+                             'significant premiums.',
+                  'source': 'The Coyle Group - Business Insurance ([HSh0vcHYmUI @ 00:00:56])'}],
+ 'sections': [{'heading': '1. The Practitioner Consensus',
+               'paragraphs': ['Every serious voice on this beat reduces classification to a single '
+                              'question: who controls the work. Commercial Cleaning CEO walks the IRS '
+                              'behavioral test first — whether you dictate training, materials, arrival '
+                              'time, and deadlines — then the financial test of who pays, who fronts '
+                              'supplies, and who reimburses receipts, then the relationship test of '
+                              'contracts, benefits, and permanence [9BXhBVRp_XU @ 00:00:41]. His bottom '
+                              'line is blunt: it is not about taxes, it is about control, and a 1099 '
+                              'cleaner has to be treated like their own business [9BXhBVRp_XU @ 00:03:59]. '
+                              'CSI Accounting runs the same three buckets and adds the profit-or-loss '
+                              'marker: a worker who can make or lose money on the job leans contractor, '
+                              'which is why genuine contractors are rarely paid hourly or by salary '
+                              '[kfUxzVfMpAk @ 00:02:34]. Debbie Flutter John of Top Echelon Contracting '
+                              'frames the identical test as the right to control the daily work scope, '
+                              'listing where and when work happens, who supplies tools, whether training '
+                              'is given, flat fee versus hourly, and whether the worker can suffer a loss '
+                              '[VumHp7Ist1c @ 00:02:25]. Jon Margalit, who runs an all-1099 model, agrees '
+                              'on the core: if you set the schedule, hand out supplies, require uniforms, '
+                              'and dictate how to clean, it is a W2 relationship whatever you call it '
+                              '[8gbn-TCd4l4 @ 00:01:51].',
+                              'The practitioners also agree on the red flags that convert a 1099 into a '
+                              'back-tax bill. DJ The Boss, who scaled a commercial company past seven '
+                              'figures, says part-time is not a classification: a cleaner working two '
+                              'six-hour nights for you, wearing your uniform and using your supplies, is '
+                              'an employee, and a self-described contractor with no other clients can '
+                              'still be reclassified on audit [cShuZhOvvr4 @ 00:04:34]. Steve of The '
+                              'Janitorial Store calls single-client dependence the thing most likely to '
+                              'get you under the newer IRS rulings and tells owners to confirm every sub '
+                              'carries other customers before signing them [YC2NrvVJqlg @ 00:03:13]. On '
+                              'audit triggers, Debbie Flutter John lists a released worker filing for '
+                              'unemployment, an injured worker claiming workers comp, a disgruntled worker '
+                              'reporting unpaid overtime to the Department of Labor, and a contractor '
+                              'converted to direct hire who ends up with both a 1099 and a W-2 in the same '
+                              'tax year, the pattern flagged as a huge red flag [VumHp7Ist1c @ 00:04:06]. '
+                              "Steve lived the first trigger: Steve's first company ran everyone as subs "
+                              'for about a year until a laid-off worker filed for unemployment, the '
+                              'follow-up found nobody classified as an employee, and the company paid '
+                              'fines and penalties [YC2NrvVJqlg @ 00:01:38].',
+                              'On coverage, the insurance voices and the operators line up on a '
+                              'three-layer stack. The Professional Cleaner, who has run a cleaning '
+                              'business for over 20 years without ever filing a claim, calls general '
+                              'liability the one policy every cleaning business should hold — it pays when '
+                              'a client slips on a wet floor or a high-end surface gets damaged '
+                              '[DDLzG49aDvU @ 00:01:58]. Bryan Gutowsky draws the line the same way: '
+                              'general liability answers third-party bodily injury and property damage, '
+                              'workers comp answers employee injuries on the job, there is really no '
+                              'overlap, and most businesses need both [irbQWL_bLuA @ 00:04:23]. The bond '
+                              'is the third layer and it protects the customer, not you: Surety Bonds '
+                              'Direct describes it as cover for employee theft, deliberate property '
+                              'damage, and even electronic theft from client computers, not required by '
+                              'law but demanded by most homeowners and commercial buyers before they sign '
+                              '[uMW_ZJMW0ZU @ 00:01:32]. Stevo Fosse of Elite Business Insurance calls it '
+                              'a dishonesty bond covering employee or owner theft, and stresses that the '
+                              'surety pays the claimant and then goes after the insured business for the '
+                              'money, so it can never benefit the owner directly [PGrPNqCYNvY @ '
+                              '00:01:04].'],
+               'table': {'caption': 'Where cleaning operators, accountants, and insurance agents agree on '
+                                    'classification and coverage',
+                         'headers': ['Consensus Rule',
+                                     'What Practitioners Report',
+                                     'Operator Move',
+                                     'Expert Source'],
+                         'rows': [['Control decides classification, never the tax form you issue',
+                                   'IRS behavioral, financial, and relationship tests all ask who controls '
+                                   'the work',
+                                   'Map schedule, supplies, training, and pay method before labeling '
+                                   'anyone 1099',
+                                   'Commercial Cleaning CEO ([9BXhBVRp_XU @ 00:03:59])'],
+                                  ['Part-time hours never turn a cleaner into a contractor',
+                                   'Two six-hour nights in your uniform with your supplies is still '
+                                   'employment',
+                                   'Put any cleaner who works only your accounts on W2 payroll',
+                                   'DJ The Boss ([cShuZhOvvr4 @ 00:04:34])'],
+                                  ['Single-client subs are the biggest reclassification red flag on audit',
+                                   'A contractor doing business only with you is probably your employee',
+                                   'Verify every sub has other paying clients before assigning them any '
+                                   'work',
+                                   'The Janitorial Store ([YC2NrvVJqlg @ 00:03:13])'],
+                                  ['Training a sub on your cleaning methods converts them to employees',
+                                   'Teaching a sub to clean a house or office a certain way signals '
+                                   'employment',
+                                   'Require subs to bring their own training and quality methods instead',
+                                   'The Janitorial Store ([YC2NrvVJqlg @ 00:05:08])'],
+                                  ['Worker claims are what open the audit file in the first place',
+                                   'Unemployment filings, workers comp injury claims, and Department of '
+                                   'Labor overtime complaints trigger audits',
+                                   'Assume any released or injured worker can expose your classification '
+                                   'setup',
+                                   'recruiterbackoffice ([VumHp7Ist1c @ 00:04:06])'],
+                                  ['General liability is the non-negotiable base policy for every cleaner',
+                                   'Covers third-party slips on wet floors and damage to high-end surfaces',
+                                   'Buy general liability first, then layer comp and bonds as contracts '
+                                   'demand',
+                                   'The Professional Cleaner ([DDLzG49aDvU @ 00:01:58])'],
+                                  ['Workers comp and general liability do not overlap with each other',
+                                   'Comp handles employee job injuries while liability handles injuries to '
+                                   'third parties',
+                                   'Carry both once you have employees because most businesses end up '
+                                   'needing both',
+                                   'Bryan Gutowsky | Michigan Insurance ([irbQWL_bLuA @ 00:04:23])']]}},
+              {'heading': '2. Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['If you run subs, Commercial Cleaning CEO lays out four lines to draw. '
+                              'First, every independent contractor signs an agreement with a defined end '
+                              'date — automatic renewals can be baked in so you are not re-papering every '
+                              'cleaner — plus out clauses spelling out why either side can end early, '
+                              'while W2 staff get an employee handbook instead [9BXhBVRp_XU @ 00:06:08]. '
+                              'Second, the contractor must show their own training program and their own '
+                              'quality-control mechanism; third, they buy their own equipment and '
+                              'supplies; fourth, they stay free to work for your competitors at the same '
+                              'hour, which is the opposite of the exclusivity you expect from employees '
+                              '[9BXhBVRp_XU @ 00:06:56]. Janitorial Coaching Hub runs the sub model as a '
+                              'cash-flow tool: when month-end-paying clients squeeze you, you agree a '
+                              'price and a scope with the sub, show them the site, pay on a '
+                              'when-I-get-paid-you-get-paid or end-of-month basis, and manage results by '
+                              'visiting the client the next morning to check the work [GlA-D_TIYLg @ '
+                              '00:00:37]. CSI Accounting notes most contractors operate as an LLC or sole '
+                              'proprietor and that unsure owners can file an SS-8 so the IRS makes the '
+                              'call [kfUxzVfMpAk @ 00:03:13].',
+                              'Bond pricing is cheap and formulaic. Surety Bonds Direct says the premium '
+                              'is set by two levers — the bond amount you choose and your employee '
+                              'headcount — with residential bonds typically running $10,000 to about '
+                              '$25,000, commercial bonds starting at $25,000 and running to $250,000 '
+                              'depending on contract size, business type, and building size, and no credit '
+                              'check on janitorial bonds under $250,000 [uMW_ZJMW0ZU @ 00:02:16]. The '
+                              'posted examples: five employees on a $15,000 bond pay $150 a year, five '
+                              'employees on a $25,000 bond pay $171, ten employees on a $50,000 bond pay '
+                              '$328, and ten employees on a $150,000 bond pay $547, all one-year terms; '
+                              'once issued with signatures, notarized seals, and power of attorney, you '
+                              'submit the bond with job quotes as proof [uMW_ZJMW0ZU @ 00:03:46]. Elite '
+                              'Business Insurance quotes a new shop with no more than three employees and '
+                              'no claims at roughly $100 a year for a $10,000 bond and about $170 for '
+                              '$25,000, paid once for 12 months, and needs only three answers to write it: '
+                              'what bond, who requires it, and how much [PGrPNqCYNvY @ 00:02:00]. The '
+                              'Construction Brothers warn that surety is not insurance: you sign an '
+                              'indemnity, and if the surety pays out it comes back for your stocks, bonds, '
+                              'and cash [PaYgE9PgaO4 @ 00:03:05].',
+                              'General liability is priced by the month. The Professional Cleaner tells '
+                              'owners to carry at least a $1 million aggregate with around $500,000 per '
+                              'occurrence, meaning the carrier covers up to $1 million over the policy '
+                              'term but only half a million per claim, expect $30 to $100 a month, and '
+                              're-shop carriers every so often because they expect it [DDLzG49aDvU @ '
+                              '00:03:20]. Commercial clients will ask for a Certificate of Insurance and '
+                              'to be named additional insured, which most carriers let you generate '
+                              'instantly on their website, and that policy will likely cover only you and '
+                              'your legal employees, so every sub must carry current coverage adequate for '
+                              'your clients [DDLzG49aDvU @ 00:04:27]. Workers comp is where the real money '
+                              'sits, and premiums scale with headcount. Gordon Coyle of The Coyle Group '
+                              'calls New York janitorial class codes 9026, 9027, and 9028 moderately high, '
+                              'with 2022 base rates ranging from $12.31 down to $3.03, and warns that more '
+                              'employees and bigger payrolls mean significant premiums [HSh0vcHYmUI @ '
+                              "00:00:56]. To get placed with top-tier carriers, Coyle's agency wants at "
+                              'least three years of insured experience and a $10,000 minimum premium, and '
+                              'pitches a high-deductible plan once comp premiums pass $250,000 '
+                              '[HSh0vcHYmUI @ 00:03:22].'],
+               'table': {'caption': 'Bond, liability, and workers comp numbers quoted by cleaning-industry '
+                                    'practitioners',
+                         'headers': ['Line Item',
+                                     'Practitioner Number',
+                                     'How It Is Priced Or Used',
+                                     'Expert Source'],
+                         'rows': [['Residential janitorial bond for a five-employee cleaning company',
+                                   '$15,000 bond for $150 a year; $25,000 bond for $171 a year',
+                                   'Premium set by chosen bond amount and employee headcount on a one-year '
+                                   'term',
+                                   'Surety Bonds Direct ([uMW_ZJMW0ZU @ 00:03:46])'],
+                                  ['Commercial janitorial bond for a ten-employee cleaning company',
+                                   '$50,000 bond for $328 a year; $150,000 bond for $547 a year',
+                                   'Submit the issued bond with job quotes as proof you are bonded',
+                                   'Surety Bonds Direct ([uMW_ZJMW0ZU @ 00:04:12])'],
+                                  ['New-business dishonesty bond with three or fewer employees and no '
+                                   'claims',
+                                   'About $100 a year for $10,000; about $170 a year for $25,000',
+                                   'Paid once for 12 months; carrier needs bond type, requester, and '
+                                   'amount',
+                                   'Elite Business Insurance ([PGrPNqCYNvY @ 00:02:00])'],
+                                  ['General liability starter policy for most cleaning business owners',
+                                   '$1 million aggregate, $500,000 per occurrence, $30 to $100 per month',
+                                   'Shop other carriers every so often even after you already hold a '
+                                   'policy',
+                                   'The Professional Cleaner ([DDLzG49aDvU @ 00:03:37])'],
+                                  ['New York workers comp janitorial class codes 9026, 9027, and 9028',
+                                   '2022 base rates ranging from $12.31 down to $3.03',
+                                   'More employees and higher payrolls push comp premiums into significant '
+                                   'territory',
+                                   'The Coyle Group - Business Insurance ([HSh0vcHYmUI @ 00:00:56])'],
+                                  ['Workers comp premium calculation formula used by carriers',
+                                   'Payroll by class code times state base rate times carrier loss cost '
+                                   'multiplier',
+                                   'Claim history drives the other rating factors, so controlling claims '
+                                   'lowers premiums',
+                                   'The Coyle Group - Business Insurance ([HSh0vcHYmUI @ 00:01:49])'],
+                                  ['Agency placement thresholds for janitorial workers comp accounts',
+                                   'Three years insured experience and $10,000 minimum premium; high '
+                                   'deductible above $250,000',
+                                   'Top-tier insurance companies look for these minimum guidelines before '
+                                   'they engage',
+                                   'The Coyle Group - Business Insurance ([HSh0vcHYmUI @ 00:03:22])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Moves the Operators Actually Use',
+                           'body': 'Small tactical edges cleaning owners and agents report using to '
+                                   'protect rates, win bids, and keep quality without crossing the control '
+                                   'line.',
+                           'items': ['Eat small damage claims yourself: The Professional Cleaner would '
+                                     'cover a $500 floor restoration out of pocket rather than file, '
+                                     'because insurance rates typically go up when you file a claim [The '
+                                     'Professional Cleaner — DDLzG49aDvU @ 00:02:30].',
+                                     'Sell the art rider during the walkthrough: on luxury residential '
+                                     "interviews, The Professional Cleaner pointed out the client's art "
+                                     'and mentioned an add-on fine-art policy, and the typical response '
+                                     "was 'how soon can you start' [The Professional Cleaner — DDLzG49aDvU "
+                                     '@ 00:08:48].',
+                                     'Lead with W2 where buyers ask: Commercial Cleaning CEO went back '
+                                     'through past proposals and found clients who asked about 1099 versus '
+                                     'W2 consistently reacted with excitement to hearing the crew was W2 '
+                                     '[Commercial Cleaning CEO — 9BXhBVRp_XU @ 00:10:06].',
+                                     'Run quality through the job queue, not supervision: Jon Margalit '
+                                     'gives network contractors systems and checklists, and the ones who '
+                                     'follow the process get more work while the rest fall off naturally '
+                                     '[Jon Margalit — 8gbn-TCd4l4 @ 00:04:15].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Run the Control Audit on Every Cleaner',
+                              'action': 'Score each worker against the behavioral, financial, and '
+                                        'relationship tests before choosing W2 or 1099.',
+                              'detail': 'Check who sets training, materials, arrival time, and deadlines; '
+                                        'who fronts and reimburses supplies; who pays the cleaner '
+                                        'directly; and whether benefits or an indefinite relationship '
+                                        'exist [Commercial Cleaning CEO — 9BXhBVRp_XU @ 00:00:41].'},
+                             {'step': 2,
+                              'title': 'Paper the Sub Relationship Correctly',
+                              'action': 'Issue each independent contractor a written agreement with an end '
+                                        'date, optional auto-renewal, and out clauses.',
+                              'detail': 'Bake in automatic renewals so you are not re-signing every '
+                                        'cleaner, define exactly why either side can end early, and keep a '
+                                        'separate employment handbook for W2 staff [Commercial Cleaning '
+                                        'CEO — 9BXhBVRp_XU @ 00:06:25].'},
+                             {'step': 3,
+                              'title': 'Verify Sub Independence and Coverage',
+                              'action': 'Confirm each sub has other clients and carries their own '
+                                        'liability insurance and workers comp.',
+                              'detail': 'A sub with no other customers is a red flag [The Janitorial Store '
+                                        '— YC2NrvVJqlg @ 00:03:33]; give subs the scope, the site, and the '
+                                        'agreed price, then make sure they have liability insurance and '
+                                        'workers comp [Janitorial Coaching Hub — GlA-D_TIYLg @ 00:01:29].'},
+                             {'step': 4,
+                              'title': 'Load the Bond Into Every Bid',
+                              'action': 'Buy the janitorial bond sized to your property type and '
+                                        'headcount, then attach it to job quotes.',
+                              'detail': 'Once the agency issues the bond with signatures, notarized seals, '
+                                        'and power of attorney, submit it with job quotes as proof you are '
+                                        'bonded and pay the renewal premium to keep it active [Surety '
+                                        'Bonds Direct — uMW_ZJMW0ZU @ 00:04:44].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split in the field is between the brand-control camp and the '
+                              'network camp. Commercial Cleaning CEO went W2 deliberately, arguing that a '
+                              'big brand boils down to consistency and that the owner must control what '
+                              'crews say, what they wear, what they use, and how they are trained, '
+                              'accepting extra complexity in exchange [9BXhBVRp_XU @ 00:11:21]. Jon '
+                              'Margalit runs the opposite play: a seven-figure remote cleaning company '
+                              'built all on 1099s, where cleaners partner with the brand, bring their own '
+                              'supplies and tools, clean how they want as long as the end result meets the '
+                              'standard, and decide whether to take each job [8gbn-TCd4l4 @ 00:02:18]. '
+                              'Margalit frames quality control as market forces rather than management: '
+                              'checklists exist, cleaners who follow the process get more work, and those '
+                              "who do not fall off naturally [8gbn-TCd4l4 @ 00:04:15]. The CEO's counter "
+                              'is retention economics, reporting that W2 loyalty and longevity meant fewer '
+                              'people to replace and customers who stayed from the very beginning, which '
+                              'made the business simpler to run despite the payroll layer [9BXhBVRp_XU @ '
+                              '00:13:30]. Both concede the 1099 model can make money; they disagree on '
+                              'whether giving up in-building control is a feature or a ceiling on brand '
+                              'growth.',
+                              'Startup cash flow splits the camp a second way. Janitorial Coaching Hub '
+                              'tells brand-new owners that clients who pay at the end of the month make a '
+                              'biweekly payroll dicey, so the subcontractor route lets the owner set an '
+                              'arrangement of when I get paid, you get paid; that coach ran both models '
+                              'and eventually went fully subcontract [GlA-D_TIYLg @ 00:00:55]. DJ The Boss '
+                              'sits on the receiving side of that same arrangement and hates it: being the '
+                              'sub means the prime owns the customer relationship, holds all the leverage, '
+                              'and can cut you out at any point or hire W2 staff to replace you, so it is '
+                              'cash in the bank early but never a long-term model [cShuZhOvvr4 @ '
+                              '00:00:59]. Commercial Cleaning CEO also attacks the savings pitch, calling '
+                              'it a misconception that contractors are cheaper because the taxes and '
+                              'supply costs are still baked into their price, so paying everyone fairly '
+                              'should break even and only shift whose pocket the money comes out of first '
+                              '[9BXhBVRp_XU @ 00:07:57]. That same operator went back through every '
+                              'proposal and found that prospects who asked the question reacted with '
+                              'affirmation and excitement when told the crews were W2 employees '
+                              '[9BXhBVRp_XU @ 00:10:06].',
+                              'Bonding draws the loudest split between bond sellers and operators. Surety '
+                              'Bonds Direct says a janitorial bond is not required by law, yet claims most '
+                              'homeowners and commercial businesses will require one to award a contract, '
+                              'and warns that letting it lapse risks losing current customers and new '
+                              'contracts [uMW_ZJMW0ZU @ 00:01:32]. Elite Business Insurance pitches the '
+                              'bond as the line that makes the customer feel much better, because the '
+                              'surety stands behind an employee theft claim up to the bond value '
+                              '[PGrPNqCYNvY @ 00:02:28]. The Professional Cleaner, after more than 20 '
+                              'years owning a cleaning business, takes the opposite stance: bonds are '
+                              'cheap, but unless a certain client type requires one, skip it; when a '
+                              'client asks, explain why you are not bonded, show general liability proof, '
+                              'and lean on a reputation for being fair and honest, since in two decades no '
+                              'client has ever demanded it [DDLzG49aDvU @ 00:05:36]. On workers comp, that '
+                              'operator reports some larger commercial clients require it while others '
+                              'accept a signed waiver, whereas Janitorial Coaching Hub tells owners '
+                              'running subs to make sure every sub carries liability insurance and '
+                              "workman's comp before touching the account [GlA-D_TIYLg @ 00:01:29]."],
+               'table': {'caption': 'Competing playbooks on crews, cash flow, bonding, and coverage',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Crew model for building a large cleaning brand',
+                                   'W2 crews so the owner controls uniforms, scripts, supplies, patterns, '
+                                   'and training for consistency',
+                                   'All-1099 network where cleaners bring their own tools and clean their '
+                                   'way to the standard',
+                                   'Commercial Cleaning CEO ([9BXhBVRp_XU @ 00:11:21]); Jon Margalit '
+                                   '([8gbn-TCd4l4 @ 00:02:18])'],
+                                  ['How quality gets enforced inside client facilities',
+                                   'Employer-run training programs telling employees what to do, what not '
+                                   'to do, and how often',
+                                   'Checklists plus market forces where process followers get more work '
+                                   'and others fall off naturally',
+                                   'Commercial Cleaning CEO ([9BXhBVRp_XU @ 00:07:11]); Jon Margalit '
+                                   '([8gbn-TCd4l4 @ 00:04:15])'],
+                                  ['Surviving startup cash flow with end-of-month paying clients',
+                                   'Subcontract early with a when-I-get-paid-you-get-paid arrangement '
+                                   'instead of biweekly payroll',
+                                   'Treat subcontract work as quick cash in the bank only, never a '
+                                   'long-term business model',
+                                   'Janitorial Coaching Hub ([GlA-D_TIYLg @ 00:00:37]); DJ The Boss '
+                                   '([cShuZhOvvr4 @ 00:01:23])'],
+                                  ['Whether 1099 labor actually lowers total cost',
+                                   '1099s keep taxes and liabilities low while cleaners write off gas, '
+                                   'mileage, supplies, and phone',
+                                   'Contractors are not cheaper because their taxes and supplies are baked '
+                                   'into the price anyway',
+                                   'Jon Margalit ([8gbn-TCd4l4 @ 00:03:10]); Commercial Cleaning CEO '
+                                   '([9BXhBVRp_XU @ 00:08:09])'],
+                                  ['Buying a janitorial bond before chasing contracts',
+                                   'Most homeowners and commercial buyers require a bond, so buy and renew '
+                                   'it to keep winning',
+                                   'Skip the bond unless a client type requires it and show general '
+                                   'liability proof instead',
+                                   'Surety Bonds Direct ([uMW_ZJMW0ZU @ 00:01:32]); The Professional '
+                                   'Cleaner ([DDLzG49aDvU @ 00:05:36])'],
+                                  ['Workers comp demands on commercial contracts',
+                                   'Some larger commercial clients require it, so factor the premium into '
+                                   'the bid price',
+                                   'Other clients accept a signed waiver, and subs should carry their own '
+                                   'liability and comp',
+                                   'The Professional Cleaner ([DDLzG49aDvU @ 00:07:16]); Janitorial '
+                                   'Coaching Hub ([GlA-D_TIYLg @ 00:01:29])'],
+                                  ['Share of the workforce paid as 1099 contractors',
+                                   'Top Echelon pays nearly everyone W-2, with under 1% of business run as '
+                                   '1099',
+                                   'Margalit built an entire legal cleaning team as 1099s to avoid payroll '
+                                   'completely',
+                                   'recruiterbackoffice ([VumHp7Ist1c @ 00:05:28]); Jon Margalit '
+                                   '([8gbn-TCd4l4 @ 00:00:00])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive firsthand failure on record is the unemployment-claim '
+                              'trap. The Janitorial Store owner admits that in their very first company '
+                              "they took a friend's advice to just hire subcontractors, ran that way for "
+                              'about a year, then let a worker go; the worker claimed unemployment, the '
+                              'review found nobody set up as an employee, and the company paid a fine and '
+                              'penalties, with the owner noting it would have been far worse had it run '
+                              'longer [YC2NrvVJqlg @ 00:01:38]. The same operator knows of a couple of '
+                              'companies put out of business because the fines were so heavy [YC2NrvVJqlg '
+                              '@ 00:08:39]. Debbie, president of Top Echelon Contracting, lists the audit '
+                              'triggers operators actually see: a worker claiming unemployment benefits, '
+                              'an on-the-job injury that turns into a workers comp claim, a disgruntled '
+                              'worker reporting unpaid overtime to the Department of Labor, and a 1099 '
+                              'contractor converting to a W-2 direct hire inside the same tax year, which '
+                              'they call a huge red flag [VumHp7Ist1c @ 00:04:06]. The pattern is '
+                              'consistent: the audit rarely starts with an agent hunting you; all it takes '
+                              'is one worker walking into unemployment and filing a claim [YC2NrvVJqlg @ '
+                              '00:08:21].',
+                              'The second trap is a paper label that the daily operation contradicts. Jon '
+                              'Margalit says most cleaning owners want the 1099 tax advantages but assign '
+                              'specific schedules, hand out supplies, require uniforms, and dictate '
+                              'exactly how to clean, then are shocked when the state comes knocking '
+                              '[8gbn-TCd4l4 @ 00:01:51]. DJ The Boss watched owners label part-timers as '
+                              '1099s simply because they only had one day of work, and warns that someone '
+                              'with no clients other than you can still be reclassified as your employee '
+                              'on audit [cShuZhOvvr4 @ 00:04:34]. The Janitorial Store adds that training '
+                              'a sub to clean a house or office a certain way means they are not a sub '
+                              '[YC2NrvVJqlg @ 00:05:28]. BICO Legal and Compliance Consulting shows how a '
+                              'signed agreement collapses: a take-it-or-leave-it independent contractor '
+                              'contract the worker had no ability to negotiate, while the owners set the '
+                              "worker's prices under threat of termination, imposed a fixed 10:00 a.m. to "
+                              '5:00 p.m. schedule whether or not customers needed service, expected '
+                              'loyalty against competing businesses, and demanded full-time hours, '
+                              'exposing the business to unpaid minimum wage and overtime claims under the '
+                              'Fair Labor Standards Act [xljn9o0tX_E @ 00:00:50].',
+                              'The third trap is assuming a policy or bond pays for you. The Professional '
+                              'Cleaner warns that a general liability policy typically covers only you and '
+                              'your legal employees, not subcontractors, and that if a sub steals, you '
+                              'will probably repay the client out of pocket anyway; even a $500 floor '
+                              'repair is often cheaper to pay directly because rates typically rise after '
+                              'a claim [DDLzG49aDvU @ 00:06:09]. Bonds cut deeper: Construction Brothers '
+                              'explains that unlike insurance, the bonded contractor signs an agreement to '
+                              'reimburse the surety, which will come after stocks, bonds, and bank '
+                              'accounts, sparing only the home and the primary means of earning income '
+                              '[PaYgE9PgaO4 @ 00:07:42], and Elite Business Insurance says plainly that '
+                              'the bond cannot benefit you because the surety goes after your company or '
+                              'the thieving employee [PGrPNqCYNvY @ 00:02:41]. Workers comp is the payroll '
+                              'hit that wrecks bids: The Coyle Group quotes New York janitorial class '
+                              'codes 9026, 9027, and 9028 at 2022 base rates from $12.31 down to $3.03, '
+                              'with claim history the number one premium factor, and says top-tier '
+                              'carriers want three years of insured experience and a $10,000 minimum '
+                              'premium [HSh0vcHYmUI @ 00:00:56].'],
+               'table': {'caption': 'Firsthand failure modes and the economics behind them',
+                         'headers': ['Failure Mode',
+                                     'What Happened Or Was Measured',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [["Hiring all subs on a friend's advice",
+                                   'Ran all-sub for about a year until a released worker claimed '
+                                   'unemployment and triggered review',
+                                   'Paid fines and penalties; heavier fines put a couple of other '
+                                   'companies out of business',
+                                   'The Janitorial Store ([YC2NrvVJqlg @ 00:01:38])'],
+                                  ['Ignoring what actually triggers a classification audit',
+                                   'Unemployment claims, injury comp claims, overtime complaints, and '
+                                   'same-year 1099-to-W-2 conversions',
+                                   'Top Echelon reports 18 years of IRS audits with no fines while keeping '
+                                   '1099 under 1%',
+                                   'recruiterbackoffice ([VumHp7Ist1c @ 00:04:06])'],
+                                  ['Signed contractor agreement contradicted by daily practice',
+                                   'Owners set prices, fixed 10 a.m. to 5 p.m. hours, and barred competing '
+                                   'work',
+                                   'Exposure to unpaid minimum wage and overtime for every hour the worker '
+                                   'logged',
+                                   'BICO Legal and Compliance Consulting, LLC ([xljn9o0tX_E @ 00:01:08])'],
+                                  ['Calling a single-client part-timer a contractor',
+                                   'Contractors with no other clients get requalified as employees once '
+                                   'the audit lands',
+                                   'Any short-term tax benefit is only immediate; the appropriate taxes '
+                                   'always come due eventually',
+                                   'DJ The Boss ([cShuZhOvvr4 @ 00:04:50])'],
+                                  ['Assuming your general liability policy covers subcontractors',
+                                   'Policy covers the owner and legal employees, not subcontractor theft, '
+                                   'damage, or injuries',
+                                   'Confirm sub policies stay current or repay client losses directly out '
+                                   'of pocket',
+                                   'The Professional Cleaner ([DDLzG49aDvU @ 00:04:43])'],
+                                  ['Treating a surety bond like an insurance policy',
+                                   'Owner signs an agreement to reimburse the surety for every loss it '
+                                   'pays out',
+                                   'Surety can pursue stocks, bonds, and cash accounts after covering a '
+                                   'default or claim',
+                                   'Construction Brothers ([PaYgE9PgaO4 @ 00:03:05])'],
+                                  ['Underpricing workers comp on growing W2 payrolls',
+                                   'New York codes 9026 to 9028 ran $12.31 to $3.03 base rates in 2022',
+                                   'Claim control drives premium; above $250,000 in comp, explore a high '
+                                   'deductible plan',
+                                   'The Coyle Group - Business Insurance ([HSh0vcHYmUI @ 00:03:38])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before a cleaner touches a client building',
+                           'body': 'Every item below comes from a loss, audit, or coverage gap a '
+                                   'practitioner reported firsthand; clear all four before assigning work.',
+                           'items': ['Confirm every 1099 sub has clients other than you, because a '
+                                     'contractor doing business only with you is a red flag for an '
+                                     'employee [The Janitorial Store — YC2NrvVJqlg @ 00:03:13].',
+                                     'Never hand contractors schedules, supplies, uniforms, or '
+                                     'how-to-clean instructions, since that is a W2 relationship whatever '
+                                     'you call it [Jon Margalit — 8gbn-TCd4l4 @ 00:01:51].',
+                                     'Collect current general liability and workers comp proof from every '
+                                     'sub, because your policy covers you and your legal employees, not '
+                                     'subs [The Professional Cleaner — DDLzG49aDvU @ 00:04:43].',
+                                     'Model comp as payroll by class code times the state base rate times '
+                                     'the carrier loss cost multiplier before bidding W2 crews [The Coyle '
+                                     'Group - Business Insurance — HSh0vcHYmUI @ 00:01:49].']}}],
+ 'pull_quote': '"Don\'t try to beat the system because you eventually get caught, you\'ll pay fines and '
+               'penalties." — The Janitorial Store (YC2NrvVJqlg @ 00:04:33).',
+ 'diagram_id': 'diag-06',
+ 'action_checklist': ['Put a written agreement with a defined end date, optional automatic renewals, and '
+                      'out clauses in place for every independent contractor, and use an employment '
+                      'handbook for W2 staff [Commercial Cleaning CEO — 9BXhBVRp_XU @ 00:06:08].',
+                      'Require every contractor to show their own training programs and quality-control '
+                      'mechanisms instead of training them yourself [Commercial Cleaning CEO — 9BXhBVRp_XU '
+                      '@ 00:06:56].',
+                      "When a worker's status is unclear, file Form SS-8 with the IRS and let the agency "
+                      'make the determination [CSI Accounting — kfUxzVfMpAk @ 00:03:13].',
+                      'Carry general liability of at least $1 million aggregate and about $500,000 per '
+                      'occurrence, budget $30 to $100 a month, and reshop rates periodically [The '
+                      'Professional Cleaner — DDLzG49aDvU @ 00:03:20].',
+                      'Size bonds to the account: about $150 a year for a $15,000 bond or $171 for $25,000 '
+                      'with five employees, and submit the bond with job quotes as proof [Surety Bonds '
+                      'Direct — uMW_ZJMW0ZU @ 00:03:46].',
+                      'Manage subs by returning to the client the morning after a shift to check how the '
+                      'subcontractor performed against the scope of work [Janitorial Coaching Hub — '
+                      'GlA-D_TIYLg @ 00:01:13].'],
+ 'statutory_citations': [{'title': 'The Janitorial Store — What is a 1099 employee? | The Janitorial Store '
+                                   '[00:01:38]',
+                          'url': 'https://www.youtube.com/watch?v=YC2NrvVJqlg&t=98s',
+                          'relevance': 'Primary practitioner testimony on a first-company '
+                                       'misclassification that ended in fines and penalties after an '
+                                       'unemployment claim.'},
+                         {'title': 'Commercial Cleaning CEO — W2 Employees Or 1099 Contractors? Which To '
+                                   'Pick For Your Cleaning Business [00:00:41]',
+                          'url': 'https://www.youtube.com/watch?v=9BXhBVRp_XU&t=41s',
+                          'relevance': 'Primary practitioner testimony on the behavioral, financial, and '
+                                       'relationship tests and the W2 brand-control playbook.'},
+                         {'title': 'Surety Bonds Direct — Janitorial Bond - Getting Bonded for a Cleaning '
+                                   'Business [00:03:46]',
+                          'url': 'https://www.youtube.com/watch?v=uMW_ZJMW0ZU&t=226s',
+                          'relevance': 'Primary practitioner testimony on janitorial bond amounts and real '
+                                       'one-year pricing by employee count.'},
+                         {'title': 'The Professional Cleaner — Cleaning Business Insurance & Bonding… MUST '
+                                   'KNOWS 🧼 💸 [00:05:17]',
+                          'url': 'https://www.youtube.com/watch?v=DDLzG49aDvU&t=317s',
+                          'relevance': 'Primary practitioner testimony on bonding versus general liability '
+                                       'and coverage gaps for subcontractors.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '9BXhBVRp_XU',
+                       'title': 'W2 Employees Or 1099 Contractors? Which To Pick For Your Cleaning '
+                                'Business',
+                       'channel': 'Commercial Cleaning CEO',
+                       'author': 'Commercial Cleaning CEO',
+                       'text': "It really comes down to this: it's not about taxes, it's about control.",
+                       'tip': "It really comes down to this: it's not about taxes, it's about control.",
+                       'timestamp': 239,
+                       'timestamp_seconds': 239,
+                       'timestamp_label': '[00:03:59]',
+                       'url': 'https://www.youtube.com/watch?v=9BXhBVRp_XU&t=239s',
+                       'markdown': '[00:03:59](https://www.youtube.com/watch?v=9BXhBVRp_XU&t=239s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kfUxzVfMpAk',
+                       'title': '1099 Contractors vs W-2 Employees - How to Classify Your Workers',
+                       'channel': 'CSI Accounting',
+                       'author': 'CSI Accounting',
+                       'text': 'With behavioral control, if the worker receives extensive instructions on '
+                               'how the work is to be performed, this is likely an employee.',
+                       'tip': 'With behavioral control, if the worker receives extensive instructions on '
+                              'how the work is to be performed, this is likely an employee.',
+                       'timestamp': 130,
+                       'timestamp_seconds': 130,
+                       'timestamp_label': '[00:02:10]',
+                       'url': 'https://www.youtube.com/watch?v=kfUxzVfMpAk&t=130s',
+                       'markdown': '[00:02:10](https://www.youtube.com/watch?v=kfUxzVfMpAk&t=130s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cShuZhOvvr4',
+                       'title': 'W2 Employees vs 1099 Contractors for Cleaning Businesses',
+                       'channel': 'DJ The Boss',
+                       'author': 'DJ The Boss',
+                       'text': 'Part-time employees are not 1099 contractors; if they work for you, if '
+                               "they're using your equipment, if you're training them, then they're an "
+                               'employee.',
+                       'tip': 'Part-time employees are not 1099 contractors; if they work for you, if '
+                              "they're using your equipment, if you're training them, then they're an "
+                              'employee.',
+                       'timestamp': 274,
+                       'timestamp_seconds': 274,
+                       'timestamp_label': '[00:04:34]',
+                       'url': 'https://www.youtube.com/watch?v=cShuZhOvvr4&t=274s',
+                       'markdown': '[00:04:34](https://www.youtube.com/watch?v=cShuZhOvvr4&t=274s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8gbn-TCd4l4',
+                       'title': 'W2 vs 1099: How I Built a Remote Cleaning Team Without Payroll Headaches',
+                       'channel': 'Jon Margalit',
+                       'author': 'Jon Margalit',
+                       'text': "Just because I don't manage them doesn't mean I don't have standards; the "
+                               "people who follow the process get more work and the ones who don't fall "
+                               'off naturally.',
+                       'tip': "Just because I don't manage them doesn't mean I don't have standards; the "
+                              "people who follow the process get more work and the ones who don't fall off "
+                              'naturally.',
+                       'timestamp': 255,
+                       'timestamp_seconds': 255,
+                       'timestamp_label': '[00:04:15]',
+                       'url': 'https://www.youtube.com/watch?v=8gbn-TCd4l4&t=255s',
+                       'markdown': '[00:04:15](https://www.youtube.com/watch?v=8gbn-TCd4l4&t=255s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YC2NrvVJqlg',
+                       'title': 'What is a 1099 employee? | The Janitorial Store',
+                       'channel': 'The Janitorial Store',
+                       'author': 'The Janitorial Store',
+                       'text': 'If you have a contractor that is only doing business with you and nobody '
+                               "else, chances are they're probably an employee.",
+                       'tip': 'If you have a contractor that is only doing business with you and nobody '
+                              "else, chances are they're probably an employee.",
+                       'timestamp': 193,
+                       'timestamp_seconds': 193,
+                       'timestamp_label': '[00:03:13]',
+                       'url': 'https://www.youtube.com/watch?v=YC2NrvVJqlg&t=193s',
+                       'markdown': '[00:03:13](https://www.youtube.com/watch?v=YC2NrvVJqlg&t=193s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YC2NrvVJqlg',
+                       'title': 'What is a 1099 employee? | The Janitorial Store',
+                       'channel': 'The Janitorial Store',
+                       'author': 'The Janitorial Store',
+                       'text': 'I did that for about a year, one of my employees got laid off and claimed '
+                               'unemployment, and we ended up paying a fine and some penalties.',
+                       'tip': 'I did that for about a year, one of my employees got laid off and claimed '
+                              'unemployment, and we ended up paying a fine and some penalties.',
+                       'timestamp': 98,
+                       'timestamp_seconds': 98,
+                       'timestamp_label': '[00:01:38]',
+                       'url': 'https://www.youtube.com/watch?v=YC2NrvVJqlg&t=98s',
+                       'markdown': '[00:01:38](https://www.youtube.com/watch?v=YC2NrvVJqlg&t=98s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uMW_ZJMW0ZU',
+                       'title': 'Janitorial Bond - Getting Bonded for a Cleaning Business',
+                       'channel': 'Surety Bonds Direct',
+                       'author': 'Surety Bonds Direct',
+                       'text': "Let's say you have five employees, a fifteen thousand dollar bond would "
+                               'cost you one hundred fifty dollars for a one-year term.',
+                       'tip': "Let's say you have five employees, a fifteen thousand dollar bond would "
+                              'cost you one hundred fifty dollars for a one-year term.',
+                       'timestamp': 226,
+                       'timestamp_seconds': 226,
+                       'timestamp_label': '[00:03:46]',
+                       'url': 'https://www.youtube.com/watch?v=uMW_ZJMW0ZU&t=226s',
+                       'markdown': '[00:03:46](https://www.youtube.com/watch?v=uMW_ZJMW0ZU&t=226s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HSh0vcHYmUI',
+                       'title': 'Workers Compensation for Janitorial Contractors in NY',
+                       'channel': 'The Coyle Group - Business Insurance',
+                       'author': 'The Coyle Group - Business Insurance',
+                       'text': 'These operations have a moderately high workers compensation base rate or '
+                               'loss cost in New York, and in 2022 that ranges anywhere from $12.31 down '
+                               'to $3.03.',
+                       'tip': 'These operations have a moderately high workers compensation base rate or '
+                              'loss cost in New York, and in 2022 that ranges anywhere from $12.31 down to '
+                              '$3.03.',
+                       'timestamp': 56,
+                       'timestamp_seconds': 56,
+                       'timestamp_label': '[00:00:56]',
+                       'url': 'https://www.youtube.com/watch?v=HSh0vcHYmUI&t=56s',
+                       'markdown': '[00:00:56](https://www.youtube.com/watch?v=HSh0vcHYmUI&t=56s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DDLzG49aDvU',
+                       'title': 'Cleaning Business Insurance & Bonding… MUST KNOWS 🧼 💸',
+                       'channel': 'The Professional Cleaner',
+                       'author': 'The Professional Cleaner',
+                       'text': "Unless a certain client type is requiring it, I wouldn't recommend buying "
+                               "it; even if a client did ask me, I would just explain why I'm not bonded "
+                               'and show them proof of my general liability.',
+                       'tip': "Unless a certain client type is requiring it, I wouldn't recommend buying "
+                              "it; even if a client did ask me, I would just explain why I'm not bonded "
+                              'and show them proof of my general liability.',
+                       'timestamp': 336,
+                       'timestamp_seconds': 336,
+                       'timestamp_label': '[00:05:36]',
+                       'url': 'https://www.youtube.com/watch?v=DDLzG49aDvU&t=336s',
+                       'markdown': '[00:05:36](https://www.youtube.com/watch?v=DDLzG49aDvU&t=336s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PGrPNqCYNvY',
+                       'title': 'Janitorial Bonding Insurance - Janitorial Bonding Insurance Explained',
+                       'channel': 'Elite Business Insurance',
+                       'author': 'Elite Business Insurance',
+                       'text': "If you're a new business with no more than three employees and no claims, "
+                               'a bond of about ten thousand dollars will run you somewhere around a '
+                               'hundred dollars for the year.',
+                       'tip': "If you're a new business with no more than three employees and no claims, a "
+                              'bond of about ten thousand dollars will run you somewhere around a hundred '
+                              'dollars for the year.',
+                       'timestamp': 120,
+                       'timestamp_seconds': 120,
+                       'timestamp_label': '[00:02:00]',
+                       'url': 'https://www.youtube.com/watch?v=PGrPNqCYNvY&t=120s',
+                       'markdown': '[00:02:00](https://www.youtube.com/watch?v=PGrPNqCYNvY&t=120s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'irbQWL_bLuA',
+                       'title': 'General Liability vs Workers Comp Insurance | What’s The Difference?',
+                       'channel': 'Bryan Gutowsky | Michigan Insurance',
+                       'author': 'Bryan Gutowsky | Michigan Insurance',
+                       'text': 'A slip and fall claim involving somebody else is general liability, but if '
+                               "an employee slips and falls at work on a wet floor and is injured, that's "
+                               "going to be workers' comp.",
+                       'tip': 'A slip and fall claim involving somebody else is general liability, but if '
+                              "an employee slips and falls at work on a wet floor and is injured, that's "
+                              "going to be workers' comp.",
+                       'timestamp': 161,
+                       'timestamp_seconds': 161,
+                       'timestamp_label': '[00:02:41]',
+                       'url': 'https://www.youtube.com/watch?v=irbQWL_bLuA&t=161s',
+                       'markdown': '[00:02:41](https://www.youtube.com/watch?v=irbQWL_bLuA&t=161s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GlA-D_TIYLg',
+                       'title': 'Should You use W-2 or 1099 (Subcontracting) Model For Your Cleaning Team',
+                       'channel': 'Janitorial Coaching Hub',
+                       'author': 'Janitorial Coaching Hub',
+                       'text': "I will suggest subcontracting when you're starting out because you have an "
+                               'arrangement with them and say when I get paid, you get paid.',
+                       'tip': "I will suggest subcontracting when you're starting out because you have an "
+                              'arrangement with them and say when I get paid, you get paid.',
+                       'timestamp': 37,
+                       'timestamp_seconds': 37,
+                       'timestamp_label': '[00:00:37]',
+                       'url': 'https://www.youtube.com/watch?v=GlA-D_TIYLg&t=37s',
+                       'markdown': '[00:00:37](https://www.youtube.com/watch?v=GlA-D_TIYLg&t=37s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xljn9o0tX_E',
+                       'title': 'Case Study: Misclassification of Employees as Independent Contractors',
+                       'channel': 'BICO Legal and Compliance Consulting, LLC',
+                       'author': 'BICO Legal and Compliance Consulting, LLC',
+                       'text': 'The terms were set by the salon owner and offered on a take it or leave it '
+                               'basis, and they did not reflect the true working conditions, policies, or '
+                               'pay practices at the salon.',
+                       'tip': 'The terms were set by the salon owner and offered on a take it or leave it '
+                              'basis, and they did not reflect the true working conditions, policies, or '
+                              'pay practices at the salon.',
+                       'timestamp': 17,
+                       'timestamp_seconds': 17,
+                       'timestamp_label': '[00:00:17]',
+                       'url': 'https://www.youtube.com/watch?v=xljn9o0tX_E&t=17s',
+                       'markdown': '[00:00:17](https://www.youtube.com/watch?v=xljn9o0tX_E&t=17s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VumHp7Ist1c',
+                       'title': '1099 Independent Contractor vs. W-2 Employees',
+                       'channel': 'recruiterbackoffice',
+                       'author': 'recruiterbackoffice',
+                       'text': 'When a 1099 contractor converts to a direct hire and files both a 1099 and '
+                               "a W-2 with that company in the same tax year, that's a huge red flag.",
+                       'tip': 'When a 1099 contractor converts to a direct hire and files both a 1099 and '
+                              "a W-2 with that company in the same tax year, that's a huge red flag.",
+                       'timestamp': 276,
+                       'timestamp_seconds': 276,
+                       'timestamp_label': '[00:04:36]',
+                       'url': 'https://www.youtube.com/watch?v=VumHp7Ist1c&t=276s',
+                       'markdown': '[00:04:36](https://www.youtube.com/watch?v=VumHp7Ist1c&t=276s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PaYgE9PgaO4',
+                       'title': 'Everything You NEED to Know about Surety Bonds & Subcontractor Default',
+                       'channel': 'Construction Brothers',
+                       'author': 'Construction Brothers',
+                       'text': "You're going to sign an agreement to the bonding company saying I will "
+                               'reimburse you for any losses you have because I screwed up.',
+                       'tip': "You're going to sign an agreement to the bonding company saying I will "
+                              'reimburse you for any losses you have because I screwed up.',
+                       'timestamp': 185,
+                       'timestamp_seconds': 185,
+                       'timestamp_label': '[00:03:05]',
+                       'url': 'https://www.youtube.com/watch?v=PaYgE9PgaO4&t=185s',
+                       'markdown': '[00:03:05](https://www.youtube.com/watch?v=PaYgE9PgaO4&t=185s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'y6nkT8ywJOk',
+                       'title': 'Surety Bonds: The Hidden Gem for Insurance Agents',
+                       'channel': 'BondExchange',
+                       'author': 'BondExchange',
+                       'text': 'The underwriting for surety bonds usually involves a review of the '
+                               "business owner's credit and financial statements.",
+                       'tip': 'The underwriting for surety bonds usually involves a review of the business '
+                              "owner's credit and financial statements.",
+                       'timestamp': 72,
+                       'timestamp_seconds': 72,
+                       'timestamp_label': '[00:01:12]',
+                       'url': 'https://www.youtube.com/watch?v=y6nkT8ywJOk&t=72s',
+                       'markdown': '[00:01:12](https://www.youtube.com/watch?v=y6nkT8ywJOk&t=72s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'D522f-zqtCw',
+                       'title': 'What Is Surety Bonding For My Cleaning Business.  #jmdjanitorial',
+                       'channel': 'JMD JANITORIAL',
+                       'author': 'JMD JANITORIAL',
+                       'text': 'This program prepares us to do business using bonds, specifically small '
+                               'businesses, and how to prepare yourself for the bond.',
+                       'tip': 'This program prepares us to do business using bonds, specifically small '
+                              'businesses, and how to prepare yourself for the bond.',
+                       'timestamp': 47,
+                       'timestamp_seconds': 47,
+                       'timestamp_label': '[00:00:47]',
+                       'url': 'https://www.youtube.com/watch?v=D522f-zqtCw&t=47s',
+                       'markdown': '[00:00:47](https://www.youtube.com/watch?v=D522f-zqtCw&t=47s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'}]}

@@ -1,646 +1,863 @@
 from __future__ import annotations
 
-CHAPTER_9 = {
-    "id": "Q9",
-    "chapter_id": "Q9",
-    "chapter_number": 9,
-    "question_number": 9,
-    "slug": "contracts-statutory-guardrails-licensing-outreach-scripts",
-    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern insurance restoration?",
-    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
-    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
-    "subtitle": "Contractor Licensing, Public-Adjuster Boundaries, Deductible Collection, IICRC Evidence & Xactimate Scope Controls",
-    "layout_template": "legal_compliance_notes",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #15, Insurance Restoration, ranks #13 with a 87/100 Money-to-Manpower "
-        "Score because execution depends on licensed field capacity, defensible documentation, "
-        "and working capital. This chapter maps five operator plays: emergency water mitigation, "
-        "fire and contents restoration, mold remediation, storm reconstruction, and documentation-led "
-        "supplements with collections. Build contracts around work actually authorized, keep "
-        "insurance representation outside the contractor role, and collect deductibles without "
-        "concealed rebates. Canonical annual owner net profit is $40,000 Conservative, $195,000 "
-        "Base, and $450,000 Scaled, against gross restoration billings rather than insurance "
-        "claim value. The initial 2 FT + 2 C pod needs state-specific contract versions, "
-        "restricted outreach scripts, and evidence-backed billing before expanding territory."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$500,000",
-            "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "8% net margin; $40,000 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,500,000",
-            "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "13.0% net margin; $195,000 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$2,500,000",
-            "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "18% net margin; $450,000 annual owner net profit; 3 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Assign Five Plays to Licensed Roles Before Accepting the Loss",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Organize Candidate #15 around five explicit plays: emergency water mitigation; fire, soot, "
-                    "and contents restoration; mold remediation; storm reconstruction; and evidence-led estimating, "
-                    "supplements, and collections. The fifth play supports completed or authorized restoration "
-                    "work; it is not a separate business selling claim representation. Assign the five full-time "
-                    "positions to an owner and operations lead, a project manager and estimator, a dispatch "
-                    "and receivables coordinator, and two field technicians. Use six contracted resources for "
-                    "licensed trades, specialty remediation, contents capacity, and surge labor, with assignments "
-                    "based on actual credentials rather than a universal subcontractor label. Contractor status "
-                    "also depends on applicable employment tests, not the wording of an agreement. Maintain "
-                    "a jurisdiction register showing contractor classifications, qualifying individuals, municipal "
-                    "registrations, permits, environmental credentials, renewal dates, and permitted activities. "
-                    "The dispatcher checks the property address and work category before offering a mobilization "
-                    "window. An IICRC credential demonstrates training but does not replace a state contractor "
-                    "license, mold license, or required trade license. For each play, define an accountable "
-                    "employee, a qualified backup, an evidence package, and a hard boundary on what the "
-                    "team may promise. This prevents emergency demand from silently expanding the firm's "
-                    "licensed scope during a regional catastrophe."
-                ),
-                (
-                    "Separate repair expertise from insurance representation at the sentence level. A contractor "
-                    "can describe observed damage, proposed drying methods, quantities, equipment duration, and "
-                    "the price of their own services, subject to local restrictions. Interpreting coverage for "
-                    "the policyholder, negotiating their settlement, or advertising that the contractor will "
-                    "handle the claim can cross public-adjuster boundaries. Texas Insurance Code sections "
-                    "4102.051 and 4102.163 are especially important: licensing governs public adjusting, and "
-                    "a contractor cannot act as public adjuster on property where the contractor provides "
-                    "or may provide contracting services. A separate license therefore does not automatically "
-                    "cure a dual-role conflict. Florida Statutes section 489.147 likewise restricts contractor "
-                    "conduct involving insurance claims and deductible practices. Train the estimator to say, "
-                    "'Our estimate explains our repair scope and pricing; your insurer determines coverage, "
-                    "and you decide whether to engage an authorized representative.' Xactimate line items "
-                    "do not confer settlement authority. When an adjuster disputes a dehumidifier day, answer "
-                    "with moisture readings, equipment records, and the service rationale, not an interpretation "
-                    "of policy duties. Escalate coverage disputes to the owner for referral, and preserve "
-                    "the distinction in email subjects, engagement documents, call notes, and website copy."
-                ),
-                (
-                    "Build state variations into dispatch rather than relying on one national form. Texas "
-                    "Occupations Code Chapter 1958 and Florida Statutes Part XVI of Chapter 468 regulate "
-                    "mold services, with different licensing, exemptions, and separation requirements. Check "
-                    "whether assessment and remediation must be independent before combining those services. "
-                    "California Business and Professions Code section 7159 imposes detailed requirements on "
-                    "covered home-improvement contracts, while other jurisdictions use different deposit, "
-                    "notice, and cancellation rules. Add federal overlays by task and building age. EPA's "
-                    "renovation rules in 40 CFR Part 745 apply to covered work disturbing painted surfaces "
-                    "in pre-1978 target housing and child-occupied facilities. Emergency provisions in "
-                    "section 745.82 narrow particular requirements only to the extent specified; they do "
-                    "not erase every cleaning, verification, or recordkeeping duty. OSHA asbestos, lead, "
-                    "and respiratory rules require an exposure-based work plan, not a checkbox attached "
-                    "to every loss. Commercial occupancy introduces tenant coordination, shutdown permissions, "
-                    "and potentially hazardous inventories that residential intake will miss. Require the "
-                    "project manager to classify occupancy, construction age, suspected materials, and access "
-                    "limitations before destructive work. The six contracted resources must supply applicable "
-                    "licenses and evidence of task-specific capability; a certificate of insurance alone "
-                    "does not establish either."
-                ),
-            ],
-            "table": {
-                "caption": "Five Restoration Plays and the Jurisdiction Controls That Constrain Delivery",
-                "headers": [
-                    "Play or control boundary",
-                    "Authority and operating distinction",
-                    "Assigned pod responsibility",
-                    "Required evidence before field execution",
-                ],
-                "rows": [
-                    [
-                        "Emergency water mitigation with documented drying objectives",
-                        "EPA Part 745 requirements can affect demolition methods",
-                        "Dispatch assigns technicians while project manager reviews hazards",
-                        "Record building age, moisture map, and signed authorization",
-                    ],
-                    [
-                        "Fire and contents restoration with controlled property custody",
-                        "Hazardous materials and respiratory requirements follow actual exposures",
-                        "Project manager coordinates specialty vendors and contents handling",
-                        "Capture item inventories, custody transfers, and exposure assessment",
-                    ],
-                    [
-                        "Mold remediation with independent assessment where legally required",
-                        "Texas Chapter 1958 and Florida Chapter 468 differ",
-                        "Owner verifies credentials before assigning contracted remediation resources",
-                        "Retain applicable licenses, protocol, containment plan, and clearance",
-                    ],
-                    [
-                        "Storm reconstruction with properly classified licensed trade capacity",
-                        "Local permits and contractor classifications define permissible repairs",
-                        "Estimator scopes work while qualified trades execute repairs",
-                        "Retain permit determination, trade credentials, and material specifications",
-                    ],
-                    [
-                        "Documentation-led supplements and collection of contractor service charges",
-                        "Public-adjuster restrictions separate repair pricing from claim representation",
-                        "Estimator supports quantities while coordinator tracks customer balances",
-                        "Attach readings, photographs, approvals, invoices, and payment allocation",
-                    ],
-                    [
-                        "Cross-state dispatch review before selling additional restoration services",
-                        "Emergency declarations do not universally suspend occupational licensing",
-                        "Owner maintains jurisdiction register and verifies proposed expansion",
-                        "Archive current license verification and address-specific contract version",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Checks Before Mobilizing the Four-Person Pod",
-                "body": "Release a crew only when the assigned employee can point to evidence for each applicable check.",
-                "items": [
-                    "Verify the property address, contractor classification, qualifying individual, and specialty licenses against the issuing authority's records.",
-                    "Confirm owner or authorized-agent signature, applicable cancellation documents, emergency scope, and the initial spending ceiling.",
-                    "Review building age, suspected asbestos or lead, mold assessment requirements, utility hazards, and technician respiratory readiness.",
-                    "Separate repair authorization from claim representation; confirm the script makes no coverage promise or concealed deductible concession.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Contract for Measurable Work, Lawful Payment, and Preserved Customer Rights",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use a document stack that follows the job's changing uncertainty. Start with an emergency "
-                    "service authorization identifying the property, contracting parties, immediate stabilization "
-                    "tasks, access permissions, equipment rates, minimum charges, spending ceiling, and the "
-                    "method for approving additional work. Then issue a reconstruction agreement only after "
-                    "the repair scope and required permits are sufficiently defined. Record whether pricing "
-                    "is fixed, unit-based, or time-and-materials; an insurer's estimate is evidence for "
-                    "discussion, not a substitute for customer agreement. Define the fee trigger as authorized "
-                    "services performed or a valid contractual milestone, subject to applicable deposit and "
-                    "consumer-contract rules. State when invoices become payable and distinguish customer "
-                    "payment obligations from insurer reimbursement decisions without inventing a universal "
-                    "pay-now clause. A change order should name the discovery, added quantity, revised price, "
-                    "schedule impact, and approving person. For drying, specify how daily monitoring, "
-                    "equipment removal, inaccessible areas, and interrupted power affect performance. For "
-                    "contents, attach the inventory, handling permissions, storage pricing, and release "
-                    "procedure. Never let a technician improvise a disposal authorization after salvageable "
-                    "property has already left the premises. Give the customer completed copies immediately, "
-                    "and preserve the signed version separately from editable estimating files for every "
-                    "subsequent billing review."
-                ),
-                (
-                    "Apply cancellation and deductible rules to the actual sale, not to assumptions about "
-                    "disaster urgency. The FTC Cooling-Off Rule, 16 CFR Part 429, covers qualifying sales "
-                    "at homes and certain other locations, with thresholds, exclusions, required notices, "
-                    "and a three-business-day cancellation period. Its emergency exclusion requires specified "
-                    "conditions, including a buyer-initiated request and a separate handwritten emergency "
-                    "statement; a preprinted waiver tucked into an authorization is not equivalent. State "
-                    "rights may be broader, so use the jurisdiction-specific version and record the sale "
-                    "location and solicitation history. Texas Insurance Code Chapter 707 makes deductible "
-                    "payment a concrete operating issue for covered property claims. Do not inflate an "
-                    "invoice, hide a rebate, or describe a referral payment as a way to eliminate the "
-                    "customer's deductible. Record actual discounts transparently and assess their effect "
-                    "under the applicable rule before offering them. Distinguish a direction to pay from "
-                    "an assignment of benefits: labels do not control legal effect. Florida section "
-                    "627.7152(13) prohibits covered post-loss benefit assignments under property policies "
-                    "issued on or after January 1, 2023. Verify policy issuance and statutory scope rather "
-                    "than deploying a legacy assignment template. Direct payment instructions must also "
-                    "respect mortgagee interests and check endorsements."
-                ),
-                (
-                    "Write the protective clauses narrowly enough that operations can honor them. An "
-                    "anti-circumvention provision should address deliberate diversion of a specifically "
-                    "introduced subcontractor during an active project, if enforceable, rather than punish "
-                    "customers for contacting their insurer or selecting another contractor. Avoid liquidated "
-                    "charges unrelated to a defensible anticipated loss. Define liability allocation around "
-                    "controllable risks, insurance requirements, and expressly identified exclusions; do "
-                    "not assume a liability cap can excuse gross negligence, statutory duties, personal "
-                    "injury, or defective workmanship. Have local counsel evaluate enforceability and "
-                    "mandatory wording before release. A dispute clause should sequence project-level "
-                    "review, management escalation, mediation, and the selected forum without obscuring "
-                    "mandatory consumer remedies or lien deadlines. For data, distinguish ownership of "
-                    "project deliverables from the operator's estimating templates and methods. Give the "
-                    "customer a usable license to final reports and define access to photographs, "
-                    "psychrometric logs, inventories, and invoices. Obtain separate permission before using "
-                    "loss images in marketing. Limit vendor access and establish retention rules tied to "
-                    "contract, litigation, insurance, and statutory needs. Finally, align termination, "
-                    "safe demobilization, equipment retrieval, and undisputed payment provisions so the "
-                    "crew can exit without abandoning hazards or using customer property as improvised "
-                    "collection leverage during a contested final invoice."
-                ),
-            ],
-            "table": {
-                "caption": "Restoration Contract Clause Checklist and Evidence Needed to Enforce Each Promise",
-                "headers": [
-                    "Clause and intended operational result",
-                    "Specific drafting requirement for this business",
-                    "Failure mode the operator must prevent",
-                    "Artifact retained by the responsible employee",
-                ],
-                "rows": [
-                    [
-                        "Scope separates emergency stabilization from later reconstruction",
-                        "Name rooms, quantities, exclusions, equipment rates, and approvals",
-                        "An insurer estimate becomes unauthorized permission for demolition",
-                        "Project manager retains signed scope and approved revisions",
-                    ],
-                    [
-                        "Fee trigger connects invoices to authorized restoration performance",
-                        "Define milestones, due dates, deposits, and payment allocation",
-                        "Customer assumes every invoiced charge requires insurer acceptance",
-                        "Coordinator retains completion evidence and itemized customer ledger",
-                    ],
-                    [
-                        "Anti-circumvention protects narrow introductions without blocking customer choices",
-                        "Identify protected introductions, limited duration, and enforceable remedies",
-                        "A punitive restriction interferes with insurer communications or termination",
-                        "Owner retains documented introductions and jurisdiction-specific clause review",
-                    ],
-                    [
-                        "Liability allocation matches controllable risks and available insurance",
-                        "Identify exclusions while preserving duties that cannot be waived",
-                        "A sweeping cap conflicts with mandatory consumer protections",
-                        "Owner retains reviewed wording and relevant insurance endorsements",
-                    ],
-                    [
-                        "Dispute resolution creates escalation without sacrificing mandatory remedies",
-                        "Specify notice channel, review sequence, venue, and preserved rights",
-                        "Informal negotiations consume statutory lien or filing deadlines",
-                        "Coordinator maintains dispute chronology and independent deadline calendar",
-                    ],
-                    [
-                        "Data and intellectual property terms preserve usable project evidence",
-                        "Separate report access, template ownership, retention, and marketing permission",
-                        "A vendor account closure removes the customer's drying records",
-                        "Estimator exports final reports into controlled project storage",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Contract Details Experienced Restoration Operators Protect",
-                "body": "Write for the wet, occupied property and the disputed invoice, not just the clean estimate.",
-                "items": [
-                    "Make the equipment schedule identify serial number, room, deployment time, removal time, and the monitoring record supporting continued use.",
-                    "Attach a customer power-interruption and access log so drying delays can be explained without inventing equipment utilization.",
-                    "Keep emergency authorization, reconstruction approval, and marketing-image permission separate so one signature is not stretched across unrelated purposes.",
-                    "Save the original Xactimate estimate and each revision with a change explanation; never overwrite the version the customer actually approved.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Sell Restoration Services Without Selling Coverage or Unlicensed Representation",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Make outreach channel-specific before making it persuasive. Commercial email must satisfy "
-                    "CAN-SPAM, 15 U.S.C. section 7704, including accurate routing information, nondeceptive "
-                    "subjects, required identification, a valid postal address, and an effective opt-out "
-                    "process. Business recipients are not a blanket exemption. Calling and texting require "
-                    "a separate analysis under 47 U.S.C. section 227, FCC rules in 47 CFR section 64.1200, "
-                    "the FTC Telemarketing Sales Rule where applicable, and relevant state laws. Evaluate "
-                    "the number type, calling technology, message purpose, applicable consent, do-not-call "
-                    "status, and local time restrictions. Artificial or prerecorded voices introduce "
-                    "requirements that a manually dialed live call does not automatically share. Purchased "
-                    "storm leads are not proof that the person authorized this company and this channel. "
-                    "Keep the permission record, acquisition source, disclosure text, timestamp, and "
-                    "revocation history together. The coordinator should maintain a company-specific "
-                    "suppression list and process stop requests promptly under applicable deadlines. "
-                    "Use HubSpot or a comparable CRM to enforce suppression, not merely store a note "
-                    "that sales staff can overlook. Do not upload customer loss photographs or contact "
-                    "lists into advertising audiences without an established permission and data-use "
-                    "basis. Public disaster maps identify affected areas, not permission to contact "
-                    "individual occupants through every available channel."
-                ),
-                (
-                    "Use a permission-based live introduction: 'Hello, this is Jordan with Harbor Restoration. "
-                    "We provide water mitigation and repair estimates in your area. Is this a suitable "
-                    "time to discuss your service request? We price our work; we do not determine your "
-                    "insurance coverage.' Substitute the real business identity and an accurate reason "
-                    "for contact; never imply a request exists when it does not. For inbound discovery, "
-                    "say: 'Are you the owner or authorized property representative? What happened, when "
-                    "did you first notice it, and is water or smoke exposure continuing? Is anyone "
-                    "facing an electrical, structural, or medical emergency? What is the building's "
-                    "approximate construction year, and has anyone tested suspect materials?' Stop "
-                    "commercial discovery when immediate emergency services are needed. Continue with "
-                    "access, occupancy, utilities, prior work, and photographed conditions rather than "
-                    "leading the customer toward a preferred cause of loss. For a property-manager "
-                    "introduction, use: 'We can review your emergency vendor requirements, response "
-                    "territory, and documentation standards. Would a short capability review help?' "
-                    "The owner handles account relationships while the coordinator qualifies dispatch. "
-                    "This keeps two field technicians from spending billable hours negotiating promises "
-                    "they lack authority to make. Record answers as customer statements, not independently "
-                    "verified findings, until the field inspection establishes the facts."
-                ),
-                (
-                    "Prepare scripts for the moments most likely to create a claim dispute. For price "
-                    "and coverage, say: 'Our proposed authorization covers the services and rates shown "
-                    "here. Your insurer decides coverage under your policy. Please ask your insurer "
-                    "about your deductible and reimbursement; we will explain our scope and supporting "
-                    "measurements.' For a supplement, say to the adjuster: 'Attached are the room "
-                    "measurements, dated photographs, drying logs, and revised quantities supporting "
-                    "our repair estimate. Please identify any disputed service or quantity so we can "
-                    "address the factual difference.' Do not add demands about what the policy legally "
-                    "owes the insured. For collection, say: 'Invoice 1042 shows the authorized work, "
-                    "payments received, and remaining balance. Which charge or payment allocation "
-                    "would you like us to review? We can explain available payment arrangements "
-                    "without changing the invoice to conceal a deductible.' Ordinary collection of "
-                    "the contractor's own receivable generally differs from third-party debt collection, "
-                    "but state collection laws and the federal definition still require review, "
-                    "especially when using another name or outside collectors. For opt-out, say: "
-                    "'I have recorded your request to stop marketing contact.' Separate necessary "
-                    "project communications from advertising, and never turn a safety update into "
-                    "a disguised promotional message."
-                ),
-            ],
-            "table": {
-                "caption": "Verbatim Outreach and Discovery Scripts With Channel-Specific Evidence Controls",
-                "headers": [
-                    "Contact situation and authorized purpose",
-                    "Exact language the employee can use",
-                    "Evidence retained before or after contact",
-                    "Boundary requiring escalation or immediate suppression",
-                ],
-                "rows": [
-                    [
-                        "Inbound water-loss inquiry requiring owner and safety verification",
-                        "Are you authorized to approve work at this property?",
-                        "Record caller role, property address, and stated authority",
-                        "Pause contracting when access authority remains materially disputed",
-                    ],
-                    [
-                        "Property-manager capability discussion without a coverage sales pitch",
-                        "Would a review of our emergency response capabilities help?",
-                        "Retain accurate contact source and applicable channel permissions",
-                        "Stop promotional follow-up when the recipient declines contact",
-                    ],
-                    [
-                        "Customer asks whether insurance will fund the entire project",
-                        "We explain our work; your insurer determines policy coverage.",
-                        "Record scope discussion and provide the written service estimate",
-                        "Refer policy interpretation rather than improvising coverage conclusions",
-                    ],
-                    [
-                        "Adjuster questions quantities within the contractor's own estimate",
-                        "Which service quantity differs from your documented site findings?",
-                        "Attach dated photographs, measurements, logs, and revision history",
-                        "Escalate settlement representation requests outside the contractor role",
-                    ],
-                    [
-                        "Customer requests a hidden concession against their deductible",
-                        "We cannot conceal discounts or misstate your actual charges.",
-                        "Preserve the actual quote, disclosed adjustments, and payment ledger",
-                        "Owner reviews proposed discounts against applicable deductible restrictions",
-                    ],
-                    [
-                        "Recipient withdraws permission for further promotional contact",
-                        "I have recorded your request to stop marketing contact.",
-                        "Timestamp suppression and propagate it across active marketing vendors",
-                        "Do not restart campaigns using a different contact list",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Turn Documentation, Collections, and Safety Controls Into Preserved Margin",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Treat the evidence package as a production deliverable for all five plays. Water "
-                    "mitigation requires initial conditions, moisture maps, temperature and relative "
-                    "humidity readings, relevant psychrometric calculations, equipment placement, daily "
-                    "progress, and a defensible drying endpoint. IICRC S500 supplies a professional "
-                    "framework, but project facts must support the actual method and duration. Fire "
-                    "and contents work needs condition photographs, item identification, custody "
-                    "records, and documented cleaning or disposal decisions. Mold work needs the "
-                    "applicable assessment, work protocol, containment records, and required verification "
-                    "without presenting a conflicted self-check as independent clearance. Storm "
-                    "reconstruction needs measurements, material specifications, permits, hidden-condition "
-                    "photographs, and signed changes. The fifth play assembles these records into "
-                    "Xactimate explanations and accurate receivables follow-up. Use CompanyCam or "
-                    "Encircle for organized field capture, then export essential evidence into "
-                    "controlled storage with role-based access and backups. Record corrections as "
-                    "new entries rather than rewriting dates or measurements. The project manager "
-                    "reviews exceptions daily; the owner samples closed files weekly. Missing logs "
-                    "should trigger an honest explanation and process correction, not reconstructed "
-                    "readings presented as contemporaneous evidence. This discipline protects factual "
-                    "credibility when a carrier, customer, expert, or court later examines why a "
-                    "specific service was necessary."
-                ),
-                (
-                    "Reconcile contract discipline to the canonical economics without treating the insurance "
-                    "claim as operator revenue. Conservative gross restoration billings are $500,000 at "
-                    "an 8% net margin, producing $40,000 annual owner net profit; Base is $1,500,000 "
-                    "at 13.0%, producing $195,000; Scaled is $2,500,000 at 18%, producing $450,000. "
-                    "Subcontractor and material costs are already reflected in those margins. The "
-                    "first two cases use 2 FT + 2 C; Scaled uses 3 FT + 3 C, thirteen people. "
-                    "The implied annual expense envelopes are $460,000, $1,305,000, and $2,050,000 "
-                    "respectively. Track earned billings, collected cash, disputed amounts, subcontractor "
-                    "commitments, and customer deposits separately. An approved insurance payment is "
-                    "neither automatically earned revenue nor cash available to the restoration firm. "
-                    "As an illustrative timing calculation, Base billings average $125,000 monthly; "
-                    "a thirty-day collection delay can leave roughly that amount additionally tied "
-                    "up when billing is even and other timing is unchanged. That illustration does "
-                    "not revise canonical profit. Use a thirteen-week cash forecast to distinguish "
-                    "collection delays from actual margin losses. Do not stack the stated monthly "
-                    "operating range onto scenario expenses without checking cost classifications, "
-                    "or materials and subcontractors may be counted twice."
-                ),
-                (
-                    "Run disputes through a controlled evidence and deadline workflow. The coordinator "
-                    "classifies each objection as authorization, quantity, workmanship, coverage, payment "
-                    "allocation, or customer hardship; the project manager owns factual scope responses, "
-                    "and the owner handles escalation. Preserve preliminary notice, lien, bond-claim, "
-                    "and contract deadlines in a separate state-specific calendar because informal "
-                    "negotiation does not reliably extend them. Do not threaten liens without checking "
-                    "eligibility, required notices, amounts, and filing rules. Refer coverage advocacy "
-                    "outside the contractor role, and use qualified local support for contested "
-                    "collection proceedings. Review safety incidents with the same evidence discipline: "
-                    "isolate the hazard, protect workers and occupants, preserve records, notify "
-                    "appropriate parties, and correct the work method before restarting affected "
-                    "tasks. Evaluate required OSHA reporting and recordkeeping rather than assuming "
-                    "the subcontractor absorbs every duty. Before adding another state or catastrophe "
-                    "zone, test license coverage, contract readiness, safe staffing, vendor capacity, "
-                    "and cash runway together. Dispatch automation, photo documentation, and job-cost "
-                    "tracking should reduce missed handoffs, not manufacture extra field capacity. "
-                    "The four-person pod remains constrained by supervision and specialist availability. "
-                    "Expansion makes sense when the existing five plays close with defensible records, "
-                    "predictable collections, and manageable rework, not merely when lead volume "
-                    "rises after a storm."
-                ),
-            ],
-            "table": {
-                "caption": "Evidence-to-Cash Controls for the Five-Employee and Six-Contractor Operating Pod",
-                "headers": [
-                    "Control event and accountable operating role",
-                    "Evidence package required for reliable execution",
-                    "Commercial or safety failure being contained",
-                    "Specific corrective action when evidence is deficient",
-                ],
-                "rows": [
-                    [
-                        "Dispatch coordinator releases the emergency stabilization work order",
-                        "Signed authorization, address review, hazard screen, and access confirmation",
-                        "Unauthorized mobilization creates avoidable collection and safety disputes",
-                        "Limit activity to authorized safe tasks pending documented resolution",
-                    ],
-                    [
-                        "Field technicians document daily water mitigation and equipment use",
-                        "Timestamped moisture readings, psychrometrics, equipment identifiers, and access notes",
-                        "Unsupported drying duration creates disputed charges and credibility damage",
-                        "Explain missing records honestly and review ongoing equipment necessity",
-                    ],
-                    [
-                        "Project manager approves the estimate revision for customer review",
-                        "Original scope, discovery photographs, quantity calculations, and change explanation",
-                        "Unapproved additions become difficult receivables despite completed fieldwork",
-                        "Obtain required authorization before proceeding with additional discretionary work",
-                    ],
-                    [
-                        "Receivables coordinator allocates customer and insurer-derived payments accurately",
-                        "Invoice ledger, remittance details, endorsements, and actual customer receipts",
-                        "Misallocated payments create false balances and deductible accounting errors",
-                        "Reconcile remittances before sending another balance demand to customers",
-                    ],
-                    [
-                        "Owner reviews weekly cash exposure and specialty vendor commitments",
-                        "Thirteen-week forecast, aging report, committed costs, and dispute register",
-                        "Profitable booked work consumes cash before collections arrive",
-                        "Sequence authorized projects against safe capacity and available liquidity",
-                    ],
-                    [
-                        "Project manager closes the file after verified service completion",
-                        "Completion record, required permits, final reports, and unresolved-item register",
-                        "Premature closeout hides unfinished work and destroys useful evidence",
-                        "Assign outstanding items and preserve files through applicable retention",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Classify the Property and Permitted Role",
-                    "action": "Dispatch identifies jurisdiction, occupancy, service play, customer authority, and immediate hazards.",
-                    "detail": "The owner confirms required credentials and prohibits claim-representation promises before the coordinator issues the correct contract package.",
-                },
-                {
-                    "step": 2,
-                    "title": "Authorize and Document the Work",
-                    "action": "Obtain the applicable signed authorization, required notices, pricing terms, and spending ceiling.",
-                    "detail": "Technicians capture baseline conditions; the project manager approves the method, hazardous-material precautions, and required specialty resources.",
-                },
-                {
-                    "step": 3,
-                    "title": "Support Changes and Invoice Actual Performance",
-                    "action": "Link each invoice and estimate revision to authorized quantities, field evidence, and actual services.",
-                    "detail": "The estimator addresses repair facts without negotiating policy coverage; the coordinator records transparent discounts and payment allocation.",
-                },
-                {
-                    "step": 4,
-                    "title": "Resolve Exceptions and Preserve the File",
-                    "action": "Classify disputes, calendar statutory deadlines, reconcile receipts, and export the final evidence package.",
-                    "detail": "The owner reviews unresolved exposure and cash timing while the project manager verifies completion, safe demobilization, and outstanding corrective work.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "Sell the restoration work you can document, not the insurance outcome you cannot control.",
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Build an address-level licensing register covering contractor classifications, mold services, trade permits, qualifying individuals, and renewal dates.",
-        "Release jurisdiction-specific emergency and reconstruction contracts with scope, fee triggers, cancellation notices, data rights, and reviewed dispute clauses.",
-        "Train all five employees on the five mapped plays, public-adjuster boundaries, truthful deductible treatment, and the exact coverage-response script.",
-        "Configure channel-specific outreach permissions, do-not-call checks, suppression propagation, and accurate source records before activating campaigns.",
-        "Require daily moisture documentation, equipment records, signed changes, and exported project evidence before unsupported charges enter customer invoices.",
-        "Review receivables, statutory deadlines, subcontractor commitments, and the thirteen-week cash forecast weekly against the unchanged canonical profit cases.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "Texas Insurance Code §§ 4102.051 and 4102.163 — Public Adjuster Licensing and Conflicts",
-            "url": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.4102.htm",
-            "relevance": "Separates licensed public adjusting from contracting and prohibits the specified contractor-adjuster conflict on the same property.",
-        },
-        {
-            "title": "Texas Insurance Code Chapter 707 — Payment of Deductible",
-            "url": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.707.htm",
-            "relevance": "Governs deductible payment and prohibited contractor conduct for covered property insurance claims.",
-        },
-        {
-            "title": "Texas Occupations Code Chapter 1958 — Mold Assessors and Remediators",
-            "url": "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1958.htm",
-            "relevance": "Establishes Texas mold licensing, exemptions, and restrictions relevant to assessment and remediation assignments.",
-        },
-        {
-            "title": "Florida Statutes § 489.147 — Prohibited Property Insurance Practices",
-            "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0489/Sections/0489.147.html",
-            "relevance": "Restricts specified contractor advertising, deductible practices, and insurance-claim conduct.",
-        },
-        {
-            "title": "Florida Statutes § 627.7152(13) — Assignment Agreements",
-            "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0627/Sections/0627.7152.html",
-            "relevance": "Prohibits covered post-loss benefit assignments under property insurance policies issued on or after January 1, 2023.",
-        },
-        {
-            "title": "Florida Statutes § 468.8419 — Mold-Related Services Prohibitions",
-            "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0468/Sections/0468.8419.html",
-            "relevance": "Defines prohibited mold-service conduct, including restrictions relevant to assessment and remediation independence.",
-        },
-        {
-            "title": "California Business and Professions Code § 7159 — Home Improvement Contracts",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7159.&lawCode=BPC",
-            "relevance": "Specifies requirements for covered home-improvement agreements, notices, payment provisions, and change documentation.",
-        },
-        {
-            "title": "16 CFR Part 429 — Cooling-Off Period for Certain Sales",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-429",
-            "relevance": "Defines covered sales, cancellation notices, cancellation periods, and conditions for exclusions including qualifying emergencies.",
-        },
-        {
-            "title": "40 CFR §§ 745.82 and 745.85 — Lead Renovation Applicability and Work Practices",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-R/part-745/subpart-E",
-            "relevance": "Controls covered renovation activities, emergency exceptions, lead-safe work practices, and associated documentation requirements.",
-        },
-        {
-            "title": "29 CFR § 1926.1101 — Asbestos in Construction",
-            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-Z/section-1926.1101",
-            "relevance": "Establishes construction asbestos requirements affecting surveys, exposure controls, work practices, training, and respiratory protection.",
-        },
-        {
-            "title": "29 CFR § 1926.62 — Lead in Construction",
-            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-D/section-1926.62",
-            "relevance": "Requires applicable worker exposure assessment and protective measures during lead-related construction activities.",
-        },
-        {
-            "title": "29 CFR § 1910.134 — Respiratory Protection",
-            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-I/section-1910.134",
-            "relevance": "Provides respiratory program, medical evaluation, fit testing, selection, and use requirements where applicable.",
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Commercial Electronic Mail Requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Governs commercial email identification, routing accuracy, opt-out mechanisms, postal addresses, and suppression duties.",
-        },
-        {
-            "title": "47 U.S.C. § 227 — Telephone Consumer Protection",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Establishes restrictions relevant to automated calls, artificial or prerecorded voices, and telephone solicitation.",
-        },
-        {
-            "title": "47 CFR § 64.1200 — Delivery Restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": "Implements calling and messaging requirements, consent rules, do-not-call procedures, and applicable revocation duties.",
-        },
-        {
-            "title": "16 CFR Part 310 — Telemarketing Sales Rule",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310",
-            "relevance": "Governs covered telemarketing conduct, disclosures, calling restrictions, and do-not-call obligations.",
-        },
-        {
-            "title": "15 U.S.C. § 1692a — Debt Collection Definitions",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1692a",
-            "relevance": "Defines creditors, debt collectors, and relevant exceptions when evaluating in-house collections and outside collection arrangements.",
-        },
-    ],
-}
+CHAPTER_9 = {'id': 'Q9',
+ 'chapter_id': 'Q9',
+ 'chapter_number': 9,
+ 'question_number': 9,
+ 'slug': 'launching-restoration-company-contracts-paid-leads-margin',
+ 'question_prompt': 'How do I start a restoration company, buy emergency leads online, structure '
+                    'contracts, and protect margins?',
+ 'kicker': 'Q9 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Launching the Restoration Company: Contracts, Paid Leads, and Margin',
+ 'subtitle': 'Starting a water damage company without millions, how restoration differs from general '
+             'contracting, work authorizations vs. reconstruction contracts, AOB vs. direction to pay, '
+             'Google Local Services Ads and emergency search ads, the 2026 LSA changes, markup vs. margin, '
+             'post-sale margin leaks, and a $14M-to-$55M scaling case',
+ 'layout_template': 'tool_resource_directory',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Restoration operators launching in 2026 converge on a narrow wedge: emergency water '
+                      'mitigation sold under a signed work authorization, fed by Google Local Services Ads '
+                      'and controlled PPC, and priced off margin rather than markup. Albi pegs startup '
+                      'purchasing power at $50-200K and mitigation gross margins above 70%, pushing '
+                      'rebuilds to a GC for a 10% kickback until $3-5M. Vinnie Mac reports LSA leads at '
+                      '$400-500 in CA, FL, NY and TX versus $120-220 in IL, MO, OK and LA, with the August '
+                      "2026 migration into Performance Max wiping visibility history. Shane O'Dazier "
+                      'builds paper around 20% termination fees and three-day equipment minimums, while '
+                      'Florida counsel Hans Kennan steers toward direction-to-pay after the AOB ban. '
+                      "Splits remain on service-area width, the keyword 'cheap', AOB use, and whether "
+                      'Xactimate and dry logs matter at launch.',
+ 'key_metrics': [{'label': 'Startup Purchasing Power',
+                  'metric': 'Startup Purchasing Power',
+                  'value': '$50-200K including loans, not cash, plus one referral source',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Albi's baseline capital requirement for opening a water damage restoration "
+                             'company in 2026.',
+                  'source': 'Restoration Success Strategies | Albi ([3PlUwHvZkxE @ 00:00:00])'},
+                 {'label': 'Emergency Mitigation Gross Margin',
+                  'metric': 'Emergency Mitigation Gross Margin',
+                  'value': '70%+ gross margins',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Albi's reason for running emergency water mitigation only and referring "
+                             'rebuilds out until $3-5M in revenue.',
+                  'source': 'Restoration Success Strategies | Albi ([3PlUwHvZkxE @ 00:03:12])'},
+                 {'label': 'LSA Cost Per Lead in Top-Cost States',
+                  'metric': 'LSA Cost Per Lead in Top-Cost States',
+                  'value': '$400-500 per lead in CA/FL/NY/TX; $120, $200 or $60 elsewhere; one client pays '
+                           '$40-60',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Vinnie Mac's agency figures across 100+ managed LSA accounts for water "
+                             'damage restoration companies.',
+                  'source': 'Water Damage Restoration Marketing - Vinnie Mac ([2akNGTmJry8 @ 00:32:17])'},
+                 {'label': 'Markup Required for a 30% Margin',
+                  'metric': 'Markup Required for a 30% Margin',
+                  'value': '43% markup, or $3,440 on an $8,000 job',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Roofing Insights' worked example showing contractors who think in dollars "
+                             'instead of percentages underprice jobs.',
+                  'source': 'Roofing Insights ([ppn4akh1gPo @ 00:02:55])'}],
+ 'sections': [{'number': 1,
+               'title': 'The Practitioner Consensus',
+               'paragraphs': ['Every launch playbook starts narrow. Albi of Restoration Success Strategies '
+                              'tells new owners to run emergency water mitigation only, a line carrying '
+                              '70%+ gross margins, and to refer rebuilds to a general contractor for a 10% '
+                              'kickback until revenue clears $3-5M, summed up as "Simple scales and '
+                              'complex fails" [3PlUwHvZkxE @ 00:02:56]. PushLeads\' Jeremy draws the same '
+                              'line from the customer side: mitigation and reconstruction are sequential '
+                              'phases, not rival bids, and "The restoration company always comes first," '
+                              'because mold can take hold within 24-48 hours and the carrier may then deny '
+                              'the mold claim [wnVxHv3JM28 @ 00:01:01]. The money sits in that first '
+                              "phase. Albi's second guide puts the average restoration ticket at $8-12K "
+                              'against $2-3K for a plumbing call, with drying equipment running and billed '
+                              'on site for five to seven days [MDZLPIkMaI8 @ 00:03:58]. Capital '
+                              'requirements are modest by contracting standards. Albi wants $50-200K of '
+                              'purchasing power counting loans, plus one referral source, while '
+                              'Restoration Made Simple, built on 18 years and two from-scratch companies, '
+                              'quotes $50-100K typical and $10-30K for bootstrappers, with the first $1-2K '
+                              'going to WRT and ASD certification taken together at a flood house '
+                              '[aBQA1Wn_LNQ @ 00:01:42]. Both treat the 24/7 phone as the real job '
+                              'description, and Restoration Made Simple warns the business never closes.',
+                              'The second consensus point: own the phone. Albi credits half of Mason Dixon '
+                              "Restoration's $2.6M first nine months to online marketing and names Google "
+                              'LSA, Google PPC and a lead aggregator as the stack that takes a shop from '
+                              '$0 to $1M, with plumbers preferred over insurance agents as the second '
+                              'source [3PlUwHvZkxE @ 00:07:50]. Vinnie Mac, who runs dozens of LSA '
+                              'campaigns, explains why Google wins: roughly 90-95% of search goes there, '
+                              'the LSA unit sits at the top of the page, review stars trigger an "Amazon '
+                              'effect," and only qualified phone calls count, not clicks or impressions '
+                              '[IDqwheOOgb0 @ 00:09:52]. In a later breakdown, the agency reports "about '
+                              '80% of the phone calls come from either Google Guaranteed or Google Maps," '
+                              'and that lead-gen outfits such as 33 Mile Radius and Inquirly cannot '
+                              'qualify for the placement [O0STLVhCL2c @ 00:08:54]. The 2026 update adds a '
+                              'warning that LSA does not stand alone: results track Maps, SEO and PPC '
+                              'visibility, and "You can\'t just turn on LSA" [2akNGTmJry8 @ 00:03:48]. The '
+                              'ad operators all land on the same rule for what happens after the ring: '
+                              'pick up live, around the clock, with no voicemail. Restoration Made Simple '
+                              'puts the conversion side bluntly: "Doesn\'t do us any good to get the phone '
+                              'to ring if we can\'t convert them."',
+                              'On paper, contract specialists who otherwise fight over details agree on '
+                              "one sequence: signature before work. Shane O'Dazier of RestorationProfits "
+                              'wants a reconstruction "agreement," named that way to kill the "not a '
+                              'contract" defense, signed before any estimate is written, with no free '
+                              'estimates ever, plus a separate work authorization for tarping, mitigation, '
+                              'mold, asbestos and bio, and both signed when in doubt [b1-Dcqk4F9g @ '
+                              '00:01:57]. C&R Magazine\'s guest Ed, "the Restoration Lawyer," states the '
+                              'same priority: "We want to make sure we have a signature first from '
+                              'somebody who is financially responsible in agreeing to pay," preferring '
+                              'fixed-price over time-and-materials [t7tJ735gl4s @ 00:03:31]. Florida '
+                              'counsel Hans Kennan, on Contractor Talk Podcast with Richie Kidwell, '
+                              'recommends a service authorization with direction to pay on 90-day net '
+                              'terms and rejects contingency contracts [Tg526FvHOmY @ 00:27:01]. Margin is '
+                              'the final shared prerequisite. George Gabriel warns that on insurance work '
+                              'the carrier sets the price, so cost is the only lever: "So you can\'t fix a '
+                              'thin job by putting more markup on it" [KnWhJDOPsTc @ 00:04:04]. Albi\'s '
+                              'homeowner rule closes the loop: the homeowner, not the carrier, owes the '
+                              'bill, so collect the $2-3K deductible up front and let the insurance check '
+                              'on the back end become the profit.'],
+               'table': {'caption': 'Consensus prerequisites for launching a restoration company in 2026',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Say',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Launch on emergency water mitigation only',
+                                   'Mitigation carries 70%+ gross margins while rebuilds add complexity '
+                                   'before scale',
+                                   'Refer reconstruction to a GC for a 10% kickback until $3-5M revenue',
+                                   'Restoration Success Strategies | Albi ([3PlUwHvZkxE @ 00:02:56])'],
+                                  ['Restoration company always goes in before the GC',
+                                   'Mitigation and reconstruction are sequential phases, not competing '
+                                   'options for the homeowner',
+                                   'Wrong order lets mold grow in 24-48 hours and invites a carrier denial',
+                                   'PushLeads ([wnVxHv3JM28 @ 00:01:01])'],
+                                  ['Startup capital stays modest when education comes first',
+                                   'Typical launches need $50-100K while bootstrappers start with $10-30K',
+                                   'Spend the first $1-2K on WRT and ASD taken together hands-on',
+                                   'Restoration Made Simple ([aBQA1Wn_LNQ @ 00:01:42])'],
+                                  ['Google placements drive the majority of inbound restoration calls',
+                                   'About 80% of phone calls come from Google Guaranteed or Google Maps',
+                                   'Prioritize LSA and Maps visibility before chasing secondary lead '
+                                   'channels',
+                                   'Water Damage Restoration Marketing - Vinnie Mac ([O0STLVhCL2c @ '
+                                   '00:08:54])'],
+                                  ['LSA performance depends on the rest of the Google footprint',
+                                   'LSA results correlate with Maps, SEO and PPC visibility on the account',
+                                   'Build the website and Google Business Profile alongside LSA, not after',
+                                   'Water Damage Restoration Marketing - Vinnie Mac ([2akNGTmJry8 @ '
+                                   '00:03:48])'],
+                                  ['Get a signature from the paying party before work starts',
+                                   'Signature first from somebody financially responsible, with '
+                                   'fixed-price preferred over T&M',
+                                   'Never roll equipment until the financially responsible party has '
+                                   'signed the contract',
+                                   'C&R Magazine ([t7tJ735gl4s @ 00:03:31])'],
+                                  ['Cost control is the only margin lever on insurance work',
+                                   'The carrier sets the price, so extra markup cannot rescue a thin job',
+                                   'Track every overrun against a written phase budget from the signing '
+                                   'day',
+                                   'George Gabriel ([KnWhJDOPsTc @ 00:04:04])']]}},
+              {'number': 2,
+               'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Albi's launch budget runs about $200K, half cash and half financed. A new "
+                              'Sprinter van costs roughly $60K plus a $6,500 wrap, about $800 a month '
+                              'financed; $45K of equipment financed at 8-10% buys 8 dehus, 80 air movers, '
+                              'one extractor and four scrubbers; then $5K a year in insurance, $1K legal, '
+                              '$12K for office and warehouse, $10-20K for web and marketing, and a 60-90 '
+                              'day cash cushion [3PlUwHvZkxE @ 00:05:22]. Ram Exterior proved the floor is '
+                              'lower, starting on $30K of Menards and Chase Ink credit plus a truck. '
+                              'Staffing stays at three roles, crew chief, technician and executive '
+                              'assistant, and growth comes from adding trucks rather than middle managers: '
+                              '"a two-person unit can produce a million dollars of revenue per year, '
+                              '$83,000 per month" [3PlUwHvZkxE @ 00:07:09]. Restoration Made Simple adds '
+                              'the closing kit: an infrared camera at about $500-800 or a phone plug-in, a '
+                              'moisture meter and a hydro sensor, worked as a "double visual close" on the '
+                              'claim that 65% of people react to visuals; one extra closed job pays for '
+                              'all three [aBQA1Wn_LNQ @ 00:03:20]. On the phone, the script asks "what '
+                              'city do you live in?" and holds the full address until the job is sold '
+                              '[aBQA1Wn_LNQ @ 00:06:44].',
+                              'The paper carries specific numbers. Shane O\'Dazier sells "5 000 worth of '
+                              'agreements for under 50 bucks," built around a Clause 6 that bills any '
+                              'portion of a day as a full 24 hours with a three-day minimum on equipment '
+                              "rental, which strips the adjuster's main argument even though the check "
+                              'still has to be collected [b1-Dcqk4F9g @ 00:06:15]. The termination clause '
+                              'charges the customer 20% of the gross job if they fire the contractor after '
+                              "the estimate and negotiation; O'Dazier dismisses public-adjuster and "
+                              'legality objections, keeps an AOB-style right to endorse and deposit the '
+                              'check even where a state voids it, adds an attorney-fee provision, and '
+                              'calls California\'s roughly 10% deposit limit "stupid" and something to '
+                              "violate [b1-Dcqk4F9g @ 00:10:02]. Ed's CAT-work method phases emergency "
+                              'work into a fixed-price contract: price the first 24-48 hours, such as '
+                              '"half a dozen air movers and D U and and 10 labor hours," promise nothing '
+                              'about pre-loss condition, then follow up with a change order [t7tJ735gl4s @ '
+                              '00:03:48]. Against mortgage companies, Ed sends a photocopy of the check '
+                              'plus a contract obligating them to endorse and return it, and pairs an '
+                              "assignment with a direction to pay so the contractor's name lands on the "
+                              'check [t7tJ735gl4s @ 00:07:14].',
+                              'Paid-lead setup is equally specific. Vinnie Mac sets the LSA budget above '
+                              'intended spend, up to "99,999" a week, because franchises outbid smaller '
+                              'shops, notes that overnight calls cost more but are more profitable, and '
+                              'recommends $1,500-$2,000 a week: "I would not start out at $250 per week" '
+                              '[IDqwheOOgb0 @ 00:25:33]. Launch on automated bidding, move to target cost '
+                              "per lead after 30-60 days, ignore Google's leads-per-week projection "
+                              '("This is false"), answer message leads inside 30-60 minutes, and qualify '
+                              'callers within 60-90 seconds [O0STLVhCL2c @ 00:16:02]. On PPC, Restoration '
+                              'Growth Co shows the leak: four clicks at $34 each for one booked job is '
+                              '$136 per job, and the fix is shutting off broad match, search partners, '
+                              'display expansion and "presence or interest" location targeting, then '
+                              'adding campaign-level phrase negatives like salary, jobs, DIY, how to, '
+                              'certification and rental [zkR_04H9hBQ @ 00:06:07]. PushLeads prices '
+                              'emergency clicks at $50-100 against $3-15K jobs, so the account runs exact '
+                              'match, phrase at most, never broad, with urgency modifiers like emergency, '
+                              '24-7, near me, same day and after hours, CallRail counting calls over 1-2 '
+                              'minutes as conversions, and bids raised on nights and weekends [9FnufX3pXj4 '
+                              '@ 00:03:23].'],
+               'table': {'caption': 'Launch line items, paid-lead settings and contract numbers operators '
+                                    'actually use',
+                         'headers': ['Line Item',
+                                     'Figure or Setting',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Sprinter response van with full vehicle wrap',
+                                   'About $60K new, $6,500 wrap, roughly $800 per month financed',
+                                   'Scale the company by adding trucks instead of hiring middle managers',
+                                   'Restoration Success Strategies | Albi ([3PlUwHvZkxE @ 00:05:08])'],
+                                  ['Starter drying equipment package for first trucks',
+                                   '$45K buys 8 dehus, 80 air movers, 1 extractor, 4 scrubbers',
+                                   'Finance at 8-10% to protect the 60-90 day cash cushion',
+                                   'Restoration Success Strategies | Albi ([3PlUwHvZkxE @ 00:05:22])'],
+                                  ['On-site closing kit for the homeowner walkthrough',
+                                   'Infrared camera around $500-800, moisture meter and hydro sensor',
+                                   'Run a double visual close; one extra job pays for all three',
+                                   'Restoration Made Simple ([aBQA1Wn_LNQ @ 00:03:20])'],
+                                  ['LSA cost per lead by state market tier',
+                                   '$400-500 in CA, FL, TX and NY; $120-220 in IL, MO, OK and LA',
+                                   'Set weekly budgets against local lead cost before judging channel '
+                                   'performance',
+                                   'Water Damage Restoration Marketing - Vinnie Mac ([O0STLVhCL2c @ '
+                                   '00:35:33])'],
+                                  ['Starting LSA weekly budget for a new restoration profile',
+                                   '$1,500-$2,000 per week, never starting out at $250 per week',
+                                   'Fund enough volume to compete with franchises bidding in the same '
+                                   'market',
+                                   'Water Damage Restoration Marketing - Vinnie Mac ([IDqwheOOgb0 @ '
+                                   '00:36:19])'],
+                                  ['Real PPC cost per booked water damage job',
+                                   'Four clicks at $34 each for one booked job equals $136',
+                                   'Cut wrong-intent clicks instead of hunting for a cheaper cost per '
+                                   'click',
+                                   'Restoration Growth Co ([zkR_04H9hBQ @ 00:00:26])'],
+                                  ['Termination clause in the restoration agreement package',
+                                   'Customer owes 20% of the gross job after estimate and negotiation',
+                                   'Blocks homeowners from firing the contractor after the estimating work '
+                                   'is done',
+                                   "Shane O'Dazier | RestorationProfits ([b1-Dcqk4F9g @ 00:10:02])"]]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small settings that move lead cost and close rate',
+                           'body': 'Four low-effort adjustments the paid-lead operators run on live '
+                                   'restoration accounts.',
+                           'items': ['Mark every qualified LSA lead as booked even when the job is lost, '
+                                     'because "even if you didn\'t win the job market is booked because it '
+                                     'was a qualified that call call that came in" [Water Damage '
+                                     'Restoration Marketing - Vinnie Mac — IDqwheOOgb0 @ 00:30:42].',
+                                     'Keep "cost" and "cheap" as live search terms instead of negating '
+                                     'them: "That\'s the best term in your whole account" [Restoration '
+                                     'Growth Co — zkR_04H9hBQ @ 00:07:41].',
+                                     'Never pause an LSA campaign to save money; drop the budget to '
+                                     'something like $30 instead, since stopping and restarting acts as a '
+                                     'reset [Water Damage Restoration Marketing - Vinnie Mac — O0STLVhCL2c '
+                                     '@ 00:41:54].',
+                                     'Run a tracking number with a whisper that announces "Google Local '
+                                     'Service" so the person answering knows the lead source before saying '
+                                     'hello [Water Damage Restoration Marketing - Vinnie Mac — 2akNGTmJry8 '
+                                     '@ 00:28:28].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Paper the job before the first air mover',
+                              'action': 'Get the work authorization and reconstruction agreement signed, '
+                                        'then price the first 24-48 hours as a fixed-price phase.',
+                              'detail': 'Have the customer sign the work authorization for emergency work '
+                                        'and the reconstruction agreement before any estimate, signing '
+                                        "both when in doubt [Shane O'Dazier | RestorationProfits — "
+                                        'b1-Dcqk4F9g @ 00:03:50]; scope the first 24-48 hours at a fixed '
+                                        'price and handle the rest by change order [C&R Magazine — '
+                                        't7tJ735gl4s @ 00:03:48].'},
+                             {'step': 2,
+                              'title': 'Clear LSA verification and launch the budget',
+                              'action': 'Load the $1M liability COI, the IICRC firm certification with an '
+                                        'exact name match, and at least 3 Google reviews.',
+                              'detail': "Verification checks the owner's background, a certificate of "
+                                        'insurance showing $1M liability, an IICRC firm certification '
+                                        'costing a few hundred dollars with the name matching exactly, and '
+                                        'a profile with at least 3 reviews [Water Damage Restoration '
+                                        'Marketing - Vinnie Mac — O0STLVhCL2c @ 00:11:50].'},
+                             {'step': 3,
+                              'title': 'Lock down PPC intent every Monday',
+                              'action': 'Switch location targeting to presence, kill broad match, and read '
+                                        'the search terms report weekly.',
+                              'detail': 'Every Monday spend 20 minutes on the last 90 days of search terms '
+                                        'sorted by cost, reading the top 50 rows and adding phrase-match '
+                                        'negatives at campaign level [Restoration Growth Co — zkR_04H9hBQ '
+                                        '@ 00:08:37].'},
+                             {'step': 4,
+                              'title': 'Price off margin and write the phase budget',
+                              'action': 'Convert the target margin into markup, then write a '
+                                        'phase-by-phase budget that sums to the contract price.',
+                              'detail': 'A 30% margin requires a 43% markup, or $3,440 on an $8,000 job '
+                                        '[Roofing Insights — ppn4akh1gPo @ 00:02:55]; at signing, write a '
+                                        'phase-by-phase budget that sums exactly to the contract price and '
+                                        'classify every overrun as your miss or a change order [George '
+                                        'Gabriel — KnWhJDOPsTc @ 00:02:53].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Contract philosophy splits between an aggressive paper camp and a cautious '
+                              "lawyer camp. Shane O'Dazier tells operators to title the document an "
+                              "'agreement' to kill the 'not a contract' defense, sign it before writing "
+                              'any estimate, and keep the AOB clause even where a state voids it, because '
+                              'it works like a limited power of attorney to endorse and deposit the check '
+                              '[b1-Dcqk4F9g @ 00:08:02]. He stacks a termination clause billing 20% of the '
+                              'gross job if the homeowner fires the contractor after estimate and '
+                              'negotiation, dismisses PA and legality objections, and says he would '
+                              "violate California's roughly 10% deposit limit because it is 'stupid' "
+                              '[b1-Dcqk4F9g @ 00:10:02]. Ed, the Restoration Lawyer on C&R Magazine, runs '
+                              'the opposite play: phase emergency work into a fixed-price contract '
+                              'covering the first 24 to 48 hours, commit to nothing about pre-loss '
+                              "condition, follow up with a change order, and 'think twice' before using "
+                              'assignments in Florida after the insurer lobby passed its counter-law '
+                              '[t7tJ735gl4s @ 00:10:25]. Hans Kennan on Contractor Talk Podcast lands in '
+                              'the middle: with the Florida AOB ban hitting policies issued or renewed '
+                              'from 2023 onward, he pushes a service authorization with direction to pay '
+                              'on 90-day net terms and rejects contingency contracts [Tg526FvHOmY @ '
+                              '00:27:01].',
+                              'The billing stack splits just as hard. Albi of Restoration Success '
+                              'Strategies calls mandatory Xactimate a myth, pointing to Rhino Restoration '
+                              'reaching $3M on 95% retail work, and reports that 300+ attendees at the RAA '
+                              'conference said documentation did not speed payment, with his own data '
+                              "suggesting about 70% of dry logs are 'not real.' He adds that TPAs control "
+                              'only 10 to 15% of dollar volume, demand 2 years of history, and route work '
+                              'to top contractors by algorithm [3PlUwHvZkxE @ 00:09:35]. Restoration Made '
+                              'Simple bets the other way on paper: room-by-room Excel sheets catch missed '
+                              'line items on every job, and a dedicated self-pay sheet helped crews in '
+                              'Colorado and Utah close 3 to 5 more self-pay jobs a month [aBQA1Wn_LNQ @ '
+                              '00:05:33]. Payment timing is the sharpest contrast. Albi insists the '
+                              'homeowner, not the carrier, owes the bill, so the $2,000 to $3,000 '
+                              "deductible gets collected up front: 'that cash covers the payroll for the "
+                              "job, and the insurance check on the back end is just the profit' "
+                              '[3PlUwHvZkxE @ 00:14:12]. Kennan, speaking to homeowners on Contractor Talk '
+                              'Podcast, gives the opposite instruction: never pay up front, verify license '
+                              'and insurance, and lean toward big names such as SERVPRO [Tg526FvHOmY @ '
+                              '00:36:52]. Albi treats the deductible as the payroll engine; Kennan treats '
+                              'an up-front ask as the red flag.',
+                              'Even inside one agency, the Google playbook shifts year to year. Vinnie '
+                              "Mac's 2024 LSA session says 'go wider than narrow' on service areas, "
+                              'pushing a south Chicago account into Indiana for fringe opportunities '
+                              '[IDqwheOOgb0 @ 00:27:59]. The 2026 version narrows that advice: use cities '
+                              'and zip codes instead of counties when results are weak, and stop pushing '
+                              'outward because the account loses to competitors closer to the searcher '
+                              '[2akNGTmJry8 @ 00:25:28]. That same 2026 session flips credentials and '
+                              'budgets too, moving from a firm-level IICRC certification to a '
+                              'state-by-state IICRC or contractor license requirement, and from weekly to '
+                              'daily budgets under the Performance Max migration. On paid search, '
+                              "Restoration Growth Co tells operators to keep 'cost' and 'cheap' live, "
+                              "calling that 'the best term in your whole account,' and to route technician "
+                              'searches to a careers page through a separate $5/day campaign rather than '
+                              "only blocking them [zkR_04H9hBQ @ 00:07:41]. PushLeads preloads 'cheap' and "
+                              "'free' as negatives alongside job, salary, DIY, and out-of-area cities, "
+                              'runs exact match with phrase at most, never broad, and reviews the negative '
+                              'list weekly because every click in this vertical costs $50 to $100 '
+                              '[9FnufX3pXj4 @ 00:04:03].'],
+               'table': {'caption': 'Contested Restoration Launch Decisions: Side-by-Side Practitioner '
+                                    'Playbooks',
+                         'headers': ['Decision Point',
+                                     'Playbook A (As Taught)',
+                                     'Playbook B (As Taught)',
+                                     'Expert Source'],
+                         'rows': [['Contract posture on assignment and termination clauses',
+                                   'Keep the AOB clause even where a state voids it and charge 20% of '
+                                   'gross if fired after estimate',
+                                   'Phase emergency work into a fixed-price 24 to 48 hour contract and '
+                                   'think twice before Florida assignments',
+                                   "Shane O'Dazier | RestorationProfits ([b1-Dcqk4F9g @ 00:10:02]); C&R "
+                                   'Magazine ([t7tJ735gl4s @ 00:10:25])'],
+                                  ['Getting paid after the Florida AOB ban took hold',
+                                   'Service authorization with direction to pay, 90-day net terms, plus a '
+                                   'letter of protection on insurance proceeds',
+                                   "Assignment plus direction to pay so the contractor's name lands on the "
+                                   'check past the mortgage company',
+                                   'Contractor Talk Podcast ([Tg526FvHOmY @ 00:42:17]); C&R Magazine '
+                                   '([t7tJ735gl4s @ 00:07:14])'],
+                                  ['Whether a new shop should touch reconstruction work at all',
+                                   'Mitigation only at 70%+ gross until $3M to $5M, refer rebuilds to a GC '
+                                   'for 10% kickback',
+                                   'Homeowners ask full-service firms whether reconstruction is in-house '
+                                   'or subcontracted before hiring them',
+                                   'Restoration Success Strategies | Albi ([3PlUwHvZkxE @ 00:03:24]); '
+                                   'PushLeads ([wnVxHv3JM28 @ 00:04:54])'],
+                                  ['Choosing the second referral source after online marketing',
+                                   'Prefer plumbers over insurance agents as the second lead source behind '
+                                   'Google channels',
+                                   'Route relationship marketing across agents, plumbers, and property '
+                                   'managers with commission-paid relationship managers',
+                                   'Restoration Success Strategies | Albi ([3PlUwHvZkxE @ 00:08:55]); '
+                                   'Restoration Success Strategies | Albi ([MDZLPIkMaI8 @ 00:05:44])'],
+                                  ['Drawing the LSA service area at launch and after',
+                                   'Go wider than narrow, stretching south Chicago into Indiana for fringe '
+                                   'opportunities',
+                                   'Start with a tight home-base area and use cities and zip codes instead '
+                                   'of whole counties',
+                                   'Water Damage Restoration Marketing - Vinnie Mac ([IDqwheOOgb0 @ '
+                                   '00:27:59]); Water Damage Restoration Marketing - Vinnie Mac '
+                                   '([O0STLVhCL2c @ 00:21:11])'],
+                                  ["Treating 'cheap' and job-seeker searches in Google Ads",
+                                   "Keep 'cost' and 'cheap' live and send technician searches to a $5/day "
+                                   'careers campaign',
+                                   'Preload cheap, free, job, salary, and DIY as negatives and review them '
+                                   'every week',
+                                   'Restoration Growth Co ([zkR_04H9hBQ @ 00:07:41]); PushLeads '
+                                   '([9FnufX3pXj4 @ 00:04:03])'],
+                                  ['Reading the LSA migration into Performance Max for Pay-Per-Lead',
+                                   "Google is migrating poorly, one client's bids landed 40% below "
+                                   'suggested, fix with API access and AI audit',
+                                   'Export data now, clean the GBP, and ride out up to a 2-week '
+                                   'stabilization period',
+                                   'PushLeads ([9FnufX3pXj4 @ 00:08:04]); Hook Agency ([BCYwigE5kQU @ '
+                                   '00:04:51])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Lead spend bleeds before a truck ever rolls. Restoration Growth Co breaks '
+                              'down one booked job from four $34 clicks, a true $136 per job, where the '
+                              "other three clicks were a technician hunting 'jobs,' a DIY 'how to' "
+                              'searcher, and a landlord 200 miles away; the fix is not cheaper CPC but '
+                              "shutting off broad match, search partners, display expansion, and 'presence "
+                              "or interest' location targeting [zkR_04H9hBQ @ 00:00:26]. PushLeads raises "
+                              "the stakes with $50 to $100 clicks and warns that 'no one is filling out a "
+                              "form,' so the phone has to be staffed live 24/7 with bids raised on nights "
+                              "and weekends [9FnufX3pXj4 @ 00:04:23]. On LSA, Vinnie Mac calls Google's "
+                              "weekly lead projections 'false' peak numbers and notes dispute credits land "
+                              '30 to 45 days later as next-month offsets, not card refunds [IDqwheOOgb0 @ '
+                              '00:16:40]. The 2026 session lists the self-inflicted wounds: starting and '
+                              'stopping a campaign acts as a reset, one or two missed calls kill a '
+                              'profile, expired documents knock the account offline, unresolved Google '
+                              'Business Profile suspensions linger, and Google still charges when the '
+                              'operator refers a caller to another company [2akNGTmJry8 @ 00:36:16]. The '
+                              'cure he teaches is lowering hours, bid, or territory instead of pausing '
+                              'outright.',
+                              'Margin dies twice, once in the pricing math and again in the field. Roofing '
+                              'Insights shows a $10,000 price on $8,000 cost is a 20% margin but a 25% '
+                              "markup, and blames contractors 'thinking in dollars and not percentages'; "
+                              'hitting 30% on that $8,000 job takes a 43% markup, or $3,440 [ppn4akh1gPo @ '
+                              '00:01:58]. George Gabriel walks one job where a second dumpster haul '
+                              '($450), two bundles short ($180), and a second shingle layer at 25 squares '
+                              'times $25 ($625) stacked into a $1,255 overrun that dropped margin from 33% '
+                              'to 25%, against a net profit band of only 6 to 12% [KnWhJDOPsTc @ '
+                              '00:02:03]. His insurance-work warning is blunt: the carrier sets the price, '
+                              "so 'you can't fix a thin job by putting more markup on it,' and cost is the "
+                              'only lever; his fix is a phase-by-phase budget written at signing that sums '
+                              'exactly to the contract price, with every overrun classed as either the '
+                              "contractor's miss or a change order [KnWhJDOPsTc @ 00:04:04]. On the "
+                              "Roofing Insights growth panel, Alex describes a 7pm 'money in/money out' "
+                              'report that flags every job under 35% margin in red, replacing the 4 to 6 '
+                              'month margin lag of after-the-fact accounting [evwV66xRf4I @ 00:47:08].',
+                              'Collections is where unsigned paper and slow timelines cost real money. '
+                              "Shane O'Dazier warns that without a signed agreement before the estimate, "
+                              'the homeowner gets the check and stops returning calls, a trap he ties '
+                              'directly to re-roofs, and he refuses to give free estimates at all '
+                              '[b1-Dcqk4F9g @ 00:03:24]. His 3-day minimum rental clause, counting any '
+                              "portion of a day as a full 24 hours, strips the adjuster's argument but "
+                              'still does not guarantee payment [b1-Dcqk4F9g @ 00:07:36]. In Florida, '
+                              'Kennan lays out the squeeze: insurers now pay or deny within 60 days '
+                              'instead of 90, contractors hold a 90-day lien window, and that leaves '
+                              'roughly 30 days to appraise, mediate, or litigate [Tg526FvHOmY @ 00:41:11]. '
+                              'Ed adds the mortgage-company trap, protecting against it by sending a '
+                              'photocopy of the check plus a contract obligating the lender to endorse and '
+                              "return it, and recounts forcing carriers to pay a second time 'because the "
+                              'policyholder ran off to Hawaii with the money or used the money to pay off '
+                              "the mortgage' [t7tJ735gl4s @ 00:16:05]. His escalation rule is not too fast "
+                              'and not too slow, because older debts are harder to collect, and never '
+                              'experiment with mechanics liens because the deadlines are strict.'],
+               'table': {'caption': 'Firsthand Restoration Launch Failure Modes and the Economics Check '
+                                    'Practitioners Run',
+                         'headers': ['Failure Mode',
+                                     'What Went Wrong Firsthand',
+                                     'Economics Check or Fix Taught',
+                                     'Expert Source'],
+                         'rows': [['Homeowner hires the general contractor before the restoration company',
+                                   'Mold grows within 24 to 48 hours and the carrier may then deny the '
+                                   'mold claim',
+                                   'Restoration always comes first, and smoke scope finishes before any '
+                                   'new drywall goes up',
+                                   'PushLeads ([wnVxHv3JM28 @ 00:03:11])'],
+                                  ['Default Google Ads settings widen the audience past real buyers',
+                                   'Four $34 clicks produced one booked job, a true cost of $136 per job',
+                                   'Search terms report, presence-only targeting, phrase-match negatives, '
+                                   'and a Monday 20-minute review of the top 50 rows',
+                                   'Restoration Growth Co ([zkR_04H9hBQ @ 00:08:37])'],
+                                  ['LSA account botched during the Performance Max migration',
+                                   'Bids set 40% below suggested, service types left incomplete, and '
+                                   'performance history did not transfer',
+                                   'Export data before migration, get API access, and have an AI audit the '
+                                   'account settings',
+                                   'PushLeads ([9FnufX3pXj4 @ 00:08:04]); Hook Agency ([BCYwigE5kQU @ '
+                                   '00:02:10])'],
+                                  ['Several industries stacked on one LSA profile at launch',
+                                   'Multiple industries on a single profile eat the budget meant for water '
+                                   'calls',
+                                   'Lower the budget to something like $30 instead of stopping ads and '
+                                   'resetting the campaign',
+                                   'Water Damage Restoration Marketing - Vinnie Mac ([O0STLVhCL2c @ '
+                                   '00:19:58])'],
+                                  ['Margin leaking out of a job after it is already sold',
+                                   'A $1,255 overrun from dumpsters, short bundles, and a second layer cut '
+                                   'margin from 33% to 25%',
+                                   'Write a phase-by-phase budget at signing that sums exactly to the '
+                                   'contract price',
+                                   'George Gabriel ([KnWhJDOPsTc @ 00:02:53])'],
+                                  ['CRM and marketing software built wrong at growth stage',
+                                   'About $250K into Salesforce the org was scrapped, Marketing Cloud lost '
+                                   'about $40K, and Pardot caused a 2-day lockout',
+                                   'Rebuild around a custom projects object by product family and keep '
+                                   'full backups afterward',
+                                   'Roofing Insights ([evwV66xRf4I @ 00:37:44])'],
+                                  ['Phones ring around the clock but calls never convert',
+                                   'The business runs 24/7, and a ringing phone does no good without '
+                                   'conversion on the call',
+                                   'Ask what city the caller lives in first and take the full address only '
+                                   'after the job is sold',
+                                   'Restoration Made Simple ([aBQA1Wn_LNQ @ 00:06:44])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Gates Before Spending on Leads or Rolling Equipment',
+                           'body': 'Each gate below comes from a loss, reversal, or bottleneck a '
+                                   'practitioner hit firsthand. Clear all four before scaling ad spend or '
+                                   'adding trucks.',
+                           'items': ['Paper gate: the signed agreement is in hand before any estimate is '
+                                     'written, with no free estimates, so the homeowner cannot take the '
+                                     "check and go silent [Shane O'Dazier | RestorationProfits — "
+                                     'b1-Dcqk4F9g @ 00:02:15].',
+                                     'Timeline gate: on Florida claims, map the 60-day pay-or-deny clock '
+                                     'against the 90-day lien window so the roughly 30 days left for '
+                                     'appraisal, mediation, or litigation are not burned [Contractor Talk '
+                                     'Podcast — Tg526FvHOmY @ 00:19:47].',
+                                     'Phone gate: every LSA call is answered live with no voicemail or AI '
+                                     'answering service, because one or two missed calls kill a profile '
+                                     '[Water Damage Restoration Marketing - Vinnie Mac — 2akNGTmJry8 @ '
+                                     '00:35:15].',
+                                     'Margin gate: every job carries a written landing budget before work '
+                                     'starts, because a job sliding cannot be caught without one [George '
+                                     'Gabriel — KnWhJDOPsTc @ 00:02:28].']}}],
+ 'pull_quote': "'You can't catch a job sliding if you never wrote down where it was supposed to land.' — "
+               'George Gabriel (KnWhJDOPsTc @ 00:02:28).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Line up $50K to $200K of purchasing power including loans, then put about $45K into '
+                      '8 dehus, 80 air movers, 1 extractor, and 4 scrubbers at 8 to 10%, keeping a 60 to '
+                      '90 day cash cushion [Restoration Success Strategies | Albi — 3PlUwHvZkxE @ '
+                      '00:05:22].',
+                      'Spend the first $1,000 to $2,000 on education and take WRT and ASD together with '
+                      'hands-on work at a flood house [Restoration Made Simple — aBQA1Wn_LNQ @ 00:02:10].',
+                      'Clear LSA verification: owner background check, a Certificate of Insurance showing '
+                      '$1M liability, an IICRC firm certification whose name matches Google exactly, and '
+                      'at least 3 reviews [Water Damage Restoration Marketing - Vinnie Mac — O0STLVhCL2c @ '
+                      '00:11:50].',
+                      "Put a tracking number with a 'Google Local Service' whisper on the profile and "
+                      'qualify every caller on issue, location, homeowner status, decision-maker, and '
+                      'insurance [Water Damage Restoration Marketing - Vinnie Mac — 2akNGTmJry8 @ '
+                      '00:28:42].',
+                      'Every Monday, pull the search terms report for the last 90 days, sort by cost, read '
+                      'the top 50 rows, and add phrase-match negatives at the campaign level [Restoration '
+                      'Growth Co — zkR_04H9hBQ @ 00:08:37].',
+                      'Get a signature first from the party responsible for paying, price the first 24 to '
+                      '48 hours as a fixed-price phase, and follow up with a change order [C&R Magazine — '
+                      't7tJ735gl4s @ 00:03:31].'],
+ 'statutory_citations': [{'title': "Shane O'Dazier | RestorationProfits — Contractor Contracts vs "
+                                   'Restoration Contracts [00:08:02]',
+                          'url': 'https://www.youtube.com/watch?v=b1-Dcqk4F9g&t=482s',
+                          'relevance': 'Primary practitioner testimony on AOB clauses, termination fees, '
+                                       'and 3-day minimum rental language in restoration agreements.'},
+                         {'title': 'Contractor Talk Podcast — Shifting Sands: The Move from AOB to '
+                                   'Direction to Pay in Florida Restoration Contracting [00:27:01]',
+                          'url': 'https://www.youtube.com/watch?v=Tg526FvHOmY&t=1621s',
+                          'relevance': 'Primary practitioner testimony on service authorizations, '
+                                       'direction to pay, and letters of protection after the Florida AOB '
+                                       'ban.'},
+                         {'title': 'C&R Magazine — Assignment of Benefits: The Key to Recovering Fair '
+                                   'Market Value for Restoration Services [00:09:23]',
+                          'url': 'https://www.youtube.com/watch?v=t7tJ735gl4s&t=563s',
+                          'relevance': 'Primary practitioner testimony on assignment of insurance rights, '
+                                       'collection steps, and mortgage-company check traps.'},
+                         {'title': 'George Gabriel — Why Contractors Lose Margin After the Job Is Sold '
+                                   '[00:02:03]',
+                          'url': 'https://www.youtube.com/watch?v=KnWhJDOPsTc&t=123s',
+                          'relevance': 'Primary practitioner testimony on post-sale margin leakage and '
+                                       'phase-by-phase job budgeting.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '3PlUwHvZkxE',
+                       'title': 'How to Start a Water Damage Restoration Company in 2026',
+                       'channel': 'Restoration Success Strategies | Albi',
+                       'author': 'Restoration Success Strategies | Albi',
+                       'text': 'Simple scales and complex fails.',
+                       'tip': 'Simple scales and complex fails.',
+                       'timestamp': 204,
+                       'timestamp_seconds': 204,
+                       'timestamp_label': '[00:03:24]',
+                       'url': 'https://www.youtube.com/watch?v=3PlUwHvZkxE&t=204s',
+                       'markdown': '[00:03:24](https://www.youtube.com/watch?v=3PlUwHvZkxE&t=204s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3PlUwHvZkxE',
+                       'title': 'How to Start a Water Damage Restoration Company in 2026',
+                       'channel': 'Restoration Success Strategies | Albi',
+                       'author': 'Restoration Success Strategies | Albi',
+                       'text': 'And that cash covers the payroll for the job, and the insurance check on '
+                               'the back end is just the profit.',
+                       'tip': 'And that cash covers the payroll for the job, and the insurance check on '
+                              'the back end is just the profit.',
+                       'timestamp': 852,
+                       'timestamp_seconds': 852,
+                       'timestamp_label': '[00:14:12]',
+                       'url': 'https://www.youtube.com/watch?v=3PlUwHvZkxE&t=852s',
+                       'markdown': '[00:14:12](https://www.youtube.com/watch?v=3PlUwHvZkxE&t=852s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aBQA1Wn_LNQ',
+                       'title': 'Restoration Made Simple - How to start a water damage business',
+                       'channel': 'Restoration Made Simple',
+                       'author': 'Restoration Made Simple',
+                       'text': "Doesn't do us any good to get the phone to ring if we can't convert them.",
+                       'tip': "Doesn't do us any good to get the phone to ring if we can't convert them.",
+                       'timestamp': 187,
+                       'timestamp_seconds': 187,
+                       'timestamp_label': '[00:03:07]',
+                       'url': 'https://www.youtube.com/watch?v=aBQA1Wn_LNQ&t=187s',
+                       'markdown': '[00:03:07](https://www.youtube.com/watch?v=aBQA1Wn_LNQ&t=187s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wnVxHv3JM28',
+                       'title': "Restoration Company vs General Contractor: What's the Difference?",
+                       'channel': 'PushLeads',
+                       'author': 'PushLeads',
+                       'text': 'The restoration company always comes first.',
+                       'tip': 'The restoration company always comes first.',
+                       'timestamp': 61,
+                       'timestamp_seconds': 61,
+                       'timestamp_label': '[00:01:01]',
+                       'url': 'https://www.youtube.com/watch?v=wnVxHv3JM28&t=61s',
+                       'markdown': '[00:01:01](https://www.youtube.com/watch?v=wnVxHv3JM28&t=61s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'b1-Dcqk4F9g',
+                       'title': 'Contractor Contracts vs Restoration Contracts',
+                       'channel': "Shane O'Dazier | RestorationProfits",
+                       'author': "Shane O'Dazier | RestorationProfits",
+                       'text': '5 000 worth of agreements for under 50 bucks.',
+                       'tip': '5 000 worth of agreements for under 50 bucks.',
+                       'timestamp': 46,
+                       'timestamp_seconds': 46,
+                       'timestamp_label': '[00:00:46]',
+                       'url': 'https://www.youtube.com/watch?v=b1-Dcqk4F9g&t=46s',
+                       'markdown': '[00:00:46](https://www.youtube.com/watch?v=b1-Dcqk4F9g&t=46s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Tg526FvHOmY',
+                       'title': 'Shifting Sands: The Move from AOB to Direction to Pay in Florida '
+                                'Restoration Contracting',
+                       'channel': 'Contractor Talk Podcast',
+                       'author': 'Contractor Talk Podcast',
+                       'text': 'A letter of protection puts the lien on the insurance proceeds instead of '
+                               'the home, and it converts to cash a lot faster.',
+                       'tip': 'A letter of protection puts the lien on the insurance proceeds instead of '
+                              'the home, and it converts to cash a lot faster.',
+                       'timestamp': 2537,
+                       'timestamp_seconds': 2537,
+                       'timestamp_label': '[00:42:17]',
+                       'url': 'https://www.youtube.com/watch?v=Tg526FvHOmY&t=2537s',
+                       'markdown': '[00:42:17](https://www.youtube.com/watch?v=Tg526FvHOmY&t=2537s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IDqwheOOgb0',
+                       'title': 'Water Damage Google Local Services Ads: Everything You Need to Know',
+                       'channel': 'Water Damage Restoration Marketing - Vinnie Mac',
+                       'author': 'Water Damage Restoration Marketing - Vinnie Mac',
+                       'text': 'my recommendation on service areas is that go wider than narrow.',
+                       'tip': 'my recommendation on service areas is that go wider than narrow.',
+                       'timestamp': 1679,
+                       'timestamp_seconds': 1679,
+                       'timestamp_label': '[00:27:59]',
+                       'url': 'https://www.youtube.com/watch?v=IDqwheOOgb0&t=1679s',
+                       'markdown': '[00:27:59](https://www.youtube.com/watch?v=IDqwheOOgb0&t=1679s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IDqwheOOgb0',
+                       'title': 'Water Damage Google Local Services Ads: Everything You Need to Know',
+                       'channel': 'Water Damage Restoration Marketing - Vinnie Mac',
+                       'author': 'Water Damage Restoration Marketing - Vinnie Mac',
+                       'text': 'you set a weekly budget and they will give you an estimate on how many '
+                               'leads they feel um you could potentially get and that range is going to be '
+                               "false I'm just telling you right now.",
+                       'tip': 'you set a weekly budget and they will give you an estimate on how many '
+                              'leads they feel um you could potentially get and that range is going to be '
+                              "false I'm just telling you right now.",
+                       'timestamp': 1000,
+                       'timestamp_seconds': 1000,
+                       'timestamp_label': '[00:16:40]',
+                       'url': 'https://www.youtube.com/watch?v=IDqwheOOgb0&t=1000s',
+                       'markdown': '[00:16:40](https://www.youtube.com/watch?v=IDqwheOOgb0&t=1000s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2akNGTmJry8',
+                       'title': 'Google Local Service Ads For Water Damage Restoration Companies '
+                                'Everything You Need To Know In 2026',
+                       'channel': 'Water Damage Restoration Marketing - Vinnie Mac',
+                       'author': 'Water Damage Restoration Marketing - Vinnie Mac',
+                       'text': 'And then most importantly, pick up the damn phone.',
+                       'tip': 'And then most importantly, pick up the damn phone.',
+                       'timestamp': 2115,
+                       'timestamp_seconds': 2115,
+                       'timestamp_label': '[00:35:15]',
+                       'url': 'https://www.youtube.com/watch?v=2akNGTmJry8&t=2115s',
+                       'markdown': '[00:35:15](https://www.youtube.com/watch?v=2akNGTmJry8&t=2115s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'O0STLVhCL2c',
+                       'title': 'Water Damage Google Local Services Ads - Everything You Need To Know - '
+                                'Restoration Marketing',
+                       'channel': 'Water Damage Restoration Marketing - Vinnie Mac',
+                       'author': 'Water Damage Restoration Marketing - Vinnie Mac',
+                       'text': 'What we find is about 80% of the phone calls come from either Google '
+                               'Guaranteed or Google Maps.',
+                       'tip': 'What we find is about 80% of the phone calls come from either Google '
+                              'Guaranteed or Google Maps.',
+                       'timestamp': 534,
+                       'timestamp_seconds': 534,
+                       'timestamp_label': '[00:08:54]',
+                       'url': 'https://www.youtube.com/watch?v=O0STLVhCL2c&t=534s',
+                       'markdown': '[00:08:54](https://www.youtube.com/watch?v=O0STLVhCL2c&t=534s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zkR_04H9hBQ',
+                       'title': 'The Hidden Cost of Water Damage Google Ads (And How to Stop It!)',
+                       'channel': 'Restoration Growth Co',
+                       'author': 'Restoration Growth Co',
+                       'text': "Change six things at once and you'll learn nothing about which one "
+                               'mattered.',
+                       'tip': "Change six things at once and you'll learn nothing about which one "
+                              'mattered.',
+                       'timestamp': 560,
+                       'timestamp_seconds': 560,
+                       'timestamp_label': '[00:09:20]',
+                       'url': 'https://www.youtube.com/watch?v=zkR_04H9hBQ&t=560s',
+                       'markdown': '[00:09:20](https://www.youtube.com/watch?v=zkR_04H9hBQ&t=560s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9FnufX3pXj4',
+                       'title': 'How do you set up Google Ads for emergency contractors in 2026?',
+                       'channel': 'PushLeads',
+                       'author': 'PushLeads',
+                       'text': 'Because these are fifty to a hundred dollar clicks.',
+                       'tip': 'Because these are fifty to a hundred dollar clicks.',
+                       'timestamp': 263,
+                       'timestamp_seconds': 263,
+                       'timestamp_label': '[00:04:23]',
+                       'url': 'https://www.youtube.com/watch?v=9FnufX3pXj4&t=263s',
+                       'markdown': '[00:04:23](https://www.youtube.com/watch?v=9FnufX3pXj4&t=263s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BCYwigE5kQU',
+                       'title': 'Google Just Killed the LSAs: What Every Contractor Needs to Know (August '
+                                '2026)',
+                       'channel': 'Hook Agency',
+                       'author': 'Hook Agency',
+                       'text': 'Your historical data does not transfer.',
+                       'tip': 'Your historical data does not transfer.',
+                       'timestamp': 130,
+                       'timestamp_seconds': 130,
+                       'timestamp_label': '[00:02:10]',
+                       'url': 'https://www.youtube.com/watch?v=BCYwigE5kQU&t=130s',
+                       'markdown': '[00:02:10](https://www.youtube.com/watch?v=BCYwigE5kQU&t=130s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ppn4akh1gPo',
+                       'title': 'How To price a Job? Profit Margin Vs Markup: Most Roofing Contractors '
+                                "don't know this",
+                       'channel': 'Roofing Insights',
+                       'author': 'Roofing Insights',
+                       'text': 'to make a 30% on $8,000 job you you need a 43% markup that comes out to '
+                               '3,440.',
+                       'tip': 'to make a 30% on $8,000 job you you need a 43% markup that comes out to '
+                              '3,440.',
+                       'timestamp': 175,
+                       'timestamp_seconds': 175,
+                       'timestamp_label': '[00:02:55]',
+                       'url': 'https://www.youtube.com/watch?v=ppn4akh1gPo&t=175s',
+                       'markdown': '[00:02:55](https://www.youtube.com/watch?v=ppn4akh1gPo&t=175s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KnWhJDOPsTc',
+                       'title': 'Why Contractors Lose Margin After the Job Is Sold',
+                       'channel': 'George Gabriel',
+                       'author': 'George Gabriel',
+                       'text': "You can't catch a job sliding if you never wrote down where it was "
+                               'supposed to land.',
+                       'tip': "You can't catch a job sliding if you never wrote down where it was supposed "
+                              'to land.',
+                       'timestamp': 148,
+                       'timestamp_seconds': 148,
+                       'timestamp_label': '[00:02:28]',
+                       'url': 'https://www.youtube.com/watch?v=KnWhJDOPsTc&t=148s',
+                       'markdown': '[00:02:28](https://www.youtube.com/watch?v=KnWhJDOPsTc&t=148s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MDZLPIkMaI8',
+                       'title': 'The Ultimate Guide To Water Damage Restoration: Everything You Need To '
+                                'Know',
+                       'channel': 'Restoration Success Strategies | Albi',
+                       'author': 'Restoration Success Strategies | Albi',
+                       'text': 'most companies can get to about a million dollars of Revenue just by doing '
+                               'online marketing.',
+                       'tip': 'most companies can get to about a million dollars of Revenue just by doing '
+                              'online marketing.',
+                       'timestamp': 282,
+                       'timestamp_seconds': 282,
+                       'timestamp_label': '[00:04:42]',
+                       'url': 'https://www.youtube.com/watch?v=MDZLPIkMaI8&t=282s',
+                       'markdown': '[00:04:42](https://www.youtube.com/watch?v=MDZLPIkMaI8&t=282s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 't7tJ735gl4s',
+                       'title': 'Assignment of Benefits: The Key to Recovering Fair Market Value for '
+                                'Restoration Services',
+                       'channel': 'C&R Magazine',
+                       'author': 'C&R Magazine',
+                       'text': 'We have forced them to pay a second time because the policyholder ran off '
+                               'to Hawaii with the money or used the money to pay off the mortgage.',
+                       'tip': 'We have forced them to pay a second time because the policyholder ran off '
+                              'to Hawaii with the money or used the money to pay off the mortgage.',
+                       'timestamp': 965,
+                       'timestamp_seconds': 965,
+                       'timestamp_label': '[00:16:05]',
+                       'url': 'https://www.youtube.com/watch?v=t7tJ735gl4s&t=965s',
+                       'markdown': '[00:16:05](https://www.youtube.com/watch?v=t7tJ735gl4s&t=965s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'evwV66xRf4I',
+                       'title': '$14M to $55M: Contractors Are Doing This Wrong',
+                       'channel': 'Roofing Insights',
+                       'author': 'Roofing Insights',
+                       'text': "we don't do data entry, we do data capture.",
+                       'tip': "we don't do data entry, we do data capture.",
+                       'timestamp': 787,
+                       'timestamp_seconds': 787,
+                       'timestamp_label': '[00:13:07]',
+                       'url': 'https://www.youtube.com/watch?v=evwV66xRf4I&t=787s',
+                       'markdown': '[00:13:07](https://www.youtube.com/watch?v=evwV66xRf4I&t=787s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'}]}

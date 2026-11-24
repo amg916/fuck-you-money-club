@@ -1,771 +1,461 @@
+"""Diagram specifications for Volume 028: Commercial Cleaning Contracts."""
+
 from __future__ import annotations
 
+from typing import Any, Dict, List
+
 VOLUME_028_SUBTITLE: str = (
-    "The Complete Playbook for Commercial Cleaning Contracts: "
-    "$250,000–$1,200,000 USD in Annual Contract Revenue, "
-    "from a 1 FT + 3 C (4 People) Pod to a 6-Person Team"
+    "From a sub-$1,000 launch and 100 calls a day to production-rate bids, "
+    "loaded-wage margins, porter and medical accounts, public bids, "
+    "QR-verified quality, BBP-ready teams, W2 control, and the franchise fee "
+    "traps that turn owners into glorified employees"
 )
 
-VOLUME_028_POSITIONING_ALTERNATIVES: list[dict] = [
+
+def build_volume_028_diagrams_data() -> List[Dict[str, Any]]:
+    """Return the eight practitioner-grounded diagram specifications."""
+    return [
+        {
+            "diagram_id": "diag-01-lean-launch-sequence",
+            "chapter_number": 1,
+            "chart_type": "process_flow",
+            "title": "The Sub-$1,000 Launch Sequence",
+            "subtitle": "Spend on the phone first, buy insurance and supplies only when a deal closes",
+            "caption": (
+                "AJ Simmons sequences a lean launch around a $99 CBN membership, a $200 LLC "
+                "budget, a $25 domain and 400 cold calls in week one, deferring insurance and "
+                "supplies until a contract is ready to close."
+            ),
+            "assumptions_note": (
+                "Step order follows AJ Simmons's launch plan and operator gates. Dollar figures "
+                "and call counts are his attributed claims; funnel yields are his ranges, not "
+                "guarantees."
+            ),
+            "note": (
+                "Source AJ SIMMONS (VrlDbQP4iQI at 00:14:20, 00:15:12, 00:16:03; QBuGc_Q36dg at "
+                "00:05:39; mk-8avM72Ms at 00:02:52)."
+            ),
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Lean launch kit",
+                    "value": "Step 1",
+                    "detail": "$99 CBN membership, $200 LLC budget and a $25 domain; no supplies bought yet.",
+                },
+                {
+                    "step": "02",
+                    "label": "400 calls in week one",
+                    "value": "Step 2",
+                    "detail": "Call 100 businesses Monday through Friday; 400 calls yield 1-4 walkthroughs.",
+                },
+                {
+                    "step": "03",
+                    "label": "Measure cleanable footage",
+                    "value": "Step 3",
+                    "detail": "Laser-measure only cleanable square footage; bidding the whole building sends the price too high.",
+                },
+                {
+                    "step": "04",
+                    "label": "Proposal within 2-3 hours",
+                    "value": "Step 4",
+                    "detail": "Slow turnaround turns the walkthrough into wasted time.",
+                },
+                {
+                    "step": "05",
+                    "label": "Close, then insure and stock",
+                    "value": "Step 5",
+                    "detail": "Buy the quoted policy and supplies at close; push upfront payment, otherwise net 10 or net 15.",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-02-big-account-math-funnel",
+            "chapter_number": 6,
+            "chart_type": "funnel",
+            "title": "Big-Account Math, From Portfolio to Porter Bill Rate",
+            "subtitle": "Five $5k accounts down to the $26 hour that prices a day porter",
+            "caption": (
+                "Five $5k accounts equal $300,000 a year, and a 4-hour labor-only day porter "
+                "prices at $2,262 a month on 87 billable hours at a $26 bill rate."
+            ),
+            "assumptions_note": (
+                "Values mix units by design and narrow from annual portfolio revenue to a single "
+                "bill-rate hour. Every figure is stated by the practitioners; none is modeled."
+            ),
+            "note": (
+                "Sources The Janitorial Store (1c9Ty46MQbg at 00:01:28) for porter pricing; "
+                "Big Accounts chapter summary for the five $5k accounts figure; OctoClean Media "
+                "(52I2LNERY3E at 00:20:41) for the wage-plus-load gate."
+            ),
+            "stages": [
+                {
+                    "label": "Five $5k office accounts",
+                    "value": 300000,
+                    "display": "$300,000 a year",
+                    "conversion": "Portfolio target",
+                    "detail": "Five accounts at $5,000 a month each.",
+                },
+                {
+                    "label": "One $5k office account",
+                    "value": 5000,
+                    "display": "$5,000 a month",
+                    "conversion": "One of five accounts",
+                    "detail": "Large accounts carry 35-40% gross margin versus about 50-60% on small ones.",
+                },
+                {
+                    "label": "4-hour day porter price",
+                    "value": 2262,
+                    "display": "$2,262 a month",
+                    "conversion": "87 hrs x $26",
+                    "detail": "Labor-only porter, 4 hours a day, 5 days, 10am-2pm.",
+                },
+                {
+                    "label": "Porter billable hours",
+                    "value": 87,
+                    "display": "87 hours a month",
+                    "conversion": "1,040 hrs a year divided by 12, rounded",
+                    "detail": "A day porter can handle a zone of about 30 to 40 bathroom fixtures.",
+                },
+                {
+                    "label": "Porter bill rate",
+                    "value": 26,
+                    "display": "$26 an hour",
+                    "conversion": "$18 wage loaded with taxes and profit",
+                    "detail": "Bidding $16 on a $15 wage loses money on every hour.",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-03-cold-call-attrition-waterfall",
+            "chapter_number": 3,
+            "chart_type": "waterfall",
+            "title": "100 Cold Calls Down to 2 Walkthroughs",
+            "subtitle": "Cold calling opens a door rather than closing a deal",
+            "caption": (
+                "Carolyn Arellano's funnel turns 100 calls into 20-30 reached, 10-15 "
+                "conversations, 3-5 qualified and 1-2 walkthroughs; 8 walkthroughs a month at a "
+                "25% close rate equal 2 contracts a month."
+            ),
+            "assumptions_note": (
+                "Bars use the upper end of each stated range (30 reached, 15 conversations, "
+                "5 qualified, 2 walkthroughs). Deductions are the gaps between those stated stages."
+            ),
+            "note": "Source Carolyn Arellano (xJ6TUBTc4Qo at 00:01:58 and 00:03:26).",
+            "bars": [
+                {"label": "Cold calls dialed", "value": 100, "display": "100 calls", "kind": "total"},
+                {"label": "Never reached", "value": 70, "display": "-70 (20-30 reached)", "kind": "deduction"},
+                {"label": "Reached, no conversation", "value": 15, "display": "-15 (10-15 conversations)", "kind": "deduction"},
+                {"label": "Conversation, not qualified", "value": 10, "display": "-10 (3-5 qualified)", "kind": "deduction"},
+                {"label": "Qualified, no walkthrough", "value": 3, "display": "-3 (1-2 walkthroughs)", "kind": "deduction"},
+                {"label": "Walkthroughs booked", "value": 2, "display": "1-2 walkthroughs", "kind": "result"},
+            ],
+        },
+        {
+            "diagram_id": "diag-04-first-contract-percentages",
+            "chapter_number": 2,
+            "chart_type": "horizontal_bars",
+            "title": "The Percentages Behind the First Contract",
+            "subtitle": "Won on dependability and margin discipline, not the lowest bid",
+            "unit": "percent",
+            "caption": (
+                "Roughly 90% of commercial prospects already have a cleaner; refusing to be the "
+                "cheapest bid lifted one closing rate from 10% to 25-35%, while margin floors sit "
+                "at 30% with about 25% for strategic accounts."
+            ),
+            "assumptions_note": (
+                "Where a practitioner gave a range without a typical value, typical is the "
+                "midpoint of that range. Single-point claims use the same figure for min, max "
+                "and typical."
+            ),
+            "note": (
+                "Sources Cleaning Launch (V84a_KWRYU4 at 00:01:22); ONLY MAIDS PODCAST with "
+                "Joseph D Adams (aQj7G__L-iE at 00:07:34 and 00:08:41); OctoClean Media "
+                "(1tf8JMWxi98 at 00:00:44)."
+            ),
+            "bars": [
+                {
+                    "label": "Prospects already with a cleaner",
+                    "min": 90,
+                    "max": 90,
+                    "typical": 90,
+                    "display": "About 90%",
+                },
+                {
+                    "label": "Close rate competing as cheapest",
+                    "min": 10,
+                    "max": 10,
+                    "typical": 10,
+                    "display": "10% (Cleaning Launch, before)",
+                },
+                {
+                    "label": "Close rate refusing cheapest",
+                    "min": 25,
+                    "max": 35,
+                    "typical": 30,
+                    "display": "25-35% (Cleaning Launch, after)",
+                },
+                {
+                    "label": "Target contract margin",
+                    "min": 25,
+                    "max": 30,
+                    "typical": 30,
+                    "display": "30% standard, about 25% strategic (Adams)",
+                },
+                {
+                    "label": "Price float when budget stalls",
+                    "min": 25,
+                    "max": 30,
+                    "typical": 27.5,
+                    "display": "25-30% higher number (OctoClean Media)",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-05-bid-release-gates",
+            "chapter_number": 5,
+            "chart_type": "decision_tree",
+            "title": "Four Gates Before a Bid Leaves the Building",
+            "subtitle": "Scope, labor, full cost, target margin, then a stress test",
+            "caption": (
+                "Worked bids convert footage and fixture counts into hours, load the wage, divide "
+                "by one minus the margin, multiply by 4.33 weeks, and survive one extra worker "
+                "hour per visit."
+            ),
+            "assumptions_note": (
+                "Gate thresholds are the practitioners' own figures; the 25% to about 13.4% "
+                "collapse comes from a 20,000 sq ft, three-visit-a-week model priced at $2,800."
+            ),
+            "note": (
+                "Sources Commercial Cleaning CEO (IMbK5m7qbY0 at 00:04:42, 00:07:02, 00:10:01); "
+                "Channel Zero Marketing (Ey7iPjW1uZQ at 00:13:44); Bid & Profit Lab "
+                "(T-l3Df3Iino at 00:04:10 and 00:04:26)."
+            ),
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": "Is measured footage cut 10-20% for walls and fixed furniture, with toilets and urinals counted as units?",
+                    "pass_next": "G2",
+                    "fail_action": "Remeasure and recount fixtures; bathroom counts hide one stall or twenty.",
+                },
+                {
+                    "gate": "G2",
+                    "question": "Is the wage loaded with payroll liabilities, such as a $15 cleaner costing $17.71 an hour?",
+                    "pass_next": "G3",
+                    "fail_action": "Stack unemployment, FICA and workers comp onto the base wage before pricing.",
+                },
+                {
+                    "gate": "G3",
+                    "question": "Is price set as cost divided by one minus margin, billed on 4.33 weeks a month?",
+                    "pass_next": "G4",
+                    "fail_action": "Reprice; using 4 weeks on a $65 twice-weekly visit gives away about $516 a year.",
+                },
+                {
+                    "gate": "G4",
+                    "question": "Does margin hold with one extra worker hour per visit?",
+                    "pass_next": "Send the bid",
+                    "fail_action": "Rescope or reprice; one extra hour cut a 25% margin to about 13.4%.",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-06-classification-and-coverage-map",
+            "chapter_number": 11,
+            "chart_type": "org_architecture",
+            "title": "Classification and Coverage Around the Owner",
+            "subtitle": "Decided by control, not by the label or the form",
+            "caption": (
+                "Operators, accountants and insurance agents converge on control as the test for "
+                "W2 versus 1099, and price bonds, general liability and workers comp before bidding."
+            ),
+            "assumptions_note": (
+                "Premiums and rates are quotes reported at the time of filming; New York comp "
+                "rates are 2022 base rates for class codes 9026, 9027 and 9028."
+            ),
+            "note": (
+                "Sources Commercial Cleaning CEO (9BXhBVRp_XU at 00:03:59); Surety Bonds Direct "
+                "(uMW_ZJMW0ZU at 00:04:12); The Janitorial Store (YC2NrvVJqlg at 00:03:13); "
+                "The Professional Cleaner (DDLzG49aDvU at 00:03:20); The Coyle Group "
+                "(HSh0vcHYmUI at 00:00:56)."
+            ),
+            "center": {
+                "role": "Owner as classification gatekeeper",
+                "headcount": "10 employees in the Surety Bonds Direct commercial bond example",
+                "focus": "Control decides status; settle classification with an accountant before the first helper starts.",
+            },
+            "spokes": [
+                {
+                    "role": "W2 cleaning crew",
+                    "type": "Employee",
+                    "kpi": "Bonded at $328 a year for a $50,000 bond with 10 employees",
+                },
+                {
+                    "role": "1099 subcontractor",
+                    "type": "Independent contractor",
+                    "kpi": "Has clients other than you; no schedules, supplies, uniforms or how-to instructions from you",
+                },
+                {
+                    "role": "General liability carrier",
+                    "type": "Insurance",
+                    "kpi": "$1,000,000 aggregate and $500,000 per occurrence at $30-$100 a month",
+                },
+                {
+                    "role": "Workers comp carrier",
+                    "type": "Insurance",
+                    "kpi": "New York 2022 base rates $12.31 down to $3.03 per class code",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-07-account-cost-split",
+            "chapter_number": 4,
+            "chart_type": "stacked_comparison",
+            "title": "Where Each Account Dollar Goes",
+            "subtitle": "Labor-hour pricing with a 40/30/30 split and supplies billed on top",
+            "total_range": "100% of base billing (40/30/30), plus a 3-5% supply charge",
+            "caption": (
+                "Rudy Perez aims every account at 40% labor, 30% other expenses and 30% profit; "
+                "Carolyn Arellano bills 3% of the base rate for supplies on top of the labor figure."
+            ),
+            "assumptions_note": (
+                "The 40/30/30 split is a per-account target, not an industry average. The supply "
+                "band spans Carolyn Arellano's 3% and the 3-5% range cited across bidders."
+            ),
+            "note": (
+                "Sources 7 Figure Cleaning with Rudy Perez (1_z-Kgj0GYM at 00:01:17); Carolyn "
+                "Arellano (IJlyq2UAXqU at 00:06:05); AJ SIMMONS (7VHAkhs_HG4 at 00:02:48)."
+            ),
+            "buckets": [
+                {
+                    "label": "Labor",
+                    "low": 40,
+                    "high": 40,
+                    "notes": "AJ Simmons bills double the cleaner wage, $15 paid becoming $30 billed.",
+                },
+                {
+                    "label": "Supplies, insurance, taxes, CPA",
+                    "low": 30,
+                    "high": 30,
+                    "notes": "Load back office, transportation, churn and overtime before the account goes out.",
+                },
+                {
+                    "label": "Profit",
+                    "low": 30,
+                    "high": 30,
+                    "notes": "Rudy Perez's worked example uses a $40 hourly charge.",
+                },
+                {
+                    "label": "Supply charge on top of base",
+                    "low": 3,
+                    "high": 5,
+                    "notes": "3% of a $2,166.66 base is $64.98 a month (Carolyn Arellano).",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-08-franchise-due-diligence-roadmap",
+            "chapter_number": 12,
+            "chart_type": "timeline_roadmap",
+            "title": "Four Checks Before Buying a Cleaning Franchise",
+            "subtitle": "The contract, not the mop, is the business",
+            "caption": (
+                "Ex-franchisees and a franchisor founder describe fees stacking to 20-35% of "
+                "billing, sometimes 40%, finder fees at 4x monthly value, and real pay near $7 an hour."
+            ),
+            "assumptions_note": (
+                "Week ordering is an editorial sequence of the testified checks; no practitioner "
+                "set durations for them."
+            ),
+            "note": (
+                "Sources Mike Mak (6MDrTK46_8g at 00:04:31 and 00:06:32); Commercial Cleaning CEO "
+                "(xqw9zag57Uk at 00:05:18); Clean For A Dream (fs86ZhCBfJ8 at 00:30:23 and "
+                "00:56:29); AJ SIMMONS (Bbay8f0-XFM at 00:03:28)."
+            ),
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Interrogate the fee stack",
+                    "deliverable": "Written answers on support fees and what each new account costs",
+                    "gate": "Royalty near 10%, marketing 2-10% and admin 5-10% totaled against 20-35% drag",
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Check reputation",
+                    "deliverable": "Complaint search, Ripoff Report check, tenured and exited franchisee interviews",
+                    "gate": "Buying in is like getting married; unresolved complaints stop the deal",
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Convert the package into hours",
+                    "deliverable": "Post-fee payout divided by $16-$30 an hour versus about 100 hours worked",
+                    "gate": "A $705 payout on about 100 hours is roughly $7 an hour",
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Confirm contract ownership",
+                    "deliverable": "Answer on whether the franchise can reassign happy accounts",
+                    "gate": "If accounts can be reassigned, walk away from a glorified-employee role",
+                },
+            ],
+        },
+    ]
+
+
+VOLUME_028_POSITIONING_ALTERNATIVES: List[Dict[str, Any]] = [
     {
-        "title": "The Recurring Office Cleaning Contract Engine",
-        "subtitle": (
-            "Turn measured building scopes into profitable recurring routes "
-            "with paid crew hours, inspection evidence, and disciplined billing."
-        ),
-        "audience": (
-            "Local janitorial operators building dense office routes with "
-            "one full-time employee and three genuine independent service providers."
-        ),
+        "title": "The Labor-Hour Bid",
+        "subtitle": "Price commercial cleaning on production rates, loaded wages and stress-tested margins",
+        "audience": "Owners who keep winning bids that lose money or losing bids they cannot explain",
         "research_basis": (
-            "Federal minimum-wage, overtime, and time-record requirements make "
-            "paid labor hours the core bidding input. Use task-specific ISSA "
-            "production rates as estimating references, then replace assumptions "
-            "with timed site observations. The cited statutes establish labor "
-            "requirements, not achievable production rates or buyer demand."
+            "Joseph D Adams targets 30% margin at 3,500-4,000 sq ft an hour; Commercial Cleaning "
+            "CEO loads a $15 wage to $17.71; Bid & Profit Lab shows one extra worker hour cutting "
+            "25% to about 13.4%; Channel Zero Marketing prices on 4.33 weeks; Rudy Perez splits "
+            "accounts 40/30/30."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/29/206",
-            "https://www.law.cornell.edu/uscode/text/29/207",
-            "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-V/subchapter-A/part-516",
+            "https://www.youtube.com/watch?v=aQj7G__L-iE&t=454s",
+            "https://www.youtube.com/watch?v=IMbK5m7qbY0&t=282s",
+            "https://www.youtube.com/watch?v=T-l3Df3Iino&t=250s",
+            "https://www.youtube.com/watch?v=Ey7iPjW1uZQ&t=824s",
+            "https://www.youtube.com/watch?v=1_z-Kgj0GYM&t=77s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 028 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Medical Office Cleaning Evidence System",
-        "subtitle": (
-            "Sell documented cleaning scopes, correct disinfectant use, "
-            "and exposure-aware crews to outpatient facility buyers."
-        ),
-        "audience": (
-            "Established commercial cleaners entering outpatient offices with "
-            "trained supervisors, documented chemical handling, and bounded service scopes."
-        ),
+        "title": "Dial, Walk, Prove",
+        "subtitle": "Turn cold calls into walkthroughs and walkthroughs into contracts won on proof",
+        "audience": "New commercial cleaners chasing a first recurring contract against incumbent vendors",
         "research_basis": (
-            "OSHA Hazard Communication requirements govern covered workplace "
-            "chemical hazards. The Bloodborne Pathogens standard applies where "
-            "occupational exposure exists. Federal pesticide law prohibits "
-            "registered-product use inconsistent with labeling, subject to statutory "
-            "exceptions. These requirements support an evidence-led operating "
-            "system; they do not establish a medical-cleaning price premium."
+            "AJ Simmons runs 100 calls a day toward 10-20 appointments and 1-2 closes; Carolyn "
+            "Arellano turns 100 calls into 1-2 walkthroughs; Swept reports an 80% win rate at "
+            "premium prices; Commercial Cleaning CEO credits QR feedback and a client portal "
+            "for a $200,000-a-year contract."
         ),
         "sources": [
-            "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/section-1910.1200",
-            "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/section-1910.1030",
-            "https://www.law.cornell.edu/uscode/text/7/136j",
+            "https://www.youtube.com/watch?v=ZDdd0TDbbFo&t=236s",
+            "https://www.youtube.com/watch?v=VrlDbQP4iQI&t=860s",
+            "https://www.youtube.com/watch?v=xJ6TUBTc4Qo&t=206s",
+            "https://www.youtube.com/watch?v=O45aBb4kNlA&t=374s",
+            "https://www.youtube.com/watch?v=-DEX3b-m000&t=584s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 028 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Supervisor-Pod Cleaning Business",
-        "subtitle": (
-            "Build a four-person operating pod (1 FT + 3 C) with explicit labor status, "
-            "measured route capacity, and a controlled six-person expansion (2 FT + 4 C)."
-        ),
-        "audience": (
-            "Owner-operators replacing informal labor arrangements with documented "
-            "employee roles, independently operated subcontract services, and accountable supervision."
-        ),
+        "title": "Own the Contract",
+        "subtitle": "Why independent operators keep the accounts franchisees only rent",
+        "audience": "Prospective franchise buyers and side-income cleaners weighing a unit franchise",
         "research_basis": (
-            "Employee status requires examination of the actual relationship. "
-            "26 U.S.C. 3121(d)(2) addresses common-law employee status for "
-            "employment taxes; 29 U.S.C. 203 supplies FLSA definitions. "
-            "California Labor Code section 2775 establishes an ABC framework "
-            "subject to statutory exceptions. A subcontract agreement alone "
-            "does not resolve every applicable classification test."
+            "Commercial Cleaning CEO puts unit franchise fee drag at 20-35% of billing, sometimes "
+            "40%; Mike Mak paid finder fees of 4x monthly value; Clean For A Dream finds real pay "
+            "near $7 an hour; AJ Simmons describes walking away a glorified employee; DJ The Boss "
+            "grew one independent account to about $500K over 7 years."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/26/3121",
-            "https://www.law.cornell.edu/uscode/text/29/203",
-            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2775.&lawCode=LAB",
+            "https://www.youtube.com/watch?v=xqw9zag57Uk&t=318s",
+            "https://www.youtube.com/watch?v=6MDrTK46_8g&t=271s",
+            "https://www.youtube.com/watch?v=fs86ZhCBfJ8&t=3060s",
+            "https://www.youtube.com/watch?v=Bbay8f0-XFM&t=208s",
+            "https://www.youtube.com/watch?v=ZVDOV6jG8Dw&t=682s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 028 YouTube practitioner transcripts.",
     },
 ]
-
-
-def build_volume_028_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-measured-scope-to-renewal",
-            "process_flow",
-            "Sell a Measured Scope, Then Prove Delivery",
-            "Five operating stages for recurring commercial and medical janitorial contracts.",
-            1,
-            "operating_framework",
-            (
-                "Recognized operator revenue is earned cleaning contract revenue. "
-                "Customer building value, tenant sales, and proposed contract value "
-                "are excluded. Higher revenue requires additional paid productive "
-                "crew hours, higher realized pricing, or both."
-            ),
-            (
-                "The workflow connects the bid estimate to actual paid hours, "
-                "documented service quality, invoicing, and renewal pricing."
-            ),
-            [
-                (
-                    "Qualify the route",
-                    "Confirm buyer, location, frequency, and payment terms",
-                    1.0,
-                    (
-                        "Record the facility manager, purchasing authority, building "
-                        "address, service windows, invoice requirements, and travel "
-                        "time from existing stops. Flag customer concentration "
-                        "before adding a large account."
-                    ),
-                ),
-                (
-                    "Measure the scope",
-                    "Inventory cleanable area and task-level service frequencies",
-                    2.0,
-                    (
-                        "Walk the site with the buyer; count restrooms, fixtures, "
-                        "floor types, touchpoints, waste stations, and restricted "
-                        "rooms. Distinguish usable cleanable area from leased area "
-                        "and separate periodic floor work from nightly service."
-                    ),
-                ),
-                (
-                    "Price paid capacity",
-                    "Convert observed production into fully loaded labor costs",
-                    3.0,
-                    (
-                        "Estimate area tasks as square feet divided by task-specific "
-                        "ISSA production-rate references. Add fixture tasks, setup, "
-                        "paid travel, inspections, breaks where required, and rework. "
-                        "Validate with a timed pilot and include payroll burden, "
-                        "overtime, supplies, overhead, and target profit."
-                    ),
-                ),
-                (
-                    "Mobilize and inspect",
-                    "Assign qualified labor and capture completed-task evidence",
-                    4.0,
-                    (
-                        "Use Swept or a comparable scheduling and inspection system "
-                        "to assign employee work, record exceptions, and track "
-                        "corrective actions. Independently operated subcontractors "
-                        "deliver contracted outcomes under their own lawful methods."
-                    ),
-                ),
-                (
-                    "Bill and renew",
-                    "Reconcile accepted services, collection timing, and account margin",
-                    5.0,
-                    (
-                        "Issue QuickBooks invoices against contracted service periods "
-                        "and approved extras. Compare actual hours with the bid "
-                        "weekly; correct scope creep, repeated callbacks, and slow "
-                        "payment before the next renewal."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-local-account-conversion-cohort",
-            "funnel",
-            "One Prospect Cohort, Five Measurable Conversions",
-            "Illustrative account counts; every downstream account belongs to the original cohort.",
-            6,
-            "illustrative_model",
-            (
-                "Follow 200 unique local accounts for up to 120 days, consistent "
-                "with a one-to-four-month first-deal planning range. Counts are "
-                "illustrative, not market benchmarks or annual revenue projections. "
-                "Referred or newly discovered accounts enter separate cohorts."
-            ),
-            (
-                "The cohort narrows from 200 researched accounts to five activated "
-                "contracts: 2.5% overall conversion without mixing leads and locations."
-            ),
-            [
-                (
-                    "Researched accounts",
-                    "200 unique accounts matching the service territory",
-                    200.0,
-                    (
-                        "Deduplicate legal buyers and document facility type, route "
-                        "distance, estimated cleaning frequency, and a reachable "
-                        "purchasing contact before counting an account."
-                    ),
-                ),
-                (
-                    "Qualified conversations",
-                    "80 accounts with confirmed need and purchasing access",
-                    80.0,
-                    (
-                        "Forty percent of the original accounts confirm a relevant "
-                        "service need, a buyer contact, and a plausible buying "
-                        "window. Email opens and unanswered calls do not qualify."
-                    ),
-                ),
-                (
-                    "Completed walkthroughs",
-                    "40 accounts with measured sites and service requirements",
-                    40.0,
-                    (
-                        "Fifty percent of qualified conversations produce a completed "
-                        "site inspection with task inventory, access conditions, "
-                        "existing service problems, and invoice requirements."
-                    ),
-                ),
-                (
-                    "Delivered proposals",
-                    "20 accounts receive costed and capacity-checked proposals",
-                    20.0,
-                    (
-                        "Fifty percent of walkthrough accounts receive priced scopes "
-                        "after labor-hour costing and route review. Decline work "
-                        "that cannot cover required wages and delivery costs."
-                    ),
-                ),
-                (
-                    "Activated contracts",
-                    "Five accounts sign and begin accepted service",
-                    5.0,
-                    (
-                        "Twenty-five percent of proposed accounts sign and start "
-                        "service within the observation window. Track deposits, "
-                        "earned revenue, invoiced receivables, and cash collections "
-                        "separately."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-case-revenue-to-owner-net",
-            "waterfall",
-            "$725,000 Contract Revenue to $87,000 Owner Net",
-            "Six bars reconcile the Base-Case annual operating result to a 12.0% net margin.",
-            3,
-            "illustrative_model",
-            (
-                "USD per year. The first and last bars are absolute totals; "
-                "the four middle bars are negative movements. Intermediate "
-                "balances are $290,000, $246,500, $166,750, and $87,000. "
-                "Cost categories are an illustrative allocation, not additional "
-                "canonical scorecard inputs. Owner net is the operating residual "
-                "before owner-specific income taxes."
-            ),
-            (
-                "$725,000 minus $435,000 minus $43,500 minus $79,750 minus "
-                "$79,750 equals $87,000. Costs total $638,000, or 88.0% "
-                "of revenue; owner net equals 12.0%. The stated $3,000–$14,000 "
-                "monthly opex range cannot serve as an all-in cost ceiling "
-                "for this scenario; its coverage must be reconciled before bidding."
-            ),
-            [
-                (
-                    "Earned contract revenue",
-                    "$725,000 annual cleaning service revenue; opening total",
-                    725000.0,
-                    (
-                        "Use the canonical Base-Case gross revenue for completed "
-                        "cleaning services. Exclude sales taxes collected for "
-                        "remittance and customer business turnover."
-                    ),
-                ),
-                (
-                    "Direct service labor",
-                    "Subtract $435,000 for paid delivery labor and burden",
-                    -435000.0,
-                    (
-                        "Allocate 60.0% of revenue to field employee wages, employer "
-                        "payroll charges, field workers' compensation, paid travel, "
-                        "overtime, callbacks, and legitimate subcontract service "
-                        "invoices. Remaining balance: $290,000."
-                    ),
-                ),
-                (
-                    "Supplies and equipment",
-                    "Subtract $43,500 for chemicals, consumables, and equipment",
-                    -43500.0,
-                    (
-                        "Allocate 6.0% of revenue to cleaning chemicals, liners, "
-                        "microfiber replacement, equipment rental or depreciation, "
-                        "and repairs. Keep equipment purchase cash flows separate "
-                        "from annual expense recognition. Remaining balance: $246,500."
-                    ),
-                ),
-                (
-                    "Supervision and operations",
-                    "Subtract $79,750 for oversight and shared operating costs",
-                    -79750.0,
-                    (
-                        "Allocate 11.0% of revenue to supervisor compensation and "
-                        "burden, management work, vehicles, storage, general liability, "
-                        "and inspection systems. Assign each payroll hour once; "
-                        "exclude field labor already charged above. Remaining "
-                        "balance: $166,750."
-                    ),
-                ),
-                (
-                    "Selling and administration",
-                    "Subtract $79,750 for acquisition, billing, and administration",
-                    -79750.0,
-                    (
-                        "Allocate 11.0% of revenue to estimating, account sales, "
-                        "administrative compensation and burden, accounting, payment "
-                        "fees, bad-debt expense, and other operating expenses. "
-                        "Include compensation for owner work where applicable "
-                        "before calculating residual profit. Remaining balance: $87,000."
-                    ),
-                ),
-                (
-                    "Annual owner net",
-                    "$87,000 residual owner profit; closing total at 12.0%",
-                    87000.0,
-                    (
-                        "Render this bar from zero, not as another positive "
-                        "movement. Preserve the other canonical scenarios: "
-                        "$250,000 at 8.0% yields $20,000; $1,200,000 at "
-                        "16.0% yields $192,000."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-sub-niche-contribution-per-paid-hour",
-            "horizontal_bars",
-            "Compare Contribution per Paid Service Hour",
-            "Five illustrative sub-niche bids after direct delivery costs, before shared overhead.",
-            2,
-            "illustrative_model",
-            (
-                "All values are USD contribution per paid service hour, not "
-                "net margin percentages or published market rates. Revenue "
-                "equivalent equals contract revenue divided by all attributable "
-                "paid service hours. Direct cost includes loaded field labor, "
-                "routine consumables, and service-specific equipment. Shared "
-                "supervision, sales, administration, and owner net remain outside "
-                "these bars."
-            ),
-            (
-                "Rank measured account economics rather than building labels. "
-                "Extra dwell time, access delays, overtime, and rework can "
-                "erase a nominal medical or industrial price premium."
-            ),
-            [
-                (
-                    "Outpatient medical offices",
-                    "$14 contribution from $52 revenue less $38 direct cost",
-                    14.0,
-                    (
-                        "Model label contact times, isolation-area restrictions, "
-                        "PPE, and exposure-related training in paid hours. "
-                        "Do not price regulated waste handling into an ordinary "
-                        "janitorial scope without the required operating capability."
-                    ),
-                ),
-                (
-                    "Light industrial offices",
-                    "$12 contribution from $48 revenue less $36 direct cost",
-                    12.0,
-                    (
-                        "Limit the modeled scope to offices and agreed common "
-                        "areas. Separately quote production-floor work, machinery "
-                        "proximity, unusual soils, and site-specific safety training."
-                    ),
-                ),
-                (
-                    "Professional office suites",
-                    "$11 contribution from $44 revenue less $33 direct cost",
-                    11.0,
-                    (
-                        "Cluster nearby suites to reduce paid travel. Measure "
-                        "desk density, restroom fixtures, alarm procedures, elevator "
-                        "delays, and tenant-requested extras rather than bidding "
-                        "from square footage alone."
-                    ),
-                ),
-                (
-                    "Multitenant common areas",
-                    "$11 contribution from $46 revenue less $35 direct cost",
-                    11.0,
-                    (
-                        "Specify lobby appearance standards, restroom replenishment, "
-                        "public access windows, and weekend attendance. Separate "
-                        "tenant-private cleaning from property-manager common-area "
-                        "obligations to prevent unpaid scope expansion."
-                    ),
-                ),
-                (
-                    "Private education facilities",
-                    "$8 contribution from $40 revenue less $32 direct cost",
-                    8.0,
-                    (
-                        "Price restroom intensity, event resets, safeguarding-related "
-                        "access procedures, and academic calendar changes. Quote "
-                        "summer floor restoration separately and confirm whether "
-                        "monthly billing continues through closures."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-preflight-labor-chemical-and-contract-checks",
-            "decision_tree",
-            "Four Checks Before Assigning a Crew",
-            "Each failed check routes to a specific correction before the affected work starts.",
-            5,
-            "operating_framework",
-            (
-                "Read nodes in order. Each numeric value is a sequence index, "
-                "not a risk score or probability. Apply federal requirements "
-                "alongside applicable state and local rules. Insurance limits "
-                "depend on jurisdiction, policy terms, and the buyer's contract."
-            ),
-            (
-                "A signed cleaning agreement does not cure underpaid labor, "
-                "misclassification, unsafe chemical use, or uninsured scope."
-            ),
-            [
-                (
-                    "Wages and paid time",
-                    "Pass to classification; otherwise recost and correct payroll",
-                    1.0,
-                    (
-                        "Apply 29 U.S.C. 206 and 207 to covered workers, "
-                        "including overtime for covered nonexempt employees. "
-                        "Keep required records under 29 CFR Part 516 and "
-                        "evaluate compensable time under 29 CFR Part 785. "
-                        "Capture intersite travel and setup; apply higher "
-                        "applicable state or local wage requirements."
-                    ),
-                ),
-                (
-                    "Actual worker relationship",
-                    "Pass to chemical review; otherwise redesign or employ",
-                    2.0,
-                    (
-                        "Evaluate actual control and economic facts under applicable "
-                        "FLSA, tax, and state tests, including 26 U.S.C. "
-                        "3121(d)(2) and California Labor Code section 2775 "
-                        "where relevant. A 1099 form, LLC, or insurance "
-                        "certificate alone does not establish independent status."
-                    ),
-                ),
-                (
-                    "Chemical and exposure controls",
-                    "Pass to contract review; otherwise train and correct methods",
-                    3.0,
-                    (
-                        "Implement applicable 29 CFR 1910.1200 labeling, safety "
-                        "data sheets, written program, and training requirements. "
-                        "Follow disinfectant labeling under 7 U.S.C. 136j. "
-                        "Where occupational exposure exists, implement 29 CFR "
-                        "1910.1030 controls; do not assign untrained workers "
-                        "to sharps or blood cleanup."
-                    ),
-                ),
-                (
-                    "Insured and bounded scope",
-                    "Start covered work only after resolving identified coverage gaps",
-                    4.0,
-                    (
-                        "Confirm required workers' compensation and buyer-specified "
-                        "liability coverage with the broker. Review exclusions, "
-                        "endorsements, key loss, property damage, and medical-site "
-                        "activities. Attach service frequencies, inspection standards, "
-                        "change-order pricing, payment terms, and termination rights "
-                        "to the signed agreement."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-four-seat-core-with-two-seat-expansion",
-            "org_architecture",
-            "Four Core Seats, Two Explicit Expansion Seats",
-            "Conservative and Base: 1 FT + 3 C (4 people). Scaled: 2 FT + 4 C (6 people).",
-            11,
-            "operating_framework",
-            (
-                "Numeric values indicate active Conservative and Base core seats: "
-                "four ones and two zeros. The core comprises 1 FT + 3 C; "
-                "activate the two zero-valued seats, 1 FT + 1 C, only in "
-                "the Scaled scenario for 2 FT + 4 C. FT denotes full-time "
-                "employee seats; C denotes one-person independent service-provider "
-                "seats, subject to applicable classification tests. Headcount "
-                "is not a full-time-equivalent measure. External vendor/trade "
-                "sub-crews are charged to direct subcontractor/COGS pass-through, "
-                "not internal pod headcount; their delivery capacity and costs "
-                "must still be measured and funded."
-            ),
-            (
-                "Conservative: $250,000 revenue and $20,000 owner net with "
-                "four people (1 FT + 3 C). Base: $725,000 revenue and "
-                "$87,000 owner net with four people (1 FT + 3 C). "
-                "Scaled: $1,200,000 revenue and $192,000 owner net with "
-                "six people (2 FT + 4 C). These are separate operating "
-                "scenarios, not proof that two added seats alone produce the "
-                "revenue increase. Validate paid hours, external delivery "
-                "capacity, utilization, pricing, and route capacity before "
-                "accepting added work."
-            ),
-            [
-                (
-                    "FT 1: pod supervisor and account operations",
-                    "One active employee owning delivery quality, estimates, and billing",
-                    1.0,
-                    (
-                        "Own site mobilization, inspection review, supply readiness, "
-                        "proposal costing, invoice follow-up, and renewals. Coordinate "
-                        "contracted provider outcomes without imposing employee-style "
-                        "methods on independent businesses. Maintain weekly bid-hours "
-                        "versus actual-hours reporting and verify external delivery "
-                        "coverage. If the owner fills this seat, include their work "
-                        "compensation before residual owner net."
-                    ),
-                ),
-                (
-                    "C 1: floor-care provider",
-                    "One active independent provider delivering bounded floor projects",
-                    1.0,
-                    (
-                        "Contract for defined floor-care outcomes with an independently "
-                        "operated provider using appropriate equipment and methods. "
-                        "Verify insurance, competence, scheduling interfaces, and "
-                        "classification under the actual working arrangement."
-                    ),
-                ),
-                (
-                    "C 2: carpet-care provider",
-                    "One active independent provider delivering scheduled extraction projects",
-                    1.0,
-                    (
-                        "Purchase scoped carpet extraction outcomes with documented "
-                        "drying requirements, access windows, and property protection. "
-                        "Do not disguise an employee cleaner's regular controlled "
-                        "shift as a specialist subcontract."
-                    ),
-                ),
-                (
-                    "C 3: interior-glass provider",
-                    "One active independent provider delivering scoped glass services",
-                    1.0,
-                    (
-                        "Define reachable interior-glass surfaces, frequency, and "
-                        "acceptance evidence. Exclude elevated-access work unless "
-                        "the provider has suitable equipment, training, insurance, "
-                        "and an expressly priced scope."
-                    ),
-                ),
-                (
-                    "FT 2: scaled working lead",
-                    "Zero core seats; activate one employee for Scaled capacity",
-                    0.0,
-                    (
-                        "Add this second full-time employee only against measured "
-                        "recurring paid-hour demand and adequate collection funding. "
-                        "Perform cleaning and support inspection and route coverage. "
-                        "Record supervisory and field time separately; recalculate "
-                        "overtime exposure and supervisor capacity before expanding."
-                    ),
-                ),
-                (
-                    "C 4: scaled project-cleaning provider",
-                    "Zero core seats; activate one independent provider for Scaled demand",
-                    0.0,
-                    (
-                        "Add a fourth genuine one-person provider for independently "
-                        "priced deep-cleaning projects with bounded deliverables, "
-                        "not employee-style fill-in shifts. External vendor/trade "
-                        "sub-crews remain direct subcontractor/COGS pass-through "
-                        "rather than additional internal pod seats. Verify their "
-                        "capacity, insurance, and lawful working arrangements."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-thirty-thousand-reference-startup-allocation",
-            "stacked_comparison",
-            "Allocate a $30,000 Reference Launch Budget",
-            "Four buckets reconcile $10,000 lean, $30,000 reference, and $50,000 expanded plans.",
-            4,
-            "illustrative_model",
-            (
-                "All amounts are USD. Numeric values encode only the $30,000 "
-                "central/reference startup stack within the canonical "
-                "$10,000–$50,000 startup capital range. The value text "
-                "supplies comparable $10,000 lean and $50,000 expanded stacks "
-                "in the same four-bucket order. These are startup cash "
-                "allocations, not annual expenses or revenue scenarios. "
-                "Do not stack all three budgets together."
-            ),
-            (
-                "Lean: $3,000 + $1,500 + $500 + $5,000 = $10,000. "
-                "Reference: $8,000 + $3,500 + $1,500 + $17,000 = $30,000. "
-                "Expanded: $13,000 + $6,000 + $3,000 + $28,000 = $50,000. "
-                "A lean launch uses existing transport and staged commitments. "
-                "None of these budgets guarantees runway for the four-person "
-                "core pod (1 FT + 3 C), external delivery crews, or expansion "
-                "to six people (2 FT + 4 C); model mobilization and collections."
-            ),
-            [
-                (
-                    "Equipment and initial supplies",
-                    "Lean $3,000; reference $8,000; expanded $13,000 equipment cash",
-                    8000.0,
-                    (
-                        "Allocate $3,000 lean, $8,000 reference, or $13,000 "
-                        "expanded to commercial vacuums, carts, microfiber systems, "
-                        "PPE, dispensers, and initial chemicals. Rent infrequent "
-                        "specialty machines until contracted utilization supports "
-                        "ownership. Avoid duplicating client-provided or independent "
-                        "provider-owned equipment in the budget."
-                    ),
-                ),
-                (
-                    "Setup and coverage deposits",
-                    "Lean $1,500; reference $3,500; expanded $6,000 setup cash",
-                    3500.0,
-                    (
-                        "Allocate $1,500 lean, $3,500 reference, or $6,000 "
-                        "expanded to registration, required local licensing, "
-                        "insurance deposits, contract preparation, and initial safety "
-                        "training. Replace estimates with jurisdiction-specific fees "
-                        "and written broker quotations before committing funds."
-                    ),
-                ),
-                (
-                    "Acquisition and operating systems",
-                    "Lean $500; reference $1,500; expanded $3,000 acquisition cash",
-                    1500.0,
-                    (
-                        "Allocate $500 lean, $1,500 reference, or $3,000 "
-                        "expanded to a focused website, local prospect research, "
-                        "walkthrough travel, estimating setup, and appropriately "
-                        "staged Swept and QuickBooks configuration. Limit subscription "
-                        "seats and advertising commitments until the first route converts."
-                    ),
-                ),
-                (
-                    "Payroll and collection buffer",
-                    "Lean $5,000; reference $17,000; expanded $28,000 liquidity",
-                    17000.0,
-                    (
-                        "Hold $5,000 lean, $17,000 reference, or $28,000 "
-                        "expanded as unspent cash for wages, payroll charges, "
-                        "subcontract invoices, and collection delays. At Base-Case "
-                        "direct service labor of $435,000 yearly, the $17,000 "
-                        "reference buffer covers about two weeks of that cost "
-                        "alone. External vendor/trade sub-crews are direct "
-                        "subcontractor/COGS pass-through, not internal pod headcount. "
-                        "Stage mobilization and model all other cash outflows separately."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-first-thirty-days-execution",
-            "timeline_roadmap",
-            "Thirty Days to a Measured, Bid-Ready Operation",
-            "Four weekly milestones establish demand evidence, delivery economics, and launch readiness.",
-            12,
-            "operating_framework",
-            (
-                "Numeric values are milestone end days: 7, 14, 21, and 30. "
-                "A first signed deal may take one to four months. "
-                "The sprint builds a qualified pipeline and costed delivery "
-                "system; service starts only when an actual customer contract "
-                "and ready capacity support them."
-            ),
-            (
-                "Use evidence at each milestone: named accounts, measured "
-                "walkthroughs, reconciled bids, and a funded mobilization plan. "
-                "Scheduling, inspection logs, and billing reduce administration "
-                "but do not replace paid cleaning hours."
-            ),
-            [
-                (
-                    "Days 1-7",
-                    "Choose the territory and establish costed operating boundaries",
-                    7.0,
-                    (
-                        "Select one dense office or outpatient cluster, research "
-                        "40 named buyer accounts, obtain insurance quotations, "
-                        "and document applicable wage and classification rules. "
-                        "Build the first loaded hourly-cost worksheet and "
-                        "choose the startup cash envelope."
-                    ),
-                ),
-                (
-                    "Days 8-14",
-                    "Conduct walkthroughs and test task-level production assumptions",
-                    14.0,
-                    (
-                        "Target three completed walkthroughs where buyers agree "
-                        "to participate. Record cleanable area, fixtures, access, "
-                        "and frequencies; perform an authorized timed pilot. "
-                        "Use ISSA references only as initial estimates and "
-                        "retain observed paid-hour evidence."
-                    ),
-                ),
-                (
-                    "Days 15-21",
-                    "Issue reconciled proposals and verify deliverable labor capacity",
-                    21.0,
-                    (
-                        "Target two complete proposals supported by measured scopes. "
-                        "Test overtime, route travel, supplies, payment delays, "
-                        "and customer concentration. Confirm employee availability "
-                        "and separately scoped provider capability without "
-                        "committing unfunded payroll."
-                    ),
-                ),
-                (
-                    "Days 22-30",
-                    "Prepare mobilization and continue documented buyer follow-up",
-                    30.0,
-                    (
-                        "Configure scheduling, inspection forms, invoice templates, "
-                        "chemical records, and site-access controls. If a contract "
-                        "is signed, confirm coverage and training before service. "
-                        "Otherwise continue the same prospect cohort into months "
-                        "two through four without recording proposed sales as revenue."
-                    ),
-                ),
-            ],
-        ),
-    ]
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for (
-            identifier,
-            kind,
-            title,
-            subtitle,
-            chapter,
-            tag,
-            note,
-            caption,
-            stages,
-        ) in specs
-    ]

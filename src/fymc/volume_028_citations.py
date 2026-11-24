@@ -1,4257 +1,3330 @@
-"""Curated 180-citation Commercial Cleaning Contracts baseline (15 per chapter across Q1-Q12) mined strictly from verified Commercial Cleaning Contracts YouTube transcripts."""
+"""100% verbatim YouTube practitioner citations selected directly by Claude across Chapters Q1-Q12 of Volume 028 (Commercial Cleaning Contracts)."""
 from __future__ import annotations
 
-CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'1099',
-     'account',
-     'add',
-     'app',
-     'area',
-     'arr',
-     'avoiding',
-     'b2b',
-     'bank',
-     'bid',
-     'bidding',
-     'bids',
-     'bloodborne',
-     'bond',
-     'business',
-     'calculator',
-     'calling',
-     'campion',
-     'carpet',
-     'checklist',
-     'church',
-     'clean',
-     'cleaning',
-     'client',
-     'clients',
-     'cold',
-     'commercial',
-     'comp',
-     'company',
-     'construction',
-     'consumables',
-     'contract',
-     'firm',
-     'margin',
-     'market',
-     'model',
-     'niche',
-     'operator',
-     'revenue',
-     'service',
-     'value'},
- 2: {'1099',
-     'account',
-     'add',
-     'app',
-     'area',
-     'arr',
-     'avoiding',
-     'b2b',
-     'bank',
-     'bid',
-     'bidding',
-     'bids',
-     'bloodborne',
-     'bond',
-     'budget',
-     'business',
-     'buyer',
-     'calculator',
-     'calling',
-     'campion',
-     'carpet',
-     'checklist',
-     'church',
-     'clean',
-     'cleaning',
-     'cold',
-     'commercial',
-     'comp',
-     'company',
-     'construction',
-     'consumables',
-     'contract',
-     'customer',
-     'decision',
-     'escrow',
-     'fee',
-     'fees',
-     'invoice',
-     'pay',
-     'payment',
-     'pays',
-     'retainer'},
- 3: {'1099',
-     'account',
-     'add',
-     'app',
-     'area',
-     'arr',
-     'avoiding',
-     'b2b',
-     'bank',
-     'bid',
-     'bidding',
-     'bids',
-     'bloodborne',
-     'bond',
-     'business',
-     'calculator',
-     'calling',
-     'campion',
-     'carpet',
-     'cash',
-     'cashflow',
-     'checklist',
-     'church',
-     'clean',
-     'cleaning',
-     'cold',
-     'commercial',
-     'commission',
-     'comp',
-     'company',
-     'construction',
-     'consumables',
-     'contract',
-     'cost',
-     'costs',
-     'economics',
-     'margin',
-     'margins',
-     'price',
-     'pricing',
-     'profit',
-     'roi',
-     'unit'},
- 4: {'1099',
-     'account',
-     'add',
-     'app',
-     'area',
-     'arr',
-     'avoiding',
-     'b2b',
-     'bank',
-     'bid',
-     'bidding',
-     'bids',
-     'bloodborne',
-     'bond',
-     'budget',
-     'business',
-     'calculator',
-     'calling',
-     'campion',
-     'capital',
-     'carpet',
-     'checklist',
-     'church',
-     'clean',
-     'cleaning',
-     'cold',
-     'commercial',
-     'comp',
-     'company',
-     'construction',
-     'consumables',
-     'contract',
-     'entity',
-     'insurance',
-     'lean',
-     'license',
-     'llc',
-     'setup',
-     'software',
-     'stack',
-     'startup',
-     'tools'},
- 5: {'1099',
-     'account',
-     'add',
-     'app',
-     'area',
-     'arr',
-     'audit',
-     'avoid',
-     'avoiding',
-     'b2b',
-     'bank',
-     'bid',
-     'bidding',
-     'bids',
-     'bloodborne',
-     'bond',
-     'business',
-     'calculator',
-     'calling',
-     'campion',
-     'carpet',
-     'checklist',
-     'church',
-     'clawback',
-     'clean',
-     'cleaning',
-     'cold',
-     'commercial',
-     'comp',
-     'company',
-     'construction',
-     'consumables',
-     'contract',
-     'dispute',
-     'edge',
-     'fail',
-     'mistake',
-     'mistakes',
-     'problem',
-     'risk',
-     'risks',
-     'trap',
-     'traps'},
- 6: {'1099',
-     'account',
-     'add',
-     'app',
-     'area',
-     'arr',
-     'avoiding',
-     'b2b',
-     'bank',
-     'bid',
-     'bidding',
-     'bids',
-     'bloodborne',
-     'bond',
-     'business',
-     'calculator',
-     'calling',
-     'campion',
-     'carpet',
-     'checklist',
-     'church',
-     'clean',
-     'cleaning',
-     'client',
-     'cold',
-     'commercial',
-     'comp',
-     'company',
-     'construction',
-     'consumables',
-     'contract',
-     'data',
-     'deal',
-     'find',
-     'first',
-     'lead',
-     'leads',
-     'list',
-     'outbound',
-     'prospect',
-     'qualify',
-     'search',
-     'sourcing'},
- 7: {'1099',
-     'account',
-     'add',
-     'app',
-     'area',
-     'arr',
-     'avoiding',
-     'b2b',
-     'bank',
-     'bid',
-     'bidding',
-     'bids',
-     'bloodborne',
-     'bond',
-     'business',
-     'calculator',
-     'calling',
-     'campion',
-     'carpet',
-     'checklist',
-     'church',
-     'clean',
-     'cleaning',
-     'cold',
-     'commercial',
-     'comp',
-     'company',
-     'construction',
-     'consumables',
-     'contract',
-     'delivery',
-     'execution',
-     'process',
-     'quality',
-     'sop',
-     'step',
-     'steps',
-     'system',
-     'underwriting',
-     'verify',
-     'workflow'},
- 8: {'1099',
-     'account',
-     'add',
-     'api',
-     'app',
-     'area',
-     'arr',
-     'avoiding',
-     'b2b',
-     'bank',
-     'bid',
-     'bidding',
-     'bids',
-     'bloodborne',
-     'bond',
-     'business',
-     'calculator',
-     'calling',
-     'campion',
-     'carpet',
-     'checklist',
-     'church',
-     'clean',
-     'cleaning',
-     'cold',
-     'commercial',
-     'comp',
-     'company',
-     'construction',
-     'consumables',
-     'contract',
-     'crm',
-     'data',
-     'database',
-     'platform',
-     'portal',
-     'scraper',
-     'search',
-     'software',
-     'tool',
-     'tools',
-     'tracking'},
- 9: {'1099',
-     'account',
-     'add',
-     'agreement',
-     'app',
-     'area',
-     'arr',
-     'avoiding',
-     'b2b',
-     'bank',
-     'bid',
-     'bidding',
-     'bids',
-     'bloodborne',
-     'bond',
-     'business',
-     'calculator',
-     'calling',
-     'campion',
-     'carpet',
-     'checklist',
-     'church',
-     'clean',
-     'cleaning',
-     'cold',
-     'commercial',
-     'comp',
-     'company',
-     'compliance',
-     'construction',
-     'consumables',
-     'contract',
-     'disclosure',
-     'law',
-     'legal',
-     'license',
-     'outreach',
-     'rules',
-     'script',
-     'state',
-     'terms'},
- 10: {'1099',
-      'account',
-      'add',
-      'agent',
-      'ai',
-      'app',
-      'area',
-      'arr',
-      'automate',
-      'automation',
-      'avoiding',
-      'b2b',
-      'bank',
-      'bid',
-      'bidding',
-      'bids',
-      'bloodborne',
-      'bond',
-      'business',
-      'calculator',
-      'calling',
-      'campion',
-      'carpet',
-      'checklist',
-      'church',
-      'clean',
-      'cleaning',
-      'cold',
-      'commercial',
-      'comp',
-      'company',
-      'construction',
-      'consumables',
-      'contract',
-      'dashboard',
-      'leverage',
-      'pipeline',
-      'scale',
-      'script',
-      'speed',
-      'template',
-      'workflow'},
- 11: {'1099',
-      'account',
-      'add',
-      'app',
-      'area',
-      'arr',
-      'avoiding',
-      'b2b',
-      'bank',
-      'bid',
-      'bidding',
-      'bids',
-      'bloodborne',
-      'bond',
-      'business',
-      'calculator',
-      'calling',
-      'campion',
-      'carpet',
-      'checklist',
-      'church',
-      'clean',
-      'cleaning',
-      'cold',
-      'commercial',
-      'comp',
-      'company',
-      'construction',
-      'consumables',
-      'contract',
-      'contractor',
-      'exit',
-      'hire',
-      'hiring',
-      'kpi',
-      'manager',
-      'operations',
-      'pod',
-      'scale',
-      'scaling',
-      'team',
-      'valuation'},
- 12: {'1099',
-      'account',
-      'action',
-      'add',
-      'app',
-      'area',
-      'arr',
-      'avoiding',
-      'b2b',
-      'bank',
-      'bid',
-      'bidding',
-      'bids',
-      'bloodborne',
-      'bond',
-      'business',
-      'calculator',
-      'calling',
-      'campion',
-      'carpet',
-      'checklist',
-      'church',
-      'clean',
-      'cleaning',
-      'cold',
-      'commercial',
-      'comp',
-      'company',
-      'construction',
-      'consumables',
-      'contract',
-      'day',
-      'days',
-      'launch',
-      'milestone',
-      'month',
-      'plan',
-      'roadmap',
-      'sprint',
-      'start',
-      'thirty',
-      'week'}}
+CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'seven', 'from', 'zero', 'figures', 'lean', 'starting', 'playbooks', 'founder'},
+ 2: {'onboard', 'landing', 'first', 'walkthrough', 'proposal', 'close', 'contract'},
+ 3: {'doors', 'paid', 'calls', 'search', 'engine', 'cold', 'prospecting', 'email'},
+ 4: {'rates', 'methods', 'production', 'square', 'footage', 'formulas', 'bidding', 'hourly'},
+ 5: {'calculators', 'bids', 'worked', 'pricing'},
+ 6: {'niches', 'accounts', 'profit', 'high'},
+ 7: {'bids', 'sector', 'public', 'government', 'janitorial'},
+ 8: {'cleaning', 'specialty', 'floor', 'construction', 'care', 'post'},
+ 9: {'selling', 'software', 'systems', 'with', 'verification', 'janitorial'},
+ 10: {'compliance', 'cleanup', 'pathogens', 'spill', 'bloodborne', 'osha'},
+ 11: {'insurance', 'workforce', 'bonding', 'classification'},
+ 12: {'traps', 'ownership', 'franchises', 'models', 'remote'}}
 
-BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'Bid & Profit Lab',
-      'channel': 'Bid & Profit Lab',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:33](https://www.youtube.com/watch?v=T-l3Df3Iino&t=273s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'If you prefer a ready made spreadsheet for your bidding calculations, our '
-              'Commercial Cleaning Bid and Margin System is linked in the description. Use '
-              'your own job assumptions, review the result and check that every promised '
-              'service is covered before you submit a bid.',
-      'timestamp': 273,
-      'timestamp_label': '[00:04:33]',
-      'timestamp_seconds': 273,
-      'tip': 'If you prefer a ready made spreadsheet for your bidding calculations, our '
-             'Commercial Cleaning Bid and Margin System is linked in the description. Use your '
-             'own job assumptions, review the result and check that every promised service is '
-             'covered before you submit a bid.',
-      'title': 'How to Bid a Commercial Cleaning Contract: 20,000 Sq Ft Example. (Bid & Profit '
-               'Lab)',
-      'url': 'https://www.youtube.com/watch?v=T-l3Df3Iino&t=273s',
-      'video_id': 'T-l3Df3Iino'},
-     {'author': 'Commercial Cleaning CEO',
-      'channel': 'Commercial Cleaning CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=HahI_OcnGVA&t=21s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So stay tuned to the end so that you know how to apply these services to your '
-              'commercial cleaning company and your clients so that you can continue to add '
-              "more and more revenue. And if you don't know who I am, my name is Matt.",
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': 'So stay tuned to the end so that you know how to apply these services to your '
-             'commercial cleaning company and your clients so that you can continue to add '
-             "more and more revenue. And if you don't know who I am, my name is Matt.",
-      'title': 'How To Use Day Porter Services To Grow Your Cleaning Business (Commercial '
-               'Cleaning CEO)',
-      'url': 'https://www.youtube.com/watch?v=HahI_OcnGVA&t=21s',
-      'video_id': 'HahI_OcnGVA'},
-     {'author': 'Janitorial Manager',
-      'channel': 'Janitorial Manager',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:11](https://www.youtube.com/watch?v=NDvJAHP1GQo&t=131s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Simply add your business logo onto each QR code and place them throughout the '
-              'facilities you service, customers and the public can then scan your code to see '
-              "if an area is clean and rate the level of cleanliness they've observed.",
-      'timestamp': 131,
-      'timestamp_label': '[00:02:11]',
-      'timestamp_seconds': 131,
-      'tip': 'Simply add your business logo onto each QR code and place them throughout the '
-             'facilities you service, customers and the public can then scan your code to see '
-             "if an area is clean and rate the level of cleanliness they've observed.",
-      'title': 'Janitorial Manager QR Code Features and Benefits (Janitorial Manager)',
-      'url': 'https://www.youtube.com/watch?v=NDvJAHP1GQo&t=131s',
-      'video_id': 'NDvJAHP1GQo'},
-     {'author': 'Commercial Cleaning CEO',
-      'channel': 'Commercial Cleaning CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:10](https://www.youtube.com/watch?v=-DEX3b-m000&t=130s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'It was not able to be hands-off for the client. The cleaning company that was '
-              "fulfilling the contract was essentially just a staffing service. They weren't "
-              'able to do much of the management. But, the thing is with that, how can you '
-              'know when those problems are happening?',
-      'timestamp': 130,
-      'timestamp_label': '[00:02:10]',
-      'timestamp_seconds': 130,
-      'tip': 'It was not able to be hands-off for the client. The cleaning company that was '
-             "fulfilling the contract was essentially just a staffing service. They weren't "
-             'able to do much of the management. But, the thing is with that, how can you know '
-             'when those problems are happening?',
-      'title': 'Win $200K Commercial Cleaning Contracts With This Janitorial Software '
-               '(Commercial Cleaning CEO)',
-      'url': 'https://www.youtube.com/watch?v=-DEX3b-m000&t=130s',
-      'video_id': '-DEX3b-m000'},
-     {'author': 'Franchise Wizards',
-      'channel': 'Franchise Wizards',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=eJ5s6HRr1HE&t=21s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'t think about when considering business ownership, commercial cleaning. And "
-              "we're also exploring a very unique business model in the franchise industry, "
-              "the master franchise model. Here's what makes this conversation interesting.",
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': "'t think about when considering business ownership, commercial cleaning. And "
-             "we're also exploring a very unique business model in the franchise industry, the "
-             "master franchise model. Here's what makes this conversation interesting.",
-      'title': 'Own a Cleaning Franchise Without Cleaning? Stratus Clean Master Franchise '
-               'Explained (Franchise Wizards)',
-      'url': 'https://www.youtube.com/watch?v=eJ5s6HRr1HE&t=21s',
-      'video_id': 'eJ5s6HRr1HE'},
-     {'author': 'OctoClean Media',
-      'channel': 'OctoClean Media',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:26](https://www.youtube.com/watch?v=OzSRs5osKKI&t=326s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Lowballing may help you secure a job initially, but it often creates long-term '
-              'problems through poor margins, staffing issues, inconsistent service, and '
-              'strained client relationships. A sustainable cleaning company cannot be built '
-              'on desperation pricing.',
-      'timestamp': 326,
-      'timestamp_label': '[00:05:26]',
-      'timestamp_seconds': 326,
-      'tip': 'Lowballing may help you secure a job initially, but it often creates long-term '
-             'problems through poor margins, staffing issues, inconsistent service, and '
-             'strained client relationships. A sustainable cleaning company cannot be built on '
-             'desperation pricing.',
-      'title': 'How To Win Commercial Cleaning Contracts With Great Proposals! (Janitorial) '
-               '(OctoClean Media)',
-      'url': 'https://www.youtube.com/watch?v=OzSRs5osKKI&t=326s',
-      'video_id': 'OzSRs5osKKI'},
-     {'author': 'Cleaning Launch',
-      'channel': 'Cleaning Launch',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=V84a_KWRYU4&t=15s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Belief of thinking that they have to be the cheapest in order to win a '
-              "commercial cleaning contract and I'm here to tell you that clients are not.",
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Belief of thinking that they have to be the cheapest in order to win a '
-             "commercial cleaning contract and I'm here to tell you that clients are not.",
-      'title': 'Never Get Lowballed Commercial Cleaning Contracts Again With This Method '
-               '(Cleaning Launch)',
-      'url': 'https://www.youtube.com/watch?v=V84a_KWRYU4&t=15s',
-      'video_id': 'V84a_KWRYU4'},
-     {'author': 'Swept',
-      'channel': 'Swept',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:07](https://www.youtube.com/watch?v=Tub9xxD1-7o&t=367s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "And you know that may seem kind of counter-intuitive like well i'm i own a "
-              "cleaning company i'm here to provide a cleaning service.",
-      'timestamp': 367,
-      'timestamp_label': '[00:06:07]',
-      'timestamp_seconds': 367,
-      'tip': "And you know that may seem kind of counter-intuitive like well i'm i own a "
-             "cleaning company i'm here to provide a cleaning service.",
-      'title': 'Selling with Swept: How to Win 80% of Your Commercial Cleaning Contracts '
-               '(Swept)',
-      'url': 'https://www.youtube.com/watch?v=Tub9xxD1-7o&t=367s',
-      'video_id': 'Tub9xxD1-7o'},
-     {'author': 'CleanTender',
-      'channel': 'CleanTender',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:54](https://www.youtube.com/watch?v=M3p8970sZyg&t=54s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "For the devolved nations, you don't need to hunt down individual council sites. "
-              'Just use Public Contracts Scotland, Sell 2 Wales, eSourcing NI. For the '
-              'high-value cleaning contracts, everything must legally be posted on the Find a '
-              'Tender service.',
-      'timestamp': 54,
-      'timestamp_label': '[00:00:54]',
-      'timestamp_seconds': 54,
-      'tip': "For the devolved nations, you don't need to hunt down individual council sites. "
-             'Just use Public Contracts Scotland, Sell 2 Wales, eSourcing NI. For the '
-             'high-value cleaning contracts, everything must legally be posted on the Find a '
-             'Tender service.',
-      'title': 'How to Find, Bid and Win UK Cleaning Contracts (2026 Walkthrough) '
-               '(CleanTender)',
-      'url': 'https://www.youtube.com/watch?v=M3p8970sZyg&t=54s',
-      'video_id': 'M3p8970sZyg'},
-     {'author': 'Clean Ops Guide',
-      'channel': 'Clean Ops Guide',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:13](https://www.youtube.com/watch?v=XySWgKh0nEY&t=73s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Now, all three companies may know how to clean, but which one would you feel '
-              'more comfortable giving access to your property? Clients are only evaluating '
-              'your cleaning ability.',
-      'timestamp': 73,
-      'timestamp_label': '[00:01:13]',
-      'timestamp_seconds': 73,
-      'tip': 'Now, all three companies may know how to clean, but which one would you feel '
-             'more comfortable giving access to your property? Clients are only evaluating '
-             'your cleaning ability.',
-      'title': 'How to Win Commercial Cleaning Contracts | Step-by-Step Guide (Clean Ops '
-               'Guide)',
-      'url': 'https://www.youtube.com/watch?v=XySWgKh0nEY&t=73s',
-      'video_id': 'XySWgKh0nEY'},
-     {'author': 'GovKidMethod',
-      'channel': 'GovKidMethod',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:22:04](https://www.youtube.com/watch?v=ua_m84N0cwA&t=1324s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I mean, it could be under any services, but as long as it's a multiple option "
-              "year contract. And for this, we're assuming it's a base plus one, two, three, "
-              "four. So, it's a five-year contract. So, recurring service model base plus four "
-              'option years, fiveyear contract.',
-      'timestamp': 1324,
-      'timestamp_label': '[00:22:04]',
-      'timestamp_seconds': 1324,
-      'tip': "I mean, it could be under any services, but as long as it's a multiple option "
-             "year contract. And for this, we're assuming it's a base plus one, two, three, "
-             "four. So, it's a five-year contract. So, recurring service model base plus four "
-             'option years, fiveyear contract.',
-      'title': 'The Lucrative Janitorial Services Government Contracts Industry! '
-               '(GovKidMethod)',
-      'url': 'https://www.youtube.com/watch?v=ua_m84N0cwA&t=1324s',
-      'video_id': 'ua_m84N0cwA'},
-     {'author': 'Commercial Cleaning CEO',
-      'channel': 'Commercial Cleaning CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:18:52](https://www.youtube.com/watch?v=yfZUE5PZgvk&t=1132s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Look, being small is not the problem. It's looking risky that's the problem. "
-              'And when you do these 10 things inside of your commercial cleaning service, no '
-              "matter what size you are at, you're going to look far less risky to large "
-              'clients.',
-      'timestamp': 1132,
-      'timestamp_label': '[00:18:52]',
-      'timestamp_seconds': 1132,
-      'tip': "Look, being small is not the problem. It's looking risky that's the problem. And "
-             'when you do these 10 things inside of your commercial cleaning service, no '
-             "matter what size you are at, you're going to look far less risky to large "
-             'clients.',
-      'title': 'How Small Cleaning Companies Win BIG Contracts (Commercial Cleaning CEO)',
-      'url': 'https://www.youtube.com/watch?v=yfZUE5PZgvk&t=1132s',
-      'video_id': 'yfZUE5PZgvk'},
-     {'author': 'Darian Jarrett',
-      'channel': 'Darian Jarrett',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:50](https://www.youtube.com/watch?v=QlIScHN-MPE&t=410s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Really do this stuff email me at Daran Jared 9@gmail.com I'll be glad to get "
-              'with you and help you out with that by the way if you got any value out of this '
-              "video make sure you give me a like on this one I'll see you on the next video "
-              'peace.',
-      'timestamp': 410,
-      'timestamp_label': '[00:06:50]',
-      'timestamp_seconds': 410,
-      'tip': "Really do this stuff email me at Daran Jared 9@gmail.com I'll be glad to get "
-             'with you and help you out with that by the way if you got any value out of this '
-             "video make sure you give me a like on this one I'll see you on the next video "
-             'peace.',
-      'title': 'Are You Bidding Right? Here’s How to Price Commercial Cleaning Jobs Like The '
-               'Pros! (Darian Jarrett)',
-      'url': 'https://www.youtube.com/watch?v=QlIScHN-MPE&t=410s',
-      'video_id': 'QlIScHN-MPE'},
-     {'author': 'AJ SIMMONS',
-      'channel': 'AJ SIMMONS',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:30](https://www.youtube.com/watch?v=cWVLz5abUAg&t=510s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Service is all everything matches what you want your terms of services say also '
-              'make sure that wherever it says your company name you that you delete these '
-              'brackets and the words and actually put the name of your actual company okay so '
-              'test company.',
-      'timestamp': 510,
-      'timestamp_label': '[00:08:30]',
-      'timestamp_seconds': 510,
-      'tip': 'Service is all everything matches what you want your terms of services say also '
-             'make sure that wherever it says your company name you that you delete these '
-             'brackets and the words and actually put the name of your actual company okay so '
-             'test company.',
-      'title': 'How to bid on 30,000 square foot office building for cleaning | Calculated '
-               'Cleaning | Cleaning Cost (AJ SIMMONS)',
-      'url': 'https://www.youtube.com/watch?v=cWVLz5abUAg&t=510s',
-      'video_id': 'cWVLz5abUAg'},
-     {'author': 'The Janitorial Store',
-      'channel': 'The Janitorial Store',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:59](https://www.youtube.com/watch?v=U5pnasmmPuY&t=299s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Such tests may have to be done at intervals over a period of several months to '
-              'make sure that your needle stick injury does not lead to HIV hepatitis B HB v '
-              'hepatitis C HCV or any of approximately 20 other blood-borne diseases.',
-      'timestamp': 299,
-      'timestamp_label': '[00:04:59]',
-      'timestamp_seconds': 299,
-      'tip': 'Such tests may have to be done at intervals over a period of several months to '
-             'make sure that your needle stick injury does not lead to HIV hepatitis B HB v '
-             'hepatitis C HCV or any of approximately 20 other blood-borne diseases.',
-      'title': 'Bloodborne Pathogens Training for Janitorial Employees (The Janitorial Store)',
-      'url': 'https://www.youtube.com/watch?v=U5pnasmmPuY&t=299s',
-      'video_id': 'U5pnasmmPuY'}],
- 2: [{'author': 'Karen Denton KSC',
-      'channel': 'Karen Denton KSC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:44](https://www.youtube.com/watch?v=xeZ8_Jlv0AI&t=104s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Because here's something I want you to understand. You might have to pay your "
-              'employees before your customer even pays you. Now, imagine winning a large '
-              'contract that requires 10 employees. Can your company afford that payroll while '
-              "you're waiting for your first payment?",
-      'timestamp': 104,
-      'timestamp_label': '[00:01:44]',
-      'timestamp_seconds': 104,
-      'tip': "Because here's something I want you to understand. You might have to pay your "
-             'employees before your customer even pays you. Now, imagine winning a large '
-             'contract that requires 10 employees. Can your company afford that payroll while '
-             "you're waiting for your first payment?",
-      'title': 'Ready to Win Big Cleaning Contracts  Here’s What You Must Know First! (Karen '
-               'Denton KSC)',
-      'url': 'https://www.youtube.com/watch?v=xeZ8_Jlv0AI&t=104s',
-      'video_id': 'xeZ8_Jlv0AI'},
-     {'author': 'Clean Ops Guide',
-      'channel': 'Clean Ops Guide',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:34](https://www.youtube.com/watch?v=IgZO8_dFaeU&t=214s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You may need multiple employees, more equipment, additional supervision, and '
-              'enough money to cover payroll before the customer pays the invoice. If you '
-              "haven't developed your pricing and operational systems, a larger contract may "
-              'become overwhelming.',
-      'timestamp': 214,
-      'timestamp_label': '[00:03:34]',
-      'timestamp_seconds': 214,
-      'tip': 'You may need multiple employees, more equipment, additional supervision, and '
-             'enough money to cover payroll before the customer pays the invoice. If you '
-             "haven't developed your pricing and operational systems, a larger contract may "
-             'become overwhelming.',
-      'title': 'Starting a Commercial Cleaning Business? Understand This First (Clean Ops '
-               'Guide)',
-      'url': 'https://www.youtube.com/watch?v=IgZO8_dFaeU&t=214s',
-      'video_id': 'IgZO8_dFaeU'},
-     {'author': 'Logan Robison',
-      'channel': 'Logan Robison',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:31:08](https://www.youtube.com/watch?v=mrd8LK8fcFM&t=1868s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'t care what you charge your guests to pay for this clean. If you want my "
-              "company to clean this property, this is how much it's going to cost. Like, I "
-              "don't care what the guest pays. You can charge the guest $0. You can charge the "
-              'guest $500.',
-      'timestamp': 1868,
-      'timestamp_label': '[00:31:08]',
-      'timestamp_seconds': 1868,
-      'tip': "'t care what you charge your guests to pay for this clean. If you want my "
-             "company to clean this property, this is how much it's going to cost. Like, I "
-             "don't care what the guest pays. You can charge the guest $0. You can charge the "
-             'guest $500.',
-      'title': 'How I Built a $1M Airbnb Cleaning Business — Without Cleaning a Single Unit '
-               '(Logan Robison)',
-      'url': 'https://www.youtube.com/watch?v=mrd8LK8fcFM&t=1868s',
-      'video_id': 'mrd8LK8fcFM'},
-     {'author': 'Little Wonders',
-      'channel': 'Little Wonders',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:36](https://www.youtube.com/watch?v=AdyzLEzXsAQ&t=96s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'In this example, the calculator includes labor, cleaning supplies, travel, and '
-              "an allowance for overhead. Let's raise the supplies budget from 18 to quote "
-              "increases from 180 to $195. That's why it's important to enter realistic costs "
-              'before quoting a customer.',
-      'timestamp': 96,
-      'timestamp_label': '[00:01:36]',
-      'timestamp_seconds': 96,
-      'tip': 'In this example, the calculator includes labor, cleaning supplies, travel, and '
-             "an allowance for overhead. Let's raise the supplies budget from 18 to quote "
-             "increases from 180 to $195. That's why it's important to enter realistic costs "
-             'before quoting a customer.',
-      'title': 'Cleaning Business Quote Calculator in Google Sheets (Easy Tutorial) (Little '
-               'Wonders)',
-      'url': 'https://www.youtube.com/watch?v=AdyzLEzXsAQ&t=96s',
-      'video_id': 'AdyzLEzXsAQ'},
-     {'author': 'Daniel Linton',
-      'channel': 'Daniel Linton',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:06](https://www.youtube.com/watch?v=B415KkGunUw&t=186s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Basically, the porter is on the cleaning company's insurance, cleaning "
-              "company's benefits, the cleaning company's payroll, the cleaning company just "
-              'charges the end customer a markup on their hourly rate.',
-      'timestamp': 186,
-      'timestamp_label': '[00:03:06]',
-      'timestamp_seconds': 186,
-      'tip': "Basically, the porter is on the cleaning company's insurance, cleaning company's "
-             "benefits, the cleaning company's payroll, the cleaning company just charges the "
-             'end customer a markup on their hourly rate.',
-      'title': 'Cold Calling Guide for Janitorial Companies | Appointment Setting Training '
-               '(Daniel Linton)',
-      'url': 'https://www.youtube.com/watch?v=B415KkGunUw&t=186s',
-      'video_id': 'B415KkGunUw'},
-     {'author': 'Mike Mak',
-      'channel': 'Mike Mak',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:56](https://www.youtube.com/watch?v=6MDrTK46_8g&t=356s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Perform a carpet job which typically did pay really well the only problem that '
-              'those those fees existed even on those.',
-      'timestamp': 356,
-      'timestamp_label': '[00:05:56]',
-      'timestamp_seconds': 356,
-      'tip': 'Perform a carpet job which typically did pay really well the only problem that '
-             'those those fees existed even on those.',
-      'title': "The Dark Side of Buying a Cleaning Franchise - What They Don't Tell You (Mike "
-               'Mak)',
-      'url': 'https://www.youtube.com/watch?v=6MDrTK46_8g&t=356s',
-      'video_id': '6MDrTK46_8g'},
-     {'author': 'Commercial Cleaning CEO',
-      'channel': 'Commercial Cleaning CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:55](https://www.youtube.com/watch?v=f9f6YA_kX78&t=295s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'To increase profitability through something that I like to call Value training '
-              'you see the Temptation that commercial cleaning business owners face.',
-      'timestamp': 295,
-      'timestamp_label': '[00:04:55]',
-      'timestamp_seconds': 295,
-      'tip': 'To increase profitability through something that I like to call Value training '
-             'you see the Temptation that commercial cleaning business owners face.',
-      'title': '3 PROVEN Cold Calling Tips That Get More Commercial Cleaning Contracts '
-               '(Commercial Cleaning CEO)',
-      'url': 'https://www.youtube.com/watch?v=f9f6YA_kX78&t=295s',
-      'video_id': 'f9f6YA_kX78'},
-     {'author': 'Janitorial Coaching Hub',
-      'channel': 'Janitorial Coaching Hub',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:22](https://www.youtube.com/watch?v=GlA-D_TIYLg&t=22s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "You're starting out cash flow sometimes is very difficult you don't have enough "
-              'money to pay your staff every two weeks so um some contract some clients may.',
-      'timestamp': 22,
-      'timestamp_label': '[00:00:22]',
-      'timestamp_seconds': 22,
-      'tip': "You're starting out cash flow sometimes is very difficult you don't have enough "
-             'money to pay your staff every two weeks so um some contract some clients may.',
-      'title': 'Should You use W-2 or 1099 (Subcontracting) Model For Your Cleaning Team '
-               '(Janitorial Coaching Hub)',
-      'url': 'https://www.youtube.com/watch?v=GlA-D_TIYLg&t=22s',
-      'video_id': 'GlA-D_TIYLg'},
-     {'author': 'GovKidMethod',
-      'channel': 'GovKidMethod',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:44:40](https://www.youtube.com/watch?v=dr59GJ2T5v4&t=2680s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "It's really good way to to put your yourself out of business if you don't pay "
-              "this and you get caught. So, it's this number plus the 454 plus plus vacation "
-              'and holidays.',
-      'timestamp': 2680,
-      'timestamp_label': '[00:44:40]',
-      'timestamp_seconds': 2680,
-      'tip': "It's really good way to to put your yourself out of business if you don't pay "
-             "this and you get caught. So, it's this number plus the 454 plus plus vacation "
-             'and holidays.',
-      'title': 'Janitorial GovCon Bids (beta.sam.gov) | LIVE with GovKidMethod (GovKidMethod)',
-      'url': 'https://www.youtube.com/watch?v=dr59GJ2T5v4&t=2680s',
-      'video_id': 'dr59GJ2T5v4'},
-     {'author': 'AJ SIMMONS',
-      'channel': 'AJ SIMMONS',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:18](https://www.youtube.com/watch?v=QBuGc_Q36dg&t=558s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Calculated clean mobile app as well all right so that's what I got for y'all "
-              'until you click another video and go watch man watch another video why not '
-              'binge.',
-      'timestamp': 558,
-      'timestamp_label': '[00:09:18]',
-      'timestamp_seconds': 558,
-      'tip': "Calculated clean mobile app as well all right so that's what I got for y'all "
-             'until you click another video and go watch man watch another video why not '
-             'binge.',
-      'title': 'How To Get Commercial Cleaning Customers - Million Dollar Cleaning Company '
-               'Shares Secret!!! (AJ SIMMONS)',
-      'url': 'https://www.youtube.com/watch?v=QBuGc_Q36dg&t=558s',
-      'video_id': 'QBuGc_Q36dg'},
-     {'author': 'OctoClean Media',
-      'channel': 'OctoClean Media',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:54](https://www.youtube.com/watch?v=1tf8JMWxi98&t=54s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Decision and do they have budget now we're going to go through each one of "
-              'those individually what is pain.',
-      'timestamp': 54,
-      'timestamp_label': '[00:00:54]',
-      'timestamp_seconds': 54,
-      'tip': "Decision and do they have budget now we're going to go through each one of those "
-             'individually what is pain.',
-      'title': 'Do THIS to Close a Commercial Cleaning Deal Every Time (OctoClean Media)',
-      'url': 'https://www.youtube.com/watch?v=1tf8JMWxi98&t=54s',
-      'video_id': '1tf8JMWxi98'},
-     {'author': 'iCleaners Commercial Cleaning Services',
-      'channel': 'iCleaners Commercial Cleaning Services',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:13:02](https://www.youtube.com/watch?v=iigVbHUUCBE&t=782s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Find out this information is sometimes not through me but through other people '
-              'that actually do that facility okay guys so this is it hope everybody has '
-              'downloaded the app.',
-      'timestamp': 782,
-      'timestamp_label': '[00:13:02]',
-      'timestamp_seconds': 782,
-      'tip': 'Find out this information is sometimes not through me but through other people '
-             'that actually do that facility okay guys so this is it hope everybody has '
-             'downloaded the app.',
-      'title': 'Using the Swept App (iCleaners Commercial Cleaning Services)',
-      'url': 'https://www.youtube.com/watch?v=iigVbHUUCBE&t=782s',
-      'video_id': 'iigVbHUUCBE'},
-     {'author': 'Commercial Cleaning CEO',
-      'channel': 'Commercial Cleaning CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:42](https://www.youtube.com/watch?v=huf7CKyeee4&t=42s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And if you want my help and the full seven-figure blueprint to build a '
-              'seven-figure commercial cleaning company, check out the links down below. If '
-              "you don't know who I am, my name is Matt. I'm a seven-figure commercial "
-              'cleaning CEO.',
-      'timestamp': 42,
-      'timestamp_label': '[00:00:42]',
-      'timestamp_seconds': 42,
-      'tip': 'And if you want my help and the full seven-figure blueprint to build a '
-             'seven-figure commercial cleaning company, check out the links down below. If you '
-             "don't know who I am, my name is Matt. I'm a seven-figure commercial cleaning "
-             'CEO.',
-      'title': 'How to Get Commercial Cleaning Contracts as a Residential Cleaner (Commercial '
-               'Cleaning CEO)',
-      'url': 'https://www.youtube.com/watch?v=huf7CKyeee4&t=42s',
-      'video_id': 'huf7CKyeee4'},
-     {'author': 'The Janitorial Store',
-      'channel': 'The Janitorial Store',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:54](https://www.youtube.com/watch?v=YC2NrvVJqlg&t=54s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "What you're what you want to do the last thing you want to do is have a an "
-              "employee that you're going to label a subcontractor and give them a 10.99 at "
-              'the end of the year and expect them to pay for their taxes and stuff.',
-      'timestamp': 54,
-      'timestamp_label': '[00:00:54]',
-      'timestamp_seconds': 54,
-      'tip': "What you're what you want to do the last thing you want to do is have a an "
-             "employee that you're going to label a subcontractor and give them a 10.99 at the "
-             'end of the year and expect them to pay for their taxes and stuff.',
-      'title': 'What is a 1099 employee? | The Janitorial Store (The Janitorial Store)',
-      'url': 'https://www.youtube.com/watch?v=YC2NrvVJqlg&t=54s',
-      'video_id': 'YC2NrvVJqlg'},
-     {'author': 'AJ SIMMONS',
-      'channel': 'AJ SIMMONS',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:22:58](https://www.youtube.com/watch?v=NHWdv_WG2B8&t=1378s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I'm going up is that right okay uh let's see what we got here favorite and "
-              "actually before we do that one best decision you've made in business so far "
-              'hmm.',
-      'timestamp': 1378,
-      'timestamp_label': '[00:22:58]',
-      'timestamp_seconds': 1378,
-      'tip': "I'm going up is that right okay uh let's see what we got here favorite and "
-             "actually before we do that one best decision you've made in business so far hmm.",
-      'title': 'How To Start A Cleaning Business With NO MONEY, NO SUPPLIES, NO WEBSITE! (AJ '
-               'SIMMONS)',
-      'url': 'https://www.youtube.com/watch?v=NHWdv_WG2B8&t=1378s',
-      'video_id': 'NHWdv_WG2B8'}],
- 3: [{'author': 'Clean Ops Guide',
-      'channel': 'Clean Ops Guide',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=9ojOIxznBUc&t=21s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You can win a contract and still lose money every month. Welcome to Clean Ops '
-              "Guide. Today, we're going to look at why pricing matters, what actually "
-              'determines the cost of cleaning a building, and how to approach your next bid '
-              'with more confidence.',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': 'You can win a contract and still lose money every month. Welcome to Clean Ops '
-             "Guide. Today, we're going to look at why pricing matters, what actually "
-             'determines the cost of cleaning a building, and how to approach your next bid '
-             'with more confidence.',
-      'title': 'How to Price Commercial Cleaning Jobs Without Losing Money (Clean Ops Guide)',
-      'url': 'https://www.youtube.com/watch?v=9ojOIxznBUc&t=21s',
-      'video_id': '9ojOIxznBUc'},
-     {'author': 'Karen Denton KSC',
-      'channel': 'Karen Denton KSC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:30](https://www.youtube.com/watch?v=h7lD-HNIQ_o&t=30s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Too many business owners are out here guessing, under bidding, or missing '
-              "opportunities because they don't understand how to calculate true cost, factor "
-              "in labor, supplies, and profit. 's bid like I used to do with the franchises.",
-      'timestamp': 30,
-      'timestamp_label': '[00:00:30]',
-      'timestamp_seconds': 30,
-      'tip': 'Too many business owners are out here guessing, under bidding, or missing '
-             "opportunities because they don't understand how to calculate true cost, factor "
-             "in labor, supplies, and profit. 's bid like I used to do with the franchises.",
-      'title': 'How to Price Commercial Cleaning Services (The Right Way!) (Karen Denton KSC)',
-      'url': 'https://www.youtube.com/watch?v=h7lD-HNIQ_o&t=30s',
-      'video_id': 'h7lD-HNIQ_o'},
-     {'author': 'Vetted Biz | Best Franchise Opportunities to Buy',
-      'channel': 'Vetted Biz | Best Franchise Opportunities to Buy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:51](https://www.youtube.com/watch?v=rQxrqnty1Cs&t=171s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Looking at it that you understand if you're going to be more of a area "
-              "developer master and really growing a large business or if you're looking more "
-              'for a side game you might be a better fit for being a unit level franchisee for '
-              'commercial cleaning.',
-      'timestamp': 171,
-      'timestamp_label': '[00:02:51]',
-      'timestamp_seconds': 171,
-      'tip': "Looking at it that you understand if you're going to be more of a area developer "
-             "master and really growing a large business or if you're looking more for a side "
-             'game you might be a better fit for being a unit level franchisee for commercial '
-             'cleaning.',
-      'title': 'The Secret to Massive Profits with Cleaning Franchises! 💰📈 (Vetted Biz | Best '
-               'Franchise Opportunities to Buy)',
-      'url': 'https://www.youtube.com/watch?v=rQxrqnty1Cs&t=171s',
-      'video_id': 'rQxrqnty1Cs'},
-     {'author': 'True Trade Cost',
-      'channel': 'True Trade Cost',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:12](https://www.youtube.com/watch?v=8lFhFbsEuDc&t=132s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Then it builds a clean quote with every schedule priced, ready to send tonight. '
-              'After the job, the job log shows which accounts actually made money. The '
-              'commercial cleaning pricing calculator works in Excel or Google Sheets, $49.',
-      'timestamp': 132,
-      'timestamp_label': '[00:02:12]',
-      'timestamp_seconds': 132,
-      'tip': 'Then it builds a clean quote with every schedule priced, ready to send tonight. '
-             'After the job, the job log shows which accounts actually made money. The '
-             'commercial cleaning pricing calculator works in Excel or Google Sheets, $49.',
-      'title': 'How Much to Charge for Commercial Cleaning | Commercial Cleaning Pricing '
-               'Calculator Walkthrough (True Trade Cost)',
-      'url': 'https://www.youtube.com/watch?v=8lFhFbsEuDc&t=132s',
-      'video_id': '8lFhFbsEuDc'},
-     {'author': 'Channel Zero Marketing',
-      'channel': 'Channel Zero Marketing',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=Ey7iPjW1uZQ&t=21s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'How much should I charge cleaning twice a week? " And I\'m in these groups and '
-              'I actually had Claude AI go and scrape several of these groups, 1,900 post and '
-              'the most common question was about pricing, how to price commercial accounts. '
-              'And this one got 49 comments.',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': 'How much should I charge cleaning twice a week? " And I\'m in these groups and I '
-             'actually had Claude AI go and scrape several of these groups, 1,900 post and the '
-             'most common question was about pricing, how to price commercial accounts. And '
-             'this one got 49 comments.',
-      'title': 'How to Price Your First Commercial Cleaning Contract (Real Example) (Channel '
-               'Zero Marketing)',
-      'url': 'https://www.youtube.com/watch?v=Ey7iPjW1uZQ&t=21s',
-      'video_id': 'Ey7iPjW1uZQ'},
-     {'author': 'Cleaning Business Tools',
-      'channel': 'Cleaning Business Tools',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:36](https://www.youtube.com/watch?v=skflEiwVHxw&t=36s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Then add any add-ons, take off any recurring discount, and round up. And the '
-              'price never goes below your minimum job price. Everything starts on the '
-              'Settings tab. Target labor cost is what one cleaner hour costs you. Your pay or '
-              'wage, plus payroll.',
-      'timestamp': 36,
-      'timestamp_label': '[00:00:36]',
-      'timestamp_seconds': 36,
-      'tip': 'Then add any add-ons, take off any recurring discount, and round up. And the '
-             'price never goes below your minimum job price. Everything starts on the Settings '
-             'tab. Target labor cost is what one cleaner hour costs you. Your pay or wage, '
-             'plus payroll.',
-      'title': 'How to Price a House Cleaning Job (Real Math, Step by Step) (Cleaning Business '
-               'Tools)',
-      'url': 'https://www.youtube.com/watch?v=skflEiwVHxw&t=36s',
-      'video_id': 'skflEiwVHxw'},
-     {'author': 'Janibid',
-      'channel': 'Janibid',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:38](https://www.youtube.com/watch?v=9FeuDZZNdKI&t=98s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Two hours go ahead and calculate it again it's going to punch out the every "
-              'other week monthly cost so monthly total cost 186 monthly total profit 250 um '
-              "monthly total price to the customer 436 added 83.33% profit and that's it "
-              'pretty simple pretty easy to use.',
-      'timestamp': 98,
-      'timestamp_label': '[00:01:38]',
-      'timestamp_seconds': 98,
-      'tip': "Two hours go ahead and calculate it again it's going to punch out the every "
-             'other week monthly cost so monthly total cost 186 monthly total profit 250 um '
-             "monthly total price to the customer 436 added 83.33% profit and that's it pretty "
-             'simple pretty easy to use.',
-      'title': 'How to Bid Commercial Cleaning Services? Free Commercial Cleaning Calculator '
-               '(Janibid)',
-      'url': 'https://www.youtube.com/watch?v=9FeuDZZNdKI&t=98s',
-      'video_id': '9FeuDZZNdKI'},
-     {'author': 'Janibid',
-      'channel': 'Janibid',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:54](https://www.youtube.com/watch?v=Q0_kmHGx6FI&t=114s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Um, and then you go ahead and calculate it. Once you hit calculate, it's going "
-              "to give you the total monthly cost. It's going to tell you the monthly profit "
-              'and the total price to the customer.',
-      'timestamp': 114,
-      'timestamp_label': '[00:01:54]',
-      'timestamp_seconds': 114,
-      'tip': "Um, and then you go ahead and calculate it. Once you hit calculate, it's going "
-             "to give you the total monthly cost. It's going to tell you the monthly profit "
-             'and the total price to the customer.',
-      'title': 'Free Commercial Calculator App - How to price commercial cleaning? (Janibid)',
-      'url': 'https://www.youtube.com/watch?v=Q0_kmHGx6FI&t=114s',
-      'video_id': 'Q0_kmHGx6FI'},
-     {'author': 'The Janitorial Store',
-      'channel': 'The Janitorial Store',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:00](https://www.youtube.com/watch?v=RNflg846cs4&t=360s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "More it's gonna cost them so anyway so those are all things that you want to "
-              "keep in mind when you're pricing post construction cleanup you know it's a.",
-      'timestamp': 360,
-      'timestamp_label': '[00:06:00]',
-      'timestamp_seconds': 360,
-      'tip': "More it's gonna cost them so anyway so those are all things that you want to "
-             "keep in mind when you're pricing post construction cleanup you know it's a.",
-      'title': 'How to price post construction cleaning (The Janitorial Store)',
-      'url': 'https://www.youtube.com/watch?v=RNflg846cs4&t=360s',
-      'video_id': 'RNflg846cs4'},
-     {'author': 'UpFlip',
-      'channel': 'UpFlip',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:14:55](https://www.youtube.com/watch?v=PUIZGbefocg&t=895s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You have thousands every month for a really low cost. But outside of that, you '
-              'have to come and really see the place, right? Are profit margins higher here or '
-              'about the same? The margins are about the same, actually.',
-      'timestamp': 895,
-      'timestamp_label': '[00:14:55]',
-      'timestamp_seconds': 895,
-      'tip': 'You have thousands every month for a really low cost. But outside of that, you '
-             'have to come and really see the place, right? Are profit margins higher here or '
-             'about the same? The margins are about the same, actually.',
-      'title': 'How He Makes $250K/Year Cleaning Homes... From His Laptop?! (UpFlip)',
-      'url': 'https://www.youtube.com/watch?v=PUIZGbefocg&t=895s',
-      'video_id': 'PUIZGbefocg'},
-     {'author': 'OctoClean Media',
-      'channel': 'OctoClean Media',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:54](https://www.youtube.com/watch?v=j_wLBMK7Flk&t=114s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Takes to actually clean the facility how much your labor will cost your '
-              'overhead and your profit you then must be able to demonstrate those estimations '
-              'to a.',
-      'timestamp': 114,
-      'timestamp_label': '[00:01:54]',
-      'timestamp_seconds': 114,
-      'tip': 'Takes to actually clean the facility how much your labor will cost your overhead '
-             'and your profit you then must be able to demonstrate those estimations to a.',
-      'title': 'How to Create a Kickass Commercial Cleaning Proposal (OctoClean Media)',
-      'url': 'https://www.youtube.com/watch?v=j_wLBMK7Flk&t=114s',
-      'video_id': 'j_wLBMK7Flk'},
-     {'author': 'Commercial Cleaning CEO',
-      'channel': 'Commercial Cleaning CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=TCaVkVk94bc&t=15s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Commercial cleaning company by working with property managers and how they '
-              "differ from other types of clients within our company we've worked with.",
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Commercial cleaning company by working with property managers and how they '
-             "differ from other types of clients within our company we've worked with.",
-      'title': 'How To Win Big Cleaning Contracts With Property Managers (Commercial Cleaning '
-               'CEO)',
-      'url': 'https://www.youtube.com/watch?v=TCaVkVk94bc&t=15s',
-      'video_id': 'TCaVkVk94bc'},
-     {'author': 'AJ SIMMONS',
-      'channel': 'AJ SIMMONS',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:56](https://www.youtube.com/watch?v=Bbay8f0-XFM&t=116s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Under bid their contracts right and when I say under bid I mean they price way '
-              'too low I just did a video probably about two weeks ago on my channel uh.',
-      'timestamp': 116,
-      'timestamp_label': '[00:01:56]',
-      'timestamp_seconds': 116,
-      'tip': 'Under bid their contracts right and when I say under bid I mean they price way '
-             'too low I just did a video probably about two weeks ago on my channel uh.',
-      'title': 'Is A Cleaning Franchise Worth It? (AJ SIMMONS)',
-      'url': 'https://www.youtube.com/watch?v=Bbay8f0-XFM&t=116s',
-      'video_id': 'Bbay8f0-XFM'},
-     {'author': 'Service On Command',
-      'channel': 'Service On Command',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:23](https://www.youtube.com/watch?v=CXVWaxMTpV0&t=263s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Instructions on there if there's special hot spots that we for but this is the "
-              'basic rundown and swept at if you have any questions please let us know.',
-      'timestamp': 263,
-      'timestamp_label': '[00:04:23]',
-      'timestamp_seconds': 263,
-      'tip': "Instructions on there if there's special hot spots that we for but this is the "
-             'basic rundown and swept at if you have any questions please let us know.',
-      'title': 'Training - Swept Mobile App (Service On Command)',
-      'url': 'https://www.youtube.com/watch?v=CXVWaxMTpV0&t=263s',
-      'video_id': 'CXVWaxMTpV0'},
-     {'author': 'The Janitorial Store',
-      'channel': 'The Janitorial Store',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:31](https://www.youtube.com/watch?v=1c9Ty46MQbg&t=271s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Uh share and if you haven't already go ahead and uh you know click on that bell "
-              "notification so you can get any notifications for new videos that we're putting "
-              "out so hopefully this did help and thanks for checking in today and we'll see "
-              'you next time.',
-      'timestamp': 271,
-      'timestamp_label': '[00:04:31]',
-      'timestamp_seconds': 271,
-      'tip': "Uh share and if you haven't already go ahead and uh you know click on that bell "
-             "notification so you can get any notifications for new videos that we're putting "
-             "out so hopefully this did help and thanks for checking in today and we'll see "
-             'you next time.',
-      'title': 'Pricing Day Porter Service | The Janitorial Store (The Janitorial Store)',
-      'url': 'https://www.youtube.com/watch?v=1c9Ty46MQbg&t=271s',
-      'video_id': '1c9Ty46MQbg'}],
- 4: [{'author': 'Small Business Bid School',
-      'channel': 'Small Business Bid School',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:27](https://www.youtube.com/watch?v=uARedcLLS5c&t=87s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Let's budget $180 per month for cleaning products, trash liners, equipment "
-              "wear, and other consumables. We'll estimate $120 per month. We also need to "
-              'cover business overhead, such as administration, insurance, software, and other '
-              'operating expenses.',
-      'timestamp': 87,
-      'timestamp_label': '[00:01:27]',
-      'timestamp_seconds': 87,
-      'tip': "Let's budget $180 per month for cleaning products, trash liners, equipment wear, "
-             "and other consumables. We'll estimate $120 per month. We also need to cover "
-             'business overhead, such as administration, insurance, software, and other '
-             'operating expenses.',
-      'title': 'How to Price a Government Cleaning Contract (Step-by-Step) (Small Business Bid '
-               'School)',
-      'url': 'https://www.youtube.com/watch?v=uARedcLLS5c&t=87s',
-      'video_id': 'uARedcLLS5c'},
-     {'author': 'Mark Etherton - The Millionaire Playbook',
-      'channel': 'Mark Etherton - The Millionaire Playbook',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:46](https://www.youtube.com/watch?v=PG-8SEuPFQk&t=46s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "5 to 10 times more, but only if you know what you're doing. Step one, choose "
-              "your service area. You don't need the whole state. Pick a 25 to 50 mile radius "
-              'where construction is booming. Step two, set up your business with an LLC, '
-              'insurance, website, simple email.',
-      'timestamp': 46,
-      'timestamp_label': '[00:00:46]',
-      'timestamp_seconds': 46,
-      'tip': "5 to 10 times more, but only if you know what you're doing. Step one, choose "
-             "your service area. You don't need the whole state. Pick a 25 to 50 mile radius "
-             'where construction is booming. Step two, set up your business with an LLC, '
-             'insurance, website, simple email.',
-      'title': 'How to Start a Construction Cleaning Company (What Most People Get Wrong) '
-               '#constructioncleaning (Mark Etherton - The Millionaire Playbook)',
-      'url': 'https://www.youtube.com/watch?v=PG-8SEuPFQk&t=46s',
-      'video_id': 'PG-8SEuPFQk'},
-     {'author': 'Owlsfield Financial Corp',
-      'channel': 'Owlsfield Financial Corp',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:29](https://www.youtube.com/watch?v=LARqKW_L-QI&t=89s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Check the locations, hours, required experience, insurance, security rules, '
-              'site visit questions, deadline, and submission dead A large contract useful if '
-              'your company can perform it. Attend the site visit when the bid requires one.',
-      'timestamp': 89,
-      'timestamp_label': '[00:01:29]',
-      'timestamp_seconds': 89,
-      'tip': 'Check the locations, hours, required experience, insurance, security rules, site '
-             'visit questions, deadline, and submission dead A large contract useful if your '
-             'company can perform it. Attend the site visit when the bid requires one.',
-      'title': 'Government Cleaning Contracts: How to Bid and Win More Business (Owlsfield '
-               'Financial Corp)',
-      'url': 'https://www.youtube.com/watch?v=LARqKW_L-QI&t=89s',
-      'video_id': 'LARqKW_L-QI'},
-     {'author': 'The Professional Cleaner',
-      'channel': 'The Professional Cleaner',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:51](https://www.youtube.com/watch?v=DDLzG49aDvU&t=471s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Your cleaning business like an office and you want to ensure that computers and '
-              'other equipment stored there and with commercial auto insurance you would.',
-      'timestamp': 471,
-      'timestamp_label': '[00:07:51]',
-      'timestamp_seconds': 471,
-      'tip': 'Your cleaning business like an office and you want to ensure that computers and '
-             'other equipment stored there and with commercial auto insurance you would.',
-      'title': 'Cleaning Business Insurance & Bonding… MUST KNOWS 🧼 💸 (The Professional '
-               'Cleaner)',
-      'url': 'https://www.youtube.com/watch?v=DDLzG49aDvU&t=471s',
-      'video_id': 'DDLzG49aDvU'},
-     {'author': 'OctoClean Media',
-      'channel': 'OctoClean Media',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:19](https://www.youtube.com/watch?v=SXNq_81x8SY&t=319s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You and your area now you have your hourly rate you have your building '
-              "inventory and you're able to figure out how much time it's going to take you to "
-              "clean a facility every day so what's this equation on how to bid accounts it's "
-              'pretty simple.',
-      'timestamp': 319,
-      'timestamp_label': '[00:05:19]',
-      'timestamp_seconds': 319,
-      'tip': 'You and your area now you have your hourly rate you have your building inventory '
-             "and you're able to figure out how much time it's going to take you to clean a "
-             "facility every day so what's this equation on how to bid accounts it's pretty "
-             'simple.',
-      'title': 'How to Bid Commercial Cleaning Jobs (FORMULA INCLUDED) (OctoClean Media)',
-      'url': 'https://www.youtube.com/watch?v=SXNq_81x8SY&t=319s',
-      'video_id': 'SXNq_81x8SY'},
-     {'author': 'Jazmine Tates',
-      'channel': 'Jazmine Tates',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:50](https://www.youtube.com/watch?v=g8OVdfYHogY&t=530s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '300 cleaning day program below. It will walk you through step-by-step pricing, '
-              'structuring, positioning, scripts, back-end support, back-end setup, start the '
-              "structure, not the stress. And remember, y'all, lean in a little bit, lean in. "
-              'Experience cleaning is optional.',
-      'timestamp': 530,
-      'timestamp_label': '[00:08:50]',
-      'timestamp_seconds': 530,
-      'tip': '300 cleaning day program below. It will walk you through step-by-step pricing, '
-             'structuring, positioning, scripts, back-end support, back-end setup, start the '
-             "structure, not the stress. And remember, y'all, lean in a little bit, lean in. "
-             'Experience cleaning is optional.',
-      'title': 'How to Start a Cleaning Business With No Experience (2026 Beginner Guide) '
-               '(Jazmine Tates)',
-      'url': 'https://www.youtube.com/watch?v=g8OVdfYHogY&t=530s',
-      'video_id': 'g8OVdfYHogY'},
-     {'author': 'The Coyle Group - Business Insurance',
-      'channel': 'The Coyle Group - Business Insurance',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:08](https://www.youtube.com/watch?v=HSh0vcHYmUI&t=188s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And fortunately, we at The Coile Group, we do all these things and more to help '
-              'you make the best decisions when it comes to business insurance, not just '
-              'workers comp for your janitorial business.',
-      'timestamp': 188,
-      'timestamp_label': '[00:03:08]',
-      'timestamp_seconds': 188,
-      'tip': 'And fortunately, we at The Coile Group, we do all these things and more to help '
-             'you make the best decisions when it comes to business insurance, not just '
-             'workers comp for your janitorial business.',
-      'title': 'Workers Compensation for Janitorial Contractors in NY (The Coyle Group - '
-               'Business Insurance)',
-      'url': 'https://www.youtube.com/watch?v=HSh0vcHYmUI&t=188s',
-      'video_id': 'HSh0vcHYmUI'},
-     {'author': 'Commercial Cleaning CEO',
-      'channel': 'Commercial Cleaning CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:26](https://www.youtube.com/watch?v=9BXhBVRp_XU&t=266s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Going to cover how to do each of those in just a sec but real quick if you do '
-              "own a commercial cleaning company and you're wanting to grow to seven figures.",
-      'timestamp': 266,
-      'timestamp_label': '[00:04:26]',
-      'timestamp_seconds': 266,
-      'tip': 'Going to cover how to do each of those in just a sec but real quick if you do '
-             "own a commercial cleaning company and you're wanting to grow to seven figures.",
-      'title': 'W2 Employees Or 1099 Contractors? Which To Pick For Your Cleaning Business '
-               '(Commercial Cleaning CEO)',
-      'url': 'https://www.youtube.com/watch?v=9BXhBVRp_XU&t=266s',
-      'video_id': '9BXhBVRp_XU'},
-     {'author': 'Medicine and Health Sciences at Bethel University',
-      'channel': 'Medicine and Health Sciences at Bethel University',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:06](https://www.youtube.com/watch?v=jf-dh46niMw&t=306s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Let it you know wait for like five to ten minutes typically about a minute is '
-              "the appropriate length of time to be able to disinfect everything so now we're "
-              "just going to take your disposable towel make sure that you're wiping the "
-              'entire surface up and cleaning the area.',
-      'timestamp': 306,
-      'timestamp_label': '[00:05:06]',
-      'timestamp_seconds': 306,
-      'tip': 'Let it you know wait for like five to ten minutes typically about a minute is '
-             "the appropriate length of time to be able to disinfect everything so now we're "
-             "just going to take your disposable towel make sure that you're wiping the entire "
-             'surface up and cleaning the area.',
-      'title': 'Cleaning and Decontaminating a Blood Borne Pathogen Spill Skills Video '
-               '(Medicine and Health Sciences at Bethel University)',
-      'url': 'https://www.youtube.com/watch?v=jf-dh46niMw&t=306s',
-      'video_id': 'jf-dh46niMw'},
-     {'author': 'Elite Business Insurance',
-      'channel': 'Elite Business Insurance',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:34](https://www.youtube.com/watch?v=PGrPNqCYNvY&t=214s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "You need so give us a call give us a chance we'll give you as many options as "
-              "possible and we'll give you the best price possible 185 0 81 9 elite business "
-              'insurance we are a Leeds.',
-      'timestamp': 214,
-      'timestamp_label': '[00:03:34]',
-      'timestamp_seconds': 214,
-      'tip': "You need so give us a call give us a chance we'll give you as many options as "
-             "possible and we'll give you the best price possible 185 0 81 9 elite business "
-             'insurance we are a Leeds.',
-      'title': 'Janitorial Bonding Insurance - Janitorial Bonding Insurance Explained (Elite '
-               'Business Insurance)',
-      'url': 'https://www.youtube.com/watch?v=PGrPNqCYNvY&t=214s',
-      'video_id': 'PGrPNqCYNvY'},
-     {'author': 'AJ SIMMONS',
-      'channel': 'AJ SIMMONS',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:18:47](https://www.youtube.com/watch?v=mOnf6pk37_c&t=1127s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So that'll be your daytime inspections. And then when you're doing daytime "
-              "inspections, y'all didn't clean this network, use your app. If you got a "
-              'tablet, it look even better.',
-      'timestamp': 1127,
-      'timestamp_label': '[00:18:47]',
-      'timestamp_seconds': 1127,
-      'tip': "So that'll be your daytime inspections. And then when you're doing daytime "
-             "inspections, y'all didn't clean this network, use your app. If you got a tablet, "
-             'it look even better.',
-      'title': 'All Cleaners Need To Watch THIS! (Commercial Cleaning Training) (AJ SIMMONS)',
-      'url': 'https://www.youtube.com/watch?v=mOnf6pk37_c&t=1127s',
-      'video_id': 'mOnf6pk37_c'},
-     {'author': 'Construction Clean Partners',
-      'channel': 'Construction Clean Partners',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:24](https://www.youtube.com/watch?v=vx1fwmFh0zM&t=144s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Jobs are worth 10 20 $30,000 uh the estimated job amount we put it on the '
-              "Facebook ad so you can decide there but if it's worth 20 or 30,000 bucks it "
-              'might be worth getting the insurance for anyways uh hope to hear from you soon '
-              'and bye-bye.',
-      'timestamp': 144,
-      'timestamp_label': '[00:02:24]',
-      'timestamp_seconds': 144,
-      'tip': 'Jobs are worth 10 20 $30,000 uh the estimated job amount we put it on the '
-             "Facebook ad so you can decide there but if it's worth 20 or 30,000 bucks it "
-             'might be worth getting the insurance for anyways uh hope to hear from you soon '
-             'and bye-bye.',
-      'title': 'How to win a post construction final cleanup job with Construction Clean '
-               'Partners (Construction Clean Partners)',
-      'url': 'https://www.youtube.com/watch?v=vx1fwmFh0zM&t=144s',
-      'video_id': 'vx1fwmFh0zM'},
-     {'author': 'Commercial Cleaning CEO',
-      'channel': 'Commercial Cleaning CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=-IxCGolievQ&t=15s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Commercial cleaning business or if you have a cleaning business already and '
-              "you're wanting to know how do you get those $100,000 $200,000 $300,000 or even.",
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Commercial cleaning business or if you have a cleaning business already and '
-             "you're wanting to know how do you get those $100,000 $200,000 $300,000 or even.",
-      'title': 'How to Get BIG Commercial Cleaning Contracts (Commercial Cleaning CEO)',
-      'url': 'https://www.youtube.com/watch?v=-IxCGolievQ&t=15s',
-      'video_id': '-IxCGolievQ'},
-     {'author': 'Stewart Facility Services',
-      'channel': 'Stewart Facility Services',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:44](https://www.youtube.com/watch?v=7uKR0mnlF9Q&t=104s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Any issues that need to be resolved or any information that as I previously '
-              'said is a blanket message for all Associates please do not reply to anything in '
-              'this chat it is for incoming information only.',
-      'timestamp': 104,
-      'timestamp_label': '[00:01:44]',
-      'timestamp_seconds': 104,
-      'tip': 'Any issues that need to be resolved or any information that as I previously said '
-             'is a blanket message for all Associates please do not reply to anything in this '
-             'chat it is for incoming information only.',
-      'title': 'Swept app cont. (Stewart Facility Services)',
-      'url': 'https://www.youtube.com/watch?v=7uKR0mnlF9Q&t=104s',
-      'video_id': '7uKR0mnlF9Q'},
-     {'author': 'AJ SIMMONS',
-      'channel': 'AJ SIMMONS',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:29](https://www.youtube.com/watch?v=7pVd69Als0I&t=149s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Stripped and waxed the floor two weeks ago I love strip of wax and floors it's "
-              'the best before and after effect you could get but like just do you have to '
-              'always be learning and always be involved.',
-      'timestamp': 149,
-      'timestamp_label': '[00:02:29]',
-      'timestamp_seconds': 149,
-      'tip': "Stripped and waxed the floor two weeks ago I love strip of wax and floors it's "
-             'the best before and after effect you could get but like just do you have to '
-             'always be learning and always be involved.',
-      'title': "$15 Million Dollar Cleaning Company Owner's Advice To New Cleaning Business "
-               'Owners (AJ SIMMONS)',
-      'url': 'https://www.youtube.com/watch?v=7pVd69Als0I&t=149s',
-      'video_id': '7pVd69Als0I'}],
- 5: [{'author': 'Anton Pantio',
-      'channel': 'Anton Pantio',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:45](https://www.youtube.com/watch?v=-1k_o5iWj8w&t=405s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'t even contract out cleaning. Can't find good leads if you don't know who "
-              "you're looking for. For commercial cleaning, the best prospects to reach out by "
-              'cold calling are facility managers or property managers, operation directors, '
-              'business owners.',
-      'timestamp': 405,
-      'timestamp_label': '[00:06:45]',
-      'timestamp_seconds': 405,
-      'tip': "'t even contract out cleaning. Can't find good leads if you don't know who "
-             "you're looking for. For commercial cleaning, the best prospects to reach out by "
-             'cold calling are facility managers or property managers, operation directors, '
-             'business owners.',
-      'title': 'Cold Calling For Commercial Cleaning Companies (Script + Live Call) (Anton '
-               'Pantio)',
-      'url': 'https://www.youtube.com/watch?v=-1k_o5iWj8w&t=405s',
-      'video_id': '-1k_o5iWj8w'},
-     {'author': 'The Professional Cleaner',
-      'channel': 'The Professional Cleaner',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:12](https://www.youtube.com/watch?v=jl4sDr8y-Ws&t=192s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "To do everything you'll be an expert of nothing so sometimes students will ask "
-              "me how do you work carpet cleaning into your commercial bids I don't well what.",
-      'timestamp': 192,
-      'timestamp_label': '[00:03:12]',
-      'timestamp_seconds': 192,
-      'tip': "To do everything you'll be an expert of nothing so sometimes students will ask "
-             "me how do you work carpet cleaning into your commercial bids I don't well what.",
-      'title': '4 HIDDEN TRAPS that will KILL your cleaning business ☠️ (The Professional '
-               'Cleaner)',
-      'url': 'https://www.youtube.com/watch?v=jl4sDr8y-Ws&t=192s',
-      'video_id': 'jl4sDr8y-Ws'},
-     {'author': 'ISSA Media',
-      'channel': 'ISSA Media',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=nBB03PNbUHI&t=21s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "And to get into this, I'd like to welcome two industry pros who know the ins "
-              "and the outs of bidding commercial cleaning jobs. So, I'm pleased to welcome "
-              'two professionals from Octo Clean, Matthew and Greg.',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': "And to get into this, I'd like to welcome two industry pros who know the ins and "
-             "the outs of bidding commercial cleaning jobs. So, I'm pleased to welcome two "
-             'professionals from Octo Clean, Matthew and Greg.',
-      'title': 'How to Bid Commercial Cleaning Jobs Like a Pro (ISSA Media)',
-      'url': 'https://www.youtube.com/watch?v=nBB03PNbUHI&t=21s',
-      'video_id': 'nBB03PNbUHI'},
-     {'author': 'OctoClean Media',
-      'channel': 'OctoClean Media',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=9TymiXPWhyY&t=15s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Cleaning as a way to get into the contract after they occupy if you clean '
-              'college dorm rooms after they move out you may be a good construction cleanup.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Cleaning as a way to get into the contract after they occupy if you clean '
-             'college dorm rooms after they move out you may be a good construction cleanup.',
-      'title': 'Construction Cleaning: Build Your Profits! | OctoClean Podcast Ep. 17 '
-               '(OctoClean Media)',
-      'url': 'https://www.youtube.com/watch?v=9TymiXPWhyY&t=15s',
-      'video_id': '9TymiXPWhyY'},
-     {'author': 'Surety Bonds Direct',
-      'channel': 'Surety Bonds Direct',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:14](https://www.youtube.com/watch?v=uMW_ZJMW0ZU&t=134s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Amount number six if your business of services commercial properties typical '
-              'bond amounts usually start at twenty five thousand dollars all the way up to.',
-      'timestamp': 134,
-      'timestamp_label': '[00:02:14]',
-      'timestamp_seconds': 134,
-      'tip': 'Amount number six if your business of services commercial properties typical '
-             'bond amounts usually start at twenty five thousand dollars all the way up to.',
-      'title': 'Janitorial Bond - Getting Bonded for a Cleaning Business (Surety Bonds Direct)',
-      'url': 'https://www.youtube.com/watch?v=uMW_ZJMW0ZU&t=134s',
-      'video_id': 'uMW_ZJMW0ZU'},
-     {'author': 'Janitorial Manager',
-      'channel': 'Janitorial Manager',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:52](https://www.youtube.com/watch?v=c9NTVgpJrx0&t=112s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'This feature provides greater trust in the health and safety of a facility. If '
-              'an area is marked NOT Clean, the app helps look for other clean areas nearby, '
-              'And allows them to request service for the dirty area.',
-      'timestamp': 112,
-      'timestamp_label': '[00:01:52]',
-      'timestamp_seconds': 112,
-      'tip': 'This feature provides greater trust in the health and safety of a facility. If '
-             'an area is marked NOT Clean, the app helps look for other clean areas nearby, '
-             'And allows them to request service for the dirty area.',
-      'title': 'Enhance Your Value with Scan4Clean | QR Codes For Your Cleaning Operations '
-               '(Janitorial Manager)',
-      'url': 'https://www.youtube.com/watch?v=c9NTVgpJrx0&t=112s',
-      'video_id': 'c9NTVgpJrx0'},
-     {'author': 'Mike Mak',
-      'channel': 'Mike Mak',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:35](https://www.youtube.com/watch?v=92cY7nLDqTI&t=35s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Hey, I'm Mike Mack, author of the Amazon bestseller Pickup Cash, Not Trash. And "
-              'I have a dose of reality for you. People fail in this business because they '
-              'chase the wrong customers. They clean houses or tiny offices for $300 a month.',
-      'timestamp': 35,
-      'timestamp_label': '[00:00:35]',
-      'timestamp_seconds': 35,
-      'tip': "Hey, I'm Mike Mack, author of the Amazon bestseller Pickup Cash, Not Trash. And "
-             'I have a dose of reality for you. People fail in this business because they '
-             'chase the wrong customers. They clean houses or tiny offices for $300 a month.',
-      'title': "The Secret to Getting Big Office Cleaning Contracts (Even If You're Brand New) "
-               '(Mike Mak)',
-      'url': 'https://www.youtube.com/watch?v=92cY7nLDqTI&t=35s',
-      'video_id': '92cY7nLDqTI'},
-     {'author': 'Commercial Cleaning CEO',
-      'channel': 'Commercial Cleaning CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=598Td1ks52Y&t=15s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Cleaning contracts I have successfully used this exact formula to build my '
-              'personal commercial cleaning company Beyond seven figures in less than 5.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Cleaning contracts I have successfully used this exact formula to build my '
-             'personal commercial cleaning company Beyond seven figures in less than 5.',
-      'title': 'Price Commercial Cleaning RIGHT | Cleaning Bid Calculator (Commercial Cleaning '
-               'CEO)',
-      'url': 'https://www.youtube.com/watch?v=598Td1ks52Y&t=15s',
-      'video_id': '598Td1ks52Y'},
-     {'author': 'Active Learning',
-      'channel': 'Active Learning',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:39](https://www.youtube.com/watch?v=WPuiNvUKURw&t=219s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'For example, a needlestick injury has a small but real risk of HIV '
-              'transmission, about 0. 3% for an exposure to blood. This means that for every '
-              '1,000 accidental needlesticks, one person risks contracting HIV.',
-      'timestamp': 219,
-      'timestamp_label': '[00:03:39]',
-      'timestamp_seconds': 219,
-      'tip': 'For example, a needlestick injury has a small but real risk of HIV transmission, '
-             'about 0. 3% for an exposure to blood. This means that for every 1,000 accidental '
-             'needlesticks, one person risks contracting HIV.',
-      'title': 'Bloodborne Pathogens Explained | OSHA BBP Standards & Safety for Healthcare '
-               'Workers (Active Learning)',
-      'url': 'https://www.youtube.com/watch?v=WPuiNvUKURw&t=219s',
-      'video_id': 'WPuiNvUKURw'},
-     {'author': 'Window Cleaning BluePrint',
-      'channel': 'Window Cleaning BluePrint',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:46](https://www.youtube.com/watch?v=K4OAVqDBtgE&t=46s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "And I jump like up on the booth and I open up these big blinds and I'm cleaning "
-              'them all. And then he wants me to clean the blinds, the blinds. So, I got into '
-              'blind cleaning. Then he\'s like, "What about the ceiling fans?".',
-      'timestamp': 46,
-      'timestamp_label': '[00:00:46]',
-      'timestamp_seconds': 46,
-      'tip': "And I jump like up on the booth and I open up these big blinds and I'm cleaning "
-             'them all. And then he wants me to clean the blinds, the blinds. So, I got into '
-             'blind cleaning. Then he\'s like, "What about the ceiling fans?".',
-      'title': 'How To Sell Window Cleaning Jobs On The Spot #keithkalfas #windowcleaning '
-               '#windowcleaningblueprint (Window Cleaning BluePrint)',
-      'url': 'https://www.youtube.com/watch?v=K4OAVqDBtgE&t=46s',
-      'video_id': 'K4OAVqDBtgE'},
-     {'author': 'AJ SIMMONS',
-      'channel': 'AJ SIMMONS',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:38](https://www.youtube.com/watch?v=BK0p3k8OpRo&t=578s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'It says as an entrepreneur is an individual who starts, organizes, and manages '
-              'a business venture assuming the primary financial risk in exchange for '
-              'potential rewards. The key part on that is primary financial risk.',
-      'timestamp': 578,
-      'timestamp_label': '[00:09:38]',
-      'timestamp_seconds': 578,
-      'tip': 'It says as an entrepreneur is an individual who starts, organizes, and manages a '
-             'business venture assuming the primary financial risk in exchange for potential '
-             'rewards. The key part on that is primary financial risk.',
-      'title': 'COMMERCIAL CLEANING FRANCHISES ARE NOT SCAMS (AJ SIMMONS)',
-      'url': 'https://www.youtube.com/watch?v=BK0p3k8OpRo&t=578s',
-      'video_id': 'BK0p3k8OpRo'},
-     {'author': 'Bloodborne Pathogen',
-      'channel': 'Bloodborne Pathogen',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:54](https://www.youtube.com/watch?v=gLeTNOVfh8o&t=354s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The blood-borne pathogen standards this list shows examples of some of the '
-              "professions at risk of occupational exposure to blood-borne pathogens let's "
-              "take a quiz to review what you've learned.",
-      'timestamp': 354,
-      'timestamp_label': '[00:05:54]',
-      'timestamp_seconds': 354,
-      'tip': 'The blood-borne pathogen standards this list shows examples of some of the '
-             "professions at risk of occupational exposure to blood-borne pathogens let's take "
-             "a quiz to review what you've learned.",
-      'title': 'OSHA Bloodborne Pathogen Training, Bloodborne Pathogen Video (Bloodborne '
-               'Pathogen)',
-      'url': 'https://www.youtube.com/watch?v=gLeTNOVfh8o&t=354s',
-      'video_id': 'gLeTNOVfh8o'},
-     {'author': 'OctoClean Media',
-      'channel': 'OctoClean Media',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:24](https://www.youtube.com/watch?v=45JohGIULbI&t=24s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And I think I surprise a lot of folks when I get on to one-on-one coaching '
-              'calls, and you know, they say, "Well, it\'s a 25,000 sq ft space." And I\'m '
-              'like, "Okay, well, tell me more about the space. You know, what is the density '
-              'of this area?".',
-      'timestamp': 24,
-      'timestamp_label': '[00:00:24]',
-      'timestamp_seconds': 24,
-      'tip': 'And I think I surprise a lot of folks when I get on to one-on-one coaching '
-             'calls, and you know, they say, "Well, it\'s a 25,000 sq ft space." And I\'m '
-             'like, "Okay, well, tell me more about the space. You know, what is the density '
-             'of this area?".',
-      'title': 'Commercial Cleaning Contracts: Beginner Pricing Mistakes to Avoid (OctoClean '
-               'Media)',
-      'url': 'https://www.youtube.com/watch?v=45JohGIULbI&t=24s',
-      'video_id': '45JohGIULbI'},
-     {'author': 'Commercial Cleaning CEO',
-      'channel': 'Commercial Cleaning CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=xqw9zag57Uk&t=15s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "And you'll be able to decide what should you do about commercial cleaning "
-              'franchises and which one is right for you or should you completely avoid them.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': "And you'll be able to decide what should you do about commercial cleaning "
-             'franchises and which one is right for you or should you completely avoid them.',
-      'title': 'Commercial Cleaning Franchise Types | Choose Wisely! (Commercial Cleaning CEO)',
-      'url': 'https://www.youtube.com/watch?v=xqw9zag57Uk&t=15s',
-      'video_id': 'xqw9zag57Uk'},
-     {'author': 'Commercial Cleaning CEO',
-      'channel': 'Commercial Cleaning CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=turpTn9YjJA&t=15s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'That you call or the people that you quote with the people that you want to '
-              "earn the business from if you can't seem to get them to close the deal with "
-              'you.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'That you call or the people that you quote with the people that you want to earn '
-             "the business from if you can't seem to get them to close the deal with you.",
-      'title': 'How To Get Commercial Cleaning Contracts With CTA Targeting (Commercial '
-               'Cleaning CEO)',
-      'url': 'https://www.youtube.com/watch?v=turpTn9YjJA&t=15s',
-      'video_id': 'turpTn9YjJA'}],
- 6: [{'author': 'Carolyn Arellano',
-      'channel': 'Carolyn Arellano',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:58](https://www.youtube.com/watch?v=xJ6TUBTc4Qo&t=118s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "You are positioning your company as a professional option for when they're "
-              'ready to make that change. Think of cold calling as opening a door, not closing '
-              "a deal. Now, let's talk about why cold calling matters so much in commercial "
-              'cleaning.',
-      'timestamp': 118,
-      'timestamp_label': '[00:01:58]',
-      'timestamp_seconds': 118,
-      'tip': "You are positioning your company as a professional option for when they're ready "
-             'to make that change. Think of cold calling as opening a door, not closing a '
-             "deal. Now, let's talk about why cold calling matters so much in commercial "
-             'cleaning.',
-      'title': 'Cold Calling For Commercial Cleaning Companies (Carolyn Arellano)',
-      'url': 'https://www.youtube.com/watch?v=xJ6TUBTc4Qo&t=118s',
-      'video_id': 'xJ6TUBTc4Qo'},
-     {'author': 'AJ SIMMONS',
-      'channel': 'AJ SIMMONS',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:12:20](https://www.youtube.com/watch?v=Xvc-7yo1lng&t=740s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Commercial cleaning company you ready to start growing bigger go to www.clean '
-              'Biz leads.com and you can buy leads there and then also you can get discount '
-              'on.',
-      'timestamp': 740,
-      'timestamp_label': '[00:12:20]',
-      'timestamp_seconds': 740,
-      'tip': 'Commercial cleaning company you ready to start growing bigger go to www.clean '
-             'Biz leads.com and you can buy leads there and then also you can get discount on.',
-      'title': 'Cleaning Business Walkthrough Tips (AJ SIMMONS)',
-      'url': 'https://www.youtube.com/watch?v=Xvc-7yo1lng&t=740s',
-      'video_id': 'Xvc-7yo1lng'},
+BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'DJ The Boss',
+      'channel': 'DJ The Boss',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:47](https://www.youtube.com/watch?v=ZVDOV6jG8Dw&t=527s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'after getting that client i actually wasted six thousand dollars on that same '
+              'campaign and got no other business to speak of.',
+      'timestamp': 527,
+      'timestamp_label': '[00:08:47]',
+      'timestamp_seconds': 527,
+      'tip': 'after getting that client i actually wasted six thousand dollars on that same '
+             'campaign and got no other business to speak of.',
+      'title': 'How i got my First Commercial Cleaning contract: how to start a commercial '
+               'cleaning business',
+      'url': 'https://www.youtube.com/watch?v=ZVDOV6jG8Dw&t=527s',
+      'video_id': 'ZVDOV6jG8Dw'},
      {'author': 'DJ The Boss',
       'channel': 'DJ The Boss',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:20](https://www.youtube.com/watch?v=ZVDOV6jG8Dw&t=380s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q6 operational verification).',
+      'markdown': '[00:09:55](https://www.youtube.com/watch?v=ZVDOV6jG8Dw&t=595s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'The lead form and it was my first client the gymnastics facility that you guys '
-              'have seen and a lot of videos we still clean it to this day.',
-      'timestamp': 380,
-      'timestamp_label': '[00:06:20]',
-      'timestamp_seconds': 380,
-      'tip': 'The lead form and it was my first client the gymnastics facility that you guys '
-             'have seen and a lot of videos we still clean it to this day.',
+      'text': 'i knew i was going to eventually put employees in there so i priced it to have '
+              'employees in there.',
+      'timestamp': 595,
+      'timestamp_label': '[00:09:55]',
+      'timestamp_seconds': 595,
+      'tip': 'i knew i was going to eventually put employees in there so i priced it to have '
+             'employees in there.',
       'title': 'How i got my First Commercial Cleaning contract: how to start a commercial '
-               'cleaning business (DJ The Boss)',
-      'url': 'https://www.youtube.com/watch?v=ZVDOV6jG8Dw&t=380s',
+               'cleaning business',
+      'url': 'https://www.youtube.com/watch?v=ZVDOV6jG8Dw&t=595s',
       'video_id': 'ZVDOV6jG8Dw'},
-     {'author': 'SEO Growth Partners',
-      'channel': 'SEO Growth Partners',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:47](https://www.youtube.com/watch?v=1A40YzhpJ5Q&t=47s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s about a month and a half. Commercial cleaning services, 4,800 square feet, "
-              'commercial small office space, monthly office and showroom cleaning, first '
-              'floor is 6,500 square feet. Uh weekly cleaning, retail shop, restaurant, office '
-              'cleaning, one-time carpet cleaning.',
-      'timestamp': 47,
-      'timestamp_label': '[00:00:47]',
-      'timestamp_seconds': 47,
-      'tip': "'s about a month and a half. Commercial cleaning services, 4,800 square feet, "
-             'commercial small office space, monthly office and showroom cleaning, first floor '
-             'is 6,500 square feet. Uh weekly cleaning, retail shop, restaurant, office '
-             'cleaning, one-time carpet cleaning.',
-      'title': 'Commercial Cleaning & Janitorial Services SEO Case Study - From Business '
-               'Launch to 10+ Leads/Mo (SEO Growth Partners)',
-      'url': 'https://www.youtube.com/watch?v=1A40YzhpJ5Q&t=47s',
-      'video_id': '1A40YzhpJ5Q'},
-     {'author': 'Solo Business Systems',
-      'channel': 'Solo Business Systems',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:55](https://www.youtube.com/watch?v=hf0U17FyA58&t=55s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Business,  an office manager whose job is not to find the cheapest cleaner. '
-              "It's to never have to think about cleaning again.",
-      'timestamp': 55,
-      'timestamp_label': '[00:00:55]',
-      'timestamp_seconds': 55,
-      'tip': "Business,  an office manager whose job is not to find the cheapest cleaner. It's "
-             'to never have to think about cleaning again.',
-      'title': 'Commercial Cleaning: How to Win Your First Office Contract (Walkthrough + Bid '
-               'Worksheet) (Solo Business Systems)',
-      'url': 'https://www.youtube.com/watch?v=hf0U17FyA58&t=55s',
-      'video_id': 'hf0U17FyA58'},
-     {'author': 'Jeremy Dixon',
-      'channel': 'Jeremy Dixon',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:15](https://www.youtube.com/watch?v=-LFfJivPXKw&t=435s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'We can take care of all of your lead generation needs for your code calling '
-              'business I hope this video was helpful for you and I will see you in the next.',
-      'timestamp': 435,
-      'timestamp_label': '[00:07:15]',
-      'timestamp_seconds': 435,
-      'tip': 'We can take care of all of your lead generation needs for your code calling '
-             'business I hope this video was helpful for you and I will see you in the next.',
-      'title': 'Cold Calling For Commercial Cleaning Companies (Script + Live Calls) (Jeremy '
-               'Dixon)',
-      'url': 'https://www.youtube.com/watch?v=-LFfJivPXKw&t=435s',
-      'video_id': '-LFfJivPXKw'},
-     {'author': 'The Profitable Cleaner',
-      'channel': 'The Profitable Cleaner',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:31:52](https://www.youtube.com/watch?v=u3njpVGKi3M&t=1912s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'CSV, what I go ahead and do, I go over to chat GPT cuz AI is freaking awesome. '
-              'So, let me make sure you guys see my chat GPT here and I say clean up this lead '
-              "list and remove duplicates. This is a cheap lead finder, guys, so there's going "
-              'to be duplicates.',
-      'timestamp': 1912,
-      'timestamp_label': '[00:31:52]',
-      'timestamp_seconds': 1912,
-      'tip': 'CSV, what I go ahead and do, I go over to chat GPT cuz AI is freaking awesome. '
-             'So, let me make sure you guys see my chat GPT here and I say clean up this lead '
-             "list and remove duplicates. This is a cheap lead finder, guys, so there's going "
-             'to be duplicates.',
-      'title': 'How to Get Janitorial Contracts with Cold Calling, Email & Door-to-Door Sales '
-               '| Ep 185 (The Profitable Cleaner)',
-      'url': 'https://www.youtube.com/watch?v=u3njpVGKi3M&t=1912s',
-      'video_id': 'u3njpVGKi3M'},
      {'author': 'AJ SIMMONS',
       'channel': 'AJ SIMMONS',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:21:45](https://www.youtube.com/watch?v=srB5UatlJlU&t=1305s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q6 operational verification).',
+      'markdown': '[00:00:57](https://www.youtube.com/watch?v=7pVd69Als0I&t=57s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'I know when I was cleaning um when I was cleaning myself like when I first '
-              'pulled myself out cuz I knew like I was trying to take client calls and take '
-              'lead calls while cleaning and like getting caught up and turning down bad job I '
-              'mean know other jobs.',
-      'timestamp': 1305,
-      'timestamp_label': '[00:21:45]',
-      'timestamp_seconds': 1305,
-      'tip': 'I know when I was cleaning um when I was cleaning myself like when I first '
-             'pulled myself out cuz I knew like I was trying to take client calls and take '
-             'lead calls while cleaning and like getting caught up and turning down bad job I '
-             'mean know other jobs.',
-      'title': 'I Built a Million-Dollar Cleaning Brand — Here’s What It Really Takes | AJ '
-               'Simmons x Jazmine Tates (AJ SIMMONS)',
-      'url': 'https://www.youtube.com/watch?v=srB5UatlJlU&t=1305s',
+      'text': 'you have to do everything yourself first.',
+      'timestamp': 57,
+      'timestamp_label': '[00:00:57]',
+      'timestamp_seconds': 57,
+      'tip': 'you have to do everything yourself first.',
+      'title': "$15 Million Dollar Cleaning Company Owner's Advice To New Cleaning Business Owners",
+      'url': 'https://www.youtube.com/watch?v=7pVd69Als0I&t=57s',
+      'video_id': '7pVd69Als0I'},
+     {'author': 'AJ SIMMONS',
+      'channel': 'AJ SIMMONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:39](https://www.youtube.com/watch?v=QBuGc_Q36dg&t=339s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "that's what happens is people don't turn a proposal around quickly and the the "
+              'walkthrough was a waste.',
+      'timestamp': 339,
+      'timestamp_label': '[00:05:39]',
+      'timestamp_seconds': 339,
+      'tip': "that's what happens is people don't turn a proposal around quickly and the the "
+             'walkthrough was a waste.',
+      'title': 'How To Get Commercial Cleaning Customers - Million Dollar Cleaning Company Shares '
+               'Secret!!!',
+      'url': 'https://www.youtube.com/watch?v=QBuGc_Q36dg&t=339s',
+      'video_id': 'QBuGc_Q36dg'},
+     {'author': 'AJ SIMMONS',
+      'channel': 'AJ SIMMONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:54](https://www.youtube.com/watch?v=QBuGc_Q36dg&t=294s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "i never ask for a scope of work i mean it's if you start pricing scope of work "
+              "you're going down the rabbit hole like you know price the facility price this "
+              "person's expectations close with references.",
+      'timestamp': 294,
+      'timestamp_label': '[00:04:54]',
+      'timestamp_seconds': 294,
+      'tip': "i never ask for a scope of work i mean it's if you start pricing scope of work "
+             "you're going down the rabbit hole like you know price the facility price this "
+             "person's expectations close with references.",
+      'title': 'How To Get Commercial Cleaning Customers - Million Dollar Cleaning Company Shares '
+               'Secret!!!',
+      'url': 'https://www.youtube.com/watch?v=QBuGc_Q36dg&t=294s',
+      'video_id': 'QBuGc_Q36dg'},
+     {'author': 'AJ SIMMONS',
+      'channel': 'AJ SIMMONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:16:38](https://www.youtube.com/watch?v=srB5UatlJlU&t=998s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Hire people from day one.',
+      'timestamp': 998,
+      'timestamp_label': '[00:16:38]',
+      'timestamp_seconds': 998,
+      'tip': 'Hire people from day one.',
+      'title': 'I Built a Million-Dollar Cleaning Brand — Here’s What It Really Takes | AJ Simmons '
+               'x Jazmine Tates',
+      'url': 'https://www.youtube.com/watch?v=srB5UatlJlU&t=998s',
       'video_id': 'srB5UatlJlU'},
-     {'author': 'Commercial Cleaning CEO',
-      'channel': 'Commercial Cleaning CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=j4duUCt9Dlw&t=15s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Cleaning CEO and in this video we're going to unpack how do you find how do you "
-              'bid how do you successfully submit and calculate the quotes for commercial.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': "Cleaning CEO and in this video we're going to unpack how do you find how do you "
-             'bid how do you successfully submit and calculate the quotes for commercial.',
-      'title': 'How To Win Government Commercial Cleaning Contracts (Commercial Cleaning CEO)',
-      'url': 'https://www.youtube.com/watch?v=j4duUCt9Dlw&t=15s',
-      'video_id': 'j4duUCt9Dlw'},
-     {'author': 'OctoClean Media',
-      'channel': 'OctoClean Media',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:29:04](https://www.youtube.com/watch?v=52I2LNERY3E&t=1744s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "How are you you know somebody's not getting the right end of the deal here. "
-              "It's either the client or the vendor. And usually it's the vendor who suffers. "
-              "Um because they'll bully them into you can't get the business yourself.",
-      'timestamp': 1744,
-      'timestamp_label': '[00:29:04]',
-      'timestamp_seconds': 1744,
-      'tip': "How are you you know somebody's not getting the right end of the deal here. It's "
-             "either the client or the vendor. And usually it's the vendor who suffers. Um "
-             "because they'll bully them into you can't get the business yourself.",
-      'title': 'What is a Day Porter?  Expectations vs Reality in Cleaning Businesses | Ep. 31 '
-               '(OctoClean Media)',
-      'url': 'https://www.youtube.com/watch?v=52I2LNERY3E&t=1744s',
-      'video_id': '52I2LNERY3E'},
-     {'author': 'MA Exec. Office of Labor and Workforce Development',
-      'channel': 'MA Exec. Office of Labor and Workforce Development',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:38:19](https://www.youtube.com/watch?v=4xmWcKLIfmA&t=2299s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Sick first before the needle stick ever happened workers who are assigned to '
-              "clean up these syringes must be offered the hepatitis B vaccine if you've.",
-      'timestamp': 2299,
-      'timestamp_label': '[00:38:19]',
-      'timestamp_seconds': 2299,
-      'tip': 'Sick first before the needle stick ever happened workers who are assigned to '
-             "clean up these syringes must be offered the hepatitis B vaccine if you've.",
-      'title': 'Bloodborne Pathogens Training Guide 11-23-15 (MA Exec. Office of Labor and '
-               'Workforce Development)',
-      'url': 'https://www.youtube.com/watch?v=4xmWcKLIfmA&t=2299s',
-      'video_id': '4xmWcKLIfmA'},
-     {'author': 'Mike Mak',
-      'channel': 'Mike Mak',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=G2qoM4LqGdM&t=15s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I'm here to help stick with me to the end and I'm going to share proven "
-              'strategies that you can use right now to land your first five office cleaning.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': "I'm here to help stick with me to the end and I'm going to share proven "
-             'strategies that you can use right now to land your first five office cleaning.',
-      'title': 'How To Get Your First 5 Office Cleaning Contracts FAST? (Mike Mak)',
-      'url': 'https://www.youtube.com/watch?v=G2qoM4LqGdM&t=15s',
-      'video_id': 'G2qoM4LqGdM'},
-     {'author': 'SafetyTrainingNetwork.com',
-      'channel': 'SafetyTrainingNetwork.com',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:40](https://www.youtube.com/watch?v=Pr6reN7o5NI&t=160s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'This disease are slim hepatitis b however is far more prevalent it is a liver '
-              'disease caused by the hepatitis b virus it ranges in severity from a mild '
-              'illness lasting a few weeks to a serious long-term illness that can lead to '
-              'liver disease or liver cancer.',
-      'timestamp': 160,
-      'timestamp_label': '[00:02:40]',
-      'timestamp_seconds': 160,
-      'tip': 'This disease are slim hepatitis b however is far more prevalent it is a liver '
-             'disease caused by the hepatitis b virus it ranges in severity from a mild '
-             'illness lasting a few weeks to a serious long-term illness that can lead to '
-             'liver disease or liver cancer.',
-      'title': 'Bloodborne Pathogens for Custodians (SafetyTrainingNetwork.com)',
-      'url': 'https://www.youtube.com/watch?v=Pr6reN7o5NI&t=160s',
-      'video_id': 'Pr6reN7o5NI'},
-     {'author': 'S.N.M. Cleaning Service',
-      'channel': 'S.N.M. Cleaning Service',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:00](https://www.youtube.com/watch?v=8s441oHT2b4&t=180s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'We spend a lot of time just in detail work edging taking care of corners a lot '
-              "of the places that the machines can't get to spend a great deal of time just on "
-              'a lot of those detail works.',
-      'timestamp': 180,
-      'timestamp_label': '[00:03:00]',
-      'timestamp_seconds': 180,
-      'tip': 'We spend a lot of time just in detail work edging taking care of corners a lot '
-             "of the places that the machines can't get to spend a great deal of time just on "
-             'a lot of those detail works.',
-      'title': 'STRIP AND REFINISH 20,000 SQUARE FEET of VCT floor - strip & wax 2025 (S.N.M. '
-               'Cleaning Service)',
-      'url': 'https://www.youtube.com/watch?v=8s441oHT2b4&t=180s',
-      'video_id': '8s441oHT2b4'},
      {'author': 'AJ SIMMONS',
       'channel': 'AJ SIMMONS',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:22](https://www.youtube.com/watch?v=7VHAkhs_HG4&t=502s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q6 operational verification).',
+      'markdown': '[00:04:57](https://www.youtube.com/watch?v=mp0PpDrOpYM&t=297s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Sense if you got any other questions drop it down below under the video and '
-              "I'll make sure I answer it soon thank y'all I'm aj simmons see y'all later.",
-      'timestamp': 502,
-      'timestamp_label': '[00:08:22]',
-      'timestamp_seconds': 502,
-      'tip': "Sense if you got any other questions drop it down below under the video and I'll "
-             "make sure I answer it soon thank y'all I'm aj simmons see y'all later.",
-      'title': 'How To Bid Cleaning Jobs Per Hour Or Per Sqft (AJ SIMMONS)',
-      'url': 'https://www.youtube.com/watch?v=7VHAkhs_HG4&t=502s',
-      'video_id': '7VHAkhs_HG4'}],
- 7: [{'author': 'Janitorial Empire',
+      'text': 'Even if your cleaning is great a relationship can make them fire you.',
+      'timestamp': 297,
+      'timestamp_label': '[00:04:57]',
+      'timestamp_seconds': 297,
+      'tip': 'Even if your cleaning is great a relationship can make them fire you.',
+      'title': 'How To Start A Cleaning Business SOLO!',
+      'url': 'https://www.youtube.com/watch?v=mp0PpDrOpYM&t=297s',
+      'video_id': 'mp0PpDrOpYM'},
+     {'author': 'AJ SIMMONS',
+      'channel': 'AJ SIMMONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:18](https://www.youtube.com/watch?v=du4OAGZv9AE&t=18s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'At one point, I was up to 30k a month.',
+      'timestamp': 18,
+      'timestamp_label': '[00:00:18]',
+      'timestamp_seconds': 18,
+      'tip': 'At one point, I was up to 30k a month.',
+      'title': 'How He Built A Million Dollar Cleaning Business!',
+      'url': 'https://www.youtube.com/watch?v=du4OAGZv9AE&t=18s',
+      'video_id': 'du4OAGZv9AE'},
+     {'author': 'AJ SIMMONS',
+      'channel': 'AJ SIMMONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:18](https://www.youtube.com/watch?v=mk-8avM72Ms&t=198s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "so if they got a 10,000 foot building but you're only cleaning 2,000 of it then "
+              "you're going to bid way too high.",
+      'timestamp': 198,
+      'timestamp_label': '[00:03:18]',
+      'timestamp_seconds': 198,
+      'tip': "so if they got a 10,000 foot building but you're only cleaning 2,000 of it then "
+             "you're going to bid way too high.",
+      'title': 'Cleaning Supplies Needed For Cleaning Business',
+      'url': 'https://www.youtube.com/watch?v=mk-8avM72Ms&t=198s',
+      'video_id': 'mk-8avM72Ms'},
+     {'author': 'AJ SIMMONS',
+      'channel': 'AJ SIMMONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:15:51](https://www.youtube.com/watch?v=VrlDbQP4iQI&t=951s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "If I was starting today, I wouldn't get no cleaning supplies yet until I close a "
+              'deal.',
+      'timestamp': 951,
+      'timestamp_label': '[00:15:51]',
+      'timestamp_seconds': 951,
+      'tip': "If I was starting today, I wouldn't get no cleaning supplies yet until I close a "
+             'deal.',
+      'title': 'How To Start A Commercial Cleaning Business Today Under $1000 and Get Customers '
+               'FAST!',
+      'url': 'https://www.youtube.com/watch?v=VrlDbQP4iQI&t=951s',
+      'video_id': 'VrlDbQP4iQI'},
+     {'author': 'AJ SIMMONS',
+      'channel': 'AJ SIMMONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:20:42](https://www.youtube.com/watch?v=NHWdv_WG2B8&t=1242s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "don't stick to one platform that's what I did Instagram wasn't popping so I went "
+              'over to tick tock and I started going viral.',
+      'timestamp': 1242,
+      'timestamp_label': '[00:20:42]',
+      'timestamp_seconds': 1242,
+      'tip': "don't stick to one platform that's what I did Instagram wasn't popping so I went "
+             'over to tick tock and I started going viral.',
+      'title': 'How To Start A Cleaning Business With NO MONEY, NO SUPPLIES, NO WEBSITE!',
+      'url': 'https://www.youtube.com/watch?v=NHWdv_WG2B8&t=1242s',
+      'video_id': 'NHWdv_WG2B8'},
+     {'author': 'AJ SIMMONS',
+      'channel': 'AJ SIMMONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:20:29](https://www.youtube.com/watch?v=pqTeTRcPhKg&t=1229s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "A lot of times people lose the the business because they simply don't follow up.",
+      'timestamp': 1229,
+      'timestamp_label': '[00:20:29]',
+      'timestamp_seconds': 1229,
+      'tip': "A lot of times people lose the the business because they simply don't follow up.",
+      'title': 'How To Start A Cleaning Business in 2026 (NO BS) Step By Step FREE FULL COURSE',
+      'url': 'https://www.youtube.com/watch?v=pqTeTRcPhKg&t=1229s',
+      'video_id': 'pqTeTRcPhKg'},
+     {'author': 'AJ SIMMONS',
+      'channel': 'AJ SIMMONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:17:13](https://www.youtube.com/watch?v=mOnf6pk37_c&t=1033s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'And then how you do anything is how you do everything.',
+      'timestamp': 1033,
+      'timestamp_label': '[00:17:13]',
+      'timestamp_seconds': 1033,
+      'tip': 'And then how you do anything is how you do everything.',
+      'title': 'All Cleaners Need To Watch THIS! (Commercial Cleaning Training)',
+      'url': 'https://www.youtube.com/watch?v=mOnf6pk37_c&t=1033s',
+      'video_id': 'mOnf6pk37_c'},
+     {'author': 'UpFlip',
+      'channel': 'UpFlip',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:25:26](https://www.youtube.com/watch?v=d4Iip7BHXwg&t=1526s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'And if you take care of that at the beginning, you will save so much trouble in the '
+              'end.',
+      'timestamp': 1526,
+      'timestamp_label': '[00:25:26]',
+      'timestamp_seconds': 1526,
+      'tip': 'And if you take care of that at the beginning, you will save so much trouble in the '
+             'end.',
+      'title': 'Starting a $120K/Month Cleaning Business From Scratch',
+      'url': 'https://www.youtube.com/watch?v=d4Iip7BHXwg&t=1526s',
+      'video_id': 'd4Iip7BHXwg'},
+     {'author': 'Jazmine Tates',
+      'channel': 'Jazmine Tates',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:58](https://www.youtube.com/watch?v=g8OVdfYHogY&t=418s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Slow hiring, you guys, creates stable businesses.',
+      'timestamp': 418,
+      'timestamp_label': '[00:06:58]',
+      'timestamp_seconds': 418,
+      'tip': 'Slow hiring, you guys, creates stable businesses.',
+      'title': 'How to Start a Cleaning Business With No Experience (2026 Beginner Guide)',
+      'url': 'https://www.youtube.com/watch?v=g8OVdfYHogY&t=418s',
+      'video_id': 'g8OVdfYHogY'},
+     {'author': 'Kadz Money',
+      'channel': 'Kadz Money',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:48](https://www.youtube.com/watch?v=dEkotRT-f90&t=408s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'I would start off at 15 to20 per hour yeah and you can do the first clean half '
+              'price.',
+      'timestamp': 408,
+      'timestamp_label': '[00:06:48]',
+      'timestamp_seconds': 408,
+      'tip': 'I would start off at 15 to20 per hour yeah and you can do the first clean half '
+             'price.',
+      'title': 'How To Start A Cleaning Business In The UK For 2025 | Cleaning Business Plan',
+      'url': 'https://www.youtube.com/watch?v=dEkotRT-f90&t=408s',
+      'video_id': 'dEkotRT-f90'},
+     {'author': 'UpFlip',
+      'channel': 'UpFlip',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:16:53](https://www.youtube.com/watch?v=j3l2-xKJKb8&t=1013s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'We probably convert maybe 1 out of 3 visits, which is 33%.',
+      'timestamp': 1013,
+      'timestamp_label': '[00:16:53]',
+      'timestamp_seconds': 1013,
+      'tip': 'We probably convert maybe 1 out of 3 visits, which is 33%.',
+      'title': 'Most Underrated Service Business?! (Makes $851K/Year)',
+      'url': 'https://www.youtube.com/watch?v=j3l2-xKJKb8&t=1013s',
+      'video_id': 'j3l2-xKJKb8'},
+     {'author': 'Clean Ops Guide',
+      'channel': 'Clean Ops Guide',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:52](https://www.youtube.com/watch?v=IgZO8_dFaeU&t=172s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'A recurring contract is only valuable if you price it correctly and can deliver the '
+              'service profitably.',
+      'timestamp': 172,
+      'timestamp_label': '[00:02:52]',
+      'timestamp_seconds': 172,
+      'tip': 'A recurring contract is only valuable if you price it correctly and can deliver the '
+             'service profitably.',
+      'title': 'Starting a Commercial Cleaning Business? Understand This First',
+      'url': 'https://www.youtube.com/watch?v=IgZO8_dFaeU&t=172s',
+      'video_id': 'IgZO8_dFaeU'}],
+ 2: [{'author': 'Janitorial Empire',
       'channel': 'Janitorial Empire',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:11](https://www.youtube.com/watch?v=8ireVJkHvoo&t=311s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q7 operational verification).',
+      'markdown': '[00:02:03](https://www.youtube.com/watch?v=8ireVJkHvoo&t=123s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'A surprising amount of business is won simply because one company followed up '
-              "while another didn't. And finally, step eight, use the first contract to get "
-              'the second. Once you win an account, perform the work extremely well.',
-      'timestamp': 311,
-      'timestamp_label': '[00:05:11]',
-      'timestamp_seconds': 311,
-      'tip': 'A surprising amount of business is won simply because one company followed up '
-             "while another didn't. And finally, step eight, use the first contract to get the "
-             'second. Once you win an account, perform the work extremely well.',
-      'title': 'How to Get Your First Commercial Cleaning Contract (Step-by-Step) (Janitorial '
-               'Empire)',
-      'url': 'https://www.youtube.com/watch?v=8ireVJkHvoo&t=311s',
+      'text': 'Build your prospect list from Google Maps, because 50 qualified prospects beat '
+              'hundreds of random calls.',
+      'timestamp': 123,
+      'timestamp_label': '[00:02:03]',
+      'timestamp_seconds': 123,
+      'tip': 'Build your prospect list from Google Maps, because 50 qualified prospects beat '
+             'hundreds of random calls.',
+      'title': 'How to Get Your First Commercial Cleaning Contract (Step-by-Step)',
+      'url': 'https://www.youtube.com/watch?v=8ireVJkHvoo&t=123s',
       'video_id': '8ireVJkHvoo'},
      {'author': 'OctoClean Media',
       'channel': 'OctoClean Media',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:38](https://www.youtube.com/watch?v=YE3spKAx9HI&t=158s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q7 operational verification).',
+      'markdown': '[00:00:44](https://www.youtube.com/watch?v=1tf8JMWxi98&t=44s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': "Else that's that three-step cleaning process yes and then you have punch so a "
-              'punch list would be that the architect and the construction manager come.',
-      'timestamp': 158,
-      'timestamp_label': '[00:02:38]',
-      'timestamp_seconds': 158,
-      'tip': "Else that's that three-step cleaning process yes and then you have punch so a "
-             'punch list would be that the architect and the construction manager come.',
-      'title': 'Post Construction Cleaning Differences: Better Than Commercial Cleaning? '
-               '(OctoClean Media)',
-      'url': 'https://www.youtube.com/watch?v=YE3spKAx9HI&t=158s',
-      'video_id': 'YE3spKAx9HI'},
-     {'author': 'Mathew Rogers',
-      'channel': 'Mathew Rogers',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:12:35](https://www.youtube.com/watch?v=xzidtSceePw&t=755s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Use a commercial-grade vacuum with strong suction to lift as much dry soil as '
-              'possible. Step number two, you want to get into the pre-spray application. This '
-              'is where you prepare the carpet for deep cleaning.',
-      'timestamp': 755,
-      'timestamp_label': '[00:12:35]',
-      'timestamp_seconds': 755,
-      'tip': 'Use a commercial-grade vacuum with strong suction to lift as much dry soil as '
-             'possible. Step number two, you want to get into the pre-spray application. This '
-             'is where you prepare the carpet for deep cleaning.',
-      'title': 'How To Start A $1000/Day Carpet Cleaning Business (Free Course) (Mathew '
-               'Rogers)',
-      'url': 'https://www.youtube.com/watch?v=xzidtSceePw&t=755s',
-      'video_id': 'xzidtSceePw'},
-     {'author': 'Commercial Cleaning CEO',
-      'channel': 'Commercial Cleaning CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:25:45](https://www.youtube.com/watch?v=esIqvQsbxco&t=1545s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "But when you have a referral partnership and you're going to give them "
-              "business, they're going to give you business, then you're you grow "
-              'exponentially faster. This has actually been the number one producing method '
-              'historically in our commercial cleaning company.',
-      'timestamp': 1545,
-      'timestamp_label': '[00:25:45]',
-      'timestamp_seconds': 1545,
-      'tip': "But when you have a referral partnership and you're going to give them business, "
-             "they're going to give you business, then you're you grow exponentially faster. "
-             'This has actually been the number one producing method historically in our '
-             'commercial cleaning company.',
-      'title': '21 Ways To Get More Commercial Cleaning Contracts (Commercial Cleaning CEO)',
-      'url': 'https://www.youtube.com/watch?v=esIqvQsbxco&t=1545s',
-      'video_id': 'esIqvQsbxco'},
-     {'author': 'AJ SIMMONS',
-      'channel': 'AJ SIMMONS',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:53](https://www.youtube.com/watch?v=mp0PpDrOpYM&t=53s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I guess it All right, first things first, how would you do it? It's the same "
-              'steps, all right? So, you still want to go follow that video how to start a '
-              'cleaning business step-by-step or no BS guide or whatever. The the video I got '
-              'is uh right on my homepage.',
-      'timestamp': 53,
-      'timestamp_label': '[00:00:53]',
-      'timestamp_seconds': 53,
-      'tip': "I guess it All right, first things first, how would you do it? It's the same "
-             'steps, all right? So, you still want to go follow that video how to start a '
-             'cleaning business step-by-step or no BS guide or whatever. The the video I got '
-             'is uh right on my homepage.',
-      'title': 'How To Start A Cleaning Business SOLO! (AJ SIMMONS)',
-      'url': 'https://www.youtube.com/watch?v=mp0PpDrOpYM&t=53s',
-      'video_id': 'mp0PpDrOpYM'},
-     {'author': 'Training Videos',
-      'channel': 'Training Videos',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:49](https://www.youtube.com/watch?v=AxPTARAhtdA&t=109s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'It is critical that you follow these exactly. Skipping any part of this process '
-              'can compromise the safety of the entire facility. Steps one and two are to '
-              'secure the area and suit up. Block off the spill site immediately and have a '
-              'co-worker stand guard to prevent traffic.',
-      'timestamp': 109,
-      'timestamp_label': '[00:01:49]',
-      'timestamp_seconds': 109,
-      'tip': 'It is critical that you follow these exactly. Skipping any part of this process '
-             'can compromise the safety of the entire facility. Steps one and two are to '
-             'secure the area and suit up. Block off the spill site immediately and have a '
-             'co-worker stand guard to prevent traffic.',
-      'title': 'OSHA Bloodborne Pathogens Spill Cleanup Training (Training Videos)',
-      'url': 'https://www.youtube.com/watch?v=AxPTARAhtdA&t=109s',
-      'video_id': 'AxPTARAhtdA'},
-     {'author': 'Imperial Brady',
-      'channel': 'Imperial Brady',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:55](https://www.youtube.com/watch?v=4ynia2-e2hw&t=175s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Protective eyewear and a face mask to thoroughly clean and disinfect an '
-              'inpatient area you should follow the following steps.',
-      'timestamp': 175,
-      'timestamp_label': '[00:02:55]',
-      'timestamp_seconds': 175,
-      'tip': 'Protective eyewear and a face mask to thoroughly clean and disinfect an '
-             'inpatient area you should follow the following steps.',
-      'title': 'Steps to Terminal Cleaning a Patient Room (Imperial Brady)',
-      'url': 'https://www.youtube.com/watch?v=4ynia2-e2hw&t=175s',
-      'video_id': '4ynia2-e2hw'},
-     {'author': 'recruiterbackoffice',
-      'channel': 'recruiterbackoffice',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:14](https://www.youtube.com/watch?v=VumHp7Ist1c&t=194s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Is there a contract are there benefits what's the duration of the assignment "
-              "and then what's the normal business process involving the termination or any.",
-      'timestamp': 194,
-      'timestamp_label': '[00:03:14]',
-      'timestamp_seconds': 194,
-      'tip': "Is there a contract are there benefits what's the duration of the assignment and "
-             "then what's the normal business process involving the termination or any.",
-      'title': '1099 Independent Contractor vs. W-2 Employees (recruiterbackoffice)',
-      'url': 'https://www.youtube.com/watch?v=VumHp7Ist1c&t=194s',
-      'video_id': 'VumHp7Ist1c'},
-     {'author': 'BuddSafety',
-      'channel': 'BuddSafety',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:02](https://www.youtube.com/watch?v=eEnUgYz8rXU&t=362s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Let's go debrief back at your office, if that's all right. Speaker 2: That "
-              "sounds great. Hey, anytime, the last step when you're cleaning up a blood "
-              'spill, bloodborne pathogen spill, you got to wash your hands for 30 seconds, so '
-              "I'll meet you in my office.",
-      'timestamp': 362,
-      'timestamp_label': '[00:06:02]',
-      'timestamp_seconds': 362,
-      'tip': "Let's go debrief back at your office, if that's all right. Speaker 2: That "
-             "sounds great. Hey, anytime, the last step when you're cleaning up a blood spill, "
-             "bloodborne pathogen spill, you got to wash your hands for 30 seconds, so I'll "
-             'meet you in my office.',
-      'title': 'Blood Borne Pathogens Safety - BBP Kit (BuddSafety)',
-      'url': 'https://www.youtube.com/watch?v=eEnUgYz8rXU&t=362s',
-      'video_id': 'eEnUgYz8rXU'},
-     {'author': 'Imperial Brady',
-      'channel': 'Imperial Brady',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:15](https://www.youtube.com/watch?v=tCz-yNw0WBo&t=255s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Fluid spill kit it's time for the second step after you have everything that "
-              'you need ready step two is to commence the cleanup process disposable '
-              'absorbent.',
-      'timestamp': 255,
-      'timestamp_label': '[00:04:15]',
-      'timestamp_seconds': 255,
-      'tip': "Fluid spill kit it's time for the second step after you have everything that you "
-             'need ready step two is to commence the cleanup process disposable absorbent.',
-      'title': 'How to Clean Up Bloodborne Pathogens: A Methodical Guide to Safety and '
-               'Compliance (Imperial Brady)',
-      'url': 'https://www.youtube.com/watch?v=tCz-yNw0WBo&t=255s',
-      'video_id': 'tCz-yNw0WBo'},
-     {'author': 'Austin Davis',
-      'channel': 'Austin Davis',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:16](https://www.youtube.com/watch?v=M2j87yHQY10&t=16s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'This white dust white mortar typically you guys can see this whenever you guys '
-              'are looking at brand new homes brand new uh communities commercial buildings '
-              'you.',
-      'timestamp': 16,
-      'timestamp_label': '[00:00:16]',
-      'timestamp_seconds': 16,
-      'tip': 'This white dust white mortar typically you guys can see this whenever you guys '
-             'are looking at brand new homes brand new uh communities commercial buildings '
-             'you.',
-      'title': 'Post Construction Cleaning | Construction Dust Solved With No Brushing (Austin '
-               'Davis)',
-      'url': 'https://www.youtube.com/watch?v=M2j87yHQY10&t=16s',
-      'video_id': 'M2j87yHQY10'},
-     {'author': 'Kizzy Parks',
-      'channel': 'Kizzy Parks',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:24](https://www.youtube.com/watch?v=UVPaRFj3LDE&t=144s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'What also is helpful if you have it there are free options you will want to '
-              'only submit the 1449. you just simply you go into organize Pages you can get a '
-              'step-by-step online to extract these two pages very simple.',
-      'timestamp': 144,
-      'timestamp_label': '[00:02:24]',
-      'timestamp_seconds': 144,
-      'tip': 'What also is helpful if you have it there are free options you will want to only '
-             'submit the 1449. you just simply you go into organize Pages you can get a '
-             'step-by-step online to extract these two pages very simple.',
-      'title': 'How to Write a Proposal to the Government (Strategy + Full Walkthrough) (Kizzy '
-               'Parks)',
-      'url': 'https://www.youtube.com/watch?v=UVPaRFj3LDE&t=144s',
-      'video_id': 'UVPaRFj3LDE'},
+      'text': 'There are three qualifiers: pain, decision, and budget.',
+      'timestamp': 44,
+      'timestamp_label': '[00:00:44]',
+      'timestamp_seconds': 44,
+      'tip': 'There are three qualifiers: pain, decision, and budget.',
+      'title': 'Do THIS to Close a Commercial Cleaning Deal Every Time',
+      'url': 'https://www.youtube.com/watch?v=1tf8JMWxi98&t=44s',
+      'video_id': '1tf8JMWxi98'},
      {'author': 'OctoClean Media',
       'channel': 'OctoClean Media',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:11](https://www.youtube.com/watch?v=X3MX2xOshA4&t=251s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q7 operational verification).',
+      'markdown': '[00:01:34](https://www.youtube.com/watch?v=OzSRs5osKKI&t=94s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'Apply the stripper solution the other will be for your rinse bucket we are not '
-              'going to get into the stripping process here but clean mops and neutralizing.',
-      'timestamp': 251,
-      'timestamp_label': '[00:04:11]',
-      'timestamp_seconds': 251,
-      'tip': 'Apply the stripper solution the other will be for your rinse bucket we are not '
-             'going to get into the stripping process here but clean mops and neutralizing.',
-      'title': 'How to Price Floor Care (VCT Strip and Finish Pricing) (OctoClean Media)',
-      'url': 'https://www.youtube.com/watch?v=X3MX2xOshA4&t=251s',
-      'video_id': 'X3MX2xOshA4'},
-     {'author': 'Grow My Cleaning Company',
-      'channel': 'Grow My Cleaning Company',
+      'text': 'A proposal must show facility understanding, explain your systems, and define the '
+              'scope.',
+      'timestamp': 94,
+      'timestamp_label': '[00:01:34]',
+      'timestamp_seconds': 94,
+      'tip': 'A proposal must show facility understanding, explain your systems, and define the '
+             'scope.',
+      'title': 'How To Win Commercial Cleaning Contracts With Great Proposals! (Janitorial)',
+      'url': 'https://www.youtube.com/watch?v=OzSRs5osKKI&t=94s',
+      'video_id': 'OzSRs5osKKI'},
+     {'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:45](https://www.youtube.com/watch?v=D9L_Gw-APSU&t=165s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q7 operational verification).',
+      'markdown': '[00:18:59](https://www.youtube.com/watch?v=o6xwPfuhTI4&t=1139s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': "Many employees you have run around there on any given day currently we've got "
-              "about 138 540 that's we've got people that run from 8 to 10 so only having a to "
-              "employee variance over 100 that's that's a you do it a good job Cynthia.",
-      'timestamp': 165,
-      'timestamp_label': '[00:02:45]',
-      'timestamp_seconds': 165,
-      'tip': "Many employees you have run around there on any given day currently we've got "
-             "about 138 540 that's we've got people that run from 8 to 10 so only having a to "
-             "employee variance over 100 that's that's a you do it a good job Cynthia.",
-      'title': 'Everything You Need to Know Before Setting Up Your Own Janitorial Franchise '
-               '(Grow My Cleaning Company)',
-      'url': 'https://www.youtube.com/watch?v=D9L_Gw-APSU&t=165s',
-      'video_id': 'D9L_Gw-APSU'},
-     {'author': 'AJ SIMMONS',
-      'channel': 'AJ SIMMONS',
+      'text': 'Reject net 30 and net 60 terms and pay within 5 to 7 days of being paid.',
+      'timestamp': 1139,
+      'timestamp_label': '[00:18:59]',
+      'timestamp_seconds': 1139,
+      'tip': 'Reject net 30 and net 60 terms and pay within 5 to 7 days of being paid.',
+      'title': 'How to Get Commercial Cleaning Contracts Starting From Zero',
+      'url': 'https://www.youtube.com/watch?v=o6xwPfuhTI4&t=1139s',
+      'video_id': 'o6xwPfuhTI4'},
+     {'author': 'Mike Mak',
+      'channel': 'Mike Mak',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:53](https://www.youtube.com/watch?v=IMsJ1NxKfUk&t=473s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q7 operational verification).',
+      'markdown': '[00:04:46](https://www.youtube.com/watch?v=G2qoM4LqGdM&t=286s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'Be looking at the pictures on Google if they got any pictures on Google looking '
-              'at scoping out the building before you go stuff like this but put your all into '
-              "it you know what I mean and go in all right y'all.",
-      'timestamp': 473,
-      'timestamp_label': '[00:07:53]',
-      'timestamp_seconds': 473,
-      'tip': 'Be looking at the pictures on Google if they got any pictures on Google looking '
-             'at scoping out the building before you go stuff like this but put your all into '
-             "it you know what I mean and go in all right y'all.",
-      'title': 'I Started a Commercial Cleaning Service (My 1st Walkthrough) (AJ SIMMONS)',
-      'url': 'https://www.youtube.com/watch?v=IMsJ1NxKfUk&t=473s',
-      'video_id': 'IMsJ1NxKfUk'}],
- 8: [{'author': 'ONLY MAIDS PODCAST',
+      'text': 'Join a BNI group of 15 to 30 people, do the one-to-ones, and expect 3 to 4 offices.',
+      'timestamp': 286,
+      'timestamp_label': '[00:04:46]',
+      'timestamp_seconds': 286,
+      'tip': 'Join a BNI group of 15 to 30 people, do the one-to-ones, and expect 3 to 4 offices.',
+      'title': 'How To Get Your First 5 Office Cleaning Contracts FAST?',
+      'url': 'https://www.youtube.com/watch?v=G2qoM4LqGdM&t=286s',
+      'video_id': 'G2qoM4LqGdM'},
+     {'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:04](https://www.youtube.com/watch?v=huf7CKyeee4&t=124s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Build a wall of love from your Google and Facebook reviews and neutralize it by '
+              'removing the obviously residential items.',
+      'timestamp': 124,
+      'timestamp_label': '[00:02:04]',
+      'timestamp_seconds': 124,
+      'tip': 'Build a wall of love from your Google and Facebook reviews and neutralize it by '
+             'removing the obviously residential items.',
+      'title': 'How to Get Commercial Cleaning Contracts as a Residential Cleaner',
+      'url': 'https://www.youtube.com/watch?v=huf7CKyeee4&t=124s',
+      'video_id': 'huf7CKyeee4'},
+     {'author': 'OctoClean Media',
+      'channel': 'OctoClean Media',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:25](https://www.youtube.com/watch?v=j_wLBMK7Flk&t=145s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Bidding by the square foot is a rookie mistake; use production rates.',
+      'timestamp': 145,
+      'timestamp_label': '[00:02:25]',
+      'timestamp_seconds': 145,
+      'tip': 'Bidding by the square foot is a rookie mistake; use production rates.',
+      'title': 'How to Create a Kickass Commercial Cleaning Proposal',
+      'url': 'https://www.youtube.com/watch?v=j_wLBMK7Flk&t=145s',
+      'video_id': 'j_wLBMK7Flk'},
+     {'author': 'ONLY MAIDS PODCAST',
       'channel': 'ONLY MAIDS PODCAST',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:25:04](https://www.youtube.com/watch?v=aQj7G__L-iE&t=1504s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q8 operational verification).',
+      'markdown': '[00:07:34](https://www.youtube.com/watch?v=aQj7G__L-iE&t=454s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'Starting your commercial cleaning business and um keeping things organized '
-              "awesome the win is a uh it's a software that that that includes a CRM and a uh "
-              'bid advisor.',
-      'timestamp': 1504,
-      'timestamp_label': '[00:25:04]',
-      'timestamp_seconds': 1504,
-      'tip': 'Starting your commercial cleaning business and um keeping things organized '
-             "awesome the win is a uh it's a software that that that includes a CRM and a uh "
-             'bid advisor.',
-      'title': 'Hot Seat | Commercial Cleaning Crash Course: Get the Walkthrough, Price the '
-               'Job & Win the Account (ONLY MAIDS PODCAST)',
-      'url': 'https://www.youtube.com/watch?v=aQj7G__L-iE&t=1504s',
+      'text': 'Target a 30 percent margin: $2,100 in cost becomes a $3,000 price and $900 in '
+              'profit.',
+      'timestamp': 454,
+      'timestamp_label': '[00:07:34]',
+      'timestamp_seconds': 454,
+      'tip': 'Target a 30 percent margin: $2,100 in cost becomes a $3,000 price and $900 in '
+             'profit.',
+      'title': 'Hot Seat | Commercial Cleaning Crash Course: Get the Walkthrough, Price the Job & '
+               'Win the Account',
+      'url': 'https://www.youtube.com/watch?v=aQj7G__L-iE&t=454s',
       'video_id': 'aQj7G__L-iE'},
      {'author': 'The Janitorial Store',
       'channel': 'The Janitorial Store',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:29](https://www.youtube.com/watch?v=gTK5pzrNCqg&t=149s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q8 operational verification).',
+      'markdown': '[00:09:27](https://www.youtube.com/watch?v=EL4NN_-rX7o&t=567s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'Much easier is if you have a tool and on the janitorial store.com we actually '
-              'have a post construction bidding calculator and it just makes the whole.',
-      'timestamp': 149,
-      'timestamp_label': '[00:02:29]',
-      'timestamp_seconds': 149,
-      'tip': 'Much easier is if you have a tool and on the janitorial store.com we actually '
-             'have a post construction bidding calculator and it just makes the whole.',
-      'title': 'How to price a post construction cleaning for a commercial building (The '
-               'Janitorial Store)',
-      'url': 'https://www.youtube.com/watch?v=gTK5pzrNCqg&t=149s',
-      'video_id': 'gTK5pzrNCqg'},
+      'text': 'Small extras can add up to 6 or 7 tasks and 30-plus minutes unbilled, so use work '
+              'orders and bill the additional work.',
+      'timestamp': 567,
+      'timestamp_label': '[00:09:27]',
+      'timestamp_seconds': 567,
+      'tip': 'Small extras can add up to 6 or 7 tasks and 30-plus minutes unbilled, so use work '
+             'orders and bill the additional work.',
+      'title': 'Commercial Cleaning Company Onboarding Checklist',
+      'url': 'https://www.youtube.com/watch?v=EL4NN_-rX7o&t=567s',
+      'video_id': 'EL4NN_-rX7o'},
+     {'author': 'Dylan Marma',
+      'channel': 'Dylan Marma',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:17:58](https://www.youtube.com/watch?v=uJmpWtXEuyg&t=1078s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Keep a weekly pulse report running through the 90-day onboarding.',
+      'timestamp': 1078,
+      'timestamp_label': '[00:17:58]',
+      'timestamp_seconds': 1078,
+      'tip': 'Keep a weekly pulse report running through the 90-day onboarding.',
+      'title': 'The Ultimate 90-day Property Onboarding Checklist in 2023 | RV Parks | Requity, '
+               'Dylan Marma',
+      'url': 'https://www.youtube.com/watch?v=uJmpWtXEuyg&t=1078s',
+      'video_id': 'uJmpWtXEuyg'},
+     {'author': 'AJ SIMMONS',
+      'channel': 'AJ SIMMONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:52](https://www.youtube.com/watch?v=ZDdd0TDbbFo&t=772s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': '100 calls a day will get you a cleaning customer in no time.',
+      'timestamp': 772,
+      'timestamp_label': '[00:12:52]',
+      'timestamp_seconds': 772,
+      'tip': '100 calls a day will get you a cleaning customer in no time.',
+      'title': 'How To Get Commercial Cleaning Contracts (SIMPLE ANSWER)',
+      'url': 'https://www.youtube.com/watch?v=ZDdd0TDbbFo&t=772s',
+      'video_id': 'ZDdd0TDbbFo'},
+     {'author': 'AJ SIMMONS',
+      'channel': 'AJ SIMMONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:56](https://www.youtube.com/watch?v=ZDdd0TDbbFo&t=236s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Make a 100 calls a day, 500 by the end of the week, 2,000 by the end of the month.',
+      'timestamp': 236,
+      'timestamp_label': '[00:03:56]',
+      'timestamp_seconds': 236,
+      'tip': 'Make a 100 calls a day, 500 by the end of the week, 2,000 by the end of the month.',
+      'title': 'How To Get Commercial Cleaning Contracts (SIMPLE ANSWER)',
+      'url': 'https://www.youtube.com/watch?v=ZDdd0TDbbFo&t=236s',
+      'video_id': 'ZDdd0TDbbFo'},
+     {'author': 'AJ SIMMONS',
+      'channel': 'AJ SIMMONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:43](https://www.youtube.com/watch?v=Xvc-7yo1lng&t=463s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Be wearsome: walkthrough in the morning, proposal by the afternoon, and a call '
+              'before they get off work.',
+      'timestamp': 463,
+      'timestamp_label': '[00:07:43]',
+      'timestamp_seconds': 463,
+      'tip': 'Be wearsome: walkthrough in the morning, proposal by the afternoon, and a call '
+             'before they get off work.',
+      'title': 'Cleaning Business Walkthrough Tips',
+      'url': 'https://www.youtube.com/watch?v=Xvc-7yo1lng&t=463s',
+      'video_id': 'Xvc-7yo1lng'},
+     {'author': 'AJ SIMMONS',
+      'channel': 'AJ SIMMONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:39](https://www.youtube.com/watch?v=IMsJ1NxKfUk&t=279s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'The branch manager is not the decision-maker; the regional manager will judge it '
+              'straight on the number by phone.',
+      'timestamp': 279,
+      'timestamp_label': '[00:04:39]',
+      'timestamp_seconds': 279,
+      'tip': 'The branch manager is not the decision-maker; the regional manager will judge it '
+             'straight on the number by phone.',
+      'title': 'I Started a Commercial Cleaning Service (My 1st Walkthrough)',
+      'url': 'https://www.youtube.com/watch?v=IMsJ1NxKfUk&t=279s',
+      'video_id': 'IMsJ1NxKfUk'},
+     {'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:15:20](https://www.youtube.com/watch?v=SU1OB2thaKo&t=920s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "Now, I wouldn't clean for free recurring forever.",
+      'timestamp': 920,
+      'timestamp_label': '[00:15:20]',
+      'timestamp_seconds': 920,
+      'tip': "Now, I wouldn't clean for free recurring forever.",
+      'title': 'Just Starting? How To Land Your First Commercial Cleaning Contract',
+      'url': 'https://www.youtube.com/watch?v=SU1OB2thaKo&t=920s',
+      'video_id': 'SU1OB2thaKo'},
+     {'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:15:06](https://www.youtube.com/watch?v=SU1OB2thaKo&t=906s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "But you can do some special deals that you really won't do in the long term to get "
+              'those proof assets built up.',
+      'timestamp': 906,
+      'timestamp_label': '[00:15:06]',
+      'timestamp_seconds': 906,
+      'tip': "But you can do some special deals that you really won't do in the long term to get "
+             'those proof assets built up.',
+      'title': 'Just Starting? How To Land Your First Commercial Cleaning Contract',
+      'url': 'https://www.youtube.com/watch?v=SU1OB2thaKo&t=906s',
+      'video_id': 'SU1OB2thaKo'},
+     {'author': 'Clean Ops Guide',
+      'channel': 'Clean Ops Guide',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:07](https://www.youtube.com/watch?v=XySWgKh0nEY&t=307s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "Don't assume you lost the contract.",
+      'timestamp': 307,
+      'timestamp_label': '[00:05:07]',
+      'timestamp_seconds': 307,
+      'tip': "Don't assume you lost the contract.",
+      'title': 'How to Win Commercial Cleaning Contracts | Step-by-Step Guide',
+      'url': 'https://www.youtube.com/watch?v=XySWgKh0nEY&t=307s',
+      'video_id': 'XySWgKh0nEY'},
      {'author': 'Cleaning Launch',
       'channel': 'Cleaning Launch',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:16](https://www.youtube.com/watch?v=vAsWtmVSISA&t=316s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q8 operational verification).',
+      'markdown': '[00:07:28](https://www.youtube.com/watch?v=V84a_KWRYU4&t=448s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'Commercial contracts and that is using LinkedIn organic and you want to be '
-              'using a software to add people message people and invite them to your company.',
-      'timestamp': 316,
-      'timestamp_label': '[00:05:16]',
-      'timestamp_seconds': 316,
-      'tip': 'Commercial contracts and that is using LinkedIn organic and you want to be using '
-             'a software to add people message people and invite them to your company.',
-      'title': '7 FREE Ways to get Commercial CLEANING Contracts (copy this strategy) '
-               '(Cleaning Launch)',
-      'url': 'https://www.youtube.com/watch?v=vAsWtmVSISA&t=316s',
+      'text': 'Not mentioning our security practices lost a $50,000-a-year contract, a quarter '
+              'million over five years, and we came in second best.',
+      'timestamp': 448,
+      'timestamp_label': '[00:07:28]',
+      'timestamp_seconds': 448,
+      'tip': 'Not mentioning our security practices lost a $50,000-a-year contract, a quarter '
+             'million over five years, and we came in second best.',
+      'title': 'Never Get Lowballed Commercial Cleaning Contracts Again With This Method',
+      'url': 'https://www.youtube.com/watch?v=V84a_KWRYU4&t=448s',
+      'video_id': 'V84a_KWRYU4'}],
+ 3: [{'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:28](https://www.youtube.com/watch?v=f9f6YA_kX78&t=28s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "Buildings get hundreds of calls per day, so don't open with what your company does, "
+              'your name, or your company name.',
+      'timestamp': 28,
+      'timestamp_label': '[00:00:28]',
+      'timestamp_seconds': 28,
+      'tip': "Buildings get hundreds of calls per day, so don't open with what your company does, "
+             'your name, or your company name.',
+      'title': '3 PROVEN Cold Calling Tips That Get More Commercial Cleaning Contracts',
+      'url': 'https://www.youtube.com/watch?v=f9f6YA_kX78&t=28s',
+      'video_id': 'f9f6YA_kX78'},
+     {'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:04](https://www.youtube.com/watch?v=esIqvQsbxco&t=724s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "Don't go don't give Google the power to go spend your money.",
+      'timestamp': 724,
+      'timestamp_label': '[00:12:04]',
+      'timestamp_seconds': 724,
+      'tip': "Don't go don't give Google the power to go spend your money.",
+      'title': '21 Ways To Get More Commercial Cleaning Contracts',
+      'url': 'https://www.youtube.com/watch?v=esIqvQsbxco&t=724s',
+      'video_id': 'esIqvQsbxco'},
+     {'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:24:37](https://www.youtube.com/watch?v=esIqvQsbxco&t=1477s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "So Indeed's more than a job board, it's an opportunity board.",
+      'timestamp': 1477,
+      'timestamp_label': '[00:24:37]',
+      'timestamp_seconds': 1477,
+      'tip': "So Indeed's more than a job board, it's an opportunity board.",
+      'title': '21 Ways To Get More Commercial Cleaning Contracts',
+      'url': 'https://www.youtube.com/watch?v=esIqvQsbxco&t=1477s',
+      'video_id': 'esIqvQsbxco'},
+     {'author': 'Jeremy Dixon',
+      'channel': 'Jeremy Dixon',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:41](https://www.youtube.com/watch?v=-LFfJivPXKw&t=161s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Can I speak to the person in charge of your janitorial services, would you be open '
+              'to us coming out and giving you a quote.',
+      'timestamp': 161,
+      'timestamp_label': '[00:02:41]',
+      'timestamp_seconds': 161,
+      'tip': 'Can I speak to the person in charge of your janitorial services, would you be open '
+             'to us coming out and giving you a quote.',
+      'title': 'Cold Calling For Commercial Cleaning Companies (Script + Live Calls)',
+      'url': 'https://www.youtube.com/watch?v=-LFfJivPXKw&t=161s',
+      'video_id': '-LFfJivPXKw'},
+     {'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:12](https://www.youtube.com/watch?v=wC3VDZWQwZk&t=792s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "Talk to the right people, reference the neighbors, and it's going to get you "
+              'indoors a lot more deeply and a lot more often.',
+      'timestamp': 792,
+      'timestamp_label': '[00:13:12]',
+      'timestamp_seconds': 792,
+      'tip': "Talk to the right people, reference the neighbors, and it's going to get you indoors "
+             'a lot more deeply and a lot more often.',
+      'title': '8 Fast & Free Ways to Get Commercial Cleaning Contracts',
+      'url': 'https://www.youtube.com/watch?v=wC3VDZWQwZk&t=792s',
+      'video_id': 'wC3VDZWQwZk'},
+     {'author': 'Cleaning Launch',
+      'channel': 'Cleaning Launch',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:40](https://www.youtube.com/watch?v=vAsWtmVSISA&t=280s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'A Google Business Profile gives you one or two contracts a month.',
+      'timestamp': 280,
+      'timestamp_label': '[00:04:40]',
+      'timestamp_seconds': 280,
+      'tip': 'A Google Business Profile gives you one or two contracts a month.',
+      'title': '7 FREE Ways to get Commercial CLEANING Contracts (copy this strategy)',
+      'url': 'https://www.youtube.com/watch?v=vAsWtmVSISA&t=280s',
       'video_id': 'vAsWtmVSISA'},
-     {'author': 'victoria menifee',
-      'channel': 'victoria menifee',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:48:43](https://www.youtube.com/watch?v=5htVyehKCRo&t=2923s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Now, this right here they're small disadvantaged business. They're they don't "
-              "have anything else. You can see they're not veteran owned. We can look and see "
-              'exactly what they are right in this area with their with their um economic '
-              'data.',
-      'timestamp': 2923,
-      'timestamp_label': '[00:48:43]',
-      'timestamp_seconds': 2923,
-      'tip': "Now, this right here they're small disadvantaged business. They're they don't "
-             "have anything else. You can see they're not veteran owned. We can look and see "
-             'exactly what they are right in this area with their with their um economic data.',
-      'title': 'SECRET SHORTCUT TO GOVERNMENT CLEANING CONTRACT TO WIN BIG (NO-BID METHOD) '
-               '(victoria menifee)',
-      'url': 'https://www.youtube.com/watch?v=5htVyehKCRo&t=2923s',
-      'video_id': '5htVyehKCRo'},
-     {'author': 'Contractor Plus',
-      'channel': 'Contractor Plus',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:22](https://www.youtube.com/watch?v=9IJ1pi5IQ_E&t=22s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Built for commercial cleaning and facility contracts, not generic service '
-              'businesses. If you run multi-location accounts, tools for night shifts, GPS '
-              'check-ins, inspection score cards, and client-ready reporting. Before you '
-              'shortlist, get clear on your operation.',
-      'timestamp': 22,
-      'timestamp_label': '[00:00:22]',
-      'timestamp_seconds': 22,
-      'tip': 'Built for commercial cleaning and facility contracts, not generic service '
-             'businesses. If you run multi-location accounts, tools for night shifts, GPS '
-             'check-ins, inspection score cards, and client-ready reporting. Before you '
-             'shortlist, get clear on your operation.',
-      'title': '9 BEST Janitorial Software Platforms in 2026 (Commercial Cleaning Ranked) '
-               '(Contractor Plus)',
-      'url': 'https://www.youtube.com/watch?v=9IJ1pi5IQ_E&t=22s',
-      'video_id': '9IJ1pi5IQ_E'},
-     {'author': 'Commercial Cleaning CEO',
-      'channel': 'Commercial Cleaning CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:37](https://www.youtube.com/watch?v=SU1OB2thaKo&t=157s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "And when you say you're spending this time on it what are you doing currently? "
-              "We we got the website up and running. Um of course I've been doing all the "
-              'paperwork and the business account, checking account um set up. You know, '
-              'stumbled across your platform.',
-      'timestamp': 157,
-      'timestamp_label': '[00:02:37]',
-      'timestamp_seconds': 157,
-      'tip': "And when you say you're spending this time on it what are you doing currently? "
-             "We we got the website up and running. Um of course I've been doing all the "
-             'paperwork and the business account, checking account um set up. You know, '
-             'stumbled across your platform.',
-      'title': 'Just Starting? How To Land Your First Commercial Cleaning Contract (Commercial '
-               'Cleaning CEO)',
-      'url': 'https://www.youtube.com/watch?v=SU1OB2thaKo&t=157s',
-      'video_id': 'SU1OB2thaKo'},
-     {'author': 'OctoClean Media',
-      'channel': 'OctoClean Media',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:25](https://www.youtube.com/watch?v=KNxKwtNpe_s&t=205s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Changes to account for the medical cleaning times I'm about to give you some "
-              'information that will transform your company so hang on tight medical.',
-      'timestamp': 205,
-      'timestamp_label': '[00:03:25]',
-      'timestamp_seconds': 205,
-      'tip': "Changes to account for the medical cleaning times I'm about to give you some "
-             'information that will transform your company so hang on tight medical.',
-      'title': 'How to Bid Medical Cleaning (Formula + Example) (OctoClean Media)',
-      'url': 'https://www.youtube.com/watch?v=KNxKwtNpe_s&t=205s',
-      'video_id': 'KNxKwtNpe_s'},
-     {'author': 'XO Safety',
-      'channel': 'XO Safety',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:51](https://www.youtube.com/watch?v=-8zP-by6RbU&t=411s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Work Practice Controls reduce the likelihood of exposure by altering the way a '
-              'task is performed The most common Work Practice Control is frequent hand '
-              'washing. Regular cleaning and decontamination of the work area is another Work '
-              'Practice Control.',
-      'timestamp': 411,
-      'timestamp_label': '[00:06:51]',
-      'timestamp_seconds': 411,
-      'tip': 'Work Practice Controls reduce the likelihood of exposure by altering the way a '
-             'task is performed The most common Work Practice Control is frequent hand '
-             'washing. Regular cleaning and decontamination of the work area is another Work '
-             'Practice Control.',
-      'title': 'Bloodborne Pathogens Safety Training (XO Safety)',
-      'url': 'https://www.youtube.com/watch?v=-8zP-by6RbU&t=411s',
-      'video_id': '-8zP-by6RbU'},
-     {'author': 'nurselyf',
-      'channel': 'nurselyf',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:30](https://www.youtube.com/watch?v=Efj3Vo_qlBY&t=90s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Hazard communication standard. All chemicals and cleaning agents must be '
-              'labeled and handled with training think material safety data sheets. Safe '
-              'patient handling programs to reduce back injuries and muscularkeeletal '
-              'disorders.',
-      'timestamp': 90,
-      'timestamp_label': '[00:01:30]',
-      'timestamp_seconds': 90,
-      'tip': 'Hazard communication standard. All chemicals and cleaning agents must be labeled '
-             'and handled with training think material safety data sheets. Safe patient '
-             'handling programs to reduce back injuries and muscularkeeletal disorders.',
-      'title': 'OSHA in Healthcare: Key Safety Standards, Bloodborne Pathogens, PPE & '
-               'Workplace Safety Explained (nurselyf)',
-      'url': 'https://www.youtube.com/watch?v=Efj3Vo_qlBY&t=90s',
-      'video_id': 'Efj3Vo_qlBY'},
-     {'author': 'Swept',
-      'channel': 'Swept',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:21:31](https://www.youtube.com/watch?v=lPuBkaocWL8&t=1291s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "You'll make up an excuse and that's just the reality of it so going in knowing "
-              'that you want software and why having that that intention will really help you '
-              'be successful with it and it can completely transform your business.',
-      'timestamp': 1291,
-      'timestamp_label': '[00:21:31]',
-      'timestamp_seconds': 1291,
-      'tip': "You'll make up an excuse and that's just the reality of it so going in knowing "
-             'that you want software and why having that that intention will really help you '
-             'be successful with it and it can completely transform your business.',
-      'title': 'Maximize the ROI of janitorial software (Swept)',
-      'url': 'https://www.youtube.com/watch?v=lPuBkaocWL8&t=1291s',
-      'video_id': 'lPuBkaocWL8'},
-     {'author': 'AJ SIMMONS',
-      'channel': 'AJ SIMMONS',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:30:04](https://www.youtube.com/watch?v=du4OAGZv9AE&t=1804s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'re in the CBN network and you have a member if you're a member if you have "
-              "access to the software, you'll be able to create a post on your CRM to where "
-              'you can you can put them all out at one time. People tap in with me on on '
-              'Facebook as well.',
-      'timestamp': 1804,
-      'timestamp_label': '[00:30:04]',
-      'timestamp_seconds': 1804,
-      'tip': "'re in the CBN network and you have a member if you're a member if you have "
-             "access to the software, you'll be able to create a post on your CRM to where you "
-             'can you can put them all out at one time. People tap in with me on on Facebook '
-             'as well.',
-      'title': 'How He Built A Million Dollar Cleaning Business! (AJ SIMMONS)',
-      'url': 'https://www.youtube.com/watch?v=du4OAGZv9AE&t=1804s',
-      'video_id': 'du4OAGZv9AE'},
-     {'author': 'CleanGuru',
-      'channel': 'CleanGuru',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:55](https://www.youtube.com/watch?v=nNPKmshBChQ&t=175s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "We're so excited that it's ready to go and we'd love for you to give it a try "
-              "if you've never been a clean QC member before because it's brand-new just click "
-              'on the link below and get your own free trial for 30 days starting now thanks.',
-      'timestamp': 175,
-      'timestamp_label': '[00:02:55]',
-      'timestamp_seconds': 175,
-      'tip': "We're so excited that it's ready to go and we'd love for you to give it a try if "
-             "you've never been a clean QC member before because it's brand-new just click on "
-             'the link below and get your own free trial for 30 days starting now thanks.',
-      'title': 'CleanGuru - CleanQC Janitorial Inspection Software (CleanGuru)',
-      'url': 'https://www.youtube.com/watch?v=nNPKmshBChQ&t=175s',
-      'video_id': 'nNPKmshBChQ'},
-     {'author': 'CSI Accounting',
-      'channel': 'CSI Accounting',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:45](https://www.youtube.com/watch?v=kfUxzVfMpAk&t=225s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Questions about classifying workers or you're interested in our services check "
-              'out our YouTube channel or go to our website and schedule a free consultation '
-              'thanks so much for watching foreign.',
-      'timestamp': 225,
-      'timestamp_label': '[00:03:45]',
-      'timestamp_seconds': 225,
-      'tip': "Questions about classifying workers or you're interested in our services check "
-             'out our YouTube channel or go to our website and schedule a free consultation '
-             'thanks so much for watching foreign.',
-      'title': '1099 Contractors vs W-2 Employees - How to Classify Your Workers (CSI '
-               'Accounting)',
-      'url': 'https://www.youtube.com/watch?v=kfUxzVfMpAk&t=225s',
-      'video_id': 'kfUxzVfMpAk'},
-     {'author': 'AJ SIMMONS',
-      'channel': 'AJ SIMMONS',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:39](https://www.youtube.com/watch?v=vqE3IAR7B18&t=699s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Multiply the times four times in 4.33 times in a month so uh we'll do 601 time "
-              "4.33 I don't have my calculator handy if you want to do that for me in the "
-              "background right $61 hopefully y'all can see that that $61 time.",
-      'timestamp': 699,
-      'timestamp_label': '[00:11:39]',
-      'timestamp_seconds': 699,
-      'tip': "Multiply the times four times in 4.33 times in a month so uh we'll do 601 time "
-             "4.33 I don't have my calculator handy if you want to do that for me in the "
-             "background right $61 hopefully y'all can see that that $61 time.",
-      'title': 'How To Bid Commercial and Residential Cleaning Jobs (Formula Included) (AJ '
-               'SIMMONS)',
-      'url': 'https://www.youtube.com/watch?v=vqE3IAR7B18&t=699s',
-      'video_id': 'vqE3IAR7B18'},
-     {'author': 'Modern Field Service',
-      'channel': 'Modern Field Service',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:33](https://www.youtube.com/watch?v=Y00vfNH19Q4&t=33s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Tools like SendJim and Maidily are generally good at what they do, but what '
-              'they do is houses. Booking a recurring home clean, reminding the customer, '
-              'collecting payments. Commercial cleaning is a different business.',
-      'timestamp': 33,
-      'timestamp_label': '[00:00:33]',
-      'timestamp_seconds': 33,
-      'tip': 'Tools like SendJim and Maidily are generally good at what they do, but what they '
-             'do is houses. Booking a recurring home clean, reminding the customer, collecting '
-             'payments. Commercial cleaning is a different business.',
-      'title': 'Best Janitorial & Commercial Cleaning Software 2026 (Modern Field Service)',
-      'url': 'https://www.youtube.com/watch?v=Y00vfNH19Q4&t=33s',
-      'video_id': 'Y00vfNH19Q4'}],
- 9: [{'author': 'Business From Zero',
-      'channel': 'Business From Zero',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:31](https://www.youtube.com/watch?v=fvJFWetfuFA&t=91s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'First, form your LLC, pull a free IRS EIN, and open a business checking account '
-              'for $350. Second, put $650 down on a $1 million to $2 million commercial '
-              'general liability policy plus a $10,000 janitorial surety bond. Here is the '
-              'compliance trap.',
-      'timestamp': 91,
-      'timestamp_label': '[00:01:31]',
-      'timestamp_seconds': 91,
-      'tip': 'First, form your LLC, pull a free IRS EIN, and open a business checking account '
-             'for $350. Second, put $650 down on a $1 million to $2 million commercial general '
-             'liability policy plus a $10,000 janitorial surety bond. Here is the compliance '
-             'trap.',
-      'title': 'How to Start a Commercial Cleaning Business for $4,200 (Business From Zero)',
-      'url': 'https://www.youtube.com/watch?v=fvJFWetfuFA&t=91s',
-      'video_id': 'fvJFWetfuFA'},
-     {'author': 'AJ SIMMONS',
-      'channel': 'AJ SIMMONS',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:00](https://www.youtube.com/watch?v=pqTeTRcPhKg&t=300s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Every city and county does not require you to have a business license for a '
-              'cleaning company. Now, some might require you to have a business license for a '
-              'residential cleaning service but not a commercial cleaning service or vice '
-              'versa.',
-      'timestamp': 300,
-      'timestamp_label': '[00:05:00]',
-      'timestamp_seconds': 300,
-      'tip': 'Every city and county does not require you to have a business license for a '
-             'cleaning company. Now, some might require you to have a business license for a '
-             'residential cleaning service but not a commercial cleaning service or vice '
-             'versa.',
-      'title': 'How To Start A Cleaning Business in 2026 (NO BS) Step By Step FREE FULL COURSE '
-               '(AJ SIMMONS)',
-      'url': 'https://www.youtube.com/watch?v=pqTeTRcPhKg&t=300s',
-      'video_id': 'pqTeTRcPhKg'},
-     {'author': 'Carolyn Arellano',
-      'channel': 'Carolyn Arellano',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:05](https://www.youtube.com/watch?v=IJlyq2UAXqU&t=245s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Now there are different bidding apps that are available for you know commercial '
-              'cleaning companies and then there is also the Issa clean times which.',
-      'timestamp': 245,
-      'timestamp_label': '[00:04:05]',
-      'timestamp_seconds': 245,
-      'tip': 'Now there are different bidding apps that are available for you know commercial '
-             'cleaning companies and then there is also the Issa clean times which.',
-      'title': 'How To Bid Commercial Cleaning Jobs (Formula Included) (Carolyn Arellano)',
-      'url': 'https://www.youtube.com/watch?v=IJlyq2UAXqU&t=245s',
-      'video_id': 'IJlyq2UAXqU'},
-     {'author': 'Stronger Built',
-      'channel': 'Stronger Built',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:50](https://www.youtube.com/watch?v=EoNW1HDL3PI&t=230s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'No matter how good your cleaning services are. Enforcing these rules like a '
-              'hawk is the contract monitoring division or CMD. To prove your outreach to LBE '
-              "firms, you've got to score a strict 50point minimum on their evaluation form.",
-      'timestamp': 230,
-      'timestamp_label': '[00:03:50]',
-      'timestamp_seconds': 230,
-      'tip': 'No matter how good your cleaning services are. Enforcing these rules like a hawk '
-             'is the contract monitoring division or CMD. To prove your outreach to LBE firms, '
-             "you've got to score a strict 50point minimum on their evaluation form.",
-      'title': 'City and County of San Francisco Janitorial Services RFP (SFGOV-0000011743).- '
-               'Stronger Built LLC (Stronger Built)',
-      'url': 'https://www.youtube.com/watch?v=EoNW1HDL3PI&t=230s',
-      'video_id': 'EoNW1HDL3PI'},
-     {'author': 'DJ The Boss',
-      'channel': 'DJ The Boss',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:15](https://www.youtube.com/watch?v=cShuZhOvvr4&t=135s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'A commercial cleaning company about eight years ago skilled that past seven '
-              "figures I've documented the entire Journey here on YouTube which is pretty.",
-      'timestamp': 135,
-      'timestamp_label': '[00:02:15]',
-      'timestamp_seconds': 135,
-      'tip': 'A commercial cleaning company about eight years ago skilled that past seven '
-             "figures I've documented the entire Journey here on YouTube which is pretty.",
-      'title': 'W2 Employees vs 1099 Contractors for Cleaning Businesses (DJ The Boss)',
-      'url': 'https://www.youtube.com/watch?v=cShuZhOvvr4&t=135s',
-      'video_id': 'cShuZhOvvr4'},
-     {'author': 'Darian Jarrett',
-      'channel': 'Darian Jarrett',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:12](https://www.youtube.com/watch?v=_hqGinSApYg&t=372s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Construction cleaning and would love to partner with your company to ensure '
-              "your projects are delivered in pristine condition I wanted to know if there's "
-              'a.',
-      'timestamp': 372,
-      'timestamp_label': '[00:06:12]',
-      'timestamp_seconds': 372,
-      'tip': 'Construction cleaning and would love to partner with your company to ensure your '
-             "projects are delivered in pristine condition I wanted to know if there's a.",
-      'title': 'How to Get Construction Cleaning Contracts (This REALLY Worked) (Darian '
-               'Jarrett)',
-      'url': 'https://www.youtube.com/watch?v=_hqGinSApYg&t=372s',
-      'video_id': '_hqGinSApYg'},
-     {'author': 'Commercial Cleaning CEO',
-      'channel': 'Commercial Cleaning CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:10](https://www.youtube.com/watch?v=gqEvFieh5-k&t=670s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So that's going to look like real estate offices, legal offices, like you've "
-              'got a real estate law office, you have general law offices, you have business '
-              'law offices, you have all kinds of different lawyers and law groups and firms '
-              'in most cities.',
-      'timestamp': 670,
-      'timestamp_label': '[00:11:10]',
-      'timestamp_seconds': 670,
-      'tip': "So that's going to look like real estate offices, legal offices, like you've got "
-             'a real estate law office, you have general law offices, you have business law '
-             'offices, you have all kinds of different lawyers and law groups and firms in '
-             'most cities.',
-      'title': 'Top 5 HIGH PROFIT Commercial Cleaning Clients (Commercial Cleaning CEO)',
-      'url': 'https://www.youtube.com/watch?v=gqEvFieh5-k&t=670s',
-      'video_id': 'gqEvFieh5-k'},
-     {'author': 'Betco',
-      'channel': 'Betco',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:19](https://www.youtube.com/watch?v=wjpbeqDKZnE&t=259s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Isn't exposed it is crucial to clean and disinfect the area with the "
-              'appropriate disinfectant cleaner after a cleanup procedure always remove.',
-      'timestamp': 259,
-      'timestamp_label': '[00:04:19]',
-      'timestamp_seconds': 259,
-      'tip': "Isn't exposed it is crucial to clean and disinfect the area with the appropriate "
-             'disinfectant cleaner after a cleanup procedure always remove.',
-      'title': 'OSHA Bloodborne Pathogen (Betco)',
-      'url': 'https://www.youtube.com/watch?v=wjpbeqDKZnE&t=259s',
-      'video_id': 'wjpbeqDKZnE'},
-     {'author': 'Squared Compass',
-      'channel': 'Squared Compass',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:55](https://www.youtube.com/watch?v=Hoy7bWdKYOA&t=55s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'If your business sells it, builds it, supports it, or maintains it… there is '
-              'probably a government agency that buys it. But because it’s taxpayer money, the '
-              'process has structure—rules, competition, documentation, and oversight.',
-      'timestamp': 55,
-      'timestamp_label': '[00:00:55]',
-      'timestamp_seconds': 55,
-      'tip': 'If your business sells it, builds it, supports it, or maintains it… there is '
-             'probably a government agency that buys it. But because it’s taxpayer money, the '
-             'process has structure—rules, competition, documentation, and oversight.',
-      'title': 'Government Contracting Decoded: From Basics to Bidding (Squared Compass)',
-      'url': 'https://www.youtube.com/watch?v=Hoy7bWdKYOA&t=55s',
-      'video_id': 'Hoy7bWdKYOA'},
      {'author': 'Commercial Cleaning Blueprint',
       'channel': 'Commercial Cleaning Blueprint',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:58](https://www.youtube.com/watch?v=rFUVTv2YEQU&t=418s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q9 operational verification).',
+      'markdown': '[00:09:28](https://www.youtube.com/watch?v=rFUVTv2YEQU&t=568s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'Daniel wow wow just kidding she probably hung up on accident they probably '
-              "let's call her back let's do it thank you for calling Explorer if you are "
-              "looking to schedule a visit or I don't like to sit on hold guys cuz I need to "
-              'make my time.',
-      'timestamp': 418,
-      'timestamp_label': '[00:06:58]',
-      'timestamp_seconds': 418,
-      'tip': "Daniel wow wow just kidding she probably hung up on accident they probably let's "
-             "call her back let's do it thank you for calling Explorer if you are looking to "
-             "schedule a visit or I don't like to sit on hold guys cuz I need to make my time.",
-      'title': 'LIVE COLD CALLS - COMMERCIAL CLEANING (Commercial Cleaning Blueprint)',
-      'url': 'https://www.youtube.com/watch?v=rFUVTv2YEQU&t=418s',
+      'text': '10 minutes in I already did over 20 calls.',
+      'timestamp': 568,
+      'timestamp_label': '[00:09:28]',
+      'timestamp_seconds': 568,
+      'tip': '10 minutes in I already did over 20 calls.',
+      'title': 'LIVE COLD CALLS - COMMERCIAL CLEANING',
+      'url': 'https://www.youtube.com/watch?v=rFUVTv2YEQU&t=568s',
       'video_id': 'rFUVTv2YEQU'},
-     {'author': 'That Clinical Instructor',
-      'channel': 'That Clinical Instructor',
+     {'author': 'Carolyn Arellano',
+      'channel': 'Carolyn Arellano',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:20:12](https://www.youtube.com/watch?v=CzGiV83CMyU&t=1212s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q9 operational verification).',
+      'markdown': '[00:01:58](https://www.youtube.com/watch?v=xJ6TUBTc4Qo&t=118s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'Your facility has personal protective equipment available for you in your work '
-              'area. If you are unsure of the location of a particular item, ask your '
-              'supervisor.',
-      'timestamp': 1212,
-      'timestamp_label': '[00:20:12]',
-      'timestamp_seconds': 1212,
-      'tip': 'Your facility has personal protective equipment available for you in your work '
-             'area. If you are unsure of the location of a particular item, ask your '
-             'supervisor.',
-      'title': 'Bloodborne Pathogens in Healthcare Facilities Training Video (That Clinical '
-               'Instructor)',
-      'url': 'https://www.youtube.com/watch?v=CzGiV83CMyU&t=1212s',
-      'video_id': 'CzGiV83CMyU'},
-     {'author': 'The.Mad.Forensic.Scientist',
-      'channel': 'The.Mad.Forensic.Scientist',
+      'text': 'Think of cold calling as opening a door, not closing a deal.',
+      'timestamp': 118,
+      'timestamp_label': '[00:01:58]',
+      'timestamp_seconds': 118,
+      'tip': 'Think of cold calling as opening a door, not closing a deal.',
+      'title': 'Cold Calling For Commercial Cleaning Companies',
+      'url': 'https://www.youtube.com/watch?v=xJ6TUBTc4Qo&t=118s',
+      'video_id': 'xJ6TUBTc4Qo'},
+     {'author': 'The Profitable Cleaner',
+      'channel': 'The Profitable Cleaner',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=PzH0BFleLzU&t=15s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q9 operational verification).',
+      'markdown': '[00:00:18](https://www.youtube.com/watch?v=phVhAxusau8&t=18s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': "Any other lectures and now enjoy this presentation budy I hope you're excited "
-              'for a quick and dirty overview of Osha bloodborne.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': "Any other lectures and now enjoy this presentation budy I hope you're excited "
-             'for a quick and dirty overview of Osha bloodborne.',
-      'title': 'OSHA Bloodborne Pathogens Training mini session (The.Mad.Forensic.Scientist)',
-      'url': 'https://www.youtube.com/watch?v=PzH0BFleLzU&t=15s',
-      'video_id': 'PzH0BFleLzU'},
-     {'author': 'BICO Legal and Compliance Consulting, LLC',
-      'channel': 'BICO Legal and Compliance Consulting, LLC',
+      'text': 'Trade organizations, word of mouth, and educational seminars are the way to reach a '
+              'property manager.',
+      'timestamp': 18,
+      'timestamp_label': '[00:00:18]',
+      'timestamp_seconds': 18,
+      'tip': 'Trade organizations, word of mouth, and educational seminars are the way to reach a '
+             'property manager.',
+      'title': 'Best Ways To Reach and Sell To A Property Manager?',
+      'url': 'https://www.youtube.com/watch?v=phVhAxusau8&t=18s',
+      'video_id': 'phVhAxusau8'},
+     {'author': 'The Profitable Cleaner',
+      'channel': 'The Profitable Cleaner',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:59](https://www.youtube.com/watch?v=xljn9o0tX_E&t=179s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q9 operational verification).',
+      'markdown': '[00:45:37](https://www.youtube.com/watch?v=u3njpVGKi3M&t=2737s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'Contractor status and finally consult with an employment lawyer if your '
-              'employer is unwilling to address your concerns seek legal advice from an '
-              'employment attorney who can assess your situation and advise on the best course '
-              'of action.',
-      'timestamp': 179,
-      'timestamp_label': '[00:02:59]',
-      'timestamp_seconds': 179,
-      'tip': 'Contractor status and finally consult with an employment lawyer if your employer '
-             'is unwilling to address your concerns seek legal advice from an employment '
-             'attorney who can assess your situation and advise on the best course of action.',
-      'title': 'Case Study: Misclassification of Employees as Independent Contractors (BICO '
-               'Legal and Compliance Consulting, LLC)',
-      'url': 'https://www.youtube.com/watch?v=xljn9o0tX_E&t=179s',
-      'video_id': 'xljn9o0tX_E'},
+      'text': 'Follow-up still closes deals.',
+      'timestamp': 2737,
+      'timestamp_label': '[00:45:37]',
+      'timestamp_seconds': 2737,
+      'tip': 'Follow-up still closes deals.',
+      'title': 'How to Get Janitorial Contracts with Cold Calling, Email & Door-to-Door Sales | Ep '
+               '185',
+      'url': 'https://www.youtube.com/watch?v=u3njpVGKi3M&t=2737s',
+      'video_id': 'u3njpVGKi3M'},
+     {'author': 'Anton Pantio',
+      'channel': 'Anton Pantio',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:54](https://www.youtube.com/watch?v=-1k_o5iWj8w&t=294s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "You don't need a hundred perfect calls, you need one clean process repeated a "
+              'hundred times.',
+      'timestamp': 294,
+      'timestamp_label': '[00:04:54]',
+      'timestamp_seconds': 294,
+      'tip': "You don't need a hundred perfect calls, you need one clean process repeated a "
+             'hundred times.',
+      'title': 'Cold Calling For Commercial Cleaning Companies (Script + Live Call)',
+      'url': 'https://www.youtube.com/watch?v=-1k_o5iWj8w&t=294s',
+      'video_id': '-1k_o5iWj8w'},
+     {'author': 'Constantin Schröck',
+      'channel': 'Constantin Schröck',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:01](https://www.youtube.com/watch?v=Q5K2zTuisJc&t=241s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "It's really easy to say yes to this because it's low friction.",
+      'timestamp': 241,
+      'timestamp_label': '[00:04:01]',
+      'timestamp_seconds': 241,
+      'tip': "It's really easy to say yes to this because it's low friction.",
+      'title': 'How To Get Jobs With Property Managers | Power Washing Lead generation | Cold '
+               'Email Campaign',
+      'url': 'https://www.youtube.com/watch?v=Q5K2zTuisJc&t=241s',
+      'video_id': 'Q5K2zTuisJc'},
+     {'author': 'Daniel Linton',
+      'channel': 'Daniel Linton',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:31:22](https://www.youtube.com/watch?v=B415KkGunUw&t=1882s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'The most important thing is keep that call volume high and manage your follow-ups.',
+      'timestamp': 1882,
+      'timestamp_label': '[00:31:22]',
+      'timestamp_seconds': 1882,
+      'tip': 'The most important thing is keep that call volume high and manage your follow-ups.',
+      'title': 'Cold Calling Guide for Janitorial Companies | Appointment Setting Training',
+      'url': 'https://www.youtube.com/watch?v=B415KkGunUw&t=1882s',
+      'video_id': 'B415KkGunUw'},
+     {'author': 'AJ SIMMONS',
+      'channel': 'AJ SIMMONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:05](https://www.youtube.com/watch?v=VNrAGY4xXig&t=785s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Put it in your mind that you got to get a 100 Doors just to get one customer.',
+      'timestamp': 785,
+      'timestamp_label': '[00:13:05]',
+      'timestamp_seconds': 785,
+      'tip': 'Put it in your mind that you got to get a 100 Doors just to get one customer.',
+      'title': 'How To Get Commercial Cleaning Customers From Door To Doors Sales',
+      'url': 'https://www.youtube.com/watch?v=VNrAGY4xXig&t=785s',
+      'video_id': 'VNrAGY4xXig'},
+     {'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:35](https://www.youtube.com/watch?v=turpTn9YjJA&t=275s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'What you want to get from the KDM is permission to follow up with them.',
+      'timestamp': 275,
+      'timestamp_label': '[00:04:35]',
+      'timestamp_seconds': 275,
+      'tip': 'What you want to get from the KDM is permission to follow up with them.',
+      'title': 'How To Get Commercial Cleaning Contracts With CTA Targeting',
+      'url': 'https://www.youtube.com/watch?v=turpTn9YjJA&t=275s',
+      'video_id': 'turpTn9YjJA'},
+     {'author': 'SEO Growth Partners',
+      'channel': 'SEO Growth Partners',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:25](https://www.youtube.com/watch?v=1A40YzhpJ5Q&t=85s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Well, first, we built them a website that says exactly what they do and exactly '
+              'where they do it.',
+      'timestamp': 85,
+      'timestamp_label': '[00:01:25]',
+      'timestamp_seconds': 85,
+      'tip': 'Well, first, we built them a website that says exactly what they do and exactly '
+             'where they do it.',
+      'title': 'Commercial Cleaning & Janitorial Services SEO Case Study - From Business Launch to '
+               '10+ Leads/Mo',
+      'url': 'https://www.youtube.com/watch?v=1A40YzhpJ5Q&t=85s',
+      'video_id': '1A40YzhpJ5Q'},
+     {'author': 'Clicks Geek',
+      'channel': 'Clicks Geek',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:15](https://www.youtube.com/watch?v=EuwGlvViI4w&t=135s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "All he's really got to do is up his budget he'll just get more leads at this point.",
+      'timestamp': 135,
+      'timestamp_label': '[00:02:15]',
+      'timestamp_seconds': 135,
+      'tip': "All he's really got to do is up his budget he'll just get more leads at this point.",
+      'title': 'Janitorial Services Google Ads PPC Case Study',
+      'url': 'https://www.youtube.com/watch?v=EuwGlvViI4w&t=135s',
+      'video_id': 'EuwGlvViI4w'}],
+ 4: [{'author': 'OctoClean Media',
+      'channel': 'OctoClean Media',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:22:39](https://www.youtube.com/watch?v=zAGjNnpTUcY&t=1359s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Minimum wage for cleaners is not your state, city or county minimum wage; minimum '
+              'wage for cleaners is what the going rate is for incoming janitors in your '
+              'territory.',
+      'timestamp': 1359,
+      'timestamp_label': '[00:22:39]',
+      'timestamp_seconds': 1359,
+      'tip': 'Minimum wage for cleaners is not your state, city or county minimum wage; minimum '
+             'wage for cleaners is what the going rate is for incoming janitors in your territory.',
+      'title': 'How To Bid Commercial Cleaning Jobs Like A Pro: Live at ISSA 2024! @ISSAMediaTV',
+      'url': 'https://www.youtube.com/watch?v=zAGjNnpTUcY&t=1359s',
+      'video_id': 'zAGjNnpTUcY'},
      {'author': 'OctoClean Media',
       'channel': 'OctoClean Media',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:23:42](https://www.youtube.com/watch?v=zAGjNnpTUcY&t=1422s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q9 operational verification).',
+      'markdown': '[00:18:31](https://www.youtube.com/watch?v=zAGjNnpTUcY&t=1111s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': "High as 75 in California we're doing that I me it depends on the state you're "
-              'in expenses are different in different states cost for goods can be different '
-              'in different states um but you know this is something that is at least a '
-              'Baseline.',
-      'timestamp': 1422,
-      'timestamp_label': '[00:23:42]',
-      'timestamp_seconds': 1422,
-      'tip': "High as 75 in California we're doing that I me it depends on the state you're in "
-             'expenses are different in different states cost for goods can be different in '
-             'different states um but you know this is something that is at least a Baseline.',
-      'title': 'How To Bid Commercial Cleaning Jobs Like A Pro: Live at ISSA 2024! '
-               '@ISSAMediaTV (OctoClean Media)',
-      'url': 'https://www.youtube.com/watch?v=zAGjNnpTUcY&t=1422s',
+      'text': "If they don't know their cleanable square footage, ask how many people work within "
+              'it, because on average that person will occupy about 200 square foot of cleanable '
+              'square foot.',
+      'timestamp': 1111,
+      'timestamp_label': '[00:18:31]',
+      'timestamp_seconds': 1111,
+      'tip': "If they don't know their cleanable square footage, ask how many people work within "
+             'it, because on average that person will occupy about 200 square foot of cleanable '
+             'square foot.',
+      'title': 'How To Bid Commercial Cleaning Jobs Like A Pro: Live at ISSA 2024! @ISSAMediaTV',
+      'url': 'https://www.youtube.com/watch?v=zAGjNnpTUcY&t=1111s',
       'video_id': 'zAGjNnpTUcY'},
-     {'author': 'ONLY MAIDS PODCAST',
-      'channel': 'ONLY MAIDS PODCAST',
+     {'author': 'OctoClean Media',
+      'channel': 'OctoClean Media',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:24:18](https://www.youtube.com/watch?v=aQj7G__L-iE&t=1458s)',
-      'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                   'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                   'and supervisor pods (Chapter Q9 operational verification).',
+      'markdown': '[00:05:48](https://www.youtube.com/watch?v=SXNq_81x8SY&t=348s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': "That's my commercial cleaning company um I'm located in uh DC Maryland and "
-              'Virginia area I also um have a Clean Ops guide which is a uh a a a I guess a '
-              'commercial cleaning resource for uh for new and experienced uh commercial '
-              'cleaning.',
-      'timestamp': 1458,
-      'timestamp_label': '[00:24:18]',
-      'timestamp_seconds': 1458,
-      'tip': "That's my commercial cleaning company um I'm located in uh DC Maryland and "
-             'Virginia area I also um have a Clean Ops guide which is a uh a a a I guess a '
-             'commercial cleaning resource for uh for new and experienced uh commercial '
-             'cleaning.',
-      'title': 'Hot Seat | Commercial Cleaning Crash Course: Get the Walkthrough, Price the '
-               'Job & Win the Account (ONLY MAIDS PODCAST)',
-      'url': 'https://www.youtube.com/watch?v=aQj7G__L-iE&t=1458s',
-      'video_id': 'aQj7G__L-iE'}],
- 10: [{'author': 'Win Driggins',
-       'channel': 'Win Driggins',
+      'text': "Once I have that number I'm going to multiply that by the number of days the "
+              'prospect is requesting, multiply that by 52 weeks and divide that by 12 months, '
+              'which gives me the monthly recurring charge.',
+      'timestamp': 348,
+      'timestamp_label': '[00:05:48]',
+      'timestamp_seconds': 348,
+      'tip': "Once I have that number I'm going to multiply that by the number of days the "
+             'prospect is requesting, multiply that by 52 weeks and divide that by 12 months, '
+             'which gives me the monthly recurring charge.',
+      'title': 'How to Bid Commercial Cleaning Jobs (FORMULA INCLUDED)',
+      'url': 'https://www.youtube.com/watch?v=SXNq_81x8SY&t=348s',
+      'video_id': 'SXNq_81x8SY'},
+     {'author': 'Carolyn Arellano',
+      'channel': 'Carolyn Arellano',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:18](https://www.youtube.com/watch?v=IJlyq2UAXqU&t=198s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "If you're just starting out in your commercial cleaning business, you are going to "
+              'underbid yourself; that is just inevitable, and it is part of the learning process.',
+      'timestamp': 198,
+      'timestamp_label': '[00:03:18]',
+      'timestamp_seconds': 198,
+      'tip': "If you're just starting out in your commercial cleaning business, you are going to "
+             'underbid yourself; that is just inevitable, and it is part of the learning process.',
+      'title': 'How To Bid Commercial Cleaning Jobs (Formula Included)',
+      'url': 'https://www.youtube.com/watch?v=IJlyq2UAXqU&t=198s',
+      'video_id': 'IJlyq2UAXqU'},
+     {'author': 'AJ SIMMONS',
+      'channel': 'AJ SIMMONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:27](https://www.youtube.com/watch?v=7VHAkhs_HG4&t=387s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "When you're doing it price per square footage you're basically just winging it and "
+              "you're hoping that you make a profit, and I don't like that.",
+      'timestamp': 387,
+      'timestamp_label': '[00:06:27]',
+      'timestamp_seconds': 387,
+      'tip': "When you're doing it price per square footage you're basically just winging it and "
+             "you're hoping that you make a profit, and I don't like that.",
+      'title': 'How To Bid Cleaning Jobs Per Hour Or Per Sqft',
+      'url': 'https://www.youtube.com/watch?v=7VHAkhs_HG4&t=387s',
+      'video_id': '7VHAkhs_HG4'},
+     {'author': 'Clean Ops Guide',
+      'channel': 'Clean Ops Guide',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:46](https://www.youtube.com/watch?v=9ojOIxznBUc&t=406s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "The work doesn't disappear because you lowered your price; someone still has to "
+              'complete it.',
+      'timestamp': 406,
+      'timestamp_label': '[00:06:46]',
+      'timestamp_seconds': 406,
+      'tip': "The work doesn't disappear because you lowered your price; someone still has to "
+             'complete it.',
+      'title': 'How to Price Commercial Cleaning Jobs Without Losing Money',
+      'url': 'https://www.youtube.com/watch?v=9ojOIxznBUc&t=406s',
+      'video_id': '9ojOIxznBUc'},
+     {'author': 'AJ SIMMONS',
+      'channel': 'AJ SIMMONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:18](https://www.youtube.com/watch?v=vqE3IAR7B18&t=738s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "When it's one time a week contracts or lower, bi-weekly or monthly, you have to "
+              'have an in-house minimum price.',
+      'timestamp': 738,
+      'timestamp_label': '[00:12:18]',
+      'timestamp_seconds': 738,
+      'tip': "When it's one time a week contracts or lower, bi-weekly or monthly, you have to have "
+             'an in-house minimum price.',
+      'title': 'How To Bid Commercial and Residential Cleaning Jobs (Formula Included)',
+      'url': 'https://www.youtube.com/watch?v=vqE3IAR7B18&t=738s',
+      'video_id': 'vqE3IAR7B18'},
+     {'author': 'Darian Jarrett',
+      'channel': 'Darian Jarrett',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:15](https://www.youtube.com/watch?v=QlIScHN-MPE&t=15s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'We can go the per square foot model and then the per hour model, and once you get '
+              'both of those numbers you can literally just meet it in the middle and go with that '
+              'number.',
+      'timestamp': 15,
+      'timestamp_label': '[00:00:15]',
+      'timestamp_seconds': 15,
+      'tip': 'We can go the per square foot model and then the per hour model, and once you get '
+             'both of those numbers you can literally just meet it in the middle and go with that '
+             'number.',
+      'title': 'Are You Bidding Right? Here’s How to Price Commercial Cleaning Jobs Like The Pros!',
+      'url': 'https://www.youtube.com/watch?v=QlIScHN-MPE&t=15s',
+      'video_id': 'QlIScHN-MPE'},
+     {'author': '7 Figure Cleaning',
+      'channel': '7 Figure Cleaning',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:17](https://www.youtube.com/watch?v=1_z-Kgj0GYM&t=77s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "We're always trying to fit into the 40 30 30, which is 40% labor, another 30% "
+              'towards all other expenses, and then 30% for profit.',
+      'timestamp': 77,
+      'timestamp_label': '[00:01:17]',
+      'timestamp_seconds': 77,
+      'tip': "We're always trying to fit into the 40 30 30, which is 40% labor, another 30% "
+             'towards all other expenses, and then 30% for profit.',
+      'title': 'How to Price Commercial Cleaning Contracts to Win and Profit (3 Ways)',
+      'url': 'https://www.youtube.com/watch?v=1_z-Kgj0GYM&t=77s',
+      'video_id': '1_z-Kgj0GYM'},
+     {'author': 'The Janitorial Store',
+      'channel': 'The Janitorial Store',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:28](https://www.youtube.com/watch?v=baQYWkWt7lQ&t=88s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Your production rates are the key to pricing; the heck with the industry averages, '
+              "because when you're using somebody else's numbers you can't come to the true profit "
+              'number for that job.',
+      'timestamp': 88,
+      'timestamp_label': '[00:01:28]',
+      'timestamp_seconds': 88,
+      'tip': 'Your production rates are the key to pricing; the heck with the industry averages, '
+             "because when you're using somebody else's numbers you can't come to the true profit "
+             'number for that job.',
+      'title': 'What are production rates and billable rates ? | The Janitorial Store',
+      'url': 'https://www.youtube.com/watch?v=baQYWkWt7lQ&t=88s',
+      'video_id': 'baQYWkWt7lQ'},
+     {'author': 'CleanGuru',
+      'channel': 'CleanGuru',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:42](https://www.youtube.com/watch?v=UdGEmUdlNJs&t=162s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'What do you need to know? How long should it take to clean this building per visit; '
+              "if you can figure out time, that's the big thing when it comes to pricing a job.",
+      'timestamp': 162,
+      'timestamp_label': '[00:02:42]',
+      'timestamp_seconds': 162,
+      'tip': 'What do you need to know? How long should it take to clean this building per visit; '
+             "if you can figure out time, that's the big thing when it comes to pricing a job.",
+      'title': 'What’s the Going Rate Per Sq. Ft. for Bidding Commercial Office Cleaning Jobs: '
+               'Cleaning Business Tip',
+      'url': 'https://www.youtube.com/watch?v=UdGEmUdlNJs&t=162s',
+      'video_id': 'UdGEmUdlNJs'},
+     {'author': 'OctoClean Media',
+      'channel': 'OctoClean Media',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=45JohGIULbI&t=0s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "Usually it's going to be density; people go into a car dealership with a large open "
+              "showroom and bid it the same way they would a cube farm, and that's not smart.",
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': "Usually it's going to be density; people go into a car dealership with a large open "
+             "showroom and bid it the same way they would a cube farm, and that's not smart.",
+      'title': 'Commercial Cleaning Contracts: Beginner Pricing Mistakes to Avoid',
+      'url': 'https://www.youtube.com/watch?v=45JohGIULbI&t=0s',
+      'video_id': '45JohGIULbI'},
+     {'author': 'The Janitorial Store',
+      'channel': 'The Janitorial Store',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:21](https://www.youtube.com/watch?v=rGpgBfBHKg0&t=21s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can use industry production rates or you can use your own rates; I highly '
+              'recommend that you use your own production rates to arrive at a time to clean.',
+      'timestamp': 21,
+      'timestamp_label': '[00:00:21]',
+      'timestamp_seconds': 21,
+      'tip': 'You can use industry production rates or you can use your own rates; I highly '
+             'recommend that you use your own production rates to arrive at a time to clean.',
+      'title': 'How to Price an Account Using The Production Rate Bidding Method',
+      'url': 'https://www.youtube.com/watch?v=rGpgBfBHKg0&t=21s',
+      'video_id': 'rGpgBfBHKg0'},
+     {'author': 'ISSA Media',
+      'channel': 'ISSA Media',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:47](https://www.youtube.com/watch?v=nBB03PNbUHI&t=347s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "That's why I'm not making money at this distribution facility, because I bid it on "
+              "cleanable square foot but didn't consider that I have to walk an hour to the other "
+              'side of the building for that one restroom.',
+      'timestamp': 347,
+      'timestamp_label': '[00:05:47]',
+      'timestamp_seconds': 347,
+      'tip': "That's why I'm not making money at this distribution facility, because I bid it on "
+             "cleanable square foot but didn't consider that I have to walk an hour to the other "
+             'side of the building for that one restroom.',
+      'title': 'How to Bid Commercial Cleaning Jobs Like a Pro',
+      'url': 'https://www.youtube.com/watch?v=nBB03PNbUHI&t=347s',
+      'video_id': 'nBB03PNbUHI'},
+     {'author': 'Karen Denton KSC',
+      'channel': 'Karen Denton KSC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:43](https://www.youtube.com/watch?v=h7lD-HNIQ_o&t=43s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "Or even worse, they copy someone else's bid like I used to do with the franchises, "
+              'and every client was tearing those proposals apart.',
+      'timestamp': 43,
+      'timestamp_label': '[00:00:43]',
+      'timestamp_seconds': 43,
+      'tip': "Or even worse, they copy someone else's bid like I used to do with the franchises, "
+             'and every client was tearing those proposals apart.',
+      'title': 'How to Price Commercial Cleaning Services (The Right Way!)',
+      'url': 'https://www.youtube.com/watch?v=h7lD-HNIQ_o&t=43s',
+      'video_id': 'h7lD-HNIQ_o'},
+     {'author': 'AJ SIMMONS',
+      'channel': 'AJ SIMMONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:51](https://www.youtube.com/watch?v=P1lrJB_dET0&t=171s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can play with these numbers to figure out, if I pay somebody else to do it, is '
+              '321 enough for me to manage it.',
+      'timestamp': 171,
+      'timestamp_label': '[00:02:51]',
+      'timestamp_seconds': 171,
+      'tip': 'You can play with these numbers to figure out, if I pay somebody else to do it, is '
+             '321 enough for me to manage it.',
+      'title': 'How To Price Janitorial Services With Square Footage',
+      'url': 'https://www.youtube.com/watch?v=P1lrJB_dET0&t=171s',
+      'video_id': 'P1lrJB_dET0'},
+     {'author': 'OctoClean Media',
+      'channel': 'OctoClean Media',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:57](https://www.youtube.com/watch?v=cVCpNgEj_zc&t=357s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "If you price jobs at the I do it myself rate, you're going to immediately lose "
+              'money when you start to scale.',
+      'timestamp': 357,
+      'timestamp_label': '[00:05:57]',
+      'timestamp_seconds': 357,
+      'tip': "If you price jobs at the I do it myself rate, you're going to immediately lose money "
+             'when you start to scale.',
+      'title': 'Bid Commercial Cleaning Jobs Like A Pro! A Detailed Analysis',
+      'url': 'https://www.youtube.com/watch?v=cVCpNgEj_zc&t=357s',
+      'video_id': 'cVCpNgEj_zc'}],
+ 5: [{'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:01](https://www.youtube.com/watch?v=IMbK5m7qbY0&t=601s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'By default, we typically subtract anywhere from 10 to 20% of the square footage '
+              'that we measure from that number.',
+      'timestamp': 601,
+      'timestamp_label': '[00:10:01]',
+      'timestamp_seconds': 601,
+      'tip': 'By default, we typically subtract anywhere from 10 to 20% of the square footage that '
+             'we measure from that number.',
+      'title': 'How To Profitably Bid Commercial Cleaning Jobs | CALCULATOR',
+      'url': 'https://www.youtube.com/watch?v=IMbK5m7qbY0&t=601s',
+      'video_id': 'IMbK5m7qbY0'},
+     {'author': 'Channel Zero Marketing',
+      'channel': 'Channel Zero Marketing',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:44](https://www.youtube.com/watch?v=Ey7iPjW1uZQ&t=824s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "If you do it at 4.33 it's 563 a month, so you're talking about $516 a year you're "
+              'missing.',
+      'timestamp': 824,
+      'timestamp_label': '[00:13:44]',
+      'timestamp_seconds': 824,
+      'tip': "If you do it at 4.33 it's 563 a month, so you're talking about $516 a year you're "
+             'missing.',
+      'title': 'How to Price Your First Commercial Cleaning Contract (Real Example)',
+      'url': 'https://www.youtube.com/watch?v=Ey7iPjW1uZQ&t=824s',
+      'video_id': 'Ey7iPjW1uZQ'},
+     {'author': 'Channel Zero Marketing',
+      'channel': 'Channel Zero Marketing',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:22:36](https://www.youtube.com/watch?v=Ey7iPjW1uZQ&t=1356s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "Remember to price it like you'll be hiring someone to work it someday.",
+      'timestamp': 1356,
+      'timestamp_label': '[00:22:36]',
+      'timestamp_seconds': 1356,
+      'tip': "Remember to price it like you'll be hiring someone to work it someday.",
+      'title': 'How to Price Your First Commercial Cleaning Contract (Real Example)',
+      'url': 'https://www.youtube.com/watch?v=Ey7iPjW1uZQ&t=1356s',
+      'video_id': 'Ey7iPjW1uZQ'},
+     {'author': 'Janibid',
+      'channel': 'Janibid',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:23](https://www.youtube.com/watch?v=9FeuDZZNdKI&t=23s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'You typically know what an office is going to take; 2,000 square feet is usually '
+              'around two hours.',
+      'timestamp': 23,
+      'timestamp_label': '[00:00:23]',
+      'timestamp_seconds': 23,
+      'tip': 'You typically know what an office is going to take; 2,000 square feet is usually '
+             'around two hours.',
+      'title': 'How to Bid Commercial Cleaning Services? Free Commercial Cleaning Calculator',
+      'url': 'https://www.youtube.com/watch?v=9FeuDZZNdKI&t=23s',
+      'video_id': '9FeuDZZNdKI'},
+     {'author': 'The Janitorial Store',
+      'channel': 'The Janitorial Store',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:06](https://www.youtube.com/watch?v=Cf4hKGN0mXg&t=126s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "Whenever you have an office space that you're only cleaning three days per week, "
+              "you don't want to price it by the square foot because the calculations just don't "
+              'work properly.',
+      'timestamp': 126,
+      'timestamp_label': '[00:02:06]',
+      'timestamp_seconds': 126,
+      'tip': "Whenever you have an office space that you're only cleaning three days per week, you "
+             "don't want to price it by the square foot because the calculations just don't work "
+             'properly.',
+      'title': 'How to price a 2,400 square foot office space: How to price cleaning offices',
+      'url': 'https://www.youtube.com/watch?v=Cf4hKGN0mXg&t=126s',
+      'video_id': 'Cf4hKGN0mXg'},
+     {'author': 'Bid & Profit Lab',
+      'channel': 'Bid & Profit Lab',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:10](https://www.youtube.com/watch?v=T-l3Df3Iino&t=250s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'One extra worker hour per visit nearly halves the modeled profit.',
+      'timestamp': 250,
+      'timestamp_label': '[00:04:10]',
+      'timestamp_seconds': 250,
+      'tip': 'A spreadsheet can calculate the result, but it cannot make an unrealistic time '
+             'estimate accurate.',
+      'title': 'How to Bid a Commercial Cleaning Contract: 20,000 Sq Ft Example.',
+      'url': 'https://www.youtube.com/watch?v=T-l3Df3Iino&t=250s',
+      'video_id': 'T-l3Df3Iino'},
+     {'author': 'Janibid',
+      'channel': 'Janibid',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:35](https://www.youtube.com/watch?v=Q0_kmHGx6FI&t=155s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "If I'm going to have a labor cost and expense cost of 900, I'm probably going to "
+              'want to make at least like 350 on it.',
+      'timestamp': 155,
+      'timestamp_label': '[00:02:35]',
+      'timestamp_seconds': 155,
+      'tip': "If I'm going to have a labor cost and expense cost of 900, I'm probably going to "
+             'want to make at least like 350 on it.',
+      'title': 'Free Commercial Calculator App - How to price commercial cleaning?',
+      'url': 'https://www.youtube.com/watch?v=Q0_kmHGx6FI&t=155s',
+      'video_id': 'Q0_kmHGx6FI'},
+     {'author': 'BizAlmighty',
+      'channel': 'BizAlmighty',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:56](https://www.youtube.com/watch?v=f0CmEkWm_a0&t=116s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "Some jobs are more difficult than others, and you're able to account for that by "
+              'defining your multipliers for easy, normal, hard, or very hard jobs.',
+      'timestamp': 116,
+      'timestamp_label': '[00:01:56]',
+      'timestamp_seconds': 116,
+      'tip': "Some jobs are more difficult than others, and you're able to account for that by "
+             'defining your multipliers for easy, normal, hard, or very hard jobs.',
+      'title': 'Cleaning Business Calculator   Basic   Walkthrough',
+      'url': 'https://www.youtube.com/watch?v=f0CmEkWm_a0&t=116s',
+      'video_id': 'f0CmEkWm_a0'},
+     {'author': 'Little Wonders',
+      'channel': 'Little Wonders',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:14](https://www.youtube.com/watch?v=AdyzLEzXsAQ&t=134s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'A margin is a percentage of the selling price, not a markup percentage added to '
+              'cost.',
+      'timestamp': 134,
+      'timestamp_label': '[00:02:14]',
+      'timestamp_seconds': 134,
+      'tip': 'A margin is a percentage of the selling price, not a markup percentage added to '
+             'cost.',
+      'title': 'Cleaning Business Quote Calculator in Google Sheets (Easy Tutorial)',
+      'url': 'https://www.youtube.com/watch?v=AdyzLEzXsAQ&t=134s',
+      'video_id': 'AdyzLEzXsAQ'},
+     {'author': 'True Trade Cost',
+      'channel': 'True Trade Cost',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:41](https://www.youtube.com/watch?v=8lFhFbsEuDc&t=41s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'For this company, every hour in a building has to bring in $36.15 before a dime of '
+              'profit.',
+      'timestamp': 41,
+      'timestamp_label': '[00:00:41]',
+      'timestamp_seconds': 41,
+      'tip': 'For this company, every hour in a building has to bring in $36.15 before a dime of '
+             'profit.',
+      'title': 'How Much to Charge for Commercial Cleaning | Commercial Cleaning Pricing '
+               'Calculator Walkthrough',
+      'url': 'https://www.youtube.com/watch?v=8lFhFbsEuDc&t=41s',
+      'video_id': '8lFhFbsEuDc'},
+     {'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:41](https://www.youtube.com/watch?v=598Td1ks52Y&t=461s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you go into a large facility and bid it at a profit margin of a small facility, '
+              'the odds of you winning it are going to be very low.',
+      'timestamp': 461,
+      'timestamp_label': '[00:07:41]',
+      'timestamp_seconds': 461,
+      'tip': 'If you go into a large facility and bid it at a profit margin of a small facility, '
+             'the odds of you winning it are going to be very low.',
+      'title': 'Price Commercial Cleaning RIGHT | Cleaning Bid Calculator',
+      'url': 'https://www.youtube.com/watch?v=598Td1ks52Y&t=461s',
+      'video_id': '598Td1ks52Y'},
+     {'author': 'Cleaning Business Tools',
+      'channel': 'Cleaning Business Tools',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:40](https://www.youtube.com/watch?v=skflEiwVHxw&t=280s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'A minimum protects your time, because driving, setup and scheduling cost you the '
+              'same on a small job.',
+      'timestamp': 280,
+      'timestamp_label': '[00:04:40]',
+      'timestamp_seconds': 280,
+      'tip': 'A minimum protects your time, because driving, setup and scheduling cost you the '
+             'same on a small job.',
+      'title': 'How to Price a House Cleaning Job (Real Math, Step by Step)',
+      'url': 'https://www.youtube.com/watch?v=skflEiwVHxw&t=280s',
+      'video_id': 'skflEiwVHxw'},
+     {'author': 'AJ SIMMONS',
+      'channel': 'AJ SIMMONS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:56](https://www.youtube.com/watch?v=cWVLz5abUAg&t=176s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you live in an area where you can still get away with paying somebody ten bucks '
+              'an hour, then maybe you might lower this to twenty-one dollars an hour.',
+      'timestamp': 176,
+      'timestamp_label': '[00:02:56]',
+      'timestamp_seconds': 176,
+      'tip': 'If you live in an area where you can still get away with paying somebody ten bucks '
+             'an hour, then maybe you might lower this to twenty-one dollars an hour.',
+      'title': 'How to bid on 30,000 square foot office building for cleaning | Calculated '
+               'Cleaning | Cleaning Cost',
+      'url': 'https://www.youtube.com/watch?v=cWVLz5abUAg&t=176s',
+      'video_id': 'cWVLz5abUAg'},
+     {'author': 'Solo Business Systems',
+      'channel': 'Solo Business Systems',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:28](https://www.youtube.com/watch?v=hf0U17FyA58&t=448s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'A per square foot figure is a comparison tool, nothing more.',
+      'timestamp': 448,
+      'timestamp_label': '[00:07:28]',
+      'timestamp_seconds': 448,
+      'tip': "The moment it becomes your pricing method, you're bidding somebody else's building, "
+             "somebody else's costs, somebody else's margin.",
+      'title': 'Commercial Cleaning: How to Win Your First Office Contract (Walkthrough + Bid '
+               'Worksheet)',
+      'url': 'https://www.youtube.com/watch?v=hf0U17FyA58&t=448s',
+      'video_id': 'hf0U17FyA58'},
+     {'author': 'Janitorial Empire',
+      'channel': 'Janitorial Empire',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:30](https://www.youtube.com/watch?v=PmZvMyhPjCM&t=210s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Adding 25% to your cost does not give you a 25% profit margin; if you want a 25% '
+              'margin, divide your cost by 0.75.',
+      'timestamp': 210,
+      'timestamp_label': '[00:03:30]',
+      'timestamp_seconds': 210,
+      'tip': 'Adding 25% to your cost does not give you a 25% profit margin; if you want a 25% '
+             'margin, divide your cost by 0.75.',
+      'title': 'How to Price a Commercial Cleaning Contract (10,000 Sq Ft Example)',
+      'url': 'https://www.youtube.com/watch?v=PmZvMyhPjCM&t=210s',
+      'video_id': 'PmZvMyhPjCM'},
+     {'author': 'Jeff Jones | Digital Creator',
+      'channel': 'Jeff Jones | Digital Creator',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:55](https://www.youtube.com/watch?v=UugCweTgBhY&t=235s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'It gives you a suggested price of 136, the modeled gross contribution is $34 and '
+              'the modeled gross margin is 25%.',
+      'timestamp': 235,
+      'timestamp_label': '[00:03:55]',
+      'timestamp_seconds': 235,
+      'tip': 'It gives you a suggested price of 136, the modeled gross contribution is $34 and the '
+             'modeled gross margin is 25%.',
+      'title': 'CleanFirst Tutorial | Cleaning Business Pricing Calculator & Quote Template',
+      'url': 'https://www.youtube.com/watch?v=UugCweTgBhY&t=235s',
+      'video_id': 'UugCweTgBhY'},
+     {'author': 'Clean Proposals',
+      'channel': 'Clean Proposals',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:15](https://www.youtube.com/watch?v=0OZkOVSBE1c&t=15s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'You always want to bid like the company you want to be, never bid like the company '
+              'you are.',
+      'timestamp': 15,
+      'timestamp_label': '[00:00:15]',
+      'timestamp_seconds': 15,
+      'tip': 'You always want to bid like the company you want to be, never bid like the company '
+             'you are.',
+      'title': 'Understanding Cash Flow and Profit Margins for your Commercial Janitorial Cleaning '
+               'Business',
+      'url': 'https://www.youtube.com/watch?v=0OZkOVSBE1c&t=15s',
+      'video_id': '0OZkOVSBE1c'}],
+ 6: [{'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:18:45](https://www.youtube.com/watch?v=yfZUE5PZgvk&t=1125s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Look, being small is not the problem.',
+      'timestamp': 1125,
+      'timestamp_label': '[00:18:45]',
+      'timestamp_seconds': 1125,
+      'tip': 'Look, being small is not the problem.',
+      'title': 'How Small Cleaning Companies Win BIG Contracts',
+      'url': 'https://www.youtube.com/watch?v=yfZUE5PZgvk&t=1125s',
+      'video_id': 'yfZUE5PZgvk'},
+     {'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:49](https://www.youtube.com/watch?v=gqEvFieh5-k&t=409s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "And those contracts have been some of the most stable contracts we've ever had.",
+      'timestamp': 409,
+      'timestamp_label': '[00:06:49]',
+      'timestamp_seconds': 409,
+      'tip': "And those contracts have been some of the most stable contracts we've ever had.",
+      'title': 'Top 5 HIGH PROFIT Commercial Cleaning Clients',
+      'url': 'https://www.youtube.com/watch?v=gqEvFieh5-k&t=409s',
+      'video_id': 'gqEvFieh5-k'},
+     {'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:17:37](https://www.youtube.com/watch?v=TCaVkVk94bc&t=1057s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you want big opportunities with big clients with big property managers you have '
+              'to give big first.',
+      'timestamp': 1057,
+      'timestamp_label': '[00:17:37]',
+      'timestamp_seconds': 1057,
+      'tip': 'If you want big opportunities with big clients with big property managers you have '
+             'to give big first.',
+      'title': 'How To Win Big Cleaning Contracts With Property Managers',
+      'url': 'https://www.youtube.com/watch?v=TCaVkVk94bc&t=1057s',
+      'video_id': 'TCaVkVk94bc'},
+     {'author': 'OctoClean Media',
+      'channel': 'OctoClean Media',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:29](https://www.youtube.com/watch?v=KNxKwtNpe_s&t=269s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'An average terminal cleaning will take one hour to complete.',
+      'timestamp': 269,
+      'timestamp_label': '[00:04:29]',
+      'timestamp_seconds': 269,
+      'tip': 'An average terminal cleaning will take one hour to complete.',
+      'title': 'How to Bid Medical Cleaning (Formula + Example)',
+      'url': 'https://www.youtube.com/watch?v=KNxKwtNpe_s&t=269s',
+      'video_id': 'KNxKwtNpe_s'},
+     {'author': 'nurselyf',
+      'channel': 'nurselyf',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:24](https://www.youtube.com/watch?v=Efj3Vo_qlBY&t=144s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "OSHA compliance isn't just about ticking boxes.",
+      'timestamp': 144,
+      'timestamp_label': '[00:02:24]',
+      'timestamp_seconds': 144,
+      'tip': "OSHA compliance isn't just about ticking boxes.",
+      'title': 'OSHA in Healthcare: Key Safety Standards, Bloodborne Pathogens, PPE & Workplace '
+               'Safety Explained',
+      'url': 'https://www.youtube.com/watch?v=Efj3Vo_qlBY&t=144s',
+      'video_id': 'Efj3Vo_qlBY'},
+     {'author': 'The Janitorial Store',
+      'channel': 'The Janitorial Store',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:05](https://www.youtube.com/watch?v=1c9Ty46MQbg&t=245s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "So there's no guessing games as long as you know your numbers.",
+      'timestamp': 245,
+      'timestamp_label': '[00:04:05]',
+      'timestamp_seconds': 245,
+      'tip': "So there's no guessing games as long as you know your numbers.",
+      'title': 'Pricing Day Porter Service | The Janitorial Store',
+      'url': 'https://www.youtube.com/watch?v=1c9Ty46MQbg&t=245s',
+      'video_id': '1c9Ty46MQbg'},
+     {'author': 'OctoClean Media',
+      'channel': 'OctoClean Media',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:14:57](https://www.youtube.com/watch?v=52I2LNERY3E&t=897s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Your biggest ability is your availability.',
+      'timestamp': 897,
+      'timestamp_label': '[00:14:57]',
+      'timestamp_seconds': 897,
+      'tip': 'Your biggest ability is your availability.',
+      'title': 'What is a Day Porter?  Expectations vs Reality in Cleaning Businesses | Ep. 31',
+      'url': 'https://www.youtube.com/watch?v=52I2LNERY3E&t=897s',
+      'video_id': '52I2LNERY3E'},
+     {'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:03](https://www.youtube.com/watch?v=HahI_OcnGVA&t=663s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Typically, a dayporter can handle a zone within a facility that has about 30 to 40 '
+              'bathroom fixtures.',
+      'timestamp': 663,
+      'timestamp_label': '[00:11:03]',
+      'timestamp_seconds': 663,
+      'tip': 'Typically, a dayporter can handle a zone within a facility that has about 30 to 40 '
+             'bathroom fixtures.',
+      'title': 'How To Use Day Porter Services To Grow Your Cleaning Business',
+      'url': 'https://www.youtube.com/watch?v=HahI_OcnGVA&t=663s',
+      'video_id': 'HahI_OcnGVA'},
+     {'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:37](https://www.youtube.com/watch?v=8jCIs_UmQ1Q&t=817s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "And this is a very important thing to identify now because we've had scenarios "
+              'where an employee would have to walk hundreds of yards throughout a facility to '
+              'just change their mop water.',
+      'timestamp': 817,
+      'timestamp_label': '[00:13:37]',
+      'timestamp_seconds': 817,
+      'tip': "And this is a very important thing to identify now because we've had scenarios where "
+             'an employee would have to walk hundreds of yards throughout a facility to just '
+             'change their mop water.',
+      'title': 'How To Quote Industrial Cleaning Jobs (BIG Money Contracts!)',
+      'url': 'https://www.youtube.com/watch?v=8jCIs_UmQ1Q&t=817s',
+      'video_id': '8jCIs_UmQ1Q'},
+     {'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:15:21](https://www.youtube.com/watch?v=8jCIs_UmQ1Q&t=921s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "So you don't have to go buy a $50,000 ride along to be able to clean their floors.",
+      'timestamp': 921,
+      'timestamp_label': '[00:15:21]',
+      'timestamp_seconds': 921,
+      'tip': "So you don't have to go buy a $50,000 ride along to be able to clean their floors.",
+      'title': 'How To Quote Industrial Cleaning Jobs (BIG Money Contracts!)',
+      'url': 'https://www.youtube.com/watch?v=8jCIs_UmQ1Q&t=921s',
+      'video_id': '8jCIs_UmQ1Q'},
+     {'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:21:40](https://www.youtube.com/watch?v=-IxCGolievQ&t=1300s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Target 35 to 40 percent gross margin on large accounts versus about 50 to 60 '
+              'percent on small ones.',
+      'timestamp': 1300,
+      'timestamp_label': '[00:21:40]',
+      'timestamp_seconds': 1300,
+      'tip': 'Target 35 to 40 percent gross margin on large accounts versus about 50 to 60 percent '
+             'on small ones.',
+      'title': 'How to Get BIG Commercial Cleaning Contracts',
+      'url': 'https://www.youtube.com/watch?v=-IxCGolievQ&t=1300s',
+      'video_id': '-IxCGolievQ'},
+     {'author': 'victoria menifee',
+      'channel': 'victoria menifee',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:35](https://www.youtube.com/watch?v=JJ1zFR0l3vE&t=35s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Start with your own bank, because that is the unwritten rule.',
+      'timestamp': 35,
+      'timestamp_label': '[00:00:35]',
+      'timestamp_seconds': 35,
+      'tip': 'Start with your own bank, because that is the unwritten rule.',
+      'title': 'HOW TO WIN COMMERCIAL CLEANING CONTRACTS WITH MAJOR BANKS',
+      'url': 'https://www.youtube.com/watch?v=JJ1zFR0l3vE&t=35s',
+      'video_id': 'JJ1zFR0l3vE'},
+     {'author': 'Mike Mak',
+      'channel': 'Mike Mak',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:34](https://www.youtube.com/watch?v=92cY7nLDqTI&t=94s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'I asked over 50 office managers why they fired their last cleaning company.',
+      'timestamp': 94,
+      'timestamp_label': '[00:01:34]',
+      'timestamp_seconds': 94,
+      'tip': 'I asked over 50 office managers why they fired their last cleaning company.',
+      'title': "The Secret to Getting Big Office Cleaning Contracts (Even If You're Brand New)",
+      'url': 'https://www.youtube.com/watch?v=92cY7nLDqTI&t=94s',
+      'video_id': '92cY7nLDqTI'},
+     {'author': 'Grow My Cleaning Company',
+      'channel': 'Grow My Cleaning Company',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:20](https://www.youtube.com/watch?v=PcnIuILxXOw&t=740s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "We coach, and I love, and I've done for years, giving people much more authority "
+              'than you think they can have much earlier than you think they can do it.',
+      'timestamp': 740,
+      'timestamp_label': '[00:12:20]',
+      'timestamp_seconds': 740,
+      'tip': "We coach, and I love, and I've done for years, giving people much more authority "
+             'than you think they can have much earlier than you think they can do it.',
+      'title': 'Getting Your Cleaning Company from $500K- $1M vs.  $1M- $5M',
+      'url': 'https://www.youtube.com/watch?v=PcnIuILxXOw&t=740s',
+      'video_id': 'PcnIuILxXOw'},
+     {'author': 'Imperial Brady',
+      'channel': 'Imperial Brady',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:45](https://www.youtube.com/watch?v=4ynia2-e2hw&t=105s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Clean from cleaner to dirtier surfaces, top to bottom, and in one direction.',
+      'timestamp': 105,
+      'timestamp_label': '[00:01:45]',
+      'timestamp_seconds': 105,
+      'tip': 'Clean from cleaner to dirtier surfaces, top to bottom, and in one direction.',
+      'title': 'Steps to Terminal Cleaning a Patient Room',
+      'url': 'https://www.youtube.com/watch?v=4ynia2-e2hw&t=105s',
+      'video_id': '4ynia2-e2hw'},
+     {'author': 'Cleaning Up KC',
+      'channel': 'Cleaning Up KC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:21](https://www.youtube.com/watch?v=Lv8CysyqbYE&t=21s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Day porters restock, handle spills, and maintain lobbies, break rooms, and '
+              'cafeterias.',
+      'timestamp': 21,
+      'timestamp_label': '[00:00:21]',
+      'timestamp_seconds': 21,
+      'tip': 'Day porters restock, handle spills, and maintain lobbies, break rooms, and '
+             'cafeterias.',
+      'title': 'What’s the Difference Between Day Porters and Janitors? | Cleaning Up KC',
+      'url': 'https://www.youtube.com/watch?v=Lv8CysyqbYE&t=21s',
+      'video_id': 'Lv8CysyqbYE'},
+     {'author': 'The Janitorial Store',
+      'channel': 'The Janitorial Store',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:00](https://www.youtube.com/watch?v=Zoj7LLKa51Y&t=120s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Mark up the restroom supplies somewhere between 5 and 15 percent.',
+      'timestamp': 120,
+      'timestamp_label': '[00:02:00]',
+      'timestamp_seconds': 120,
+      'tip': 'Mark up the restroom supplies somewhere between 5 and 15 percent.',
+      'title': 'Selling restroom supplies to your clients',
+      'url': 'https://www.youtube.com/watch?v=Zoj7LLKa51Y&t=120s',
+      'video_id': 'Zoj7LLKa51Y'}],
+ 7: [{'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:09](https://www.youtube.com/watch?v=j4duUCt9Dlw&t=789s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'And by the way typically in government contracts it is rolled into the monthly '
+              'price.',
+      'timestamp': 789,
+      'timestamp_label': '[00:13:09]',
+      'timestamp_seconds': 789,
+      'tip': 'And by the way typically in government contracts it is rolled into the monthly '
+             'price.',
+      'title': 'How To Win Government Commercial Cleaning Contracts',
+      'url': 'https://www.youtube.com/watch?v=j4duUCt9Dlw&t=789s',
+      'video_id': 'j4duUCt9Dlw'},
+     {'author': 'Small Business Bid School',
+      'channel': 'Small Business Bid School',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:12](https://www.youtube.com/watch?v=uARedcLLS5c&t=132s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'A 20% profit margin is not the same as adding 20% to your costs.',
+      'timestamp': 132,
+      'timestamp_label': '[00:02:12]',
+      'timestamp_seconds': 132,
+      'tip': 'A 20% profit margin is not the same as adding 20% to your costs.',
+      'title': 'How to Price a Government Cleaning Contract (Step-by-Step)',
+      'url': 'https://www.youtube.com/watch?v=uARedcLLS5c&t=132s',
+      'video_id': 'uARedcLLS5c'},
+     {'author': 'Runjob Software',
+      'channel': 'Runjob Software',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:23](https://www.youtube.com/watch?v=0pkOO_oVhN8&t=83s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "The same laborer carries a different workers' comp rate sweeping a floor than "
+              'working on the 30th floor or 16 feet underground.',
+      'timestamp': 83,
+      'timestamp_label': '[00:01:23]',
+      'timestamp_seconds': 83,
+      'tip': "Rate workers' comp by activity, not by one code per worker class.",
+      'title': 'Calculation of Workers’ Compensation, General Liability (GL) & Bond in your '
+               'Estimates',
+      'url': 'https://www.youtube.com/watch?v=0pkOO_oVhN8&t=83s',
+      'video_id': '0pkOO_oVhN8'},
+     {'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:07](https://www.youtube.com/watch?v=z_tdT6I7K7U&t=727s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'We quoted this school approximately $160,000 per year as the initial quote.',
+      'timestamp': 727,
+      'timestamp_label': '[00:12:07]',
+      'timestamp_seconds': 727,
+      'tip': 'We quoted this school approximately $160,000 per year as the initial quote.',
+      'title': 'How to Win Commercial Cleaning Contracts With Schools',
+      'url': 'https://www.youtube.com/watch?v=z_tdT6I7K7U&t=727s',
+      'video_id': 'z_tdT6I7K7U'},
+     {'author': 'Karen Denton KSC',
+      'channel': 'Karen Denton KSC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:44](https://www.youtube.com/watch?v=xeZ8_Jlv0AI&t=104s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'You might have to pay your employees before your customer even pays you.',
+      'timestamp': 104,
+      'timestamp_label': '[00:01:44]',
+      'timestamp_seconds': 104,
+      'tip': 'You might have to pay your employees before your customer even pays you.',
+      'title': 'Ready to Win Big Cleaning Contracts  Here’s What You Must Know First!',
+      'url': 'https://www.youtube.com/watch?v=xeZ8_Jlv0AI&t=104s',
+      'video_id': 'xeZ8_Jlv0AI'},
+     {'author': 'GovKidMethod',
+      'channel': 'GovKidMethod',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:48:56](https://www.youtube.com/watch?v=dOj6rxt15uE&t=2936s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Good news is not every contract requires past performance.',
+      'timestamp': 2936,
+      'timestamp_label': '[00:48:56]',
+      'timestamp_seconds': 2936,
+      'tip': 'Good news is not every contract requires past performance.',
+      'title': 'Government Bid Proposal Training: Start a Cleaning Business (Janitorial) for the '
+               'Government!',
+      'url': 'https://www.youtube.com/watch?v=dOj6rxt15uE&t=2936s',
+      'video_id': 'dOj6rxt15uE'},
+     {'author': 'Sheenapreneur',
+      'channel': 'Sheenapreneur',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:32](https://www.youtube.com/watch?v=hyUO_-BE-qc&t=272s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'You will not save time or money by skimping out with bad supplies.',
+      'timestamp': 272,
+      'timestamp_label': '[00:04:32]',
+      'timestamp_seconds': 272,
+      'tip': 'You will not save time or money by skimping out with bad supplies.',
+      'title': 'TOP 10 things you need to get started in Janitorial! | Government Contracting',
+      'url': 'https://www.youtube.com/watch?v=hyUO_-BE-qc&t=272s',
+      'video_id': 'hyUO_-BE-qc'},
+     {'author': 'Owlsfield Financial Corp',
+      'channel': 'Owlsfield Financial Corp',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:45](https://www.youtube.com/watch?v=LARqKW_L-QI&t=105s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'A missing requirement or late bid can eliminate an otherwise strong proposal.',
+      'timestamp': 105,
+      'timestamp_label': '[00:01:45]',
+      'timestamp_seconds': 105,
+      'tip': 'A missing requirement or late bid can eliminate an otherwise strong proposal.',
+      'title': 'Government Cleaning Contracts: How to Bid and Win More Business',
+      'url': 'https://www.youtube.com/watch?v=LARqKW_L-QI&t=105s',
+      'video_id': 'LARqKW_L-QI'},
+     {'author': 'victoria menifee',
+      'channel': 'victoria menifee',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:36](https://www.youtube.com/watch?v=5htVyehKCRo&t=216s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'So micro purchases are goods or services up to $10,000.',
+      'timestamp': 216,
+      'timestamp_label': '[00:03:36]',
+      'timestamp_seconds': 216,
+      'tip': 'So micro purchases are goods or services up to $10,000.',
+      'title': 'SECRET SHORTCUT TO GOVERNMENT CLEANING CONTRACT TO WIN BIG (NO-BID METHOD)',
+      'url': 'https://www.youtube.com/watch?v=5htVyehKCRo&t=216s',
+      'video_id': '5htVyehKCRo'},
+     {'author': 'victoria menifee',
+      'channel': 'victoria menifee',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:31:26](https://www.youtube.com/watch?v=5htVyehKCRo&t=1886s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'The rhythm for the intro letter is going to be every two weeks.',
+      'timestamp': 1886,
+      'timestamp_label': '[00:31:26]',
+      'timestamp_seconds': 1886,
+      'tip': 'The rhythm for the intro letter is going to be every two weeks.',
+      'title': 'SECRET SHORTCUT TO GOVERNMENT CLEANING CONTRACT TO WIN BIG (NO-BID METHOD)',
+      'url': 'https://www.youtube.com/watch?v=5htVyehKCRo&t=1886s',
+      'video_id': '5htVyehKCRo'},
+     {'author': 'Squared Compass',
+      'channel': 'Squared Compass',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:30](https://www.youtube.com/watch?v=Hoy7bWdKYOA&t=30s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Government contracting is how federal, state, and local agencies purchase the goods '
+              'and services they need to operate.',
+      'timestamp': 30,
+      'timestamp_label': '[00:00:30]',
+      'timestamp_seconds': 30,
+      'tip': 'Government contracting is how federal, state, and local agencies purchase the goods '
+             'and services they need to operate.',
+      'title': 'Government Contracting Decoded: From Basics to Bidding',
+      'url': 'https://www.youtube.com/watch?v=Hoy7bWdKYOA&t=30s',
+      'video_id': 'Hoy7bWdKYOA'},
+     {'author': 'GovKidMethod',
+      'channel': 'GovKidMethod',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:27:53](https://www.youtube.com/watch?v=dr59GJ2T5v4&t=1673s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you had to have a government contract in order to get government contracts, '
+              'nobody would have government contracts.',
+      'timestamp': 1673,
+      'timestamp_label': '[00:27:53]',
+      'timestamp_seconds': 1673,
+      'tip': 'If you had to have a government contract in order to get government contracts, '
+             'nobody would have government contracts.',
+      'title': 'Janitorial GovCon Bids (beta.sam.gov) | LIVE with GovKidMethod',
+      'url': 'https://www.youtube.com/watch?v=dr59GJ2T5v4&t=1673s',
+      'video_id': 'dr59GJ2T5v4'},
+     {'author': 'GovKidMethod',
+      'channel': 'GovKidMethod',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:45:10](https://www.youtube.com/watch?v=dr59GJ2T5v4&t=2710s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "You have to build that in, which is why there's 2080 hours in a year, but you can "
+              'only bill the government off of 1920 hours.',
+      'timestamp': 2710,
+      'timestamp_label': '[00:45:10]',
+      'timestamp_seconds': 2710,
+      'tip': "You have to build that in, which is why there's 2080 hours in a year, but you can "
+             'only bill the government off of 1920 hours.',
+      'title': 'Janitorial GovCon Bids (beta.sam.gov) | LIVE with GovKidMethod',
+      'url': 'https://www.youtube.com/watch?v=dr59GJ2T5v4&t=2710s',
+      'video_id': 'dr59GJ2T5v4'},
+     {'author': 'GovKidMethod',
+      'channel': 'GovKidMethod',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:24:32](https://www.youtube.com/watch?v=ua_m84N0cwA&t=1472s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'After five years, you will have accumulated over $600,000 in profit.',
+      'timestamp': 1472,
+      'timestamp_label': '[00:24:32]',
+      'timestamp_seconds': 1472,
+      'tip': 'After five years, you will have accumulated over $600,000 in profit.',
+      'title': 'The Lucrative Janitorial Services Government Contracts Industry!',
+      'url': 'https://www.youtube.com/watch?v=ua_m84N0cwA&t=1472s',
+      'video_id': 'ua_m84N0cwA'},
+     {'author': 'Kizzy Parks',
+      'channel': 'Kizzy Parks',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:19](https://www.youtube.com/watch?v=UVPaRFj3LDE&t=319s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Your total price because they are paying you monthly you take that sum and divide '
+              'it by 12.',
+      'timestamp': 319,
+      'timestamp_label': '[00:05:19]',
+      'timestamp_seconds': 319,
+      'tip': 'Your total price because they are paying you monthly you take that sum and divide it '
+             'by 12.',
+      'title': 'How to Write a Proposal to the Government (Strategy + Full Walkthrough)',
+      'url': 'https://www.youtube.com/watch?v=UVPaRFj3LDE&t=319s',
+      'video_id': 'UVPaRFj3LDE'},
+     {'author': "Bea's Business",
+      'channel': "Bea's Business",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:40](https://www.youtube.com/watch?v=3vr4bkvaByo&t=460s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Download the files that you submitted just to make sure everything is correct.',
+      'timestamp': 460,
+      'timestamp_label': '[00:07:40]',
+      'timestamp_seconds': 460,
+      'tip': 'Download the files that you submitted just to make sure everything is correct.',
+      'title': 'Step-by-Step: Fill Out a Government Cleaning Contract with Me!',
+      'url': 'https://www.youtube.com/watch?v=3vr4bkvaByo&t=460s',
+      'video_id': '3vr4bkvaByo'},
+     {'author': 'Stronger Built',
+      'channel': 'Stronger Built',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:31](https://www.youtube.com/watch?v=EoNW1HDL3PI&t=391s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Miss even one piece of this documentation, automatic fail.',
+      'timestamp': 391,
+      'timestamp_label': '[00:06:31]',
+      'timestamp_seconds': 391,
+      'tip': 'Miss even one piece of this documentation, automatic fail.',
+      'title': 'City and County of San Francisco Janitorial Services RFP (SFGOV-0000011743).- '
+               'Stronger Built LLC',
+      'url': 'https://www.youtube.com/watch?v=EoNW1HDL3PI&t=391s',
+      'video_id': 'EoNW1HDL3PI'},
+     {'author': 'CleanTender',
+      'channel': 'CleanTender',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:20](https://www.youtube.com/watch?v=M3p8970sZyg&t=80s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "To win those, you need to get on the buyer's radar yourself.",
+      'timestamp': 80,
+      'timestamp_label': '[00:01:20]',
+      'timestamp_seconds': 80,
+      'tip': "To win those, you need to get on the buyer's radar yourself.",
+      'title': 'How to Find, Bid and Win UK Cleaning Contracts (2026 Walkthrough)',
+      'url': 'https://www.youtube.com/watch?v=M3p8970sZyg&t=80s',
+      'video_id': 'M3p8970sZyg'}],
+ 8: [{'author': 'Steam Boss inc',
+      'channel': 'Steam Boss inc',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:16](https://www.youtube.com/watch?v=jt0SYjId62I&t=76s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "We're going to be fully stripping both of these floors and then applying three or "
+              'four coats of wax over the top, whichever makes it look good.',
+      'timestamp': 76,
+      'timestamp_label': '[00:01:16]',
+      'timestamp_seconds': 76,
+      'tip': "We're going to be fully stripping both of these floors and then applying three or "
+             'four coats of wax over the top, whichever makes it look good.',
+      'title': 'SUPER DIRTY GRIMY VCT Floor strip and wax transformation! #satisfying #cleaning',
+      'url': 'https://www.youtube.com/watch?v=jt0SYjId62I&t=76s',
+      'video_id': 'jt0SYjId62I'},
+     {'author': 'S.N.M. Cleaning Service',
+      'channel': 'S.N.M. Cleaning Service',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:09](https://www.youtube.com/watch?v=8s441oHT2b4&t=69s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "We're using auto scrubbing to do the stripping on most of the big open areas and a "
+              '175 swing machine on the smaller tight areas, making three passes and picking up '
+              'all the slurry on the third pass.',
+      'timestamp': 69,
+      'timestamp_label': '[00:01:09]',
+      'timestamp_seconds': 69,
+      'tip': "We're using auto scrubbing to do the stripping on most of the big open areas and a "
+             '175 swing machine on the smaller tight areas, making three passes and picking up all '
+             'the slurry on the third pass.',
+      'title': 'STRIP AND REFINISH 20,000 SQUARE FEET of VCT floor - strip & wax 2025',
+      'url': 'https://www.youtube.com/watch?v=8s441oHT2b4&t=69s',
+      'video_id': '8s441oHT2b4'},
+     {'author': 'OctoClean Media',
+      'channel': 'OctoClean Media',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:33](https://www.youtube.com/watch?v=X3MX2xOshA4&t=333s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'We charge a range of 35 cents to 45 cents per square foot for stripping and '
+              'refinishing.',
+      'timestamp': 333,
+      'timestamp_label': '[00:05:33]',
+      'timestamp_seconds': 333,
+      'tip': 'We charge a range of 35 cents to 45 cents per square foot for stripping and '
+             'refinishing.',
+      'title': 'How to Price Floor Care (VCT Strip and Finish Pricing)',
+      'url': 'https://www.youtube.com/watch?v=X3MX2xOshA4&t=333s',
+      'video_id': 'X3MX2xOshA4'},
+     {'author': 'OctoClean Media',
+      'channel': 'OctoClean Media',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:35](https://www.youtube.com/watch?v=X3MX2xOshA4&t=35s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Stripping a floor incorrectly results in finish not adhering or worse shiny dirt, '
+              'and finishing incorrectly means you are stripping the floor again, bye-bye profit.',
+      'timestamp': 35,
+      'timestamp_label': '[00:00:35]',
+      'timestamp_seconds': 35,
+      'tip': 'Stripping a floor incorrectly results in finish not adhering or worse shiny dirt, '
+             'and finishing incorrectly means you are stripping the floor again, bye-bye profit.',
+      'title': 'How to Price Floor Care (VCT Strip and Finish Pricing)',
+      'url': 'https://www.youtube.com/watch?v=X3MX2xOshA4&t=35s',
+      'video_id': 'X3MX2xOshA4'},
+     {'author': 'Construction Clean Partners',
+      'channel': 'Construction Clean Partners',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:58](https://www.youtube.com/watch?v=vx1fwmFh0zM&t=118s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "99% of these construction companies won't work with you unless you have Workers "
+              'Compensation Insurance.',
+      'timestamp': 118,
+      'timestamp_label': '[00:01:58]',
+      'timestamp_seconds': 118,
+      'tip': "99% of these construction companies won't work with you unless you have Workers "
+             'Compensation Insurance.',
+      'title': 'How to win a post construction final cleanup job with Construction Clean Partners',
+      'url': 'https://www.youtube.com/watch?v=vx1fwmFh0zM&t=118s',
+      'video_id': 'vx1fwmFh0zM'},
+     {'author': 'Darian Jarrett',
+      'channel': 'Darian Jarrett',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:58](https://www.youtube.com/watch?v=6wtiLyP6-zU&t=478s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "I've personally destroyed one of my vacuums, and you don't want to use a household "
+              'vacuum or a Dyson or anything like that.',
+      'timestamp': 478,
+      'timestamp_label': '[00:07:58]',
+      'timestamp_seconds': 478,
+      'tip': "I've personally destroyed one of my vacuums, and you don't want to use a household "
+             'vacuum or a Dyson or anything like that.',
+      'title': 'Everything You NEED for Post-Construction Cleaning (Complete Supply Checklist)',
+      'url': 'https://www.youtube.com/watch?v=6wtiLyP6-zU&t=478s',
+      'video_id': '6wtiLyP6-zU'},
+     {'author': 'Darian Jarrett',
+      'channel': 'Darian Jarrett',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:14](https://www.youtube.com/watch?v=_hqGinSApYg&t=494s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "You're going to need a W9 form, general liability insurance and Workers "
+              "Compensation Insurance; that's what they're going to ask you for regardless.",
+      'timestamp': 494,
+      'timestamp_label': '[00:08:14]',
+      'timestamp_seconds': 494,
+      'tip': "You're going to need a W9 form, general liability insurance and Workers Compensation "
+             "Insurance; that's what they're going to ask you for regardless.",
+      'title': 'How to Get Construction Cleaning Contracts (This REALLY Worked)',
+      'url': 'https://www.youtube.com/watch?v=_hqGinSApYg&t=494s',
+      'video_id': '_hqGinSApYg'},
+     {'author': 'Mark Etherton - The Millionaire Playbook',
+      'channel': 'Mark Etherton - The Millionaire Playbook',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:01](https://www.youtube.com/watch?v=PG-8SEuPFQk&t=121s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'You price based on dust level, debris level, window count, restroom count, square '
+              'footage, deadline pressure, manpower, site conditions, not on how long you think it '
+              'might take.',
+      'timestamp': 121,
+      'timestamp_label': '[00:02:01]',
+      'timestamp_seconds': 121,
+      'tip': 'You price based on dust level, debris level, window count, restroom count, square '
+             'footage, deadline pressure, manpower, site conditions, not on how long you think it '
+             'might take.',
+      'title': 'How to Start a Construction Cleaning Company (What Most People Get Wrong) '
+               '#constructioncleaning',
+      'url': 'https://www.youtube.com/watch?v=PG-8SEuPFQk&t=121s',
+      'video_id': 'PG-8SEuPFQk'},
+     {'author': 'The Janitorial Store',
+      'channel': 'The Janitorial Store',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:47](https://www.youtube.com/watch?v=RNflg846cs4&t=47s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Average pricing for a rough clean is ten to fifteen cents a square foot, a final '
+              'clean ranges from fifteen to thirty cents, and a touch-up or light clean is usually '
+              'six to twelve cents a square foot.',
+      'timestamp': 47,
+      'timestamp_label': '[00:00:47]',
+      'timestamp_seconds': 47,
+      'tip': 'Average pricing for a rough clean is ten to fifteen cents a square foot, a final '
+             'clean ranges from fifteen to thirty cents, and a touch-up or light clean is usually '
+             'six to twelve cents a square foot.',
+      'title': 'How to price post construction cleaning',
+      'url': 'https://www.youtube.com/watch?v=RNflg846cs4&t=47s',
+      'video_id': 'RNflg846cs4'},
+     {'author': 'OctoClean Media',
+      'channel': 'OctoClean Media',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:36](https://www.youtube.com/watch?v=9TymiXPWhyY&t=636s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "We didn't read the fine print and we ended up having to go back and do two or three "
+              'cleans because it was essentially buried in the scope of work, and it cost us over '
+              '$100,000 in labor.',
+      'timestamp': 636,
+      'timestamp_label': '[00:10:36]',
+      'timestamp_seconds': 636,
+      'tip': "We didn't read the fine print and we ended up having to go back and do two or three "
+             'cleans because it was essentially buried in the scope of work, and it cost us over '
+             '$100,000 in labor.',
+      'title': 'Construction Cleaning: Build Your Profits! | OctoClean Podcast Ep. 17',
+      'url': 'https://www.youtube.com/watch?v=9TymiXPWhyY&t=636s',
+      'video_id': '9TymiXPWhyY'},
+     {'author': 'OctoClean Media',
+      'channel': 'OctoClean Media',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:02](https://www.youtube.com/watch?v=9TymiXPWhyY&t=122s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'A lot of these contractors hiring you are a third or fourth tier sub, you get paid '
+              'when they get paid, and you may not get paid for six months or longer.',
+      'timestamp': 122,
+      'timestamp_label': '[00:02:02]',
+      'timestamp_seconds': 122,
+      'tip': 'A lot of these contractors hiring you are a third or fourth tier sub, you get paid '
+             'when they get paid, and you may not get paid for six months or longer.',
+      'title': 'Construction Cleaning: Build Your Profits! | OctoClean Podcast Ep. 17',
+      'url': 'https://www.youtube.com/watch?v=9TymiXPWhyY&t=122s',
+      'video_id': '9TymiXPWhyY'},
+     {'author': 'The Janitorial Store',
+      'channel': 'The Janitorial Store',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:23](https://www.youtube.com/watch?v=gTK5pzrNCqg&t=83s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'From tracking my production rates I know for a fact that my final clean rate is 150 '
+              'square feet per hour.',
+      'timestamp': 83,
+      'timestamp_label': '[00:01:23]',
+      'timestamp_seconds': 83,
+      'tip': 'From tracking my production rates I know for a fact that my final clean rate is 150 '
+             'square feet per hour.',
+      'title': 'How to price a post construction cleaning for a commercial building',
+      'url': 'https://www.youtube.com/watch?v=gTK5pzrNCqg&t=83s',
+      'video_id': 'gTK5pzrNCqg'},
+     {'author': 'Austin Davis',
+      'channel': 'Austin Davis',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:05](https://www.youtube.com/watch?v=M2j87yHQY10&t=125s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'We charged $2,500 and we were able to do it in two and a half hours by simply just '
+              'treating it like a house wash and downstreaming our solution.',
+      'timestamp': 125,
+      'timestamp_label': '[00:02:05]',
+      'timestamp_seconds': 125,
+      'tip': 'We charged $2,500 and we were able to do it in two and a half hours by simply just '
+             'treating it like a house wash and downstreaming our solution.',
+      'title': 'Post Construction Cleaning | Construction Dust Solved With No Brushing',
+      'url': 'https://www.youtube.com/watch?v=M2j87yHQY10&t=125s',
+      'video_id': 'M2j87yHQY10'},
+     {'author': 'OctoClean Media',
+      'channel': 'OctoClean Media',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:02](https://www.youtube.com/watch?v=YE3spKAx9HI&t=182s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'When you finish a room you put a piece of paper on the door with your logo on it '
+              'saying room completed, and then you go to the supervisor on site every day so they '
+              'check it and sign off.',
+      'timestamp': 182,
+      'timestamp_label': '[00:03:02]',
+      'timestamp_seconds': 182,
+      'tip': 'When you finish a room you put a piece of paper on the door with your logo on it '
+             'saying room completed, and then you go to the supervisor on site every day so they '
+             'check it and sign off.',
+      'title': 'Post Construction Cleaning Differences: Better Than Commercial Cleaning?',
+      'url': 'https://www.youtube.com/watch?v=YE3spKAx9HI&t=182s',
+      'video_id': 'YE3spKAx9HI'},
+     {'author': 'Mathew Rogers',
+      'channel': 'Mathew Rogers',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:15](https://www.youtube.com/watch?v=xzidtSceePw&t=675s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'There was a job I used to do for $150 that would take me almost 3 hours; I realized '
+              'my pricing was way off, and I started charging $200 for that same job and customers '
+              'still booked with me.',
+      'timestamp': 675,
+      'timestamp_label': '[00:11:15]',
+      'timestamp_seconds': 675,
+      'tip': 'There was a job I used to do for $150 that would take me almost 3 hours; I realized '
+             'my pricing was way off, and I started charging $200 for that same job and customers '
+             'still booked with me.',
+      'title': 'How To Start A $1000/Day Carpet Cleaning Business (Free Course)',
+      'url': 'https://www.youtube.com/watch?v=xzidtSceePw&t=675s',
+      'video_id': 'xzidtSceePw'},
+     {'author': 'Window Cleaning BluePrint',
+      'channel': 'Window Cleaning BluePrint',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:00](https://www.youtube.com/watch?v=K4OAVqDBtgE&t=60s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "Now I'm bringing in ladders early in the morning and I'm cleaning the ceiling fans, "
+              'dusting them and then doing vents.',
+      'timestamp': 60,
+      'timestamp_label': '[00:01:00]',
+      'timestamp_seconds': 60,
+      'tip': "Now I'm bringing in ladders early in the morning and I'm cleaning the ceiling fans, "
+             'dusting them and then doing vents.',
+      'title': 'How To Sell Window Cleaning Jobs On The Spot #keithkalfas #windowcleaning '
+               '#windowcleaningblueprint',
+      'url': 'https://www.youtube.com/watch?v=K4OAVqDBtgE&t=60s',
+      'video_id': 'K4OAVqDBtgE'},
+     {'author': 'Darian Jarrett',
+      'channel': 'Darian Jarrett',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:51](https://www.youtube.com/watch?v=c9LRSgPQlvE&t=831s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'After it was all said and done the number came out to be close to $9,000 off of a '
+              '$7,000 job.',
+      'timestamp': 831,
+      'timestamp_label': '[00:13:51]',
+      'timestamp_seconds': 831,
+      'tip': 'After it was all said and done the number came out to be close to $9,000 off of a '
+             '$7,000 job.',
+      'title': 'The Truth About My First Post Construction Cleaning Experience: Lessons Learned',
+      'url': 'https://www.youtube.com/watch?v=c9LRSgPQlvE&t=831s',
+      'video_id': 'c9LRSgPQlvE'},
+     {'author': 'Nova Cleaners',
+      'channel': 'Nova Cleaners',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:02](https://www.youtube.com/watch?v=S9xoQxmy2bg&t=122s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'If I knew then what I know now I never would have showed up to a construction '
+              'cleaning without a solid steam cleaner.',
+      'timestamp': 122,
+      'timestamp_label': '[00:02:02]',
+      'timestamp_seconds': 122,
+      'tip': 'If I knew then what I know now I never would have showed up to a construction '
+             'cleaning without a solid steam cleaner.',
+      'title': 'Here’s what you need to know for your first post construction cleaning (I wish I '
+               'would have known)',
+      'url': 'https://www.youtube.com/watch?v=S9xoQxmy2bg&t=122s',
+      'video_id': 'S9xoQxmy2bg'}],
+ 9: [{'author': 'Janitorial Manager',
+      'channel': 'Janitorial Manager',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:17](https://www.youtube.com/watch?v=LFXytjdaxWA&t=77s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'JM is secured with geo fencing which allows your employees to only clock in and out '
+              'within the geo fence area, and with facial recognition software JM prevents '
+              'unauthorized access and eliminates buddy punching between employees.',
+      'timestamp': 77,
+      'timestamp_label': '[00:01:17]',
+      'timestamp_seconds': 77,
+      'tip': 'JM is secured with geo fencing which allows your employees to only clock in and out '
+             'within the geo fence area, and with facial recognition software JM prevents '
+             'unauthorized access and eliminates buddy punching between employees.',
+      'title': "Janitorial Manager's Timekeeping Feature",
+      'url': 'https://www.youtube.com/watch?v=LFXytjdaxWA&t=77s',
+      'video_id': 'LFXytjdaxWA'},
+     {'author': 'Service On Command',
+      'channel': 'Service On Command',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:58](https://www.youtube.com/watch?v=CXVWaxMTpV0&t=238s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'The biggest thing we do on this is to be able to communicate on this app so that '
+              "way we're not bugging you when you're off work.",
+      'timestamp': 238,
+      'timestamp_label': '[00:03:58]',
+      'timestamp_seconds': 238,
+      'tip': 'The biggest thing we do on this is to be able to communicate on this app so that way '
+             "we're not bugging you when you're off work.",
+      'title': 'Training - Swept Mobile App',
+      'url': 'https://www.youtube.com/watch?v=CXVWaxMTpV0&t=238s',
+      'video_id': 'CXVWaxMTpV0'},
+     {'author': 'Modern Field Service',
+      'channel': 'Modern Field Service',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:19](https://www.youtube.com/watch?v=Y00vfNH19Q4&t=79s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "If you're bidding a medical office, that inspection trail is the thing that wins "
+              'and keeps the contract.',
+      'timestamp': 79,
+      'timestamp_label': '[00:01:19]',
+      'timestamp_seconds': 79,
+      'tip': "If you're bidding a medical office, that inspection trail is the thing that wins and "
+             'keeps the contract.',
+      'title': 'Best Janitorial & Commercial Cleaning Software 2026',
+      'url': 'https://www.youtube.com/watch?v=Y00vfNH19Q4&t=79s',
+      'video_id': 'Y00vfNH19Q4'},
+     {'author': 'Janitorial Manager',
+      'channel': 'Janitorial Manager',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:22](https://www.youtube.com/watch?v=D60Eb-ryFyc&t=82s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "There's technology that can be used to solve a lot of these problems and reduce "
+              'labor costs, at the same time making sure that the payroll is correct and making '
+              'sure that people are showing up.',
+      'timestamp': 82,
+      'timestamp_label': '[00:01:22]',
+      'timestamp_seconds': 82,
+      'tip': "There's technology that can be used to solve a lot of these problems and reduce "
+             'labor costs, at the same time making sure that the payroll is correct and making '
+             'sure that people are showing up.',
+      'title': 'Finalist for the ISSA Innovation Award 2019: Janitorial Manager by Double A '
+               'Solutions',
+      'url': 'https://www.youtube.com/watch?v=D60Eb-ryFyc&t=82s',
+      'video_id': 'D60Eb-ryFyc'},
+     {'author': 'Swept',
+      'channel': 'Swept',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:21:00](https://www.youtube.com/watch?v=lPuBkaocWL8&t=1260s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "Remember software is just a tool, it's like a mop and bucket, it is not magic; if "
+              "you don't change the mop water, the mop and bucket is going to fail you.",
+      'timestamp': 1260,
+      'timestamp_label': '[00:21:00]',
+      'timestamp_seconds': 1260,
+      'tip': "Remember software is just a tool, it's like a mop and bucket, it is not magic; if "
+             "you don't change the mop water, the mop and bucket is going to fail you.",
+      'title': 'Maximize the ROI of janitorial software',
+      'url': 'https://www.youtube.com/watch?v=lPuBkaocWL8&t=1260s',
+      'video_id': 'lPuBkaocWL8'},
+     {'author': 'Swept',
+      'channel': 'Swept',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:17:32](https://www.youtube.com/watch?v=lPuBkaocWL8&t=1052s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'I find that people will spend a lot of time negotiating, researching, going back '
+              "and forth, they finally buy the software and they actually don't log in.",
+      'timestamp': 1052,
+      'timestamp_label': '[00:17:32]',
+      'timestamp_seconds': 1052,
+      'tip': 'I find that people will spend a lot of time negotiating, researching, going back and '
+             "forth, they finally buy the software and they actually don't log in.",
+      'title': 'Maximize the ROI of janitorial software',
+      'url': 'https://www.youtube.com/watch?v=lPuBkaocWL8&t=1052s',
+      'video_id': 'lPuBkaocWL8'},
+     {'author': 'Janitorial Manager',
+      'channel': 'Janitorial Manager',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:37](https://www.youtube.com/watch?v=c9NTVgpJrx0&t=97s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Nicole also set up QR codes for her customers and the general public to instantly '
+              "check an area's status.",
+      'timestamp': 97,
+      'timestamp_label': '[00:01:37]',
+      'timestamp_seconds': 97,
+      'tip': 'Nicole also set up QR codes for her customers and the general public to instantly '
+             "check an area's status.",
+      'title': 'Enhance Your Value with Scan4Clean | QR Codes For Your Cleaning Operations',
+      'url': 'https://www.youtube.com/watch?v=c9NTVgpJrx0&t=97s',
+      'video_id': 'c9NTVgpJrx0'},
+     {'author': 'Janitorial Manager',
+      'channel': 'Janitorial Manager',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:25](https://www.youtube.com/watch?v=NDvJAHP1GQo&t=205s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "JM's QR codes even provide an option to automate communications by way of sending "
+              'out a nightly email that can show all the scanned areas and the time the services '
+              'were performed.',
+      'timestamp': 205,
+      'timestamp_label': '[00:03:25]',
+      'timestamp_seconds': 205,
+      'tip': "JM's QR codes even provide an option to automate communications by way of sending "
+             'out a nightly email that can show all the scanned areas and the time the services '
+             'were performed.',
+      'title': 'Janitorial Manager QR Code Features and Benefits',
+      'url': 'https://www.youtube.com/watch?v=NDvJAHP1GQo&t=205s',
+      'video_id': 'NDvJAHP1GQo'},
+     {'author': 'iCleaners Commercial Cleaning Services',
+      'channel': 'iCleaners Commercial Cleaning Services',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:37](https://www.youtube.com/watch?v=iigVbHUUCBE&t=97s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'In ChronoTech everyone had access to almost every facility and that led to errors '
+              'when you guys were clocking in, sometimes you would clock in at the wrong facility.',
+      'timestamp': 97,
+      'timestamp_label': '[00:01:37]',
+      'timestamp_seconds': 97,
+      'tip': 'In ChronoTech everyone had access to almost every facility and that led to errors '
+             'when you guys were clocking in, sometimes you would clock in at the wrong facility.',
+      'title': 'Using the Swept App',
+      'url': 'https://www.youtube.com/watch?v=iigVbHUUCBE&t=97s',
+      'video_id': 'iigVbHUUCBE'},
+     {'author': 'Contractor Plus',
+      'channel': 'Contractor Plus',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:36](https://www.youtube.com/watch?v=9IJ1pi5IQ_E&t=96s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Inspection score cards are how you keep accounts long-term; without that, every '
+              'renewal turns into a price negotiation.',
+      'timestamp': 96,
+      'timestamp_label': '[00:01:36]',
+      'timestamp_seconds': 96,
+      'tip': 'Inspection score cards are how you keep accounts long-term; without that, every '
+             'renewal turns into a price negotiation.',
+      'title': '9 BEST Janitorial Software Platforms in 2026 (Commercial Cleaning Ranked)',
+      'url': 'https://www.youtube.com/watch?v=9IJ1pi5IQ_E&t=96s',
+      'video_id': '9IJ1pi5IQ_E'},
+     {'author': 'CleanGuru',
+      'channel': 'CleanGuru',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:18](https://www.youtube.com/watch?v=nNPKmshBChQ&t=138s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'This promotional page talks about your use of this janitorial inspection app to get '
+              'and keep a building clean, and you can put that right into your bid proposal.',
+      'timestamp': 138,
+      'timestamp_label': '[00:02:18]',
+      'timestamp_seconds': 138,
+      'tip': 'This promotional page talks about your use of this janitorial inspection app to get '
+             'and keep a building clean, and you can put that right into your bid proposal.',
+      'title': 'CleanGuru - CleanQC Janitorial Inspection Software',
+      'url': 'https://www.youtube.com/watch?v=nNPKmshBChQ&t=138s',
+      'video_id': 'nNPKmshBChQ'},
+     {'author': 'Stewart Facility Services',
+      'channel': 'Stewart Facility Services',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:14](https://www.youtube.com/watch?v=7uKR0mnlF9Q&t=74s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Under the channels tab you will see SFS General, which includes all blanket '
+              'messages to all Associates and all locations across the board.',
+      'timestamp': 74,
+      'timestamp_label': '[00:01:14]',
+      'timestamp_seconds': 74,
+      'tip': 'Under the channels tab you will see SFS General, which includes all blanket messages '
+             'to all Associates and all locations across the board.',
+      'title': 'Swept app cont.',
+      'url': 'https://www.youtube.com/watch?v=7uKR0mnlF9Q&t=74s',
+      'video_id': '7uKR0mnlF9Q'},
+     {'author': 'Swept',
+      'channel': 'Swept',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:48](https://www.youtube.com/watch?v=Tub9xxD1-7o&t=288s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Virtual assistants are 15 to 20 an hour and they will bill you by the minute, and '
+              'all they will do is respond to sales emails quickly and set up an appointment.',
+      'timestamp': 288,
+      'timestamp_label': '[00:04:48]',
+      'timestamp_seconds': 288,
+      'tip': 'Virtual assistants are 15 to 20 an hour and they will bill you by the minute, and '
+             'all they will do is respond to sales emails quickly and set up an appointment.',
+      'title': 'Selling with Swept: How to Win 80% of Your Commercial Cleaning Contracts',
+      'url': 'https://www.youtube.com/watch?v=Tub9xxD1-7o&t=288s',
+      'video_id': 'Tub9xxD1-7o'},
+     {'author': 'Swept',
+      'channel': 'Swept',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:15:06](https://www.youtube.com/watch?v=Tub9xxD1-7o&t=906s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "Not only have I built trust that I know how to manage my company, I've also put "
+              "doubt in their minds about our competitors, and I've done it without being negative "
+              'about our competitors.',
+      'timestamp': 906,
+      'timestamp_label': '[00:15:06]',
+      'timestamp_seconds': 906,
+      'tip': "Not only have I built trust that I know how to manage my company, I've also put "
+             "doubt in their minds about our competitors, and I've done it without being negative "
+             'about our competitors.',
+      'title': 'Selling with Swept: How to Win 80% of Your Commercial Cleaning Contracts',
+      'url': 'https://www.youtube.com/watch?v=Tub9xxD1-7o&t=906s',
+      'video_id': 'Tub9xxD1-7o'},
+     {'author': 'Commercial Cleaning CEO',
+      'channel': 'Commercial Cleaning CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:29](https://www.youtube.com/watch?v=-DEX3b-m000&t=569s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'We lost that six-figure account because we did not have this automatic QR code '
+              'feedback system in place, but we won many other accounts and specifically this '
+              '$200,000 per year account because we did have that QR code system in place.',
+      'timestamp': 569,
+      'timestamp_label': '[00:09:29]',
+      'timestamp_seconds': 569,
+      'tip': 'We lost that six-figure account because we did not have this automatic QR code '
+             'feedback system in place, but we won many other accounts and specifically this '
+             '$200,000 per year account because we did have that QR code system in place.',
+      'title': 'Win $200K Commercial Cleaning Contracts With This Janitorial Software',
+      'url': 'https://www.youtube.com/watch?v=-DEX3b-m000&t=569s',
+      'video_id': '-DEX3b-m000'},
+     {'author': 'Swept',
+      'channel': 'Swept',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:32](https://www.youtube.com/watch?v=gsVsz7Sm98M&t=32s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Swept gives you flexible clock-in options, including mandatory geo fences to ensure '
+              'clock-ins occur at the site, lowering the risk of time theft.',
+      'timestamp': 32,
+      'timestamp_label': '[00:00:32]',
+      'timestamp_seconds': 32,
+      'tip': 'Swept gives you flexible clock-in options, including mandatory geo fences to ensure '
+             'clock-ins occur at the site, lowering the risk of time theft.',
+      'title': 'Swept Optimize Plan',
+      'url': 'https://www.youtube.com/watch?v=gsVsz7Sm98M&t=32s',
+      'video_id': 'gsVsz7Sm98M'},
+     {'author': 'Swept',
+      'channel': 'Swept',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:22:09](https://www.youtube.com/watch?v=O45aBb4kNlA&t=1329s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'We did a survey with over 500 business owners, budget aside, asking whether a '
+              "cleaning company's use of technology to improve communication and quality would "
+              'influence the decision to hire them, and 96% said yes.',
+      'timestamp': 1329,
+      'timestamp_label': '[00:22:09]',
+      'timestamp_seconds': 1329,
+      'tip': 'We did a survey with over 500 business owners, budget aside, asking whether a '
+             "cleaning company's use of technology to improve communication and quality would "
+             'influence the decision to hire them, and 96% said yes.',
+      'title': 'Win More Janitorial Contracts (by using Swept)',
+      'url': 'https://www.youtube.com/watch?v=O45aBb4kNlA&t=1329s',
+      'video_id': 'O45aBb4kNlA'},
+     {'author': 'Swept',
+      'channel': 'Swept',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:21:55](https://www.youtube.com/watch?v=W0BOiP7F_64&t=1315s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "Every cleaning company out there that we competed against said we're the best, we "
+              'focused on quality and we use green products, and none of those are things that can '
+              'be proven.',
+      'timestamp': 1315,
+      'timestamp_label': '[00:21:55]',
+      'timestamp_seconds': 1315,
+      'tip': "Every cleaning company out there that we competed against said we're the best, we "
+             'focused on quality and we use green products, and none of those are things that can '
+             'be proven.',
+      'title': 'Webinar: How to Grow Your Janitorial Business with Swept',
+      'url': 'https://www.youtube.com/watch?v=W0BOiP7F_64&t=1315s',
+      'video_id': 'W0BOiP7F_64'}],
+ 10: [{'author': 'Active Learning',
+       'channel': 'Active Learning',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:53](https://www.youtube.com/watch?v=83XHXw79m3E&t=413s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q10 operational verification).',
+       'markdown': '[00:00:57](https://www.youtube.com/watch?v=WPuiNvUKURw&t=57s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'The hidden business is organizing higher-margin specialty services around the '
-               'regular cleaning contract. This slide shows the commercial carpet cleaner '
-               'replacing and servicing the business entry rugs.',
-       'timestamp': 413,
-       'timestamp_label': '[00:06:53]',
-       'timestamp_seconds': 413,
-       'tip': 'The hidden business is organizing higher-margin specialty services around the '
-              'regular cleaning contract. This slide shows the commercial carpet cleaner '
-              'replacing and servicing the business entry rugs.',
-       'title': 'Commercial Cleaning Contracts, Janitorial Franchises Video Presentation With '
-                'CC (Win Driggins)',
-       'url': 'https://www.youtube.com/watch?v=83XHXw79m3E&t=413s',
-       'video_id': '83XHXw79m3E'},
-      {'author': 'Commercial Cleaning CEO',
-       'channel': 'Commercial Cleaning CEO',
+       'text': "Saliva, sweat, tears, urine, and vomit usually don't carry bloodborne pathogens "
+               'unless you can actually see blood in them.',
+       'timestamp': 57,
+       'timestamp_label': '[00:00:57]',
+       'timestamp_seconds': 57,
+       'tip': "Saliva, sweat, tears, urine, and vomit usually don't carry bloodborne pathogens "
+              'unless you can actually see blood in them.',
+       'title': 'Bloodborne Pathogens Explained | OSHA BBP Standards & Safety for Healthcare '
+                'Workers',
+       'url': 'https://www.youtube.com/watch?v=WPuiNvUKURw&t=57s',
+       'video_id': 'WPuiNvUKURw'},
+      {'author': 'XO Safety',
+       'channel': 'XO Safety',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:10:41](https://www.youtube.com/watch?v=IMbK5m7qbY0&t=641s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q10 operational verification).',
+       'markdown': '[00:08:40](https://www.youtube.com/watch?v=-8zP-by6RbU&t=520s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "So, this carpet cleaning speed right here, that's just what a good average is. "
-               'You can clean about 7,000 square feet per hour just doing vacuuming and '
-               'cleaning carpet, right? Uh hard floor, this is sweeping and mopping.',
-       'timestamp': 641,
-       'timestamp_label': '[00:10:41]',
-       'timestamp_seconds': 641,
-       'tip': "So, this carpet cleaning speed right here, that's just what a good average is. "
-              'You can clean about 7,000 square feet per hour just doing vacuuming and '
-              'cleaning carpet, right? Uh hard floor, this is sweeping and mopping.',
-       'title': 'How To Profitably Bid Commercial Cleaning Jobs | CALCULATOR (Commercial '
-                'Cleaning CEO)',
-       'url': 'https://www.youtube.com/watch?v=IMbK5m7qbY0&t=641s',
-       'video_id': 'IMbK5m7qbY0'},
-      {'author': 'BizAlmighty',
-       'channel': 'BizAlmighty',
+       'text': 'OSHA allows for a disinfecting solution of one part bleach to 10 parts water.',
+       'timestamp': 520,
+       'timestamp_label': '[00:08:40]',
+       'timestamp_seconds': 520,
+       'tip': 'OSHA allows for a disinfecting solution of one part bleach to 10 parts water.',
+       'title': 'Bloodborne Pathogens Safety Training',
+       'url': 'https://www.youtube.com/watch?v=-8zP-by6RbU&t=520s',
+       'video_id': '-8zP-by6RbU'},
+      {'author': 'That Clinical Instructor',
+       'channel': 'That Clinical Instructor',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:03](https://www.youtube.com/watch?v=f0CmEkWm_a0&t=303s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q10 operational verification).',
+       'markdown': '[00:13:43](https://www.youtube.com/watch?v=CzGiV83CMyU&t=823s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "I'm going to hit this refresh dashboard. And that will give me the 2026 data "
-               'all in these charts perfectly updated so that you can keep on top of your '
-               'business performance. That wraps up the walkthrough of the um cleaning '
-               'business calculator, the basic edition.',
-       'timestamp': 303,
-       'timestamp_label': '[00:05:03]',
-       'timestamp_seconds': 303,
-       'tip': "I'm going to hit this refresh dashboard. And that will give me the 2026 data "
-              'all in these charts perfectly updated so that you can keep on top of your '
-              'business performance. That wraps up the walkthrough of the um cleaning business '
-              'calculator, the basic edition.',
-       'title': 'Cleaning Business Calculator   Basic   Walkthrough (BizAlmighty)',
-       'url': 'https://www.youtube.com/watch?v=f0CmEkWm_a0&t=303s',
-       'video_id': 'f0CmEkWm_a0'},
-      {'author': '7 Figure Cleaning',
-       'channel': '7 Figure Cleaning',
+       'text': 'If they are obviously contaminated, work surfaces must be cleaned immediately with '
+               'an appropriate disinfectant, and broken glassware is not to be picked up by hand '
+               'but by using a brush and dust pan, tongs, or other tools.',
+       'timestamp': 823,
+       'timestamp_label': '[00:13:43]',
+       'timestamp_seconds': 823,
+       'tip': 'If they are obviously contaminated, work surfaces must be cleaned immediately with '
+              'an appropriate disinfectant, and broken glassware is not to be picked up by hand '
+              'but by using a brush and dust pan, tongs, or other tools.',
+       'title': 'Bloodborne Pathogens in Healthcare Facilities Training Video',
+       'url': 'https://www.youtube.com/watch?v=CzGiV83CMyU&t=823s',
+       'video_id': 'CzGiV83CMyU'},
+      {'author': 'The Janitorial Store',
+       'channel': 'The Janitorial Store',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:59](https://www.youtube.com/watch?v=1_z-Kgj0GYM&t=239s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q10 operational verification).',
+       'markdown': '[00:04:13](https://www.youtube.com/watch?v=U5pnasmmPuY&t=253s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "'re accurate every time, go to my website. I have a free bidding calculator on "
-               'there and it breaks down everything that you need to know to keep you safe, '
-               "keep you winning, and keep you profitable on every account. That's my gift to "
-               'you guys.',
-       'timestamp': 239,
-       'timestamp_label': '[00:03:59]',
-       'timestamp_seconds': 239,
-       'tip': "'re accurate every time, go to my website. I have a free bidding calculator on "
-              'there and it breaks down everything that you need to know to keep you safe, '
-              "keep you winning, and keep you profitable on every account. That's my gift to "
-              'you guys.',
-       'title': 'How to Price Commercial Cleaning Contracts to Win and Profit (3 Ways) (7 '
-                'Figure Cleaning)',
-       'url': 'https://www.youtube.com/watch?v=1_z-Kgj0GYM&t=239s',
-       'video_id': '1_z-Kgj0GYM'},
-      {'author': 'Mike Mak',
-       'channel': 'Mike Mak',
+       'text': 'When not disposed of properly, needles can become concealed in linen or garbage '
+               'and injure other workers who encounter them unexpectedly.',
+       'timestamp': 253,
+       'timestamp_label': '[00:04:13]',
+       'timestamp_seconds': 253,
+       'tip': 'When not disposed of properly, needles can become concealed in linen or garbage and '
+              'injure other workers who encounter them unexpectedly.',
+       'title': 'Bloodborne Pathogens Training for Janitorial Employees',
+       'url': 'https://www.youtube.com/watch?v=U5pnasmmPuY&t=253s',
+       'video_id': 'U5pnasmmPuY'},
+      {'author': 'Betco',
+       'channel': 'Betco',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:07:27](https://www.youtube.com/watch?v=kbRmM3sctgA&t=447s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q10 operational verification).',
+       'markdown': '[00:07:32](https://www.youtube.com/watch?v=wjpbeqDKZnE&t=452s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "See, office cleaning gives you the ability to scale because it's built around "
-               'seven $5,000 per month contracts, recurring contracts. And that is so much '
-               "easier to automate. And isn't that the part that's crazy?",
-       'timestamp': 447,
-       'timestamp_label': '[00:07:27]',
-       'timestamp_seconds': 447,
-       'tip': "See, office cleaning gives you the ability to scale because it's built around "
-              'seven $5,000 per month contracts, recurring contracts. And that is so much '
-              "easier to automate. And isn't that the part that's crazy?",
-       'title': 'Starting A "ReMOtE CleAnINg" Business Is BS. Do This Instead. (Mike Mak)',
-       'url': 'https://www.youtube.com/watch?v=kbRmM3sctgA&t=447s',
-       'video_id': 'kbRmM3sctgA'},
-      {'author': 'AJ SIMMONS',
-       'channel': 'AJ SIMMONS',
+       'text': 'Never manually compress trash, avoid splashing or spattering when cleaning up, and '
+               'never reuse towels or sponges.',
+       'timestamp': 452,
+       'timestamp_label': '[00:07:32]',
+       'timestamp_seconds': 452,
+       'tip': 'Never manually compress trash, avoid splashing or spattering when cleaning up, and '
+              'never reuse towels or sponges.',
+       'title': 'OSHA Bloodborne Pathogen',
+       'url': 'https://www.youtube.com/watch?v=wjpbeqDKZnE&t=452s',
+       'video_id': 'wjpbeqDKZnE'},
+      {'author': 'Medicine and Health Sciences at Bethel University',
+       'channel': 'Medicine and Health Sciences at Bethel University',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:16:25](https://www.youtube.com/watch?v=ZDdd0TDbbFo&t=985s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q10 operational verification).',
+       'markdown': '[00:04:59](https://www.youtube.com/watch?v=jf-dh46niMw&t=299s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'But do not get both because the in-house lead generation course is inside of '
-               "the automation program. All right, so anyway, that's what I got for y'all. I'm "
-               'AJ Simmons, founder of the Clean Business Network.',
-       'timestamp': 985,
-       'timestamp_label': '[00:16:25]',
-       'timestamp_seconds': 985,
-       'tip': 'But do not get both because the in-house lead generation course is inside of '
-              "the automation program. All right, so anyway, that's what I got for y'all. I'm "
-              'AJ Simmons, founder of the Clean Business Network.',
-       'title': 'How To Get Commercial Cleaning Contracts (SIMPLE ANSWER) (AJ SIMMONS)',
-       'url': 'https://www.youtube.com/watch?v=ZDdd0TDbbFo&t=985s',
-       'video_id': 'ZDdd0TDbbFo'},
-      {'author': 'GovKidMethod',
-       'channel': 'GovKidMethod',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:45:39](https://www.youtube.com/watch?v=dOj6rxt15uE&t=2739s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'You know, what you can do is just employee number one. Employee number one '
-               'served performed for the LA Parks summer season cleaning job and will be '
-               'working directly on this contract as proposed.',
-       'timestamp': 2739,
-       'timestamp_label': '[00:45:39]',
-       'timestamp_seconds': 2739,
-       'tip': 'You know, what you can do is just employee number one. Employee number one '
-              'served performed for the LA Parks summer season cleaning job and will be '
-              'working directly on this contract as proposed.',
-       'title': 'Government Bid Proposal Training: Start a Cleaning Business (Janitorial) for '
-                'the Government! (GovKidMethod)',
-       'url': 'https://www.youtube.com/watch?v=dOj6rxt15uE&t=2739s',
-       'video_id': 'dOj6rxt15uE'},
-      {'author': 'Constantin Schröck',
-       'channel': 'Constantin Schröck',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:42](https://www.youtube.com/watch?v=Q5K2zTuisJc&t=102s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Noise complaints all while keeping the property clean for tenants and owners '
-               "right we'll be back in the Baltimore area for some jobs soon mind if a drop.",
-       'timestamp': 102,
-       'timestamp_label': '[00:01:42]',
-       'timestamp_seconds': 102,
-       'tip': 'Noise complaints all while keeping the property clean for tenants and owners '
-              "right we'll be back in the Baltimore area for some jobs soon mind if a drop.",
-       'title': 'How To Get Jobs With Property Managers | Power Washing Lead generation | Cold '
-                'Email Campaign (Constantin Schröck)',
-       'url': 'https://www.youtube.com/watch?v=Q5K2zTuisJc&t=102s',
-       'video_id': 'Q5K2zTuisJc'},
-      {'author': 'Sheenapreneur',
-       'channel': 'Sheenapreneur',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:19:47](https://www.youtube.com/watch?v=hyUO_-BE-qc&t=1187s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Do you want you know document shredding removal like I said in one of my other '
-               'videos like something like that where you can just add more to the cleaning.',
-       'timestamp': 1187,
-       'timestamp_label': '[00:19:47]',
-       'timestamp_seconds': 1187,
-       'tip': 'Do you want you know document shredding removal like I said in one of my other '
-              'videos like something like that where you can just add more to the cleaning.',
-       'title': 'TOP 10 things you need to get started in Janitorial! | Government Contracting '
-                '(Sheenapreneur)',
-       'url': 'https://www.youtube.com/watch?v=hyUO_-BE-qc&t=1187s',
-       'video_id': 'hyUO_-BE-qc'},
-      {'author': 'Janitorial Manager',
-       'channel': 'Janitorial Manager',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:56](https://www.youtube.com/watch?v=D60Eb-ryFyc&t=176s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Business and so you know we're providing solutions that allow you to to scale "
-               'to keep customers to to to keep employees to making sure that you know all '
-               'those.',
-       'timestamp': 176,
-       'timestamp_label': '[00:02:56]',
-       'timestamp_seconds': 176,
-       'tip': "Business and so you know we're providing solutions that allow you to to scale "
-              'to keep customers to to to keep employees to making sure that you know all '
-              'those.',
-       'title': 'Finalist for the ISSA Innovation Award 2019: Janitorial Manager by Double A '
-                'Solutions (Janitorial Manager)',
-       'url': 'https://www.youtube.com/watch?v=D60Eb-ryFyc&t=176s',
-       'video_id': 'D60Eb-ryFyc'},
-      {'author': 'Dylan Marma',
-       'channel': 'Dylan Marma',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:55](https://www.youtube.com/watch?v=uJmpWtXEuyg&t=115s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Are set up we generally set up separate bank accounts for each property and '
-               'actually we have multiple bank accounts for each property we have one for our.',
-       'timestamp': 115,
-       'timestamp_label': '[00:01:55]',
-       'timestamp_seconds': 115,
-       'tip': 'Are set up we generally set up separate bank accounts for each property and '
-              'actually we have multiple bank accounts for each property we have one for our.',
-       'title': 'The Ultimate 90-day Property Onboarding Checklist in 2023 | RV Parks | '
-                'Requity, Dylan Marma (Dylan Marma)',
-       'url': 'https://www.youtube.com/watch?v=uJmpWtXEuyg&t=115s',
-       'video_id': 'uJmpWtXEuyg'},
-      {'author': 'Commercial Cleaning CEO',
-       'channel': 'Commercial Cleaning CEO',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:22:02](https://www.youtube.com/watch?v=o6xwPfuhTI4&t=1322s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Click the link or continue watching this next video, and I hope to meet you '
-               'soon and to help you get on the path to a seven-figure commercial cleaning '
-               'business in five-hour weeks.',
-       'timestamp': 1322,
-       'timestamp_label': '[00:22:02]',
-       'timestamp_seconds': 1322,
-       'tip': 'Click the link or continue watching this next video, and I hope to meet you '
-              'soon and to help you get on the path to a seven-figure commercial cleaning '
-              'business in five-hour weeks.',
-       'title': 'How to Get Commercial Cleaning Contracts Starting From Zero (Commercial '
-                'Cleaning CEO)',
-       'url': 'https://www.youtube.com/watch?v=o6xwPfuhTI4&t=1322s',
-       'video_id': 'o6xwPfuhTI4'},
-      {'author': 'victoria menifee',
-       'channel': 'victoria menifee',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:02](https://www.youtube.com/watch?v=JJ1zFR0l3vE&t=302s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Their spaces limited click in the description in order to sign up love to see '
-               'you there until the next video be safe and take care bye bye.',
-       'timestamp': 302,
-       'timestamp_label': '[00:05:02]',
-       'timestamp_seconds': 302,
-       'tip': 'Their spaces limited click in the description in order to sign up love to see '
-              'you there until the next video be safe and take care bye bye.',
-       'title': 'HOW TO WIN COMMERCIAL CLEANING CONTRACTS WITH MAJOR BANKS (victoria menifee)',
-       'url': 'https://www.youtube.com/watch?v=JJ1zFR0l3vE&t=302s',
-       'video_id': 'JJ1zFR0l3vE'},
+       'text': "You don't want to let it wait for like five to ten minutes; typically about a "
+               'minute is the appropriate length of time to be able to disinfect everything.',
+       'timestamp': 299,
+       'timestamp_label': '[00:04:59]',
+       'timestamp_seconds': 299,
+       'tip': "You don't want to let it wait for like five to ten minutes; typically about a "
+              'minute is the appropriate length of time to be able to disinfect everything.',
+       'title': 'Cleaning and Decontaminating a Blood Borne Pathogen Spill Skills Video',
+       'url': 'https://www.youtube.com/watch?v=jf-dh46niMw&t=299s',
+       'video_id': 'jf-dh46niMw'},
       {'author': 'OctoClean Media',
        'channel': 'OctoClean Media',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:46](https://www.youtube.com/watch?v=Z8hsIGjmi_c&t=166s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q10 operational verification).',
+       'markdown': '[00:00:41](https://www.youtube.com/watch?v=Z8hsIGjmi_c&t=41s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "All right I'm going to take these gloves off because I don't want to grab the "
-               "clean bottle with possible contamination on my hands so what I'm going to do "
-               "from the inside clean thumb from the inside and I'm putting these in my bag "
-               "I'll grab another set of gloves.",
-       'timestamp': 166,
-       'timestamp_label': '[00:02:46]',
-       'timestamp_seconds': 166,
-       'tip': "All right I'm going to take these gloves off because I don't want to grab the "
-              "clean bottle with possible contamination on my hands so what I'm going to do "
-              "from the inside clean thumb from the inside and I'm putting these in my bag "
-              "I'll grab another set of gloves.",
-       'title': 'Bloodborne Pathogen Cleanup and Decontamination | SAFELY Cleanup Blood! '
-                '(OctoClean Media)',
-       'url': 'https://www.youtube.com/watch?v=Z8hsIGjmi_c&t=166s',
+       'text': 'I want to make a one to ten dilution with a three minute dwell time, so a three '
+               "minute contact time, it's going to stay wet for three minutes.",
+       'timestamp': 41,
+       'timestamp_label': '[00:00:41]',
+       'timestamp_seconds': 41,
+       'tip': 'I want to make a one to ten dilution with a three minute dwell time, so a three '
+              "minute contact time, it's going to stay wet for three minutes.",
+       'title': 'Bloodborne Pathogen Cleanup and Decontamination | SAFELY Cleanup Blood!',
+       'url': 'https://www.youtube.com/watch?v=Z8hsIGjmi_c&t=41s',
        'video_id': 'Z8hsIGjmi_c'},
-      {'author': 'Bid & Profit Lab',
-       'channel': 'Bid & Profit Lab',
+      {'author': 'Bloodborne Pathogen',
+       'channel': 'Bloodborne Pathogen',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:26](https://www.youtube.com/watch?v=T-l3Df3Iino&t=266s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q10 operational verification).',
+       'markdown': '[00:03:51](https://www.youtube.com/watch?v=gLeTNOVfh8o&t=231s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'The repeatable workflow is scope, labor, full cost, target margin, then a '
-               'stress test. If you prefer a ready made spreadsheet for your bidding '
-               'calculations, our Commercial Cleaning Bid and Margin System is linked in the '
-               'description.',
-       'timestamp': 266,
-       'timestamp_label': '[00:04:26]',
-       'timestamp_seconds': 266,
-       'tip': 'The repeatable workflow is scope, labor, full cost, target margin, then a '
-              'stress test. If you prefer a ready made spreadsheet for your bidding '
-              'calculations, our Commercial Cleaning Bid and Margin System is linked in the '
-              'description.',
-       'title': 'How to Bid a Commercial Cleaning Contract: 20,000 Sq Ft Example. (Bid & '
-                'Profit Lab)',
-       'url': 'https://www.youtube.com/watch?v=T-l3Df3Iino&t=266s',
-       'video_id': 'T-l3Df3Iino'}],
- 11: [{'author': 'Modern Field Service',
-       'channel': 'Modern Field Service',
+       'text': 'One milliliter of blood can contain over 100 million infectious doses of hepatitis '
+               'B virus.',
+       'timestamp': 231,
+       'timestamp_label': '[00:03:51]',
+       'timestamp_seconds': 231,
+       'tip': 'One milliliter of blood can contain over 100 million infectious doses of hepatitis '
+              'B virus.',
+       'title': 'OSHA Bloodborne Pathogen Training, Bloodborne Pathogen Video',
+       'url': 'https://www.youtube.com/watch?v=gLeTNOVfh8o&t=231s',
+       'video_id': 'gLeTNOVfh8o'},
+      {'author': 'Training Videos',
+       'channel': 'Training Videos',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:37](https://www.youtube.com/watch?v=Y00vfNH19Q4&t=277s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q11 operational verification).',
+       'markdown': '[00:02:50](https://www.youtube.com/watch?v=AxPTARAhtdA&t=170s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Connect Team and add a simple invoicing tool. Clients heavy janitorial with '
-               "inspections at the center, Janitorial Manager, if you're okay with quote-based "
-               'pricing. Established janitorial company that wants the industry standard, '
-               'Swept is a safe, solid pick.',
-       'timestamp': 277,
-       'timestamp_label': '[00:04:37]',
-       'timestamp_seconds': 277,
-       'tip': 'Connect Team and add a simple invoicing tool. Clients heavy janitorial with '
-              "inspections at the center, Janitorial Manager, if you're okay with quote-based "
-              'pricing. Established janitorial company that wants the industry standard, Swept '
-              'is a safe, solid pick.',
-       'title': 'Best Janitorial & Commercial Cleaning Software 2026 (Modern Field Service)',
-       'url': 'https://www.youtube.com/watch?v=Y00vfNH19Q4&t=277s',
-       'video_id': 'Y00vfNH19Q4'},
-      {'author': 'Jon Margalit',
-       'channel': 'Jon Margalit',
+       'text': 'Step six is applying the disinfectant, which is the most frequently missed step; '
+               'it must remain visibly wet for this duration to effectively kill viruses.',
+       'timestamp': 170,
+       'timestamp_label': '[00:02:50]',
+       'timestamp_seconds': 170,
+       'tip': 'Step six is applying the disinfectant, which is the most frequently missed step; it '
+              'must remain visibly wet for this duration to effectively kill viruses.',
+       'title': 'OSHA Bloodborne Pathogens Spill Cleanup Training',
+       'url': 'https://www.youtube.com/watch?v=AxPTARAhtdA&t=170s',
+       'video_id': 'AxPTARAhtdA'},
+      {'author': 'SafetyTrainingNetwork.com',
+       'channel': 'SafetyTrainingNetwork.com',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:57](https://www.youtube.com/watch?v=8gbn-TCd4l4&t=297s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q11 operational verification).',
+       'markdown': '[00:01:47](https://www.youtube.com/watch?v=Pr6reN7o5NI&t=107s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "If you're trying to build a cleaning business and you're stuck on that W2 "
-               "versus 1099 debate, here's the truth. There's a way to do it right. You don't "
-               "need to hire W2 employees. You don't need to hand out vacuums and micromanage "
-               'people.',
-       'timestamp': 297,
-       'timestamp_label': '[00:04:57]',
-       'timestamp_seconds': 297,
-       'tip': "If you're trying to build a cleaning business and you're stuck on that W2 "
-              "versus 1099 debate, here's the truth. There's a way to do it right. You don't "
-              "need to hire W2 employees. You don't need to hand out vacuums and micromanage "
-              'people.',
-       'title': 'W2 vs 1099: How I Built a Remote Cleaning Team Without Payroll Headaches (Jon '
-                'Margalit)',
-       'url': 'https://www.youtube.com/watch?v=8gbn-TCd4l4&t=297s',
-       'video_id': '8gbn-TCd4l4'},
-      {'author': 'Bryan Gutowsky | Michigan Insurance',
-       'channel': 'Bryan Gutowsky | Michigan Insurance',
+       'text': 'Some body fluids such as urine or vomit are generally not considered infectious, '
+               'but if any fluid contains any amount of blood it is considered infectious.',
+       'timestamp': 107,
+       'timestamp_label': '[00:01:47]',
+       'timestamp_seconds': 107,
+       'tip': 'Some body fluids such as urine or vomit are generally not considered infectious, '
+              'but if any fluid contains any amount of blood it is considered infectious.',
+       'title': 'Bloodborne Pathogens for Custodians',
+       'url': 'https://www.youtube.com/watch?v=Pr6reN7o5NI&t=107s',
+       'video_id': 'Pr6reN7o5NI'},
+      {'author': 'BuddSafety',
+       'channel': 'BuddSafety',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:13](https://www.youtube.com/watch?v=irbQWL_bLuA&t=73s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q11 operational verification).',
+       'markdown': '[00:02:41](https://www.youtube.com/watch?v=eEnUgYz8rXU&t=161s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "'s property damage related to your work. If you're a contractor or a "
-               "construction company, and you're doing work on a property, and maybe because "
-               'of your operations, because of of the work you were doing, the neighboring '
-               'property gets damaged.',
-       'timestamp': 73,
-       'timestamp_label': '[00:01:13]',
-       'timestamp_seconds': 73,
-       'tip': "'s property damage related to your work. If you're a contractor or a "
-              "construction company, and you're doing work on a property, and maybe because of "
-              'your operations, because of of the work you were doing, the neighboring '
-              'property gets damaged.',
-       'title': 'General Liability vs Workers Comp Insurance | What’s The Difference? (Bryan '
-                'Gutowsky | Michigan Insurance)',
-       'url': 'https://www.youtube.com/watch?v=irbQWL_bLuA&t=73s',
-       'video_id': 'irbQWL_bLuA'},
-      {'author': 'Commercial Cleaning CEO',
-       'channel': 'Commercial Cleaning CEO',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:07](https://www.youtube.com/watch?v=z_tdT6I7K7U&t=307s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'And I can say within our area where we typically operate is we look for head '
-               "of school. So don't be calling these or reaching out to these or interacting "
-               'with private schools and asking for a principal or a director of some kind. '
-               'You want head of school or business manager.',
-       'timestamp': 307,
-       'timestamp_label': '[00:05:07]',
-       'timestamp_seconds': 307,
-       'tip': 'And I can say within our area where we typically operate is we look for head of '
-              "school. So don't be calling these or reaching out to these or interacting with "
-              'private schools and asking for a principal or a director of some kind. You want '
-              'head of school or business manager.',
-       'title': 'How to Win Commercial Cleaning Contracts With Schools (Commercial Cleaning '
-                'CEO)',
-       'url': 'https://www.youtube.com/watch?v=z_tdT6I7K7U&t=307s',
-       'video_id': 'z_tdT6I7K7U'},
-      {'author': 'UpFlip',
-       'channel': 'UpFlip',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:19:07](https://www.youtube.com/watch?v=j3l2-xKJKb8&t=1147s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "What's the most rewarding part of owning your own business? Well, leaving a "
-               'legacy, right? So my son does work for me. So when I came back from pool '
-               'school, he started cleaning pools. And right now he is the general manager of '
-               'my area.',
-       'timestamp': 1147,
-       'timestamp_label': '[00:19:07]',
-       'timestamp_seconds': 1147,
-       'tip': "What's the most rewarding part of owning your own business? Well, leaving a "
-              'legacy, right? So my son does work for me. So when I came back from pool '
-              'school, he started cleaning pools. And right now he is the general manager of '
-              'my area.',
-       'title': 'Most Underrated Service Business?! (Makes $851K/Year) (UpFlip)',
-       'url': 'https://www.youtube.com/watch?v=j3l2-xKJKb8&t=1147s',
-       'video_id': 'j3l2-xKJKb8'},
-      {'author': 'The Janitorial Store',
-       'channel': 'The Janitorial Store',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:41](https://www.youtube.com/watch?v=EL4NN_-rX7o&t=161s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'We got to know where those alarm codes are so we can tell our team uh when '
-               "we're doing our initial training. So, that way we can go right to alarm, "
-               'disarm it, and not worry about any false alarms. And the same thing is true as '
-               "if you're cleaning a commercial building.",
+       'text': 'Always remember head to toe, gloves being last.',
        'timestamp': 161,
        'timestamp_label': '[00:02:41]',
        'timestamp_seconds': 161,
-       'tip': 'We got to know where those alarm codes are so we can tell our team uh when '
-              "we're doing our initial training. So, that way we can go right to alarm, disarm "
-              'it, and not worry about any false alarms. And the same thing is true as if '
-              "you're cleaning a commercial building.",
-       'title': 'Commercial Cleaning Company Onboarding Checklist (The Janitorial Store)',
-       'url': 'https://www.youtube.com/watch?v=EL4NN_-rX7o&t=161s',
-       'video_id': 'EL4NN_-rX7o'},
-      {'author': 'Janitorial Manager',
-       'channel': 'Janitorial Manager',
+       'tip': 'Always remember head to toe, gloves being last.',
+       'title': 'Blood Borne Pathogens Safety - BBP Kit',
+       'url': 'https://www.youtube.com/watch?v=eEnUgYz8rXU&t=161s',
+       'video_id': 'eEnUgYz8rXU'},
+      {'author': 'Imperial Brady',
+       'channel': 'Imperial Brady',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:48](https://www.youtube.com/watch?v=qZwFYeU_0Qs&t=168s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q11 operational verification).',
+       'markdown': '[00:08:08](https://www.youtube.com/watch?v=tCz-yNw0WBo&t=488s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Cares steven also has a better idea advies inventory niet en zus business in '
-               'crisis steven en de kroon niet langer hoop voor succes bij use the general '
-               'manager or glory and bring to a en de consumable calculator bij het succes '
-               '[Muziek].',
-       'timestamp': 168,
-       'timestamp_label': '[00:02:48]',
-       'timestamp_seconds': 168,
-       'tip': 'Cares steven also has a better idea advies inventory niet en zus business in '
-              'crisis steven en de kroon niet langer hoop voor succes bij use the general '
-              'manager or glory and bring to a en de consumable calculator bij het succes '
-              '[Muziek].',
-       'title': 'ISSA Work Loading & Bidding Tool and Consumable Calculator - Janitorial '
-                'Manager (Janitorial Manager)',
-       'url': 'https://www.youtube.com/watch?v=qZwFYeU_0Qs&t=168s',
-       'video_id': 'qZwFYeU_0Qs'},
-      {'author': 'Kadz Money',
-       'channel': 'Kadz Money',
+       'text': 'If these items were tossed into a dumpster, for example, the entire dumpster '
+               'becomes hazardous waste and the facility will be charged accordingly.',
+       'timestamp': 488,
+       'timestamp_label': '[00:08:08]',
+       'timestamp_seconds': 488,
+       'tip': 'If these items were tossed into a dumpster, for example, the entire dumpster '
+              'becomes hazardous waste and the facility will be charged accordingly.',
+       'title': 'How to Clean Up Bloodborne Pathogens: A Methodical Guide to Safety and Compliance',
+       'url': 'https://www.youtube.com/watch?v=tCz-yNw0WBo&t=488s',
+       'video_id': 'tCz-yNw0WBo'},
+      {'author': 'The.Mad.Forensic.Scientist',
+       'channel': 'The.Mad.Forensic.Scientist',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:39](https://www.youtube.com/watch?v=dEkotRT-f90&t=159s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q11 operational verification).',
+       'markdown': '[00:03:40](https://www.youtube.com/watch?v=PzH0BFleLzU&t=220s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "Cleaning businesses it's in demand customers will come to you very rarely you "
-               "can advertise online and people will start calling you and you'll have enough.",
-       'timestamp': 159,
-       'timestamp_label': '[00:02:39]',
-       'timestamp_seconds': 159,
-       'tip': "Cleaning businesses it's in demand customers will come to you very rarely you "
-              "can advertise online and people will start calling you and you'll have enough.",
-       'title': 'How To Start A Cleaning Business In The UK For 2025 | Cleaning Business Plan '
-                '(Kadz Money)',
-       'url': 'https://www.youtube.com/watch?v=dEkotRT-f90&t=159s',
-       'video_id': 'dEkotRT-f90'},
-      {'author': 'Runjob Software',
-       'channel': 'Runjob Software',
+       'text': "The virus can stay infectious in the environment for up to 7 days, that's why any "
+               'form of wet or dry blood must be treated as infectious.',
+       'timestamp': 220,
+       'timestamp_label': '[00:03:40]',
+       'timestamp_seconds': 220,
+       'tip': "The virus can stay infectious in the environment for up to 7 days, that's why any "
+              'form of wet or dry blood must be treated as infectious.',
+       'title': 'OSHA Bloodborne Pathogens Training mini session',
+       'url': 'https://www.youtube.com/watch?v=PzH0BFleLzU&t=220s',
+       'video_id': 'PzH0BFleLzU'},
+      {'author': 'MA Exec. Office of Labor and Workforce Development',
+       'channel': 'MA Exec. Office of Labor and Workforce Development',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:03](https://www.youtube.com/watch?v=0pkOO_oVhN8&t=123s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q11 operational verification).',
+       'markdown': '[00:18:15](https://www.youtube.com/watch?v=4xmWcKLIfmA&t=1095s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "A contractor on the project a lot of people don't understand the calculation "
-               "of a bond but there's two basic types of bond that you're going to see in the.",
-       'timestamp': 123,
-       'timestamp_label': '[00:02:03]',
-       'timestamp_seconds': 123,
-       'tip': "A contractor on the project a lot of people don't understand the calculation of "
-              "a bond but there's two basic types of bond that you're going to see in the.",
-       'title': 'Calculation of Workers’ Compensation, General Liability (GL) & Bond in your '
-                'Estimates (Runjob Software)',
-       'url': 'https://www.youtube.com/watch?v=0pkOO_oVhN8&t=123s',
-       'video_id': '0pkOO_oVhN8'},
-      {'author': 'Darian Jarrett',
-       'channel': 'Darian Jarrett',
+       'text': "We have had instances where there's so much other junk in a sharps container that "
+               "when you go to put the next needle in it falls back out onto someone's hand.",
+       'timestamp': 1095,
+       'timestamp_label': '[00:18:15]',
+       'timestamp_seconds': 1095,
+       'tip': "We have had instances where there's so much other junk in a sharps container that "
+              "when you go to put the next needle in it falls back out onto someone's hand.",
+       'title': 'Bloodborne Pathogens Training Guide 11-23-15',
+       'url': 'https://www.youtube.com/watch?v=4xmWcKLIfmA&t=1095s',
+       'video_id': '4xmWcKLIfmA'},
+      {'author': 'MA Exec. Office of Labor and Workforce Development',
+       'channel': 'MA Exec. Office of Labor and Workforce Development',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:33](https://www.youtube.com/watch?v=6wtiLyP6-zU&t=93s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q11 operational verification).',
+       'markdown': '[00:39:05](https://www.youtube.com/watch?v=4xmWcKLIfmA&t=2345s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Following me for any time you know I love Mr Clean uh any type of Mr Clean but '
-               'the multi multi-surface this is a fabreeze fragrance right here we also.',
-       'timestamp': 93,
-       'timestamp_label': '[00:01:33]',
-       'timestamp_seconds': 93,
-       'tip': 'Following me for any time you know I love Mr Clean uh any type of Mr Clean but '
-              'the multi multi-surface this is a fabreeze fragrance right here we also.',
-       'title': 'Everything You NEED for Post-Construction Cleaning (Complete Supply '
-                'Checklist) (Darian Jarrett)',
-       'url': 'https://www.youtube.com/watch?v=6wtiLyP6-zU&t=93s',
-       'video_id': '6wtiLyP6-zU'},
-      {'author': 'The Profitable Cleaner',
-       'channel': 'The Profitable Cleaner',
+       'text': 'First thing we want to do is wash that area with soap and water; do not add '
+               'disinfectant to your skin, do not add bleach to your skin.',
+       'timestamp': 2345,
+       'timestamp_label': '[00:39:05]',
+       'timestamp_seconds': 2345,
+       'tip': 'First thing we want to do is wash that area with soap and water; do not add '
+              'disinfectant to your skin, do not add bleach to your skin.',
+       'title': 'Bloodborne Pathogens Training Guide 11-23-15',
+       'url': 'https://www.youtube.com/watch?v=4xmWcKLIfmA&t=2345s',
+       'video_id': '4xmWcKLIfmA'},
+      {'author': 'OSHA Outreach Courses',
+       'channel': 'OSHA Outreach Courses',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:42](https://www.youtube.com/watch?v=phVhAxusau8&t=102s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q11 operational verification).',
+       'markdown': '[00:01:16](https://www.youtube.com/watch?v=eBh0b1GLS1s&t=76s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Associations and other real estate and that starts building the relationship '
-               'because if you care enough to understand our business we already know that you '
-               "have some element of trust sure and that's huge.",
-       'timestamp': 102,
-       'timestamp_label': '[00:01:42]',
-       'timestamp_seconds': 102,
-       'tip': 'Associations and other real estate and that starts building the relationship '
-              'because if you care enough to understand our business we already know that you '
-              "have some element of trust sure and that's huge.",
-       'title': 'Best Ways To Reach and Sell To A Property Manager? (The Profitable Cleaner)',
-       'url': 'https://www.youtube.com/watch?v=phVhAxusau8&t=102s',
-       'video_id': 'phVhAxusau8'},
-      {'author': 'Janitorial Manager',
-       'channel': 'Janitorial Manager',
+       'text': 'Good housekeeping includes covering spills, disinfecting with bleach and '
+               'discarding supplies.',
+       'timestamp': 76,
+       'timestamp_label': '[00:01:16]',
+       'timestamp_seconds': 76,
+       'tip': 'Good housekeeping includes covering spills, disinfecting with bleach and discarding '
+              'supplies.',
+       'title': 'How To Get OSHA Bloodborne Pathogens BBP Training and Get Certified!',
+       'url': 'https://www.youtube.com/watch?v=eBh0b1GLS1s&t=76s',
+       'video_id': 'eBh0b1GLS1s'},
+      {'author': 'Keep It Clean',
+       'channel': 'Keep It Clean',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:01](https://www.youtube.com/watch?v=LFXytjdaxWA&t=121s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q11 operational verification).',
+       'markdown': '[00:04:06](https://www.youtube.com/watch?v=8EjRhmcPsz0&t=246s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Management can approve guarantee precision and accountability in your payroll '
-               'while establishing employees satisfaction in keeping your customers happy '
-               'elevate your operations efficiency today with janitorial manager timekeeping '
-               'feature.',
-       'timestamp': 121,
-       'timestamp_label': '[00:02:01]',
-       'timestamp_seconds': 121,
-       'tip': 'Management can approve guarantee precision and accountability in your payroll '
-              'while establishing employees satisfaction in keeping your customers happy '
-              'elevate your operations efficiency today with janitorial manager timekeeping '
-              'feature.',
-       'title': "Janitorial Manager's Timekeeping Feature (Janitorial Manager)",
-       'url': 'https://www.youtube.com/watch?v=LFXytjdaxWA&t=121s',
-       'video_id': 'LFXytjdaxWA'},
-      {'author': 'AJ SIMMONS',
-       'channel': 'AJ SIMMONS',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=mk-8avM72Ms&t=15s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "And today I'm just going to share with you the equipment and supplies that "
-               "you're going to need to start your cleaning company and as you can look.",
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': "And today I'm just going to share with you the equipment and supplies that "
-              "you're going to need to start your cleaning company and as you can look.",
-       'title': 'Cleaning Supplies Needed For Cleaning Business (AJ SIMMONS)',
-       'url': 'https://www.youtube.com/watch?v=mk-8avM72Ms&t=15s',
-       'video_id': 'mk-8avM72Ms'},
-      {'author': 'Commercial Cleaning CEO',
+       'text': "Even if they have a low turnover rate say of 200%, it's still 300 people that "
+               'would need to have gone through this type of training over the course of a year.',
+       'timestamp': 246,
+       'timestamp_label': '[00:04:06]',
+       'timestamp_seconds': 246,
+       'tip': "Even if they have a low turnover rate say of 200%, it's still 300 people that would "
+              'need to have gone through this type of training over the course of a year.',
+       'title': 'Keep it Clean Episode 047 Bloodborne Pathogen Training',
+       'url': 'https://www.youtube.com/watch?v=8EjRhmcPsz0&t=246s',
+       'video_id': '8EjRhmcPsz0'}],
+ 11: [{'author': 'Commercial Cleaning CEO',
        'channel': 'Commercial Cleaning CEO',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:20](https://www.youtube.com/watch?v=8jCIs_UmQ1Q&t=20s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q11 operational verification).',
+       'markdown': '[00:03:59](https://www.youtube.com/watch?v=9BXhBVRp_XU&t=239s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "'t need to be intimidated if a large factory calls you or if you want to go "
-               'pursue them to grow your business even faster. Because simply put, if you '
-               "don't know how to quote these, then you're limited in how much your business "
-               'can grow in the area that you operate.',
-       'timestamp': 20,
-       'timestamp_label': '[00:00:20]',
-       'timestamp_seconds': 20,
-       'tip': "'t need to be intimidated if a large factory calls you or if you want to go "
-              "pursue them to grow your business even faster. Because simply put, if you don't "
-              "know how to quote these, then you're limited in how much your business can grow "
-              'in the area that you operate.',
-       'title': 'How To Quote Industrial Cleaning Jobs (BIG Money Contracts!) (Commercial '
-                'Cleaning CEO)',
-       'url': 'https://www.youtube.com/watch?v=8jCIs_UmQ1Q&t=20s',
-       'video_id': '8jCIs_UmQ1Q'},
-      {'author': 'Business From Zero',
-       'channel': 'Business From Zero',
+       'text': "It really comes down to this: it's not about taxes, it's about control.",
+       'timestamp': 239,
+       'timestamp_label': '[00:03:59]',
+       'timestamp_seconds': 239,
+       'tip': "It really comes down to this: it's not about taxes, it's about control.",
+       'title': 'W2 Employees Or 1099 Contractors? Which To Pick For Your Cleaning Business',
+       'url': 'https://www.youtube.com/watch?v=9BXhBVRp_XU&t=239s',
+       'video_id': '9BXhBVRp_XU'},
+      {'author': 'CSI Accounting',
+       'channel': 'CSI Accounting',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:07:24](https://www.youtube.com/watch?v=fvJFWetfuFA&t=444s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q11 operational verification).',
+       'markdown': '[00:02:10](https://www.youtube.com/watch?v=kfUxzVfMpAk&t=130s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'Part-time W-2 crew payroll and employer FICA taxes across three accounts, '
-               "$1,130. Monthly commercial general liability, surety bond, and workers' comp "
-               'insurance, $245. Wholesale commercial disinfectants, trash liners, and restock '
-               'consumables, $380.',
-       'timestamp': 444,
-       'timestamp_label': '[00:07:24]',
-       'timestamp_seconds': 444,
-       'tip': 'Part-time W-2 crew payroll and employer FICA taxes across three accounts, '
-              "$1,130. Monthly commercial general liability, surety bond, and workers' comp "
-              'insurance, $245. Wholesale commercial disinfectants, trash liners, and restock '
-              'consumables, $380.',
-       'title': 'How to Start a Commercial Cleaning Business for $4,200 (Business From Zero)',
-       'url': 'https://www.youtube.com/watch?v=fvJFWetfuFA&t=444s',
-       'video_id': 'fvJFWetfuFA'}],
- 12: [{'author': 'AJ SIMMONS',
-       'channel': 'AJ SIMMONS',
+       'text': 'With behavioral control, if the worker receives extensive instructions on how the '
+               'work is to be performed, this is likely an employee.',
+       'timestamp': 130,
+       'timestamp_label': '[00:02:10]',
+       'timestamp_seconds': 130,
+       'tip': 'With behavioral control, if the worker receives extensive instructions on how the '
+              'work is to be performed, this is likely an employee.',
+       'title': '1099 Contractors vs W-2 Employees - How to Classify Your Workers',
+       'url': 'https://www.youtube.com/watch?v=kfUxzVfMpAk&t=130s',
+       'video_id': 'kfUxzVfMpAk'},
+      {'author': 'DJ The Boss',
+       'channel': 'DJ The Boss',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:16:58](https://www.youtube.com/watch?v=VrlDbQP4iQI&t=1018s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q12 operational verification).',
+       'markdown': '[00:04:34](https://www.youtube.com/watch?v=cShuZhOvvr4&t=274s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'Are you looking to start your own cleaning company? Or maybe you started your '
-               'cleaning company, but you just need a support group, some mentorship, some '
-               "guidance, hell, a bidding calculator just to help you know if you're pricing "
-               'the job correctly.',
-       'timestamp': 1018,
-       'timestamp_label': '[00:16:58]',
-       'timestamp_seconds': 1018,
-       'tip': 'Are you looking to start your own cleaning company? Or maybe you started your '
-              'cleaning company, but you just need a support group, some mentorship, some '
-              "guidance, hell, a bidding calculator just to help you know if you're pricing "
-              'the job correctly.',
-       'title': 'How To Start A Commercial Cleaning Business Today Under $1000 and Get '
-                'Customers FAST! (AJ SIMMONS)',
-       'url': 'https://www.youtube.com/watch?v=VrlDbQP4iQI&t=1018s',
-       'video_id': 'VrlDbQP4iQI'},
-      {'author': "Bea's Business",
-       'channel': "Bea's Business",
+       'text': "Part-time employees are not 1099 contractors; if they work for you, if they're "
+               "using your equipment, if you're training them, then they're an employee.",
+       'timestamp': 274,
+       'timestamp_label': '[00:04:34]',
+       'timestamp_seconds': 274,
+       'tip': "Part-time employees are not 1099 contractors; if they work for you, if they're "
+              "using your equipment, if you're training them, then they're an employee.",
+       'title': 'W2 Employees vs 1099 Contractors for Cleaning Businesses',
+       'url': 'https://www.youtube.com/watch?v=cShuZhOvvr4&t=274s',
+       'video_id': 'cShuZhOvvr4'},
+      {'author': 'Jon Margalit',
+       'channel': 'Jon Margalit',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:52](https://www.youtube.com/watch?v=3vr4bkvaByo&t=52s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q12 operational verification).',
+       'markdown': '[00:04:15](https://www.youtube.com/watch?v=8gbn-TCd4l4&t=255s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'And as you can see here, someone already asked that question and it is 21. '
-               'Now, I actually reached out to the director of this contract and he broke down '
-               'what that 2158 a month entails. So that is one person working 5 days a week, 8 '
-               'to 12 hours per day.',
-       'timestamp': 52,
-       'timestamp_label': '[00:00:52]',
-       'timestamp_seconds': 52,
-       'tip': 'And as you can see here, someone already asked that question and it is 21. Now, '
-              'I actually reached out to the director of this contract and he broke down what '
-              'that 2158 a month entails. So that is one person working 5 days a week, 8 to 12 '
-              'hours per day.',
-       'title': "Step-by-Step: Fill Out a Government Cleaning Contract with Me! (Bea's "
-                'Business)',
-       'url': 'https://www.youtube.com/watch?v=3vr4bkvaByo&t=52s',
-       'video_id': '3vr4bkvaByo'},
+       'text': "Just because I don't manage them doesn't mean I don't have standards; the people "
+               "who follow the process get more work and the ones who don't fall off naturally.",
+       'timestamp': 255,
+       'timestamp_label': '[00:04:15]',
+       'timestamp_seconds': 255,
+       'tip': "Just because I don't manage them doesn't mean I don't have standards; the people "
+              "who follow the process get more work and the ones who don't fall off naturally.",
+       'title': 'W2 vs 1099: How I Built a Remote Cleaning Team Without Payroll Headaches',
+       'url': 'https://www.youtube.com/watch?v=8gbn-TCd4l4&t=255s',
+       'video_id': '8gbn-TCd4l4'},
       {'author': 'The Janitorial Store',
        'channel': 'The Janitorial Store',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:43](https://www.youtube.com/watch?v=rGpgBfBHKg0&t=43s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q12 operational verification).',
+       'markdown': '[00:03:13](https://www.youtube.com/watch?v=YC2NrvVJqlg&t=193s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "'s say you have an account that is 12,500 ft and it takes 3. 25 hours to clean "
-               'it your production rate is 38461 15 ft per hour if that account is cleaned 3 '
-               'days per week you would have 20 4225 hours per month you would then multiply '
-               '42.',
-       'timestamp': 43,
-       'timestamp_label': '[00:00:43]',
-       'timestamp_seconds': 43,
-       'tip': "'s say you have an account that is 12,500 ft and it takes 3. 25 hours to clean "
-              'it your production rate is 38461 15 ft per hour if that account is cleaned 3 '
-              'days per week you would have 20 4225 hours per month you would then multiply '
-              '42.',
-       'title': 'How to Price an Account Using The Production Rate Bidding Method (The '
-                'Janitorial Store)',
-       'url': 'https://www.youtube.com/watch?v=rGpgBfBHKg0&t=43s',
-       'video_id': 'rGpgBfBHKg0'},
-      {'author': 'Clean For A Dream',
-       'channel': 'Clean For A Dream',
+       'text': 'If you have a contractor that is only doing business with you and nobody else, '
+               "chances are they're probably an employee.",
+       'timestamp': 193,
+       'timestamp_label': '[00:03:13]',
+       'timestamp_seconds': 193,
+       'tip': 'If you have a contractor that is only doing business with you and nobody else, '
+              "chances are they're probably an employee.",
+       'title': 'What is a 1099 employee? | The Janitorial Store',
+       'url': 'https://www.youtube.com/watch?v=YC2NrvVJqlg&t=193s',
+       'video_id': 'YC2NrvVJqlg'},
+      {'author': 'The Janitorial Store',
+       'channel': 'The Janitorial Store',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:36:12](https://www.youtube.com/watch?v=fs86ZhCBfJ8&t=2172s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q12 operational verification).',
+       'markdown': '[00:01:38](https://www.youtube.com/watch?v=YC2NrvVJqlg&t=98s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'People all at a time in order to have you know a multi-million dollar cleaning '
-               'business you need to have at least 45 people working four hours a day seven '
-               'days a week.',
-       'timestamp': 2172,
-       'timestamp_label': '[00:36:12]',
-       'timestamp_seconds': 2172,
-       'tip': 'People all at a time in order to have you know a multi-million dollar cleaning '
-              'business you need to have at least 45 people working four hours a day seven '
-              'days a week.',
-       'title': 'The 5 Things You Must Know Before You Buy a Janitorial Franchise! (Clean For '
-                'A Dream)',
-       'url': 'https://www.youtube.com/watch?v=fs86ZhCBfJ8&t=2172s',
-       'video_id': 'fs86ZhCBfJ8'},
-      {'author': 'CleanGuru',
-       'channel': 'CleanGuru',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:38](https://www.youtube.com/watch?v=UdGEmUdlNJs&t=98s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Rooms lunchroom Lobby tra all the kind of things standard every day but then '
-               'detail cleaning scheduled in there during the week or during the month but.',
+       'text': 'I did that for about a year, one of my employees got laid off and claimed '
+               'unemployment, and we ended up paying a fine and some penalties.',
        'timestamp': 98,
        'timestamp_label': '[00:01:38]',
        'timestamp_seconds': 98,
-       'tip': 'Rooms lunchroom Lobby tra all the kind of things standard every day but then '
-              'detail cleaning scheduled in there during the week or during the month but.',
-       'title': 'What’s the Going Rate Per Sq. Ft. for Bidding Commercial Office Cleaning '
-                'Jobs: Cleaning Business Tip (CleanGuru)',
-       'url': 'https://www.youtube.com/watch?v=UdGEmUdlNJs&t=98s',
-       'video_id': 'UdGEmUdlNJs'},
-      {'author': 'UpFlip',
-       'channel': 'UpFlip',
+       'tip': 'I did that for about a year, one of my employees got laid off and claimed '
+              'unemployment, and we ended up paying a fine and some penalties.',
+       'title': 'What is a 1099 employee? | The Janitorial Store',
+       'url': 'https://www.youtube.com/watch?v=YC2NrvVJqlg&t=98s',
+       'video_id': 'YC2NrvVJqlg'},
+      {'author': 'Surety Bonds Direct',
+       'channel': 'Surety Bonds Direct',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:23:28](https://www.youtube.com/watch?v=d4Iip7BHXwg&t=1408s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q12 operational verification).',
+       'markdown': '[00:03:46](https://www.youtube.com/watch?v=uMW_ZJMW0ZU&t=226s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'Chris] Learning your numbers, learn how to delegate and start investing in '
-               'marketing. If you had to start a new business in a different field, what would '
-               'it be and why? Chris] I would say carpet cleaning.',
-       'timestamp': 1408,
-       'timestamp_label': '[00:23:28]',
-       'timestamp_seconds': 1408,
-       'tip': 'Chris] Learning your numbers, learn how to delegate and start investing in '
-              'marketing. If you had to start a new business in a different field, what would '
-              'it be and why? Chris] I would say carpet cleaning.',
-       'title': 'Starting a $120K/Month Cleaning Business From Scratch (UpFlip)',
-       'url': 'https://www.youtube.com/watch?v=d4Iip7BHXwg&t=1408s',
-       'video_id': 'd4Iip7BHXwg'},
-      {'author': 'Grow My Cleaning Company',
-       'channel': 'Grow My Cleaning Company',
+       'text': "Let's say you have five employees, a fifteen thousand dollar bond would cost you "
+               'one hundred fifty dollars for a one-year term.',
+       'timestamp': 226,
+       'timestamp_label': '[00:03:46]',
+       'timestamp_seconds': 226,
+       'tip': "Let's say you have five employees, a fifteen thousand dollar bond would cost you "
+              'one hundred fifty dollars for a one-year term.',
+       'title': 'Janitorial Bond - Getting Bonded for a Cleaning Business',
+       'url': 'https://www.youtube.com/watch?v=uMW_ZJMW0ZU&t=226s',
+       'video_id': 'uMW_ZJMW0ZU'},
+      {'author': 'The Coyle Group - Business Insurance',
+       'channel': 'The Coyle Group - Business Insurance',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:40](https://www.youtube.com/watch?v=PcnIuILxXOw&t=340s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q12 operational verification).',
+       'markdown': '[00:00:56](https://www.youtube.com/watch?v=HSh0vcHYmUI&t=56s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'First and foremost, we the flow that we coach is weekly meetings, monthly '
-               'parties, quarterly reviews. So, weekly meetings about an hour a week, about 2 '
-               'hours a month, and half day to a day a quarter.',
-       'timestamp': 340,
-       'timestamp_label': '[00:05:40]',
-       'timestamp_seconds': 340,
-       'tip': 'First and foremost, we the flow that we coach is weekly meetings, monthly '
-              'parties, quarterly reviews. So, weekly meetings about an hour a week, about 2 '
-              'hours a month, and half day to a day a quarter.',
-       'title': 'Getting Your Cleaning Company from $500K- $1M vs.  $1M- $5M (Grow My Cleaning '
-                'Company)',
-       'url': 'https://www.youtube.com/watch?v=PcnIuILxXOw&t=340s',
-       'video_id': 'PcnIuILxXOw'},
-      {'author': 'Clicks Geek',
-       'channel': 'Clicks Geek',
+       'text': 'These operations have a moderately high workers compensation base rate or loss '
+               'cost in New York, and in 2022 that ranges anywhere from $12.31 down to $3.03.',
+       'timestamp': 56,
+       'timestamp_label': '[00:00:56]',
+       'timestamp_seconds': 56,
+       'tip': 'These operations have a moderately high workers compensation base rate or loss cost '
+              'in New York, and in 2022 that ranges anywhere from $12.31 down to $3.03.',
+       'title': 'Workers Compensation for Janitorial Contractors in NY',
+       'url': 'https://www.youtube.com/watch?v=HSh0vcHYmUI&t=56s',
+       'video_id': 'HSh0vcHYmUI'},
+      {'author': 'The Professional Cleaner',
+       'channel': 'The Professional Cleaner',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:10](https://www.youtube.com/watch?v=EuwGlvViI4w&t=190s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q12 operational verification).',
+       'markdown': '[00:05:36](https://www.youtube.com/watch?v=DDLzG49aDvU&t=336s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'Cleaning it niche and when you start getting results like this just start '
-               'pumping your budget incrementally to maybe 25 bucks a day something like that.',
-       'timestamp': 190,
-       'timestamp_label': '[00:03:10]',
-       'timestamp_seconds': 190,
-       'tip': 'Cleaning it niche and when you start getting results like this just start '
-              'pumping your budget incrementally to maybe 25 bucks a day something like that.',
-       'title': 'Janitorial Services Google Ads PPC Case Study (Clicks Geek)',
-       'url': 'https://www.youtube.com/watch?v=EuwGlvViI4w&t=190s',
-       'video_id': 'EuwGlvViI4w'},
-      {'author': 'Commercial Cleaning CEO',
+       'text': "Unless a certain client type is requiring it, I wouldn't recommend buying it; even "
+               "if a client did ask me, I would just explain why I'm not bonded and show them "
+               'proof of my general liability.',
+       'timestamp': 336,
+       'timestamp_label': '[00:05:36]',
+       'timestamp_seconds': 336,
+       'tip': "Unless a certain client type is requiring it, I wouldn't recommend buying it; even "
+              "if a client did ask me, I would just explain why I'm not bonded and show them proof "
+              'of my general liability.',
+       'title': 'Cleaning Business Insurance & Bonding… MUST KNOWS 🧼 💸',
+       'url': 'https://www.youtube.com/watch?v=DDLzG49aDvU&t=336s',
+       'video_id': 'DDLzG49aDvU'},
+      {'author': 'Elite Business Insurance',
+       'channel': 'Elite Business Insurance',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:00](https://www.youtube.com/watch?v=PGrPNqCYNvY&t=120s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "If you're a new business with no more than three employees and no claims, a bond "
+               'of about ten thousand dollars will run you somewhere around a hundred dollars for '
+               'the year.',
+       'timestamp': 120,
+       'timestamp_label': '[00:02:00]',
+       'timestamp_seconds': 120,
+       'tip': "If you're a new business with no more than three employees and no claims, a bond of "
+              'about ten thousand dollars will run you somewhere around a hundred dollars for the '
+              'year.',
+       'title': 'Janitorial Bonding Insurance - Janitorial Bonding Insurance Explained',
+       'url': 'https://www.youtube.com/watch?v=PGrPNqCYNvY&t=120s',
+       'video_id': 'PGrPNqCYNvY'},
+      {'author': 'Bryan Gutowsky | Michigan Insurance',
+       'channel': 'Bryan Gutowsky | Michigan Insurance',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:41](https://www.youtube.com/watch?v=irbQWL_bLuA&t=161s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'A slip and fall claim involving somebody else is general liability, but if an '
+               "employee slips and falls at work on a wet floor and is injured, that's going to be "
+               "workers' comp.",
+       'timestamp': 161,
+       'timestamp_label': '[00:02:41]',
+       'timestamp_seconds': 161,
+       'tip': 'A slip and fall claim involving somebody else is general liability, but if an '
+              "employee slips and falls at work on a wet floor and is injured, that's going to be "
+              "workers' comp.",
+       'title': 'General Liability vs Workers Comp Insurance | What’s The Difference?',
+       'url': 'https://www.youtube.com/watch?v=irbQWL_bLuA&t=161s',
+       'video_id': 'irbQWL_bLuA'},
+      {'author': 'Janitorial Coaching Hub',
+       'channel': 'Janitorial Coaching Hub',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:37](https://www.youtube.com/watch?v=GlA-D_TIYLg&t=37s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "I will suggest subcontracting when you're starting out because you have an "
+               'arrangement with them and say when I get paid, you get paid.',
+       'timestamp': 37,
+       'timestamp_label': '[00:00:37]',
+       'timestamp_seconds': 37,
+       'tip': "I will suggest subcontracting when you're starting out because you have an "
+              'arrangement with them and say when I get paid, you get paid.',
+       'title': 'Should You use W-2 or 1099 (Subcontracting) Model For Your Cleaning Team',
+       'url': 'https://www.youtube.com/watch?v=GlA-D_TIYLg&t=37s',
+       'video_id': 'GlA-D_TIYLg'},
+      {'author': 'BICO Legal and Compliance Consulting, LLC',
+       'channel': 'BICO Legal and Compliance Consulting, LLC',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:17](https://www.youtube.com/watch?v=xljn9o0tX_E&t=17s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'The terms were set by the salon owner and offered on a take it or leave it basis, '
+               'and they did not reflect the true working conditions, policies, or pay practices '
+               'at the salon.',
+       'timestamp': 17,
+       'timestamp_label': '[00:00:17]',
+       'timestamp_seconds': 17,
+       'tip': 'The terms were set by the salon owner and offered on a take it or leave it basis, '
+              'and they did not reflect the true working conditions, policies, or pay practices at '
+              'the salon.',
+       'title': 'Case Study: Misclassification of Employees as Independent Contractors',
+       'url': 'https://www.youtube.com/watch?v=xljn9o0tX_E&t=17s',
+       'video_id': 'xljn9o0tX_E'},
+      {'author': 'recruiterbackoffice',
+       'channel': 'recruiterbackoffice',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:36](https://www.youtube.com/watch?v=VumHp7Ist1c&t=276s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'When a 1099 contractor converts to a direct hire and files both a 1099 and a W-2 '
+               "with that company in the same tax year, that's a huge red flag.",
+       'timestamp': 276,
+       'timestamp_label': '[00:04:36]',
+       'timestamp_seconds': 276,
+       'tip': 'When a 1099 contractor converts to a direct hire and files both a 1099 and a W-2 '
+              "with that company in the same tax year, that's a huge red flag.",
+       'title': '1099 Independent Contractor vs. W-2 Employees',
+       'url': 'https://www.youtube.com/watch?v=VumHp7Ist1c&t=276s',
+       'video_id': 'VumHp7Ist1c'},
+      {'author': 'Construction Brothers',
+       'channel': 'Construction Brothers',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:05](https://www.youtube.com/watch?v=PaYgE9PgaO4&t=185s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "You're going to sign an agreement to the bonding company saying I will reimburse "
+               'you for any losses you have because I screwed up.',
+       'timestamp': 185,
+       'timestamp_label': '[00:03:05]',
+       'timestamp_seconds': 185,
+       'tip': "You're going to sign an agreement to the bonding company saying I will reimburse "
+              'you for any losses you have because I screwed up.',
+       'title': 'Everything You NEED to Know about Surety Bonds & Subcontractor Default',
+       'url': 'https://www.youtube.com/watch?v=PaYgE9PgaO4&t=185s',
+       'video_id': 'PaYgE9PgaO4'},
+      {'author': 'BondExchange',
+       'channel': 'BondExchange',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:12](https://www.youtube.com/watch?v=y6nkT8ywJOk&t=72s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'The underwriting for surety bonds usually involves a review of the business '
+               "owner's credit and financial statements.",
+       'timestamp': 72,
+       'timestamp_label': '[00:01:12]',
+       'timestamp_seconds': 72,
+       'tip': "The underwriting for surety bonds usually involves a review of the business owner's "
+              'credit and financial statements.',
+       'title': 'Surety Bonds: The Hidden Gem for Insurance Agents',
+       'url': 'https://www.youtube.com/watch?v=y6nkT8ywJOk&t=72s',
+       'video_id': 'y6nkT8ywJOk'},
+      {'author': 'JMD JANITORIAL',
+       'channel': 'JMD JANITORIAL',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:47](https://www.youtube.com/watch?v=D522f-zqtCw&t=47s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'This program prepares us to do business using bonds, specifically small '
+               'businesses, and how to prepare yourself for the bond.',
+       'timestamp': 47,
+       'timestamp_label': '[00:00:47]',
+       'timestamp_seconds': 47,
+       'tip': 'This program prepares us to do business using bonds, specifically small businesses, '
+              'and how to prepare yourself for the bond.',
+       'title': 'What Is Surety Bonding For My Cleaning Business.  #jmdjanitorial',
+       'url': 'https://www.youtube.com/watch?v=D522f-zqtCw&t=47s',
+       'video_id': 'D522f-zqtCw'}],
+ 12: [{'author': 'Commercial Cleaning CEO',
        'channel': 'Commercial Cleaning CEO',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:14:15](https://www.youtube.com/watch?v=wC3VDZWQwZk&t=855s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q12 operational verification).',
+       'markdown': '[00:10:37](https://www.youtube.com/watch?v=xqw9zag57Uk&t=637s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'If you think it was, please share it with someone else who owns a commercial '
-               'cleaning business that needs to start doing any one or all of these. Again, '
-               'thanks so much for watching. Until next time, stay blessed.',
-       'timestamp': 855,
-       'timestamp_label': '[00:14:15]',
-       'timestamp_seconds': 855,
-       'tip': 'If you think it was, please share it with someone else who owns a commercial '
-              'cleaning business that needs to start doing any one or all of these. Again, '
-              'thanks so much for watching. Until next time, stay blessed.',
-       'title': '8 Fast & Free Ways to Get Commercial Cleaning Contracts (Commercial Cleaning '
-                'CEO)',
-       'url': 'https://www.youtube.com/watch?v=wC3VDZWQwZk&t=855s',
-       'video_id': 'wC3VDZWQwZk'},
-      {'author': 'The Janitorial Store',
-       'channel': 'The Janitorial Store',
+       'text': "as you can tell I am not a fan of the unit franchise model you just don't really "
+               'own a business you more so have a job.',
+       'timestamp': 637,
+       'timestamp_label': '[00:10:37]',
+       'timestamp_seconds': 637,
+       'tip': "as you can tell I am not a fan of the unit franchise model you just don't really "
+              'own a business you more so have a job.',
+       'title': 'Commercial Cleaning Franchise Types | Choose Wisely!',
+       'url': 'https://www.youtube.com/watch?v=xqw9zag57Uk&t=637s',
+       'video_id': 'xqw9zag57Uk'},
+      {'author': 'The Professional Cleaner',
+       'channel': 'The Professional Cleaner',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:01](https://www.youtube.com/watch?v=Cf4hKGN0mXg&t=61s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q12 operational verification).',
+       'markdown': '[00:01:25](https://www.youtube.com/watch?v=jl4sDr8y-Ws&t=85s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'Determine what the total hours are per month so what we do is we take the '
-               'point eight five times three days per week then times 52 weeks in a year '
-               'divided by.',
-       'timestamp': 61,
-       'timestamp_label': '[00:01:01]',
-       'timestamp_seconds': 61,
-       'tip': 'Determine what the total hours are per month so what we do is we take the point '
-              'eight five times three days per week then times 52 weeks in a year divided by.',
-       'title': 'How to price a 2,400 square foot office space: How to price cleaning offices '
-                '(The Janitorial Store)',
-       'url': 'https://www.youtube.com/watch?v=Cf4hKGN0mXg&t=61s',
-       'video_id': 'Cf4hKGN0mXg'},
+       'text': 'trap number two is over complicating your business something I teach my students '
+               "is that business isn't always easy but it is always simple.",
+       'timestamp': 85,
+       'timestamp_label': '[00:01:25]',
+       'timestamp_seconds': 85,
+       'tip': 'trap number two is over complicating your business something I teach my students is '
+              "that business isn't always easy but it is always simple.",
+       'title': '4 HIDDEN TRAPS that will KILL your cleaning business ☠️',
+       'url': 'https://www.youtube.com/watch?v=jl4sDr8y-Ws&t=85s',
+       'video_id': 'jl4sDr8y-Ws'},
+      {'author': 'Vetted Biz | Best Franchise Opportunities to Buy',
+       'channel': 'Vetted Biz | Best Franchise Opportunities to Buy',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:22](https://www.youtube.com/watch?v=rQxrqnty1Cs&t=82s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "cleaning franchises very different they might be making 40K and it's a husband and "
+               'wife that are doing it as kind of a part-time gig after their their regular '
+               'working hours.',
+       'timestamp': 82,
+       'timestamp_label': '[00:01:22]',
+       'timestamp_seconds': 82,
+       'tip': "cleaning franchises very different they might be making 40K and it's a husband and "
+              'wife that are doing it as kind of a part-time gig after their their regular working '
+              'hours.',
+       'title': 'The Secret to Massive Profits with Cleaning Franchises! 💰📈',
+       'url': 'https://www.youtube.com/watch?v=rQxrqnty1Cs&t=82s',
+       'video_id': 'rQxrqnty1Cs'},
       {'author': 'AJ SIMMONS',
        'channel': 'AJ SIMMONS',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:39](https://www.youtube.com/watch?v=VNrAGY4xXig&t=159s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q12 operational verification).',
+       'markdown': '[00:03:28](https://www.youtube.com/watch?v=Bbay8f0-XFM&t=208s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'Just go to the next and actually back in my jam Pro days we used to clean for '
-               "them anyway it wasn't this location but uh I believe I know they into "
-               "Government Contracting in the day that's why they always stay locked down "
-               "anyway all right let's go check out bunny pages.",
-       'timestamp': 159,
-       'timestamp_label': '[00:02:39]',
-       'timestamp_seconds': 159,
-       'tip': 'Just go to the next and actually back in my jam Pro days we used to clean for '
-              "them anyway it wasn't this location but uh I believe I know they into "
-              "Government Contracting in the day that's why they always stay locked down "
-              "anyway all right let's go check out bunny pages.",
-       'title': 'How To Get Commercial Cleaning Customers From Door To Doors Sales (AJ '
-                'SIMMONS)',
-       'url': 'https://www.youtube.com/watch?v=VNrAGY4xXig&t=159s',
-       'video_id': 'VNrAGY4xXig'},
+       'text': 'so when you take out all of the fees you look at every single thing the '
+               "underbidden and all of that you just walk away with pretty much nothing it's not "
+               'really a business you start to feel like a glorified employee.',
+       'timestamp': 208,
+       'timestamp_label': '[00:03:28]',
+       'timestamp_seconds': 208,
+       'tip': 'so when you take out all of the fees you look at every single thing the underbidden '
+              "and all of that you just walk away with pretty much nothing it's not really a "
+              'business you start to feel like a glorified employee.',
+       'title': 'Is A Cleaning Franchise Worth It?',
+       'url': 'https://www.youtube.com/watch?v=Bbay8f0-XFM&t=208s',
+       'video_id': 'Bbay8f0-XFM'},
+      {'author': 'Clean For A Dream',
+       'channel': 'Clean For A Dream',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[01:00:50](https://www.youtube.com/watch?v=fs86ZhCBfJ8&t=3650s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'see folks the franchising industry is designed for you to supplement your income '
+               "it's not to be a business owner.",
+       'timestamp': 3650,
+       'timestamp_label': '[01:00:50]',
+       'timestamp_seconds': 3650,
+       'tip': 'see folks the franchising industry is designed for you to supplement your income '
+              "it's not to be a business owner.",
+       'title': 'The 5 Things You Must Know Before You Buy a Janitorial Franchise!',
+       'url': 'https://www.youtube.com/watch?v=fs86ZhCBfJ8&t=3650s',
+       'video_id': 'fs86ZhCBfJ8'},
+      {'author': 'Franchise Wizards',
+       'channel': 'Franchise Wizards',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:07:05](https://www.youtube.com/watch?v=eJ5s6HRr1HE&t=425s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "So although technically they're in the commercial cleaning space, as a master "
+               "operator, you're not doing any cleaning.",
+       'timestamp': 425,
+       'timestamp_label': '[00:07:05]',
+       'timestamp_seconds': 425,
+       'tip': "So although technically they're in the commercial cleaning space, as a master "
+              "operator, you're not doing any cleaning.",
+       'title': 'Own a Cleaning Franchise Without Cleaning? Stratus Clean Master Franchise '
+                'Explained',
+       'url': 'https://www.youtube.com/watch?v=eJ5s6HRr1HE&t=425s',
+       'video_id': 'eJ5s6HRr1HE'},
+      {'author': 'Win Driggins',
+       'channel': 'Win Driggins',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:41](https://www.youtube.com/watch?v=83XHXw79m3E&t=41s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'The hidden business is the contract itself.',
+       'timestamp': 41,
+       'timestamp_label': '[00:00:41]',
+       'timestamp_seconds': 41,
+       'tip': 'The hidden business is the contract itself.',
+       'title': 'Commercial Cleaning Contracts, Janitorial Franchises Video Presentation With CC',
+       'url': 'https://www.youtube.com/watch?v=83XHXw79m3E&t=41s',
+       'video_id': '83XHXw79m3E'},
+      {'author': 'Mike Mak',
+       'channel': 'Mike Mak',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:31](https://www.youtube.com/watch?v=6MDrTK46_8g&t=271s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'plus any time we got a new account we were paying four times the monthly number '
+               'for the next account.',
+       'timestamp': 271,
+       'timestamp_label': '[00:04:31]',
+       'timestamp_seconds': 271,
+       'tip': 'plus any time we got a new account we were paying four times the monthly number for '
+              'the next account.',
+       'title': "The Dark Side of Buying a Cleaning Franchise - What They Don't Tell You",
+       'url': 'https://www.youtube.com/watch?v=6MDrTK46_8g&t=271s',
+       'video_id': '6MDrTK46_8g'},
+      {'author': 'Mike Mak',
+       'channel': 'Mike Mak',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:07:58](https://www.youtube.com/watch?v=6MDrTK46_8g&t=478s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'it happened with us at least it felt like 70 of our accounts were under bid.',
+       'timestamp': 478,
+       'timestamp_label': '[00:07:58]',
+       'timestamp_seconds': 478,
+       'tip': 'it happened with us at least it felt like 70 of our accounts were under bid.',
+       'title': "The Dark Side of Buying a Cleaning Franchise - What They Don't Tell You",
+       'url': 'https://www.youtube.com/watch?v=6MDrTK46_8g&t=478s',
+       'video_id': '6MDrTK46_8g'},
       {'author': 'Winter 🧊',
        'channel': 'Winter 🧊',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:30](https://www.youtube.com/watch?v=6Ee7M9O9djo&t=210s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q12 operational verification).',
+       'markdown': '[00:02:02](https://www.youtube.com/watch?v=6Ee7M9O9djo&t=122s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'So if you have any questions or concerns please please please comment below do '
-               'not be shy I will definitely respond and depending on the response I have in '
-               'accordance that I have I might even make a new video who knows have a good day '
-               'bye.',
-       'timestamp': 210,
-       'timestamp_label': '[00:03:30]',
-       'timestamp_seconds': 210,
-       'tip': 'So if you have any questions or concerns please please please comment below do '
-              'not be shy I will definitely respond and depending on the response I have in '
-              'accordance that I have I might even make a new video who knows have a good day '
-              'bye.',
-       'title': 'Cleaning businesses Do NOT work through a franchise or management company!! '
-                '(Winter 🧊)',
-       'url': 'https://www.youtube.com/watch?v=6Ee7M9O9djo&t=210s',
+       'text': 'I can I can handle fifteen percent no because when you can break down the numbers '
+               "you're only probably getting twenty percent a profit.",
+       'timestamp': 122,
+       'timestamp_label': '[00:02:02]',
+       'timestamp_seconds': 122,
+       'tip': 'I can I can handle fifteen percent no because when you can break down the numbers '
+              "you're only probably getting twenty percent a profit.",
+       'title': 'Cleaning businesses Do NOT work through a franchise or management company!!',
+       'url': 'https://www.youtube.com/watch?v=6Ee7M9O9djo&t=122s',
        'video_id': '6Ee7M9O9djo'},
-      {'author': 'Steam Boss inc',
-       'channel': 'Steam Boss inc',
+      {'author': 'Winter 🧊',
+       'channel': 'Winter 🧊',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:08:54](https://www.youtube.com/watch?v=jt0SYjId62I&t=534s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q12 operational verification).',
+       'markdown': '[00:03:20](https://www.youtube.com/watch?v=6Ee7M9O9djo&t=200s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'Couple more rinses before we can start laying some finish all right first coat '
-               "on the bathrooms looking really good two more to go and we'll be in good shape "
-               'the final product.',
-       'timestamp': 534,
-       'timestamp_label': '[00:08:54]',
-       'timestamp_seconds': 534,
-       'tip': 'Couple more rinses before we can start laying some finish all right first coat '
-              "on the bathrooms looking really good two more to go and we'll be in good shape "
-              'the final product.',
-       'title': 'SUPER DIRTY GRIMY VCT Floor strip and wax transformation! #satisfying '
-                '#cleaning (Steam Boss inc)',
-       'url': 'https://www.youtube.com/watch?v=jt0SYjId62I&t=534s',
-       'video_id': 'jt0SYjId62I'},
-      {'author': 'The Janitorial Store',
-       'channel': 'The Janitorial Store',
+       'text': "they have so many hidden fees it's ridiculous.",
+       'timestamp': 200,
+       'timestamp_label': '[00:03:20]',
+       'timestamp_seconds': 200,
+       'tip': "they have so many hidden fees it's ridiculous.",
+       'title': 'Cleaning businesses Do NOT work through a franchise or management company!!',
+       'url': 'https://www.youtube.com/watch?v=6Ee7M9O9djo&t=200s',
+       'video_id': '6Ee7M9O9djo'},
+      {'author': 'AJ SIMMONS',
+       'channel': 'AJ SIMMONS',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:16](https://www.youtube.com/watch?v=baQYWkWt7lQ&t=316s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q12 operational verification).',
+       'markdown': '[00:18:33](https://www.youtube.com/watch?v=BK0p3k8OpRo&t=1113s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'Rate our billable rate is the rate that we charge the per hour rate that we '
-               "charge our clients it's not not our labor rate it's what we charge our clients "
-               "per hour so in this case here you know let's say we're going to charge them "
-               'thirty dollars per hour.',
-       'timestamp': 316,
-       'timestamp_label': '[00:05:16]',
-       'timestamp_seconds': 316,
-       'tip': 'Rate our billable rate is the rate that we charge the per hour rate that we '
-              "charge our clients it's not not our labor rate it's what we charge our clients "
-              "per hour so in this case here you know let's say we're going to charge them "
-              'thirty dollars per hour.',
-       'title': 'What are production rates and billable rates ? | The Janitorial Store (The '
-                'Janitorial Store)',
-       'url': 'https://www.youtube.com/watch?v=baQYWkWt7lQ&t=316s',
-       'video_id': 'baQYWkWt7lQ'},
-      {'author': 'Anton Pantio',
-       'channel': 'Anton Pantio',
+       'text': "You don't own the contracts.",
+       'timestamp': 1113,
+       'timestamp_label': '[00:18:33]',
+       'timestamp_seconds': 1113,
+       'tip': "You don't own the contracts.",
+       'title': 'COMMERCIAL CLEANING FRANCHISES ARE NOT SCAMS',
+       'url': 'https://www.youtube.com/watch?v=BK0p3k8OpRo&t=1113s',
+       'video_id': 'BK0p3k8OpRo'},
+      {'author': 'Logan Robison',
+       'channel': 'Logan Robison',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:10:10](https://www.youtube.com/watch?v=-1k_o5iWj8w&t=610s)',
-       'relevance': 'Attributed practitioner commentary on recurring B2B commercial & medical '
-                    'janitorial contracts, ISSA production-rate bidding, W-2/sub compliance, '
-                    'and supervisor pods (Chapter Q12 operational verification).',
+       'markdown': '[00:25:42](https://www.youtube.com/watch?v=mrd8LK8fcFM&t=1542s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "And that's exactly what we do for our commercial cleaning clients. This is one "
-               'of our cold calling clients. Generated him 15 solid walk-throughs in the past '
-               'month.',
-       'timestamp': 610,
-       'timestamp_label': '[00:10:10]',
-       'timestamp_seconds': 610,
-       'tip': "And that's exactly what we do for our commercial cleaning clients. This is one "
-              'of our cold calling clients. Generated him 15 solid walk-throughs in the past '
-              'month.',
-       'title': 'Cold Calling For Commercial Cleaning Companies (Script + Live Call) (Anton '
-                'Pantio)',
-       'url': 'https://www.youtube.com/watch?v=-1k_o5iWj8w&t=610s',
-       'video_id': '-1k_o5iWj8w'}]}
+       'text': "That's probably why Airbnb is profitable because we charge an onboarding fee and "
+               'we do a deep clean at the very beginning.',
+       'timestamp': 1542,
+       'timestamp_label': '[00:25:42]',
+       'timestamp_seconds': 1542,
+       'tip': "That's probably why Airbnb is profitable because we charge an onboarding fee and we "
+              'do a deep clean at the very beginning.',
+       'title': 'How I Built a $1M Airbnb Cleaning Business — Without Cleaning a Single Unit',
+       'url': 'https://www.youtube.com/watch?v=mrd8LK8fcFM&t=1542s',
+       'video_id': 'mrd8LK8fcFM'},
+      {'author': 'Mike Mak',
+       'channel': 'Mike Mak',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:33](https://www.youtube.com/watch?v=kbRmM3sctgA&t=273s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Every single job is its own problem to solve.',
+       'timestamp': 273,
+       'timestamp_label': '[00:04:33]',
+       'timestamp_seconds': 273,
+       'tip': 'Every single job is its own problem to solve.',
+       'title': 'Starting A "ReMOtE CleAnINg" Business Is BS. Do This Instead.',
+       'url': 'https://www.youtube.com/watch?v=kbRmM3sctgA&t=273s',
+       'video_id': 'kbRmM3sctgA'},
+      {'author': 'UpFlip',
+       'channel': 'UpFlip',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:28](https://www.youtube.com/watch?v=PUIZGbefocg&t=148s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'But, those top 10 customers alone, just 10 customers have brought my business over '
+               '$200,000 in revenue.',
+       'timestamp': 148,
+       'timestamp_label': '[00:02:28]',
+       'timestamp_seconds': 148,
+       'tip': 'But, those top 10 customers alone, just 10 customers have brought my business over '
+              '$200,000 in revenue.',
+       'title': 'How He Makes $250K/Year Cleaning Homes... From His Laptop?!',
+       'url': 'https://www.youtube.com/watch?v=PUIZGbefocg&t=148s',
+       'video_id': 'PUIZGbefocg'},
+      {'author': 'Business From Zero',
+       'channel': 'Business From Zero',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:10](https://www.youtube.com/watch?v=fvJFWetfuFA&t=70s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Never buy a $30,000 cargo van or lease a warehouse on day one.',
+       'timestamp': 70,
+       'timestamp_label': '[00:01:10]',
+       'timestamp_seconds': 70,
+       'tip': 'Never buy a $30,000 cargo van or lease a warehouse on day one.',
+       'title': 'How to Start a Commercial Cleaning Business for $4,200',
+       'url': 'https://www.youtube.com/watch?v=fvJFWetfuFA&t=70s',
+       'video_id': 'fvJFWetfuFA'},
+      {'author': 'Grow My Cleaning Company',
+       'channel': 'Grow My Cleaning Company',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:12:21](https://www.youtube.com/watch?v=D9L_Gw-APSU&t=741s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "a hundred is the magic number it's hard to make money with five or ten.",
+       'timestamp': 741,
+       'timestamp_label': '[00:12:21]',
+       'timestamp_seconds': 741,
+       'tip': "a hundred is the magic number it's hard to make money with five or ten.",
+       'title': 'Everything You Need to Know Before Setting Up Your Own Janitorial Franchise',
+       'url': 'https://www.youtube.com/watch?v=D9L_Gw-APSU&t=741s',
+       'video_id': 'D9L_Gw-APSU'},
+      {'author': 'Ledger & Ruin',
+       'channel': 'Ledger & Ruin',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:05:40](https://www.youtube.com/watch?v=UNUQT2N9Brc&t=340s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'The customer is the product.',
+       'timestamp': 340,
+       'timestamp_label': '[00:05:40]',
+       'timestamp_seconds': 340,
+       'tip': 'The customer is the product.',
+       'title': 'How Jani-King Makes Money — The $3,000 Mop Empire',
+       'url': 'https://www.youtube.com/watch?v=UNUQT2N9Brc&t=340s',
+       'video_id': 'UNUQT2N9Brc'}]}

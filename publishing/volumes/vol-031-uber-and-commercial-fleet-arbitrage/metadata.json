@@ -9,49 +9,49 @@
       "ARBITRAGE"
     ],
     "deck": [
-      "CONTRACT THE CAPACITY. VERIFY COVERAGE.",
-      "DISPATCH PROFITABLE SHIFTS."
+      "192 PRACTITIONERS TEST UBER BLACK SUVS, RIDESHARE RENTALS, AND TURO CO-HOSTING FOR REAL PER-CAR RETURNS",
+      "THEY BUILD LICENSED, INSURED, GPS-PROTECTED FLEETS WITH BOOKING SITES, DISPATCH TOOLS, AND WEEKLY RENTAL TERMS"
     ],
-    "lead": "Uber Fleet Partner Operations, Commercial Black SUV Dispatch & Owner-Vehicle Co-Hosting Without Buying the Fleet",
-    "summary": "Match eligible owner vehicles with qualified drivers, verify platform and local operating permissions, and manage shift contribution margins after insurance, downtime, cleaning, and claims reserves.",
+    "lead": "Fleet owners show how to launch through the Uber Fleet Partner Program, pick the right revenue vehicle, license and insure it, rent it to gig drivers by the week or off-platform, and scale without the mistakes that kill rental businesses.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, from Uber Black fleet owners and private chauffeurs to rideshare rental hosts and Turo co-hosts. Every claim carries timestamped inline attribution, so each lease rate, payback horizon, and permit cost traces back to the operator who said it.",
     "chapters": [
-      "Fleet partner vs co-host operating models",
-      "Owner agreements & platform eligibility",
-      "Shift revenue, utilization & net contribution",
-      "Fleet portals & lean dispatch tooling",
-      "Insurance gaps, accidents & downtime traps",
-      "Recruiting vehicle owners & qualified drivers",
-      "Black SUV shift planning & handover checks",
-      "Maintenance, cleaning & incident response",
-      "Commercial permits & worker classification",
-      "Payout reconciliation & owner reporting",
-      "Dispatcher pods & fleet concentration caps",
-      "First 30-day managed-fleet launch sprint"
+      "Launching an Uber Fleet: Partner Program Setup and Black-Fleet Owner Lessons",
+      "Choosing the Revenue Vehicle: Uber Black SUVs, Rideshare Hybrids, and Cargo Vans",
+      "Uber Black Unit Economics: Real Shift Earnings and Platform Comparisons",
+      "Licensing the Fleet: NYC TLC Plates and California TCP Permits",
+      "From Uber Black to Private Chauffeur: Building and Dispatching a Black Car Business",
+      "Rideshare Rentals: Leasing Cheap Cars to Gig Drivers by the Week",
+      "Off-Platform Rentals: Building a Private Car Rental Business Without Turo",
+      "Co-Hosting Arbitrage: Scaling a Turo Fleet With Other People's Cars",
+      "Insuring the Fleet: Rideshare, Commercial, and Rental Coverage and Liability",
+      "Protecting the Asset: GPS Trackers, Kill Switches, and the Rental Toolkit",
+      "Fleet Software Stack: Booking Sites, Rental Management, and Dispatch Tools",
+      "Scaling and Survival: Fleet Economics, Teams, and the Mistakes That Kill Rental Businesses"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Recruit eligible owner vehicles"
+        "SET UP THE FLEET ACCOUNT",
+        "Sign up for Uber Fleet, enter tax information carefully, and start with one vehicle instead of buying five at once, keeping cash reserves for licensing, permits, insurance, and a surprise repair week."
       ],
       [
-        "VERIFY",
-        "Check drivers, permits & coverage"
+        "CHOOSE THE VEHICLE",
+        "Let the job pick the car: confirm the market's model-year floor, favor seven-seat black SUVs for Uber Black or Toyota hybrids for low cost per mile, and stack the full monthly note, insurance, and fuel before signing."
       ],
       [
-        "CONTRACT",
-        "Define custody, payouts & liability"
+        "QUOTE INSURANCE AND LICENSE",
+        "Get a commercial auto insurance quote on the exact VIN before buying, then secure permits such as NYC TLC plates, California TCP permits, or Houston permit stickers at $794 per SUV plus a $75 limo license."
       ],
       [
-        "DISPATCH",
-        "Schedule shifts & document handovers"
+        "VET AND RENT TO DRIVERS",
+        "Require a limousine license and full payment up front, treat repeating account flags as red alerts, and charge $450 to $800 per week flat or a 50/50 earnings split."
       ],
       [
-        "RECONCILE",
-        "Audit fares, costs & owner shares"
+        "PROTECT THE ASSET",
+        "Monitor driving with tracking apps, issue one warning for speeding over 80 and remove the driver on the second, and equip cars with GPS trackers and kill switches."
       ],
       [
-        "OPTIMIZE",
-        "Improve utilization & reserve for repairs"
+        "SCALE THE FLEET",
+        "Target full vehicle payoff within about 15 months, build private clientele beyond the apps, and expand through off-platform rentals, Turo co-hosting, and fleet software for booking and dispatch."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "UBER & COMMERCIAL FLEET ARBITRAGE",
-  "subtitle": "The Complete Playbook for Uber & Commercial Fleet Arbitrage: $180,000–$1,200,000 USD in Annual Gross Billings, Built Around a 1 FT + 3 C (4 People) Pod",
+  "subtitle": "Uber Fleet Partner SUVs at $600 a Week, Black-Car Private Clienteles at $100 an Hour, $350-$450 Weekly Gig Rentals, Co-Hosting Off the Gross, and the Plate, Insurance, Kill-Switch, and Booking-Software Gates That Guard the Margin",
   "chapter_count": 12,
-  "total_word_count": 80065,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 72580,
+  "expert_youtube_link_count": 208,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:02Z"
+  "updated_at": "2026-11-24T22:21:29Z"
 }

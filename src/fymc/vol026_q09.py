@@ -1,425 +1,799 @@
 from __future__ import annotations
 
-CHAPTER_9 = {
-    "id": "Q9",
-    "chapter_id": "Q9",
-    "chapter_number": 9,
-    "question_number": 9,
-    "slug": "contracts-statutory-guardrails-licensing-outreach-scripts",
-    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern government surplus auctions?",
-    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
-    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
-    "subtitle": "GSA Sale Terms, SF-97 Title Chains, DEMIL Restrictions, State Dealer Boundaries, and B2B Resale Contracts",
-    "layout_template": "legal_compliance_notes",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #17, Government Surplus Auctions, ranks #29 with a 79/100 "
-        "Money-to-Manpower Score because paperwork, removal capacity, and inventory "
-        "risk constrain otherwise attractive spreads. This chapter organizes six "
-        "mapped plays: fleet vehicles, material-handling equipment, shop machinery, "
-        "office technology, commercial furnishings, and industrial spares. Each "
-        "requires a documented eligibility decision, enforceable purchase terms, "
-        "a resale pathway, and a buyer-specific outreach script. Conservative, Base, "
-        "and Scaled annual owner profits are $12,000, $80,500, and $200,000 on "
-        "$150,000, $575,000, and $1,000,000 gross resale proceeds. The operating "
-        "system assigns contracts and bid control to two full-time operators, "
-        "supported by three contractors, while separating federal sale conditions "
-        "from state licensing, title, tax, and restricted-property requirements."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$150,000",
-            "context": "Annual gross resale proceeds; purchase, transport, and refurbishment included in margin",
-            "note": "8% net margin; $12,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$575,000",
-            "context": "Annual gross resale proceeds; purchase, transport, and refurbishment included in margin",
-            "note": "14.0% net margin; $80,500 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual gross resale proceeds; purchase, transport, and refurbishment included in margin",
-            "note": "20% net margin; $200,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Classify the seller, the sale authority, and the six resale pathways",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                "Start every acquisition by identifying the legal seller, the platform operator, and the authority governing disposal; those are three separate fields in the bid file. Federal personal-property sales generally sit within 40 U.S.C. § 545 and 41 CFR part 102-38, while donation authority under 40 U.S.C. § 549 creates a different eligibility and use regime. A public bidder must not treat a donation program as ordinary resale inventory. GSA Auctions listings, GovPlanet contractor sales, and municipal listings on GovDeals or Public Surplus can impose materially different payment, inspection, and removal obligations. Platform branding alone does not establish ownership, federal status, or the right to receive a vehicle title. Save the complete listing, incorporated conditions, amendments, photographs, and seller answers before bidding; preserve the final version after award. The full-time acquisition lead records which document controls if terms conflict and sends unresolved conflicts to the named seller contact. The second full-time operator checks resale feasibility and cash exposure independently. Neither an auction alert nor a completed bid-limit worksheet substitutes for eligibility review. Require the account holder, paying entity, invoiced purchaser, and intended title applicant to align unless the seller expressly permits another arrangement.",
-                "Use six mapped plays as the chapter's operating taxonomy: fleet vehicles, material-handling equipment, shop machinery, office technology, commercial furnishings, and industrial spares. Fleet vehicles require a VIN-level title pathway, odometer treatment, and a dealer-license determination before any resale promise. Material-handling equipment requires serial verification, battery or fuel-system condition, and a loading plan that matches actual weight. Shop machinery adds guarding, rigging, disconnect responsibilities, and meaningful inspection access. Office technology requires ownership evidence, lawful software treatment, and documented data sanitization before resale. Commercial furnishings turn on access, building protection, packaging, and freight economics rather than headline unit counts. Industrial spares require part-number verification, traceability, and a restricted-property screen; ambiguous military markings are a stop signal, not a marketing advantage. These plays share one five-person pod, not six parallel businesses. Contractor one handles licensed transport or rigging within their credentials, contractor two performs category-specific inspection or refurbishment, and contractor three supplies transaction administration and qualified specialist coordination. Replace or supplement contractors when credentials do not match the lot. The acquisition lead owns restrictions and bid ceilings; the resale lead owns buyer qualification, inventory records, and collections.",
-                "Separate disposal eligibility from permission to export, demilitarize, operate, or resell. A government auction award does not waive the Export Administration Regulations in 15 CFR parts 730-774, state hazardous-material rules, or the conditions attached to controlled property. For a GovPlanet or other defense-related lot, capture the actual DEMIL designation, purchaser certifications, end-use restrictions, required forms, and release conditions supplied for that lot. Do not infer that a civilian-looking asset is unrestricted, or that a platform's screening answers every downstream export question. An End-Use Certificate, when required, concerns the specified transaction; it is not a transferable export license. Keep restricted components outside the ordinary office, machinery, and spares sales pipeline until a qualified reviewer resolves their classification. For municipal assets, check the selling agency's disposal authority and listing conditions rather than importing federal procedures automatically. Public records exposure also varies: mark genuinely sensitive material specifically, but do not promise customers that an agency will keep every commercial communication private. Under 5 U.S.C. § 552(b)(4), federal protection for qualifying confidential commercial information is contextual, and state disclosure statutes differ. Budget review time before bidding, because a removal clock rarely pauses for the buyer's research.",
-            ],
-            "table": {
-                "caption": "Six-Play Seller Authority, Asset Evidence, and Pod Ownership Matrix",
-                "headers": [
-                    "Mapped play and commercial resale boundary",
-                    "Required evidence before submitting a bid",
-                    "Concrete restriction or failure to resolve",
-                    "Named pod responsibility and release evidence",
-                ],
-                "rows": [
-                    [
-                        "Fleet vehicles acquired for documented domestic commercial resale",
-                        "Match VIN photographs against sale documents and title representations",
-                        "Resolve dealer licensing and state acceptance of SF-97 documentation",
-                        "Acquisition lead records title pathway before bid authorization",
-                    ],
-                    [
-                        "Material-handling equipment sold with disclosed operating condition",
-                        "Record serial plate, capacity plate, power source, and weight",
-                        "Confirm qualified loading capacity and battery transport obligations",
-                        "Transport contractor confirms equipment and scheduled pickup window",
-                    ],
-                    [
-                        "Shop machinery remarketed with specific inspection findings",
-                        "Preserve inspection photographs, disconnect scope, and rigging measurements",
-                        "Reject undocumented assumptions about guarding and electrical operability",
-                        "Technical contractor signs condition report and movement requirements",
-                    ],
-                    [
-                        "Office technology remarketed after ownership and sanitization checks",
-                        "Inventory serial numbers, storage media, and included software rights",
-                        "Separate lawful hardware ownership from transferable software licenses",
-                        "Resale lead retains sanitization evidence before customer delivery",
-                    ],
-                    [
-                        "Commercial furnishings sold through measured freight and access economics",
-                        "Count pieces and photograph damage, dimensions, and access routes",
-                        "Resolve building protection, elevator booking, and packaging responsibilities",
-                        "Transport contractor supplies removal plan and delivery pricing",
-                    ],
-                    [
-                        "Industrial spares sold only with defensible identification",
-                        "Capture part numbers, provenance, markings, and seller restrictions",
-                        "Escalate defense-related markings and ambiguous downstream transfer limits",
-                        "Acquisition lead retains specialist classification and release decision",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy the documentary pathway before buying the asset",
-                "body": "Experienced surplus operators price missing evidence as a real execution cost and reject defects that money cannot cure within the removal window.",
-                "items": [
-                    "Ask the seller for the exact vehicle document type and named issuing entity; a photograph of an example SF-97 does not establish the documents promised for your VIN.",
-                    "Save auction amendments immediately before bidding and again after award, because removal instructions and incorporated terms can change outside the headline description.",
-                    "Ask whether loading equipment is available to purchasers, not merely present onsite; obtain written responsibility for operators, rigging, and equipment damage.",
-                    "Maintain a separate restricted-property queue so an ordinary industrial-spares listing cannot bypass review through an automated inventory import.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Resolve state licensing, tax, title, and sector boundaries before bidding",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                "Build a state-by-state transaction card around the business location, storage yard, purchase state, delivery state, and buyer type. Dealer licensing is not a universal annual vehicle-count rule. California Vehicle Code § 11700 establishes licensing requirements for persons acting as vehicle dealers, subject to the applicable definitions and exceptions; Texas Transportation Code § 503.021 addresses the general distinguishing number requirement. Wholesale activity, brokering, salvage vehicles, and conducting business from a yard can create separate obligations. Do not assume that selling only to businesses removes them. Before entering the fleet play, send the relevant licensing authority a factual description of ownership, advertising, sales frequency, premises, and customer types, then retain its written direction or obtain state-specific professional analysis. A resale certificate also does not replace a business license or dealer credential. California Revenue and Taxation Code § 6066 governs seller's permit applications; other states use different registration and exemption processes. Collect resale certificates appropriate to the transaction and validate their required fields. Track economic and physical nexus separately, including inventory stored by contractors. Where a marketplace collects tax, preserve its transaction report and confirm which sales remain the operator's responsibility.",
-                "Treat SF-97 as evidence supporting an application for a state certificate of title, not as the state title itself. Before bidding, confirm that the receiving motor-vehicle agency accepts the offered document package for that vehicle class and ownership chain. Record whether the seller promises SF-97, an existing title, a bill of sale, or another instrument; those documents are not interchangeable. Match VINs physically, investigate alterations, and identify liens, salvage branding, off-road limitations, and missing assignments. Federal odometer disclosure duties under 49 U.S.C. § 32705 and 49 CFR part 580 depend on the vehicle and applicable exemptions; avoid the obsolete assumption that every vehicle over ten years old is exempt. Model year, age, weight, and transaction facts matter. A buyer's willingness to accept paperwork risk does not make a defective transfer valid. For forklifts and machinery, the absence of a motor-vehicle title does not eliminate ownership diligence: examine serial records, seller authority, and any relevant security interests. Under state enactments of UCC § 2-312, warranty-of-title issues require separate treatment from condition disclaimers. Keep questionable chains out of customer listings until the resale lead can describe exactly what ownership documents will be delivered.",
-                "Sector requirements follow the asset and the work actually performed. Used electronics should leave with a serial-level sanitization record and a clear statement about included operating systems; NIST guidance can inform the process without becoming a claim of government certification. Refrigeration equipment may implicate Clean Air Act refrigerant-handling requirements, including 40 CFR part 82, subpart F, when servicing or disposal occurs. Lead-acid batteries, oils, and other materials need a transport and waste determination based on their condition and intended disposition; labeling every defective unit as reusable does not resolve hazardous-waste obligations. Workplace use of powered industrial trucks invokes employer duties under 29 CFR § 1910.178, but a seller must distinguish those duties from a representation that a used forklift is ready for every buyer's workplace. Use qualified contractors for regulated services and retain their credentials, scope, and disposal receipts. The five-person pod cannot economically become a title office, environmental service company, export specialist, and equipment inspector simultaneously. Narrow the catalog when specialist availability or documentation is weak. A $15,000-$80,000 startup capital envelope must fund deposits, freight, holding time, and repairs, not merely winning bids; unresolved licensing consumes both capital and calendar.",
-            ],
-            "table": {
-                "caption": "Multi-State and Sector Evidence Required Before Inventory Commitment",
-                "headers": [
-                    "Transaction boundary requiring a specific determination",
-                    "Primary rule or controlling document to examine",
-                    "Evidence retained inside the asset record",
-                    "Failure response before funds become committed",
-                ],
-                "rows": [
-                    [
-                        "California vehicle resale conducted as a business",
-                        "Vehicle Code section 11700 plus applicable dealer definitions",
-                        "Written licensing determination matching actual premises and activities",
-                        "Defer vehicle bidding until required credential becomes effective",
-                    ],
-                    [
-                        "Texas vehicle dealing involving the proposed business model",
-                        "Transportation Code section 503.021 and applicable implementing rules",
-                        "General distinguishing number analysis covering wholesale or retail activity",
-                        "Exclude transactions that exceed the current credential scope",
-                    ],
-                    [
-                        "Interstate taxable resale involving inventory and destination changes",
-                        "Applicable state registration, sourcing, and resale exemption rules",
-                        "Validated exemption documentation and marketplace collection reconciliation records",
-                        "Calculate tax exposure before accepting the customer order",
-                    ],
-                    [
-                        "Federal vehicle purchase offered with SF-97 paperwork",
-                        "Receiving state title requirements and actual seller document commitment",
-                        "VIN match, ownership assignments, and state application checklist",
-                        "Reject unsupported promises of immediate clean title delivery",
-                    ],
-                    [
-                        "Vehicle resale requiring federal odometer disclosure analysis",
-                        "49 U.S.C. section 32705 and 49 CFR part 580",
-                        "Vehicle-specific exemption analysis or completed required disclosure statement",
-                        "Correct disclosure package before completing the ownership transfer",
-                    ],
-                    [
-                        "Refrigeration equipment requiring service or regulated disposal",
-                        "40 CFR part 82 subpart F applicable requirements",
-                        "Qualified technician documentation and refrigerant recovery service records",
-                        "Price qualified service or decline the affected inventory",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks that must clear before a binding bid",
-                "body": "The acquisition lead records each decision; the resale lead independently checks the supporting evidence rather than accepting a verbal assurance.",
-                "items": [
-                    "Verify purchaser eligibility, account identity, payment entity, and any required end-use documentation against the actual seller's terms.",
-                    "Verify state dealer, tax, title, and sector requirements for the intended resale route, including storage and delivery jurisdictions.",
-                    "Verify that a qualified carrier can meet the removal deadline with the specified loading resources, insurance, and site access.",
-                    "Verify that the bid ceiling includes every acquisition and resale cost while leaving sufficient cash for delayed release or unsold inventory.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Contract for the actual asset, cash exposure, and five-person workload",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                "Read the auction purchase contract as a cash-and-performance schedule, not merely an asset description. Capture the deposit, buyer premium, payment method, taxes, inspection rights, default remedies, pickup appointment rules, and final removal deadline. Identify when ownership and risk of loss pass; payment, release authorization, loading, and delivery may be different events. Record whether the seller supplies loading assistance, whether dismantling is permitted, and who bears damage to the premises. Federal sales are not automatically governed by every FAR clause used for government procurement: apply the actual sale authority and incorporated terms. For downstream commercial resale, state enactments of UCC §§ 2-313 and 2-316 matter because factual descriptions and express warranties can defeat careless attempts to disclaim everything. Draft a condition schedule identifying tested functions, untested functions, visible defects, missing accessories, and the inspection opportunity. An as-is purchase from government does not authorize a misleading resale advertisement. Address title separately and identify exactly which documents accompany delivery. The operator's sales order should distinguish a physical inspection from a functional acceptance test, define any rejection procedure, and set a written deadline for reporting shipping damage without pretending that mandatory statutory rights disappear.",
-                "Use a short master agreement plus an asset-specific order rather than renegotiating every routine sale. Scope identifies serial numbers, accessories, preparation, packing, delivery, installation exclusions, and title documents. The fee trigger for ordinary inventory resale is the agreed purchase-price payment schedule; any separately offered sourcing service needs its own stated deliverable and earned-fee event. Never book the customer's asset budget as sourcing revenue. A narrowly drafted anti-circumvention clause can protect documented introductions for a defined period, but should exclude preexisting relationships, independently sourced contacts, and public auction listings. It cannot bind a public agency that never agreed to it or excuse bidder collusion. Liability caps should address the parties' actual risk allocation, insurance, and enforceability under governing state law, with appropriate treatment of fraud, intentional misconduct, and obligations that cannot be limited. Dispute terms specify governing law, venue or arbitration mechanics, notice addresses, and an escalation contact. Intellectual-property and data terms distinguish owned inspection photographs and reports from seller material, licensed software, and personal information found on devices. Promise deletion or transfer only where the operator has authority and a process to deliver it. Do not promise secrecy that public-records duties can override.",
-                "Reconcile contract discipline to Candidate #17's actual economics. Conservative gross resale proceeds of $150,000 at 8% produce $12,000 annual owner net profit and leave $138,000 for the modeled cost envelope. Base proceeds of $575,000 at 14.0% produce $80,500 profit and $494,500 of costs. Scaled proceeds of $1,000,000 at 20% produce $200,000 profit and $800,000 of costs. These are gross resale proceeds, not auction marketplace volume, customer purchasing budgets, or principal handled for others. Purchase prices, premiums, transport, refurbishment, selling costs, labor, and overhead must fit inside the applicable envelope. The 2 FT + 3 C staffing designation describes the Conservative and Base pod; it does not establish that either case can fund five market-rate salaries. Price actual hours and contractor engagements before accepting the model locally. Monthly operating expense of $3,000-$15,000 is a planning range, not a second deduction after costs already included in net margin. Scaled staffing increases to 3 FT + 4 C. An illustrative $4,000 removal default would consume one-third of Conservative annual profit, demonstrating why deadline controls outrank bid speed. Set inventory aging actions before purchase and prohibit discretionary rebidding with cash reserved for committed collections.",
-            ],
-            "table": {
-                "caption": "Asset Sale and Sourcing Contract Clause Checklist",
-                "headers": [
-                    "Clause requiring transaction-specific commercial drafting",
-                    "Minimum substantive terms the contract must identify",
-                    "Evidence or attachment supporting the contractual promise",
-                    "Failure mode prevented through disciplined clause design",
-                ],
-                "rows": [
-                    [
-                        "Scope of asset sale and included services",
-                        "Identify serials, accessories, preparation, delivery, and excluded installation",
-                        "Attach condition schedule and photographs matching the sold unit",
-                        "Prevent disputes over missing accessories and assumed installation",
-                    ],
-                    [
-                        "Payment schedule and separately earned sourcing fees",
-                        "State deposit timing, balance event, and service deliverable",
-                        "Retain accepted order and evidence supporting each invoice",
-                        "Prevent customer principal from being treated as earned revenue",
-                    ],
-                    [
-                        "Narrow anti-circumvention protection for documented commercial introductions",
-                        "Define protected contacts, duration, exclusions, and lawful remedies",
-                        "Record introduction date and disclose existing relationship exceptions",
-                        "Avoid overbroad restrictions on public auction participation rights",
-                    ],
-                    [
-                        "Liability allocation consistent with insurable transaction risks",
-                        "State cap basis, covered losses, exclusions, and mandatory carveouts",
-                        "Match insurance evidence against transport and custody obligations",
-                        "Prevent uninsured promises exceeding the entire deal economics",
-                    ],
-                    [
-                        "Dispute procedure and enforceable notice delivery mechanics",
-                        "Specify governing law, forum, escalation contact, and notice method",
-                        "Retain signed acceptance and verified party service addresses",
-                        "Avoid expensive uncertainty when damage or nonpayment emerges",
-                    ],
-                    [
-                        "Intellectual property ownership and device data handling",
-                        "Distinguish owned reports, licensed material, and deletion obligations",
-                        "Attach software rights statement and serial-level sanitization record",
-                        "Prevent unauthorized software transfers and exposure of retained data",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the pre-bid evidence packet",
-                    "action": "Acquisition lead saves the listing, incorporated terms, amendments, and written seller answers.",
-                    "detail": "Assign a lot identifier and record seller identity, authority, eligibility, document promises, payment deadline, and removal deadline.",
-                },
-                {
-                    "step": 2,
-                    "title": "Price the entire ownership cycle",
-                    "action": "Resale lead verifies the bid ceiling against transport, repairs, labor, tax treatment, and expected sale proceeds.",
-                    "detail": "Document contractor quotes, inventory holding assumptions, restricted-property findings, and the applicable Conservative, Base, or Scaled cost envelope.",
-                },
-                {
-                    "step": 3,
-                    "title": "Match award conditions to executable work orders",
-                    "action": "Both full-time operators verify payment instructions and release conditions before assigning contractor work.",
-                    "detail": "Confirm changed payment instructions using an independently established seller contact, then issue loading, inspection, and recordkeeping tasks with deadlines.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close the resale and reconcile actual margin",
-                    "action": "Resale lead collects signed terms, payment evidence, ownership documents, delivery acceptance, and any required disclosures.",
-                    "detail": "Post gross resale proceeds separately from every cost category and compare realized deal contribution with the annual scorecard assumptions.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Use permission-aware outreach that sells evidence rather than affiliation",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                "B2B outreach is not outside communications law. Commercial email must satisfy 15 U.S.C. § 7704, including accurate transmission information, nondeceptive subjects, required identification, a valid physical postal address, and a working opt-out method. Honor opt-outs within ten business days and maintain the mechanism for the required period; the statute generally requires thirty days after transmission. Retain a minimal suppression record so a later contact import does not restart messages to someone who opted out. Use business contact information relevant to the recipient's role, and do not scrape personal mobile numbers for automated texts. Calls and texts require a separate assessment under 47 U.S.C. § 227, 47 CFR § 64.1200, and applicable state rules; the equipment, message purpose, number type, and permission history matter. Begin with individually reviewed business email and manual calls to published business lines, checking applicable calling restrictions rather than assuming manual dialing removes them. Never imply that the operator represents GSA, a municipality, or a defense agency merely because inventory originated there. Contractors must use the same suppression list and approved claims. The resale lead reviews campaign samples and records the source of each prospect contact.",
-                "Use this seller discovery script before bidding: \"I am evaluating lot 184 for commercial resale. Which entity is the seller, which terms control, and what ownership documents will accompany this exact asset? Please confirm the payment deadline, final removal date, loading responsibility, and any purchaser or downstream-transfer restrictions in writing.\" Replace the lot number with the actual listing identifier. For a vehicle, continue: \"Does this VIN receive an SF-97, an existing title, or only a bill of sale? Who issues that document, when is it available, and are any brands or use restrictions recorded?\" For machinery, ask: \"Which functions were tested, who disconnects the equipment, and may our insured rigger inspect the route before bidding?\" For office technology, ask: \"Are storage devices included, what sanitization records exist, and which software rights, if any, transfer?\" These questions request facts, not preferential access or exceptions unavailable to other bidders. When the seller cannot answer, record the uncertainty and reduce the bid only if a lawful, practical resale route remains. A low price cannot repair a missing ownership chain or prohibited transfer. Put every answer into the lot file before the acquisition lead commits capital.",
-                "Use this buyer email body: \"Commercial equipment offer: we independently resell used material-handling equipment acquired through public auctions. We have an inspected electric pallet truck available with serial photographs, a condition report, and delivery pricing. Does your team purchase this equipment, and who specifies capacity and battery requirements? Reply with your requirements if you would like the asset packet. To stop commercial emails from us, reply STOP.\" Send it only with a truthful subject, accurate sender identity, and the business's actual physical postal address in the signature. Do not claim inspection unless the record exists. On discovery, say: \"What load weight, aisle width, power arrangement, delivery location, and acceptance test must this unit satisfy? We will document tested functions and defects before you decide.\" For a sourcing request, say: \"Are you buying our inventory or asking us to locate an asset for your account? We use separate written terms so ownership, fees, and payment responsibilities stay clear.\" End with an evidence-based next step, not artificial scarcity: \"I can send the current condition packet and a written delivered-price offer with its actual validity period.\" Log requirements, permission signals, objections, and opt-outs in the inventory-linked contact record.",
-            ],
-            "table": {
-                "caption": "Verbatim Outreach Lines and Required Evidence by Audience",
-                "headers": [
-                    "Audience and legitimate purpose of contact",
-                    "Exact sentence the operator can use",
-                    "Evidence required before making the stated claim",
-                    "Follow-through responsibility within the operating pod",
-                ],
-                "rows": [
-                    [
-                        "Public seller contact clarifying payment and removal",
-                        "Please confirm the final removal date and loading responsibilities in writing.",
-                        "Current listing identifier and saved seller terms support inquiry",
-                        "Acquisition lead records answer before approving the bid",
-                    ],
-                    [
-                        "Vehicle buyer evaluating the offered ownership package",
-                        "The offer identifies the exact ownership documents we will deliver.",
-                        "Asset-specific documents and state transfer review substantiate offer",
-                        "Resale lead attaches document schedule before accepting payment",
-                    ],
-                    [
-                        "Warehouse buyer assessing inspected material-handling equipment fit",
-                        "Which capacity, aisle width, and battery requirements must this unit meet?",
-                        "Inspection report and serial photographs support later technical answers",
-                        "Technical contractor resolves unanswered specifications before final quotation",
-                    ],
-                    [
-                        "Technology buyer assessing device condition and data handling",
-                        "We can provide serial-level sanitization records for these inspected devices.",
-                        "Completed sanitization records match every offered device serial",
-                        "Resale lead excludes devices lacking the promised evidence",
-                    ],
-                    [
-                        "Commercial customer distinguishing inventory purchase from sourcing work",
-                        "Are you purchasing our inventory or requesting a separate sourcing service?",
-                        "Written transaction model identifies ownership and earned fee events",
-                        "Acquisition lead separates service terms from inventory accounting",
-                    ],
-                    [
-                        "Business recipient declining any further commercial email",
-                        "We have recorded your request and will stop commercial emails.",
-                        "Suppression entry is propagated across operator and contractor lists",
-                        "Resale lead checks subsequent exports against suppression records",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The profitable bid is the one whose ownership, restrictions, removal plan, and buyer promises survive contact with the paperwork.",
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Assign every prospective lot to one of the six mapped plays and document the actual seller, sale authority, purchaser eligibility, and controlling terms.",
-        "Complete the purchase, storage, and destination state transaction card for licensing, tax, title, and sector-specific requirements before committing capital.",
-        "Obtain written ownership-document commitments, restricted-property findings, contractor credentials, and executable removal arrangements for the specific asset.",
-        "Issue an asset-specific resale order covering scope, payment, condition, title, liability, disputes, and intellectual-property or data responsibilities.",
-        "Configure auction alerts, bid-limit worksheets, inventory records, and outreach suppression controls around the two-full-time, three-contractor pod.",
-        "Reconcile gross resale proceeds and all operating costs to the $12,000, $80,500, and $200,000 annual owner-profit cases without counting customer principal as revenue.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "40 U.S.C. § 545 — Procedure for disposal of surplus property",
-            "url": "https://www.law.cornell.edu/uscode/text/40/545",
-            "relevance": "Establishes federal surplus disposal procedures; identify the actual sale mechanism and incorporated conditions before bidding.",
-        },
-        {
-            "title": "41 CFR part 102-38 — Sale of personal property",
-            "url": "https://www.ecfr.gov/current/title-41/subtitle-C/chapter-102/subchapter-B/part-102-38",
-            "relevance": "Provides federal personal-property sale rules relevant to eligibility, sale methods, and transaction administration.",
-        },
-        {
-            "title": "40 U.S.C. § 549 — Donation of personal property through state agencies",
-            "url": "https://www.law.cornell.edu/uscode/text/40/549",
-            "relevance": "Distinguishes donation eligibility and use conditions from ordinary public-auction inventory acquisition.",
-        },
-        {
-            "title": "California Vehicle Code § 11700 — Vehicle dealer licensing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=11700.&lawCode=VEH",
-            "relevance": "Requires a California dealer-license analysis based on actual activities, definitions, and applicable exceptions.",
-        },
-        {
-            "title": "Texas Transportation Code § 503.021 — Dealer general distinguishing number",
-            "url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.503.htm#503.021",
-            "relevance": "Supports Texas-specific review of vehicle dealing activities before establishing the fleet resale pathway.",
-        },
-        {
-            "title": "California Revenue and Taxation Code § 6066 — Seller's permit applications",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=6066.&lawCode=RTC",
-            "relevance": "Addresses seller's permit applications; a resale exemption document does not replace required registration.",
-        },
-        {
-            "title": "49 U.S.C. § 32705 — Odometer disclosure requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/49/32705",
-            "relevance": "Requires vehicle-specific attention to mileage disclosures and transfer documentation.",
-        },
-        {
-            "title": "49 CFR part 580 — Odometer disclosure requirements",
-            "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-580",
-            "relevance": "Supplies implementing disclosure rules and exemptions that must be checked against model year and vehicle facts.",
-        },
-        {
-            "title": "UCC § 2-312 — Warranty of title and against infringement",
-            "url": "https://www.law.cornell.edu/ucc/2/2-312",
-            "relevance": "Model provision for title warranties; apply the governing state's enacted version rather than treating condition disclaimers as title protection.",
-        },
-        {
-            "title": "UCC § 2-313 — Express warranties",
-            "url": "https://www.law.cornell.edu/ucc/2/2-313",
-            "relevance": "Model provision addressing descriptions and factual promises; verify the governing state enactment when drafting resale claims.",
-        },
-        {
-            "title": "UCC § 2-316 — Exclusion or modification of warranties",
-            "url": "https://www.law.cornell.edu/ucc/2/2-316",
-            "relevance": "Model provision governing warranty limitations; check enacted state law and consistency with express representations.",
-        },
-        {
-            "title": "15 CFR part 758 — Export clearance requirements and authorities",
-            "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-758",
-            "relevance": "Addresses export clearance within the EAR framework; auction release does not establish export authorization.",
-        },
-        {
-            "title": "40 CFR part 82, subpart F — Recycling and emissions reduction",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-F",
-            "relevance": "Provides refrigerant-handling requirements relevant to servicing and disposing of covered surplus refrigeration equipment.",
-        },
-        {
-            "title": "29 CFR § 1910.178 — Powered industrial trucks",
-            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-N/section-1910.178",
-            "relevance": "Defines workplace powered-industrial-truck duties; distinguish employer operating obligations from the seller's condition representations.",
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Governs commercial email identification, truthful headers, postal addresses, opt-out operation, and suppression timing.",
-        },
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Requires a separate assessment of calling and texting practices, equipment, recipients, and permission history.",
-        },
-        {
-            "title": "47 CFR § 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": "Provides implementing telephone solicitation and calling restrictions relevant to outreach design and suppression practices.",
-        },
-        {
-            "title": "5 U.S.C. § 552(b)(4) — Confidential commercial information exemption",
-            "url": "https://www.law.cornell.edu/uscode/text/5/552",
-            "relevance": "Explains why federal commercial-information protection requires contextual analysis rather than blanket confidentiality promises.",
-        },
-    ],
-}
+CHAPTER_9 = {'id': 'Q9',
+ 'chapter_id': 'Q9',
+ 'chapter_number': 9,
+ 'question_number': 9,
+ 'slug': 'liquidation-pallets-sourcing-freight-unboxing-math',
+ 'question_prompt': 'How do I source, buy, ship, and profit from liquidation and surplus pallets?',
+ 'kicker': 'Q9 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Liquidation Pallets: Sourcing, Freight, and Unboxing Math',
+ 'subtitle': 'Surplus Hunter sourcing channels, buying a first pallet, Amazon return pallet unboxings, '
+             'pallets versus truckloads, B-Stock freight guidance, mentorship, and pallet types and '
+             'buildup',
+ 'layout_template': 'tool_resource_directory',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators who actually cut open returns pallets agree on three things: start local, '
+                      'buy at a fraction of retail, and treat freight as the line between profit and a '
+                      'wash. Levi Salas pushes beginners into local pallets that turn in two to three days '
+                      'instead of truckloads that took two weeks to arrive. T.J. Lovelady pays roughly 10% '
+                      'of MSRP and watched a $280 Liquidation.com bid balloon toward $1,000 once $543.96 '
+                      'freight landed. Operation Liquidation pays 15% of retail and hopes for 50-60% back. '
+                      "Jona Shone netted £385.47 after Whatnot's 13% cut on a £1,000 tool pallet, while "
+                      'Niche Pursuits showed teen wages zeroing out $4,000 of revenue. Matt Goldberg '
+                      'rejects buying returns pallets from middlemen entirely, brokering surplus for '
+                      "finder's fees without touching goods.",
+ 'key_metrics': [{'label': 'Liquidation.com Actual Freight on a 446 lb Lot',
+                  'metric': 'Liquidation.com Actual Freight on a 446 lb Lot',
+                  'value': '$543.96 actual shipping; about $1,000 all-in on a $280 current bid',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'A $1,999 MSRP lot shipped from Las Vegas advertised $100 minimum shipping, '
+                             'but the real quote plus $40 residential and $40 no-dock fees pushed freight '
+                             'to about $650 and the total near $1,000.',
+                  'source': 'T.J. Lovelady ([Lvrvr_hNtcE @ 00:19:19])'},
+                 {'label': 'Whatnot Tool Pallet Net Profit',
+                  'metric': 'Whatnot Tool Pallet Net Profit',
+                  'value': "£385.47 profit on £1,592.50 gross after Whatnot's 13% fee",
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'A £1,000-plus Gem Wholesale mystery tool returns pallet sold over a 4h26m '
+                             'Whatnot live auction, netting £1,385.47 for two people working a full day.',
+                  'source': 'Jona Shone ([WG6vp4_R0nc @ 00:42:34])'},
+                 {'label': 'Labor-Adjusted Profit on Three Amazon Return Pallets',
+                  'metric': 'Labor-Adjusted Profit on Three Amazon Return Pallets',
+                  'value': '$0 ($4,000 revenue minus $2,500 wages minus $1,500 pallets)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Quick math on three Amazon return pallets bought for $1,500 total, with teen '
+                             'helpers paid $2,500 to process and list the goods.',
+                  'source': 'Niche Pursuits ([orDRxYfVypw @ 00:12:16])'},
+                 {'label': 'Returns Pallet Buy Price Versus Retail',
+                  'metric': 'Returns Pallet Buy Price Versus Retail',
+                  'value': '15% of retail paid; $50-$60 targeted back on each $100 retail item',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Buying terms on jumbo Amazon returns pallets at about $500 to $600 each, '
+                             'with the supplier screening out salvage but not with 100% accuracy.',
+                  'source': 'Operation Liquidation ([f12reX7DS-U @ 00:01:01])'}],
+ 'sections': [{'section_number': 1,
+               'heading': 'The Practitioner Consensus',
+               'paragraphs': ['Freight is the first fault line every operator draws. Levi Salas opens '
+                              "flatly with 'the difference between pallet buying and truckload buying is "
+                              "freight' [bGxomNwtOhQ @ 00:00:00], then spells out what that means on the "
+                              'ground: Delaware buyers waited about eight days on freight and a truckload '
+                              'took two weeks, so anyone with limited capital should put it into local '
+                              "pallets, accept a smaller margin, and cycle inventory in '2, three days' "
+                              '[bGxomNwtOhQ @ 00:01:15]. T.J. Lovelady runs the same play out of Bargain '
+                              "Spot in Lenoir City, Tennessee: Google 'liquidation pallet places close to "
+                              "me,' find a yard, and walk in to talk to the owner first [Lvrvr_hNtcE @ "
+                              '00:01:12]. Their own yard sits 15 minutes away, and they have driven up to '
+                              'two hours for the right stock. Shannon Jean, buying through B-Stock from '
+                              "California, reaches the same answer from the online side: 'I always "
+                              'recommend you want to try to buy near a distribution center near you, so '
+                              "you can save on freight' [_JpPAyxnPLc @ 00:04:19]. They buy West Coast "
+                              'loads instead of pulling from Florida. The shared logic is blunt: distance '
+                              'turns into either freight dollars or dead days, and a beginner can afford '
+                              'neither one.',
+                              'The second point of agreement is that the buy price has to sit at a small '
+                              'fraction of retail, and every operator states their own ratio. Operation '
+                              'Liquidation pays 15% of retail on jumbo Amazon returns and spells out the '
+                              "hope in plain dollars: 'So a $100 item I would have paid $15 for and my "
+                              "hope would be to get like $50, $60 back out of it' [f12reX7DS-U @ "
+                              "00:01:01]. T.J. Lovelady's rule on Bulk.com is to pay about 10% of MSRP, "
+                              'using a Bed Bath & Beyond case with $559 MSRP across 16 items at $4.94 per '
+                              'item as the worked example [Lvrvr_hNtcE @ 00:12:51]. On local pallets they '
+                              'convert cost into a per-item target instead: a $200 pallet holding 100 '
+                              'items carries a $2 target for every piece [Lvrvr_hNtcE @ 00:05:33]. Jona '
+                              'Shone applies the same discipline on the sell side, pricing a no-manifest '
+                              'Gem Wholesale tool pallet by checking retail on the Carrera, wall chaser, '
+                              'Karcher and Kexus pieces, then halving roughly £1,000 of RRP to estimate '
+                              'about £600 [WG6vp4_R0nc @ 00:25:28]. Different ratios, same habit: nobody '
+                              'here treats a pallet as a win without first anchoring cost against retail '
+                              'value and an expected recovery rate.',
+                              'Every speaker who has physically processed returns agrees the unboxing is '
+                              'grinding labor and the stock is never clean. Niche Pursuits ran three '
+                              'Amazon return pallets bought for $1,500 and closed with a flat warning: '
+                              "'It's a ton of work' [orDRxYfVypw @ 00:17:52]. ConnorTV, flipping a giant "
+                              '$150 pallet from W&W Tri City Liquidation, still logged a crack, dents and '
+                              'a shattered plate in the haul [0RUIANcUFdg @ 00:20:51], and Operation '
+                              'Liquidation notes their supplier screens out salvage but not with 100% '
+                              'accuracy. Jona Shone names Gem Wholesale and Stockport Pallet Warehouse as '
+                              "trusted suppliers and warns that Facebook 'Amazon pallet return' sellers "
+                              "are a minefield: 'There are a lot of scams' [WG6vp4_R0nc @ 00:43:10]. Matt "
+                              'Goldberg pushes this point furthest from the brokering side. Direct Amazon, '
+                              "Wayfair, Temu and TikTok returns are 'tied up,' middlemen charge premium "
+                              "prices, and buyers of wholesale mixed returns pallets end up as 'bottom "
+                              "feeders' paying overpriced rates, which Goldberg calls being a 'busy fool' "
+                              '[Ey5jcenBhe8 @ 00:06:31]. The consensus underneath both camps: the supplier '
+                              'relationship and the condition of the goods decide the outcome long before '
+                              'a single item gets listed for sale on any platform.'],
+               'table': {'caption': 'Where Pallet Operators Agree: Sourcing, Cost Basis, and Supplier Risk',
+                         'headers': ['Consensus Point',
+                                     'Practitioner Evidence',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Start with local pallets before buying truckload freight',
+                                   'Delaware buyers waited about 8 days, a truckload took 2 weeks, local '
+                                   'pallets cycle in 2-3 days',
+                                   'Put limited capital into local pallets and prioritize fast turnover '
+                                   'over margin',
+                                   'Levi Salas | Whatnot Selling & Liquidation ([bGxomNwtOhQ @ 00:01:15])'],
+                                  ['Buy near a distribution center in your own region',
+                                   'California buyer pulls West Coast loads instead of shipping from '
+                                   'Florida warehouses',
+                                   'Filter listings by warehouse location before comparing any pallet '
+                                   'prices at all',
+                                   'B-Stock ([_JpPAyxnPLc @ 00:04:19])'],
+                                  ['Pay only a small fixed fraction of retail value',
+                                   'Pays 15% of retail and hopes for $50 to $60 back on each $100 item',
+                                   'Anchor every bid to a set percentage of retail before committing cash',
+                                   'Operation Liquidation ([f12reX7DS-U @ 00:01:01])'],
+                                  ['Know the per-item target before cutting the shrink wrap',
+                                   'A $200 pallet holding 100 items sets a $2-per-item target logged in '
+                                   'Excel',
+                                   'Divide total pallet cost by item count before listing a single piece',
+                                   'T.J. Lovelady ([Lvrvr_hNtcE @ 00:05:33])'],
+                                  ['Processing labor can erase the entire pallet profit',
+                                   '$4,000 revenue minus $2,500 teen wages minus $1,500 pallets left '
+                                   'exactly $0',
+                                   'Price your own hours and every helper into each pallet decision '
+                                   'upfront',
+                                   'Niche Pursuits ([orDRxYfVypw @ 00:12:16])'],
+                                  ['Buy only from suppliers with a track record you trust',
+                                   'Gem Wholesale and Stockport Pallet Warehouse trusted; Facebook return '
+                                   'pallet sellers full of scams',
+                                   'Vet every supplier before paying and skip anonymous Facebook pallet '
+                                   'listings entirely',
+                                   'Jona Shone ([WG6vp4_R0nc @ 00:43:10])'],
+                                  ['Middleman mixed returns pallets are overpriced for resellers',
+                                   'Direct retailer returns are tied up, so wholesale mixed pallet buyers '
+                                   'become busy fools',
+                                   'Go upstream to reverse-logistics firms and returns handlers instead of '
+                                   'resellers',
+                                   'Matt Goldberg | The Surplus Hunter ([Ey5jcenBhe8 @ 00:06:31])']]}},
+              {'section_number': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The freight math is where landed cost gets made or broken, and T.J. '
+                              'Lovelady walks through it line by line. On Liquidation.com, a $1,999 MSRP '
+                              'lot showed a $280 current bid against a $209 minimum, shipped from Las '
+                              'Vegas, weighing 446 lb [Lvrvr_hNtcE @ 00:18:11]. The listing advertised '
+                              '$100 minimum shipping, but the actual quote came to $543.96, and with a $40 '
+                              'residential fee and a $40 no-dock fee freight climbs to about $650, pushing '
+                              'the all-in total near $1,000 [Lvrvr_hNtcE @ 00:19:39]. On Bulk.com, the old '
+                              'flat $200 shipping has become weight-based; a Mount Juliet, Tennessee buy '
+                              'came to $437 plus $123 shipping, about $500 total, versus over $600 under '
+                              "the old model. Shannon Jean's B-Stock checklist attacks the same surprises: "
+                              'shipping cost is driven by zip code, weight and truck space, buyer-arranged '
+                              'freight should be lined up before buying and quoted on freightquote.com '
+                              '[_JpPAyxnPLc @ 00:01:05], and liftgate and residential accessorials are '
+                              "'pretty nominal' and 'You can see those fees before you buy' [_JpPAyxnPLc @ "
+                              "00:02:35]. The listing's edit link shows real-time rates for a warehouse, "
+                              'residence or storage unit address, so the landed number is knowable before '
+                              'the bid goes in.',
+                              'Once the pallet lands, the processing workflow is remarkably consistent '
+                              'across operators. Niche Pursuits splits everything into two piles, '
+                              'quick-to-price versus hard-to-price [orDRxYfVypw @ 00:03:57]. Their first '
+                              'pallet held about 500 items, about 300 of which went to bins, with value '
+                              "pegged near $1,800 and realistic profit of '$500… $600.' T.J. Lovelady "
+                              'scans barcodes with the Amazon seller app, noting some yards forbid digging '
+                              'through pallets [Lvrvr_hNtcE @ 00:03:38], then logs every item into an '
+                              'Excel sheet; disorganization, they warn, means losing money on items that '
+                              'never get listed. They work out of a 10x20 storage unit rented at about $97 '
+                              'a month. They cross-list on Amazon, eBay, Poshmark and Facebook Marketplace '
+                              'and must delist everywhere the moment something sells [Lvrvr_hNtcE @ '
+                              '00:08:15]. Pricing runs aggressive until the pallet breaks even, after '
+                              'which a $100 item can go for $20. ConnorTV prices the simplest way '
+                              'possible: scan the item on Amazon, then discount for Facebook Marketplace, '
+                              'which is how a sink showing $320 on Amazon was slotted to sell for '
+                              "$200-plus and 'doubled the price of the pallet' [0RUIANcUFdg @ 00:09:31]. "
+                              'Operation Liquidation routes large items to Facebook Marketplace and dumps '
+                              'cheap leftovers into a garage-sale box.',
+                              'The exit channel sets the final math, and the speakers who closed out a '
+                              'pallet report their numbers in full. Jona Shone sold an entire Gem '
+                              'Wholesale tool pallet on a Whatnot live auction with every item starting at '
+                              '£1 [WG6vp4_R0nc @ 00:09:34]. Individual results swung hard: a Stanley '
+                              'organizer worth £82 went for £27, a DeWalt grinder fetched £125 and a Yale '
+                              'lock that retails around £250 with a broken seal went for £75. After 4 '
+                              'hours 26 minutes live, gross hit £1,592.50, Whatnot took 13%, net landed at '
+                              '£1,385.47 and profit at £385.47 for two people across a full day '
+                              "[WG6vp4_R0nc @ 00:42:34]. T.J. Lovelady's haul shows the other end of the "
+                              'spread: about 77 pairs of shoes for $180, roughly $2.50 a pair, with Easy '
+                              'Spirit reselling at $25 to $35 for about $1,800 total [3LlA-ruuv7E @ '
+                              '00:12:20], and a total spend near $650 against roughly $7,800 in value. '
+                              'Operation Liquidation works item by item off a 15% buy: running boards '
+                              'retailing at $149.95 cost $22.50 and target $100 plus shipping, and are no '
+                              'longer sold on Amazon [f12reX7DS-U @ 00:08:25]. Their clam ice tent at '
+                              '$489.99 retail cost about $75 and lists at $150 to $200.'],
+               'table': {'caption': 'Street Numbers: Platforms, Freight, and Exit Channels Tested by '
+                                    'Operators',
+                         'headers': ['Platform or Lever',
+                                     'Exact Numbers Stated',
+                                     'How It Was Used',
+                                     'Expert Source'],
+                         'rows': [['Liquidation.com bid lot shipped from Las Vegas',
+                                   '$1,999 MSRP, $280 bid, 446 lb, $543.96 actual shipping, about $1,000 '
+                                   'total',
+                                   'Add $40 residential and $40 no-dock fees before bidding on any lot',
+                                   'T.J. Lovelady ([Lvrvr_hNtcE @ 00:19:39])'],
+                                  ['Bulk.com weight-based shipping replacing the old flat rate',
+                                   '$437 plus $123 shipping, about $500 versus over $600 under flat $200',
+                                   'Buy from the nearby Mount Juliet warehouse to shrink weight-based '
+                                   'freight',
+                                   'T.J. Lovelady ([Lvrvr_hNtcE @ 00:17:17])'],
+                                  ['Quicklotz mystery box for small-scale binning inventory',
+                                   '$250 for 100 items with free shipping already included in price',
+                                   'Use as a low-freight feed for binning without a dock or forklift',
+                                   'T.J. Lovelady ([Lvrvr_hNtcE @ 00:23:19])'],
+                                  ['Home Depot truck rental for hauling local yard pallets',
+                                   '$19.99 listed, about $25 with mileage, debit card, no deposit required',
+                                   'Haul local yard pallets yourself instead of paying a freight carrier',
+                                   'T.J. Lovelady ([Lvrvr_hNtcE @ 00:04:21])'],
+                                  ['Whatnot live auction clearing a full tool returns pallet',
+                                   '£1 starts, 13% fee, £1,592.50 gross, £1,385.47 net, £385.47 profit',
+                                   'Ran a 4h26m live show to sell every item on one pallet',
+                                   'Jona Shone ([WG6vp4_R0nc @ 00:42:34])'],
+                                  ['Local $150 yard pallet priced off Amazon listings',
+                                   'Sink showing $320 on Amazon slotted to sell for $200-plus locally',
+                                   'Scan on Amazon, discount for Facebook Marketplace, lean on anchor '
+                                   'items',
+                                   'ConnorTV ([0RUIANcUFdg @ 00:09:31])'],
+                                  ['B-Stock accessorial fees and buyer-arranged freight quoting',
+                                   'Liftgate and residential fees shown before buying; freightquote.com '
+                                   'used for years',
+                                   'Confirm commercial or residential address and quote carriers before '
+                                   'paying anything',
+                                   'B-Stock ([_JpPAyxnPLc @ 00:02:35])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small Checks That Protect the Pallet Margin',
+                           'body': 'Field-tested habits operators use to spot unopened stock, find '
+                                   'uncontested listings, catch fakes, and keep freight deliveries smooth.',
+                           'items': ['Factory banding still on a box means the item is likely unopened, '
+                                     'which matters when pricing auto parts that must be complete '
+                                     '[Operation Liquidation — f12reX7DS-U @ 00:03:01]',
+                                     "Check every ASIN on a Bulk.com manifest: 'currently unavailable' on "
+                                     'Amazon means you would be the only seller listing it [T.J. Lovelady '
+                                     '— Lvrvr_hNtcE @ 00:13:51]',
+                                     'Verify branded tools for counterfeits: on a genuine NOCO booster the '
+                                     'rubber molding runs into the screw hole [Jona Shone — WG6vp4_R0nc @ '
+                                     '00:15:04]',
+                                     'Treat drivers well: tip them, buy them lunch, request a call 30 '
+                                     'minutes before delivery and text a map to the drop point [B-Stock — '
+                                     '_JpPAyxnPLc @ 00:06:26]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Locate and Work a Local Yard',
+                              'action': "Google 'liquidation pallet places close to me,' visit the yard, "
+                                        'talk to the owner, and learn the listing code words.',
+                              'detail': 'Yards post stock on their websites or Facebook groups and use '
+                                        "code words, with 'HD' meaning Home Depot and 'high end' standing "
+                                        "in for Amazon because yards can't name it [T.J. Lovelady — "
+                                        'Lvrvr_hNtcE @ 00:03:24]'},
+                             {'step': 2,
+                              'title': 'Quote Landed Freight Before Buying',
+                              'action': 'Pull real-time freight for your exact address and add '
+                                        'accessorials before placing any bid online.',
+                              'detail': "Use the listing's edit link to see real-time rates for a "
+                                        'warehouse, residence or storage unit, and line up any '
+                                        'buyer-arranged carrier on freightquote.com before buying [B-Stock '
+                                        '— _JpPAyxnPLc @ 00:04:49]'},
+                             {'step': 3,
+                              'title': 'Set the Cost Basis and Sort',
+                              'action': 'Divide pallet cost by item count, then split the haul into '
+                                        'quick-to-price and hard-to-price piles.',
+                              'detail': 'Two piles separate fast listings from items needing research; the '
+                                        'first pallet ran about 500 items with about 300 binned [Niche '
+                                        'Pursuits — orDRxYfVypw @ 00:03:57]'},
+                             {'step': 4,
+                              'title': 'Cross-List and Liquidate to Break-Even',
+                              'action': 'Cross-list on Amazon, eBay, Poshmark and Facebook Marketplace, '
+                                        'price aggressively until break-even, then clear remaining stock.',
+                              'detail': 'Pricing stays aggressive until the pallet breaks even, after '
+                                        'which a $100 item may go for $20, with every sold item delisted '
+                                        'across all platforms [T.J. Lovelady — Lvrvr_hNtcE @ 00:09:13]'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether you ever touch the goods. Matt Goldberg runs '
+                              'a pure brokering model, moving pallet and truckloads worldwide without ever '
+                              'seeing the stock, keeping no warehouse, and claiming never to use a penny '
+                              'of personal money [6Ln8SD4VKv4 @ 00:01:34]. Goldberg goes further, calling '
+                              'wholesale mixed returns pallets overpriced, a busy-fool trade, and warning '
+                              'that direct Amazon, Wayfair, Temu and TikTok returns are tied up, so '
+                              'middlemen charge premiums and buyers end up as bottom feeders [Ey5jcenBhe8 '
+                              '@ 00:06:31]. The unboxing camp buys anyway, but on strict ratios. T.J. '
+                              "Lovelady's rule is to pay about 10% of MSRP, citing a Bed Bath & Beyond "
+                              'case with $559 MSRP and 16 items landing at $4.94 per item [Lvrvr_hNtcE @ '
+                              '00:12:51]. Operation Liquidation pays 15% of retail and frames the target '
+                              'bluntly: a $100 item cost $15, and the hope is to pull $50 to $60 back out '
+                              "of it [f12reX7DS-U @ 00:01:01]. So the choice is a finder's-fee pipeline "
+                              'where you never hold stock versus a capital-in, sweat-out model where the '
+                              'margin lives in how cheaply you buy relative to retail and how fast you can '
+                              'sort, price and list what comes off the truck.',
+                              'Scale is the second fault line. Levi Salas tells beginners with limited '
+                              'capital to buy local pallets: thinner margin, but cash cycles of two or '
+                              'three days, with turnover and sell-through ranked above margin [bGxomNwtOhQ '
+                              '@ 00:01:15]. The Salas case against truckloads is freight and floor space, '
+                              'with a truckload needing at least 2,000 square feet split between '
+                              "streaming, inventory and shipping [bGxomNwtOhQ @ 00:02:26]. Goldberg's own "
+                              'ladder shows a different trade-off, time versus share: members who only '
+                              "find the seller earn a 33% finder's fee, members who find both sides split "
+                              '50/50, and the paid Surplus Trader Secrets tier, formerly $3,000 and now '
+                              '199 a month, lets the member keep 100% of profit with Goldberg only guiding '
+                              'over WhatsApp [gRoLw2uovek @ 00:15:38]. Brandon Gamble at Pallet Pros '
+                              'Academy frames the same tension around coaching for the physical wooden '
+                              'pallet trade itself. Going solo, Gamble puts the first sale at two to six '
+                              'weeks and 10K a month in net profits at six to twelve months; with a '
+                              'mentor, first money lands in one to three weeks and 10K a month in four to '
+                              'eight months [tDyyYhvrSts @ 00:08:28]. Both sell a shortcut, and both '
+                              'openly price the slower, unassisted route against it.',
+                              'Exit channels split the room too. Jona Shone pushes an entire UK '
+                              'tool-returns pallet through a Whatnot live auction with every item starting '
+                              'at £1, accepting that an £82 Stanley organizer can go for £27, and closes '
+                              'the whole pallet in a single 4-hour-26-minute show [WG6vp4_R0nc @ '
+                              '00:40:32]. T.J. Lovelady goes the opposite way, cross-listing on Amazon, '
+                              'eBay, Poshmark and Facebook Marketplace, delisting everywhere the moment '
+                              'something sells, pricing aggressively only until break-even and then '
+                              'letting a $100 item go for $20 [Lvrvr_hNtcE @ 00:09:13]. ConnorTV scans '
+                              'each item on Amazon and discounts for Facebook Marketplace, pegging a sink '
+                              'at $320 on Amazon to sell for $200-plus and claiming that one item doubled '
+                              'the $150 pallet price [0RUIANcUFdg @ 00:09:31]. Freight is the last '
+                              'disagreement. Shannon Jean at B-Stock buys shipped lots, lining up a '
+                              'carrier before buying, quoting on freightquote.com, checking liftgate and '
+                              'residential accessorial fees up front, and recommending buyers stay near a '
+                              'distribution center to save on freight, which is why a California operator '
+                              'buys West Coast rather than Florida [_JpPAyxnPLc @ 00:04:19]. Shipped lots '
+                              'buy reach; local hauling buys control and speed.'],
+               'table': {'caption': 'Competing Playbooks: Sourcing, Scale, Exit Channel and Freight',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Whether to buy returns pallets at all or broker surplus instead',
+                                   "Goldberg brokers surplus for finder's fees, never touching goods or "
+                                   'using own money',
+                                   'Lovelady buys mixed returns at roughly 10% of MSRP and unboxes '
+                                   'everything',
+                                   'Matt Goldberg | The Surplus Hunter ([6Ln8SD4VKv4 @ 00:01:48]); T.J. '
+                                   'Lovelady ([Lvrvr_hNtcE @ 00:12:51])'],
+                                  ['Acceptable buy price as a share of retail value on returns',
+                                   'Pay about 10% of MSRP, e.g. $4.94 per item on a $559 case',
+                                   'Pay 15% of retail, aiming to recover $50 to $60 per $100 item',
+                                   'T.J. Lovelady ([Lvrvr_hNtcE @ 00:12:51]); Operation Liquidation '
+                                   '([f12reX7DS-U @ 00:01:01])'],
+                                  ['Starting scale for a capital-limited beginner entering liquidation '
+                                   'buying',
+                                   'Local pallets with a smaller margin but two-to-three-day cash cycles',
+                                   'Truckloads demanding 2,000 sq ft of space and waits of up to two weeks',
+                                   'Levi Salas | Whatnot Selling & Liquidation ([bGxomNwtOhQ @ 00:01:15])'],
+                                  ['Primary exit channel for unboxed returns inventory after sorting',
+                                   'Whatnot live auction, every item opening at £1, whole pallet in one '
+                                   'show',
+                                   'Cross-list Amazon, eBay, Poshmark and Facebook Marketplace, delisting '
+                                   'everywhere once sold',
+                                   'Jona Shone ([WG6vp4_R0nc @ 00:09:34]); T.J. Lovelady ([Lvrvr_hNtcE @ '
+                                   '00:08:15])'],
+                                  ["Freight route from the seller's warehouse to your door",
+                                   'Self-haul from a local yard in a $19.99 Home Depot rental truck',
+                                   'Ship B-Stock lots with a carrier quoted on freightquote.com before '
+                                   'buying',
+                                   'T.J. Lovelady ([Lvrvr_hNtcE @ 00:04:21]); B-Stock ([_JpPAyxnPLc @ '
+                                   '00:01:05])'],
+                                  ['How the broker splits profit with members who find deals',
+                                   'Member finds the seller only, Goldberg executes, member earns a 33% '
+                                   "finder's fee",
+                                   'Paid tier at 199 a month, member keeps 100% with WhatsApp guidance '
+                                   'only',
+                                   'Matt Goldberg | The Surplus Hunter ([gRoLw2uovek @ 00:02:45])'],
+                                  ['Learning curve for the physical wooden pallet resale trade',
+                                   'Solo: first sale in 2 to 6 weeks, 10K monthly net at 6 to 12 months',
+                                   'Mentored: first money in 1 to 3 weeks, 10K monthly in 4 to 8 months',
+                                   'Pallet Pros Academy ([tDyyYhvrSts @ 00:01:24])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most brutal economics check comes from Niche Pursuits. After buying '
+                              'three Amazon return pallets for $1,500, a $400 high-piece-count pallet, a '
+                              '$700 Amazon monster and a $400 electronics pallet that might be broken, the '
+                              'quick math was $4,000 revenue minus $2,500 in teen wages minus $1,500 in '
+                              'pallets, which leaves exactly $0 in profit [orDRxYfVypw @ 00:12:16]. The '
+                              'same operator found free shipping chewing margin on the first sales, '
+                              'switched to charging shipping, and summed the exercise up as a ton of work. '
+                              'Jona Shone ran the numbers live: £1,592.50 gross after a 4-hour-26-minute '
+                              'Whatnot show, 13% to Whatnot, £1,385.47 net, and £385.47 profit on a '
+                              "£1,000-plus pallet, which in Shone's words is the take for two people over "
+                              "a full day [WG6vp4_R0nc @ 00:42:34]. T.J. Lovelady's first local pallet "
+                              'cost $200 and returned about $100, a crap pallet, following an earlier '
+                              '$1,300 liquidation.com buy [Lvrvr_hNtcE @ 00:01:37]. Labor is the hidden '
+                              'line item: Niche Pursuits paid it in $2,500 of teen wages and erased the '
+                              'profit, while Shone paid it in a full day for two people and cleared under '
+                              '£400 [WG6vp4_R0nc @ 00:43:21].',
+                              'Freight is where cheap lots turn expensive. On liquidation.com, T.J. '
+                              'Lovelady walked through a $1,999 MSRP lot from Las Vegas with a $280 bid: '
+                              'listed minimum shipping is $100, actual shipping on the 446 lb lot came to '
+                              '$543.96, and with $40 residential and $40 no-dock fees the all-in lands '
+                              'near $1,000 [Lvrvr_hNtcE @ 00:19:39]. Levi Salas saw Delaware buyers wait '
+                              'about eight days on freight and a truckload take two weeks, dead time when '
+                              "cash should be cycling [bGxomNwtOhQ @ 00:00:19]. Shannon Jean's counter is "
+                              'discipline before payment: confirm the address and whether it is commercial '
+                              'or residential, because liftgate and residential accessorials attach when '
+                              'there is no dock or forklift, and full truckloads need a dock or a rented '
+                              'forklift [_JpPAyxnPLc @ 00:03:41]. Condition is the second trap. Operation '
+                              "Liquidation's supplier screens out salvage, but not 100% accurately; auto "
+                              'parts have to be checked for completeness, air tanks came back because '
+                              'buyers mistook them for compressors, and some inventory sat around nine '
+                              'months [f12reX7DS-U @ 00:18:03]. ConnorTV logged a crack, dents and a '
+                              'shattered plate on a $150 pallet that was otherwise a winner.',
+                              'The last traps sit at the source and at the platform. Jona Shone warns '
+                              "there are a lot of scams in Facebook 'Amazon pallet return' groups and "
+                              'sticks with trusted suppliers Gem Wholesale and Stockport Pallet Warehouse '
+                              '[WG6vp4_R0nc @ 00:43:10]. Shone also hit platform and authenticity walls on '
+                              'one pallet: knives cannot be sold on Whatnot, a NOCO booster needed a '
+                              'counterfeit check where the rubber molding should run into the screw hole, '
+                              'and a roughly £250 Yale Keyless lock arrived with its seal broken and sold '
+                              'for £75. Matt Goldberg warns that direct Amazon, Wayfair, Temu and TikTok '
+                              'returns are tied up, so middlemen charge premium prices and late buyers '
+                              'become bottom feeders [Ey5jcenBhe8 @ 00:00:00]. Levi Salas adds that '
+                              'contract holders favor consistent buyers over occasional ones [bGxomNwtOhQ '
+                              '@ 00:02:50]. In the wooden pallet trade, Brandon Gamble lists the solo '
+                              'pitfalls: wrong target companies, under- or overpricing, not knowing specs, '
+                              'yards that take only specific pallets, and supplier relationships that '
+                              'collapse into one-time deals, plus the warning that blue and red pallets '
+                              "belong to the 'Chef and Petco' resale programs and are not supposed to be "
+                              'touched [tDyyYhvrSts @ 00:02:05].'],
+               'table': {'caption': 'Firsthand Losses, Bottlenecks and the Countermeasures Practitioners '
+                                    'Used',
+                         'headers': ['Failure Mode',
+                                     'What Happened',
+                                     'Countermeasure Taught',
+                                     'Expert Source'],
+                         'rows': [['Labor costs erasing an entire three-pallet profit',
+                                   '$4,000 revenue minus $2,500 wages minus $1,500 pallets left exactly $0',
+                                   'Sort into quick-to-price and hard-to-price piles, and start charging '
+                                   'shipping',
+                                   'Niche Pursuits ([orDRxYfVypw @ 00:12:16])'],
+                                  ['Shipping balloon on a liquidation.com bid lot from Las Vegas',
+                                   'A $100 listed minimum became $543.96 actual on a 446 lb lot',
+                                   'Add $40 residential and $40 no-dock fees and budget near $1,000 all-in',
+                                   'T.J. Lovelady ([Lvrvr_hNtcE @ 00:19:19])'],
+                                  ['Disorganized processing letting unlisted items rot into lost money',
+                                   'Items never listed turn directly into money lost on the pallet',
+                                   'Log every item in Excel against a per-item target, e.g. $2 on a $200 '
+                                   'pallet',
+                                   'T.J. Lovelady ([Lvrvr_hNtcE @ 00:06:06])'],
+                                  ['Slow-moving jumbo returns tying up space and cash for months',
+                                   'Jumbo Amazon return inventory sat roughly nine months before moving',
+                                   'Push cheap items to a garage-sale box and large items to Facebook '
+                                   'Marketplace',
+                                   'Operation Liquidation ([f12reX7DS-U @ 00:18:03])'],
+                                  ['Underpriced hammer prices inside a £1-start live auction format',
+                                   'An £82 Stanley organizer sold for £27 during the Whatnot show',
+                                   "Judge the whole pallet net of Whatnot's 13% cut, not single items",
+                                   'Jona Shone ([WG6vp4_R0nc @ 00:40:32])'],
+                                  ['Freight delays freezing cash on long-distance pallet and truckload '
+                                   'buys',
+                                   'Delaware buyers waited about eight days; one truckload took two weeks',
+                                   'Start with local pallets that turn in two to three day cycles',
+                                   'Levi Salas | Whatnot Selling & Liquidation ([bGxomNwtOhQ @ 00:00:19])'],
+                                  ['Delivery surprises for buyers without a loading dock or forklift',
+                                   'Liftgate and residential accessorial fees attach to the freight bill',
+                                   'Confirm commercial versus residential address and view fees before '
+                                   'paying',
+                                   'B-Stock ([_JpPAyxnPLc @ 00:02:23])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Kill the Deal Before It Kills Your Margin',
+                           'body': 'Run these four checks before money moves. Each one comes from a loss, '
+                                   'a zero-profit run, or a near miss a practitioner took firsthand.',
+                           'items': ['Price the labor before the pallet: $4,000 revenue against $2,500 in '
+                                     'wages and $1,500 in pallets netted exactly $0 [Niche Pursuits — '
+                                     'orDRxYfVypw @ 00:12:16].',
+                                     'Quote real freight, not the listed minimum: a $100 minimum became '
+                                     '$543.96 actual, pushing a $280-bid lot near $1,000 all-in [T.J. '
+                                     'Lovelady — Lvrvr_hNtcE @ 00:19:39].',
+                                     "Vet the supplier: Facebook 'Amazon pallet return' sellers are full "
+                                     'of scams, so stick with known suppliers like Gem Wholesale and '
+                                     'Stockport Pallet Warehouse [Jona Shone — WG6vp4_R0nc @ 00:43:10].',
+                                     'Confirm commercial versus residential delivery and dock or forklift '
+                                     'access before paying, or liftgate and residential fees attach '
+                                     '[B-Stock — _JpPAyxnPLc @ 00:03:41].']}}],
+ 'pull_quote': "'So, doing the quick math, if I have revenue of $4,000 minus the wages of $2,500 and minus "
+               "the pallet costs of $1,500, that will leave me with exactly $0 in profit.' Attributed to "
+               'Niche Pursuits (orDRxYfVypw @ 00:12:16).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ["Google 'liquidation pallet places close to me', then visit the yard and talk to the "
+                      'owner before buying [T.J. Lovelady — Lvrvr_hNtcE @ 00:02:41].',
+                      "Cap your buy at about 10% of MSRP and check manifest ASINs, where 'currently "
+                      "unavailable' means you would be the only seller [T.J. Lovelady — Lvrvr_hNtcE @ "
+                      '00:12:51].',
+                      'Line up a carrier before buying and quote it on freightquote.com, then check '
+                      "real-time rates per address through the listing's edit link [B-Stock — _JpPAyxnPLc "
+                      '@ 00:01:05].',
+                      'Split every unboxed pallet into a quick-to-price pile and a hard-to-price pile '
+                      'before listing anything [Niche Pursuits — orDRxYfVypw @ 00:03:57].',
+                      'Treat factory banding as a sign an item is likely unopened, and verify auto parts '
+                      'are complete before pricing them [Operation Liquidation — f12reX7DS-U @ 00:03:01].',
+                      "Search LinkedIn for 'returns', filter to people, and open with 'I'm not here to "
+                      "sell anything, I actually want to buy from you' [Matt Goldberg | The Surplus Hunter "
+                      '— Ey5jcenBhe8 @ 00:01:38].'],
+ 'statutory_citations': [{'title': 'Niche Pursuits — I Just Bought 3 Amazon Return Pallets for '
+                                   "$1,500...Here's What I Found [00:12:16]",
+                          'url': 'https://www.youtube.com/watch?v=orDRxYfVypw&t=736s',
+                          'relevance': 'Primary practitioner testimony on labor-adjusted pallet economics '
+                                       'that netted exactly $0 profit.'},
+                         {'title': 'T.J. Lovelady — Buying Your First Liquidation Pallet | Liquidation '
+                                   'Pallets 101 [00:19:39]',
+                          'url': 'https://www.youtube.com/watch?v=Lvrvr_hNtcE&t=1179s',
+                          'relevance': 'Primary practitioner testimony on liquidation.com freight, '
+                                       'residential and no-dock fees pushing a lot near $1,000 all-in.'},
+                         {'title': 'Jona Shone — I Bought a DIY Tools Returns Pallet for £1000, Can I Make '
+                                   'a Profit? [00:42:34]',
+                          'url': 'https://www.youtube.com/watch?v=WG6vp4_R0nc&t=2554s',
+                          'relevance': 'Primary practitioner testimony on Whatnot gross, 13% fee, net and '
+                                       'per-day profit on a mystery returns pallet.'},
+                         {'title': "B-Stock — Avoid Freight Surprises: Shannon Jean's Complete Shipping "
+                                   'Guide for Pallet & Truckload Buyers [00:03:41]',
+                          'url': 'https://www.youtube.com/watch?v=_JpPAyxnPLc&t=221s',
+                          'relevance': 'Primary practitioner testimony on confirming address type, '
+                                       'accessorial fees and dock access before paying for freight.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '6Ln8SD4VKv4',
+                       'title': 'How I Find Highly Cheap Pallets Of Goods (On Autopilot)',
+                       'channel': 'Matt Goldberg | The Surplus Hunter',
+                       'author': 'Matt Goldberg | The Surplus Hunter',
+                       'text': "So, I'm moving thousands of pounds worth of goods, but I never use my own "
+                               'money.',
+                       'tip': "So, I'm moving thousands of pounds worth of goods, but I never use my own "
+                              'money.',
+                       'timestamp': 108,
+                       'timestamp_seconds': 108,
+                       'timestamp_label': '[00:01:48]',
+                       'url': 'https://www.youtube.com/watch?v=6Ln8SD4VKv4&t=108s',
+                       'markdown': '[00:01:48](https://www.youtube.com/watch?v=6Ln8SD4VKv4&t=108s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tDyyYhvrSts',
+                       'title': 'Pallet Business: Starting From Scratch (With vs Without a Mentor)',
+                       'channel': 'Pallet Pros Academy',
+                       'author': 'Pallet Pros Academy',
+                       'text': 'B-grade 48x40 pallets sell for $8 to $10.',
+                       'tip': 'B-grade 48x40 pallets sell for $8 to $10.',
+                       'timestamp': 979,
+                       'timestamp_seconds': 979,
+                       'timestamp_label': '[00:16:19]',
+                       'url': 'https://www.youtube.com/watch?v=tDyyYhvrSts&t=979s',
+                       'markdown': '[00:16:19](https://www.youtube.com/watch?v=tDyyYhvrSts&t=979s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_b6n7Qnt3P0',
+                       'title': '6 Ways To Find An Abundance Of Surplus Inventory Pallets...And Get Paid '
+                                'For It.',
+                       'channel': 'Matt Goldberg | The Surplus Hunter',
+                       'author': 'Matt Goldberg | The Surplus Hunter',
+                       'text': 'And you will get 33% of the profit.',
+                       'tip': 'And you will get 33% of the profit.',
+                       'timestamp': 1415,
+                       'timestamp_seconds': 1415,
+                       'timestamp_label': '[00:23:35]',
+                       'url': 'https://www.youtube.com/watch?v=_b6n7Qnt3P0&t=1415s',
+                       'markdown': '[00:23:35](https://www.youtube.com/watch?v=_b6n7Qnt3P0&t=1415s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ey5jcenBhe8',
+                       'title': '[Free Training] 5 Secret Places To Find Cheap Liquidation Returns Pallets',
+                       'channel': 'Matt Goldberg | The Surplus Hunter',
+                       'author': 'Matt Goldberg | The Surplus Hunter',
+                       'text': 'These are businesses that actually are specializing in handling companies '
+                               'returns goods.',
+                       'tip': 'These are businesses that actually are specializing in handling companies '
+                              'returns goods.',
+                       'timestamp': 156,
+                       'timestamp_seconds': 156,
+                       'timestamp_label': '[00:02:36]',
+                       'url': 'https://www.youtube.com/watch?v=Ey5jcenBhe8&t=156s',
+                       'markdown': '[00:02:36](https://www.youtube.com/watch?v=Ey5jcenBhe8&t=156s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3LlA-ruuv7E',
+                       'title': 'Buying Your FIRST Liquidation Pallet What To Look For In 2025!!',
+                       'channel': 'T.J. Lovelady',
+                       'author': 'T.J. Lovelady',
+                       'text': "You don't know where a pallet came from, so test them out yourself.",
+                       'tip': "You don't know where a pallet came from, so test them out yourself.",
+                       'timestamp': 111,
+                       'timestamp_seconds': 111,
+                       'timestamp_label': '[00:01:51]',
+                       'url': 'https://www.youtube.com/watch?v=3LlA-ruuv7E&t=111s',
+                       'markdown': '[00:01:51](https://www.youtube.com/watch?v=3LlA-ruuv7E&t=111s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'orDRxYfVypw',
+                       'title': "I Just Bought 3 Amazon Return Pallets for $1,500...Here's What I Found",
+                       'channel': 'Niche Pursuits',
+                       'author': 'Niche Pursuits',
+                       'text': 'So, doing the quick math, if I have revenue of $4,000 minus the wages of '
+                               '$2,500 and minus the pallet costs of $1,500, that will leave me with '
+                               'exactly $0 in profit.',
+                       'tip': 'So, doing the quick math, if I have revenue of $4,000 minus the wages of '
+                              '$2,500 and minus the pallet costs of $1,500, that will leave me with '
+                              'exactly $0 in profit.',
+                       'timestamp': 736,
+                       'timestamp_seconds': 736,
+                       'timestamp_label': '[00:12:16]',
+                       'url': 'https://www.youtube.com/watch?v=orDRxYfVypw&t=736s',
+                       'markdown': '[00:12:16](https://www.youtube.com/watch?v=orDRxYfVypw&t=736s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bGxomNwtOhQ',
+                       'title': 'Why Beginners Should Start With Pallets Instead of Truckloads',
+                       'channel': 'Levi Salas | Whatnot Selling & Liquidation',
+                       'author': 'Levi Salas | Whatnot Selling & Liquidation',
+                       'text': 'Okay, so the difference between pallet buying and truckload buying is '
+                               'freight.',
+                       'tip': 'Okay, so the difference between pallet buying and truckload buying is '
+                              'freight.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=bGxomNwtOhQ&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=bGxomNwtOhQ&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0RUIANcUFdg',
+                       'title': 'I Bought a GIANT Amazon Returns Pallet for $150 - HUGE Profit!',
+                       'channel': 'ConnorTV',
+                       'author': 'ConnorTV',
+                       'text': 'The sink is $320 on Amazon and should sell for $200-plus, which doubled '
+                               'the price of the pallet.',
+                       'tip': 'The sink is $320 on Amazon and should sell for $200-plus, which doubled the '
+                              'price of the pallet.',
+                       'timestamp': 571,
+                       'timestamp_seconds': 571,
+                       'timestamp_label': '[00:09:31]',
+                       'url': 'https://www.youtube.com/watch?v=0RUIANcUFdg&t=571s',
+                       'markdown': '[00:09:31](https://www.youtube.com/watch?v=0RUIANcUFdg&t=571s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Lvrvr_hNtcE',
+                       'title': 'Buying Your First Liquidation Pallet | Liquidation Pallets 101',
+                       'channel': 'T.J. Lovelady',
+                       'author': 'T.J. Lovelady',
+                       'text': 'So, the actual shipping for this is $543.96.',
+                       'tip': 'So, the actual shipping for this is $543.96.',
+                       'timestamp': 1159,
+                       'timestamp_seconds': 1159,
+                       'timestamp_label': '[00:19:19]',
+                       'url': 'https://www.youtube.com/watch?v=Lvrvr_hNtcE&t=1159s',
+                       'markdown': '[00:19:19](https://www.youtube.com/watch?v=Lvrvr_hNtcE&t=1159s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Lvrvr_hNtcE',
+                       'title': 'Buying Your First Liquidation Pallet | Liquidation Pallets 101',
+                       'channel': 'T.J. Lovelady',
+                       'author': 'T.J. Lovelady',
+                       'text': 'It was like $97 a month, which was cheap to me.',
+                       'tip': 'It was like $97 a month, which was cheap to me.',
+                       'timestamp': 437,
+                       'timestamp_seconds': 437,
+                       'timestamp_label': '[00:07:17]',
+                       'url': 'https://www.youtube.com/watch?v=Lvrvr_hNtcE&t=437s',
+                       'markdown': '[00:07:17](https://www.youtube.com/watch?v=Lvrvr_hNtcE&t=437s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WG6vp4_R0nc',
+                       'title': 'I Bought a DIY Tools Returns Pallet for £1000, Can I Make a Profit?',
+                       'channel': 'Jona Shone',
+                       'author': 'Jona Shone',
+                       'text': 'There are a lot of scams.',
+                       'tip': 'There are a lot of scams.',
+                       'timestamp': 2590,
+                       'timestamp_seconds': 2590,
+                       'timestamp_label': '[00:43:10]',
+                       'url': 'https://www.youtube.com/watch?v=WG6vp4_R0nc&t=2590s',
+                       'markdown': '[00:43:10](https://www.youtube.com/watch?v=WG6vp4_R0nc&t=2590s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WG6vp4_R0nc',
+                       'title': 'I Bought a DIY Tools Returns Pallet for £1000, Can I Make a Profit?',
+                       'channel': 'Jona Shone',
+                       'author': 'Jona Shone',
+                       'text': 'I think it will be a struggle for this palette to wipe its face.',
+                       'tip': 'I think it will be a struggle for this palette to wipe its face.',
+                       'timestamp': 1460,
+                       'timestamp_seconds': 1460,
+                       'timestamp_label': '[00:24:20]',
+                       'url': 'https://www.youtube.com/watch?v=WG6vp4_R0nc&t=1460s',
+                       'markdown': '[00:24:20](https://www.youtube.com/watch?v=WG6vp4_R0nc&t=1460s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_JpPAyxnPLc',
+                       'title': "Avoid Freight Surprises: Shannon Jean's Complete Shipping Guide for "
+                                'Pallet & Truckload Buyers',
+                       'channel': 'B-Stock',
+                       'author': 'B-Stock',
+                       'text': 'I always recommend you want to try to buy near a distribution center near '
+                               'you, so you can save on freight.',
+                       'tip': 'I always recommend you want to try to buy near a distribution center near '
+                              'you, so you can save on freight.',
+                       'timestamp': 259,
+                       'timestamp_seconds': 259,
+                       'timestamp_label': '[00:04:19]',
+                       'url': 'https://www.youtube.com/watch?v=_JpPAyxnPLc&t=259s',
+                       'markdown': '[00:04:19](https://www.youtube.com/watch?v=_JpPAyxnPLc&t=259s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gRoLw2uovek',
+                       'title': '5 Ways To Make Money Flipping Pallets Of Cheap Goods In Surplus Trader '
+                                'Academy (SKOOL)',
+                       'channel': 'Matt Goldberg | The Surplus Hunter',
+                       'author': 'Matt Goldberg | The Surplus Hunter',
+                       'text': "It's 33% of the net profit on that deal.",
+                       'tip': "It's 33% of the net profit on that deal.",
+                       'timestamp': 202,
+                       'timestamp_seconds': 202,
+                       'timestamp_label': '[00:03:22]',
+                       'url': 'https://www.youtube.com/watch?v=gRoLw2uovek&t=202s',
+                       'markdown': '[00:03:22](https://www.youtube.com/watch?v=gRoLw2uovek&t=202s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uDCbq1XJsDA',
+                       'title': 'Inside Modern Pallet Factories | How Trees Become Wooden Pallets',
+                       'channel': 'Labor Legacy',
+                       'author': 'Labor Legacy',
+                       'text': 'Not every defect makes a board useless.',
+                       'tip': 'Not every defect makes a board useless.',
+                       'timestamp': 644,
+                       'timestamp_seconds': 644,
+                       'timestamp_label': '[00:10:44]',
+                       'url': 'https://www.youtube.com/watch?v=uDCbq1XJsDA&t=644s',
+                       'markdown': '[00:10:44](https://www.youtube.com/watch?v=uDCbq1XJsDA&t=644s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'f12reX7DS-U',
+                       'title': 'Unboxing 2 Pallets of Jumbo Amazon Returns - Worth It?',
+                       'channel': 'Operation Liquidation',
+                       'author': 'Operation Liquidation',
+                       'text': 'So a $100 item I would have paid $15 for and my hope would be to get like '
+                               '$50, $60 back out of it.',
+                       'tip': 'So a $100 item I would have paid $15 for and my hope would be to get like '
+                              '$50, $60 back out of it.',
+                       'timestamp': 61,
+                       'timestamp_seconds': 61,
+                       'timestamp_label': '[00:01:01]',
+                       'url': 'https://www.youtube.com/watch?v=f12reX7DS-U&t=61s',
+                       'markdown': '[00:01:01](https://www.youtube.com/watch?v=f12reX7DS-U&t=61s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GWs7CcZybx4',
+                       'title': 'Types of Pallets in Logistics & Warehousing | Wooden vs Plastic vs Steel '
+                                'Pallets Explained',
+                       'channel': '10 Min For Supply Chain',
+                       'author': '10 Min For Supply Chain',
+                       'text': "There's no single best pallet.",
+                       'tip': "There's no single best pallet.",
+                       'timestamp': 224,
+                       'timestamp_seconds': 224,
+                       'timestamp_label': '[00:03:44]',
+                       'url': 'https://www.youtube.com/watch?v=GWs7CcZybx4&t=224s',
+                       'markdown': '[00:03:44](https://www.youtube.com/watch?v=GWs7CcZybx4&t=224s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VBNQJSjfwj4',
+                       'title': 'USAF Cargo Pallet Buildup - 360 Video Experience',
+                       'channel': 'Port Dawg U',
+                       'author': 'Port Dawg U',
+                       'text': 'When connecting hooks to rings, make sure that there are no twists in the '
+                               'webbing.',
+                       'tip': 'When connecting hooks to rings, make sure that there are no twists in the '
+                              'webbing.',
+                       'timestamp': 348,
+                       'timestamp_seconds': 348,
+                       'timestamp_label': '[00:05:48]',
+                       'url': 'https://www.youtube.com/watch?v=VBNQJSjfwj4&t=348s',
+                       'markdown': '[00:05:48](https://www.youtube.com/watch?v=VBNQJSjfwj4&t=348s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'}]}

@@ -1,865 +1,805 @@
 from __future__ import annotations
 
-CHAPTER_8 = {
-    "id": "Q8",
-    "chapter_id": "Q8",
-    "chapter_number": 8,
-    "question_number": 8,
-    "slug": "public-records-apis-data-pipelines-operator-tooling",
-    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small uber & commercial fleet arbitrage desk an unfair information edge?",
-    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
-    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
-    "subtitle": (
-        "TLC and CPUC Records, NHTSA VIN Intelligence, Authorized Fleet APIs, "
-        "Driver Screening, Toll Ledgers, and Evidence-Backed Lease Waterfalls"
-    ),
-    "layout_template": "resource_directory",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #31, Uber & Commercial Fleet Arbitrage, ranks #15 of 36 with "
-        "an 89/100 Money-to-Manpower Score. This directory maps 10 operating plays "
-        "across driver leases, Black SUV dispatch, investor co-hosting, permit "
-        "verification, VIN screening, coverage continuity, driver monitoring, toll "
-        "recovery, maintenance scheduling, and authorized advertising rewards. "
-        "Sixteen named sources separate public evidence from permissioned account "
-        "data, with access paths, cost structures, freshness controls, and fallback "
-        "procedures. Formula v2.0 produces annual owner profits of $25,200, $144,900, "
-        "and $336,000 on gross operator billings of $180,000, $690,000, and "
-        "$1,200,000. The modeled 55% retained contribution is $99,000, $379,500, "
-        "and $660,000 respectively. Build the desk around reconciled identifiers "
-        "and settlement evidence, not scraped passenger activity or unsupported "
-        "assumptions about platform access."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$180,000",
-            "context": (
-                "Annual gross driver lease, dispatch, and co-hosting billings; "
-                "$99,000 retained contribution at 55%."
-            ),
-            "note": (
-                "14% gross-basis net margin; 25.45% retained net margin; "
-                "$25,200 annual owner net profit; 1 FT + 3 C."
-            ),
-        },
-        {
-            "label": "Base",
-            "value": "$690,000",
-            "context": (
-                "Annual gross driver lease, dispatch, and co-hosting billings; "
-                "$379,500 retained contribution at 55%."
-            ),
-            "note": (
-                "21.0% gross-basis net margin; 38.18% retained net margin; "
-                "$144,900 annual owner net profit; 1 FT + 3 C."
-            ),
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": (
-                "Annual gross driver lease, dispatch, and co-hosting billings; "
-                "$660,000 retained contribution at 55%."
-            ),
-            "note": (
-                "28% gross-basis net margin; 50.91% retained net margin; "
-                "$336,000 annual owner net profit; 2 FT + 4 C."
-            ),
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build an evidence spine before enriching a single vehicle",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with three durable entities: vehicle, driver, and operating "
-                    "agreement. A vehicle record carries the normalized VIN, plate plus "
-                    "issuing jurisdiction, plate effective dates, investor account, "
-                    "registration expiry, and permitted service class. A driver record "
-                    "carries an internal identifier and separately protected license "
-                    "references; a lease record links the parties, service territory, "
-                    "billing calendar, and responsibility for tolls, deductibles, and "
-                    "downtime. Never join on a driver name alone or treat a plate as "
-                    "permanent: plate transfers create false toll allocations and "
-                    "misleading permit histories. Store each observation with source "
-                    "name, retrieval timestamp, source effective date, raw response "
-                    "digest, and the identifier actually queried. Keep the original "
-                    "file immutable, then write normalized facts into SQLite for a "
-                    "small desk or an existing managed database as volume grows. A "
-                    "public listing establishes what that registry publishes, not "
-                    "insurance coverage, platform eligibility, ownership, or authority "
-                    "to obtain personal records. Under 18 U.S.C. 2721, access to motor "
-                    "vehicle personal information requires a permitted purpose; broad "
-                    "lead generation is not a substitute. Keep public eligibility "
-                    "research separate from permissioned driver screening so an "
-                    "analyst cannot accidentally turn a fleet prospect list into a "
-                    "personal-data collection campaign."
-                ),
-                (
-                    "Run enrichment from cheapest decisive evidence to expensive "
-                    "verification. First validate VIN length and format, decode it "
-                    "through NHTSA vPIC, and compare the returned model year and body "
-                    "class with the proposed Black SUV service. Next query the "
-                    "relevant TLC or CPUC record, preserving its published update "
-                    "time rather than assuming that today's download means today's "
-                    "status. Then inspect recall evidence and order an NMVTIS report "
-                    "through an approved provider when title history could change "
-                    "the acquisition or co-hosting decision. NHTSA's public recall "
-                    "campaign API is not a VIN-specific repair-completion certificate; "
-                    "use the manufacturer or dealer channel for completion evidence. "
-                    "NICB VINCheck is a limited screening input, not a complete "
-                    "ownership, theft, or damage history. Finish with authorized "
-                    "driver records and carrier-issued coverage evidence before "
-                    "assigning a revenue shift. For illustration, avoiding one "
-                    "$180 title report and inspection bundle on each of five clearly "
-                    "ineligible prospects saves $900; that saving is an acquisition "
-                    "expense reduction, not additional lease revenue. If sources "
-                    "disagree, retain both observations, open an exception, and hold "
-                    "the assignment until the issuing authority, owner, or insurer "
-                    "resolves the relevant fact in writing."
-                ),
-                (
-                    "The first eight directory entries cover official records and "
-                    "low-cost verification. Their cost descriptions identify charging "
-                    "structures, not invented vendor quotes; capture the current "
-                    "price and permitted use during onboarding. For Socrata, locate "
-                    "the named dataset, record its resource identifier, and use its "
-                    "Export or API documentation rather than copying an identifier "
-                    "from an old blog. Page large responses, select only necessary "
-                    "columns, and compare record counts with the published export. "
-                    "A zero-row response can mean a bad filter, renamed field, or "
-                    "stale identifier; it cannot independently prove that a vehicle "
-                    "lacks authority. Check dataset metadata and run a known-valid "
-                    "control lookup before escalating an empty result. Cache stable "
-                    "VIN decoding, but refresh status-sensitive permit evidence at "
-                    "dispatch and after a relevant alert. California TCP authority "
-                    "and New York TLC licensing are jurisdiction-specific regimes, "
-                    "not interchangeable national credentials. Airport operating "
-                    "rights require separate verification with the airport involved. "
-                    "If a portal blocks automation, use its permitted manual lookup "
-                    "or published download and record the operator's evidence; do "
-                    "not bypass challenges or borrow another account. Give every "
-                    "fallback an expiry so a saved screenshot never quietly becomes "
-                    "permanent operating authority."
-                ),
-            ],
-            "table": {
-                "caption": (
-                    "Named Source Directory, Entries 1-8: Public Registries and "
-                    "Authorized Government Record Channels"
-                ),
-                "headers": [
-                    "Named source and decisive operating question",
-                    "Exact access method and evidence captured",
-                    "Cost tier and purchasing control",
-                    "Refresh latency and freshness treatment",
-                    "Rate-limit hygiene and extraction discipline",
-                    "Fallback source and operating response",
-                ],
-                "rows": [
-                    [
-                        "NYC TLC Active For-Hire Vehicles tests local vehicle licensing status.",
-                        "At data.cityofnewyork.us, find the exact dataset title and open its documented Socrata API.",
-                        "Public dataset access is free; budget separately for ingestion monitoring.",
-                        "Read the published update timestamp; recheck before first assignment and after status alerts.",
-                        "Use application tokens where supported, bounded pagination, cached snapshots, and delayed retries.",
-                        "Use TLC's official vehicle license lookup and retain dated authority evidence.",
-                    ],
-                    [
-                        "NYC TLC Active For-Hire Drivers tests published driver license status.",
-                        "At data.cityofnewyork.us, locate the named dataset and export only required status fields.",
-                        "Public dataset access is free; restrict staff access to identifying fields.",
-                        "Use source metadata to measure publication lag; check again before assignment.",
-                        "Filter narrowly, avoid repeated full downloads, and respect returned throttling instructions.",
-                        "Confirm through TLC's official license-status service before releasing a disputed assignment.",
-                    ],
-                    [
-                        "California CPUC Transportation Carrier Lookup tests the proposed carrier's TCP authority.",
-                        "Use cpuc.ca.gov transportation pages to open Transportation Carrier Lookup and search the carrier identifier.",
-                        "Public carrier lookup is free; authority application and renewal charges are separate.",
-                        "Capture the lookup time and displayed status; investigate effective-date differences immediately.",
-                        "Use the published search interface; automate only through explicitly supported access.",
-                        "Request current CPUC authority documents and resolve discrepancies through the commission.",
-                    ],
-                    [
-                        "NHTSA vPIC VIN decoding tests vehicle identity and advertised configuration.",
-                        "GET vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/{VIN}?format=json and preserve returned decoding errors.",
-                        "Public API access is free; internal development and exception review consume budget.",
-                        "Decode at onboarding and after corrected identifiers; retain the source observation date.",
-                        "Cache by VIN, serialize bursts, and use documented batch methods when appropriate.",
-                        "Compare registration and manufacturer build evidence; unresolved identity differences stop onboarding.",
-                    ],
-                    [
-                        "NHTSA recall campaign data identifies model-level safety campaigns requiring investigation.",
-                        "GET api.nhtsa.gov/recalls/recallsByVehicle with make, model, and modelYear query parameters.",
-                        "Public campaign lookup is free; dealer inspection or repairs may involve separate costs.",
-                        "Poll active fleet models weekly; verify VIN-specific repair status through manufacturer channels.",
-                        "Cache make-model-year requests and back off on temporary service or quota errors.",
-                        "Use nhtsa.gov/recalls and manufacturer VIN lookup; obtain dealer repair-completion evidence.",
-                    ],
-                    [
-                        "NMVTIS approved consumer providers reveal reported title brands and salvage events.",
-                        "Select an approved provider through vehiclehistory.bja.ojp.gov and purchase the VIN report.",
-                        "Reports are provider-priced per vehicle or contract; approve charges before ordering.",
-                        "Reporting lag varies by submitting entity; inspect event dates before acquisition.",
-                        "Use provider-approved purchases or contracted API access; never scrape restricted reports.",
-                        "Obtain state title evidence and independent inspection; title conflicts stop vehicle acceptance.",
-                    ],
-                    [
-                        "NICB VINCheck screens limited participating-insurer theft and salvage reporting.",
-                        "Use nicb.org/vincheck manually under the published service conditions and permitted purpose.",
-                        "The public lookup is free; it does not replace paid title investigation.",
-                        "Search during onboarding; treat results as limited coverage with reporting delays.",
-                        "Honor displayed search caps; do not rotate addresses or accounts around restrictions.",
-                        "Escalate to NMVTIS and authorized ownership documentation before accepting disputed vehicles.",
-                    ],
-                    [
-                        "California DMV Employer Pull Notice supports qualifying employer driver monitoring.",
-                        "Enroll through dmv.ca.gov Employer Pull Notice pages and follow authorized driver enrollment procedures.",
-                        "DMV enrollment and record fees follow the current schedule and applicable exemptions.",
-                        "Use delivered notices and program-scheduled records; do not represent them as instantaneous.",
-                        "Follow enrollment, purpose, retention, and delivery rules rather than scraping DMV pages.",
-                        "Obtain an authorized current DMV record while preserving required program participation.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four ways experienced fleet desks avoid expensive false positives",
-                "body": (
-                    "Spend verification effort where it changes vehicle acceptance, "
-                    "shift assignment, or collectible cash."
-                ),
-                "items": [
-                    (
-                        "Store plate assignments as dated intervals; a toll posted "
-                        "after a plate transfer belongs to the event-time assignment."
-                    ),
-                    (
-                        "Run a known-valid TLC lookup alongside every ingestion job; "
-                        "an empty control result signals a broken feed, not mass suspension."
-                    ),
-                    (
-                        "Separate recall campaign discovery from completed repair "
-                        "evidence; request the dealer repair order before closing the exception."
-                    ),
-                    (
-                        "Reject an unsuitable vehicle configuration using cached vPIC "
-                        "evidence before purchasing deeper reports or scheduling an inspection."
-                    ),
-                ],
-            },
-        },
-        {
-            "heading": "2. Connect authorized APIs without confusing access with entitlement",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Permissioned integrations begin with an authority register, not "
-                    "an API key pasted into a spreadsheet. Record the account owner, "
-                    "approved purpose, allowed fleet identifiers, scopes, credential "
-                    "custodian, renewal date, and revocation procedure. Uber supplier "
-                    "tools expose capabilities according to geography, relationship, "
-                    "and account entitlement; do not assume a public endpoint can "
-                    "read every driver's earnings or enforce every lease waterfall. "
-                    "Use the authorized portal export until the relevant supported "
-                    "integration is available. Samsara and Geotab can provide vehicle "
-                    "telemetry through contracted interfaces, but location access "
-                    "does not confer authority to command hardware. Keep command "
-                    "credentials outside the reporting pipeline. Starter-interrupt "
-                    "equipment requires a separate documented process addressing "
-                    "local restrictions, contract disclosures, stationary-state "
-                    "verification, emergency access, and vendor safety controls; "
-                    "a billing exception must never directly trigger immobilization. "
-                    "Stripe events show payment lifecycle changes, not final earned "
-                    "revenue or irrevocable collection. Match processor settlements, "
-                    "fees, refunds, and disputes against the bank deposit before "
-                    "closing a billing period. The commercial directory below names "
-                    "eight channels worth evaluating; none implies that this desk "
-                    "already has credentials, a negotiated price, production access, "
-                    "or the right to retrieve another operator's records."
-                ),
-                (
-                    "Use an append-only ingestion envelope containing source, "
-                    "account identifier, event identifier, event time, receipt time, "
-                    "schema version, and raw-object digest. Deduplicate webhooks by "
-                    "source account and event identifier, then apply updates through "
-                    "an idempotent transaction. Providers can retry messages, deliver "
-                    "them late, or deliver a refund before a delayed payment event; "
-                    "the current business state must come from a supported object "
-                    "lookup or an explicit state transition policy. Poll overlapping "
-                    "time windows where a feed supports them, and advance the "
-                    "watermark only after the full page set commits. Respect "
-                    "Retry-After when supplied; otherwise use bounded exponential "
-                    "backoff with jitter and a retry ceiling. Persistent failures "
-                    "go to an exception queue instead of spinning indefinitely. "
-                    "Preserve raw timestamps and normalize a separate field to UTC, "
-                    "retaining local service dates for toll disputes and shift "
-                    "billing. Encrypt driver reports separately from telemetry and "
-                    "settlement records, and give dispatch only the eligibility "
-                    "result needed for assignment. Consumer-report use requires "
-                    "a permissible purpose under 15 U.S.C. 1681b; employment-purpose "
-                    "reports bring additional disclosure, authorization, and adverse "
-                    "action duties when applicable. Calling a driver an independent "
-                    "contractor does not settle those questions."
-                ),
-                (
-                    "A small fleet needs a freshness budget for each decision. "
-                    "A historical VIN decode can remain useful for months, while "
-                    "a device's last GPS fix must carry its actual event time "
-                    "before anyone uses it to coordinate a pickup. Establish a "
-                    "local operating threshold, such as flagging location samples "
-                    "older than fifteen minutes for dispatch review, without "
-                    "pretending the vendor promises that latency. Toll charges "
-                    "may arrive days after a shift; keep the lease ledger open "
-                    "for the contractually stated reconciliation period and retain "
-                    "the event-time vehicle assignment. Use Google Ads API reporting "
-                    "only for accounts the client has authorized through the "
-                    "appropriate manager relationship. Developer-token access and "
-                    "OAuth authorization are separate requirements, and neither "
-                    "proves card-reward eligibility. Review account quotas in the "
-                    "provider console rather than hard-coding folklore about "
-                    "requests per minute. Every integration should have a manual "
-                    "continuity route: signed export, secure portal download, or "
-                    "a documented provider support case. During an outage, label "
-                    "stale observations explicitly, stop decisions that require "
-                    "fresh evidence, and continue unaffected collections or "
-                    "bookkeeping. This preserves useful operations without turning "
-                    "a temporary data failure into an unjustified driver rejection "
-                    "or an unsafe vehicle assignment."
-                ),
-            ],
-            "table": {
-                "caption": (
-                    "Named Source Directory, Entries 9-16: Contracted APIs, "
-                    "Account Portals, and Permissioned Verification Tools"
-                ),
-                "headers": [
-                    "Named source and decisive operating question",
-                    "Exact access method and evidence captured",
-                    "Cost tier and purchasing control",
-                    "Refresh latency and freshness treatment",
-                    "Rate-limit hygiene and extraction discipline",
-                    "Fallback source and operating response",
-                ],
-                "rows": [
-                    [
-                        "Checkr driver screening supplies ordered reports for authorized eligibility decisions.",
-                        "Use dashboard.checkr.com or the documented api.checkr.com interface with approved account credentials.",
-                        "Reports and packages are paid; jurisdictional charges and monitoring require current quotations.",
-                        "Completion depends on source availability; preserve pending status until the report completes.",
-                        "Verify webhook signatures, deduplicate events, and follow account-specific API limits.",
-                        "Use the authorized dashboard and provider support; never substitute an unrelated person's record.",
-                    ],
-                    [
-                        "SambaSafety driver monitoring identifies changes within the contracted reporting program.",
-                        "Use sambasafety.com customer access and provisioned integration documentation for enrolled drivers.",
-                        "Monitoring and record retrieval are contracted services with product-specific pricing.",
-                        "Freshness depends on state sources and subscribed products; inspect each record's dates.",
-                        "Apply contracted quotas, deduplicate notices, and avoid repeated unnecessary record purchases.",
-                        "Order a current authorized state record and resolve monitoring discrepancies with support.",
-                    ],
-                    [
-                        "Uber Supplier Portal supports entitled fleet account reporting and settlement review.",
-                        "Use supplier.uber.com and supported exports; request integration access through the account relationship.",
-                        "Access and commercial arrangements depend on the fleet relationship and market.",
-                        "Use displayed reporting periods and settlement status; exports are not live bank confirmation.",
-                        "Use supported exports or approved interfaces; never automate private session endpoints.",
-                        "Reconcile account statements with bank deposits and request missing settlement detail.",
-                    ],
-                    [
-                        "Samsara telematics connects contracted vehicle observations to dispatch and maintenance.",
-                        "Use developers.samsara.com and api.samsara.com with scoped tokens for authorized fleet assets.",
-                        "Hardware, connectivity, software subscriptions, and feature access follow the negotiated contract.",
-                        "Device connectivity controls delivery; evaluate event timestamps separately from API receipt times.",
-                        "Follow endpoint limits, paginate results, and request only necessary assets and fields.",
-                        "Use the authorized dashboard and manual mileage evidence; suspend stale-location dispatch assumptions.",
-                    ],
-                    [
-                        "Geotab MyGeotab supplies permissioned device feeds and vehicle diagnostic observations.",
-                        "Use developers.geotab.com MyGeotab API documentation and GetFeed for entitled database entities.",
-                        "Hardware and service plans are contracted; reseller terms determine included capabilities.",
-                        "Feed arrival depends on device reporting and connectivity; preserve event and receipt times.",
-                        "Persist feed version tokens, respect method limits, and retry without duplicating observations.",
-                        "Use MyGeotab exports and service records; investigate device silence before drawing conclusions.",
-                    ],
-                    [
-                        "New York E-ZPass statements establish posted toll amounts for account vehicles.",
-                        "Use ezpassny.com account access and permitted statement downloads for the operator's account.",
-                        "Account, tag, and toll charges follow the issuing authority's current schedule.",
-                        "Posting can lag travel; distinguish passage date, posting date, and statement close.",
-                        "Use permitted downloads without bypassing login controls; schedule reconciliation around statement availability.",
-                        "Request authority transaction detail and compare plate, tag, route, and driver assignment.",
-                    ],
-                    [
-                        "Stripe payment events support lease collection matching and dispute tracking.",
-                        "Use docs.stripe.com, api.stripe.com, and signed webhooks scoped to the authorized account.",
-                        "Processing, disputes, and optional products carry published or contracted transaction charges.",
-                        "Events can retry or arrive out of order; settlement follows payout schedules.",
-                        "Use idempotency keys for supported writes, bounded pagination, and documented retry behavior.",
-                        "Use Dashboard exports and bank statements; leave unmatched receipts in suspense.",
-                    ],
-                    [
-                        "Google Ads API verifies authorized advertising delivery and account spending.",
-                        "Use developers.google.com/google-ads/api with OAuth, developer token, and authorized customer identifiers.",
-                        "Advertising spend and operating costs apply; token access does not create reward entitlement.",
-                        "Reporting freshness varies by metric; reconcile invoiced spend after billing adjustments.",
-                        "Observe developer-token quotas, batch suitable queries, and cache completed reporting periods.",
-                        "Use authorized account exports and invoices; switch to client-direct billing when required.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before a vehicle earns its first shift",
-                "body": (
-                    "Release the assignment only when the evidence covers the "
-                    "specific driver, vehicle, service, jurisdiction, and operating time."
-                ),
-                "items": [
-                    (
-                        "Match VIN, current plate interval, driver identity, signed "
-                        "agreement, and any required TLC, TCP, or airport authority."
-                    ),
-                    (
-                        "Obtain carrier or authorized broker evidence of continuous "
-                        "commercial livery or applicable Period 1-2-3 coverage, "
-                        "including off-app use and the actual rental arrangement."
-                    ),
-                    (
-                        "Complete authorized driver screening, required report-use "
-                        "procedures, and review of unresolved safety or eligibility exceptions."
-                    ),
-                    (
-                        "Test settlement import, toll assignment, location freshness, "
-                        "and manual continuity; keep remote hardware commands isolated."
-                    ),
-                ],
-            },
-        },
-        {
-            "heading": "3. Map ten plays to collectible cash and the canonical scorecard",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The ten chapter mappings are operating workflows, not ten "
-                    "additional revenue lines. The first five are driver lease "
-                    "waterfalls, Black SUV shift dispatch, investor vehicle "
-                    "co-hosting, permit verification, and VIN screening. The next "
-                    "section maps coverage continuity, driver monitoring, toll "
-                    "recovery, maintenance scheduling, and the specified advertising "
-                    "rewards play. Maintain that distinction because one vehicle "
-                    "can touch nine workflows while generating only one lease "
-                    "invoice. An illustrative vehicle billed at $550 for fifty "
-                    "paid weeks produces $27,500 of annual gross lease billings; "
-                    "two empty weeks do not become receivables merely because "
-                    "a calendar contains fifty-two weeks. At the modeled 55% "
-                    "retained share, that example leaves $15,125 before the "
-                    "remaining operator expenses. A $600 missed deductible "
-                    "reimbursement consumes more than one week's $302.50 retained "
-                    "lease contribution. For dispatch, calculate margin on the "
-                    "contractual dispatch fee or appropriately classified service "
-                    "billings, never on passenger fares the operator neither "
-                    "earns nor controls. For co-hosting, use the investor agreement's "
-                    "documented waterfall and distinguish owner distributions from "
-                    "operator earnings. These examples explain sensitivities; they "
-                    "are not a reconstructed fleet count or a replacement for "
-                    "the supplied Formula v2.0 scenario totals."
-                ),
-                (
-                    "Reconcile the scorecard through three layers: gross operator "
-                    "billings, retained contribution, and owner net profit. "
-                    "Conservative billings of $180,000 retain $99,000 at 55%; "
-                    "subtract $73,800 of remaining modeled expenses to reach "
-                    "$25,200 owner profit. Base billings of $690,000 retain "
-                    "$379,500; subtract $234,600 to reach $144,900. Scaled billings "
-                    "of $1,200,000 retain $660,000; subtract $324,000 to reach "
-                    "$336,000. Gross-basis net margins remain exactly 14%, 21.0%, "
-                    "and 28%, while retained-basis margins round to 25.45%, "
-                    "38.18%, and 50.91%. Conservative and Base staffing remain "
-                    "1 FT plus 3 contractors; Scaled remains 2 FT plus 4 "
-                    "contractors. Preserve the model's 55% ASC 606 retained-share "
-                    "presentation without treating that percentage as an accounting "
-                    "rule for every contract: principal-versus-agent analysis "
-                    "depends on the actual promises and control of services. "
-                    "The stated $2,500-$15,000 monthly operating expense range "
-                    "does not independently explain every annual expense above; "
-                    "do not force those measures to match by inventing categories. "
-                    "Build an explicit expense bridge when underlying records "
-                    "become available. Keep passenger GMV, investor asset value, "
-                    "loan balances, deposits, and client advertising pass-throughs "
-                    "outside operator revenue unless the applicable contract and "
-                    "accounting treatment support recognition."
-                ),
-                (
-                    "Map agency_ad_spend_card_multiplier_rebate_cycling as TRACK_2, "
-                    "a separate authorized advertising-payment workflow rather "
-                    "than a reason to inflate fleet demand. Its full operating "
-                    "concept is Whitelisted Agency Ad-Spend Card-Multiplier Points "
-                    "& Volume-Rebate Cycling: only genuine client-authorized spend "
-                    "under eligible agency arrangements can qualify. An illustrative "
-                    "$20,000 monthly campaign earning a documented 2% cash-equivalent "
-                    "reward and a separately stackable 0.5% volume rebate yields "
-                    "$500 before costs. Subtract $120 of incremental funding and "
-                    "processing costs plus $200 contractually owed to the client; "
-                    "the remaining contribution is $180. Confirm whether points "
-                    "actually redeem at the assumed value and whether refunds "
-                    "reverse both benefits. Do not count the $20,000 client spend "
-                    "as fleet revenue, count the same rebate twice, or layer "
-                    "this example onto canonical profit without removing existing "
-                    "amounts. Match Ads invoices, card statements, rebate settlement "
-                    "records, and client terms by billing period. Prohibit "
-                    "manufactured spending, circular payments, and campaign "
-                    "expansion justified only by rewards. If eligibility changes, "
-                    "the client withdraws authority, or costs consume the spread, "
-                    "move to client-direct billing or prefunded approved agency "
-                    "terms and stop rewards-dependent spending. The fallback "
-                    "protects the underlying campaign rather than chasing a "
-                    "payment incentive."
-                ),
-            ],
-            "table": {
-                "caption": (
-                    "Mapped Plays 1-5: Acquisition, Leasing, Dispatch, and "
-                    "Co-Hosting Unit Economics"
-                ),
-                "headers": [
-                    "Mapped operating play and evidence chain",
-                    "Concrete unit math and ledger treatment",
-                    "Failure mode and diagnostic signal",
-                    "Risk fallback and required operating response",
-                ],
-                "rows": [
-                    [
-                        "Play 1: Driver lease waterfalls link authorized platform statements, contracts, and deposits.",
-                        "$550 multiplied by fifty paid weeks equals $27,500 billings and $15,125 modeled retained contribution.",
-                        "Missing platform deductions or duplicate invoices overstate collectible cash and expected distributions.",
-                        "Use direct contract reconciliation and permitted collection methods; never assume platform deduction priority.",
-                    ],
-                    [
-                        "Play 2: Black SUV shift dispatch links service eligibility, airport rights, and completed bookings.",
-                        "Twelve completed shifts at a $40 dispatch fee produce $480 operator fee billings.",
-                        "Counting passenger trip value as dispatch revenue inflates yield and hides empty shifts.",
-                        "Assign only eligible replacement vehicles and recognize completed contractual fees without invented utilization.",
-                    ],
-                    [
-                        "Play 3: Investor vehicle co-hosting links vehicle acceptance, owner agreements, and monthly waterfalls.",
-                        "$4,000 eligible receipts with a contractual 25% fee create $1,000 fee billings before expenses.",
-                        "Applying both the contract split and modeled retention to identical costs double-counts deductions.",
-                        "Bridge contractual cash flows to scorecard categories once; dispute unclear charges before distribution.",
-                    ],
-                    [
-                        "Play 4: Permit verification links TLC, CPUC, and applicable airport operating evidence.",
-                        "Avoiding two unusable $350 shift commitments preserves $700 before any replacement service costs.",
-                        "A fresh download containing stale source status creates false confidence about operating authority.",
-                        "Confirm current authority with the issuing body or substitute an independently eligible vehicle.",
-                    ],
-                    [
-                        "Play 5: VIN screening links vPIC identity checks, recall evidence, and NMVTIS reports.",
-                        "Rejecting five unsuitable prospects before a $180 inspection bundle preserves $900 acquisition expense.",
-                        "Model-level recall results cannot establish VIN-specific repair completion or complete title history.",
-                        "Obtain manufacturer repair evidence and state title records; reject unresolved identity conflicts.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Register the account and permitted purpose",
-                    "action": (
-                        "Record the data owner, approved use, authorized assets, "
-                        "credential scope, and revocation contact."
-                    ),
-                    "detail": (
-                        "Separate public registry access from driver-report permissions, "
-                        "platform entitlements, and advertising payment authority."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Capture evidence before transforming it",
-                    "action": (
-                        "Save raw exports or responses with source timestamps, "
-                        "retrieval timestamps, and SHA-256 digests."
-                    ),
-                    "detail": (
-                        "Maintain immutable originals and effective-dated identity "
-                        "links; normalize only into a separate working dataset."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Reconcile the decision and the money",
-                    "action": (
-                        "Join eligible assignments to invoices, settlement events, "
-                        "bank deposits, and contractual distributions."
-                    ),
-                    "detail": (
-                        "Quarantine duplicates, stale authority, unmatched tolls, "
-                        "and unexplained split differences before closing the period."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Publish exceptions with named owners",
-                    "action": (
-                        "Issue a daily exception report showing affected shifts, "
-                        "cash exposure, responsible staff, and resolution deadlines."
-                    ),
-                    "detail": (
-                        "Use documented manual continuity for unaffected operations "
-                        "and retain the evidence that closed each exception."
-                    ),
-                },
-            ],
-        },
-        {
-            "heading": "4. Instrument the desk so stale data cannot become a cash leak",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "A useful control panel shows decisions and exposure, not "
-                    "just successful HTTP requests. Track source freshness, unmatched "
-                    "vehicle identities, unassigned toll amounts, unresolved coverage "
-                    "intervals, pending driver reports, settlement differences, and "
-                    "vehicle downtime hours. Give each metric a denominator: five "
-                    "unmatched tolls out of six is different from five out of "
-                    "six thousand. Use Python logging for structured job events, "
-                    "sqlite3 for durable local state, hashlib for evidence digests, "
-                    "and unittest for parsers and reconciliation rules. Keep "
-                    "credentials out of logs and sample payloads. Add tests for "
-                    "duplicate webhooks, plate reuse, daylight-saving transitions, "
-                    "negative adjustments, partial refunds, canceled shifts, and "
-                    "late toll posting. A job should fail visibly if a required "
-                    "column disappears or a monetary field changes format; silently "
-                    "substituting zero turns a schema change into fabricated "
-                    "performance. Compare daily row counts and total amounts "
-                    "against historical ranges, but route unusual results to "
-                    "review rather than deleting them. For a one-person full-time "
-                    "desk supported by contractors, assign one exception owner "
-                    "and one backup per feed. Contractors receive only the "
-                    "records required for their task, while access revocation "
-                    "is part of offboarding rather than an annual cleanup."
-                ),
-                (
-                    "Coverage continuity and driver monitoring deserve independent "
-                    "exception queues because a cash ledger cannot prove either. "
-                    "For each vehicle, align policy effective intervals with the "
-                    "actual service: off-app rental use, app-on waiting, accepted "
-                    "trips, passenger transport, and commercial livery assignments. "
-                    "California Public Utilities Code section 5433 addresses "
-                    "transportation network company insurance, but it does not "
-                    "replace the coverage analysis for a TCP livery arrangement "
-                    "or an investor-owned vehicle rented to a driver. Ask the "
-                    "carrier or authorized broker to resolve exclusions, vehicle "
-                    "schedules, driver restrictions, and cancellation notices; a "
-                    "certificate alone does not rewrite the policy. Driver "
-                    "monitoring likewise needs a defined response to a new "
-                    "record, a dispute, and an incomplete report. Where employment "
-                    "reporting rules apply, build the required pre-adverse and "
-                    "adverse action steps into the case workflow rather than "
-                    "letting an automated score terminate access. Apply a "
-                    "written retention schedule tied to the relevant purpose "
-                    "and dispute obligations. The business objective is timely, "
-                    "defensible assignment, not collecting every available "
-                    "personal detail. During a coverage or eligibility conflict, "
-                    "use a separately verified replacement or pause that "
-                    "assignment while continuing unrelated administrative work."
-                ),
-                (
-                    "Close the week with an exception-to-cash bridge. Begin "
-                    "with issued billings, subtract credits and reversals, "
-                    "separate collected cash from open receivables, then allocate "
-                    "investor distributions and pass-through fleet costs once. "
-                    "Measure toll recovery against contractually recoverable "
-                    "posted charges, not every camera event or provisional "
-                    "telematics inference. A $34 toll recovered exactly from "
-                    "the responsible driver can settle a receivable without "
-                    "creating $34 of retained profit. For maintenance, compare "
-                    "actual odometer evidence with the service schedule and "
-                    "book repairs into lower-demand windows. Avoiding two "
-                    "days of downtime at $550 divided by seven days preserves "
-                    "about $157.14 gross lease capacity, not that amount of "
-                    "owner profit; apply retention and incremental repair "
-                    "costs before claiming a benefit. Track advertising rewards "
-                    "only after the issuer and rebate provider settle them, "
-                    "with reversals assigned to the original campaign. Review "
-                    "the ten mappings monthly and retire feeds that do not "
-                    "change a decision, prevent a loss, or accelerate collection. "
-                    "Capital remains constrained by the canonical $12,000-$65,000 "
-                    "startup range, and first-deal planning remains one to "
-                    "three months. Buying more dashboards does not shorten "
-                    "vehicle qualification, insurance placement, or a legitimate "
-                    "client authorization process."
-                ),
-            ],
-            "table": {
-                "caption": (
-                    "Mapped Plays 6-10: Safety Evidence, Cost Recovery, "
-                    "Maintenance, and Authorized Advertising Rewards"
-                ),
-                "headers": [
-                    "Mapped operating play and evidence chain",
-                    "Concrete unit math and ledger treatment",
-                    "Failure mode and diagnostic signal",
-                    "Risk fallback and required operating response",
-                ],
-                "rows": [
-                    [
-                        "Play 6: Coverage continuity links carrier evidence, scheduled vehicles, and actual operating intervals.",
-                        "A $300 monthly premium increase across ten vehicles reduces annual contribution by $36,000.",
-                        "A policy exclusion or uncovered operating period can overwhelm apparent weekly lease spread.",
-                        "Pause affected assignments, obtain written coverage resolution, or use independently covered replacement capacity.",
-                    ],
-                    [
-                        "Play 7: Driver monitoring links authorized state records and contracted screening alerts.",
-                        "An illustrative $15 monthly monitoring price across twenty drivers costs $3,600 annually.",
-                        "Delayed source updates or identity mismatches can trigger incorrect driver eligibility decisions.",
-                        "Verify current records and applicable report-use procedures before acting on disputed information.",
-                    ],
-                    [
-                        "Play 8: Toll recovery links authority transactions to effective-dated plate and driver assignments.",
-                        "One hundred recoverable $34 tolls create $3,400 reimbursements, not automatically retained revenue.",
-                        "Posting-date allocation charges the wrong driver when vehicles change hands between shifts.",
-                        "Use passage-time assignments, contractual disclosures, and authority detail before collecting disputed charges.",
-                    ],
-                    [
-                        "Play 9: Maintenance scheduling links odometer evidence, diagnostic alerts, and completed repair orders.",
-                        "Two avoided downtime days at $550 weekly preserve approximately $157.14 gross lease capacity.",
-                        "Stale odometers or unresolved diagnostic alerts turn optimistic utilization forecasts into lost shifts.",
-                        "Verify mileage manually and substitute qualified capacity while completing documented service work.",
-                    ],
-                    [
-                        (
-                            "Play 10: agency_ad_spend_card_multiplier_rebate_cycling "
-                            "under TRACK_2 links authorized spend, issuer rewards, and volume rebates."
-                        ),
-                        "$20,000 spend earns $500 eligible benefits; subtract $120 costs and $200 client share for $180.",
-                        "Reward exclusions, reversals, delayed payment, or client pass-through duties can erase the spread.",
-                        "Move to client-direct billing or prefunded approved agency terms and stop rewards-dependent spending.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "An information edge exists only when a dated source changes an "
-        "assignment, prevents a loss, or reconciles collectible cash."
-    ),
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        (
-            "Create effective-dated VIN, plate, driver, investor, and agreement "
-            "records before importing any toll or settlement feed."
-        ),
-        (
-            "Register all sixteen directory sources with their current access "
-            "terms, costs, update behavior, authorized purpose, and manual fallback."
-        ),
-        (
-            "Build the public-record waterfall from vPIC and licensing checks "
-            "through title evidence, authorized driver reports, and carrier confirmation."
-        ),
-        (
-            "Implement idempotent ingestion, raw evidence digests, freshness checks, "
-            "schema tests, and a named owner for every unresolved exception."
-        ),
-        (
-            "Reconcile the three canonical cases to 55% retained contribution "
-            "and the exact $25,200, $144,900, and $336,000 owner profit totals."
-        ),
-        (
-            "Document client authority, issuer eligibility, rebate stacking, "
-            "costs, reversals, and the client-direct fallback before routing advertising spend."
-        ),
-    ],
-    "statutory_citations": [
-        {
-            "title": (
-                "18 U.S.C. 2721 — Prohibition on release and use of certain "
-                "personal information from state motor vehicle records"
-            ),
-            "url": "https://www.law.cornell.edu/uscode/text/18/2721",
-            "relevance": (
-                "Identify a permitted purpose before obtaining or using protected "
-                "motor vehicle record information; public fleet research does not "
-                "authorize unrestricted personal-data retrieval."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 1681b — Permissible purposes of consumer reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681b",
-            "relevance": (
-                "Establish the permissible purpose for driver reports and apply "
-                "employment-purpose disclosure, authorization, and pre-adverse "
-                "action requirements where applicable."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 1681m — Requirements on users of consumer reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681m",
-            "relevance": (
-                "Build applicable adverse-action notices and consumer reporting "
-                "agency identification into report-based eligibility decisions."
-            ),
-        },
-        {
-            "title": (
-                "California Public Utilities Code section 5433 — "
-                "Transportation network company insurance requirements"
-            ),
-            "url": (
-                "https://leginfo.legislature.ca.gov/faces/"
-                "codes_displaySection.xhtml?sectionNum=5433.&lawCode=PUC"
-            ),
-            "relevance": (
-                "Map insurance evidence to the relevant app and trip periods "
-                "for California TNC operations; separately assess commercial "
-                "livery, rental, and investor-owned vehicle arrangements."
-            ),
-        },
-        {
-            "title": (
-                "California Public Utilities Code section 5371 — "
-                "Charter-party carrier operating authority"
-            ),
-            "url": (
-                "https://leginfo.legislature.ca.gov/faces/"
-                "codes_displaySection.xhtml?sectionNum=5371.&lawCode=PUC"
-            ),
-            "relevance": (
-                "Verify applicable CPUC authority before assigning California "
-                "charter-party service; platform membership does not replace "
-                "required carrier authority."
-            ),
-        },
-        {
-            "title": (
-                "California Vehicle Code section 1808.1 — "
-                "Employer driver record information and notification"
-            ),
-            "url": (
-                "https://leginfo.legislature.ca.gov/faces/"
-                "codes_displaySection.xhtml?sectionNum=1808.1.&lawCode=VEH"
-            ),
-            "relevance": (
-                "Determine applicable Employer Pull Notice participation and "
-                "record obligations for the actual employer, driver, and "
-                "vehicle categories involved."
-            ),
-        },
-        {
-            "title": (
-                "49 U.S.C. 30120 — Remedies for defects and noncompliance"
-            ),
-            "url": "https://www.law.cornell.edu/uscode/text/49/30120",
-            "relevance": (
-                "Distinguish recall campaign discovery from documented remedy "
-                "completion and retain manufacturer or dealer evidence for "
-                "vehicle-specific safety exceptions."
-            ),
-        },
-    ],
-}
+CHAPTER_8 = {'id': 'Q8',
+ 'chapter_id': 'Q8',
+ 'chapter_number': 8,
+ 'question_number': 8,
+ 'slug': 'turo-co-hosting-arbitrage-scaling-with-other-peoples-cars',
+ 'question_prompt': "How can I grow a rental fleet using other people's cars through Turo co-hosting?",
+ 'kicker': 'Q8 / THE BIG MONEY PLAYBOOKS',
+ 'title': "Co-Hosting Arbitrage: Scaling a Turo Fleet With Other People's Cars",
+ 'subtitle': 'Co-hosting with zero cars or credit, recruiting passive car-owner investors, revenue splits, '
+             'shipping partner cars in, the three partners needed to run a fleet, systems for managing 99 '
+             'cars, lessons from 100–400+ car hosts, and co-hosting 101 Q&As',
+ 'layout_template': 'legal_compliance_callout',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Turo operators who scaled to 100-plus cars agree co-hosting is property management '
+                      'for cars: owners supply vehicles and pay expenses, the operator runs trips, claims, '
+                      "cleaning and guests, then splits revenue. Operator cuts run from Fleeteer's 15% fee "
+                      "and Delano Green's 30% to Max's tiered 35-45% and Demario Mccowan's 40%, with "
+                      'Brandon Bartron charging 30% of gross or $400, whichever is higher. Mccowan and '
+                      'Bartron insist the cut comes off gross, in a signed written agreement, never a '
+                      'handshake. The proof numbers are large: Green clears about $100k monthly profit '
+                      'near 99 cars, Alvin manages 90+ owner cars, and Peak Auto Academy shows a Yukon '
+                      'owner earning a 23% annualized return. The fights are over promising owners profit, '
+                      'which protection plan to run, and whether scale adds profit at all; Green warns '
+                      'more cars does not mean more profit.',
+ 'key_metrics': [{'label': 'Co-Hosted Car Break-Even Cost',
+                  'metric': 'Co-Hosted Car Break-Even Cost',
+                  'value': '$398 per car per month ($200 payroll + $198 lease, lights and internet)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Brandon Bartron's per-car operating cost with 7 employees, used to justify a "
+                             '$400 monthly fee floor on co-hosted cars.',
+                  'source': 'King of Rentals ([xCgsQFz-kOM @ 00:02:46])'},
+                 {'label': 'Owner Annualized Return on a Co-Hosted Yukon',
+                  'metric': 'Owner Annualized Return on a Co-Hosted Yukon',
+                  'value': '23% annualized ($6,770 owner share on $44,680 invested)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'A 2022 GMC Yukon grossed $14.5k over 8 months, netted $9,672, and paid the '
+                             'owner 70% of net under a 70/30 split.',
+                  'source': 'Peak Auto Academy ([3kqux9OEEfY @ 00:02:47])'},
+                 {'label': 'Monthly Profit at Roughly 99 Cars',
+                  'metric': 'Monthly Profit at Roughly 99 Cars',
+                  'value': 'Over $100k profit per month',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Delano Green's Martha's Vineyard operation after employees and vehicle "
+                             'partners were paid, mostly on co-hosted cars.',
+                  'source': 'Delano Green ([SPoQzQlFhXg @ 00:08:53])'},
+                 {'label': 'Claim Arbitrage Spread',
+                  'metric': 'Claim Arbitrage Spread',
+                  'value': '$8,000 estimate, $5,500 Turo payout, about $3,500 actual repair',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Alvin reports about 2% of rentals have accidents and runs repairs through '
+                             'his own channel below the payout.',
+                  'source': 'Car Sharing Jho ([uOTjoNGAa7w @ 00:14:03])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator who scaled past a handful of cars describes the same core '
+                              "trade. Max of King of Rentals calls it 'kind of like property management "
+                              "but for cars' [7IyNOkXwrsg @ 00:00:16]: the owner keeps title and "
+                              'insurance, the operator runs listings, guests, cleaning, claims and '
+                              'turnover. Jared Cook of Peak Auto Academy defines the deal as someone who '
+                              'owns a vehicle but wants you to manage it, and explains why supply keeps '
+                              "showing up: workload is the 'number one reason' hosts quit [3kqux9OEEfY @ "
+                              '00:00:56]. Cook went from a first car in August 2025 to 10 by December '
+                              'while making airport runs up to three times a day. Demario Mccowan built a '
+                              "rental business with no cars and no credit, rejecting the '30 cars in 30 "
+                              "days' approach and partnering with exhausted hosts instead, including a "
+                              'Detroit owner whose car went to Vegas for the winter [b4HG8nxaQlU @ '
+                              "00:00:50]. Mccowan's point is that co-hosting has no credit cap; cars came "
+                              'in from DC to San Diego. Delano Green proves the ceiling, reaching about 60 '
+                              'cars purely through co-hosting [xTVl-1-TkSI @ 00:04:02]. The shared '
+                              'prerequisite is simple: owners want hands-free income, and operators win by '
+                              'absorbing the labor that burns owners out.',
+                              'The second point of agreement is sequencing and money flow. Aubrey Janik is '
+                              "blunt that it is 'irresponsible' to run someone else's car before operating "
+                              'your own [Yjwp4WMIjbc @ 00:03:51], and the operators who scaled backed that '
+                              'up with years of hosting first: Alvin logged 8,000+ five-star trips over 5+ '
+                              'years and started co-hosting with relatives before posting results in Turo '
+                              "groups [uOTjoNGAa7w @ 00:02:01]. On money, the owner carries the car. Max's "
+                              'contract keeps ownership and insurance with the owner and puts maintenance '
+                              "on the owner [7IyNOkXwrsg @ 00:05:42], and Alvin's owners pay all expenses, "
+                              "which are deducted, at a 65/35 split after Turo's 90-plan cut. Demario "
+                              'Mccowan adds the rule every split debate returns to: take your cut off '
+                              "gross, not net. Mccowan's math is $1,000 gross minus $200 maintenance "
+                              'leaving the operator $320 instead of $400, and Mccowan later admits being '
+                              'paid on net yielded only $200-300 per car [b4HG8nxaQlU @ 00:06:35]. Owners '
+                              'also keep the tax deductions because they pay the costs, which Mccowan and '
+                              'Car Rental Coach host George both use as a selling point. The baseline '
+                              'stack: real hosting reps, owner-held insurance, owner-paid maintenance, and '
+                              'an operator cut taken from the top line before expenses touch it.',
+                              'The third consensus pillar is paper and honesty. Brandon Bartron, running '
+                              '173 cars in Arizona, learned it by losing: an early 20% deal that gave away '
+                              'all the extras crashed under owner micromanagement, and Bartron quit '
+                              "co-hosting for 1.5-2 years. Bartron's rule now is that the financial "
+                              "breakdown 'needs to be very clear in a written and signed agreement do not "
+                              "do co-hosting with a handshake' [xCgsQFz-kOM @ 00:10:25], with no revenue "
+                              'projections and a warning to expect minor damage. West Coast Dave sets '
+                              'expectations up front, records separate exterior and interior intake '
+                              'videos, and signs a contract where the owner keeps insurance [qSzMy86MT7I @ '
+                              "00:11:39]. The 400-car Florida operator Delano Green met says no 'fairy "
+                              "tales' when setting owner expectations [xTVl-1-TkSI @ 00:12:36], and Rick "
+                              'of M2M Rentals in Memphis says to be transparent with good and bad news and '
+                              'treat every car as your own [cp3QlVZWrog @ 00:16:10]. Payout rhythm is part '
+                              'of the same trust stack: Rick pays by check or wire on the 3rd with a '
+                              'portal showing receipts, invoices and GPS, Bartron sends a check on the '
+                              "15th with a breakdown, and Green's owners prefer monthly payouts over "
+                              'biweekly. Clean statements and blunt warnings are the retention tool every '
+                              'one of them leans on.'],
+               'table': {'caption': 'Where the scaled co-hosting operators agree',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Actually Do',
+                                     'Why It Holds Up',
+                                     'Expert Source'],
+                         'rows': [["Run your own cars before taking anyone else's",
+                                   "Aubrey Janik calls managing other people's cars first irresponsible; "
+                                   'Alvin started with relatives',
+                                   'Operators need firsthand trip, claim and turnover reps before carrying '
+                                   'owner risk',
+                                   'Aubrey Janik ([Yjwp4WMIjbc @ 00:03:51])'],
+                                  ['Burned-out hosts are the vehicle supply pipeline',
+                                   'Pitch owners exhausted by workload, which Cook calls the number one '
+                                   'quitting reason',
+                                   'Owners keep the asset while handing off every hour of daily labor',
+                                   'Peak Auto Academy ([3kqux9OEEfY @ 00:00:56])'],
+                                  ['Take the operator cut off gross revenue',
+                                   "Mccowan's 40% of gross pays $400 on $1,000 versus $320 calculated on "
+                                   'net',
+                                   'Net-based deals left Mccowan earning only $200-300 per car',
+                                   'Demario Mccowan ([b4HG8nxaQlU @ 00:06:35])'],
+                                  ['Owner keeps ownership, insurance and maintenance obligations',
+                                   "Max's contract sections assign ownership, insurance and maintenance to "
+                                   'the vehicle owner',
+                                   'Max calls a flat fee plus co-host-paid maintenance a terrible idea',
+                                   'King of Rentals ([7IyNOkXwrsg @ 00:05:04])'],
+                                  ['Written and signed agreement, never a handshake deal',
+                                   'Bartron lists every fee in writing; the King of Rentals host admits '
+                                   'doing about 15 handshake cars',
+                                   "Bartron's first loose 20% arrangement crashed and stopped co-hosting "
+                                   'for years',
+                                   'King of Rentals ([xCgsQFz-kOM @ 00:10:25])'],
+                                  ['No fairy-tale revenue projections to new owners',
+                                   'Bartron gives zero projections; the 400-car Florida host refuses to '
+                                   'sell fairy tales',
+                                   'Bartron says promising owners profit is a lie; sell payment and '
+                                   'depreciation subsidies',
+                                   'Delano Green ([xTVl-1-TkSI @ 00:12:36])'],
+                                  ['Transparent reporting with a fixed monthly payout date',
+                                   'Rick pays on the 3rd with a receipts portal; Bartron sends checks on '
+                                   'the 15th',
+                                   'Delano Green reports owners prefer monthly payouts over biweekly '
+                                   'payout schedules',
+                                   'Car Rental Coach ([cp3QlVZWrog @ 00:06:57])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Fee structures are where the street numbers get specific. Max benchmarks '
+                              'the market at 35-50% of gross, with one operator at 70%, and flat fees '
+                              'around $400 per car per month; the King of Rentals tier sheet charges 45% '
+                              'for 1-3 cars, 40% for 4-10 and 35% for 10+, plus a setup fee covering '
+                              'detail, photos, tracker and listing [7IyNOkXwrsg @ 00:08:07]. Brandon '
+                              "Bartron charges '30% of the gross amount that turo pays or $400 whichever "
+                              "is higher' [xCgsQFz-kOM @ 00:11:29], keeps extras like smoking fees, and "
+                              'uses the $400 floor to screen out low earners, refusing a lineup of 20 '
+                              "Fiats. Bartron's break-even is $398 per car: $200 payroll plus $198 lease, "
+                              'lights and internet across 7 employees. Alvin in Jacksonville runs 65/35 '
+                              "after Turo's 90-plan cut with tiers up to 70 and 75, passes owners 65% of "
+                              'incidentals, and bills $50 a month parking and $15 a month washing per car '
+                              '[uOTjoNGAa7w @ 00:06:25]. At the low end, Fleeteer manages for 15% of '
+                              'rental earnings and advertises a minimum of up to $1,200 a month '
+                              '[NINtu6BJvFY @ 00:03:14]. Mccowan reads the market at 20-40% or a flat fee, '
+                              'while running 60/40 of gross with about $250 upfront.',
+                              'Intake and turnover systems are what let one operator carry dozens of owner '
+                              'cars. Demario Mccowan shoots 60-80 photos at intake, runs two trackers '
+                              '(Advantage and Linder), approves repairs under $150 without asking the '
+                              'owner, and handles W-9s and 1099s [b4HG8nxaQlU @ 00:24:32]. Rick sets up '
+                              'the One Step tracker while the car is in transit, lists after inspection, '
+                              'and sees cars booked within 3-4 hours; each car gets a number like M109 '
+                              'matching its keybox plus oil-change and wash stickers, with a 3-hour '
+                              "turnaround [cp3QlVZWrog @ 00:12:03]. Rick's fee capture routes incidentals "
+                              'to an email watched by office staff, logs everything in Excel, and answers '
+                              "denials by quoting Turo's terms; a 2018 Rogue returned about 24 hours late "
+                              'with roughly 1,000 extra miles drew improper-return, late-return and '
+                              'extra-day charges. Delano Green built photo and video folders per car, SOP '
+                              'training videos for staff, and color-coded key tags, and lets the ops '
+                              'manager approve only what Green has approved before [ziuX0-egB7Y @ '
+                              "00:03:53]. West Coast Dave says going contactless 'changed everything' and "
+                              "calls it 'a key component to scaling' [qSzMy86MT7I @ 00:28:07], running "
+                              'Carsync and then Turo automated messages, no deliveries, and an Uber pickup '
+                              'option on luxury cars billed as the delivery fee.',
+                              'Sourcing and seasonal arbitrage drive fleet growth without buying cars. '
+                              'Mccowan works a 4,000-member Facebook group holding roughly 400-800 hosts, '
+                              "posting results like 'new car, $1,400-1,800/mo' with no call to action and "
+                              'letting owners come in [b4HG8nxaQlU @ 00:12:40]. Delano Green runs the '
+                              'arbitrage hardest: partner cars listed at $300-400 a day earn about a '
+                              "year's revenue in roughly three months, then ship to the next market, while "
+                              'the same cars earn $80-90 a day elsewhere [PSopHdn3T8M @ 00:01:54]. Green '
+                              'cycles cars through Miami, Texas and New Jersey, signs a service agreement '
+                              'with dispatch and a bill of lading with the driver, and pulls plates into '
+                              "the trunk so tolls don't show up months later. Alvin taps the same "
+                              'dormancy, taking 10 cars from Virginia and 24 from Maryland because those '
+                              'markets sit dormant six months a year [uOTjoNGAa7w @ 00:02:51]. Brandon '
+                              'Bartron gets referrals from car salespeople whose customers dislike '
+                              'trade-in offers, with one salesperson sending 6-7 cars, and pitches owners '
+                              'on subsidizing the car payment and depreciation for taxes rather than '
+                              "profit [xCgsQFz-kOM @ 00:18:59]. Aubrey Janik's guest Alvin also works "
+                              'Facebook investing and automotive groups, Reddit, LinkedIn and accounting '
+                              'groups as lead channels.'],
+               'table': {'caption': 'Co-hosting levers, numbers and tools as the operators run them',
+                         'headers': ['Lever',
+                                     'Exact Number or Tool',
+                                     'How Operators Run It',
+                                     'Expert Source'],
+                         'rows': [['Tiered percentage split by owner fleet size',
+                                   '45% for 1-3 cars, 40% for 4-10, 35% for 10+ of gross',
+                                   'Setup fee covers detail, photos, tracker and listing before the car '
+                                   'launches',
+                                   'King of Rentals ([7IyNOkXwrsg @ 00:08:07])'],
+                                  ['Gross percentage with a monthly dollar floor',
+                                   '30% of gross Turo payout or $400, whichever is higher',
+                                   'Floor screens low earners; extras like smoking fees stay with the '
+                                   'operator',
+                                   'King of Rentals ([xCgsQFz-kOM @ 00:11:29])'],
+                                  ['Per-car operating break-even calculation',
+                                   '$200 payroll plus $198 lease, lights and internet equals $398',
+                                   'Owners sending 10 cars spread fixed costs lower per vehicle',
+                                   'King of Rentals ([xCgsQFz-kOM @ 00:02:46])'],
+                                  ['Owner-side charges and incidental revenue sharing',
+                                   '65/35 after the 90 plan, $50 parking and $15 wash monthly',
+                                   'Owners receive 65% of incidentals and pay all expenses, which get '
+                                   'deducted',
+                                   'Car Sharing Jho ([uOTjoNGAa7w @ 00:06:25])'],
+                                  ['Intake documentation and repair authority limits',
+                                   '60-80 intake photos, two trackers, repairs under $150 need no approval',
+                                   'Biweekly statements plus W-9 and 1099 paperwork for every partner '
+                                   'owner',
+                                   'Demario Mccowan ([b4HG8nxaQlU @ 00:24:32])'],
+                                  ['Car identification and fast turnover workflow',
+                                   'M109-style numbers matching keyboxes, plus a 3-hour turnaround window',
+                                   'One Step tracker installed in transit; cars often booked within 3-4 '
+                                   'hours',
+                                   'Car Rental Coach ([cp3QlVZWrog @ 00:12:03])'],
+                                  ['Seasonal market rotation of partner vehicles',
+                                   '$300-400 daily for about three months versus $80-90 elsewhere',
+                                   "Partner cars ship to peak markets and earn roughly a year's revenue",
+                                   'Delano Green ([PSopHdn3T8M @ 00:01:54])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Margin Leaks the Big Operators Plug',
+                           'body': 'Small operational habits the scaled co-hosts use to protect owner cars '
+                                   'and capture every dollar the platform allows.',
+                           'items': ['Pull the plates and put them in the trunk before a partner car '
+                                     "ships, so toll tickets don't arrive months later [Delano Green — "
+                                     'C5WI_82-JuI @ 00:03:51].',
+                                     'Run the protection-plan math and batch small dents to a mobile dent '
+                                     'tech; Dave left the 80 plan ($750 deductible) and gained about '
+                                     '$1,500 a month [Aubrey Janik — qSzMy86MT7I @ 00:21:54].',
+                                     'Push renters onto their own insurance and chase third-party '
+                                     'diminished value and loss-of-use within 20 days; on an $8,000 '
+                                     'estimate Turo paid $5,500 and the repair ran about $3,500 [Car '
+                                     'Sharing Jho — uOTjoNGAa7w @ 00:14:03].',
+                                     'Stack every allowed fee on bad returns: a 2018 Rogue back about 24 '
+                                     'hours late with about 1,000 extra miles drew improper-return, '
+                                     'late-return and extra-day charges [Car Rental Coach — cp3QlVZWrog @ '
+                                     '00:10:46].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Earn hosting reps before taking OPC',
+                              'action': 'Operate your own cars and build trip volume and ratings before '
+                                        "managing anyone else's vehicle.",
+                              'detail': "Aubrey Janik calls running other people's cars first "
+                                        'irresponsible [Aubrey Janik — Yjwp4WMIjbc @ 00:03:51], and Alvin '
+                                        'tells owners to demand a co-host with a minimum of a thousand '
+                                        'trips and a 5.0 rating [Car Sharing Jho — uOTjoNGAa7w @ '
+                                        '00:15:51].'},
+                             {'step': 2,
+                              'title': 'Lock the split in a signed agreement',
+                              'action': 'Set a gross-based percentage with a floor, list every fee in '
+                                        'writing, and add clauses for accidents, maintenance and plates.',
+                              'detail': 'Bartron charges 30% of gross or $400, whichever is higher, with a '
+                                        'flat 30% for a mid-month first month, and refuses handshake deals '
+                                        '[King of Rentals — xCgsQFz-kOM @ 00:11:29].'},
+                             {'step': 3,
+                              'title': 'Document and tag the car at intake',
+                              'action': 'Shoot full photo coverage, install trackers, set a repair '
+                                        'approval limit, and number each car to its keybox.',
+                              'detail': 'Mccowan shoots 60-80 intake photos, runs two trackers and '
+                                        'approves repairs under $150 without owner sign-off [Demario '
+                                        'Mccowan — b4HG8nxaQlU @ 00:24:32]; Rick numbers cars like M109 to '
+                                        'match keyboxes [Car Rental Coach — cp3QlVZWrog @ 00:12:03].'},
+                             {'step': 4,
+                              'title': 'Pay out monthly with full transparency',
+                              'action': 'Send owner payouts on a fixed date with receipts, invoices and '
+                                        'GPS access, and honor exit terms.',
+                              'detail': 'Rick pays by check or wire on the 3rd with a portal, Turo '
+                                        'team-member access and GPS visibility [Car Rental Coach — '
+                                        'cp3QlVZWrog @ 00:06:57]; Mccowan requires a 30-day exit notice '
+                                        'with booked trips finishing [Demario Mccowan — b4HG8nxaQlU @ '
+                                        '00:15:57].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The split itself is the first fault line, and operators land in very '
+                              'different places. Demario Mccowan runs 60/40 of gross and pegs the market '
+                              'at 20–40% or a flat fee, arguing the base matters more than the headline '
+                              'number: on $1,000 gross with $200 of maintenance, a net deal pays the '
+                              'co-host $320 instead of $400 [b4HG8nxaQlU @ 00:05:56]. Jared Cook at Peak '
+                              'Auto Academy goes the other way, splitting 70/30 of net with 70% to the '
+                              'owner, and sells it with a 2022 GMC Yukon that netted $9,672 in eight '
+                              'months and paid the owner $6,770 on $44,680 invested [3kqux9OEEfY @ '
+                              '00:01:24]. Brandon Bartron of King of Rentals uses a floor instead of a '
+                              'pure ratio: 30% of the gross Turo payout or $400, whichever is higher, with '
+                              'smoking fees and other extras kept by the operator, and the floor rarely '
+                              'triggers unless an owner overprices the car [xCgsQFz-kOM @ 00:11:29]. '
+                              'Fleeteer undercuts the field, fully managing operations for 15% of rental '
+                              'earnings while advertising a minimum of up to $1,200 a month [NINtu6BJvFY @ '
+                              '00:03:14]. For a new operator, the percentage means nothing until the base, '
+                              'the floor and who pays expenses are pinned down together.',
+                              'Operators also split on whether to sell owners a number at all. Bartron '
+                              "gives no revenue projections and calls promising owners profit 'a lie'; the "
+                              'pitch is subsidizing the car payment and taking depreciation for taxes, '
+                              'with high earners in sales told to confirm with their accountant and to '
+                              'expect they may run negative cash flow yet end up with a paid-off asset '
+                              '[xCgsQFz-kOM @ 00:18:28]. Peak Auto Academy leans into the math instead, '
+                              "framing the Yukon owner's payout as 'a 23% return on your money' on an "
+                              'annualized basis and steering prospects to an earnings calculator on its '
+                              'site [3kqux9OEEfY @ 00:02:47]. Fleeteer pushes the comparison hardest: '
+                              'about $11k of client cars producing roughly $1,800 a month versus the $200k '
+                              'rental property needed for the same income, backed by guarantees of up to '
+                              '$1,200 a month and up to 100% of the investment protected [NINtu6BJvFY @ '
+                              '00:03:28]. Demario Mccowan splits the difference, quoting figures but never '
+                              'random ones, and only from comparable market data pulled before the owner '
+                              "call [b4HG8nxaQlU @ 00:35:53]. Bartron's benefits-first pitch and the yield "
+                              'pitch from Peak and Fleeteer are opposite bets on what an owner should be '
+                              'promised before handing over the keys.',
+                              'Protection plans and claims handling produce the sharpest '
+                              "operator-to-operator contrast. West Coast Dave, on Aubrey Janik's channel, "
+                              'keeps owned cars on the 90 plan but puts investor cars on the 75 plan as '
+                              'the conservative choice, and left the 80 plan with its $750 deductible '
+                              'after running the math, gaining about $1,500 a month [qSzMy86MT7I @ '
+                              '00:20:02]. Alvin in Jacksonville prefers the 90 plan despite its $2,500 '
+                              'deductible and works every claim: third-party diminished value and '
+                              'loss-of-use within 20 days, renters pushed onto their own insurance, and a '
+                              'cheaper off-Turo fix such as $600 offered up front, with about 60% success. '
+                              "On an $8,000 estimate, Turo pays $5,500 and Alvin's repair runs about "
+                              '$3,500 [uOTjoNGAa7w @ 00:10:58]. Totals divide the camps further. Dave '
+                              'reports that all three totaled cars made money because they were bought '
+                              'below market, and that claim profits flow into the investor split '
+                              '[qSzMy86MT7I @ 00:34:34]. Aubrey Janik pushes back in the same '
+                              'conversation, now preferring to keep a car earning over collecting a total '
+                              '[qSzMy86MT7I @ 00:34:48]. Whether a total counts as a win depends on '
+                              'purchase price, which is why Dave buys below market and Alvin buys only on '
+                              'a good deal.'],
+               'table': {'caption': 'Competing co-hosting playbooks reported by named operators',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Owner payout cadence and proof',
+                                   'Delano Green pays monthly on a 30/70 split because owners prefer '
+                                   'monthly over biweekly payouts',
+                                   'Alvin pays owners on renter pickup and sends booking screenshots; '
+                                   'Demario sends biweekly statements',
+                                   'Delano Green ([xTVl-1-TkSI @ 00:02:18]); Car Sharing Jho ([uOTjoNGAa7w '
+                                   '@ 00:07:37]); Demario Mccowan ([b4HG8nxaQlU @ 00:10:03])'],
+                                  ['How formal the owner contract gets',
+                                   'Bartron puts every fee in a signed document and says a $10K '
+                                   'attorney-drafted agreement is not necessary',
+                                   'Alvin uses an attorney-drafted, customizable contract for every owner '
+                                   'relationship',
+                                   'King of Rentals ([xCgsQFz-kOM @ 00:10:58]); Car Sharing Jho '
+                                   '([uOTjoNGAa7w @ 00:08:44])'],
+                                  ['Who absorbs routine maintenance costs',
+                                   'West Coast Dave fronts and expenses up to about $150 a month, then the '
+                                   'owner pays above that',
+                                   "Max calls a flat fee combined with the co-host covering maintenance 'a "
+                                   "terrible idea'",
+                                   'Aubrey Janik ([qSzMy86MT7I @ 00:16:42]); King of Rentals ([7IyNOkXwrsg '
+                                   '@ 00:06:09])'],
+                                  ['Does adding cars add profit',
+                                   'Bartron says each added car shrinks per-car cost against a $398 '
+                                   'payroll-plus-overhead break-even',
+                                   'Delano Green says more cars does not mean more profit; tune split, '
+                                   'pricing and utilization instead',
+                                   'King of Rentals ([xCgsQFz-kOM @ 00:03:25]); Delano Green ([SPoQzQlFhXg '
+                                   '@ 00:09:43])'],
+                                  ['Which guest base to build around',
+                                   'West Coast Dave moved to an office by the airport and now gears '
+                                   'listings toward tourists',
+                                   'Host George on Car Rental Coach says local renters are steadier than '
+                                   'airport guests',
+                                   'Aubrey Janik ([qSzMy86MT7I @ 00:05:06]); Car Rental Coach '
+                                   '([cp3QlVZWrog @ 00:21:26])'],
+                                  ['Whose Turo account holds the listing',
+                                   'Alvin requires cars on his own account after an owner-held listing was '
+                                   "pulled with 10 minutes' notice",
+                                   'West Coast Dave separates shared-listing co-hosting from 100% managed '
+                                   'OPC with monthly spreadsheets',
+                                   'Car Sharing Jho ([uOTjoNGAa7w @ 00:10:07]); Aubrey Janik ([qSzMy86MT7I '
+                                   '@ 00:07:02])'],
+                                  ['Owning cars versus pure co-hosting',
+                                   'Philly Car Renting buys failed fleets and recommends the 90/10 split '
+                                   'only at about 30 cars',
+                                   'Delano Green reached about 60 cars purely through co-hosting without '
+                                   'buying them',
+                                   'Philly Car Renting ([1amDBwhhsY0 @ 00:14:03]); Delano Green '
+                                   '([xTVl-1-TkSI @ 00:04:02])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["The costliest failures start with the deal terms and the owner. Bartron's "
+                              'first co-hosting run charged only 20%, handed every extra to the owners, '
+                              'never warned them against listing heirloom cars and let them micromanage, '
+                              "so the arrangement 'crashed' [xCgsQFz-kOM @ 00:00:16]. Bartron then stopped "
+                              'co-hosting for about 1.5 to 2 years [xCgsQFz-kOM @ 00:00:54], and the '
+                              'rebuilt version puts every fee in writing after about 15 cars once ran on a '
+                              'handshake. West Coast Dave refuses hands-on investors outright after a '
+                              "$1.7M house flip with nine voting investors meant Zoom calls 'every other "
+                              "day' [qSzMy86MT7I @ 00:13:33]; Dave's intake now sets expectations up "
+                              'front, records separate exterior and interior videos, and signs a contract '
+                              "with the owner keeping insurance. Demario Mccowan's loss was in the pay "
+                              'base: being paid on net yielded only $200–300 per car, which pushed the '
+                              'operation to a gross split [b4HG8nxaQlU @ 00:34:52]. Across all three, the '
+                              'co-host who underprices, accepts sentimental or controlling owners, or lets '
+                              'expenses come off the top before the fee ends up running a fleet for almost '
+                              'nothing. Bartron also tells owners up front to expect minor damage and '
+                              'refuses to give revenue projections at signing.',
+                              "Operational bottlenecks hit well before a fleet looks big. RC Simon's team "
+                              'warns that past five cars this cannot run alongside an inflexible job; '
+                              'their 24-car Las Vegas fleet already runs check-ins or checkouts six days a '
+                              'week with work split between an operator, a mechanic and a visionary '
+                              'partner [E1lFWd_WIy8 @ 00:02:59]. Delano Green found 25–30 cars the hardest '
+                              'stage, before SOPs, KPIs and a team made near-100 lighter [PSopHdn3T8M @ '
+                              "00:03:07]. At 99 cars on Martha's Vineyard the breakpoints were still "
+                              'brutal: an airport ban under threat of towing, with Uber and shuttle '
+                              'workarounds failing because the fleet ran out of cars [SPoQzQlFhXg @ '
+                              '00:00:36], co-hosted owners able to watch guests go unanswered, and hotel '
+                              'and Airbnb drop-offs that stacked 15 cars due at 10 a.m. without 15 staff '
+                              '[SPoQzQlFhXg @ 00:03:27]. Cleaning quality slipped without SOPs once kids '
+                              'were cleaning and older staff were delivering, Uber refunds cut into profit '
+                              "even though many cancelled guests rebooked the same fleet, and Delano's "
+                              "summary is that 'even the overseer needs overseeing.' Owners see "
+                              'customer-facing gaps first, so every handoff, message and cleaning standard '
+                              'needs a written system before the next batch of partner cars arrives.',
+                              'Car selection is where the economics quietly break. The 400-car host Delano '
+                              'Green met warns off a 2016 Camry that makes $600 and leaves $200 in pocket, '
+                              'and flags that photos uploaded at 26 hours are not covered [xTVl-1-TkSI @ '
+                              '00:14:28]. West Coast Dave caps intake at 75,000 miles or less after a '
+                              'high-mileage car threw oil issues every other week, and holds off on '
+                              "supercars, citing Turo's $200,000 cap and the need for commercial insurance "
+                              "[qSzMy86MT7I @ 00:14:28]. Bartron's $40K Sprinter earned $199–250 a day and "
+                              'then slowed as the market saturated [xCgsQFz-kOM @ 00:15:49], and a 6 '
+                              'Series BMW on its second engine swap just cost another $5K. Philly Car '
+                              'Renting hit the same wall with a Range Rover that needed a $10k engine, '
+                              'while the Tesla held up fine [1amDBwhhsY0 @ 00:15:36]. The economics check '
+                              "that comes out of these losses is Bartron's: track a P&L for every car, "
+                              'weigh return against depreciation on color-coded sheets, keep a $400 floor '
+                              'that screens out low earners, and cut the bottom 10% of the fleet to '
+                              "reinvest in the top 10%. A Turo rep's warning to Delano that co-hosting is "
+                              "'getting super saturated' makes that discipline more urgent."],
+               'table': {'caption': 'Firsthand traps and the fixes operators put in place',
+                         'headers': ['Failure Mode',
+                                     'What Happened',
+                                     'Operator Fix Reported',
+                                     'Expert Source'],
+                         'rows': [['Toll tickets on shipped partner cars',
+                                   'Tolls racked up during transport arrive as tickets months after the '
+                                   'car lands',
+                                   'Remove the plates and put them in the trunk before the carrier loads '
+                                   'the car',
+                                   'Delano Green ([C5WI_82-JuI @ 00:03:51])'],
+                                  ['Late damage photos void coverage',
+                                   'Photos uploaded at 26 hours are not covered, so the damage is eaten by '
+                                   'the operator',
+                                   'Shoot 60–80 photos at intake and upload trip photos inside the window '
+                                   'every time',
+                                   'Delano Green ([xTVl-1-TkSI @ 00:13:38]); Demario Mccowan ([b4HG8nxaQlU '
+                                   '@ 00:24:32])'],
+                                  ['Owner pulls a listing they control',
+                                   "An owner-held listing gave Alvin 10 minutes' notice before the car "
+                                   'left the fleet',
+                                   "Require every managed car to sit on the operator's own Turo account",
+                                   'Car Sharing Jho ([uOTjoNGAa7w @ 00:10:07])'],
+                                  ['High-mileage cars eat the margin',
+                                   'A high-mileage partner car had oil issues every other week',
+                                   'Accept only cars at 75,000 miles or less and skip supercars for now',
+                                   'Aubrey Janik ([qSzMy86MT7I @ 00:14:28])'],
+                                  ['Catastrophic liability on a partner car',
+                                   "Demario's operation dealt with a fatal-accident case tied to a rental",
+                                   'Waive liability in the contract, carry umbrella insurance and hold '
+                                   'assets in holding companies',
+                                   'Demario Mccowan ([b4HG8nxaQlU @ 00:19:27]); Demario Mccowan '
+                                   '([b4HG8nxaQlU @ 00:21:32])'],
+                                  ['Guest fraud and lawsuits',
+                                   'A muffler scam produced a $350 charge, and the fleet has been sued '
+                                   "'150 times'",
+                                   'Rely on the Graves Amendment protection the team cites and add club, '
+                                   'lockbox, tracker and kill switch',
+                                   'Philly Car Renting ([1amDBwhhsY0 @ 00:10:14]); Philly Car Renting '
+                                   '([1amDBwhhsY0 @ 00:11:58])'],
+                                  ['Incidental fees left uncollected',
+                                   'A 2018 Rogue came back about 24 hours late with about 1,000 extra '
+                                   'miles',
+                                   'Charge improper return, late return and an extra day, tracked in Excel '
+                                   "and defended with Turo's terms",
+                                   'Car Rental Coach ([cp3QlVZWrog @ 00:10:46])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': "Do not take another owner's keys until these are true",
+                           'body': 'Each gate below comes from a loss, reversal or bottleneck a named '
+                                   'operator hit firsthand.',
+                           'items': ["You have already operated your own car, because Alvin's camp calls "
+                                     "running someone else's car first 'irresponsible' [Aubrey Janik — "
+                                     'Yjwp4WMIjbc @ 00:03:51].',
+                                     'Every fee sits in a written, signed agreement with no handshake '
+                                     "terms, after Bartron's handshake era and 20% crash [King of Rentals "
+                                     '— xCgsQFz-kOM @ 00:10:25].',
+                                     'Your cut is calculated off gross, not net, after net deals paid only '
+                                     '$200–300 per car [Demario Mccowan — b4HG8nxaQlU @ 00:06:17].',
+                                     'Your schedule can absorb six-day check-in volume, because past five '
+                                     'cars this cannot run beside an inflexible job [RC Simon — '
+                                     'E1lFWd_WIy8 @ 00:02:59].']}}],
+ 'pull_quote': '"More cars does not mean more profit." — attributed to Delano Green (SPoQzQlFhXg @ '
+               '00:09:43).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ["Post fleet results in host Facebook groups, for example 'new car, $1,400–1,800/mo,' "
+                      'with no call to action, and let burned-out hosts come to you [Demario Mccowan — '
+                      'b4HG8nxaQlU @ 00:12:40].',
+                      'Shoot 60–80 photos of every partner car at intake and file them in a per-car folder '
+                      'before it is listed [Demario Mccowan — b4HG8nxaQlU @ 00:24:32].',
+                      'Go contactless on pickup and drop-off and automate guest messaging before adding '
+                      'more owners [Aubrey Janik — qSzMy86MT7I @ 00:28:07].',
+                      'Route incidentals to a staff-monitored email, log every claim in Excel, and answer '
+                      "denied fees by quoting Turo's terms of service [Car Rental Coach — cp3QlVZWrog @ "
+                      '00:09:15].',
+                      'Let the ops manager approve only items you have already approved before, and keep '
+                      'watching GPS yourself [Delano Green — ziuX0-egB7Y @ 00:06:33].',
+                      'Track a P&L on every car, cut the 10% that are not working, and reinvest in the top '
+                      '10% [King of Rentals — xCgsQFz-kOM @ 00:35:18].'],
+ 'statutory_citations': [{'title': 'King of Rentals — How it Co-Host | Turo Talk [00:11:29]',
+                          'url': 'https://www.youtube.com/watch?v=xCgsQFz-kOM&t=689s',
+                          'relevance': 'Primary practitioner testimony on the 30%-of-gross-or-$400 fee '
+                                       'floor, written agreements and per-car break-even.'},
+                         {'title': 'Demario Mccowan — How to Start a Car Rental Business with ZERO Cars | '
+                                   'Turo Co-Hosting Masterclass [00:05:56]',
+                          'url': 'https://www.youtube.com/watch?v=b4HG8nxaQlU&t=356s',
+                          'relevance': 'Primary practitioner testimony on gross-versus-net splits, '
+                                       'liability structure and owner prospecting.'},
+                         {'title': 'Car Sharing Jho — TURO TALK #5 | Turo Car Rental Business Co-Hosting '
+                                   'Host with 100+ Cars | How To Co-Host On Turo Tips [00:06:25]',
+                          'url': 'https://www.youtube.com/watch?v=uOTjoNGAa7w&t=385s',
+                          'relevance': 'Primary practitioner testimony on 65/35 tiered splits, account '
+                                       'control and aggressive claims recovery.'},
+                         {'title': 'Delano Green — The Systems It Takes to Manage 99 Rental Cars on Turo, '
+                                   'Full Scale Turo Management Service [00:09:43]',
+                          'url': 'https://www.youtube.com/watch?v=SPoQzQlFhXg&t=583s',
+                          'relevance': 'Primary practitioner testimony on operational breakpoints near 100 '
+                                       'co-hosted cars and profit versus fleet size.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'Yjwp4WMIjbc',
+                       'title': 'How to Co-Host On Turo (From a Host With 200+ Cars)',
+                       'channel': 'Aubrey Janik',
+                       'author': 'Aubrey Janik',
+                       'text': "It is irresponsible to run someone else's car before you have operated "
+                               'your own.',
+                       'tip': "It is irresponsible to run someone else's car before you have operated your "
+                              'own.',
+                       'timestamp': 231,
+                       'timestamp_seconds': 231,
+                       'timestamp_label': '[00:03:51]',
+                       'url': 'https://www.youtube.com/watch?v=Yjwp4WMIjbc&t=231s',
+                       'markdown': '[00:03:51](https://www.youtube.com/watch?v=Yjwp4WMIjbc&t=231s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'E1lFWd_WIy8',
+                       'title': 'How We MANAGE Our 24+ Turo Fleet',
+                       'channel': 'RC Simon',
+                       'author': 'RC Simon',
+                       'text': 'Past five cars, you cannot run this alongside a job that is not flexible.',
+                       'tip': 'Past five cars, you cannot run this alongside a job that is not flexible.',
+                       'timestamp': 179,
+                       'timestamp_seconds': 179,
+                       'timestamp_label': '[00:02:59]',
+                       'url': 'https://www.youtube.com/watch?v=E1lFWd_WIy8&t=179s',
+                       'markdown': '[00:02:59](https://www.youtube.com/watch?v=E1lFWd_WIy8&t=179s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3kqux9OEEfY',
+                       'title': 'How Turo Hosts Make Money Doing No Work',
+                       'channel': 'Peak Auto Academy',
+                       'author': 'Peak Auto Academy',
+                       'text': "On an annualized basis, if you're doing your math, that's a 23% return on "
+                               'your money.',
+                       'tip': "On an annualized basis, if you're doing your math, that's a 23% return on "
+                              'your money.',
+                       'timestamp': 167,
+                       'timestamp_seconds': 167,
+                       'timestamp_label': '[00:02:47]',
+                       'url': 'https://www.youtube.com/watch?v=3kqux9OEEfY&t=167s',
+                       'markdown': '[00:02:47](https://www.youtube.com/watch?v=3kqux9OEEfY&t=167s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'b4HG8nxaQlU',
+                       'title': 'How to Start a Car Rental Business with ZERO Cars | Turo Co-Hosting '
+                                'Masterclass',
+                       'channel': 'Demario Mccowan',
+                       'author': 'Demario Mccowan',
+                       'text': 'If you guys are going to do co-host dealings, you want to make the money '
+                               'off the gross, not the net.',
+                       'tip': 'If you guys are going to do co-host dealings, you want to make the money '
+                              'off the gross, not the net.',
+                       'timestamp': 377,
+                       'timestamp_seconds': 377,
+                       'timestamp_label': '[00:06:17]',
+                       'url': 'https://www.youtube.com/watch?v=b4HG8nxaQlU&t=377s',
+                       'markdown': '[00:06:17](https://www.youtube.com/watch?v=b4HG8nxaQlU&t=377s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xTVl-1-TkSI',
+                       'title': 'I Met Turo Hosts With 400+ Cars… Here’s What They Taught Me',
+                       'channel': 'Delano Green',
+                       'author': 'Delano Green',
+                       'text': 'Photos uploaded at 26 hours are not covered.',
+                       'tip': 'Photos uploaded at 26 hours are not covered.',
+                       'timestamp': 818,
+                       'timestamp_seconds': 818,
+                       'timestamp_label': '[00:13:38]',
+                       'url': 'https://www.youtube.com/watch?v=xTVl-1-TkSI&t=818s',
+                       'markdown': '[00:13:38](https://www.youtube.com/watch?v=xTVl-1-TkSI&t=818s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1amDBwhhsY0',
+                       'title': 'How We Built a 250+ Car Fleet on Turo — Partner Q&A',
+                       'channel': 'Philly Car Renting',
+                       'author': 'Philly Car Renting',
+                       'text': 'We are on a 90/10 split with Turo, so for 10% we get everything, you know.',
+                       'tip': 'We are on a 90/10 split with Turo, so for 10% we get everything, you know.',
+                       'timestamp': 843,
+                       'timestamp_seconds': 843,
+                       'timestamp_label': '[00:14:03]',
+                       'url': 'https://www.youtube.com/watch?v=1amDBwhhsY0&t=843s',
+                       'markdown': '[00:14:03](https://www.youtube.com/watch?v=1amDBwhhsY0&t=843s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'C5WI_82-JuI',
+                       'title': 'How Turo Cohosting Works: Getting Partner Cars Shipped to Me',
+                       'channel': 'Delano Green',
+                       'author': 'Delano Green',
+                       'text': 'Take the plates off and put them in the trunk so you do not get toll '
+                               'tickets that show up months later.',
+                       'tip': 'Take the plates off and put them in the trunk so you do not get toll '
+                              'tickets that show up months later.',
+                       'timestamp': 231,
+                       'timestamp_seconds': 231,
+                       'timestamp_label': '[00:03:51]',
+                       'url': 'https://www.youtube.com/watch?v=C5WI_82-JuI&t=231s',
+                       'markdown': '[00:03:51](https://www.youtube.com/watch?v=C5WI_82-JuI&t=231s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ziuX0-egB7Y',
+                       'title': 'How to Cohost 99 Rental Cars on Turo (The Systems I Used to Scale)',
+                       'channel': 'Delano Green',
+                       'author': 'Delano Green',
+                       'text': 'The operations manager can only approve things I have already approved '
+                               'before.',
+                       'tip': 'The operations manager can only approve things I have already approved '
+                              'before.',
+                       'timestamp': 393,
+                       'timestamp_seconds': 393,
+                       'timestamp_label': '[00:06:33]',
+                       'url': 'https://www.youtube.com/watch?v=ziuX0-egB7Y&t=393s',
+                       'markdown': '[00:06:33](https://www.youtube.com/watch?v=ziuX0-egB7Y&t=393s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NINtu6BJvFY',
+                       'title': 'Passive earnings from TURO Co-Hosting!',
+                       'channel': 'Fleeteer - TURO Co-Host',
+                       'author': 'Fleeteer - TURO Co-Host',
+                       'text': 'We fully manage the Turo rental car operations for just 15% of the rental '
+                               'earnings we generate on behalf of you.',
+                       'tip': 'We fully manage the Turo rental car operations for just 15% of the rental '
+                              'earnings we generate on behalf of you.',
+                       'timestamp': 194,
+                       'timestamp_seconds': 194,
+                       'timestamp_label': '[00:03:14]',
+                       'url': 'https://www.youtube.com/watch?v=NINtu6BJvFY&t=194s',
+                       'markdown': '[00:03:14](https://www.youtube.com/watch?v=NINtu6BJvFY&t=194s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qSzMy86MT7I',
+                       'title': 'How to Grow a Turo Fleet Using Other Peoples Cars',
+                       'channel': 'Aubrey Janik',
+                       'author': 'Aubrey Janik',
+                       'text': 'Once I went contactless with my cars it changed everything and I think '
+                               "that's a key component to scaling.",
+                       'tip': 'Once I went contactless with my cars it changed everything and I think '
+                              "that's a key component to scaling.",
+                       'timestamp': 1687,
+                       'timestamp_seconds': 1687,
+                       'timestamp_label': '[00:28:07]',
+                       'url': 'https://www.youtube.com/watch?v=qSzMy86MT7I&t=1687s',
+                       'markdown': '[00:28:07](https://www.youtube.com/watch?v=qSzMy86MT7I&t=1687s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cp3QlVZWrog',
+                       'title': 'How He Used Co-Hosting to Scale His Turo Business',
+                       'channel': 'Car Rental Coach',
+                       'author': 'Car Rental Coach',
+                       'text': 'Our utilization numbers remain high as we scale.',
+                       'tip': 'Our utilization numbers remain high as we scale.',
+                       'timestamp': 800,
+                       'timestamp_seconds': 800,
+                       'timestamp_label': '[00:13:20]',
+                       'url': 'https://www.youtube.com/watch?v=cp3QlVZWrog&t=800s',
+                       'markdown': '[00:13:20](https://www.youtube.com/watch?v=cp3QlVZWrog&t=800s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SPoQzQlFhXg',
+                       'title': 'The Systems It Takes to Manage 99 Rental Cars on Turo, Full Scale Turo '
+                                'Management Service',
+                       'channel': 'Delano Green',
+                       'author': 'Delano Green',
+                       'text': 'More cars does not mean more profit.',
+                       'tip': 'More cars does not mean more profit.',
+                       'timestamp': 583,
+                       'timestamp_seconds': 583,
+                       'timestamp_label': '[00:09:43]',
+                       'url': 'https://www.youtube.com/watch?v=SPoQzQlFhXg&t=583s',
+                       'markdown': '[00:09:43](https://www.youtube.com/watch?v=SPoQzQlFhXg&t=583s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uOTjoNGAa7w',
+                       'title': 'TURO TALK #5 | Turo Car Rental Business Co-Hosting Host with 100+ Cars | '
+                                'How To Co-Host On Turo Tips',
+                       'channel': 'Car Sharing Jho',
+                       'author': 'Car Sharing Jho',
+                       'text': 'For a co-host to be trusted, I suggest a minimum of a thousand trips and '
+                               'their rating better be a 5.0.',
+                       'tip': 'For a co-host to be trusted, I suggest a minimum of a thousand trips and '
+                              'their rating better be a 5.0.',
+                       'timestamp': 951,
+                       'timestamp_seconds': 951,
+                       'timestamp_label': '[00:15:51]',
+                       'url': 'https://www.youtube.com/watch?v=uOTjoNGAa7w&t=951s',
+                       'markdown': '[00:15:51](https://www.youtube.com/watch?v=uOTjoNGAa7w&t=951s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PSopHdn3T8M',
+                       'title': 'How I Added More Rental Cars Without Buying Them | Turo Cohosting',
+                       'channel': 'Delano Green',
+                       'author': 'Delano Green',
+                       'text': 'These are just average normal cars.',
+                       'tip': 'These are just average normal cars.',
+                       'timestamp': 321,
+                       'timestamp_seconds': 321,
+                       'timestamp_label': '[00:05:21]',
+                       'url': 'https://www.youtube.com/watch?v=PSopHdn3T8M&t=321s',
+                       'markdown': '[00:05:21](https://www.youtube.com/watch?v=PSopHdn3T8M&t=321s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7IyNOkXwrsg',
+                       'title': 'Co-hosting 101 | Everything You Need To Know About Co-hosting On Turo',
+                       'channel': 'King of Rentals',
+                       'author': 'King of Rentals',
+                       'text': "First off, it's kind of like property management but for cars.",
+                       'tip': "First off, it's kind of like property management but for cars.",
+                       'timestamp': 16,
+                       'timestamp_seconds': 16,
+                       'timestamp_label': '[00:00:16]',
+                       'url': 'https://www.youtube.com/watch?v=7IyNOkXwrsg&t=16s',
+                       'markdown': '[00:00:16](https://www.youtube.com/watch?v=7IyNOkXwrsg&t=16s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xCgsQFz-kOM',
+                       'title': 'How it Co-Host | Turo Talk',
+                       'channel': 'King of Rentals',
+                       'author': 'King of Rentals',
+                       'text': 'The financial breakdown needs to be very clear in a written and signed '
+                               'agreement; do not do co-hosting with a handshake.',
+                       'tip': 'The financial breakdown needs to be very clear in a written and signed '
+                              'agreement; do not do co-hosting with a handshake.',
+                       'timestamp': 625,
+                       'timestamp_seconds': 625,
+                       'timestamp_label': '[00:10:25]',
+                       'url': 'https://www.youtube.com/watch?v=xCgsQFz-kOM&t=625s',
+                       'markdown': '[00:10:25](https://www.youtube.com/watch?v=xCgsQFz-kOM&t=625s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xCgsQFz-kOM',
+                       'title': 'How it Co-Host | Turo Talk',
+                       'channel': 'King of Rentals',
+                       'author': 'King of Rentals',
+                       'text': 'I charge people 30% of the gross amount that Turo pays or $400, whichever '
+                               'is higher.',
+                       'tip': 'I charge people 30% of the gross amount that Turo pays or $400, whichever '
+                              'is higher.',
+                       'timestamp': 689,
+                       'timestamp_seconds': 689,
+                       'timestamp_label': '[00:11:29]',
+                       'url': 'https://www.youtube.com/watch?v=xCgsQFz-kOM&t=689s',
+                       'markdown': '[00:11:29](https://www.youtube.com/watch?v=xCgsQFz-kOM&t=689s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'}]}

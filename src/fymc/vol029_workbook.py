@@ -1,703 +1,912 @@
 from __future__ import annotations
 
-
 def build_volume_029_workbook() -> dict:
-    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
-        return {
-            "name": name,
-            "type": input_type,
-            "prompt": prompt,
-            "example": example,
-        }
-
-    return {
-        "workbook_id": "wb-029-insurance-restoration",
-        "volume_id": "vol-029-insurance-restoration",
-        "title": "Insurance Restoration — Operator Companion Workbook",
-        "subtitle": (
-            "6 Printable Operator Worksheets for Water, Fire, Mold, and Storm "
-            "Restoration: Deal Screening, Cash Float, Psychrometric Evidence, "
-            "Licensing, Dispatch Automation, and Exit-Ready Operating Controls"
-        ),
-        "worksheets": [
-            {
-                "worksheet_id": "ws-01",
-                "number": 1,
-                "title": "Opportunity Underwriting and Counterparty Qualification",
-                "purpose": (
-                    "Qualify restoration opportunities before committing crews, equipment, "
-                    "or working capital. Separate property-owner authorization from insurer "
-                    "payment expectations, document site hazards and license boundaries, "
-                    "and select losses whose technical demands, collection profile, and "
-                    "crew requirements fit the operating model."
-                ),
-                "chapter_ref": "Q1, Q2, Q6",
-                "instructions": [
-                    (
-                        "Create one record per property and loss event, not one record per "
-                        "referral source. Capture the owner, authorized signer, observed "
-                        "damage, access restrictions, and proposed services before assigning "
-                        "a dispatch priority or quoting an arrival window."
-                    ),
-                    (
-                        "Interview the owner and referral source separately when facts "
-                        "conflict. Record who supplied each statement, distinguish observed "
-                        "conditions from reported causes, and request documents through "
-                        "an access-controlled channel rather than relying on forwarded screenshots."
-                    ),
-                    (
-                        "Screen technical scope against current licenses, trained personnel, "
-                        "equipment availability, and geographic reach. Treat reconstruction, "
-                        "mold work, asbestos disturbance, and roof access as distinct "
-                        "capabilities requiring their own evidence rather than automatic extensions of mitigation."
-                    ),
-                    (
-                        "Build the collection thesis from the signed work agreement, "
-                        "customer payment capacity, documented scope, and invoice terms. "
-                        "An insurer claim number identifies a file; it does not establish "
-                        "coverage, pricing acceptance, or a payment obligation to your company."
-                    ),
-                    (
-                        "Record an accept, revise, or decline decision with a named "
-                        "decision owner and quantified exposure. Route emergency work "
-                        "through the same safety and authorization checks, while keeping "
-                        "initial stabilization scope narrow enough to supervise and document."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Loss identity and referral provenance",
-                        "textarea",
-                        "Identify the property, loss date, referring organization, contact authority, and evidence supporting the reported peril. Explain how duplicate referrals and conflicting descriptions will be resolved before a crew receives dispatch instructions.",
-                        "Job IR-029-014 concerns a burst supply line reported on March 3 at a twelve-unit apartment building. A property manager and plumber referred the same loss. Dispatch merged both leads, retained their separate statements, and recorded the plumber's repair photograph without treating it as a coverage determination.",
-                    ),
-                    field(
-                        "Service vertical and peril fit",
-                        "textarea",
-                        "Classify the requested work as water mitigation, fire cleaning, mold remediation, storm stabilization, or reconstruction. Identify the technical boundaries, specialist dependencies, and excluded activities that make this specific opportunity suitable for the current service platform.",
-                        "The initial package covers extraction, controlled removal of damaged drywall after hazard screening, and structural drying in two units. It excludes roof repair, asbestos disturbance, and contents restoration. A separately qualified contents vendor receives an owner-authorized introduction, with no promise that another party will fund its work.",
-                    ),
-                    field(
-                        "Owner and signer authority",
-                        "textarea",
-                        "Record the legal customer, property ownership evidence, signer capacity, spending authority, and access permissions. Explain what documentation establishes authority for emergency stabilization and what additional authorization is required before expanding into demolition or reconstruction.",
-                        "Oak Street Apartments LLC is the customer; its manager signs under a management agreement allowing emergency expenditures up to $15,000. The proposed $9,800 stabilization scope fits that limit. Any added demolition exceeding the limit requires written authorization from the LLC's designated member before work begins.",
-                    ),
-                    field(
-                        "Payment counterparties and collection thesis",
-                        "textarea",
-                        "Identify the party contractually responsible for payment, invoice recipients, insurer contacts, mortgage interests, and customer funding constraints. Separate factual billing coordination from policy interpretation, settlement negotiation, or representations that insurance proceeds will necessarily cover your charges.",
-                        "The owner remains responsible under the service agreement and receives every invoice. The carrier receives factual documentation at the owner's written direction. A lender may control proceeds, so the office requests disbursement instructions early and models a sixty-day collection period without assuming direct payment from the carrier.",
-                    ),
-                    field(
-                        "Geography and credential fit",
-                        "textarea",
-                        "List the job jurisdiction, contractor classification, remediation credentials, permit triggers, and specialist licenses relevant to the proposed activities. Name the person responsible for checking official records and resolving any mismatch before scheduling that portion of work.",
-                        "The operations coordinator checks the state licensing board and city permit desk for the actual property address. Water extraction fits the company's verified scope, but electrical repairs go to a licensed electrical subcontractor. The job folder stores verification dates, credential numbers, and the subcontractor's insurance evidence.",
-                    ),
-                    field(
-                        "Bounded initial scope and pricing assumptions",
-                        "textarea",
-                        "Describe measurable quantities, access conditions, equipment assumptions, exclusions, and the process for discovering concealed damage. Explain how the customer will authorize changes without confusing an estimating platform's suggested price with an enforceable reimbursement commitment.",
-                        "The initial estimate includes 1,200 square feet of extraction, six air movers, and two dehumidifiers for an estimated three days, subject to documented conditions. Xactimate supplies an estimating reference, not a payment promise. Additional equipment days require technical support, customer communication, and authorization consistent with the agreement.",
-                    ),
-                    field(
-                        "Crew and equipment capacity",
-                        "textarea",
-                        "Map the opportunity to available full-time staff, contractor capacity, vehicle routes, and equipment inventory. Include supervision coverage, travel time, and existing job commitments so an attractive loss does not silently overload the same working crew.",
-                        "The Base model has five full-time staff and six contractor relationships, not eleven interchangeable daily workers. Two technicians and one lead can cover this loss while another technician monitors existing drying jobs. Four additional air movers must be rented, and their delivery charge enters the estimate before acceptance.",
-                    ),
-                    field(
-                        "Site hazards and stop-work triggers",
-                        "textarea",
-                        "Record electrical exposure, structural instability, contaminated water, suspect building materials, occupant vulnerabilities, and required specialist assessments. Define observable conditions that stop work immediately and identify who may release the affected task after hazards are controlled.",
-                        "The lower unit has standing water near an energized panel and ceiling sagging beneath a bathroom. The crew stays outside the affected area until qualified electrical and structural personnel address those hazards. Suspect flooring remains undisturbed pending assessment, and residents receive a documented restricted-access instruction.",
-                    ),
-                    field(
-                        "Evidence readiness and dispute exposure",
-                        "textarea",
-                        "Assess whether the team can obtain baseline photographs, moisture readings, dimensions, equipment records, and signed authorizations. Identify missing evidence that could undermine scope justification, collection, or a later dispute, and assign a practical recovery action.",
-                        "The owner photographed standing water before the plumber arrived, but no moisture map exists. The lead captures an initial grid before extraction where safe, labels unaffected reference locations, and records instrument identity. The estimate flags concealed conditions as unresolved scope questions rather than inserting unsupported quantities.",
-                    ),
-                    field(
-                        "Underwriting decision and exposure limit",
-                        "textarea",
-                        "State the acceptance decision, maximum initial commitment, expected collection timing, technical conditions, and accountable supervisor. Explain how the opportunity fits the candidate's capital-intensive profile without treating the platform score as a substitute for job-level judgment.",
-                        "Accept the $9,800 stabilization phase with a $6,400 cash commitment ceiling and a sixty-day collection assumption. Expansion requires a revised scope and funding review. Candidate 15 ranks thirteenth with a 87/100 score, reinforcing the need to protect crew capacity and liquidity rather than chase every referral.",
-                    ),
-                ],
-                "completion_gate": (
-                    "The operations lead and collections owner sign the record only after "
-                    "customer authority, jurisdictional scope, hazard controls, crew availability, "
-                    "and a quantified initial cash exposure are documented; unresolved hazards "
-                    "block the affected work rather than being buried in estimate notes."
-                ),
-            },
-            {
-                "worksheet_id": "ws-02",
-                "number": 2,
-                "title": "Unit Economics, Defect Reserve, and Working-Capital Float",
-                "purpose": (
-                    "Translate restoration billings into reconciled job contribution, annual "
-                    "owner profit, and cash requirements. Separate customer claim values "
-                    "from company revenue, budget documentation defects and collection "
-                    "friction once, and test whether payroll and vendors remain funded "
-                    "while receivables age."
-                ),
-                "chapter_ref": "Q3, Q4",
-                "instructions": [
-                    (
-                        "Copy the three canonical scenarios before building local assumptions. "
-                        "Preserve their gross restoration revenue, net margins, owner profit, "
-                        "and team counts exactly; label every job illustration or timing "
-                        "sensitivity separately so it cannot overwrite the reference scorecard."
-                    ),
-                    (
-                        "Use completed, billable restoration services as the operating revenue "
-                        "basis and reconcile period recognition with the accountant. Exclude "
-                        "the owner's entire claim value, lender-held proceeds, and unearned "
-                        "customer advances from earned restoration revenue until their treatment is established."
-                    ),
-                    (
-                        "Build a cost bridge that includes materials, subcontractors, employee "
-                        "labor, equipment, overhead, and an explicit defect allowance. Identify "
-                        "which costs are already allocated to jobs before adding any "
-                        "monthly operating allowance to avoid counting the same expense twice."
-                    ),
-                    (
-                        "Calculate receivable and payable exposure using stated timing conventions. "
-                        "Add work performed before invoicing and subtract usable customer "
-                        "funding only when supported by contracts and ledgers; a credit "
-                        "facility is a funding source, not a reduction in exposure."
-                    ),
-                    (
-                        "Stress collection timing and scope reductions independently, then together. "
-                        "Show the additional liquidity required and the effect on profit "
-                        "without silently changing canonical results. Assign collection actions "
-                        "to named owners and preserve evidence supporting every disputed invoice."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Canonical revenue and profit anchor",
-                        "textarea",
-                        "Enter all three annual revenue, margin, profit, and staffing combinations exactly. Define gross restoration billings as the operator's revenue basis, with materials and subcontractors included in costs rather than deducted to create a different revenue measure.",
-                        "Conservative is $500,000 at 8%, producing $40,000 with 2 FT + 2 C. Base is $1,500,000 at 13.0%, producing $195,000 with 2 FT + 2 C. Scaled is $2,500,000 at 18%, producing $450,000 with 3 FT + 3 C, totaling thirteen people.",
-                    ),
-                    field(
-                        "Job volume and realized invoice size",
-                        "textarea",
-                        "Choose a transparent annual job-count and average-invoice combination that reproduces the selected scenario. Distinguish completed invoices from leads, estimates, insurance claim totals, and cash receipts, then state how cancellations and credits affect the count.",
-                        "The Base illustration uses fifty completed jobs at $30,000 each, totaling $1,500,000. A customer's $85,000 total loss claim contributes only our earned $30,000 restoration scope. Five additional estimates that never become authorized work contribute no revenue, and any issued credit reduces the applicable invoice rather than becoming another job.",
-                    ),
-                    field(
-                        "Annual cost bridge to owner profit",
-                        "textarea",
-                        "Allocate the selected scenario's total costs across concrete operating categories and verify that revenue minus every category equals canonical owner profit. State whether subcontractor charges, equipment expenses, and defect provisions are already included before calculating any additional margin.",
-                        "Base costs are materials $360,000, subcontractors $360,000, employee labor $300,000, fleet and equipment $120,000, administration $120,000, and defect allowance $45,000. Their $1,305,000 total leaves $195,000 from $1,500,000 revenue. These are illustrative allocations beneath the fixed Base result, not additional charges outside its margin.",
-                    ),
-                    field(
-                        "Per-job contribution and overhead recovery",
-                        "textarea",
-                        "Translate the annual bridge into a representative job with direct costs, contribution, overhead recovery, and owner profit. Explain the treatment of employee labor and equipment allocations so dispatch decisions do not confuse spare capacity with cost-free production.",
-                        "A $30,000 job carries $7,200 materials, $7,200 subcontractors, $6,000 employee labor, and $2,400 equipment, leaving $7,200 contribution. Administration consumes $2,400 and the defect allowance $900, leaving $3,900 owner profit. Multiplying every amount by fifty reproduces the Base bridge and its 13.0% net margin.",
-                    ),
-                    field(
-                        "Documentation scrub and defect reserve",
-                        "textarea",
-                        "Budget specific losses from unsupported quantities, rework, collection shortfalls, and estimating corrections. Separate the management allowance from actual ledger treatment, explain how realized defects consume the allowance, and prevent duplicate expense recognition or unsupported revenue accruals.",
-                        "The $45,000 annual allowance equals 3% of Base revenue, or $900 per average job. A planning split assigns $18,000 to rework, $15,000 to invoice reductions, and $12,000 to collection loss. Accounting maps actual items to their proper accounts and replaces the planning allowance rather than adding losses twice.",
-                    ),
-                    field(
-                        "Monthly operating expense classification",
-                        "textarea",
-                        "Reconcile the supplied monthly operating range with the specific recurring costs in your model. Identify pass-through production purchases, noncash planning allowances, and amounts already in annual costs so the monthly figure is never mistaken for total business spending.",
-                        "The supplied range is $4,000–$20,000 monthly. This Base illustration uses its $45,000 upper end: $25,000 employee labor, $10,000 equipment, and $10,000 administration. Materials and subcontractors add $60,000 monthly production spending; the $3,750 monthly defect allowance completes average modeled costs of $108,750 without adding overhead again.",
-                    ),
-                    field(
-                        "Receivable aging and collection assumptions",
-                        "textarea",
-                        "Record monthly invoicing, collection days, disputed balances, lender-controlled checks, and the timing convention used in calculations. Separate the date work finishes from invoice issuance so delayed documentation does not disappear inside a deceptively favorable receivable metric.",
-                        "Base invoicing averages $125,000 monthly. Using thirty-day planning months, sixty collection days imply $250,000 receivables. The office separately tracks completed but uninvoiced work, with a two-business-day invoicing target. Joint checks remain open receivables until deposited funds clear; a carrier's verbal payment update is not collected cash.",
-                    ),
-                    field(
-                        "Working-capital float calculation",
-                        "textarea",
-                        "Calculate receivables plus unbilled work and inventory, less eligible supplier payables and usable customer advances. State simplified assumptions, add a distinct operating buffer, and identify the timing risks that could make the actual cash requirement larger.",
-                        "With $250,000 receivables, zero assumed unbilled work, zero incremental inventory, and $60,000 supplier payables at thirty days, operating float is $190,000. Add a $45,000 buffer for $235,000 liquidity. Customer advances are assumed zero; any actual unbilled production or stocked materials would increase this simplified requirement.",
-                    ),
-                    field(
-                        "Startup capital and committed funding",
-                        "textarea",
-                        "Place equipment purchases, setup spending, working capital, and contingency within the supplied startup range. Separate cash already available from conditional borrowing, and explain how owned equipment purchases differ from recurring rental, maintenance, insurance, and fleet expense.",
-                        "A $310,000 startup plan allocates $55,000 to equipment, $20,000 to deposits and training, and $235,000 to liquidity, within the $18,000–$75,000 range. Recurring equipment expense remains in the operating bridge. A lender's unexecuted proposal supplies no usable funding; launch commitments rely on documented cash and executed availability.",
-                    ),
-                    field(
-                        "Collection delay and margin downside",
-                        "textarea",
-                        "Run a timing shock and a separate cost shock against the Base illustration. Quantify incremental funding and revised sensitivity profit, preserve the canonical reference, and state what operational action prevents the modeled downside from becoming an unmanaged cash crisis.",
-                        "Moving collection from sixty to ninety days adds $125,000 receivables and liquidity demand. A separate $30,000 rework overrun beyond the existing allowance reduces sensitivity profit to $165,000, or 11%. Neither changes canonical Base profit of $195,000; management restricts new cash-heavy jobs until funding and defect recovery plans are documented.",
-                    ),
-                ],
-                "completion_gate": (
-                    "The finance owner verifies all three canonical equations, the Base "
-                    "$1,305,000 cost bridge, the $190,000 simplified float, and the $235,000 "
-                    "buffered liquidity requirement. Every sensitivity is labeled, and startup "
-                    "commitments remain within documented available funding rather than projected collections."
-                ),
-            },
-            {
-                "worksheet_id": "ws-03",
-                "number": 3,
-                "title": "Execution Ledger and Technical QA Pre-Flight",
-                "purpose": (
-                    "Create an auditable path from emergency dispatch through drying "
-                    "verification and final collection. Tie physical conditions to equipment "
-                    "choices, daily records, estimating quantities, and job costs so the "
-                    "team can defend performed work without substituting billing targets "
-                    "for technical judgment."
-                ),
-                "chapter_ref": "Q7, Q8",
-                "instructions": [
-                    (
-                        "Assign one job identifier across dispatch, photographs, moisture maps, "
-                        "estimates, purchase orders, and invoices. Preserve original evidence "
-                        "and record corrections separately so a later reviewer can reconstruct "
-                        "what the crew observed, authorized, performed, and billed each day."
-                    ),
-                    (
-                        "Establish the initial safety assessment, water source observations, "
-                        "affected assemblies, and dry reference locations before selecting "
-                        "equipment. Apply the relevant IICRC S500 or S520 process through "
-                        "trained personnel rather than treating a software template as technical direction."
-                    ),
-                    (
-                        "Document ambient temperature, relative humidity, material readings, "
-                        "equipment operation, and changing conditions at defined intervals. "
-                        "Interpret trends against comparable materials and instrument limitations; "
-                        "a single favorable room reading does not establish that concealed assemblies are dry."
-                    ),
-                    (
-                        "Prepare Xactimate scope from measured quantities and actual operations. "
-                        "Support supplements with photographs, logs, authorizations, and task "
-                        "explanations; keep factual construction communications distinct from interpreting "
-                        "policy provisions or negotiating an insured's settlement as their representative."
-                    ),
-                    (
-                        "Reconcile job costs and evidence before sending the final invoice. "
-                        "Require a technical reviewer to examine unresolved moisture, occupant "
-                        "concerns, equipment duration, subcontractor completion, and change documentation "
-                        "before closing the production record or releasing equipment for another loss."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Dispatch packet and job identifier",
-                        "textarea",
-                        "Specify the minimum information that must travel from intake to the crew: job identity, access authority, hazards, approved scope, customer contact, equipment reservation, and escalation route. Include a method for acknowledging instructions when mobile connectivity fails.",
-                        "Dispatch packet IR-029-014 includes the signed stabilization scope, restricted electrical area, manager contact, two assigned technicians, and reserved equipment serials. The lead acknowledges receipt before departure. An encrypted offline copy carries the same revision number, and later synchronization records who added each field rather than replacing the original packet.",
-                    ),
-                    field(
-                        "Initial condition and source assessment",
-                        "textarea",
-                        "Describe observed water or fire conditions, source control, elapsed time, affected materials, and uncertainties requiring specialist review. Explain how changing contamination conditions or concealed damage will trigger reassessment instead of being forced into the first intake classification.",
-                        "The plumber reports the supply line isolated at 08:10; the crew verifies no active flow at 09:05. Water contacted laminate, gypsum, and cabinet bases. The lead documents source information and affected pathways under the applicable S500 assessment process, then reassesses when opening a cavity reveals older staining and odor.",
-                    ),
-                    field(
-                        "Psychrometric measurement plan",
-                        "textarea",
-                        "Define measurement locations, instrument identities, reading frequency, and relevant ambient variables. Explain how temperature, relative humidity, humidity ratio, and equipment inlet or outlet conditions support drying decisions while remaining separate from direct evidence about moisture inside materials.",
-                        "At 09:30, the affected room measures 75 F and 65% relative humidity; dehumidifier inlet and outlet readings are recorded separately. The team logs actual barometric assumptions when deriving humidity ratio with a validated calculator. Raw readings remain attached, and no calculated air metric substitutes for material measurements.",
-                    ),
-                    field(
-                        "Material moisture map and dry reference",
-                        "textarea",
-                        "Identify assemblies, repeatable test locations, meter modes, reference materials, and drying objectives established by the responsible technician. State how readings are compared when instruments produce relative scales rather than directly comparable moisture percentages across different building materials.",
-                        "The map labels twelve gypsum locations and six wood locations, with unaffected comparable references. Wood pin readings use the appropriate correction settings; gypsum relative-scale readings remain labeled as relative values. The lead records a wood target near the verified reference and documents why inaccessible cabinet backing requires additional investigation.",
-                    ),
-                    field(
-                        "Equipment sizing and daily operating log",
-                        "textarea",
-                        "Record the technical rationale for equipment quantity, placement, monitoring, changes, and removal. Tie serial-number deployment hours to observed conditions and equipment performance, explaining how interrupted power or altered containment affects both the drying plan and billed duration.",
-                        "Six air movers and two dehumidifiers begin service after the lead's documented assessment. On day two, one circuit trips for four hours; the log records downtime and the corrective electrical arrangement. Equipment charges follow actual deployment and applicable contract terms, while the drying plan is revised from observed progress.",
-                    ),
-                    field(
-                        "Photograph and evidence chain",
-                        "textarea",
-                        "Define the photo sequence, room identifiers, timestamps, original-file retention, access permissions, and correction history. Include protection for occupant information and explain how edited presentation copies remain traceable to original evidence used for technical review or invoice support.",
-                        "Each room receives overview, damage-detail, measurement-context, and completion photographs labeled with job and room identifiers. CompanyCam exports link to original files in restricted storage. A redacted insurer packet omits unrelated family photographs, while the original evidence remains access-controlled and the export log records its recipient and purpose.",
-                    ),
-                    field(
-                        "Estimate line-item and supplement support",
-                        "textarea",
-                        "Connect each material quantity, labor activity, equipment duration, and disposal charge to measurements or work records. Explain the review process for supplements and identify language that keeps the communication focused on performed construction services rather than policy advocacy.",
-                        "A supplement adds 240 square feet of wet insulation removal supported by cavity photographs, measured dimensions, disposal tickets, and the customer's change authorization. The estimator explains why the material was removed and how quantity was measured. The packet requests review of our invoice support without interpreting coverage or negotiating claim settlement.",
-                    ),
-                    field(
-                        "Job-cost ledger and purchase controls",
-                        "textarea",
-                        "Specify cost codes, purchase authorization thresholds, labor posting deadlines, subcontractor document requirements, and reconciliation ownership. Show how committed costs are visible before invoices arrive so an apparently profitable job does not conceal unposted labor or supplier obligations.",
-                        "IR-029-014 uses separate codes for extraction, demolition, drying, cleaning, and reconstruction. Purchases above $500 require the production manager's documented authorization. Technicians post time daily; the ledger includes a $2,400 subcontract commitment before billing arrives. Weekly review compares actual plus committed costs with the current authorized estimate.",
-                    ),
-                    field(
-                        "Technical closeout and exception handling",
-                        "textarea",
-                        "Define the evidence required to end drying or remediation, remove equipment, and hand work to reconstruction. Identify unresolved conditions that prevent technical closure and specify when independent assessment or a qualified specialist is necessary for the agreed scope.",
-                        "The lead compares final mapped readings with established material references and documents accessible assemblies, remaining limitations, and occupant concerns. One wet cabinet base remains outside the initial scope, so that area stays open for a revised plan. Mold-project verification follows the project specification and applicable jurisdictional independence requirements.",
-                    ),
-                    field(
-                        "Invoice package and ledger release",
-                        "textarea",
-                        "List the signed scope, changes, quantities, equipment logs, completion evidence, invoice terms, and cost reconciliation required for billing. Distinguish production completion, customer acceptance, earned revenue treatment, and actual cash collection so the ledger preserves each milestone separately.",
-                        "The billing packet contains the signed $30,000 scope, approved changes, measured estimate, daily logs, and completion record. Production closes March 12, the invoice issues March 13, and collection remains open until funds clear. The controller reconciles the $26,100 modeled total cost independently from the customer's signature.",
-                    ),
-                ],
-                "completion_gate": (
-                    "The technical lead confirms documented drying or remediation outcomes "
-                    "and explicitly identifies unresolved areas. The estimator and controller "
-                    "then reconcile quantities, equipment duration, authorizations, committed "
-                    "costs, and invoice attachments under one job identifier before billing release."
-                ),
-            },
-            {
-                "worksheet_id": "ws-04",
-                "number": 4,
-                "title": "Statutory, Licensing, Contract, and Outreach Audit",
-                "purpose": (
-                    "Turn jurisdictional requirements into specific operating records, "
-                    "contract language, and crew instructions. Keep restoration contracting "
-                    "separate from public adjusting, preserve lawful deductible collection, "
-                    "and verify that marketing, hazardous-material work, safety controls, "
-                    "and payment remedies match the actual property and service."
-                ),
-                "chapter_ref": "Q5, Q9",
-                "instructions": [
-                    (
-                        "Build the jurisdiction record from the property's location, building "
-                        "use, service scope, and customer type. Retrieve current statutes "
-                        "and licensing-board guidance from official sources, recording the "
-                        "review date and responsible reviewer instead of copying another contractor's checklist."
-                    ),
-                    (
-                        "Audit the work agreement against applicable home-improvement, emergency-service, "
-                        "deposit, cancellation, and change-order requirements. Match each operational "
-                        "promise to a responsible employee and preserve the customer's "
-                        "executed version, including attachments and any legally required notices."
-                    ),
-                    (
-                        "Train estimators and collectors to discuss their own services, "
-                        "quantities, invoices, and factual support. Escalate requests for policy "
-                        "interpretation or settlement representation rather than letting helpful "
-                        "billing coordination become unlicensed public adjusting through scripts or informal messages."
-                    ),
-                    (
-                        "Review site hazards and environmental triggers before disturbance, "
-                        "not after demolition begins. Confirm the applicable worker-protection "
-                        "standard, specialist qualifications, occupant controls, and waste pathway; "
-                        "record objective task restrictions when required assessments or controls are incomplete."
-                    ),
-                    (
-                        "Inspect actual outreach messages, referral payments, deductible language, "
-                        "and collection notices. Assign every correction a deadline and owner, "
-                        "then verify implementation in the live template or workflow rather "
-                        "than marking the issue resolved after a meeting."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Jurisdiction and license register",
-                        "textarea",
-                        "List contractor, mold, electrical, plumbing, roofing, and local permit requirements that apply to the proposed work. Record official-source verification, license holder identity, scope restrictions, renewal dates, and the operational response when the business lacks a required credential.",
-                        "For a Florida mold engagement, the reviewer checks Florida Statutes sections 468.841 through 468.8424 and current DBPR records for assessment and remediation requirements. The worksheet identifies the credentialed entity and checks applicable exemptions and conflict restrictions. Water mitigation credentials alone do not authorize every regulated mold activity.",
-                    ),
-                    field(
-                        "Public-adjusting boundary and escalation",
-                        "textarea",
-                        "Define permitted contractor communications and activities requiring separate public-adjusting authority under the applicable state rules. Identify prohibited role combinations and create an escalation route that does not imply a separate license automatically permits acting in conflicting capacities.",
-                        "For Texas work, the reviewer checks Insurance Code sections 4102.051 and 4102.163 for licensing and conflicts. Staff may explain measured repair quantities and their own invoices, but do not negotiate the owner's policy settlement. A request to argue coverage goes back to the owner and their independently selected representative.",
-                    ),
-                    field(
-                        "Deductible collection and pricing integrity",
-                        "textarea",
-                        "Document how customer deductibles, discounts, promotional credits, and insurer-facing invoices are handled. Cite the applicable jurisdiction's rule and ensure that customer communications cannot disguise a waived deductible through inflated charges, rebates, or inconsistent invoice versions.",
-                        "For Texas property claims, the reviewer applies Insurance Code section 707.002 to deductible payment and Business and Commerce Code section 27.02 to prohibited conduct and required contract terms. The invoice states actual charges; no salesperson offers a hidden rebate or increases line items to offset the customer's deductible.",
-                    ),
-                    field(
-                        "Work agreement and change authorization",
-                        "textarea",
-                        "Identify required contract contents, notices, deposit limits, scope descriptions, payment milestones, and signed-change procedures. Distinguish a jurisdiction-specific requirement from a universal company practice, and explain how the office verifies the correct agreement before collecting money or commencing work.",
-                        "For a covered California home-improvement contract, the reviewer applies Business and Professions Code section 7159, including the generally applicable down-payment limit of $1,000 or 10% of the price, whichever is less. A $30,000 covered contract therefore uses a $1,000 maximum initial down payment, subject to verified statutory applicability.",
-                    ),
-                    field(
-                        "Cancellation rights and emergency requests",
-                        "textarea",
-                        "Assess whether the sales location, solicitation method, customer status, and transaction create cancellation rights. Record required notices and any precisely applicable emergency exception; do not assume that describing damage as urgent automatically removes a customer's statutory rights.",
-                        "The reviewer checks the FTC Cooling-Off Rule, 16 CFR Part 429, and applicable state rules for an in-home sale. Any emergency exception is evaluated against its actual requirements and documented facts. The crew receives a start instruction tied to the reviewed transaction, not a generic prechecked waiver.",
-                    ),
-                    field(
-                        "Lead asbestos and regulated disturbance",
-                        "textarea",
-                        "Record building age, suspect materials, planned disturbance, sampling or assessment needs, specialist assignments, and waste requirements. Explain how emergency stabilization is separated from later renovation activities when environmental rules provide limited exceptions rather than a blanket exemption.",
-                        "A 1965 residence triggers review of EPA renovation requirements under 40 CFR 745.82 and 745.85 before painted surfaces are disturbed. The reviewer separately evaluates OSHA asbestos requirements under 29 CFR 1926.1101. Any emergency provision is applied only to qualifying tasks, with subsequent work returned to the applicable procedures.",
-                    ),
-                    field(
-                        "Worker protection and respiratory program",
-                        "textarea",
-                        "Identify task-specific electrical, fall, respiratory, structural, and exposure controls with a responsible supervisor. State the applicable standard and required training or program records, distinguishing a complete respiratory-protection process from merely purchasing masks or collecting employee acknowledgments.",
-                        "Where required respirator use applies, the safety lead implements 29 CFR 1910.134, including medical evaluation, fit testing, training, and program administration. Roof-related construction work is assessed under 29 CFR 1926.501, and electrical exposure under 29 CFR 1926.416. Task authorization follows verified controls, not equipment availability alone.",
-                    ),
-                    field(
-                        "Outreach scripts and contact permissions",
-                        "textarea",
-                        "Review telephone, text, email, and door-to-door acquisition methods against channel-specific federal and state requirements. Record the source of contact permission where required, suppression procedures, vendor controls, and factual limits on insurance-related statements in advertisements and scripts.",
-                        "The marketing lead reviews calls and texts under 47 U.S.C. 227 and 47 CFR 64.1200, including applicable permission and do-not-call duties. Commercial email follows 15 U.S.C. 7704. The storm-response email identifies the company and unsubscribe method, and states service availability without promising that insurance will pay.",
-                    ),
-                    field(
-                        "Collection remedies and lien calendar",
-                        "textarea",
-                        "Identify contract payment terms, notice requirements, lien deadlines, collection restrictions, and the person authorized to approve escalation. Explain how project location, customer relationship, and claimant status affect remedies, rather than treating one deadline or demand template as universally valid.",
-                        "For a California subcontract assignment, the reviewer checks Civil Code section 8200 for preliminary-notice applicability and timing, then separately calendars recording and enforcement rules for the claimant's role. The office sends an itemized invoice and supporting records first; no automated message threatens a lien before the file-specific prerequisites are verified.",
-                    ),
-                    field(
-                        "Insurance subcontractors and audit evidence",
-                        "textarea",
-                        "Record company coverage, relevant exclusions, subcontractor agreements, worker classification review, and evidence retention. Explain how insurance certificates, policy endorsements, and written scope allocations are checked without assuming that a certificate alone establishes coverage for every restoration hazard.",
-                        "The broker reviews general liability, workers' compensation, vehicle coverage, and pollution-related exposures against water, fire, and mold operations. Six contractor relationships receive written scopes and credential checks; calling someone a contractor does not settle classification. The file retains certificates and relevant endorsements, with renewal tracking assigned to the office manager.",
-                    ),
-                ],
-                "completion_gate": (
-                    "The jurisdiction reviewer records current sources, applicability findings, "
-                    "and corrected live documents. Work outside verified credentials or hazard "
-                    "controls remains unscheduled, and customer-facing scripts contain neither "
-                    "coverage promises nor deductible-offset schemes or unauthorized settlement representation."
-                ),
-            },
-            {
-                "worksheet_id": "ws-05",
-                "number": 5,
-                "title": "Automation, Growth Flywheel, and Risk Fallback Tracker",
-                "purpose": (
-                    "Automate dispatch, photo organization, and job-cost visibility without "
-                    "automating unsupported decisions. Build a referral engine that rewards "
-                    "documented service quality, then specify human ownership and fallback "
-                    "procedures for missing evidence, integration failures, disputed invoices, "
-                    "and sudden changes in field capacity."
-                ),
-                "chapter_ref": "Q6, Q10",
-                "instructions": [
-                    (
-                        "Map the workflow from inbound lead to cleared payment before "
-                        "connecting tools. Define record ownership, required fields, unique "
-                        "identifiers, and permitted state changes so automation accelerates "
-                        "an understandable process rather than spreading inconsistent data across several applications."
-                    ),
-                    (
-                        "Prioritize dispatch, photo documentation, and job-cost tracking because "
-                        "they directly support the canonical automation thesis. Keep technical "
-                        "classification, safety release, customer scope changes, and dispute "
-                        "decisions with accountable people who can inspect the underlying evidence."
-                    ),
-                    (
-                        "Design referral outreach around response reliability, documented work, "
-                        "and clear handoffs. Segment plumbers, property managers, roofers, "
-                        "and facilities teams, but screen compensation arrangements and contact "
-                        "methods against applicable rules before creating recurring campaigns or automated introductions."
-                    ),
-                    (
-                        "Test each integration with duplicate events, missing photographs, "
-                        "revised estimates, disconnected phones, and failed accounting writes. "
-                        "Define retry limits and reconciliation reports; repeated notifications "
-                        "should not create duplicate jobs, duplicate customer messages, or duplicate invoices."
-                    ),
-                    (
-                        "Assign a fallback owner and recovery target to every business-critical "
-                        "automation. Keep customer and occupant information in approved systems, "
-                        "limit vendor access, and rehearse manual dispatch and billing so "
-                        "the team can operate safely during an outage."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "System map and source-of-truth ownership",
-                        "textarea",
-                        "List the selected CRM, dispatch, photo, estimate, accounting, and document systems with ownership for each core record. Explain which system governs customer identity, job status, authorized scope, and receivable balance when synchronized copies disagree.",
-                        "Jobber manages scheduling, CompanyCam stores field-photo references, Xactimate holds estimating revisions, and QuickBooks Online governs posted receivables. The signed agreement repository controls authorized scope. Job IR-029-014 appears in every system, but a scheduling status cannot override the accounting balance or turn an unsigned estimate into customer authorization.",
-                    ),
-                    field(
-                        "Dispatch rules and human release",
-                        "textarea",
-                        "Define priority inputs, service-radius checks, crew skills, equipment constraints, and escalation conditions for automated scheduling suggestions. State which decisions remain manual and how the system prevents an urgent lead from bypassing site hazards or credential limitations.",
-                        "A dispatch rule flags active water intrusion within twenty miles for immediate coordinator review. It proposes the nearest qualified crew with available equipment, but the coordinator verifies authority and known hazards before release. Reports of unstable ceilings or energized standing water trigger specialist escalation instead of a faster technician arrival promise.",
-                    ),
-                    field(
-                        "Photo completeness and evidence checks",
-                        "textarea",
-                        "Specify required photo categories, room tags, upload deadlines, missing-evidence alerts, and reviewer responsibilities. Explain how automation checks completeness without inventing image descriptions, inferring concealed damage, or treating a timestamp alone as proof of the work performed.",
-                        "At each monitoring visit, the application checks for room overview, meter-context image, equipment image, and visit notes. A missing category creates a task for the lead within two hours. Computer-generated labels remain suggestions; the estimator verifies images and quantities before they support any invoice or supplement.",
-                    ),
-                    field(
-                        "Job-cost alerts and committed-cost capture",
-                        "textarea",
-                        "Define how time entries, purchases, subcontract commitments, and revised scope feed the cost dashboard. Set alert thresholds tied to the authorized estimate, and explain who investigates exceptions before a margin warning becomes an unsupported customer charge.",
-                        "The average $30,000 Base job has $22,800 direct production costs before administration and defect allowance. An alert triggers when actual plus committed direct costs exceed $23,940, a 5% overrun. The manager checks duplicate purchases, scope changes, and labor productivity before deciding whether any properly authorized additional work is billable.",
-                    ),
-                    field(
-                        "Referral partner qualification and offer",
-                        "textarea",
-                        "Identify target partner segments, service promises, referral handoff details, and compensation restrictions. Build an offer based on measurable operational performance and customer choice rather than implied insurer endorsement, guaranteed coverage, or undocumented payments for access to vulnerable owners.",
-                        "The team approaches ten plumbers and five property managers with a documented emergency contact process, arrival updates, and photo-supported completion summaries shared with customer permission. The offer contains no insurer affiliation claim and no per-claim payment. Any proposed referral compensation receives jurisdiction-specific review before a salesperson can offer it.",
-                    ),
-                    field(
-                        "Outbound funnel and capacity forecast",
-                        "textarea",
-                        "Connect outreach activity to conversations, qualified referrals, accepted jobs, and delivered revenue using explicit conversion assumptions. Distinguish annual planning arithmetic from early launch evidence, and cap accepted work according to actual crew, equipment, and liquidity availability.",
-                        "An annual illustration uses 1,000 targeted partner touches, 200 conversations, 100 qualified referrals, and fifty completed jobs at $30,000, reproducing $1,500,000 Base revenue. These are planning conversions, not observed results. A monthly review replaces assumptions with cohort evidence and rejects overflow when supervision or cash exposure exceeds limits.",
-                    ),
-                    field(
-                        "Review requests and retention loop",
-                        "textarea",
-                        "Specify when customers receive completion follow-up, maintenance information, and an optional review request. Explain how negative feedback enters corrective action, how public responses protect customer information, and how referral success is measured without selectively filtering unhappy customers.",
-                        "Every completed customer receives the same optional review invitation after the completion discussion, regardless of satisfaction score. A reported odor creates a service investigation, not a request to revise the rating. Public replies omit loss details, and partner reporting uses permissioned operational summaries rather than customer claim documents.",
-                    ),
-                    field(
-                        "Integration retry and duplicate prevention",
-                        "textarea",
-                        "Define event identifiers, retry behavior, reconciliation ownership, and failure queues for cross-system updates. Include protections against duplicate invoices and repeated customer messages, and describe how accounting-posting failures become visible before staff rely on an incomplete dashboard.",
-                        "An invoice export uses job ID, invoice number, and revision as an idempotency key. A timeout prompts a destination lookup before another write attempt. After three controlled attempts, the record enters a review queue, and the controller checks source totals against QuickBooks Online before any payment reminder is sent.",
-                    ),
-                    field(
-                        "Access retention and vendor controls",
-                        "textarea",
-                        "Define access roles, multifactor authentication, device protections, retention ownership, and restrictions on external processing of property evidence. Explain how temporary subcontractor access expires and how the company verifies restoration of records from backups rather than merely assuming backups exist.",
-                        "Technicians access assigned jobs, estimators access scope evidence, and accounting controls bank details. Temporary contractor links expire after seven days unless renewed for a documented need. The administrator requires multifactor authentication, prohibits uploads to unapproved analysis services, and tests restoration of a sample job folder quarterly with results recorded.",
-                    ),
-                    field(
-                        "Outage dispute and incident fallback",
-                        "textarea",
-                        "Create practical fallback steps for dispatch outages, missing data, safety incidents, and disputed invoices. Assign an owner, communication method, recovery target, and reconciliation task while ensuring that an automation failure cannot authorize unsafe work or unauthorized claim representation.",
-                        "During a mobile outage, the coordinator uses the encrypted offline roster and numbered paper visit sheets. The lead phones safety changes immediately; the office reconciles records within one business day after recovery. A disputed invoice freezes automated reminders for review, while the collector continues only factual, documented billing communications.",
-                    ),
-                ],
-                "completion_gate": (
-                    "The workflow owner demonstrates one successful job transfer, one duplicate "
-                    "event test, one failed accounting-write recovery, and one offline dispatch "
-                    "exercise. Referral scripts are reviewed, data access is bounded, and each "
-                    "critical exception has a named human owner and tested recovery procedure."
-                ),
-            },
-            {
-                "worksheet_id": "ws-06",
-                "number": 6,
-                "title": "30-Day Launch, Pod KPI Scorecard, and Exit-Readiness Ledger",
-                "purpose": (
-                    "Convert the operating design into a thirty-day readiness sprint "
-                    "with measurable responsibilities, evidence, and cash limits. Track "
-                    "technical quality and collections alongside growth, preserve the "
-                    "canonical small-team economics, and build records that remain useful "
-                    "when ownership or management changes."
-                ),
-                "chapter_ref": "Q11, Q12",
-                "instructions": [
-                    (
-                        "Treat the first thirty days as a readiness and controlled "
-                        "market-entry sprint, not proof that annual economics have been "
-                        "achieved. The supplied time to first deal is one to six "
-                        "months, so early milestones must include credible nonrevenue evidence."
-                    ),
-                    (
-                        "Assign every deliverable to a named role with a due date, "
-                        "required evidence, and spending limit. Order work so licenses, "
-                        "safety capability, agreements, and cash availability precede live "
-                        "production commitments rather than becoming cleanup tasks after the first loss."
-                    ),
-                    (
-                        "Build the pod around the canonical full-time and contractor "
-                        "counts, then define actual responsibilities and available hours. "
-                        "Do not treat a contractor relationship as guaranteed capacity "
-                        "or equate thirteen people with thirteen full-time employees in the scaled model."
-                    ),
-                    (
-                        "Review a compact weekly scorecard covering response, documentation, "
-                        "drying exceptions, job contribution, receivables, safety, and available "
-                        "liquidity. Preserve metric definitions and cohort dates so a "
-                        "short launch period cannot make annualized performance look more certain than it is."
-                    ),
-                    (
-                        "Create the exit-readiness folder while records are fresh: agreements, "
-                        "licenses, evidence samples, job-cost reconciliations, receivable aging, "
-                        "and process ownership. Protect customer information and disclose "
-                        "documents externally only through an authorized diligence process with controlled access."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Days one through seven readiness plan",
-                        "textarea",
-                        "Set first-week deliverables for jurisdiction review, service boundaries, insurance, funding, customer agreements, and equipment sourcing. Specify evidence of completion and distinguish reversible planning work from spending or customer commitments that require documented authority.",
-                        "By day seven, the operations lead completes the jurisdiction matrix, the broker returns a coverage review, and the controller verifies available funding against the $310,000 startup plan. The manager selects equipment suppliers but releases purchases only under assigned spending authority. The contract packet receives a dated, jurisdiction-specific review.",
-                    ),
-                    field(
-                        "Days eight through fourteen technical rehearsal",
-                        "textarea",
-                        "Design a controlled rehearsal covering dispatch, hazard assessment, moisture mapping, photographs, equipment logging, estimating, and accounting transfer. Define pass criteria and corrective actions without claiming that a demonstration property establishes competence for every water, fire, or mold loss.",
-                        "The crew rehearses a documented mock water-loss workflow on an authorized training setup. It captures twelve labeled readings, uploads the required photo sequence, builds a measured estimate, and posts a test invoice to a segregated test environment. Any missing evidence becomes a correction task before that workflow handles customer work.",
-                    ),
-                    field(
-                        "Days fifteen through twenty-one market entry",
-                        "textarea",
-                        "Set a modest partner-outreach and intake target that fits the verified operating footprint. Specify the offer, qualification criteria, recordkeeping, and capacity limits, while separating actual qualified opportunities from meetings, purchased leads, and optimistic pipeline estimates.",
-                        "The owner schedules ten plumber conversations and five property-manager introductions, using the reviewed service script. Each opportunity must pass the first worksheet before acceptance. Two promising conversations remain pipeline records rather than revenue, and the coordinator declines simultaneous deployments that would leave existing drying jobs without adequate monitoring.",
-                    ),
-                    field(
-                        "Days twenty-two through thirty review",
-                        "textarea",
-                        "Define the final sprint review using actual evidence from rehearsals, outreach, and any completed work. State how the team proceeds if no contract has closed, given the supplied first-deal range, and identify the conditions for continued controlled deployment.",
-                        "On day thirty, the team reviews funding, credential checks, rehearsal defects, partner responses, and any signed work. Zero closed jobs remains compatible with the one-to-six-month first-deal range. The next month retains limited deployment capacity and targeted outreach; it does not annualize an unsigned estimate or hire against assumed receipts.",
-                    ),
-                    field(
-                        "Pod roles and canonical staffing bridge",
-                        "textarea",
-                        "Assign the five Base full-time positions and six contractor relationships to specific responsibilities, then describe the scaled change. Preserve the canonical headcounts while explaining cross-training, supervisory coverage, contractor availability, and tasks that cannot safely be combined.",
-                        "Base roles are an owner-operator, estimator-project manager, lead technician, technician, and office coordinator, supported by six contractor relationships. The illustrative $300,000 employee-labor budget averages $60,000 loaded per full-time position and requires local validation. Scaled adds one full-time role and one contractor relationship, producing 3 FT + 3 C.",
-                    ),
-                    field(
-                        "Pod operating KPI definitions",
-                        "textarea",
-                        "Define response, evidence completeness, invoice speed, receivable age, and margin metrics with numerators, denominators, owners, and review frequency. Include technical exceptions and safety events so sales growth cannot conceal deteriorating documentation, unmonitored drying, or unsafe production practices.",
-                        "The weekly scorecard tracks acknowledged dispatches within fifteen minutes, complete visit packets divided by required visits, invoices issued within two business days of billing readiness, and aged receivables by invoice date. The production lead also reports unresolved moisture exceptions and incidents. Targets guide review; missed targets retain their actual values.",
-                    ),
-                    field(
-                        "Economic score and scenario review",
-                        "textarea",
-                        "Restate the candidate's score components and canonical economic outcomes as fixed reference data. Explain how actual results will be compared without changing the scoring model, and identify the capital or labor constraints that the operating score makes especially important.",
-                        "The score is 87/100: revenue potential 24, margin potential 22, team efficiency 19, startup accessibility 12, and automation potential 10. Annual owner profit anchors remain $40,000 Conservative, $195,000 Base, and $450,000 Scaled. Actual cohort margins are reported separately, with particular attention to staffing intensity and cash tied up in receivables.",
-                    ),
-                    field(
-                        "Risk register and cash intervention triggers",
-                        "textarea",
-                        "Create measurable triggers for claim disputes, cash-flow gaps, safety incidents, and documentation failures. Assign a response owner and a practical intervention that protects existing commitments rather than assuming new sales, future insurer payments, or unavailable borrowing will resolve the problem.",
-                        "If available liquidity falls below the modeled $45,000 buffer, the controller updates a thirteen-week cash forecast and reviews new commitments daily. Invoices older than sixty days receive documented collection review. A serious site hazard stops the affected task immediately, while recurring missing monitoring records trigger retraining and supervised visits.",
-                    ),
-                    field(
-                        "Exit-readiness and transferable evidence",
-                        "textarea",
-                        "List records that demonstrate repeatable operations, defensible revenue, clean receivables, equipment ownership, and qualified personnel. Identify transfer restrictions and customer-data controls, and distinguish a useful internal diligence folder from an authorized external disclosure or a promised transaction outcome.",
-                        "The internal folder contains monthly job-cost reconciliations, signed scope samples, aging reports, equipment titles, credential records, and documented system ownership. Customer examples are redacted for preliminary review. The manager flags nontransferable licenses, consent-dependent contracts, and referral concentration before any buyer discussion, and releases documents only through an authorized access process.",
-                    ),
-                    field(
-                        "Day-thirty decision and next commitments",
-                        "textarea",
-                        "Record the continue, correct, or pause decision with supporting evidence, remaining constraints, next-month spending limits, and responsible owners. Separate readiness accomplishments from revenue achievements and preserve a clear list of unfinished work rather than declaring the entire operation complete prematurely.",
-                        "Decision: continue controlled market entry after verified licenses, funded liquidity, and a successful rehearsal; correct two photo-tagging defects before the next deployment. No revenue milestone is claimed because no job has closed. The owner authorizes $3,000 of next-month outreach within the existing administration budget, with weekly cash and capacity review.",
-                    ),
-                ],
-                "completion_gate": (
-                    "The owner and controller sign a day-thirty decision supported by "
-                    "completed readiness evidence, actual pipeline results, a funded cash "
-                    "forecast, defined staffing responsibilities, and an exception list. "
-                    "Canonical annual outcomes remain reference scenarios, while incomplete "
-                    "tasks and unearned revenue remain explicitly outside completed results."
-                ),
-            },
-        ],
-    }
+    return {'workbook_id': 'wb-029-insurance-restoration',
+ 'volume_id': 'vol-029-insurance-restoration',
+ 'title': 'Insurance Restoration — Practitioner Testimony Operator Workbook',
+ 'subtitle': 'Field worksheets for working to the IICRC standards, pricing mitigation so it gets paid, '
+             'mastering Xactimate line items, supplementing roof claims, negotiating with adjusters and '
+             'public adjusters, and deciding whether TPA programs deserve a place in the business',
+ 'worksheets': [{'worksheet_id': 'ws-01',
+                 'number': 1,
+                 'title': 'Standard-of-Care and Mitigation Billing Audit',
+                 'purpose': 'Hold every water and mold job to the S500 and S520 standard of care, prove '
+                            'containment and dryness with readings instead of fan-days, and price '
+                            'mitigation with one consistent protocol that changes pricing but never scope.',
+                 'chapter_ref': 'Q1-Q2',
+                 'instructions': ['Complete this worksheet on site, before demolition starts, and update '
+                                  'it every monitoring visit until the drying file is closed.',
+                                  'Write actual readings, model numbers, dollar amounts and dates, never '
+                                  'estimates from memory or round guesses made in the truck.',
+                                  "Treat every 'should' in the standard as the standard of care, and log "
+                                  'each deviation the moment it happens.',
+                                  'Price the job with the same naming, bundling and pricing protocol you '
+                                  'used on the last claim, with no exceptions.',
+                                  'Reconcile billed equipment against photos and equipment logs before the '
+                                  'estimate or invoice leaves the office.'],
+                 'fields': [{'name': 'containment_pressure_log',
+                             'type': 'text',
+                             'prompt': 'Record the containment setup for your current mold job: poly '
+                                       'thickness and type, the manometer reading in pascals, and the time '
+                                       'the reading was taken. State whether demolition or air movers '
+                                       'started before the containment held its target pressure.',
+                             'example': 'Containment built with 6 mil fire-retardant poly around the hall '
+                                        'bath; manometer held -5 Pa at 9:40 a.m. before any drywall came '
+                                        'down, the crucial metric proving containment works [Balanced '
+                                        'Building Biology — YdUmzaa5wO0 @ 00:02:47]. No demo and no air '
+                                        'movers ran until that reading was logged and photographed beside '
+                                        'the manometer display.'},
+                            {'name': 'removal_method',
+                             'type': 'textarea',
+                             'prompt': 'Describe how mold-affected material on this job will be removed. '
+                                       'Confirm physical removal is the method, name any product someone '
+                                       'proposed to fog or bleach with, and explain why that proposal was '
+                                       'rejected in your written scope.',
+                             'example': 'Homeowner asked whether we could just bleach the closet wall. '
+                                        'Written scope states physical removal of affected drywall and '
+                                        'HEPA vacuuming, because proper remediation is about physical '
+                                        'removal [Phill McGurk — Dl8DpDk97_A @ 00:03:11] and bleach is '
+                                        'essentially a masking agent [Balanced Building Biology — '
+                                        'YdUmzaa5wO0 @ 00:04:41]. No fogging line appears anywhere on the '
+                                        'estimate.'},
+                            {'name': 'condition_and_category',
+                             'type': 'textarea',
+                             'prompt': 'Classify the job by Condition 1, 2 or 3 rather than visible square '
+                                       'footage, and note the water category with the reasoning. If the '
+                                       'source is a drain or sewer line, state where it originated '
+                                       'relative to the trap.',
+                             'example': 'Kitchen sink backup: water originated beyond the trap, so it is '
+                                        'logged as category three, since if it originates from beyond the '
+                                        "trap it's category three [TheIICRC — bcid0F9jRTI @ 00:15:07]. "
+                                        'Cabinet toe-kick and adjacent drywall classed by Condition rather '
+                                        'than the small visible stain, with the reasoning written into the '
+                                        'file before demolition began.'},
+                            {'name': 'deviation_record',
+                             'type': 'textarea',
+                             'prompt': "List every point where this job departs from a 'should' in the "
+                                       'standard. For each, record how it was documented, which affected '
+                                       'parties were told, and whether the owner gave written '
+                                       'authorization, noting any limitation an adjuster tried to impose.',
+                             'example': 'Adjuster asked us to skip removing wet baseboard. Logged as a '
+                                        'deviation, communicated to the owner and tenant, and held until '
+                                        'the owner signed written authorization; an adjuster cannot impose '
+                                        "limitations [Time's Dark Captains — y00Yi4bnLx4 @ 00:12:13]. The "
+                                        'standard is voluntary, but in front of a judge or jury, skipping '
+                                        'it loses [TheIICRC — JOiWfXdUwjM @ 00:14:53].'},
+                            {'name': 'moisture_monitoring',
+                             'type': 'textarea',
+                             'prompt': 'Record your moisture monitoring plan: the meter model and serial '
+                                       'used, reading spacing, and daily readings. Confirm the same meter '
+                                       'stays on the job from first reading to close, and state the '
+                                       'readings that justify closing the drying file.',
+                             'example': 'Readings taken every 5 ft along the affected wall with one meter, '
+                                        'serial logged on day one, because the restorer should use the '
+                                        'same meter throughout a project [Coach8 — 7gZTdFWoHgs @ '
+                                        '00:37:15]. File closed on day-four readings matching the dry '
+                                        'goal, not on fan-days; three or four days of fans does not prove '
+                                        'the house is dry [Andrew Melrose — iQ4PIKW3sEc @ 00:02:41].'},
+                            {'name': 'equipment_placement',
+                             'type': 'textarea',
+                             'prompt': 'Calculate air mover placement for the affected area: one per room, '
+                                       'one per 50-70 square feet of floor, one per 100-150 square feet of '
+                                       'wall above 2 ft, and one per offset over 18 inches. Show the math.',
+                             'example': "Darren Floyd's worked example lands a 750 square foot loss at 12 "
+                                        'to 16 air movers [APPALeadership — cPAFOZbMKQE @ 00:42:22]. Our '
+                                        '740 square foot basement: three rooms, floor share, wall share '
+                                        'above 2 ft and two offsets gave 14 units. Before placing, we '
+                                        'pulled water off the top and underneath before mats went down '
+                                        '[Restoration Technical Institute — XMpZ-8ZsSW8 @ 00:01:43].'},
+                            {'name': 'filtration_and_air',
+                             'type': 'text',
+                             'prompt': 'Document the air filtration device filter stack in use, '
+                                       'replacement costs for each stage, and where the unit exhausts. '
+                                       'Confirm negative air is not being drawn from a crawlspace and note '
+                                       'any furnace backdraft risk you checked.',
+                             'example': 'AFD stack: pre-filter at $8-12, secondary at $15-20, HEPA at '
+                                        'about $153 capturing 99.97% at 0.3 microns, carbon added for odor '
+                                        '[APPALeadership — cPAFOZbMKQE @ 00:29:36]. Unit exhausts out the '
+                                        'laundry window. Crawlspace hatch stays sealed; no negative air '
+                                        'drawn from it because of furnace backdraft risk flagged alongside '
+                                        'the filter stack.'},
+                            {'name': 'truck_roll_pricing',
+                             'type': 'textarea',
+                             'prompt': 'Price this job against your minimum revenue per truck roll. Count '
+                                       'every planned visit, including sell, drop, monitoring and pickup '
+                                       'trips, then state the floor price you will quote if the customer '
+                                       'is paying cash rather than through insurance.',
+                             'example': 'Small cash-pay laundry room leak: sell/drop visit plus equipment '
+                                        'pickup already puts us near $800-$1,000 before work, since every '
+                                        'time your truck rolls you need to make at least four to five '
+                                        "hundred bucks [Shane O'Dazier | RestorationProfits — 72Qh6dRR94U "
+                                        '@ 00:02:07]. Quoted at the $2,000 floor, with a $489 '
+                                        "assess-and-reposition charge [Shane O'Dazier | RestorationProfits "
+                                        '— m97k7TBcJgY @ 00:05:45].'},
+                            {'name': 'pricing_protocol',
+                             'type': 'textarea',
+                             'prompt': 'Write down the single naming, bundling and pricing protocol you '
+                                       'run on every claim, including equipment-day roundup, truck mount '
+                                       'hourly rate and category pricing. Confirm you changed only '
+                                       'pricing, never scope, and reconciled billed equipment against '
+                                       'photos and logs.',
+                             'example': 'Equipment days billed as 3.6 instead of 3 on every fan, dehu and '
+                                        "scrubber [Shane O'Dazier | RestorationProfits — roHp-ZzbYvs @ "
+                                        '00:07:49]; truck mount at $189 per committed hour. Eight air '
+                                        'movers on the draft, six verified in photos, so the field team '
+                                        'was asked before submission [ReconSmart Solutions LLC — '
+                                        '3DF6Xf4wlIg @ 00:08:54]. Change your pricing not the scope.'},
+                            {'name': 'reductions_and_payment_terms',
+                             'type': 'textarea',
+                             'prompt': 'Record how you will handle adjuster reductions and slow payment on '
+                                       'this file: the streamline discount ceiling you will offer, the F9 '
+                                       'notes explaining charges, and the deposit, payment schedule and '
+                                       'late-fee terms on any self-pay mitigation contract.',
+                             'example': 'Adjuster flagged eleven lines. Instead of arguing each, we asked '
+                                        'for the total and offered a streamline discount capped at 10 '
+                                        "percent for immediate payment [Shane O'Dazier | "
+                                        'RestorationProfits — roHp-ZzbYvs @ 00:11:38]. Self-pay side: '
+                                        'deposit, thirds schedule, 5 percent late fee at 30 days and an '
+                                        'attorney letter at 120 days [On The Job with Jason Peters — '
+                                        'h3bbJRR6ceA @ 00:17:06].'}],
+                 'completion_gate': 'Do not demolish or start air movers until containment holds -5 Pa on '
+                                    'a manometer, do not close the drying file on fan-days instead of '
+                                    'same-meter readings, do not deviate without written owner '
+                                    'authorization, and do not submit until billed equipment matches '
+                                    'photos and logs.'},
+                {'worksheet_id': 'ws-02',
+                 'number': 2,
+                 'title': 'Xactimate Line-Item and Roof Supplement Builder',
+                 'purpose': 'Build estimates that start from the highest supportable position, catch money '
+                            'hidden in Click-for-Detail and commonly missed items, and rebuild short roof '
+                            'scopes line by line with photos, measurements and notes that prove rather '
+                            'than complain.',
+                 'chapter_ref': 'Q3-Q4',
+                 'instructions': ['Reprice after every macro load and after each monthly price list update '
+                                  'before the estimate leaves your desk.',
+                                  'Open Click-for-Detail on every window line and every newly added line '
+                                  'item before accepting the default price.',
+                                  'Check every quantity against the photo set and the sketch, never '
+                                  'against memory of the walkthrough.',
+                                  'Photograph every tear-off discovery before it is covered, with wide '
+                                  'shot, close shot, measurement and labeled roof location.',
+                                  'Address supplements to corporate or inside claims and explain the '
+                                  'supplement to the homeowner before the build begins.'],
+                 'fields': [{'name': 'price_list_and_reprice',
+                             'type': 'text',
+                             'prompt': 'Note the Xactimate price list month loaded on this estimate, the '
+                                       'date you last repriced, and every macro dropped in. Record the '
+                                       'dollar change after repricing so you can see what a stale price '
+                                       'list would have cost.',
+                             'example': 'Estimate opened on the April list, repriced after the May 2026 '
+                                        'update and after the bathroom macro loaded, per the '
+                                        'reprice-before-sending rule [Claim Daddy — Qu-NqEwWWPk @ '
+                                        '02:40:15]. Overhead And Profit added $2,688.91 by repricing one '
+                                        'open estimate after North Texas increases [Overhead And Profit — '
+                                        'A7SLk2mjCXU @ 00:03:14]; ours moved $1,140.'},
+                            {'name': 'click_for_detail_review',
+                             'type': 'textarea',
+                             'prompt': 'List every window line and newly added line item where you opened '
+                                       'Click-for-Detail. For each, note what the default includes or '
+                                       'excludes, such as low-E glass, and the dollar difference after '
+                                       'correcting the selection to match the actual material.',
+                             'example': 'Two single-hung vinyl windows in the rear bedroom. '
+                                        'Click-for-Detail showed the default excludes low-E glass; the '
+                                        'installed units have it. Estimate Mastery reports $225 left off '
+                                        'one window line because the writer never read the detail '
+                                        '[Estimate Mastery — WNR0K0ubIoI @ 00:01:06]. Both lines '
+                                        'corrected, with a photo of the installed glass attached as '
+                                        'support.'},
+                            {'name': 'commonly_missed_items',
+                             'type': 'textarea',
+                             'prompt': 'Check this estimate against the commonly missed items and list '
+                                       'which ones apply: detach-and-reset appliances, project management, '
+                                       'anti-microbial, haul-off and drying equipment unit-days. For each '
+                                       'item added, write the quantity and the reason it belongs on this '
+                                       'file.',
+                             'example': 'Added detach-and-reset on the refrigerator and range, '
+                                        'anti-microbial on exposed framing, haul-off for demolished '
+                                        'cabinets, and project management at the Dallas residential rate '
+                                        'near $70 an hour. Drying equipment billed per 24-hour unit-day. '
+                                        "Asked for project management even on mitigation-only, since I'd "
+                                        'rather ask and be turned down than to not ask at all [Daughtry '
+                                        'Construction Group — HLwvN9mF1R0 @ 00:06:37].'},
+                            {'name': 'sketch_and_quantities',
+                             'type': 'textarea',
+                             'prompt': 'Describe how the sketch drives quantities on this file. Record '
+                                       'room dimensions, wall and ceiling repair quantities, and how you '
+                                       'converted patch areas into sheets. Confirm every quantity was '
+                                       'checked against photos rather than memory before the estimate went '
+                                       'out.',
+                             'example': 'Hall ceiling sketched at 12 by 10; the stain needed a patch of '
+                                        '32, which equals one 4x8 sheet, so the line reads one sheet, not '
+                                        'a partial. Every quantity was rechecked against the photo set, '
+                                        'because the rule is never go off strictly off your memory and '
+                                        'always review your photos [Claim Daddy — Qu-NqEwWWPk @ '
+                                        '01:17:58].'},
+                            {'name': 'footnotes_and_f9',
+                             'type': 'textarea',
+                             'prompt': 'Write the F9 notes for removal and replacement lines that are '
+                                       'likely to be questioned, including any vanity detach item priced '
+                                       'above plain removal. Each note should explain why the item was '
+                                       'chosen, its quantity and how the work will be performed.',
+                             'example': 'Vanity detach line carries an F9 note justifying thoughtful '
+                                        'extraction to save the stone top [Actionable — s4xCprLX1Yw @ '
+                                        '00:05:15]. Both removal and replacement lines are footnoted, '
+                                        "following Chad Michael's 206-page estimate that works as a "
+                                        'database the adjuster reviews item by item [Chad Michael - The '
+                                        'Practitioner — Lh586v6HcYw @ 00:14:59].'},
+                            {'name': 'bid_items_and_utilities',
+                             'type': 'text',
+                             'prompt': 'List any bid items on this estimate, such as electricity '
+                                       'consumption or new mini-split pricing. Record the documents '
+                                       'supporting each one, including three months of utility bills, and '
+                                       "the price change from the prior month's list where it applies.",
+                             'example': 'Electricity-consumption bid item held until three months of '
+                                        'utility bills were in the file, because Shelter denied utilities '
+                                        'on a DP-6 rental [Actionable — s4xCprLX1Yw @ 00:08:26]. One-zone '
+                                        'mini-split repriced from $1,500 in April to $4,200 in May 2026; '
+                                        'in April you were not making money on mini-splits [Actionable — '
+                                        's4xCprLX1Yw @ 00:19:55].'},
+                            {'name': 'adjuster_pushback_opener',
+                             'type': 'textarea',
+                             'prompt': 'Script your first response when the adjuster pushes back on this '
+                                       'estimate. Write the exact opening question, the starting position '
+                                       'you are defending, and the code reasons stacked behind your most '
+                                       'contested line items before the conversation turns to dollars.',
+                             'example': 'Opening line, verbatim: which item or items in the estimate did '
+                                        'you have a problem with [Chad Michael - The Practitioner — '
+                                        'Lh586v6HcYw @ 00:16:44]. Position held from the top, since they '
+                                        'push down at all times and you start from the highest position to '
+                                        'end there [Chad Michael - The Practitioner — Lh586v6HcYw @ '
+                                        '00:14:28]. Expect one-coat defaults on white ceilings.'},
+                            {'name': 'tearoff_documentation',
+                             'type': 'textarea',
+                             'prompt': 'Record each tear-off discovery photographed before it was covered. '
+                                       'For every item, list the wide shot, close shot, measurement and '
+                                       'labeled roof location, and match the measurement report to the '
+                                       'actual building before the supplement goes out.',
+                             'example': 'Rotted decking found at the north eave: wide shot, close shot, '
+                                        'tape measurement and slope label captured before new sheathing '
+                                        'went down [American Roof Supplements — TkCEjbO6vQs @ 00:07:23]. '
+                                        'Measurement report rechecked because measurement reports must '
+                                        'match the building [American Roof Supplements — DR03Zlogfe0 @ '
+                                        '00:01:26]. That is the difference between complaining and '
+                                        'proving.'},
+                            {'name': 'supplement_routing_and_lines',
+                             'type': 'textarea',
+                             'prompt': "List each line changed from the carrier's original scope, the "
+                                       'bolded note explaining the change, and where the supplement is '
+                                       'addressed. Note any small items you will concede for rapport and '
+                                       'whether one interior water spot unlocks overhead and profit.',
+                             'example': 'Supplement sent to inside claims, not the field adjuster who '
+                                        'wrote the scope [Chad Michael - The Practitioner — bVX2IRINNSM @ '
+                                        '00:00:30]. Each changed line carries a note explaining why it '
+                                        'differs from the original statement of loss. Drip edge conceded '
+                                        'rather than argued for an hour; a closet water spot keeps O&P '
+                                        'alive [Chad Michael - The Practitioner — bVX2IRINNSM @ '
+                                        '00:43:18].'},
+                            {'name': 'homeowner_supplement_conversation',
+                             'type': 'textarea',
+                             'prompt': 'Write how and when the supplement is explained to the homeowner, '
+                                       'the protection-from-surprises framing you use, and the decking '
+                                       'decision. State whether decking was approved before the build or '
+                                       'which mid-job emergency documentation plan covers the risk.',
+                             'example': 'Supplement explained at color selection as protection from '
+                                        'financial surprises, with no payment promised [The STRONG Roofer '
+                                        'w/ Adam Bensman — zxGa72oAf0w @ 00:02:17]. Decking was not '
+                                        'approved pre-build, so the mid-job photo plan and accepted risk '
+                                        'are signed off [Chad Michael - The Practitioner — 4dhIe6HGIs0 @ '
+                                        '00:38:28]. Necessary replacement does not automatically mean '
+                                        'covered replacement.'}],
+                 'completion_gate': 'Do not send the estimate or supplement until it is repriced on the '
+                                    'current price list, Click-for-Detail is checked on every window and '
+                                    'new line, every tear-off discovery is photographed before cover, the '
+                                    'file is addressed to inside claims, and the homeowner has heard the '
+                                    'supplement explained.'},
+                {'worksheet_id': 'ws-03',
+                 'number': 3,
+                 'title': 'Adjuster Negotiation and TPA Program Readiness Plan',
+                 'purpose': 'Read the carrier estimate as a weak baseline, negotiate scope and pricing '
+                            'without crossing into coverage, decide when a public adjuster belongs on the '
+                            'claim, and test whether TPA program work earns its fees before the first '
+                            'assignment lands.',
+                 'chapter_ref': 'Q5-Q6',
+                 'instructions': ["Read the carrier's first estimate line by line before any phone call, "
+                                  'marking squares, quantities, units and trade codes.',
+                                  'Discuss scope and pricing only; route every coverage question to the '
+                                  'homeowner, their agent or a licensed adjuster.',
+                                  'Calendar proof-of-loss and recoverable depreciation deadlines on the '
+                                  'day of loss, not the day the paperwork arrives.',
+                                  'Ask whether every extra adjuster demand is a recommendation or a '
+                                  'requirement, and what any requirement is based on.',
+                                  'Model program fees, lost markup and drying caps in dollars before '
+                                  'signing any administrator contract or vendor agreement.'],
+                 'fields': [{'name': 'carrier_estimate_read',
+                             'type': 'textarea',
+                             'prompt': "Read the carrier's first estimate line by line. Record roofing "
+                                       'squares, tear-off quantities, any unit-entry errors, and removal '
+                                       'items coded to the wrong trade. Note how far the carrier number '
+                                       'sits from your bid before any negotiation starts.',
+                             'example': 'Carrier wrote 0.33 squares, which basically means one bundle of '
+                                        "shingles to repair the roof [Builder's Perspective Public "
+                                        'Adjusting — kWxJ6PIkM-M @ 00:04:42]. Area entered as 24.48 SF '
+                                        'where 2,448 SF was measured. Removal lines coded DMO; switched to '
+                                        'trade codes, which Chad Michael reports approved about 40 percent '
+                                        'of the time [Chad Michael - The Practitioner — vkrXTVQcVQQ @ '
+                                        '00:13:50].'},
+                            {'name': 'tearoff_separate_lines',
+                             'type': 'text',
+                             'prompt': 'List every item the carrier folded into shingle tear-off that must '
+                                       'be written as its own line, such as drip edge and flashing. Also '
+                                       'note any continuous flooring run that extends beyond the room '
+                                       'where the water stopped.',
+                             'example': 'Tear-off only pays dump fees, hauling, disposal and removal '
+                                        'labor, so drip edge and step flashing went on separate lines '
+                                        '[Chad Michael - The Practitioner — vkrXTVQcVQQ @ 00:08:43]. '
+                                        'Inside, the laminate runs from the kitchen through the dining '
+                                        'room with no threshold, so the carrier owes the continuous run '
+                                        "[Builder's Perspective Public Adjusting — kWxJ6PIkM-M @ "
+                                        '00:11:31].'},
+                            {'name': 'negotiation_call_plan',
+                             'type': 'textarea',
+                             'prompt': 'Outline the adjuster call: the question list you will run, the '
+                                       'discount ceiling you will accept, and what happens to the '
+                                       'undisputed amount if reductions exceed that ceiling. Keep the call '
+                                       'short and refuse to argue individual line items emotionally.',
+                             'example': 'Three-to-four-minute call from the question list; reductions up '
+                                        'to 10 percent accepted, anything deeper refused and the '
+                                        "undisputed amount collected [Shane O'Dazier | RestorationProfits "
+                                        '— 3xfQ7PdL-AA @ 00:06:23]. No line-by-line fight, because they '
+                                        'are simply arguing line items to get you heated and it just '
+                                        "doesn't do any good [Shane O'Dazier | RestorationProfits — "
+                                        '3xfQ7PdL-AA @ 00:08:28].'},
+                            {'name': 'adjuster_demand_check',
+                             'type': 'textarea',
+                             'prompt': 'For every extra demand the adjuster makes, record whether you '
+                                       'asked if it is a recommendation or a requirement, and if required, '
+                                       'what it is based on. Note how you phrased your evidence without '
+                                       'definitive claims or appeals to tenure.',
+                             'example': 'Adjuster requested an additional inspection. Asked whether it was '
+                                        'a recommendation or a requirement, then what it was based on '
+                                        '[Chris Zimmerman — 9A5QEe9xxXk @ 00:01:21]; answer was '
+                                        "recommendation, so it was declined. Reply used 'evidence "
+                                        "suggests' instead of definitive claims, with no mention of file "
+                                        'count, since that is really not relevant to the file [Chris '
+                                        'Zimmerman — LwNOcenSP_c @ 00:03:42].'},
+                            {'name': 'coverage_boundary_and_contract',
+                             'type': 'textarea',
+                             'prompt': 'Confirm your contract states a scope and price with a cancellation '
+                                       'clause and a change order for partial approval. Record where your '
+                                       'role stops at scope and pricing, and how coverage questions are '
+                                       'handed to the homeowner or a licensed adjuster.',
+                             'example': "Old contract read 'we will do the work for the amount the "
+                                        "insurance company approves'; rewritten with stated scope, price, "
+                                        'cancellation clause and partial-approval change order [Building '
+                                        'Experts Institute — RmjqTZJ3II0 @ 00:01:19]. No homeowner '
+                                        'permission or power of attorney used to negotiate, since Texas '
+                                        'section 4102.163 bars it [Daly & Black, P.C. — jaGktNyKvE4 @ '
+                                        '00:01:55]. You need a license for that.'},
+                            {'name': 'deadlines_and_settlement',
+                             'type': 'text',
+                             'prompt': 'Record the date of loss, the proof-of-loss deadline calendared '
+                                       'that same day, and the recoverable depreciation clock. Note any '
+                                       'newly discovered damage that restarts that clock, and confirm you '
+                                       'have not agreed to settle at any stage.',
+                             'example': 'Proof-of-loss calendared on the day of loss at 30 days, the short '
+                                        "end of the range [The Adjuster's Roundtable — _wmRAji2ZmI @ "
+                                        '00:08:35]. Hidden decking damage found at tear-off restarts the '
+                                        '180-day RD clock, since no claim is ever closed until all repairs '
+                                        'have actually been made and paid for [Chad Michael - The '
+                                        'Practitioner — vkrXTVQcVQQ @ 00:23:30].'},
+                            {'name': 'public_adjuster_decision',
+                             'type': 'textarea',
+                             'prompt': 'Decide whether a public adjuster belongs on this claim. Record the '
+                                       'fee tier offered, how the fee affects the repair budget, and '
+                                       'whether your company will work alongside the PA or decline, citing '
+                                       'the reasoning from each side.',
+                             'example': 'PA offered at the 10 percent tier; Vince Perri reports no issue '
+                                        'in 9 of 10 roofer-referred cases [Public Adjuster Show with Vince '
+                                        'Perri — RRn3mzn9xCw @ 00:15:09] and says a PA puts more money in '
+                                        "pocket 10 times out of 10. Weighed against FirehouseEducation's "
+                                        "never-deal-with-PAs stance and an insurer-side lawyer's warning "
+                                        'that the fee can leave repairs short.'},
+                            {'name': 'tpa_program_economics',
+                             'type': 'textarea',
+                             'prompt': 'Model the economics of joining a TPA program on this job type. '
+                                       'Record the program fee percentage, the markup you lose against '
+                                       'your standard list, the drying-day cap, and whether guaranteed '
+                                       'volume still leaves a profitable job after paperwork.',
+                             'example': 'Program charges 5 to 10 percent to do the work [Water Damage '
+                                        'Restoration Coach - Jon Schoen — -0hAYhkhJaw @ 00:02:35], and the '
+                                        'preset list kills our 20 percent markup. Drying capped at 3 days. '
+                                        "Brian Close's warning that guaranteed work is not always "
+                                        "profitable is weighed against David Smith's $250,000 fire nobody "
+                                        'chased [The DYOJO (The DYOJO) — onSDIprTeAU @ 00:11:17].'},
+                            {'name': 'program_equipment_and_software',
+                             'type': 'textarea',
+                             'prompt': 'Before the first program job, record the equipment counts the '
+                                       "program's day-stamped report calls for, your Xactimate seats and "
+                                       'any second software, and who handles the double documentation '
+                                       'upload: trained admin staff or a subcontracted paperwork service.',
+                             'example': "Pulled the program's equipment counts before placing dehus, "
+                                        'because an oversized unit gets paid as the small one the room '
+                                        'called for [Water Damage Restoration Coach - Jon Schoen — '
+                                        '-0hAYhkhJaw @ 00:06:02]. Two Xactimate seats confirmed; admin '
+                                        "trained in-house for the double upload, since it's documentation, "
+                                        'documentation, documentation regardless of the end user [The '
+                                        'DYOJO (The DYOJO) — onSDIprTeAU @ 00:48:01].'},
+                            {'name': 'program_access_and_risk',
+                             'type': 'textarea',
+                             'prompt': 'Record your plan for getting on and staying on the program list: '
+                                       'the regional manager contact, adjusters or agents pushing for you, '
+                                       'subs ready for volume, and your contract redlines. State what '
+                                       'share of revenue this single channel may carry.',
+                             'example': 'Regional manager invited to inspect our warehouse, name and '
+                                        'number saved for the introduction [Water Damage Restoration Coach '
+                                        '- Jon Schoen — -0hAYhkhJaw @ 00:11:42]. Two hungry subs lined up '
+                                        'for overflow. Program work capped as one channel among several, '
+                                        'because a shop built around 150 jobs a year collapsed to one job '
+                                        'a month in 2008 [The DYOJO — onSDIprTeAU @ 00:59:09].'}],
+                 'completion_gate': 'Do not get on the phone with the adjuster until the carrier estimate '
+                                    'is read line by line, deadlines are calendared, and the contract '
+                                    'states scope and price; do not sign a program agreement until fees, '
+                                    'lost markup and drying caps are modeled and the contract is '
+                                    'redlined.'},
+                {'worksheet_id': 'ws-04',
+                 'number': 4,
+                 'title': 'Fire, Smoke, Contents Documentation and the Plumber Referral Engine',
+                 'purpose': 'Turn every fire, smoke and contents job into a defensible, billable file '
+                            'built from the first site visit, then build a plumber referral engine that '
+                            'feeds steady water work through discovery, disciplined free dry-outs and a '
+                            'call-handling system that closes inbound leads.',
+                 'chapter_ref': 'Q7-Q8',
+                 'instructions': ['Fill in every field while the job is live, using your own photos, '
+                                  'scans, readings and notices rather than memory, because you get paid '
+                                  'for what you document.',
+                                  'Identify the smoke type with a sponge test on a 1 ft x 1 ft square '
+                                  'before writing any cleaning labor, and record the multiplier you '
+                                  'applied.',
+                                  "Never discard an owner's belongings on your own call, never ozone damp, "
+                                  'wet or soft goods, and put humidity readings and no-warranty notices in '
+                                  'writing.',
+                                  'For the plumber fields, run discovery before any pitch: find out what '
+                                  'each service plumber wants, profile them in your CRM, and track jobs '
+                                  'sent over 90 days.',
+                                  'Review this worksheet with your project manager and your sales lead '
+                                  'each week, and update the free dry-out ledger and close rate before the '
+                                  'next referral visit.'],
+                 'fields': [{'name': 'smoke_type_and_cleaning_multiplier',
+                             'type': 'text',
+                             'prompt': 'Identify the smoke type on your current fire job before you bid '
+                                       'it. Record whether the residue is wet or dry, how you confirmed '
+                                       'it, and what cleaning-time multiplier you are applying to the '
+                                       'labor lines in the estimate.',
+                             'example': 'Kitchen fire, sponge test run on a 1 ft x 1 ft square in each '
+                                        'room; residue logged as wet smoke on the kitchen ceiling. Chris '
+                                        'says wet smoke takes 4 to 6 times longer to clean than dry smoke, '
+                                        'so kitchen cleaning labor is bid at the 5x midpoint [Encircle — '
+                                        '33iGNdZ6fyE @ 00:32:46].'},
+                            {'name': 'packout_photo_inventory',
+                             'type': 'textarea',
+                             'prompt': 'Describe how every packed item on this job is captured in a '
+                                       'digital photo inventory before it leaves the house. Note who '
+                                       'shoots the photos, how boxes are labeled, and how fragile or '
+                                       'oversized pieces are wrapped for the pod.',
+                             'example': 'Every item photographed before boxing, because a digital photo '
+                                        'inventory protects against fraudulent claims and misplaced '
+                                        'contents [Omegasonics — 3UmvqUcOFDc @ 00:01:09]. The floor mirror '
+                                        'gets its 3-piece legs unscrewed and boxed in custom cardboard, '
+                                        'the mirror blanketed, the legs shrink-wrapped to it and a fragile '
+                                        'sticker added, since the loaded pod tilts high '
+                                        '[FirehouseEducation — Appti0ctcGA @ 00:04:17].'},
+                            {'name': 'packing_materials_billing',
+                             'type': 'text',
+                             'prompt': 'List every packing material used on the packout and state how each '
+                                       'one is billed, either hourly or built into the per-box price. Flag '
+                                       'any place where the crew skimped on materials because they assumed '
+                                       'the cost was unrecoverable.',
+                             'example': 'Bubble wrap, moving blankets, shrink wrap and custom cardboard '
+                                        'all logged on the packout sheet. Bubble wrap is billed at twenty '
+                                        'dollars a box, and the crew lead is told not to skimp '
+                                        '[FirehouseEducation — rAAR3Zmm80c @ 00:01:53]. Every case piece '
+                                        'is fully shrink-wrapped with blankets on the corners before '
+                                        'transit [FirehouseEducation — Appti0ctcGA @ 00:03:15].'},
+                            {'name': 'odor_method_selection',
+                             'type': 'textarea',
+                             'prompt': 'Choose the deodorization method for each area and material on this '
+                                       'fire job, ozone or hydroxyl, and justify the choice. Record which '
+                                       'items are damp, wet, soft goods or leather, and how you will '
+                                       'handle laundry from the house.',
+                             'example': 'No ozone on the damp sectional or the leather recliner, because '
+                                        'ozone bleaches items and takes years off leather '
+                                        '[FirehouseEducation — MkCNqNRsk04 @ 00:06:22]. Hydroxyl runs '
+                                        'inside the drying chamber to deodorize. Laundry goes to a '
+                                        'certified vendor, never the homeowner, since home washing '
+                                        'obscures the source of any remaining odor [FirehouseEducation — '
+                                        'MkCNqNRsk04 @ 00:09:05].'},
+                            {'name': 'afd_sizing',
+                             'type': 'text',
+                             'prompt': 'Size the air filtration devices for the fire-damaged rooms using '
+                                       'air changes per hour and particle counts. Record the starting '
+                                       'particle count, the target count, the number of AFDs placed, and '
+                                       'when you will step the air changes down.',
+                             'example': 'Living room and hallway sized for 6-8 air changes per hour at '
+                                        'startup, dropping to 4 once counts fall. Opening particle count '
+                                        'logged at 100,000; target is 2,000 particles at 3 microns, '
+                                        'matching the 100,000 to 2,000 drop Chris cites when sizing AFDs '
+                                        'with a particle counter [Encircle — 33iGNdZ6fyE @ 01:36:28]. '
+                                        'Daily counts go in the job file.'},
+                            {'name': 'scan_capture_protocol',
+                             'type': 'textarea',
+                             'prompt': 'Write the scan capture protocol your technicians follow on water '
+                                       'and fire losses. Specify scan spacing, camera height, when '
+                                       'pre-scans and post-scans happen, and how tight spaces such as '
+                                       'bathrooms and under-sink cabinets get covered without blind spots.',
+                             'example': 'Scans placed 5-8 ft apart with the camera at about 4-4.5 ft '
+                                        '[Adjuster TV — 86mEe0yHwiw @ 00:13:42]. Pre-scan before '
+                                        'mitigation, post-scan after demolition, so the adjuster compares '
+                                        'removed versus needed repair [Adjuster TV — 86mEe0yHwiw @ '
+                                        '00:06:43]. Under-sink loss: tripod at lowest height, cabinets '
+                                        'open, plus 2 to 3 extra bathroom scans [Adjuster TV — 86mEe0yHwiw '
+                                        '@ 00:23:01].'},
+                            {'name': 'written_notices_and_authority',
+                             'type': 'textarea',
+                             'prompt': 'Record every written notice this job requires before work '
+                                       'proceeds. Cover discard decisions on owner belongings, documented '
+                                       'humidity when stabilization was refused, and no-warranty notices '
+                                       'on heat-damaged materials, including who received each notice, '
+                                       'when it went out, and how it was delivered.',
+                             'example': 'Owner decides on every discard; the crew has no authority to '
+                                        "throw people's stuff out [Encircle — 33iGNdZ6fyE @ 01:20:22]. "
+                                        'Carrier refused stabilization, so thermo-hygrometer readings went '
+                                        'to the adjuster in writing [Encircle — 33iGNdZ6fyE @ 01:58:57]. '
+                                        'Heat-damaged PEX no-warranty notice emailed to homeowner and '
+                                        'adjuster on day two, homeowner as decision maker [Encircle — '
+                                        '33iGNdZ6fyE @ 03:49:52].'},
+                            {'name': 'plumber_discovery_profile',
+                             'type': 'textarea',
+                             'prompt': 'Profile one service plumber you are pursuing. Record what they '
+                                       'actually want from a restoration partner, how you found that out '
+                                       'before pitching anything, their fee band in your CRM, and the jobs '
+                                       'they have sent in the last 90 days.',
+                             'example': 'Rule one: find out what they want and give it to them [Shane '
+                                        "O'Dazier | RestorationProfits — D4BavFC6d1E @ 00:01:28]. Plumber "
+                                        'wants fast callbacks and a Category 2 versus Category 3 cheat '
+                                        'sheet [Marketing Ninjas — n7ECptsaJTQ @ 00:03:13]. Two jobs sent '
+                                        "in 60 days; one more within 90 days hits Shane's three-job "
+                                        "referral-tree threshold [Shane O'Dazier | RestorationProfits — "
+                                        'xXe9Z763dDc @ 00:12:23].'},
+                            {'name': 'free_dryout_ledger',
+                             'type': 'textarea',
+                             'prompt': 'Track every free dry-out you have run for referring plumbers '
+                                       'against the claims those plumbers converted. Record the current '
+                                       'conversion ratio, the job-board label used, the drying protocol '
+                                       'applied, and whether containment stayed under 90 minutes with no '
+                                       'plumber charge.',
+                             'example': 'Three free dry-outs this quarter against twelve converted claims '
+                                        "holds the 4:1 ratio [Shane O'Dazier | RestorationProfits — "
+                                        "D4BavFC6d1E @ 00:12:00]. Each one is labeled 'water – free "
+                                        "dryout' on the job board and run top-down instead of hammers. "
+                                        'Doorway drying chamber built in under 90 minutes, and the plumber '
+                                        "was never charged a dime [Shane O'Dazier | RestorationProfits — "
+                                        'ufmHlZ6tfKg @ 00:02:04].'},
+                            {'name': 'call_conversion_system',
+                             'type': 'textarea',
+                             'prompt': 'Map how an inbound water call is answered and converted on your '
+                                       'team. Record the tracking whisper used, the promised arrival '
+                                       'window, the callback time on missed calls, and your measured close '
+                                       'rate against the benchmark for a working sales system.',
+                             'example': 'CallRail whisper announces the lead source before hello, arrival '
+                                        'promised under 60 minutes, and missed calls returned within 3 to '
+                                        '5 minutes. Close rate measured at 64 percent last month, under '
+                                        'the 75-80% benchmark, which Albi says signals a missing system '
+                                        '[Restoration Success Strategies | Albi — mq8qI2hag0I @ 00:00:22]. '
+                                        'The close process gets rebuilt this week.'}],
+                 'completion_gate': 'Worksheet 4 is complete only when the smoke type and multiplier are '
+                                    'recorded, every packed item sits in a photo inventory, odor methods '
+                                    'exclude ozone on damp, wet and soft goods, written notices are logged '
+                                    'with recipients, the free dry-out ledger holds a 4:1 ratio, and the '
+                                    'measured close rate is compared against 75-80%.'},
+                {'worksheet_id': 'ws-05',
+                 'number': 5,
+                 'title': 'Launching the Company: Contracts, Paid Leads, Margin and Assignment of Benefits',
+                 'purpose': 'Set up a restoration launch around a narrow emergency mitigation wedge, '
+                            'signed paper before any estimate, controlled paid leads and margin-based '
+                            'pricing, then handle assignments of benefits so they protect receivables '
+                            'without crossing into the inflation and kickback patterns that drove Florida '
+                            'reform.',
+                 'chapter_ref': 'Q9-Q10',
+                 'instructions': ['Complete the launch fields before spending on ads or equipment, using '
+                                  'your real purchasing power, referral source and target margin rather '
+                                  'than hoped-for numbers.',
+                                  'Hold the paper gate: the signed agreement is in hand before any '
+                                  'estimate is written, and there are no free estimates.',
+                                  'Answer every LSA call live, mark qualified calls booked even when lost, '
+                                  'and lower budgets instead of pausing campaigns.',
+                                  'Before relying on any assignment, confirm coverage, deliver the '
+                                  'contract before the crew arrives, and check font size and cancellation '
+                                  'terms.',
+                                  'Compare every submitted invoice line for line against the first signed '
+                                  'estimate, and record any referral payment so nothing is hidden from the '
+                                  'homeowner.'],
+                 'fields': [{'name': 'startup_capital_and_wedge',
+                             'type': 'textarea',
+                             'prompt': 'State your total purchasing power, including loans, and the single '
+                                       'referral source you are launching with. Describe the service wedge '
+                                       'you will run first and the revenue point at which you plan to '
+                                       'bring rebuild work in-house.',
+                             'example': 'Purchasing power is $120K, mostly an equipment loan, inside '
+                                        "Albi's $50-200K range, with one plumbing company as the referral "
+                                        'source [Restoration Success Strategies | Albi — 3PlUwHvZkxE @ '
+                                        '00:00:00]. Launch runs emergency water mitigation only for its '
+                                        '70%+ gross margins, referring rebuilds to a GC for a 10% kickback '
+                                        'until revenue reaches $3-5M [Restoration Success Strategies | '
+                                        'Albi — 3PlUwHvZkxE @ 00:03:12].'},
+                            {'name': 'signed_paper_before_estimate',
+                             'type': 'textarea',
+                             'prompt': 'Describe the agreement package that gets signed before any '
+                                       'estimate is written. List the termination fee, equipment minimums, '
+                                       'and other protective terms it carries, and explain how this paper '
+                                       'prevents a homeowner from taking the check and going silent.',
+                             'example': 'Signed work authorization in hand before any estimate, and no '
+                                        "free estimates [Shane O'Dazier | RestorationProfits — b1-Dcqk4F9g "
+                                        '@ 00:02:15]. Terms carry a 20% termination fee and a three-day '
+                                        'equipment minimum. Shane frames the package as $5,000 worth of '
+                                        "agreements for under 50 bucks [Shane O'Dazier | "
+                                        'RestorationProfits — b1-Dcqk4F9g @ 00:00:46]. Homeowner initials '
+                                        'the termination clause.'},
+                            {'name': 'lsa_lead_economics',
+                             'type': 'textarea',
+                             'prompt': 'Record your Google Local Services Ads cost per lead and compare it '
+                                       'with the regional ranges operators report. Note your state, weekly '
+                                       'budget, how many qualified calls were marked booked, and what you '
+                                       'will do instead of pausing the campaign.',
+                             'example': 'Texas account at $430 per lead, inside the $400-500 band Vinnie '
+                                        'Mac reports for CA, FL, NY and TX [Water Damage Restoration '
+                                        'Marketing - Vinnie Mac — 2akNGTmJry8 @ 00:32:17]. Every qualified '
+                                        'call marked booked, even lost jobs. Slow weeks drop budget to '
+                                        '$30, never pausing, since restarting acts as a reset [Water '
+                                        'Damage Restoration Marketing - Vinnie Mac — O0STLVhCL2c @ '
+                                        '00:41:54].'},
+                            {'name': 'phone_answer_gate',
+                             'type': 'text',
+                             'prompt': 'Describe who answers every paid-lead call, during which hours, and '
+                                       'how the lead source is announced before the greeting. Confirm that '
+                                       'no voicemail or AI answering service ever touches an LSA call, and '
+                                       'name the backup when the primary is unavailable.',
+                             'example': "Office manager answers live 7 a.m. to 7 p.m., owner's cell after "
+                                        'hours; no voicemail and no AI service, because one or two missed '
+                                        'calls kill a profile [Water Damage Restoration Marketing - Vinnie '
+                                        'Mac — 2akNGTmJry8 @ 00:35:15]. Tracking number whisper says '
+                                        "'Google Local Service' before hello [Water Damage Restoration "
+                                        'Marketing - Vinnie Mac — 2akNGTmJry8 @ 00:28:28].'},
+                            {'name': 'search_terms_and_service_area',
+                             'type': 'text',
+                             'prompt': 'Record the keyword and service-area decisions on your emergency '
+                                       'search campaigns. State whether terms like cost and cheap are '
+                                       'negated or kept live, how wide your service area runs, and how you '
+                                       'will judge whether the setting is working.',
+                             'example': "Kept 'cost' and 'cheap' live instead of negating them; "
+                                        'Restoration Growth Co calls that the best term in the whole '
+                                        'account [Restoration Growth Co — zkR_04H9hBQ @ 00:07:41]. Service '
+                                        'area set wider rather than narrow, following Vinnie Mac [Water '
+                                        'Damage Restoration Marketing - Vinnie Mac — IDqwheOOgb0 @ '
+                                        '00:27:59]. Judged by booked qualified calls after thirty days.'},
+                            {'name': 'margin_and_landing_budget',
+                             'type': 'textarea',
+                             'prompt': 'Convert your target gross margin into the markup you actually need '
+                                       'and write the landing budget for one live job. Show job cost, '
+                                       'target margin, required price, and the checkpoint where you will '
+                                       'catch the job sliding.',
+                             'example': 'An $8,000 cost job at a 30% margin needs a 43% markup, or $3,440, '
+                                        'not the 30% that dollar-thinkers add [Roofing Insights — '
+                                        'ppn4akh1gPo @ 00:02:55]. Landing budget written before work '
+                                        'starts: $11,440 price, labor capped at $4,100, checked at demo '
+                                        'complete, because a sliding job cannot be caught without one '
+                                        '[George Gabriel — KnWhJDOPsTc @ 00:02:28].'},
+                            {'name': 'florida_timeline_map',
+                             'type': 'textarea',
+                             'prompt': 'For any Florida claim, map the pay-or-deny clock against the lien '
+                                       'window and identify how many days remain for appraisal, mediation, '
+                                       'or litigation. Note whether a direction to pay or letter of '
+                                       'protection is in place instead of an assignment.',
+                             'example': 'Loss reported March 3; the 60-day pay-or-deny clock and the '
+                                        '90-day lien window leave roughly 30 days for appraisal, '
+                                        'mediation, or litigation [Contractor Talk Podcast — Tg526FvHOmY @ '
+                                        '00:19:47]. Direction to pay signed in place of an AOB. A letter '
+                                        'of protection puts the lien on insurance proceeds instead of the '
+                                        'home [Contractor Talk Podcast — Tg526FvHOmY @ 00:42:17].'},
+                            {'name': 'aob_coverage_and_delivery_check',
+                             'type': 'textarea',
+                             'prompt': 'Before relying on any assignment of benefits, confirm the loss is '
+                                       'covered and the contract was delivered before the crew arrived. '
+                                       'Record the delivery method, font size check, cancellation window, '
+                                       'and how the split between mitigation and reconstruction change '
+                                       'orders is handled.',
+                             'example': 'Coverage confirmed with the carrier first, since a correct denial '
+                                        'leaves no rights to assign [magicplan — F4WLuIxWd-Q @ 00:14:03]. '
+                                        'Hard copy delivered the night before, at 10-point font or larger '
+                                        'for California [Claims Underground Podcast — bPBmUaKay2w @ '
+                                        '00:23:05]. 20-business-day cancellation clause. Mitigation sits '
+                                        'under the assignment; reconstruction upgrades go on change '
+                                        'orders.'},
+                            {'name': 'aob_abuse_red_flags',
+                             'type': 'textarea',
+                             'prompt': 'List the abuse red flags you screen for on assignment jobs, your '
+                                       "own and competitors'. Compare first estimate to submitted invoice, "
+                                       'check for undisclosed referral payments, and record how you will '
+                                       'keep your files clear of the patterns regulators cite.',
+                             'example': 'Red flag one: an $8,000 first estimate became a $22,000 invoice '
+                                        'with mitigation the homeowner did not remember [The Fine Print — '
+                                        'UxKcyrt-VS0 @ 00:01:05]. Red flag two: $1,000 to $2,000 cash '
+                                        'plumber kickbacks undisclosed to the homeowner [Floridians For '
+                                        'Honest Lending — I-S4L6YL2wo @ 00:02:18]. Our invoices must match '
+                                        'the signed estimate line for line.'},
+                            {'name': 'receivables_and_misdirected_checks',
+                             'type': 'textarea',
+                             'prompt': 'Describe how you protect receivables when an assignment is in '
+                                       'place. Record the date the carrier received notice, what you do if '
+                                       'the carrier still pays the homeowner, your payment terms, and how '
+                                       'loss-draft delays are built into cash planning.',
+                             'example': 'Carrier notified of the assignment on day one by email. When they '
+                                        'paid the homeowner anyway, we showed they knew and demanded a new '
+                                        'check [magicplan — F4WLuIxWd-Q @ 00:15:32]. Terms avoid five-day '
+                                        'payment demands, because nothing happens in five days in this '
+                                        'industry [Claims Underground Podcast — bPBmUaKay2w @ 00:27:04]. '
+                                        'Loss-draft delays budgeted at three months.'}],
+                 'completion_gate': 'Worksheet 5 is complete only when purchasing power and the launch '
+                                    'wedge are written down, the signed agreement precedes every estimate, '
+                                    'LSA calls are answered live, a landing budget exists for a live job, '
+                                    'Florida timelines are mapped, and every assignment has confirmed '
+                                    'coverage, advance delivery and an invoice that matches the signed '
+                                    'estimate.'},
+                {'worksheet_id': 'ws-06',
+                 'number': 6,
+                 'title': 'Deductibles, Claim Checks, Claim Law and Storm Roofing Economics',
+                 'purpose': 'Keep every deductible, mortgage check and assignment on the right side of the '
+                            'law, then run storm roofing on evidence: a policy read before any promise, a '
+                            'repeatable hail photo set, a slope-by-slope repair-versus-replace decision, '
+                            'margin-based pricing and a clean self-checked estimate before submission.',
+                 'chapter_ref': 'Q11-Q12',
+                 'instructions': ['Read the policy and calculate the deductible before promising the '
+                                  'homeowner anything about the roof or the money.',
+                                  'Reject any deductible arrangement that bills the carrier a number the '
+                                  'client was never charged, and record only the legal options you '
+                                  'reviewed.',
+                                  'Build the mortgage packet with a contract precise enough that no '
+                                  'servicer claim handler has to guess amounts or scope, and follow up on '
+                                  'a set schedule.',
+                                  'Shoot the same photo set in the same elevation order on every hail '
+                                  'claim, and run the repair-versus-replace worksheet slope by slope.',
+                                  'Price from margin, verify subcontractor coverage, and run a '
+                                  'print-preview self-check before any estimate leaves the office.'],
+                 'fields': [{'name': 'deductible_math_and_disclosure',
+                             'type': 'textarea',
+                             'prompt': 'Calculate the deductible on this policy, including any percentage '
+                                       'or wind and hail rider, and record how you explained it to the '
+                                       'homeowner. Confirm in writing that the homeowner pays the '
+                                       'deductible and that nobody is waiving or eating it.',
+                             'example': 'Dwelling limit $500,000 with a 2% deductible equals $10,000, owed '
+                                        'the same on a $12,000 loss or a total loss [AnnePullen — '
+                                        'tLwSSUZ6Awc @ 00:00:55]. Homeowner told that a contractor '
+                                        'offering to make the deductible disappear is usually inflating '
+                                        'the estimate [AnnePullen — tLwSSUZ6Awc @ 00:01:39]. Signed '
+                                        'deductible acknowledgment filed with the contract.'},
+                            {'name': 'legal_deductible_coverage_options',
+                             'type': 'textarea',
+                             'prompt': 'If the homeowner needs help covering the deductible, record only '
+                                       'the legal options you reviewed. Note which coverages are ACV only '
+                                       'with non-recoverable depreciation, any trades subcontracted back '
+                                       'to the owner, and confirm no invoice will misstate the charge.',
+                             'example': 'Other structures paid ACV only, with bracketed non-recoverable '
+                                        'depreciation, so that money is reviewed before agreeing to any '
+                                        'deductible-only scope [Chad Michael - The Practitioner — '
+                                        'DmesIP8hcak @ 00:22:33]. Owner takes back the gutter trade '
+                                        'directly. No invoice bills the carrier a number the client was '
+                                        'never charged, which Chad calls a felony [Chad Michael - The '
+                                        'Practitioner — DmesIP8hcak @ 00:32:12].'},
+                            {'name': 'mortgage_check_packet',
+                             'type': 'textarea',
+                             'prompt': 'Assemble the loss draft packet for any check naming the mortgage '
+                                       'company. List the W-9, lien waivers, contract, and inspection '
+                                       "items requested, the claim amount against the lender's no-holdback "
+                                       'threshold, and your follow-up schedule with the servicer.',
+                             'example': 'Claim is $18,400, above the under-$10,000 no-holdback line, so an '
+                                        'inspection is expected [Richard Levisee — VFWDHse67ws @ '
+                                        '00:06:48]. Packet holds W-9, lien waiver, and a contract precise '
+                                        'enough that no claim handler guesses scope [Richard Levisee — '
+                                        'VFWDHse67ws @ 00:03:44]. Follow-up call every Tuesday, since '
+                                        'servicers simply wait until someone calls [Richard Levisee — '
+                                        'VFWDHse67ws @ 00:08:30].'},
+                            {'name': 'adjuster_meeting_posture',
+                             'type': 'textarea',
+                             'prompt': 'Plan your posture for the adjuster meeting on this claim. Record '
+                                       'what you will say instead of handing over your estimate, what you '
+                                       'will send when your number is far from theirs, and how you will '
+                                       'request reinspection.',
+                             'example': 'At the meeting: we were hired to perform all repairs you '
+                                        'prescribe and are here for our marching orders, so the adjuster '
+                                        'shows their cards first [Chad Michael - The Practitioner — '
+                                        'DmesIP8hcak @ 00:39:21]. Numbers far apart, so an Xactimate photo '
+                                        'report with no line items, two photos each page, forces '
+                                        'reinspection [Chad Michael - The Practitioner — DmesIP8hcak @ '
+                                        '00:41:19].'},
+                            {'name': 'aob_validity_check',
+                             'type': 'text',
+                             'prompt': 'If an assignment of benefits is part of this claim, confirm it is '
+                                       'a true assignment rather than a direction to pay, and that every '
+                                       'named insured signed. Record what the homeowner was told about '
+                                       'losing control of the claim money.',
+                             'example': 'Document reviewed: a true assignment, signed by both named '
+                                        'insureds [Butler Legal — rxahzd6qaCw @ 00:06:17]. Homeowner told '
+                                        'that with an AOB assigned to the contractor, the money is now in '
+                                        "the contractor's possession, not theirs [Crossroads Insurance "
+                                        'Recovery — iKLGuESx4po @ 00:03:42], and that a prevailing '
+                                        "assignee can request attorney's fees [Butler Legal — rxahzd6qaCw "
+                                        '@ 00:17:02].'},
+                            {'name': 'policy_read_before_promise',
+                             'type': 'textarea',
+                             'prompt': 'Read the policy before promising the homeowner anything about the '
+                                       'roof. Record the roof endorsement, any ACV roof language, prior '
+                                       'roof payments, and the questions the client emailed to their own '
+                                       'agent about limits, depreciation, and cosmetic exclusions.',
+                             'example': 'Policy checked for PPRC, a 400R ACV roof endorsement on the newly '
+                                        'replaced roof, and a $27,000 roof check two years back [Adjuster '
+                                        'TV — 6084H_VeZTA @ 00:22:05]. Client emailed their agent asking '
+                                        'about O&L limits, ACV versus RCV, and cosmetic or marring '
+                                        'exclusions, since the contractor cannot discuss policy [Chad '
+                                        'Michael - The Practitioner — Op9Qkl-qW58 @ 00:05:39].'},
+                            {'name': 'hail_inspection_photo_set',
+                             'type': 'textarea',
+                             'prompt': 'Document the hail inspection on this roof as a repeatable photo '
+                                       'set. Record the elevation order you walked, the number of roof and '
+                                       'total photos, how test squares were placed, and when you stopped '
+                                       'counting hits on each square.',
+                             'example': 'Elevations walked front, right, rear, left, same order every '
+                                        "claim; 42 roof photos and 108 total, inside Matt's 30-50 and "
+                                        '90-120 ranges [Adjuster TV — 6084H_VeZTA @ 01:03:52]. Test square '
+                                        "placed away from the contractor's square, never on top of it, and "
+                                        'counting stopped at 10 hits [Adjuster TV — 6084H_VeZTA @ '
+                                        '01:00:12].'},
+                            {'name': 'repair_vs_replace_worksheet',
+                             'type': 'textarea',
+                             'prompt': 'Run the repair-versus-replace decision slope by slope. Record the '
+                                       'per-shingle repair value, the per-square replacement value, the '
+                                       'count of damaged shingles on each slope, and which slopes you are '
+                                       'writing for replacement versus repair, with reasons.',
+                             'example': 'Haag-based worksheet values: $24.80 per shingle against $368.78 '
+                                        'per square, vents excluded [Claim Daddy — yytgxtBGSF8 @ '
+                                        '00:26:11]. Rear and left slopes written for replacement; right '
+                                        'slope repaired with 22 shingles. Clustered marks were flagged, '
+                                        'because frequent contractor damage tends to be non-random [Claim '
+                                        'Daddy — yytgxtBGSF8 @ 00:30:46].'},
+                            {'name': 'price_per_square_and_margin',
+                             'type': 'textarea',
+                             'prompt': 'Check the scope price per square and your margin-based sell price '
+                                       "before ordering the build. Record the carrier's price per square, "
+                                       'your job cost, the price at cost divided by 0.65, and any gap you '
+                                       'must close through supplementing.',
+                             'example': 'Scope pays $205 per square, near the $190 Bensman calls '
+                                        'unprofitable and below his $250-$450 target [The STRONG Roofer w/ '
+                                        'Adam Bensman — -aZHNsY5qIY @ 00:04:06]. Job cost $10,000, so '
+                                        'margin price is $15,384, not $13,500 at 1.35 markup, which leaves '
+                                        'you short almost $2,000 [RoofCoach — gLFs8l5O0j4 @ 00:02:17]. '
+                                        'Supplement targets the gap.'},
+                            {'name': 'sub_crew_and_submission_check',
+                             'type': 'textarea',
+                             'prompt': 'Before the first nail and before submitting the estimate, record '
+                                       "the subcontractor's workers comp and GL verification, your "
+                                       'supervision plan for early jobs, the count of unpaid jobs '
+                                       'outstanding, and the results of your print-preview self-check.',
+                             'example': "Sub's workers comp and GL verified active this morning; owner "
+                                        'stays on the roof for the first three jobs to catch 2-nail '
+                                        'shortcuts [Digital Roofing Innovations — tVMI8UScmmE @ 00:00:20]. '
+                                        'Two unpaid jobs open, under the limit of three [Roofing Insights '
+                                        '— FqdbOCycivo @ 00:04:18]. Print preview caught a missing '
+                                        'deductible and a stray grouping note [Adjuster TV — lIyYVIMZa0s @ '
+                                        '00:08:16].'}],
+                 'completion_gate': 'Worksheet 6 is complete only when the deductible is calculated and '
+                                    'acknowledged in writing, no arrangement misstates a charge, the '
+                                    'mortgage packet and follow-up schedule exist, any assignment is '
+                                    'verified as true and fully signed, the policy was read before '
+                                    'promises, and the hail photo set, slope decisions, margin price, sub '
+                                    'coverage and self-check are all recorded.'}]}

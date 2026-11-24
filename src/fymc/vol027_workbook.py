@@ -1,1425 +1,921 @@
 from __future__ import annotations
 
-
 def build_volume_027_workbook() -> dict:
-    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
-        return {
-            "name": name,
-            "type": input_type,
-            "prompt": prompt,
-            "example": example,
-        }
-
-    return {
-        "workbook_id": "wb-027-business-acquisition",
-        "volume_id": "vol-027-business-acquisition",
-        "title": "Business Acquisition — Operator Companion Workbook",
-        "subtitle": (
-            "6 Printable Operator Worksheets for Cash-Flowing SMB Acquisitions: "
-            "Deal Underwriting, Quality of Earnings, Acquisition Financing, "
-            "Closing Controls, Growth Automation, and the First 100 Days"
-        ),
-        "worksheets": [
-            {
-                "worksheet_id": "ws-01",
-                "number": 1,
-                "title": "Opportunity, Vertical Underwriting, and Counterparty Qualification",
-                "purpose": (
-                    "Convert an attractive listing into a documented acquisition thesis "
-                    "that survives customer, seller, lender, and operating-team scrutiny. "
-                    "Separate verified recurring earnings from broker adjustments, identify "
-                    "ownership dependencies, and establish explicit conditions for investing "
-                    "diligence dollars before negotiating a binding purchase agreement."
-                ),
-                "chapter_ref": "Q1, Q2, Q6",
-                "instructions": [
-                    (
-                        "Create one deal record with a permanent identifier, named buyer, "
-                        "seller entities, operating locations, and document owners. Preserve "
-                        "the original listing and each subsequent revision so price changes "
-                        "and earnings representations remain traceable throughout negotiations."
-                    ),
-                    (
-                        "Screen the vertical before requesting sensitive records. Compare "
-                        "customer concentration, repeat-purchase behavior, replacement-manager "
-                        "cost, licensing requirements, and supplier alternatives against your "
-                        "capital limits; reject businesses whose cash generation depends on "
-                        "an untransferable personal relationship."
-                    ),
-                    (
-                        "Request three fiscal years and trailing monthly financials, bank "
-                        "statements, tax returns, payroll registers, and customer-level sales. "
-                        "Assign each discrepancy to an evidence owner rather than treating "
-                        "the broker's narrative as a substitute for reconciliation."
-                    ),
-                    (
-                        "Interview the seller and proposed operating leader separately using "
-                        "the same dependency questions. Record conflicting answers about "
-                        "pricing authority, purchasing, employee retention, and customer "
-                        "ownership, then resolve those conflicts before increasing diligence expenditure."
-                    ),
-                    (
-                        "Prepare a written investment decision using the canonical revenue "
-                        "and owner-profit scenarios as reference cases. Keep purchase price, "
-                        "financing proceeds, and acquired customer sales in separate categories; "
-                        "document every assumption that requires confirmation before signing."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Deal identity and acquisition perimeter",
-                        "textarea",
-                        (
-                            "Identify the buyer, target legal entities, transaction structure, "
-                            "locations, and included assets. Explain which receivables, inventory, "
-                            "contracts, employees, intellectual property, and liabilities transfer, "
-                            "and who verifies each boundary before the purchase agreement is finalized."
-                        ),
-                        (
-                            "Deal BA-027-01 evaluates an illustrative regional maintenance "
-                            "supplier through an asset purchase. The $1,500,000 price includes "
-                            "equipment, customer contracts, trade names, and normalized operating "
-                            "working capital. Seller debt and unrestricted cash remain excluded; "
-                            "the acquisition attorney maps assumed liabilities to a signed schedule."
-                        ),
-                    ),
-                    field(
-                        "Vertical thesis and repeat-demand evidence",
-                        "textarea",
-                        (
-                            "Describe the narrow customer problem, purchasing frequency, "
-                            "competitive alternatives, and operational reason demand persists. "
-                            "Provide measurable evidence for recurring business rather than "
-                            "equating a long customer list with contractual or predictable revenue."
-                        ),
-                        (
-                            "The target supplies replacement parts and scheduled maintenance "
-                            "to local production facilities. Of $1,875,000 annual sales, "
-                            "$1,312,500 comes from customers purchasing in each of the last "
-                            "three years. That 70% repeat share is behavioral evidence, not "
-                            "contracted backlog; twelve customer interviews test switching reasons."
-                        ),
-                    ),
-                    field(
-                        "Canonical investment screen",
-                        "textarea",
-                        (
-                            "Record the candidate's score, ranking, capital range, staffing "
-                            "requirements, and expected acquisition timeline. Explain how those "
-                            "constraints affect your search mandate without replacing the canonical "
-                            "figures with a more attractive broker presentation."
-                        ),
-                        (
-                            "Candidate 13 ranks 27 of 29 at 86/100: revenue potential 25, margin potential 22, team efficiency 19, startup accessibility 10, and automation potential 10. "
-                            "Startup capital is $30,000–$120,000; monthly operating expense "
-                            "metadata is $6,000–$25,000; first deal timing is 4–10 months. "
-                            "The mandate therefore requires substantial capital and an accountable operating leader."
-                        ),
-                    ),
-                    field(
-                        "Seller authority and counterparty verification",
-                        "textarea",
-                        (
-                            "Identify every person or entity whose authority is necessary "
-                            "to sell the business and release collateral. Record how ownership, "
-                            "signing authority, lender relationships, litigation, and payment instructions "
-                            "will be verified independently of email assertions."
-                        ),
-                        (
-                            "The seller supplies its operating agreement, ownership register, "
-                            "and member resolution authorizing the transaction. Counsel checks "
-                            "state entity records and searches liens under the exact legal "
-                            "name. Closing personnel verify the $1,200,000 bank funding destination "
-                            "by calling a previously authenticated contact, never a changed email number."
-                        ),
-                    ),
-                    field(
-                        "Quality of Earnings evidence request",
-                        "textarea",
-                        (
-                            "List the documents needed to reconstruct earnings and distinguish "
-                            "recurring operations from discretionary adjustments. Specify periods, "
-                            "sampling coverage, responsible reviewers, and escalation rules when "
-                            "tax filings, bank deposits, sales records, or payroll disagree."
-                        ),
-                        (
-                            "The QoE reviewer requests 36 monthly trial balances, three "
-                            "tax returns, bank statements, payroll registers, and invoice-level "
-                            "sales exports. A $42,000 difference between recorded sales and "
-                            "deposit-supported collections is investigated through receivables movement, "
-                            "sales-tax liabilities, refunds, and timing before any earnings adjustment is accepted."
-                        ),
-                    ),
-                    field(
-                        "Customer concentration and transfer durability",
-                        "textarea",
-                        (
-                            "Measure concentration using recognized customer sales, gross profit, "
-                            "receivables, and renewal timing. Identify assignment restrictions and "
-                            "relationship dependencies, then state the retention evidence required "
-                            "before underwriting revenue from the largest customer accounts."
-                        ),
-                        (
-                            "Customer A contributes $337,500, or 18% of $1,875,000 revenue, "
-                            "and $118,125 gross profit at a 35% contribution assumption. "
-                            "Its agreement requires written assignment permission. The buyer requests "
-                            "permission before closing and models losing half that account as "
-                            "a $59,062.50 contribution reduction before replacement costs."
-                        ),
-                    ),
-                    field(
-                        "Owner dependence and replacement labor",
-                        "textarea",
-                        (
-                            "Map the seller's weekly responsibilities to specific employees "
-                            "or new hires. Price replacement labor at fully loaded cost, "
-                            "identify knowledge that has never been documented, and prohibit "
-                            "adding back compensation for duties that continue after closing."
-                        ),
-                        (
-                            "The seller works 45 hours weekly across estimating, purchasing, "
-                            "and collections. A proposed $120,000 compensation add-back is "
-                            "rejected because an operating manager costs $105,000 fully loaded "
-                            "and bookkeeping support costs $15,000. The seven-full-time, three-contractor "
-                            "base team includes those replacement responsibilities rather than assuming free buyer labor."
-                        ),
-                    ),
-                    field(
-                        "Supplier, facility, and license dependencies",
-                        "textarea",
-                        (
-                            "Identify operating dependencies capable of interrupting revenue "
-                            "immediately after ownership changes. Document supplier credit terms, "
-                            "lease assignment, equipment serviceability, required licenses, and "
-                            "the practical replacement time for each concentrated dependency before "
-                            "committing to a closing date."
-                        ),
-                        (
-                            "One distributor supplies 55% of purchased parts and extends "
-                            "25-day terms. The facility lease has 24 months remaining "
-                            "and requires landlord permission for assignment. Operations obtains "
-                            "a second distributor quote, a written credit decision, and "
-                            "landlord documentation before treating uninterrupted operations as a reasonable closing assumption."
-                        ),
-                    ),
-                    field(
-                        "LOI economics and diligence spending limit",
-                        "textarea",
-                        (
-                            "Draft the economic terms to place in the letter of "
-                            "intent, including working-capital treatment, debt exclusions, exclusivity, "
-                            "and diligence access. Separate potentially binding process obligations "
-                            "from proposed purchase terms and assign an expenditure ceiling."
-                        ),
-                        (
-                            "The LOI proposes $1,500,000 cash-free, debt-free consideration "
-                            "with a $150,000 operating working-capital peg. It allocates "
-                            "$25,000 to initial QoE and legal diligence before expansion "
-                            "of scope. Exclusivity lasts 45 days; counsel identifies the "
-                            "specific confidentiality, access, expense, and exclusivity provisions intended to bind."
-                        ),
-                    ),
-                    field(
-                        "Investment decision and fatal-flaw register",
-                        "textarea",
-                        (
-                            "Summarize the evidence supporting continued diligence and list "
-                            "conditions that would force repricing, restructuring, or withdrawal. "
-                            "Give each unresolved issue a decision owner, evidence deadline, "
-                            "financial exposure, and explicit consequence if verification fails."
-                        ),
-                        (
-                            "Proceed only if verified earnings support the base model, "
-                            "Customer A permits assignment, and liens can be released. "
-                            "An unresolved $90,000 payroll-tax assessment requires documented "
-                            "resolution or a negotiated economic remedy before signing. The "
-                            "buyer withdraws if the seller refuses direct access to bank-supported earnings evidence."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The investment lead signs a dated underwriting memorandum with verified "
-                    "seller authority, an evidence-backed earnings range, a funded diligence "
-                    "budget, and a disposition for every potentially deal-breaking dependency."
-                ),
-            },
-            {
-                "worksheet_id": "ws-02",
-                "number": 2,
-                "title": "Unit Economics, QoE Scrub, Reserves, and Working-Capital Float",
-                "purpose": (
-                    "Translate acquired business sales into earnings, financing obligations, "
-                    "and usable liquidity without confusing accounting profit with distributions. "
-                    "Reconcile the three canonical scenarios, scrub seller adjustments, size "
-                    "working-capital needs, and expose the cash consequences of leverage, "
-                    "customer losses, and post-close defects."
-                ),
-                "chapter_ref": "Q3, Q4",
-                "instructions": [
-                    (
-                        "Enter the canonical scenarios exactly before adding transaction "
-                        "assumptions. Recognized revenue means acquired business sales, not "
-                        "the purchase price, loan proceeds, customer purchase budgets, or "
-                        "enterprise value; owner net profit includes interest but precedes principal repayments."
-                    ),
-                    (
-                        "Build the earnings bridge from the general ledger and reconcile "
-                        "each adjustment to source evidence. Separate direct costs, recurring "
-                        "overhead, interest, and owner distributions; identify tax treatment "
-                        "and noncash items explicitly rather than silently changing the margin definition."
-                    ),
-                    (
-                        "Prepare sources and uses with every dollar assigned once. "
-                        "Distinguish working capital already included in consideration from "
-                        "incremental operating cash, transaction fees, financing reserves, and "
-                        "price adjustments; reject models that fund the same asset twice."
-                    ),
-                    (
-                        "Calculate receivable, inventory, and payable timing from the target's "
-                        "actual records. Build a weekly cash forecast alongside annual "
-                        "profitability, because seasonal purchases, debt service, and collection "
-                        "delays can exhaust liquidity even when the annual income statement remains positive."
-                    ),
-                    (
-                        "Run the same debt and cash assumptions through all three "
-                        "scenarios as an explicitly illustrative sensitivity. Compare cash "
-                        "after principal, maintenance investment, and working-capital growth "
-                        "with minimum liquidity requirements before authorizing discretionary distributions."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Canonical revenue and owner-profit scenarios",
-                        "textarea",
-                        (
-                            "Enter annual business sales, net margin, owner net profit, "
-                            "and team size for each canonical scenario. State the revenue "
-                            "recognition boundary and explain why principal repayment must be "
-                            "modeled outside the stated margin calculation."
-                        ),
-                        (
-                            "Conservative: $750,000 × 8% = $60,000; Base: $1,875,000 "
-                            "× 13.0% = $243,750; Scaled: $3,000,000 × 18% = "
-                            "$540,000. Conservative and Base each use 7 full-time employees "
-                            "plus 3 contractors; Scaled uses 8 plus 4. These profits "
-                            "are after interest and before principal, not distributable-cash promises."
-                        ),
-                    ),
-                    field(
-                        "Base-case earnings bridge and expense scope",
-                        "textarea",
-                        (
-                            "Reconcile base revenue to owner net profit using a complete "
-                            "expense bridge. Identify direct costs and recurring overhead separately, "
-                            "and explain any difference between the candidate's monthly expense "
-                            "screen and the deal's fully classified annual ledger."
-                        ),
-                        (
-                            "Base revenue of $1,875,000 less $1,019,250 direct operating "
-                            "charges and $480,000 recurring overhead produces $375,750 before "
-                            "interest. Deduct $132,000 modeled interest to reach $243,750. "
-                            "The $40,000 monthly overhead component fits the screening range; "
-                            "the reviewer must verify scope rather than treating that range as total costs."
-                        ),
-                    ),
-                    field(
-                        "QoE adjustment and earnings scrub",
-                        "textarea",
-                        (
-                            "Record seller adjustments with original expense accounts, supporting "
-                            "documents, recurring replacement costs, and buyer acceptance decisions. "
-                            "Keep normalized preinterest earnings separate from EBITDA terminology "
-                            "unless depreciation, amortization, and tax treatments are expressly reconciled "
-                            "in the supporting schedule."
-                        ),
-                        (
-                            "Reported preinterest earnings are $350,750. Accept a documented "
-                            "$25,000 one-time litigation expense, producing $375,750 normalized "
-                            "preinterest earnings. Reject the $120,000 owner-compensation add-back "
-                            "because replacement duties cost the same amount. The bridge retains "
-                            "the source ledger's other treatments and does not relabel the result as EBITDA."
-                        ),
-                    ),
-                    field(
-                        "Acquisition sources and uses",
-                        "textarea",
-                        (
-                            "Balance purchase consideration, closing costs, incremental liquidity, "
-                            "and financing sources. State whether the working-capital peg is "
-                            "inside the purchase price, and identify contingent consideration "
-                            "or fees that would require additional capital beyond the signed funding commitments."
-                        ),
-                        (
-                            "Uses equal $1,500,000 consideration, $60,000 transaction costs, "
-                            "and $240,000 incremental cash: $1,800,000 total. Sources equal "
-                            "$1,200,000 bank debt, $150,000 seller financing, and $450,000 "
-                            "buyer equity. The $150,000 operating working-capital peg is "
-                            "included in consideration; it is not added again as a separate funding use."
-                        ),
-                    ),
-                    field(
-                        "Debt structure and principal schedule",
-                        "textarea",
-                        (
-                            "Specify interest rates, payment timing, amortization, maturity, "
-                            "security, guarantees, and seller-note restrictions. Distinguish an "
-                            "illustrative conventional financing schedule from lender-approved SBA terms, "
-                            "and identify the cash needed when deferred principal eventually becomes payable."
-                        ),
-                        (
-                            "Illustrative conventional bank debt is $1,200,000 at 10%, "
-                            "with $120,000 principal paid at each year-end. First-year "
-                            "bank interest is $120,000. A $150,000 seller note at "
-                            "8% adds $12,000 interest, with principal deferred 24 months. "
-                            "Total first-year interest is $132,000; principal is $120,000; SBA terms require separate underwriting."
-                        ),
-                    ),
-                    field(
-                        "Debt-service coverage and cash headroom",
-                        "textarea",
-                        (
-                            "Calculate cash available for debt service using clearly labeled "
-                            "assumptions, then compare annual scheduled payments with the actual "
-                            "lender covenant definition. Show how maintenance investment, working-capital "
-                            "growth, taxes, and noncash adjustments can change apparent coverage."
-                        ),
-                        (
-                            "For a simplified cash proxy, $375,750 preinterest earnings "
-                            "less $30,000 maintenance investment and $25,000 working-capital "
-                            "growth leaves $320,750. Debt service is $252,000, giving "
-                            "1.273× coverage. A hypothetical 1.25× requirement needs $315,000, "
-                            "leaving only $5,750 headroom before additional tax or lender-definition adjustments."
-                        ),
-                    ),
-                    field(
-                        "Receivables, inventory, payables, and peg",
-                        "textarea",
-                        (
-                            "Calculate operating working capital from credit sales and "
-                            "inventory-related cost flows using one stated day-count convention. "
-                            "Compare the result with the contractual peg, and separate "
-                            "purchase-price true-ups from subsequent growth-driven cash requirements "
-                            "in the operating forecast."
-                        ),
-                        (
-                            "Using 365 days, $1,875,000 credit sales at 35-day collections "
-                            "requires $179,794.52 receivables. Eligible inventory costs of "
-                            "$900,000 create $49,315.07 inventory at 20 days and "
-                            "$61,643.84 payables at 25 days. Net operating working capital "
-                            "is $167,465.75, exceeding the $150,000 peg by $17,465.75 before contractual adjustments."
-                        ),
-                    ),
-                    field(
-                        "Defect reserve and purchase-price protection",
-                        "textarea",
-                        (
-                            "List receivable collectibility defects, obsolete inventory, customer "
-                            "credits, and other identified exposures. State valuation rules and "
-                            "recovery mechanisms, distinguishing accounting reserves from restricted cash "
-                            "and ensuring a single defect is not deducted through multiple "
-                            "purchase-price mechanisms."
-                        ),
-                        (
-                            "A receivables review identifies $18,000 requiring full allowance, "
-                            "and an inventory count identifies $12,000 of unusable parts. "
-                            "The agreement excludes both from eligible working capital, reducing "
-                            "the earlier $167,465.75 estimate to $137,465.75. That implies "
-                            "a $12,534.25 peg shortfall, not an additional duplicate $30,000 indemnity recovery."
-                        ),
-                    ),
-                    field(
-                        "Thirteen-week liquidity and collection stress",
-                        "textarea",
-                        (
-                            "Build a rolling cash forecast from dated receipts and payments, "
-                            "not straight-line accounting revenue. Identify the minimum operating "
-                            "cash balance, payment concentrations, and a specific collection "
-                            "downside, ensuring direct payroll and supplier costs are counted only once."
-                        ),
-                        (
-                            "Opening cash is $240,000. Thirteen-week collections are $450,000; "
-                            "direct payments $260,000; overhead $120,000; interest $33,000; "
-                            "principal reserve $30,000; maintenance spending $7,500. Available "
-                            "cash after reserving principal is $239,500. A $50,000 collection "
-                            "delay reduces it to $189,500, leaving $39,500 above the $150,000 liquidity floor."
-                        ),
-                    ),
-                    field(
-                        "Scenario cash after principal and reinvestment",
-                        "textarea",
-                        (
-                            "Apply the illustrative principal, maintenance, and working-capital "
-                            "assumptions to each canonical owner-profit figure. Label the result "
-                            "as a simplified cash bridge, identify omitted noncash or tax "
-                            "adjustments, and state the distribution response when cash turns negative."
-                        ),
-                        (
-                            "Subtracting $120,000 principal, $30,000 maintenance investment, "
-                            "and $25,000 working-capital growth gives Conservative negative "
-                            "$115,000, Base positive $68,750, and Scaled positive $365,000. "
-                            "These sensitivities hold financing constant and assume no other "
-                            "cash adjustments. The Conservative case requires additional liquidity or restructuring, not owner distributions."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The finance lead verifies exact canonical scenario arithmetic, balanced "
-                    "sources and uses, a documented QoE bridge, a nonduplicative reserve "
-                    "schedule, and a weekly cash forecast that exposes debt-service shortfalls."
-                ),
-            },
-            {
-                "worksheet_id": "ws-03",
-                "number": 3,
-                "title": "Execution, Acquisition Ledger, and Technical QA Pre-Flight",
-                "purpose": (
-                    "Turn negotiated economics into a controlled closing and a usable "
-                    "operating system. Establish document ownership, payment verification, "
-                    "opening-ledger controls, access transfers, and technical acceptance "
-                    "tests so the acquired business can invoice, collect, pay employees, "
-                    "and serve customers without losing transaction evidence."
-                ),
-                "chapter_ref": "Q7, Q8",
-                "instructions": [
-                    (
-                        "Create a closing checklist organized by responsible person and "
-                        "dependency rather than document name alone. Mark financing, landlord "
-                        "permissions, customer assignments, license issuance, lien releases, "
-                        "and payroll readiness as separately evidenced conditions with clear escalation paths."
-                    ),
-                    (
-                        "Freeze a dated copy of the seller's financial exports before "
-                        "migration. Preserve chart-of-accounts mappings, customer identifiers, "
-                        "open invoices, inventory quantities, and source documents so the "
-                        "opening ledger can be reconstructed without relying on an inaccessible seller account."
-                    ),
-                    (
-                        "Rehearse the closing funds flow using verified beneficiary records "
-                        "and independently checked amounts. Require different people to "
-                        "prepare and release material transfers, and stop immediately when "
-                        "a late instruction changes account details or payment destinations."
-                    ),
-                    (
-                        "Run end-to-end operating tests with representative transactions before "
-                        "moving production activity. Include invoice creation, tax calculation, "
-                        "cash application, supplier payment, payroll submission, refunds, and "
-                        "bank reconciliation; keep screenshots or export evidence for every successful test."
-                    ),
-                    (
-                        "Maintain a dated defect register through the first monthly close. "
-                        "Assign severity according to cash, customer, payroll, and reporting "
-                        "impact, and retain a reversible operating fallback whenever migration "
-                        "errors could interrupt billing or corrupt opening balances."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Transaction milestone and dependency map",
-                        "textarea",
-                        (
-                            "List the major transaction milestones, evidence required at "
-                            "each milestone, and person empowered to resolve exceptions. "
-                            "Distinguish a desired closing date from a date supported "
-                            "by lender funding, third-party permissions, and operational readiness."
-                        ),
-                        (
-                            "The schedule targets signing on day 45 and closing on "
-                            "day 60. Funding requires the lender's final documents, "
-                            "landlord assignment, Customer A permission, and verified license "
-                            "continuity. The transaction lead updates dependencies daily during "
-                            "the final ten days and moves closing rather than assuming an absent permission will arrive."
-                        ),
-                    ),
-                    field(
-                        "Data-room index and evidence provenance",
-                        "textarea",
-                        (
-                            "Define document naming, version control, source attribution, "
-                            "retention, and access permissions. Ensure reviewers can identify "
-                            "which export supported each decision and distinguish seller-supplied "
-                            "records from buyer calculations, independently obtained evidence, "
-                            "and superseded draft transaction documents."
-                        ),
-                        (
-                            "The secure deal room separates seller originals, buyer analyses, "
-                            "third-party confirmations, and executed agreements. Each file receives "
-                            "a date, source owner, and revision identifier. The accepted "
-                            "QoE bridge references ledger export GL-2026-09-v2, bank statements "
-                            "for all twelve months, and an adjustment log with reviewer initials."
-                        ),
-                    ),
-                    field(
-                        "Closing funds flow and wire verification",
-                        "textarea",
-                        (
-                            "Prepare a sources-and-uses-linked payment schedule identifying "
-                            "beneficiaries, debt payoffs, fees, seller proceeds, and operating "
-                            "cash. Describe independent verification, dual authorization, and "
-                            "the procedure for suspending transfers when last-minute payment "
-                            "instructions conflict with authenticated closing records."
-                        ),
-                        (
-                            "Cash funding totals $1,650,000: $1,200,000 bank proceeds and "
-                            "$450,000 equity. The $150,000 seller note supplies noncash "
-                            "consideration. Cash pays $1,350,000 purchase consideration, $60,000 "
-                            "fees, and $240,000 operating liquidity. Seller-creditor payoffs, "
-                            "if present, reduce seller proceeds within consideration rather than increasing total uses."
-                        ),
-                    ),
-                    field(
-                        "Opening balance sheet and accounting allocation",
-                        "textarea",
-                        (
-                            "Describe how consideration, assumed liabilities, acquired assets, "
-                            "transaction costs, and financing will enter the opening records. "
-                            "Separate tax purchase-price allocation from book accounting and "
-                            "assign unresolved valuation or capitalization questions to the "
-                            "transaction accountant before final posting."
-                        ),
-                        (
-                            "The accountant reconciles $1,500,000 consideration to acquired "
-                            "assets and expressly assumed liabilities, including the agreed "
-                            "working-capital balance. The $60,000 fee ledger separates legal, "
-                            "QoE, financing, and other costs for treatment review. For "
-                            "an applicable asset acquisition, buyer and seller coordinate allocation reporting under 26 U.S.C. § 1060."
-                        ),
-                    ),
-                    field(
-                        "Receivable, payable, and inventory migration",
-                        "textarea",
-                        (
-                            "Specify record counts, monetary control totals, aging categories, "
-                            "and inventory valuation checks for the migration. Explain how "
-                            "excluded items, reserves, duplicate records, and post-close receipts "
-                            "will be handled without overwriting the preserved seller ledger."
-                        ),
-                        (
-                            "The migration imports 184 open invoices totaling $179,794.52, "
-                            "then separately records the $18,000 allowance identified in "
-                            "diligence. Inventory gross value is $49,315.07 with a "
-                            "$12,000 exclusion. Payables total $61,643.84. Control totals "
-                            "must reproduce $137,465.75 eligible net working capital before any additional agreement-specific adjustments."
-                        ),
-                    ),
-                    field(
-                        "Identity, banking, and system ownership transfer",
-                        "textarea",
-                        (
-                            "Inventory business-critical accounts and distinguish transferable "
-                            "business access from the seller's personal credentials. Record "
-                            "new administrators, multifactor authentication, recovery ownership, "
-                            "bank permissions, and removal timing while preserving necessary "
-                            "transition access through named, time-limited individual accounts."
-                        ),
-                        (
-                            "The buyer establishes its own banking users, QuickBooks Online "
-                            "administrators, Microsoft 365 administrators, domain registrar "
-                            "contacts, and payroll access. Two named employees hold emergency "
-                            "recovery credentials in a business password manager. The seller "
-                            "receives a 30-day restricted transition account, not continued access through shared administrator credentials."
-                        ),
-                    ),
-                    field(
-                        "Invoice-to-cash technical acceptance tests",
-                        "textarea",
-                        (
-                            "Define test transactions that prove pricing, tax handling, "
-                            "delivery evidence, invoice numbering, payment application, and "
-                            "refund processing work after transfer. Include expected amounts "
-                            "and checks preventing test activity from contaminating actual "
-                            "customer balances or reported business sales."
-                        ),
-                        (
-                            "In a test environment, a $2,000 invoice with an assumed "
-                            "8% applicable sales-tax rate totals $2,160. Applying a "
-                            "$1,000 payment leaves $1,160 receivable. A $200 pre-tax "
-                            "credit reduces the balance by $216. The reviewer confirms "
-                            "tax liability and customer balances before discarding test records."
-                        ),
-                    ),
-                    field(
-                        "Payroll and supplier-payment readiness",
-                        "textarea",
-                        (
-                            "Verify that employee classifications, pay rates, benefits, "
-                            "withholding, supplier records, and payment authorization survive "
-                            "the ownership change. Specify a realistic contingency for "
-                            "payment-system failure without treating manual payments as exempt "
-                            "from payroll reporting or contractual payment obligations."
-                        ),
-                        (
-                            "The payroll lead reconciles seven full-time employees and "
-                            "three contractors to offer documents, vendor agreements, and "
-                            "the first pay run. A $28,000 illustrative payroll is "
-                            "funded two business days before submission. If the provider "
-                            "fails, documented manual payments are reconciled into payroll records with required withholding and reporting."
-                        ),
-                    ),
-                    field(
-                        "Backup, restoration, and cutover fallback",
-                        "textarea",
-                        (
-                            "Record the financial and operating data to preserve before "
-                            "cutover, the restoration test, and the authority to pause "
-                            "migration. Define how orders and receipts will be captured "
-                            "during an outage and subsequently reconciled without duplicate postings."
-                        ),
-                        (
-                            "Before cutover, finance exports the trial balance, open-item "
-                            "ledgers, customer master, inventory file, and bank reconciliation. "
-                            "A restoration drill rebuilds the prior day's open invoices "
-                            "in a separate workspace. During a four-hour outage, numbered "
-                            "manual order forms preserve activity; one reviewer checks every later posting for duplication."
-                        ),
-                    ),
-                    field(
-                        "First close and transaction defect ledger",
-                        "textarea",
-                        (
-                            "Set the first monthly-close deadline and identify reconciliations "
-                            "that establish reliable ownership-period results. Record each "
-                            "defect's cash exposure, responsible person, correction evidence, "
-                            "and contractual notification deadline where recovery from the "
-                            "seller may be available under the executed agreement."
-                        ),
-                        (
-                            "The first close finishes by business day ten. Finance "
-                            "reconciles bank cash, receivables, payables, inventory, payroll "
-                            "liabilities, and debt balances. A $7,500 pre-close customer "
-                            "credit discovered afterward enters the defect ledger with "
-                            "supporting correspondence; counsel checks the notice deadline and prevents duplicate recovery through the working-capital true-up."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The transaction lead and controller approve the funds flow, opening "
-                    "control totals, critical operating tests, verified account ownership, "
-                    "restoration evidence, and an assigned resolution plan for every material defect."
-                ),
-            },
-            {
-                "worksheet_id": "ws-04",
-                "number": 4,
-                "title": "Statutory, Licensing, Contract, and Outreach Audit",
-                "purpose": (
-                    "Identify concrete legal and contractual obligations that affect "
-                    "ownership transfer, employee continuity, debt funding, customer "
-                    "communications, and operating permissions. Convert each applicable "
-                    "requirement into evidence, an accountable reviewer, and a deadline "
-                    "so unresolved liabilities cannot disappear inside a generic diligence checklist."
-                ),
-                "chapter_ref": "Q5, Q9",
-                "instructions": [
-                    (
-                        "Map the target's actual jurisdictions, activities, workforce, "
-                        "customers, and financing before selecting statutory requirements. "
-                        "Use official agency sources and executed documents; record "
-                        "applicability reasoning rather than importing a generic national checklist "
-                        "that ignores the business being acquired."
-                    ),
-                    (
-                        "Separate federal requirements from state, local, professional, "
-                        "and contractual requirements. Ownership changes can trigger new "
-                        "applications even when operations remain unchanged, so obtain "
-                        "written transfer guidance from the issuing authority for every material "
-                        "license or permit."
-                    ),
-                    (
-                        "Review the purchase agreement alongside disclosure schedules and "
-                        "source evidence. Trace each material representation to a document "
-                        "or investigation, and reconcile indemnity limits, survival periods, "
-                        "escrow, and working-capital adjustments so remedies remain usable "
-                        "without double counting."
-                    ),
-                    (
-                        "Ask the lender to identify current program rules, credit "
-                        "conditions, and covenant definitions in writing. Do not infer "
-                        "SBA eligibility, seller-note treatment, equity requirements, or "
-                        "permitted distributions from an old acquisition article or another "
-                        "borrower's financing structure."
-                    ),
-                    (
-                        "Finish with an obligation register containing an owner, "
-                        "applicability decision, source citation, evidence location, deadline, "
-                        "and operating consequence. Escalate unresolved requirements that "
-                        "could prevent lawful operation or funding before the purchase "
-                        "agreement makes those risks the buyer's responsibility."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Jurisdiction and operating-license map",
-                        "textarea",
-                        (
-                            "List every state and locality where the business operates, "
-                            "the regulated activities it performs, and required entity "
-                            "registrations or licenses. Determine whether each permission "
-                            "transfers, requires reissuance, or depends on a qualifying "
-                            "individual who may leave."
-                        ),
-                        (
-                            "For an illustrative California location, the reviewer checks "
-                            "the city business license, seller's permit, and whether "
-                            "installation work requires a contractor license under California "
-                            "Business and Professions Code § 7026. A parts-only sales "
-                            "model and a regulated installation model receive different documented applicability conclusions."
-                        ),
-                    ),
-                    field(
-                        "Entity authority, disclosures, and transaction structure",
-                        "textarea",
-                        (
-                            "Document the approvals and disclosures needed for the chosen "
-                            "asset or equity structure. Identify ownership restrictions, "
-                            "material litigation, related-party arrangements, and any transaction "
-                            "notification thresholds requiring specific analysis rather than "
-                            "assuming that every small-business acquisition is automatically exempt."
-                        ),
-                        (
-                            "Counsel obtains member authorization and schedules related-party "
-                            "leases, pending disputes, and excluded liabilities. The transaction "
-                            "memo records why notification under 15 U.S.C. § 18a "
-                            "is not triggered for this $1,500,000 transaction after reviewing "
-                            "current thresholds and aggregation rules; the conclusion is documented, not inferred solely from the business label."
-                        ),
-                    ),
-                    field(
-                        "Tax diligence and successor exposure",
-                        "textarea",
-                        (
-                            "Review income, payroll, sales, use, property, and employment "
-                            "tax records relevant to the transaction. Identify clearance "
-                            "procedures, withholding obligations, filing responsibilities, and "
-                            "allocation reporting, distinguishing seller promises from evidence "
-                            "that protects the buyer against statutory successor exposure."
-                        ),
-                        (
-                            "For a California asset sale, counsel evaluates purchase-price "
-                            "withholding and clearance under Revenue and Taxation Code "
-                            "§§ 6811–6812 for covered sales-tax liabilities. Payroll "
-                            "returns are reconciled separately. Buyer and seller also "
-                            "coordinate Form 8594 when 26 U.S.C. § 1060 applies, using consistent asset-allocation assumptions."
-                        ),
-                    ),
-                    field(
-                        "Wages, classification, benefits, and workforce changes",
-                        "textarea",
-                        (
-                            "Check employee and contractor classifications, wage records, "
-                            "benefit obligations, accrued leave, and proposed staffing changes. "
-                            "Evaluate federal and state notice requirements using the "
-                            "actual employer and workforce facts, including affiliated "
-                            "operations, rather than only the acquired site's headcount."
-                        ),
-                        (
-                            "The seven-employee target receives a wage-and-hour review under "
-                            "29 U.S.C. §§ 206–207 and applicable state rules. "
-                            "Federal WARN analysis under 29 U.S.C. §§ 2101–2109 "
-                            "and 20 CFR Part 639 documents employer coverage and "
-                            "event thresholds; state notice rules and contractor classification are reviewed separately."
-                        ),
-                    ),
-                    field(
-                        "Secured debt, liens, and release mechanics",
-                        "textarea",
-                        (
-                            "Identify liens against transferred assets, including blanket "
-                            "security interests and tax liens. Specify payoff evidence, "
-                            "secured-party authorization, release deliverables, and post-close "
-                            "verification instead of assuming the asset-purchase structure "
-                            "automatically eliminates encumbrances or seller creditor claims."
-                        ),
-                        (
-                            "A UCC search reveals a blanket equipment-and-inventory lien. "
-                            "Counsel applies the state's enacted UCC § 9-315 rules "
-                            "on continuing security interests and obtains authenticated sale "
-                            "authorization, payoff instructions, and appropriate release filings. "
-                            "Termination mechanics under UCC § 9-513 are tracked through filing confirmation rather than merely promised at closing."
-                        ),
-                    ),
-                    field(
-                        "SBA eligibility and lender covenant evidence",
-                        "textarea",
-                        (
-                            "If SBA financing is proposed, document current eligibility, "
-                            "credit requirements, lender interpretations, and transaction-specific "
-                            "conditions. Record seller-note restrictions, permitted ownership "
-                            "changes, guarantees, distributions, and reporting requirements "
-                            "directly from the applicable program documents and signed loan agreement."
-                        ),
-                        (
-                            "The lender reviews business eligibility under 13 CFR "
-                            "§ 120.110 and credit criteria under 13 CFR § 120.150, "
-                            "then identifies the current SBA procedural requirements. "
-                            "The illustrative conventional $150,000 interest-paying seller "
-                            "note is not assumed acceptable for an SBA structure; equity contribution and standby treatment require written confirmation."
-                        ),
-                    ),
-                    field(
-                        "Contract assignments and enforceable transition support",
-                        "textarea",
-                        (
-                            "Review assignment, change-of-control, termination, exclusivity, "
-                            "pricing, and renewal clauses in material agreements. Specify "
-                            "seller transition services with hours, deliverables, payment "
-                            "terms, and access restrictions, and obtain jurisdiction-specific "
-                            "review of any proposed restrictive covenants before relying on them."
-                        ),
-                        (
-                            "Customer A requires written permission for an asset assignment; "
-                            "the landlord requires separate lease documentation. A transition "
-                            "agreement buys 60 seller hours monthly for three months "
-                            "at $100 per hour, capped at $18,000. This additional "
-                            "cash requirement must enter the deal budget before signing rather than remaining hidden outside the model."
-                        ),
-                    ),
-                    field(
-                        "Customer data and security obligations",
-                        "textarea",
-                        (
-                            "Inventory personal information and customer-confidential data "
-                            "that will transfer or remain accessible during diligence. "
-                            "Determine applicable privacy duties, contract restrictions, breach "
-                            "notification rules, retention periods, and secure transfer controls "
-                            "before exposing production records to additional reviewers or service providers."
-                        ),
-                        (
-                            "The deal room uses redacted employee records until detailed "
-                            "access is necessary. California Civil Code § 1798.100 "
-                            "et seq. receives an applicability review based on the "
-                            "business's actual thresholds and processing activities. California "
-                            "Civil Code § 1798.82 breach-notification duties are assessed separately; customer contracts may impose additional security requirements."
-                        ),
-                    ),
-                    field(
-                        "Acquisition outreach and customer marketing rules",
-                        "textarea",
-                        (
-                            "Describe the communication channels used for seller sourcing "
-                            "and post-close customer growth. Record sender identification, "
-                            "suppression handling, unsubscribe processing, call or text "
-                            "restrictions, and evidence of any required permission before "
-                            "launching automated communications at scale."
-                        ),
-                        (
-                            "Commercial email follows 15 U.S.C. § 7704 with accurate "
-                            "headers, a valid postal address, and opt-out processing "
-                            "within ten business days. Telephone and text campaigns "
-                            "receive separate review under 47 U.S.C. § 227 and "
-                            "47 CFR § 64.1200; a public business number alone does not establish every required permission."
-                        ),
-                    ),
-                    field(
-                        "Representations, remedies, and obligation register",
-                        "textarea",
-                        (
-                            "Translate material diligence findings into specific representations, "
-                            "disclosures, exclusions, or remedies. Record negotiated limits "
-                            "and notice mechanics, then distinguish recoverable seller "
-                            "obligations from operational requirements the buyer must satisfy "
-                            "regardless of the purchase agreement's allocation of responsibility."
-                        ),
-                        (
-                            "The agreement schedules the $30,000 receivable-and-inventory "
-                            "defect through working-capital valuation, while a separate "
-                            "identified tax dispute receives its own negotiated protection. "
-                            "Each register entry records owner, evidence, deadline, and "
-                            "notice address. Counsel checks that any proposed escrow reduces seller cash proceeds rather than silently increasing acquisition uses."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The transaction attorney and relevant operating owners document "
-                    "applicability, evidence, deadlines, and consequences for all material "
-                    "requirements; unresolved permissions, statutory exposures, and lender "
-                    "conditions receive an explicit closing decision."
-                ),
-            },
-            {
-                "worksheet_id": "ws-05",
-                "number": 5,
-                "title": "Automation, Customer Growth, and Risk Fallback Tracker",
-                "purpose": (
-                    "Install a small-team operating system that improves reporting and "
-                    "back-office execution without automating unreliable data or hiding "
-                    "customer risk. Connect retention, targeted growth, collections, and "
-                    "exception handling to measurable cash outcomes while preserving "
-                    "manual fallbacks for every business-critical workflow."
-                ),
-                "chapter_ref": "Q6, Q10",
-                "instructions": [
-                    (
-                        "Stabilize source records before connecting systems. Assign "
-                        "authoritative owners for customers, products, invoices, cash, "
-                        "and employee data; document identifiers and update rules so "
-                        "integrations cannot silently create duplicate revenue, conflicting "
-                        "balances, or uncontrolled changes to payment instructions."
-                    ),
-                    (
-                        "Automate reporting and repetitive back-office tasks before "
-                        "complex decision-making. Start with daily cash visibility, aging "
-                        "reports, close checklists, and exception alerts, then expand "
-                        "only after measured accuracy and time savings justify the "
-                        "additional integration and maintenance burden."
-                    ),
-                    (
-                        "Prioritize retention before outbound acquisition during the "
-                        "ownership transition. Contact major customers with a specific "
-                        "service-continuity plan, track concerns and renewal dates, and "
-                        "require evidence of delivery capacity before offering growth "
-                        "promotions that could overload the acquired team."
-                    ),
-                    (
-                        "Tie growth experiments to contribution margin and collection "
-                        "timing, not only booked sales. Record audience, offer, "
-                        "communication permissions, staffing capacity, test cost, and "
-                        "stopping conditions; prevent promotional discounts from consuming "
-                        "the liquidity needed for payroll, suppliers, and debt service."
-                    ),
-                    (
-                        "Give every critical automation a named owner, failure signal, "
-                        "manual substitute, and recovery procedure. Test retries and "
-                        "duplicate prevention with harmless records before production use, "
-                        "and keep a change log that explains when reported "
-                        "metrics changed because of system logic rather than business performance."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "System-of-record and integration ownership",
-                        "textarea",
-                        (
-                            "Identify the authoritative application for each core business "
-                            "record and map every integration between systems. Define "
-                            "stable identifiers, permitted update directions, access scopes, "
-                            "and the human owner responsible when two applications "
-                            "disagree about a customer's balance or order status."
-                        ),
-                        (
-                            "QuickBooks Online owns invoices and receivables; HubSpot owns "
-                            "relationship activities; the inventory application owns stock "
-                            "quantities. Integrations use a persistent customer identifier "
-                            "rather than company-name matching. The controller owns balance "
-                            "conflicts, and the operations manager owns stock conflicts; neither integration can edit bank beneficiary details."
-                        ),
-                    ),
-                    field(
-                        "Financial reporting automation and reconciliation",
-                        "textarea",
-                        (
-                            "Define the automated reports, delivery cadence, source data, "
-                            "and reconciliation checks needed for reliable cash and "
-                            "earnings visibility. State how incomplete bank feeds, "
-                            "unposted journals, or stale exports are flagged instead "
-                            "of being presented as final management results."
-                        ),
-                        (
-                            "A daily dashboard reports bank cash, overdue receivables, "
-                            "supplier payments due, and the next debt obligation. "
-                            "A weekly report compares sales with the $156,250 base "
-                            "monthly planning average. Reports display source timestamps "
-                            "and reconciliation status; the controller withholds final profit classification until payroll, inventory, and interest entries are posted."
-                        ),
-                    ),
-                    field(
-                        "Back-office workflow and exception routing",
-                        "textarea",
-                        (
-                            "Select one repetitive workflow and specify its trigger, "
-                            "required inputs, validation rules, decision owner, and exception "
-                            "queue. Quantify the work removed while preventing automation "
-                            "from authorizing payments, credits, or accounting changes "
-                            "beyond the responsible employee's existing authority."
-                        ),
-                        (
-                            "A purchase-invoice workflow matches supplier, purchase order, "
-                            "receipt quantity, and price before proposing an accounting "
-                            "entry. A $4,800 invoice against a $4,500 order creates "
-                            "a $300 exception for purchasing review. Forty monthly "
-                            "invoices at eight minutes each represent 5.33 hours of processing, not automatic headcount savings."
-                        ),
-                    ),
-                    field(
-                        "Customer retention and ownership-transition outreach",
-                        "textarea",
-                        (
-                            "Create a retention sequence for the customers most exposed "
-                            "to ownership change. Assign relationship owners, service "
-                            "commitments, renewal dates, concern categories, and escalation "
-                            "rules, ensuring customer assurances reflect actual staffing "
-                            "and contractual obligations rather than aspirational sales messaging."
-                        ),
-                        (
-                            "During the first ten business days, the operating manager "
-                            "contacts the top twenty customers representing $1,125,000, "
-                            "or 60% of base revenue. Customer A receives a joint "
-                            "seller-buyer introduction and named service contact. Any "
-                            "complaint involving delivery interruption receives same-day triage and a dated corrective-action commitment."
-                        ),
-                    ),
-                    field(
-                        "Targeted growth experiment and contribution math",
-                        "textarea",
-                        (
-                            "Define a narrow cross-sell or prospecting experiment with "
-                            "eligible contacts, offer economics, delivery capacity, campaign "
-                            "cost, and collection timing. Calculate contribution after "
-                            "incremental delivery costs and distinguish the experiment's "
-                            "result from the canonical annual owner-profit scenarios."
-                        ),
-                        (
-                            "A pilot offers maintenance kits to 100 existing customers. "
-                            "Ten purchase at $1,000 each, producing $10,000 incremental "
-                            "sales. At 40% contribution before campaign expense, the "
-                            "pilot generates $4,000; subtract $1,500 outreach expense "
-                            "for $2,500. This is experiment contribution before other incremental obligations, not a revised base-case owner profit."
-                        ),
-                    ),
-                    field(
-                        "Collections cadence and receivable-risk response",
-                        "textarea",
-                        (
-                            "Specify collection reminders, dispute routing, customer contact "
-                            "ownership, and credit restrictions. Calculate the liquidity "
-                            "effect of collection improvement separately from revenue "
-                            "growth, and avoid sending automated demands for invoices "
-                            "with unresolved service disputes or incorrect customer records."
-                        ),
-                        (
-                            "Reducing collection time from 35 to 30 days on "
-                            "$1,875,000 annual credit sales releases approximately "
-                            "$25,684.93 using 365 days. It does not create "
-                            "additional sales or accounting profit. The workflow sends "
-                            "pre-due reminders, pauses disputed invoices, and routes accounts over 45 days to the controller for a credit decision."
-                        ),
-                    ),
-                    field(
-                        "Labor capacity and automation economics",
-                        "textarea",
-                        (
-                            "Measure saved time against actual loaded labor costs "
-                            "and continuing review effort. State whether savings "
-                            "increase capacity, avoid an additional hire, or reduce "
-                            "cash expense, and preserve the canonical team assumptions "
-                            "unless a separately evidenced operating model supports a change."
-                        ),
-                        (
-                            "Reporting automation saves ten hours weekly at a $35 "
-                            "loaded hourly cost, indicating $18,200 annual capacity "
-                            "value over 52 weeks. A $300 monthly software subscription "
-                            "costs $3,600, leaving $14,600 theoretical value before "
-                            "maintenance. The seven-full-time, three-contractor base team remains unchanged; payroll expense falls only if actual paid labor falls."
-                        ),
-                    ),
-                    field(
-                        "Hidden-liability and attrition warning dashboard",
-                        "textarea",
-                        (
-                            "Choose leading indicators for the acquisition's principal "
-                            "risks: hidden liabilities, customer attrition, and leverage. "
-                            "Define measurable triggers, escalation owners, and immediate "
-                            "responses, separating ordinary operating variance from events "
-                            "that require lender contact or contractual claim preservation."
-                        ),
-                        (
-                            "The dashboard flags undocumented pre-close liabilities above "
-                            "$5,000, top-customer order declines above 20%, and "
-                            "forecast cash below $150,000. The controller preserves "
-                            "claim evidence, the operating manager investigates customer "
-                            "changes, and the buyer reviews lender obligations. Forecast covenant pressure triggers early lender discussion before a payment is missed."
-                        ),
-                    ),
-                    field(
-                        "Automation failure and manual operating fallback",
-                        "textarea",
-                        (
-                            "Describe a realistic integration failure and the exact "
-                            "manual process that keeps operations running. Include "
-                            "outage detection, safe retry behavior, duplicate prevention, "
-                            "access restrictions, and reconciliation steps before automated "
-                            "processing resumes on the recovered production system."
-                        ),
-                        (
-                            "If invoice synchronization stops for two hours, billing "
-                            "staff export approved invoices and record them through "
-                            "a numbered manual queue. Each invoice retains its "
-                            "original external identifier. After recovery, the integration "
-                            "checks existing identifiers before posting; finance reconciles counts and dollar totals before clearing the queue or enabling unattended retries."
-                        ),
-                    ),
-                    field(
-                        "Experiment review and change-control ledger",
-                        "textarea",
-                        (
-                            "Record each process or growth change with its hypothesis, "
-                            "baseline, owner, expected economic effect, and review date. "
-                            "Define success and stopping conditions, and explain "
-                            "how accepted changes will be documented so another "
-                            "operator can reproduce the workflow without its original creator."
-                        ),
-                        (
-                            "The collections pilot targets a five-day reduction over "
-                            "60 days while keeping dispute rates below 3% of "
-                            "invoices. Finance compares matched customer cohorts rather "
-                            "than seasonal averages. If disputes exceed 3%, reminders "
-                            "pause for diagnosis. Accepted logic enters a versioned runbook with screenshots, permissions, recovery steps, and a named backup operator."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The operating manager verifies reconciled reports, an accountable "
-                    "retention plan, contribution-based growth tests, measured automation "
-                    "economics, and a successfully rehearsed fallback for each critical integration."
-                ),
-            },
-            {
-                "worksheet_id": "ws-06",
-                "number": 6,
-                "title": "30-Day Launch, Pod KPI Scorecard, and Exit-Readiness Ledger",
-                "purpose": (
-                    "Organize the first month after closing around cash protection, "
-                    "service continuity, reliable reporting, and accountable ownership. "
-                    "Connect the launch sprint to a 100-day improvement plan and "
-                    "build transferable evidence of performance so future refinancing "
-                    "or sale depends on verifiable operations rather than seller storytelling."
-                ),
-                "chapter_ref": "Q11, Q12",
-                "instructions": [
-                    (
-                        "Set the sprint start at transaction closing, not the "
-                        "beginning of the acquisition search. The canonical first-deal "
-                        "timeline remains 4–10 months; this worksheet governs "
-                        "the first 30 ownership days after financing, transfer "
-                        "permissions, and operating readiness have been established."
-                    ),
-                    (
-                        "Assign a primary owner and backup for finance, customer "
-                        "continuity, delivery, and employee support. Build responsibilities "
-                        "inside the canonical staffing plan before adding positions, "
-                        "and make contractor scope and authority explicit so "
-                        "temporary support does not become unmanaged recurring overhead."
-                    ),
-                    (
-                        "Hold short daily operating reviews during the first "
-                        "week and weekly reviews thereafter. Discuss cash, service "
-                        "failures, collection disputes, payroll, supplier interruptions, "
-                        "and transaction defects before optional improvement projects "
-                        "that cannot protect near-term operations or measurable contribution."
-                    ),
-                    (
-                        "Use the first reliable monthly close to establish "
-                        "actual performance against the acquisition model. Keep "
-                        "partial-month results, seasonal patterns, one-time transition "
-                        "costs, and annualized estimates separate; a strong first "
-                        "week does not validate the annual base-case margin."
-                    ),
-                    (
-                        "Complete the month with a 100-day operating plan "
-                        "and an exit-evidence ledger. Prioritize reversible, funded "
-                        "improvements with accountable owners, and preserve contracts, "
-                        "earnings reconciliations, and operating procedures so the "
-                        "business becomes less dependent on individual memory over time."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Day-one ownership and communication plan",
-                        "textarea",
-                        (
-                            "List the first-day communications and operating confirmations "
-                            "needed by employees, customers, suppliers, lenders, and "
-                            "service providers. Assign speakers, factual messages, "
-                            "and follow-up owners, avoiding promises about jobs, "
-                            "pricing, or contract continuity that exceed executed agreements."
-                        ),
-                        (
-                            "At closing, the buyer confirms payroll funding, banking "
-                            "access, dispatch ownership, supplier contacts, and customer "
-                            "support numbers. The operating manager holds a staff "
-                            "meeting before customer announcements. Messaging confirms the "
-                            "existing service schedule and named contacts while routing individual compensation or contract questions to the responsible reviewer."
-                        ),
-                    ),
-                    field(
-                        "Days two through seven stabilization backlog",
-                        "textarea",
-                        (
-                            "Rank the first week's tasks by their ability to "
-                            "prevent cash loss, customer interruption, or employee "
-                            "payment problems. Define deliverables, owners, dependencies, "
-                            "and verification evidence while postponing discretionary "
-                            "system replacements that create unnecessary transition risk."
-                        ),
-                        (
-                            "Days two through seven reconcile the opening bank balance, "
-                            "verify the first payroll, count high-value inventory, "
-                            "contact the top twenty customers, and validate supplier "
-                            "credit terms. The manager postpones a proposed ERP "
-                            "replacement. A daily checklist records evidence and defects rather than marking tasks complete merely because someone attended a meeting."
-                        ),
-                    ),
-                    field(
-                        "Days eight through fourteen cash and service sprint",
-                        "textarea",
-                        (
-                            "Select a limited second-week improvement set using "
-                            "verified operational bottlenecks. Connect each task "
-                            "to collection timing, fulfillment reliability, or "
-                            "customer retention, and assign a measurable result "
-                            "without assuming that all benefits arrive during "
-                            "the first ownership month."
-                        ),
-                        (
-                            "The controller resolves the ten largest overdue invoices, "
-                            "representing $45,000, while operations reviews every late "
-                            "order from the prior two weeks. A $15,000 collection "
-                            "target is measured against actual receipts, not promises. "
-                            "The team records reasons for delays before changing credit terms or purchasing more stock."
-                        ),
-                    ),
-                    field(
-                        "Days fifteen through thirty close and improvement decision",
-                        "textarea",
-                        (
-                            "Define the remaining first-month deliverables, including "
-                            "the financial close, defect resolution, customer review, "
-                            "and funded improvement selection. Explain how actual "
-                            "results will be compared with planning assumptions "
-                            "without treating a partial accounting period as "
-                            "a complete annual run rate."
-                        ),
-                        (
-                            "By day 30, finance delivers reconciled ownership-period "
-                            "accounts and a refreshed thirteen-week cash forecast. "
-                            "Operations presents customer retention, late-order causes, "
-                            "and capacity constraints. The buyer funds only documented "
-                            "priorities; a $6,000 workflow project must identify its "
-                            "cash source and measurable benefit before displacing maintenance or liquidity reserves."
-                        ),
-                    ),
-                    field(
-                        "Operating pod and decision-rights scorecard",
-                        "textarea",
-                        (
-                            "Allocate the canonical team across operating responsibilities "
-                            "and name decision rights for pricing, purchasing, "
-                            "payments, collections, and customer remedies. Count "
-                            "people once even when they hold several roles, "
-                            "and distinguish contractor capacity from employee availability "
-                            "during critical operating hours."
-                        ),
-                        (
-                            "The base team has seven employees: one manager, one "
-                            "sales lead, one administrator, and four delivery staff. "
-                            "Three contractors provide bookkeeping, technical support, "
-                            "and specialist service. The manager approves routine "
-                            "purchasing; the controller reviews cash releases. The Scaled reference remains eight employees plus four contractors, twelve people total."
-                        ),
-                    ),
-                    field(
-                        "Canonical monthly planning KPI sheet",
-                        "textarea",
-                        (
-                            "Translate the canonical annual scenarios into clearly "
-                            "labeled monthly planning averages and pair them "
-                            "with operating indicators. Preserve annual margins "
-                            "and staffing assumptions, flag seasonal differences, "
-                            "and avoid presenting a planning average as "
-                            "a prediction of any specific month's actual result."
-                        ),
-                        (
-                            "Monthly averages are Conservative $62,500 sales and "
-                            "$5,000 owner profit; Base $156,250 and $20,312.50; "
-                            "Scaled $250,000 and $45,000. Corresponding margins remain "
-                            "8%, 13.0%, and 18%. The weekly sheet also tracks "
-                            "cash against $150,000, collection days against 35, overdue invoices, customer losses, and operating defects."
-                        ),
-                    ),
-                    field(
-                        "Owner distributions and capital-allocation discipline",
-                        "textarea",
-                        (
-                            "Define how the buyer decides whether cash may "
-                            "leave the business after debt service, required "
-                            "investment, working-capital needs, and applicable restrictions. "
-                            "Separate owner net profit from available distributions "
-                            "and record unresolved tax, covenant, or reserve "
-                            "requirements before authorizing a withdrawal."
-                        ),
-                        (
-                            "Base annual owner profit is $243,750, but the simplified "
-                            "bridge leaves only $68,750 after $120,000 principal, "
-                            "$30,000 maintenance investment, and $25,000 working-capital "
-                            "growth. Dividing by twelve gives $5,729.17 as a "
-                            "planning average, not a monthly entitlement. Actual distributions require sufficient unrestricted cash and satisfied loan conditions."
-                        ),
-                    ),
-                    field(
-                        "Days thirty-one through one hundred operating roadmap",
-                        "textarea",
-                        (
-                            "Select the next three improvements using verified "
-                            "first-month evidence, cash availability, and organizational "
-                            "capacity. For each initiative, specify owner, "
-                            "investment, milestone, measurable benefit, and stopping "
-                            "condition, prioritizing operational resilience over a "
-                            "long list of loosely funded transformation projects."
-                        ),
-                        (
-                            "Days 31–60 standardize collections and document critical "
-                            "purchasing steps. Days 61–80 test the $1,500 customer "
-                            "cross-sell pilot. Days 81–100 evaluate results and "
-                            "complete backup-operator training. Spending pauses if "
-                            "forecast cash falls below $150,000; the plan does not assume campaign contribution or released receivables have already arrived."
-                        ),
-                    ),
-                    field(
-                        "Exit-readiness evidence and transferable earnings",
-                        "textarea",
-                        (
-                            "Identify the records a future lender or buyer "
-                            "would need to verify earnings quality and "
-                            "operational transferability. Specify retention owners, "
-                            "update cadence, and evidence of reduced founder "
-                            "dependence without asserting an unsupported valuation "
-                            "multiple or guaranteed sale outcome."
-                        ),
-                        (
-                            "The controller maintains monthly reconciliations, an adjustment "
-                            "register, tax filings, debt schedules, and customer "
-                            "concentration reports. Operations maintains assignable contracts, "
-                            "service procedures, license records, and backup coverage. "
-                            "After twelve monthly closes, a future reviewer can "
-                            "trace each material adjustment to evidence rather than accepting a reconstructed earnings story."
-                        ),
-                    ),
-                    field(
-                        "Refinancing, seller-note maturity, and exit proceeds",
-                        "textarea",
-                        (
-                            "Track future debt maturities, lender restrictions, "
-                            "transaction costs, and operating cash needs "
-                            "that affect refinancing or sale proceeds. "
-                            "Distinguish enterprise value from equity proceeds "
-                            "and identify the evidence required before "
-                            "assuming a refinance can repay deferred seller principal."
-                        ),
-                        (
-                            "After two scheduled $120,000 bank principal payments, "
-                            "bank debt would be $960,000 under the illustrative "
-                            "schedule, while the $150,000 seller note reaches its "
-                            "24-month principal date. A hypothetical $1,800,000 sale "
-                            "less both debts and $90,000 selling costs leaves "
-                            "$600,000 before taxes, working-capital adjustments, and other settlement items."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The buyer and operating manager approve a completed first-month "
-                    "scorecard, reconciled ownership-period accounts, a funded 100-day plan, "
-                    "documented distribution restrictions, and an exit-evidence ledger with "
-                    "named maintenance owners and upcoming debt maturities."
-                ),
-            },
-        ],
-    }
+    return {'workbook_id': 'wb-027-business-acquisition',
+ 'volume_id': 'vol-027-business-acquisition',
+ 'title': 'Business Acquisition — Practitioner Testimony Operator Workbook',
+ 'subtitle': 'A field workbook for buying, financing, and protecting a cash-flowing small business, from '
+             'the buy-versus-build case through search, deal sourcing, SBA 7(a) lending, and the seller '
+             'note bridge',
+ 'worksheets': [{'worksheet_id': 'ws-01',
+                 'number': 1,
+                 'title': 'The Buy-Versus-Build Decision and First-Deal Readiness',
+                 'purpose': 'Turn the case for acquiring a cash-flowing small business into a written '
+                            'thesis, a target statement, and an opening-offer rule. Then set the '
+                            'non-negotiable gates on books, concentration, small-deal terms, and '
+                            'first-year operating discipline before any seller conversation begins.',
+                 'chapter_ref': 'Q1-Q2',
+                 'instructions': ['Complete every field in writing before contacting a broker or owner; a '
+                                  'thesis that exists only in your head will bend under deal pressure.',
+                                  'Anchor each answer to a specific practitioner number, such as the 2% '
+                                  'SBA default rate or the 2.5-4.5x Main Street multiple.',
+                                  'Replace the sample figures with your own revenue band, multiple, '
+                                  'geography, and timeline, and date the page when you finish.',
+                                  'Mark any field where your answer conflicts with an operator gate, and '
+                                  'resolve that conflict before signing an LOI.',
+                                  'Revisit this worksheet every 30 days of search and record what changed, '
+                                  'remembering that 90% of people who start looking never buy.'],
+                 'fields': [{'name': 'buy_vs_build_case',
+                             'type': 'textarea',
+                             'prompt': 'State in plain terms why buying a cash-flowing small business '
+                                       'beats starting one for you, citing the failure and default '
+                                       'comparisons, and name the specific personal risk you are trying to '
+                                       'remove by acquiring instead of building from scratch.',
+                             'example': 'Startups fail at roughly 20% in year one, while acquisition loans '
+                                        'default at about 2%, per Dallas M&A attorney Kevin Henderson '
+                                        '[Kevin Henderson — YXFpxJrIjD0 @ 00:08:33]. My risk to remove is '
+                                        'a zero-revenue first year; I want inherited customers, staff and '
+                                        'cash flow on day one, and I accept that I am buying the business '
+                                        'as it sits.'},
+                            {'name': 'return_benchmark',
+                             'type': 'textarea',
+                             'prompt': 'Record the return benchmark you will hold every target against, '
+                                       'comparing the average ETA return with public-market returns and '
+                                       'with search fund versus venture loss rates, and write the minimum '
+                                       'return that would justify your time and capital.',
+                             'example': 'Stanford data puts average ETA ROI at 34% against roughly 9-10% '
+                                        'for the stock market [Joel Ankney — cl31TiHq92Y @ 00:06:23]. '
+                                        'INSEAD cites about 20% partial loss and 10% total loss for search '
+                                        'funds, with IRR of 25-35% versus 13-15% for VC [INSEAD — '
+                                        'i7FBr84AUfY @ 00:07:55]. My floor: a deal must model at least 25% '
+                                        'annual return on equity.'},
+                            {'name': 'multiple_arbitrage',
+                             'type': 'textarea',
+                             'prompt': 'Write out the valuation multiple you expect to pay at your target '
+                                       'size, compare it with larger-company multiples, and explain how '
+                                       'the multiple gap creates value for you when you eventually grow, '
+                                       'refinance, or sell the business you buy.',
+                             'example': 'Ruback and Yudkoff say the magic is in the multiples: $1M of '
+                                        'EBITDA sells for about $4M, while $10M of EBITDA sells for $100M '
+                                        'at 10x [Acquiring Minds — c1OtHjDpymM @ 00:07:37]. Deibel prices '
+                                        'Main Street at 2.5-4.5x earnings against 19-28x for public '
+                                        'companies [Jake & Gino — xpFa8hcRy_k @ 00:17:02]. I expect to pay '
+                                        'near 4x cash flow on my first deal.'},
+                            {'name': 'target_statement',
+                             'type': 'textarea',
+                             'prompt': 'Draft a one-paragraph target statement naming the revenue band, '
+                                       'earnings multiple, industry traits, and geography you will pursue, '
+                                       'plus the date by which you intend to be under LOI, so urgency and '
+                                       'focus are written down before you search.',
+                             'example': 'Deibel says 90% of people who start looking never buy, blaming '
+                                        'missing target statements and missing urgency, and notes a '
+                                        'focused buyer could own a company within 6 months '
+                                        '[DigitalTriggers — u2bZWIf9b5k @ 00:58:38]. Mine: $1-5M revenue, '
+                                        '2.5-4.5x earnings, cash flow and simplicity, not asset or capital '
+                                        'intensive, within two hours of home, under LOI in six months.'},
+                            {'name': 'sourcing_channel_plan',
+                             'type': 'textarea',
+                             'prompt': 'List the sourcing channels you will work each week, such as '
+                                       'brokers, trade-show lists, direct outreach, and local in-person '
+                                       'networking, and assign a weekly activity count to each so the plan '
+                                       'can be audited rather than merely hoped for.',
+                             'example': 'Ruback says belly to belly sales beat national email campaigns, '
+                                        'and one Houston searcher never had lunch alone [HBS Rock Center '
+                                        'for Entrepreneurship — oJcm3Bn-lXE @ 00:46:43]. Deibel adds going '
+                                        'straight to brokers lops off about two years [Jake & Gino — '
+                                        'xpFa8hcRy_k @ 00:32:31]. Weekly plan: five broker calls, three '
+                                        'owner lunches, twenty trade-show list contacts, and one Sabri '
+                                        'curve listing review daily.'},
+                            {'name': 'opening_offer_rule',
+                             'type': 'text',
+                             'prompt': 'Set your opening offer multiple, the concession you are prepared '
+                                       'to give back, and the walk-away price, then explain how that '
+                                       'concession preserves goodwill with the seller without destroying '
+                                       'the economics that made the deal attractive at the start.',
+                             'example': 'Searcher Antonio opens at 2.5x, and Ruback advises giving back a '
+                                        'quarter or half turn to keep goodwill, because if the deal is '
+                                        "good at 3, it's still good [HBS Rock Center for Entrepreneurship "
+                                        '— oJcm3Bn-lXE @ 00:57:40]. My rule: open at 2.5x, concede to 3x, '
+                                        'walk above 3.5x, since price is the one term I control by '
+                                        'walking.'},
+                            {'name': 'books_and_bank_gate',
+                             'type': 'textarea',
+                             'prompt': 'Describe how you will verify that the target keeps one honest set '
+                                       'of books, including how many months of bank statements you will '
+                                       'reconcile and what finding would make you kill the deal or reprice '
+                                       'it before closing.',
+                             'example': 'The gate is explicit: kill or reprice any target showing two sets '
+                                        'of books, and do not close without 36 months of bank statements '
+                                        'reconciled [Technically News — nOnsMlkLh10 @ 01:08:24]. I will '
+                                        'request 36 months of statements from every account, tie deposits '
+                                        'to reported sales by month, and walk if unexplained cash gaps '
+                                        'exceed one month of revenue.'},
+                            {'name': 'referral_concentration_map',
+                             'type': 'textarea',
+                             'prompt': "Map the target's revenue by customer and by referral source, "
+                                       'identify any single client or referrer controlling a large share '
+                                       'of sales, and decide whether that concentration kills the deal or '
+                                       'shifts risk back to the seller.',
+                             'example': 'A top-five client list routed through one referrer is a '
+                                        'deal-killer, not a footnote [The Wall Street Skinny — MpeYmBDptXs '
+                                        '@ 00:44:27]. The gate requires no single client above 10% of '
+                                        'sales, or an earnout or seller note shifting risk back [Master '
+                                        'Afle — LzJITHl_i2k @ 01:14:56]. My map flags one referrer driving '
+                                        '30% of revenue, so I reprice with an earnout or walk.'},
+                            {'name': 'small_deal_terms_to_strike',
+                             'type': 'textarea',
+                             'prompt': 'List the NDA and LOI terms you will strike or refuse on a small '
+                                       'deal, including commission clauses, deposits, breakage fees, and '
+                                       'non-compete signatories, and record the exact language you will '
+                                       'use when pushing back on each one.',
+                             'example': 'Joel Ankney strikes buyer-pays-commission NDA clauses, refuses '
+                                        'deposits and breakage fees, and gets the founder to personally '
+                                        'sign the non-compete [Joel Ankney — cl31TiHq92Y @ 00:20:09]. He '
+                                        'pays no deposit under $5-6M, calls a deposit request a red flag, '
+                                        'and labels breakage fees mid-market creep [Joel Ankney — '
+                                        'cl31TiHq92Y @ 00:35:06]. My line: no deposit, no breakage fee, '
+                                        'founder signs personally.'},
+                            {'name': 'day_one_people_plan',
+                             'type': 'textarea',
+                             'prompt': 'Write your first-year operating plan for people and changes, '
+                                       'including the freeze period on personnel moves, who owns each P&L '
+                                       'line, which top customers you will meet before closing, and the '
+                                       'salary you will draw at first.',
+                             'example': 'Freeze personnel changes for six months post-close and go drastic '
+                                        'only if things hit the fan [Technically News — nOnsMlkLh10 @ '
+                                        "00:58:06]. Write a person's name next to every P&L line, book the "
+                                        'top 20 paying customers before closing, and keep your salary low '
+                                        "[Let's Buy a Business — WP5MdYhV05A @ 00:16:59]. My plan: "
+                                        'six-month freeze, twenty customer meetings booked, owner salary '
+                                        'under market.'}],
+                 'completion_gate': 'Done when the target statement fits in one paragraph with a dated LOI '
+                                    'deadline, the opening and walk-away multiples are written, the '
+                                    '36-month bank reconciliation and concentration gates are accepted in '
+                                    'writing, and the day-one P&L ownership plan names a person for every '
+                                    'line.'},
+                {'worksheet_id': 'ws-02',
+                 'number': 2,
+                 'title': 'Running the Search: Model, Funnel, and Origination Engine',
+                 'purpose': 'Choose a search model, budget the runway, and size the funnel. Then build the '
+                            'broker, outreach, and marketplace machinery that produces qualified owner '
+                            'conversations at a steady weekly volume, and screen out thin margins, bad '
+                            'data, and dishonest sellers early.',
+                 'chapter_ref': 'Q3-Q4',
+                 'instructions': ['Pick traditional or self-funded search first, because the equity, '
+                                  'runway, and budget answers all depend on that choice.',
+                                  'Translate every funnel benchmark into a weekly activity count you can '
+                                  'audit on a calendar, not a quarterly hope.',
+                                  'Build outreach infrastructure before writing copy: lookalike domains, '
+                                  'warmed mailboxes, and verified marketplace profiles come first.',
+                                  'Apply the 15% margin floor and the 85% data-accuracy gate before '
+                                  'spending NDA, diligence, or hiring money.',
+                                  "Log every seller's stated reason for selling at each meeting, and "
+                                  'compare the answers side by side before drafting any offer.'],
+                 'fields': [{'name': 'search_model_choice',
+                             'type': 'textarea',
+                             'prompt': 'Choose between a traditional investor-backed search and a '
+                                       'self-funded search, recording the equity you would keep under each '
+                                       'model, who carries the runway cost, and why the cost of outside '
+                                       'capital is or is not worth it to you.',
+                             'example': 'Traditional searchers earn 20-30% equity in thirds, while '
+                                        'self-funded searchers keep 60-73% but carry the runway '
+                                        "themselves. One practitioner put the trade-off bluntly: I've "
+                                        'never been able to deposit a percentage of common equity in the '
+                                        'bank [Acquiring Minds — 0lg8Gh_uAPU @ 00:18:28]. I choose '
+                                        'self-funded, with twelve months of personal runway already '
+                                        'saved.'},
+                            {'name': 'search_capital_budget',
+                             'type': 'textarea',
+                             'prompt': 'Build a search budget covering salary, travel, legal, diligence, '
+                                       'and other costs for a two-year runway, compare it with typical '
+                                       'traditional search raises, and record how many months you can fund '
+                                       'before you must close or stop.',
+                             'example': 'Peter Harris puts the median traditional raise at $500-550K, '
+                                        'typically $400-700K and $800-900K for two searchers, covering '
+                                        'about two years of salary, interns, legal, travel, bankers and '
+                                        'diligence [VCPete — i_Ownd9smbk @ 00:02:31]. My self-funded '
+                                        'budget totals $160K: $120K salary-equivalent drawdown, $30K legal '
+                                        'and diligence, $10K travel, funding eighteen months before a hard '
+                                        'go-or-stop decision.'},
+                            {'name': 'funnel_targets',
+                             'type': 'textarea',
+                             'prompt': 'Set numeric funnel targets from companies reviewed down to '
+                                       'information memoranda, owner conversations, offers, and LOIs, '
+                                       'using benchmark funnels as a reference, and write the weekly '
+                                       'volume you need to reach one closed purchase on schedule.',
+                             'example': "Pete Seligman's funnel ran about 200 companies to 50 IMs to 20 "
+                                        'conversations to 5 offers to 1 purchase [David Nazeem Aboud — '
+                                        '_exEOi-Wxuk @ 00:15:24]. Self-funded closers submitted 6.9 LOIs '
+                                        'and had 2.4 executed [Acquiring Minds — KT5T3j2jVQ4 @ 00:45:01]. '
+                                        'Over 40 weeks, I need five companies reviewed weekly, one owner '
+                                        'conversation every two weeks, and an offer every eight weeks.'},
+                            {'name': 'broker_follow_up_cadence',
+                             'type': 'textarea',
+                             'prompt': 'Describe your broker relationship system, including how you build '
+                                       'the list, how often you follow up with each broker, what an '
+                                       'authentic follow-up email says, and how you will avoid looking '
+                                       'like another anonymous mass-blast buyer.',
+                             'example': 'Peter and Garrett skip the mass broker blast and follow up with '
+                                        'every broker every couple of weeks in emails that sound '
+                                        'authentic, letting the list snowball from 10 to 500 [Before You '
+                                        'Buy or Sell a Business Podcast — Hh83Lc7sWf4 @ 00:23:59]. My '
+                                        'cadence: 40 brokers to start, a personal note to each every '
+                                        'fourteen days, referencing their latest listing.'},
+                            {'name': 'succession_pitch',
+                             'type': 'textarea',
+                             'prompt': 'Write the pitch you will give an owner who distrusts outside '
+                                       'buyers, explaining why you are the succession plan, what you will '
+                                       'preserve, how much of your own net worth rides on the outcome, and '
+                                       'how you differ from private equity.',
+                             'example': 'One searcher won founders who distrusted private equity by '
+                                        'selling a portfolio of one, a promise to keep the company name, '
+                                        'and 99.9% of personal net worth tied to the outcome [Built to '
+                                        'Sell — GYvpRW21sSY @ 00:01:13]. My pitch: I will run only your '
+                                        'company, keep your name on the trucks, and live or die by its '
+                                        'results.'},
+                            {'name': 'outreach_infrastructure',
+                             'type': 'textarea',
+                             'prompt': 'Specify your cold outreach setup, including the sending domains, '
+                                       'mailboxes per domain, warm-up period, daily send limits by inbox '
+                                       'provider, and how you will keep acquisition email away from your '
+                                       'main domain to protect deliverability and reputation.',
+                             'example': 'Avi never sends cold acquisition email from the main domain, runs '
+                                        'about 3 to 5 mailboxes per lookalike domain, and keeps Microsoft '
+                                        'inboxes low-volume [Avi — cS2OjyHbq8U @ 00:17:26]. Warm lookalike '
+                                        'domains for 2-3 weeks and hold Microsoft mailboxes to 5 sends per '
+                                        'day [Avi — cS2OjyHbq8U @ 00:18:14]. My setup: three lookalike '
+                                        'domains, four mailboxes each, three-week warm-up before the first '
+                                        'send.'},
+                            {'name': 'marketplace_profile',
+                             'type': 'textarea',
+                             'prompt': 'Describe how you will present yourself on online marketplaces and '
+                                       'listing sites, including verification steps, profile links, escrow '
+                                       'requirements, and the screening volume you will commit to, so '
+                                       'sellers take your inquiries seriously and scammers are filtered '
+                                       'out.',
+                             'example': 'Codie Sanchez says completing ID verification and connecting '
+                                        'LinkedIn lifts seller response rates by more than 50% [Codie '
+                                        'Sanchez — 3mtS8rOAqoM @ 00:44:52]. No acquisition closes without '
+                                        'escrow, domestic or international, because it protects against '
+                                        'scams and bad actors [acquiredotcom — nu3zh5FOFME @ 00:19:48]. My '
+                                        'profile: verified ID and LinkedIn linked before any NDA, '
+                                        'escrow-only offers, fifty listings reviewed monthly.'},
+                            {'name': 'data_accuracy_gate',
+                             'type': 'text',
+                             'prompt': 'Define the contact-data accuracy and connect-rate thresholds you '
+                                       'must hit before adding callers or BDRs, and describe how you will '
+                                       'measure accuracy, track wasted rep time, and decide when your '
+                                       'outreach engine is ready to scale.',
+                             'example': 'BDRs were wasting about 40% of their time, and fixing prospect '
+                                        'data moved accuracy from 40% to 85%; after that, each Owner.com '
+                                        'BDR produced over $60K closed-won ARR per month [SaaStr AI — '
+                                        'KAz03HJ5nHg @ 00:12:09]. My gate: one caller only until a '
+                                        '200-record sample verifies at 85% accuracy and decision-maker '
+                                        'connects climb above 3%.'},
+                            {'name': 'margin_floor_screen',
+                             'type': 'text',
+                             'prompt': 'Set the minimum margin a target must show before you spend NDA or '
+                                       'diligence time on it, explain why headline cash-on-cash returns '
+                                       'cannot override that floor, and record how you will screen out '
+                                       'businesses built on hopes.',
+                             'example': 'Codie Sanchez rejects any target below a 15% margin floor before '
+                                        'NDA or diligence time, even when headline cash-on-cash shows 174% '
+                                        '[Codie Sanchez — 3mtS8rOAqoM @ 00:42:09]. Her rule: do not buy '
+                                        "other people's hopes and dreams; buy realities and profits [Codie "
+                                        'Sanchez — 3mtS8rOAqoM @ 00:15:05]. My screen: 15% margin minimum, '
+                                        'trailing results only, no projections counted toward price.'},
+                            {'name': 'seller_motive_honesty_check',
+                             'type': 'textarea',
+                             'prompt': 'Write the questions you will ask about why the owner is selling, '
+                                       'how many times you will ask them across meetings, which answers '
+                                       'count as gut red flags about honesty, and the point at which you '
+                                       'will walk away.',
+                             'example': 'Ask the seller why they are selling, again and again, and walk on '
+                                        'any gut red flag about honesty [Before You Buy or Sell a Business '
+                                        'Podcast — pqmsev-3MPY @ 00:18:48]. My rule: I ask at every '
+                                        'meeting, log each answer word for word, and walk if the story '
+                                        'shifts from retirement to vague industry fatigue without '
+                                        'explanation or supporting records.'}],
+                 'completion_gate': 'Done when the search model and runway months are fixed, weekly funnel '
+                                    'counts are scheduled, broker cadence and sending domains are live, '
+                                    'marketplace verification is complete, and written margin, '
+                                    'data-accuracy, and seller-honesty kill criteria are signed and '
+                                    'dated.'},
+                {'worksheet_id': 'ws-03',
+                 'number': 3,
+                 'title': 'SBA 7(a) Financing and the Seller Note Bridge',
+                 'purpose': 'Build a capital stack that survives the 1.25x historical coverage test, the '
+                            'QoE trigger, injection seasoning, and valuation review. Then structure the '
+                            'seller note, earnout alternatives, and personal guarantee so financing does '
+                            'not collapse after the LOI.',
+                 'chapter_ref': 'Q5-Q6',
+                 'instructions': ['Run every coverage calculation on supported historical earnings after '
+                                  'your own salary, never on seller projections or unverified add-backs.',
+                                  'Compute the business purchase price net of appraised owner-occupied '
+                                  'real estate before deciding whether a QoE is mandatory.',
+                                  'Show injection sources line by line with statement dates, and attach '
+                                  'the repayment source for any borrowed dollar.',
+                                  'Ask the lender to confirm the combined SBA and seller note structure '
+                                  'before locking seller-financing terms in writing.',
+                                  'When a banker declines a structure, ask whether it is an SBA rule or '
+                                  "that bank's overlay, then record the answer."],
+                 'fields': [{'name': 'historical_dscr_test',
+                             'type': 'textarea',
+                             'prompt': 'Compute debt service coverage using only supported historical '
+                                       'earnings after deducting your own salary, show the earnings you '
+                                       'claimed versus what survives scrutiny, and record whether the '
+                                       'result clears the lender floor with comfortable room to spare.',
+                             'example': 'Lenders now test 1.25x on historical financials, up from 1.15x. A '
+                                        'seller claiming $700K that shrinks to $550K against $500K of debt '
+                                        'service yields 1.10x and fails [Lion Business Advisors — '
+                                        'orHTcAJcuAM @ 00:15:11]. My case: $410K supported earnings after '
+                                        'my salary over $300K debt service is 1.37x, clearing the floor so '
+                                        'more lenders compete.'},
+                            {'name': 'qoe_trigger_check',
+                             'type': 'textarea',
+                             'prompt': 'Calculate the business purchase price that determines whether a '
+                                       'quality of earnings report is mandatory, subtracting any appraised '
+                                       'owner-occupied real estate, then record who will commission the '
+                                       'report, the quoted fee range, and how it feeds lender '
+                                       'underwriting.',
+                             'example': 'A $4.2M price minus $1M of real estate equals $3.2M, so a QoE is '
+                                        'required even on a $2.7M loan [Lion Business Advisors — '
+                                        'orHTcAJcuAM @ 00:07:05]. Quotes run $5,000 to $30,000 [Pioneer '
+                                        'Capital Advisory LLC — WF2-6ODNQms @ 00:32:42]. My deal: $3.4M '
+                                        'price minus $500K appraised building is $2.9M, under the trigger, '
+                                        'but I budget a QoE because lenders read cash flow first.'},
+                            {'name': 'injection_build',
+                             'type': 'textarea',
+                             'prompt': 'Lay out the full project cost, including working capital and fees, '
+                                       'then show the required equity injection, how much a full-standby '
+                                       'seller note can cover, and the exact buyer cash you must '
+                                       'personally bring to closing.',
+                             'example': 'Exit Ready Valuation applies the 10% injection to a $1.15M '
+                                        'project, then splits it into $57,500 of buyer cash and a $57,500 '
+                                        'seller full-standby note [Exit Ready Valuation — Tt3Ae9PDn8A @ '
+                                        '00:00:54]. The 90/5/5 stack is the most common structure [Keira '
+                                        'Hamilton — 7RAyVC1b9Pg @ 00:01:27]. My $2.2M project needs $220K: '
+                                        '$110K cash, $110K standby note for the life of the loan.'},
+                            {'name': 'injection_seasoning',
+                             'type': 'textarea',
+                             'prompt': 'Document where every dollar of your injection comes from, how long '
+                                       'it has sat in your accounts, and, if any of it is borrowed through '
+                                       'a HELOC or loan, the outside repayment source the lender will '
+                                       'accept.',
+                             'example': 'Season the injection for two full bank statement cycles, and pair '
+                                        'any HELOC or borrowed money with an outside repayment source such '
+                                        "as a spouse's W-2 income [SBA Ray — 9Sl18GknuZE @ 00:04:31]. Open "
+                                        'the HELOC before closing, while you still look strong on paper '
+                                        '[Master Afle — LzJITHl_i2k @ 01:05:02]. Mine: $80K savings '
+                                        "seasoned, $30K HELOC repaid from spouse's salary."},
+                            {'name': 'valuation_vs_price',
+                             'type': 'text',
+                             'prompt': 'Compare the asking price with researched market multiples before '
+                                       'signing the LOI, and confirm that the SBA loan plus any amortizing '
+                                       'seller note will not exceed the third-party valuation, so you '
+                                       'avoid a forced retrade later.',
+                             'example': 'Matthias Smith says to research market multiples before the LOI, '
+                                        'because the SBA loan plus any amortizing seller note cannot '
+                                        'exceed the valuation, and a low appraisal forces a retrade '
+                                        '[Matthias Smith — 3tkWRQX9WjI @ 00:14:43]. Banks are cash flow '
+                                        'lenders, and weak cash flow usually means overpricing [Tresle Inc '
+                                        '— NmgNpE_W_po @ 00:34:41]. My check: ask 4.2x, comps 3.8x, offer '
+                                        '3.8x.'},
+                            {'name': 'license_transfer_plan',
+                             'type': 'textarea',
+                             'prompt': 'Identify every license, certification, or industry credential tied '
+                                       'personally to the seller, name the employee or person who will '
+                                       'qualify for it, and describe how you will bind that person to the '
+                                       'business long after closing.',
+                             'example': 'If a license such as HVAC is tied to the seller, have an employee '
+                                        'qualify for it and bind that employee to the business with equity '
+                                        'or an employment agreement [SBA Ray — 9Sl18GknuZE @ 00:02:48]. My '
+                                        'plan: the senior technician sits for the license before closing '
+                                        'and signs a three-year employment agreement with a small equity '
+                                        'grant.'},
+                            {'name': 'seller_note_structure',
+                             'type': 'textarea',
+                             'prompt': 'Specify the seller note terms you will propose, including amount, '
+                                       'standby status, whether it counts toward equity, interest rate, '
+                                       'and how you will frame the repayment horizon so the seller accepts '
+                                       'a long wait without feeling misled.',
+                             'example': 'A seller note counts toward equity only if it covers no more than '
+                                        'half the required injection and sits on full standby for the life '
+                                        'of the loan [JackQuisitions — I6M8wAaqm5s @ 00:22:18]. Never call '
+                                        'it a 10-year note; say for the life of the loan, then pitch early '
+                                        'payoff or refinancing after three years of returns '
+                                        '[JackQuisitions — I6M8wAaqm5s @ 00:30:56].'},
+                            {'name': 'revenue_decline_stress',
+                             'type': 'textarea',
+                             'prompt': 'Stress-test your combined debt load, SBA payments plus seller note '
+                                       'payments, against a revenue decline, and record whether you can '
+                                       'still pay both the bank and the seller while keeping coverage at '
+                                       'or above the lender floor.',
+                             'example': 'Stress-test the seller note against a 10% revenue decline and '
+                                        'confirm the buyer can still pay both the bank and the seller '
+                                        '[David C Barnett Small Business and Deal Making SMB — PO1M-_wq-m4 '
+                                        '@ 00:07:24]. My model: a 10% revenue drop cuts earnings from '
+                                        '$410K to $345K; against $300K bank debt service plus a $20K '
+                                        'seller payment, coverage is 1.08x, so I resize the note.'},
+                            {'name': 'earnout_vs_consulting',
+                             'type': 'textarea',
+                             'prompt': 'Decide whether an earnout, a seller note, or a consulting '
+                                       'agreement will bridge any valuation gap, cap the contingent payout '
+                                       'against profit left after debt service, and write the calculation, '
+                                       'review, and dispute process you will document.',
+                             'example': 'Roland Frasier, who prefers earnouts to notes, caps earnout '
+                                        'payouts near half of profit left after debt service [Roland '
+                                        'Frasier — onN8dTJIXAM @ 00:07:30]. Escamilla Law Office requires '
+                                        'a set delivery date, records, seller review window and dispute '
+                                        'path [Escamilla Law Office — ZGklOUqHKYg @ 00:10:27]. On SBA '
+                                        'deals, I substitute a consulting agreement for a formal earnout, '
+                                        'capped at $40K yearly.'},
+                            {'name': 'personal_guarantee_terms',
+                             'type': 'textarea',
+                             'prompt': 'Record the personal guarantee terms you will negotiate, including '
+                                       'scope, sunset period, and performance triggers, and list the '
+                                       'pre-closing protections such as key-man insurance that you will '
+                                       'put in place before signing any guarantee documents personally.',
+                             'example': 'Never sign the personal guarantee blind: push for partial scope, '
+                                        'sunset clauses that burn off after 3 to 5 years, or performance '
+                                        'triggers [Jon Stoddard — 104miMfvJRg @ 00:03:54]. When a banker '
+                                        "pushes back, ask whether it is an SBA rule or that bank's overlay "
+                                        '[JackQuisitions — I6M8wAaqm5s @ 00:45:19]. I bind key-man '
+                                        'insurance before closing and request a five-year sunset.'}],
+                 'completion_gate': 'Done when historical DSCR clears 1.25x with margin after a 10% '
+                                    'revenue stress, the QoE decision and budget are set, injection '
+                                    'sources are seasoned and documented, the lender has confirmed the '
+                                    'seller note structure, and personal guarantee limits are negotiated '
+                                    'in writing.'},
+                {'worksheet_id': 'ws-04',
+                 'number': 4,
+                 'title': 'Letter of Intent Drafting and Quality of Earnings Verification',
+                 'purpose': 'Lock the business terms of the deal in a short, mostly non-binding letter '
+                            'before any diligence money is spent. Then prove which earnings are real, '
+                            'recurring, and transferable through proof of cash, a normalized EBITDA '
+                            'bridge, and a fixed-fee quality of earnings engagement that tells you whether '
+                            'to close, reprice, or walk.',
+                 'chapter_ref': 'Q7-Q8',
+                 'instructions': ['Draft the LOI before ordering any paid report. Price, structure, '
+                                  'payment form, working capital, timing, and closing conditions all '
+                                  'belong in the letter, and the purchase agreement of 40 to 70 pages '
+                                  'comes later.',
+                                  'Mark exclusivity and confidentiality as the binding terms. Negotiate '
+                                  'the exclusivity window so it runs longer than your planned closing '
+                                  'date, and write any extension triggers in black and white.',
+                                  'Refuse deposits and breakage fees on small deals. If a deposit is '
+                                  'offered, specify exactly when it goes hard and deliver proof of funds '
+                                  'before exclusivity begins.',
+                                  'Run proof of cash before reading any adjusted figures. Tie bank '
+                                  'statements to the P&L and the P&L to tax returns across 36 months, and '
+                                  'treat cash that does not match as a reason to walk.',
+                                  'Strike every add-back that lacks an invoice, payroll record, or genuine '
+                                  'one-time event. Put every working capital number in a bolded written '
+                                  'email to the seller well before closing week.'],
+                 'fields': [{'name': 'loi_necessity_decision',
+                             'type': 'textarea',
+                             'prompt': 'Decide whether this deal gets a written letter of intent before '
+                                       'any diligence spend begins. Record what you would lose without '
+                                       'one, including weeks of verbal negotiation and paid third-party '
+                                       'reports, and name the afternoon on your calendar reserved to draft '
+                                       'it.',
+                             'example': 'No LOI means no exclusivity. One buyer negotiated price verbally '
+                                        'for three weeks, paid $8,000 for an environmental report, then '
+                                        'lost the deal to a higher offer [Letters of Intent — VuuLz-8NiYg '
+                                        '@ 00:00:00]. An LOI would have cost them an afternoon [Letters of '
+                                        'Intent — VuuLz-8NiYg @ 00:00:14]. Draft date: Thursday afternoon, '
+                                        'before ordering any reports.'},
+                            {'name': 'binding_terms_map',
+                             'type': 'textarea',
+                             'prompt': 'List every LOI term and mark it binding or non-binding. Confirm '
+                                       'exclusivity and confidentiality carry the binding weight, state '
+                                       'whether any deposit is binding, and note what the seller can still '
+                                       'do while the buyer remains committed but not bound.',
+                             'example': 'Binding: exclusivity and confidentiality only [Oberman Law Firm — '
+                                        '2RBitaEo6mY @ 00:05:10]. Non-binding: price, structure, payment '
+                                        'form, working capital, timing and closing conditions. Treat '
+                                        'exclusivity, confidentiality and deposits as binding obligations '
+                                        '[Dean Street Law — ScOjsEfBwZQ @ 00:22:50]. After signing, the '
+                                        'buyer is 100% committed but not 100% bound [Transact Capital — '
+                                        'Axofinu0FSU @ 00:01:24].'},
+                            {'name': 'exclusivity_window',
+                             'type': 'textarea',
+                             'prompt': 'Set the exclusivity length in days and compare it to your planned '
+                                       'closing date. Write the extension triggers in black and white, '
+                                       'explain why the seller views exclusivity as a concession, and note '
+                                       'any board right to accept an unsolicited higher offer.',
+                             'example': 'Requesting 90 days against a 75-day planned close; exclusivity '
+                                        'commonly runs 60 or 90 days [Brett Cenkus — aNioqOmfOe4 @ '
+                                        '00:02:47] and should exceed the planned close [The University of '
+                                        'Chicago Booth School of Business — kKwXdeUVNOw @ 00:45:15]. '
+                                        "Extension trigger: 15 days if the lender's QoE remains open. "
+                                        'Passive investors may demand a higher-offer carve-out '
+                                        '[KreischerMiller — Q6exObbgCgk @ 00:03:14].'},
+                            {'name': 'deposit_and_proof_of_funds',
+                             'type': 'textarea',
+                             'prompt': 'State whether you will offer a deposit, its amount, and the exact '
+                                       'date it goes hard. Record the proof of funds you will provide '
+                                       'before exclusivity begins, and explain why small deals often '
+                                       'refuse deposits and breakage fees altogether.',
+                             'example': 'No deposit on this $2.4M deal; Joel Ankney pays no deposit under '
+                                        '$5-6M, calls a deposit request a red flag, and rejects breakage '
+                                        'fees as mid-market creep [Joel Ankney — cl31TiHq92Y @ 00:35:06]. '
+                                        'Proof of funds: bank statements delivered with the LOI. A $100K '
+                                        'deposit refundable on diligence can tie a seller up with a '
+                                        'non-buyer [Letters of Intent — VuuLz-8NiYg @ 00:18:49].'},
+                            {'name': 'working_capital_in_loi',
+                             'type': 'textarea',
+                             'prompt': 'Decide whether the LOI states a working capital target now or '
+                                       'defers it to the QoE. If you state one, write the dollar figure, '
+                                       'show how a shortfall or excess moves price, and lock the lookback '
+                                       'period used to measure it.',
+                             'example': 'Deferring the dollar target to the QoE but locking a trailing '
+                                        'twelve-month lookback in the LOI [Transact Capital — YAk3dxgnsBU '
+                                        '@ 00:12:57]. Reason: on a $5M target, delivering $6M pays the '
+                                        'seller $1M more and delivering $4M cuts $1M [PCE Investment '
+                                        'Bankers — n_gxsr8QgBM @ 00:04:31]. The LOI is a ceiling that only '
+                                        'gets worse [Kirk Michie — QqemANnN2ZM @ 00:03:07].'},
+                            {'name': 'payment_structure_and_holdback',
+                             'type': 'textarea',
+                             'prompt': 'Lay out the payment structure by percentage: bank debt, seller '
+                                       'note, buyer cash, and any holdback or escrow. Specify the seller '
+                                       'note rate, confirm it survives SBA subordination, and name what '
+                                       'portion of price stays unpaid at closing as protection.',
+                             'example': '80/10/10 structure with the seller note at 8%, inside the 6 to '
+                                        '10% street range. Confirm the note survives SBA subordination and '
+                                        'payment limits before it enters the LOI [Escamilla Law Office — '
+                                        'juS-FdGX2o0 @ 00:11:56]. Never pay the full price at closing; 10% '
+                                        'rides on a forgivable note [Dennis Unrein / SMB PE LLC — '
+                                        'PF2SOneLrJ0 @ 00:44:55].'},
+                            {'name': 'buyer_entity_and_template',
+                             'type': 'text',
+                             'prompt': 'Name the buyer entity that will sign the NDAs and LOI, and '
+                                       'describe how it assigns to the NewCo at close. Then list what you '
+                                       'are cutting from your LOI template, including generic praise and '
+                                       'definitions that belong in an exhibit.',
+                             'example': 'Harbor Acquisition LLC, formed for a couple hundred dollars, '
+                                        'signs and assigns to NewCo at close, with Section 14 '
+                                        'cross-references checked [SMB Law Group LLP — OIcTvUbSEgM @ '
+                                        '00:17:14]. Generic praise stripped; one broker received 4 '
+                                        'identical LOIs [SMB Law Group LLP — OIcTvUbSEgM @ 00:13:41]. '
+                                        'Definitions moved to an exhibit, cutting comments about 80% '
+                                        '[Dennis Unrein / SMB PE LLC — PF2SOneLrJ0 @ 00:38:52].'},
+                            {'name': 'proof_of_cash_test',
+                             'type': 'textarea',
+                             'prompt': 'Run proof of cash before anything else. Tie monthly bank deposits '
+                                       'and disbursements to the P&L, then tie the P&L to filed tax '
+                                       'returns. Record each variance, its explanation, and whether the '
+                                       'reconciliation covers 36 full months of bank statements.',
+                             'example': 'Deposits ran $41K below reported revenue in year two. Cash that '
+                                        'does not match is a run signal [Acquira — g_fy5eeJpHE @ '
+                                        '00:06:16]. One seller booked $125,000 of revenue and receivables '
+                                        'off a PO before invoicing [Acquira — g_fy5eeJpHE @ 00:33:13]. Two '
+                                        'sets of books means kill or reprice, and 36 months must reconcile '
+                                        '[Technically News — nOnsMlkLh10 @ 01:08:24].'},
+                            {'name': 'normalized_ebitda_bridge',
+                             'type': 'textarea',
+                             'prompt': 'Build a three-column bridge from reported EBITDA through each '
+                                       'adjustment to normalized EBITDA. For every add-back, attach the '
+                                       'invoice, payroll record, or one-time event behind it, and '
+                                       'reclassify any cost that recurred three years running before '
+                                       'applying the multiple.',
+                             'example': 'Summit: $18.5M reported became $16.2M normalized, a $2.3M gap '
+                                        'worth $23M at 10x [John Colley | The Investment Banking '
+                                        'Practitioner — zQE4R-z6Yww @ 00:03:17]. Owner salary of $500,000 '
+                                        'against a $350,000 replacement CEO is a $150,000 add-back [John '
+                                        'Colley | The Investment Banking Practitioner — zQE4R-z6Yww @ '
+                                        '00:03:51]. Unsupported add-backs get tossed [QoE and Financial '
+                                        'Modeling Practice — yP7oBq_gKbw @ 00:00:23].'},
+                            {'name': 'qoe_engagement_scope',
+                             'type': 'textarea',
+                             'prompt': 'Choose the QoE provider, fee structure, and scope. Record the '
+                                       'quoted price against the tier for this deal size, confirm the '
+                                       'engagement is fixed-fee, and write down which outcome would '
+                                       'trigger renegotiation versus walking away from the deal.',
+                             'example': 'Target revenue is under $2.5M, so budget $12,000-$15,000, '
+                                        'fixed-fee so clarifying calls never generate surprise bills '
+                                        '[Chris Barrett, CPA — 36OTOiIXSrk @ 00:02:52]. Across 50-plus '
+                                        'deals, 45-50% came back clean, 20-25% killed the deal, and about '
+                                        '20% needed repricing, earnouts or seller notes [Acquira — '
+                                        'g_fy5eeJpHE @ 00:27:49]. Walk trigger: normalized EBITDA more '
+                                        'than 15% below the LOI basis.'}],
+                 'completion_gate': 'Worksheet 4 is complete when a signed LOI names price, structure, '
+                                    'payment form, working capital treatment, exclusivity length, and '
+                                    'holdback; proof of cash reconciles 36 months of bank statements to '
+                                    'the P&L and tax returns; every add-back in the normalized EBITDA '
+                                    'bridge carries supporting documentation or has been struck; and a '
+                                    'fixed-fee QoE engagement is signed with a written walk trigger.'},
+                {'worksheet_id': 'ws-05',
+                 'number': 5,
+                 'title': 'Add-Backs, Free Cash Flow, and the Working Capital Peg',
+                 'purpose': 'Separate the adjusted EBITDA that sets the price from the cash the buyer '
+                            'actually receives. Test each add-back, convert EBITDA to free cash flow, '
+                            'define and set the working capital peg from monthly history, map day-one '
+                            'cash, and prepare the trades and walk-away number that govern LOI '
+                            'negotiation.',
+                 'chapter_ref': 'Q9-Q10',
+                 'instructions': ['Build your own adjusted EBITDA schedule from scratch and treat the '
+                                  "seller's schedule only as a starting point, never a conclusion. The "
+                                  'burden of proof on every adjustment sits with the seller.',
+                                  'Apply the three-question test to every add-back and flag total '
+                                  'add-backs above 15 to 20 percent of reported EBITDA for a full forensic '
+                                  'review.',
+                                  'Bridge EBITDA to free cash flow and investigate any conversion rate '
+                                  'below 60 percent before agreeing to a multiple, splitting maintenance '
+                                  'from growth capital spending.',
+                                  'Set the peg from 24 to 36 months of monthly data, never a single month, '
+                                  'and strip seasonal peaks, one-time receivables, and accelerated '
+                                  'collections before agreeing to a number.',
+                                  'Trade every concession for something specific, refuse to reprice risks '
+                                  'disclosed up front, and write a walk-away number before negotiations '
+                                  'start.'],
+                 'fields': [{'name': 'three_question_addback_test',
+                             'type': 'textarea',
+                             'prompt': 'Run every proposed add-back through three questions: is it truly '
+                                       'non-recurring, will a new owner actually save it, and is it '
+                                       'reasonable in size. Record the pass or fail for each line and the '
+                                       'document that proves it.',
+                             'example': 'Legal fees of $38K: passed only after the invoice showed a single '
+                                        'lawsuit settlement, per the three-question test [The Finance Lab '
+                                        "— hIU9zSg4cQg @ 00:00:20]. Owner's truck lease: passed, since a "
+                                        "new owner will not carry it. Annual trade-show 'one-time' cost: "
+                                        'failed, because something that happens every year is probably '
+                                        'normal operations [CandiMentor — QVDTq7Qd6-A @ 00:06:06].'},
+                            {'name': 'owner_comp_normalization',
+                             'type': 'textarea',
+                             'prompt': "Normalize owner compensation by netting the owner's pay against "
+                                       "the market cost of a replacement manager. Record the owner's total "
+                                       'compensation, the replacement salary, the resulting net add-back, '
+                                       'and whether you plan to draw a lower salary yourself after '
+                                       'closing.',
+                             'example': 'Owner draws $210K; a replacement general manager costs $95K, so '
+                                        'the add-back is $115K, not $210K. The same logic turns a $500,000 '
+                                        'owner salary into a $150,000 add-back [John Colley | The '
+                                        'Investment Banking Practitioner — zQE4R-z6Yww @ 00:03:51]. Buyer '
+                                        'salary held low in year one, with no CEO salary on day one '
+                                        '[Walker Deibel — aoPPGxWI8dY @ 00:01:31].'},
+                            {'name': 'addback_threshold_check',
+                             'type': 'text',
+                             'prompt': 'Divide total add-backs by reported EBITDA and record the '
+                                       'percentage. If the share crosses the structural warning threshold, '
+                                       'describe the forensic review you will run and how much enterprise '
+                                       'value the disputed add-backs carry at your entry multiple.',
+                             'example': 'Add-backs total $290K on $1.2M reported EBITDA, about 24%, above '
+                                        'the 15% to 20% warning line [The Finance Lab — hIU9zSg4cQg @ '
+                                        '00:00:59]. At 6x, every $250,000 of accepted add-backs is roughly '
+                                        '$1.5 million of enterprise value [growthink — UfQ-Ho_j61s @ '
+                                        '00:03:52]. Forensic review: invoices for each line, and a fresh '
+                                        'schedule built from scratch [The Finance Lab — hIU9zSg4cQg @ '
+                                        '00:01:19].'},
+                            {'name': 'ebitda_to_fcf_bridge',
+                             'type': 'textarea',
+                             'prompt': 'Bridge normalized EBITDA down to free cash flow by subtracting '
+                                       'maintenance capital spending, working capital build, and other '
+                                       'cash uses. Divide free cash flow by EBITDA, record the conversion '
+                                       'rate, and explain exactly where the cash goes if conversion falls '
+                                       'below sixty percent.',
+                             'example': 'Normalized EBITDA $1.1M converts to $520K of free cash flow, 47%, '
+                                        'under the 60% to 80% industrial range; Summit converted $20.7 '
+                                        'million into $8.1 million, 39% [John Colley | The Investment '
+                                        'Banking Practitioner — ha9dRzcYak4 @ 00:03:17]. Below 60%, locate '
+                                        'the leak and whether it is fixable [John Colley | The Investment '
+                                        'Banking Practitioner — ha9dRzcYak4 @ 00:08:30]. Leak here: '
+                                        'inventory build.'},
+                            {'name': 'capex_maintenance_vs_growth',
+                             'type': 'textarea',
+                             'prompt': 'Separate maintenance capital spending from growth spending using '
+                                       'the twelve-month test: if all spending stopped, what breaks within '
+                                       'a year. Request a three-year breakdown by asset category and flag '
+                                       'any asset-heavy or capital-intensive profile that strains debt '
+                                       'service.',
+                             'example': 'Three-year spend by category: trucks $140K, shop equipment $60K, '
+                                        'software $25K. Trucks fail the test because routes stop within 12 '
+                                        'months without them, so they count as maintenance [John Colley | '
+                                        'The Investment Banking Practitioner — ha9dRzcYak4 @ 00:03:57]. '
+                                        'Booth practitioners stay away from anything too asset or capital '
+                                        'intensive [The University of Chicago Booth School of Business — '
+                                        '60ZOJolZwOo @ 00:24:42].'},
+                            {'name': 'nwc_definition',
+                             'type': 'textarea',
+                             'prompt': 'Define exactly which accounts sit inside net working capital for '
+                                       'the peg. List included receivables, inventory, and payables, then '
+                                       'list items you will argue are debt instead, such as deferred '
+                                       'revenue or accrued liabilities, and the reason for each '
+                                       'classification.',
+                             'example': 'Included: trade receivables, inventory, trade payables. Excluded '
+                                        'as debt-like: customer deposits and a past-due tax accrual, the '
+                                        'kind of item more often than not thought of as debt [MCM Capital '
+                                        '— almKwAlo5T4 @ 00:02:08]. Seller will resist; one party argues '
+                                        'net debt to cut price, usually the buyer [Break Into Finance — '
+                                        'S31vo0Umk5M @ 00:34:10]. Cash excluded entirely under cash-free, '
+                                        'debt-free pricing.'},
+                            {'name': 'peg_lookback_and_seasonality',
+                             'type': 'textarea',
+                             'prompt': 'Chart monthly net working capital across twenty-four to thirty-six '
+                                       'months and set the peg from that history. Reject any single-month '
+                                       'figure, strip seasonal peaks, one-time receivables, and '
+                                       'accelerated collections, and record the resulting peg as a '
+                                       'percentage of trailing revenue.',
+                             'example': 'Thirty months charted; NWC typically lands at 5-6% of TTM '
+                                        'revenue, up to 15-20% [FinanceKid — 8AOvKeCdAH0 @ 00:28:44]. Here '
+                                        "it runs 7%. Summit's NWC ranged $7.8M to $11.0M, and stripping "
+                                        'seasonal months, a $400K insurance receivable and $600K of '
+                                        'accelerated collections explained a $900K peg gap [John Colley | '
+                                        'The Investment Banking Practitioner — x_72u8PgHpc @ 00:06:34].'},
+                            {'name': 'true_up_mechanics_and_escrow',
+                             'type': 'textarea',
+                             'prompt': 'Write the post-closing true-up process: who delivers the closing '
+                                       'statement, how many days after close, how the seller reviews it, '
+                                       'and how disputes resolve. Size the escrow or holdback so a working '
+                                       'capital shortfall is absorbed without touching the seller note.',
+                             'example': 'Buyer delivers the closing statement within 90 days, inside the '
+                                        '60 to 120 day norm [A Simple Model — C-seCQXqtM4 @ 00:01:47]. A '
+                                        '$200,000 holdback absorbs shortfalls, $100,000 pulled from it '
+                                        '[FinanceKid — 8AOvKeCdAH0 @ 00:08:56]. No set-off against the '
+                                        'seller note for working capital, since set-off does not solve '
+                                        "today's cash shortage [SMB Law Group LLP — iNOj__jXGpE @ "
+                                        '00:11:52].'},
+                            {'name': 'day_one_cash_map',
+                             'type': 'textarea',
+                             'prompt': 'Map every cash obligation due in the first weeks after closing '
+                                       'against expected collection dates. Identify the gap, state whether '
+                                       'the seller leaves enough cash or a revolver or overdraft covers '
+                                       'it, and confirm the agreed amount in a bolded written email.',
+                             'example': 'Payroll and rent hit $118K in week one while collections arrive '
+                                        'in week four, so the seller leaves cash or a revolver goes in '
+                                        'place immediately [Break Into Finance — S31vo0Umk5M @ 00:57:05]. '
+                                        'The number is bolded in writing; one seller agreed to $750,000 in '
+                                        'a presentation, then insisted on $150,000 two days before closing '
+                                        '[Acquira — g_fy5eeJpHE @ 00:38:03].'},
+                            {'name': 'loi_trades_and_walkaway',
+                             'type': 'textarea',
+                             'prompt': 'List each concession the seller requests and the specific item you '
+                                       'will demand in exchange. Write your pre-set walk-away price, and '
+                                       'describe how you will handle late repricing, including the '
+                                       'specific new finding required to justify any change.',
+                             'example': 'We want 90-day exclusivity; the seller will ask for a faster '
+                                        'diligence list or an escrow deposit in exchange [MySaasForSale — '
+                                        'OOlka50xFck @ 00:03:06]. Walk-away: $3.1M. Any retrade must cite '
+                                        'a specific new finding, never a risk disclosed up front '
+                                        '[MySaasForSale — OOlka50xFck @ 00:05:36]. Price is the only lever '
+                                        'we control [Technically News — nOnsMlkLh10 @ 00:30:45].'}],
+                 'completion_gate': 'Worksheet 5 is complete when every add-back has a documented pass or '
+                                    'fail result, total add-backs are measured against reported EBITDA, '
+                                    'the EBITDA-to-free-cash-flow bridge shows a conversion rate with an '
+                                    'explanation, the peg is defined account by account from monthly '
+                                    'history, true-up and holdback terms are written, day-one cash is '
+                                    'mapped, and a walk-away price is recorded.'},
+                {'worksheet_id': 'ws-06',
+                 'number': 6,
+                 'title': 'Deal Structure, Buyer Protections, and the First 100 Days',
+                 'purpose': 'Choose the asset or stock structure, write the tax treatment and allocation '
+                            'into the deal, and protect the buyer with personal indemnities and a matched '
+                            'seller note. Then stabilize cash, people, customers, and controls through the '
+                            'first 100 days before accelerating anything, so the business survives the '
+                            'ownership change intact.',
+                 'chapter_ref': 'Q11-Q12',
+                 'instructions': ['Default to an asset purchase unless a specific reason justifies stock, '
+                                  'and write the tax path into the LOI instead of leaving it silent.',
+                                  'Negotiate the Form 8594 allocation and the down payment together, and '
+                                  'confirm both parties will file matching figures with the IRS.',
+                                  'Have every selling shareholder sign the indemnity personally, size the '
+                                  'seller note to match the indemnity cap, and clear every consent and '
+                                  'license before closing.',
+                                  'Put dual bank signatures in place by Day 15 and a 13-week cash forecast '
+                                  'live by week two, with the approver and the sender of payments always '
+                                  'different people.',
+                                  'Stabilize before you accelerate: freeze big, hard-to-reverse changes, '
+                                  'tell employees before customers, keep marketing active, and stress-test '
+                                  'the plan for a 5 to 10 percent revenue dip.'],
+                 'fields': [{'name': 'asset_vs_stock_choice',
+                             'type': 'textarea',
+                             'prompt': 'Choose asset purchase or stock purchase and justify it. Record the '
+                                       "seller's preference and why, the liabilities you avoid or inherit "
+                                       'under each structure, the extra diligence a stock deal demands, '
+                                       'and what the seller concedes to accept your structure.',
+                             'example': 'Asset purchase. The seller wants stock so they are done at close, '
+                                        'while buyers want assets to choose what to take and avoid unknown '
+                                        'liabilities [Chris Barsness - Securities Law Media — -DthgkqGsGA '
+                                        '@ 00:01:57]. Almost all main street deals close as asset sales '
+                                        'anyway [Walker Deibel — NM-ZwBNBHQE @ 00:02:06]. Concession '
+                                        "offered: slightly higher price to offset the seller's tax cost."},
+                            {'name': 'tax_structure_in_loi',
+                             'type': 'text',
+                             'prompt': 'Write the tax structure into the LOI rather than leaving it '
+                                       'silent. Name the path, whether asset purchase, 338(h)(10), 336(e), '
+                                       'or F reorganization, note the 80% stock threshold where relevant, '
+                                       'and record whether the seller is a standalone C Corp.',
+                             'example': 'LOI names the F reorg path and addresses the 80% stock threshold '
+                                        'instead of leaving tax silent [Dennis Unrein / SMB PE LLC — '
+                                        'hDmKsEVGoBI @ 00:01:23]. Goal: a stepped-up basis, since $1M of '
+                                        'intangibles amortizes over 15 years, while $1M bought as stock '
+                                        'stays trapped in basis until exit [Tax Hack Accounting Group — '
+                                        'Wd1__Z4Nz6k @ 00:02:32].'},
+                            {'name': 'form_8594_allocation',
+                             'type': 'textarea',
+                             'prompt': 'Draft the purchase price allocation by asset class for Form 8594 '
+                                       'and confirm both sides will file matching figures. Negotiate the '
+                                       'allocation together with the down payment, recording how much '
+                                       'goodwill the seller note spreads and how inventory is treated.',
+                             'example': 'Allocation: inventory $180K, equipment $220K, goodwill $1.6M. '
+                                        'Inventory is ineligible for installment reporting, so the seller '
+                                        'wants it covered by cash at close, and the seller note only '
+                                        'spreads goodwill [Hans Goldstein: Tax & Exit Planning — '
+                                        'I8L23gqP5to @ 00:02:57]. Both returns must match or the IRS will '
+                                        'probably catch it [Teach Me! Personal Finance — G0f0r8tYMnk @ '
+                                        '00:05:35].'},
+                            {'name': 'indemnity_and_seller_note',
+                             'type': 'textarea',
+                             'prompt': 'Set the indemnity cap, deductible, and survival period, then size '
+                                       'the seller note to match the cap. Name every selling shareholder '
+                                       'who signs the indemnity personally, and describe how set-off '
+                                       'against the note works for breaches of representations and '
+                                       'warranties.',
+                             'example': 'Cap 12%, deductible 0.75%, survival 18 months, within the 10-15% '
+                                        'cap, 0.5-1% deductible and 12-24 month norms [SMB Law Group LLP — '
+                                        'iNOj__jXGpE @ 00:26:54]. Seller note sized at 12% to match. Both '
+                                        'owners sign personally, or the company empties its cash after '
+                                        'closing and the claim is worthless [SMB Law Group LLP — '
+                                        'iNOj__jXGpE @ 00:19:51]. Set-off applies to rep breaches.'},
+                            {'name': 'consents_and_licenses',
+                             'type': 'textarea',
+                             'prompt': 'List every change-of-control clause, lease, landlord consent, and '
+                                       'non-transferable license that must clear before closing. For each, '
+                                       'record the counterparty, the deadline, and the backup plan if a '
+                                       'license is tied to the seller personally rather than the business.',
+                             'example': 'Every change-of-control clause and the landlord consent on the '
+                                        'shop lease must clear before closing [Chris Barsness - Securities '
+                                        'Law Media — -DthgkqGsGA @ 00:06:31]. The HVAC license sits with '
+                                        'the seller, so a senior technician qualifies for it and is bound '
+                                        'by an employment agreement [SBA Ray — 9Sl18GknuZE @ 00:02:48]. '
+                                        'Deadline for both: ten days before closing.'},
+                            {'name': 'cash_controls_by_day_15',
+                             'type': 'textarea',
+                             'prompt': 'Set the first financial controls after closing: dual signatures on '
+                                       'every bank account, separation between whoever approves payments '
+                                       'and whoever sends them, and a 13-week cash forecast. Record target '
+                                       'dates, owners, and the variance threshold that triggers a written '
+                                       'explanation.',
+                             'example': 'Dual signatures on every account by Day 15 and the 13-week '
+                                        'forecast live by week two [Lighthouse Capital — OwAOc9xgv9U @ '
+                                        '00:01:07]. Red flag: a gap above 10% for two consecutive weeks '
+                                        '[Lighthouse Capital — OwAOc9xgv9U @ 00:00:51]. The office manager '
+                                        'approves and the new owner sends, never the same person '
+                                        '[Lighthouse Capital — OwAOc9xgv9U @ 00:01:38].'},
+                            {'name': 'first_100_days_stabilization',
+                             'type': 'textarea',
+                             'prompt': 'Write the stabilization plan for days 1 through 100. List which '
+                                       'personnel, pricing, and process changes are frozen, for how long, '
+                                       'which questions you will ask the local controller first, and what '
+                                       'evidence by Day 100 proves the close is under control.',
+                             'example': 'Personnel changes frozen six months, changes kept incremental '
+                                        '[Technically News — nOnsMlkLh10 @ 00:58:06]. Before Friday, '
+                                        'request the last bank reconciliation for every account, the '
+                                        'oldest suspense item, and what the controller would fix first '
+                                        '[Neo Expertise — 4kQ8R30J5q4 @ 00:02:14]. Day 100 proof: '
+                                        'month-end close of 10 business days or less for three straight '
+                                        'months [Lighthouse Capital — OwAOc9xgv9U @ 00:01:55].'},
+                            {'name': 'revenue_dip_stress_test',
+                             'type': 'textarea',
+                             'prompt': 'Stress-test the first-year P&L for a post-closing revenue decline. '
+                                       'Model a five percent dip and a full ten percent drop, then confirm '
+                                       'you can still pay both the bank and the seller note while keeping '
+                                       'debt service coverage at or above 1.25.',
+                             'example': 'Revenue fell 5-10% in the year after each of seven acquisitions '
+                                        '[Walker Deibel — fFDPLnXTi0o @ 00:06:22]. At a 10% decline, cash '
+                                        'flow drops from $520K to $430K against $330K of combined bank and '
+                                        'seller payments, about 1.30x, so both still get paid [David C '
+                                        'Barnett Small Business and Deal Making SMB — PO1M-_wq-m4 @ '
+                                        '00:07:24].'},
+                            {'name': 'customer_and_market_communication',
+                             'type': 'textarea',
+                             'prompt': 'Sequence the announcement: employees first, then customers, then '
+                                       'the market. List the top paying customers you will visit '
+                                       'personally, any client above twenty percent concentration, and the '
+                                       'weekly marketing activity that keeps lead flow from going dark '
+                                       'after the press release.',
+                             'example': 'Employees told first, then the top 20 paying customers booked for '
+                                        "visits [Let's Buy a Business — WP5MdYhV05A @ 00:16:59]. Largest "
+                                        'client: 18% of sales, so a voice-of-customer tour runs first '
+                                        "[Patrick O'Connell - M&A Transaction Services — 6AT45jrM2CU @ "
+                                        '00:25:49]. Going dark cost one firm 40% of lead flow in three '
+                                        'weeks [Strategy Leaders Inc. — OeJwN9bz5dE @ 00:12:31].'},
+                            {'name': 'retention_and_knowledge_capture',
+                             'type': 'textarea',
+                             'prompt': 'Name the key employees whose knowledge the business depends on and '
+                                       'describe how you will capture it and keep them. Record the '
+                                       'interview schedule, the SOPs you expect to produce, and who funds '
+                                       'any retention or thank-you bonuses, on what schedule.',
+                             'example': 'Dispatcher and lead estimator each get two recorded 90-minute '
+                                        "interviews, converted into SOPs and FAQs [Patrick O'Connell - M&A "
+                                        'Transaction Services — 6AT45jrM2CU @ 00:23:24]. The seller pays '
+                                        'thank-you bonuses, half now and half escrowed for 12 months, '
+                                        'which we match if needed [The Intentional Owner — cC2-F0YZb9M @ '
+                                        '00:28:53]. Seller-funded bonuses avoid signaling the buyer is '
+                                        'flush.'}],
+                 'completion_gate': 'Worksheet 6 is complete when the structure and tax path are written '
+                                    'into the LOI, the Form 8594 allocation is agreed with the seller, '
+                                    'indemnity terms and the matching seller note are documented with '
+                                    'every shareholder signing personally, all consents and licenses are '
+                                    'cleared, cash controls are live by Day 15, and the 100-day plan '
+                                    'survives a 10 percent revenue decline stress test.'}]}

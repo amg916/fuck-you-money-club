@@ -1,749 +1,554 @@
-from __future__ import annotations
+"""Volume 031 diagrams: Uber & Commercial Fleet Arbitrage."""
 
-VOLUME_031_SUBTITLE = (
-    "The Complete Playbook for Uber & Commercial Fleet Arbitrage: "
-    "$180,000–$1,200,000 USD in Annual Gross Billings, "
-    "Built Around a 1 FT + 3 C (4 People) Pod"
+from typing import Any, Dict, List
+
+VOLUME_031_SUBTITLE: str = (
+    "Uber Fleet Partner SUVs at $600 a Week, Black-Car Private Clienteles at "
+    "$100 an Hour, $350-$450 Weekly Gig Rentals, Co-Hosting Off the Gross, and "
+    "the Plate, Insurance, Kill-Switch, and Booking-Software Gates That Guard "
+    "the Margin"
 )
 
-VOLUME_031_POSITIONING_ALTERNATIVES = [
+
+def build_volume_031_diagrams_data() -> List[Dict[str, Any]]:
+    """Return the eight structured diagram dicts for Volume 031."""
+    diagrams: List[Dict[str, Any]] = []
+
+    # Diagram 01: Uber Fleet launch sequence (Chapter 1).
+    diagrams.append(
+        {
+            "diagram_id": "diag-01-uber-fleet-launch-sequence",
+            "chapter_number": 1,
+            "chart_type": "process_flow",
+            "title": "Launching an Uber Fleet One SUV at a Time",
+            "subtitle": "Account setup, VIN-first insurance, one vehicle, renter vetting, weekly pricing",
+            "caption": (
+                "Fleet operators sequence the launch so the costly mistakes happen on paper, "
+                "not after the truck is bought: quote insurance on the VIN, start with one "
+                "vehicle, and refuse renters who arrive without a limousine license and full "
+                "payment."
+            ),
+            "assumptions_note": (
+                "Step order follows the practitioner gates as reported. The $600 Suburban "
+                "rate and $794 Houston permit stickers are single-operator figures, not "
+                "market-wide rates."
+            ),
+            "note": (
+                "Sources are Norman Tutorials (70EXcECzC70 @ 00:01:33), TJackk "
+                "(GBM9d0WqM-0 @ 00:20:42, 9mwQox6xtqw @ 00:02:56, 4NPuQA-V4ZA @ 00:04:57, "
+                "UTnHLaPqh1s @ 00:04:02), and Rideshare Professor (tKKCFcEvdl4 @ 00:05:29, "
+                "7e3yD_HEDec @ 00:01:28, 4Y5_eWf85tM @ 00:13:13)."
+            ),
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Open the Fleet account",
+                    "value": "Step 1",
+                    "detail": (
+                        "Sign up for Uber Fleet and submit tax information carefully, "
+                        "double-checking it before continuing (Norman Tutorials)."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Quote insurance on the exact VIN",
+                    "value": "Step 2",
+                    "detail": (
+                        "Get the commercial auto quote off the VIN before buying, because once "
+                        "the vehicle is bought the owner is stuck with it (TJackk)."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Buy one large black SUV",
+                    "value": "Step 3",
+                    "detail": (
+                        "Start with one vehicle, not five (Rideshare Professor). Keep a reserve "
+                        "for licensing, permits such as $794 Houston stickers per SUV, insurance, "
+                        "and a surprise repair week (TJackk)."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "Vet the renter before handoff",
+                    "value": "Step 4",
+                    "detail": (
+                        "No limousine license and no full payment up front means no car; a "
+                        "repeating action-needed flag is a red alert for a bought account (TJackk)."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "Charge weekly and monitor driving",
+                    "value": "Step 5",
+                    "detail": (
+                        "Suburbans lease at $600 per week, Cadillacs $100 more; speeding over 80 "
+                        "earns one warning and the second time the driver is out "
+                        "(Rideshare Professor)."
+                    ),
+                },
+            ],
+        }
+    )
+
+    # Diagram 02: Gig rental gross-to-net funnel (Chapter 6).
+    diagrams.append(
+        {
+            "diagram_id": "diag-02-gig-rental-gross-to-net-funnel",
+            "chapter_number": 6,
+            "chart_type": "funnel",
+            "title": "From $1,600 Gross to About $700 Real Net Per Car",
+            "subtitle": "Monthly economics of a cheap economy car rented weekly to gig drivers",
+            "caption": (
+                "Etienne Elsaesser strips the influencer math on a $3,000-$6,000 Corolla-class "
+                "rental down to about $700 net per car per month once insurance, maintenance, "
+                "a total-loss reserve, processing, and cleaning are paid."
+            ),
+            "assumptions_note": (
+                "Gross and net endpoints are as stated by Etienne Elsaesser; intermediate "
+                "stages are simple subtraction of the stated deductions, and insurance is "
+                "reported as $300 or more, so the post-insurance stage is an upper bound."
+            ),
+            "note": (
+                "Etienne Elsaesser (amfsF8yd5hg @ 00:06:15, l8b3Oi2g48I @ 00:00:00); "
+                "$400+ per week yielding a $1,600 monthly minimum per Alex Auto "
+                "(Sukdr8-ecMM @ 00:05:14)."
+            ),
+            "stages": [
+                {
+                    "label": "Monthly gross at $400+ per week",
+                    "value": 1600,
+                    "display": "$1,600",
+                    "conversion": "Starting gross",
+                    "detail": "Weekly rent of $350-$450 paid upfront; Alex Auto cites a $1,600 monthly minimum.",
+                },
+                {
+                    "label": "After insurance",
+                    "value": 1300,
+                    "display": "About $1,300",
+                    "conversion": "Less $300+ insurance",
+                    "detail": "Insurance runs $300 or more per car per month.",
+                },
+                {
+                    "label": "After maintenance",
+                    "value": 1100,
+                    "display": "About $1,100",
+                    "conversion": "Less about $200 maintenance",
+                    "detail": "Routine maintenance runs about $200 per car per month.",
+                },
+                {
+                    "label": "After total-loss reserve",
+                    "value": 900,
+                    "display": "About $900",
+                    "conversion": "Less $200 total-loss reserve",
+                    "detail": "A $200 monthly reserve funds the car that eventually gets totaled.",
+                },
+                {
+                    "label": "Real net per car",
+                    "value": 700,
+                    "display": "About $700",
+                    "conversion": "Less processing and cleaning",
+                    "detail": "Payment processing and cleaning close the gap to about $700 net.",
+                },
+            ],
+        }
+    )
+
+    # Diagram 03: Weekly fleet-car margin waterfall (Chapter 3).
+    diagrams.append(
+        {
+            "diagram_id": "diag-03-fleet-car-weekly-margin-waterfall",
+            "chapter_number": 3,
+            "chart_type": "waterfall",
+            "title": "Where $1,500 in Weekly Fares Goes on a Fleet Car",
+            "subtitle": "Uber commission and driver share leave the owner $225 per vehicle",
+            "caption": (
+                "Owners Risk models a small fleet where $1,500 in weekly fares loses 25% to "
+                "Uber and $900 to the driver, leaving $225 per car and about $4,500 per month "
+                "across five cars, with the warning that Uber's algorithm controls the margin."
+            ),
+            "assumptions_note": (
+                "Gross, commission rate, driver share, per-car net, and five-car monthly net "
+                "are as stated by Owners Risk; the $375 commission and $1,125 subtotal are "
+                "arithmetic on those figures. The final bar is on a monthly, five-car basis."
+            ),
+            "note": "Owners Risk (oDmpBy9CTek @ 00:07:27).",
+            "bars": [
+                {"label": "Weekly gross fares", "value": 1500, "display": "$1,500", "kind": "total"},
+                {"label": "Uber commission at 25%", "value": -375, "display": "-$375", "kind": "deduction"},
+                {"label": "After Uber commission", "value": 1125, "display": "$1,125", "kind": "total"},
+                {"label": "Driver keeps", "value": -900, "display": "-$900", "kind": "deduction"},
+                {"label": "Owner net per car per week", "value": 225, "display": "$225", "kind": "result"},
+                {"label": "Five-car owner net per month", "value": 4500, "display": "About $4,500", "kind": "result"},
+            ],
+        }
+    )
+
+    # Diagram 04: Monthly cost of revenue vehicles (Chapter 2).
+    diagrams.append(
+        {
+            "diagram_id": "diag-04-revenue-vehicle-monthly-cost",
+            "chapter_number": 2,
+            "chart_type": "horizontal_bars",
+            "title": "The Monthly Nut on a Revenue Vehicle",
+            "subtitle": "Black SUV all-in costs versus the components and a WAV minivan route",
+            "caption": (
+                "Stack the full monthly cost before signing: a 100 percent financed Navigator "
+                "runs $3,000 to $3,300 all in, a 2025 Escalade at a 620 credit score lands "
+                "near $3,500, and a used Sienna WAV runs about $1,300 while still qualifying "
+                "for XL."
+            ),
+            "assumptions_note": (
+                "Where a speaker gave a single figure, min, max, and typical are set equal. "
+                "Navigator typical uses the almost-$3,000 figure cited when renting out the "
+                "former Tesla. Escalade figures reflect one caller's credit profile."
+            ),
+            "note": (
+                "ESCAPE THE MATRIX (fPh6slkW9Tk @ 00:05:15, fPh6slkW9Tk @ 00:06:08, "
+                "fPh6slkW9Tk @ 00:09:45, Y8ppyxLqw9E @ 00:02:13) and Yusuf Benallal "
+                "(xrJ-xGav6Xo @ 00:03:19)."
+            ),
+            "unit": "USD per month",
+            "bars": [
+                {
+                    "label": "2025 Escalade at a 620 credit score",
+                    "min": 2993.81,
+                    "max": 3500,
+                    "typical": 3500,
+                    "display": "$2,993.81 note, about $3,500 with insurance",
+                },
+                {
+                    "label": "Lincoln Navigator all-in, NYC Black",
+                    "min": 3000,
+                    "max": 3300,
+                    "typical": 3000,
+                    "display": "$3,000 to $3,300",
+                },
+                {
+                    "label": "Navigator car note at 0% APR",
+                    "min": 1733,
+                    "max": 1733,
+                    "typical": 1733,
+                    "display": "$1,733",
+                },
+                {
+                    "label": "Used Toyota Sienna WAV all-in",
+                    "min": 1300,
+                    "max": 1300,
+                    "typical": 1300,
+                    "display": "About $1,300",
+                },
+                {
+                    "label": "Navigator commercial liability",
+                    "min": 370,
+                    "max": 370,
+                    "typical": 370,
+                    "display": "$370",
+                },
+            ],
+        }
+    )
+
+    # Diagram 05: Going-private gate check (Chapter 5).
+    diagrams.append(
+        {
+            "diagram_id": "diag-05-private-black-car-gate-check",
+            "chapter_number": 5,
+            "chart_type": "decision_tree",
+            "title": "Ready to Move From Uber Black to Private Clients",
+            "subtitle": "Four gates before taking direct bookings",
+            "caption": (
+                "Operators who left the app agree Uber Black is a launchpad, not a business. "
+                "Black Truck Mick grossed $15,070 in month one on a rented SUV, but only after "
+                "pricing for the day and moving direct work to $100 an hour."
+            ),
+            "assumptions_note": (
+                "Gate order is an editorial sequence of practitioner gates; rates and the "
+                "$300 daily break-even reflect one rented SUV costing $1,250 a week."
+            ),
+            "note": (
+                "Fares and Frustrations (_UpXw8QDal8 @ 00:06:26), Business with Mide "
+                "(4TzKcRuyrHY @ 00:00:44), Black Truck Mick (uODRGjORQF4 @ 00:10:28, "
+                "uODRGjORQF4 @ 00:14:11), My Chauffeur Life (Y-1AudoR8JA @ 00:04:09), and "
+                "Luxury Transportation Academy / Podcast (yg-RtCxYcG8 @ 00:09:02)."
+            ),
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": "Are the TCP, permits, and airport credentials locked in?",
+                    "pass_next": "G2",
+                    "fail_action": (
+                        "Hold launch; operating without the TCP is illegal and the wrong airport "
+                        "permit or credential means lost bookings."
+                    ),
+                },
+                {
+                    "gate": "G2",
+                    "question": "Does pricing cover the day, not just the ride?",
+                    "pass_next": "G3",
+                    "fail_action": (
+                        "Reprice; Black Truck Mick needed $300 a day to cover a rented SUV and "
+                        "admits $40 for six riders was too little."
+                    ),
+                },
+                {
+                    "gate": "G3",
+                    "question": "Is a weekly reserve funded with every expense tracked?",
+                    "pass_next": "G4",
+                    "fail_action": (
+                        "Build the reserve first, before a luxury repair costing thousands parks "
+                        "the car for weeks."
+                    ),
+                },
+                {
+                    "gate": "G4",
+                    "question": "Do reservations live in a CRM or booking system?",
+                    "pass_next": (
+                        "Take direct work at $100 an hour, $80 for affiliates, fed by hotel "
+                        "concierges, event planners, and corporate assistants."
+                    ),
+                    "fail_action": (
+                        "Pull bookings out of WhatsApp and text threads, where nine times out "
+                        "of 10 they get lost."
+                    ),
+                },
+            ],
+        }
+    )
+
+    # Diagram 06: Off-platform software stack (Chapter 11).
+    diagrams.append(
+        {
+            "diagram_id": "diag-06-owned-booking-pipe-stack",
+            "chapter_number": 11,
+            "chart_type": "org_architecture",
+            "title": "Own the Booking Pipe",
+            "subtitle": "The software spokes around an off-Turo rental operator",
+            "caption": (
+                "After Turo revoked the unofficial API access Fleetwire and CarSync relied on, "
+                "operators converged on a direct website plus automated contracts, payment "
+                "links, e-signatures, and double-booking blocks."
+            ),
+            "assumptions_note": (
+                "Pricing is as quoted by each speaker at the time; Brandon Duff reported a "
+                "$34 Fleetwire entry plan versus the roughly $20 tier cited by Alex Auto."
+            ),
+            "note": (
+                "Alex Auto (0Q8BZGkkigM @ 00:01:39, 0Q8BZGkkigM @ 00:05:17), "
+                "Mike_Thebusinessman (1Va2FwAMf2A @ 00:05:18, 1Va2FwAMf2A @ 00:06:27, "
+                "1Va2FwAMf2A @ 00:17:13), and Fleet Brothers (VCL-xD3r5VU @ 00:01:08)."
+            ),
+            "center": {
+                "role": "Off-Turo rental operator",
+                "headcount": "Owner plus two staff accounts on the Fleetwire entry tier",
+                "focus": "Direct bookings that survive a Turo sync shutdown",
+            },
+            "spokes": [
+                {
+                    "role": "Fleetwire",
+                    "type": "Booking site and payment links",
+                    "kpi": "About $20 per month for 5 cars, roughly $240-$250 at 150 cars",
+                },
+                {
+                    "role": "Fleet Finesse",
+                    "type": "Booking engine with no car caps",
+                    "kpi": "$69 per month standard, $197 deluxe with custom domain",
+                },
+                {
+                    "role": "Stripe deposit holds",
+                    "type": "Payment layer",
+                    "kpi": "Avoids the 2.7%-2.8% fee; hold falls off on day 7",
+                },
+                {
+                    "role": "HQ Rentals",
+                    "type": "Rental management suite",
+                    "kpi": "Near $90 plus a $450-$500 setup fee; car caps forced a migration",
+                },
+            ],
+        }
+    )
+
+    # Diagram 07: Credential and cover outlay stack (Chapter 4).
+    diagrams.append(
+        {
+            "diagram_id": "diag-07-tcp-credential-cover-stack",
+            "chapter_number": 4,
+            "chart_type": "stacked_comparison",
+            "title": "What a TCP Black-Car Credential and Cover Cost Up Front",
+            "subtitle": "Khushnud Numonov's EPN, TCP filing, commercial premium, and card fee",
+            "caption": (
+                "The TCP belongs inside an LLC or corporation and dies on sequencing errors; "
+                "the bigger bill is the commercial premium, which Khushnud Numonov paid "
+                "upfront on a 0 percent APR card instead of a 23.8 percent APR loan."
+            ),
+            "assumptions_note": (
+                "Bucket figures are as reported by Khushnud Numonov; the total range is the "
+                "arithmetic sum of the buckets, with the low end on Class B and the high end "
+                "on Class A. Airport permits are excluded because no cost was given."
+            ),
+            "note": (
+                "Khushnud Numonov (67saVKNzHxc @ 00:07:16, 67saVKNzHxc @ 00:10:24, "
+                "IqvMzwtwzrI @ 00:05:26, IqvMzwtwzrI @ 00:10:07)."
+            ),
+            "total_range": "About $9,516 to $10,016",
+            "buckets": [
+                {
+                    "label": "DMV EPN",
+                    "low": 15,
+                    "high": 15,
+                    "notes": "About $15, takes one to two weeks, and stalls the TCP portal until it clears.",
+                },
+                {
+                    "label": "TCP filing fee",
+                    "low": 1000,
+                    "high": 1500,
+                    "notes": "$1,000 Class B with a 125-mile limit; $1,500 Class A for unlimited runs.",
+                },
+                {
+                    "label": "Uber Black sedan commercial premium",
+                    "low": 8161,
+                    "high": 8161,
+                    "notes": "Lancer Insurance cash price per year; financing meant $2,155 down and 23.8% APR.",
+                },
+                {
+                    "label": "Card fee to pay the premium upfront",
+                    "low": 340,
+                    "high": 340,
+                    "notes": "Offset by $170 cash back, saving about $441 versus the financed loan.",
+                },
+            ],
+        }
+    )
+
+    # Diagram 08: Fix-before-scale roadmap (Chapter 12).
+    diagrams.append(
+        {
+            "diagram_id": "diag-08-fix-before-scale-roadmap",
+            "chapter_number": 12,
+            "chart_type": "timeline_roadmap",
+            "title": "Fix the Process Before Adding Cars",
+            "subtitle": "Four weeks of systems before the fleet grows",
+            "caption": (
+                "Operators running 15 to 300+ cars agree scale only works once systems exist; "
+                "King of Rentals warns that adding cars to a bad process just adds fuel to "
+                "the fire."
+            ),
+            "assumptions_note": (
+                "The four-week grouping is an editorial sequence of practitioner gates and "
+                "pro-tips, not a timeline any single operator reported."
+            ),
+            "note": (
+                "King of Rentals (706e4cdleYQ @ 00:00:22, OBbGsDAi0xA @ 00:08:08), Etienne "
+                "Elsaesser (3dvvSrh_cus @ 00:06:44, VUKM00PHEmI @ 00:25:20, "
+                "3dvvSrh_cus @ 00:09:28, VUKM00PHEmI @ 00:07:36), and Car Rental Coach "
+                "(lOTgf5qQVJ8 @ 00:02:35)."
+            ),
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Audit the operating process",
+                    "deliverable": "Timestamped check-in and check-out evidence on every rental",
+                    "gate": "No new cars added onto a process that is no bueno",
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Lock payment and guest insurance",
+                    "deliverable": (
+                        "Phone each guest's insurer, confirm the policy is not brand new, ask "
+                        "about exclusions, and pull a binder"
+                    ),
+                    "gate": "No reservation without payment, with the deposit taken on rental day",
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Staff with per-job vendors",
+                    "deliverable": "Per-job 1099 vendors for cleaning, delivery, and turnaround",
+                    "gate": "Do not get employees",
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Protect the asset and the account",
+                    "deliverable": (
+                        "OBD2 tracker concealed behind a splitter, plus an oil, coolant, washer "
+                        "fluid, and wiper check on every returned car"
+                    ),
+                    "gate": "Never cancel from the host side; call Turo to cancel instead",
+                },
+            ],
+        }
+    )
+
+    return diagrams
+
+
+VOLUME_031_POSITIONING_ALTERNATIVES: List[Dict[str, Any]] = [
     {
-        "title": "Collect the Lease, Control the Fleet",
+        "title": "The Black-Car Fleet Ladder",
         "subtitle": (
-            "Build recurring driver-lease collections around documented vehicle "
-            "eligibility, continuous coverage, and enforceable payment instructions."
+            "From a $600-a-Week Uber Fleet Suburban to $100-an-Hour Private Chauffeur Work"
         ),
         "audience": (
-            "Fleet operators managing investor-owned vehicles who need weekly "
-            "collections, driver qualification, and maintenance accountability "
-            "without confusing passenger fares with operator revenue."
+            "Drivers and small investors weighing Uber Black SUVs, Fleet Partner rentals, "
+            "and a private black-car clientele"
         ),
         "research_basis": (
-            "California Public Utilities Code section 5433 distinguishes "
-            "transportation-network insurance periods. The Fair Credit Reporting "
-            "Act requires a permissible purpose for consumer reports. Together, "
-            "these support an operating model built around coverage-state evidence "
-            "and properly authorized driver screening rather than vehicle count alone."
+            "Rideshare Professor's $600 weekly Suburban rate and 15-month payoff, ESCAPE THE "
+            "MATRIX's $1,733 Navigator note, Black Truck Mick's $15,070 first month, and "
+            "Fares and Frustrations' 80-percent-versus-100-percent framing."
         ),
         "sources": [
-            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PUC&sectionNum=5433.",
-            "https://www.law.cornell.edu/uscode/text/15/1681b",
-            "https://www.law.cornell.edu/uscode/text/15/1681m",
+            "https://www.youtube.com/watch?v=7e3yD_HEDec&t=88s",
+            "https://www.youtube.com/watch?v=4Y5_eWf85tM&t=351s",
+            "https://www.youtube.com/watch?v=fPh6slkW9Tk&t=315s",
+            "https://www.youtube.com/watch?v=uODRGjORQF4&t=0s",
+            "https://www.youtube.com/watch?v=TxZA7z6wXLg&t=54s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 031 YouTube practitioner transcripts.",
     },
     {
-        "title": "Black SUV Shift Economics",
+        "title": "The $400-a-Week Rental Machine",
         "subtitle": (
-            "Turn licensed commercial vehicle availability into measured shift "
-            "contribution through dispatch discipline and downtime control."
+            "Cheap Paid-Off Economy Cars, Gig-Driver Renters, Kill Switches, and a 90-Day Payback"
         ),
         "audience": (
-            "Existing licensed livery and black-car operators evaluating "
-            "incremental SUV shifts, airport work, and contractor dispatch capacity."
+            "Operators renting $3,000-$6,000 economy cars to Uber, Lyft, and DoorDash drivers "
+            "by the week"
         ),
         "research_basis": (
-            "California Public Utilities Code section 5371 addresses charter-party "
-            "carrier authority, while the New York City Taxi and Limousine "
-            "Commission publishes separate driver, vehicle, and base licensing "
-            "requirements. These are jurisdiction-specific operating systems, "
-            "not interchangeable credentials or universal airport permissions."
+            "Etienne Elsaesser's $350-$450 weekly rate and about $700 real net, King of "
+            "Rentals' $1,000 private net versus roughly $500 on Turo, Kel King's 90-day "
+            "golden rule, and Alex Auto's tracker and kill-switch mandate."
         ),
         "sources": [
-            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PUC&sectionNum=5371.",
-            "https://www.nyc.gov/site/tlc/businesses/for-hire-vehicle-bases.page",
-            "https://www.nyc.gov/site/tlc/vehicles/get-a-for-hire-vehicle-license.page",
-            "https://www.nyc.gov/site/tlc/drivers/get-a-tlc-drivers-license.page",
+            "https://www.youtube.com/watch?v=l8b3Oi2g48I&t=0s",
+            "https://www.youtube.com/watch?v=amfsF8yd5hg&t=375s",
+            "https://www.youtube.com/watch?v=DOrgMXhPDXs&t=456s",
+            "https://www.youtube.com/watch?v=7l7A5buuie0&t=2491s",
+            "https://www.youtube.com/watch?v=bHUp-OA4bH8&t=520s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 031 YouTube practitioner transcripts.",
     },
     {
-        "title": "Zero-Owned-Metal Fleet Operations",
+        "title": "Other People's Cars, Plates, and Permits",
         "subtitle": (
-            "Coordinate investor vehicles, driver collections, and maintenance "
-            "without treating investor assets or passenger fares as operator sales."
+            "Co-Hosting Splits Off the Gross, NYC TLC Plate Rentals, and California TCP Sequencing"
         ),
         "audience": (
-            "Asset-light fleet managers with vehicle-owner relationships and the "
-            "ability to administer contracts, settlements, and service schedules."
+            "Operators scaling without owning every vehicle, through co-hosted cars or "
+            "scarce for-hire credentials"
         ),
         "research_basis": (
-            "UCC Article 2A supplies the model framework for leases of goods; "
-            "the enacted state version controls each vehicle arrangement. "
-            "Federal odometer rules govern applicable vehicle transfers. "
-            "Neither source establishes that a co-hosting arrangement is "
-            "asset-light in substance or determines its revenue presentation."
+            "Delano Green's over-$100k monthly profit near 99 cars, Peak Auto Academy's 23% "
+            "owner return on a Yukon, Demario Mccowan's cut-off-the-gross rule, Khushnud "
+            "Numonov's $1,000-$1,500 TCP fees, and FastTrack's $289 weekly plate-plus-insurance."
         ),
         "sources": [
-            "https://www.law.cornell.edu/ucc/2A",
-            "https://www.law.cornell.edu/uscode/text/49/32705",
-            "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-580",
+            "https://www.youtube.com/watch?v=SPoQzQlFhXg&t=533s",
+            "https://www.youtube.com/watch?v=3kqux9OEEfY&t=167s",
+            "https://www.youtube.com/watch?v=b4HG8nxaQlU&t=377s",
+            "https://www.youtube.com/watch?v=67saVKNzHxc&t=624s",
+            "https://www.youtube.com/watch?v=DiLCf_drK0E&t=511s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 031 YouTube practitioner transcripts.",
     },
 ]
-
-
-def build_volume_031_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-vehicle-to-settlement-workflow",
-            "process_flow",
-            "Control the Vehicle-to-Cash Chain",
-            "Five operating steps for investor vehicles, qualified drivers, and reconciled collections.",
-            1,
-            "operating_framework",
-            (
-                "The asset-light model assumes documented owner authority and "
-                "platform acceptance of each vehicle and arrangement. Gross "
-                "operator billings mean driver leases, dispatch, and co-hosting "
-                "charges; passenger trip GMV and investor vehicle values remain "
-                "outside this revenue measure."
-            ),
-            (
-                "A top-of-waterfall lease is a contractual collection priority, "
-                "not an automatic platform capability. Use Uber fleet settlement "
-                "features only where the account supports the documented split; "
-                "otherwise reconcile authorized collections separately."
-            ),
-            [
-                (
-                    "Secure vehicle authority",
-                    "Document ownership and permitted commercial use before listing",
-                    1.0,
-                    (
-                        "Capture VIN, title or lease authority, lender restrictions, "
-                        "owner settlement terms, and responsibility for depreciation. "
-                        "Reject vehicles whose financing or insurance excludes "
-                        "the intended rental, livery, or rideshare activity."
-                    ),
-                ),
-                (
-                    "Qualify driver and operation",
-                    "Match driver credentials to vehicle and service jurisdiction",
-                    2.0,
-                    (
-                        "Verify applicable licenses, platform eligibility, MVR "
-                        "authorization, inspection dates, airport access, and "
-                        "policy endorsements. Treat personal use, app-on waiting, "
-                        "accepted trips, and passenger carriage as distinct exposure states."
-                    ),
-                ),
-                (
-                    "Execute handover and collection",
-                    "Record condition and activate expressly authorized payment instructions",
-                    3.0,
-                    (
-                        "Photograph condition, record odometer and fuel, explain "
-                        "deductibles and toll charges, and obtain the required "
-                        "payment authorization. Keep refundable security deposits "
-                        "in a liability ledger rather than recording them as sales."
-                    ),
-                ),
-                (
-                    "Monitor service and exceptions",
-                    "Convert telematics exceptions into scheduled human operating decisions",
-                    4.0,
-                    (
-                        "Use OBD-II GPS, diagnostic alerts, and maintenance mileage "
-                        "to schedule service. Route collision, overdue-payment, "
-                        "and vehicle-location exceptions to a named operator. "
-                        "Never remotely interrupt a moving or occupied vehicle."
-                    ),
-                ),
-                (
-                    "Close weekly settlements",
-                    "Reconcile billed charges, collected cash, and owner distributions",
-                    5.0,
-                    (
-                        "Match Uber settlement exports, authorized ACH receipts, "
-                        "toll statements, repair invoices, and owner splits to "
-                        "vehicle-level ledgers. Age failed collections separately "
-                        "and reconcile retained contribution before calculating profit."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-driver-qualification-cohort",
-            "funnel",
-            "From Driver Inquiry to Settled Vehicle Week",
-            "One nested 100-inquiry cohort; every later stage is a subset of the preceding stage.",
-            6,
-            "illustrative_model",
-            (
-                "Illustrative counts describe a single prospect cohort, not "
-                "verified acquisition performance or annual revenue capacity. "
-                "Stage counts are 100, 60, 36, 18, and 12; total conversion is "
-                "12%. The first settled week can occur after day 30."
-            ),
-            (
-                "Track unique applicants rather than form submissions. Record "
-                "a dated exclusion reason at each transition so insurance "
-                "ineligibility, missing credentials, and payment failures do not "
-                "disappear inside one blended conversion percentage."
-            ),
-            [
-                (
-                    "Inbound inquiries",
-                    "100 unique applicants enter the dated source cohort",
-                    100.0,
-                    (
-                        "Deduplicate telephone numbers and applicant records in "
-                        "the CRM. Record service area, desired vehicle class, "
-                        "work schedule, and acquisition channel before screening."
-                    ),
-                ),
-                (
-                    "Operating fit established",
-                    "60 applicants meet the initial jurisdiction and schedule criteria",
-                    60.0,
-                    (
-                        "Retain 60% of inquiries after checking intended service, "
-                        "license category, platform status, weekly availability, "
-                        "and published insurer eligibility requirements."
-                    ),
-                ),
-                (
-                    "Documents and screening complete",
-                    "36 applicants complete the authorized evidence collection process",
-                    36.0,
-                    (
-                        "Retain 60% of the prior cohort after identity, license, "
-                        "MVR, and insurer review. Establish the permissible purpose "
-                        "under 15 U.S.C. 1681b before ordering a consumer report."
-                    ),
-                ),
-                (
-                    "Vehicle offer accepted",
-                    "18 applicants accept documented vehicle and collection terms",
-                    18.0,
-                    (
-                        "Retain 50% of screened applicants after disclosing weekly "
-                        "charges, deposits, deductible allocation, mileage terms, "
-                        "toll administration, and service downtime procedures."
-                    ),
-                ),
-                (
-                    "First settled week completed",
-                    "12 drivers complete handover and produce reconciled cleared collections",
-                    12.0,
-                    (
-                        "Retain two-thirds of accepted offers only after coverage "
-                        "activation, vehicle inspection, completed handover, and "
-                        "cleared first-week collections. An executed contract alone "
-                        "does not qualify as a settled vehicle week."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-case-contribution-waterfall",
-            "waterfall",
-            "The $690,000 Base-Case Waterfall",
-            "$379,500 retained contribution becomes $144,900 owner profit after operator expenses.",
-            3,
-            "illustrative_model",
-            (
-                "All amounts are annual USD. Bars 1, 3, and 6 are absolute "
-                "totals or subtotals; bars 2, 4, and 5 are signed deductions. "
-                "Subtotals must reset the plotted running balance rather than "
-                "being added again. The $180,000 and $54,600 expense categories "
-                "are illustrative allocations of the canonical $234,600 residual "
-                "operator expense requirement, not separately supplied estimates."
-            ),
-            (
-                "$690,000 - $310,500 = $379,500; $379,500 - $180,000 "
-                "- $54,600 = $144,900. Owner profit equals 21.0% of gross "
-                "billings and 38.18% of retained contribution. Apply the supplied "
-                "55% ASC 606 net-presentation convention; actual principal-versus-agent "
-                "presentation follows the contracts and control analysis."
-            ),
-            [
-                (
-                    "Gross operator billings",
-                    "$690,000 annual lease, dispatch, and co-hosting charges",
-                    690000.0,
-                    (
-                        "Opening total: $57,500 average monthly gross billings. "
-                        "Exclude underlying passenger fares, vehicle purchase "
-                        "values, refundable deposits, and investor capital from "
-                        "this operator billing measure."
-                    ),
-                ),
-                (
-                    "Owner splits and pass-through costs",
-                    "Subtract $310,500 distributed or passed through under contracts",
-                    -310500.0,
-                    (
-                        "Deduction: 45% of gross billings leaves the operator "
-                        "under the canonical retained-share model. Reconcile owner "
-                        "distributions and pass-through fleet costs individually; "
-                        "do not deduct these same costs again below retained contribution."
-                    ),
-                ),
-                (
-                    "Retained contribution subtotal",
-                    "$379,500 remains under the supplied 55% retained-share convention",
-                    379500.0,
-                    (
-                        "Absolute subtotal: $31,625 average monthly retained "
-                        "contribution. This is the supplied net-presentation "
-                        "revenue basis, not owner profit and not a separate "
-                        "increment added to the running balance."
-                    ),
-                ),
-                (
-                    "Recurring operator operating costs",
-                    "Subtract $180,000 for the modeled recurring operating cost envelope",
-                    -180000.0,
-                    (
-                        "Deduction: $15,000 monthly covers the modeled operator "
-                        "labor, contractor support, software, administration, and "
-                        "operator-borne recurring costs. Include only costs "
-                        "outside the preceding owner and pass-through deduction."
-                    ),
-                ),
-                (
-                    "Depreciation and uninsured collision expense",
-                    "Subtract $54,600 in separately modeled operator-borne expense",
-                    -54600.0,
-                    (
-                        "Deduction: $4,550 monthly equivalent represents recognized "
-                        "depreciation where the operator bears it and uninsured "
-                        "collision expense. Investor-borne depreciation stays with "
-                        "the investor; cash transferred into a reserve is not itself expense."
-                    ),
-                ),
-                (
-                    "Annual owner profit total",
-                    "$144,900 equals 21.0% of gross operator billings",
-                    144900.0,
-                    (
-                        "Closing total: $12,075 monthly equivalent and 38.18% "
-                        "of $379,500 retained contribution. Preserve the scorecard "
-                        "owner-profit definition; this figure is not a statement "
-                        "of after-personal-tax distributions or unrestricted cash."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-subniche-retained-yield-bars",
-            "horizontal_bars",
-            "Compare Retention, Not Passenger Fare Volume",
-            "Five illustrative sub-niches measured as retained dollars per $100 of operator billings.",
-            2,
-            "illustrative_model",
-            (
-                "Each bar represents $100 of gross operator billings before "
-                "operator overhead. Equal billing weights across yields of "
-                "$60, $50, $65, $45, and $55 produce the canonical 55% blended "
-                "retained share. These are illustrative contract economics, "
-                "not observed market yields or separate scorecard forecasts."
-            ),
-            (
-                "Collection rails affect settlement speed, fees, and reversals; "
-                "they do not create the underlying yield. Maintain separate "
-                "contract, payment-fee, and failed-collection fields. The canonical "
-                "scenarios retain 55% regardless of this illustrative niche mix."
-            ),
-            [
-                (
-                    "Weekly rideshare driver leases",
-                    "$60 retained per $100 billed through authorized ACH collections",
-                    60.0,
-                    (
-                        "Illustrative $40 owner and pass-through allocation "
-                        "leaves $60 before operator overhead. Reconcile scheduled "
-                        "lease collections to cleared cash; an ACH initiation "
-                        "does not establish final payment."
-                    ),
-                ),
-                (
-                    "Licensed Black SUV shift dispatch",
-                    "$50 retained per $100 billed through reconciled commercial settlements",
-                    50.0,
-                    (
-                        "Illustrative $50 owner and vehicle-service allocation "
-                        "leaves $50 before overhead. Measure operator dispatch "
-                        "billings rather than all passenger fares; airport waiting "
-                        "and empty repositioning can destroy shift contribution."
-                    ),
-                ),
-                (
-                    "Investor vehicle co-hosting",
-                    "$65 retained per $100 of gross co-hosting billings",
-                    65.0,
-                    (
-                        "Illustrative $35 contractually payable owner and "
-                        "pass-through allocation leaves $65. Where the operator "
-                        "bills only a management fee in practice, reassess the "
-                        "billing denominator instead of importing investor receipts."
-                    ),
-                ),
-                (
-                    "Short-duration replacement vehicles",
-                    "$45 retained per $100 billed through documented short-term rentals",
-                    45.0,
-                    (
-                        "Illustrative $55 owner and pass-through allocation "
-                        "leaves $45 before overhead. Delivery labor, cleaning, "
-                        "charge reversals, and idle days require separate tracking; "
-                        "deposits remain liabilities until properly applied."
-                    ),
-                ),
-                (
-                    "Commercial sedan driver leases",
-                    "$55 retained per $100 billed through scheduled business collections",
-                    55.0,
-                    (
-                        "Illustrative $45 owner and pass-through allocation "
-                        "matches the canonical blend. Attach toll evidence to "
-                        "each permitted charge and distinguish recurring rent "
-                        "from reimbursements and separately disclosed administration fees."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-preflight-statutory-risk-tree",
-            "decision_tree",
-            "Four Checks Before Vehicle Release",
-            "A sequential decision path: every affirmative result advances; every failed check holds release.",
-            5,
-            "operating_framework",
-            (
-                "The four nodes are sequential predicates, not numerical risk "
-                "scores. Numeric values indicate reading order. California and "
-                "New York City are concrete jurisdiction examples; apply the "
-                "actual operating jurisdiction, service category, and airport rules."
-            ),
-            (
-                "Release only after all four evidence sets are complete. "
-                "Correct missing authority, coverage, screening, or contract "
-                "terms before handover; a platform account does not replace "
-                "carrier authority, insurer acceptance, or airport permission."
-            ),
-            [
-                (
-                    "Coverage matches every use state",
-                    "Yes: advance; no: hold release until endorsements are verified",
-                    1.0,
-                    (
-                        "Map off-app rental use and rideshare Periods 1, 2, "
-                        "and 3 to actual policy language and named insureds. "
-                        "California Public Utilities Code section 5433 governs "
-                        "specified TNC coverage periods; commercial livery use "
-                        "needs its own applicable coverage analysis."
-                    ),
-                ),
-                (
-                    "Authority matches service and location",
-                    "Yes: advance; no: remove the prohibited operating assignment",
-                    2.0,
-                    (
-                        "Check California charter-party authority under Public "
-                        "Utilities Code section 5371 where applicable, or NYC "
-                        "TLC driver, vehicle, and base requirements for the "
-                        "relevant service. Verify airport permissions separately; "
-                        "TCP and TLC credentials are not nationwide substitutes."
-                    ),
-                ),
-                (
-                    "Screening has a documented lawful basis",
-                    "Yes: advance; no: stop report ordering and driver assignment",
-                    3.0,
-                    (
-                        "Establish a permissible consumer-report purpose under "
-                        "15 U.S.C. 1681b and protect motor-vehicle information "
-                        "under 18 U.S.C. 2721. Use employment-specific disclosure "
-                        "and pre-adverse procedures when applicable; apply "
-                        "15 U.S.C. 1681m adverse-action notices as required."
-                    ),
-                ),
-                (
-                    "Contract and immobilizer controls are safe",
-                    "Yes: release vehicle; no: correct terms or disable remote immobilization",
-                    4.0,
-                    (
-                        "Use enacted state UCC Article 2A and applicable "
-                        "rental statutes to review lease disclosures, toll fees, "
-                        "and remedies. Validate state immobilizer restrictions "
-                        "and insurer terms; permit no remote engine shutdown, "
-                        "and require verified stationary, unoccupied status plus "
-                        "human review for any permitted starter inhibition."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-four-to-six-person-pod",
-            "org_architecture",
-            "Four Seats at Base; Six at Scale",
-            "One accountable fleet lead coordinates three contractors before adding two distinct expansion seats.",
-            11,
-            "operating_framework",
-            (
-                "FT means full-time seat; C means contractor seat. Conservative "
-                "and Base use 1 FT + 3 C, four people total. Scaled uses "
-                "2 FT + 4 C, six people total. Each node represents one person; "
-                "the last two nodes activate only in the Scaled configuration. "
-                "Seat labels do not determine worker classification."
-            ),
-            (
-                "Conservative: $180,000 gross, $99,000 retained, $25,200 profit "
-                "at 14% gross margin and 25.45% retained margin. Base: $690,000 "
-                "gross, $379,500 retained, $144,900 profit at 21.0% and 38.18%. "
-                "Scaled: $1,200,000 gross, $660,000 retained, $336,000 profit "
-                "at 28% and 50.91%. Scaled economics require the six-person pod."
-            ),
-            [
-                (
-                    "Fleet principal — base FT",
-                    "One full-time owner leads contracts, cash, and exception decisions",
-                    1.0,
-                    (
-                        "Own vehicle acceptance, insurer relationships, investor "
-                        "terms, weekly contribution review, and incident escalation. "
-                        "Approve settlement corrections against source evidence "
-                        "rather than allowing dispatch to rewrite owner allocations."
-                    ),
-                ),
-                (
-                    "Dispatch coordinator — base contractor",
-                    "One contractor coordinates assignments, handovers, and driver communication",
-                    1.0,
-                    (
-                        "Maintain the vehicle availability board, collect signed "
-                        "handover records, route platform issues, and confirm "
-                        "service interruptions. Escalate coverage and permit "
-                        "exceptions instead of assigning around them."
-                    ),
-                ),
-                (
-                    "Maintenance coordinator — base contractor",
-                    "One contractor schedules inspections, repairs, and downtime recovery",
-                    1.0,
-                    (
-                        "Review OBD-II alerts, mileage intervals, tire condition, "
-                        "repair estimates, and return-to-service evidence. Keep "
-                        "maintenance availability separate from paid utilization "
-                        "so idle vehicles remain visible."
-                    ),
-                ),
-                (
-                    "Settlement specialist — base contractor",
-                    "One contractor reconciles billing, tolls, and investor statements",
-                    1.0,
-                    (
-                        "Match platform exports, bank receipts, owner splits, "
-                        "repair invoices, and toll evidence. Produce aged "
-                        "receivables and deposit-liability schedules; the fleet "
-                        "principal reviews adjustments and payment releases."
-                    ),
-                ),
-                (
-                    "Operations manager — scaled FT",
-                    "Add one full-time manager only in the six-person configuration",
-                    1.0,
-                    (
-                        "Take daily dispatch supervision and service recovery "
-                        "from the principal. Use documented workload, incident "
-                        "response, and contribution capacity to justify the seat "
-                        "rather than hiring against gross passenger fare volume."
-                    ),
-                ),
-                (
-                    "Claims and onboarding specialist — scaled contractor",
-                    "Add one contractor for screening administration and incident documentation",
-                    1.0,
-                    (
-                        "Assemble authorized screening records, renewal evidence, "
-                        "collision photographs, insurer submissions, and recovery "
-                        "tracking. Keep report access restricted and separate "
-                        "claims documentation from settlement payment authority."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-startup-capital-allocation",
-            "stacked_comparison",
-            "Deploy $12,000–$65,000 Without Buying a Fleet",
-            "Four capital buckets; the rendered example totals $35,000.",
-            4,
-            "illustrative_model",
-            (
-                "Numeric values are USD allocations for one $35,000 startup "
-                "stack. Low-envelope allocations total $12,000; high-envelope "
-                "allocations total $65,000. Endpoint allocations are coordinated "
-                "budgets, not independently selectable cost ranges. This model "
-                "assumes investor-supplied vehicles and excludes vehicle acquisitions."
-            ),
-            (
-                "Example: $10,000 + $5,000 + $8,000 + $12,000 = $35,000. "
-                "Low envelope: $4,000 + $1,500 + $2,500 + $4,000 = $12,000. "
-                "High envelope: $20,000 + $8,000 + $12,000 + $25,000 = $65,000. "
-                "Startup cash, refundable deposits, and operating expense are "
-                "different ledger categories."
-            ),
-            [
-                (
-                    "Insurance and authority funding",
-                    "$10,000 example allocation for coverage activation and operating credentials",
-                    10000.0,
-                    (
-                        "Allocate $4,000 in the low envelope and $20,000 in "
-                        "the high envelope for required insurance deposits, "
-                        "initial premiums, inspections, and applicable authority "
-                        "fees. Obtain actual quotes before accepting vehicle commitments."
-                    ),
-                ),
-                (
-                    "Telematics and collection infrastructure",
-                    "$5,000 example allocation for installed monitoring and billing setup",
-                    5000.0,
-                    (
-                        "Allocate $1,500 low and $8,000 high for OBD-II devices, "
-                        "GPS installation, secure account setup, collection "
-                        "integration, and settlement templates. Treat later "
-                        "subscriptions as operating costs rather than repeatedly "
-                        "charging them to startup capital."
-                    ),
-                ),
-                (
-                    "Contracts and vehicle onboarding",
-                    "$8,000 example allocation for documented vehicle and driver activation",
-                    8000.0,
-                    (
-                        "Allocate $2,500 low and $12,000 high for contract "
-                        "drafting, authorized screening, condition documentation, "
-                        "initial preparation, and handover logistics. Exclude "
-                        "vehicle purchase prices and investor capital contributions."
-                    ),
-                ),
-                (
-                    "Liquidity and collision buffer",
-                    "$12,000 example allocation retained as operating liquidity",
-                    12000.0,
-                    (
-                        "Allocate $4,000 low and $25,000 high for deductible "
-                        "liquidity, collection delays, and service interruptions. "
-                        "Keep customer deposits separate. Holding this cash "
-                        "does not reduce accounting profit; recognized expenses "
-                        "and actual disbursements follow their own timing."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-first-thirty-days-roadmap",
-            "timeline_roadmap",
-            "Build a Controlled Fleet Launch in 30 Days",
-            "Four weekly milestones create a launch-ready operation without forcing an early first deal.",
-            12,
-            "operating_framework",
-            (
-                "Numeric values are milestone ending days: 7, 14, 21, and 30. "
-                "The canonical time to first deal is 1–3 months. The sprint "
-                "can finish with qualified prospects and complete documentation "
-                "while insurer, licensing, or vehicle activation work continues."
-            ),
-            (
-                "Maintain the supplied $2,500–$15,000 monthly operating-cost "
-                "range as a planning envelope, not a universal runway estimate. "
-                "Release dates follow completed evidence; acquisition volume "
-                "does not override vehicle readiness or insured operating scope."
-            ),
-            [
-                (
-                    "Days 1-7",
-                    "Define the service jurisdiction and obtain written operating requirements",
-                    7.0,
-                    (
-                        "Choose one launch niche and geography. Obtain insurer "
-                        "quotes, identify applicable carrier or TLC authority, "
-                        "confirm platform vehicle requirements, and model the "
-                        "55% retained share separately from passenger trip GMV. "
-                        "Deliver a priced launch worksheet and jurisdiction checklist."
-                    ),
-                ),
-                (
-                    "Days 8-14",
-                    "Document owner terms and configure auditable collections and ledgers",
-                    14.0,
-                    (
-                        "Review vehicle-owner authority, draft driver terms, "
-                        "configure authorized payment collection, and create "
-                        "separate deposit, pass-through, and retained-contribution "
-                        "accounts. Deliver a sample owner statement that reconciles "
-                        "from gross billings to distributable amounts."
-                    ),
-                ),
-                (
-                    "Days 15-21",
-                    "Run a limited qualification and vehicle-readiness rehearsal",
-                    21.0,
-                    (
-                        "Process a small authorized applicant cohort, inspect "
-                        "candidate vehicles, install approved telematics, and "
-                        "test maintenance alerts. Rehearse collision reporting, "
-                        "failed-payment handling, and stationary starter-inhibition "
-                        "controls without deploying an unsafe vehicle."
-                    ),
-                ),
-                (
-                    "Days 22-30",
-                    "Complete a settlement rehearsal and schedule only ready handovers",
-                    30.0,
-                    (
-                        "Reconcile a labeled test dataset across billing, bank "
-                        "receipts, tolls, repairs, and owner splits. Where every "
-                        "requirement is complete, conduct a controlled handover; "
-                        "otherwise continue the documented 1–3 month first-deal "
-                        "plan without recording test collections as revenue."
-                    ),
-                ),
-            ],
-        ),
-    ]
-
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for (
-            identifier,
-            kind,
-            title,
-            subtitle,
-            chapter,
-            tag,
-            note,
-            caption,
-            stages,
-        ) in specs
-    ]

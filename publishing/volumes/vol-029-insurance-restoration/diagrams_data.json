@@ -1,334 +1,335 @@
 {
   "diagrams": [
     {
-      "diagram_id": "diag-01-evidence-to-collection",
-      "chart_type": "process_flow",
-      "title": "From Loss Intake to Collected Restoration Invoice",
-      "subtitle": "Five accountable handoffs connect field evidence with job economics.",
+      "diagram_id": "diag-01-s500-s520-containment-to-closeout",
       "chapter_number": 1,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Stage numbers indicate sequence, not conversion rates. Restoration contract billings are operator revenue; total insured property value and insurer claim reserves are not.",
-      "caption": "Dispatch, photo documentation, and job-cost tracking automate handoffs without deciding coverage or negotiating policy rights.",
+      "title": "Working to the Standard, From Classification to Closeout",
+      "subtitle": "The S500 and S520 field sequence practitioners describe on the job",
+      "chart_type": "process_flow",
       "stages": [
         {
-          "label": "Qualify the loss",
-          "value": "Intake and jurisdiction review",
-          "numeric_value": 1.0,
-          "detail": "Record property address, water source or fire damage, occupancy, access authority, emergency hazards, and required contractor or remediation credentials."
+          "step": "01",
+          "label": "Classify Category and Condition",
+          "value": "Step 1",
+          "detail": "Judge mold jobs by Conditions 1, 2 and 3 rather than visible square footage. Water that originates from beyond the trap is category three (TheIICRC)."
         },
         {
-          "label": "Authorize the work",
-          "value": "Signed scope and payment terms",
-          "numeric_value": 2.0,
-          "detail": "Obtain the customer's work authorization, explain deductible responsibilities, and document payment terms without promising insurer coverage."
+          "step": "02",
+          "label": "Seal and Prove Containment",
+          "value": "Step 2",
+          "detail": "6 mil fire-retardant poly, then hold -5 pascals on a manometer before any demolition or air movers start (Balanced Building Biology)."
         },
         {
-          "label": "Mitigate and measure",
-          "value": "Time-stamped field evidence",
-          "numeric_value": 3.0,
-          "detail": "Assign drying equipment and responsible technicians; record temperature, relative humidity, humidity ratio, material moisture, equipment days, and dated photographs using applicable IICRC documentation practices."
+          "step": "03",
+          "label": "Remove Physically Under HEPA",
+          "value": "Step 3",
+          "detail": "Physical removal, never fogging or bleach, which is essentially a masking agent. HEPA captures 99.97% at 0.3 microns and runs about $153 per filter (Phill McGurk, Balanced Building Biology, APPALeadership)."
         },
         {
-          "label": "Estimate and reconcile",
-          "value": "Supported Xactimate scope",
-          "numeric_value": 4.0,
-          "detail": "Tie quantities, labor, equipment, and supplements to actual work and supporting evidence. Route policy interpretation or claim negotiation outside contractor scope."
+          "step": "04",
+          "label": "Extract, Then Set Air Movers",
+          "value": "Step 4",
+          "detail": "Pull water off the top and from underneath before drying mats go down. Darren Floyd's worked example puts 12 to 16 air movers on a 750 sq ft loss, and negative air is never drawn from a crawlspace (Restoration Technical Institute, APPALeadership)."
         },
         {
-          "label": "Invoice and collect",
-          "value": "Receivable and margin closeout",
-          "numeric_value": 5.0,
-          "detail": "Submit an itemized invoice, track customer and insurer remittance paths, resolve contractual scope discrepancies, and reconcile receipts against job costs without unauthorized public adjusting."
+          "step": "05",
+          "label": "Close on Same-Meter Readings",
+          "value": "Step 5",
+          "detail": "Take moisture readings every 5 ft with the same meter used daily, and close on monitored readings, never fan-days (Coach8, Andrew Melrose)."
         }
-      ]
+      ],
+      "caption": "Containment must hold -5 Pa before work begins, and the file closes only on readings from the same meter used throughout the project.",
+      "assumptions_note": "Step order follows the operator gates stated by Balanced Building Biology and Coach8. Air mover counts reflect Darren Floyd's 750 sq ft example, not a universal ratio.",
+      "note": "Attributed to Balanced Building Biology, Phill McGurk, APPALeadership (Darren Floyd), Restoration Technical Institute, TheIICRC, Coach8 and Andrew Melrose."
     },
     {
-      "diagram_id": "diag-02-loss-inquiry-cohort",
-      "chart_type": "funnel",
-      "title": "A Single Restoration Inquiry Cohort",
-      "subtitle": "120 inquiries narrow to 30 fully collected jobs at day 120.",
+      "diagram_id": "diag-02-tpa-program-squeeze",
       "chapter_number": 6,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Hypothetical cohort followed for 120 days after intake closes. Every later group is a subset of the preceding group. Counts are neither annual sales forecasts nor recognized revenue.",
-      "caption": "Separate lead qualification, completed work, and cash receipt; a paid-job count cannot substitute for earned contract revenue.",
+      "title": "The TPA Program Squeeze",
+      "subtitle": "How program work narrows a contractor's pricing control",
+      "chart_type": "funnel",
       "stages": [
         {
-          "label": "Recorded inquiries",
-          "value": "120 inquiries; 100% of intake",
-          "numeric_value": 120.0,
-          "detail": "Log every unique loss inquiry with source, address, contact permission, and incident date; remove duplicate calls concerning the same property and event."
+          "label": "Claims Routed Through TPAs",
+          "value": 80,
+          "display": "Upwards of 80% of claims",
+          "conversion": "Entry point, very few adjusters still work for insurers",
+          "detail": "The DYOJO host puts the TPA share at upwards of 80% of claims, and Jon Schoen says very few adjusters still work directly for carriers."
         },
         {
-          "label": "Qualified opportunities",
-          "value": "84 qualified; 70% of intake",
-          "numeric_value": 84.0,
-          "detail": "Retain jobs inside the service radius with appropriate credentials, accessible premises, available capacity, and a customer able to authorize work."
+          "label": "Carriers Bundled per Program",
+          "value": 40,
+          "display": "30 to 40 carriers",
+          "conversion": "Each carrier requires separate approval",
+          "detail": "Programs such as Contractor Connection bundle 30 to 40 carriers, and the contractor must be approved by each one separately."
         },
         {
-          "label": "Authorized jobs",
-          "value": "48 signed; 57.1% of qualified",
-          "numeric_value": 48.0,
-          "detail": "Count only executed work authorizations with a defined scope and payment terms; insurer acknowledgment alone does not create customer authorization."
+          "label": "Markup Surrendered at Entry",
+          "value": 20,
+          "display": "20% over the standard list",
+          "conversion": "Preset, discounted list that cannot be changed",
+          "detail": "Outside programs Jon Schoen marks the standard price list up 20%. Inside a program the list is preset and discounted with no markup."
         },
         {
-          "label": "Completed and invoiced",
-          "value": "36 completed; 75% of authorized",
-          "numeric_value": 36.0,
-          "detail": "Require completed contracted scope, supporting job records, and an issued invoice; twelve authorized jobs remain outside this completed subset."
+          "label": "Program Fee Charged",
+          "value": 10,
+          "display": "5% to 10% of the work",
+          "conversion": "Fee paid by the contractor to do program work",
+          "detail": "Schoen reports that TPAs charge the contractor 5 to 10 percent in order to do the work, on top of the preset price list."
         },
         {
-          "label": "Fully collected jobs",
-          "value": "30 collected; 83.3% of completed",
-          "numeric_value": 30.0,
-          "detail": "Require cleared payment against the full outstanding invoice balance; six completed jobs remain unpaid or partially paid at the observation cutoff."
+          "label": "Drying Capped at 3 Days",
+          "value": 3,
+          "display": "3-day drying cap",
+          "conversion": "Cap credited with $20M in claimed savings",
+          "detail": "Contractor Connection won Nationwide back from Alacrity by capping drying at 3 days and claiming $20M in savings (Jon Schoen)."
         }
-      ]
+      ],
+      "caption": "Program work trades chasing for control, yet David Smith says a program can hand over a $250,000 fire nobody had to chase.",
+      "assumptions_note": "Stage values carry mixed units (percent of claims, carrier count, percent of price, days) and are plotted as reported figures, not conversion rates. The 30 to 40 carrier range is plotted at its upper bound and the 5 to 10% fee at its upper bound.",
+      "note": "Attributed to Water Damage Restoration Coach Jon Schoen and The DYOJO, including Oregon mitigation owner David Smith. Brian Close counters that guaranteed work is not always profitable."
     },
     {
-      "diagram_id": "diag-03-base-case-profit-bridge",
-      "chart_type": "waterfall",
-      "title": "Base-Case Gross Billings to Owner Net Profit",
-      "subtitle": "$1,500,000 revenue less $1,305,000 costs leaves $195,000.",
+      "diagram_id": "diag-03-mini-split-repricing-gap",
       "chapter_number": 3,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Annual USD. First bar is opening revenue; four negative bars are cost deductions; the sixth bar is the closing total, not an additional cash inflow. Cost allocations are illustrative; canonical scenario revenue and net profit remain fixed.",
-      "caption": "Conservative: $500,000 × 8% = $40,000 with 2 FT + 2 C. Base: $1,500,000 × 13.0% = $195,000 with 2 FT + 2 C. Scaled: $2,500,000 × 18% = $450,000 with 3 FT + 3 C.",
-      "stages": [
+      "title": "The May 2026 Mini-Split Repricing Gap",
+      "subtitle": "What an estimate left on the April price list gives up",
+      "chart_type": "waterfall",
+      "bars": [
         {
-          "label": "Gross restoration billings",
-          "value": "$1,500,000 opening revenue; 100%",
-          "numeric_value": 1500000.0,
-          "detail": "Recognized restoration contract revenue includes subcontracted work and materials. Do not substitute total claim value, property value, or cash advances."
+          "label": "Four-Zone Unit, May 2026 Price",
+          "value": 13000,
+          "display": "$13,000",
+          "kind": "total"
         },
         {
-          "label": "Subcontractors and materials",
-          "value": "−$795,000 direct costs; 53%",
-          "numeric_value": -795000.0,
-          "detail": "Charge actual contractor invoices and consumed materials to jobs. The 2 FT + 2 C core pod includes two individual contractor seats, not employee salaries. External vendor and trade sub-crews are charged to direct subcontractor/COGS pass-through and are not included in internal pod headcount."
+          "label": "Gap Versus April List",
+          "value": 6200,
+          "display": "-$6,200",
+          "kind": "deduction"
         },
         {
-          "label": "Employee payroll and burden",
-          "value": "−$270,000 employee costs; 18%",
-          "numeric_value": -270000.0,
-          "detail": "Illustrative loaded annual payroll for the two full-time seats in the 2 FT + 2 C core pod averages $135,000 per FT seat, including the working owner-manager seat where applicable."
+          "label": "Four-Zone Unit, April Price",
+          "value": 6800,
+          "display": "$6,800",
+          "kind": "result"
         },
         {
-          "label": "Field operating costs",
-          "value": "−$105,000 field operations; 7%",
-          "numeric_value": -105000.0,
-          "detail": "Allocate vehicle operation, equipment depreciation or rental, maintenance, consumables, and field safety costs without repeating direct material charges."
+          "label": "One-Zone Unit, May 2026 Price",
+          "value": 4200,
+          "display": "$4,200",
+          "kind": "total"
         },
         {
-          "label": "Administrative operating costs",
-          "value": "−$135,000 administrative costs; 9%",
-          "numeric_value": -135000.0,
-          "detail": "Allocate facilities, insurance, dispatch software, estimating subscriptions, bookkeeping, marketing, and collection losses. Payroll, field, and administrative costs total $42,500 monthly, excluding variable direct costs."
+          "label": "Gap Versus April Price",
+          "value": 2700,
+          "display": "-$2,700",
+          "kind": "deduction"
         },
         {
-          "label": "Annual owner net profit",
-          "value": "$195,000 closing total; 13.0%",
-          "numeric_value": 195000.0,
-          "detail": "Subtract all four cost groups from gross revenue: $1,500,000 − $795,000 − $270,000 − $105,000 − $135,000 = $195,000. This is profit, not available cash before receivable collection."
+          "label": "One-Zone Unit, April Price",
+          "value": 1500,
+          "display": "$1,500",
+          "kind": "result"
         }
-      ]
+      ],
+      "caption": "Labor yields cut about 85% kept April mini-split pricing unprofitable. Reprice after every macro load and every monthly price list update before sending.",
+      "assumptions_note": "Gap bars are the arithmetic difference between the April and May 2026 unit prices reported by Actionable. Two separate unit chains are shown side by side.",
+      "note": "Attributed to Actionable for the mini-split prices, Claim Daddy for the repricing gate, and Overhead And Profit for a separate $2,688.91 repricing gain on an open estimate."
     },
     {
-      "diagram_id": "diag-04-subniche-contribution-yields",
-      "chart_type": "horizontal_bars",
-      "title": "Compare Job Contribution Before Fixed Operating Costs",
-      "subtitle": "Five illustrative service and payment-path combinations.",
+      "diagram_id": "diag-04-mitigation-billing-floors",
       "chapter_number": 2,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Numeric values are hypothetical contribution percentages: billings less job-variable costs, divided by billings. They are not observed market averages, net margins, or an annual service mix; do not add the percentages.",
-      "caption": "Use actual job-cost records to replace these planning inputs. The canonical Base-Case net margin remains 13.0% after all costs.",
-      "stages": [
+      "title": "Mitigation Billing Floors Per Visit and Per Job",
+      "subtitle": "Shane O'Dazier's street numbers for getting paid on water work",
+      "chart_type": "horizontal_bars",
+      "unit": "USD",
+      "bars": [
         {
-          "label": "Clean-water mitigation",
-          "value": "45% illustrative job contribution",
-          "numeric_value": 45.0,
-          "detail": "Customer-authorized extraction and drying with itemized equipment days; customer payment or insurer remittance must be reconciled to the same contract balance."
+          "label": "Initial Response Charge",
+          "min": 285,
+          "max": 285,
+          "typical": 285,
+          "display": "$285 initial response"
         },
         {
-          "label": "Fire and smoke cleaning",
-          "value": "40% illustrative job contribution",
-          "numeric_value": 40.0,
-          "detail": "Document affected surfaces, cleaning methods, and contents handling; disputed cleaning scope can delay collection despite completed field labor."
+          "label": "Minimum Per Truck Roll",
+          "min": 400,
+          "max": 500,
+          "typical": 400,
+          "display": "At least $400-$500 every time the truck rolls"
         },
         {
-          "label": "Mold remediation",
-          "value": "38% illustrative job contribution",
-          "numeric_value": 38.0,
-          "detail": "Use required remediation credentials and project protocols; customer-funded work remains collectible under its contract even when coverage is excluded."
+          "label": "Truck Mount Uplift Per Job",
+          "min": 300,
+          "max": 400,
+          "typical": 300,
+          "display": "$300-$400 added by billing $189-$289 per committed hour"
         },
         {
-          "label": "Storm stabilization",
-          "value": "35% illustrative job contribution",
-          "numeric_value": 35.0,
-          "detail": "Separate emergency protection from permanent repair; weather exposure, access equipment, and crew travel can erode initially attractive invoice yields."
+          "label": "Monitoring Trip Lump Charge",
+          "min": 150,
+          "max": 489,
+          "typical": 489,
+          "display": "$489 per trip vs roughly $150 billed hourly"
         },
         {
-          "label": "Reconstruction",
-          "value": "28% illustrative job contribution",
-          "numeric_value": 28.0,
-          "detail": "Align progress invoices with completed milestones; mortgage-servicer endorsements, retainage, and trade rework can extend the cash conversion cycle."
+          "label": "Small Cash-Pay Job Floor",
+          "min": 800,
+          "max": 2000,
+          "typical": 2000,
+          "display": "$800-$1,000 in trips before work, so priced at $2,000"
         }
-      ]
+      ],
+      "caption": "Change your pricing, never your scope. A $489 assess-and-reposition trip sat on a $7,300 invoice that was paid in full.",
+      "assumptions_note": "Where a range was stated, the typical marker sits on the stated floor or the practitioner's own chosen price. No midpoints were calculated.",
+      "note": "Attributed to Shane O'Dazier of RestorationProfits. ReconSmart Solutions pushes back that documentation, never a target dollar figure, drives the estimate."
     },
     {
-      "diagram_id": "diag-05-preflight-statutory-risk-checks",
-      "chart_type": "decision_tree",
-      "title": "Four Checks Before Dispatch or Scope Expansion",
-      "subtitle": "Proceed only through applicable, documented operating requirements.",
+      "diagram_id": "diag-05-negotiation-table-gates",
       "chapter_number": 5,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numbers identify sequential decisions rather than risk scores. A failed check routes to the corrective action in its detail. Texas citations are jurisdiction-specific examples, not nationwide contractor rules.",
-      "caption": "Coverage uncertainty does not authorize contractor claim negotiation, deductible concessions, or unsafe mobilization.",
-      "stages": [
+      "title": "The Negotiation Table Decision Gates",
+      "subtitle": "Questions contractors clear before conceding a dollar to an adjuster",
+      "chart_type": "decision_tree",
+      "nodes": [
         {
-          "label": "Credentials match the work?",
-          "value": "Yes: continue; no: reassign scope",
-          "numeric_value": 1.0,
-          "detail": "Verify local contractor requirements and applicable remediation licensing, including Texas Occupations Code Chapter 1958 where relevant. If credentials are missing, exclude the work or use a properly qualified provider under a permitted contracting arrangement."
+          "gate": "G1",
+          "question": "Is the adjuster's extra demand a requirement rather than a recommendation?",
+          "pass_next": "Ask what the requirement is based on, then move to G2",
+          "fail_action": "Decline it plainly, as Chris Zimmerman puts it, I don't need this, and therefore I won't be doing it"
         },
         {
-          "label": "Activity stays within contractor scope?",
-          "value": "Yes: continue; no: redirect request",
-          "numeric_value": 2.0,
-          "detail": "Under Texas Insurance Code sections 4102.051 and 4102.163, assess licensing and contractor restrictions before any adjusting activity. Explain construction quantities and prices; redirect coverage advocacy or settlement negotiation to an authorized professional."
+          "gate": "G2",
+          "question": "Is the discussion limited to scope and pricing, not coverage?",
+          "pass_next": "Move to G3",
+          "fail_action": "Stop; coverage negotiation needs a license, and in Texas section 4102.163 voids power-of-attorney workarounds (Avner Gat, Daly and Black)"
         },
         {
-          "label": "Payment terms preserve required deductibles?",
-          "value": "Yes: continue; no: correct terms",
-          "numeric_value": 3.0,
-          "detail": "Review Texas Business and Commerce Code section 27.02 where applicable. Reject prohibited deductible waivers, disguised rebates, and inflated invoices; document the customer's actual payment obligations and collection path."
+          "gate": "G3",
+          "question": "Has the carrier estimate been read for squares, tear-off quantities and unit errors?",
+          "pass_next": "Move to G4",
+          "fail_action": "Rebuild the baseline first; catch errors like 24.48 SF entered for 2,448 SF, since a weak estimate creates a weak starting point (claimhelpme)"
         },
         {
-          "label": "Hazards and cash exposure controlled?",
-          "value": "Yes: dispatch; no: resolve deficiencies",
-          "numeric_value": 4.0,
-          "detail": "Apply 29 CFR 1910.134 when respiratory protection is required, 29 CFR 1926.1101 for covered asbestos work, and 40 CFR 745.85 for covered renovations. Assign qualified crews, protective measures, and funded job commitments before releasing affected work."
+          "gate": "G4",
+          "question": "Is the requested reduction 10% or less on a 3 to 4 minute question-list call?",
+          "pass_next": "Accept and collect; no claim is closed until all repairs are made and paid for (Chad Michael)",
+          "fail_action": "Refuse reductions over 10% and collect the undisputed amount (Shane O'Dazier)"
         }
-      ]
+      ],
+      "caption": "Frontline paid about $40,000 against an almost $75,000 bid, so the first carrier number is a baseline to attack, not accept.",
+      "assumptions_note": "Gate order is a sequencing of separate practitioner rules. The 10% ceiling is Shane O'Dazier's, and the trade-code switch from DMO reached about 40% approval for Chad Michael.",
+      "note": "Attributed to Chris Zimmerman, Daly and Black P.C., Avner Gat Inc., claimhelpme, Builder's Perspective Public Adjusting, Shane O'Dazier and Chad Michael."
     },
     {
-      "diagram_id": "diag-06-four-core-six-scaled-pod",
-      "chart_type": "org_architecture",
-      "title": "Four Core Seats, Six at Scale",
-      "subtitle": "2 FT + 2 C core pod; add 1 FT + 1 C for a 3 FT + 3 C scaled pod.",
+      "diagram_id": "diag-06-deductible-and-claim-check-parties",
       "chapter_number": 11,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values show core-seat occupancy: four values of one and two expansion values of zero. The core comprises 2 FT + 2 C; activating both expansion seats produces 3 FT + 3 C, six people total. Contractor seats represent individual capacity commitments, not guaranteed full-time employee equivalents. External vendor and trade sub-crews are direct subcontractor/COGS pass-through, not internal pod headcount.",
-      "caption": "Conservative and Base scenarios use the four-person core; the Scaled scenario uses all six seats. Consolidate operating responsibilities within the core before expansion, and verify worker classification from actual working arrangements.",
-      "stages": [
+      "title": "Who Touches the Deductible and the Claim Check",
+      "subtitle": "The parties a contractor coordinates to get paid legally",
+      "chart_type": "org_architecture",
+      "center": {
+        "role": "Restoration or Roofing Contractor",
+        "headcount": "Not stated by the speakers",
+        "focus": "Collect the deductible from the homeowner and never bill the carrier a number the client was never charged, which Chad Michael calls a felony in every state"
+      },
+      "spokes": [
         {
-          "label": "FT 1: Owner-manager and estimator",
-          "value": "Core employee seat; commercial and scope accountability",
-          "numeric_value": 1.0,
-          "detail": "Own pricing, cash forecasting, jurisdiction selection, Xactimate estimates, measured quantities, and supplement support. Escalate contractual disputes appropriately without negotiating policy coverage or claim settlement."
+          "role": "Homeowner",
+          "type": "Deductible payer",
+          "kpi": "2% on a $500,000 dwelling is $10,000, owed on a $12,000 loss or a total loss (Anne Pullen)"
         },
         {
-          "label": "FT 2: Project and mitigation lead",
-          "value": "Core employee seat; field delivery, safety, and quality",
-          "numeric_value": 1.0,
-          "detail": "Coordinate dispatch and trades, direct extraction and drying, verify psychrometric records and hazard controls, review job costs, and confirm completion before billing. Maintain required qualifications for assigned work."
+          "role": "Carrier",
+          "type": "Insurer",
+          "kpi": "Withholds the deductible from the payout; subrogation refunded it in about 6 months (Collision Crash Course)"
         },
         {
-          "label": "C 1: Mitigation technician",
-          "value": "Core contractor seat; extraction and monitoring capacity",
-          "numeric_value": 1.0,
-          "detail": "Perform agreed extraction, equipment handling, moisture monitoring, and containment tasks within documented qualifications and the project's hazard-control plan. Record equipment checks and removal evidence."
+          "role": "Mortgage Loss Draft Department",
+          "type": "Lender",
+          "kpi": "Under $10,000 endorsed with no holdback; over $10,000 goes to inspection (Richard Levisee)"
         },
         {
-          "label": "C 2: Dispatch and receivables coordinator",
-          "value": "Core contractor seat; scheduling and billing support",
-          "numeric_value": 1.0,
-          "detail": "Coordinate arrivals, maintain authorization records, prepare invoices, track aging, and reconcile cleared payments under the agreed service scope. The owner-manager retains commercial accountability and approval authority."
-        },
-        {
-          "label": "FT 3: Safety and quality lead",
-          "value": "Expansion employee seat; core occupancy zero",
-          "numeric_value": 0.0,
-          "detail": "Activate at scale to audit hazard controls, training, field records, and rework. The project and mitigation lead retains these responsibilities before this hire."
-        },
-        {
-          "label": "C 3: Reconstruction coordinator",
-          "value": "Expansion contractor seat; core occupancy zero",
-          "numeric_value": 0.0,
-          "detail": "Activate at scale to coordinate qualified trade vendors, approved repair scopes, moisture acceptance criteria, and completion records. External trade sub-crews remain direct subcontractor/COGS pass-through, not pod seats."
+          "role": "Assignment Counsel",
+          "type": "Legal",
+          "kpi": "Confirm a true assignment, not a direction to pay, signed by every named insured (Butler Legal)"
         }
-      ]
+      ],
+      "caption": "A roofer who waives or eats the deductible is usually inflating the estimate or cutting roof quality.",
+      "assumptions_note": "Legal deductible coverage per Chad Michael means mining ACV-only other-structures money or subcontracting trades back to the owner. The lender threshold is from one sample mortgage package.",
+      "note": "Attributed to Anne Pullen, Restoration Roofing, Collision Crash Course, Richard Levisee, Butler Legal, Integrity Roofing and Painting and Chad Michael."
     },
     {
-      "diagram_id": "diag-07-45000-reference-startup-capital",
-      "chart_type": "stacked_comparison",
-      "title": "Startup Capital: A $45,000 Reference Plan",
-      "subtitle": "Four buckets total $45,000 within the $18,000–$75,000 USD range.",
+      "diagram_id": "diag-07-roof-supplement-value-bands",
       "chapter_number": 4,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Numeric values encode the $45,000 central/reference startup allocation in USD. Details also provide complete $18,000 lean and $75,000 expanded allocations across the same four buckets. Startup capital is funding capacity, not revenue or an immediate operating expense. Choose equipment access and job commitments to fit available funding.",
-      "caption": "Lean: $7,000 + $5,000 + $2,000 + $4,000 = $18,000. Reference: $18,000 + $12,000 + $6,000 + $9,000 = $45,000. Expanded: $30,000 + $20,000 + $10,000 + $15,000 = $75,000.",
-      "stages": [
+      "title": "Roof Supplement Value Bands",
+      "subtitle": "Reported supplement sizes from advertised average to single-spot O&P",
+      "chart_type": "stacked_comparison",
+      "total_range": "$2,500 to $7,000 per approved supplement (Roof Sales Mastery), with a single file lifted about $26,000 (Estimate Mastery)",
+      "buckets": [
         {
-          "label": "Working-capital reserve",
-          "value": "$18,000 reference allocation; 40.0%",
-          "numeric_value": 18000.0,
-          "detail": "Lean $7,000; reference $18,000; expanded $30,000. Fund receivable delays and job commitments. Model cash needs against the $4,000–$20,000 monthly operating expense planning range and separately fund variable direct job costs; a reserve does not guarantee runway through the 1–5 month time-to-first-deal window."
+          "label": "Advertised Average Supplement",
+          "low": 2500,
+          "high": 2500,
+          "notes": "Roof Sales Mastery's advertised figure"
         },
         {
-          "label": "Mitigation equipment",
-          "value": "$12,000 reference allocation; 26.7%",
-          "numeric_value": 12000.0,
-          "detail": "Lean $5,000; reference $12,000; expanded $20,000. Prioritize extraction, air movement, dehumidification, moisture meters, protective equipment, and calibrated measurement tools. Use rental access or suitable used equipment where needed and rent overflow capacity."
+          "label": "Real Average Supplement",
+          "low": 4000,
+          "high": 4500,
+          "notes": "Roof Sales Mastery's figure across contractors trained since 2014"
         },
         {
-          "label": "Vehicle and mobilization setup",
-          "value": "$6,000 reference allocation; 13.3%",
-          "numeric_value": 6000.0,
-          "detail": "Lean $2,000; reference $6,000; expanded $10,000. Fund vehicle rental or lease deposits, secure storage, load restraint, and initial mobilization equipment. Lean deployment assumes access to a suitable existing or rented vehicle; ongoing costs remain operating expenses."
+          "label": "Top User Average",
+          "low": 5000,
+          "high": 7000,
+          "notes": "Some Roof Sales Mastery users using the 100-plus item master list"
         },
         {
-          "label": "Business and technical setup",
-          "value": "$9,000 reference allocation; 20.0%",
-          "numeric_value": 9000.0,
-          "detail": "Lean $4,000; reference $9,000; expanded $15,000. Fund licensing, training, insurance deposits, estimating setup, dispatch configuration, bookkeeping systems, and initial referral development. Limit launch scope to work supported by funded credentials and safeguards."
+          "label": "O&P Riding on One Closet Spot",
+          "low": 5400,
+          "high": 5600,
+          "notes": "Chad Michael's $28,000 job where a single interior water spot unlocked O&P"
         }
-      ]
+      ],
+      "caption": "Estimate Mastery took a $21,027 RCV file to $47,192 RCV with O&P, while American Roof Supplements aims for the most accurate, supportable estimate at $150 per supplement.",
+      "assumptions_note": "Bands are each practitioner's own reported figures and are not drawn from a common sample of claims.",
+      "note": "Attributed to Roof Sales Mastery, Chad Michael, Estimate Mastery and American Roof Supplements."
     },
     {
-      "diagram_id": "diag-08-first-thirty-days",
-      "chart_type": "timeline_roadmap",
-      "title": "Thirty Days to an Operationally Ready Restoration Pod",
-      "subtitle": "Four weekly milestones establish evidence, capacity, and cash controls.",
+      "diagram_id": "diag-08-storm-roof-claim-roadmap",
       "chapter_number": 12,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values are milestone end days. The canonical time to first deal is 1–5 months; this sprint establishes readiness and does not assume a paid job within thirty days. Monthly operating costs span $4,000–$20,000 depending on deployment.",
-      "caption": "Use simulated job files until authorized customer work is available; never fabricate loss evidence, invoices, or insurer responses.",
-      "stages": [
+      "title": "Storm Roof Claim Roadmap",
+      "subtitle": "From policy read to paid crew, evidence first",
+      "chart_type": "timeline_roadmap",
+      "weeks": [
         {
-          "label": "Days 1-7",
-          "value": "Jurisdiction, scope, and cash plan",
-          "numeric_value": 7.0,
-          "detail": "Map contractor and remediation credentials, define public-adjusting boundaries, select the startup budget, and build a thirteen-week cash forecast separating operating costs from direct job commitments."
+          "week": "Week 1",
+          "title": "Read the Policy Before Promising",
+          "deliverable": "PPRC confirmed, any 400R ACV roof endorsement flagged, prior roof payments found; client emails their own agent on O&L, ACV versus RCV and cosmetic exclusions",
+          "gate": "No promise made until the policy is read (Adjuster TV, Chad Michael)"
         },
         {
-          "label": "Days 8-14",
-          "value": "Pod, equipment, and safety readiness",
-          "numeric_value": 14.0,
-          "detail": "Assign two employee and two contractor core roles, verify qualifications and worker classification, secure equipment access, and document hazard assessment, respiratory protection, and emergency escalation procedures."
+          "week": "Week 2",
+          "title": "Inspect and Photograph Every Elevation",
+          "deliverable": "About 30-50 roof photos and 90-120 total, every elevation in the same order; test square never on the contractor's square, counting stopped at 10 hits",
+          "gate": "Proof that replacement beats repair is in hand (Chris Zimmerman)"
         },
         {
-          "label": "Days 15-21",
-          "value": "Evidence and billing rehearsal",
-          "numeric_value": 21.0,
-          "detail": "Run a simulated water-loss file through dispatch, photo capture, psychrometric readings, Xactimate scope, customer authorization, job-cost coding, and invoice reconciliation; resolve missing evidence before live use."
+          "week": "Week 3",
+          "title": "Write and Self-Check the Estimate",
+          "deliverable": "Macro-built estimate with 10 to 15 percent waste; Haag-based worksheet at $24.80 per shingle against $368.78 per square for repair versus replace",
+          "gate": "Print-preview self-check passed and scope sits at $250-$450 per square, not $190 (Adjuster TV, Adam Bensman)"
         },
         {
-          "label": "Days 22-30",
-          "value": "Referral activation and measured deployment",
-          "numeric_value": 30.0,
-          "detail": "Contact targeted property managers and referral partners, track the inquiry cohort, and accept only authorized work within capacity. Review weekly cash exposure, receivable aging, safety events, and job contribution."
+          "week": "Week 4",
+          "title": "Price on Margin and Build",
+          "deliverable": "Price at cost divided by 0.65, so a $10,000 cost job is $15,384 rather than $13,500 at 1.35 markup; 54 percent markup is only 35 percent margin",
+          "gate": "Sub workers comp and GL verified, agreement locked before the first nail, never 3 unpaid jobs carried (Digital Roofing Innovations, Roofing Insights)"
         }
-      ]
+      ],
+      "caption": "The evidence wins the roof, and margin-based pricing keeps the crew profitable once the claim is approved.",
+      "assumptions_note": "Week buckets are a sequencing device; practitioners did not assign calendar durations to these steps.",
+      "note": "Attributed to Adjuster TV (Matt), Chris Zimmerman, Chad Michael, Claim Daddy, The STRONG Roofer with Adam Bensman, RoofCoach, ProLine, Digital Roofing Innovations and Roofing Insights."
     }
   ]
 }

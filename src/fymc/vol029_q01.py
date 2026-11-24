@@ -1,611 +1,821 @@
 from __future__ import annotations
 
-CHAPTER_1 = {
-    "id": "Q1",
-    "chapter_id": "Q1",
-    "chapter_number": 1,
-    "question_number": 1,
-    "slug": "what-exactly-is-insurance-restoration",
-    "question_prompt": "What exactly is insurance restoration, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
-    "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
-    "title": "What Exactly Is Insurance Restoration?",
-    "subtitle": "Water, Fire, Mold and Storm Operations: IICRC Drying Records, Xactimate Scope Evidence, Contractor Revenue and UPPA-Safe Collections",
-    "layout_template": "opportunity_overview",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Insurance restoration converts damaged property into documented, completed repair work—not into ownership of the insurance claim. "
-        "Candidate #15 ranks #13 with a Money-to-Manpower Score of 87/100 because equipment, field labor, subcontractors, and collection delays resist effortless scaling. "
-        "This chapter maps five plays: water mitigation, fire and contents recovery, mold remediation, storm reconstruction, and rank_and_rent_pay_per_call_routing. "
-        "The operating boundary is gross restoration billings recognized as earned contractor revenue; property value and total claim proceeds are separate. "
-        "Canonical annual owner net profit is $40,000 Conservative, $195,000 Base, and $450,000 Scaled. "
-        "Durable operators win through reproducible drying evidence, defensible Xactimate supplements, safe production, and cash discipline—not promises about coverage or spectacular storm-season sales."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$500,000",
-            "context": "Annual gross restoration revenue; subcontractor and material costs included in margin",
-            "note": "8% net margin; $40,000 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,500,000",
-            "context": "Annual gross restoration revenue; subcontractor and material costs included in margin",
-            "note": "13.0% net margin; $195,000 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$2,500,000",
-            "context": "Annual gross restoration revenue; subcontractor and material costs included in margin",
-            "note": "18% net margin; $450,000 annual owner net profit; 3 FT + 3 C, totaling 6 people",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Define the contractor business before accepting the claim",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Insurance restoration is a field-service and construction business that stabilizes damaged buildings, removes affected materials, "
-                    "cleans or restores recoverable property, and reconstructs authorized assemblies. Its demand often follows water escape, fire, "
-                    "microbial growth, or wind damage, but insurance is a possible payment source rather than the product sold. The customer "
-                    "buys measured work: extraction, containment, equipment deployment, cleaning, demolition, drying, and rebuilding. A homeowner "
-                    "authorization, commercial work order, or properly structured program agreement establishes who ordered that work and who owes "
-                    "payment. An insurer's adjuster evaluates the claim; the contractor records conditions, estimates its services, and substantiates "
-                    "its invoices. Those functions overlap in the job file without becoming interchangeable. Begin every intake by identifying "
-                    "the property owner, authorized signer, affected spaces, immediate hazards, payer expectations, and access constraints. A "
-                    "$900,000 house with a $120,000 insurance claim might generate only a $24,000 mitigation contract for this operator. "
-                    "Neither the building value nor the entire claim is contractor revenue. Temporary housing, customer-owned contents, lender-held "
-                    "funds, and another contractor's reconstruction proceeds remain outside that contract. This boundary determines useful sales "
-                    "metrics, credit exposure, estimating responsibilities, and whether the business has actually earned its reported production."
-                ),
-                (
-                    "The five mapped plays in this chapter are water mitigation, fire and contents recovery, mold remediation, storm reconstruction, "
-                    "and rank_and_rent_pay_per_call_routing. The first four are restoration delivery archetypes; the fifth is a distinct customer-acquisition "
-                    "or lead-selling model, not restoration production disguised as software. A water operator turns emergency availability and drying "
-                    "competence into authorized equipment and labor charges. A fire specialist earns through cleaning decisions, contents custody, "
-                    "odor treatment, and coordinated repair. A mold specialist sells controlled remediation against a defined scope, with assessment "
-                    "and verification separated where required. A storm rebuilder manages temporary protection, roof or envelope repair, subcontractors, "
-                    "and permit-dependent reconstruction. The routing operator sells qualified introductions and has no automatic entitlement to the "
-                    "resulting repair contract. Choose one delivery wedge before combining these operations. Each requires different equipment, "
-                    "training, scheduling, and working capital. IICRC S500, S520, and S700 provide relevant professional frameworks for water, mold, "
-                    "and fire work; they are not substitutes for jurisdiction-specific licensing or adopted requirements. A technician credential "
-                    "does not license a construction company, authorize public adjusting, or establish coverage. Durable positioning states exactly "
-                    "which deliverables the team can complete safely, document consistently, and collect without improvising contractual authority."
-                ),
-                (
-                    "Treat gross restoration billings as the scorecard's revenue basis, while recognizing that sending an invoice does not alone "
-                    "establish earned revenue. Under an applicable accrual policy, recognize consideration for satisfied performance obligations, "
-                    "using an appropriate progress measure when over-time criteria are met. Deposits for unperformed work remain liabilities; "
-                    "unapproved scope additions and disputed supplements need support before entering recognized revenue. If the operator controls "
-                    "the promised restoration service as principal, subcontractor and material expenses remain costs beneath gross revenue rather "
-                    "than being silently netted against sales. If an arrangement is genuinely only an agency service, assess that arrangement "
-                    "separately instead of counting another firm's contract value. For example, a completed $20,000 principal-contractor job with "
-                    "$7,000 subcontract labor, $3,000 materials, and $4,000 direct crew and equipment cost produces $6,000 before allocated overhead "
-                    "and other expenses. It does not produce a $20,000 owner distribution. Conversely, a $200 referral fee on that job is $200 "
-                    "of lead-business revenue, not $20,000. Build separate ledger fields for earned contract value, invoices, customer deposits, "
-                    "receivables, cash receipts, direct costs, and disputed amounts. That separation exposes businesses that appear profitable "
-                    "only because customer advances or unpaid vendor bills temporarily inflate the bank balance."
-                ),
-            ],
-            "table": {
-                "caption": "Five Mapped Operator Archetypes: Contract Units, Delivery Moats and Practical Fallbacks",
-                "headers": [
-                    "Mapped operator archetype",
-                    "Illustrative earned revenue unit",
-                    "Durable delivery or acquisition moat",
-                    "Risk boundary and practical fallback",
-                ],
-                "rows": [
-                    [
-                        "Water mitigation with documented emergency drying services",
-                        "Ten completed jobs at $8,000 produce $80,000 revenue",
-                        "IICRC S500 workflows connect readings with equipment decisions",
-                        "Disputed drying days require logs and prompt redeployment",
-                    ],
-                    [
-                        "Fire and contents recovery with controlled custody",
-                        "Four completed projects at $25,000 produce $100,000 revenue",
-                        "Encircle inventories connect custody events with cleaning outcomes",
-                        "Failed cleaning trials trigger authorized replacement evaluation instead",
-                    ],
-                    [
-                        "Mold remediation with defined containment and removal",
-                        "Six completed projects at $10,000 produce $60,000 revenue",
-                        "Independent assessment relationships support reproducible scope and verification",
-                        "Hidden growth requires isolation and separately authorized expansion",
-                    ],
-                    [
-                        "Storm reconstruction with roofing and envelope coordination",
-                        "Five completed contracts at $40,000 produce $200,000 revenue",
-                        "HOVER measurements support local crews and permit execution",
-                        "Material exposure falls through staged procurement and deposits",
-                    ],
-                    [
-                        "rank_and_rent_pay_per_call_routing with qualified local restoration introductions",
-                        "Forty accepted calls at $150 produce $6,000 revenue",
-                        "Ringba or Twilio routing supports auditable qualification records",
-                        "Prepaid wallets and organic pages reduce collection dependence",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Build evidence while the physical conditions still exist",
-                "body": (
-                    "The highest-value administrative work happens before demolition, equipment removal, "
-                    "contents movement, or the first disputed invoice."
-                ),
-                "items": [
-                    "Photograph the moisture meter on the mapped material location; retain instrument identity, reading mode, timestamp, and an unaffected comparison.",
-                    "Attach each Xactimate supplement line to a specific photo, measurement, work record, or applicable requirement rather than resubmitting the entire estimate.",
-                    "Run a small documented cleaning trial before pricing an entire contents category; record the customer's authorized restoration-versus-replacement decision.",
-                    "Save the signed scope version used by the crew and the version used for billing so later revisions cannot erase the original authorization trail.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Select a sub-vertical using evidence burden and failure exposure",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Water mitigation rewards speed only when speed preserves a defensible drying plan. Record source conditions, affected materials, "
-                    "initial moisture mapping, ambient temperature, relative humidity, and equipment placement before the site changes. Use "
-                    "psychrometric calculations to interpret humidity ratio and drying conditions; surface readings and room humidity answer different "
-                    "questions. Establish material-specific drying goals against suitable unaffected comparisons rather than declaring every assembly "
-                    "dry at one universal percentage. Equipment placement, containment, and removal decisions should follow the evolving conditions, "
-                    "not a fixed desire to bill more days. In an illustrative month, ten completed $8,000 jobs produce $80,000 gross revenue. "
-                    "If direct delivery consumes $48,000, the remaining $32,000 must still absorb dispatch, vehicles, rent, insurance, administration, "
-                    "and other expenses. It is contribution before those expenses, not the chapter's annual owner profit. A denied extension "
-                    "of equipment days can erase that cushion quickly. The fallback is a shorter, evidence-supported drying sequence, timely "
-                    "equipment reassignment, and early communication about materials that cannot be economically dried. Use Encircle for field "
-                    "records and Xactimate for scoped estimating, but audit the underlying observations. Software can make a weak moisture "
-                    "record attractive without making it persuasive, accurate, or technically useful."
-                ),
-                (
-                    "Fire, mold, and storm projects each concentrate a different tail risk. Fire work can lose money through contents custody "
-                    "failures, repeated odor treatment, or an optimistic cleaning-versus-replacement decision. Four completed $25,000 projects create "
-                    "$100,000 gross revenue; $70,000 of direct production leaves $30,000 before overhead, with one extensive re-clean threatening "
-                    "the entire contribution. Test representative materials and secure specific contents authorizations before committing warehouse "
-                    "capacity. Mold remediation is not simply water extraction with more plastic: containment, pressure relationships, worker "
-                    "protection, removal methods, and an appropriate verification endpoint must fit the assessed conditions. Six $10,000 jobs "
-                    "yield $60,000 revenue; if direct work costs $42,000, $18,000 remains before overhead. When concealed conditions expand, "
-                    "stop the affected activity, preserve containment, and obtain an authorized scope revision. Storm reconstruction carries "
-                    "weather exposure, permit sequencing, subcontractor coordination, and material-price risk. Five $40,000 completed contracts "
-                    "yield $200,000 revenue; $150,000 direct cost leaves $50,000 before overhead. Stage purchases and labor commitments around "
-                    "access, permits, and agreed payment milestones rather than an adjuster's verbal optimism. These examples explain unit "
-                    "economics, not additional annual scenarios. Their contributions cannot be added to the canonical scorecard without also "
-                    "adding the associated capacity, overhead, and collection burden."
-                ),
-                (
-                    "The sub-vertical matrix distinguishes services that share a customer from services that share production economics. A "
-                    "commercial water loss may offer larger invoices but require overnight work, security coordination, tenant communication, "
-                    "and more equipment than a residential crew can responsibly deploy. A contents pack-out may look labor-light in the "
-                    "estimate while generating months of storage custody and repeated handling. Roofing may produce attractive contract values "
-                    "while exposing the operator to fall hazards, weather-sensitive scheduling, and lien-release administration. Evaluate each "
-                    "lane through accepted scope, measurable production units, evidence requirements, callback probability, and days to collectible "
-                    "cash. The platforms named below support measurements, records, or routing; they do not confer insurer acceptance, technical "
-                    "competence, or preferred-provider status. Fee descriptions are operator contract structures, not vendor subscription quotes "
-                    "or universal carrier allowances. Separate customer-requested upgrades from loss-related work and obtain distinct authorization "
-                    "before installation. Track denied line items and callbacks by cause rather than writing them off as general claim friction. "
-                    "A recurring omission in photos calls for field coaching; recurring unsupported scope calls for estimating discipline. "
-                    "Enter an adjacent lane only after the team can explain its failure triggers and fund a realistic correction without "
-                    "using deposits from unrelated unfinished jobs."
-                ),
-            ],
-            "table": {
-                "caption": "Sixteen Restoration Sub-Verticals: Named Platforms, Billing Structures, Moats and Reversal Triggers",
-                "headers": [
-                    "Sub-vertical and specific operating focus",
-                    "Named platform and its practical role",
-                    "Operator fee structure and billing evidence",
-                    "Durable moat that survives ordinary competition",
-                    "Clawback, rejection or production failure trigger",
-                ],
-                "rows": [
-                    [
-                        "Residential supply-line escape and emergency structural drying",
-                        "Encircle captures room readings and equipment placement",
-                        "Authorized extraction labor plus documented equipment days",
-                        "Fast deployment supported by repeatable material drying records",
-                        "Unsupported equipment duration creates reductions and collection disputes",
-                    ],
-                    [
-                        "Sewage intrusion requiring controlled removal and cleaning",
-                        "Xactimate organizes removal quantities and cleaning scope",
-                        "Measured removal and cleaning units under signed scope",
-                        "Contamination controls and documented disposal prevent costly rework",
-                        "Misclassified conditions expose workers and invalidate production assumptions",
-                    ],
-                    [
-                        "Commercial water losses across occupied tenant spaces",
-                        "DASH coordinates multiple crews and customer communications",
-                        "Contracted labor schedules plus equipment and material charges",
-                        "Tenant coordination protects access and limits repeated mobilization",
-                        "Business interruption promises create obligations beyond restoration scope",
-                    ],
-                    [
-                        "Hardwood floor drying with material-specific recovery decisions",
-                        "Encircle connects floor locations with sequential moisture readings",
-                        "Authorized specialty equipment periods with documented monitoring visits",
-                        "Early feasibility testing avoids prolonged unsuccessful drying attempts",
-                        "Cupping or concealed damage defeats optimistic recovery commitments",
-                    ],
-                    [
-                        "Wall cavity drying and selective assembly removal",
-                        "CompanyCam preserves cavity observations and demolition boundary photos",
-                        "Measured openings and equipment charges supported by conditions",
-                        "Assembly knowledge reduces unnecessary demolition and hidden moisture",
-                        "Closed cavities remain wet despite acceptable room humidity",
-                    ],
-                    [
-                        "Fire soot cleaning across recoverable building surfaces",
-                        "Xactimate separates substrate-specific cleaning and repair line items",
-                        "Measured surface cleaning with separately authorized repair scope",
-                        "Documented test areas establish suitable methods before deployment",
-                        "Incompatible cleaning methods permanently damage otherwise recoverable finishes",
-                    ],
-                    [
-                        "Contents pack-out with inventory and custody management",
-                        "Encircle records item identities and container custody events",
-                        "Authorized handling labor plus itemized packing material charges",
-                        "Traceable custody reduces loss allegations and retrieval delays",
-                        "Missing inventory links create replacement demands and chargebacks",
-                    ],
-                    [
-                        "Contents cleaning and controlled warehouse storage services",
-                        "DASH tracks contents tasks and storage release milestones",
-                        "Agreed cleaning units plus clearly defined storage periods",
-                        "Condition records and retrieval discipline protect customer confidence",
-                        "Unclear storage terms produce prolonged unpaid occupancy disputes",
-                    ],
-                    [
-                        "Smoke odor investigation and targeted treatment services",
-                        "CompanyCam documents source removal and treated assembly boundaries",
-                        "Defined treatment scope with separately priced authorized repeats",
-                        "Source identification prevents masking odors instead of removal",
-                        "Unremoved concealed residue causes recurring complaints and rework",
-                    ],
-                    [
-                        "Mold remediation inside isolated residential work zones",
-                        "Encircle retains containment photos and daily work records",
-                        "Defined removal quantities plus containment and cleaning charges",
-                        "Disciplined containment and verification preparation reduce repeat mobilization",
-                        "Uncorrected moisture sources lead to renewed microbial growth",
-                    ],
-                    [
-                        "Multifamily remediation with coordinated occupant access requirements",
-                        "DASH schedules unit access and tracks repeated visits",
-                        "Unit-specific scopes with documented common-area protection charges",
-                        "Property manager coordination minimizes inaccessible units and idle crews",
-                        "Access failures and cross-unit spread destroy planned productivity",
-                    ],
-                    [
-                        "Emergency roof tarping after wind-driven envelope damage",
-                        "CompanyCam records attachment conditions and temporary protection extent",
-                        "Authorized temporary protection area plus justified mobilization charges",
-                        "Safe rapid response preserves relationships for later reconstruction",
-                        "Unsafe attachments or renewed leaks create consequential disputes",
-                    ],
-                    [
-                        "Storm roof replacement with permitted permanent construction",
-                        "EagleView supplies measurement reports for estimator field reconciliation",
-                        "Signed roof contract with documented authorized change orders",
-                        "Reliable crews and permit execution support predictable completion",
-                        "Measurement errors and deductible inducements undermine collectible margins",
-                    ],
-                    [
-                        "Siding and exterior envelope storm reconstruction projects",
-                        "HOVER produces measurements supporting verified material takeoffs",
-                        "Measured assembly replacement plus authorized accessory installation charges",
-                        "Detailing competence prevents leaks at repaired building transitions",
-                        "Omitted flashing details cause callbacks after apparent completion",
-                    ],
-                    [
-                        "Interior reconstruction following completed and documented mitigation",
-                        "Xactimate separates repair quantities from earlier mitigation billing",
-                        "Progress-based contract billing tied to satisfied work obligations",
-                        "Handoff documentation prevents duplicate charges and concealed wetness",
-                        "Premature closure traps moisture and forces destructive rework",
-                    ],
-                    [
-                        "Local restoration lead routing for qualified contractor introductions",
-                        "Ringba and Twilio support attribution and routing workflows",
-                        "Prepaid qualified calls priced between $75 and $300",
-                        "Organic local relevance and audit trails improve buyer retention",
-                        "Duplicate calls and false locations trigger refunds or suspensions",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Reconcile owner profit with capacity, collections and call economics",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The canonical Conservative case is $500,000 gross restoration revenue at an 8% net margin, producing $40,000 annual owner "
-                    "net profit with 5 full-time staff and 6 contractors. Base is $1,500,000 at 13.0%, producing $195,000 with the same "
-                    "headcounts. Scaled is $2,500,000 at 18%, producing $450,000 with 6 full-time staff and 7 contractors, or 13 people. "
-                    "The implied annual total costs are therefore $460,000, $1,305,000, and $2,050,000. These costs already include subcontractor "
-                    "and material expense within the margin calculation. Do not deduct them twice or present gross contract value as "
-                    "subcontractor-free revenue. Using an illustrative $20,000 average earned contract, the cases require 25, 75, and 125 "
-                    "completed contract equivalents annually. Actual mixes will contain smaller mitigation jobs and larger rebuilds. Contractor "
-                    "headcount does not describe hours purchased, and the Conservative staffing burden requires an explicit wage, utilization, "
-                    "and benefits budget before hiring. Preserve the scorecard numbers while testing whether local costs can support them. "
-                    "The $18,000–$75,000 startup range, $4,000–$20,000 monthly operating-expense range, and 1–5 months to first deal are "
-                    "planning inputs, not proof of funded capacity. Reconcile the monthly expense definition against total annual costs rather "
-                    "than treating its upper endpoint as a ceiling on all production spending."
-                ),
-                (
-                    "Cash conversion can break a profitable operator because crews and suppliers demand payment before the final claim dispute "
-                    "is resolved. At the Base revenue run rate, 60 days of receivables represents approximately $246,575 using $1,500,000 "
-                    "divided by 365 and multiplied by 60. That is an illustrative gross receivable balance, not the exact cash reserve "
-                    "required: deposits, payment timing, taxes, vendor terms, and production costs change the reserve calculation. Build a "
-                    "weekly thirteen-week cash forecast using expected receipts by invoice and committed disbursements by job. Separate "
-                    "undisputed balances from contested supplements so a plausible collection date does not conceal a coverage dispute. "
-                    "A lender's endorsement requirement or recoverable-depreciation process can delay customer access to funds even when work "
-                    "is complete. Ask about those mechanics during contracting instead of discovering them after payroll. Invoice authorized "
-                    "completed work promptly, attach the evidence packet, and maintain a clear customer balance that reflects actual payments "
-                    "and lawful deductible obligations. Do not fund growth by assuming every supplement will be accepted at face value. "
-                    "Track disputed receivables by age, reason, and responsible next action. Where work can be safely staged, pause "
-                    "unfunded discretionary phases under the contract rather than extending involuntary credit across an expanding reconstruction scope."
-                ),
-                (
-                    "The TRACK_2 play rank_and_rent_pay_per_call_routing builds local service hubs and routes calls through Ringba or Twilio to "
-                    "participating operators. Its specified commercial unit is $75–$300 for an inbound call lasting over 90 seconds, but duration "
-                    "alone should not define acceptance: document geography, requested service, duplicates, spam exclusions, operating hours, and "
-                    "buyer availability. Forty accepted calls at $150 produce $6,000 lead revenue. With illustrative monthly traffic, routing, "
-                    "and support costs of $2,400, contribution is $3,600 before remaining overhead and taxes. That result belongs to the "
-                    "lead operation and is not an extra profit line inside the restoration scorecard. If an affiliated restoration company "
-                    "buys the calls, eliminate intercompany charges when consolidating results. Anchor acquisition in organic city and calculator "
-                    "pages so a Google Business Profile suspension does not automatically remove that traffic source; organic rankings still "
-                    "face algorithm and indexing risk. Use Maps profiles only for eligible real businesses with verified partner locations, "
-                    "never fabricated offices. Enforce prepaid auto-refill wallets, low-balance alerts, spending limits, and automatic routing "
-                    "pauses before balances run out. For disputed calls, preserve attribution and permissible qualification evidence, issue "
-                    "contractual credits where justified, and disable buyers who repeatedly challenge clearly accepted units."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Annual Economics and Separate Illustrative Operating Tests",
-                "headers": [
-                    "Scenario or operating test with boundary",
-                    "Revenue and cost arithmetic for reconciliation",
-                    "Capacity or cash interpretation for operators",
-                    "Required action before relying on result",
-                ],
-                "rows": [
-                    [
-                        "Conservative restoration case using canonical annual operating assumptions",
-                        "$500,000 revenue minus $460,000 costs equals $40,000 profit",
-                        "Five full-time staff plus six contractors support production",
-                        "Test payroll affordability before treating headcount as funded",
-                    ],
-                    [
-                        "Base restoration case using canonical annual operating assumptions",
-                        "$1,500,000 revenue minus $1,305,000 costs equals $195,000 profit",
-                        "Five full-time staff plus six contractors require utilization",
-                        "Reconcile every job's direct costs before distributing earnings",
-                    ],
-                    [
-                        "Scaled restoration case using canonical annual operating assumptions",
-                        "$2,500,000 revenue minus $2,050,000 costs equals $450,000 profit",
-                        "Six full-time staff plus seven contractors total thirteen",
-                        "Prove dispatch and supervision capacity before accepting expansion",
-                    ],
-                    [
-                        "Illustrative contract equivalents using twenty-thousand-dollar average earned revenue",
-                        "Twenty-five, seventy-five, and one-hundred-twenty-five equivalents match annual revenues",
-                        "Actual job mix changes visits and equipment requirements",
-                        "Model overlapping projects rather than counting contracts alone",
-                    ],
-                    [
-                        "Base receivables illustration assuming sixty days outstanding uniformly",
-                        "$1,500,000 divided by 365 times 60 approximates $246,575",
-                        "Gross receivables differ from required working cash reserves",
-                        "Forecast receipts against payroll and supplier payment commitments",
-                    ],
-                    [
-                        "Separate lead-routing illustration outside canonical restoration profit cases",
-                        "Forty $150 calls less $2,400 costs leaves $3,600",
-                        "Contribution excludes remaining overhead and applicable tax expenses",
-                        "Eliminate affiliated charges when reporting consolidated business results",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Create the job-level revenue boundary",
-                    "action": "Record the contracting entity, customer, authorized scope, payment terms, and deposit balance.",
-                    "detail": "Keep total claim value and property value in reference fields that cannot feed recognized revenue.",
-                },
-                {
-                    "step": 2,
-                    "title": "Match evidence to earned production",
-                    "action": "Link daily work records, measured quantities, approved changes, and completion milestones to billing lines.",
-                    "detail": "Evaluate disputed supplements separately instead of automatically recognizing every estimate revision.",
-                },
-                {
-                    "step": 3,
-                    "title": "Close costs before reporting margin",
-                    "action": "Accrue crew time, subcontract invoices, materials, equipment costs, disposal, and allocated operating expenses.",
-                    "detail": "Compare the resulting annual totals with the canonical 8%, 13.0%, and 18% scenario margins.",
-                },
-                {
-                    "step": 4,
-                    "title": "Refresh the thirteen-week cash forecast",
-                    "action": "Update invoice-level receipt dates, disputed balances, deposits, payroll, and committed supplier payments weekly.",
-                    "detail": "Assign a named owner and next action to every overdue balance without assuming insurer payment.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Build defensible operating moats without becoming an unlicensed adjuster",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "UPPA means the unauthorized practice of public adjusting, and the operational boundary is narrower than many sales scripts "
-                    "suggest. A restoration contractor can describe observed damage, explain its methods, support its own pricing, and seek "
-                    "payment for authorized work within applicable law. Acting for the insured to interpret coverage or negotiate settlement "
-                    "can require a separate public-adjuster license, and some jurisdictions restrict combining adjusting with repair interests. "
-                    "Texas Insurance Code §4102.163 specifically addresses the contractor conflict; Florida Statutes §489.147 restricts contractor "
-                    "insurance-claim conduct. Train estimators to say what the evidence supports: affected area, necessary access, documented "
-                    "labor, material quantities, and the reason for a changed scope. Do not promise that a carrier will pay, offer "
-                    "unlawful deductible inducements, or present a contractor's assignment document as universal authority to control the claim. "
-                    "Texas Insurance Code §707.002 requires payment of applicable property-policy deductibles. Collections should distinguish the "
-                    "customer's contract obligation from unresolved insurer decisions and should escalate policy interpretation to the insured's "
-                    "appropriately authorized representative. Preserve delivery receipts and notices, but verify local lien eligibility and "
-                    "deadlines before relying on lien rights. A factual supplement is a construction record; advocacy over coverage is "
-                    "a different service with different authority."
-                ),
-                (
-                    "Safety is a production requirement because a single uncontrolled exposure can overwhelm several profitable jobs. The employer "
-                    "duties in 29 U.S.C. §654 sit alongside task-specific OSHA standards, including construction asbestos requirements in 29 CFR "
-                    "1926.1101 and fall protection in 29 CFR 1926.501. Respiratory protection must follow the applicable program requirements; "
-                    "issuing disposable masks is not a substitute for hazard assessment, medical evaluation, and fit testing where required. "
-                    "Before destructive work, identify materials, building age, occupancy, utilities, structural conditions, and sampling needs. "
-                    "The EPA renovation work-practice requirements in 40 CFR 745.85 apply to covered renovation activities in target housing "
-                    "and child-occupied facilities, with specific applicability and emergency provisions that require review. Suspected asbestos "
-                    "or lead hazards should change the work sequence before demolition exposes occupants and crews. Mold licensing and "
-                    "assessment-remediation separation also vary; Florida Statutes §468.8419 supplies concrete restrictions for regulated mold "
-                    "services. Build qualified specialist relationships so the fallback is controlled isolation and an orderly handoff, not "
-                    "improvised removal. Stop the affected activity when conditions exceed training or authorization, document why, and preserve "
-                    "safe site control. This protects the customer and prevents a low-margin job from becoming an open-ended remediation liability."
-                ),
-                (
-                    "The durable small-team moat is an operating system that converts field observations into accurate decisions, collectible "
-                    "invoices, and fewer callbacks. Dispatch automation should route the right crew to the right hazard and geography, not "
-                    "merely shorten response time. Photo documentation should enforce location, timestamp, and scope linkage rather than reward "
-                    "hundreds of unlabeled images. Job-cost tracking should expose labor variance and missing subcontract commitments before "
-                    "the final invoice. Connect these three scorecard automation levers through a stable job identifier across Encircle, "
-                    "Xactimate, scheduling, and accounting records, using supported exports or integrations rather than assuming every product "
-                    "synchronizes automatically. Audit a sample of closed jobs monthly for authorization completeness, moisture evidence, equipment "
-                    "duration, scope changes, gross margin, collection age, and repeat visits. Compare sales sources by collected contribution "
-                    "after callbacks and lead costs, not by booked claim value. Fragile beginner hype celebrates catastrophe demand, oversized "
-                    "estimates, and nominal contractor networks without checking who can actually supervise the work. A resilient operator "
-                    "declines unsafe volume, reserves cash for disputed balances, and expands only after existing crews produce reproducible "
-                    "results. With a 87/100 score and last-place pipeline rank, this is a disciplined execution business, not a "
-                    "low-labor arbitrage opportunity."
-                ),
-            ],
-            "table": {
-                "caption": "Evidence, Authority and Safety Controls That Protect Collectible Production",
-                "headers": [
-                    "Control point and specific operating exposure",
-                    "Primary requirement or concrete evidence source",
-                    "Field or office action before proceeding",
-                    "Fallback when the requirement cannot be met",
-                ],
-                "rows": [
-                    [
-                        "Contractor communications about disputed insurer claim payments",
-                        "Texas Insurance Code §4102.163 addresses contractor adjusting conflicts",
-                        "Limit submissions to contractor scope and factual support",
-                        "Refer coverage advocacy to an appropriately authorized representative",
-                    ],
-                    [
-                        "Sales offers involving customer property insurance deductibles",
-                        "Texas Insurance Code §707.002 requires applicable deductible payment",
-                        "Record deductible responsibility without prohibited offset arrangements",
-                        "Revise proposed terms before accepting the customer signature",
-                    ],
-                    [
-                        "Covered renovation disturbing painted pre-1978 building components",
-                        "40 CFR 745.85 establishes applicable renovation work practices",
-                        "Confirm applicability and required certified personnel before disturbance",
-                        "Isolate affected work and engage properly qualified specialists",
-                    ],
-                    [
-                        "Construction activities involving potentially asbestos-containing building materials",
-                        "29 CFR 1926.1101 establishes construction asbestos protection requirements",
-                        "Evaluate materials and establish required controls before demolition",
-                        "Suspend disturbance while qualified specialists resolve material status",
-                    ],
-                    [
-                        "Roof access during temporary protection or reconstruction",
-                        "29 CFR 1926.501 specifies applicable fall protection duties",
-                        "Select suitable protection and assess roof access hazards",
-                        "Defer unsafe access and arrange a safer method",
-                    ],
-                    [
-                        "Florida mold work involving assessment and remediation roles",
-                        "Florida Statutes §468.8419 restricts regulated mold service conduct",
-                        "Verify credentials and required separation before assigning roles",
-                        "Use appropriately independent providers for conflicting regulated functions",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify authority, safety, evidence and cash before dispatch",
-                "body": (
-                    "Release the crew only when the job has a documented operating boundary. "
-                    "Emergency conditions may change sequencing, but they do not create unlimited scope or payment authority."
-                ),
-                "items": [
-                    "Verify the signer can authorize property work, the contracting entity holds required credentials, and the scope does not assign unlicensed adjusting duties.",
-                    "Verify the hazard assessment covers utilities, structural access, suspect materials, respiratory protection, and fall exposure for the actual tasks planned.",
-                    "Verify baseline photos, moisture mapping where relevant, equipment identifiers, and the signed scope can be retrieved under one job identifier.",
-                    "Verify deposit handling, deductible responsibility, available working cash, and a collection plan that does not depend on an unsupported coverage promise.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The moat is not the size of the claim; it is the quality of the work record that turns completed restoration into collected margin.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Choose one restoration delivery archetype and define its authorized work units, equipment requirements, staffing limits, and safe handoff conditions.",
-        "Configure separate ledger fields for earned revenue, invoices, deposits, receivables, disputed supplements, direct costs, and cash receipts.",
-        "Build an Encircle-to-Xactimate evidence packet linking each billed quantity to authorization, location, measurements, photographs, and completed work.",
-        "Reconcile the annual scenarios to $40,000, $195,000, and $450,000 owner net profit without counting property values or another contractor's billings.",
-        "Implement a thirteen-week cash forecast and, for any lead-routing operation, prepaid wallets with written call qualification and credit rules.",
-        "Verify jurisdiction-specific contractor, mold, public-adjusting, deductible, lead, asbestos, and fall-protection requirements before accepting the corresponding scope.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "29 U.S.C. §654 — Duties of employers and employees",
-            "url": "https://www.law.cornell.edu/uscode/text/29/654",
-            "relevance": "Establishes employer workplace-safety duties underlying restoration hazard assessment and protective procedures.",
-        },
-        {
-            "title": "29 CFR 1926.1101 — Asbestos in construction",
-            "url": "https://www.ecfr.gov/current/title-29/section-1926.1101",
-            "relevance": "Governs covered construction asbestos work, including exposure controls, regulated areas, training, and related requirements.",
-        },
-        {
-            "title": "29 CFR 1926.501 — Duty to have fall protection",
-            "url": "https://www.ecfr.gov/current/title-29/section-1926.501",
-            "relevance": "Provides task-specific fall-protection requirements relevant to storm roofing, temporary protection, and elevated restoration work.",
-        },
-        {
-            "title": "29 CFR 1926.103 — Respiratory protection",
-            "url": "https://www.ecfr.gov/current/title-29/section-1926.103",
-            "relevance": "Applies the respiratory-protection requirements of 29 CFR 1910.134 to construction work.",
-        },
-        {
-            "title": "40 CFR 745.85 — Work practice standards",
-            "url": "https://www.ecfr.gov/current/title-40/section-745.85",
-            "relevance": "Sets work-practice requirements for covered renovation activities, including containment, cleaning, and verification procedures.",
-        },
-        {
-            "title": "Texas Insurance Code §4102.163 — Certain business prohibited",
-            "url": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.4102.htm#4102.163",
-            "relevance": "Restricts contractor involvement in public adjusting for property on which the contractor provides or may provide services.",
-        },
-        {
-            "title": "Texas Insurance Code §707.002 — Payment of deductible",
-            "url": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.707.htm#707.002",
-            "relevance": "Requires payment of applicable property insurance deductibles and informs lawful customer payment arrangements.",
-        },
-        {
-            "title": "Florida Statutes §489.147 — Prohibited property insurance practices",
-            "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0489/Sections/0489.147.html",
-            "relevance": "Restricts specified contractor practices involving property insurance claims, deductible incentives, and claim-related conduct.",
-        },
-        {
-            "title": "Florida Statutes §468.8419 — Prohibitions and penalties",
-            "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0468/Sections/0468.8419.html",
-            "relevance": "Provides restrictions relevant to mold-service licensing and conflicting assessment and remediation roles.",
-        },
-    ],
-}
+CHAPTER_1 = {'id': 'Q1',
+ 'chapter_id': 'Q1',
+ 'chapter_number': 1,
+ 'question_number': 1,
+ 'slug': 'iicrc-s500-s520-working-to-the-standard',
+ 'question_prompt': 'What do the IICRC S500 and S520 standards require for water damage restoration and '
+                    'mold remediation, and how do practitioners get certified?',
+ 'kicker': 'Q1 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Working to the Standard: IICRC S500 Water Damage and S520 Mold Remediation',
+ 'subtitle': 'S500 2021 edition changes, S520 2015 and 2024 revisions, S520 core principles and homeowner '
+             'guide, the Texas TMARR overlay, applied structural drying readings, and the MRS application '
+             'and exam handbook',
+ 'layout_template': 'opportunity_overview',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Working practitioners boil the IICRC standards down to a hard consensus: remove '
+                      'mold physically, never fog or bleach it, and judge jobs by Conditions 1, 2 and 3 '
+                      'rather than visible square footage. “Should” is the standard of care, and any '
+                      'deviation needs documentation and written authorization, because courts measure '
+                      'remediators against the book. The street mechanics are specific: 6 mil '
+                      'fire-retardant poly, -5 pascals on a manometer, HEPA at 99.97% at 0.3 microns, a '
+                      'HEPA filter near $153, moisture readings every 5 ft, 12 to 16 air movers for 750 '
+                      'square feet, and the same meter used daily. Disagreements are real: Mark Cornelius '
+                      'says cleaning to zero prices remediation out of the market, Nicole Bijlsma ranks '
+                      'species order over spore counts, and speakers split on whether remediators may test '
+                      'their own work.',
+ 'key_metrics': [{'label': 'Containment negative pressure target',
+                  'metric': 'Containment negative pressure target',
+                  'value': '-5 Pa',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Balanced Building Biology calls -5 pascals, tracked with a manometer, the '
+                             'crucial metric proving a mold containment is actually working.',
+                  'source': 'Balanced Building Biology ([YdUmzaa5wO0 @ 00:02:47])'},
+                 {'label': 'Air movers for a 750 sq ft loss',
+                  'metric': 'Air movers for a 750 sq ft loss',
+                  'value': '12-16 air movers',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Darren Floyd's worked example of the 2015 placement rule: one per room, plus "
+                             'one per 50-70 sq ft of floor, one per 100-150 sq ft of wall/ceiling above 2 '
+                             'ft, and one per offset over 18 in.',
+                  'source': 'APPALeadership ([cPAFOZbMKQE @ 00:42:22])'},
+                 {'label': 'HEPA filter replacement cost',
+                  'metric': 'HEPA filter replacement cost',
+                  'value': 'About $153',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'AFD filter stack pricing: pre-filter $8-12, secondary $15-20, HEPA about '
+                             '$153, with HEPA capturing 99.97% at 0.3 µm and carbon filters handling odor.',
+                  'source': 'APPALeadership ([cPAFOZbMKQE @ 00:29:36])'},
+                 {'label': 'MRS certification fees',
+                  'metric': 'MRS certification fees',
+                  'value': '$150 application + $300 exam ($200 re-exam)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Mold Remediation Specialist candidates pay $150 on application and $300 '
+                             'after approval; two attempts within 90 days, and failing both means a '
+                             'one-year wait.',
+                  'source': 'TheIICRC ([tPPswF112gY @ 00:00:49])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every serious voice on the mold side lands on the same rule: the job is '
+                              'physical removal, not chemistry. Phill McGurk calls removal “the big one” '
+                              'among five principles (safety, documentation before, during and after, '
+                              'containment, removal, and fixing the moisture) and says flatly that “proper '
+                              'remediation is about physical removal,” with spraying or fogging “totally '
+                              'inadequate” because dead mold is still an allergen [Dl8DpDk97_A @ '
+                              '00:03:11]. S520 consensus body chair Jim Pearson pushes the same line for '
+                              'the 2024 edition: remove mold rather than kill it, and vice chair Scott '
+                              "Armor reduces the whole document to “remove don't kill” [JOiWfXdUwjM @ "
+                              "00:27:50]. Time's Dark Captains reads it straight off the page: S520 4.4 "
+                              'requires physical removal, killing or encapsulating is inadequate, and '
+                              '5.8.1.1 says chemicals are not a substitute [y00Yi4bnLx4 @ 00:29:33]. The '
+                              '2015 revision already told remediators not to mist disinfectants or '
+                              'sanitizers “to try to kill mold in lieu of source removal,” and ruled out '
+                              'temperature extremes, hot or cold, as an alternative to cleaning '
+                              '[6CI2NAsooLw @ 00:11:36]. The operator takeaway is blunt: a bid built '
+                              'around a fogger, bleach, or an ozone box is a bid built outside the '
+                              'standard of care, and these practitioners treat it as a red flag rather '
+                              'than a shortcut.',
+                              'The second point of agreement is how a job gets sized. McGurk calls '
+                              'Condition 1 a normal, not sterile, environment and “the finish line” of '
+                              'every job, Condition 2 the settled or airborne spores and fragments that '
+                              '“amateurs totally missed,” and Condition 3 the “mold factory” that has to '
+                              'come out before the fallout gets cleaned [Dl8DpDk97_A @ 00:01:23]. Balanced '
+                              'Building Biology defines Condition 1 as indoor fungal levels similar to or '
+                              'lower than outdoors, and says Condition 3 includes active, dormant or dead '
+                              'growth [YdUmzaa5wO0 @ 00:00:57]. Pearson notes “air” was added to the '
+                              'Condition definitions in the 2024 edition, so the Conditions now reach '
+                              'airborne material rather than surfaces alone [JOiWfXdUwjM @ 00:26:38]. '
+                              "Time's Dark Captains drives the practical consequence home: Texas TMARR "
+                              'draws its line at 25 contiguous square feet including 2 ft past visible '
+                              'growth, OSHA tiers run under 10, 10 to 30, 30 to 100 and over 100 square '
+                              'feet, but the S520 foreword rejects visible-area thresholds and replaces '
+                              'them with Conditions 1, 2 and 3 [y00Yi4bnLx4 @ 00:15:58]. For an operator, '
+                              "that means a small visible patch does not mean a small job; McGurk's "
+                              'dandelion analogy makes the same point, since the flower is small but the '
+                              'seeds have already spread.',
+                              'The third consensus is the language and its legal teeth. Darren Floyd of '
+                              'APPALeadership lays out the vocabulary: “shall” is mandatory, “should” is '
+                              'the standard of care, and “recommend,” “may” and “can” are not; a '
+                              "deviation, in Floyd's words, “is not a license to do something wrong,” more "
+                              "like a detour [cPAFOZbMKQE @ 00:08:12]. Time's Dark Captains puts it in "
+                              'street terms (under “should” you need a “damn good reason” not to) and '
+                              'spells out the deviation drill from S520 9.3.4: document it, communicate '
+                              'with affected parties, and get written authorization [y00Yi4bnLx4 @ '
+                              '00:07:28]. Pearson is just as direct: the standard is voluntary, deviation '
+                              'needs written full disclosure to the client, and in front of a judge or '
+                              "jury, not following it means “you're probably going to lose” [JOiWfXdUwjM @ "
+                              '00:14:53]. Learn To Restore explains where that weight comes from: ANSI '
+                              'accreditation, which arrived with the 2006 edition, does not validate the '
+                              'water-damage content but the drafting procedure, meaning balance of '
+                              'interest, no favoring of any company or person, and every one of thousands '
+                              'of public comments answered, so “it has a lot of legal weight behind it by '
+                              'the time you get there” [i4RGAC2VwaY @ 00:03:38]. None of these speakers '
+                              'treats voluntary as optional once a claim turns into a lawsuit.'],
+               'table': {'caption': 'Where the practitioners agree on working to the S500 and S520',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioners Say',
+                                     'Operator Move on the Job',
+                                     'Expert Source'],
+                         'rows': [['Physical removal beats killing the mold',
+                                   'Spraying or fogging chemicals is totally inadequate because dead mold '
+                                   'remains an allergen',
+                                   'Scope every bid around removal, never around a fogger or bleach',
+                                   'Phill McGurk ([Dl8DpDk97_A @ 00:03:42])'],
+                                  ["Remove don't kill is the 2024 core",
+                                   'Vice chair says the S520 was intended as the only performance standard '
+                                   'needed',
+                                   "Quote remove-don't-kill when defending scope to insurers, owners and "
+                                   'attorneys',
+                                   'TheIICRC ([JOiWfXdUwjM @ 00:34:45])'],
+                                  ['Conditions replace visible square-footage thresholds entirely',
+                                   'S520 foreword rejects the visible-area thresholds used by TMARR and '
+                                   'OSHA tiers',
+                                   'Size every job by Condition 1, 2 or 3 rather than patch size',
+                                   "Time's Dark Captains ([y00Yi4bnLx4 @ 00:15:58])"],
+                                  ['Condition 1 is normal, not a sterile environment',
+                                   'Indoor fungal levels similar to or lower than the outdoor levels',
+                                   'Set the finish line against an outdoor baseline, not zero spores',
+                                   'Balanced Building Biology ([YdUmzaa5wO0 @ 00:00:57])'],
+                                  ['Should equals the professional standard of care',
+                                   'Shall is mandatory, while recommend, may and can are not standard of '
+                                   'care',
+                                   'Treat every should as required unless the deviation is documented in '
+                                   'writing',
+                                   'APPALeadership ([cPAFOZbMKQE @ 00:08:12])'],
+                                  ['Deviation requires documented, written client authorization',
+                                   'Document it, communicate with affected parties, and obtain written '
+                                   'authorization per 9.3.4',
+                                   'Get signed authorization before encapsulating, fogging or skipping any '
+                                   'containment',
+                                   "Time's Dark Captains ([y00Yi4bnLx4 @ 00:08:06])"],
+                                  ['The standard carries real legal weight in court',
+                                   'Voluntary, yet a court can use it to judge whether the remediation '
+                                   'company followed it',
+                                   'Build every job file as if a judge or jury will read it',
+                                   'TheIICRC ([6CI2NAsooLw @ 00:06:35])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Containment is where the numbers get specific. Balanced Building Biology '
+                              'specs 6 mil fire-retardant poly, zip walls and critical barriers over vents '
+                              'and doors, warns never to demolish or place air movers before the room is '
+                              'sealed, and names the crucial metric: hold -5 pascals of negative pressure, '
+                              'tracked with a manometer, using true HEPA at 99.97% filtration at 0.3 '
+                              'microns, while shop vacs and M-class extractors are “not allowed” '
+                              '[YdUmzaa5wO0 @ 00:02:47]. Andrew Melrose runs the same kit on mold jobs: 6 '
+                              'mil plastic, negative air, high-CFM HEPA scrubbers, a dehumidifier to stop '
+                              'humidity spikes, HEPA vacuums, P100 respirators and decon chambers, and '
+                              'names random chemicals, no containment and humidity spikes as the signature '
+                              "of bad work [iQ4PIKW3sEc @ 00:03:54]. Time's Dark Captains adds the Texas "
+                              'poly spec of 4 to 6 mil for walls and ceilings, 10 mil for floors, '
+                              'fire-retardant with flame spread of 25 or less, and reads the standard as '
+                              'not allowing scrubber mode without negative pressure [y00Yi4bnLx4 @ '
+                              '00:46:31]. Floyd puts the consumables on the P&L: AFD pre-filters run $8 to '
+                              '$12, secondaries $15 to $20, and the HEPA about $153, with carbon filters '
+                              'for odor, and Floyd warns never to draw negative air from a crawlspace '
+                              'because of furnace backdraft [cPAFOZbMKQE @ 00:29:36].',
+                              'Floyd supplies the water-side sizing kit. Drying classes run Class 1 under '
+                              '5% of surfaces wet, Class 2 at 5 to 40%, Class 3 over 40%, and Class 4 '
+                              'bound water. Refrigerant dehumidification is cubic feet divided by the '
+                              'class factor to get AHAM pints; desiccant is cubic feet times air changes '
+                              'per hour divided by 60 to get CFM. The 2015 air-mover rule is one per room, '
+                              'plus one per 50 to 70 square feet of floor, plus one per 100 to 150 square '
+                              'feet of wall and ceiling above 2 ft, plus one per offset over 18 inches, so '
+                              'a 750 square foot loss lands at 12 to 16 units, and water under 2 ft up the '
+                              "wall runs linear feet divided by 14 [cPAFOZbMKQE @ 00:42:22]. TheIICRC's "
+                              '2021 review stresses that those dehumidification formulas only give a '
+                              'minimum, and that Class 4 needs at least an LGR [bcid0F9jRTI @ 01:21:22]. '
+                              'Destry Ransdell at Restoration Technical Institute maps moisture with '
+                              'linear readings every 5 ft and floor readings every 5 by 5 ft, and marks '
+                              'equipment and migration lines on the sketch [XMpZ-8ZsSW8 @ 00:00:00]. The '
+                              'RTI Rover ride-on extractor moves about 1 square foot per 10 seconds: '
+                              'fantastic extraction, but “probably not the greatest” for large areas '
+                              '[XMpZ-8ZsSW8 @ 00:01:22].',
+                              'Verification and hard measurement close the loop on every job. Nicole '
+                              'Bijlsma strongly recommends one air and one surface sample in every room '
+                              'suspected of elevated fungal particulates, calls spore count “the least '
+                              'important” number next to rank order, notes outdoor Aspergillus and '
+                              'Penicillium typically sit at only 5 to 10%, and flags a field tell: under '
+                              'the 2024 Condition 1, a spore-free air sample suggests a scrubber was '
+                              'running, which voids the test [r1JeD2hb2jM @ 00:14:00]. Coach8 insists the '
+                              'restorer use the same meter throughout a project, since Delmhorst, Tramex, '
+                              'Protimeter, Flir and Trotec readings differ by brand, and that readings be '
+                              'taken at least daily [7gZTdFWoHgs @ 00:37:15]. Floyd adds that an infrared '
+                              "camera “does not say it's wet or dry” and only shows a cooler surface, so "
+                              'always validate with the meter, and that non-penetrating meters cannot read '
+                              'through an air gap, while foil backing and metal throw false readings '
+                              '[cPAFOZbMKQE @ 00:40:06]. On sequencing, the 2015 S520 rollout splits the '
+                              'roles: remediators may run post-remediation evaluation on their own jobs, '
+                              'IEPs perform post-remediation verification, a non-independent IEP must '
+                              'disclose that in writing, and PRV has to happen before any coating or '
+                              'sealant goes on [6CI2NAsooLw @ 00:12:57].'],
+               'table': {'caption': 'Street numbers and specs operators actually run on S500 and S520 jobs',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Spec',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Containment negative pressure target',
+                                   'Hold -5 pascals, tracked continuously with a manometer',
+                                   'Prove containment is working before any demolition or air movement',
+                                   'Balanced Building Biology ([YdUmzaa5wO0 @ 00:02:47])'],
+                                  ['Poly sheeting thickness by surface',
+                                   '4 to 6 mil walls and ceilings, 10 mil floors, flame spread 25 or less',
+                                   'Spec fire-retardant poly per surface to match Texas licensing '
+                                   'expectations',
+                                   "Time's Dark Captains ([y00Yi4bnLx4 @ 00:46:31])"],
+                                  ['AFD filter stack replacement costs',
+                                   'Pre-filter $8-12, secondary $15-20, HEPA filter about $153',
+                                   'Price filter consumables into every job running air filtration devices',
+                                   'APPALeadership ([cPAFOZbMKQE @ 00:29:36])'],
+                                  ['Air mover count under the 2015 method',
+                                   'A 750 square foot loss calls for 12 to 16 air movers',
+                                   'One per room plus floor, wall, ceiling and offset add-ons',
+                                   'APPALeadership ([cPAFOZbMKQE @ 00:42:22])'],
+                                  ['Moisture mapping grid spacing on the sketch',
+                                   'Linear readings every 5 ft, floor readings every 5 by 5 ft',
+                                   'Draw the sketch large and mark equipment and migration lines',
+                                   'Restoration Technical Institute ([XMpZ-8ZsSW8 @ 00:00:00])'],
+                                  ['Drying mat pass timing and crew',
+                                   '10 seconds per mat position, wiping up the floor as you go',
+                                   'Extract top and underside first, then work side to side with several '
+                                   'people',
+                                   'Restoration Technical Institute ([XMpZ-8ZsSW8 @ 00:02:00])'],
+                                  ['MRS certification cost and exam attempts',
+                                   '$150 application, $300 exam, $200 re-exam, two attempts within 90 days',
+                                   'Budget both fees and schedule both attempts inside the approval window',
+                                   'TheIICRC ([tPPswF112gY @ 00:00:49])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Field Moves the Practitioners Swear By',
+                           'body': 'Small sequencing and paperwork habits that separate a defensible job '
+                                   'file from a failed one.',
+                           'items': ['Pull water off the top of the floor and from underneath before '
+                                     'drying mats go down, otherwise you are sucking water through the '
+                                     'mats; on the Rover, keep your weight forward and always run on slow '
+                                     '[Restoration Technical Institute — XMpZ-8ZsSW8 @ 00:01:43]',
+                                     'Never draw negative air from a crawlspace: furnace backdraft is the '
+                                     'risk Floyd flags right alongside the AFD filter stack '
+                                     '[APPALeadership — cPAFOZbMKQE @ 00:29:36]',
+                                     'Metric-edition owners of the 2021 S500 should strike the desiccant '
+                                     '“divide by 60” line on page 176; Coach8 says that line needs to be '
+                                     'lined out [Coach8 — 7gZTdFWoHgs @ 00:51:17]',
+                                     'On slabs, state in writing that you are unable to determine if the '
+                                     'concrete is dried beyond the roughly 2 cm a scan meter reads [James '
+                                     'Poon — r1JeD2hb2jM @ 00:41:14]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Stop the source and pick the standard',
+                              'action': 'Get the water source stopped, then decide whether the loss is '
+                                        'S500 drying work or S520 mold work.',
+                              'detail': 'Melrose has a plumber stop the source first, works the 24 to '
+                                        'roughly 72 hour S500 window, and switches to the S520 once mold '
+                                        "exists [Andrew Melrose — iQ4PIKW3sEc @ 00:00:39]. Time's Dark "
+                                        'Captains points to S500 8.6: when mold turns up on a water job, '
+                                        "stop and contain [Time's Dark Captains — y00Yi4bnLx4 @ "
+                                        '00:20:45].'},
+                             {'step': 2,
+                              'title': 'Seal and pressurize before anyone swings a hammer',
+                              'action': 'Build 6 mil fire-retardant poly containment with critical '
+                                        'barriers and establish -5 Pa before demolition.',
+                              'detail': 'Never demolish or place air movers before sealing the room, then '
+                                        'hold -5 Pa on a manometer [Balanced Building Biology — '
+                                        'YdUmzaa5wO0 @ 00:02:30]. Floyd: decontaminate first rather than '
+                                        'bringing in air movers that start blowing contamination around '
+                                        '[APPALeadership — cPAFOZbMKQE @ 00:23:50].'},
+                             {'step': 3,
+                              'title': 'Physically remove, then clean to dust-free',
+                              'action': 'Remove porous growth, HEPA vacuum, then damp wipe every surface.',
+                              'detail': 'Drywall and insulation “got to go,” mold is pulled manually from '
+                                        'concrete and wood, then a HEPA vacuum pass is followed by a '
+                                        'microfiber damp wipe with dish soap and water to reach dust-free '
+                                        '[Andrew Melrose — iQ4PIKW3sEc @ 00:06:03]. Stain removal stays '
+                                        'the last cosmetic step, done only after the space is confirmed '
+                                        'clean [Phill McGurk — Dl8DpDk97_A @ 00:04:11].'},
+                             {'step': 4,
+                              'title': 'Dry, monitor, and verify before sealing',
+                              'action': 'Take daily readings with one meter, then run post-remediation '
+                                        'evaluation or third-party PRV before any coatings.',
+                              'detail': 'Readings are taken at least daily, with the same meter used '
+                                        'throughout the project [Coach8 — 7gZTdFWoHgs @ 00:35:55]. PRV '
+                                        'happens before coatings or sealants, and a non-independent IEP '
+                                        'must disclose that in writing [TheIICRC — 6CI2NAsooLw @ '
+                                        '00:12:57].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over who grades the job. Phill McGurk frames the IEP '
+                              'as the independent referee who performs post-remediation verification so '
+                              'the contractor never grades its own homework, and calls that independence '
+                              "the homeowner's ultimate quality control [Dl8DpDk97_A @ 00:05:15]. Jim "
+                              'Pearson, chairing the S520 consensus body, starts from field reality '
+                              'instead: most jobs have no IEP at all, so the 2024 edition forces the '
+                              'remediator to perform a post-remediation evaluation on every job, clean, '
+                              'dry and odor-free, and pushes IEP verification over to the S530 '
+                              "[JOiWfXdUwjM @ 00:23:10]. The Texas trainer behind Time's Dark Captains "
+                              'reads it tighter, arguing an IEP is needed to tell Condition 2 from '
+                              'Condition 1 and that remediators should not act as their own IEP under R520 '
+                              'page 93 [y00Yi4bnLx4 @ 00:37:12]. Nicole Bijlsma splits the difference by '
+                              'risk tier: the restorer or remediator evaluates recovery levels 0 to 1, '
+                              'while independent PRV covers levels 2 to 4, triggered by more than 10 '
+                              'square meters affected, occupant health concerns, or Category 2 or 3 water '
+                              '[r1JeD2hb2jM @ 00:30:41]. The operator playbook is to decide the recovery '
+                              'level at intake, because that single call determines whether your own '
+                              'sign-off closes the file or a third party has to.',
+                              'Practitioners also fight over what counts as clean. Balanced Building '
+                              'Biology says the industry obsesses over total counts like under 1,000 '
+                              'spores, when rank order of species matters more, and indoor Aspergillus '
+                              'dominance is a problem even at lower totals [YdUmzaa5wO0 @ 00:01:44]. '
+                              'Bijlsma goes further, calling spore count the least important number and '
+                              'rank order far superior, and recommends one air and one surface sample in '
+                              'every suspect room [r1JeD2hb2jM @ 00:46:29]. Bijlsma anchors that '
+                              'comparison on the outdoor baseline, where Aspergillus and Penicillium '
+                              'typically make up only 5 to 10 percent of the count. Darren Floyd, with '
+                              'more than 30 years in the trade, offers the older playbook: there are no '
+                              'national thresholds, but some industrial hygienists use Penicillium and '
+                              'Aspergillus below about 3000 as a working line [cPAFOZbMKQE @ 00:51:22]. '
+                              'Mark Cornelius pushes back from the commercial side, warning that cleaning '
+                              'to zero is pricing remediation out of the market because mold is so often '
+                              'uninsured, and telling the industry to stop trying to turn it into rocket '
+                              'science [jFMj8u8OsU4 @ 00:25:17]. The working split is clear: lab-driven '
+                              'operators sell species ranking, while count-driven shops anchor on a number '
+                              'the client and payer can follow, and both camps need the clearance '
+                              'yardstick agreed before the first sample is pulled.',
+                              'On chemistry, the line between alternative playbook and violation runs '
+                              'through written disclosure. Andrew Melrose teaches a peroxide protocol they '
+                              'call the safest, paired with manually pulling mold from concrete and wood, '
+                              'while drywall and insulation simply have to go [iQ4PIKW3sEc @ 00:05:47]. '
+                              'Floyd gives the classic deviation case: mold was encapsulated instead of '
+                              'the drywall being removed because a computer and phone bank sat on the '
+                              'other side of the wall, and they insist a deviation is not a license to do '
+                              'something wrong but a detour to the same destination [cPAFOZbMKQE @ '
+                              '00:09:16]. The 2024 S520 panel now defines fog, mist and knockdown and '
+                              'permits knockdown of particulates, without loosening the '
+                              'remove-rather-than-kill rule [JOiWfXdUwjM @ 00:45:30]. The Texas trainer is '
+                              'the hard-liner, citing S520 section 5.8.1.1 that chemicals are not a '
+                              'substitute for removal and reading the standard to forbid scrubber mode '
+                              'without negative pressure [y00Yi4bnLx4 @ 00:32:28]. The split for an '
+                              'operator is practical, not philosophical. Melrose and Floyd show workable '
+                              'variations when a material or a site constraint forces it, while the Texas '
+                              'reading treats any chemical shortcut as indefensible. Whichever side you '
+                              'run, the variation has to be documented, communicated to affected parties, '
+                              'and authorized in writing before a single sprayer or encapsulant comes off '
+                              'the truck.'],
+               'table': {'caption': 'Side-by-side playbooks where S500 and S520 practitioners split',
+                         'headers': ['Disputed Issue', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Who signs off on clearance at job close',
+                                   'Independent IEP acts as referee performing post-remediation '
+                                   'verification so contractors never grade their own homework',
+                                   'Remediator performs post-remediation evaluation on every job because '
+                                   'most jobs never have an IEP',
+                                   'Phill McGurk ([Dl8DpDk97_A @ 00:05:15]); TheIICRC ([JOiWfXdUwjM @ '
+                                   '00:23:10])'],
+                                  ['How to read lab results for mold clearance',
+                                   'Rank order of species beats totals and spore count is the least '
+                                   'important number',
+                                   'No national thresholds exist; some industrial hygienists use '
+                                   'Penicillium and Aspergillus below about 3000',
+                                   'James Poon ([r1JeD2hb2jM @ 00:46:29]); APPALeadership ([cPAFOZbMKQE @ '
+                                   '00:51:22])'],
+                                  ['Sizing the mold job by area versus by Condition',
+                                   'Texas TMARR uses 25 contiguous square feet including 2 feet past '
+                                   'visible growth',
+                                   'S520 foreword rejects visible-area thresholds and replaces them with '
+                                   'Conditions 1, 2 and 3',
+                                   "Time's Dark Captains ([y00Yi4bnLx4 @ 00:13:26]); Time's Dark Captains "
+                                   '([y00Yi4bnLx4 @ 00:15:58])'],
+                                  ['How hard to chase residual mold after physical removal',
+                                   'Sample one air and one surface in every suspect room before calling '
+                                   'Condition 1',
+                                   'Cleaning to zero prices remediation out of a market where mold is '
+                                   'often uninsured',
+                                   'James Poon ([r1JeD2hb2jM @ 00:14:00]); ISSA Media ([jFMj8u8OsU4 @ '
+                                   '00:25:17])'],
+                                  ['Chemical treatment alongside or instead of physical removal',
+                                   'Peroxide protocol called safest, with manual pulling of mold from '
+                                   'concrete and wood',
+                                   'Chemicals are not a substitute for removal and fogging must be '
+                                   'disclosed in writing as deviation',
+                                   "Andrew Melrose ([iQ4PIKW3sEc @ 00:05:47]); Time's Dark Captains "
+                                   '([y00Yi4bnLx4 @ 00:32:28]); James Poon ([r1JeD2hb2jM @ 00:22:50])'],
+                                  ['Hardwood and material drying targets under the S500',
+                                   'Older teaching held hardwood within 4 percentage points of the dry '
+                                   'standard',
+                                   '2021 edition dropped the 4 percent hardwood rule and the 10 percent '
+                                   'target applies if applicable',
+                                   'APPALeadership ([cPAFOZbMKQE @ 00:36:14]); TheIICRC ([bcid0F9jRTI @ '
+                                   '00:19:36])'],
+                                  ['Whether IICRC certification alone proves field competence',
+                                   'Hire IICRC-certified remediators; over 49,000 certified technicians '
+                                   'and 6,500 firms follow the standard',
+                                   'AMR course is not competency-based and fewer than half of graduates '
+                                   'follow the standard',
+                                   'Mold Mending ([9pkEBBU3-40 @ 00:03:51]); James Poon ([r1JeD2hb2jM @ '
+                                   '00:09:10])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive failures start with a job someone called dry. Melrose '
+                              'describes a house that had been dried that still had saturated materials '
+                              'and fresh mold, and warns that three or four days of fans proves nothing; '
+                              'only monitoring proves dryness [iQ4PIKW3sEc @ 00:02:41]. Balanced Building '
+                              'Biology names the concrete version the 2 cm trap: scanning meters miss '
+                              'moisture at the bottom of the slab, and the floor fails about three weeks '
+                              'later, which is why they call proper deep probing absolutely essential '
+                              '[YdUmzaa5wO0 @ 00:06:15]. Bijlsma turns that into a liability move, telling '
+                              'assessors to state in their disclaimer that they are unable to determine '
+                              'whether the concrete is dried beyond 2 cm, and notes Don was paid $5,000 '
+                              'for three hours of lectures on AS 2180/2170 sleeve testing [r1JeD2hb2jM @ '
+                              '00:41:14]. Floyd adds the instrument traps: an infrared camera only says a '
+                              'surface is cooler and could be evaporation, so validate with a meter, and '
+                              'non-penetrating meters cannot read through an air gap while foil backing '
+                              'and metal throw false readings [cPAFOZbMKQE @ 00:40:06]. Treat any reading '
+                              'you have not personally validated with a probe or a pin as unverified, and '
+                              'write the limitation into the file before the floor goes down.',
+                              'The second cluster of failures is the crew spreading the problem it was '
+                              'hired to remove. Floyd warns that decontamination comes first, because '
+                              'rolling in a bunch of air movers before it just blows contamination around, '
+                              'and that a non-HEPA shop vac aerosolizes waterborne pathogens [cPAFOZbMKQE '
+                              '@ 00:23:50]. Balanced Building Biology sets the sequence as a hard rule: '
+                              'never demolish or place air movers before the room is sealed with 6 mil '
+                              'fire-retardant poly, zip walls and critical barriers, and shop vacs and '
+                              "M-class extractors are not allowed [YdUmzaa5wO0 @ 00:02:30]. TheIICRC's "
+                              'S520 2015 briefing rejects misting disinfectants in lieu of source removal '
+                              'and warns that the rejected approach accomplishes a nice diffusion of the '
+                              'mold throughout the property, so it is not recommended at all [6CI2NAsooLw '
+                              '@ 00:12:38]. Bijlsma flags a quieter trap on the testing side: a spore-free '
+                              'air sample suggests a scrubber was running, which voids the test, so a '
+                              'too-perfect clearance result can sink the job rather than close it '
+                              '[r1JeD2hb2jM @ 00:12:14]. Every shortcut in this cluster converts a '
+                              'contained source into structure-wide fallout, so the operator rule is '
+                              'simple: seal, decontaminate, filter through true HEPA, and only then move '
+                              'air or pull clearance samples.',
+                              'The money traps hit before and after the job. McGurk warns that general '
+                              'insurance almost always excludes mold and tells clients to demand a '
+                              "separate contractor's pollution liability policy, the mark of a true "
+                              'professional, and puts mold-specific insurance on their four-point hiring '
+                              'checklist [Dl8DpDk97_A @ 00:04:27]. Pearson adds that the standard is '
+                              'voluntary, but before a judge or jury a contractor who did not follow it is '
+                              'probably going to lose, and that deviation requires written full disclosure '
+                              "to the client; they relay Dave Dell's view that most firms lack adequate "
+                              'coverage [JOiWfXdUwjM @ 00:14:53]. The Texas trainer attacks the Harvey-era '
+                              'habit of whole-house flood cuts and says claiming compliance without doing '
+                              'the work is a shield made out of cardboard, adding that only the owner or '
+                              "owner's agent can impose limitations, never the adjuster working the claim "
+                              '[y00Yi4bnLx4 @ 00:27:34]. Cornelius supplies the backstory: the '
+                              'mold-is-gold era turned $2,000 water jobs into $40,000 mold jobs, and when '
+                              'bad actors surface the whole industry looks bad [jFMj8u8OsU4 @ 00:03:08]. '
+                              'Coverage, written deviation sign-off and an owner-signed limitations list '
+                              'are the three documents that decide whether a disputed job gets paid, gets '
+                              'reopened, or gets litigated in front of a jury.'],
+               'table': {'caption': 'Firsthand failure modes and their operational and economic hit',
+                         'headers': ['Failure Mode',
+                                     'What Went Wrong Firsthand',
+                                     'Economic or Operational Hit',
+                                     'Expert Source'],
+                         'rows': [['Calling a house dry after a few days of fans',
+                                   'A dried house still had saturated materials and new mold growing '
+                                   'inside',
+                                   'Job reopens as mold work under the S520 with containment and clearance',
+                                   'Andrew Melrose ([iQ4PIKW3sEc @ 00:02:41])'],
+                                  ['Trusting scanning meters on concrete slabs at close',
+                                   'Scanning meters read only about 2 cm deep and miss slab-bottom '
+                                   'moisture',
+                                   'Floor fails about three weeks later and the disclaimer must state the '
+                                   'limit',
+                                   'Balanced Building Biology ([YdUmzaa5wO0 @ 00:06:15]); James Poon '
+                                   '([r1JeD2hb2jM @ 00:40:04])'],
+                                  ['Plumber skipped the backflow preventer valve on install',
+                                   'A $170 backflow preventer was skipped and neighborhood sewage came out '
+                                   "the homeowner's tub",
+                                   'A cheap omitted part turned the loss into Category 3 sewage work',
+                                   'APPALeadership ([cPAFOZbMKQE @ 00:20:34])'],
+                                  ['Spore-free air sample submitted at mold clearance',
+                                   'A clean-looking air result suggests a scrubber was running during '
+                                   'sampling',
+                                   'The clearance test is voided and cannot support sign-off on the job',
+                                   'James Poon ([r1JeD2hb2jM @ 00:12:14])'],
+                                  ['Choosing the wrong MRS exam form when scheduling',
+                                   'Selecting the incorrect form locks the candidate out of the '
+                                   'examination entirely',
+                                   'Two attempts within 90 days, $200 re-exam fee, and failing both means '
+                                   'a one-year wait',
+                                   'TheIICRC ([tPPswF112gY @ 00:02:53]); TheIICRC ([tPPswF112gY @ '
+                                   '00:03:30])'],
+                                  ['Running mold jobs on general liability insurance only',
+                                   'General insurance almost always excludes mold, and most firms lack '
+                                   'adequate coverage',
+                                   "Uninsured exposure unless a separate contractor's pollution liability "
+                                   'policy is carried',
+                                   'Phill McGurk ([Dl8DpDk97_A @ 00:04:27]); TheIICRC ([JOiWfXdUwjM @ '
+                                   '00:20:37])'],
+                                  ['Using the desiccant divide-by-60 line exactly as printed',
+                                   'Page 176 of the metric edition carries an erratum on the desiccant '
+                                   'line',
+                                   'Coach8 says that line there needs to be lined out of the book',
+                                   'Coach8 ([7gZTdFWoHgs @ 00:51:17])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Stops Before Crew and Equipment Roll',
+                           'body': 'Clear these four practitioner-reported pitfalls before mobilizing on '
+                                   'any S500 or S520 job.',
+                           'items': ['Do not demolish or start air movers until containment is sealed and '
+                                     'holding -5 Pa on a manometer [Balanced Building Biology — '
+                                     'YdUmzaa5wO0 @ 00:02:47].',
+                                     'Do not close a drying file on fan-days; close it on monitored '
+                                     'readings taken with the same meter used throughout the project '
+                                     '[Coach8 — 7gZTdFWoHgs @ 00:37:15].',
+                                     'Do not deviate without documenting it, communicating with affected '
+                                     'parties and getting written owner authorization; an adjuster cannot '
+                                     "impose limitations [Time's Dark Captains — y00Yi4bnLx4 @ 00:12:13].",
+                                     "Do not take mold work without a separate contractor's pollution "
+                                     'liability policy, since general insurance almost always excludes '
+                                     'mold [Phill McGurk — Dl8DpDk97_A @ 00:04:27].']}}],
+ 'pull_quote': "A deviation is not a license to do something wrong; it means there's another way to get "
+               'there, kind of like a detour. Attributed to APPALeadership (cPAFOZbMKQE @ 00:09:16).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Stop the source and start mitigation as soon as safely possible after the water '
+                      'event [TheIICRC — bcid0F9jRTI @ 00:06:08].',
+                      'Map moisture with linear readings every 5 feet and floor readings every 5x5 feet, '
+                      'marking equipment and any migration line on a full-size sketch [Restoration '
+                      'Technical Institute — XMpZ-8ZsSW8 @ 00:00:00].',
+                      'Extract water off the top of and underneath the floor before drying mats go on, '
+                      'then run mats 10 seconds per position [Restoration Technical Institute — '
+                      'XMpZ-8ZsSW8 @ 00:01:43].',
+                      'Once mold exists, switch to the S520 with 6 mil containment, negative air, high-CFM '
+                      'HEPA scrubbers, P100 respirators and decon chambers [Andrew Melrose — iQ4PIKW3sEc @ '
+                      '00:03:54].',
+                      'Pull one air and one surface sample in every suspect room and read rank order '
+                      'rather than raw spore counts [James Poon — r1JeD2hb2jM @ 00:14:00].',
+                      'Save stain removal for last as a cosmetic step, done only after the space is '
+                      'confirmed clean [Phill McGurk — Dl8DpDk97_A @ 00:04:11].'],
+ 'statutory_citations': [{'title': 'TheIICRC — ANSI/IICRC S500: 2021 Edition [00:06:08]',
+                          'url': 'https://www.youtube.com/watch?v=bcid0F9jRTI&t=368s',
+                          'relevance': 'Primary practitioner testimony on the 2021 S500 mitigation '
+                                       'trigger, Category 3 rules and drying-goal changes.'},
+                         {'title': 'TheIICRC — IICRC June Webinar: S520 2024 Standard [00:14:53]',
+                          'url': 'https://www.youtube.com/watch?v=JOiWfXdUwjM&t=893s',
+                          'relevance': 'Primary practitioner testimony on written deviation disclosure, '
+                                       'courtroom exposure and post-remediation evaluation duties.'},
+                         {'title': "Time's Dark Captains — Texas Mold Remediation:  IICRC S520/R520, IICRC "
+                                   'S500 and the TMARR [00:08:06]',
+                          'url': 'https://www.youtube.com/watch?v=y00Yi4bnLx4&t=486s',
+                          'relevance': 'Primary practitioner testimony on deviation steps, owner-imposed '
+                                       'limitations and square-footage versus Condition thresholds.'},
+                         {'title': 'TheIICRC — Newly-Revised ANSI/IICRC S520: 2015 - What You Need to Know '
+                                   '[00:06:35]',
+                          'url': 'https://www.youtube.com/watch?v=6CI2NAsooLw&t=395s',
+                          'relevance': "Primary practitioner testimony on the voluntary standard's use in "
+                                       'court and the ban on misting in lieu of removal.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'Dl8DpDk97_A',
+                       'title': 'IICRC S520 - Core Principle of Mould Remediation',
+                       'channel': 'Phill McGurk',
+                       'author': 'Phill McGurk',
+                       'text': 'Proper remediation is about physical removal.',
+                       'tip': 'Proper remediation is about physical removal.',
+                       'timestamp': 191,
+                       'timestamp_seconds': 191,
+                       'timestamp_label': '[00:03:11]',
+                       'url': 'https://www.youtube.com/watch?v=Dl8DpDk97_A&t=191s',
+                       'markdown': '[00:03:11](https://www.youtube.com/watch?v=Dl8DpDk97_A&t=191s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YdUmzaa5wO0',
+                       'title': 'Mould Remediation Done Right: The Official IICRC S520 Homeowner Guide',
+                       'channel': 'Balanced Building Biology',
+                       'author': 'Balanced Building Biology',
+                       'text': 'Bleach is essentially a masking agent.',
+                       'tip': 'Bleach is essentially a masking agent.',
+                       'timestamp': 281,
+                       'timestamp_seconds': 281,
+                       'timestamp_label': '[00:04:41]',
+                       'url': 'https://www.youtube.com/watch?v=YdUmzaa5wO0&t=281s',
+                       'markdown': '[00:04:41](https://www.youtube.com/watch?v=YdUmzaa5wO0&t=281s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bcid0F9jRTI',
+                       'title': 'ANSI/IICRC S500: 2021 Edition',
+                       'channel': 'TheIICRC',
+                       'author': 'TheIICRC',
+                       'text': "If it originates from beyond the trap it's category three.",
+                       'tip': "If it originates from beyond the trap it's category three.",
+                       'timestamp': 907,
+                       'timestamp_seconds': 907,
+                       'timestamp_label': '[00:15:07]',
+                       'url': 'https://www.youtube.com/watch?v=bcid0F9jRTI&t=907s',
+                       'markdown': '[00:15:07](https://www.youtube.com/watch?v=bcid0F9jRTI&t=907s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7gZTdFWoHgs',
+                       'title': 'Reviewing the ANSI/IICRC S500 2021 Standard for Professional Water Damage '
+                                'Restoration, 5th Edition',
+                       'channel': 'Coach8',
+                       'author': 'Coach8',
+                       'text': 'For us to be able to measure this correctly and have accurate readings the '
+                               'restorer should use the same meter throughout a project.',
+                       'tip': 'For us to be able to measure this correctly and have accurate readings the '
+                              'restorer should use the same meter throughout a project.',
+                       'timestamp': 2235,
+                       'timestamp_seconds': 2235,
+                       'timestamp_label': '[00:37:15]',
+                       'url': 'https://www.youtube.com/watch?v=7gZTdFWoHgs&t=2235s',
+                       'markdown': '[00:37:15](https://www.youtube.com/watch?v=7gZTdFWoHgs&t=2235s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'i4RGAC2VwaY',
+                       'title': 'Intro to the IICRC S500 for Water Damage Restoration',
+                       'channel': 'Learn To Restore',
+                       'author': 'Learn To Restore',
+                       'text': 'It has a lot of legal weight behind it by the time you get there.',
+                       'tip': 'It has a lot of legal weight behind it by the time you get there.',
+                       'timestamp': 218,
+                       'timestamp_seconds': 218,
+                       'timestamp_label': '[00:03:38]',
+                       'url': 'https://www.youtube.com/watch?v=i4RGAC2VwaY&t=218s',
+                       'markdown': '[00:03:38](https://www.youtube.com/watch?v=i4RGAC2VwaY&t=218s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JOiWfXdUwjM',
+                       'title': 'IICRC June Webinar: S520 2024 Standard',
+                       'channel': 'TheIICRC',
+                       'author': 'TheIICRC',
+                       'text': 'The standard is voluntary, but in front of a judge or jury, if you did not '
+                               "follow it you're probably going to lose.",
+                       'tip': 'The standard is voluntary, but in front of a judge or jury, if you did not '
+                              "follow it you're probably going to lose.",
+                       'timestamp': 893,
+                       'timestamp_seconds': 893,
+                       'timestamp_label': '[00:14:53]',
+                       'url': 'https://www.youtube.com/watch?v=JOiWfXdUwjM&t=893s',
+                       'markdown': '[00:14:53](https://www.youtube.com/watch?v=JOiWfXdUwjM&t=893s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iQ4PIKW3sEc',
+                       'title': 'Only Hire Certified Professionals! - (Water Restoration/IICRC s500 VS. '
+                                'Mold Remediation/IICRC s520)',
+                       'channel': 'Andrew Melrose',
+                       'author': 'Andrew Melrose',
+                       'text': 'Three or four days of fans does not prove the house is dry; monitoring '
+                               'does.',
+                       'tip': 'Three or four days of fans does not prove the house is dry; monitoring '
+                              'does.',
+                       'timestamp': 161,
+                       'timestamp_seconds': 161,
+                       'timestamp_label': '[00:02:41]',
+                       'url': 'https://www.youtube.com/watch?v=iQ4PIKW3sEc&t=161s',
+                       'markdown': '[00:02:41](https://www.youtube.com/watch?v=iQ4PIKW3sEc&t=161s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jFMj8u8OsU4',
+                       'title': 'Inside the S520: The Standard That Changed Mold Remediation',
+                       'channel': 'ISSA Media',
+                       'author': 'ISSA Media',
+                       'text': 'And when we have bad actors, we all look bad.',
+                       'tip': 'And when we have bad actors, we all look bad.',
+                       'timestamp': 1570,
+                       'timestamp_seconds': 1570,
+                       'timestamp_label': '[00:26:10]',
+                       'url': 'https://www.youtube.com/watch?v=jFMj8u8OsU4&t=1570s',
+                       'markdown': '[00:26:10](https://www.youtube.com/watch?v=jFMj8u8OsU4&t=1570s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'y00Yi4bnLx4',
+                       'title': 'Texas Mold Remediation:  IICRC S520/R520, IICRC S500 and the TMARR',
+                       'channel': "Time's Dark Captains",
+                       'author': "Time's Dark Captains",
+                       'text': 'Should means you need a damn good reason not to do it.',
+                       'tip': 'Should means you need a damn good reason not to do it.',
+                       'timestamp': 448,
+                       'timestamp_seconds': 448,
+                       'timestamp_label': '[00:07:28]',
+                       'url': 'https://www.youtube.com/watch?v=y00Yi4bnLx4&t=448s',
+                       'markdown': '[00:07:28](https://www.youtube.com/watch?v=y00Yi4bnLx4&t=448s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XMpZ-8ZsSW8',
+                       'title': 'POV: Applied Structural Drying with RTI | IICRC ASD Course with Destry '
+                                'Ransdell',
+                       'channel': 'Restoration Technical Institute',
+                       'author': 'Restoration Technical Institute',
+                       'text': '10 seconds on move the mat 10 seconds move the mat wiping up the floor as '
+                               'we go.',
+                       'tip': '10 seconds on move the mat 10 seconds move the mat wiping up the floor as '
+                              'we go.',
+                       'timestamp': 136,
+                       'timestamp_seconds': 136,
+                       'timestamp_label': '[00:02:16]',
+                       'url': 'https://www.youtube.com/watch?v=XMpZ-8ZsSW8&t=136s',
+                       'markdown': '[00:02:16](https://www.youtube.com/watch?v=XMpZ-8ZsSW8&t=136s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cPAFOZbMKQE',
+                       'title': '2019 08 29 12 51 IICRC S500 Standard   Water Damage Principles   Recovery',
+                       'channel': 'APPALeadership',
+                       'author': 'APPALeadership',
+                       'text': "Infrared camera does not say it's wet or dry, it simply says that surface "
+                               'is cooler, potentially could be evaporation, go check with your meter, so '
+                               'we always validate with the meter.',
+                       'tip': "Infrared camera does not say it's wet or dry, it simply says that surface "
+                              'is cooler, potentially could be evaporation, go check with your meter, so '
+                              'we always validate with the meter.',
+                       'timestamp': 2406,
+                       'timestamp_seconds': 2406,
+                       'timestamp_label': '[00:40:06]',
+                       'url': 'https://www.youtube.com/watch?v=cPAFOZbMKQE&t=2406s',
+                       'markdown': '[00:40:06](https://www.youtube.com/watch?v=cPAFOZbMKQE&t=2406s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cPAFOZbMKQE',
+                       'title': '2019 08 29 12 51 IICRC S500 Standard   Water Damage Principles   Recovery',
+                       'channel': 'APPALeadership',
+                       'author': 'APPALeadership',
+                       'text': "A deviation is not a license to do something wrong, it means there's "
+                               'another way to get there, kind of like a detour.',
+                       'tip': "A deviation is not a license to do something wrong, it means there's "
+                              'another way to get there, kind of like a detour.',
+                       'timestamp': 556,
+                       'timestamp_seconds': 556,
+                       'timestamp_label': '[00:09:16]',
+                       'url': 'https://www.youtube.com/watch?v=cPAFOZbMKQE&t=556s',
+                       'markdown': '[00:09:16](https://www.youtube.com/watch?v=cPAFOZbMKQE&t=556s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0HzVwvOo2Ww',
+                       'title': 'IICRC Mold Remediation Specialist (MRS) Application Guide',
+                       'channel': 'TheIICRC',
+                       'author': 'TheIICRC',
+                       'text': 'Please note application fees are non-refundable.',
+                       'tip': 'Please note application fees are non-refundable.',
+                       'timestamp': 267,
+                       'timestamp_seconds': 267,
+                       'timestamp_label': '[00:04:27]',
+                       'url': 'https://www.youtube.com/watch?v=0HzVwvOo2Ww&t=267s',
+                       'markdown': '[00:04:27](https://www.youtube.com/watch?v=0HzVwvOo2Ww&t=267s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tPPswF112gY',
+                       'title': 'IICRC Mold Remediation Specialist (MRS) - Handbook',
+                       'channel': 'TheIICRC',
+                       'author': 'TheIICRC',
+                       'text': 'If you select the incorrect form when scheduling, you will be unable to '
+                               'access your examination.',
+                       'tip': 'If you select the incorrect form when scheduling, you will be unable to '
+                              'access your examination.',
+                       'timestamp': 173,
+                       'timestamp_seconds': 173,
+                       'timestamp_label': '[00:02:53]',
+                       'url': 'https://www.youtube.com/watch?v=tPPswF112gY&t=173s',
+                       'markdown': '[00:02:53](https://www.youtube.com/watch?v=tPPswF112gY&t=173s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6CI2NAsooLw',
+                       'title': 'Newly-Revised ANSI/IICRC S520: 2015 - What You Need to Know',
+                       'channel': 'TheIICRC',
+                       'author': 'TheIICRC',
+                       'text': 'Remediators should not mist disinfectants or sanitizers to try to kill '
+                               'mold in lieu of source removal, must remove the source.',
+                       'tip': 'Remediators should not mist disinfectants or sanitizers to try to kill mold '
+                              'in lieu of source removal, must remove the source.',
+                       'timestamp': 696,
+                       'timestamp_seconds': 696,
+                       'timestamp_label': '[00:11:36]',
+                       'url': 'https://www.youtube.com/watch?v=6CI2NAsooLw&t=696s',
+                       'markdown': '[00:11:36](https://www.youtube.com/watch?v=6CI2NAsooLw&t=696s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'r1JeD2hb2jM',
+                       'title': 'AS-IICRC S520-2024 Nicole Bijlsma',
+                       'channel': 'James Poon',
+                       'author': 'James Poon',
+                       'text': "That's not okay, spore count is the least important.",
+                       'tip': "That's not okay, spore count is the least important.",
+                       'timestamp': 908,
+                       'timestamp_seconds': 908,
+                       'timestamp_label': '[00:15:08]',
+                       'url': 'https://www.youtube.com/watch?v=r1JeD2hb2jM&t=908s',
+                       'markdown': '[00:15:08](https://www.youtube.com/watch?v=r1JeD2hb2jM&t=908s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9pkEBBU3-40',
+                       'title': 'No More Mold Misinformation.  Official Mold Remediation Standard by the '
+                                'IICRC. Part 1',
+                       'channel': 'Mold Mending',
+                       'author': 'Mold Mending',
+                       'text': "So a little side note when you're looking for somebody to do mold "
+                               'remediation get them certified through the IICRC.',
+                       'tip': "So a little side note when you're looking for somebody to do mold "
+                              'remediation get them certified through the IICRC.',
+                       'timestamp': 231,
+                       'timestamp_seconds': 231,
+                       'timestamp_label': '[00:03:51]',
+                       'url': 'https://www.youtube.com/watch?v=9pkEBBU3-40&t=231s',
+                       'markdown': '[00:03:51](https://www.youtube.com/watch?v=9pkEBBU3-40&t=231s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'}]}

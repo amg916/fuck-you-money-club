@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-evidence-to-collection",
-    "diag-02-loss-inquiry-cohort",
-    "diag-03-base-case-profit-bridge",
-    "diag-04-subniche-contribution-yields",
-    "diag-05-preflight-statutory-risk-checks",
-    "diag-06-four-core-six-scaled-pod",
-    "diag-07-45000-reference-startup-capital",
-    "diag-08-first-thirty-days"
+    "diag-01-s500-s520-containment-to-closeout",
+    "diag-02-tpa-program-squeeze",
+    "diag-03-mini-split-repricing-gap",
+    "diag-04-mitigation-billing-floors",
+    "diag-05-negotiation-table-gates",
+    "diag-06-deductible-and-claim-check-parties",
+    "diag-07-roof-supplement-value-bands",
+    "diag-08-storm-roof-claim-roadmap"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-evidence-to-collection",
-    "diag-02-loss-inquiry-cohort",
-    "diag-03-base-case-profit-bridge",
-    "diag-04-subniche-contribution-yields",
-    "diag-05-preflight-statutory-risk-checks",
-    "diag-06-four-core-six-scaled-pod",
-    "diag-07-45000-reference-startup-capital",
-    "diag-08-first-thirty-days"
+    "diag-01-s500-s520-containment-to-closeout",
+    "diag-02-tpa-program-squeeze",
+    "diag-03-mini-split-repricing-gap",
+    "diag-04-mitigation-billing-floors",
+    "diag-05-negotiation-table-gates",
+    "diag-06-deductible-and-claim-check-parties",
+    "diag-07-roof-supplement-value-bands",
+    "diag-08-storm-roof-claim-roadmap"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-evidence-to-collection": {
+    "diag-01-s500-s520-containment-to-closeout": {
       "concept_a": {
-        "graphic_id": "diag-01-evidence-to-collection",
+        "graphic_id": "diag-01-s500-s520-containment-to-closeout",
         "graphic_type": "diagram",
-        "label": "From Loss Intake to Collected Restoration Invoice",
+        "label": "Working to the Standard, From Classification to Closeout",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-evidence-to-collection",
+        "graphic_id": "diag-01-s500-s520-containment-to-closeout",
         "graphic_type": "diagram",
-        "label": "From Loss Intake to Collected Restoration Invoice",
+        "label": "Working to the Standard, From Classification to Closeout",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-evidence-to-collection",
+        "graphic_id": "diag-01-s500-s520-containment-to-closeout",
         "graphic_type": "diagram",
-        "label": "From Loss Intake to Collected Restoration Invoice",
+        "label": "Working to the Standard, From Classification to Closeout",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-loss-inquiry-cohort": {
+    "diag-02-tpa-program-squeeze": {
       "concept_a": {
-        "graphic_id": "diag-02-loss-inquiry-cohort",
+        "graphic_id": "diag-02-tpa-program-squeeze",
         "graphic_type": "diagram",
-        "label": "A Single Restoration Inquiry Cohort",
+        "label": "The TPA Program Squeeze",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-loss-inquiry-cohort",
+        "graphic_id": "diag-02-tpa-program-squeeze",
         "graphic_type": "diagram",
-        "label": "A Single Restoration Inquiry Cohort",
+        "label": "The TPA Program Squeeze",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-loss-inquiry-cohort",
+        "graphic_id": "diag-02-tpa-program-squeeze",
         "graphic_type": "diagram",
-        "label": "A Single Restoration Inquiry Cohort",
+        "label": "The TPA Program Squeeze",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-case-profit-bridge": {
+    "diag-03-mini-split-repricing-gap": {
       "concept_a": {
-        "graphic_id": "diag-03-base-case-profit-bridge",
+        "graphic_id": "diag-03-mini-split-repricing-gap",
         "graphic_type": "diagram",
-        "label": "Base-Case Gross Billings to Owner Net Profit",
+        "label": "The May 2026 Mini-Split Repricing Gap",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-case-profit-bridge",
+        "graphic_id": "diag-03-mini-split-repricing-gap",
         "graphic_type": "diagram",
-        "label": "Base-Case Gross Billings to Owner Net Profit",
+        "label": "The May 2026 Mini-Split Repricing Gap",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-case-profit-bridge",
+        "graphic_id": "diag-03-mini-split-repricing-gap",
         "graphic_type": "diagram",
-        "label": "Base-Case Gross Billings to Owner Net Profit",
+        "label": "The May 2026 Mini-Split Repricing Gap",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-subniche-contribution-yields": {
+    "diag-04-mitigation-billing-floors": {
       "concept_a": {
-        "graphic_id": "diag-04-subniche-contribution-yields",
+        "graphic_id": "diag-04-mitigation-billing-floors",
         "graphic_type": "diagram",
-        "label": "Compare Job Contribution Before Fixed Operating Costs",
+        "label": "Mitigation Billing Floors Per Visit and Per Job",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-subniche-contribution-yields",
+        "graphic_id": "diag-04-mitigation-billing-floors",
         "graphic_type": "diagram",
-        "label": "Compare Job Contribution Before Fixed Operating Costs",
+        "label": "Mitigation Billing Floors Per Visit and Per Job",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-subniche-contribution-yields",
+        "graphic_id": "diag-04-mitigation-billing-floors",
         "graphic_type": "diagram",
-        "label": "Compare Job Contribution Before Fixed Operating Costs",
+        "label": "Mitigation Billing Floors Per Visit and Per Job",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-preflight-statutory-risk-checks": {
+    "diag-05-negotiation-table-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-preflight-statutory-risk-checks",
+        "graphic_id": "diag-05-negotiation-table-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Dispatch or Scope Expansion",
+        "label": "The Negotiation Table Decision Gates",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-preflight-statutory-risk-checks",
+        "graphic_id": "diag-05-negotiation-table-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Dispatch or Scope Expansion",
+        "label": "The Negotiation Table Decision Gates",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-preflight-statutory-risk-checks",
+        "graphic_id": "diag-05-negotiation-table-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Dispatch or Scope Expansion",
+        "label": "The Negotiation Table Decision Gates",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-four-core-six-scaled-pod": {
+    "diag-06-deductible-and-claim-check-parties": {
       "concept_a": {
-        "graphic_id": "diag-06-four-core-six-scaled-pod",
+        "graphic_id": "diag-06-deductible-and-claim-check-parties",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Six at Scale",
+        "label": "Who Touches the Deductible and the Claim Check",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-four-core-six-scaled-pod",
+        "graphic_id": "diag-06-deductible-and-claim-check-parties",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Six at Scale",
+        "label": "Who Touches the Deductible and the Claim Check",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-four-core-six-scaled-pod",
+        "graphic_id": "diag-06-deductible-and-claim-check-parties",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Six at Scale",
+        "label": "Who Touches the Deductible and the Claim Check",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-45000-reference-startup-capital": {
+    "diag-07-roof-supplement-value-bands": {
       "concept_a": {
-        "graphic_id": "diag-07-45000-reference-startup-capital",
+        "graphic_id": "diag-07-roof-supplement-value-bands",
         "graphic_type": "diagram",
-        "label": "Startup Capital: A $45,000 Reference Plan",
+        "label": "Roof Supplement Value Bands",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-45000-reference-startup-capital",
+        "graphic_id": "diag-07-roof-supplement-value-bands",
         "graphic_type": "diagram",
-        "label": "Startup Capital: A $45,000 Reference Plan",
+        "label": "Roof Supplement Value Bands",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-45000-reference-startup-capital",
+        "graphic_id": "diag-07-roof-supplement-value-bands",
         "graphic_type": "diagram",
-        "label": "Startup Capital: A $45,000 Reference Plan",
+        "label": "Roof Supplement Value Bands",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-first-thirty-days": {
+    "diag-08-storm-roof-claim-roadmap": {
       "concept_a": {
-        "graphic_id": "diag-08-first-thirty-days",
+        "graphic_id": "diag-08-storm-roof-claim-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to an Operationally Ready Restoration Pod",
+        "label": "Storm Roof Claim Roadmap",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-first-thirty-days",
+        "graphic_id": "diag-08-storm-roof-claim-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to an Operationally Ready Restoration Pod",
+        "label": "Storm Roof Claim Roadmap",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-first-thirty-days",
+        "graphic_id": "diag-08-storm-roof-claim-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to an Operationally Ready Restoration Pod",
+        "label": "Storm Roof Claim Roadmap",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:02Z"
+  "updated_at": "2026-11-24T22:21:28Z"
 }

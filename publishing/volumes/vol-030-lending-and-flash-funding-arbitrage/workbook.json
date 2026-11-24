@@ -1,470 +1,470 @@
 {
   "workbook_id": "wb-030-lending-and-flash-funding-arbitrage",
   "volume_id": "vol-030-lending-and-flash-funding-arbitrage",
-  "title": "Lending & Flash-Funding Arbitrage — Operator Companion Workbook",
-  "subtitle": "6 Printable Operator Worksheets for Escrow-Locked Double Closes, Earnest-Money Qualification, Liquidity Velocity, Wire Controls, State Lending Reviews, and Small-Team Operating Discipline",
+  "title": "Lending & Flash-Funding Arbitrage — Practitioner Testimony Operator Workbook",
+  "subtitle": "Practitioner worksheets for structuring double closes, pricing transactional funding, controlling title and escrow, protecting earnest money, and moving clean wires from contract to settlement",
   "worksheets": [
     {
       "worksheet_id": "ws-01",
       "number": 1,
-      "title": "Arbitrage Deal / Counterparty Underwriting & Spread Qualification",
-      "purpose": "Qualify each proposed advance before promising liquidity. Establish the actual repayment source, verify every counterparty independently, and separate earned fees from principal movement. Reject apparent spreads that depend on provisional buyer funds, unsecured reimbursement promises, or unverified settlement instructions.",
-      "chapter_ref": "Q1, Q2, Q6",
+      "title": "Double Close or Assign: Structure, Closer and Funding Map",
+      "purpose": "Decide whether this deal exits by assignment or a two-contract double close, lock a closer who handles back-to-back escrows, secure the end buyer's deposit, and price both legs in dollars before any money moves on the A-to-B purchase.",
+      "chapter_ref": "Q1-Q2",
       "instructions": [
-        "Assign one immutable deal identifier before reviewing documents. Map the seller-to-intermediary purchase and intermediary-to-end-buyer resale separately, then identify which obligations require cash, which documents create repayment rights, and which parties can change settlement instructions.",
-        "Obtain the complete purchase agreements, resale agreement, settlement agent engagement, and proposed disbursement schedule. Compare legal names, property identifiers, dates, assignment restrictions, and cancellation rights rather than relying on a broker summary or proof-of-funds letter.",
-        "Verify the settlement agent through independently sourced contact information and confirm applicable bonding, insurance, licensing, and underwriter relationships. Record evidence dates and limits; a familiar logo or prior successful transaction does not authenticate new wire instructions.",
-        "Require unconditional end-buyer cash on deposit before releasing principal to the verified bonded title or settlement agent. Treat lender commitments, pending transfers, conditional deposits, and screenshots as insufficient; document the agent's written confirmation and its precise limitations.",
-        "Calculate spread after capital usage, verification work, settlement charges, and reserves. Apply the same cash-release requirement to earnest-money proposals; ordinary speculative deposits fail this playbook when the required end-buyer cash cannot already be verified."
+        "Start with the spread and the contract paper; a no-assignment clause or a deed restriction decides the structure before personal preference does.",
+        "Tell the closing agent the exact structure you want before sending contracts, and ask your transactional funder first if unsure.",
+        "Convert every funding quote into dollars on this purchase price, and price the double close as two full closings.",
+        "Lock the end buyer's non-refundable deposit and the release clause at contract execution, not on closing day.",
+        "Do not authorize any A-leg funding until the end buyer's B-to-C money is confirmed sitting in escrow."
       ],
       "fields": [
         {
-          "name": "Deal identity and transaction chain",
+          "name": "spread_and_exit_trigger",
           "type": "textarea",
-          "prompt": "Record the immutable deal identifier, property description, contracting entities, settlement sequence, and proposed advance. Explain exactly where the operator enters the chain and which agreement establishes the right to receive repayment.",
-          "example": "Deal LF-030-001 concerns 18 Cedar Avenue. Cedar Buyer LLC purchases for $100,000 and resells to Harbor Holdings LLC for $125,000. The operator advances $100,000 only to the verified settlement account; a signed funding agreement directs return of principal plus a $2,000 earned fee."
+          "prompt": "Write the contracted purchase price, the expected resale price, and the resulting spread on this deal. Then state the exact dollar threshold you use to switch from an assignment to a double close, and name the practitioner benchmark you are measuring against.",
+          "example": "Contract at $100,000, resale at $120,000, spread $20,000. Under Jamil Damji's house rule this stays an assignment, because Key Glee only double closes when profit runs above $20,000, a trigger raised from $15,000 after sellers rarely objected [Jamil Damji — KMD0dZIIYwc @ 00:02:12]. Brent Daniels sets his line at $15,000 and Lex Levinrad at $10,000."
         },
         {
-          "name": "Counterparty identity and signing authority",
+          "name": "no_assignment_screen",
           "type": "textarea",
-          "prompt": "Identify each entity's registration, beneficial ownership evidence, authorized signer, and independently verified contact route. Distinguish identity checks from creditworthiness and document inconsistencies that must be resolved before any commitment becomes executable.",
-          "example": "Cedar Buyer LLC provides its state registration, operating agreement, manager resolution, and signer identification. The analyst matches the manager across all four records and calls a previously verified number. A different email domain triggers fresh verification rather than an automatic update to payment instructions."
+          "prompt": "Identify whether the seller paper allows assignment at all. Note if the property is REO, HUD, bank-owned, hedge-fund, auction, or short sale inventory, and check for deed restrictions that bar resale for a set number of days or above a percentage.",
+          "example": "Bank-owned house with a no-assignment clause, so assignment is off the table and the plan becomes two contracts and two closings. Before promising the end buyer a same-day double close, the deed is screened for a restriction barring resale for 30, 60 or 90 days or above a set percentage [Game Changer Real Estate Insights — lLbfcHAX30o @ 00:03:38]."
         },
         {
-          "name": "Settlement agent qualification",
-          "type": "textarea",
-          "prompt": "Document the settlement agent's applicable license, bond, insurance, bank account title, and title-underwriter relationship. Capture independently sourced verification evidence, including exclusions that could prevent recovery after escrow theft or unauthorized disbursement.",
-          "example": "The proposed agent presents a $250,000 fidelity bond and $1 million errors-and-omissions policy. The analyst verifies status with the issuer and checks whether lender loss and employee dishonesty are covered. The $100,000 advance remains blocked until account ownership and applicable settlement authority are independently confirmed."
+          "name": "closer_selection",
+          "type": "text",
+          "prompt": "Name the title company or closing attorney who will handle both legs. Record whether they confirmed in writing that they handle double escrows, how you found them, and the exact closing-services clause you will write into both contracts.",
+          "example": "Closer sourced by posting in a local fix-and-flip group asking which escrow officers actually run double escrows [Brent Daniels - Wholesaling Inc — 1CnG4yCPR4M @ 00:03:10]. Both contracts carry the line 'seller or buyer agrees to use the closing services of' followed by that investor-friendly title company, because the wrong title company will kill the deal [Flipping Mastery TV — Jfl-5LgDTaM @ 00:09:55]."
         },
         {
-          "name": "Unconditional end-buyer cash evidence",
+          "name": "structure_briefing",
           "type": "textarea",
-          "prompt": "Describe the evidence proving end-buyer cash is already deposited, available for the specified closing, and free of unresolved funding conditions. Identify the agent providing confirmation and any remaining contractual right that could interrupt disbursement.",
-          "example": "Harbor deposits $125,000 into the verified escrow account before release. The settlement officer confirms receipt, availability, and satisfaction of buyer funding conditions in writing. A pending ACH credit does not qualify. The reviewer also checks cancellation language because deposited cash alone does not eliminate contractual withdrawal risk."
+          "prompt": "Describe the exact closing structure you will tell the closing agent before any contract is sent. Spell out who funds the A-to-B leg, whether the end buyer's wire may fund both sides, and the wording you will avoid with a nervous closer.",
+          "example": "Agent told up front: two independent back-to-back closings, leg one funded by outside transactional cash, because an ABC closing means different things to different agents [LearnREInvesting — _QXnSUQsTNw @ 00:04:14]. The phrase 'ABC closing' is never used with a nervous closer; when one attorney firm refused, moving the file to a high-volume investor attorney closed both legs cleanly."
         },
         {
-          "name": "Repayment waterfall and instruction priority",
+          "name": "funding_camp",
           "type": "textarea",
-          "prompt": "Specify the order of principal return, earned fee payment, settlement expenses, and intermediary proceeds. Reconcile the waterfall against both closing statements and identify whose written acceptance makes the disbursement instructions operationally effective.",
-          "example": "The resale receives $125,000. Accepted instructions allocate $100,000 to principal return, $2,000 to the operator's earned fee, $3,000 to other settlement expenses, and $20,000 to Cedar. Both transactions must balance independently; the operator's $100,000 initial advance pays the first purchase price and is never fee revenue."
+          "prompt": "State which camp your deal falls into: leg one closes with outside cash, or the end buyer's wire funds both legs. Explain why, and record whether your title company allows the buyer's money to pay for your own purchase.",
+          "example": "Outside cash camp. Kevin Tacher and the funders insist leg one closes with independent money, matching the rule that all deals must be closed independent of each other, which means closing A must close cash [Game Changer Real Estate Insights — lLbfcHAX30o @ 00:01:46]. Title was asked early, since some will not let the buyer's money pay for the wholesaler's purchase."
         },
         {
-          "name": "Net spread qualification",
-          "type": "textarea",
-          "prompt": "Calculate the transaction's earned fee less attributable capital, verification, transfer, and administration costs. State the minimum acceptable contribution and distinguish this deal-level result from annual owner profit after overhead and portfolio losses.",
-          "example": "A $2,000 funding fee less $80 capital cost, $150 diligence, $50 wire charges, and $120 administration produces $1,600 transaction contribution. The contribution ratio is 80%, but the canonical base annual owner margin remains 42.5% after all modeled operating expenses and loss-related costs."
+          "name": "buyer_deposit_lock",
+          "type": "text",
+          "prompt": "Record the non-refundable deposit amount your cash buyer posts at contract execution, where it is held, and the exact release clause that lets escrow pay it to you without any further escrow instruction if the buyer fails to close.",
+          "example": "End buyer posts $5,000 non-refundable at title on signing, above Jerry Norton's $2,500 floor and inside his preferred $5,000 to $10,000 band [Flipping Mastery TV — Jfl-5LgDTaM @ 00:11:13]. The release clause needs no further escrow instruction, so a buyer who flakes on closing day forfeits directly to the wholesaler and the deposit covers the wholesaler's exposure."
         },
         {
-          "name": "Earnest-money structure qualification",
+          "name": "funder_quote_comparison",
           "type": "textarea",
-          "prompt": "Describe whether the proposed earnest-money arrangement creates repayable debt, genuine shared investment risk, or another economic relationship. Evaluate actual loss allocation and the universal cash-release condition instead of accepting a promotional product label.",
-          "example": "A sponsor requests $15,000 of earnest money for a promised $3,000 profit split, but no end-buyer cash is deposited. The request is rejected under this operating policy. Calling the arrangement a Gator joint venture does not cure missing repayment evidence or resolve state lending characterization."
+          "prompt": "List each transactional funder you contacted, their pricing model, any upfront fee, and when they will wire. Convert every quote into a dollar figure on this purchase price so you compare actual costs rather than percentages or flat headlines.",
+          "example": "On a $100,000 purchase, Bright Closings at 1% plus $100 processing costs $1,100, paid from the second closing [Jasper Cool — EUE6UWl2qBA @ 00:03:19]. Flip Lab Capital quotes 1% to 3% plus the wholesaler's closing costs. Velocity Capital charges a $250 initiation fee at submission, subtracted from the back-end fee when the deal closes [Closer Control — qtTEzFSMqJg @ 00:14:38]."
         },
         {
-          "name": "Corporate promotional-credit suitability",
+          "name": "two_closing_budget",
           "type": "textarea",
-          "prompt": "Record the issuer's permitted transaction types, promotional period, transfer charges, repayment requirements, and cash-advance treatment. Explain how funds would reach escrow without disguised purchases, unsupported representations, or dependence on repeated credit extensions.",
-          "example": "An issuer offers a documented promotional transfer with a 3% charge. Moving $20,000 costs $600 before any escrow expense. A proposed $500 earned fee therefore loses at least $100. The operator rejects the transaction rather than treating a 0% promotional interest rate as costless liquidity."
+          "prompt": "Itemize the full cost of running this deal as two complete closings: both sets of title work, title insurance on each leg, recording fees, transfer taxes on each deed, the funding fee, and the break you will ask title to give.",
+          "example": "David Olds ran a $100,000 contract resold at $120,000 both ways: $20,000 on assignment versus $14,000 net on a double close, roughly $6,000 to $7,000 lost to title [David Olds REI — oXZTulq2Qx0 @ 00:02:13]. B-to-C costs stay on the end buyer as if it were an assignment, and title is asked for an A-to-B discount since they earn double in an hour."
         },
         {
-          "name": "Failure triggers and exposure limits",
+          "name": "spread_protection",
           "type": "textarea",
-          "prompt": "List transaction-specific rejection triggers, maximum principal exposure, expected settlement duration, and concentration limits. Identify the person who can stop funding when evidence changes and the records required to resume the review.",
-          "example": "LF-030-001 has a $100,000 principal ceiling and a planned two-business-day cycle. Changed beneficiary details, conditional buyer cash, missing bond verification, or unsigned repayment instructions stop release. The owner may restart review only after independent evidence resolves the specific failure; commercial pressure cannot substitute for verification."
+          "prompt": "Explain how you will keep the seller from seeing the resale price and the end buyer from seeing your buy price. Note where your business name and profit will appear on the settlement statement and who will review it line by line.",
+          "example": "Double close chosen because the spread is large and the seller is squirmy. One operator took a speaker phone call from an attorney and a seller who went line by line through the HUD and found the business name beside $30,000 [Closer Control — qtTEzFSMqJg @ 00:09:34]. Buyers and sellers have walked when a wholesale fee looked too high."
         },
         {
-          "name": "Underwriting decision and evidence expiry",
+          "name": "funding_release_and_slippage",
           "type": "textarea",
-          "prompt": "Summarize the decision, outstanding conditions, evidence timestamps, and validity window. Separate a preliminary indication from an executable commitment, and explain which document changes require complete re-underwriting rather than a clerical amendment.",
-          "example": "The preliminary indication allows $100,000 for a $2,000 fee, subject to same-day cash and beneficiary verification. It expires after three business days. A new buyer, settlement agent, property, or repayment waterfall requires a fresh decision. Only the owner signs the final commitment after the reviewer completes all evidence checks."
+          "prompt": "Write the funding release condition and the slippage plan. Confirm the end buyer's funds must sit in escrow before the A leg moves, how the funder will wire, and what extra fees or interest apply if the second closing is delayed.",
+          "example": "No money moves on the A leg until B-to-C funds land in escrow, since promised same-day funding is worth nothing until it arrives [Ryan Schrope — j30R1Cef6PE @ 00:18:13]. Wire instructions were locked on the first call. Slippage is budgeted: a $150,000 borrow runs about $3,000 plus roughly $50 a day in interest [The Virtual Investor — kCbwtS3VKw4 @ 00:07:16]."
         }
       ],
-      "completion_gate": "Advance only when all ten underwriting records identify their evidence, the verified bonded settlement agent has accepted repayment instructions, unconditional end-buyer cash is confirmed, and the owner records an explicit executable commitment within its validity window."
+      "completion_gate": "Gate passed only when the B-to-C contract is signed, the end buyer's non-refundable deposit of at least $2,500 is posted with a release clause, the closer has confirmed in writing that they run double escrows, and the end buyer's funds are confirmed in escrow before the A leg is funded."
     },
     {
       "worksheet_id": "ws-02",
       "number": 2,
-      "title": "Unit Economics, Escrow/Reserve Float & Working-Capital Calculator",
-      "purpose": "Build a capital model that distinguishes fee revenue, deployed principal, protected reserves, and available borrowing capacity. Reproduce the three canonical annual scenarios exactly, then test whether settlement duration, funding charges, concentration, and fixed expenses support the proposed operating cadence.",
-      "chapter_ref": "Q3, Q4",
+      "title": "Transactional Funding Costs and Title Control",
+      "purpose": "Select a transactional lender on net dollar cost and execution, model the real net profit after two sets of closing costs, and take control of title, the settlement statement, signing logistics and wire verification from contract to recording.",
+      "chapter_ref": "Q3-Q4",
       "instructions": [
-        "Copy the canonical annual revenue, margin, profit, and staffing figures without substituting transaction contribution for owner profit. Derive total modeled costs by subtraction, and keep principal movement outside every revenue calculation and sales dashboard.",
-        "Build a fee bridge using completed services and enforceable compensation terms. Separate transactional fees, earned origination points, and any retained joint-venture economics; do not count the same compensation twice because it appears on multiple settlement documents.",
-        "Model peak deployment using actual settlement calendars, bank cutoffs, holidays, and overlapping commitments. Use business days for capacity planning and the contractual day-count convention for capital charges; disclose the difference whenever weekends extend cash usage.",
-        "Ring-fence operating and loss reserves before offering commitments. Treat external facilities as available only after execution and satisfaction of draw conditions, and never use another client's escrow funds to bridge an unrelated transaction or operating expense.",
-        "Stress the model for delayed repayment, disputed fees, unavailable facilities, and principal impairment. Reconcile transaction ledgers to bank evidence and the annual scenario, then state whether the startup capital supports the planned capacity without assuming unlimited recycling."
+        "Get every funder quote in writing on the actual A-to-B amount, with all wire, processing, rush, hold and split title fees listed.",
+        "Walk away from any funder demanding a large upfront application fee or pushing a 24-hour funding deadline.",
+        "Open escrow and pull title the day the contract is signed rather than waiting for a cash buyer.",
+        "Ask for the reissue credit and challenge the lien search charge; title discounts neither unless asked.",
+        "Verify wire instructions by calling escrow a second time and send a true wire, never ACH."
       ],
       "fields": [
         {
-          "name": "Canonical scenario reconciliation",
+          "name": "net_dollar_fee_comparison",
           "type": "textarea",
-          "prompt": "Enter all three canonical annual scenarios with revenue, owner margin, owner profit, derived total costs, and staffing. Explain that these are modeled annual outcomes rather than closing-day cash balances or automatic results.",
-          "example": "Conservative: $120,000 revenue, 30% margin, $36,000 owner profit, $84,000 costs, one full-time operator plus two contractors. Base: $535,000, 42.5%, $227,375, $307,625, identical staffing. Scaled: $950,000, 55%, $522,500, $427,500, two full-time staff plus three contractors. Each profit equals revenue multiplied by its stated margin."
+          "prompt": "Convert each funder's advertised percentage into net dollars on your actual A-to-B amount. Record the minimum fee, which funding figure the percentage applies to, and whether any quote crosses the 1% line practitioners treat as overpaying on a standard deal.",
+          "example": "On a $200,000 double closing, 3/4 of 1% costs $1,500 while 2% costs $4,000; a half point equals $1,000 and a full point equals $2,000 [LearnREInvesting — 0u7L7Q7CE5o @ 00:01:11]. Dave Dinkel says no one should pay more than 1% of the A-to-B funds unless the lender negotiates below its quote or the amount exceeds one million dollars."
         },
         {
-          "name": "Recognized fee revenue bridge",
+          "name": "junk_fee_audit",
           "type": "textarea",
-          "prompt": "Construct an illustrative annual fee mix that reconciles exactly to each scenario. Identify service completion and contract evidence for earned amounts, exclude returned principal, and distinguish origination compensation from duplicated funding fees.",
-          "example": "Conservative uses 60 completed closings at $2,000, totaling $120,000. Base uses 250 at $2,000 plus 35 separately earned $1,000 origination fees, totaling $535,000. Scaled uses 450 at $2,000 plus 50 separately earned $1,000 origination fees, totaling $950,000. Each additional origination fee requires distinct contractual support."
+          "prompt": "List every charge beyond the core funding fee: application, entry, processing, cancellation, wire, document rush, extended hold, and split title company fees. Get the total expected funding charge in writing and flag any minimum that dominates a small deal.",
+          "example": "Written quote requested covering wire, processing, document rush, extended hold and split title company fees [LearnREInvesting — 0u7L7Q7CE5o @ 00:02:30]. Minimums run as high as $1,795, which swamps a small A-to-B purchase. Some lenders charge an application fee just to decide whether they will fund, though LearnREInvesting says transactional funding should carry no upfront cost [LearnREInvesting — l-l8leRQ_KE @ 00:00:00]."
         },
         {
-          "name": "Principal and retained-share classification",
+          "name": "funder_red_flags",
           "type": "textarea",
-          "prompt": "Define principal, operator-owned fees, and compensation collected for others. Document principal-versus-agent treatment for fees within ASC 606 and identify lending amounts requiring other accounting guidance instead of forcing all receipts into one category.",
-          "example": "A $102,000 receipt contains $100,000 principal and $2,000 earned operator compensation. Principal reduces the advance receivable. For a separate agency arrangement collecting a $3,000 fee with retained_share of 0.40, recognized operator revenue is $1,200 and $1,800 is payable onward. That illustration does not increase canonical revenue."
+          "prompt": "Screen each funder for walk-away signals before you submit the deal. Record any large upfront application fee, any pressured 24-hour funding deadline, and whether your title company has actually heard of the funder and closed with them before.",
+          "example": "One funder pushed a 24-hour deadline and a large application fee, both walk-away signals [The Full Deal REI — H-3pmQVYvCI @ 00:06:51], and title had never heard of it. The cleaner model funds on closing day once everybody has signed, sending money directly to the closing company to close the seller contract, then the end buyer contract [Velocity Advantage Capital — Fb1_zsDd4XE @ 00:01:26]."
         },
         {
-          "name": "Startup capital and committed capacity",
+          "name": "lender_execution_vs_price",
           "type": "textarea",
-          "prompt": "Allocate startup cash between protected reserves and deployable equity, then identify executed external capacity separately. Show the maximum simultaneous principal commitment and the consequences if a proposed facility is unavailable at launch.",
-          "example": "At the $100,000 startup ceiling, protect $50,000 and deploy $50,000 of equity. A hypothetical executed $450,000 facility would create $500,000 total deployment capacity. Without that facility, capacity remains $50,000 and the illustrated $100,000 deal cannot proceed; promotional credit limits do not automatically replace committed funds."
+          "prompt": "Decide whether price or execution drives your lender choice on this deal. Record the funder's track record, how they handle roadblocks, whether they skip credit checks and underwriting, and why you would or would not pay more for experience.",
+          "example": "Execution wins here. A single percentage printed on a website is not the deciding factor; an experienced provider who helps when roadblocks hit is [LearnREInvesting — 0u7L7Q7CE5o @ 00:03:07]. Veteran Innovative Lending cites 424 deals closed and $21.1 million funded in 2025, with no credit checks, no income verification and no underwriting [Fund My Real Estate Deal — a--96aHg5xs @ 00:01:59]."
         },
         {
-          "name": "Capital turns and deployment utilization",
+          "name": "net_profit_model",
           "type": "textarea",
-          "prompt": "Calculate annual principal throughput, principal-days, average deployment, and utilization using explicit assumptions. Distinguish capacity arithmetic from achievable demand, and leave room for settlement bunching rather than scheduling every dollar continuously.",
-          "example": "Base throughput assumes 250 closings at $100,000, or $25 million of principal movement, not revenue. Two business days per closing creates $50 million principal-days. Across 250 business days, average deployment is $200,000, representing 40% utilization of $500,000 capacity. Five simultaneous $100,000 deals consume all capacity."
+          "prompt": "Build a net profit model for this double close. Enter the A-to-B price, B-to-C price, funded amount including closing costs, funding fee, wire fee, and both sets of closing costs, then confirm the spread absorbs everything.",
+          "example": "Tennessee deal: $38,000 A-to-B purchase resold for $72,900. Transactional funding of $39,727.93 covered the buy at 1% plus a $50 wire fee, the investor posted no earnest money, and net profit came to $30,070.71 [LearnREInvesting — BbugvWp8qsA @ 00:00:42]. If the spread cannot absorb the fee plus two sets of closing costs, it is not a double close deal."
         },
         {
-          "name": "Per-deal contribution and capital charge",
-          "type": "textarea",
-          "prompt": "Itemize one transaction's earned fee and direct costs, including the actual capital-charge convention. Compute contribution before fixed overhead, and identify whether minimum facility charges or unused-line fees require additional annual expense allocations.",
-          "example": "For LF-030-001, $2,000 revenue less $80 capital, $150 diligence, $50 transfers, and $120 administration leaves $1,600. The $80 capital charge assumes $100,000 for two chargeable days at 14.6% on an actual/365 basis. A weekend extension or facility minimum requires recalculation before the quote remains valid."
+          "name": "title_company_lock",
+          "type": "text",
+          "prompt": "Name the wholesaler-friendly title company or closing attorney, the date escrow opened, and when title first called the seller. Note whether that closer is locked into the seller contract and whose legal department supplied your closing documents.",
+          "example": "Escrow opened the day the contract was signed, because about 25% of deals never reach closing over title issues [Flipping Mastery TV — 3aAzZildhKk @ 00:04:22]. The buyer's title of choice is locked into the seller contract. The company's staff attorney, reached through the legal department, supplied free assignment and double-close documents the company is comfortable closing [Jamil Damji — _4J_JXkaaMg @ 00:10:26]."
         },
         {
-          "name": "Base annual cost bridge",
+          "name": "title_fee_hygiene",
           "type": "textarea",
-          "prompt": "Reconcile illustrative direct costs and recurring overhead to the canonical base total cost envelope. Show each category separately and explain whether monthly operating expenses exclude transaction-linked capital charges, contractor work, or portfolio provisions.",
-          "example": "Base costs comprise $100,000 closing direct costs, $7,000 separate origination delivery costs, $120,000 recurring overhead, $50,000 additional portfolio capital costs, and $30,625 loss-related expense. Total costs equal $307,625, leaving $227,375 from $535,000 revenue. Recurring overhead averages $10,000 monthly, within the stated $2,000–$12,000 operating range."
+          "prompt": "Audit the title fee schedule line by line. Record the lien search charge, any padded junk charges, which fees are set by state rate filings versus unregulated, and whether you requested the reissue credit on the second-side policy.",
+          "example": "Lien search billed at $250 against an actual title company cost of $50 to $100, so it was negotiated down and the written report kept in the file [Flip With Rick — itXS_PDnxa8 @ 00:11:40]. The reissue credit was requested on the second-side policy, cutting a $2,000 premium by at least $1,000, since title will not offer it unless asked."
         },
         {
-          "name": "Protected reserve and liquidity runway",
+          "name": "settlement_statement_type",
           "type": "textarea",
-          "prompt": "Set an operating reserve, loss buffer, and minimum available cash floor. Explain reserve ownership and replenishment rules, and distinguish an earmarked cash balance from a booked loss expense so the model avoids double counting.",
-          "example": "The protected $50,000 comprises $30,000 for three months of $10,000 recurring overhead and $20,000 of loss liquidity. Earmarking does not itself create an expense. The annual $30,625 loss-related budget is separate from reserve cash, and new commitments stop if projected unrestricted cash falls below the required operating floor."
+          "prompt": "Identify which settlement statement each party will receive: ALTA, HUD-1, or Closing Disclosure. Then decide how the assignment fee or spread will appear: exposed on the buyer's statement, hidden through a blind HUD, or separated by a double close.",
+          "example": "Cash investment purchase, so the closer issues a HUD rather than a lender CD paired with an ALTA [Tony Zowd — KmNl8nlbUxw @ 00:01:17]. On assignments, the escrow officer can run a blind HUD [Jamil Damji — _4J_JXkaaMg @ 00:06:51]. In one deal the listing agent placed the student's profit on page two, so the seller saw nothing on page one."
         },
         {
-          "name": "Delay and impairment sensitivity",
+          "name": "signing_logistics",
           "type": "textarea",
-          "prompt": "Quantify an extended settlement and a principal-loss case separately. State additional capital costs, unavailable capacity, and incremental profit impact relative to the canonical base; do not silently replace the published scenario with stressed results.",
-          "example": "Three extra chargeable days on $100,000 add $120 at 14.6% actual/365 and occupy one funding slot longer. Separately, a $25,000 incremental loss beyond all modeled provisions reduces base owner profit from $227,375 to $202,375. Neither stress result changes the canonical $227,375 scenario printed in the scorecard."
+          "prompt": "Map the signing day: when the seller signs notarized documents, when the buyer signs, whether the two parties will ever share the office, and how a slow mortgage payoff or other lien will be cleared without stalling the file.",
+          "example": "Seller signs notarized documents before the slow mortgage payoff arrives, so the file can move to close the moment the payoff lands [Flipping Mastery TV — 0A2TpKfV1Os @ 00:10:20]. The buyer signs only the buyer side on a separate visit, because Jerry Norton virtually never lets buyers and sellers run into each other at the office [Flipping Mastery TV — 0A2TpKfV1Os @ 00:08:41]."
         },
         {
-          "name": "Owner distributions and cash reconciliation",
-          "type": "textarea",
-          "prompt": "Specify when earned profit may be distributed after bank reconciliation, payable settlement, reserve replenishment, and facility obligations. Explain why revenue recognition, accounting profit, collected fees, and distributable cash can differ during growth.",
-          "example": "The monthly review shows $40,000 earned revenue, $23,000 expenses, and $17,000 accounting profit, but $5,000 of fees remain uncollected. Collected operating surplus is $12,000 before other balance-sheet changes. The owner defers distributions until contractor payables, facility requirements, and the $50,000 protected reserve are fully covered."
+          "name": "wire_verification_and_recording",
+          "type": "text",
+          "prompt": "Document your wire controls and final step. Record the number you called to verify instructions a second time, confirm the transfer is a true wire and not ACH, and note when the deed records relative to keys changing hands.",
+          "example": "Before sending the actual wire, the escrow company was called one more time to verify the information directly [Tom Olsewski - Team Olsewski — haXXzqITogY @ 00:01:08]. A true wire went out, never ACH, and never cash, since title companies do not accept or keep cash [Realtypath — XlKk96ekJTE @ 01:03:08]. Keys transfer only after the deed has recorded, never before."
         }
       ],
-      "completion_gate": "Proceed only after all three scenarios reproduce their exact canonical profits, the fee bridge excludes principal, the reserve and external capacity assumptions are explicit, and the proposed closing calendar fits available committed cash under the documented delay stress."
+      "completion_gate": "Gate passed only when the written all-in funding charge fits inside the spread with two sets of closing costs, escrow is open with the chosen title company locked into the seller contract, the settlement statement format is confirmed, and wire instructions have been verified by a second call."
     },
     {
       "worksheet_id": "ws-03",
       "number": 3,
-      "title": "End-to-End Execution, Idempotent Ledger & QA Pre-Flight Sheet",
-      "purpose": "Translate underwriting into a controlled settlement process with independent wire verification, explicit state transitions, and replay-safe records. Preserve a complete principal and fee trail while preventing duplicate releases, premature revenue posting, and silent exceptions during delayed or disputed closings.",
-      "chapter_ref": "Q7, Q8",
+      "title": "Earnest Money, Proof of Funds and Clean Wires",
+      "purpose": "Protect the earnest money deposit through live written contingencies and calendared deadlines, present proof of funds that matches the offer, recalculate prorations that change cash due, and harden every wire against interception before settlement.",
+      "chapter_ref": "Q5-Q6",
       "instructions": [
-        "Create separate preparation and release responsibilities even when contractors support a single full-time owner. Require independent evidence review before the bank instruction becomes executable, and log who checked beneficiary ownership, buyer cash, and accepted repayment terms.",
-        "Represent the deal as explicit operational states with permitted transitions and evidence requirements. Prevent automation from jumping directly from intake to funded, and freeze movement when a material document changes after the final pre-flight review.",
-        "Use immutable event identifiers and unique business keys for ledger operations. Persist intent before requesting a transfer, then reconcile provider status before retrying; a timeout does not prove failure and must never automatically trigger a second wire.",
-        "Reconcile both sides of every principal movement against bank records and settlement statements. Post fees only when earned under the applicable agreement and accounting policy, and keep bank availability distinct from revenue recognition and contractual collectability.",
-        "Conduct a tabletop incident before the first funded closing. Test changed wiring instructions, duplicate callbacks, delayed repayment, and an unavailable reviewer, then preserve the decision trail and correct any workflow capable of releasing cash without the required evidence."
+        "Calendar every contractual deadline at ratification and assign one person to read them aloud daily.",
+        "Cancel in writing by day nine or ten of a 10-day inspection period when the seller refuses credits or a price cut.",
+        "Match the name, amount and address on the proof of funds exactly to the offer.",
+        "Highlight every closing statement line that cannot be explained in one sentence and get who, what period and what document before signing.",
+        "Wire only on instructions that came directly from title, confirmed by calling title yourself on a number established early."
       ],
       "fields": [
         {
-          "name": "State machine and transition evidence",
-          "type": "textarea",
-          "prompt": "List permitted deal states and the evidence required for each transition. Identify terminal rejection states, reversible preparation steps, and the point where an external payment creates an obligation that cannot be undone locally.",
-          "example": "LF-030-001 moves through intake, verified, documented, cash-confirmed, release-authorized, submitted, funded, repaid, and reconciled. A bank acknowledgment is required before funded status. Rejected is terminal unless a new review version is created. Once a wire is submitted, deleting an application record cannot cancel the external instruction."
+          "name": "emd_amount_and_holder",
+          "type": "text",
+          "prompt": "Record the earnest money amount, the percentage of price it represents, and the neutral holder: title, brokerage trust account, or attorney escrow. Note the form of payment allowed and how the deposit will credit at closing.",
+          "example": "$19,500 on a $650,000 offer, the 3% scripted benchmark, held in escrow and applied to down payment or closing costs [Beyond the Address — 1ysRoNF77u8 @ 00:00:29]. Payment goes by wire or cashier's check only, since cash, debit and credit cards are not accepted [Kristie Dimarakis — NwZ7Oa8GUXQ @ 00:02:01]. Contract reads 'check or wire' in the earnest money delivery field."
         },
         {
-          "name": "Independent beneficiary verification",
+          "name": "contingency_exits",
           "type": "textarea",
-          "prompt": "Describe the callback procedure, trusted contact source, account ownership evidence, and reviewer separation. Specify how changed instructions invalidate earlier verification and how the team avoids authenticating a suspicious message through that same message.",
-          "example": "The preparer uploads the agent's instructions, and the reviewer calls a number verified during onboarding rather than the email signature. They confirm beneficiary name, routing number, account digits, and deal reference. Any change creates a new verification record and blocks reuse of the prior release authorization."
+          "prompt": "List every live written contingency protecting the deposit: inspection, loan, appraisal, and title. For each, record the deadline date, the exact cancellation method, and the real defects that would justify using it instead of cosmetic complaints.",
+          "example": "Inspection contingency reserved for water heater straps, HVAC, plumbing and electrical, with paint and carpet left at the door, so a seller refusal on real defects is a clean exit with the deposit [Andrew Finney Team — ND7J57hzroE @ 00:02:01]. The loan contingency stays in, even in a multiple-bid fight, because without it the buyer is on the hook."
         },
         {
-          "name": "Release packet and final pre-flight",
+          "name": "deadline_calendar",
           "type": "textarea",
-          "prompt": "Define the minimum release packet and its freshness requirements. Include buyer cash confirmation, signed repayment instructions, settlement-agent verification, available capital, and exact beneficiary details, with a named reviewer responsible for resolving discrepancies.",
-          "example": "The release packet contains both contracts, accepted disbursement instructions, current agent checks, same-day $125,000 buyer cash confirmation, and the $100,000 wire request. The reviewer compares every amount with the ledger. Missing signatures, changed buyer identity, or stale beneficiary verification returns the deal to documented status."
+          "prompt": "Calendar every contractual deadline on the day the contract is ratified. Record the inspection period length, the date you must cancel in writing, who reads the deadlines aloud, and how often your team reviews them across live deals.",
+          "example": "Ten-day inspection period with the seller refusing credits or a price cut, so written cancellation is set for day 9 [Larry Mastropieri — CSHBzTZo3Yc @ 00:00:45]. Every deadline is read aloud at an 8 a.m. operations call covering roughly 40 live deals. Contingencies clear just by missing the date, and once cleared, they stay cleared."
         },
         {
-          "name": "Idempotency key and retry behavior",
+          "name": "state_deposit_rules",
           "type": "textarea",
-          "prompt": "Define a unique key for each intended principal disbursement and explain retry behavior after timeouts. Distinguish application deduplication from bank-side protection and require status reconciliation wherever the payment provider cannot enforce idempotent requests.",
-          "example": "The business key is LF-030-001:principal-release:v1. SQLite enforces one release-intent row for that key, while a separate attempt record stores provider references. A timeout moves the attempt to status-review. The operator checks the bank before retrying; application uniqueness alone cannot prevent a manually duplicated bank wire."
+          "prompt": "Note the state-specific deposit rules that govern this contract. Record who must sign to release funds, whether a cancellation out of compliance sends the money to the seller, and any local deposit custom or liquidated damages trigger day.",
+          "example": "Connecticut deal: both the buyer's attorney and the seller's attorney must agree to release the funds, and the contract, not a handshake or verbal agreement, is what protects the deposit [Charles Nedder | Greenwich CT Real Estate — xyiyeiBkCqQ @ 00:03:07]. Greenwich custom calls for 10% at contract signing, $200,000 on a $2,000,000 home, wired to the buyer's attorney."
         },
         {
-          "name": "Principal and fee journal entries",
+          "name": "wholesaler_emd_practice",
           "type": "textarea",
-          "prompt": "Write balanced entries for advance, fee earning, collection, and transaction costs. Identify the supporting event for each posting and ensure principal return reduces the receivable rather than inflating earned revenue or profit.",
-          "example": "Advance: debit principal receivable $100,000 and credit cash $100,000. When the contractual service is complete, debit fee receivable $2,000 and credit fee revenue $2,000. Collection debits cash $102,000 and credits those receivables $100,000 and $2,000. Direct costs debit expense $400 and credit cash or payables $400."
+          "prompt": "If you are wholesaling, state whether you will post earnest money at all, how much, and where it is held. Record how your end buyer's non-refundable deposit backs your exposure and the escrow release clause that routes it to you.",
+          "example": "Wholesale contract with a 10-day inspection period, purchased and sold the same day within minutes, with no earnest money deposit from the investor [LearnREInvesting — 1ZAn99Atwe8 @ 00:02:17]. Where a deposit is required, the end buyer's meaningful non-refundable deposit sits with escrow under a release clause, so their skin in the game covers the wholesaler's EMD [The Full Deal REI — H-3pmQVYvCI @ 00:06:18]."
         },
         {
-          "name": "Escrow payoff reconciliation",
-          "type": "textarea",
-          "prompt": "Specify the documents and arithmetic used to reconcile repayment against the accepted waterfall. Define tolerances, investigation ownership, and treatment of short payments without silently rewriting the original contractual fee or principal balance.",
-          "example": "The payoff ledger expects $102,000 but the bank receives $101,950. A $50 difference is assigned to investigation, not automatically deducted from revenue. The reviewer obtains the bank advice and settlement statement to determine whether an authorized transfer charge, underpayment, or posting error explains the discrepancy."
+          "name": "fund_seasoning",
+          "type": "text",
+          "prompt": "Record when the cash used for earnest money and closing landed in the bank account. Confirm it has seasoned long enough to be sourceable for the loan type, and note any low-down-payment program that returns the deposit at closing.",
+          "example": "Cash moved into the account 60 days before going under contract, because money deposited the day before the EMD wire is non-sourceable on conventional, FHA, USDA and Fannie- and Freddie-backed loans [The Treasure Valley Home Show — 5lKK7iczAKk @ 00:19:20]. On low-down programs the deposit can come back: CCM zero-down buyers got all of it, an Idaho Housing buyer all but $500."
         },
         {
-          "name": "Immutable evidence and version history",
-          "type": "textarea",
-          "prompt": "Describe storage locations, document versions, access restrictions, and event timestamps. Explain what a cryptographic digest proves and what it cannot establish about authenticity, legal authority, or the accuracy of a settlement representation.",
-          "example": "Each accepted PDF receives a SHA-256 digest, UTC timestamp, document version, and uploader identity in the evidence index. Originals remain access-controlled and retained under the record schedule. Matching hashes demonstrate unchanged bytes after capture; they do not prove that the signer had authority or that buyer cash existed."
+          "name": "proof_of_funds_source",
+          "type": "text",
+          "prompt": "Identify the proof-of-funds source attached to this offer: local hard money lender, transactional lender letter, paid letter service, or bank statement. Confirm the name matches the offer, the amount is exact, and the address is included.",
+          "example": "Letter pulled from a local hard money lender, which Brent Daniels finds more powerful than a national brand [Brent Daniels - Wholesaling Inc — AcL3tusr27o @ 00:05:33]. Backup: Tailwind letters at $1.99 each or $9.99 a month, generated from contract name, property address and price [FlipThisWholesaler — FOfp5iWKVkc @ 00:04:20]. The name on the letter matches the buyer named on the offer."
         },
         {
-          "name": "QA fixtures and expected outcomes",
+          "name": "agent_pof_pushback",
           "type": "textarea",
-          "prompt": "List deterministic test cases for duplicate requests, partial repayments, stale documents, and invalid transitions. State expected ledger balances and system behavior so a reviewer can repeat the tests before workflow changes reach production.",
-          "example": "Submitting the same release key twice produces one $100,000 intent. A $60,000 principal repayment leaves $40,000 outstanding. A changed beneficiary blocks release. A duplicated bank event creates no second journal entry. Tests compare exact integer-cent balances and require every accepted posting batch to balance to zero."
+          "prompt": "Plan your response if the listing agent rejects a soft proof of funds. State whether you will offer a short contingency, replace the agent, or downgrade to a financed offer, and note who you expect to demand hard proof.",
+          "example": "About 90% of agents accept a soft letter because it checks a box; the other 10% demand hard proof [Flipping Mastery TV — 9NXVYf_SZCA @ 00:03:34]. Jerry Norton offers a five-to-seven-day contingency, and says to find a new agent when one rejects the letter. Steph Davis instead downgrades, making the offer with a financing contingency."
         },
         {
-          "name": "Wire incident response and escalation",
+          "name": "prorations_and_taxes",
           "type": "textarea",
-          "prompt": "Define the immediate response to suspected diversion, including bank contacts, evidence preservation, settlement notification, and reporting ownership. Distinguish requesting recall or cancellation from obtaining confirmed recovery of the transferred funds.",
-          "example": "If the $100,000 wire appears diverted, the owner immediately contacts the bank's fraud desk and requests recall, preserves headers and call records, and alerts the verified settlement agent. UCC 4A-211 cancellation depends on timing and applicable rules. The ledger continues showing exposure until recovery is confirmed."
+          "prompt": "Calculate the property tax and HOA prorations that change the cash due at closing. Record the daily proration math, any unpaid property taxes, hold-and-pay collections, and which generic seller credit lines you asked the lender to itemize.",
+          "example": "September closing in Oregon with no tax amount on the county lien, so title collects about 115% of last year's bill and refunds the overage [Julee Felsman | Workshop Team | Guaranteed Rate — faIlHE0Vtco @ 00:11:22]. The lender was asked to itemize the generic seller credits line, since a missing tax proration shifts the cash actually due at closing."
         },
         {
-          "name": "Closing pack and exception closure",
+          "name": "wire_fraud_defense",
           "type": "textarea",
-          "prompt": "Specify the final evidence required to close a deal operationally and in the ledger. Assign unresolved exceptions an owner and deadline rather than marking the transaction complete solely because expected cash has appeared.",
-          "example": "LF-030-001 closes only after principal receivable reaches zero, the $2,000 fee is supported and collected, the $400 direct costs are posted, and settlement statements match the bank. A missing signed statement remains an open documentation exception with a named owner, even when the cash reconciliation is exact."
+          "prompt": "Write your wire fraud defense. Record the escrow phone number established early and independently, how every wire will be verified, the red flags that stop a transfer, and the exact recall steps if funds appear compromised.",
+          "example": "Every wire is verified by calling escrow on a number set early, never one printed in the email [Katherine Brough — h1TnczbK_bE @ 00:02:06]. Any request to wire to a new bank account stops the transfer. If compromised: call the bank immediately to recall, notify escrow and the agent, and report to FBI IC3 [Think Escrow! — f-7Rw_JAZOA @ 00:08:49]."
         }
       ],
-      "completion_gate": "Release only after the independent reviewer signs the current packet and the ledger contains one authorized release intent. Mark the worksheet complete after duplicate-event tests pass, repayment reconciles, and every remaining exception has an explicit owner."
+      "completion_gate": "Gate passed only when every contingency deadline is calendared, the deposit sits with a neutral holder on a sourceable wire, the proof of funds matches the offer name and amount, prorations are itemized, and every wire has been phone-verified on an independently established number."
     },
     {
       "worksheet_id": "ws-04",
       "number": 4,
-      "title": "Statutory, Licensing, Contract Addendum & Compliance Audit",
-      "purpose": "Convert jurisdictional questions into documented operating requirements before quoting or deploying capital. Evaluate licensing, interest characterization, escrow authority, referral compensation, and enforceability using actual transaction facts rather than assuming that short duration or entity borrowers create universal exemptions.",
-      "chapter_ref": "Q5, Q9",
+      "title": "Gator EMD Lending and the Transactional Desk",
+      "purpose": "Build a small-check lending operation that advances wholesaler earnest money deposits for flat chunks and funds same-day double closes. Every dollar is routed through escrow and protected by HUD position, signed releases, and written title commitments before any wire leaves your account.",
+      "chapter_ref": "Q7-Q8",
       "instructions": [
-        "Map borrower location, property location, lender activity, solicitation channels, and settlement location before selecting governing law. Assign qualified counsel a specific fact pattern and request a written operating matrix with permitted structures and evidence requirements.",
-        "Analyze economic substance before naming a product. A mandatory repayment promise and fixed return can support lending treatment despite joint-venture terminology, while genuine investment participation requires careful review of actual control, risk sharing, and compensation.",
-        "Separate federal coverage questions from state licensing and rate restrictions. Business-purpose treatment under one federal rule does not establish a state exemption, authorize escrow activity, or validate every fee imposed on a short-duration advance.",
-        "Attach transaction-specific schedules to the funding agreement and obtain the settlement agent's acceptance of operational instructions. Confirm that contract language matches actual accounts, timing, available remedies, and the agent's authority to carry out the proposed disbursement.",
-        "Maintain a change log for laws, counsel conclusions, issuer terms, and settlement-agent requirements. Stop affected activity when a material assumption changes, then update templates, intake questions, and training before the revised structure is offered to counterparties."
+        "Complete the earnest money fields first and the transactional desk fields second, because the release paperwork habits you set on small deposits carry over to full A-to-B purchase funding.",
+        "Write every price as a dollar figure on a sample deal, not only as a percentage, so you can see the exact chunk or fee you collect.",
+        "Confirm each title-related answer by email and then by phone with the escrow officer before you treat the field as complete.",
+        "Record borrower limits as hard numbers: completed deals required, maximum open deals per borrower, and the minimum hours left in the inspection period.",
+        "Revisit the pricing and capital partner fields after every ten funded deals, and adjust them only when your loss record and turnaround times support the change."
       ],
       "fields": [
         {
-          "name": "Jurisdiction and activity map",
-          "type": "textarea",
-          "prompt": "Record all locations and activities relevant to lending, brokering, solicitation, and settlement. Explain why contractual governing law alone does not settle licensing or mandatory statutory requirements, and identify the reviewer responsible for each jurisdiction.",
-          "example": "The operator works from California, the borrowing entity is organized in Delaware, and the property and settlement agent are in Arizona. Counsel reviews both operating-state and transaction-state requirements. A Delaware governing-law clause is recorded but does not replace analysis of California lending activity or Arizona settlement authority."
+          "name": "emd_demand_signal",
+          "type": "text",
+          "prompt": "Record the share of wholesalers you believe lack earnest money in your market, then explain how that gap shapes your Gator 1.0 offer, including the typical deposit size you expect to advance and the flat chunk you plan to charge per deal.",
+          "example": "Pace Morby estimates 85% of wholesalers lack EMD cash, the core demand behind Gator 1.0 [Pace Morby — iVg9EsSij2c @ 00:00:00]. Pace's average EMD deal put up about $1,000 to $3,000 and returned $1,500 to $3,000 [Pace Morby — iVg9EsSij2c @ 00:00:46]. My plan: advance $2,000 per deposit and charge a flat $1,500 chunk, never interest."
         },
         {
-          "name": "Commercial lending license analysis",
+          "name": "hud_position_check",
           "type": "textarea",
-          "prompt": "Identify the statute governing the proposed lending activity, the asserted exemption, and the facts supporting its use. Require a conclusion about actual transactions rather than treating commercial purpose or short duration as self-executing exemptions.",
-          "example": "For California activity, the review addresses the California Financing Law, including Financial Code section 22100 and applicable exemptions such as those in section 22050. The matrix records whether this operator and transaction qualify. An entity borrower and a two-day term alone do not establish an exemption."
+          "prompt": "Describe exactly how you will confirm your position on the HUD before releasing an earnest money advance, naming the contract clause that routes the deposit back to you and the follow-up channel you use with the title company.",
+          "example": "Pace lent $1,500 of earnest money on a deal paying the wholesaler $25,000 only on condition of being on the HUD, and earned $5,000 [Pace Morby — -9RSC5hpr9o @ 00:04:29]. Before wiring, email title to confirm the due-diligence end date, the seller release, and that EMD returns to the lender, then follow up by phone [Pace Morby — T5jtdYhM6tQ @ 00:07:01]."
         },
         {
-          "name": "Interest characterization and rate review",
+          "name": "seller_release_file",
           "type": "textarea",
-          "prompt": "Inventory interest, origination points, extension charges, mandatory participation fees, and amounts paid to affiliates. Calculate an illustrative annualized burden, then identify the jurisdiction-specific method and exemptions used for the actual rate-limit analysis.",
-          "example": "A $2,000 charge on $100,000 for two days equals 2% for the period and 365% using simple 365-day annualization. That diagnostic is not a substitute for statutory methodology. California Constitution article XV, section 1, and applicable exemptions require review; renaming interest a service fee does not resolve its treatment."
+          "prompt": "List the release documents you require at contracting, noting whether the property sits in a mutual release state, how the seller waives consent up front, and where the pre-signed title company form will live inside the transaction file.",
+          "example": "Have the seller pre-sign the title company's EMD release form at contracting and leave it in the file with a sticky note, because title policy can demand signed authorization [Pace Morby — qbBAO0ozP-0 @ 00:14:54]. In Texas and Utah, mutual release states, Pace's contract has the seller waive that consent up front [Pace Morby — A3l3Dg0cJLk @ 00:03:40]."
         },
         {
-          "name": "Federal business-purpose scope",
-          "type": "textarea",
-          "prompt": "Document actual use of proceeds, borrower organization, collateral, and occupancy facts relevant to federal coverage. Distinguish any business-purpose exclusion from continuing state requirements and retain evidence supporting the classification for each transaction.",
-          "example": "The file documents an entity's purchase and immediate resale of investment property, with no personal occupancy. The review addresses 12 CFR 1026.3(a) for Regulation Z and 12 CFR 1024.5(b)(2) for Regulation X business-purpose exclusions. Changed use or borrower facts trigger a fresh scope determination rather than automatic reuse."
+          "name": "inspection_window_rule",
+          "type": "text",
+          "prompt": "State the minimum time you require remaining in the inspection period before you fund an earnest money deposit, plus the written understanding you need from title or escrow and the upfront fee that filters out bad deals.",
+          "example": "Abdiel Garcia Rodriguez funds only inside the inspection period with at least 48 hours remaining and a written understanding from title or escrow [Abdiel Garcia Rodriguez — min0RpX32uc @ 00:05:30]. Pace charges $200 to $1,000 upfront to protect the lender and filter out bad deals [Pace Morby — T5jtdYhM6tQ @ 00:05:26]. My rule: 48 hours minimum and $500 upfront."
         },
         {
-          "name": "Escrow authority and custody boundaries",
+          "name": "borrower_screen",
           "type": "textarea",
-          "prompt": "Identify who may receive, hold, and disburse the funds under applicable state rules. Record licensing or exemption evidence and keep the operator's funding role distinct from providing unlicensed settlement or escrow services.",
-          "example": "Where California escrow activity is involved, the review considers Financial Code section 17200 and relevant exemptions, including section 17006. The operator wires only to the verified bonded agent's designated account. It does not collect unrelated buyer deposits in its operating account or advertise itself as the escrow holder."
+          "prompt": "Write your borrower screening questions, including the completed-deal count that earns funding, the exposure cap per borrower, the reporting cadence you demand, and the context clues inside an EMD request that signal something is wrong with the deal.",
+          "example": "Ask how many deals the borrower has completed; 25 is the signal Pace flags as worth funding [Pace Morby — OBl7C-hFLY4 @ 00:07:13]. Cap exposure at one or two deals per borrower with weekly reports [Pace Morby — S9WonQBbHG8 @ 00:40:17]. A '90 days' timeline or a '1%' figure in the ask signals trouble [Ryan Schrope — wpikXXbAYnE @ 00:17:06]."
         },
         {
-          "name": "Commercial disclosures and referral compensation",
-          "type": "textarea",
-          "prompt": "Determine whether commercial funding disclosures or referral restrictions apply to the specific product and parties. Record compensation recipients, actual services, and statutory coverage rather than assuming every introduction can generate a lawful fee.",
-          "example": "California Financial Code section 22800 and following provisions are screened for applicable commercial funding disclosures and exemptions. For a covered federally related mortgage transaction, 12 U.S.C. 2607 restricts settlement-service kickbacks and unearned fee splitting. A $250 referral proposal remains unpaid until coverage and permitted compensation are documented."
+          "name": "transactional_pricing",
+          "type": "text",
+          "prompt": "Set your double-close pricing schedule, showing the base points you charge, any volume ladder for repeat wholesalers, the dollar fee on a sample purchase price, and how you split that fee with any capital partner funding the wire.",
+          "example": "Ryan Schrope prices a $500,000 purchase at 1.5%, or $7,500, split about $3,750 each with a capital partner, money typically out one to two hours [Ryan Schrope — wpikXXbAYnE @ 00:24:45]. OrotonEquities ladders 2 points standard, 1.75 at 3+ deals, 1.5 at 6+, and 1.25 at 9+ [OrotonEquities — vtoojcHUwHU @ 00:02:29]."
         },
         {
-          "name": "Funding agreement and settlement addendum",
+          "name": "release_trigger",
           "type": "textarea",
-          "prompt": "Specify principal, earned compensation, maturity, release conditions, repayment waterfall, extension treatment, and dispute handling. Require the addendum to distinguish borrower obligations from the settlement agent's separately accepted instructions and actual authority.",
-          "example": "The schedule states $100,000 principal, $2,000 earned funding compensation, and a two-business-day target. Release requires verified unconditional buyer cash and accepted repayment instructions. Extensions require written terms reviewed for rate restrictions. The agent separately acknowledges the waterfall; the borrower cannot bind the agent merely by signing the funding agreement."
+          "prompt": "Define the exact release trigger for your transactional wire, naming which signatures must be complete on both legs, where the end buyer's money must sit, and the written return commitment you require from the title company before funding.",
+          "example": "Release funds only when both A-B and B-C sides are signed and the end buyer's money already sits in escrow [Oakwood Lending — VxkBvKoeA38 @ 00:02:33]. Ryan Schrope gets it in writing, signed by the title company, that the money wires back immediately upon receipt, typically within 30 minutes [Ryan Schrope — N4o948Y1Q-U @ 00:08:38]."
         },
         {
-          "name": "Security interests and insolvency exposure",
+          "name": "underwriting_stance",
           "type": "textarea",
-          "prompt": "Identify collateral, attachment requirements, perfection method, competing claims, and insolvency consequences. Distinguish contractual payment instructions from a perfected security interest, and document why escrow segregation does not automatically eliminate bankruptcy or priority disputes.",
-          "example": "Counsel reviews UCC 9-203 for attachment and 9-310 for filing requirements and exceptions where Article 9 applies. Real-property interests need separate analysis. The file also considers 11 U.S.C. 362 and 547. A signed payoff instruction alone does not establish perfected priority or make a repayment immune from avoidance litigation."
+          "prompt": "Choose your underwriting stance on transactional files, explaining whether you run none, acquisition only, or more, which documents a wholesaler must bring, and how long you allow your money to stay out before the file becomes a bridge.",
+          "example": "Clicks Geek says bring two purchase and sale agreements, connect them with the title company, and it gets done with no underwriting and no delays [Clicks Geek — cgY-PRTdUB4 @ 00:01:58]. Hard Money Mike puts transactional funding at one to two days and about a point to a point and a half, versus 30-to-60-day bridge loans [Hard Money Mike — i2EHd_tEf1w @ 00:03:54]."
         },
         {
-          "name": "Credit data, signatures, and record controls",
-          "type": "textarea",
-          "prompt": "Document permissible credit-data access, signer authentication, electronic record retention, and access restrictions. Separate electronic-signature validity from identity verification, and assign retention periods according to applicable law and documented business requirements.",
-          "example": "A personal credit report requires a documented permissible purpose under 15 U.S.C. 1681b. Electronic execution is evaluated under 15 U.S.C. 7001 and applicable state rules. The team retains signer authentication and document history; a completed electronic envelope does not independently establish authority, buyer liquidity, or lawful report access."
+          "name": "emd_fee_and_paper",
+          "type": "text",
+          "prompt": "Record your earnest money deposit funding fee as a percentage of the deposit, compare it to the market range, and list the mutual release paperwork you require between wholesaler and seller alongside the purchase agreement before wiring.",
+          "example": "Ryan Schrope charges 40% of the deposit, $2,000 on $5,000, against a 20 to 50% market range, on deposits of about 1% of price [Ryan Schrope — wpikXXbAYnE @ 00:12:02]. On EMD deals, require a mutual release agreement signed between wholesaler and seller alongside the purchase agreement [Fund My Real Estate Deal — yWKbp0xDuE8 @ 00:09:28]."
         },
         {
-          "name": "Written determinations and renewal triggers",
+          "name": "capital_partner_dry_run",
           "type": "textarea",
-          "prompt": "Record counsel conclusions, scope limits, source dates, and operational consequences. Identify events requiring renewed review, including new jurisdictions, changed fee structures, new acquisition channels, and altered borrower or collateral characteristics.",
-          "example": "The initial matrix permits only the reviewed entity-borrower structure in the documented jurisdictions. A proposed New York expansion requires separate review of Banking Law section 340, General Obligations Law section 5-501, and Penal Law section 190.40 as applicable. The sales team cannot extend the existing conclusion by analogy."
+          "prompt": "Outline how you will bring in a capital partner, including the title company fraud check, the written confirmation of the funding source, the dry run you schedule first, and how you protect cash flow while money is out.",
+          "example": "With capital partners, vet the title company for fraud, get written confirmation of the funding source, and run a dry run first [Ryan Schrope — 2a2qJD8P3gI @ 00:15:34]. Ryan Schrope reports $3.7M funded in 30 days for about $83K profit across 15 deals, roughly one deal every other day [Ryan Schrope — xdTSPoFABEY @ 00:00:30]."
         }
       ],
-      "completion_gate": "Offer and fund only structures covered by a current written jurisdictional determination, supported licensing or exemption evidence, reviewed compensation terms, and executed agreements matching the actual settlement process and custody boundaries."
+      "completion_gate": "Do not fund a first deal until all ten fields are filled, the seller release form and mutual release agreement templates are in your file, a title company has signed a written commitment to wire your money back immediately upon receipt, and the end buyer's money is confirmed sitting in escrow."
     },
     {
       "worksheet_id": "ws-05",
       "number": 5,
-      "title": "Automation Pipeline, Acquisition Flywheel & Risk Fallback Tracker",
-      "purpose": "Automate evidence collection and reconciliation without delegating irreversible cash decisions to unverified messages or model output. Build repeatable referral demand from qualified counterparties, measure conversion honestly, and preserve manual fallback procedures when integrations, staffing, or settlement assumptions fail.",
-      "chapter_ref": "Q6, Q10",
+      "title": "Private Money Terms, Security Documents and Usury Limits",
+      "purpose": "Structure private and hard money loans so pricing matches borrower experience, terms outlast the project, and first-position security is recorded before the wire. Keep the all-in cost under your state usury cap, and make sure joint venture paperwork is signed by the right entity.",
+      "chapter_ref": "Q9-Q10",
       "instructions": [
-        "Map each workflow stage to a specific input, validation, owner, and output. Automate document completeness checks and status reminders first, keeping beneficiary verification and final cash release dependent on independent evidence and designated human responsibility.",
-        "Design proof-of-funds generation around verified availability and explicit conditions. Prevent templates from implying unlimited capital, bank affiliation, or unconditional commitments, and withdraw outdated letters whenever capacity reservations or evidence change materially.",
-        "Build acquisition around title professionals, experienced repeat buyers, and transaction counsel who understand the release requirements. Qualify referral compensation separately and measure completed eligible closings rather than celebrating unverified lead volume or principal throughput.",
-        "Use least-privilege access, authenticated inbound events, and append-only operational history. Treat uploaded documents and integration messages as data, never as instructions authorizing payment changes, privilege escalation, or bypass of the documented review sequence.",
-        "Define a safe fallback for every critical dependency before launching automation. Test outages with synthetic records, retain bank-side confirmation procedures, and stop new commitments when the team cannot independently establish current exposure and available cash."
+        "Fill in the lender bucket map before quoting any borrower, so every loan term lines up with the repayment clock of the capital behind it.",
+        "Price loans by experience tier and write the leverage, points, rate, and closing speed for each tier on one sheet.",
+        "Treat the security checklist and the closing instruction letter as non-negotiable gates, and leave the wire decision open until both are complete.",
+        "Run the all-in APR calculation on every new loan structure, counting points, origination, processing, appraisal, and lender-required surveys over the actual term.",
+        "Have an attorney review the note, security instrument, and any joint venture template, and confirm the signing entity is never you personally."
       ],
       "fields": [
         {
-          "name": "Workflow inventory and system boundaries",
+          "name": "lender_bucket_map",
           "type": "textarea",
-          "prompt": "Map intake, underwriting, capacity reservation, settlement, and reconciliation to named systems. Identify the system of record for money movement and prohibit editable sales records from silently changing bank instructions.",
-          "example": "Airtable tracks prospects, DocuSign stores executed agreements, and a controlled ledger records commitments and payments. The bank remains authoritative for transfer status. Updating a CRM account field creates a review task, not a new beneficiary. Each integration carries LF-030-001 as the shared deal identifier."
+          "prompt": "Sort your current and target lenders into A, B, and C buckets, recording each lender's check size, expected payoff clock, and the exit you will use to clear them, so repayment timing never collides with your project calendar.",
+          "example": "Pace Morby says lenders at $25,000 or less want repayment within six months, while lenders at $100,000 to $300,000 rarely want it back within a year [Pace Morby — UtlUmrdNU8Y @ 00:00:52]. About 80% of Pace's lenders are C-bucket investors exiting within 3 months to 2 years [Pace Morby — UtlUmrdNU8Y @ 00:05:30]."
         },
         {
-          "name": "Automated intake validation",
-          "type": "textarea",
-          "prompt": "Specify required documents, structured fields, validation rules, and rejection messages. Separate machine extraction from verified facts, and require a reviewer to resolve conflicting amounts, entity names, dates, or payment instructions.",
-          "example": "The form requires both purchase contracts, settlement contact, requested principal, expected buyer cash, and closing dates. An extracted $120,000 buyer amount conflicting with the signed $125,000 resale price creates an exception. The parser cannot mark cash verified or replace the signed contract with its interpretation."
+          "name": "loan_pricing_sheet",
+          "type": "text",
+          "prompt": "Write your loan pricing sheet by borrower experience tier, listing interest rate, points, leverage on purchase and rehab, and closing speed, then note which tier a first-time flipper lands in versus a borrower with several completed deals.",
+          "example": "SEP Capital charges 12% plus 3 points for experienced flippers and 4-6 points for everyone else [Hard Money Mastermind — 9ISIUnJvomU @ 00:16:20]. Gabrial Carter's High Roller program offers 90% of purchase, 100% of rehab, 1 point, about 10%, no appraisal, and a 24-48 hour close for 3-4+ deals and 680+ credit [Beyond The Deals Podcast — tbL4i7Pr1EM @ 00:17:56]."
         },
         {
-          "name": "Proof-of-funds generation controls",
+          "name": "lien_position_gate",
           "type": "textarea",
-          "prompt": "Define permitted proof-of-funds language, underlying capacity evidence, expiration, and reservation treatment. Explain how the system prevents multiple letters from being mistaken for simultaneous binding commitments exceeding available deployable capital.",
-          "example": "A letter identifies the operator, references verified deployable capacity of $500,000, and states the specific underwriting and release conditions. It expires in three business days and is not a bank statement. Binding reservations are tracked separately; five $100,000 commitments exhaust the deployment limit."
+          "prompt": "Document the security checklist that must clear before you wire private money, covering lien position, recording timing, title search, and lender's title insurance, and state the second-position loan requests you will refuse outright and exactly why.",
+          "example": "Wire only after a recorded mortgage or deed of trust, a title search, and lender's title insurance are in place; the lien must be recorded at or before closing [Venus Venture — qHujP7kjj4Y @ 00:01:38]. Invest Away refuses 20-25% second-position flip loans and is still waiting on early junior-lien money [Real Estate Explainer — 1UWrNExO1Ak @ 00:17:54]."
         },
         {
-          "name": "Authenticated events and least privilege",
-          "type": "textarea",
-          "prompt": "Describe event authentication, replay protection, service permissions, and credential storage. Identify which integrations may read documents, create tasks, or post ledger events, and which must never initiate external transfers.",
-          "example": "Inbound signing events require provider-supported authentication and unique event identifiers. The document integration can create review tasks but cannot access bank release credentials. Secrets remain in a managed credential store, not CRM notes. Replayed events return the existing result without another ledger posting."
+          "name": "term_padding",
+          "type": "text",
+          "prompt": "Enter the project timeline your borrower presents, then set the note term you will actually write, explaining how much cushion you add so a slipping schedule never forces a fire sale or an expensive extension at a higher rate.",
+          "example": "Ryan Dossey sets the note term at 12 months when the project plan says 3, so a slipping timeline never forces a fire sale [Ryan Dossey — UlOFHwYtg7E @ 00:05:09]. Toño Flores runs transactional money on a typical 30-day term with 60 days max, logging 48 deals and zero losses for the year [Toño Flores — fv1IoI6DQn8 @ 00:03:10]."
         },
         {
-          "name": "Escrow payoff automation",
+          "name": "referral_engine",
           "type": "textarea",
-          "prompt": "Define expected payoff amounts, matching keys, exception tolerances, and reviewer responsibilities. Explain how automation handles pooled receipts, short payments, duplicate bank records, and descriptions that do not uniquely identify the funded transaction.",
-          "example": "The matcher expects $102,000 for LF-030-001 and compares amount, verified sender, reference, and date. A $204,000 receipt cannot automatically close two deals without allocation evidence. A repeated bank event is deduplicated. Any shortfall or ambiguous reference creates a reviewer task before receivables change."
+          "prompt": "Map your loan origination referral engine, naming the partner types you will approach, the share of origination fee you pay them, and the outreach routine you will run each week to reach realtors who control deal flow.",
+          "example": "SEP Capital pays referral partners about 15% of the origination fee even when they never asked, since referrals drive most of its business [Hard Money Mastermind — 9ISIUnJvomU @ 00:09:17]. Originator Lisa pulled business cards off brokerage walls, called every realtor, and landed a $1.5M St. Pete condo loan against an ARV near $2.6-2.7M [Hard Money Mastermind — 9ISIUnJvomU @ 00:19:07]."
         },
         {
-          "name": "Referral channel and value proposition",
+          "name": "document_stack",
           "type": "textarea",
-          "prompt": "Identify the target referral partners, their qualifying transaction characteristics, and the operational value offered. Exclude promises of guaranteed funding and document any proposed referral payment for separate statutory review.",
-          "example": "The owner contacts ten settlement firms handling repeat investor double closes. The proposition is clear eligibility, fast document review, and reliable payoff reconciliation, not payment for steering business. Partners receive a checklist requiring deposited buyer cash and accepted instructions before any funding commitment."
+          "prompt": "List every document in your private loan file, pairing the promissory note with its recorded security instrument, and explain how you cross-reference their terms and why you avoid land contracts when you may later sell the note.",
+          "example": "Use a promissory note with a deed of trust or mortgage, and skip land contracts, which make notes harder to sell [Damen Capital Fund — mrt2bJ7XfNU @ 00:07:53]. The deed of trust is the security instrument that lets the lender foreclose [Investor Army — ltZrMvVSfdw @ 00:02:46]; cross-reference note and deed so terms stay consistent [Gary Pryde — nKwv-ImRqjo @ 00:05:13]."
         },
         {
-          "name": "Acquisition funnel and cost attribution",
+          "name": "closing_instruction_letter",
           "type": "textarea",
-          "prompt": "Define each funnel stage with objective entry criteria and measure conversion through completed closings. Assign acquisition costs consistently and avoid counting the same operator time in both overhead and direct deal expenses.",
-          "example": "One monthly cohort contains 40 leads, 20 complete files, eight eligible deals, and four funded closings. At $2,000 per closing, earned fees total $8,000. A $1,200 incremental outreach spend produces $300 acquisition cost per funded deal. This cohort is a pilot, not the annual base forecast."
+          "prompt": "Describe the release conditions for your loan wire, including the settlement statement review, the signed closing instruction letter from title, and the signing methods you reject, given that the title company does not represent you as lender.",
+          "example": "Hard Money Mastermind never releases a wire until the HUD-1 is reviewed and title has signed the closing instruction letter, because the title company does not represent the lender, and it rejects powers of attorney and remote online notaries [Hard Money Mastermind — bNJYDcDSFxU @ 00:17:38]. Personal guarantees back 98% of its loans [Hard Money Mastermind — bNJYDcDSFxU @ 00:05:23]."
         },
         {
-          "name": "Repeat-counterparty flywheel and concentration",
+          "name": "usury_apr_check",
           "type": "textarea",
-          "prompt": "Describe post-close feedback, repeat eligibility, concentration limits, and counterparty monitoring. Explain why successful historical closings can reduce administrative friction without replacing fresh cash, identity, and beneficiary checks.",
-          "example": "After reconciliation, the owner sends the partner a one-page timing review and requests the next eligible file. No borrower may occupy more than $100,000 of the $500,000 deployment limit. Repeat status prepopulates unchanged entity documents but never waives same-day cash or wire verification."
+          "prompt": "Recalculate the all-in APR on a sample loan, adding points, origination, processing, appraisal, and lender-required surveys over the actual term, then compare the result against the usury cap for your state and borrower type before quoting.",
+          "example": "Scott Horne pegs Texas at 18% for individuals and 24% for corporate entities, counting points, origination, processing, appraisal, and lender-required surveys toward APR [Scott Horne's Owner Finance Network — XdrwPF-D1FI @ 00:00:32]. Lender Link fixes California at a 10% APR cap with points and fees included, so a 9.99% note rate is not automatically safe [Lender Link — W1fiiFnsFhE @ 00:01:20]."
         },
         {
-          "name": "Dependency failure and manual fallback",
+          "name": "modification_and_default",
           "type": "textarea",
-          "prompt": "List critical dependencies, outage symptoms, safe manual procedures, and suspension criteria. Require fallback records to preserve unique deal identifiers and reviewer separation so later recovery does not create duplicate transfers.",
-          "example": "If the ledger service fails, the team stops new releases until it can reconstruct current exposure from the last verified export and bank records. A controlled manual register may support monitoring and repayment tracking. Restored events retain original identifiers and undergo duplicate checks before posting."
+          "prompt": "Explain how you will handle a borrower who needs more time, separating a pure time extension from changes to rate, points, or new advances, and describe how default interest could compound if a refinance stalls on your loan.",
+          "example": "On California paper, never add rate, points, or new advances through an unlicensed modification; a pure time extension is the only safe change [Lender Link — W1fiiFnsFhE @ 00:06:32]. In one Ayala Law PA trial, a 21% default rate on a $5M loan pushed the balance to about $6.4M while refinancing was delayed [Ayala Law PA — 0cBnXayz9w4 @ 00:01:58]."
         },
         {
-          "name": "Automation benefit and risk measurement",
+          "name": "jv_agreement_plan",
           "type": "textarea",
-          "prompt": "Measure time saved, exception rates, false matches, and review effort against a manual baseline. Set thresholds for disabling automation when speed improves but reconciliation quality, evidence completeness, or release control deteriorates.",
-          "example": "A pilot reduces intake administration from 45 to 20 minutes per file. Across 40 files, that saves 1,000 minutes, or 16 hours 40 minutes. Two extraction errors are caught before review completion. Any false cash-verification status disables that automation immediately, regardless of time saved."
+          "prompt": "Decide whether your EMD or gap-funding deals will run on a joint venture agreement, noting the entity that signs, the attorney budget for the template, and how you address the lawsuit risk critics attach to these agreements.",
+          "example": "Pace Morby says Gator EMD funding needs a JV agreement 100% of the time, budgeting roughly $12-13K for the attorney-drafted template [Pace Morby — 9-Vzu27aIq0 @ 00:01:20]. Toby Mathis warns never to sign it in your own name, since it could be treated as a general partnership [Toby Mathis Esq | Tax Planning & Asset Protection — FiBdpAVfzMo @ 00:03:13]."
         }
       ],
-      "completion_gate": "Activate only workflows that preserve independent release verification, authenticated events, unique payment intent, and recoverable evidence. Complete the acquisition tracker with measured conversion, attributed costs, concentration limits, and a successfully rehearsed dependency outage."
+      "completion_gate": "The worksheet is complete when all ten fields are filled, a sample loan passes the usury check for its state and borrower type, the note and recorded deed of trust or mortgage are cross-referenced, title has signed the closing instruction letter, and the lien records at or before closing."
     },
     {
       "worksheet_id": "ws-06",
       "number": 6,
-      "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
-      "purpose": "Turn the first month into a sequence of verifiable operating deliverables rather than a forced funding deadline. Establish clear small-team responsibilities, track cash and exception quality, and preserve transferable records that support controlled growth, succession, or an eventual business sale.",
-      "chapter_ref": "Q11, Q12",
+      "title": "Bridge Debt, Credit Lines and 0% Business Credit Stacks",
+      "purpose": "Use short-term bridge loans, lines of credit, and 0% business card stacks only when an exit is written first and leverage and costs are converted to dollars. Prepare the personal credit file and bank sequence in advance so approvals land in the higher limit tiers.",
+      "chapter_ref": "Q11-Q12",
       "instructions": [
-        "Use the first 30 days to establish reviewed structures, verified partners, ledger controls, and qualified demand. Preserve the canonical one-to-four-month time to first deal; do not force a closing simply to satisfy a launch calendar.",
-        "Assign accountable owners for underwriting, independent verification, bank release, reconciliation, and incident response. Make contractor availability explicit and document how the operation pauses safely when reviewer coverage is absent during a scheduled closing.",
-        "Build a weekly scorecard separating earned fee revenue, principal exposure, reserve coverage, settlement duration, and unresolved exceptions. Compare actual activity with a clearly labeled ramp plan rather than presenting annual scenarios as monthly commitments.",
-        "Prepare continuity and transferability records from the beginning. Retain executed contracts, renewal dates, system ownership, and counterparty permissions, while avoiding assumptions that licenses, facilities, or referral relationships automatically transfer with an entity sale.",
-        "Finish the month with an evidence-based review of capital readiness, operating quality, and pipeline eligibility. Continue building where requirements are satisfied, but retain explicit stop conditions for missing authority, unverified cash, or insufficient liquidity."
+        "Write both bridge exits before requesting any quote, and match each exit to a slow or hot market.",
+        "Convert every fee, flat monthly charge, and rate into dollars on a sample draw or loan amount before comparing offers.",
+        "Audit your personal credit file and build bank relationships three to six months before a planned 0% stack.",
+        "Apply in the sequence you documented, and stop if any single bureau approaches three hard inquiries.",
+        "Revisit the runway and repayment fields monthly, and clear balances before any promotional window ends."
       ],
       "fields": [
         {
-          "name": "Days 1–7: structure and capital readiness",
+          "name": "bridge_exit_plan",
           "type": "textarea",
-          "prompt": "Specify first-week deliverables for jurisdiction review, entity authority, banking access, reserve allocation, and proposed facility verification. Assign evidence owners and avoid treating an application or indicative term sheet as deployable capital.",
-          "example": "By day seven, the owner assembles the jurisdiction matrix request, bank signer records, and $100,000 startup allocation. The register protects $50,000 and identifies $50,000 deployable equity. A proposed $450,000 facility remains excluded from capacity until execution and draw conditions are verified and documented."
+          "prompt": "Write a primary exit and a backup exit for your bridge loan, matching each to slow or hot market conditions, and state the sale or refinance date that clears the debt inside the lender's term without a costly extension.",
+          "example": "Every bridge loan has an exit and the lender asks about it before almost anything else, so write a primary and second exit before applying [Michael Daniel Investments — 0EcBhBq5U08 @ 00:02:05]. Easy Lending USA warns against using bridge debt as long-term money; refinance or sell inside the 12-18 month term [Easy Lending USA — GcefOZxHIAg @ 00:05:18]."
         },
         {
-          "name": "Days 8–14: settlement and ledger readiness",
-          "type": "textarea",
-          "prompt": "Define second-week deliverables for agent qualification, contract templates, repayment instructions, ledger setup, and duplicate-event testing. Include a specific mock deal that demonstrates balanced entries without sending real funds to counterparties.",
-          "example": "By day fourteen, two candidate settlement agents have documented verification files. The team runs LF-030-TEST with $100,000 principal, $2,000 fee, and $400 direct costs. Replaying the release event produces one intent; the mock $102,000 repayment clears both receivables without creating principal revenue."
+          "name": "leverage_tier",
+          "type": "text",
+          "prompt": "Identify the leverage tier you qualify for on an investor bridge loan, listing your completed deal count, FICO score, expected loan-to-value, and whether the lender will size the loan off cost basis or appraised value given seasoning.",
+          "example": "Easy Lending USA tiers leverage at 75% for 2+ deals and FICO 620+, 72.5% for one deal, and 70% for new borrowers at FICO 650+ [Easy Lending USA — GcefOZxHIAg @ 00:03:53]. Keep every receipt on properties owned under 12 months, because the bridge sizes off cost basis until the asset is seasoned [Easy Lending USA — GcefOZxHIAg @ 00:04:35]."
         },
         {
-          "name": "Days 15–21: qualified acquisition pilot",
+          "name": "bridge_quote_interrogation",
           "type": "textarea",
-          "prompt": "Set a third-week outreach plan based on eligible counterparties and document completeness. Specify the offer, activity targets, follow-up cadence, and evidence needed before a prospect enters the executable commitment pipeline.",
-          "example": "The owner contacts ten settlement firms and ten repeat buyers, seeking five complete files rather than twenty verbal promises. Every prospect receives the deposited-cash requirement. Two earnest-money requests lacking end-buyer cash are declined and recorded as ineligible, not counted as lost fundable closings."
+          "prompt": "Record the answers from every bridge quote to four questions: what an extension costs, whether a prepayment penalty applies, how draws are staged, and what exit the lender expects, then flag any junk fees or Dutch interest found.",
+          "example": "Michael Daniel Investments asks what an extension costs, whether there is a prepayment penalty, how draws are staged, and what exit is expected [Michael Daniel Investments — 0EcBhBq5U08 @ 00:03:02]. Rene Nelson screens terms for Dutch interest and junk fees like $250-500 draw charges and surprise inspections [Rene Nelson — VIt86OFRY3Y @ 00:54:38]."
         },
         {
-          "name": "Days 22–30: rehearsal and readiness review",
+          "name": "buy_before_sell_math",
           "type": "textarea",
-          "prompt": "Define the final-week rehearsal, evidence review, and conditional first-closing readiness criteria. State how the team will report progress when the first eligible deal arrives after the initial 30-day sprint.",
-          "example": "The team rehearses a changed-beneficiary incident, a bank timeout, and a three-day repayment delay. Day thirty ends with a signed readiness record and open-items list. If no eligible closing exists, status is launch preparation completed, first deal pending within the stated one-to-four-month window."
+          "prompt": "If you are buying before selling, calculate your combined loan-to-value across both homes, the program fee in dollars, and the cheaper alternative you tested, such as a HELOC, recast, or sale contingency, before committing to bridge debt.",
+          "example": "SEI Mortgage caps the bridge at 75% combined loan-to-value across the current and new home [SEI Mortgage - Ryan Marks — d8gbJrywXFE @ 00:00:46]. Steve Ferguson's zero-interest program advances about 70% of departing-home value for 2.4% or $9,000, whichever is higher [The Mortgage Man - Steve Ferguson — AGFnuSOGL68 @ 00:03:38]."
         },
         {
-          "name": "Small-team responsibility and coverage map",
-          "type": "textarea",
-          "prompt": "Allocate work across the canonical staffing models, including independent review and absence coverage. Identify activities requiring specialized external advice and distinguish those engagements from the recurring operating pod headcount.",
-          "example": "Conservative and base operations use one full-time owner plus two contractors for verification and ledger support. Scaled operations use two full-time staff plus three contractors, five people total. Specialist counsel is purchased as an outside service; its cost must remain inside the modeled expense envelope."
+          "name": "rehab_reserves",
+          "type": "text",
+          "prompt": "Budget unit turns and reserves for any bridge-financed value-add project, entering your per-unit turn cost, the reserve amount kept inside the deal, and the safeguard that stops reserves from ever being diverted into another property during the term.",
+          "example": "Rene Nelson budgets unit turns at $25K to $30K each, not the $5K to $10K sponsors assume [Rene Nelson — VIt86OFRY3Y @ 00:21:33]. Keep reserves inside the deal; diverted reserves forced a cross-collateralization [Rene Nelson — VIt86OFRY3Y @ 00:37:31]. Private bridge money runs 11% to 12%, with interest-only payments near 1% of balance monthly [Rene Nelson — VIt86OFRY3Y @ 00:43:19]."
         },
         {
-          "name": "Weekly operating KPI scorecard",
-          "type": "textarea",
-          "prompt": "Define metrics for eligible pipeline, earned fees, outstanding principal, reserve coverage, settlement duration, exception age, and review quality. Attach a calculation method and action threshold to each metric rather than reporting volume alone.",
-          "example": "A weekly snapshot shows three eligible files, two completed closings, $4,000 earned fees, and $100,000 principal still outstanding. Protected cash is $50,000. Any unverified release is a zero-tolerance incident; any repayment beyond its contractual deadline receives same-day escalation rather than waiting for the weekly meeting."
+          "name": "line_of_credit_cost",
+          "type": "text",
+          "prompt": "Compare the cost of a sample draw on a bank line of credit against an online lender's offer, converting any monthly flat fee into an approximate APR so you pay interest only on what you actually draw.",
+          "example": "Fast Business Lending prices a $20K draw from a $50K line over six months at about $583 from a bank versus $1,800 to $3,488 from online lenders, and a 1.55% monthly flat fee works out to roughly 31% APR [Fast Business Lending — -EPbq7NKBZY @ 00:02:17]. Interest applies only to the $20K drawn, not the full $50K limit."
         },
         {
-          "name": "Scenario tracking and scorecard integrity",
+          "name": "personal_file_readiness",
           "type": "textarea",
-          "prompt": "Record canonical scenario targets and the candidate's ranking without presenting them as realized performance. Separate actual results, run-rate estimates, and modeled annual outcomes so the team can investigate variance honestly.",
-          "example": "Candidate 30 ranks fourth of 36 with 93/100: revenue 25, margin 24, team efficiency 20, startup accessibility 11, and automation 13. Annual owner-profit targets remain $36,000, $227,375, and $522,500. A $4,000 fee week is reported as actual weekly revenue, not proof of the base annual outcome."
+          "prompt": "Audit your personal credit file before a 0% stack, recording your score, utilization, recent hard inquiries on each bureau, and comparable personal limits, then decide whether you are ready or need to wait before applying anywhere.",
+          "example": "Operators want a 680 minimum, 720-plus preferred, utilization near 10%, and comparable personal limits that set the business ceiling. Colin Matthew holds every bureau under three hard inquiries, because three on any single bureau means flat denial at most banks [Colin Matthew — WAqBw-d5K44 @ 00:01:42]. My file: 702 score, 12% utilization, one inquiry per bureau."
         },
         {
-          "name": "Growth triggers and capacity expansion",
+          "name": "bank_sequence",
           "type": "textarea",
-          "prompt": "Specify evidence required before adding facility capacity, counterparties, or headcount. Tie expansion to realized unit economics and reliable controls, and show how scaled throughput differs from the base deployment model.",
-          "example": "An illustrative scaled stack combines $50,000 deployable equity with an executed $950,000 facility. At 450 closings of $100,000 over two business days, average deployment is $360,000 across 250 business days, or 36% of $1 million capacity. Expansion requires verified demand, clean reconciliations, and modeled facility costs."
+          "prompt": "Lay out your bank application sequence, naming which lender goes first and the reason it leads, how you will build relationship deposits before applying, and whether you ask each bank to place multiple cards on one hard pull.",
+          "example": "Chase goes first because it is the most inquiry-sensitive lender, and Colin Matthew stacks $70-100K at Chase after a seasoned checking deposit [Colin Matthew — WAqBw-d5K44 @ 00:02:27]. Naam Wynn measured $20K cold versus $150K-plus with a relationship [Naam Wynn — LktXzMB-Sis @ 00:05:04]. Navy Federal and PNC put multiple cards on one pull only if asked [Cal Barton — Eh5z4F-toEI @ 00:10:20]."
         },
         {
-          "name": "Continuity and exit-readiness ledger",
-          "type": "textarea",
-          "prompt": "List records a successor would need to operate and evaluate the business. Identify transfer restrictions, change-of-control requirements, personal guarantees, and data-access boundaries rather than assuming all assets and relationships transfer automatically.",
-          "example": "The ledger indexes executed funding contracts, facility covenants, license determinations, agent relationships, bank mandates, and reconciled fee history. Each item records assignment and change-of-control terms. A facility dependent on the owner's personal guarantee is flagged for lender review; its capacity is not represented as automatically transferable."
+          "name": "promo_runway",
+          "type": "text",
+          "prompt": "For each card in your stack, record whether 0% covers purchases, balance transfers, or both, when the promotional clock starts, and how many months of runway remain, so you never fund a deal on a short treadmill.",
+          "example": "Confirm whether each card's 0% covers purchases, balance transfers, or both before moving a dollar [HowToCredit — 0jZD4_NoCTs @ 00:01:43]. Amex Blue Business Plus counts its 12-month window from account opening, while US Bank counts billing cycles [HowToCredit — 0jZD4_NoCTs @ 00:04:32]. Cal Barton calls anything under 9 months a treadmill [Cal Barton — Eh5z4F-toEI @ 00:09:05]."
         },
         {
-          "name": "Month-end decision and next commitments",
+          "name": "stack_deployment_exit",
           "type": "textarea",
-          "prompt": "Summarize completed deliverables, unresolved issues, available capital, and the next 30-day commitments. State precisely which activities may continue and which remain blocked, with accountable owners and dated evidence requirements.",
-          "example": "The month-end review confirms tested ledger controls, two qualified agent files, and five complete prospect files. External capacity is still unexecuted, so $100,000 commitments remain blocked. The owner continues outreach and contract review while the facility workstream targets documented availability before any larger deal is promised."
+          "prompt": "Describe how you will deploy stacked capital into a real estate or inventory play, including the liquidation cost, the amount you could repay within six months if the deal stalls, and the exit that clears balances before promotions end.",
+          "example": "Marvin Francois borrows only what could be repaid within six months if the deal stalls [Marvin Francois — 6xdE38E2F8Q @ 00:04:43]. Gap Funding writes the exit first: sale, refinance, or a set repayment date before the promo ends [Gap Funding | 100% Real Estate Financing — ItOMPgJwT_4 @ 00:05:21]. Liquidation runs 2.5% to about 6% depending on the route."
         }
       ],
-      "completion_gate": "Close the sprint with a signed evidence register, tested execution controls, exact canonical scenario references, staffed review coverage, and a truthful list of blocked commitments. Authorize the first live advance only when its own underwriting and release requirements are met."
+      "completion_gate": "Do not sign bridge debt or open a stack until all ten fields are complete, a primary and second exit are written with dates, every card's 0% coverage and start date are confirmed, and the amount borrowed could be repaid within six months if the deal stalls."
     }
   ]
 }

@@ -1,772 +1,893 @@
 from __future__ import annotations
 
-CHAPTER_5 = {
-    "id": "Q5",
-    "chapter_id": "Q5",
-    "chapter_number": 5,
-    "question_number": 5,
-    "slug": "beginner-traps-clawbacks-and-asymmetric-failure-modes",
-    "question_prompt": "What kills 80% of newcomers in lending & flash-funding arbitrage, and what forensic metrics detect margin leaks, regulatory landmines, or platform bans before they wipe out capital?",
-    "kicker": "Q5 / THE BIG MONEY PLAYBOOKS",
-    "title": "Beginner Traps, Clawbacks & Asymmetric Failure Modes",
-    "subtitle": "Escrow Wire Authentication, EMD Forfeiture, UCC Article 4A, State Lending Boundaries, and Rewards-Clawback Circuit Breakers",
-    "layout_template": "expert_insights",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #30, Lending & Flash-Funding Arbitrage, holds Rank #04 of 36 "
-        "with a 93/100 Money-to-Manpower Score across 14 mapped plays. Its attractive "
-        "economics collapse when operators mistake escrow balances for available cash, "
-        "principal turnover for revenue, or promotional credit for committed liquidity. "
-        "The canonical annual owner profits are $36,000 Conservative, $227,375 Base, "
-        "and $522,500 Scaled; one unrecovered wire can consume several years of "
-        "earnings. This chapter converts wire fraud, dry closings, earnest-money "
-        "forfeiture, fee recharacterization, rewards reversals, and bankruptcy recovery "
-        "demands into measurable stop conditions. It also tests genuine agency "
-        "advertising rebates against client pass-through duties and funding costs. "
-        "The question's 80% figure is a framing device, not an established newcomer "
-        "failure statistic."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual earned funding fees, EMD JV splits, and origination points; principal excluded",
-            "note": "30% net margin; $36,000 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$535,000",
-            "context": "Annual earned funding fees, EMD JV splits, and origination points; principal excluded",
-            "note": "42.5% net margin; $227,375 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$950,000",
-            "context": "Annual earned funding fees, EMD JV splits, and origination points; principal excluded",
-            "note": "55% net margin; $522,500 annual owner net profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Stop the Wire Before a Closing Defect Becomes a Principal Loss",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The first fatal trap is treating a title-company logo as a payment "
-                    "control. The second is accepting a buyer's bank screenshot as collected "
-                    "cash. The third is assuming a double closing automatically creates a "
-                    "simultaneous exchange. In an A-to-B-to-C transaction, your borrower "
-                    "buys from the original seller and resells to the end buyer; each "
-                    "contract, recording requirement, lender instruction, and disbursement "
-                    "condition can interrupt that chain. Require the verified settlement "
-                    "agent to confirm unconditional end-buyer cash on deposit, permitted "
-                    "use of proceeds, both settlement statements, and the exact repayment "
-                    "waterfall before releasing principal. A financed buyer with outstanding "
-                    "funding conditions fails this chapter's cash-backed operating standard. "
-                    "Send money only to independently verified, bonded title or settlement "
-                    "agents whose authority and applicable licensing have been checked. "
-                    "Confirm what the bond and any closing protection letter actually "
-                    "cover; neither substitutes for account authentication or promises "
-                    "recovery from every theft. Call a previously established telephone "
-                    "number, not the number embedded in a revised wire email. Record the "
-                    "callback time, verifier, beneficiary, routing details, and agreed "
-                    "closing conditions. A changed beneficiary restarts verification even "
-                    "when the sender's email thread looks familiar."
-                ),
-                (
-                    "The fourth trap is letting urgency erase segregation of duties. Use "
-                    "Qualia or SoftPro records where the settlement agent supports them, "
-                    "but independently authenticate the account and repayment undertaking; "
-                    "software access is evidence transport, not proof that cash is "
-                    "unrestricted. The preparer may assemble instructions, while a separate "
-                    "authorized reviewer releases the bank payment. With one full-time "
-                    "operator, a contracted reviewer can authenticate documents without "
-                    "receiving unrestricted withdrawal credentials. Set an internal hard "
-                    "stop for any beneficiary mismatch, any unresolved closing condition, "
-                    "or any principal transfer requested outside the named escrow account. "
-                    "UCC Article 4A allocates payment-order risks through rules that "
-                    "include security procedures and beneficiary identification; state "
-                    "enactments and bank agreements control the particular transaction. "
-                    "Under the conditions described in UCC 4A-207, account-number reliance "
-                    "can defeat a comforting name match. Ask the bank which security "
-                    "procedure governs your account and preserve evidence of your "
-                    "compliance with it. Do not assume a wire can be reversed like a "
-                    "card purchase. If suspicious instructions appear after release, "
-                    "contact the bank's fraud desk immediately, request a recall and "
-                    "beneficiary-bank hold, preserve original messages, and report through "
-                    "IC3. A recall request does not establish recovery."
-                ),
-                (
-                    "The fifth trap is pricing a possible principal loss as though it "
-                    "were merely another day of interest. A $50,000 wire earning $1,000 "
-                    "loses fifty successful gross fees if principal disappears, before "
-                    "collection expense or overhead. Against canonical owner earnings, "
-                    "that loss exceeds the entire $36,000 Conservative year. Calculate "
-                    "each exposure from release until principal returns as cleared, "
-                    "usable cash; a signed payoff letter does not end exposure. For "
-                    "this illustrative policy, flag any missing same-day closing "
-                    "confirmation, freeze additional releases when an agreed payoff "
-                    "deadline is missed, and require a documented recovery plan for "
-                    "anything outstanding beyond 72 hours. Those are internal operating "
-                    "thresholds, not universal statutory deadlines. Track concentration "
-                    "across the borrower, end buyer, settlement office, and beneficially "
-                    "related entities rather than counting contracts as independent "
-                    "bets. A $100,000 cash pool with a 25% single-deal limit supports "
-                    "only $25,000 per transaction; a larger closing requires verified "
-                    "additional committed capital or rejection. Never represent a "
-                    "revocable credit line as cash already deposited. When capacity "
-                    "runs short, reduce transaction size or decline the deal rather "
-                    "than financing yesterday's delayed payoff with tomorrow's client "
-                    "deposit. Maintain an untouched reserve outside the transaction "
-                    "account and reconcile it daily."
-                ),
-            ],
-            "table": {
-                "caption": "Wire and Double-Close Failure Matrix: Evidence Before Principal Release",
-                "headers": [
-                    "Failure mode and exposed capital",
-                    "Evidence the operator must obtain",
-                    "Early-warning threshold for this operating policy",
-                    "Circuit breaker and recovery action",
-                ],
-                "rows": [
-                    [
-                        "Spoofed settlement email redirects the entire funded principal",
-                        "Independent callback confirms bank account and authorized beneficiary",
-                        "Any beneficiary change or inconsistent routing detail triggers suspension",
-                        "Stop release and rebuild verification through established contact channels",
-                    ],
-                    [
-                        "Buyer screenshot conceals conditional or unavailable closing proceeds",
-                        "Settlement agent confirms unrestricted collected cash and disbursement authority",
-                        "Any funding condition prevents treatment as unconditional buyer cash",
-                        "Reject funding until conditions clear and evidence is refreshed",
-                    ],
-                    [
-                        "Separate closings leave the first purchase permanently exposed",
-                        "Both contracts and settlement instructions establish the repayment sequence",
-                        "Any incompatible recording or disbursement instruction blocks principal release",
-                        "Restructure with the settlement agent or decline the transaction",
-                    ],
-                    [
-                        "Unverified bond creates false confidence about theft recovery",
-                        "Issuer confirmation establishes beneficiary coverage limits and relevant exclusions",
-                        "Unresolved coverage scope prevents reliance on the asserted protection",
-                        "Obtain effective protection and retain independent payment authentication controls",
-                    ],
-                    [
-                        "Single operator prepares and releases a fraudulent payment",
-                        "Separate reviewer documents account authentication before bank payment authorization",
-                        "Missing second review blocks every outgoing principal payment",
-                        "Use an authorized contracted reviewer with restricted account permissions",
-                    ],
-                    [
-                        "Delayed payoff silently consumes the next transaction's liquidity",
-                        "Daily bank reconciliation matches principal returns to individual closings",
-                        "Missed contractual payoff freezes further releases to related exposures",
-                        "Escalate settlement tracing and fund no replacement transaction",
-                    ],
-                    [
-                        "Related borrowers defeat superficial limits on individual deals",
-                        "Ownership records connect borrowers end buyers and settlement offices",
-                        "Aggregate related exposure exceeds the documented concentration limit",
-                        "Reduce allocation or obtain additional verified committed capital",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Pre-Flight Tests Before Any Escrow Wire",
-                "body": (
-                    "Every test requires dated evidence tied to the transaction identifier. "
-                    "A verbal promise to complete the file later does not pass."
-                ),
-                "items": [
-                    "Verify the bonded settlement agent, applicable licensing, independent callback number, beneficiary account, and scope of any closing protection.",
-                    "Obtain written confirmation that unconditional end-buyer cash is collected, available, and authorized for the documented closing sequence.",
-                    "Match executed contracts, settlement statements, payoff priority, lending authority, and all fee disclosures to the same borrower and property.",
-                    "Confirm separate payment review, post-wire reserve capacity, related-party exposure limits, and a named responder for delayed repayment.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Rebuild Margin From Earned Fees, Not Principal Velocity",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The sixth trap is calling escrow throughput revenue. Formula v2.0 "
-                    "counts earned transactional funding fees, EMD joint-venture splits, "
-                    "and origination points, excluding principal wired through settlement. "
-                    "For an illustrative reconciliation, 120 earned $1,000 fees produce "
-                    "$120,000 Conservative revenue; $84,000 of total costs leave $36,000 "
-                    "owner profit at 30%. At Base, 214 earned $2,500 fee equivalents "
-                    "produce $535,000; $307,625 of costs leave $227,375 at 42.5%. At "
-                    "Scaled, 380 earned $2,500 fee equivalents produce $950,000; $427,500 "
-                    "of costs leave $522,500 at 55%. These are arithmetic bridges, not "
-                    "claims about actual deal mix or required loan size. Retain the "
-                    "specified teams of one full-time person plus two contractors for "
-                    "Conservative and Base, and two full-time people plus three "
-                    "contractors for Scaled. Maintain separate ledgers for principal, "
-                    "earned fees, refundable advances, partner obligations, and recovery "
-                    "receivables. An EMD split becomes operator revenue only to the "
-                    "extent the operator has earned the contractual entitlement under "
-                    "the applicable accounting policy. Do not apply an invented retained "
-                    "share to these supplied totals. Have the accountant distinguish "
-                    "lending income from service revenue and principal-agent presentation; "
-                    "ASC 606 is not a blanket classification for every funding receipt."
-                ),
-                (
-                    "The seventh trap is forgetting the small deductions that dominate "
-                    "short-duration economics. Consider a $50,000 advance earning a "
-                    "$1,000 contractual fee: two $25 wires, $100 of settlement charges "
-                    "borne by the funder, $150 of partner compensation, and $100 of "
-                    "funding cost leave $600 before overhead and credit losses. If "
-                    "repayment takes ten additional days at an illustrative 18% simple "
-                    "annual capital cost, the delay adds $246.58, calculated as $50,000 "
-                    "times 18% times 10 divided by 365. Remaining contribution falls "
-                    "to $353.42 without any change to the headline fee. That capital "
-                    "cost assumption describes the operator's expense, not permission "
-                    "to charge the borrower any particular rate. Track settlement "
-                    "deductions against the signed quote, funding cost per exposed "
-                    "dollar-day, and cash realization by fee cohort. Set an internal "
-                    "review threshold when actual contribution misses the approved "
-                    "quote by more than 10%, and suspend a channel when two successive "
-                    "weekly cohorts fall below its documented minimum contribution. "
-                    "Avoid hiding reversals by netting them into new deal receipts. "
-                    "Record the original fee, reversal reason, responsible counterparty, "
-                    "recovery status, and ultimate loss separately. A clean audit trail "
-                    "makes a recurring settlement deduction visible before larger "
-                    "volume magnifies it."
-                ),
-                (
-                    "The eighth trap is treating an EMD advance as a miniature "
-                    "cash-backed double close. A $10,000 earnest-money deposit can "
-                    "become nonrefundable after a diligence deadline even when the "
-                    "expected resale disappears. If the operator earns only $1,000 "
-                    "per completed arrangement, one total deposit loss consumes ten "
-                    "gross successes. Read termination rights, assignment restrictions, "
-                    "release instructions, dispute procedures, and the exact event "
-                    "that makes the deposit seller property. An internal standard "
-                    "should require a named decision owner at least two business "
-                    "days before each contractual diligence deadline; escalate sooner "
-                    "where the agreement requires earlier delivery. Send notices "
-                    "using the contract's delivery method rather than assuming a "
-                    "text message preserves rights. A joint-venture label does not "
-                    "eliminate loss allocation or establish that the arrangement "
-                    "is equity rather than credit. Specify who bears forfeiture, "
-                    "who controls termination, whether repayment is unconditional, "
-                    "and what happens when the seller contests release. Do not "
-                    "book an expected split as earned merely because money entered "
-                    "escrow. Stress the whole portfolio for one unrecovered deposit "
-                    "plus one delayed transactional payoff. If that combination "
-                    "consumes protected operating cash, shrink deployment before "
-                    "accepting another reservation request. Never repair the deficit "
-                    "with undisclosed client money."
-                ),
-            ],
-            "table": {
-                "caption": "Formula v2.0 Reconciliation and Hidden Leakage Diagnostic",
-                "headers": [
-                    "Metric or illustrative unit bridge",
-                    "Calculation and recognized economic meaning",
-                    "Evidence required for financial reconciliation",
-                    "Operator response when economics deteriorate",
-                ],
-                "rows": [
-                    [
-                        "Conservative scenario uses 120 earned one-thousand-dollar fee equivalents",
-                        "$120,000 less $84,000 costs equals $36,000 owner profit",
-                        "Earned fee ledger supports 30% margin and specified staffing",
-                        "Preserve 1 FT plus 2 C within total costs",
-                    ],
-                    [
-                        "Base scenario uses 214 earned twenty-five-hundred-dollar fee equivalents",
-                        "$535,000 less $307,625 costs equals $227,375 owner profit",
-                        "Earned fee ledger supports 42.5% margin and specified staffing",
-                        "Preserve 1 FT plus 2 C within total costs",
-                    ],
-                    [
-                        "Scaled scenario uses 380 earned twenty-five-hundred-dollar fee equivalents",
-                        "$950,000 less $427,500 costs equals $522,500 owner profit",
-                        "Earned fee ledger supports 55% margin and specified staffing",
-                        "Preserve 2 FT plus 3 C within total costs",
-                    ],
-                    [
-                        "Principal throughput measures exposure rather than earned operator revenue",
-                        "$50,000 returned principal creates zero incremental fee revenue",
-                        "Bank entries separately identify principal fee and partner distributions",
-                        "Correct dashboard classifications before evaluating sales or team productivity",
-                    ],
-                    [
-                        "Illustrative short-duration fee loses contribution through ordinary transaction deductions",
-                        "$1,000 less $400 direct deductions leaves $600 before overhead",
-                        "Wire invoices settlement statements and partner agreements explain deductions",
-                        "Reprice future transactions when realized contribution misses quoted economics",
-                    ],
-                    [
-                        "Ten additional days increase illustrative capital expense substantially",
-                        "$50,000 times 18% times ten over 365 equals $246.58",
-                        "Actual funding contract determines expense and daily exposure duration",
-                        "Freeze related deployment and pursue documented settlement repayment tracing",
-                    ],
-                    [
-                        "Earnest-money forfeiture can erase ten successful gross fee outcomes",
-                        "$10,000 unrecovered deposit consumes ten separate $1,000 gross fees",
-                        "Executed purchase contract establishes deadlines and deposit release rights",
-                        "Exercise timely contractual remedies and stop assuming refundable principal",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Veteran Controls That Survive a Bad Closing Week",
-                "body": (
-                    "Optimize for independently recoverable cash and attributable fee income, "
-                    "not for the largest displayed funding volume."
-                ),
-                "items": [
-                    "Export the final settlement statement and bank confirmation under one transaction identifier; reconcile differences before reusing returned capital.",
-                    "Maintain a counterparty alias map connecting settlement branches, borrower entities, end buyers, and beneficial owners so correlated exposure cannot hide.",
-                    "Price expected funding days and a delayed-payoff stress case separately; reject transactions whose stressed contribution falls below the documented floor.",
-                    "Keep refundable EMD advances and disputed fee receipts outside deployable profit until release rights and earning conditions are resolved.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Test Lending Substance, Reversal Rights, and Insolvency Exposure",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The ninth trap is believing business purpose eliminates lending "
-                    "law. Regulation Z excludes specified business, commercial, "
-                    "agricultural, and organizational credit under 12 CFR 1026.3(a), "
-                    "but that federal exclusion does not create a state lending "
-                    "license exemption or override state usury rules. Document the "
-                    "actual use of proceeds and borrower structure instead of "
-                    "copying a commercial-purpose checkbox. California Financial "
-                    "Code section 22100 generally requires a license to engage "
-                    "in the business of a finance lender or broker unless an "
-                    "applicable exception applies; test the precise transaction "
-                    "against current statutory definitions and exemptions. California "
-                    "Constitution article XV, section 1 supplies interest limits "
-                    "and exemptions that require transaction-specific analysis. "
-                    "Other states differ on business entities, loan size, collateral, "
-                    "broker involvement, and lender location. Build a state matrix "
-                    "before accepting borrowers, including where solicitation, "
-                    "contracting, collateral, and servicing occur. A short maturity "
-                    "does not itself remove a transaction from those rules. "
-                    "Aggregate compensation that applicable law treats as interest, "
-                    "including required fees paid through related parties. A "
-                    "$1,000 fee on $50,000 for two days equals a 365% simple "
-                    "annualized comparison, illustrating why a small dollar fee "
-                    "can still demand careful statutory treatment."
-                ),
-                (
-                    "The tenth trap is assuming the words joint venture cure a "
-                    "loan's substance. Guaranteed principal repayment, fixed return, "
-                    "minimal investor control, and automatic extensions can change "
-                    "the analysis regardless of the document title. Separate "
-                    "transactional lending, genuine risk-sharing ventures, and "
-                    "service compensation in contracts and accounting. State "
-                    "commercial-financing disclosure requirements may also apply "
-                    "to covered offers even where consumer-credit disclosures do "
-                    "not; California Financial Code section 22800 and following "
-                    "provide one concrete screening point. Do not describe a "
-                    "license exemption as permission to operate escrow or hold "
-                    "third-party settlement funds. California Financial Code "
-                    "section 17200 addresses escrow-agent licensing, subject to "
-                    "the statutory framework and exemptions. The eleventh trap "
-                    "is manufacturing proof of funds, falsifying business revenue "
-                    "on credit applications, or presenting borrowed balances as "
-                    "unrestricted owned cash. Such conduct can trigger account "
-                    "closure, acceleration, civil claims, and criminal exposure "
-                    "depending on the facts; 18 U.S.C. 1014 covers specified "
-                    "knowing false statements intended to influence covered "
-                    "institutions. Use dated bank-issued evidence with accurate "
-                    "restrictions and verify recipients' requirements. If a "
-                    "counterparty demands a misleading presentation, decline "
-                    "rather than editing a statement or routing the request "
-                    "through another entity. Preserve the request as incident evidence."
-                ),
-                (
-                    "The twelfth trap is spending a repayment before evaluating "
-                    "whether it can be recovered later by another claimant. A "
-                    "bankruptcy trustee may challenge a qualifying preferential "
-                    "transfer under 11 U.S.C. 547, generally looking back 90 "
-                    "days and potentially one year for insiders, subject to "
-                    "statutory elements and defenses. Fraudulent-transfer "
-                    "analysis under 11 U.S.C. 548 generally includes a two-year "
-                    "federal lookback; other applicable recovery routes can "
-                    "reach different periods. Section 550 addresses recovery "
-                    "from specified transferees after avoidance. These provisions "
-                    "do not mean every quick repayment is automatically "
-                    "recoverable. Preserve contemporaneous funding proof, "
-                    "consideration, contractual maturity, settlement disbursements, "
-                    "counterparty identity, and the commercial reason for "
-                    "repayment. Escrow routing alone does not answer who "
-                    "transferred value or whose property funded the repayment. "
-                    "Flag unusual third-party payoffs, unexplained substitutions "
-                    "of the paying entity, distress-driven extensions, and "
-                    "requests to redirect another customer's deposit. Obtain "
-                    "transaction-specific review before treating questionable "
-                    "receipts as distributable owner cash. Separately track "
-                    "contractual fee refunds, partner true-ups, disputed "
-                    "settlement deductions, and insolvency demands because "
-                    "their evidence and remedies differ. Set aside an "
-                    "identified dispute reserve based on exposure, without "
-                    "quietly changing the canonical scenario figures. Any "
-                    "reserve or realized loss changes the live forecast "
-                    "and should appear explicitly beside the original benchmark."
-                ),
-            ],
-            "table": {
-                "caption": "Legal Substance and Clawback Matrix: Authority, Evidence, and Stop Conditions",
-                "headers": [
-                    "Exposure requiring transaction-specific review",
-                    "Primary authority or controlling contractual source",
-                    "File evidence that supports the analysis",
-                    "Stop condition and concrete operator response",
-                ],
-                "rows": [
-                    [
-                        "Commercial purpose is mistaken for universal lending permission",
-                        "12 CFR 1026.3(a) establishes specified federal credit exclusions",
-                        "Proceeds documentation identifies actual business use and borrower structure",
-                        "Unresolved state authority blocks offers and principal deployment",
-                    ],
-                    [
-                        "California lending activity proceeds without a supported licensing basis",
-                        "California Financial Code 22100 establishes finance licensing requirements",
-                        "Written analysis identifies applicable definitions exemptions and operating footprint",
-                        "Suspend affected originations until licensing or exemption is established",
-                    ],
-                    [
-                        "Short-term origination charges create excessive compensation under applicable law",
-                        "California Constitution article XV section 1 addresses interest restrictions",
-                        "Complete compensation schedule includes required fees and related-party payments",
-                        "Reprice or reject transactions exceeding applicable lawful compensation",
-                    ],
-                    [
-                        "Covered commercial offers omit required financing disclosure information",
-                        "California Financial Code 22800 and following govern covered disclosures",
-                        "Coverage analysis links product recipient amount and required presentation",
-                        "Deliver applicable disclosures before advancing the covered offer process",
-                    ],
-                    [
-                        "Funding operator inadvertently performs regulated third-party escrow activity",
-                        "California Financial Code 17200 addresses escrow-agent licensing requirements",
-                        "Funds-flow diagram identifies every holder and disbursement decision maker",
-                        "Keep settlement custody with appropriately authorized independently verified agents",
-                    ],
-                    [
-                        "False proof of funds misleads a covered financial institution",
-                        "18 U.S.C. 1014 addresses specified intentional false institutional statements",
-                        "Original bank evidence accurately describes ownership availability and restrictions",
-                        "Reject altered documents and preserve the misleading request evidence",
-                    ],
-                    [
-                        "Distressed repayment creates avoidance and subsequent recovery exposure",
-                        "11 U.S.C. 547 548 and 550 govern relevant recovery routes",
-                        "Funding consideration timing identity and repayment records remain linked",
-                        "Reserve disputed receipts and obtain transaction-specific recovery defense review",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Disable Rewards-Dependent Funding Before Platforms Disable the Business",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The thirteenth trap is treating a promotional card balance "
-                    "as escrow-ready liquidity. A 0%-APR purchase promotion may "
-                    "exclude cash advances, balance transfers, cash-equivalent "
-                    "transactions, or a processor's funding category. Fees, "
-                    "minimum payments, promotional expiry, and contractual "
-                    "default consequences remain relevant even when the "
-                    "purchase rate is zero. Obtain written product terms "
-                    "and confirmation that the actual transaction is permitted "
-                    "by the issuer, processor, and settlement recipient. If "
-                    "those conditions cannot be established, use approved "
-                    "cash capital rather than a disguised purchase. Circular "
-                    "self-payments, sham invoices, merchant-category "
-                    "misrepresentation, and refund cycling create no genuine "
-                    "economic sale and can cause rewards reversals, reserves, "
-                    "account closure, or fraud allegations. Do not respond "
-                    "to a restriction by rotating entities or concealing "
-                    "beneficial ownership. Track available credit separately "
-                    "from cash reserves, and stress a complete line "
-                    "withdrawal before each deployment. For this internal "
-                    "policy, stop new reliance on promotional borrowing "
-                    "30 days before expiry unless repayment cash is "
-                    "already segregated. An issuer's reduction of available "
-                    "credit triggers immediate suspension of new "
-                    "credit-dependent commitments. The fallback is smaller "
-                    "cash-funded transactions or no transaction, not a "
-                    "new layer of unsupported funding that lengthens "
-                    "the repayment chain."
-                ),
-                (
-                    "The mapped play agency_ad_spend_card_multiplier_rebate_cycling "
-                    "is TRACK_2: Whitelisted Agency Ad-Spend Card-Multiplier "
-                    "Points & Volume-Rebate Cycling. It belongs beside the "
-                    "lending controls because short settlement gaps can "
-                    "turn a genuine agency service into leveraged client "
-                    "credit. Route only genuine, client-authorized Google "
-                    "Ads or Meta Ads spend through eligible agency payment "
-                    "arrangements, and verify issuer reward eligibility, "
-                    "rebate terms, and client ownership of benefits. In "
-                    "an illustrative $100,000 monthly spend cohort, a "
-                    "contractually usable 2% cash reward produces $2,000 "
-                    "and a 0.5% volume rebate produces $500. Subtract "
-                    "$1,000 processing expense, $400 funding expense, "
-                    "$750 contractually owed to clients, and $150 "
-                    "administration: retained contribution is $200. A "
-                    "$500 reward reversal changes that cohort to a "
-                    "$300 loss. Client advertising spend is not lending "
-                    "revenue, and these illustrative rewards are not "
-                    "added to the canonical $120,000, $535,000, or "
-                    "$950,000 fee totals. Apply the relevant principal-agent "
-                    "analysis to agency accounting rather than recognizing "
-                    "all advertising billings as operator revenue. Stop "
-                    "rewards-dependent spending when eligibility becomes "
-                    "uncertain or realized contribution turns negative. "
-                    "Move to client-direct billing or prefunded approved "
-                    "agency terms, settle existing obligations, and "
-                    "reconcile refunds to the original client."
-                ),
-                (
-                    "The fourteenth trap is interpreting a green dashboard "
-                    "as permission to keep scaling. Build the control "
-                    "view from bank-confirmed cash, settlement evidence, "
-                    "contractual deadlines, platform notices, and the "
-                    "general ledger rather than borrower updates alone. "
-                    "Measure principal overdue by dollars and age, "
-                    "unreconciled cash by transaction, contribution "
-                    "variance by cohort, reward reversals by earning "
-                    "period, and exposure to each funding source. "
-                    "For this illustrative policy, any unexplained "
-                    "cash difference blocks reuse of the affected "
-                    "balance; any platform restriction blocks new "
-                    "spend through that account; and any documented "
-                    "negative-contribution cohort blocks further "
-                    "rewards-dependent commitments until repriced. "
-                    "Alert on reward reversals above 5% of the "
-                    "same cohort's booked reward value, while "
-                    "investigating every reversal individually. Do "
-                    "not mix this rate with total advertising "
-                    "spend, which would hide economically material "
-                    "clawbacks. Assign one incident owner and "
-                    "one independent reviewer, preserve original "
-                    "evidence, and notify affected clients under "
-                    "their agreements without promising recovery. "
-                    "Reopening requires a resolved root cause, "
-                    "reconciled balances, updated contract or "
-                    "payment evidence, and a deliberately limited "
-                    "first transaction. Automation should block "
-                    "incomplete files and surface exceptions; "
-                    "it should never fabricate proof of "
-                    "funds, infer unrestricted cash from a "
-                    "screenshot, or release principal because "
-                    "a salesperson changed a status field."
-                ),
-            ],
-            "table": {
-                "caption": "Platform, Promotional Credit, and Agency Rewards Telemetry",
-                "headers": [
-                    "Signal and economically exposed activity",
-                    "Measurement tied to authoritative underlying evidence",
-                    "Illustrative internal threshold requiring immediate intervention",
-                    "Fallback that preserves real customer obligations",
-                ],
-                "rows": [
-                    [
-                        "Promotional credit expires before expected transaction repayment arrives",
-                        "Issuer terms identify expiry minimum payments and transaction eligibility",
-                        "Thirty days before expiry requires segregated repayment cash",
-                        "Stop new reliance and substitute approved available cash capital",
-                    ],
-                    [
-                        "Issuer excludes the proposed escrow-related payment from purchase treatment",
-                        "Written product terms and processor rules establish permitted use",
-                        "Any unresolved transaction classification blocks promotional funding reliance",
-                        "Reject disguised purchases and finance only through approved alternatives",
-                    ],
-                    [
-                        "Circular transactions manufacture volume without genuine customer economic activity",
-                        "Client authorizations invoices and platform delivery records establish substance",
-                        "Any sham invoice or self-payment structure blocks execution",
-                        "Cancel proposed cycling and retain only documented genuine spending",
-                    ],
-                    [
-                        "Agency rewards cohort produces only two hundred dollars contribution",
-                        "$2,500 benefits less $2,300 total deductions equals $200 retained",
-                        "Negative realized contribution blocks additional rewards-dependent spending commitments",
-                        "Move clients to direct billing or prefunded approved terms",
-                    ],
-                    [
-                        "Reward reversal destroys the illustrated agency cohort's thin margin",
-                        "$200 retained contribution less $500 reversal equals $300 loss",
-                        "Reversals above 5% of cohort rewards trigger channel review",
-                        "Reconcile client obligations and stop assuming rewards will fund costs",
-                    ],
-                    [
-                        "Platform restriction threatens both service continuity and unsettled balances",
-                        "Issuer processor or advertising platform notice defines affected permissions",
-                        "Any account restriction blocks new activity through that account",
-                        "Use documented client-direct arrangements without concealing identities or restrictions",
-                    ],
-                    [
-                        "Unexplained bank difference contaminates reported reusable funding capacity",
-                        "Bank settlement and general-ledger records reconcile each transaction identifier",
-                        "Any unexplained difference blocks reuse of the affected balance",
-                        "Trace the discrepancy and independently verify corrected available cash",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the Affected Exposure",
-                    "action": "Block new releases or rewards-dependent spend tied to the incident.",
-                    "detail": (
-                        "Record the affected account, transaction identifiers, principal, "
-                        "contractual obligations, and next deadline; preserve cash needed "
-                        "to honor existing commitments."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Preserve and Authenticate Evidence",
-                    "action": "Collect original bank records, settlement files, contracts, and platform notices.",
-                    "detail": (
-                        "Use established callback channels to verify disputed instructions; "
-                        "retain original message headers and document every fraud-desk "
-                        "contact or recall request."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Reconcile Loss and Execute the Fallback",
-                    "action": "Separate principal exposure, fee reversals, client liabilities, and recovery claims.",
-                    "detail": (
-                        "Update the live profit forecast without rewriting the canonical "
-                        "benchmark; switch affected agency clients to direct billing or "
-                        "prefunded approved terms."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Reopen Only With Verified Corrective Evidence",
-                    "action": "Require independent review of the root cause and a limited first transaction.",
-                    "detail": (
-                        "Confirm reconciled balances, effective permissions, authenticated "
-                        "payment details, and sufficient reserves before restoring the "
-                        "specific activity that was suspended."
-                    ),
-                },
-            ],
-        },
-    ],
-    "pull_quote": "A short funding window does not make a principal loss small.",
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Create a transaction-level ledger separating wired principal, earned fees, refundable EMD advances, partner obligations, and disputed recoveries.",
-        "Implement independent settlement callbacks and separate payment review, with automatic suspension for changed beneficiaries or conditional end-buyer funds.",
-        "Document state lending, interest, disclosure, and escrow authority for every operating footprint before making covered offers.",
-        "Load contractual EMD deadlines and payoff maturities into a monitored calendar with named decision owners and escalation times.",
-        "Stress one total deposit loss, one delayed payoff, and complete withdrawal of promotional credit against protected operating cash.",
-        "Reconcile agency rewards by earning cohort and move immediately to client-direct billing or prefunded approved terms when eligibility or contribution fails.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "12 CFR 1026.3(a) — Business, commercial, agricultural, or organizational credit",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1026/section-1026.3",
-            "relevance": (
-                "Defines specified Regulation Z exclusions; a federal exclusion does "
-                "not independently establish a state lending exemption."
-            ),
-        },
-        {
-            "title": "California Financial Code section 22100 — Finance lender and broker licensing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22100.",
-            "relevance": (
-                "Provides a concrete state licensing checkpoint for finance lending "
-                "or brokering, subject to applicable statutory exceptions."
-            ),
-        },
-        {
-            "title": "California Constitution article XV, section 1 — Interest restrictions and exemptions",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CONS&article=XV",
-            "relevance": (
-                "Requires analysis of applicable compensation limits and exemptions "
-                "rather than reliance on a short contractual funding period."
-            ),
-        },
-        {
-            "title": "California Financial Code section 22800 — Commercial financing disclosure framework",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22800.",
-            "relevance": (
-                "Establishes definitions used to screen coverage under California's "
-                "commercial financing disclosure provisions."
-            ),
-        },
-        {
-            "title": "California Financial Code section 17200 — Escrow-agent licensing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=17200.",
-            "relevance": (
-                "Supports separate review of escrow activity; lending authority does "
-                "not by itself authorize custody of third-party settlement funds."
-            ),
-        },
-        {
-            "title": "UCC 4A-202 — Authorized and verified payment orders",
-            "url": "https://www.law.cornell.edu/ucc/4A/4A-202",
-            "relevance": (
-                "Model statutory text identifies security-procedure issues; use the "
-                "applicable state enactment and bank agreement for binding analysis."
-            ),
-        },
-        {
-            "title": "UCC 4A-207 — Misdescription of beneficiary",
-            "url": "https://www.law.cornell.edu/ucc/4A/4A-207",
-            "relevance": (
-                "Model statutory text explains circumstances involving account-number "
-                "reliance; authenticate beneficiary account details independently."
-            ),
-        },
-        {
-            "title": "18 U.S.C. 1014 — Loan and credit applications",
-            "url": "https://www.law.cornell.edu/uscode/text/18/1014",
-            "relevance": (
-                "Addresses specified knowing false statements intended to influence "
-                "covered institutions, relevant to fabricated credit applications "
-                "and misleading supporting records."
-            ),
-        },
-        {
-            "title": "11 U.S.C. 547 — Preferences",
-            "url": "https://www.law.cornell.edu/uscode/text/11/547",
-            "relevance": (
-                "Establishes elements, periods, and defenses relevant to potential "
-                "avoidance of qualifying pre-bankruptcy repayments."
-            ),
-        },
-        {
-            "title": "11 U.S.C. 548 — Fraudulent transfers and obligations",
-            "url": "https://www.law.cornell.edu/uscode/text/11/548",
-            "relevance": (
-                "Provides federal avoidance rules relevant to transfers involving "
-                "specified intent or constructive-transfer conditions."
-            ),
-        },
-        {
-            "title": "11 U.S.C. 550 — Liability of transferee of avoided transfer",
-            "url": "https://www.law.cornell.edu/uscode/text/11/550",
-            "relevance": (
-                "Addresses recovery after avoidance from specified transferees, "
-                "including statutory limitations and defenses."
-            ),
-        },
-    ],
-}
+CHAPTER_5 = {'id': 'Q5',
+ 'chapter_id': 'Q5',
+ 'chapter_number': 5,
+ 'question_number': 5,
+ 'slug': 'earnest-money-deposits-holding-protecting-losing',
+ 'question_prompt': 'Where does earnest money go, when can it be lost, and how do buyers and wholesalers '
+                    'protect their deposit?',
+ 'kicker': 'Q5 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Earnest Money Deposits: Holding, Protecting & Losing Them',
+ 'subtitle': "What EMD is and where it's held, contingencies and inspection periods, state-specific rules "
+             '(Florida, Connecticut, Idaho, New Jersey), wholesaler EMD practices, cancellation and refund '
+             'scenarios, and e-tender EMD escrow',
+ 'layout_template': 'case_study',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Realtors, attorneys, a mortgage lender and a wholesaler converge on one rule: the '
+                      'earnest money deposit sits with a neutral holder (title, a brokerage trust account, '
+                      'or attorney escrow) and becomes a closing credit. It is only recoverable through a '
+                      'live, written contingency. Inspection, loan, appraisal and title windows are the '
+                      'exits. Miss a date or waive a clause and the money is exposed. Street numbers run '
+                      'from a $1 consideration floor and a 1% Idaho resale reference to the 3% scripted '
+                      'benchmark, plus 10% deposits in Greenwich and on custom builds, and builder '
+                      'deposits that go hard at signing. The mechanics are three-day funding, wires sent '
+                      'only on title-direct instructions, 60-day fund seasoning, and daily deadline calls. '
+                      'Practitioners split on who holds the money, on whether release needs both sides to '
+                      'sign, and on wholesalers skipping deposits entirely.',
+ 'key_metrics': [{'label': 'Scripted Agent Deposit Benchmark',
+                  'metric': 'Scripted Agent Deposit Benchmark',
+                  'value': '3% of price: $19,500 on a $650,000 offer',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Good-faith deposit example given for a $650,000 purchase, held in escrow '
+                             'until closing and applied to down payment or closing costs',
+                  'source': 'Beyond the Address ([1ysRoNF77u8 @ 00:00:29])'},
+                 {'label': 'Greenwich Contract-Signing Deposit',
+                  'metric': 'Greenwich Contract-Signing Deposit',
+                  'value': '10% of price: $200,000 on a $2,000,000 home',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Local custom at contract signing, which can come within 5 days of an '
+                             "accepted offer, wired to the buyer's attorney",
+                  'source': 'Charles Nedder | Greenwich CT Real Estate ([xyiyeiBkCqQ @ 00:01:49])'},
+                 {'label': 'Lender Fund-Seasoning Window',
+                  'metric': 'Lender Fund-Seasoning Window',
+                  'value': '60 days in the bank account',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Cash deposited the day before the earnest money is wired is treated as '
+                             'non-sourceable on conventional, FHA, USDA and Fannie- and Freddie-backed '
+                             'loans',
+                  'source': 'The Treasure Valley Home Show ([5lKK7iczAKk @ 00:19:20])'},
+                 {'label': 'California Contract Deposit-Recovery Exits',
+                  'metric': 'California Contract Deposit-Recovery Exits',
+                  'value': 'About 17 bullet-point exits',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Count of contract provisions on the California residential purchase '
+                             'agreement that let a buyer back out and recover the full deposit',
+                  'source': 'JAG Real Estate Lifestyle ([E9HjXJUTsZc @ 00:09:06])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus: Neutral Escrow, a Credit at Closing, and '
+                        'Contingencies as the Only Shield',
+               'paragraphs': ['Every practitioner who addresses custody agrees on one point: the deposit '
+                              "does not land in the seller's pocket. Katie Anderson in Pensacola sends it "
+                              'to the title company or the closing attorney. They park it in an escrow '
+                              'account tagged with the property address until the contract either cancels '
+                              'or closes [NMjK2yG_6ys @ 00:00:31]. Charles Nedder runs a different pipe in '
+                              "Greenwich, Connecticut. The buyer wires the deposit to the buyer's "
+                              "attorney, who forwards it with the signed contract to the seller's "
+                              "attorney. It then sits untouched in that attorney's escrow account "
+                              '[xyiyeiBkCqQ @ 00:00:47]. The Treasure Valley Home Show team in Idaho says '
+                              'the holder is always a neutral third party, either a brokerage trust '
+                              'account or title, and that title is now the usual landing spot [5lKK7iczAKk '
+                              '@ 00:08:43]. On a clean close the money is neither a fee nor consumed. '
+                              'Lender Chase Hodson tells buyers to read it as a line on an accounting '
+                              'ledger: a credit that offsets closing costs or down payment [5lKK7iczAKk @ '
+                              '00:03:35]. Alec Osland of Yanowitz Law Firm states the same mechanic '
+                              'plainly. The deposit stays in a neutral escrow until closing and then gets '
+                              'applied toward the down payment or closing costs [D8jafo21-34 @ 00:00:57]. '
+                              'The operator takeaway is simple: the deposit is cash-to-close parked early, '
+                              'not a payment to the other side.',
+                              'The second consensus is that contingencies are the only reliable way out '
+                              'with the money intact. Ed Kaminsky names three core protections: '
+                              'inspection, loan approval and appraisal. He says a buyer who is not '
+                              'satisfied with the outcome of any of them can cancel and take the deposit '
+                              'back [p5RGCN-UQL8 @ 00:00:46]. Daryl Williams of Win-Win Realtors adds a '
+                              'fourth, the preliminary title report contingency. He says a buyer who finds '
+                              'something they disapprove of during any of those windows is entitled to the '
+                              'refund [y9awo1XfRU4 @ 00:01:28]. The scripted agent pitch delivered by '
+                              'James Brinkman and his peers carries the same warning. Back out without a '
+                              'valid reason such as a contingency, and the seller may have the right to '
+                              'the deposit for breach of contract [NqrtD90l6pk @ 00:00:53]. Andrew Finney '
+                              'goes further and tells buyers to always leave the inspection contingency in '
+                              'place. That clause is what lets them walk and recover the deposit when a '
+                              'seller refuses to repair real defects [ND7J57hzroE @ 00:01:47]. JAG Real '
+                              "Estate's walkthrough of the California form shows how deep the exit menu "
+                              'runs. The loan, appraisal, property investigation, insurance, seller '
+                              'documents and title report all work as ways out that return the deposit '
+                              '[E9HjXJUTsZc @ 00:03:18].',
+                              'Third, every speaker treats the calendar as the real battlefield. Charles '
+                              'Nedder says contract dates are not suggestions. They are the lines that '
+                              'decide whether the deposit is protected or exposed, and missing a deadline '
+                              'or waiving a contingency without understanding the risk leaves a buyer '
+                              'exposed [xyiyeiBkCqQ @ 00:03:38]. Katie Anderson gives the concrete '
+                              'version. A buyer with a 15-day right to inspect and cancel who changes '
+                              'their mind on day 20 has acted outside the contract, and that deposit '
+                              'should be released to the seller [NMjK2yG_6ys @ 00:01:41]. The Idaho agent '
+                              'says that as each contingency drops away, the earnest money moves deeper '
+                              'into jeopardy. A contingency can clear simply because the date passed '
+                              '[5lKK7iczAKk @ 00:12:00]. The practitioners also agree that escrow holders '
+                              'will not pick a winner on their own. Robert Greenblatt in New Jersey says '
+                              'the escrow holder is not allowed to release the money unless both parties '
+                              'agree. A buyer who simply wants out after the inspection cannot just walk '
+                              'away with it [CCWuS-x3COc @ 00:01:39]. Anderson describes the endgame when '
+                              'nobody signs the release form. The funds sit in the title or attorney '
+                              'escrow account while the sides try to mediate, and in very rare cases the '
+                              'fight goes to court [NMjK2yG_6ys @ 00:02:41].'],
+               'table': {'caption': 'Where the practitioners agree on deposit custody, recovery and '
+                                    'forfeiture',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Custody always sits with a neutral third party',
+                                   'Deposit goes to title, a brokerage trust account, or an attorney '
+                                   'escrow, never straight to the seller',
+                                   'Confirm the holder named in the contract before wiring a single dollar',
+                                   'The Treasure Valley Home Show ([5lKK7iczAKk @ 00:08:43])'],
+                                  ['The deposit is a credit, not a fee',
+                                   'Applied as a ledger credit against down payment or closing costs on a '
+                                   'clean close',
+                                   'Model it as part of cash-to-close, not as a sunk cost of the offer',
+                                   'The Treasure Valley Home Show ([5lKK7iczAKk @ 00:03:35])'],
+                                  ['Three core contingencies protect the money',
+                                   'Inspection, loan approval and appraisal contingencies let the buyer '
+                                   'cancel and recover the deposit',
+                                   'Keep all three in the contract unless losing the deposit is acceptable',
+                                   'Kaminsky Real Estate Group ([p5RGCN-UQL8 @ 00:00:46])'],
+                                  ['Walking away without a contractual reason forfeits',
+                                   'Backing out with no valid contingency can hand the seller the deposit '
+                                   'for breach of contract',
+                                   'Tie every exit to a written contingency inside a live window',
+                                   'Kristie Dimarakis ([NwZ7Oa8GUXQ @ 00:01:19])'],
+                                  ['Missed deadlines turn protected money into exposed money',
+                                   'Missing a date or waiving a contingency without understanding the risk '
+                                   'leaves the deposit exposed',
+                                   'Treat each contract date as a hard line rather than a soft target',
+                                   'Charles Nedder | Greenwich CT Real Estate ([xyiyeiBkCqQ @ 00:03:38])'],
+                                  ["Escrow will not release on one side's request",
+                                   'The holder cannot release the funds unless both parties agree on where '
+                                   'they go',
+                                   'Expect a negotiation, not an automatic refund, once the windows close',
+                                   'Robert Greenblatt | South Jersey Real Estate ([CCWuS-x3COc @ '
+                                   '00:01:39])'],
+                                  ['Deposit size signals how committed the buyer is',
+                                   "A thin deposit on an otherwise light offer can cool the seller's "
+                                   'interest in moving forward',
+                                   'Size the deposit to how competitive the offer must be, not to the '
+                                   'minimum',
+                                   'The Treasure Valley Home Show ([5lKK7iczAKk @ 00:05:20])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools and Numbers: Sizing, Funding, Sourcing '
+                        'and Deadline Control',
+               'paragraphs': ['Sizing runs from a token dollar to a fifth of the price, depending on '
+                              'market and product. Robert Greenblatt says a New Jersey contract only needs '
+                              'consideration, so a deposit could technically be $1. In practice $1,000 '
+                              'often is not enough and some sellers want 10%. His test is behavioral: a '
+                              'buyer with $1,000 at risk may walk, while a buyer with $20,000 in escrow '
+                              'probably will not [CCWuS-x3COc @ 00:00:58]. Ed Kaminsky says the deposit is '
+                              'typically 3% of the purchase price. That figure is common because of the '
+                              'liquidated damages clause [p5RGCN-UQL8 @ 00:01:58]. The Idaho team uses '
+                              'roughly 1% as a reference point on resale homes, or $5,000 on a '
+                              'half-million-dollar house [5lKK7iczAKk @ 00:20:58]. Builder contracts on '
+                              'custom homes are another story. They can demand 10% on a $600,000 to $1 '
+                              'million build, and the agent has heard of 20%, because the builder has '
+                              'already spent cash on a personalized product [5lKK7iczAKk @ 00:34:22]. In '
+                              'Greenwich, Charles Nedder says local custom is 10% at contract signing. On '
+                              'a $2 million home that means wiring $200,000 to your attorney, often within '
+                              'five days of the accepted offer [xyiyeiBkCqQ @ 00:01:49]. At either end of '
+                              'that range, the cash has to be staged before the offer goes in, not scraped '
+                              'together after acceptance.',
+                              'Delivery runs on a tight clock. Katie Anderson says page one of the '
+                              'contract states where the deposit goes and how many days the buyer has. '
+                              'Typically that is three business days to get it into escrow [NMjK2yG_6ys @ '
+                              '00:00:15]. The Idaho agent says the state form defaults to three days, '
+                              'counted from the day after full ratification. An offer accepted on Monday '
+                              'means Tuesday, Wednesday and Thursday. The buyer must still fund on time '
+                              'even after spotting a problem, because funding is a contractual commitment '
+                              '[5lKK7iczAKk @ 00:09:36]. Payment rails are narrow. Kim Haber says title '
+                              "companies take a wire transfer and some still take a cashier's check, but "
+                              'most now require a wire. Cash, debit and credit cards are not accepted '
+                              "[1ysRoNF77u8 @ 00:01:31]. Sourcing is the lender's hidden gate. Chase "
+                              'Hodson says cash pulled from a wall safe or mattress and deposited the day '
+                              'before is non-sourceable, because the funds must show in the account for 60 '
+                              'days. Gifts must be documented as non-repayable [5lKK7iczAKk @ 00:19:20]. '
+                              'If the deposit cannot be sourced, the lender backs the credit out and the '
+                              'buyer has to replace it with sourceable funds [5lKK7iczAKk @ 00:23:46]. JAG '
+                              'Real Estate says most parties want the deposit wired precisely so it can be '
+                              'tracked [E9HjXJUTsZc @ 00:02:39].',
+                              'The operators who play offense work the contract terms themselves. In One '
+                              "Percent's wholesaling playbook, the investor funds the deposit to title "
+                              'only when no end buyer is lined up. Otherwise the end buyer sends it, and '
+                              'the investor gets the money back with the assignment fee. Sections four and '
+                              'five of his purchase agreement let him cancel by written notice, even a '
+                              'text or email, inside the inspection period, and the escrow agent then '
+                              'releases the deposit with no further written instructions [YO8RBYT_lQ0 @ '
+                              '00:01:31]. He also scripts a no-deposit pitch to sellers: a deposit delays '
+                              'the process and limits the cash offer [YO8RBYT_lQ0 @ 00:03:19]. The Idaho '
+                              'agent cuts the all-contingencies-cleared clause from the seven-day default '
+                              'to one day before close to protect financed buyers [5lKK7iczAKk @ '
+                              '00:17:01]. On a 100% VA loan where the buyer cannot source cash, he writes '
+                              'a $500 deposit rather than let $5,000 appear out of nowhere [5lKK7iczAKk @ '
+                              "00:22:02]. Larry Mastropieri's team runs around 40 active deals and reads "
+                              'every contractual deadline aloud on an 8 a.m. operations call. When a '
+                              'seller asks for a 14-day loan commitment, his team gets the lender on the '
+                              'phone and makes them confirm it two or three times [CSHBzTZo3Yc @ '
+                              '00:02:51]. JAG Real Estate says setting these timelines is how they have '
+                              'beaten multiple all-cash offers [E9HjXJUTsZc @ 00:10:51].'],
+               'table': {'caption': 'Deposit numbers, clocks and execution details stated by practitioners',
+                         'headers': ['Mechanic', 'Number Stated', 'Execution Detail', 'Expert Source'],
+                         'rows': [['Scripted 3% deposit model',
+                                   '$19,500 deposit on a $650,000 purchase price',
+                                   "Title and escrow take a wire or cashier's check; cash, debit and "
+                                   'credit cards are refused',
+                                   'James Brinkman ([NqrtD90l6pk @ 00:00:33])'],
+                                  ['Greenwich deposit held by attorneys',
+                                   '10% at signing, or $200,000 on a $2 million home',
+                                   "Wire to the buyer's attorney, who forwards it with the signed contract "
+                                   "to the seller's attorney's escrow",
+                                   'Charles Nedder | Greenwich CT Real Estate ([xyiyeiBkCqQ @ 00:01:49])'],
+                                  ['Funding deadline after acceptance',
+                                   'Three-day default, counted from the day after ratification',
+                                   'An offer accepted on Monday means the funds must reach title by '
+                                   'Thursday',
+                                   'The Treasure Valley Home Show ([5lKK7iczAKk @ 00:09:36])'],
+                                  ['Default contingency clocks',
+                                   '17 days for disclosures and inspection, 21 days for financing',
+                                   'Ask for a loan extension; if the listing side refuses, cancel to '
+                                   'recover the deposit cleanly',
+                                   'Win-Win Realtors TV ([y9awo1XfRU4 @ 00:02:18])'],
+                                  ['Wholesaler inspection window',
+                                   '14-day inspection period on a $100 example deposit',
+                                   'Cancel by text or email notice before day 14; escrow releases with no '
+                                   'further instructions',
+                                   'One Percent | Wholesaling Real Estate ([YO8RBYT_lQ0 @ 00:01:49])'],
+                                  ['Fund seasoning for lender sourcing',
+                                   '60 days in the account before going under contract',
+                                   'Cash deposited the day before is non-sourceable; gift funds need '
+                                   'documentation',
+                                   'The Treasure Valley Home Show ([5lKK7iczAKk @ 00:19:20])'],
+                                  ['Appraisal gap renegotiation',
+                                   '$400,000 list price against a $390,000 appraisal',
+                                   'Push the seller down to appraised value or split the gap, $5,000 each '
+                                   'side',
+                                   'Andrew Finney Team ([ND7J57hzroE @ 00:04:42])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Field moves that keep the deposit recoverable',
+                           'body': "Four practitioner moves that keep the deposit on the buyer's side of "
+                                   'the ledger.',
+                           'items': ['Leave cosmetic items like paint and carpet at the door. Use the '
+                                     'inspection contingency for water heater straps, HVAC, plumbing and '
+                                     'electrical issues, so a seller refusal on real defects becomes a '
+                                     'clean exit with the deposit [Andrew Finney Team — ND7J57hzroE @ '
+                                     '00:02:01]',
+                                     'On a 10-day inspection period where the seller will not give credits '
+                                     'or a price cut, make sure the contract is cancelled by day 9 or day '
+                                     '10 [Larry Mastropieri — CSHBzTZo3Yc @ 00:00:45]',
+                                     'Only wire on instructions that came directly from the title company. '
+                                     'When texts or emails arrive, call title yourself rather than waiting '
+                                     'for a call [The Treasure Valley Home Show — 5lKK7iczAKk @ 00:38:18]',
+                                     'On low-down-payment programs the deposit can come back at closing: '
+                                     'CCM zero-down buyers got all of it back, and an Idaho Housing buyer '
+                                     'got all but $500 [The Treasure Valley Home Show — 5lKK7iczAKk @ '
+                                     '00:04:17]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Stage and season the cash',
+                              'action': 'Move deposit funds into a bank account well before going under '
+                                        'contract.',
+                              'detail': 'Cash in a wall safe should go into the bank 60 days before going '
+                                        'under contract, so the lender can source it and the deposit '
+                                        'credit is not backed out [The Treasure Valley Home Show — '
+                                        '5lKK7iczAKk @ 00:24:01]'},
+                             {'step': 2,
+                              'title': 'Fund by wire inside the delivery window',
+                              'action': 'Wire the deposit to the named escrow holder within three business '
+                                        'days of acceptance.',
+                              'detail': 'The deposit is due within three business days of the accepted '
+                                        'offer, and most parties want it by wire transfer so it can be '
+                                        'tracked [JAG Real Estate Lifestyle — E9HjXJUTsZc @ 00:02:39]'},
+                             {'step': 3,
+                              'title': 'Run a daily deadline call',
+                              'action': 'Put every contingency date on a shared calendar and review it '
+                                        'every morning.',
+                              'detail': 'Read off every contractual deadline on the 8 a.m. operations call '
+                                        'and flag each one good, bad or needs action, so no date slips '
+                                        '[Larry Mastropieri — CSHBzTZo3Yc @ 00:01:41]'},
+                             {'step': 4,
+                              'title': 'Extend or cancel before the window closes',
+                              'action': 'If a contingency cannot be satisfied on time, ask for an '
+                                        'extension in writing, and cancel if it is refused.',
+                              'detail': 'If the loan is not approved within the 21-day window, ask for an '
+                                        'extension. If the listing side refuses, cancel to get the deposit '
+                                        'back without drama [Win-Win Realtors TV — y9awo1XfRU4 @ '
+                                        '00:03:31]'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The deposit number itself is where operators split hardest. Kristie '
+                              'Dimarakis runs a flat 3% script, pegging a $650,000 offer at a $19,500 good '
+                              'faith deposit as the default way to show the seller you are serious about '
+                              'buying their home [NwZ7Oa8GUXQ @ 00:00:38]. The Treasure Valley team in '
+                              'Idaho works off roughly 1% on resale and spec homes, about $5,000 on a '
+                              'half-million-dollar house, and will deliberately write just $500 on a 100% '
+                              "VA deal when the buyer's account does not show the cash, rather than "
+                              'letting a borrowed $5,000 suddenly appear and trigger a sourcing fight '
+                              'later [5lKK7iczAKk @ 00:22:02]. Charles Nedder sits at the opposite pole: '
+                              'Greenwich custom is 10% at contract signing, which means a $200,000 wire on '
+                              'a $2 million home, often within five days of an accepted offer, and the '
+                              'deal is not secure until that wire lands [xyiyeiBkCqQ @ 00:01:49]. Robert '
+                              'Greenblatt argues the dollar figure is legally trivial, since a New Jersey '
+                              'contract can technically be held with $1 of consideration, but '
+                              'psychologically decisive: a buyer with $1,000 at risk may walk the moment '
+                              'nerves hit, while a buyer with $20,000 sitting in escrow is far less likely '
+                              'to bail, so the amount itself sends the seller a commitment message '
+                              '[CCWuS-x3COc @ 00:00:58].',
+                              'Operators also split on who sits on the money and what it takes to pry it '
+                              'loose. Katie Anderson routes Pensacola deposits to the title company or '
+                              'closing attorney within three business days, and warns that if the parties '
+                              'will not sign a release form even when the contract is clear, the funds sit '
+                              'in that escrow account through mediation and, rarely, court [NMjK2yG_6ys @ '
+                              "00:02:41]. Charles Nedder runs it attorney-to-attorney: the buyer's "
+                              "attorney forwards the deposit with the signed contract to the seller's "
+                              'attorney, and once contingencies lapse both attorneys must agree before a '
+                              'cent moves [xyiyeiBkCqQ @ 00:03:07]. Robert Greenblatt states the escrow '
+                              'rule bluntly: the holder cannot release unless both parties agree, and a '
+                              'buyer who just wants out after inspection under the standard agreement of '
+                              'sale does not get an automatic refund, it becomes a negotiation '
+                              '[CCWuS-x3COc @ 00:01:39]. The One Percent wholesaling crew writes around '
+                              'that problem in their own paper: section five of their purchase and sale '
+                              'agreement says that if the buyer cancels during the inspection period, no '
+                              'further written instructions are required for the title company or title '
+                              'attorney to release the deposit back, no questions asked, which turns the '
+                              'refund into a paperwork formality [YO8RBYT_lQ0 @ 00:02:47].',
+                              'The sharpest strategic split is whether to stretch contingency windows or '
+                              "compress them. The Treasure Valley team notes Idaho's default clears all "
+                              'contingencies seven days before close, so on a 30-day escrow a loan problem '
+                              'discovered on day 22 leaves the buyer exposed; their fix is to collapse '
+                              'that window to one day in their offers, while admitting a listing agent may '
+                              'push back because sellers want to know sooner [5lKK7iczAKk @ 00:17:01]. '
+                              'Daryl Williams works the default 17-day review and 21-day loan periods, and '
+                              'if financing is not approved in time, asks for an extension and cancels '
+                              'outright if the listing side refuses [y9awo1XfRU4 @ 00:03:31]. JAG Real '
+                              'Estate Lifestyle plays the other direction: tighten every timeline using '
+                              'trusted vendors so the offer reads as good as cash, a method they say has '
+                              'beaten multiple all-cash offers, including on their own purchase '
+                              '[E9HjXJUTsZc @ 00:10:51]. Larry Mastropieri splits the difference when a '
+                              'seller demands a 14-day loan commitment: the team gets the lender on the '
+                              'phone, confirms the buyer can deliver documents by tomorrow, and makes an '
+                              'outside lender repeat two or three times that the deadline is a non-issue '
+                              'with no excuses [CSHBzTZo3Yc @ 00:02:51].'],
+               'table': {'caption': 'Earnest Money Fault Lines: Competing Practitioner Playbooks',
+                         'headers': ['Decision Point',
+                                     'Practitioner Position',
+                                     'Contrasting Position',
+                                     'Expert Source'],
+                         'rows': [['How big the deposit should be',
+                                   'Flat 3% script: $19,500 on a $650,000 offer and $30,000 on a '
+                                   '$1,000,000 offer',
+                                   'Idaho reference point near 1%, about $5,000 on a half-million home; '
+                                   'Greenwich custom is 10% at signing',
+                                   'Brandy Battres ([mgqTnWybcW8 @ 00:00:29]); The Treasure Valley Home '
+                                   'Show ([5lKK7iczAKk @ 00:20:39]); Charles Nedder | Greenwich CT Real '
+                                   'Estate ([xyiyeiBkCqQ @ 00:01:49])'],
+                                  ['What actually drives the percentage',
+                                   'Kaminski ties the common 3% figure directly to the liquidated damages '
+                                   'clause in the contract',
+                                   'Finney quotes anywhere from 1% up to 10%, rising on pricier homes '
+                                   'because sellers want more upfront',
+                                   'Kaminsky Real Estate Group ([p5RGCN-UQL8 @ 00:01:58]); Andrew Finney '
+                                   'Team ([ND7J57hzroE @ 00:00:38])'],
+                                  ['Who physically holds the money',
+                                   'Title company or closing attorney holds it in an escrow account under '
+                                   'the property address',
+                                   "Seller's attorney escrow account in Greenwich; brokerage trust account "
+                                   'or title company in Idaho',
+                                   'Katie Anderson | PENSACOLA AREA REALTOR ([NMjK2yG_6ys @ 00:00:31]); '
+                                   'Charles Nedder | Greenwich CT Real Estate ([xyiyeiBkCqQ @ 00:01:03]); '
+                                   'The Treasure Valley Home Show ([5lKK7iczAKk @ 00:08:43])'],
+                                  ['What triggers release on cancellation',
+                                   'Escrow holder cannot release without both parties agreeing, so walking '
+                                   'away becomes a negotiation',
+                                   'Wholesale contract section five releases the deposit on '
+                                   'inspection-period cancellation with no further written instructions',
+                                   'Robert Greenblatt | South Jersey Real Estate ([CCWuS-x3COc @ '
+                                   '00:01:39]); One Percent | Wholesaling Real Estate ([YO8RBYT_lQ0 @ '
+                                   '00:02:47])'],
+                                  ['How many exits the contract offers',
+                                   'Three main contingencies protect the deposit: inspection, loan '
+                                   'approval, and appraisal',
+                                   'Four majors adding the preliminary title report; the California form '
+                                   'carries about 17 back-out bullet points',
+                                   'Kaminsky Real Estate Group ([p5RGCN-UQL8 @ 00:00:46]); Win-Win '
+                                   'Realtors TV ([y9awo1XfRU4 @ 00:01:28]); JAG Real Estate Lifestyle '
+                                   '([E9HjXJUTsZc @ 00:09:06])'],
+                                  ['Stretch or compress contingency timelines',
+                                   'Collapse the all-contingencies-cleared window from the seven-day '
+                                   'default down to one day',
+                                   'Tighten every timeline through partner vendors so the offer looks just '
+                                   'as good as cash',
+                                   'The Treasure Valley Home Show ([5lKK7iczAKk @ 00:17:01]); JAG Real '
+                                   'Estate Lifestyle ([E9HjXJUTsZc @ 00:10:51])'],
+                                  ['Whether a wholesaler posts a deposit at all',
+                                   'Wholesaler fronts the deposit, such as $100, until an end buyer steps '
+                                   'in and refunds it with the assignment fee',
+                                   'Script to skip the deposit: tell the seller deposits delay the process '
+                                   'and limit the cash offer',
+                                   'One Percent | Wholesaling Real Estate ([YO8RBYT_lQ0 @ 00:00:51]); One '
+                                   'Percent | Wholesaling Real Estate ([YO8RBYT_lQ0 @ 00:03:19])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most common way practitioners watch deposits die is a blown clock '
+                              'rather than a bad house. Katie Anderson lays out the textbook loss: a buyer '
+                              'with a 15-day right to inspect and cancel who changes their mind on day 20, '
+                              'or simply gets spooked by the inspection report, has walked outside the '
+                              'contract and the money should go to the seller [NMjK2yG_6ys @ 00:01:20]. '
+                              'The One Percent crew gives wholesalers the same math on a 14-day inspection '
+                              'period: let day 15 or 16 pass without canceling or finding a buyer and you '
+                              'are technically liable to hand that deposit to the seller, and you are not '
+                              'getting it back [YO8RBYT_lQ0 @ 00:02:05]. Daryl Williams adds the '
+                              'post-removal trap, warning that once you and your agent remove '
+                              'contingencies, a change of heart about the property for whatever reason '
+                              'means you say bye bye to your deposit [y9awo1XfRU4 @ 00:04:16]. The '
+                              'Treasure Valley team stresses that contingencies do not only clear when you '
+                              'sign them off; they clear just by missing the date, which is why their team '
+                              'runs a hyperdetailed, calendar-driven transaction coordinator so no '
+                              'deadline slips and the earnest money stays out of jeopardy [5lKK7iczAKk @ '
+                              '00:36:30].',
+                              'The second killer is stripping protections in the heat of a bidding war. '
+                              'Andrew Finney has watched buyers in multiple-bid fights drop the loan '
+                              'contingency, then the inspection contingency, then everything, which leaves '
+                              'them on the hook for the house whether they can afford it or not; lose a '
+                              'job or get caught in a one-to-two-month transfer gap and the lender treats '
+                              'them as unqualified [ND7J57hzroE @ 00:03:05]. Finney also prices the '
+                              'appraisal waiver: on a $400,000 list price appraising at $390,000, waiving '
+                              'means agreeing upfront to pay $10,000 over appraised value instead of '
+                              'renegotiating or splitting the gap five and five [ND7J57hzroE @ 00:04:27]. '
+                              'Chase Hodson, the Treasure Valley lender, describes a colleague whose '
+                              'verbal verification of employment within 24 to 48 hours of signing revealed '
+                              'the borrower had lost their job, before the employer had even told the '
+                              'borrower, and the lender had to break the news at the signing table '
+                              '[5lKK7iczAKk @ 00:14:36]. Ed Kaminski shows what an intact appraisal '
+                              'contingency buys: on a $1 million purchase appraising at $900,000, the '
+                              'buyer can cancel and recover the deposit, renegotiate the price, or bring '
+                              'more down payment and still close [p5RGCN-UQL8 @ 00:01:06].',
+                              'The last cluster of losses happens outside the contingency calendar '
+                              'entirely. Chase Hodson warns that cash pulled from a wall safe or mattress '
+                              'and deposited the day before the earnest money wire is still nonsourceable, '
+                              'because lenders on conventional, FHA, USDA and Fannie or Freddie backed '
+                              'loans want 60 days of history; if the deposit cannot be sourced, that '
+                              'credit gets backed out and must be replaced with funds under the same '
+                              'scrutiny, so the fix is to bank the cash 60 days before going under '
+                              'contract [5lKK7iczAKk @ 00:24:01]. The Treasure Valley host flags wire '
+                              'fraud: scammers send emails that look identical to title, so wire only on '
+                              'instructions straight from the title company, call them yourself, and know '
+                              'that once five grand is intercepted it can kill the deal [5lKK7iczAKk @ '
+                              '00:38:50]. Charles Nedder notes that a disputed release after contingencies '
+                              'expire keeps the deposit frozen in escrow until both attorneys agree or a '
+                              'court decides, a process that can take months [xyiyeiBkCqQ @ 00:03:22]. JAG '
+                              'Real Estate Lifestyle hands every buyer a wire fraud advisory alongside the '
+                              'investigation advisory for exactly that reason, with an instruction to call '
+                              'the team if anything about transferring money is unclear [E9HjXJUTsZc @ '
+                              '00:07:19].'],
+               'table': {'caption': 'Deposit Traps and the Money They Cost',
+                         'headers': ['Trap', 'What Went Wrong', 'Economics And Fallout', 'Expert Source'],
+                         'rows': [["Signing a builder's own contract",
+                                   "Builder's purchase and sale agreement makes the deposit hard the "
+                                   'moment it is fully executed',
+                                   'Bow out and the money stays with the builder; custom builds see 10% '
+                                   'and even 20% deposits',
+                                   'The Treasure Valley Home Show ([5lKK7iczAKk @ 00:34:02])'],
+                                  ['Releasing earnest money to win an extension',
+                                   'Seller refuses to extend escrow unless the earnest money is released '
+                                   'directly to them',
+                                   'Still credited toward closing costs, but if the buyer bounces for any '
+                                   'reason the money is gone',
+                                   'The Treasure Valley Home Show ([5lKK7iczAKk @ 00:33:09])'],
+                                  ['Refusing to fund after spotting a problem',
+                                   'Buyer identifies something wrong early and wants to skip putting money '
+                                   'in the trust account',
+                                   'Not an option: the buyer contractually committed, so the deposit goes '
+                                   'in and runs the process',
+                                   'The Treasure Valley Home Show ([5lKK7iczAKk @ 00:11:30])'],
+                                  ['Using the wrong payment rail',
+                                   'Buyer tries to pay the good faith deposit with cash, debit, or a '
+                                   'credit card',
+                                   "Not accepted; title and escrow take wire or cashier's check, and most "
+                                   'now require a wire',
+                                   'Beyond the Address ([1ysRoNF77u8 @ 00:01:31]); James Brinkman '
+                                   '([NqrtD90l6pk @ 00:01:23])'],
+                                  ['Expecting every dollar back on a clean cancel',
+                                   'Buyer disapproves something inside the contingency period and backs '
+                                   'out correctly',
+                                   'Deposit comes back less any fees, which are usually escrow '
+                                   'cancellation fees',
+                                   'Win-Win Realtors TV ([y9awo1XfRU4 @ 00:01:05])'],
+                                  ['Shopping for the house before the lender',
+                                   'Buyer falls in love, goes under contract, and only then asks to get '
+                                   'qualified',
+                                   'Lender scrambles on sourcing with days ticking; best case a scramble, '
+                                   'worst case termination',
+                                   'The Treasure Valley Home Show ([5lKK7iczAKk @ 00:25:04])'],
+                                  ['Winning a government e-tender bid',
+                                   'Three bidders each park a ten lakh rupee EMD in a bank escrow while '
+                                   'bids are evaluated',
+                                   "Losers get full EMD refunds; the winner's EMD settles to the "
+                                   'government and participation fees are kept',
+                                   'Cash Management Simplified ([r8o3FPflSXs @ 00:01:19])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Any Deposit Goes At Risk',
+                           'body': 'Every loss these operators reported traces back to a missed date, a '
+                                   'stripped contingency, unsourced cash, or a hijacked wire. Clear all '
+                                   'four before money moves.',
+                           'items': ['Calendar every contractual deadline at ratification and cancel in '
+                                     'writing by day nine or ten of a 10-day inspection period; '
+                                     "Mastropieri's team reads all deadlines aloud at an 8 a.m. operations "
+                                     'call across roughly 40 live deals [Larry Mastropieri — CSHBzTZo3Yc @ '
+                                     '00:01:27].',
+                                     'Never drop the loan contingency to win a multiple-bid fight, because '
+                                     'without it the buyer is on the hook for the house whether they can '
+                                     'afford it or not [Andrew Finney Team — ND7J57hzroE @ 00:03:18].',
+                                     'Move any cash into a bank account 60 days before going under '
+                                     'contract so the earnest money is sourceable and the closing credit '
+                                     'is not backed out [The Treasure Valley Home Show — 5lKK7iczAKk @ '
+                                     '00:19:20].',
+                                     'Wire only on instructions that came directly from the title company '
+                                     'and confirm them by calling title yourself, since intercepted funds '
+                                     'are gone [The Treasure Valley Home Show — 5lKK7iczAKk @ '
+                                     '00:38:18].']}}],
+ 'pull_quote': "'The contract is what protects your deposit. Not a handshake, not a verbal agreement, not "
+               "an assumption that things will work out.' — Charles Nedder | Greenwich CT Real Estate "
+               '(xyiyeiBkCqQ @ 00:03:38).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ["Get the earnest money into the title company or closing attorney's escrow account "
+                      'within the contract window, typically three business days from acceptance [Katie '
+                      'Anderson | PENSACOLA AREA REALTOR — NMjK2yG_6ys @ 00:00:15].',
+                      'Confirm payment options with your agent and escrow officer and send a wire transfer '
+                      "or cashier's check, never cash, debit, or credit [Kristie Dimarakis — NwZ7Oa8GUXQ @ "
+                      '00:02:01].',
+                      'Write financing, inspection, and appraisal contingencies into the purchase '
+                      'agreement as the legal escape clauses that return the deposit [Yanowitz Law Firm, '
+                      'PLLC │ Will & Trust Lawyers — D8jafo21-34 @ 00:01:15].',
+                      'On the inspection response, leave cosmetic items like paint and carpet at the door '
+                      'and push the seller on HVAC, plumbing, electrical, and water heater straps [Andrew '
+                      'Finney Team — ND7J57hzroE @ 00:02:01].',
+                      'If the loan is not approved inside the 21-day period, request an extension, and '
+                      'cancel the agreement if the listing side refuses [Win-Win Realtors TV — y9awo1XfRU4 '
+                      '@ 00:03:31].',
+                      'Have your attorney review every deadline and every contingency before you sign, '
+                      'because those dates decide whether the deposit is protected or exposed [Charles '
+                      'Nedder | Greenwich CT Real Estate — xyiyeiBkCqQ @ 00:03:22].'],
+ 'statutory_citations': [{'title': 'Charles Nedder | Greenwich CT Real Estate — Earnest Money in '
+                                   'Greenwich, CT with Charles Nedder [00:03:38]',
+                          'url': 'https://www.youtube.com/watch?v=xyiyeiBkCqQ&t=218s',
+                          'relevance': 'Primary practitioner testimony on attorney-held deposits, mutual '
+                                       'release requirements, and contract terms as the only deposit '
+                                       'protection.'},
+                         {'title': 'Win-Win Realtors TV — HOW NOT TO LOOSE YOUR EARNEST MONEY DEPOSIT? '
+                                   'UNDERSTAND CONTENGENCIES. [00:02:18]',
+                          'url': 'https://www.youtube.com/watch?v=y9awo1XfRU4&t=138s',
+                          'relevance': 'Primary practitioner testimony on the 17-day and 21-day '
+                                       'contingency defaults and removing or canceling on time.'},
+                         {'title': 'The Treasure Valley Home Show — How to Protect Your Earnest Money | '
+                                   'Home Buying Ep. 6 [00:36:30]',
+                          'url': 'https://www.youtube.com/watch?v=5lKK7iczAKk&t=2190s',
+                          'relevance': 'Primary practitioner testimony on contingencies clearing by missed '
+                                       'dates, fund sourcing, builder hard money, and wire fraud.'},
+                         {'title': 'One Percent | Wholesaling Real Estate — Earnest Money Deposit & '
+                                   'Inspection Period EXPLAINED | Real Estate Wholesaling [00:02:34]',
+                          'url': 'https://www.youtube.com/watch?v=YO8RBYT_lQ0&t=154s',
+                          'relevance': 'Primary practitioner testimony on wholesaler inspection-period '
+                                       'cancellation and automatic deposit release language.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'NMjK2yG_6ys',
+                       'title': 'Earnest Money Deposit (EMD): Where It Goes and What Happens If You Cancel',
+                       'channel': 'Katie Anderson | PENSACOLA AREA REALTOR',
+                       'author': 'Katie Anderson | PENSACOLA AREA REALTOR',
+                       'text': "It's going to go to the seller if a buyer cancels a contract out of "
+                               'compliance with that contract.',
+                       'tip': "It's going to go to the seller if a buyer cancels a contract out of "
+                              'compliance with that contract.',
+                       'timestamp': 80,
+                       'timestamp_seconds': 80,
+                       'timestamp_label': '[00:01:20]',
+                       'url': 'https://www.youtube.com/watch?v=NMjK2yG_6ys&t=80s',
+                       'markdown': '[00:01:20](https://www.youtube.com/watch?v=NMjK2yG_6ys&t=80s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xyiyeiBkCqQ',
+                       'title': 'Earnest Money in Greenwich, CT with Charles Nedder',
+                       'channel': 'Charles Nedder | Greenwich CT Real Estate',
+                       'author': 'Charles Nedder | Greenwich CT Real Estate',
+                       'text': 'The contract is what protects your deposit. Not a handshake, not a verbal '
+                               'agreement, not an assumption that things will work out.',
+                       'tip': 'The contract is what protects your deposit. Not a handshake, not a verbal '
+                              'agreement, not an assumption that things will work out.',
+                       'timestamp': 218,
+                       'timestamp_seconds': 218,
+                       'timestamp_label': '[00:03:38]',
+                       'url': 'https://www.youtube.com/watch?v=xyiyeiBkCqQ&t=218s',
+                       'markdown': '[00:03:38](https://www.youtube.com/watch?v=xyiyeiBkCqQ&t=218s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xyiyeiBkCqQ',
+                       'title': 'Earnest Money in Greenwich, CT with Charles Nedder',
+                       'channel': 'Charles Nedder | Greenwich CT Real Estate',
+                       'author': 'Charles Nedder | Greenwich CT Real Estate',
+                       'text': "In Connecticut, both the buyer's attorney and the seller's attorney must "
+                               'agree to release the funds.',
+                       'tip': "In Connecticut, both the buyer's attorney and the seller's attorney must "
+                              'agree to release the funds.',
+                       'timestamp': 187,
+                       'timestamp_seconds': 187,
+                       'timestamp_label': '[00:03:07]',
+                       'url': 'https://www.youtube.com/watch?v=xyiyeiBkCqQ&t=187s',
+                       'markdown': '[00:03:07](https://www.youtube.com/watch?v=xyiyeiBkCqQ&t=187s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NwZ7Oa8GUXQ',
+                       'title': 'How to Protect Your Earnest Money Deposit When Buying a Home 🛑💸',
+                       'channel': 'Kristie Dimarakis',
+                       'author': 'Kristie Dimarakis',
+                       'text': 'Most title and escrow companies will take your good faith deposit in the '
+                               "form of a wire transfer or a cashier's check. Cash, debit, and credit "
+                               'cards are not accepted.',
+                       'tip': 'Most title and escrow companies will take your good faith deposit in the '
+                              "form of a wire transfer or a cashier's check. Cash, debit, and credit cards "
+                              'are not accepted.',
+                       'timestamp': 121,
+                       'timestamp_seconds': 121,
+                       'timestamp_label': '[00:02:01]',
+                       'url': 'https://www.youtube.com/watch?v=NwZ7Oa8GUXQ&t=121s',
+                       'markdown': '[00:02:01](https://www.youtube.com/watch?v=NwZ7Oa8GUXQ&t=121s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'D8jafo21-34',
+                       'title': 'What Is Earnest Money in Real Estate  And How to Avoid Losing It',
+                       'channel': 'Yanowitz Law Firm, PLLC │ Will & Trust Lawyers',
+                       'author': 'Yanowitz Law Firm, PLLC │ Will & Trust Lawyers',
+                       'text': 'If you miss a deadline, ignore a contract term, or back out without a '
+                               'protected reason, you could lose all of your earnest money, and the seller '
+                               'may be entitled to keep it.',
+                       'tip': 'If you miss a deadline, ignore a contract term, or back out without a '
+                              'protected reason, you could lose all of your earnest money, and the seller '
+                              'may be entitled to keep it.',
+                       'timestamp': 92,
+                       'timestamp_seconds': 92,
+                       'timestamp_label': '[00:01:32]',
+                       'url': 'https://www.youtube.com/watch?v=D8jafo21-34&t=92s',
+                       'markdown': '[00:01:32](https://www.youtube.com/watch?v=D8jafo21-34&t=92s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'p5RGCN-UQL8',
+                       'title': 'How To Protect Your Earnest Money Deposit When Buying a Home | Homebuyer '
+                                'Questions',
+                       'channel': 'Kaminsky Real Estate Group',
+                       'author': 'Kaminsky Real Estate Group',
+                       'text': 'The earnest money deposit is typically three percent of the purchase '
+                               'price, and the reason it is most commonly three percent is because of the '
+                               'liquidated damages clause.',
+                       'tip': 'The earnest money deposit is typically three percent of the purchase price, '
+                              'and the reason it is most commonly three percent is because of the '
+                              'liquidated damages clause.',
+                       'timestamp': 118,
+                       'timestamp_seconds': 118,
+                       'timestamp_label': '[00:01:58]',
+                       'url': 'https://www.youtube.com/watch?v=p5RGCN-UQL8&t=118s',
+                       'markdown': '[00:01:58](https://www.youtube.com/watch?v=p5RGCN-UQL8&t=118s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5lKK7iczAKk',
+                       'title': 'How to Protect Your Earnest Money | Home Buying Ep. 6',
+                       'channel': 'The Treasure Valley Home Show',
+                       'author': 'The Treasure Valley Home Show',
+                       'text': "Once they're cleared, they're cleared and they can clear just by missing "
+                               'the date.',
+                       'tip': "Once they're cleared, they're cleared and they can clear just by missing "
+                              'the date.',
+                       'timestamp': 2190,
+                       'timestamp_seconds': 2190,
+                       'timestamp_label': '[00:36:30]',
+                       'url': 'https://www.youtube.com/watch?v=5lKK7iczAKk&t=2190s',
+                       'markdown': '[00:36:30](https://www.youtube.com/watch?v=5lKK7iczAKk&t=2190s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5lKK7iczAKk',
+                       'title': 'How to Protect Your Earnest Money | Home Buying Ep. 6',
+                       'channel': 'The Treasure Valley Home Show',
+                       'author': 'The Treasure Valley Home Show',
+                       'text': "Don't wire anything that didn't come directly from the title company. They "
+                               "will tell you what their wire instructions are. Don't accept them from "
+                               'anybody else.',
+                       'tip': "Don't wire anything that didn't come directly from the title company. They "
+                              "will tell you what their wire instructions are. Don't accept them from "
+                              'anybody else.',
+                       'timestamp': 2278,
+                       'timestamp_seconds': 2278,
+                       'timestamp_label': '[00:37:58]',
+                       'url': 'https://www.youtube.com/watch?v=5lKK7iczAKk&t=2278s',
+                       'markdown': '[00:37:58](https://www.youtube.com/watch?v=5lKK7iczAKk&t=2278s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5lKK7iczAKk',
+                       'title': 'How to Protect Your Earnest Money | Home Buying Ep. 6',
+                       'channel': 'The Treasure Valley Home Show',
+                       'author': 'The Treasure Valley Home Show',
+                       'text': 'If you deposit it out of the wall into your bank account the day before '
+                               "that you do your earnest money, that's still considered nonsourceable.",
+                       'tip': 'If you deposit it out of the wall into your bank account the day before '
+                              "that you do your earnest money, that's still considered nonsourceable.",
+                       'timestamp': 1144,
+                       'timestamp_seconds': 1144,
+                       'timestamp_label': '[00:19:04]',
+                       'url': 'https://www.youtube.com/watch?v=5lKK7iczAKk&t=1144s',
+                       'markdown': '[00:19:04](https://www.youtube.com/watch?v=5lKK7iczAKk&t=1144s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1ysRoNF77u8',
+                       'title': 'What Is an Earnest Money Deposit? (And How to Protect It)',
+                       'channel': 'Beyond the Address',
+                       'author': 'Beyond the Address',
+                       'text': 'Most title companies will take your good faith deposit in the form of a '
+                               "wire transfer. Some still do cashier's check, but most will require a wire "
+                               'transfer these days.',
+                       'tip': 'Most title companies will take your good faith deposit in the form of a '
+                              "wire transfer. Some still do cashier's check, but most will require a wire "
+                              'transfer these days.',
+                       'timestamp': 91,
+                       'timestamp_seconds': 91,
+                       'timestamp_label': '[00:01:31]',
+                       'url': 'https://www.youtube.com/watch?v=1ysRoNF77u8&t=91s',
+                       'markdown': '[00:01:31](https://www.youtube.com/watch?v=1ysRoNF77u8&t=91s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ND7J57hzroE',
+                       'title': 'How To Protect Your Earnest Money Deposit!',
+                       'channel': 'Andrew Finney Team',
+                       'author': 'Andrew Finney Team',
+                       'text': "If you drop that loan contingency you're gonna be on the hook for that "
+                               'house whether you can afford it or not.',
+                       'tip': "If you drop that loan contingency you're gonna be on the hook for that "
+                              'house whether you can afford it or not.',
+                       'timestamp': 185,
+                       'timestamp_seconds': 185,
+                       'timestamp_label': '[00:03:05]',
+                       'url': 'https://www.youtube.com/watch?v=ND7J57hzroE&t=185s',
+                       'markdown': '[00:03:05](https://www.youtube.com/watch?v=ND7J57hzroE&t=185s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'y9awo1XfRU4',
+                       'title': 'HOW NOT TO LOOSE YOUR EARNEST MONEY DEPOSIT? UNDERSTAND CONTENGENCIES.',
+                       'channel': 'Win-Win Realtors TV',
+                       'author': 'Win-Win Realtors TV',
+                       'text': 'If you and your agent remove the contingencies and you have a change of '
+                               'heart about buying the property for whatever reason, then you are likely '
+                               'to lose your deposit.',
+                       'tip': 'If you and your agent remove the contingencies and you have a change of '
+                              'heart about buying the property for whatever reason, then you are likely to '
+                              'lose your deposit.',
+                       'timestamp': 256,
+                       'timestamp_seconds': 256,
+                       'timestamp_label': '[00:04:16]',
+                       'url': 'https://www.youtube.com/watch?v=y9awo1XfRU4&t=256s',
+                       'markdown': '[00:04:16](https://www.youtube.com/watch?v=y9awo1XfRU4&t=256s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CSHBzTZo3Yc',
+                       'title': 'How can buyers protect their earnest money deposit in Florida?',
+                       'channel': 'Larry Mastropieri',
+                       'author': 'Larry Mastropieri',
+                       'text': "In the operations call, we read off all the contractual deadlines. They're "
+                               'all structured in the calendar.',
+                       'tip': "In the operations call, we read off all the contractual deadlines. They're "
+                              'all structured in the calendar.',
+                       'timestamp': 101,
+                       'timestamp_seconds': 101,
+                       'timestamp_label': '[00:01:41]',
+                       'url': 'https://www.youtube.com/watch?v=CSHBzTZo3Yc&t=101s',
+                       'markdown': '[00:01:41](https://www.youtube.com/watch?v=CSHBzTZo3Yc&t=101s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YO8RBYT_lQ0',
+                       'title': 'Earnest Money Deposit & Inspection Period EXPLAINED | Real Estate '
+                                'Wholesaling',
+                       'channel': 'One Percent | Wholesaling Real Estate',
+                       'author': 'One Percent | Wholesaling Real Estate',
+                       'text': 'If your inspection period was 14 days and you let 15, 16 days go by, well '
+                               "now you're technically liable to give that deposit to the seller.",
+                       'tip': 'If your inspection period was 14 days and you let 15, 16 days go by, well '
+                              "now you're technically liable to give that deposit to the seller.",
+                       'timestamp': 125,
+                       'timestamp_seconds': 125,
+                       'timestamp_label': '[00:02:05]',
+                       'url': 'https://www.youtube.com/watch?v=YO8RBYT_lQ0&t=125s',
+                       'markdown': '[00:02:05](https://www.youtube.com/watch?v=YO8RBYT_lQ0&t=125s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NqrtD90l6pk',
+                       'title': "Don't Lose Your Deposit! Protect Your Earnest Money When Buying a Home",
+                       'channel': 'James Brinkman',
+                       'author': 'James Brinkman',
+                       'text': 'If you back out without a valid reason, like a contingency in your '
+                               'contract, you could lose that money.',
+                       'tip': 'If you back out without a valid reason, like a contingency in your '
+                              'contract, you could lose that money.',
+                       'timestamp': 53,
+                       'timestamp_seconds': 53,
+                       'timestamp_label': '[00:00:53]',
+                       'url': 'https://www.youtube.com/watch?v=NqrtD90l6pk&t=53s',
+                       'markdown': '[00:00:53](https://www.youtube.com/watch?v=NqrtD90l6pk&t=53s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mgqTnWybcW8',
+                       'title': 'BUYERS: Don’t Lose Your Earnest Money Deposit!',
+                       'channel': 'Brandy Battres',
+                       'author': 'Brandy Battres',
+                       'text': "If you're making an offer on a home for a $1,000,000 purchase price, your "
+                               'good faith deposit would be $30,000 or 3% of the offered price.',
+                       'tip': "If you're making an offer on a home for a $1,000,000 purchase price, your "
+                              'good faith deposit would be $30,000 or 3% of the offered price.',
+                       'timestamp': 29,
+                       'timestamp_seconds': 29,
+                       'timestamp_label': '[00:00:29]',
+                       'url': 'https://www.youtube.com/watch?v=mgqTnWybcW8&t=29s',
+                       'markdown': '[00:00:29](https://www.youtube.com/watch?v=mgqTnWybcW8&t=29s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CCWuS-x3COc',
+                       'title': 'What Is ESCROW DEPOSIT? (Earnest Money) | Real Estate In 3 Minutes',
+                       'channel': 'Robert Greenblatt | South Jersey Real Estate',
+                       'author': 'Robert Greenblatt | South Jersey Real Estate',
+                       'text': 'The rules of escrow state that the escrow holder is not allowed to release '
+                               'that money unless both parties agree.',
+                       'tip': 'The rules of escrow state that the escrow holder is not allowed to release '
+                              'that money unless both parties agree.',
+                       'timestamp': 99,
+                       'timestamp_seconds': 99,
+                       'timestamp_label': '[00:01:39]',
+                       'url': 'https://www.youtube.com/watch?v=CCWuS-x3COc&t=99s',
+                       'markdown': '[00:01:39](https://www.youtube.com/watch?v=CCWuS-x3COc&t=99s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'E9HjXJUTsZc',
+                       'title': 'Earnest Money Explained: How Buyers Avoid Losing Their Deposit',
+                       'channel': 'JAG Real Estate Lifestyle',
+                       'author': 'JAG Real Estate Lifestyle',
+                       'text': 'You do not have to have the most money in a real estate transaction when '
+                               "you're competing against other people to win a home. You have to have the "
+                               'best agent.',
+                       'tip': 'You do not have to have the most money in a real estate transaction when '
+                              "you're competing against other people to win a home. You have to have the "
+                              'best agent.',
+                       'timestamp': 634,
+                       'timestamp_seconds': 634,
+                       'timestamp_label': '[00:10:34]',
+                       'url': 'https://www.youtube.com/watch?v=E9HjXJUTsZc&t=634s',
+                       'markdown': '[00:10:34](https://www.youtube.com/watch?v=E9HjXJUTsZc&t=634s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'r8o3FPflSXs',
+                       'title': 'E-Tender Escrow Explained | EMD Refunds in Govt Tenders (India)',
+                       'channel': 'Cash Management Simplified',
+                       'author': 'Cash Management Simplified',
+                       'text': 'Bidders A and C get their full EMD refunded, ten lakh rupees each. Bidder '
+                               "B's EMD is settled to the government body's account.",
+                       'tip': 'Bidders A and C get their full EMD refunded, ten lakh rupees each. Bidder '
+                              "B's EMD is settled to the government body's account.",
+                       'timestamp': 79,
+                       'timestamp_seconds': 79,
+                       'timestamp_label': '[00:01:19]',
+                       'url': 'https://www.youtube.com/watch?v=r8o3FPflSXs&t=79s',
+                       'markdown': '[00:01:19](https://www.youtube.com/watch?v=r8o3FPflSXs&t=79s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'}]}

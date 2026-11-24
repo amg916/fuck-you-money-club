@@ -1,697 +1,835 @@
 from __future__ import annotations
 
-CHAPTER_2 = {
-    "id": "Q2",
-    "chapter_id": "Q2",
-    "chapter_number": 2,
-    "question_number": 2,
-    "slug": "who-pays-business-acquisition-payment-rails",
-    "question_prompt": "Who writes the check in business acquisition, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
-    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "ETA Buyer Authority, QoE Evidence, SBA and Seller-Note Funding, Escrow Waterfalls, and Customer Cash Collection",
-    "layout_template": "executive_summary",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Business Acquisition is Candidate #13, Rank #17 of 29, with a "
-        "Money-to-Manpower Score of 86/100. The buyer funds ownership; customers "
-        "fund the operating business; neither borrowed principal nor escrow releases "
-        "create operating revenue. This chapter maps seven operator plays across "
-        "application acquisitions, recurring services, maintenance, distribution, "
-        "route businesses, milestone contracts, and receivables recovery. It identifies "
-        "who controls each budget, what makes payment urgent, and which settlement "
-        "conditions protect cash without obstructing delivery. Canonical annual owner "
-        "profits are $60,000 Conservative, $243,750 Base, and $540,000 Scaled, after "
-        "interest and before principal repayments. Use verified authority, customer "
-        "retention evidence, controlled disbursements, and a thirteen-week cash "
-        "forecast to prevent an attractive purchase price from becoming an "
-        "unfunded operating obligation."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$750,000",
-            "context": "Annual acquired business sales; debt proceeds excluded",
-            "note": "8% margin; $60,000 annual owner net profit after interest, before principal repayments; 2 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,875,000",
-            "context": "Annual acquired business sales; debt proceeds excluded",
-            "note": "13.0% margin; $243,750 annual owner net profit after interest, before principal repayments; 2 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$3,000,000",
-            "context": "Annual acquired business sales; debt proceeds excluded",
-            "note": "18% margin; $540,000 annual owner net profit after interest, before principal repayments; 3 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Separate the ownership check from the customer check",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start every acquisition with two payment maps, not one purchase "
-                    "price. The ownership map identifies the buyer entity, equity "
-                    "contributors, acquisition lender, seller, escrow agent, and creditors "
-                    "receiving payoff wires. The operating map identifies customers, "
-                    "budget owners, purchasing administrators, invoice approvers, and "
-                    "the accounts-payable team that actually releases cash. A seller "
-                    "may accept a lower headline price for retirement certainty, a "
-                    "short transition, or release from personal guarantees; none of "
-                    "those motives makes customers more willing to renew. Customers "
-                    "pay because the acquired company keeps equipment running, fulfills "
-                    "orders, preserves productive workflows, or completes a measurable "
-                    "deliverable. Interview both the economic buyer and the payment "
-                    "administrator before assigning value to a customer relationship. "
-                    "Ask who can authorize an annual commitment, which purchase-order "
-                    "fields must match, when the next budget cycle begins, and whether "
-                    "a change of control requires notice or permission. Record actual "
-                    "contract language rather than assuming that an asset sale transfers "
-                    "every agreement. A procurement manager's enthusiasm cannot substitute "
-                    "for an authorized signature, a valid assignment, or an invoice "
-                    "that the customer's accounting system will accept."
-                ),
-                (
-                    "Budget authority is especially important when apparent urgency "
-                    "comes from a statutory obligation. Payroll funding, tax deposits, "
-                    "license renewal, and lien releases have deadlines, but those "
-                    "deadlines do not automatically give your company a collectible "
-                    "claim against somebody else. Under 26 U.S.C. 7501, withheld taxes "
-                    "are held in trust; 26 U.S.C. 6672 can impose personal liability "
-                    "on responsible persons for willful failures involving covered "
-                    "trust-fund taxes. Inspect payroll tax records, deposit evidence, "
-                    "and correspondence rather than accepting a seller's statement "
-                    "that the payroll provider handles everything. For an applicable "
-                    "asset acquisition, reconcile purchase-price allocation with the "
-                    "reporting framework in 26 U.S.C. 1060 and Form 8594. Investigate "
-                    "state successor-tax procedures and occupational licenses for the "
-                    "actual operating jurisdictions. These obligations influence the "
-                    "closing reserve, transaction structure, and buyer's willingness "
-                    "to fund; they are not additional sales. Have the purchase agreement "
-                    "identify who supplies each clearance, who pays each existing "
-                    "liability, and what happens when evidence arrives late. Protect "
-                    "operating liquidity by separating ordinary working capital from "
-                    "amounts reserved for identified preclosing exposures."
-                ),
-                (
-                    "Translate the scorecard into collection targets before negotiating "
-                    "leverage. Conservative sales of $750,000 at 8% produce $60,000 "
-                    "annual owner net profit; Base sales of $1,875,000 at 13.0% "
-                    "produce $243,750; Scaled sales of $3,000,000 at 18% produce "
-                    "$540,000. These margins are after interest and before principal "
-                    "repayments. The first two cases use seven full-time employees "
-                    "and three contractors; Scaled uses eight and four. Monthly "
-                    "sales equivalents are $62,500, $156,250, and $250,000, while "
-                    "monthly profit equivalents are $5,000, $20,312.50, and $45,000. "
-                    "Those are arithmetic averages, not a seasonal cash forecast. "
-                    "For example, an illustrative $100,000 annual principal schedule "
-                    "would leave $143,750 from Base profit before other cash "
-                    "adjustments, including working-capital investment and capital "
-                    "expenditure. It does not revise the canonical profit figure. "
-                    "Reconcile QuickBooks Online or Xero sales to bank deposits, "
-                    "processor reports, receivables aging, and deferred-revenue "
-                    "schedules. Exclude acquisition borrowing, investor contributions, "
-                    "seller-note principal, customer pass-through funds, and refundable "
-                    "deposits from earned sales. Use the stated $30,000–$120,000 "
-                    "startup range and $6,000–$25,000 monthly operating-expense "
-                    "range as planning parameters, not substitutes for a target-specific "
-                    "cost bridge that actually supports these margins."
-                ),
-            ],
-            "table": {
-                "caption": "Payment Authority and Acute Economic Motivation Across the Acquisition",
-                "headers": [
-                    "Payer and actual economic role",
-                    "Reason this party releases money",
-                    "Evidence establishing authority and payment readiness",
-                    "Protection when authority or timing fails",
-                ],
-                "rows": [
-                    [
-                        "Buyer acquisition entity acting through its authorized manager",
-                        "Obtain transferable earnings, assets, contracts, and operating control",
-                        "Executed resolutions identify signers and approved equity commitments",
-                        "Delay funding until signatures and contribution receipts reconcile",
-                    ],
-                    [
-                        "Acquisition lender funding an approved transaction credit facility",
-                        "Earn interest while maintaining collateral and repayment coverage",
-                        "Written funding conditions match final documents and sources",
-                        "Remove assumed proceeds when required funding conditions remain unmet",
-                    ],
-                    [
-                        "Seller financing part of the agreed purchase consideration",
-                        "Bridge valuation differences while preserving scheduled future receipts",
-                        "Executed note defines payment timing, subordination, and remedies",
-                        "Model permitted payments under senior lender restrictions first",
-                    ],
-                    [
-                        "Operating customer with a documented departmental purchasing budget",
-                        "Avoid downtime or obtain an economically measurable deliverable",
-                        "Purchase order, signatory authority, and acceptance criteria align",
-                        "Use deposits or smaller deliveries when customer credit weakens",
-                    ],
-                    [
-                        "Subscription account holder buying additional productive application workflows",
-                        "Save staff time through clearly differentiated paid functionality",
-                        "Recorded order terms establish price and recurring billing authorization",
-                        "Preserve legacy free features and stop unauthorized renewals",
-                    ],
-                    [
-                        "Escrow agent administering money already provided by transaction parties",
-                        "Perform agreed release duties rather than purchase operating services",
-                        "Signed instructions identify beneficiaries, conditions, and dispute procedures",
-                        "Retain disputed amounts under the agreed release mechanism",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "2. Match the settlement mechanism to the obligation being paid",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The eight mechanisms in the matrix solve different problems: "
-                    "wire and ACH move money, escrow controls release, retainers "
-                    "change payment timing, statutory disbursement follows a legally "
-                    "defined allocation, platform checkout combines authorization and "
-                    "collection, factoring finances receivables, and milestone holds "
-                    "reserve consideration against performance. Treating all eight as "
-                    "interchangeable payment rails hides ownership and reversal risk. "
-                    "For closing, prepare a sources-and-uses schedule that balances "
-                    "buyer equity, lender proceeds, seller financing, purchase "
-                    "consideration, debt payoffs, expenses, and opening cash. A seller "
-                    "note is a financing source without necessarily creating a cash "
-                    "movement at closing. Obtain payoff statements with expiration "
-                    "dates and per-diem interest, then pair each payoff with the "
-                    "required lien-release process. Confirm beneficiary details through "
-                    "a known telephone number established independently of the latest "
-                    "email thread. Require two authorized people to approve changes "
-                    "to stored payment instructions. Under the applicable state "
-                    "enactment of UCC Article 4A, payment-order authorization and "
-                    "agreed security procedures matter; a wire transfer is not "
-                    "buyer protection merely because the bank accepted the instruction. "
-                    "Retain the bank reference, recipient confirmation, and final "
-                    "closing statement together."
-                ),
-                (
-                    "An escrow agreement must name the holder, bank-account "
-                    "arrangements, release evidence, objection period, permitted "
-                    "deductions, and dispute procedure. Distinguish money reserved "
-                    "for seller indemnity from working capital that the operating "
-                    "company needs immediately. For example, a $50,000 illustrative "
-                    "holdback on a $500,000 purchase leaves $450,000 of purchase "
-                    "consideration available for immediate seller distribution before "
-                    "other deductions; neither amount is acquired-business revenue. "
-                    "A milestone release should depend on observable events such "
-                    "as an accepted customer assignment or delivery of administrator "
-                    "access, not the buyer's subjective satisfaction. Statutory "
-                    "disbursement is relevant only where a specific regime applies. "
-                    "In a federal contracting acquisition, FAR 42.1204 addresses "
-                    "novation agreements; transfer of a contractor's assets does "
-                    "not simply redirect government payments to a new entity. "
-                    "Federal contract payment assignments also require analysis "
-                    "under 31 U.S.C. 3727 and 41 U.S.C. 6305. Verify the "
-                    "contracting officer's process and the applicable exceptions "
-                    "before treating assigned receipts as available collateral. "
-                    "For ordinary private transactions, do not invent a statutory "
-                    "escrow requirement where the purchase agreement and relevant "
-                    "state rules control."
-                ),
-                (
-                    "For operating receipts, price the actual collection cost and "
-                    "cash delay rather than quoting a rail's advertised speed. "
-                    "An illustrative $10,000 card sale with a contracted 2.9% "
-                    "plus $0.30 processing charge creates a $290.30 expense and "
-                    "$9,709.70 settlement before reserves, refunds, or taxes. "
-                    "Generally, record earned gross sales and the processing "
-                    "expense separately when the business is the principal; "
-                    "merchant gross merchandise volume processed for others is "
-                    "not automatically its revenue. Stripe or Shopify Payments "
-                    "balances can remain subject to payout reserves and disputes. "
-                    "Business ACH arrangements require valid authorization and "
-                    "applicable network procedures; consumer recurring debits "
-                    "also require attention to 12 CFR 1005.10. A bank posting "
-                    "alone does not establish that every return risk has expired. "
-                    "Retainers for future work usually create a performance "
-                    "obligation until earned, while factoring supplies financing "
-                    "or receivable-sale proceeds rather than a second sale. "
-                    "Reconcile invoices, clearing accounts, fees, reversals, "
-                    "reserves, and deposits daily during transition. Maintain "
-                    "a second collection option for customers whose purchasing "
-                    "rules prevent card payment, and test new banking details "
-                    "before retiring the seller's authorized collection arrangement."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Payment and Settlement Mechanisms: Authority, Evidence, and Failure Response",
-                "headers": [
-                    "Mechanism and appropriate transaction use",
-                    "Who authorizes movement or release",
-                    "Required evidence before treating cash as available",
-                    "Cost exposure and practical risk fallback",
-                ],
-                "rows": [
-                    [
-                        "Bank wire for acquisition consideration and creditor payoffs",
-                        "Authorized buyer or escrow signers instruct their bank",
-                        "Independently verified beneficiary instructions match the signed closing statement",
-                        "Confirm bank charges and use callbacks against instruction substitution",
-                    ],
-                    [
-                        "Escrow for disputed exposure and conditional purchase consideration",
-                        "Escrow holder follows the parties' documented release instructions",
-                        "Release certificate satisfies conditions and any contractual objection period",
-                        "Budget holder fees and reserve disputed amounts without improvisation",
-                    ],
-                    [
-                        "ACH for authorized recurring customer invoices and collections",
-                        "Account holder authorizes debits under the applicable banking arrangement",
-                        "Authorization, account validation, and settlement reconciliation support each collection",
-                        "Monitor returns and offer invoiced alternatives for restricted customers",
-                    ],
-                    [
-                        "Retainers collected before defined transition or operating services",
-                        "Customer budget owner authorizes an agreed prepaid service scope",
-                        "Contract establishes earned amounts, replenishment terms, and refund treatment",
-                        "Track remaining obligations separately and stop work at agreed limits",
-                    ],
-                    [
-                        "Statutory disbursement for payments subject to specific legal allocation",
-                        "Designated payer acts under the applicable statute or order",
-                        "Identified authority establishes beneficiary priority and required supporting documents",
-                        "Use the specified procedure instead of private redirection instructions",
-                    ],
-                    [
-                        "Platform checkout for subscription upgrades and smaller customer orders",
-                        "Customer authorizes payment through the approved platform billing flow",
-                        "Order, service delivery, fees, and payout records reconcile completely",
-                        "Model reserves and disputes while preserving authorized alternative collection",
-                    ],
-                    [
-                        "Factoring for eligible commercial invoices with confirmed delivery",
-                        "Business assigns eligible receivables under an executed funding agreement",
-                        "Debtor verification confirms enforceable invoices and absence of competing claims",
-                        "Compare advance, fees, reserves, recourse, and customer notification obligations",
-                    ],
-                    [
-                        "Milestone holds for measurable transition deliverables and remaining exposure",
-                        "Named parties certify completion under the purchase agreement procedure",
-                        "Acceptance evidence matches objective criteria and release calculation precisely",
-                        "Use staged releases and a defined dispute resolution timetable",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the closing wire and the first customer receipts",
-                "body": "Veteran acquisition operators verify the destination, release condition, and accounting classification as three separate controls.",
-                "items": [
-                    "Read the last four beneficiary account digits aloud during an independently sourced callback; document both participants and reject email-only instruction changes.",
-                    "Reconcile the seller's final processor reserve report to the purchase agreement so refunds and chargebacks do not become an accidental buyer subsidy.",
-                    "Attach an invoice-ready customer master to the transition plan, including purchase-order requirements, payment contacts, tax treatment, and assignment notices.",
-                    "Run one authorized low-value collection test through each retained billing route before disabling the corresponding legacy arrangement.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Underwrite counterparties and protect fees before delivery",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Screen the seller, customers, lenders, and intermediaries "
-                    "separately because each can break a different part of "
-                    "the cash chain. For the seller, reconcile legal ownership "
-                    "to organizational records, lien searches, tax documentation, "
-                    "and actual control of critical accounts. Search the "
-                    "appropriate secretary of state filing system for UCC "
-                    "financing statements, then obtain underlying security "
-                    "documents and current payoff evidence; a search result "
-                    "alone does not establish lien priority or a clean "
-                    "release. Use PACER for relevant federal litigation "
-                    "and bankruptcy records, supplemented by state court "
-                    "sources and direct explanations. For customers, request "
-                    "trade references, payment history, disputes, concentration "
-                    "reports, and evidence of their ability to absorb the "
-                    "next delivery. Dun & Bradstreet or Experian Business "
-                    "reports are inputs, not replacements for invoice-level "
-                    "verification. Ask the top ten customers to confirm "
-                    "balances through a controlled process with the seller's "
-                    "permission, avoiding disclosure of transaction terms "
-                    "beyond the authorized scope. Investigate credits issued "
-                    "after period end, extended payment promises, and "
-                    "unusually large invoices immediately before marketing "
-                    "the business. These can inflate apparent earnings "
-                    "without improving collectible cash."
-                ),
-                (
-                    "Set exposure limits from cash at risk, not from "
-                    "relationship warmth. Suppose a customer buys $20,000 "
-                    "monthly and pays sixty days after invoicing; steady "
-                    "receivables exposure is roughly $40,000 before disputes "
-                    "and timing effects. A $15,000 collection limit therefore "
-                    "requires deposits, shorter terms, smaller releases, or "
-                    "a documented exception funded by available liquidity. "
-                    "At Base annual sales, reducing collection time by "
-                    "ten days across a uniformly earned, fully credit-based "
-                    "sales book releases approximately $51,370, calculated "
-                    "as $1,875,000 divided by 365 and multiplied by ten. "
-                    "That is working-capital release, not incremental "
-                    "profit, and the actual benefit depends on eligible "
-                    "receivables and collection behavior. Underwrite factoring "
-                    "on total proceeds: an illustrative $100,000 eligible "
-                    "invoice with an 85% advance supplies $85,000 initially; "
-                    "a $2,000 fee leaves $13,000 from the reserve after "
-                    "full collection, absent other deductions. Recourse "
-                    "can return the loss to the acquired company. "
-                    "Identify whether existing lender documents permit "
-                    "receivable sales and additional liens. Never sell "
-                    "the same invoice twice or conceal a factoring "
-                    "notice from the customer or senior lender."
-                ),
-                (
-                    "Fee protection starts with a signed engagement and "
-                    "objective earning event, not a broad threat against "
-                    "circumvention. A buy-side sourcing adviser should "
-                    "document the client entity, introduced target list, "
-                    "covered transaction types, fee formula, payment "
-                    "timing, limited tail, and treatment of preexisting "
-                    "relationships. An illustrative engagement can specify "
-                    "a $5,000 retainer credited against a $25,000 earned "
-                    "closing fee, leaving $20,000 payable at closing; "
-                    "this is adviser compensation, not acquired-company "
-                    "sales. Escrow pays that balance only with valid "
-                    "instructions and any required lender permission. "
-                    "The operator should not promise that a contractual "
-                    "tail overcomes licensing restrictions. Transaction-based "
-                    "compensation involving securities requires examination "
-                    "of 15 U.S.C. 78o, including the conditions and "
-                    "exclusions of the M&A broker exemption in subsection "
-                    "(b)(13), plus applicable state requirements. For "
-                    "ordinary customer services, tie fees to signed "
-                    "scope, delivery records, acceptance windows, and "
-                    "an agreed dispute process. Preserve collection "
-                    "rights without taking unauthorized control of "
-                    "customer accounts or interrupting unrelated services. "
-                    "Use smaller prepaid work packages when credit "
-                    "evidence fails rather than hoping a stronger "
-                    "invoice footer will collect an insolvent customer's "
-                    "balance."
-                ),
-            ],
-            "table": {
-                "caption": "Counterparty Credit and Fee-Protection Evidence Matrix",
-                "headers": [
-                    "Exposure being tested before commitment",
-                    "Evidence collected through authorized investigation",
-                    "Decision rule tied to measurable cash risk",
-                    "Fallback preserving value without concealed exposure",
-                ],
-                "rows": [
-                    [
-                        "Seller ownership and competing claims against purchased assets",
-                        "Entity records, lien documents, payoff statements, and release commitments",
-                        "Fund only assets with documented transfer and release paths",
-                        "Exclude affected assets or reserve consideration under negotiated terms",
-                    ],
-                    [
-                        "Large customer concentration and extended invoice payment cycles",
-                        "Customer confirmations, aging reports, disputes, and subsequent cash receipts",
-                        "Limit unsecured delivery to the approved collectible exposure amount",
-                        "Require deposits or reduce shipment size before extending exposure",
-                    ],
-                    [
-                        "Reported earnings supported by unusual late-period billing activity",
-                        "Service records, invoice dates, credit notes, and bank matches",
-                        "Remove unsupported earnings from the acquisition underwriting model",
-                        "Reprice using verified cash generation or abandon unsupported assumptions",
-                    ],
-                    [
-                        "Adviser fee vulnerable to disputed introductions or earning events",
-                        "Signed engagement, dated target schedule, and documented transaction milestones",
-                        "Pay only the agreed earned fee with required permissions",
-                        "Resolve disputed attribution using the contract's documented review procedure",
-                    ],
-                    [
-                        "Factoring advance conflicting with existing lender collateral rights",
-                        "Senior credit agreement, lien searches, and proposed factor documentation",
-                        "Proceed only when priority and permitted borrowing treatment align",
-                        "Use customer deposits or equity instead of conflicting financing",
-                    ],
-                    [
-                        "Customer refunds and processor reserves surviving the ownership change",
-                        "Processor statements, refund history, open disputes, and purchase allocations",
-                        "Assign each exposure to a funded party and period",
-                        "Retain a calculated reserve and reconcile releases against outcomes",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before releasing acquisition funds",
-                "body": "Each verification must produce retained evidence and a named accountable person before funds leave the controlled account.",
-                "items": [
-                    "Verify buyer signing authority, lender funding conditions, and the balanced sources-and-uses schedule against the final executed transaction documents.",
-                    "Confirm payoff amounts, lien-release deliverables, required assignments, and the exact beneficiary instructions through independent channels.",
-                    "Reconcile top-customer balances, billing permissions, open refunds, and processor reserves to the working-capital calculation.",
-                    "Show payroll, tax deposits, scheduled principal, and permitted seller-note payments in a funded thirteen-week forecast with a downside collection case.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Map seven operating plays into a funded hundred-day transition",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The seven chapter mappings below comprise the supplied "
-                    "application-acquisition play and six descriptive acquisition "
-                    "operating plays; the latter are local labels, not "
-                    "additional catalog identifiers. For "
-                    "expired_chrome_extension_acquisitions, scan the Chrome "
-                    "Web Store, WordPress Plugin Directory, and Shopify "
-                    "App Store for neglected utilities with 10,000–250,000 "
-                    "active users and ratings of at least 4.5 stars. "
-                    "Distinguish active users from cumulative installations "
-                    "and verify monetizable engagement with authorized "
-                    "analytics. With 20,000 active users, a hypothetical "
-                    "2% paid conversion at $8 monthly yields 400 "
-                    "subscribers and $38,400 annual subscription sales. "
-                    "If incremental hosting, support, refunds, platform "
-                    "charges, and maintenance total $18,400, potential "
-                    "annual cash flow is $20,000 before acquisition "
-                    "financing and owner-level taxes. A 1–2x potential "
-                    "cash-flow purchase thesis implies $20,000–$40,000, "
-                    "but unproven conversion calls for staged consideration "
-                    "rather than an unconditional valuation claim. Verify "
-                    "each platform's current ownership-transfer and billing "
-                    "requirements before funding. Keep permissions narrow, "
-                    "grandfather every legacy free feature, and sell "
-                    "additive Pro workflows or explicitly chosen contextual "
-                    "partner offers. Never introduce hidden tracking "
-                    "or background advertising scripts to force the "
-                    "forecast to work."
-                ),
-                (
-                    "For the other six mappings, the payer's measurable "
-                    "benefit determines both the price structure and "
-                    "the fallback. A recurring-service customer buys "
-                    "predictable response capacity; a maintenance customer "
-                    "buys less downtime; a distributor's customer buys "
-                    "available inventory; a route customer buys reliable "
-                    "scheduled fulfillment. A project customer buys "
-                    "accepted milestones, while receivables recovery "
-                    "collects existing obligations instead of manufacturing "
-                    "new sales. The matrix's unit calculations are "
-                    "independent illustrations, not an additive portfolio "
-                    "or replacement for the canonical scenarios. Test "
-                    "whether billed units survived the seller's personal "
-                    "involvement and whether contracts permit the "
-                    "intended transfer. For maintenance, distinguish "
-                    "advance collections from earned service revenue. "
-                    "For distribution, separate inventory purchases "
-                    "and supplier terms from customer gross profit. "
-                    "For route businesses, inspect missed-stop credits "
-                    "and driver substitution costs. For milestone "
-                    "work, obtain dated acceptance records before "
-                    "forecasting the next release. Across every "
-                    "mapping, include interest in the operating "
-                    "profit bridge and show scheduled principal "
-                    "separately in the cash forecast. A service "
-                    "business that appears profitable before its "
-                    "seller's unpaid labor is replaced has not "
-                    "yet demonstrated the scorecard's owner economics."
-                ),
-                (
-                    "Build the hundred-day transition around collection "
-                    "continuity rather than a simultaneous replacement "
-                    "of every system. Before closing, export authorized "
-                    "customer, vendor, invoice, and subscription records "
-                    "and reconcile opening balances to the agreed "
-                    "working-capital schedule. During days one through "
-                    "ten, confirm customer notices, bank signers, "
-                    "payroll funding, administrator access, and the "
-                    "first settlement batch. During days eleven "
-                    "through thirty, clear billing exceptions, verify "
-                    "top-customer retention, and test the daily "
-                    "cash reconciliation. During days thirty-one "
-                    "through sixty, automate invoice reminders and "
-                    "reporting in QuickBooks Online or Xero while "
-                    "retaining review of changed bank details and "
-                    "unusual credits. During days sixty-one through "
-                    "one hundred, adjust pricing only where "
-                    "contract rights, measured customer value, and "
-                    "support capacity justify it. The acquisition "
-                    "pipeline itself may take six to eighteen "
-                    "months before the first deal; this transition "
-                    "clock starts at ownership transfer, not "
-                    "initial outreach. Report sales, after-interest "
-                    "profit, principal paid, receivable days, "
-                    "customer losses, and unrestricted cash as "
-                    "separate measures. Escalate a missed payroll "
-                    "forecast or covenant breach immediately "
-                    "instead of hiding it inside a favorable "
-                    "monthly revenue chart."
-                ),
-            ],
-            "table": {
-                "caption": "Seven Chapter-Mapped Acquisition Plays with Payers, Unit Math, and Fallbacks",
-                "headers": [
-                    "Mapped play and specific acquisition thesis",
-                    "Who pays and what earns payment",
-                    "Illustrative unit math and accounting boundary",
-                    "Failure signal and funded operating fallback",
-                ],
-                "rows": [
-                    [
-                        "expired_chrome_extension_acquisitions: TRACK_2 dormant Chrome extension and Shopify application roll-up",
-                        "Users buy additive Pro workflows through permitted platform billing",
-                        "400 subscribers times $8 monthly produces $38,400 annual sales",
-                        "Weak conversion triggers staged consideration, preserved free features, and narrow permissions",
-                    ],
-                    [
-                        "Recurring-service acquisition with transferable customer support and delivery commitments",
-                        "Business budget owners pay monthly for specified response capacity",
-                        "30 customers times $500 monthly produces $180,000 annual sales",
-                        "Customer attrition triggers retention work and reduced discretionary spending",
-                    ],
-                    [
-                        "Maintenance-contract acquisition centered on documented preventive equipment service obligations",
-                        "Equipment owners prepay for scheduled visits and specified support",
-                        "200 contracts times $1,200 annually produces $240,000 contractual billings",
-                        "Unfunded service obligations require reserves and earned-revenue schedule correction",
-                    ],
-                    [
-                        "Specialty-distribution acquisition supported by repeat purchasing and available stock",
-                        "Purchasing departments pay for accepted goods under approved terms",
-                        "1,000 orders times $300 produces $300,000 sales before product costs",
-                        "Slow collections require deposits and smaller inventory replenishment commitments",
-                    ],
-                    [
-                        "Route-business acquisition with dense stops and repeat delivery demand",
-                        "Local customers pay for completed scheduled visits and reliable fulfillment",
-                        "100 weekly stops times $50 times 50 weeks produces $250,000 sales",
-                        "Missed stops require service recovery and measured route capacity reductions",
-                    ],
-                    [
-                        "Milestone-project acquisition with verifiable backlog and objective acceptance criteria",
-                        "Project sponsors release payments when contracted deliverables receive acceptance",
-                        "20 projects times $25,000 produces $500,000 potential completed-project sales",
-                        "Acceptance disputes require smaller milestones and documented change orders",
-                    ],
-                    [
-                        "Receivables-recovery turnaround through billing cleanup and disciplined credit management",
-                        "Existing debtors settle valid invoices after discrepancies are resolved",
-                        "Recovering 80% of $100,000 overdue invoices releases $80,000 cash",
-                        "Disputed debts require evidence review rather than duplicate revenue recognition",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Build the payer and authority register",
-                    "action": "List ownership funders, operating customers, authorized signers, payment administrators, and contractual payment conditions.",
-                    "detail": "Attach executed authority evidence, customer assignment requirements, verified contacts, and the owner responsible for each unresolved item.",
-                },
-                {
-                    "step": 2,
-                    "title": "Balance funding and test collection continuity",
-                    "action": "Reconcile sources and uses, opening working capital, creditor payoffs, escrow reserves, and each retained collection method.",
-                    "detail": "Separate cash sources from noncash seller financing and retain independent verification of every changed beneficiary instruction.",
-                },
-                {
-                    "step": 3,
-                    "title": "Run the first thirty days against bank evidence",
-                    "action": "Match invoices, delivery records, platform settlements, fees, returns, and deposits while reviewing the thirteen-week forecast weekly.",
-                    "detail": "Assign unresolved differences to named owners and prevent unresolved settlement balances from being reported as unrestricted cash.",
-                },
-                {
-                    "step": 4,
-                    "title": "Release improvements only after measured operating evidence",
-                    "action": "Sequence billing automation, pricing adjustments, collection changes, and conditional consideration releases through day one hundred.",
-                    "detail": "Track customer retention, earned sales, after-interest profit, principal repayments, and liquidity separately against the applicable canonical case.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "Buy transferable earnings, verify every payer, and never mistake financed cash for earned revenue.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Create separate ownership-funding and operating-receipts maps with named budget owners, authorized signers, payment administrators, and verified bank contacts.",
-        "Reconcile the three canonical sales and profit cases to a target-specific cost bridge, then deduct principal separately in the cash forecast.",
-        "Prepare a balanced sources-and-uses statement with payoff evidence, escrow instructions, working-capital treatment, and permitted seller-note payments.",
-        "Screen material customers using invoice confirmations, aging, disputes, trade references, and subsequent receipts; assign funded exposure limits.",
-        "Document fee earning events, introduced targets, acceptance criteria, and permitted payment instructions before committing sourcing or transition labor.",
-        "Test collection continuity and execute the hundred-day transition with daily settlement reconciliation, weekly cash forecasting, and retained release evidence.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "26 U.S.C. 7501 — Liability for taxes withheld or collected",
-            "url": "https://www.law.cornell.edu/uscode/text/26/7501",
-            "relevance": "Establishes trust treatment for covered withheld or collected taxes, supporting separate verification of payroll tax deposits and inherited exposure.",
-        },
-        {
-            "title": "26 U.S.C. 6672 — Failure to collect and pay over tax, or attempt to evade or defeat tax",
-            "url": "https://www.law.cornell.edu/uscode/text/26/6672",
-            "relevance": "Addresses responsible-person liability for willful failures involving covered taxes; payroll outsourcing alone does not establish that obligations were met.",
-        },
-        {
-            "title": "26 U.S.C. 1060 — Special allocation rules for certain asset acquisitions",
-            "url": "https://www.law.cornell.edu/uscode/text/26/1060",
-            "relevance": "Provides the allocation and reporting framework for applicable asset acquisitions, informing consistent transaction schedules and Form 8594 preparation.",
-        },
-        {
-            "title": "California Commercial Code Section 11202 — Authorization and verification of payment orders",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=COM&sectionNum=11202.",
-            "relevance": "Supplies a state enactment of UCC Article 4A payment-order rules; the governing jurisdiction and agreed bank security procedures must be identified.",
-        },
-        {
-            "title": "12 CFR 1005.10 — Preauthorized transfers",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1005/section-1005.10",
-            "relevance": "Addresses covered consumer preauthorized electronic transfers, including authorization requirements; business-account collection arrangements require separate analysis.",
-        },
-        {
-            "title": "48 CFR 42.1204 — Applicability of novation agreements",
-            "url": "https://www.ecfr.gov/current/title-48/chapter-1/subchapter-G/part-42/subpart-42.12/section-42.1204",
-            "relevance": "Explains federal contract novation applicability and documentation when recognizing a successor contractor after specified asset transfers.",
-        },
-        {
-            "title": "31 U.S.C. 3727 — Assignments of claims",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3727",
-            "relevance": "Sets restrictions and exceptions for assignments of claims against the United States, affecting proposed redirection or financing of government receivables.",
-        },
-        {
-            "title": "41 U.S.C. 6305 — Prohibition on transfer of contract and certain allowable assignments",
-            "url": "https://www.law.cornell.edu/uscode/text/41/6305",
-            "relevance": "Addresses federal contract transfer restrictions and permitted assignments, requiring review before counting acquired contract receipts as freely transferable.",
-        },
-        {
-            "title": "15 U.S.C. 78o(b)(13) — Registration exemption for qualifying M&A brokers",
-            "url": "https://www.law.cornell.edu/uscode/text/15/78o",
-            "relevance": "Provides a conditional federal registration exemption with exclusions; transaction-based acquisition sourcing compensation requires analysis of actual activities and applicable state rules.",
-        },
-    ],
-}
+CHAPTER_2 = {'id': 'Q2',
+ 'chapter_id': 'Q2',
+ 'chapter_number': 2,
+ 'question_number': 2,
+ 'slug': 'buy-then-build-first-time-acquirer-playbook',
+ 'question_prompt': 'How do first-time acquirers use the Buy Then Build playbook to choose, buy, and grow '
+                    'an existing company without rookie mistakes?',
+ 'kicker': 'Q2 / THE BIG MONEY PLAYBOOKS',
+ 'title': "Buy Then Build: The First-Time Acquirer's Playbook",
+ 'subtitle': "Walker Deibel's acquisition-entrepreneurship framework, the four paths of acquisition, "
+             "acquiring vs. innovating, buying retiring boomers' businesses with little cash down, rookie "
+             "buyer mistakes, Hormozi's warning on holdcos and hired operators, and the step-by-step "
+             'buy-side process',
+ 'layout_template': 'executive_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Walker Deibel, Alex Hormozi, Neil Rice and Jonathan Jay all treat buying an '
+                      'existing, cash-flowing company as the play. Deibel pegs acquisition-entrepreneur '
+                      'success at 98% against roughly 10% for startups. SBA acquisition loans default '
+                      'under 1.7%, while 75% of VC-backed startups go to zero. Boomers retiring at 11,000 '
+                      'a day, with about $10T in business value changing hands, supply the deals. The '
+                      'mechanics are specific: target $1-5M revenue, pay 2.5-4.5x earnings, and finance up '
+                      'to 90% with SBA debt capped at $5M plus a personal guarantee. Run diligence legal '
+                      'first, then financial, then operational, and change processes in months 3-7. Deibel '
+                      'sends buyers to brokers to save two years; Jay sends beginners off-market. Rice '
+                      'leans on seller financing; Deibel has never used it. Hormozi and Deibel attack '
+                      'no-money-down; Jay sells training on it.',
+ 'key_metrics': [{'label': 'Acquisition Entrepreneur Success Rate',
+                  'metric': 'Acquisition Entrepreneur Success Rate',
+                  'value': '98% (vs. about 10% for startups and 25% for VC-backed companies)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Deibel lines up success rates for startups, VC-backed companies and '
+                             'acquisition entrepreneurs side by side to argue buying beats starting.',
+                  'source': 'Jake & Gino ([xpFa8hcRy_k @ 00:04:53])'},
+                 {'label': 'SBA Acquisition Financing Ceiling',
+                  'metric': 'SBA Acquisition Financing Ceiling',
+                  'value': 'Up to $5M for up to 90% of purchase price, personal guarantee required',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Deibel describes the 2016 SBA change that lets first-time buyers close with '
+                             'about 10% down and no hard-asset collateral.',
+                  'source': 'Making Billions with Ryan Miller ([iYE-lc1tFUI @ 00:41:01])'},
+                 {'label': 'Searchers Who Never Close',
+                  'metric': 'Searchers Who Never Close',
+                  'value': '90% of people who start looking for a business never buy one',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Deibel blames missing target statements and missing urgency, noting a '
+                             'focused buyer could own a company within 6 months.',
+                  'source': 'DigitalTriggers ([u2bZWIf9b5k @ 00:58:38])'},
+                 {'label': 'Small Business Valuation Multiple',
+                  'metric': 'Small Business Valuation Multiple',
+                  'value': '2.5-4.5x earnings (vs. 19-28x for public companies)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Deibel contrasts Main Street pricing with public-market multiples to show '
+                             'the arbitrage available to small-company buyers.',
+                  'source': 'Jake & Gino ([xpFa8hcRy_k @ 00:17:02])'}],
+ 'sections': [{'section_number': 1,
+               'title': 'The Practitioner Consensus',
+               'paragraphs': ['The practitioners agree on the opening math: building from zero is the '
+                              'low-odds bet, and buying a cash-flowing company is the high-odds one. '
+                              'Walker Deibel calls startups "punishment for people that don\'t understand '
+                              'statistics." Deibel pairs the 75% of VC-backed startups that go to zero '
+                              'against SBA acquisition loans defaulting under 1.7%. Buying an existing '
+                              'company is, in Deibel\'s words, the "money ball for entrepreneurship," '
+                              'because the buyer inherits product-market fit, customers, infrastructure '
+                              'and positive cash flow [LlIJ71_IXbs @ 00:06:38]. On Jake & Gino, Deibel '
+                              'lines the success rates up side by side: startups about 10%, VC-backed 25%, '
+                              'acquisition entrepreneurs 98%. Only 4% of companies ever cross $1M in '
+                              'revenue, and fewer than 0.5% cross $5M [xpFa8hcRy_k @ 00:04:53]. The Buy '
+                              'Then Build summary on Master Afle adds the venture-side insult: startups '
+                              'raise an average of $41M and still fail 75% of the time [LzJITHl_i2k @ '
+                              "00:10:09]. Deibel's conviction comes from scar tissue rather than theory. "
+                              'Before buying anything, Deibel worked as a stockbroker through the tech '
+                              'bust. Then an MBA-era startup died when its licensed IP was "yanked," a '
+                              'single point of failure the founders could not engineer around [u2bZWIf9b5k '
+                              '@ 00:07:49]. Every acquisition speaker draws the same lesson. The scarce '
+                              'asset is a business that has already survived its first years with real '
+                              'customers, not a better idea or a bigger raise.',
+                              'The second point of agreement is supply. Deibel cites boomers owning 12 '
+                              'million businesses, 43% of the total. Eleven thousand of them retire every '
+                              'day, and roughly $10T in business value is set to change hands. That wave '
+                              'lands at the same moment SBA goodwill loans up to $5M opened up with small '
+                              'down payments, the third of three converging trends Deibel names alongside '
+                              'the tech wave [LlIJ71_IXbs @ 00:13:02]. Alex Hormozi reads the same wave '
+                              'from the buyer side. Acquisition is "in vogue" because so many owners are '
+                              'retiring, which creates a supply spike that course-sellers who never made '
+                              'their money buying businesses are now hyping [zVSWRRAfFO8 @ 00:00:11]. '
+                              'Business attorney Neil Rice reports helping "over a thousand people" and '
+                              'works this exact seller pool. Rice targets owners at or near retirement '
+                              'whose businesses pay them $150K-$300K a year and could "double or triple" '
+                              'with fresh attention [pTSIi3Y4_TA @ 00:00:36]. Where to aim inside that '
+                              'supply is settled too. Deibel tells first-timers to buy $1-5M revenue '
+                              'companies rather than sub-$1M shops, because a business doing $600K cannot '
+                              'pay its owner. The instruction is direct: "Buy one that already has '
+                              'achieved that" [SXwOv9QUWws @ 00:18:29]. The overlap is the point. Supply '
+                              'is peaking while acquisition debt has loosened, and the speakers treat that '
+                              'combination as the reason to move now.',
+                              'The third consensus is that ownership is an operating job, not a coupon. '
+                              'Deibel tells Jake & Gino that risk sits in the entrepreneur rather than the '
+                              'asset, "because the same business under two different people is either '
+                              'going to perform or flounder." Buyers should therefore pick "skill set over '
+                              'passion" and accept that nothing about owning a company is passive '
+                              '[xpFa8hcRy_k @ 00:20:43]. Hormozi puts it more bluntly. A first-timer can '
+                              'close a business earning $500K-$1M a year with no money down and still lack '
+                              'the skills to run it. Hormozi compares that to managing to "BS my way '
+                              'through the negotiations" and then having to "build a skyscraper" '
+                              '[zVSWRRAfFO8 @ 00:01:21]. On what to buy, Deibel ranks tailwinds first and '
+                              'margins second, calling margin "the number one most important thing." One '
+                              'member bought a sandwich business at 1% net margin and was out of business '
+                              'within 90 days. Labor intensity, capital intensity and cyclicality each '
+                              'stack more danger on top [AKE-710SdA4 @ 00:27:47]. The structural rule '
+                              "comes from Deibel's own holdco. Deibel bought six or seven companies across "
+                              'verticals at 80-100% ownership with maximum debt, and the uncorrelated '
+                              'risks turned correlated. The advice to every new acquirer since is "buy one '
+                              'focus on one" [iYE-lc1tFUI @ 00:07:56].'],
+               'table': {'caption': 'Where the acquisition practitioners line up before a first deal',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner Reports',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Buying beats starting on raw survival odds',
+                                   'Startups succeed about 10%, VC-backed 25%, acquisition entrepreneurs '
+                                   '98% of the time',
+                                   'Buy a business that already survived instead of funding an untested '
+                                   'idea',
+                                   'Jake & Gino ([xpFa8hcRy_k @ 00:04:53])'],
+                                  ['SBA acquisition debt is the safer lever',
+                                   'SBA acquisition loans default under 1.7% while 75% of VC-backed '
+                                   'startups go to zero',
+                                   'Use government-backed acquisition debt rather than venture equity to '
+                                   'build ownership',
+                                   'Walker Deibel ([LlIJ71_IXbs @ 00:06:57])'],
+                                  ['Boomer retirement wave creates the deal supply',
+                                   '11,000 boomers retire daily and boomer firms make up 46% of the US '
+                                   'economy',
+                                   'Target owners at or near retirement while the supply spike lasts',
+                                   'Making Billions with Ryan Miller ([iYE-lc1tFUI @ 00:15:12])'],
+                                  ['Revenue size sweet spot for first deals',
+                                   'Aim for $1-5M revenue because a $600K business cannot pay its owner',
+                                   'Skip sub-$1M shops and buy companies that already crossed that revenue '
+                                   'line',
+                                   'Walker Deibel ([SXwOv9QUWws @ 00:18:29])'],
+                                  ['Cash flow plus simplicity marks a potential winner',
+                                   'Owner pay of $150K-$300K a year in a business quick to learn',
+                                   'Screen first for owner cash flow, then for how fast you can learn it',
+                                   'Start Up University ([pTSIi3Y4_TA @ 00:00:36])'],
+                                  ['Margins and tailwinds decide whether the deal survives',
+                                   'A member bought a 1% net margin sandwich business and folded within 90 '
+                                   'days',
+                                   'Reject thin-margin, labor-heavy, capital-heavy or cyclical targets '
+                                   'before modeling anything else',
+                                   'Darius Mirshahzadeh ([AKE-710SdA4 @ 00:27:47])'],
+                                  ['Ownership is an operating job, not passive income',
+                                   'Closing a no-money-down deal still leaves the buyer needing to build a '
+                                   'skyscraper',
+                                   'Match the target to operating skills you already have before signing '
+                                   'anything',
+                                   'Leveling Up Clips ([zVSWRRAfFO8 @ 00:01:21])']]}},
+              {'section_number': 2,
+               'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The financing engine behind nearly every Deibel deal is the 2016 SBA '
+                              'change: up to $5M covering up to 90% of the purchase price, backed by a '
+                              'personal guarantee. That is why Deibel says "I\'ve never done seller '
+                              'financing once in my life" and compresses the playbook to "Find a good '
+                              'business, pay a fair price, get SBA debt, and get the seller out of there" '
+                              '[iYE-lc1tFUI @ 00:41:01]. The worked example on DigitalTriggers starts with '
+                              'a $1M-revenue company producing $150K SDE. Priced at 3x, it costs $450K. '
+                              'Add $100K for inventory, working capital and closing costs, and the deal is '
+                              '$550K all-in. A 90% SBA-backed loan leaves a $55K buyer check. Ten-year '
+                              'principal and interest runs about $75K a year, roughly 45% of earnings, and '
+                              "the owner keeps the other $75K [u2bZWIf9b5k @ 00:36:45]. The book's "
+                              '"Nancy" model scales it up. The purchase is $691,200 at 3.2x SDE, plus '
+                              '$200K working capital and $50K fees. Nancy puts $94,120 down and borrows '
+                              '$847,080 at 6% over 10 years. That leaves about $9,400 a month of debt '
+                              'service against $18K a month of SDE, for over 100% cash-on-cash '
+                              '[LzJITHl_i2k @ 00:23:29]. The guarantee is unavoidable. In 14 years Deibel '
+                              'has found no lender without one, because a bank needs one of three things: '
+                              'cash, collateral or a PG [WP5MdYhV05A @ 00:30:25]. The SBA itself acts as '
+                              'the collateral that gets the bank comfortable.',
+                              'Search runs as a funnel, not a hunt. The Buy Then Build summary sizes the '
+                              'search by SDE rather than revenue and defines industry broadly as product, '
+                              'distributor or service. It sets geography as the first limiter and '
+                              'compresses the result into a one-line target statement such as "$300-400K '
+                              'SDE, Chicago." It calls "the $250,000 to $700,000 SDE range" "the most '
+                              'affordable and stable sweet spot for firsttime buyers" [LzJITHl_i2k @ '
+                              '00:48:23]. Deibel pushes that statement into the broker channel, which is '
+                              'wider than most buyers assume. There are about 5,000 US brokerage firms, '
+                              'findable through Google, IBBA, M&A Source and the Alliance of M&A Advisors, '
+                              'and they work with sellers anywhere from one month to 18-plus months before '
+                              'a deal transacts [u2bZWIf9b5k @ 00:26:19]. Going straight to brokers is '
+                              '"lopping off two years of time," because "that\'s where the sellers are '
+                              'going" [xpFa8hcRy_k @ 00:32:31]. In practice the target statement does the '
+                              'screening before any CIM is opened, and every broker conversation starts '
+                              'from the same filter instead of a fresh browse. Once the right deal '
+                              'appears, the LOI is treated as binding in spirit: "if you\'re not going to '
+                              "buy the business like don't put in a letter of intent it's really an "
+                              'engagement to get married." Brokerages also keep a CRM of buyers whose LOIs '
+                              'never closed, so a walked LOI follows the buyer into every future '
+                              'conversation with that shop [WP5MdYhV05A @ 00:44:00].',
+                              "The first year runs on its own script. Deibel's own post-close mistake was "
+                              'closing with no plan, and the three-way miscommunication between seller, '
+                              'general manager and owner "destroyed value." The fix is to put a person\'s '
+                              'name next to every line of the P&L. In the week after closing, set meetings '
+                              'with the top 20 paying customers, and make suppliers wait four weeks '
+                              '[WP5MdYhV05A @ 00:16:59]. Salary discipline is the second rule. A business '
+                              'carrying acquisition debt is "overweight," so Deibel\'s instruction is '
+                              '"keep your salaries low don\'t just go in and you know take a CEO salary on '
+                              'day one." Build cash and safety first [aoPPGxWI8dY @ 00:01:31]. Change '
+                              'timing is the third. Deibel rejects the day-one overhaul, the "Elon Musk... '
+                              'Twitter" approach that belongs only in turnarounds. Deibel also rejects the '
+                              'popular "change nothing for a year" rule and steers buyers to the employee '
+                              'goodwill window around months three and four. On the first acquisition, '
+                              'Deibel waited too long and calls it "the mistake I made" [aoPPGxWI8dY @ '
+                              '00:02:48]. The Buy Then Build summary sequences the first 90 days: assess '
+                              'in month one, build a 13-week cash flow in month two, then execute. It also '
+                              'warns buyers to expect an "11th hour freakout" before the keys change hands '
+                              '[LzJITHl_i2k @ 01:35:43].'],
+               'table': {'caption': 'Deal math, terms and tools the practitioners quote by the number',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Term',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['SBA acquisition loan terms since 2016',
+                                   'Up to $5M covering up to 90% of price with a personal guarantee',
+                                   'Plan on roughly 10% equity and sign the personal guarantee',
+                                   'Making Billions with Ryan Miller ([iYE-lc1tFUI @ 00:41:01])'],
+                                  ['Small business valuation multiples',
+                                   '2.5-4.5x earnings for small businesses versus 19-28x for public '
+                                   'companies',
+                                   'Anchor price on historical earnings: buy for the future, pay for the '
+                                   'past',
+                                   'Jake & Gino ([xpFa8hcRy_k @ 00:17:02])'],
+                                  ['Real cost of haggling over the multiple',
+                                   '3.2x versus 3.5x equals about 90 days of earnings on a 10-year loan',
+                                   'Stop grinding a few tenths of multiple and protect the deal instead',
+                                   'Making Billions with Ryan Miller ([iYE-lc1tFUI @ 00:38:14])'],
+                                  ['Seller note inside an SBA-financed deal',
+                                   'About 10% seller note amortized over 10 years with no earn-out allowed',
+                                   'Keep the seller note small and expect sellers to find it unattractive',
+                                   "Let's Buy a Business ([WP5MdYhV05A @ 00:26:47])"],
+                                  ['Partnered buyers stacking SBA borrowing limits',
+                                   'Two partners get two $5M SBA limits to buy about $2M adjusted EBITDA',
+                                   'Partner up for size, but one partner must hold 51% or more',
+                                   'Walker Deibel ([SXwOv9QUWws @ 00:29:17])'],
+                                  ['Diligence sequence and outside specialists',
+                                   'Legal for about a week, then financial, then operational; Centurica '
+                                   'and CPA quality of earnings',
+                                   'Run legal and financial first and verify earnings with outside '
+                                   'specialists',
+                                   'DigitalTriggers ([u2bZWIf9b5k @ 00:51:13])'],
+                                  ['Buy-side advisor pricing on a small deal',
+                                   '$5K monthly retainer plus double Lehman fee, about $150K on a $1M deal',
+                                   'Budget the full advisor cost before deciding to outsource the search',
+                                   "Let's Buy a Business ([WP5MdYhV05A @ 00:46:06])"]]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Edges the Buy Then Build Operators Actually Use',
+                           'body': "Deibel's view is that off-market deals only start showing up once "
+                                   'people know you are in the game, so these are the moves buyers use to '
+                                   'out-work the fair weather buyers sitting on broker lists [Walker '
+                                   'Deibel — SXwOv9QUWws @ 00:46:41].',
+                           'items': ['Run the "Sabri curve": review every listing as an academic exercise, '
+                                     'even ones you will never buy. Deibel says the reps let them get '
+                                     'under LOI within 24 hours two or three times [DigitalTriggers — '
+                                     'u2bZWIf9b5k @ 00:30:33].',
+                                     'Pull the time cards yourself. Lucas Phillips bought a quality of '
+                                     'earnings report, but the time cards would have shown nobody worked '
+                                     '40 hours a week [Making Billions with Ryan Miller — iYE-lc1tFUI @ '
+                                     '00:31:15].',
+                                     'Strike working capital pegs from Main Street asset deals. Deibel '
+                                     'calls them a middle-market import that will "lose your deal" with a '
+                                     'small-business seller [Walker Deibel — SXwOv9QUWws @ 00:45:09].',
+                                     'Open a HELOC and line up key-man insurance before closing, while you '
+                                     'still look strong on paper to the bank [Master Afle — LzJITHl_i2k @ '
+                                     '01:05:02].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock the Target Statement',
+                              'action': 'Write a one-line buy box by SDE band, industry type and geography '
+                                        'before opening a single listing.',
+                              'detail': 'Size by SDE, not revenue. Define industry as product, distributor '
+                                        'or service, set geography as the first limiter, and write it out, '
+                                        'e.g. "$300-400K SDE, Chicago" [Master Afle — LzJITHl_i2k @ '
+                                        '00:50:49]. Put a 6-month deadline on the search, because the '
+                                        'no-deadline drift is called "a fatal trap" [Master Afle — '
+                                        'LzJITHl_i2k @ 00:54:46].'},
+                             {'step': 2,
+                              'title': 'Work the Broker Channel One-to-Many',
+                              'action': 'Send the target statement to brokers in bulk and review deal '
+                                        'volume until one fits.',
+                              'detail': 'Deibel uses brokers "one-to-many" for deal flow [Walker Deibel — '
+                                        't_yGWsgaZ_s @ 00:08:28]. Buyers who close review 60, 70 or 80 '
+                                        'deals [Jake & Gino — xpFa8hcRy_k @ 00:34:57]. Show up to broker '
+                                        'meetings with a personal balance sheet and resume [Master Afle — '
+                                        'LzJITHl_i2k @ 00:57:43].'},
+                             {'step': 3,
+                              'title': 'Stack the Capital',
+                              'action': 'Structure a cash infusion, a small seller note and an SBA loan '
+                                        'through a preferred lender.',
+                              'detail': "Deibel's self-funded structure is a cash infusion, a small seller "
+                                        'note and an SBA loan, usually keeping 80-81% ownership at minimum '
+                                        '[Walker Deibel — t_yGWsgaZ_s @ 00:07:17]. Use preferred-lender '
+                                        '(PLP) banks to avoid 6-8 week delays [Master Afle — LzJITHl_i2k @ '
+                                        '01:02:25]. Pre-qualify early, because Canadian companies, soft '
+                                        'growth, too few tax returns and commingled financials all block '
+                                        'SBA approval [DigitalTriggers — u2bZWIf9b5k @ 00:47:29].'},
+                             {'step': 4,
+                              'title': 'Diligence, Close and Take the Keys',
+                              'action': 'Run diligence in legal-financial-operational order, close, then '
+                                        'meet the top customers immediately.',
+                              'detail': 'Ask only go/no-go questions before the LOI. Afterward, run legal '
+                                        'for about a week, then financial, then operational, using '
+                                        'Centurica on online deals and CPAs for quality of earnings '
+                                        '[DigitalTriggers — u2bZWIf9b5k @ 00:51:13]. The week after '
+                                        'closing, set meetings with the top 20 paying customers and make '
+                                        "suppliers wait four weeks [Let's Buy a Business — WP5MdYhV05A @ "
+                                        '00:18:02].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Deal sourcing is the sharpest split. Walker Deibel tells first-time buyers '
+                              'to go straight to brokers because that is where the sellers are going, a '
+                              'move that typically lops off two years of search time [xpFa8hcRy_k @ '
+                              '00:32:31]. Deibel adds that off-market deals are near-zero odds for '
+                              'outsiders, that broker CIMs are poor, and that the edge comes from '
+                              "out-working the 'fair weather buyers' until people know you are in the game "
+                              'and off-market deals start arriving [SXwOv9QUWws @ 00:46:41]. Jonathan Jay '
+                              'runs the opposite playbook: avoid brokers and listing sites entirely, '
+                              'because beginners should not negotiate against professional sellers, and go '
+                              'off-market directly to owners, never by cold call or mass email '
+                              '[zrmjVDmvL1w @ 00:03:09]. Alex Hormozi sits on a third track, building '
+                              'proprietary flow through content and leverage; that machine produces '
+                              'roughly 3,000 inbound deals a month, about two LOIs a month, and nearly '
+                              'every deal comes from that owned flow [zVSWRRAfFO8 @ 00:03:06]. The volume '
+                              'math diverges just as hard. Jay says look at a minimum of six businesses so '
+                              'you can compare and get a better deal, Deibel says buyers who close review '
+                              '60 to 80 deals, and Hormozi screens thousands to sign two. Pick the funnel '
+                              'that matches your reach, then run its numbers without blending them.',
+                              'Financing splits the camp into two religions. Neil Rice, a business '
+                              'attorney who has helped over a thousand people, builds boomer deals around '
+                              'seller financing: on a $400K to $600K business the buyer puts in relatively '
+                              'minimal cash and pays the balance over years, structured so significant '
+                              'cash flow stays with the new owner [pTSIi3Y4_TA @ 00:01:47]. Walker Deibel '
+                              "says flatly, 'I've never done seller financing once in my life,' and points "
+                              'to the 2016 SBA change that funds up to $5M at up to 90% of price against a '
+                              'personal guarantee, which makes 100% seller-financing pitches outdated '
+                              '[iYE-lc1tFUI @ 00:42:03]. Even inside the SBA lane there is friction. The '
+                              "Master Afle summary of Deibel's book calls carrying a 10% to 20% seller "
+                              'note over two to five years highly advantageous, while Deibel notes SBA '
+                              'deals allow no earn-out and force a roughly 10% seller note to amortize '
+                              'over 10 years, which makes seller notes extremely unattractive to sellers '
+                              '[WP5MdYhV05A @ 00:26:47]. On zero-down, Alex Hormozi concedes a business '
+                              'earning $500K to $1M a year can be bought with nothing down, but warns it '
+                              'is not free, because seller or creative financing is still a liability '
+                              '[zVSWRRAfFO8 @ 00:01:47]. Deibel goes further and labels the earn-in path '
+                              'totally inefficient in time and labor.',
+                              "The seller's role after closing is the third fault line. Rice wants the "
+                              'seller kept on a limited, specific consulting arrangement for six to twelve '
+                              'months to hold relationships and customers [pTSIi3Y4_TA @ 00:02:39], and '
+                              "Mark J Kohler frames a seller note as a 'relationship handcuff' across a "
+                              'first-100-days farewell tour, with the seller setting boundaries and '
+                              "getting paid for the help [eZBAyOccEhY @ 00:16:00]. Deibel's formula is the "
+                              "opposite: 'Find a good business, pay a fair price, get SBA debt, and get "
+                              "the seller out of there,' after downloading the seller's brain [SXwOv9QUWws "
+                              '@ 00:43:53]. Change timing splits too. Deibel rejects both the day-one '
+                              'overhaul outside of turnarounds and the popular change-nothing-for-a-year '
+                              'rule, targeting the employee goodwill window around months three to four '
+                              '[aoPPGxWI8dY @ 00:02:48], inside a broader months-three-to-seven window for '
+                              'process change. Growth strategy is the final contrast. Jonathan Jay sells '
+                              'buy-and-build as combining small companies and selling the larger whole, '
+                              'while Deibel calls a multi-vertical holding company the worst decision, '
+                              'preaches buy one and focus on one, and reserves roll-ups for a single '
+                              'vertical where multiple expansion actually kicks in.'],
+               'table': {'caption': 'Practitioner fault lines: who argues what, side by side',
+                         'headers': ['Fault Line', 'Camp A Playbook', 'Camp B Playbook', 'Expert Source'],
+                         'rows': [['Where first-time buyers should source their deal flow',
+                                   'Go straight to brokers because that is where sellers go, saving about '
+                                   'two years',
+                                   'Avoid brokers and listing sites; go off-market direct to owners, never '
+                                   'cold call',
+                                   'Jake & Gino ([xpFa8hcRy_k @ 00:32:31]); Jonathan Jay ([zrmjVDmvL1w @ '
+                                   '00:03:09])'],
+                                  ['How many businesses to review before buying one',
+                                   'Look at a minimum of six businesses to compare and get a better deal',
+                                   'Closers review 60 to 80 deals; Hormozi screens about 3,000 monthly for '
+                                   'two LOIs',
+                                   'Jonathan Jay ([zrmjVDmvL1w @ 00:04:41]); Jake & Gino ([xpFa8hcRy_k @ '
+                                   '00:34:57]); Leveling Up Clips ([zVSWRRAfFO8 @ 00:03:06])'],
+                                  ['Seller financing versus SBA debt as the core capital stack',
+                                   'Seller carries most of a $400K to $600K price with relatively minimal '
+                                   'buyer cash',
+                                   'Deibel has never used seller financing; SBA funds up to 90% since 2016',
+                                   'Start Up University ([pTSIi3Y4_TA @ 00:01:47]); Making Billions with '
+                                   'Ryan Miller ([iYE-lc1tFUI @ 00:42:03])'],
+                                  ['Whether a seller note helps or hurts the deal',
+                                   'A 10% to 20% seller note paid over two to five years is highly '
+                                   'advantageous',
+                                   'SBA rules force a 10-year amortizing note, making seller notes '
+                                   'extremely unattractive to sellers',
+                                   "Master Afle ([LzJITHl_i2k @ 01:30:35]); Let's Buy a Business "
+                                   '([WP5MdYhV05A @ 00:26:47])'],
+                                  ['How long the seller stays involved after closing day',
+                                   'Keep the seller consulting six to twelve months to protect customer '
+                                   'relationships',
+                                   "Download the seller's brain, then get the seller out of there fast",
+                                   'Start Up University ([pTSIi3Y4_TA @ 00:02:39]); Walker Deibel '
+                                   '([SXwOv9QUWws @ 00:43:53])'],
+                                  ['Cash buyers versus SBA buyers on speed and certainty',
+                                   "Joe Valley's stat shows under 10% of Quiet Light deals used SBA "
+                                   'financing',
+                                   "Deibel says cash buyers' four weeks really means two months versus 2.5 "
+                                   'to 3',
+                                   "Let's Buy a Business ([WP5MdYhV05A @ 00:25:27])"],
+                                  ['Minimum business size worth buying in the first place',
+                                   "Hormozi's floor is $1M EBITDA, ideally $3M to $4M poised to grow",
+                                   'Deibel buys $1M to $5M revenue; Rice targets $150K to $300K owner pay',
+                                   'Leveling Up Clips ([zVSWRRAfFO8 @ 00:03:50]); Making Billions with '
+                                   'Ryan Miller ([iYE-lc1tFUI @ 00:17:47]); Start Up University '
+                                   '([pTSIi3Y4_TA @ 00:00:36])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["Walker Deibel's most expensive lesson is the horizontal holding company. "
+                              'After running the family book printer for seven years, Deibel bought six or '
+                              'seven companies across unrelated verticals at 80% to 100% ownership with '
+                              'maximum debt, and the stacked risk turned uncorrelated businesses into '
+                              "correlated problems; Deibel calls it the 'worst decision' and says eight "
+                              'companies in one vertical would have earned multiple expansion instead '
+                              '[iYE-lc1tFUI @ 00:06:05]. Too many verticals is what ultimately made Deibel '
+                              'stop acquiring [6KZrugmBkcs @ 00:34:19]. The margin trap is just as fast. '
+                              "Deibel calls margin 'the number one most important thing' and reports a "
+                              'member who bought a sandwich business at 1% net margin and was out of '
+                              'business within 90 days, with labor intensity, capital intensity and '
+                              'cyclicality stacking more danger on top [AKE-710SdA4 @ 00:27:47]. People '
+                              "risk hits experienced operators too: at one company, 'at one point 60% of "
+                              "my entire workforce walked out on me' [AKE-710SdA4 @ 00:33:19]. The fix is "
+                              'a one-vertical playbook: buy one, focus on one, then add companies in the '
+                              'same space to capture the arbitrage, while remembering that too many buyers '
+                              'in a sector kills it, exactly as the FBA aggregators showed.',
+                              'Diligence misses are where buyers bleed quietly. Lucas Phillips paid for a '
+                              'quality of earnings report, yet the time cards would have shown that nobody '
+                              'in the business worked 40 hours a week [iYE-lc1tFUI @ 00:31:15]. A buyer '
+                              'named Joe nearly closed on earnings inflated by prepaid six- and '
+                              'twelve-month contracts, and Deibel runs diligence in strict order, legal '
+                              'first for about a week, then financial, then operational [u2bZWIf9b5k @ '
+                              '00:53:33]. Trust failures are terminal: a friend bought a broom company '
+                              'from a seller the friend did not trust and nearly went bankrupt, and '
+                              "Deibel's rule is to get out of there [6KZrugmBkcs @ 00:42:18]. The "
+                              "paperwork phase kills deals too. The Master Afle summary of Deibel's book "
+                              'names lawyers as the number one source of deals that fail to close and '
+                              'prescribes a not-to-exceed legal budget, while Mark J Kohler warns that '
+                              'confirmatory diligence runs one to nine months, invites seller deal '
+                              'fatigue, and that a half-page deal led straight to a lawsuit [eZBAyOccEhY @ '
+                              "00:13:22]. Kohler's line is 'trust but verify everything,' and Deibel adds "
+                              'that deals die one, two, three times before they close.',
+                              "Post-close discipline separates survivors. Deibel's first acquisition "
+                              'closed with no plan, and the three-way miscommunication between seller, '
+                              "general manager and owner 'destroyed value'; the fix is a person's name "
+                              'next to every P&L line and meetings with the top 20 paying customers the '
+                              'week after closing [WP5MdYhV05A @ 00:16:24]. Deibel also admits waiting too '
+                              'long to make changes on that first deal, and warns against taking a CEO '
+                              "salary on day one because a debt-loaded business is 'overweight' "
+                              '[aoPPGxWI8dY @ 00:00:29]. Expect everyone to hit you up for a raise once '
+                              'you own it. Run the economics before signing: on $1M revenue with $150K SDE '
+                              'bought at 3x plus $100K of inventory, working capital and closing costs, a '
+                              '90% SBA loan means about $55K cash in and about $75K of annual principal '
+                              'and interest, leaving the owner $75K [u2bZWIf9b5k @ 00:36:45]. Deibel puts '
+                              'the haggle in perspective: fighting over 3.2x versus 3.5x is about 90 days '
+                              'of earnings on a 10-year loan, and buyers belong in $1M to $5M revenue '
+                              'rather than sub-$1M shops [iYE-lc1tFUI @ 00:38:14]. Search itself is the '
+                              'biggest kill zone, since nine in ten searchers never buy anything.'],
+               'table': {'caption': 'Firsthand failure modes and the economics check that catches each one',
+                         'headers': ['Failure Mode',
+                                     'What Actually Happened',
+                                     'Economics Check Or Fix',
+                                     'Expert Source'],
+                         'rows': [['Horizontal holding company stacked across unrelated verticals',
+                                   'Six or seven companies at 80% to 100% ownership with maximum debt '
+                                   'became correlated risks',
+                                   'Buy one, focus on one; stay in a single vertical for multiple '
+                                   'expansion',
+                                   'Making Billions with Ryan Miller ([iYE-lc1tFUI @ 00:06:05])'],
+                                  ['Buying a thin-margin, labor-heavy business on hope',
+                                   'A member bought a sandwich business at 1% net margin and folded within '
+                                   '90 days',
+                                   'Screen tailwinds first and margins second; avoid labor, capital and '
+                                   'cyclical intensity',
+                                   'Darius Mirshahzadeh ([AKE-710SdA4 @ 00:27:47])'],
+                                  ['Trusting a quality of earnings report without operational checks',
+                                   'Lucas Phillips bought a QoE, but time cards showed nobody worked 40 '
+                                   'hours',
+                                   'Pull the time cards and phantom labor costs alongside the QoE report',
+                                   'Making Billions with Ryan Miller ([iYE-lc1tFUI @ 00:31:15])'],
+                                  ['Earnings inflated by prepaid customer contracts sitting in revenue',
+                                   'Joe nearly closed on prepaid six- and twelve-month contracts that '
+                                   'inflated earnings',
+                                   'Run diligence legal first, then financial, then operational, and test '
+                                   'revenue timing',
+                                   'DigitalTriggers ([u2bZWIf9b5k @ 00:53:33])'],
+                                  ['Closing the deal with no post-close operating plan',
+                                   'Seller, general manager and owner miscommunicated three ways and '
+                                   'destroyed value',
+                                   'Put a name on every P&L line; meet the top 20 customers next week',
+                                   "Let's Buy a Business ([WP5MdYhV05A @ 00:16:24])"],
+                                  ['Importing middle-market working capital pegs into Main Street deals',
+                                   'Working capital pegs in Main Street asset sales can lose you the deal',
+                                   'Keep Main Street terms simple: fair price, SBA debt, seller out',
+                                   'Walker Deibel ([SXwOv9QUWws @ 00:45:09])'],
+                                  ['Customer concentration hiding inside an attractive earnings number',
+                                   'A single client above 10% of sales concentrates the entire revenue '
+                                   'risk',
+                                   'Analyze the customer list; use earnouts or seller notes if '
+                                   'concentration exists',
+                                   'Master Afle ([LzJITHl_i2k @ 01:14:56])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Kill Switches Before You Sign',
+                           'body': 'Every one of these gates comes from a deal that blew up or nearly blew '
+                                   'up for a named operator. If a target fails any gate, walk or '
+                                   'restructure before the LOI turns into an engagement to get married.',
+                           'items': ['Margin gate: if net margin is razor thin and the business is '
+                                     'labor-intensive, capital-intensive or cyclical, kill it; a 1% margin '
+                                     'sandwich shop folded in 90 days [Darius Mirshahzadeh — AKE-710SdA4 @ '
+                                     '00:27:47].',
+                                     'Labor-reality gate: pull the time cards and phantom labor costs even '
+                                     'after buying a quality of earnings report, because nobody at one '
+                                     'target worked 40 hours [Making Billions with Ryan Miller — '
+                                     'iYE-lc1tFUI @ 00:31:15].',
+                                     'Concentration gate: confirm no single client exceeds 10% of sales, '
+                                     'or shift risk back to the seller with an earnout or seller note '
+                                     '[Master Afle — LzJITHl_i2k @ 01:14:56].',
+                                     "Day-one plan gate: write a person's name next to every P&L line and "
+                                     'book the top 20 paying customers before closing, and keep your own '
+                                     "salary low [Let's Buy a Business — WP5MdYhV05A @ 00:16:59]."]}}],
+ 'pull_quote': '"Find a good business, pay a fair price, get SBA debt, and get the seller out of there." — '
+               'attributed to Walker Deibel (SXwOv9QUWws @ 00:43:53).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Write a one-line target statement sized by SDE and limited by geography first, such '
+                      "as '$300-400K SDE, Chicago' [Master Afle — LzJITHl_i2k @ 00:50:49].",
+                      "Join every broker's email list and send your target statement regularly without "
+                      'being annoying, reviewing each listing as an academic exercise [DigitalTriggers — '
+                      'u2bZWIf9b5k @ 00:32:30].',
+                      'Do not submit a letter of intent unless you intend to buy, because an LOI is really '
+                      "an engagement to get married [Let's Buy a Business — WP5MdYhV05A @ 00:44:00].",
+                      'Line up a preferred-lender (PLP) bank to avoid 6-8 week delays, hire a transactions '
+                      'CPA, and hold lawyers to a not-to-exceed budget [Master Afle — LzJITHl_i2k @ '
+                      '01:02:25].',
+                      'Run diligence in order: legal first for about a week, then financial, then '
+                      'operational, using CPAs for quality of earnings [DigitalTriggers — u2bZWIf9b5k @ '
+                      '00:51:13].',
+                      'The week after closing, set meetings with your top 20 paying customers and make '
+                      "suppliers wait four weeks [Let's Buy a Business — WP5MdYhV05A @ 00:18:02]."],
+ 'statutory_citations': [{'title': 'Walker Deibel — Making Billions Buying Businesses: A Masterclass '
+                                   '[00:43:53]',
+                          'url': 'https://www.youtube.com/watch?v=SXwOv9QUWws&t=2633s',
+                          'relevance': 'Primary practitioner testimony on SBA debt over seller financing '
+                                       'and removing the seller after close.'},
+                         {'title': "Jake & Gino — Master the 'Moneyball' of Business: Unveiling "
+                                   'Acquisition Entrepreneurship with Walker Deibel [00:32:31]',
+                          'url': 'https://www.youtube.com/watch?v=xpFa8hcRy_k&t=1951s',
+                          'relevance': 'Primary practitioner testimony on going directly to brokers to cut '
+                                       'about two years from the search.'},
+                         {'title': "Let's Buy a Business — Buy Then Build: 3 Acquisition Secrets with "
+                                   "Walker Deibel | Let's Buy a Business #83 [00:16:24]",
+                          'url': 'https://www.youtube.com/watch?v=WP5MdYhV05A&t=984s',
+                          'relevance': 'Primary practitioner testimony on closing without a plan and the '
+                                       'miscommunication that destroyed value.'},
+                         {'title': 'Darius Mirshahzadeh — Walker Deibel | Buy Then Build: How Acquisition '
+                                   'Entrepreneurs Outsmart the Startup Game [00:27:47]',
+                          'url': 'https://www.youtube.com/watch?v=AKE-710SdA4&t=1667s',
+                          'relevance': 'Primary practitioner testimony on margin as the top risk filter '
+                                       'and the 1% margin failure.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'LlIJ71_IXbs',
+                       'title': 'MIT Entrepreneurship Through Acquisition Conference Keynote by Walker '
+                                'Deibel of Buy Then Build',
+                       'channel': 'Walker Deibel',
+                       'author': 'Walker Deibel',
+                       'text': "it's hard and it takes a lot of work don't underestimate that.",
+                       'tip': "it's hard and it takes a lot of work don't underestimate that.",
+                       'timestamp': 1046,
+                       'timestamp_seconds': 1046,
+                       'timestamp_label': '[00:17:26]',
+                       'url': 'https://www.youtube.com/watch?v=LlIJ71_IXbs&t=1046s',
+                       'markdown': '[00:17:26](https://www.youtube.com/watch?v=LlIJ71_IXbs&t=1046s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pTSIi3Y4_TA',
+                       'title': 'Boomers Are Selling — How You Can Buy a Great Business with Little Cash '
+                                'Down',
+                       'channel': 'Start Up University',
+                       'author': 'Start Up University',
+                       'text': 'If you can find cash flow and simplicity, you potentially have a winner.',
+                       'tip': 'If you can find cash flow and simplicity, you potentially have a winner.',
+                       'timestamp': 90,
+                       'timestamp_seconds': 90,
+                       'timestamp_label': '[00:01:30]',
+                       'url': 'https://www.youtube.com/watch?v=pTSIi3Y4_TA&t=90s',
+                       'markdown': '[00:01:30](https://www.youtube.com/watch?v=pTSIi3Y4_TA&t=90s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'AKE-710SdA4',
+                       'title': 'Walker Deibel | Buy Then Build: How Acquisition Entrepreneurs Outsmart '
+                                'the Startup Game',
+                       'channel': 'Darius Mirshahzadeh',
+                       'author': 'Darius Mirshahzadeh',
+                       'text': 'And this particular company um you know at one point 60% of my entire '
+                               'workforce walked out on me.',
+                       'tip': 'And this particular company um you know at one point 60% of my entire '
+                              'workforce walked out on me.',
+                       'timestamp': 1999,
+                       'timestamp_seconds': 1999,
+                       'timestamp_label': '[00:33:19]',
+                       'url': 'https://www.youtube.com/watch?v=AKE-710SdA4&t=1999s',
+                       'markdown': '[00:33:19](https://www.youtube.com/watch?v=AKE-710SdA4&t=1999s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aoPPGxWI8dY',
+                       'title': 'New to Buying Businesses? Here’s What NOT to Do',
+                       'channel': 'Walker Deibel',
+                       'author': 'Walker Deibel',
+                       'text': "so you know keep your salaries low don't just go in and you know take a "
+                               'CEO salary on day one.',
+                       'tip': "so you know keep your salaries low don't just go in and you know take a CEO "
+                              'salary on day one.',
+                       'timestamp': 91,
+                       'timestamp_seconds': 91,
+                       'timestamp_label': '[00:01:31]',
+                       'url': 'https://www.youtube.com/watch?v=aoPPGxWI8dY&t=91s',
+                       'markdown': '[00:01:31](https://www.youtube.com/watch?v=aoPPGxWI8dY&t=91s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LzJITHl_i2k',
+                       'title': 'Buy Then Build by Walker Deibel | audiobook summary | Mastering the '
+                                'Acquisition Game',
+                       'channel': 'Master Afle',
+                       'author': 'Master Afle',
+                       'text': 'Walker Dybel warns that lawyers are the number one source of deals that '
+                               'fail to close.',
+                       'tip': 'Walker Dybel warns that lawyers are the number one source of deals that '
+                              'fail to close.',
+                       'timestamp': 3835,
+                       'timestamp_seconds': 3835,
+                       'timestamp_label': '[01:03:55]',
+                       'url': 'https://www.youtube.com/watch?v=LzJITHl_i2k&t=3835s',
+                       'markdown': '[01:03:55](https://www.youtube.com/watch?v=LzJITHl_i2k&t=3835s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iYE-lc1tFUI',
+                       'title': 'BUY THEN BUILD: Your Private Equity Masterclass on Buying Companies - '
+                                'Walker Deibel',
+                       'channel': 'Making Billions with Ryan Miller',
+                       'author': 'Making Billions with Ryan Miller',
+                       'text': "I've never done seller financing once in my life.",
+                       'tip': "I've never done seller financing once in my life.",
+                       'timestamp': 2523,
+                       'timestamp_seconds': 2523,
+                       'timestamp_label': '[00:42:03]',
+                       'url': 'https://www.youtube.com/watch?v=iYE-lc1tFUI&t=2523s',
+                       'markdown': '[00:42:03](https://www.youtube.com/watch?v=iYE-lc1tFUI&t=2523s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1blBuzvtWoA',
+                       'title': 'Acquiring a Company vs. Innovating an Industry',
+                       'channel': 'Walker Deibel',
+                       'author': 'Walker Deibel',
+                       'text': 'So, the point is that there are actually multiple reopenings throughout '
+                               'the consolidation curve.',
+                       'tip': 'So, the point is that there are actually multiple reopenings throughout the '
+                              'consolidation curve.',
+                       'timestamp': 624,
+                       'timestamp_seconds': 624,
+                       'timestamp_label': '[00:10:24]',
+                       'url': 'https://www.youtube.com/watch?v=1blBuzvtWoA&t=624s',
+                       'markdown': '[00:10:24](https://www.youtube.com/watch?v=1blBuzvtWoA&t=624s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xpFa8hcRy_k',
+                       'title': "Master the 'Moneyball' of Business: Unveiling Acquisition "
+                                'Entrepreneurship with Walker Deibel',
+                       'channel': 'Jake & Gino',
+                       'author': 'Jake & Gino',
+                       'text': 'you are typically lopping off two years of time if you just go directly to '
+                               "the Brokers because that's where the sellers are going.",
+                       'tip': 'you are typically lopping off two years of time if you just go directly to '
+                              "the Brokers because that's where the sellers are going.",
+                       'timestamp': 1951,
+                       'timestamp_seconds': 1951,
+                       'timestamp_label': '[00:32:31]',
+                       'url': 'https://www.youtube.com/watch?v=xpFa8hcRy_k&t=1951s',
+                       'markdown': '[00:32:31](https://www.youtube.com/watch?v=xpFa8hcRy_k&t=1951s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zVSWRRAfFO8',
+                       'title': 'How To Start A Business Acquisition Company - With Alex Hormozi',
+                       'channel': 'Leveling Up Clips',
+                       'author': 'Leveling Up Clips',
+                       'text': "that's the piece that I think a lot of people Miss it's like it's not "
+                               'free.',
+                       'tip': "that's the piece that I think a lot of people Miss it's like it's not free.",
+                       'timestamp': 107,
+                       'timestamp_seconds': 107,
+                       'timestamp_label': '[00:01:47]',
+                       'url': 'https://www.youtube.com/watch?v=zVSWRRAfFO8&t=107s',
+                       'markdown': '[00:01:47](https://www.youtube.com/watch?v=zVSWRRAfFO8&t=107s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zrmjVDmvL1w',
+                       'title': 'Complete Guide to Buying a Business (For Beginners) 2026 | Jonathan Jay',
+                       'channel': 'Jonathan Jay',
+                       'author': 'Jonathan Jay',
+                       'text': 'So, you never ever make an offer for a business.',
+                       'tip': 'So, you never ever make an offer for a business.',
+                       'timestamp': 495,
+                       'timestamp_seconds': 495,
+                       'timestamp_label': '[00:08:15]',
+                       'url': 'https://www.youtube.com/watch?v=zrmjVDmvL1w&t=495s',
+                       'markdown': '[00:08:15](https://www.youtube.com/watch?v=zrmjVDmvL1w&t=495s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'u2bZWIf9b5k',
+                       'title': 'Buying the Right Business & Building It Up - A Guide to Acquisition '
+                                'Entrepreneurship | Walker Deibel',
+                       'channel': 'DigitalTriggers',
+                       'author': 'DigitalTriggers',
+                       'text': 'open marketplaces are actually a horrible place to go and the reason why '
+                               "is because it's something like ninety percent of small businesses that get "
+                               "listed for sale don't actually sell.",
+                       'tip': 'open marketplaces are actually a horrible place to go and the reason why is '
+                              "because it's something like ninety percent of small businesses that get "
+                              "listed for sale don't actually sell.",
+                       'timestamp': 1350,
+                       'timestamp_seconds': 1350,
+                       'timestamp_label': '[00:22:30]',
+                       'url': 'https://www.youtube.com/watch?v=u2bZWIf9b5k&t=1350s',
+                       'markdown': '[00:22:30](https://www.youtube.com/watch?v=u2bZWIf9b5k&t=1350s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6KZrugmBkcs',
+                       'title': 'Walker at Codie Sanchez Mastermind Event',
+                       'channel': 'Walker Deibel',
+                       'author': 'Walker Deibel',
+                       'text': "when you're working with someone you don't trust my number one "
+                               'recommendation is get out of there.',
+                       'tip': "when you're working with someone you don't trust my number one "
+                              'recommendation is get out of there.',
+                       'timestamp': 2564,
+                       'timestamp_seconds': 2564,
+                       'timestamp_label': '[00:42:44]',
+                       'url': 'https://www.youtube.com/watch?v=6KZrugmBkcs&t=2564s',
+                       'markdown': '[00:42:44](https://www.youtube.com/watch?v=6KZrugmBkcs&t=2564s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SXwOv9QUWws',
+                       'title': 'Making Billions Buying Businesses: A Masterclass',
+                       'channel': 'Walker Deibel',
+                       'author': 'Walker Deibel',
+                       'text': 'Find a good business, pay a fair price, get SBA debt, and get the seller '
+                               'out of there.',
+                       'tip': 'Find a good business, pay a fair price, get SBA debt, and get the seller '
+                              'out of there.',
+                       'timestamp': 2633,
+                       'timestamp_seconds': 2633,
+                       'timestamp_label': '[00:43:53]',
+                       'url': 'https://www.youtube.com/watch?v=SXwOv9QUWws&t=2633s',
+                       'markdown': '[00:43:53](https://www.youtube.com/watch?v=SXwOv9QUWws&t=2633s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WP5MdYhV05A',
+                       'title': "Buy Then Build: 3 Acquisition Secrets with Walker Deibel | Let's Buy a "
+                                'Business #83',
+                       'channel': "Let's Buy a Business",
+                       'author': "Let's Buy a Business",
+                       'text': 'so nine out of 10 people that start looking for business to buy one never '
+                               'buy anything okay.',
+                       'tip': 'so nine out of 10 people that start looking for business to buy one never '
+                              'buy anything okay.',
+                       'timestamp': 2166,
+                       'timestamp_seconds': 2166,
+                       'timestamp_label': '[00:36:06]',
+                       'url': 'https://www.youtube.com/watch?v=WP5MdYhV05A&t=2166s',
+                       'markdown': '[00:36:06](https://www.youtube.com/watch?v=WP5MdYhV05A&t=2166s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WP5MdYhV05A',
+                       'title': "Buy Then Build: 3 Acquisition Secrets with Walker Deibel | Let's Buy a "
+                                'Business #83',
+                       'channel': "Let's Buy a Business",
+                       'author': "Let's Buy a Business",
+                       'text': 'they make they make seller notes extremely unattractive to sellers.',
+                       'tip': 'they make they make seller notes extremely unattractive to sellers.',
+                       'timestamp': 1607,
+                       'timestamp_seconds': 1607,
+                       'timestamp_label': '[00:26:47]',
+                       'url': 'https://www.youtube.com/watch?v=WP5MdYhV05A&t=1607s',
+                       'markdown': '[00:26:47](https://www.youtube.com/watch?v=WP5MdYhV05A&t=1607s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 't_yGWsgaZ_s',
+                       'title': 'The Four Paths of Acquisition Entrepreneurship',
+                       'channel': 'Walker Deibel',
+                       'author': 'Walker Deibel',
+                       'text': "the thing there is that you're using a lot of your time and a lot of your "
+                               "labor and it's totally inefficient.",
+                       'tip': "the thing there is that you're using a lot of your time and a lot of your "
+                              "labor and it's totally inefficient.",
+                       'timestamp': 493,
+                       'timestamp_seconds': 493,
+                       'timestamp_label': '[00:08:13]',
+                       'url': 'https://www.youtube.com/watch?v=t_yGWsgaZ_s&t=493s',
+                       'markdown': '[00:08:13](https://www.youtube.com/watch?v=t_yGWsgaZ_s&t=493s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eZBAyOccEhY',
+                       'title': 'The Complete Business Acquisition Process (Explained Step-by-Step)',
+                       'channel': 'Mark J Kohler',
+                       'author': 'Mark J Kohler',
+                       'text': 'The buyer takeaway is trust but verify everything.',
+                       'tip': 'The buyer takeaway is trust but verify everything.',
+                       'timestamp': 680,
+                       'timestamp_seconds': 680,
+                       'timestamp_label': '[00:11:20]',
+                       'url': 'https://www.youtube.com/watch?v=eZBAyOccEhY&t=680s',
+                       'markdown': '[00:11:20](https://www.youtube.com/watch?v=eZBAyOccEhY&t=680s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'}]}

@@ -8,49 +8,49 @@
       "ACQUISITION"
     ],
     "deck": [
-      "AUDIT CASH PROOF. STRESS-TEST DSCR.",
-      "INSTALL GENERAL MANAGEMENT."
+      "BUY A CASH-FLOWING SMALL BUSINESS AT 2.5-4.5X EARNINGS INSTEAD OF STARTING ONE",
+      "SOURCE, SCREEN, LOI, DILIGENCE, SBA 7(A) FINANCE, AND OPERATE THE FIRST 100 DAYS"
     ],
-    "lead": "Entrepreneurship Through Acquisition (ETA): Off-Market Deal Sourcing, SBA 7(a) + Seller-Note Structuring & Post-Close Margin Expansion",
-    "summary": "Verify tax-return-to-bank-statement QoE, cap customer concentration, set net working-capital pegs, and avoid buying an underpaid job.",
+    "lead": "Professors, brokers, attorneys, and searchers make the case that buying a cash-flowing small business at a half to a third of private equity multiples, financed with SBA 7(a) debt and a seller note, beats starting one from scratch.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies on entrepreneurship through acquisition, from deal sourcing and SBA lending through LOI drafting, quality of earnings, closing mechanics, and post-acquisition integration. Every claim, metric, pro-tip, and operator gate carries timestamped inline attribution to the source video.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "Entrepreneurship Through Acquisition: The Case for Buying Instead of Starting",
+      "Buy Then Build: The First-Time Acquirer's Playbook",
+      "Search Funds and Self-Funded Search: Running the Search",
+      "Deal Sourcing: Off-Market Origination and Online Marketplaces",
+      "SBA 7(a) Acquisition Lending and the SOP 50 10 8.1 Rules",
+      "Seller Financing, Earnouts, and Bridging the Down Payment",
+      "The Letter of Intent: Anatomy and Drafting",
+      "Quality of Earnings and Financial Due Diligence",
+      "Add-Backs, Cash Flow, and Calculating Net Working Capital",
+      "Closing Price Mechanics and LOI Negotiation",
+      "Asset vs. Stock Purchases, Tax Allocation, and Buyer Protections",
+      "Post-Acquisition: The First 100 Days, Integration, and Roll-Ups"
     ],
     "flow": [
       [
         "SOURCE",
-        "Mine high-intent deal triggers"
+        "Work brokers, trade-show lists, and belly-to-belly direct outreach in one geography, targeting $1-5M revenue businesses and reviewing every listing to build reps."
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "SCREEN",
+        "Price at about 2.5-4.5x earnings, kill razor-thin-margin labor- or capital-intensive targets, and flag any client above 10% of sales or a top-five list routed through one referrer."
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "LOI",
+        "Open low near 2.5x and concede a quarter or half turn, refuse deposits and breakage fees on small deals, and strike working capital pegs from Main Street asset deals."
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "DILIGENCE",
+        "Run legal, then financial, then operational review over about 60 days with a QoE, 36 months of reconciled bank statements, and time cards pulled by hand; kill any target with two sets of books."
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "FINANCE",
+        "Fund with SBA 7(a) debt up to $5M for up to 90% of price with a personal guarantee, plus a seller note or earnout and $100-150K of working capital."
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "OPERATE",
+        "Freeze personnel changes for six months, keep your salary low, name an owner for every P&L line, book the top 20 customers, and change processes incrementally in months 3-7."
       ]
     ]
   },
@@ -58,10 +58,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "BUSINESS ACQUISITION",
-  "subtitle": "The Complete Playbook for Buying Cash-Flowing Businesses: $750,000–$3,000,000 USD in Annual Acquired-Business Sales, a 2 FT + 2 C (4-Person) Core Pod, and Disciplined Debt",
+  "subtitle": "Buy Cash Flow, Not Hope: Source Belly to Belly, Pay 2.5-4.5x Earnings, Clear SBA 7(a) at 1.25x DSCR, Prove Every Add-Back With a QoE, Lock the Working Capital Peg, and Stabilize Before You Accelerate",
   "chapter_count": 12,
-  "total_word_count": 78128,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 74376,
+  "expert_youtube_link_count": 208,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -76,5 +76,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:02Z"
+  "updated_at": "2026-11-24T22:21:28Z"
 }

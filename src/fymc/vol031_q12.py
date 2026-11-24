@@ -1,664 +1,804 @@
 from __future__ import annotations
 
-CHAPTER_12 = {
-    "id": "Q12",
-    "chapter_id": "Q12",
-    "chapter_number": 12,
-    "question_number": 12,
-    "slug": "first-30-day-launch-sprint-kill-fix-scale-gates",
-    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching uber & commercial fleet arbitrage, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
-    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
-    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
-    "subtitle": "A Four-Person Launch Pod for Uber Fleet Partner Leases, TLC/TCP Black SUV Dispatch, Investor Co-Hosting, and Cash-Based Expansion Decisions",
-    "layout_template": "thirty_day_plan",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #31, Uber & Commercial Fleet Arbitrage, ranks #15 of 36 with an "
-        "89/100 Money-to-Manpower Score. This sprint turns 10 mapped plays into one "
-        "controlled operating system: driver leases, qualified commercial dispatch, "
-        "and investor vehicle co-hosting supported by collections, screening, insurance, "
-        "telematics, tolls, maintenance, and owner settlement. One full-time operator "
-        "and three contractors establish readiness before adding vehicles. Canonical "
-        "annual owner profits are $25,200 Conservative, $144,900 Base, and $336,000 "
-        "Scaled; these are scenario outcomes, not first-month forecasts. Day 30 tests "
-        "readiness and early collections, Day 60 tests repeatability, and Day 90 tests "
-        "durable contribution. A $7,500 first-month burn ceiling, documented coverage, "
-        "vehicle-level reconciliation, and explicit Kill, Fix, or Scale thresholds "
-        "keep attractive gross billings from hiding weak retained economics."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$180,000",
-            "context": "Annual gross billings; 55% retained revenue equals $99,000.",
-            "note": "14% gross-basis net margin; $25,200 annual owner net profit; 25.45% retained net margin; 1 FT + 3 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$690,000",
-            "context": "Annual gross billings; 55% retained revenue equals $379,500.",
-            "note": "21.0% gross-basis net margin; $144,900 annual owner net profit; 38.18% retained net margin; 1 FT + 3 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual gross billings; 55% retained revenue equals $660,000.",
-            "note": "28% gross-basis net margin; $336,000 annual owner net profit; 50.91% retained net margin; 2 FT + 4 C, six people.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Days 1-7: Select One Market, Assign Ten Plays, and Protect Launch Cash",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start Day 1 with one metropolitan market, one vehicle class, and one "
-                    "primary customer promise. Candidate #31 contains three commercial engines: "
-                    "Uber Fleet Partner driver leases, properly authorized TLC/TCP Black SUV "
-                    "shift dispatch, and investor vehicle co-hosting without operator vehicle "
-                    "ownership. For this sprint, map those engines into ten executable plays: "
-                    "P1 weekly driver leasing; P2 commercial shift dispatch; P3 investor "
-                    "co-host acquisition; P4 contractual collections and waterfall allocation; "
-                    "P5 driver screening and onboarding; P6 insurance and operating-authority "
-                    "verification; P7 OBD-II location and safe vehicle recovery; P8 toll "
-                    "reconciliation; P9 preventive maintenance and downtime recovery; and P10 "
-                    "investor settlement and retention. This is an execution decomposition, "
-                    "not ten independent revenue streams. Select P1 or P3 as the initial "
-                    "sales offer; keep P2 inactive until its separate requirements are met. "
-                    "The full-time operator owns pricing, contracts, cash, and exceptions. "
-                    "Contractor C1 handles sourcing and driver coordination, C2 handles vehicle "
-                    "inspection and maintenance coordination, and C3 handles bookkeeping and "
-                    "document administration. Use an Airtable register with a named owner, "
-                    "deadline, evidence link, and backup contact for every play. Contractors "
-                    "remain accountable for contracted deliverables rather than assumed unlimited "
-                    "availability."
-                ),
-                (
-                    "Days 2 and 3 turn a promising market into a documented operating "
-                    "boundary. Ask the insurer to identify the named insured, scheduled "
-                    "vehicles, authorized drivers, permitted rental or lease use, commercial "
-                    "livery activity, deductibles, exclusions, and coverage during each relevant "
-                    "rideshare period. A personal policy plus a platform screenshot is not "
-                    "a complete coverage file. California Public Utilities Code section 5433 "
-                    "addresses transportation-network coverage periods; section 5371 addresses "
-                    "charter-party operating authority. Neither substitutes for a New York "
-                    "City TLC license or an airport's separate pickup authorization. Compare "
-                    "the proposed contract with applicable rental disclosures, including "
-                    "California Civil Code section 1936 where the transaction falls within "
-                    "its scope. Verify investor title, lien restrictions, lease restrictions, "
-                    "and written permission for the intended commercial use. C3 maintains "
-                    "a dated requirements register, while the operator resolves classification "
-                    "questions with the relevant authority and insurer. Do not advertise "
-                    "airport service before confirming the airport's current commercial access "
-                    "rules. These checks attach to the particular vehicle, driver, service, "
-                    "and jurisdiction, not merely to the business entity. By Day 3, every "
-                    "unresolved dependency must have an accountable person, an expected response "
-                    "date, and a prohibited-until-resolved operating activity."
-                ),
-                (
-                    "Days 4 through 7 establish the spending boundary before deposits become "
-                    "difficult to recover. The canonical startup range is $12,000-$65,000; "
-                    "use $12,000 as this illustrative pilot's opening unrestricted cash, "
-                    "not as a universal minimum for commercial vehicles. Cap first-month "
-                    "unrecovered launch outflows at $7,500, leaving at least $4,500 untouched. "
-                    "Allocate $2,500 to setup and recurring administration, $2,000 to quoted "
-                    "coverage and authority costs, $1,000 to inspections and telematics, "
-                    "$1,000 to sourcing and screening, and $1,000 to contingency. Customer "
-                    "deposits, investor distributions, and restricted balances cannot fund "
-                    "these envelopes. Count prepaid premiums and refundable vendor deposits "
-                    "against the ceiling while cash remains unavailable; cash consumption "
-                    "and accounting expense are different measures. Require remaining cash "
-                    "to cover both the largest applicable deductible and thirty days of "
-                    "unavoidable operating payments. If actual quotes exceed the envelope "
-                    "or the reserve test fails, do not deploy: obtain additional committed "
-                    "capital or shrink the pilot. The minimum-cash example supports only "
-                    "a narrowly priced co-hosting experiment, not vehicle purchases. On "
-                    "Day 7, sign a spending ledger, two conditional vehicle prospects, "
-                    "and a coverage checklist before authorizing the next week's work. "
-                    "Record commitments when signed, rather than waiting for card settlement."
-                ),
-            ],
-            "table": {
-                "caption": "Week One Daily Deliverables, Play Ownership, and Evidence Before Spending",
-                "headers": [
-                    "Day and operating assignment",
-                    "Accountable pod member and mapped plays",
-                    "Concrete deliverable retained in the register",
-                    "Acceptance test before the next action",
-                ],
-                "rows": [
-                    [
-                        "Day 1: choose one market and primary offer.",
-                        "Full-time operator assigns P1, P2, and P3.",
-                        "One-page market brief identifies vehicle class and customer.",
-                        "Exactly one primary offer receives pilot spending authorization.",
-                    ],
-                    [
-                        "Day 2: obtain written vehicle-specific insurance requirements.",
-                        "Operator and C3 document P6 coverage dependencies.",
-                        "Broker response names uses, deductibles, exclusions, and vehicles.",
-                        "Every intended operating period has an identified coverage source.",
-                    ],
-                    [
-                        "Day 3: verify local authority and airport restrictions.",
-                        "C3 assembles P6 evidence for operator review.",
-                        "Requirements register separates rideshare, charter, and airport permissions.",
-                        "Unresolved permissions explicitly block the affected service category.",
-                    ],
-                    [
-                        "Day 4: open ledgers and cap committed spending.",
-                        "Operator and C3 configure P4 and P10.",
-                        "Cash ledger separates restricted deposits from unrestricted funds.",
-                        "Committed launch outflows remain within the $7,500 ceiling.",
-                    ],
-                    [
-                        "Day 5: source two conditional investor vehicle prospects.",
-                        "C1 advances P3 while operator reviews restrictions.",
-                        "Owner packets include title, lien terms, and use authorization.",
-                        "Neither vehicle carries an unresolved commercial-use ownership restriction.",
-                    ],
-                    [
-                        "Day 6: inspect candidate vehicles and price downtime.",
-                        "C2 owns P7 installation planning and P9.",
-                        "Inspection sheets include tires, service intervals, and repair estimates.",
-                        "Each candidate passes documented mechanical and coverage eligibility checks.",
-                    ],
-                    [
-                        "Day 7: reconcile evidence and approve bounded commitments.",
-                        "Operator reviews all ten plays with contractors.",
-                        "Signed sprint ledger includes owners, budgets, and pending dependencies.",
-                        "Remaining unrestricted cash passes the deductible-plus-payments reserve test.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Pre-Flight Checks Before Any Vehicle Handover",
-                "body": "A sales opportunity cannot substitute for vehicle-level evidence. Block the affected vehicle or service until each applicable check is complete.",
-                "items": [
-                    "Match the VIN, driver, commercial use, effective dates, and relevant rideshare periods to written coverage evidence; resolve exclusions before handover.",
-                    "Verify title-holder permission, lien and lease restrictions, platform eligibility, local operating authority, and airport access for the actual proposed service.",
-                    "Complete mechanical inspection, key custody, authorized tracking disclosure, and a recovery protocol that prohibits unsafe immobilization.",
-                    "Confirm signed payment terms, lawful deposit handling, screening records, and unrestricted cash sufficient for the largest deductible plus thirty days of unavoidable payments.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Days 8-14: Contract the Pilot and Test Every Collection and Recovery Path",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Day 8 converts owner interest into a vehicle-level agreement rather "
-                    "than an informal promise of passive income. Specify who contracts "
-                    "with the driver, who controls pricing, who bears damage and collection "
-                    "risk, and who pays insurance, maintenance, registration, cleaning, and "
-                    "downtime. P3 cannot remain zero-owned-metal if the operator quietly "
-                    "guarantees an investor's debt service regardless of utilization. P10 "
-                    "must show a worked settlement with owner distributions, allowable "
-                    "pass-through items, retained operator amounts, and dispute deadlines. "
-                    "Day 9 then converts driver demand into a screened, documented "
-                    "application. Obtain a permissible purpose for consumer reports and "
-                    "follow the procedures applicable to the relationship. Employment-purpose "
-                    "reports trigger the specific disclosure, authorization, and pre-adverse "
-                    "requirements in 15 U.S.C. 1681b(b); other eligible arrangements still "
-                    "require a valid purpose, and report-based adverse action can trigger "
-                    "15 U.S.C. 1681m(a). Do not assume every contractor arrangement follows "
-                    "the same screening workflow. A screening vendor such as Checkr can "
-                    "support report ordering, but the operator owns the decision process. "
-                    "C1 checks license class and experience against insurer criteria, while "
-                    "C3 records report status without exposing unnecessary personal data "
-                    "to the entire pod. Keep applications separate from the operating "
-                    "dashboard and restrict access to assigned reviewers."
-                ),
-                (
-                    "Days 10 and 11 test P4 before a vehicle leaves custody. Use "
-                    "Uber Fleet Partner features only where the account, market, and "
-                    "contract actually support the intended workflow; confirm current payout "
-                    "controls rather than assuming every market permits automatic lease "
-                    "deductions. A top-of-waterfall lease is a contract and settlement "
-                    "design, not permission to seize unrelated driver earnings. If platform "
-                    "settlement cannot implement the agreed allocation, use a separately "
-                    "authorized payment method with clear invoices and lawful collection "
-                    "terms. Stripe Billing or a bank-supported debit service can schedule "
-                    "collections, but test settlement delays, returned payments, disputes, "
-                    "and account ownership. Build a four-line sample: $650 weekly lease "
-                    "billing, $292.50 aggregate owner and pass-through allocation, $357.50 "
-                    "retained operator revenue, and separately recorded operator expenses. "
-                    "The 45% allocation is the canonical aggregate assumption, not an "
-                    "invented promise about a specific owner's payout. Where actual "
-                    "contract allocations differ, calculate actual retained share and flag "
-                    "the variance. Customer security deposits remain liabilities until "
-                    "properly applied; they are neither lease revenue nor owner profit. "
-                    "C3 reconciles invoice, payment processor, bank receipt, and allocation "
-                    "ledger using a shared transaction identifier. The operator signs "
-                    "the first successful settlement and the first simulated failure."
-                ),
-                (
-                    "Days 12 through 14 establish custody, maintenance, and recovery discipline "
-                    "for the first two pilot vehicles. C2 records dated photographs, "
-                    "odometer, fuel level, tire condition, warning lights, keys, and existing "
-                    "damage in a signed handover packet. Samsara or Geotab can supply "
-                    "location and diagnostic workflows where the selected device and plan "
-                    "support them; verify compatibility rather than treating every OBD-II "
-                    "dongle as an immobilizer. Configure location access narrowly, document "
-                    "the authorized purpose, and establish retention limits. Starter interruption "
-                    "requires compatible equipment, lawful contractual authority, and a "
-                    "verified safe stationary state; never disable a moving vehicle, "
-                    "interrupt active passenger service, or treat delayed telemetry as "
-                    "proof of safety. Prefer coordinated voluntary return and qualified "
-                    "recovery personnel over remote intervention. For P8, register each "
-                    "vehicle's toll account and transponder assignment before deployment, "
-                    "then define evidence and dispute handling for pass-through charges. "
-                    "For P9, reserve service windows using actual mileage intervals and "
-                    "inspection findings. Run a tabletop collision exercise covering emergency "
-                    "response, insurer notification, evidence preservation, replacement availability, "
-                    "and deductible funding. Day 14 ends with either a signed two-vehicle "
-                    "pilot release or a written list of blocked items; sales pressure "
-                    "does not change the release criteria."
-                ),
-            ],
-            "table": {
-                "caption": "Week Two Contract, Screening, Settlement, and Vehicle-Custody Tests",
-                "headers": [
-                    "Day and workflow under test",
-                    "Assigned play and execution owner",
-                    "Required document or test output",
-                    "Failure response before customer deployment",
-                ],
-                "rows": [
-                    [
-                        "Day 8: execute vehicle-specific investor co-hosting terms.",
-                        "Operator owns P3 terms and P10 allocations.",
-                        "Signed agreement assigns costs, control, disputes, and settlement timing.",
-                        "Reject arrangements that conceal unconditional owner payment obligations.",
-                    ],
-                    [
-                        "Day 9: screen proposed drivers against actual requirements.",
-                        "C1 coordinates P5 with restricted C3 records.",
-                        "Driver packet records license eligibility and applicable screening procedures.",
-                        "Pause placement when insurer criteria or report procedures fail.",
-                    ],
-                    [
-                        "Day 10: configure invoices and authorized payment methods.",
-                        "Operator directs P4 while C3 configures records.",
-                        "Invoice schedule matches signed terms and supported payout capabilities.",
-                        "Use another authorized method when platform deductions are unavailable.",
-                    ],
-                    [
-                        "Day 11: reconcile successful and failed settlement examples.",
-                        "C3 tests P4 receipts and P10 statements.",
-                        "Matched transaction identifiers connect billing, bank receipt, and allocations.",
-                        "Do not distribute owner funds against unsettled collections.",
-                    ],
-                    [
-                        "Day 12: document custody and validate telematics functions.",
-                        "C2 implements P7 with operator-controlled access permissions.",
-                        "Signed condition packet includes device tests and recovery procedures.",
-                        "Disable unsupported remote functions rather than improvising unsafe recovery.",
-                    ],
-                    [
-                        "Day 13: assign toll accounts and maintenance windows.",
-                        "C2 runs P9 while C3 establishes P8.",
-                        "Vehicle register links transponders, service mileage, and dispute evidence.",
-                        "Hold deployment when servicing or toll attribution remains unresolved.",
-                    ],
-                    [
-                        "Day 14: conduct collision exercise and release pilot.",
-                        "Operator verifies P5 through P9 with contractors.",
-                        "Completed release packet includes emergency contacts and reserve proof.",
-                        "Release only individually eligible vehicles with complete evidence packets.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Assemble the vehicle release packet",
-                    "action": "C3 links the signed owner agreement, driver agreement, coverage evidence, and authority records to one VIN.",
-                    "detail": "The operator confirms that every document covers the actual service and that no material restriction remains unresolved.",
-                },
-                {
-                    "step": 2,
-                    "title": "Prove collection and allocation",
-                    "action": "C3 reconciles one authorized payment through invoice, settlement, bank receipt, and owner allocation.",
-                    "detail": "A sandbox payment proves software behavior only; label it separately from actual settled pilot cash.",
-                },
-                {
-                    "step": 3,
-                    "title": "Complete custody and emergency rehearsal",
-                    "action": "C2 records condition, keys, device status, toll assignment, and emergency contacts with the driver.",
-                    "detail": "Practice collision reporting and voluntary return; prohibit unsafe interruption and unsupported device commands.",
-                },
-                {
-                    "step": 4,
-                    "title": "Authorize the bounded pilot",
-                    "action": "The operator signs the release and sets a two-vehicle maximum until the Day 30 review.",
-                    "detail": "Record the next collection date, service window, reserve balance, and person responsible for each open exception.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Days 15-21: Measure Collected Economics Without Confusing Billings and Profit",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The third week tests whether the service survives contact with "
-                    "actual drivers, vehicles, and settlement delays. On Day 15, activate "
-                    "only eligible pilot units and record the first scheduled lease "
-                    "period. On Day 16, inspect collections and driver communication; "
-                    "on Day 17, reconcile toll evidence; on Day 18, inspect device "
-                    "health and mileage; on Day 19, perform the first owner statement; "
-                    "on Day 20, review downtime; on Day 21, close the operating "
-                    "week. Two vehicles at an illustrative $650 weekly lease produce "
-                    "$1,300 gross weekly billings and $715 retained revenue at 55%, "
-                    "before operator expenses. Four fully billed weeks would produce "
-                    "$5,200 gross and $2,860 retained, but deployment after Day 14 "
-                    "does not create four completed billing weeks by Day 30. Count "
-                    "only service actually delivered and collections actually settled. This "
-                    "pilot tests mechanics, not the annual Base case. Do not add "
-                    "passenger fares, investor vehicle values, refundable deposits, or loan "
-                    "principal to operator revenue. P2 dispatch revenue enters the ledger "
-                    "only under the actual commercial arrangement, with the gross-versus-net "
-                    "presentation assessed separately. Track a unique service identifier so "
-                    "the same activity cannot appear once as a lease and again "
-                    "as an invented dispatch fee."
-                ),
-                (
-                    "Reconcile the canonical scenarios using the same bridge every Friday: "
-                    "gross billings multiplied by 0.55 equals retained revenue; retained "
-                    "revenue minus all remaining operator costs equals annual owner net "
-                    "profit. Conservative is $180,000 gross, $99,000 retained, $73,800 remaining "
-                    "costs, and $25,200 profit. Base is $690,000 gross, $379,500 retained, "
-                    "$234,600 remaining costs, and $144,900 profit. Scaled is $1,200,000 "
-                    "gross, $660,000 retained, $324,000 remaining costs, and $336,000 profit. "
-                    "Profit divided by gross gives 14%, 21.0%, and 28%; profit "
-                    "divided by retained revenue gives approximately 25.45%, 38.18%, and "
-                    "50.91%. The scorecard's $2,500-$15,000 monthly operating-expense range is "
-                    "not a substitute for this complete cost bridge. Base residual "
-                    "costs average $19,550 monthly, so the operator must separately identify "
-                    "routine overhead and other costs rather than force total costs "
-                    "into that range. Do not subtract owner splits or pass-through "
-                    "fleet costs twice. The 55% retained basis is the supplied "
-                    "ASC 606 modeling convention; actual principal-versus-agent presentation depends "
-                    "on contract control and the service promised. Maintain gross billings "
-                    "as a separate operating measure even where recognized revenue is "
-                    "presented net. C3 documents every classification and the operator "
-                    "reviews unexplained differences before accepting the close."
-                ),
-                (
-                    "Define the dashboard before interpreting a successful week. Collection rate "
-                    "equals settled cash applied to invoices due in the measurement "
-                    "window divided by those invoices' billed amounts; exclude deposits "
-                    "and future prepayments from both sides. Utilization equals paid contracted "
-                    "vehicle-days divided by scheduled pilot capacity days, including service "
-                    "days lost to maintenance or deployment failures. Unplanned downtime "
-                    "equals unplanned unavailable hours divided by scheduled service hours. "
-                    "Realized retained share equals actual retained revenue divided by "
-                    "gross billings for the same delivered services. Vehicle contribution "
-                    "equals retained revenue less attributable operator costs not already "
-                    "deducted, including paid contractor work, repairs, and insurance allocated "
-                    "consistently. Separately show owner-profit-equivalent margin after all remaining "
-                    "operator costs, using a consistent accrual treatment for earned "
-                    "revenue and incurred costs. Reserve transfers reduce available cash "
-                    "but are not automatically expenses. Record total operator hours "
-                    "and exceptions requiring intervention; automation that merely shifts unpaid "
-                    "work to contractors is not efficiency. Require at least two "
-                    "completed collection cycles for early operating conclusions and four "
-                    "active vehicle-weeks for a Day 30 economic sample. A vehicle-week "
-                    "is seven days of pilot exposure, not seven billable days. "
-                    "If the sample is smaller, classify economics as Fix for "
-                    "insufficient observation rather than extrapolating a lucky first payment."
-                ),
-            ],
-            "table": {
-                "caption": "Week Three Daily Evidence and Canonical Economics Control Points",
-                "headers": [
-                    "Day and measurement task",
-                    "Mapped play and accountable pod member",
-                    "Evidence captured in the weekly close",
-                    "Quantitative interpretation or corrective action",
-                ],
-                "rows": [
-                    [
-                        "Day 15: activate no more than two vehicles.",
-                        "Operator releases P1 or P3 eligible units.",
-                        "VIN-level schedule records actual start dates and contracted charges.",
-                        "Two $650 weekly leases yield $1,300 gross weekly billings.",
-                    ],
-                    [
-                        "Day 16: inspect due invoices and settled collections.",
-                        "C3 runs P4 while C1 contacts drivers.",
-                        "Aged invoice report distinguishes settled cash from pending transfers.",
-                        "Investigate every missed payment within one business day.",
-                    ],
-                    [
-                        "Day 17: reconcile toll transactions against vehicle custody.",
-                        "C3 owns P8 with C1 dispute coordination.",
-                        "Toll records connect plate, transponder, timestamp, and responsible contract.",
-                        "Charge only supported amounts permitted by applicable terms.",
-                    ],
-                    [
-                        "Day 18: inspect device health and scheduled service mileage.",
-                        "C2 checks P7 telemetry and P9 intervals.",
-                        "Device report records last contact and actual service mileage.",
-                        "Treat stale location data as unavailable recovery evidence.",
-                    ],
-                    [
-                        "Day 19: issue the first reconciled investor statement.",
-                        "C3 prepares P10 for full-time operator review.",
-                        "Statement separates owner allocation, pass-through items, and retained revenue.",
-                        "Canonical 55% retention yields $715 from $1,300 billings.",
-                    ],
-                    [
-                        "Day 20: calculate downtime and operator intervention hours.",
-                        "C2 measures P9 while operator records workload.",
-                        "Exception log connects lost service hours to specific causes.",
-                        "Include maintenance losses in scheduled-capacity utilization calculations.",
-                    ],
-                    [
-                        "Day 21: close all three canonical scenario bridges.",
-                        "Operator and C3 validate P4 and P10.",
-                        "Bridge preserves $25,200, $144,900, and $336,000 annual owner profits.",
-                        "Separate complete residual costs from the quoted overhead range.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four Habits That Protect Fleet Contribution",
-                "body": "Experienced operators investigate the small reconciliation failures before they become vehicle, owner, or cash disputes.",
-                "items": [
-                    "Run toll matching by custody timestamp, not current driver name; delayed toll posting often belongs to the previous contract.",
-                    "Schedule collections early enough to observe settlement before owner distributions, while keeping the contractual due date explicit.",
-                    "Keep a dated tire and body-photo baseline at every handover; compare new damage against that packet before assigning a charge.",
-                    "Ask the broker to price the next vehicle before promising its economics; one VIN or driver change can alter the deductible and premium materially.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Days 22-30 and Reviews at 60/90: Kill Structural Losses, Fix Friction, Scale Evidence",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Days 22 through 24 repair the largest observed constraint instead "
-                    "of adding another offer. Rank exceptions by cash lost, service "
-                    "hours lost, and operator minutes consumed. A toll mismatch usually "
-                    "needs better attribution; uninsured activity requires immediate suspension "
-                    "of the affected service. A negative vehicle contribution needs "
-                    "a documented price, cost, or contract change before another "
-                    "unit repeats the loss. Day 25 retests the failed workflow "
-                    "with C3 observing the evidence. Day 26 checks reserve adequacy "
-                    "against current deductibles and unavoidable payments, rather than the "
-                    "original spreadsheet. Day 27 asks each owner whether the settlement "
-                    "statement is understandable and reconciles any dispute. Day 28 "
-                    "freezes new commitments while the operator closes the month. "
-                    "Day 29 assembles the review packet, and Day 30 assigns "
-                    "Kill, Fix, or Scale using the matrix below. First deal "
-                    "timing remains the canonical one to three months; an undeployed "
-                    "but properly progressing pilot is not automatically a failed "
-                    "business. It receives Fix, with lower spending and dated "
-                    "dependencies, until enough operating evidence exists. However, market interest "
-                    "does not justify indefinite spending. If the burn ceiling "
-                    "is reached without release readiness, stop new commitments and "
-                    "require a separately funded, explicitly bounded extension."
-                ),
-                (
-                    "Apply decision precedence consistently: critical safety or authority failures "
-                    "override commercial metrics; Kill conditions override Fix; Scale requires "
-                    "every stated threshold; all other cases receive Fix. Kill "
-                    "means stop new commitments and wind down the affected pilot "
-                    "or structurally defective offer, honor existing obligations, return vehicles "
-                    "safely, and reconcile owner and driver balances. It does "
-                    "not mean remotely disabling an occupied vehicle. At Day "
-                    "30, Scale permits one additional vehicle only after two "
-                    "collection cycles, four active vehicle-weeks, positive aggregate vehicle "
-                    "contribution, at least 95% collections, 75% utilization, no more "
-                    "than 10% unplanned downtime, and at least 55% realized "
-                    "retention. At Day 60, demand four cycles and twelve "
-                    "vehicle-weeks, then tighten collections to 97%, utilization to 80%, "
-                    "and downtime to 8%, with owner-profit-equivalent margin of at "
-                    "least 14% of gross. At Day 90, require eight "
-                    "cycles and twenty-four vehicle-weeks, 98% collections, 85% utilization, "
-                    "5% downtime, and at least 21% gross-basis owner-profit-equivalent margin. "
-                    "Use trailing thirty-day economics at each review, with cumulative "
-                    "exposure for sample thresholds. These are proposed operating decision "
-                    "rules, not canonical scorecard outputs. At every Scale review, "
-                    "retain full coverage, positive reserves, no unresolved owner statement "
-                    "dispute, and a feasible contractor schedule."
-                ),
-                (
-                    "Protect the four-person pod by making capacity a measured constraint. "
-                    "The full-time operator should spend no more than forty "
-                    "hours weekly across sales, exceptions, cash review, and owner "
-                    "communication; require a rolling two-week average within that limit "
-                    "before expansion. C1, C2, and C3 must have contracted "
-                    "capacity for the next increment, with a named substitute "
-                    "for essential tasks. Do not infer unlimited hours from "
-                    "the label contractor. Day 30 permits one added vehicle; "
-                    "Day 60 permits at most two; Day 90 permits "
-                    "at most two per fortnight, each contingent on current "
-                    "evidence and reserves. These increments are managerial limits rather "
-                    "than revenue forecasts. The Base scenario remains 1 FT "
-                    "+ 3 C; the Scaled scenario explicitly requires 2 "
-                    "FT + 4 C, so establish those funded roles "
-                    "before pursuing its workload. A Fix decision creates one "
-                    "owner, one measurable correction, a fourteen-day deadline, and "
-                    "a retest without fleet growth. By Day 90, two "
-                    "failed correction windows for the same structural contribution "
-                    "problem trigger Kill for that offer. Preserve productive vehicles "
-                    "only where their own contracts and economics remain sound. "
-                    "Expansion follows reproducible cash collection and complete cost "
-                    "recognition, not gross billings, investor enthusiasm, or a platform "
-                    "dashboard that omits the operator's actual obligations."
-                ),
-            ],
-            "table": {
-                "caption": "Week Four Deliverables and Quantitative Day 30/60/90 Kill, Fix, or Scale Matrix",
-                "headers": [
-                    "Execution date or review checkpoint",
-                    "Required evidence and immediate operating action",
-                    "Kill or Fix threshold and response",
-                    "Scale threshold or completion standard",
-                ],
-                "rows": [
-                    [
-                        "Days 22-23: rank losses and select one correction.",
-                        "Operator ranks exceptions by cash, downtime, and intervention minutes.",
-                        "Fix the largest controllable loss before authorizing additional vehicles.",
-                        "Correction has one owner and a fourteen-day retest deadline.",
-                    ],
-                    [
-                        "Day 24: renegotiate or suspend defective vehicle economics.",
-                        "Operator compares retained revenue with attributable remaining vehicle costs.",
-                        "Kill the affected offer when no feasible contribution-positive contract exists.",
-                        "Revised terms produce positive modeled contribution using documented quotes.",
-                    ],
-                    [
-                        "Day 25: retest collections, toll attribution, and statements.",
-                        "C3 observes evidence while each workflow owner performs corrections.",
-                        "Fix any unmatched transaction before distributing disputed owner amounts.",
-                        "Every test transaction reconciles through bank and allocation records.",
-                    ],
-                    [
-                        "Day 26: recompute unrestricted cash and deductible exposure.",
-                        "Operator deducts restricted balances and all committed launch outflows.",
-                        "Freeze expansion below the deductible-plus-thirty-day-payments reserve floor.",
-                        "First-month burn stays within $7,500 and reserves remain sufficient.",
-                    ],
-                    [
-                        "Days 27-28: resolve owner questions and freeze commitments.",
-                        "C1 gathers feedback while C3 closes service-period accounting records.",
-                        "Fix unresolved statement disputes before adding another owner vehicle.",
-                        "Owner statements match contracts, bank receipts, and service evidence.",
-                    ],
-                    [
-                        "Days 29-30: assemble evidence and record the decision.",
-                        "Operator signs metrics, sample exposure, obligations, and contractor capacity.",
-                        "Fix insufficient operating samples without treating the first month as annual proof.",
-                        "Written decision identifies permitted spending and the next review date.",
-                    ],
-                    [
-                        "Day 30 review: evaluate release readiness and early economics.",
-                        "Require two collection cycles and four cumulative active vehicle-weeks.",
-                        "Kill infeasible authority or coverage paths; Fix undersized samples or any missed Scale test.",
-                        "Add one vehicle only: collections >=95%, utilization >=75%, downtime <=10%, retention >=55%, positive vehicle contribution.",
-                    ],
-                    [
-                        "Day 60 review: evaluate repeatability and full-cost sustainability.",
-                        "Require four collection cycles and twelve cumulative active vehicle-weeks.",
-                        "Kill after two consecutive fourteen-day negative-contribution windows despite correction; Fix other misses.",
-                        "Add at most two vehicles: collections >=97%, utilization >=80%, downtime <=8%, retention >=55%, gross-basis profit margin >=14%.",
-                    ],
-                    [
-                        "Day 90 review: evaluate durable margin and pod capacity.",
-                        "Require eight collection cycles and twenty-four cumulative active vehicle-weeks.",
-                        "Kill repeated structural contribution failure after two correction windows; Fix other threshold misses.",
-                        "Add at most two vehicles fortnightly: collections >=98%, utilization >=85%, downtime <=5%, retention >=55%, gross-basis profit margin >=21%.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Scale the vehicle whose collections, coverage, and complete costs reconcile, not the vehicle whose gross billings look impressive.",
-    "diagram_id": "diag-08",
-    "action_checklist": [
-        "Assign P1-P10 to the 1 FT + 3 C pod, select one market and primary offer, and keep unsupported commercial dispatch inactive.",
-        "Build a VIN-specific release packet covering owner authority, driver eligibility, insurance periods, local permissions, condition, and safe recovery.",
-        "Set the $7,500 first-month burn ceiling, separate restricted money, and preserve the largest deductible plus thirty days of unavoidable payments.",
-        "Test authorized collection, failed settlement, toll attribution, and owner distribution before releasing the two-vehicle pilot.",
-        "Close gross billings, 55% modeled retention, actual retained share, complete residual costs, collections, downtime, utilization, and operator hours weekly.",
-        "Record Day 30/60/90 Kill, Fix, or Scale decisions with sample thresholds, fourteen-day correction deadlines, and bounded vehicle additions.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "California Public Utilities Code § 5433 — Transportation Network Company Insurance",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PUC&sectionNum=5433.",
-            "relevance": "Map coverage to the actual transportation-network activity and statutory periods; verify the policy arrangement rather than assuming personal insurance covers commercial use.",
-        },
-        {
-            "title": "California Public Utilities Code § 5371 — Charter-Party Carrier Operating Authority",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PUC&sectionNum=5371.",
-            "relevance": "Determine whether proposed California commercial passenger operations require charter-party authority before activating the dispatch play, subject to applicable statutory exceptions.",
-        },
-        {
-            "title": "California Civil Code § 1936 — Rental Vehicle Agreements",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1936.",
-            "relevance": "For covered rental transactions, review contract disclosures, charges, damage allocation, and electronic-surveillance restrictions before implementing rental terms or vehicle tracking.",
-        },
-        {
-            "title": "15 U.S.C. § 1681b — Permissible Purposes of Consumer Reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681b",
-            "relevance": "Establish a permissible purpose for driver reports and apply subsection (b) procedures when reports are obtained for employment purposes.",
-        },
-        {
-            "title": "15 U.S.C. § 1681m — Requirements on Users of Consumer Reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681m",
-            "relevance": "Implement applicable adverse-action notices when a driver decision is based wholly or partly on information in a consumer report.",
-        },
-        {
-            "title": "New York Vehicle and Traffic Law § 370 — Indemnity Bonds or Insurance Policies",
-            "url": "https://www.nysenate.gov/legislation/laws/VAT/370",
-            "relevance": "Check applicable insurance and security requirements for vehicles transporting passengers for hire in New York; separately verify NYC TLC and airport requirements.",
-        },
-    ],
-}
+CHAPTER_12 = {'id': 'Q12',
+ 'chapter_id': 'Q12',
+ 'chapter_number': 12,
+ 'question_number': 12,
+ 'slug': 'scaling-survival-fleet-economics-teams-mistakes',
+ 'question_prompt': 'What does it really take to scale a rental fleet past 15, 50, or 100+ cars, and what '
+                    'failure modes kill most operators?',
+ 'kicker': 'Q12 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Scaling and Survival: Fleet Economics, Teams, and the Mistakes That Kill Rental Businesses',
+ 'subtitle': 'Day-in-the-life of six- and seven-figure operators, hands-off rental teams, remote-CEO '
+             'scaling to 15 cars, growing past 100 and 300 cars, exotic fleets across 3 cities, rental '
+             'fleet economics, depreciation and tax write-offs, Turo settings and host bans, and the '
+             'mistakes behind failed 40-car fleets',
+ 'layout_template': 'action_worksheet_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators running 15 to 300+ cars agree that scale only works once systems exist: '
+                      'adding cars to a broken process adds fuel to the fire, revenue is not profit, and '
+                      'Turo is not an operating system. The street mechanics are concrete: per-job 1099 '
+                      'vendors instead of employees, timestamped check-in and check-out evidence, '
+                      'kill-switch trackers, lockboxes, and minimum discount settings. The numbers are '
+                      'blunt. A modeled 100-car fleet earns about $240K operating profit at a 12% margin, '
+                      'and the gap between a good and a bad resale year exceeds $1M. King of Rentals hit '
+                      '84% average utilization after pivoting to direct rideshare rentals versus 65-70% on '
+                      'Turo. Disagreements center on when to leave Turo, whether to own cars or scale '
+                      "through consignment and other people's cars, and whether delivery and private "
+                      'rentals are worth the added risk.',
+ 'key_metrics': [{'label': '100-Car Modeled Operating Profit',
+                  'metric': '100-Car Modeled Operating Profit',
+                  'value': '$240K operating profit (12% margin) on about $2M revenue',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Worked model: 100 cars at $28K, 80% financed at 6%, 75% utilization at '
+                             '$55/day plus $18/day extras, about $1.76M in costs before a $230K resale '
+                             'loss.',
+                  'source': 'Money Prism ([tNUrWA8I5bI @ 00:19:23])'},
+                 {'label': 'Direct Rideshare Utilization vs. Turo',
+                  'metric': 'Direct Rideshare Utilization vs. Turo',
+                  'value': '84% average, 93% peak vs. 65-70% on Turo',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Utilization across a 300-car Phoenix and LA fleet after shifting from short '
+                             'Turo trips to roughly 60-day rideshare rentals.',
+                  'source': 'King of Rentals ([NQzlTWjz8a0 @ 00:06:38])'},
+                 {'label': 'Hands-Off Team Revenue and Margin',
+                  'metric': 'Hands-Off Team Revenue and Margin',
+                  'value': '$150K per month at 30-35% margin',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Reached after cutting 60 cars to about half, then rebuilding past 100 cars, '
+                             'mostly on consignment, with no owner paycheck for 6 months.',
+                  'source': 'Etienne Elsaesser ([VUKM00PHEmI @ 00:13:18])'},
+                 {'label': 'Lot Overhead Per Car at Scale',
+                  'metric': 'Lot Overhead Per Car at Scale',
+                  'value': '$50/car/month at 20 cars vs. $35/car/month at 280 cars',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'A $1,000/month LA lot holding 20 cars versus a $10K/month main site spread '
+                             'over 280 cars; staff runs about $50/car.',
+                  'source': 'King of Rentals ([by_FGx_s0B0 @ 00:04:58])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator who has crossed 15 cars says the same thing first: fix the '
+                              'process before you add metal. King of Rentals, running 300+ cars, warns '
+                              'that adding cars to a bad process just adds fuel to the fire, and that a '
+                              'QuickBooks P&L can mislead unless you check depreciation, seven-year loans '
+                              'against car lifespan, and cost per mile [706e4cdleYQ @ 00:00:22] '
+                              '[706e4cdleYQ @ 00:00:56]. Rolls Henri built 40 Turo cars before learning to '
+                              'run a business and puts it flatly: money coming in does not mean you are '
+                              'making money, and 40 cars without a system means 40 competing problems, '
+                              'each carrying a payment, maintenance, tolls, fuel, cleaning and claims '
+                              'exposure [jhUFPSKXYyg @ 00:00:44] [jhUFPSKXYyg @ 00:01:04]. Delano Green '
+                              'frames the same trap as scaling costs before systems, where 10 owned cars '
+                              'means roughly $100K of debt and more cars equal more stress [iN4oOhcGHDg @ '
+                              '00:07:34] [iN4oOhcGHDg @ 00:08:32]. Money Prism zooms out to the industry '
+                              'level: car rental is really three businesses, financing, insurance and '
+                              'wholesale used cars, the bank owns your cars, and an idle unit bleeds '
+                              '$10-15 per day rather than simply failing to earn [tNUrWA8I5bI @ 00:01:40] '
+                              "[tNUrWA8I5bI @ 00:07:21]. The baseline prerequisite is an owner's view of "
+                              "cash, debt and resale, not a host's view of bookings.",
+                              'The second consensus point is what to buy: cheap, reliable, boring cars at '
+                              'the bottom of the depreciation curve. King of Rentals tells new operators '
+                              'to start with an economy car at $5-10K, naming the Focus and Fiesta, and '
+                              'warns that new cars lose value fast [OBbGsDAi0xA @ 00:04:37]. Aubrey Janik, '
+                              'eight years on Turo, buys at the bottom of the curve, such as a 2014 '
+                              'Hyundai at about 120K miles or a 2013 Yaris at about 125K miles, ranks '
+                              'purchases by reliability first, then ROI, then demand, and notes that '
+                              "$20-30K cars rent within 10-20% of a $5K car's daily rate [vqwx2USfRpA @ "
+                              '00:06:26] [vqwx2USfRpA @ 00:14:22]. Car Rental Coach runs an economy-heavy '
+                              'Pittsburgh fleet of Accents, Equinoxes, Explorers, Mirages and an EcoSport '
+                              'because BMW and Audi repairs must be outsourced, which screws with the '
+                              'bottom line [lOTgf5qQVJ8 @ 00:04:13] [lOTgf5qQVJ8 @ 00:10:52]. Even on the '
+                              'exotic side, Private Keys paid about $80,000 for a BMW that rarely rented '
+                              'before the model was discontinued, and the takeaway was simple: do market '
+                              'research before you buy [LI8272h_0Ns @ 00:16:20]. The shared rule across '
+                              'all four operators is that a car earns on reliability, utilization and '
+                              'resale, not on how much the owner personally likes driving it.',
+                              'The third agreement is that evidence wins disputes and memory does not. '
+                              'Etienne Elsaesser requires checkout and check-in videos covering the gas '
+                              'cap, sunroof, underbody, tires, rims and under the hood, plus dash photos '
+                              'of mileage and gas, because without before evidence insurers cite fraud to '
+                              'deny claims and Turo denies too [3dvvSrh_cus @ 00:25:09]. In a separate '
+                              'breakdown of host bans, Elsaesser shoots 100-200 photos per Turo trip and '
+                              'lists poor documentation and repeated reimbursement disputes as '
+                              'trust-and-safety triggers that get hosts removed without warning or appeal '
+                              '[VUKM00PHEmI @ 00:41:48] [VUKM00PHEmI @ 00:04:09]. Aubrey Janik sets a '
+                              'floor of 75 photos and says nicer vehicles should get 150-plus [vqwx2USfRpA '
+                              '@ 00:10:45]. Rolls Henri lists the minimum shot list as mileage, fuel, '
+                              'damage, glass, tires and interior, ties damage directly to downtime, and '
+                              'closes with two lines every operator repeats: your memory is not evidence, '
+                              'and document everything before you need the evidence [jhUFPSKXYyg @ '
+                              '00:01:26] [jhUFPSKXYyg @ 00:04:14]. The consensus prerequisite is a '
+                              'repeatable documentation routine baked into every single handoff, owned by '
+                              "a team process rather than the owner's camera roll, because Turo is not "
+                              'your operating system.'],
+               'table': {'caption': 'Where the scaling operators agree before a single car is added',
+                         'headers': ['Consensus Principle',
+                                     'What the Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Build systems before adding any more cars',
+                                   'Adding cars to a bad process only adds fuel to the fire',
+                                   'Audit the P&L for depreciation, loan term and cost per mile first',
+                                   'King of Rentals ([706e4cdleYQ @ 00:00:22])'],
+                                  ['Revenue coming in is not the same as profit',
+                                   'Each car adds a payment, maintenance, tolls, fuel, cleaning and claims '
+                                   'exposure',
+                                   'Track cash, obligations, risk, recoveries and follow-ups in one '
+                                   'operating system',
+                                   'Rolls Henri ([jhUFPSKXYyg @ 00:00:44])'],
+                                  ['Owned-car debt scales right alongside fleet stress',
+                                   'Ten owned cars means roughly $100K of debt and more stress',
+                                   "Scale through agreements on other people's cars before stacking more "
+                                   'loans',
+                                   'Delano Green ([iN4oOhcGHDg @ 00:08:32])'],
+                                  ['Idle inventory actively bleeds cash every single day',
+                                   'An idle rental car loses $10-15 per day while the bank owns it',
+                                   'Push utilization hard and treat resale as part of the business model',
+                                   'Money Prism ([tNUrWA8I5bI @ 00:07:21])'],
+                                  ['Start the fleet with economy cars, not luxury units',
+                                   'First car should be an economy unit at $5-10K like a Focus or Fiesta',
+                                   'Avoid new cars that lose value fast before the business proves itself',
+                                   'King of Rentals ([OBbGsDAi0xA @ 00:04:37])'],
+                                  ['Buy at the bottom of the depreciation curve',
+                                   'Target 2013-2014 cars around 120-125K miles to avoid ending up '
+                                   'underwater',
+                                   'Rank every purchase by reliability first, then ROI, then local demand',
+                                   'Aubrey Janik ([vqwx2USfRpA @ 00:06:26])'],
+                                  ['Document every single handoff with timestamped evidence',
+                                   'Shoot 100-200 photos per Turo trip to survive claims and ban reviews',
+                                   'Poor documentation is a trust-and-safety trigger that removes hosts '
+                                   'without appeal',
+                                   'Etienne Elsaesser ([VUKM00PHEmI @ 00:41:48])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The hands-off team blueprint comes from Etienne Elsaesser, who scaled from '
+                              '$150K per year to $150K per month on five roles. A VA or admin contractor '
+                              'takes calls on a script, collects the license, insurance binder and contact '
+                              "info, verifies the guest's own liability, comprehensive, collision and "
+                              'uninsured motorist coverage, and runs insureverify.ai for license, '
+                              'background, MVR and a timestamped insurance check [3dvvSrh_cus @ 00:01:48]. '
+                              'Detailers are paid per job, runners are 5-7 on-call 1099 contractors paid '
+                              'per task who demand a selfie with the license in front of the car, and '
+                              'kill-switch trackers handle remote lock and unlock at maybe $5 per task; '
+                              'the rule is do not get employees [3dvvSrh_cus @ 00:15:51] [3dvvSrh_cus @ '
+                              '00:20:01]. Brandon Ascari hit 15-20 hours a week of management at about 10 '
+                              'cars, then cut that roughly in half with a cleaner at $20 per car for about '
+                              '30 minutes of work [whkUEOIjybM @ 00:14:41]. King of Rentals pays '
+                              'part-timers $20-25 an hour so the owner can focus on debt, acquiring cars '
+                              'and systems [by_FGx_s0B0 @ 00:06:33], while Car Rental Coach moved to a '
+                              'full-time detailer only after passing 50 cars [lOTgf5qQVJ8 @ 00:03:35].',
+                              "Money Prism's 100-car worked model is the cleanest unit-economics sheet: "
+                              '$2.8M of $28K cars, 80% financed at 6% for $134K interest, 75% utilization '
+                              'at $55 per day plus $18 of extras for about $2M revenue, against about '
+                              '$1.76M in costs led by $420K depreciation, $280K staff and $220K airport '
+                              'concession, for $240K operating profit at a 12% margin [tNUrWA8I5bI @ '
+                              '00:19:23]. Selling at $21,500 against a $23,800 book value wipes $230K and '
+                              'leaves roughly $10K net, while a bad year at 71% utilization and $49 rates '
+                              'flips to a $350-450K loss, a gap of over $1M from the good year '
+                              '[tNUrWA8I5bI @ 00:24:49]. King of Rentals shows overhead shrinking with '
+                              'scale: a $1,000 LA lot for 20 cars runs $50 per car, while the main $10K '
+                              'site over 280 cars runs $35 per car [by_FGx_s0B0 @ 00:04:58]. The '
+                              "asset-light math runs differently: Delano Green's other-people's-cars model "
+                              'pays the operator 40% and the owner 60% with the risk on the owner '
+                              '[iN4oOhcGHDg @ 00:09:13], and Elsaesser targets 50/50 consignment splits, '
+                              'which produced 85-90% of a business running at 30-35% margin [VUKM00PHEmI @ '
+                              '00:14:44].',
+                              'On the platform side, George Madden of Car Rental Coach, who has listed '
+                              '104+ vehicles in Pittsburgh, treats settings as business decisions: '
+                              'discounts at the minimum of 3% daily, 5% weekly, 10% for two weeks, 15% for '
+                              "three weeks and 20% monthly instead of Turo's 45% push, a 2-day minimum "
+                              'trip because 1-day renters bring theft and smoking, and 200 miles a day '
+                              '[fslxasGx4CE @ 00:08:36] [fslxasGx4CE @ 00:21:02]. Madden runs the 90 plan, '
+                              'keeping 90% with a $2,750 deductible, and once collected $2,800 in mileage '
+                              'fees on a $6,000 car [fslxasGx4CE @ 00:23:31]. In the day-in-the-life tour, '
+                              'lockboxes and an automated system end 11 p.m. key handoffs, and $150 '
+                              'smoking and cleaning fees add up to thousands a year [lOTgf5qQVJ8 @ '
+                              '00:07:21]. Off-platform, King of Rentals says direct rentals earn about '
+                              'twice Turo, though side hustlers with 2-3 cars should stay put [706e4cdleYQ '
+                              '@ 00:06:24]. Elsaesser prices private rentals at 1.5-2x the host-side '
+                              'numbers rentscout.io shows, and works unit economics at $1,000 per 100 '
+                              'miles, or $10 per mile [VUKM00PHEmI @ 00:19:11] [VUKM00PHEmI @ 00:31:51].'],
+               'table': {'caption': 'Street-level numbers, tools and settings the operators actually run',
+                         'headers': ['Mechanic or Tool',
+                                     'Exact Number or Setting',
+                                     'How It Is Used',
+                                     'Expert Source'],
+                         'rows': [['Auction payment method for fast release',
+                                   "Wire, ACH or cashier's check; a wire can take 24-48 hours",
+                                   "Cashier's check gets scanned and marked paid right away",
+                                   'Russ Unlocked ([y_X4A98Zuec @ 00:02:30])'],
+                                  ['Towing non-running auction cars back to the lot',
+                                   '$60 per car or $120 for two through the parking landlord',
+                                   'Broken units like the 96,000-mile Fusion go straight to the mechanics',
+                                   'Russ Unlocked ([y_X4A98Zuec @ 00:14:20])'],
+                                  ['Turo-ready sourcing filter on used listings',
+                                   '2014-2019 model years, 129,999 miles or less, clean title only',
+                                   "Matches Turo's under-130K-mile, 12-year limits; mechanic check and "
+                                   'test-drive',
+                                   'Brandon Ascari ([whkUEOIjybM @ 00:05:24])'],
+                                  ['Rideshare pivot to long-term rentals',
+                                   'About 6-month rentals with 3-5 returns per day, maximum around 6',
+                                   'Replaces 300-600 weekly short bookings a 100-car Turo fleet would need',
+                                   'King of Rentals ([706e4cdleYQ @ 00:04:44])'],
+                                  ['Software consolidation into one rental platform',
+                                   '7-8 tools folded into iFleet at $99 per month with 14-day trial',
+                                   'Replaced earlier HQ and Wheelbase setups with a single stack',
+                                   'King of Rentals ([706e4cdleYQ @ 00:08:02])'],
+                                  ['Commercial off-trip insurance for owned fleets',
+                                   'Romly, GMI and ABI for off-trip; Turo covers the on-trip period',
+                                   'Personal policy acceptable only if the insurer knows about the rentals',
+                                   'King of Rentals ([OBbGsDAi0xA @ 00:07:01])'],
+                                  ['Security deposits on private exotic rentals',
+                                   '$1-2K held on a major credit card on rental day',
+                                   'No reservation without payment; agreement sent via DocuSign or CRM',
+                                   'Etienne Elsaesser ([VUKM00PHEmI @ 00:26:32])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small Moves the Big Fleets Use',
+                           'body': 'Low-cost operating edges the scaling operators rely on to save time, '
+                                   'cash and claims.',
+                           'items': ["Pay auction invoices by cashier's check; the auction scans it and "
+                                     'marks the car paid right away, while a wire can sit 24-48 hours '
+                                     '[Russ Unlocked — y_X4A98Zuec @ 00:02:30]',
+                                     'Plug the tracker into the OBD2 port behind a splitter so the device '
+                                     'stays concealed from renters; Bouncie, Zubie and OneStep all work '
+                                     '[King of Rentals — OBbGsDAi0xA @ 00:08:08]',
+                                     'Never cancel a trip from the host side; two or three host '
+                                     'cancellations can get you banned, so call Turo and have them cancel '
+                                     'instead [Etienne Elsaesser — VUKM00PHEmI @ 00:07:36]',
+                                     'Once the fleet is big enough, a $10K pop-up building on a $10K '
+                                     'cement pad with a lift and part-time mechanic saved over $60-70K in '
+                                     'repairs [Car Rental Coach — lOTgf5qQVJ8 @ 00:12:08]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Source and Onboard the Car',
+                              'action': 'Buy within platform limits and push every new unit through a '
+                                        'fixed onboarding chain.',
+                              'detail': 'Send the team the VIN, photo, year, mileage and key count, add it '
+                                        'to the master files, then route it to the locksmith for keys, '
+                                        'mechanics for inspection and the tracker installer, all '
+                                        'coordinated on Telegram [Russ Unlocked — y_X4A98Zuec @ '
+                                        '00:10:44].'},
+                             {'step': 2,
+                              'title': 'Verify the Renter and Their Coverage',
+                              'action': 'Collect license, insurance binder and payment before any '
+                                        'reservation is confirmed.',
+                              'detail': "The VA checks the guest's own liability, comprehensive and "
+                                        'collision coverage and runs license, background and MVR checks '
+                                        'through insureverify.ai with a timestamped record; no reservation '
+                                        'without payment [Etienne Elsaesser — 3dvvSrh_cus @ 00:01:48].'},
+                             {'step': 3,
+                              'title': 'Document Every Handoff',
+                              'action': 'Shoot checkout and check-in video plus dash photos on every trip.',
+                              'detail': 'Capture mileage, fuel, damage, glass, tires and interior before '
+                                        'and after each rental so damage claims and downtime are backed by '
+                                        'evidence instead of memory [Rolls Henri — jhUFPSKXYyg @ '
+                                        '00:01:26].'},
+                             {'step': 4,
+                              'title': 'Turn and Maintain Between Trips',
+                              'action': 'Open every returned car, check fluids, clean, and protect the '
+                                        'buffer between bookings.',
+                              'detail': 'Check oil, coolant, washer fluid and wipers on every return, '
+                                        'since one renter ignoring the oil light blew up an Equinox '
+                                        'engine, and keep a 3-hour trip buffer with 1-hour advance notice '
+                                        '[Car Rental Coach — lOTgf5qQVJ8 @ 00:02:35].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over how long to stay on Turo. Private Keys calls the '
+                              'platform a middleman taking 25 to 30% of revenue. Every guest scrolling '
+                              'Turo sees roughly 3,000 rival cars, which pushed that operator into an '
+                              'own-brand shop with insurance covering all 50 states, Canada and Mexico '
+                              'with no limit, while still listing on Turo [LI8272h_0Ns @ 00:08:49]. King '
+                              'of Rentals runs the same math from the other side. Direct bookings earn '
+                              'roughly 2x, and the brothers were already doing 20-30% off-platform when '
+                              'Turo kicked them off. Yet they still tell side hustlers holding 2-3 cars to '
+                              'stay on Turo [706e4cdleYQ @ 00:06:24]. Aubrey Janik pushes back hardest, '
+                              'saying hosts jump from Turo to direct rentals far too soon. Direct work '
+                              'drags in more licensing, tax and background-check burden, plus a core-four '
+                              'stack: a website and Google Business Profile, a Romely commercial policy, '
+                              'Wheelbase Pro and a hardwired OneStep GPS kill-switch tracker [vqwx2USfRpA '
+                              '@ 00:26:54]. Car Rental Coach lands in between: start on Turo, then move to '
+                              'private rentals once you can absorb more risk. George learned that when a '
+                              'two-month private Equinox renter ignored the oil light and blew the engine '
+                              '[lOTgf5qQVJ8 @ 00:03:21].',
+                              'Fleet mix splits the room just as hard. Car Rental Coach steers beginners '
+                              'into economy cars because BMW and Audi repairs have to be outsourced, and '
+                              'that screws with the bottom line. The Pittsburgh lot leans on Accents, '
+                              'Mirages, EcoSports and Explorers [lOTgf5qQVJ8 @ 00:10:52]. Etienne '
+                              'Elsaesser reports the opposite pain: bolting 30 economy cars onto an exotic '
+                              'book crushed margins. Consignment exotics drove 85-90% of a business doing '
+                              '$150K a month at a 30-35% margin [VUKM00PHEmI @ 00:17:50]. Private Keys has '
+                              'played both sides. That operator grew from two cars to over 50 economy '
+                              'units, then bought a roughly $85K Corvette that paid for itself three times '
+                              'in about two years. Later came an $80,000 BMW that rarely rented after the '
+                              'model was discontinued [LI8272h_0Ns @ 00:16:20]. King of Rentals abandoned '
+                              'three-day trips altogether, since 100 cars on short rentals means 300-600 '
+                              'reservations a week. They pivoted to roughly six-month rideshare Teslas, '
+                              'with three to five returns a day. The trade-off is harder customers, more '
+                              'repossessions and a higher accident rate, against utilization of 93% at '
+                              'peak and 84% on average, versus 65-70% on Turo [NQzlTWjz8a0 @ 00:06:38].',
+                              'Capital and labor models diverge too. Delano Green argues that ten owned '
+                              "cars means roughly $100K of debt, and pitches 'other people's cars' "
+                              'instead: 40% to the operator, 60% to the owner, with the risk sitting on '
+                              'the owner. That model scales through 10-15 agreements fed by content and '
+                              'marketing, and Green describes it as scaling up with agreements instead of '
+                              "debt [iN4oOhcGHDg @ 00:07:08]. Etienne Elsaesser's consignment deals target "
+                              "a 50/50 split. Aubrey Janik's co-hosting deals run 70/30 or 60/40, with the "
+                              'investor taking the majority, and rest on a pitch, communication, clean '
+                              'books and a strong market [vqwx2USfRpA @ 00:16:08]. King of Rentals goes '
+                              'the opposite direction, buying across multiple dealerships inside a roughly '
+                              'seven-day reporting window to add 10-15 cars a week. They treat the '
+                              'interest rate as a small factor but warn that the trap is skipping research '
+                              '[706e4cdleYQ @ 00:05:20]. On labor, Etienne is blunt: do not get employees. '
+                              'That playbook runs on per-job mobile detailers and 5-7 on-call 1099 runners '
+                              'paid per task, so vendors carry their own payroll and schedules and stay '
+                              'accountable to the operator [3dvvSrh_cus @ 00:20:01].'],
+               'table': {'caption': 'Competing playbooks for scaling a rental fleet, side by side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['When to leave Turo for direct bookings',
+                                   'Private Keys builds an own brand because Turo takes 25-30% of revenue '
+                                   'as a middleman.',
+                                   'Aubrey Janik says hosts jump from Turo to direct rentals far too soon.',
+                                   'Private Keys ([LI8272h_0Ns @ 00:08:49]); Aubrey Janik ([vqwx2USfRpA @ '
+                                   '00:26:54])'],
+                                  ['Economy cars versus exotic and luxury units',
+                                   'Car Rental Coach leans economy because outsourced BMW and Audi repairs '
+                                   'hurt the bottom line.',
+                                   'Etienne Elsaesser says adding 30 economy cars crushed margins on an '
+                                   'exotic consignment book.',
+                                   'Car Rental Coach ([lOTgf5qQVJ8 @ 00:10:52]); Etienne Elsaesser '
+                                   '([VUKM00PHEmI @ 00:17:50])'],
+                                  ['Short three-day trips versus long rideshare rentals',
+                                   'Car Rental Coach sets a two-day minimum and caps trips at three weeks '
+                                   'to one month.',
+                                   'King of Rentals runs roughly six-month rideshare Teslas at 84% average '
+                                   'utilization versus 65-70% on Turo.',
+                                   'Car Rental Coach ([fslxasGx4CE @ 00:21:02]); King of Rentals '
+                                   '([NQzlTWjz8a0 @ 00:06:38])'],
+                                  ["Owning cars with debt versus other people's cars",
+                                   'King of Rentals buys 10-15 cars a week across multiple dealerships '
+                                   'inside a seven-day reporting window.',
+                                   'Delano Green scales through 10-15 agreements at a 40/60 split with the '
+                                   'owner carrying the risk.',
+                                   'King of Rentals ([706e4cdleYQ @ 00:05:20]); Delano Green ([iN4oOhcGHDg '
+                                   '@ 00:07:08])'],
+                                  ['Employees on payroll versus per-task contractors and vendors',
+                                   'Etienne Elsaesser says do not get employees and pays detailers and '
+                                   '1099 runners per job.',
+                                   'King of Rentals hires part-time staff at $20-25 an hour so the owner '
+                                   'can focus on debt, cars and systems.',
+                                   'Etienne Elsaesser ([3dvvSrh_cus @ 00:20:01]); King of Rentals '
+                                   '([by_FGx_s0B0 @ 00:06:33])'],
+                                  ['Offering guest delivery as a scaling lever',
+                                   'Car Rental Coach is against delivery and says few hosts scale past 25 '
+                                   'cars while offering it.',
+                                   'Etienne Elsaesser runs 5-7 on-call runners doing deliveries with '
+                                   'timestamped photos and lockbox handoffs.',
+                                   'Car Rental Coach ([fslxasGx4CE @ 00:10:51]); Etienne Elsaesser '
+                                   '([3dvvSrh_cus @ 00:15:51])'],
+                                  ['Personal name versus LLC for the first cars',
+                                   'Aubrey Janik registers and insures the first cars personally because '
+                                   'switching later means re-paying taxes.',
+                                   'Private Keys ran with no LLC early and had guest tickets and EZPass '
+                                   'letters sent to them.',
+                                   'Aubrey Janik ([vqwx2USfRpA @ 00:03:25]); Private Keys ([LI8272h_0Ns @ '
+                                   '00:05:44])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The costliest losses came from coverage gaps and unvetted hands on the '
+                              'keys. Etienne Elsaesser describes an employee handing a Huracan Spider to '
+                              'an unauthorized, uninsured driver who crashed it, leaving the repair to be '
+                              'paid out of pocket. Another employee took a $100,000 M4 convertible to a '
+                              'soccer game and spun it out while the car carried only off-trip coverage '
+                              '[3dvvSrh_cus @ 00:21:07]. The same operator ate a $50,000 loss on a Maybach '
+                              'because of a commercial-policy exclusion. That is why the playbook now '
+                              "calls for phoning the guest's insurer directly, confirming the policy is "
+                              'not brand new, asking about exclusions and pulling a binder [VUKM00PHEmI @ '
+                              '00:25:54]. King of Rentals took roughly $12K of damage when police '
+                              "'grappled' one of their cars, then fought a resisting insurer and waited "
+                              'about a month for the check. They now limit how far they cooperate '
+                              '[NQzlTWjz8a0 @ 00:08:46]. Car Rental Coach logged a different hit: a '
+                              'private two-month Equinox renter paying about $2K a month ignored the oil '
+                              'light and blew the engine. George refused to rent to that person again and '
+                              'now checks fluids, oil first, between every trip [lOTgf5qQVJ8 @ 00:02:51].',
+                              'Platform risk is the silent killer. Etienne Elsaesser reports that Turo is '
+                              'self-insured and removes hosts for excessive or bad claims, including '
+                              'wear-and-tear claims under three inches. Hosts running 15 and 30 cars were '
+                              'cut off with no warning and no appeal, and two or three cancellations can '
+                              'trigger a ban unless you call Turo to cancel [VUKM00PHEmI @ 00:02:22]. '
+                              'Gray-area cash such as $30-40 for a late return, off-platform messaging, '
+                              "and accepting an ID card instead of a driver's license all feed the "
+                              'trust-and-safety score. Documentation decides who wins disputes. Without '
+                              "'before' evidence, insurers cite fraud and Turo denies the claim, and one "
+                              "renter's $1,200 mileage overage blew past a $1,000 deposit [3dvvSrh_cus @ "
+                              '00:25:09]. Rolls Henri, who scaled to 40 cars before building systems, puts '
+                              'it flatly: your memory is not evidence. Photos must cover mileage, fuel, '
+                              'damage, glass, tires and interior, and every damage event means downtime '
+                              '[jhUFPSKXYyg @ 00:01:04]. Aubrey Janik sets 75 photos as the floor and '
+                              '150-plus on nicer vehicles, while Etienne shoots 100-200 per Turo trip '
+                              '[vqwx2USfRpA @ 00:10:45].',
+                              'The economics checks start with the books. Rolls Henri warns that money '
+                              'coming in does not mean you are making money. King of Rentals says a '
+                              'QuickBooks P&L misleads unless you audit depreciation, seven-year loans '
+                              'against real car lifespan, and cost per mile. Their YouTube-inspired '
+                              'Slingshot cost about $20K, needed $250 oil changes and sold for $13K '
+                              "[706e4cdleYQ @ 00:00:56]. Money Prism's 100-car model shows how thin the "
+                              'margin is. About $2M of revenue against $1.76M of costs yields a 12% '
+                              'operating profit, a $230K auction loss leaves about $10K net, and a bad '
+                              'year at 71% utilization flips to a $350-450K loss. That is a gap of over '
+                              '$1M versus a good year [tNUrWA8I5bI @ 00:24:49]. Delano Green flags hosts '
+                              'who buy cars they personally like before proving demand [iN4oOhcGHDg @ '
+                              '00:00:29]. Brandon Ascari paused at five cars over saturation fears and '
+                              'missed the summer window. At about ten cars, management ate 15-20 hours a '
+                              'week until a $20-per-car cleaner cut that time roughly in half [whkUEOIjybM '
+                              '@ 00:14:41].'],
+               'table': {'caption': 'Firsthand failures, what they cost, and the fix each practitioner '
+                                    'adopted',
+                         'headers': ['Failure Mode',
+                                     'What Happened',
+                                     'Economics Check or Fix',
+                                     'Expert Source'],
+                         'rows': [['Employee hands keys to an unauthorized driver',
+                                   'A Huracan Spider went to an unauthorized, uninsured driver who crashed '
+                                   'it, paid out of pocket.',
+                                   'Use per-task contractors, lockbox handoffs and a license selfie in '
+                                   'front of the car.',
+                                   'Etienne Elsaesser ([3dvvSrh_cus @ 00:20:01])'],
+                                  ['Commercial policy exclusion on a luxury unit',
+                                   'A Maybach claim hit an exclusion in the commercial policy, producing a '
+                                   '$50,000 loss.',
+                                   'Call the insurer directly, ask about exclusions, reject brand-new '
+                                   'policies and get a binder.',
+                                   'Etienne Elsaesser ([VUKM00PHEmI @ 00:25:54])'],
+                                  ['Turo deactivation over claims history',
+                                   'Hosts with 15 and 30 cars were removed for excessive or bad claims '
+                                   'with no appeal.',
+                                   'Skip wear-and-tear claims under three inches and call Turo instead of '
+                                   'self-cancelling trips.',
+                                   'Etienne Elsaesser ([VUKM00PHEmI @ 00:01:37])'],
+                                  ['Marketing spend that produced zero leads',
+                                   '$2,000 on Yelp brought not a single phone call, and a FaZe Rug '
+                                   'collaboration brought no leads.',
+                                   'A Google Business Profile plus about $5K total of Google Ads built a '
+                                   '$1M+ business.',
+                                   'Etienne Elsaesser ([VUKM00PHEmI @ 00:41:08])'],
+                                  ['Buying a novelty vehicle off YouTube advice',
+                                   'The Slingshot cost about $20K, needed $250 oil changes and sold for '
+                                   '$13K within a year.',
+                                   'Track depreciation, maintenance cost and renter demand before buying '
+                                   'any unit.',
+                                   'King of Rentals ([706e4cdleYQ @ 00:02:10])'],
+                                  ['Long rentals and one-day renters abusing cars',
+                                   'Two engines ran dry of oil on long trips, and one-day renters brought '
+                                   'theft and smoking.',
+                                   'Set a two-day minimum, cap trips at three weeks to one month, and '
+                                   'enforce 200 miles a day.',
+                                   'Car Rental Coach ([fslxasGx4CE @ 00:21:31])'],
+                                  ['Repairs and maintenance eating into profits at scale',
+                                   'Outsourced repair bills became one of the major drains on the bottom '
+                                   'line past 50 cars.',
+                                   'A $10K pop-up building and $10K cement pad saved an estimated $60-70K '
+                                   'in repairs.',
+                                   'Car Rental Coach ([lOTgf5qQVJ8 @ 00:12:08])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before the Next Car Goes on the Lot',
+                           'body': 'Each gate below comes from a loss a practitioner absorbed firsthand. '
+                                   'Do not add another vehicle until every one of them holds [King of '
+                                   'Rentals — 706e4cdleYQ @ 00:00:22].',
+                           'items': ["No reservation without payment. Verify the guest's own liability, "
+                                     'comprehensive and collision coverage separately, and take the '
+                                     'security deposit on rental day [Etienne Elsaesser — 3dvvSrh_cus @ '
+                                     '00:06:44].',
+                                     "Phone the guest's insurer directly, confirm the policy is not brand "
+                                     'new, ask about exclusions, and pull a binder before release [Etienne '
+                                     'Elsaesser — VUKM00PHEmI @ 00:25:20].',
+                                     'Fix the process before scaling the fleet, because adding cars to a '
+                                     'bad process just adds fuel to the fire [King of Rentals — '
+                                     '706e4cdleYQ @ 00:00:22].',
+                                     'Open every returned car and check oil, coolant, washer fluid and '
+                                     'wipers before it goes back out [Car Rental Coach — lOTgf5qQVJ8 @ '
+                                     '00:02:35].']}}],
+ 'pull_quote': 'Money coming in does not mean you are making money. — Rolls Henri (jhUFPSKXYyg @ '
+               '00:00:44).',
+ 'diagram_id': 'diag-08',
+ 'action_checklist': ['Shoot checkout and check-in videos covering the gas cap, sunroof, underbody, tires, '
+                      'rims and under the hood, plus dash photos of mileage and fuel, and have the VA '
+                      'compare them [Etienne Elsaesser — 3dvvSrh_cus @ 00:25:09].',
+                      'Set Turo discounts to the minimum (3% daily, 5% for 1 week, 10% for 2 weeks, 15% '
+                      'for 3 weeks, 20% monthly) and re-check them, because Turo may reset them [Car '
+                      'Rental Coach — fslxasGx4CE @ 00:08:36].',
+                      'Install a hardwired kill-switch tracker such as OneStep GPS before any car joins '
+                      'the direct-rental fleet [Aubrey Janik — vqwx2USfRpA @ 00:26:07].',
+                      'Buy at the bottom of the depreciation curve, such as a 2014 Hyundai at about 120K '
+                      'miles, rather than newer cars that can leave you underwater [Aubrey Janik — '
+                      'vqwx2USfRpA @ 00:06:26].',
+                      'Price every unit by cost per mile ($1,000 over 100 miles is $10 a mile) and enforce '
+                      'over-mileage fees that can equal the daily-rate profit [Etienne Elsaesser — '
+                      'VUKM00PHEmI @ 00:31:51].',
+                      'Pay detailers per job as an outside business so they handle their own payroll and '
+                      'schedules and can deliver 1-hour turnarounds [Etienne Elsaesser — 3dvvSrh_cus @ '
+                      '00:09:28].'],
+ 'statutory_citations': [{'title': "Etienne Elsaesser — Turo Is Quietly Banning Hosts | Here's The Real "
+                                   'Reason [00:02:22]',
+                          'url': 'https://www.youtube.com/watch?v=VUKM00PHEmI&t=142s',
+                          'relevance': 'Primary practitioner testimony on Turo host removals for claims, '
+                                       'cancellations and trust-and-safety violations.'},
+                         {'title': 'Money Prism — The Economics of Owning a Car Rental Fleet [00:24:49]',
+                          'url': 'https://www.youtube.com/watch?v=tNUrWA8I5bI&t=1489s',
+                          'relevance': 'Primary practitioner testimony on the 100-car fleet model and the '
+                                       'over-$1M swing between good and bad years.'},
+                         {'title': 'King of Rentals — How One Rental Car Turned Into a Full-Time '
+                                   'Business... [00:06:38]',
+                          'url': 'https://www.youtube.com/watch?v=NQzlTWjz8a0&t=398s',
+                          'relevance': 'Primary practitioner testimony on rideshare utilization versus '
+                                       'Turo short-term utilization.'},
+                         {'title': 'Etienne Elsaesser — How I Built a $150k/Mo “Hands-Off” Car Rental Team '
+                                   '(Copy This) [00:21:07]',
+                          'url': 'https://www.youtube.com/watch?v=3dvvSrh_cus&t=1267s',
+                          'relevance': 'Primary practitioner testimony on employee-caused crashes and '
+                                       'off-trip-only coverage losses.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'y_X4A98Zuec',
+                       'title': 'What It Really Takes to Run a Million-Dollar Car Rental Business',
+                       'channel': 'Russ Unlocked',
+                       'author': 'Russ Unlocked',
+                       'text': "I usually don't get done till midnight.",
+                       'tip': "I usually don't get done till midnight.",
+                       'timestamp': 1487,
+                       'timestamp_seconds': 1487,
+                       'timestamp_label': '[00:24:47]',
+                       'url': 'https://www.youtube.com/watch?v=y_X4A98Zuec&t=1487s',
+                       'markdown': '[00:24:47](https://www.youtube.com/watch?v=y_X4A98Zuec&t=1487s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LI8272h_0Ns',
+                       'title': 'How I Built A 50+ Exotic Rental Fleet Across 3 Cities (Nobody Teaches '
+                                'This)',
+                       'channel': 'Private Keys',
+                       'author': 'Private Keys',
+                       'text': "I'm giving away about 25 to 30% of my revenue to a middleman.",
+                       'tip': "I'm giving away about 25 to 30% of my revenue to a middleman.",
+                       'timestamp': 529,
+                       'timestamp_seconds': 529,
+                       'timestamp_label': '[00:08:49]',
+                       'url': 'https://www.youtube.com/watch?v=LI8272h_0Ns&t=529s',
+                       'markdown': '[00:08:49](https://www.youtube.com/watch?v=LI8272h_0Ns&t=529s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3dvvSrh_cus',
+                       'title': 'How I Built a $150k/Mo “Hands-Off” Car Rental Team (Copy This)',
+                       'channel': 'Etienne Elsaesser',
+                       'author': 'Etienne Elsaesser',
+                       'text': 'Do not get employees.',
+                       'tip': 'Do not get employees.',
+                       'timestamp': 1201,
+                       'timestamp_seconds': 1201,
+                       'timestamp_label': '[00:20:01]',
+                       'url': 'https://www.youtube.com/watch?v=3dvvSrh_cus&t=1201s',
+                       'markdown': '[00:20:01](https://www.youtube.com/watch?v=3dvvSrh_cus&t=1201s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3dvvSrh_cus',
+                       'title': 'How I Built a $150k/Mo “Hands-Off” Car Rental Team (Copy This)',
+                       'channel': 'Etienne Elsaesser',
+                       'author': 'Etienne Elsaesser',
+                       'text': 'Paying them per job is huge.',
+                       'tip': 'Paying them per job is huge.',
+                       'timestamp': 568,
+                       'timestamp_seconds': 568,
+                       'timestamp_label': '[00:09:28]',
+                       'url': 'https://www.youtube.com/watch?v=3dvvSrh_cus&t=568s',
+                       'markdown': '[00:09:28](https://www.youtube.com/watch?v=3dvvSrh_cus&t=568s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tNUrWA8I5bI',
+                       'title': 'The Economics of Owning a Car Rental Fleet',
+                       'channel': 'Money Prism',
+                       'author': 'Money Prism',
+                       'text': "Idle inventory in this business doesn't just fail to earn.",
+                       'tip': "Idle inventory in this business doesn't just fail to earn.",
+                       'timestamp': 441,
+                       'timestamp_seconds': 441,
+                       'timestamp_label': '[00:07:21]',
+                       'url': 'https://www.youtube.com/watch?v=tNUrWA8I5bI&t=441s',
+                       'markdown': '[00:07:21](https://www.youtube.com/watch?v=tNUrWA8I5bI&t=441s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '706e4cdleYQ',
+                       'title': 'How I Actually Scaled a Rental Fleet Past 100 Cars..',
+                       'channel': 'King of Rentals',
+                       'author': 'King of Rentals',
+                       'text': "You can't just add cars on an already bad process, because all you're "
+                               'going to do is add fuel to the fire, especially if your process right now '
+                               'is no bueno.',
+                       'tip': "You can't just add cars on an already bad process, because all you're going "
+                              'to do is add fuel to the fire, especially if your process right now is no '
+                              'bueno.',
+                       'timestamp': 22,
+                       'timestamp_seconds': 22,
+                       'timestamp_label': '[00:00:22]',
+                       'url': 'https://www.youtube.com/watch?v=706e4cdleYQ&t=22s',
+                       'markdown': '[00:00:22](https://www.youtube.com/watch?v=706e4cdleYQ&t=22s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'whkUEOIjybM',
+                       'title': 'How I Scaled My Turo Fleet to 15 Cars (The Remote CEO Blueprint)',
+                       'channel': 'Brandon Ascari',
+                       'author': 'Brandon Ascari',
+                       'text': "Now, looking back with 15 cars, I think it's hilarious that I thought that "
+                               'way.',
+                       'tip': "Now, looking back with 15 cars, I think it's hilarious that I thought that "
+                              'way.',
+                       'timestamp': 691,
+                       'timestamp_seconds': 691,
+                       'timestamp_label': '[00:11:31]',
+                       'url': 'https://www.youtube.com/watch?v=whkUEOIjybM&t=691s',
+                       'markdown': '[00:11:31](https://www.youtube.com/watch?v=whkUEOIjybM&t=691s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OBbGsDAi0xA',
+                       'title': 'How to build car rental fleet (STEP BY STEP)!!',
+                       'channel': 'King of Rentals',
+                       'author': 'King of Rentals',
+                       'text': 'So, I would start with an economy car, 5 to 10k.',
+                       'tip': 'So, I would start with an economy car, 5 to 10k.',
+                       'timestamp': 277,
+                       'timestamp_seconds': 277,
+                       'timestamp_label': '[00:04:37]',
+                       'url': 'https://www.youtube.com/watch?v=OBbGsDAi0xA&t=277s',
+                       'markdown': '[00:04:37](https://www.youtube.com/watch?v=OBbGsDAi0xA&t=277s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NQzlTWjz8a0',
+                       'title': 'How One Rental Car Turned Into a Full-Time Business...',
+                       'channel': 'King of Rentals',
+                       'author': 'King of Rentals',
+                       'text': "I'd rather have smaller operation, higher volume of cars than a ton of "
+                               'labor-intensive work.',
+                       'tip': "I'd rather have smaller operation, higher volume of cars than a ton of "
+                              'labor-intensive work.',
+                       'timestamp': 371,
+                       'timestamp_seconds': 371,
+                       'timestamp_label': '[00:06:11]',
+                       'url': 'https://www.youtube.com/watch?v=NQzlTWjz8a0&t=371s',
+                       'markdown': '[00:06:11](https://www.youtube.com/watch?v=NQzlTWjz8a0&t=371s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'by_FGx_s0B0',
+                       'title': 'This Might Be Holding You Back From Scaling Your Car Rental Company!',
+                       'channel': 'King of Rentals',
+                       'author': 'King of Rentals',
+                       'text': 'A lot of things decrease on average with scale.',
+                       'tip': 'A lot of things decrease on average with scale.',
+                       'timestamp': 369,
+                       'timestamp_seconds': 369,
+                       'timestamp_label': '[00:06:09]',
+                       'url': 'https://www.youtube.com/watch?v=by_FGx_s0B0&t=369s',
+                       'markdown': '[00:06:09](https://www.youtube.com/watch?v=by_FGx_s0B0&t=369s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Z973kfjFqdY',
+                       'title': 'Fleet Vehicle Depreciation & Tax Write-Off Strategy in United States 2026',
+                       'channel': 'Camber Hazard',
+                       'author': 'Camber Hazard',
+                       'text': 'Buyers willingly pay premium prices for high-mileage commercial vehicles '
+                               'if you can produce clean, detailed maintenance logs.',
+                       'tip': 'Buyers willingly pay premium prices for high-mileage commercial vehicles if '
+                              'you can produce clean, detailed maintenance logs.',
+                       'timestamp': 278,
+                       'timestamp_seconds': 278,
+                       'timestamp_label': '[00:04:38]',
+                       'url': 'https://www.youtube.com/watch?v=Z973kfjFqdY&t=278s',
+                       'markdown': '[00:04:38](https://www.youtube.com/watch?v=Z973kfjFqdY&t=278s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iN4oOhcGHDg',
+                       'title': '3 Mistakes that kill Most Car rental/Turo Businesses Before They Start',
+                       'channel': 'Delano Green',
+                       'author': 'Delano Green',
+                       'text': "So I'm now instead of scaling up with cars and scaling up with debt, I'm "
+                               'scaling up with agreements.',
+                       'tip': "So I'm now instead of scaling up with cars and scaling up with debt, I'm "
+                              'scaling up with agreements.',
+                       'timestamp': 428,
+                       'timestamp_seconds': 428,
+                       'timestamp_label': '[00:07:08]',
+                       'url': 'https://www.youtube.com/watch?v=iN4oOhcGHDg&t=428s',
+                       'markdown': '[00:07:08](https://www.youtube.com/watch?v=iN4oOhcGHDg&t=428s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jhUFPSKXYyg',
+                       'title': 'I Built a 40 Car Turo Fleet Before I Learned How to Run a Business',
+                       'channel': 'Rolls Henri',
+                       'author': 'Rolls Henri',
+                       'text': 'Money coming in does not mean you are making money.',
+                       'tip': 'Money coming in does not mean you are making money.',
+                       'timestamp': 44,
+                       'timestamp_seconds': 44,
+                       'timestamp_label': '[00:00:44]',
+                       'url': 'https://www.youtube.com/watch?v=jhUFPSKXYyg&t=44s',
+                       'markdown': '[00:00:44](https://www.youtube.com/watch?v=jhUFPSKXYyg&t=44s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VUKM00PHEmI',
+                       'title': "Turo Is Quietly Banning Hosts | Here's The Real Reason",
+                       'channel': 'Etienne Elsaesser',
+                       'author': 'Etienne Elsaesser',
+                       'text': "Turo doesn't care what you meant to do or what your intention is.",
+                       'tip': "Turo doesn't care what you meant to do or what your intention is.",
+                       'timestamp': 370,
+                       'timestamp_seconds': 370,
+                       'timestamp_label': '[00:06:10]',
+                       'url': 'https://www.youtube.com/watch?v=VUKM00PHEmI&t=370s',
+                       'markdown': '[00:06:10](https://www.youtube.com/watch?v=VUKM00PHEmI&t=370s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VUKM00PHEmI',
+                       'title': "Turo Is Quietly Banning Hosts | Here's The Real Reason",
+                       'channel': 'Etienne Elsaesser',
+                       'author': 'Etienne Elsaesser',
+                       'text': "I spent $2,000 on Yelp, didn't get a single phone call.",
+                       'tip': "I spent $2,000 on Yelp, didn't get a single phone call.",
+                       'timestamp': 2468,
+                       'timestamp_seconds': 2468,
+                       'timestamp_label': '[00:41:08]',
+                       'url': 'https://www.youtube.com/watch?v=VUKM00PHEmI&t=2468s',
+                       'markdown': '[00:41:08](https://www.youtube.com/watch?v=VUKM00PHEmI&t=2468s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vqwx2USfRpA',
+                       'title': "I've Been a Turo Host for 8 Years...Here is Some Of What I Learned in 27 "
+                                'Minutes',
+                       'channel': 'Aubrey Janik',
+                       'author': 'Aubrey Janik',
+                       'text': 'But in general, I find that host jump from Turo to direct rentals far too '
+                               'soon.',
+                       'tip': 'But in general, I find that host jump from Turo to direct rentals far too '
+                              'soon.',
+                       'timestamp': 1614,
+                       'timestamp_seconds': 1614,
+                       'timestamp_label': '[00:26:54]',
+                       'url': 'https://www.youtube.com/watch?v=vqwx2USfRpA&t=1614s',
+                       'markdown': '[00:26:54](https://www.youtube.com/watch?v=vqwx2USfRpA&t=1614s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fslxasGx4CE',
+                       'title': 'Most Turo Hosts Have These Settings Wrong (2026 Guide)',
+                       'channel': 'Car Rental Coach',
+                       'author': 'Car Rental Coach',
+                       'text': "Because your settings aren't really settings, they're business decisions.",
+                       'tip': "Because your settings aren't really settings, they're business decisions.",
+                       'timestamp': 139,
+                       'timestamp_seconds': 139,
+                       'timestamp_label': '[00:02:19]',
+                       'url': 'https://www.youtube.com/watch?v=fslxasGx4CE&t=139s',
+                       'markdown': '[00:02:19](https://www.youtube.com/watch?v=fslxasGx4CE&t=139s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lOTgf5qQVJ8',
+                       'title': 'Day in the Life of a TURO HOST (Inside My $30K+ / Month Business)',
+                       'channel': 'Car Rental Coach',
+                       'author': 'Car Rental Coach',
+                       'text': 'So, if you guys get to our size, which I hope you do, uh this is something '
+                               'you might want to invest in because repairs and maintenance are going to '
+                               'be one of the major things that eat into your profits in this business.',
+                       'tip': 'So, if you guys get to our size, which I hope you do, uh this is something '
+                              'you might want to invest in because repairs and maintenance are going to be '
+                              'one of the major things that eat into your profits in this business.',
+                       'timestamp': 742,
+                       'timestamp_seconds': 742,
+                       'timestamp_label': '[00:12:22]',
+                       'url': 'https://www.youtube.com/watch?v=lOTgf5qQVJ8&t=742s',
+                       'markdown': '[00:12:22](https://www.youtube.com/watch?v=lOTgf5qQVJ8&t=742s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'}]}

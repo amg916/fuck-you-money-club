@@ -1,710 +1,828 @@
 from __future__ import annotations
 
-CHAPTER_8 = {
-    "id": "Q8",
-    "chapter_id": "Q8",
-    "chapter_number": 8,
-    "question_number": 8,
-    "slug": "public-records-apis-data-pipelines-operator-tooling",
-    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small insurance restoration desk an unfair information edge?",
-    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
-    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
-    "subtitle": "NWS Event Feeds, Parcel and Permit Records, IICRC Drying Evidence, Xactimate Scope Controls, and License-Safe Collections",
-    "layout_template": "resource_directory",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #15, Insurance Restoration, ranks #13 with a 87/100 Money-to-Manpower "
-        "Score because field labor, working capital, and disputed invoices constrain "
-        "software leverage. This chapter maps five operator plays: storm triage, water "
-        "mitigation, fire and contents recovery, mold remediation, and reconstruction "
-        "with documented supplements and collections. Build one evidence pipeline around "
-        "public hazard feeds, parcel and permit verification, licensed counterparties, "
-        "instrument readings, and job-cost exports. The canonical annual owner profits "
-        "are $40,000 Conservative, $195,000 Base, and $450,000 Scaled, on gross restoration "
-        "billings rather than insured property values or claim reserves. A five-employee, "
-        "six-contractor pod needs fewer duplicate entries and stronger evidence, not "
-        "another dashboard. Every proposed connector must improve dispatch, photo "
-        "documentation, or job-cost tracking without assuming authority to negotiate coverage."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$500,000",
-            "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "8% net margin; $40,000 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,500,000",
-            "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "13.0% net margin; $195,000 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$2,500,000",
-            "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "18% net margin; $450,000 annual owner net profit; 3 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build an eighteen-source directory around five executable plays",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Give every source a job before buying access. For this chapter, map "
-                    "the five operating plays as P1 storm triage, P2 water mitigation, "
-                    "P3 fire and contents recovery, P4 mold remediation, and P5 reconstruction "
-                    "with documented supplements and collections. These are workflow assignments, "
-                    "not five additional revenue lines. P1 consumes weather alerts, event "
-                    "footprints, and service-area parcels; P2 combines an authorized intake "
-                    "with moisture evidence and available equipment; P3 needs incident "
-                    "context, inventories, and chain of custody; P4 needs qualified assessment, "
-                    "containment planning, and jurisdiction-specific licensing; P5 joins permits, "
-                    "estimate versions, costs, and invoice evidence. Assign the five full-time "
-                    "positions to a dispatcher, estimator, project manager, and two field "
-                    "leads. Treat the six contractors as scheduled capacity with verified "
-                    "skills, not six interchangeable people available continuously. The dispatcher "
-                    "owns public-feed exceptions, the estimator owns scope provenance, and "
-                    "the project manager owns access permissions and job-cost reconciliation. "
-                    "Field leads collect measurements and supervise site execution. This "
-                    "division prevents a four-person pod from appointing an imaginary "
-                    "data department. Start with the sources that change today's dispatch "
-                    "or strengthen an existing authorized job; defer everything that merely "
-                    "produces a larger prospect spreadsheet."
-                ),
-                (
-                    "Separate event intelligence from property evidence. A National Weather "
-                    "Service alert describes a hazard area and time window; it does not "
-                    "establish damage at a particular address. NOAA radar-derived hail "
-                    "signatures, preliminary reports, and later Storm Events records have "
-                    "different evidentiary strength and publication delays. Keep those distinctions "
-                    "in the record rather than presenting every layer as verified hail "
-                    "impact. FEMA declarations identify eligible jurisdictions and incident "
-                    "periods, while flood maps describe mapped hazards; neither determines "
-                    "an individual policy's coverage. County parcel records help resolve "
-                    "addresses and ownership references, but an assessor entry is not proof "
-                    "that an occupant may authorize work. Obtain that authority directly. "
-                    "Permit searches inform reconstruction sequencing without proving that "
-                    "concealed conditions satisfy current code. Public fire reports, where "
-                    "available through the relevant agency's records process, may arrive "
-                    "after operational decisions and may contain redactions. Never substitute "
-                    "public narrative for a site safety assessment. Use the directory as "
-                    "a routing system: each observation carries its source, retrieval time, "
-                    "geographic resolution, and operational purpose. A storm polygon can "
-                    "justify staging equipment near existing customers; it cannot justify "
-                    "asserting that every enclosed roof requires replacement or that an "
-                    "insurer owes payment."
-                ),
-                (
-                    "Maintain a source register beside the directory. For each connector, "
-                    "record the official documentation location, permitted use, authentication "
-                    "method, account owner, last successful retrieval, observed delay, and "
-                    "tested fallback. The access descriptions below identify public entry "
-                    "points and vendor-controlled integration routes; commercial prices, account "
-                    "entitlements, and numerical request ceilings must come from the current "
-                    "contract or service documentation. Do not manufacture a universal "
-                    "requests-per-minute figure. Distinguish free public access from the labor "
-                    "cost of cleaning records and from fees for certified copies. Store "
-                    "event time separately from publication time and ingestion time so an "
-                    "old event arriving today cannot trigger a fresh dispatch surge. For "
-                    "licensed commercial platforms, confirm whether API access includes your "
-                    "subscription before designing around it. A supported CSV export is "
-                    "often sufficient for a four-person operation and easier to reconcile "
-                    "than an undocumented integration. Cache stable parcel attributes, refresh "
-                    "license status before assignment, and expire alerts according to their "
-                    "own timestamps. Track outages visibly. When a feed fails, label its "
-                    "data stale and switch to its named fallback instead of silently "
-                    "reusing yesterday's observations as current operating intelligence."
-                ),
-            ],
-            "table": {
-                "caption": "Eighteen-Source Restoration Directory: Access, Commercial Terms, Latency, Throttling, and Fallbacks",
-                "headers": [
-                    "Named source and operational purpose",
-                    "Exact access route or supported method",
-                    "Cost tier and refresh characteristics",
-                    "Rate-limit and retrieval discipline",
-                    "Fallback and evidence boundary",
-                ],
-                "rows": [
-                    [
-                        "NWS API supplies P1 hazard alerts for assigned service territories.",
-                        "GET https://api.weather.gov/alerts/active with documented area or point filters.",
-                        "Free public service; alerts update as forecasters issue changes.",
-                        "Send an identifying User-Agent; cache responses and back off on throttling.",
-                        "Use weather.gov local office pages; alerts do not establish property damage.",
-                    ],
-                    [
-                        "NOAA SWDI provides P1 radar-derived and reported severe-weather observations.",
-                        "Use https://www.ncei.noaa.gov/swdiws/ and select documented dataset query formats.",
-                        "Free public access; ingestion delay varies by observation dataset.",
-                        "Request bounded dates and geography; persist completed responses locally.",
-                        "Consult NWS local storm reports; radar signatures require careful interpretation.",
-                    ],
-                    [
-                        "NOAA Storm Events supports retrospective P1 event and timeline checks.",
-                        "Download yearly files from https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/ using listed filenames.",
-                        "Free bulk files; publication and revisions lag immediate storm response.",
-                        "Retrieve directory metadata first; download only changed annual files.",
-                        "Use current NWS reports for operations; retain later revisions separately.",
-                    ],
-                    [
-                        "OpenFEMA declarations establish P1 disaster geography and official incident periods.",
-                        "Query https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries with documented filters and pagination.",
-                        "Free public endpoint; declaration records change as FEMA publishes updates.",
-                        "Limit returned fields and pages; checkpoint pagination and retry transient failures.",
-                        "Check FEMA disaster pages; declaration status does not establish insurance coverage.",
-                    ],
-                    [
-                        "FEMA NFHL supports P2 flood-hazard context and reconstruction planning.",
-                        "Use https://msc.fema.gov/portal/home or the official NFHL ArcGIS service.",
-                        "Free public viewing; effective map revisions follow formal publication cycles.",
-                        "Honor ArcGIS service capabilities; cache map references and effective dates.",
-                        "Request local floodplain records; mapped risk does not prove loss causation.",
-                    ],
-                    [
-                        "USGS Water Data provides P2 nearby gauge trends and flood context.",
-                        "Use https://waterdata.usgs.gov/ and its linked documented machine-access services.",
-                        "Free observations; station intervals and telemetry delays vary by location.",
-                        "Query only relevant stations; follow current API migration and quota documentation.",
-                        "Consult local emergency management; river gauges cannot measure indoor water depth.",
-                    ],
-                    [
-                        "King County eReal Property illustrates authoritative parcel and ownership lookup.",
-                        "Search https://blue.kingcounty.gov/Assessor/eRealProperty/default.aspx by supported parcel or address fields.",
-                        "Free browser lookup; assessment and ownership posting follow county workflows.",
-                        "Use permitted exports for bulk work; avoid automating protected browser forms.",
-                        "Use the subject county assessor and recorder outside King County.",
-                    ],
-                    [
-                        "Miami-Dade building services illustrate P5 permit and inspection verification.",
-                        "Open https://www.miamidade.gov/global/economy/building/home.page and follow permit-record search links.",
-                        "Public search access; document-copy charges and posting delays vary.",
-                        "Use portal-supported searches; never bypass session controls or access restrictions.",
-                        "Contact the actual permitting jurisdiction, including separately administered municipalities.",
-                    ],
-                    [
-                        "Florida DBPR verifies contractors and applicable mold-related professional licenses.",
-                        "Use the license search linked from https://www.myfloridalicense.com/ for individual records.",
-                        "Free public lookup; updates follow licensing and enforcement processing.",
-                        "Perform targeted checks before assignment; retain dated results without bulk scraping.",
-                        "Contact the licensing board when names, categories, or status conflict.",
-                    ],
-                    [
-                        "Florida DFS verifies adjuster credentials when a separate licensed role exists.",
-                        "Search https://licenseesearch.fldfs.com/ using supported individual or agency identifiers.",
-                        "Free public lookup; appointments and license status reflect agency updates.",
-                        "Check the relevant license and appointment fields through supported searches.",
-                        "Request agency confirmation; contractor registration never substitutes for adjusting authority.",
-                    ],
-                    [
-                        "EPA ECHO provides P3 industrial-site environmental enforcement context.",
-                        "Use https://echo.epa.gov/tools/web-services and documented facility-search service parameters.",
-                        "Free public services; freshness depends on contributing environmental programs.",
-                        "Filter facilities narrowly; record source-system dates and service response limits.",
-                        "Consult state environmental records; facility history does not characterize residential debris.",
-                    ],
-                    [
-                        "EPA RRP resources support P5 lead-safe renovation firm verification.",
-                        "Open https://www.epa.gov/lead and follow certified renovation firm search links.",
-                        "Free directory access; certification changes follow EPA or authorized-state processing.",
-                        "Search specific firms; check authorized-state directories where those programs apply.",
-                        "Obtain current certificates and training records; directory presence alone is insufficient.",
-                    ],
-                    [
-                        "OSHA establishment search informs contractor diligence and recurring safety concerns.",
-                        "Search https://www.osha.gov/ords/imis/establishment.html using employer and location filters.",
-                        "Free public search; inspection records may change during case processing.",
-                        "Use focused searches; preserve inspection identifiers and current case status.",
-                        "Review state-plan records and direct safety documentation before making assignments.",
-                    ],
-                    [
-                        "Verisk Xactimate and XactAnalysis support P5 estimating and assignment documentation.",
-                        "Use licensed application exports; request supported integrations through Verisk account channels.",
-                        "Paid subscription or contract; exports reflect saved estimates and synchronization.",
-                        "Use entitled interfaces only; throttle according to the executed integration agreement.",
-                        "Retain estimate PDFs and supported exports; line items do not establish coverage.",
-                    ],
-                    [
-                        "Encircle supports P2 moisture records and P3 documented contents workflows.",
-                        "Use licensed workspace exports or vendor-enabled API access for your account.",
-                        "Paid product; API entitlement requires confirmation and uploads depend on connectivity.",
-                        "Queue uploads and follow vendor limits; reconcile attachments after mobile synchronization.",
-                        "Use structured field forms and original photographs during connectivity failures.",
-                    ],
-                    [
-                        "CompanyCam supports timestamped project photography across all five operating plays.",
-                        "Use the vendor developer portal and account-authorized documented project interfaces.",
-                        "Paid account; integration availability and photo arrival depend on plan and synchronization.",
-                        "Respect documented quotas; deduplicate uploads and retry failed attachment transfers.",
-                        "Retain original local captures and a job-linked photo manifest.",
-                    ],
-                    [
-                        "QuickBooks Online supports P5 invoice, supplier-cost, and payment reconciliation.",
-                        "Use Intuit OAuth and https://quickbooks.api.intuit.com/v3/company/{realmId}/ with documented resources.",
-                        "Paid accounting subscription; API and webhook activity follows recorded transactions.",
-                        "Honor current Intuit limits and retry guidance; deduplicate webhook events.",
-                        "Reconcile supported accounting exports against bank activity and supplier statements.",
-                    ],
-                    [
-                        "Twilio Lookup checks customer-provided telephone formatting and subscribed line intelligence.",
-                        "Call https://lookups.twilio.com/v2/PhoneNumbers/{PhoneNumber} using authorized account credentials.",
-                        "Field-specific pricing applies; request current terms before enabling paid enrichments.",
-                        "Cache necessary results briefly; respect account limits and minimize retained attributes.",
-                        "Confirm contact details directly; lookup results never establish permission to market.",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "2. Build a permissioned enrichment waterfall instead of a prospect-harvesting machine",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start the waterfall with an authorized service inquiry, an existing "
-                    "customer relationship, or an internally defined service-area monitoring "
-                    "task. Normalize the supplied address without replacing the original "
-                    "entry, then resolve the jurisdiction and candidate parcel. Match on "
-                    "multiple attributes: street number, normalized street, unit, municipality, "
-                    "and parcel geometry where available. Shared driveways, condominium "
-                    "master parcels, and recently subdivided lots require human review. "
-                    "Next attach hazard context with an explicit spatial relationship and "
-                    "event interval, not a binary damaged-property flag. Retrieve permits "
-                    "only when reconstruction planning needs them, and verify the licenses "
-                    "of the actual assigned firms rather than similarly named businesses. "
-                    "Use contact enrichment last and only for a defined operational "
-                    "purpose. Twilio Lookup can validate a customer-provided number's format "
-                    "and return purchased intelligence; it does not identify the property's "
-                    "decision-maker or create permission for automated outreach. Avoid people-search "
-                    "waterfalls that infer residents from disaster footprints. Applicable "
-                    "47 CFR 64.1200 requirements depend on the communication technology, "
-                    "purpose, and consent facts. The dispatcher should see a small "
-                    "exception queue containing unresolved addresses, stale credentials, and "
-                    "missing authorization. They should not receive thousands of speculative "
-                    "leads that the field pod cannot service."
-                ),
-                (
-                    "Use a compact data model that survives vendor changes. The core "
-                    "entities are job, property, event, party, authorization, observation, "
-                    "document, estimate version, cost entry, invoice, and payment. Give "
-                    "each an internal identifier; keep vendor identifiers in a separate "
-                    "mapping table so a software migration does not rewrite job history. "
-                    "A source observation needs source URL or resource identifier, retrieval "
-                    "time, event time, source revision, geographic precision, and the raw "
-                    "payload reference. Documents need their original filename, capture "
-                    "time when available, uploader, job association, and cryptographic digest. "
-                    "A digest detects later byte changes; it does not prove that a "
-                    "photograph depicts the claimed location. Build connectors with Python "
-                    "stdlib urllib.request, json, csv, sqlite3, hashlib, and logging when "
-                    "a small local prototype is sufficient. Keep production credentials "
-                    "in a managed secret store, never the SQLite database or exports. "
-                    "Use explicit connect and read timeouts supported by the chosen "
-                    "client, bounded retry attempts, randomized backoff, and idempotent writes. "
-                    "For concurrency beyond a single local operator, use a managed database "
-                    "and tested backups rather than sharing a live SQLite file through "
-                    "a consumer synchronization folder."
-                ),
-                (
-                    "Design failure handling around money and field safety, not uptime "
-                    "vanity. Poll hazard feeds at a documented, service-appropriate cadence, "
-                    "but let the provider's caching guidance and response headers govern "
-                    "actual retrieval. On HTTP 429, honor Retry-After when present; on "
-                    "authentication failure, stop the connector and alert its owner instead "
-                    "of repeatedly submitting credentials. Paginate deterministically and preserve "
-                    "a checkpoint only after the local transaction commits. For webhook "
-                    "integrations, verify the vendor's documented authentication mechanism, "
-                    "persist the event identifier, acknowledge promptly, and process through "
-                    "an idempotent worker. Treat duplicate delivery and out-of-order updates "
-                    "as normal conditions. A payment webhook must not erase a newer "
-                    "accounting adjustment merely because it arrived later. Route unrecoverable "
-                    "records to a review queue with source, attempted operation, and a "
-                    "safe error message that excludes credentials and unnecessary personal "
-                    "data. Set different freshness tolerances for weather, licenses, parcels, "
-                    "and costs. A stale parcel description might permit scheduling after "
-                    "direct confirmation; an unresolved electrical hazard cannot be cleared "
-                    "by a successful API response. The dispatcher owns daily exceptions, "
-                    "while the project manager reviews unresolved monetary mismatches before "
-                    "the next collection contact."
-                ),
-            ],
-            "table": {
-                "caption": "Six-Stage Enrichment Waterfall with Explicit Stop Conditions",
-                "headers": [
-                    "Waterfall stage and responsible role",
-                    "Required input and transformation",
-                    "Accepted output and retained evidence",
-                    "Exception handling and operating boundary",
-                ],
-                "rows": [
-                    [
-                        "Dispatcher establishes the service request before collecting additional personal information.",
-                        "Capture customer-supplied address, contact channel, requested service, and authorization status.",
-                        "Create a job-linked intake record with timestamped communication preferences.",
-                        "Resolve authority directly before treating a parcel owner as the customer.",
-                    ],
-                    [
-                        "Dispatcher resolves the parcel and actual permitting jurisdiction.",
-                        "Compare normalized address components with county parcel and municipal records.",
-                        "Retain original input, candidate matches, selected parcel, and reviewer identity.",
-                        "Route condominium, unit-number, and boundary conflicts to manual review.",
-                    ],
-                    [
-                        "Dispatcher attaches P1 event context without asserting individual property damage.",
-                        "Intersect relevant alert geometry and event times with verified service geography.",
-                        "Store event identifiers, spatial relationship, issue time, and expiration time.",
-                        "Discard expired dispatch triggers while preserving historical event evidence.",
-                    ],
-                    [
-                        "Project manager checks the credentials of each assigned contracting entity.",
-                        "Match legal business identity, license category, status, and applicable jurisdiction.",
-                        "Retain dated registry results plus directly obtained supporting documents.",
-                        "Suspend the assignment when identity or required credential remains unresolved.",
-                    ],
-                    [
-                        "Estimator links P2 through P5 evidence to an authorized scope.",
-                        "Join measurements, labeled photographs, inventory entries, and estimate version identifiers.",
-                        "Produce a traceable scope packet separating observations from proposed work.",
-                        "Return unsupported quantities to field review rather than padding allowances.",
-                    ],
-                    [
-                        "Project manager reconciles payable costs and collectible invoice balances.",
-                        "Match supplier bills, subcontractor invoices, customer invoices, and recorded payments.",
-                        "Maintain a job-level balance with disputed items identified separately.",
-                        "Resolve ledger differences before sending another payment demand to customers.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Define the smallest useful connector",
-                    "action": "Choose one P1 feed or one existing-job export and assign an accountable employee.",
-                    "detail": "Document the endpoint, entitlement, required fields, freshness tolerance, permitted purpose, and manual fallback before implementation.",
-                },
-                {
-                    "step": 2,
-                    "title": "Capture provenance before transforming records",
-                    "action": "Store a minimally necessary source snapshot with timestamps and a digest.",
-                    "detail": "Apply access controls and retention rules to snapshots; preserve the relationship between every derived field and its source record.",
-                },
-                {
-                    "step": 3,
-                    "title": "Test duplicates, delays, and missing fields",
-                    "action": "Replay a small fixture set containing repeated events, stale alerts, and ambiguous addresses.",
-                    "detail": "Confirm that replay creates no duplicate dispatches, invoices, contacts, or inventory entries and that exceptions reach the assigned owner.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile against the operating system",
-                    "action": "Compare connector output with the vendor interface or official source before using it operationally.",
-                    "detail": "Record discrepancies, test the fallback, restrict credentials to required permissions, and release only the verified workflow to the pod.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Convert diagnostic observations into defensible quantities and safe field decisions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "For P2, the information edge is a repeatable measurement route, "
-                    "not a photograph of a dehumidifier. Apply the relevant current "
-                    "ANSI/IICRC S500 procedures and document the specific instrument, "
-                    "measurement mode, material, location, and reference condition. A "
-                    "nonpenetrating meter reading is not automatically comparable with "
-                    "a pin reading, and neither can be interpreted without understanding "
-                    "the substrate. Capture ambient temperature and relative humidity "
-                    "with a suitable thermo-hygrometer; derive psychrometric quantities "
-                    "using a documented calculation and the necessary pressure assumptions. "
-                    "Compare affected and appropriate reference materials, track equipment "
-                    "placement, and record visits against the same labeled measurement "
-                    "points. Thermal imaging can guide investigation but does not independently "
-                    "measure moisture or identify mold. Field leads should photograph "
-                    "the instrument display alongside enough context to locate the reading, "
-                    "while retaining structured values for trend analysis. Record inaccessible "
-                    "areas and the reason they remain inaccessible instead of inventing "
-                    "complete coverage. Electrical exposure, structural instability, and suspected "
-                    "hazardous materials require qualified evaluation. The dispatcher must "
-                    "not translate a downward humidity trend into permission to enter "
-                    "an unsafe building. Drying progress and site safety are distinct "
-                    "decisions with different evidence."
-                ),
-                (
-                    "For P3 and P4, organize evidence around custody, boundaries, and "
-                    "qualified judgment. Fire contents work needs item identifiers, condition "
-                    "photographs, room origin, packing records, storage location, treatment "
-                    "history, and customer acknowledgments where appropriate. A barcode "
-                    "without a location history merely digitizes a missing box. Record "
-                    "disposal authorization separately from an estimator's recommendation; "
-                    "destructive disposal cannot be reversed when a dispute appears. "
-                    "For mold projects, identify the jurisdiction's assessor and remediator "
-                    "requirements, including any independence restrictions, before assigning "
-                    "the same entity to multiple roles. Follow the applicable scope "
-                    "and relevant ANSI/IICRC S520 practices without presenting an industry "
-                    "standard as a statute. Air or surface sampling requires a defined "
-                    "question, suitable methods, and competent interpretation; purchasing "
-                    "a laboratory report does not create a universal clearance standard. "
-                    "Pre-1978 housing and child-occupied facilities can trigger EPA renovation "
-                    "requirements under 40 CFR Part 745 when covered work disturbs "
-                    "paint. Evaluate applicability and authorized-state programs before demolition. "
-                    "Lead, asbestos, respiratory protection, and other occupational hazards "
-                    "have their own requirements; a restoration certification does not "
-                    "replace them. Preserve the distinction between a field observation, "
-                    "a laboratory result, and the qualified person's resulting decision."
-                ),
-                (
-                    "For P5, build supplements as transparent construction evidence. Each "
-                    "added quantity should trace to a measurement, photograph, material "
-                    "condition, code requirement applicable to the work, or documented "
-                    "change in authorized scope. Preserve the Xactimate price-list identifier, "
-                    "estimate date, version, unit, quantity, and explanation for any "
-                    "manual price adjustment. Price-list availability does not establish "
-                    "the actual cost of every local trade, so retain subcontractor "
-                    "quotes and purchase documentation where they explain a difference. "
-                    "Separate estimating assistance from policy interpretation and claim "
-                    "negotiation. Florida Statutes sections 626.854 and 489.147 illustrate "
-                    "why contractor communications and public-adjusting activity require "
-                    "careful role boundaries; apply the actual jurisdiction's rules. "
-                    "Contractors can document their work and discuss construction facts "
-                    "within the permitted scope without representing themselves as authorized "
-                    "coverage advocates. Collections should reference the executed agreement, "
-                    "completed work, invoice, credits, payments, and unresolved factual "
-                    "disputes. Do not promise insurer payment or disguise a prohibited "
-                    "deductible waiver as marketing. Electronic signatures and records "
-                    "can support execution under 15 U.S.C. 7001, subject to its "
-                    "conditions and applicable law; retain accessible records and the "
-                    "signing evidence rather than only a flattened signature image."
-                ),
-            ],
-            "table": {
-                "caption": "Six Diagnostic and Evidence Controls that Prevent Expensive Rework",
-                "headers": [
-                    "Named tool or evidence system",
-                    "Measurement or record worth retaining",
-                    "Common failure that weakens the file",
-                    "Required operator correction before downstream use",
-                ],
-                "rows": [
-                    [
-                        "Tramex or Protimeter instruments support material-specific moisture investigation.",
-                        "Retain instrument model, mode, substrate, location, reading, and reference comparison.",
-                        "Treating different measurement scales as interchangeable creates misleading drying trends.",
-                        "Repeat comparable measurements and document calibration checks according to manufacturer instructions.",
-                    ],
-                    [
-                        "Vaisala or suitable field thermo-hygrometers support psychrometric documentation.",
-                        "Retain temperature, relative humidity, location, time, and calculation assumptions.",
-                        "Mixing outdoor and indoor readings without context obscures drying performance.",
-                        "Label each environment and preserve units before calculating comparative trends.",
-                    ],
-                    [
-                        "FLIR thermal cameras help prioritize further inspection of suspect areas.",
-                        "Retain original images, visible-light context, settings, and subsequent verification readings.",
-                        "Calling every cool thermal pattern moisture produces unsupported damage assertions.",
-                        "Confirm suspected conditions using appropriate inspection and measurement methods.",
-                    ],
-                    [
-                        "Encircle or structured inventory records support fire contents custody.",
-                        "Retain item identity, origin room, transfers, treatment, storage, and delivery acknowledgment.",
-                        "Reusing item identifiers across jobs breaks ownership and custody traceability.",
-                        "Use job-scoped unique identifiers and reconcile every transfer against the manifest.",
-                    ],
-                    [
-                        "Qualified laboratories support explicitly scoped environmental sampling questions.",
-                        "Retain sampling plan, collection conditions, chain of custody, and complete report.",
-                        "Quoting isolated results without methods or interpretation overstates their meaning.",
-                        "Attach qualified interpretation and apply project-specific acceptance criteria where required.",
-                    ],
-                    [
-                        "Xactimate versioned exports support reconstruction quantities and documented change explanations.",
-                        "Retain price-list identifier, quantities, units, supporting evidence, and version differences.",
-                        "Sending revised totals without quantity explanations increases factual invoice disputes.",
-                        "Produce an itemized change narrative with evidence links and authorized scope references.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four evidence habits that survive a difficult restoration file",
-                "body": "Capture the facts once at the point of work, then reuse them without changing their meaning.",
-                "items": [
-                    "Label moisture points physically and digitally; repeat the same material, instrument mode, and location before comparing daily drying readings.",
-                    "Photograph equipment serial numbers at placement and removal, then reconcile equipment days against visit logs instead of estimating from memory.",
-                    "Export each submitted estimate version before editing; retain a line-item difference report so a supplement explains quantities rather than merely increasing the total.",
-                    "For contents transfers, reconcile item counts at pickup, storage intake, treatment release, and delivery; resolve shortages before the customer must discover them.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Make the data stack earn its place inside the canonical labor and profit cases",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Reconcile tooling decisions to the canonical scorecard before assigning "
-                    "a return. Conservative gross restoration billings are $500,000 at "
-                    "an 8% net margin, producing $40,000 annual owner net profit. "
-                    "Base billings are $1,500,000 at 13.0%, producing $195,000. Both "
-                    "use five full-time employees and six contractors. Scaled billings "
-                    "are $2,500,000 at 18%, producing $450,000 with six full-time "
-                    "employees and seven contractors. These are gross restoration billings, "
-                    "with subcontractor and material costs already reflected in the "
-                    "margin; do not substitute claim reserves, insured property values, "
-                    "or carrier disbursements unrelated to earned work. The corresponding "
-                    "implied annual cost envelopes are $460,000, $1,305,000, and $2,050,000. "
-                    "Headcount alone does not specify contractor utilization, compensation, "
-                    "or local labor economics, so validate those inputs before treating "
-                    "any case as executable. The stated $4,000–$20,000 monthly operating "
-                    "expense range must not be mistaken for the entire cost envelope "
-                    "when direct project costs are additional. Startup capital of "
-                    "$18,000–$75,000 and a one-to-six-month first-deal window also require "
-                    "a separate cash plan. Software cannot erase the need to fund "
-                    "payroll, deposits, equipment, and materials before collections arrive."
-                ),
-                (
-                    "Use a small, explicitly illustrative tooling test rather than "
-                    "quietly rewriting those margins. Suppose a proposed connector and "
-                    "documentation bundle costs $750 monthly, or $9,000 annually. If "
-                    "it is incremental to the canonical cost envelope and creates "
-                    "no offset, Base owner profit would fall from $195,000 to "
-                    "$186,000; that is a sensitivity, not a replacement scorecard. "
-                    "If measured dispatcher effort falls by eight hours weekly across "
-                    "fifty weeks, the released capacity is 400 hours. At an "
-                    "illustrative $35 loaded hourly rate, that represents $14,000 of "
-                    "labor-equivalent capacity, not automatically $14,000 in cash savings. "
-                    "Cash benefit exists only when paid hours, overtime, external "
-                    "administration, or another real expenditure falls, or when additional "
-                    "completed work produces incremental contribution after all associated "
-                    "costs. Likewise, faster collection improves liquidity rather than "
-                    "creating revenue. At Base annual billings, ten fewer collection "
-                    "days release approximately $41,096 under a simplified uniform-billing, "
-                    "365-day model. Actual cash effects depend on invoice timing, "
-                    "disputed balances, deposits, and payment terms. Measure these separately "
-                    "so the pod does not count the same improvement as labor "
-                    "savings, extra profit, and working-capital release simultaneously. Keep "
-                    "the original three scenarios visible beside every proposed sensitivity."
-                ),
-                (
-                    "Run a four-week pilot across representative authorized jobs, not "
-                    "only the easiest files. Track intake-to-dispatch time, duplicate "
-                    "entry minutes, missing evidence at first estimate, unresolved cost "
-                    "entries, invoice correction frequency, and days from completed work "
-                    "to an accurate invoice. Count safety exceptions and customer "
-                    "complaints alongside speed. The dispatcher reviews connector failures "
-                    "daily; the estimator samples evidence links weekly; the project "
-                    "manager reconciles accounting and contractor permissions. Field leads "
-                    "confirm that mobile forms work offline and do not distract "
-                    "from site controls. Give contractors job-scoped access, remove access "
-                    "when assignments end, and restrict interior photographs, inventories, "
-                    "and customer contacts to people who need them. Test restoration "
-                    "from backup and an export from each paid platform before "
-                    "committing the operation to its workflow. Retain records according "
-                    "to applicable requirements, contracts, insurer-program obligations, and "
-                    "dispute holds; delete unnecessary enrichment under a documented schedule. "
-                    "At the pilot review, keep only integrations that improve a "
-                    "measured dispatch, photo-documentation, or job-cost outcome. Scaling to "
-                    "six employees and seven contractors requires renewed capacity planning, "
-                    "not a claim that automation replaced field labor. The winning "
-                    "information edge is fewer preventable exceptions per completed, collectible job."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Economics and the Evidence Needed to Justify Tooling",
-                "headers": [
-                    "Scenario or operating test",
-                    "Revenue and profit reconciliation",
-                    "People and cost boundary",
-                    "Decision evidence required from the pod",
-                ],
-                "rows": [
-                    [
-                        "Conservative case remains the original low-volume annual operating scenario.",
-                        "$500,000 gross billings multiplied by 8% equals $40,000 owner profit.",
-                        "Five employees plus six contractors; implied total annual costs equal $460,000.",
-                        "Validate local labor utilization, material spending, and collection timing before launch.",
-                    ],
-                    [
-                        "Base case remains the original annual planning benchmark.",
-                        "$1,500,000 gross billings multiplied by 13.0% equals $195,000 owner profit.",
-                        "Five employees plus six contractors; implied total annual costs equal $1,305,000.",
-                        "Reconcile job costs and invoice quality without adding unearned claim proceeds.",
-                    ],
-                    [
-                        "Scaled case remains the original expanded small-team annual scenario.",
-                        "$2,500,000 gross billings multiplied by 18% equals $450,000 owner profit.",
-                        "Six employees plus seven contractors; implied total annual costs equal $2,050,000.",
-                        "Demonstrate field capacity, supervisory coverage, and working-capital support for higher throughput.",
-                    ],
-                    [
-                        "Illustrative connector pilot tests value without changing canonical assumptions.",
-                        "$750 monthly equals $9,000 annually in incremental proposed tooling expense.",
-                        "Four hundred released hours represent capacity unless actual spending decreases.",
-                        "Document realized cost reductions or incremental contribution separately from faster collections.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before the desk relies on a new integration",
-                "body": "The project manager records these checks for the specific workflow, account, jurisdiction, and assigned people.",
-                "items": [
-                    "Verify the connector's documented access rights, current commercial entitlement, credential permissions, throttling behavior, and tested manual fallback.",
-                    "Verify customer authorization, parcel match, permitted communication channel, and the actual jurisdiction before dispatch or contact enrichment.",
-                    "Verify contractor and remediation credentials, hazardous-material procedures, and the boundary between construction documentation and separately licensed adjusting activity.",
-                    "Verify duplicate-safe processing, original evidence retention, accounting reconciliation, and measured benefit within the five-employee, six-contractor capacity plan.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The best restoration data stack turns a field observation into a traceable scope, a correct invoice, and a collected balance without inventing authority.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Assign P1 storm triage, P2 water mitigation, P3 fire contents, P4 mold remediation, and P5 reconstruction documentation to named owners within the four-person pod.",
-        "Create the eighteen-source register with access routes, entitlements, source timestamps, measured latency, permitted purposes, and tested fallbacks.",
-        "Pilot one official hazard feed and one existing-job export using stable identifiers, bounded retries, provenance records, and duplicate-safe writes.",
-        "Standardize moisture points, instrument metadata, equipment serial-number logs, contents custody, and estimate-version evidence across authorized jobs.",
-        "Verify jurisdiction-specific licenses, site hazards, communication permissions, and public-adjusting boundaries before routing work or contacting customers.",
-        "Review the four-week pilot against canonical revenue, margin, staffing, and owner-profit cases; separate realized savings, released capacity, and collection acceleration.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. 7001 — General rule of validity for electronic records and signatures",
-            "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section7001&num=0&edition=prelim",
-            "relevance": "Supports electronic contracting subject to statutory conditions; retain accessible records and evaluate applicable consumer-consent requirements.",
-        },
-        {
-            "title": "40 CFR 745.85 — Work practice standards for covered renovations",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-R/part-745/subpart-E/section-745.85",
-            "relevance": "Defines lead-safe work practices for covered renovation activities, including containment, cleaning, and verification requirements.",
-        },
-        {
-            "title": "40 CFR 745.89 — Firm certification under the renovation program",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-R/part-745/subpart-E/section-745.89",
-            "relevance": "Provides the federal firm-certification framework; check authorized-state administration and the specific project's applicability.",
-        },
-        {
-            "title": "29 CFR 1926.62 — Lead exposure in construction",
-            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-D/section-1926.62",
-            "relevance": "Requires construction employers to address occupational lead exposure through applicable assessment, protection, training, and recordkeeping duties.",
-        },
-        {
-            "title": "47 CFR 64.1200 — Restrictions on telephone calls and related communications",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": "Constrains covered automated and telemarketing communications; a public property record or telephone lookup does not itself establish required consent.",
-        },
-        {
-            "title": "Florida Statutes 626.854 — Public adjuster definitions and restrictions",
-            "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0626/Sections/0626.854.html",
-            "relevance": "Distinguishes regulated public-adjusting activity from permitted contractor construction discussions; apply current provisions to the actual role and communications.",
-        },
-        {
-            "title": "Florida Statutes 489.147 — Prohibited property-insurance practices",
-            "url": "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0489/Sections/0489.147.html",
-            "relevance": "Establishes contractor restrictions involving property-insurance activity, advertising, inducements, and unlicensed public adjusting.",
-        },
-        {
-            "title": "Texas Insurance Code 707.002 — Payment of deductible",
-            "url": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.707.htm#707.002",
-            "relevance": "Requires payment of applicable property-insurance deductibles and restricts prohibited waiver or rebate arrangements within the chapter's scope.",
-        },
-    ],
-}
+CHAPTER_8 = {'id': 'Q8',
+ 'chapter_id': 'Q8',
+ 'chapter_number': 8,
+ 'question_number': 8,
+ 'slug': 'plumber-referral-engine-and-closing-the-call',
+ 'question_prompt': 'How do I build a plumber referral network and convert more calls into signed water '
+                    'damage jobs?',
+ 'kicker': 'Q8 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'The Plumber Referral Engine and Closing the Call',
+ 'subtitle': 'Plumber referral programs, getting past gatekeepers, turning free dry-outs into $500K of '
+             'referrals, alternatives to cash kickbacks, consistent jobs without storms, an agency '
+             'lead-gen case study, call conversion tips, a sales system for sub-70% close rates, and '
+             'selling from strength',
+ 'layout_template': 'legal_compliance_callout',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Plumbers are the front door to water work. Jon Schoen calls them the number one '
+                      'referral source. Rowdy Legs of Homeway averaged six to ten jobs a week almost '
+                      "entirely from plumbers on the way to $11M, and Shane O'Dazier says the top "
+                      'companies dominate plumbers. The shared mechanic is discovery before pitch: find '
+                      'out what each service plumber wants, profile them in a CRM by fee band, and grow a '
+                      'referral tree to at least three jobs in 90 days. Street tools include the '
+                      'customer-posed shadow-plumber script, the $100-plus-$100-weekly slow-leak card, '
+                      'free dry-outs held to a 4:1 conversion ratio, CallRail whispers, and sub-60-minute '
+                      'arrival promises with 3-to-5-minute callbacks. The practitioners split hard on '
+                      'cash. Restorex pays percentage referral fees within a day, while Marketing Ninjas '
+                      'and Shane argue that cash builds no loyalty.',
+ 'key_metrics': [{'label': 'Free Dry-Out Conversion Ratio',
+                  'metric': 'Free Dry-Out Conversion Ratio',
+                  'value': '4:1 converted claims per free dry-out',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Shane's guardrail for keeping free dry-outs profitable as a plumber "
+                             'incentive instead of a cash leak.',
+                  'source': "Shane O'Dazier | RestorationProfits ([D4BavFC6d1E @ 00:12:00])"},
+                 {'label': 'Referral Tree Threshold',
+                  'metric': 'Referral Tree Threshold',
+                  'value': 'At least 3 jobs within 90 days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "The volume a plumber must send before Shane 'fences' the relationship and "
+                             "adds 'Miracle-Gro' to grow it.",
+                  'source': "Shane O'Dazier | RestorationProfits ([xXe9Z763dDc @ 00:12:23])"},
+                 {'label': '136 Method Annual Run-Rate',
+                  'metric': '136 Method Annual Run-Rate',
+                  'value': '3 jobs/week x $6,000 x 52 weeks = $936,000',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Shane's math for what three water jobs a week at a $6,000 average produces "
+                             'over a year.',
+                  'source': "Shane O'Dazier | RestorationProfits ([xXe9Z763dDc @ 00:16:34])"},
+                 {'label': 'Target Lead Close Rate',
+                  'metric': 'Target Lead Close Rate',
+                  'value': '75-80% (under 70% means a missing system)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Albi's sales framework benchmark for converting inbound water damage leads "
+                             'into started jobs.',
+                  'source': 'Restoration Success Strategies | Albi ([mq8qI2hag0I @ 00:00:22])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator here treats the plumber as the front door to water work. Jon '
+                              'Schoen built a 47-truck company and sold it. He calls plumbers the number '
+                              'one referral source because they see the job before the adjuster or agent '
+                              'ever does [HFcU3Nls6fM @ 00:00:01]. Restorex in Indianapolis says most of '
+                              'its business comes from referrals, and it frames plumbers as first on the '
+                              "scene [nFvUl2Kjwjs @ 00:00:21]. Shane O'Dazier goes further. Water and fire "
+                              'are the only gateway jobs, and the top restoration companies in any market '
+                              'are the ones that dominate plumbers [sUMKhFYRGSQ @ 00:09:01]. The proof '
+                              'case is Rowdy Legs of Homeway in Memphis. Rowdy learned the system from '
+                              'Shane and averaged six to ten jobs a week almost entirely from plumbers. '
+                              'Homeway went from zero to eleven million dollars in three years and only '
+                              'used internet marketing in the last six to eight months [Fj9S8rNJ5d4 @ '
+                              '00:05:41]. The shared baseline is blunt: a restorer who cannot reliably '
+                              'pull jobs out of plumbing trucks is renting volume from storms and ad '
+                              'platforms. Every number in this chapter, from referral trees to close '
+                              'rates, sits downstream of that one acquisition skill. Practitioners treat '
+                              'the plumber channel as the base layer of a water company, not a side '
+                              'campaign run when the phones go quiet.',
+                              'The second point of agreement is that you diagnose before you pitch. '
+                              "Shane's core rule is to find out what the plumber wants and give it to "
+                              'them. The options run from referral fees to leads to free tryouts, a '
+                              'combination, or none of those [D4BavFC6d1E @ 00:01:28]. Marketing Ninjas '
+                              'warns that walking in with a flyer or gift card attached to a pitch blows '
+                              'the visit. They use discovery questions instead, including asking about bad '
+                              'experiences the plumber has had with other restorers [n7ECptsaJTQ @ '
+                              '00:00:26]. Shane learned this the hard way. Free dry-outs, swag, referral '
+                              'fees, breakfasts and a motorcycle giveaway all failed with the top plumber '
+                              'Shane chased. Every plumber is different, not all of them want free '
+                              'dry-outs, and some refuse referral fees outright [Rcmd8gVFzB8 @ 00:03:18]. '
+                              "Shane's phrase for the whole discipline is to use the right bait for the "
+                              'right fish [sUMKhFYRGSQ @ 00:01:13]. Guessing wrong is expensive. Shane '
+                              'says a wrong assumption flips a positive relationship negative fast. '
+                              'Unsolicited cash to a plumber who never asked for it tells them you are not '
+                              'different anymore. The consensus prerequisite is a documented answer, '
+                              'plumber by plumber, to one question: what actually moves this shop?',
+                              'Practitioners also agree on who to target and on running the phone as a '
+                              'measured system. Shane tells operators not to judge a plumbing company by '
+                              'truck count. A one-truck service plumber sees leaks every day, while a '
+                              'twenty-truck construction outfit only sends warranty jobs. Target service '
+                              'over construction and residential over commercial. On commercial jobs a '
+                              'property manager controls the referral, and the contract has to be with the '
+                              "owner [D4BavFC6d1E @ 00:07:00]. Shane's criteria also include a minimum job "
+                              'volume per plumber and a less-is-more stance on how many relationships to '
+                              'run, all kept inside a tight county radius [xXe9Z763dDc @ 00:10:40]. Once '
+                              'referrals start ringing, Restoration Made Simple records every call through '
+                              'CallRail. Missed calls get caught, called back and used to train staff '
+                              "[8nQyv3vEI6A @ 00:02:50]. Albi's benchmark sets the bar for closing that "
+                              'call. A close rate under seventy percent means the company is missing a '
+                              'system, and the framework aims for seventy-five to eighty percent '
+                              '[mq8qI2hag0I @ 00:00:00]. Shane also advises staying out of multi-family '
+                              'and commercial policies for the first few years. The operator setup is a '
+                              'narrow list of residential service plumbers feeding a recorded, scripted '
+                              'phone line.'],
+               'table': {'caption': 'Plumber Referral Consensus: What Multiple Practitioners Agree Works',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Do',
+                                     'Why It Matters',
+                                     'Expert Source'],
+                         'rows': [['Plumbers are the primary water damage referral source',
+                                   'Build the pipeline around service plumbers before chasing adjusters or '
+                                   'agents',
+                                   'Plumbers see the loss before any adjuster or insurance agent arrives',
+                                   'Water Damage Restoration Coach - Jon Schoen ([HFcU3Nls6fM @ '
+                                   '00:00:01])'],
+                                  ['Discover what each individual plumber actually wants first',
+                                   'Ask before offering fees, leads, free tryouts, or any combination',
+                                   'Unsolicited cash erases differentiation and signals you are not '
+                                   'different anymore',
+                                   "Shane O'Dazier | RestorationProfits ([D4BavFC6d1E @ 00:01:28])"],
+                                  ['No single incentive package works on every plumber',
+                                   'Drop the one-size bundle of swag, breakfasts, giveaways and fees',
+                                   'The top plumber rejected dry-outs, swag, fees, breakfasts and a '
+                                   'motorcycle giveaway',
+                                   "Shane O'Dazier | RestorationProfits ([Rcmd8gVFzB8 @ 00:02:44])"],
+                                  ['Pitch-first office visits kill the relationship before it starts',
+                                   'Replace flyers and gift-card pitches with structured discovery '
+                                   'questions',
+                                   'A pitch blows the visit before the plumber has any reason to trust you',
+                                   'Marketing Ninjas ([n7ECptsaJTQ @ 00:00:26])'],
+                                  ['Target residential service plumbers, not construction or commercial '
+                                   'shops',
+                                   'Ignore truck count and qualify plumbers by how many service-call leaks '
+                                   'they see',
+                                   'Construction outfits send only warranty jobs; commercial referrals '
+                                   'route through property managers',
+                                   "Shane O'Dazier | RestorationProfits ([D4BavFC6d1E @ 00:07:00])"],
+                                  ['Dominating plumbers separates top market players from everyone else',
+                                   'Pull productive plumbers away from the strongest local restoration '
+                                   'competitor',
+                                   "Shane took a plumber from Nashville's best restoration company using "
+                                   'this approach',
+                                   "Shane O'Dazier | RestorationProfits ([sUMKhFYRGSQ @ 00:04:19])"],
+                                  ['Every inbound call must be recorded, sourced and measured',
+                                   'Track daily leads, appointments and jobs started, broken out by '
+                                   'referral source',
+                                   'Job averages swing between $3,000 and $8,000 depending on lead source',
+                                   'Restoration Made Simple ([8nQyv3vEI6A @ 00:02:32])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The prospecting engine starts with who you call and how you sound. Shane '
+                              "hunts what they call shadow plumbers, meaning shops absent from Google's "
+                              'front page. Plumbers who advertise want leads, while Google-Maps-only '
+                              'plumbers may be construction outfits [D4BavFC6d1E @ 00:16:59]. The call is '
+                              'made posing as a customer, not as a solicitor. Ask about relocating a water '
+                              "heater and a failed pop-off valve, then ask 'do y'all dry them out,' and "
+                              'follow a branching flowchart from whatever the plumber says [D4BavFC6d1E @ '
+                              '00:19:05]. Every answer lands in a CRM plumber profile. The profile logs '
+                              'incentive preference and current fee in bands of under $300, $300, $500 and '
+                              'over $500. Call tracking is attached, and triangulating questions expose '
+                              "lies such as 'we don't refer anybody but want a referral fee' [D4BavFC6d1E "
+                              '@ 00:21:22]. When the plumber has no restorer, Shane runs the free leads '
+                              'play. Ask if they do this work, cover the area and want leads. Get a '
+                              'contact name, phone and email, and book an onboarding meeting, or simply '
+                              'send leads first. The non-negotiable is a backdoor contact, not the 1-800 '
+                              'number [ufmHlZ6tfKg @ 00:08:06]. Shane names the challenges the script has '
+                              'to solve: separating what a plumber wants from what they will take, '
+                              'differentiating, and landing the first job through servant marketing.',
+                              "Incentives are built as specific instruments, not vague goodwill. Shane's "
+                              'slow leak play is a rebrand of the fake leak. It puts a real service call '
+                              "in front of the plumber's technician. In the example, the plumber was "
+                              "called to Joe's lake house for a sump pump and crawl space. Joe asked who "
+                              'the plumber calls for water damage and heard that the office calls '
+                              'somebody. Joe then handed over a card pre-loaded with $100, plus a $100 '
+                              'weekly drip [CV0x51fC7pw @ 00:02:34]. Joe replaces that sump pump every '
+                              'three to four years at $400 anyway and runs five consistent plumbers. Shane '
+                              'offers the drip only when the plumber already takes a fee elsewhere '
+                              '[MLuoMdYemWU @ 00:03:15]. Marketing Ninjas uses a fast-start bonus of '
+                              'double commission for thirty days [n7ECptsaJTQ @ 00:01:55]. Marketing '
+                              'Ninjas also runs a tier model in place of cash. After one referral the '
+                              'plumber gets priority dispatch, free dry-outs, dumpsters and shut-off tags '
+                              'with tracking numbers. After three, they get plumbing leads, co-branded '
+                              'materials and seasonal swag. After five, they get quarterly raffles, VIP '
+                              'access and training perks. After ten, they get team dinners, job-site '
+                              "banners, welcome boxes and a legacy wall [5Ibyq8oHR7Y @ 00:01:35]. Shane's "
+                              'timeline is about four weeks of incentivizing, which yields enough data to '
+                              'chase ideal fits instead of half-committed plumbers.',
+                              'Closing the call is the back half of the engine. Restoration Made Simple '
+                              'sets a separate tracking number per site. A call whisper tells the answerer '
+                              "the source before they say hello, such as 'Denver North website lead' or "
+                              "'plumbing referral 800 number' [8nQyv3vEI6A @ 00:04:29]. Their strategy "
+                              'four asks what city the caller is in, then relates with a shop fifteen '
+                              'minutes away or a tech in Littleton. Strategy eleven promises arrival in '
+                              'less than sixty minutes and a callback in three to five minutes, because a '
+                              'caller waiting on you is less likely to dial someone else. Their clients '
+                              'close ten to thirty percent more leads with these strategies [8nQyv3vEI6A @ '
+                              "00:11:00]. Albi's phone rules are a scripted greeting, three qualifiers, no "
+                              'price ranges on the phone and no outsourced answering. On arrival that '
+                              'means a clean truck, a tucked shirt and street parking. On site, the ask is '
+                              'a crew within the next thirty minutes. The stronger ask is homeowner '
+                              'financing, or at least a deposit. An insurance objection gets a capped '
+                              'out-of-pocket cost with 0% APR for thirty-six months [mq8qI2hag0I @ '
+                              '00:09:48]. Follow-up runs every twenty-four hours, and Albi reports that '
+                              'two of five leads lost at first close later with a good sequence '
+                              '[mq8qI2hag0I @ 00:13:51].'],
+               'table': {'caption': 'Street Mechanics: Scripts, Tools and Unit Economics for the Plumber '
+                                    'Engine',
+                         'headers': ['Tool or Play',
+                                     'Exact Mechanic',
+                                     'Figure or Unit Economics',
+                                     'Expert Source'],
+                         'rows': [['Shadow-plumber customer-posed scouting script',
+                                   'Pose as a customer about a water heater and pop-off valve, then ask '
+                                   'about dry-outs',
+                                   'A branching flowchart routes every plumber answer into the next '
+                                   'question',
+                                   "Shane O'Dazier | RestorationProfits ([D4BavFC6d1E @ 00:19:05])"],
+                                  ['CRM plumber profile with fee banding',
+                                   "Log each plumber's incentive preference and the fee they currently "
+                                   'receive elsewhere',
+                                   'Fee bands logged as under $300, $300, $500, and over $500',
+                                   "Shane O'Dazier | RestorationProfits ([D4BavFC6d1E @ 00:21:22])"],
+                                  ['Slow leak pre-loaded card drip',
+                                   'Hand the technician a pre-loaded card after a real service call',
+                                   '$100 loaded upfront, then another $100 added every single week',
+                                   "Shane O'Dazier | RestorationProfits ([CV0x51fC7pw @ 00:02:34])"],
+                                  ['136 method annual revenue math',
+                                   'Reach three plumber-sourced jobs per week, then hold that pace all '
+                                   'year',
+                                   '3 jobs x $6,000 x 52 weeks equals $936,000 annual run-rate',
+                                   "Shane O'Dazier | RestorationProfits ([xXe9Z763dDc @ 00:16:34])"],
+                                  ['CallRail tracking numbers and call whispers',
+                                   'Record every call, whisper the source, catch and return missed calls',
+                                   'Separate numbers for Boulder, Colorado Springs, Fort Collins, Denver '
+                                   'and Castle Rock',
+                                   'Restoration Made Simple ([8nQyv3vEI6A @ 00:03:58])'],
+                                  ['Sub-60-minute arrival and callback promise script',
+                                   'Promise arrival under sixty minutes and a callback within three to '
+                                   'five minutes',
+                                   'Clients report closing ten to thirty percent more leads overall',
+                                   'Restoration Made Simple ([8nQyv3vEI6A @ 00:10:12])'],
+                                  ['On-site crew ask and financing close',
+                                   'Ask for a crew within thirty minutes, then financing or a deposit',
+                                   'Framework targets a seventy-five to eighty percent lead close rate',
+                                   'Restoration Success Strategies | Albi ([mq8qI2hag0I @ 00:09:48])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Free-Service Leverage That Locks Plumbers In',
+                           'body': 'The operators who win plumbers treat free work and plumber education '
+                                   'as entry tickets. They do not treat them as charity.',
+                           'items': ['On a plumber-caused job, use the unbilled invoice to get past the '
+                                     "front-desk gatekeeper and reach the decision-maker [Shane O'Dazier | "
+                                     'RestorationProfits — ufmHlZ6tfKg @ 00:01:04].',
+                                     'Never charge a plumber for containment. Keep it under 90 minutes and '
+                                     'build a doorway drying chamber, because charging a plumber a dime '
+                                     "for anything is the trap [Shane O'Dazier | RestorationProfits — "
+                                     'ufmHlZ6tfKg @ 00:02:04].',
+                                     "Label free dry-outs 'water – free dryout' on the job board, and run "
+                                     'different protocols for them, such as top-down drying instead of '
+                                     "hammers [Shane O'Dazier | RestorationProfits — ufmHlZ6tfKg @ "
+                                     '00:05:54].',
+                                     "Hand plumbers a Category 2 vs. Category 3 cheat sheet. If they don't "
+                                     'know what to look for, they miss jobs that could easily have been '
+                                     'yours [Marketing Ninjas — n7ECptsaJTQ @ 00:03:13].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Scout Shadow Plumbers as a Customer',
+                              'action': 'Build a call list of residential service plumbers absent from '
+                                        "Google's front page, then call them posing as a customer.",
+                              'detail': 'Ask about relocating a water heater and a failed pop-off valve, '
+                                        "then 'do y'all dry them out,' and follow the branching flowchart "
+                                        "[Shane O'Dazier | RestorationProfits — D4BavFC6d1E @ 00:19:05]."},
+                             {'step': 2,
+                              'title': 'Profile Every Plumber in the CRM',
+                              'action': 'Record incentive preference, current fee band, and a backdoor '
+                                        'contact for every plumber, with call tracking attached.',
+                              'detail': 'Log fees as under $300, $300, $500 or over $500, and use '
+                                        'triangulating questions to expose answers that contradict each '
+                                        "other [Shane O'Dazier | RestorationProfits — D4BavFC6d1E @ "
+                                        '00:21:22].'},
+                             {'step': 3,
+                              'title': 'Incentivize for Four Weeks, Then Cut to Ideal Fits',
+                              'action': 'Deploy the matched incentive, such as the slow-leak card drip, '
+                                        'free leads, or free dry-outs, and measure who sends work.',
+                              'detail': 'About four weeks of incentivizing gives enough data to chase '
+                                        'ideal fits instead of converting half-committed plumbers [Shane '
+                                        "O'Dazier | RestorationProfits — CV0x51fC7pw @ 00:05:31]."},
+                             {'step': 4,
+                              'title': 'Fence and Grow the Referral Tree',
+                              'action': 'Once a plumber sends at least three jobs in 90 days, fence the '
+                                        'relationship and add growth incentives.',
+                              'detail': "Hit the 3-jobs-in-90-days threshold, then 'fence' the plumber and "
+                                        "apply 'Miracle-Gro' to expand the tree inside a tight county "
+                                        "radius [Shane O'Dazier | RestorationProfits — xXe9Z763dDc @ "
+                                        '00:12:23].'}]},
+              {'title': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The loudest split in the plumber channel is cash. Restorex Disaster '
+                              'Restoration runs a money-first program out of Indianapolis, advertising the '
+                              'highest referral fees in its market, paid as a percentage of the dry-out '
+                              'that ranges from a couple hundred to a couple thousand dollars, with '
+                              'payment landing the next day or when the job starts [nFvUl2Kjwjs @ '
+                              '00:00:37]. Jon Schoen lists cash as the first lever, either a flat dollar '
+                              'amount or a percentage of the job, with the market deciding which '
+                              '[HFcU3Nls6fM @ 00:00:20]. Marketing Ninjas takes the opposite position: a '
+                              '$250 fee gets beaten by a $300 fee, kickbacks stay transactional and '
+                              'sketchy, and plumbers never brag about a $150 check, so the playbook '
+                              'replaces cash with a four-tier ladder of priority dispatch, free dry-outs, '
+                              'dumpsters, co-branded materials, raffles and team dinners [5Ibyq8oHR7Y @ '
+                              "00:00:17]. Shane O'Dazier sits in the middle. Shane tells operators never "
+                              'to pay unless the plumber asks, because unsolicited money means you are no '
+                              'longer different, and warns that a rival will always pay ten or twenty '
+                              'more; when money is on the table, Shane incentivizes the tech and gives '
+                              'more to the GM or owner, while noting some plumbing companies ban tech fees '
+                              'outright [D4BavFC6d1E @ 00:10:16].',
+                              'Free services split the field just as hard. Shane frames free dry-outs as '
+                              'the path to 500k of plumber referrals, labeling them "water - free dryout" '
+                              'on the job board, running different protocols such as top-down drying '
+                              'instead of hammers, and never charging a plumber for containment '
+                              '[ufmHlZ6tfKg @ 00:05:54]. Yet Shane also reports that free dry-outs, swag, '
+                              'referral fees, breakfasts and motorcycle giveaways all failed with the top '
+                              'plumber, and that the door only opened after roughly four months of servant '
+                              'marketing, when Shane ate a $300 mortar patch an hour away rather than '
+                              "marking it up to $600 [Rcmd8gVFzB8 @ 00:10:43]. Shane's guardrail is that "
+                              'free dry-outs need a 4:1 ratio of converted claims behind them [D4BavFC6d1E '
+                              '@ 00:12:00]. Jon Schoen runs a cheaper, event-driven playbook: a yearly '
+                              'bucket giveaway with one entry per referral for a used WaveRunner, '
+                              'four-wheeler or boat bought inexpensively, plus hot dog, burrito or chili '
+                              "lunches at Home Depot and Lowe's distributor counters, while warning those "
+                              'counters already rotate two or three restoration companies [HFcU3Nls6fM @ '
+                              "00:02:43]. Shane's version is a slow, personal favor bank built one plumber "
+                              "at a time; Schoen's version is a cheap, repeatable circuit built around "
+                              'raffle entries and distributor-counter food that reaches many plumbers at '
+                              'once.',
+                              'On the close, the phone camps diverge on what to say first. Restoration '
+                              'Made Simple teaches reading the caller, calm versus panicking, regular '
+                              'versus after-hours, and warns that pitching insurance to a self-pay caller '
+                              'loses them; its Strategy 11 promises arrival in under 60 minutes and a '
+                              'callback in three to five minutes so the homeowner waits instead of dialing '
+                              "a competitor [8nQyv3vEI6A @ 00:11:00]. Albi's framework is stricter: a "
+                              'scripted greeting, three qualifiers, no price ranges on the phone, no '
+                              'outsourced answering, and a target close rate of 75 to 80 percent, with '
+                              'anything under 70 percent signaling a missing system [mq8qI2hag0I @ '
+                              '00:03:22]. Where Restoration Made Simple leans on local proof such as a '
+                              'shop fifteen minutes away and a tech in Littleton, Albi pushes a harder '
+                              'money ask on site: homeowner financing that makes the job cost incurred, or '
+                              'at minimum a deposit, plus 0% APR for 36 months when the insurance '
+                              'objection surfaces [mq8qI2hag0I @ 00:10:38]. claimhelpme rejects the common '
+                              'habit of taking the undisputed amount, starting, and supplementing later, '
+                              'telling contractors to review the carrier estimate immediately and ask the '
+                              'carrier to stop the check, because otherwise they are selling from weakness '
+                              'instead of knowledge [eLQHV7yIGx8 @ 00:00:39].'],
+               'table': {'caption': 'Side-by-side plumber referral and closing playbooks where '
+                                    'practitioners split',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Paying cash referral fees to plumbers',
+                                   'Restorex pays a percent of the dry-out, from a couple hundred to a '
+                                   'couple thousand dollars, next day or at job start.',
+                                   'Marketing Ninjas says $250 gets beaten by $300, so replace cash with a '
+                                   'four-tier reward ladder starting after one referral.',
+                                   'Restorex Disaster Restoration ([nFvUl2Kjwjs @ 00:00:37]); Marketing '
+                                   'Ninjas ([5Ibyq8oHR7Y @ 00:00:17])'],
+                                  ['When money goes on the table',
+                                   'Shane says never pay unless the plumber asks, then incentivize the '
+                                   'tech and give more to the GM or owner.',
+                                   'Jon Schoen leads with cash as lever one, either a flat amount or a '
+                                   'percentage of the job depending on the market.',
+                                   "Shane O'Dazier | RestorationProfits ([D4BavFC6d1E @ 00:10:46]); Water "
+                                   'Damage Restoration Coach - Jon Schoen ([HFcU3Nls6fM @ 00:00:20])'],
+                                  ['Plumber already has a go-to restorer',
+                                   'Marketing Ninjas positions as the backup, asks what it would take to '
+                                   'be number one, and mirrors the answer back.',
+                                   "Shane took a plumber from Nashville's best restoration company by "
+                                   'using the right bait for the right fish.',
+                                   "Marketing Ninjas ([n7ECptsaJTQ @ 00:01:05]); Shane O'Dazier | "
+                                   'RestorationProfits ([sUMKhFYRGSQ @ 00:04:19])'],
+                                  ['First contact with a new plumber',
+                                   'Shane calls as a customer, not a solicitor, asks about a water heater '
+                                   "move and failed pop-off valve, then asks do y'all dry them out.",
+                                   'Marketing Ninjas warns a flyer or gift card with a pitch blows it, and '
+                                   'runs discovery questions instead.',
+                                   "Shane O'Dazier | RestorationProfits ([D4BavFC6d1E @ 00:18:13]); "
+                                   'Marketing Ninjas ([n7ECptsaJTQ @ 00:00:26])'],
+                                  ['Internet versus plumbers sequencing',
+                                   'Shane uses the internet to reach critical mass first, then plumbers, '
+                                   'because the internet attracts the biggest jobs.',
+                                   'Homeway averaged 6 to 10 jobs a week almost all from plumbers and only '
+                                   'used internet marketing in the last 6 to 8 months.',
+                                   "Shane O'Dazier | RestorationProfits ([xXe9Z763dDc @ 00:17:14]); "
+                                   'Restoration Success Strategies | Albi ([Fj9S8rNJ5d4 @ 00:05:41])'],
+                                  ['Handling insurance money at the close',
+                                   'Albi caps out-of-pocket, offers 0% APR for 36 months, and takes '
+                                   'financing or a deposit so cost is incurred.',
+                                   'claimhelpme reviews the carrier estimate immediately, asks the carrier '
+                                   'to stop the check, and refuses to take undisputed and supplement '
+                                   'later.',
+                                   'Restoration Success Strategies | Albi ([mq8qI2hag0I @ 00:12:09]); '
+                                   'claimhelpme ([eLQHV7yIGx8 @ 00:00:39])'],
+                                  ['What the call taker promises on the phone',
+                                   'Restoration Made Simple promises arrival in under 60 minutes and a '
+                                   'callback in 3 to 5 minutes to hold the caller.',
+                                   'Albi forbids price ranges on the phone and refuses to outsource '
+                                   'answering, running a scripted greeting and three qualifiers.',
+                                   'Restoration Made Simple ([8nQyv3vEI6A @ 00:11:00]); Restoration '
+                                   'Success Strategies | Albi ([mq8qI2hag0I @ 00:03:22])']]}},
+              {'title': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["Shane's targeting trap is judging plumbers by truck count. A one-truck "
+                              'service plumber sees leaks, while a twenty-truck construction outfit only '
+                              'sends warranty jobs, so the target is service over construction and '
+                              'residential over commercial, where the property manager controls the '
+                              'referral and the contract has to be with the owner [D4BavFC6d1E @ '
+                              '00:06:47]. Shane also says to avoid multi-family and commercial policies in '
+                              'the first few years. Guessing what a plumber wants flips a positive '
+                              'relationship negative fast, and triangulating questions catch liars, such '
+                              'as the plumber who claims to refer nobody but still wants a referral fee '
+                              '[D4BavFC6d1E @ 00:22:40]. The relationship can also turn on you after it '
+                              'lands. A referring plumber may fire you if you use another plumber, so '
+                              'Shane offers them the work with an "adjuster\'s only given me this amount" '
+                              'framing, while warning that retail plumbers who quoted $5,500 for half a '
+                              'day can charge $4,000 for a $600 task, which makes them the wrong hire for '
+                              'recon [MLuoMdYemWU @ 00:09:34]. Marketing Ninjas adds that plumbers see '
+                              'twelve rivals a month; in the extreme, one client brings a monkey into the '
+                              'plumbing offices, and the playbook adds branded shutoff tags and photo '
+                              'books [n7ECptsaJTQ @ 00:02:20].',
+                              'The recon and big-loss traps hit cash flow. Shane warns that a $25K '
+                              'reconstruction job is tempting but ties you up six to fourteen weeks and '
+                              'puts the review at risk, and that on the internet side one "Yahoo" spending '
+                              '$25K a month wrecks the metrics that once delivered six jobs a week inside '
+                              'a 33-mile radius [xXe9Z763dDc @ 00:07:36]. Rowdy Legs of Homeway in Memphis '
+                              'reached $6.7M doing recon-only for one partner, and the split cost Homeway '
+                              "five to six jobs a week [Fj9S8rNJ5d4 @ 00:05:01]. Vinnie Mac's client Jim "
+                              'of Pride Restoration in St. Louis turned a Google Guarantee lead that cost '
+                              'a couple hundred dollars into a 70-unit, three-floor pipe burst worth more '
+                              "than $2M, but the payer moved from Farmers to the plumber's insurer to the "
+                              "owner's insurer with a PA involved [KYZjCfsaWhs @ 00:04:29]. Vinnie Mac's "
+                              'checks: hold cash reserves, file a preliminary notice of lien, partner with '
+                              'or refer to a larger firm when the job is too big, and remember a large '
+                              "loss can end in bankruptcy if you don't get paid [KYZjCfsaWhs @ 00:10:18]. "
+                              'Answering only 30 percent of calls, Vinnie Mac adds, burns the ad spend '
+                              'that produced the lead in the first place.',
+                              'The closing failures are mostly unmeasured leaks. Restoration Made Simple '
+                              'sees clients spending $5k, $10k or $30k a month on marketing without '
+                              'tracking it, against lead costs of $300, $500 or $800 and as high as $1,500 '
+                              'to $1,600 in some regions; the fix is CallRail recording every call, a '
+                              'separate tracking number per site, call whispers like "plumbing referral '
+                              '800 number," and source-level job averages that expose $3,000 versus $8,000 '
+                              'gaps [8nQyv3vEI6A @ 00:05:36]. Albi treats a close rate under 70 percent as '
+                              'a missing system and counts follow-up as recoverable revenue: follow up '
+                              "every 24 hours, and two of five leads that don't close initially later "
+                              'close with a good sequence; silence is part of the close [mq8qI2hag0I @ '
+                              '00:13:51]. Shane frames the deeper failure as ownership: 99 percent of '
+                              'owners are weak at sales and marketing, an operator has about five years to '
+                              'figure it out, and franchises sell pipe dreams [sUMKhFYRGSQ @ 00:02:20]. '
+                              'Delegating too early backfires as well, because marketing hires fail 80 '
+                              'percent of the time, so Shane puts founder-first marketing ahead of hiring '
+                              'until the referral tree reaches at least three jobs within 90 days '
+                              '[xXe9Z763dDc @ 00:19:11].'],
+               'table': {'caption': 'Firsthand traps, what they cost, and the economics check '
+                                    'practitioners run',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Targeting plumbers by truck count',
+                                   'A 20-truck construction outfit only sends warranty jobs while a '
+                                   '1-truck service plumber sees leaks.',
+                                   'Target service over construction and residential over commercial, '
+                                   'where the property manager controls the referral.',
+                                   "Shane O'Dazier | RestorationProfits ([D4BavFC6d1E @ 00:06:04])"],
+                                  ['Paying cash before the plumber asks',
+                                   'Armando ran the script and got jobs, and Shane said unsolicited cash '
+                                   'means you are not different anymore.',
+                                   'A rival pays 10 or 20 more, so a cash-only relationship cannot hold '
+                                   'the million dollar plumber.',
+                                   "Shane O'Dazier | RestorationProfits ([D4BavFC6d1E @ 00:02:17])"],
+                                  ['Getting tied up in reconstruction',
+                                   'The $25K recon job is tempting but ties you up 6 to 14 weeks and risks '
+                                   'the review.',
+                                   "Homeway's recon-only split for one partner cost 5 to 6 water jobs per "
+                                   'week.',
+                                   "Shane O'Dazier | RestorationProfits ([xXe9Z763dDc @ 00:07:36]); "
+                                   'Restoration Success Strategies | Albi ([Fj9S8rNJ5d4 @ 00:05:01])'],
+                                  ['Payer shifting on a large loss',
+                                   "On a $2M, 70-unit burst the payer moved from Farmers to the plumber's "
+                                   "insurer to the owner's insurer.",
+                                   'Keep cash reserves and file a preliminary notice of lien, because an '
+                                   'unpaid large loss can end in bankruptcy.',
+                                   'Water Damage Restoration Marketing - Vinnie Mac ([KYZjCfsaWhs @ '
+                                   '00:04:29])'],
+                                  ['Missed and untracked calls',
+                                   'Answering only 30% of calls wastes ad spend, and clients spend $5k to '
+                                   '$30k monthly without tracking.',
+                                   'With leads at $300 to $1,600, CallRail recording, missed-call catch '
+                                   'and callbacks protect every paid lead.',
+                                   'Water Damage Restoration Marketing - Vinnie Mac ([KYZjCfsaWhs @ '
+                                   '00:01:17]); Restoration Made Simple ([8nQyv3vEI6A @ 00:02:50])'],
+                                  ['Hiring retail plumbers for recon work',
+                                   'Retail plumbers quoted $5,500 for half a day and can charge $4,000 for '
+                                   'a $600 task.',
+                                   "Offer referral plumbers the work with an adjuster's only given me this "
+                                   'amount framing to avoid getting fired.',
+                                   "Shane O'Dazier | RestorationProfits ([MLuoMdYemWU @ 00:07:14])"],
+                                  ['Taking the undisputed check and supplementing later',
+                                   'A $100,000 estimate against $34,000 allowed leaves a $66,000 gap when '
+                                   'the check is already cashed.',
+                                   'Appraisal runs about $1,000, rising to $2,000 to $3,000 if evidence is '
+                                   'destroyed, and takes at least 20 days.',
+                                   'claimhelpme ([eLQHV7yIGx8 @ 00:00:53])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before money, free work, or a big loss goes out the door',
+                           'body': 'Each gate below comes from a trap a named practitioner hit or warned '
+                                   'about firsthand.',
+                           'items': ['Do not pay a plumber unless they ask, and only run free dry-outs '
+                                     "where a 4:1 ratio of converted claims backs them up [Shane O'Dazier "
+                                     '| RestorationProfits — D4BavFC6d1E @ 00:12:00].',
+                                     'Never charge a plumber a dime for anything, including containment, '
+                                     "which should stay under 90 minutes [Shane O'Dazier | "
+                                     'RestorationProfits — ufmHlZ6tfKg @ 00:02:04].',
+                                     'Review the carrier estimate immediately and ask the carrier to stop '
+                                     'the check before accepting the undisputed amount [claimhelpme — '
+                                     'eLQHV7yIGx8 @ 00:00:39].',
+                                     'On a large loss, hold cash reserves and file a preliminary notice of '
+                                     'lien, or partner with a larger firm if the job is too big [Water '
+                                     'Damage Restoration Marketing - Vinnie Mac — KYZjCfsaWhs @ '
+                                     '00:09:49].']}}],
+ 'pull_quote': '"Cash doesn\'t build loyalty." — Marketing Ninjas (5Ibyq8oHR7Y @ 00:00:00).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Call target plumbers as a customer, not a solicitor, run the water heater and '
+                      "pop-off valve script, and log each plumber's incentive preference and current fee "
+                      "tier (under $300, $300, $500, over $500) in the CRM [Shane O'Dazier | "
+                      'RestorationProfits — D4BavFC6d1E @ 00:21:22].',
+                      'Build the target list from residential service plumbers and shadow plumbers missing '
+                      "from Google's front page, not construction outfits judged by truck count [Shane "
+                      "O'Dazier | RestorationProfits — D4BavFC6d1E @ 00:16:59].",
+                      'Launch a 30-day double-commission fast-start bonus and hand plumbers a Category 2 '
+                      'versus Category 3 cheat sheet [Marketing Ninjas — n7ECptsaJTQ @ 00:01:55].',
+                      'Run the slow leak play: get the plumber on site, ask who the office calls, and hand '
+                      'over a card pre-loaded with $100 plus a $100 weekly drip, then judge fit after '
+                      "about 4 weeks [Shane O'Dazier | RestorationProfits — CV0x51fC7pw @ 00:02:34].",
+                      'Give every source its own CallRail tracking number and call whisper, such as '
+                      'plumbing referral 800 number, and promise a callback in 3 to 5 minutes [Restoration '
+                      'Made Simple — 8nQyv3vEI6A @ 00:04:29].',
+                      'On site, ask for a crew within the next 30 minutes, take financing or a deposit, '
+                      'and follow up every 24 hours on leads that do not close [Restoration Success '
+                      'Strategies | Albi — mq8qI2hag0I @ 00:09:48].'],
+ 'statutory_citations': [{'title': "Shane O'Dazier | RestorationProfits — How to get referrals for a water "
+                                   'damage restoration business - plumbers [00:12:00]',
+                          'url': 'https://www.youtube.com/watch?v=D4BavFC6d1E&t=720s',
+                          'relevance': 'Primary practitioner testimony on plumber incentive mistakes, tech '
+                                       'versus owner payouts, and the 4:1 free dry-out ratio.'},
+                         {'title': 'Marketing Ninjas — How to Generate 7 Figures for Your Restoration '
+                                   'Company From Plumbers [00:00:00]',
+                          'url': 'https://www.youtube.com/watch?v=5Ibyq8oHR7Y&t=0s',
+                          'relevance': 'Primary practitioner testimony on replacing cash referral fees '
+                                       'with a four-tier plumber reward ladder.'},
+                         {'title': 'Restoration Success Strategies | Albi — The Sales System Behind '
+                                   'Scaling a Water Damage Restoration Company [00:10:38]',
+                          'url': 'https://www.youtube.com/watch?v=mq8qI2hag0I&t=638s',
+                          'relevance': 'Primary practitioner testimony on close-rate benchmarks, on-site '
+                                       'asks, financing, and objection handling.'},
+                         {'title': 'Water Damage Restoration Marketing - Vinnie Mac — Water Damage '
+                                   'Marketing | How To Generate Water Damage Leads [00:09:49]',
+                          'url': 'https://www.youtube.com/watch?v=KYZjCfsaWhs&t=589s',
+                          'relevance': 'Primary practitioner testimony on large-loss payer risk, cash '
+                                       'reserves, and preliminary lien notices.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'D4BavFC6d1E',
+                       'title': 'How to get referrals for a water damage restoration business - plumbers',
+                       'channel': "Shane O'Dazier | RestorationProfits",
+                       'author': "Shane O'Dazier | RestorationProfits",
+                       'text': 'Find out what they want and give it to them.',
+                       'tip': 'Find out what they want and give it to them.',
+                       'timestamp': 88,
+                       'timestamp_seconds': 88,
+                       'timestamp_label': '[00:01:28]',
+                       'url': 'https://www.youtube.com/watch?v=D4BavFC6d1E&t=88s',
+                       'markdown': '[00:01:28](https://www.youtube.com/watch?v=D4BavFC6d1E&t=88s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CV0x51fC7pw',
+                       'title': 'How to Get Plumbers Sending You $60K Water Jobs',
+                       'channel': "Shane O'Dazier | RestorationProfits",
+                       'author': "Shane O'Dazier | RestorationProfits",
+                       'text': 'Joe asked the plumber who the office calls and handed over a card '
+                               'pre-loaded with $100, then a $100 weekly drip.',
+                       'tip': 'Joe asked the plumber who the office calls and handed over a card '
+                              'pre-loaded with $100, then a $100 weekly drip.',
+                       'timestamp': 154,
+                       'timestamp_seconds': 154,
+                       'timestamp_label': '[00:02:34]',
+                       'url': 'https://www.youtube.com/watch?v=CV0x51fC7pw&t=154s',
+                       'markdown': '[00:02:34](https://www.youtube.com/watch?v=CV0x51fC7pw&t=154s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nFvUl2Kjwjs',
+                       'title': 'Plumber Referral Program for Indianapolis Plumbers | Restorex Disaster '
+                                'Restoration',
+                       'channel': 'Restorex Disaster Restoration',
+                       'author': 'Restorex Disaster Restoration',
+                       'text': 'We offer the highest referral fees, paid as a percent of the dry-out, from '
+                               'a couple hundred to a couple thousand dollars.',
+                       'tip': 'We offer the highest referral fees, paid as a percent of the dry-out, from '
+                              'a couple hundred to a couple thousand dollars.',
+                       'timestamp': 37,
+                       'timestamp_seconds': 37,
+                       'timestamp_label': '[00:00:37]',
+                       'url': 'https://www.youtube.com/watch?v=nFvUl2Kjwjs&t=37s',
+                       'markdown': '[00:00:37](https://www.youtube.com/watch?v=nFvUl2Kjwjs&t=37s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'n7ECptsaJTQ',
+                       'title': 'How to Get Plumbers to Actually Send You Mitigation Jobs',
+                       'channel': 'Marketing Ninjas',
+                       'author': 'Marketing Ninjas',
+                       'text': 'In an extreme example, one of our clients actually brings in a monkey into '
+                               'the plumbing offices.',
+                       'tip': 'In an extreme example, one of our clients actually brings in a monkey into '
+                              'the plumbing offices.',
+                       'timestamp': 140,
+                       'timestamp_seconds': 140,
+                       'timestamp_label': '[00:02:20]',
+                       'url': 'https://www.youtube.com/watch?v=n7ECptsaJTQ&t=140s',
+                       'markdown': '[00:02:20](https://www.youtube.com/watch?v=n7ECptsaJTQ&t=140s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'n7ECptsaJTQ',
+                       'title': 'How to Get Plumbers to Actually Send You Mitigation Jobs',
+                       'channel': 'Marketing Ninjas',
+                       'author': 'Marketing Ninjas',
+                       'text': "If they don't know what to look for, they'll miss jobs that could have "
+                               'easily been yours.',
+                       'tip': "If they don't know what to look for, they'll miss jobs that could have "
+                              'easily been yours.',
+                       'timestamp': 206,
+                       'timestamp_seconds': 206,
+                       'timestamp_label': '[00:03:26]',
+                       'url': 'https://www.youtube.com/watch?v=n7ECptsaJTQ&t=206s',
+                       'markdown': '[00:03:26](https://www.youtube.com/watch?v=n7ECptsaJTQ&t=206s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xXe9Z763dDc',
+                       'title': 'How to get consistent water damage jobs without storms',
+                       'channel': "Shane O'Dazier | RestorationProfits",
+                       'author': "Shane O'Dazier | RestorationProfits",
+                       'text': 'Three jobs a week at $6,000 a job is $18,000 a week.',
+                       'tip': 'Three jobs a week at $6,000 a job is $18,000 a week.',
+                       'timestamp': 1012,
+                       'timestamp_seconds': 1012,
+                       'timestamp_label': '[00:16:52]',
+                       'url': 'https://www.youtube.com/watch?v=xXe9Z763dDc&t=1012s',
+                       'markdown': '[00:16:52](https://www.youtube.com/watch?v=xXe9Z763dDc&t=1012s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MLuoMdYemWU',
+                       'title': 'Creative Ways To Get Consistent Water Restoration Business Leads',
+                       'channel': "Shane O'Dazier | RestorationProfits",
+                       'author': "Shane O'Dazier | RestorationProfits",
+                       'text': 'A referring plumber may fire you if you use another plumber.',
+                       'tip': 'A referring plumber may fire you if you use another plumber.',
+                       'timestamp': 486,
+                       'timestamp_seconds': 486,
+                       'timestamp_label': '[00:08:06]',
+                       'url': 'https://www.youtube.com/watch?v=MLuoMdYemWU&t=486s',
+                       'markdown': '[00:08:06](https://www.youtube.com/watch?v=MLuoMdYemWU&t=486s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Fj9S8rNJ5d4',
+                       'title': 'How Restoration Companies Get Water Damage Jobs (The Plumber Referral '
+                                'Playbook)',
+                       'channel': 'Restoration Success Strategies | Albi',
+                       'author': 'Restoration Success Strategies | Albi',
+                       'text': 'Homeway learned from Shane and averaged six to ten jobs a week, almost all '
+                               'from plumbers.',
+                       'tip': 'Homeway learned from Shane and averaged six to ten jobs a week, almost all '
+                              'from plumbers.',
+                       'timestamp': 341,
+                       'timestamp_seconds': 341,
+                       'timestamp_label': '[00:05:41]',
+                       'url': 'https://www.youtube.com/watch?v=Fj9S8rNJ5d4&t=341s',
+                       'markdown': '[00:05:41](https://www.youtube.com/watch?v=Fj9S8rNJ5d4&t=341s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8nQyv3vEI6A',
+                       'title': 'Close More Water Damage Restoration Leads - Call Conversion Tips',
+                       'channel': 'Restoration Made Simple',
+                       'author': 'Restoration Made Simple',
+                       'text': 'Yes, I know this is going to require you to call that customer back, but '
+                               'what we found is if they are waiting for you to call back, then they are a '
+                               'lot less likely to get on the phone and call somebody else.',
+                       'tip': 'Yes, I know this is going to require you to call that customer back, but '
+                              'what we found is if they are waiting for you to call back, then they are a '
+                              'lot less likely to get on the phone and call somebody else.',
+                       'timestamp': 677,
+                       'timestamp_seconds': 677,
+                       'timestamp_label': '[00:11:17]',
+                       'url': 'https://www.youtube.com/watch?v=8nQyv3vEI6A&t=677s',
+                       'markdown': '[00:11:17](https://www.youtube.com/watch?v=8nQyv3vEI6A&t=677s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HFcU3Nls6fM',
+                       'title': '3 Ways to get more water damage jobs from plumbers',
+                       'channel': 'Water Damage Restoration Coach - Jon Schoen',
+                       'author': 'Water Damage Restoration Coach - Jon Schoen',
+                       'text': 'Give away a used WaveRunner, four-wheeler or boat once a year, with one '
+                               'bucket entry for every referral.',
+                       'tip': 'Give away a used WaveRunner, four-wheeler or boat once a year, with one '
+                              'bucket entry for every referral.',
+                       'timestamp': 40,
+                       'timestamp_seconds': 40,
+                       'timestamp_label': '[00:00:40]',
+                       'url': 'https://www.youtube.com/watch?v=HFcU3Nls6fM&t=40s',
+                       'markdown': '[00:00:40](https://www.youtube.com/watch?v=HFcU3Nls6fM&t=40s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Rcmd8gVFzB8',
+                       'title': 'How to get leads for water damage restoration',
+                       'channel': "Shane O'Dazier | RestorationProfits",
+                       'author': "Shane O'Dazier | RestorationProfits",
+                       'text': 'A $300 cost made an impression worth thousands.',
+                       'tip': 'A $300 cost made an impression worth thousands.',
+                       'timestamp': 695,
+                       'timestamp_seconds': 695,
+                       'timestamp_label': '[00:11:35]',
+                       'url': 'https://www.youtube.com/watch?v=Rcmd8gVFzB8&t=695s',
+                       'markdown': '[00:11:35](https://www.youtube.com/watch?v=Rcmd8gVFzB8&t=695s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KYZjCfsaWhs',
+                       'title': 'Water Damage Marketing | How To Generate Water Damage Leads',
+                       'channel': 'Water Damage Restoration Marketing - Vinnie Mac',
+                       'author': 'Water Damage Restoration Marketing - Vinnie Mac',
+                       'text': 'Keep cash reserves and file a preliminary notice of lien.',
+                       'tip': 'Keep cash reserves and file a preliminary notice of lien.',
+                       'timestamp': 589,
+                       'timestamp_seconds': 589,
+                       'timestamp_label': '[00:09:49]',
+                       'url': 'https://www.youtube.com/watch?v=KYZjCfsaWhs&t=589s',
+                       'markdown': '[00:09:49](https://www.youtube.com/watch?v=KYZjCfsaWhs&t=589s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5Ibyq8oHR7Y',
+                       'title': 'How to Generate 7 Figures for Your Restoration Company From Plumbers',
+                       'channel': 'Marketing Ninjas',
+                       'author': 'Marketing Ninjas',
+                       'text': "Cash doesn't build loyalty.",
+                       'tip': "Cash doesn't build loyalty.",
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=5Ibyq8oHR7Y&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=5Ibyq8oHR7Y&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eLQHV7yIGx8',
+                       'title': 'Restoration Contractors: Stop Selling From Weakness! Insurance Claims '
+                                'Done Right',
+                       'channel': 'claimhelpme',
+                       'author': 'claimhelpme',
+                       'text': "You're selling from weakness instead of knowledge.",
+                       'tip': "You're selling from weakness instead of knowledge.",
+                       'timestamp': 13,
+                       'timestamp_seconds': 13,
+                       'timestamp_label': '[00:00:13]',
+                       'url': 'https://www.youtube.com/watch?v=eLQHV7yIGx8&t=13s',
+                       'markdown': '[00:00:13](https://www.youtube.com/watch?v=eLQHV7yIGx8&t=13s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sUMKhFYRGSQ',
+                       'title': 'How to get more water damage jobs from plumbers',
+                       'channel': "Shane O'Dazier | RestorationProfits",
+                       'author': "Shane O'Dazier | RestorationProfits",
+                       'text': "Borrow the plumbers' SEO, because a seven-figure business is possible "
+                               'without a website.',
+                       'tip': "Borrow the plumbers' SEO, because a seven-figure business is possible "
+                              'without a website.',
+                       'timestamp': 99,
+                       'timestamp_seconds': 99,
+                       'timestamp_label': '[00:01:39]',
+                       'url': 'https://www.youtube.com/watch?v=sUMKhFYRGSQ&t=99s',
+                       'markdown': '[00:01:39](https://www.youtube.com/watch?v=sUMKhFYRGSQ&t=99s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ufmHlZ6tfKg',
+                       'title': 'How to turn free dry-outs into 500k of plumber referrals',
+                       'channel': "Shane O'Dazier | RestorationProfits",
+                       'author': "Shane O'Dazier | RestorationProfits",
+                       'text': 'You guys need to be very careful if you ever charge a dime to your plumber '
+                               'for anything.',
+                       'tip': 'You guys need to be very careful if you ever charge a dime to your plumber '
+                              'for anything.',
+                       'timestamp': 124,
+                       'timestamp_seconds': 124,
+                       'timestamp_label': '[00:02:04]',
+                       'url': 'https://www.youtube.com/watch?v=ufmHlZ6tfKg&t=124s',
+                       'markdown': '[00:02:04](https://www.youtube.com/watch?v=ufmHlZ6tfKg&t=124s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mq8qI2hag0I',
+                       'title': 'The Sales System Behind Scaling a Water Damage Restoration Company',
+                       'channel': 'Restoration Success Strategies | Albi',
+                       'author': 'Restoration Success Strategies | Albi',
+                       'text': 'Silence is part of the close.',
+                       'tip': 'Silence is part of the close.',
+                       'timestamp': 782,
+                       'timestamp_seconds': 782,
+                       'timestamp_label': '[00:13:02]',
+                       'url': 'https://www.youtube.com/watch?v=mq8qI2hag0I&t=782s',
+                       'markdown': '[00:13:02](https://www.youtube.com/watch?v=mq8qI2hag0I&t=782s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'}]}

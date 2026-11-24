@@ -1,486 +1,855 @@
 from __future__ import annotations
 
-CHAPTER_6 = {
-    "id": "Q6",
-    "chapter_id": "Q6",
-    "chapter_number": 6,
-    "question_number": 6,
-    "slug": "sourcing-demand-mining-first-insurance-restoration-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in insurance restoration, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (1–5 months)?",
-    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
-    "title": "Sourcing, Demand Mining & Landing Your First Deals",
-    "subtitle": "Five Referral and Intent Plays Using Permit Signals, IICRC Drying Records, Xactimate Scope Evidence, and Contractor-Safe Collections",
-    "layout_template": "step_by_step_sop",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #15, Insurance Restoration, ranks #13 with a 87/100 Money-to-Manpower Score because dispatch speed only creates value when labor, documentation, and collections stay controlled. "
-        "This chapter maps five operator plays: plumber-led water mitigation, multifamily response agreements, fire stabilization referrals, properly licensed mold remediation, and storm-envelope restoration. "
-        "Build demand from verified property signals and trusted service partners rather than purchased catastrophe lists. "
-        "Land the first 3–10 wins within a 1–6 month planning window by qualifying authority, payment responsibility, access, and crew capacity before dispatch. "
-        "Canonical annual owner profit is $40,000 Conservative, $195,000 Base, and $450,000 Scaled. "
-        "The operating system respects the 2 FT + 2 C pod, distinguishes contractor scope support from public adjusting, and converts documented work into collectible gross restoration billings."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$500,000",
-            "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "8% net margin; $40,000 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,500,000",
-            "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "13.0% net margin; $195,000 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$2,500,000",
-            "context": "Annual gross restoration billings; subcontractor and material costs included in margin",
-            "note": "18% net margin; $450,000 annual owner net profit; 3 FT + 3 C, totaling 6 people",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Mine five local demand lanes before buying emergency leads",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with five mapped plays, each carrying a different buying trigger and operational burden: plumber-led water mitigation, multifamily response agreements, fire stabilization referrals, properly licensed mold remediation, and storm-envelope restoration. "
-                    "These are sourcing lanes, not five departments. For the canonical 2 FT + 2 C pod, assign one owner-estimator, one dispatcher-documentation coordinator, one field supervisor, and two technicians; prequalify six contractors across the trades actually offered. "
-                    "Contractors are scheduled capacity, not six people automatically available overnight. Begin within a drive-time polygon that preserves monitoring visits, equipment retrieval, and a second emergency response. "
-                    "High-margin opportunities usually hide in avoidable friction: a plumber has stopped the leak but cannot dry concealed assemblies, or a property manager has recurring losses but no vendor who closes documentation promptly. "
-                    "The opportunity is the service gap, not the customer's distress or the size of their policy. Prioritize safe, accessible losses with a known decision-maker, an isolated source, and a realistic payment path. "
-                    "Reject the assumption that dramatic damage implies attractive economics. A modest water loss near the warehouse can outperform a distant fire project with uncertain access, specialist dependencies, and months of disputed scope. "
-                    "Record these constraints before building any prospect list."
-                ),
-                (
-                    "Build the signal feed from county assessor ownership records, municipal permit portals, public fire incident releases, NOAA Storm Events records, and National Weather Service alerts. "
-                    "Use assessor data to identify the owner or management company, then verify current authority directly; tax ownership alone does not identify who can sign a work order. "
-                    "Permit applications for roof repair, demolition, or major plumbing can reveal active property work, but they do not establish an insured loss or an invitation to solicit residents. "
-                    "Historical NOAA data guides territory selection; current weather alerts only indicate where field verification may become useful. "
-                    "Public fire releases support outreach to established property contacts after incident command permits access, never entry into an active scene. "
-                    "In Airtable or HubSpot, store source URL, observation date, property address, signal category, contact basis, assigned owner, and next permitted action. "
-                    "Deduplicate by normalized address and property organization before assigning outreach. Refresh active signals daily and archive stale ones when the underlying need disappears. "
-                    "Do not scrape restricted claim portals, purchase leaked policyholder files, or treat occupant names in incident records as a ready-made sales list. "
-                    "Ask existing plumbers and managers to introduce the service directly, sharing occupant details only with appropriate permission."
-                ),
-                (
-                    "Convert each signal into a narrow offer that matches the play. For plumbers, offer documented extraction and drying after source control, with a clear handoff rather than a kickback-dependent arrangement. "
-                    "For multifamily managers, offer a site readiness walk, shutoff map, after-hours contact tree, and written response pricing; an unsigned vendor introduction is not a deal. "
-                    "For fire stabilization, offer permitted board-up and weather protection only after release and hazard review, using qualified specialists when structural or electrical conditions demand them. "
-                    "For mold, establish the local licensing, assessment, remediation, and independence requirements before describing a service; Florida Statutes section 468.8419 restricts conflicting assessment and remediation activity. "
-                    "For storms, sell verified temporary protection and repair scopes, not speculative full replacements based on weather maps. Build inbound pages for these five services with genuine service-area coverage, actual operating hours, and an intake number the pod can answer. "
-                    "A Google Business Profile and documented local case studies can reinforce trust without invented offices or coverage claims. Ask customers for permission before publishing property photographs, and remove personal documents and claim identifiers. "
-                    "Measure inquiries by service lane and source, then keep only the channels producing work the existing crew can execute."
-                ),
-            ],
-            "table": {
-                "caption": "Five Mapped Plays and the Shared Public-Signal Verification Layer",
-                "headers": [
-                    "Demand lane and likely buying situation",
-                    "Specific signal and verification procedure",
-                    "Initial offer and responsible commercial boundary",
-                    "Pod assignment and principal failure mode",
-                ],
-                "rows": [
-                    [
-                        "Plumber-led water mitigation after a confirmed supply-line failure",
-                        "Plumber confirms source isolation and requests a customer-authorized introduction",
-                        "Provide extraction and drying scope without representing insurance coverage",
-                        "Dispatcher assigns technicians only after access and electrical safety checks",
-                    ],
-                    [
-                        "Multifamily response agreements covering recurring unit-level water losses",
-                        "Manager confirms property portfolio, incident frequency, and signing authority",
-                        "Offer shutoff mapping, response pricing, and documented incident escalation",
-                        "Owner-estimator limits response commitments to measurable available crew capacity",
-                    ],
-                    [
-                        "Fire stabilization referrals after authorities release the affected property",
-                        "Public incident notice is verified through an authorized property contact",
-                        "Offer permitted board-up and weather protection after specialist hazard review",
-                        "Field supervisor coordinates qualified trades without entering unreleased structures",
-                    ],
-                    [
-                        "Licensed mold remediation following a qualified assessment where required",
-                        "Customer supplies assessment scope and confirms the moisture source status",
-                        "Price defined containment and removal without promising medical outcomes",
-                        "Qualified personnel verify licensing and assessment independence before scheduling",
-                    ],
-                    [
-                        "Storm-envelope restoration for individually verified roof or exterior damage",
-                        "Weather footprint leads to authorized inspection and property-specific photographs",
-                        "Offer temporary protection and repair quantities without coverage predictions",
-                        "Supervisor checks fall protection, weather conditions, and specialist availability",
-                    ],
-                    [
-                        "Shared verification layer supporting all five mapped sourcing plays",
-                        "Assessor ownership and permit records identify organizations for direct verification",
-                        "Ask who controls access, scope authorization, and contractual payment",
-                        "Coordinator suppresses duplicates and rejects unsupported insurance-loss assumptions",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Win referrals by removing the partner's operational headache",
-                "body": "Make handoffs easier while keeping technical judgment, customer choice, and billing evidence intact.",
-                "items": [
-                    "Give plumbers a three-field handoff: source isolated, customer introduction authorized, and access contact confirmed; gather technical detail directly during intake.",
-                    "Photograph equipment serial numbers beside room identifiers at installation and removal so equipment-day disputes can be traced to the actual deployment.",
-                    "Send property managers a concise daily update covering access, drying trend, next visit, and decisions needed rather than an unexplained photo dump.",
-                    "Ask every referral partner which previous vendor failure caused the most friction, then demonstrate the specific corrective workflow before requesting another introduction.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Qualify authority, scope, and collectible economics before dispatch",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use a 100-point qualification scorecard with five weighted dimensions: authority and access, 25 points; technical fit and source control, 25; payment clarity, 20; dispatch fit, 15; and evidence readiness, 15. "
-                    "Score each dimension at zero, half, or full weight against recorded facts rather than intuition. Authority earns full points only when the signer and access contact are verified; payment clarity requires a named contractual payer and written terms. "
-                    "A claim number does not establish coverage, available proceeds, or customer creditworthiness. Technical fit requires a controllable source and personnel qualified for the actual hazards. "
-                    "Dispatch fit measures travel, monitoring load, equipment inventory, and contractor confirmation. Evidence readiness measures whether baseline readings, photographs, and scope facts can be collected lawfully and safely. "
-                    "Treat 80 points as a scheduling priority and 60–79 as a request for missing facts; below 60, decline or refer to a better-equipped provider. These are internal operating thresholds, not observed market conversion statistics. "
-                    "Regardless of score, unresolved structural danger, absent authorization, prohibited licensing activity, or a promised deductible waiver stops the affected work. A high score never cancels a mandatory restriction. "
-                    "Record the reason for every decline so marketing learns which signals create unusable demand."
-                ),
-                (
-                    "Price the job from physical quantities and execution requirements before discussing what an insurer may reimburse. Capture affected rooms, material layers, water source history, elapsed time, access restrictions, electrical conditions, and possible lead or asbestos disturbance. "
-                    "A moisture meter reading by itself does not establish water category, contamination, or demolition necessity. Use IICRC S500-informed procedures for water work and the applicable mold framework for remediation, recognizing that standards do not replace licensing or site-specific judgment. "
-                    "The field supervisor owns a consistent psychrometric record: indoor and outdoor temperature, relative humidity, material moisture, equipment placement, and drying goals tied to appropriate references. "
-                    "Use CompanyCam or Encircle for organized evidence and Xactimate for a reproducible estimate, checking quantities, local pricing assumptions, equipment duration, and line-item applicability. "
-                    "Prepare supplements as explanations of additional contractor work, with photographs and measurements supporting each change. Do not convert a supplement into negotiation of policy rights. "
-                    "Texas Insurance Code section 4102.163 prohibits a contractor from acting as a public adjuster on property where they provide contracting services, even if otherwise licensed. "
-                    "Keep customer communications focused on observed damage, proposed work, price, and payment terms, referring coverage disputes to the customer's insurer or an appropriately authorized professional."
-                ),
-                (
-                    "Separate job contribution from annual owner profit when deciding which inquiries deserve scarce crew time. As an illustrative screening case, a $12,000 restoration scope with $3,200 subcontract cost, $1,800 materials, $2,400 allocated field labor, and $600 equipment and disposal cost leaves $4,000 before remaining overhead, collection losses, and taxes. "
-                    "That 33.3% contribution does not replace the canonical annual net margins. Conservative remains $500,000 gross billings at 8%, producing $40,000 owner profit; Base remains $1,500,000 at 13.0%, producing $195,000; Scaled remains $2,500,000 at 18%, producing $450,000. "
-                    "These revenues include subcontractor and material charges, rather than counting the same costs again as separate revenue. Claim limits, property values, and insurer reserves are not operator revenue. "
-                    "Use the $18,000–$75,000 startup range and $4,000–$20,000 monthly operating-expense range as planning boundaries, then build a weekly cash forecast from the actual pod. "
-                    "Check deposits and progress billing against applicable state contract rules before offering them. Describe deductible responsibility accurately; Texas Insurance Code section 707.002 prohibits specified deductible-waiver arrangements. "
-                    "If a customer asks whether insurance will pay everything, answer with the documented scope and contractual payment terms, not a coverage promise. "
-                    "Decline profitable-looking jobs whose procurement and payroll timing exceed available working capital."
-                ),
-            ],
-            "table": {
-                "caption": "Qualification Weights, Evidence Requirements, and Non-Negotiable Stop Conditions",
-                "headers": [
-                    "Qualification dimension and assigned decision weight",
-                    "Evidence required for full qualification credit",
-                    "Condition that reduces priority or stops work",
-                    "Corrective action assigned to the responsible operator",
-                ],
-                "rows": [
-                    [
-                        "Authority and access receive twenty-five available qualification points",
-                        "Signer demonstrates authority and supplies an accessible property contact",
-                        "Tenant requests demolition without confirmed owner or delegated authorization",
-                        "Coordinator obtains proper authorization before invasive inspection or contracting",
-                    ],
-                    [
-                        "Technical fit and source control receive twenty-five available points",
-                        "Supervisor verifies controlled source, suitable capabilities, and hazard screening",
-                        "Uncontrolled water or specialist hazards exceed current team capabilities",
-                        "Supervisor secures source control or refers the hazardous work",
-                    ],
-                    [
-                        "Payment clarity receives twenty available qualification points per opportunity",
-                        "Contract identifies responsible payer, billing milestones, and payment terms",
-                        "Customer substitutes a claim number for contractual payment responsibility",
-                        "Owner-estimator explains billing obligations and resolves funding before scheduling",
-                    ],
-                    [
-                        "Dispatch fit receives fifteen available qualification points per opportunity",
-                        "Schedule includes travel, monitoring visits, equipment, and confirmed specialists",
-                        "New response would displace required visits on existing projects",
-                        "Dispatcher offers a truthful alternative slot or qualified referral",
-                    ],
-                    [
-                        "Evidence readiness receives fifteen available qualification points per opportunity",
-                        "Authorized access allows baseline photographs, measurements, and condition records",
-                        "Customer demands unsupported quantities or removal of unfavorable evidence",
-                        "Estimator preserves accurate records and refuses fabricated scope documentation",
-                    ],
-                    [
-                        "Mandatory restrictions override the numerical qualification score every time",
-                        "Licensing, safety, lawful contracts, and permitted service boundaries align",
-                        "Coverage negotiation or prohibited deductible concessions enter the sales pitch",
-                        "Owner removes the prohibited offer before reconsidering lawful work",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before accepting the first live loss",
-                "body": "Release a dispatch slot only when the work is authorized, executable, documented, and funded on lawful terms.",
-                "items": [
-                    "Verify the contracting entity, authorized signer, property access, cancellation requirements, and any required contractor or remediation license.",
-                    "Confirm source control, incident release where relevant, utility hazards, and the need for lead, asbestos, structural, or other qualified specialists.",
-                    "Confirm written scope, contractual payer, permitted deposit terms, deductible responsibility, and a cash forecast that supports payroll before collection.",
-                    "Reserve technicians, monitoring visits, available equipment, and confirmed contractors; reject response promises that depend on uncommitted capacity.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Run a measured outreach cadence that produces paid work",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Reserve a weekly prospecting block for the owner-estimator and a shorter daily list-maintenance block for the coordinator; neither activity should interrupt urgent field safety decisions. "
-                    "Start with 120 researched partner or property-management accounts across the five plays, emphasizing nearby plumbers and multifamily operators before specialized fire or mold work. "
-                    "These are business accounts, not 120 disaster victims. Within the first month, aim to validate a decision-maker and contact route for 90 accounts, hold substantive conversations with 30, secure 12 readiness visits or referral introductions, and produce eight qualified live opportunities. "
-                    "If six receive authorized written scopes and three sign paid work orders, conversion is 2.5% from raw accounts and 50% from scoped opportunities. "
-                    "Those figures are planning hypotheses, not industry averages or promised results. A readiness agreement without a paid incident does not count among the first three wins. "
-                    "Track accounts and incidents separately because one manager can produce multiple losses while one storm can generate duplicate inquiries for the same property. "
-                    "Review the cohort weekly using first-touch dates and actual stage transitions. If conversations are scarce, fix targeting or relevance; if scopes fail to close, investigate authority, price clarity, response timing, and customer trust before increasing volume."
-                ),
-                (
-                    "Use a restrained 15-business-day sequence for researched business contacts: a personalized email on day one, a manual call to the published business number on day three, a useful checklist on day seven, and a final follow-up on day fifteen. "
-                    "Stop when the recipient declines, requests removal, or explains that the service is irrelevant. Identify the sender accurately, use truthful subjects, include a valid postal address and working opt-out mechanism, and honor commercial-email obligations under 15 U.S.C. section 7704. "
-                    "Do not assume that a publicly visible mobile number permits automated calls or texts; evaluate the Telephone Consumer Protection Act and applicable state restrictions before using those channels. "
-                    "For partner outreach, say: We handle documented drying after your repair, keep your customer updated, and return plumbing questions to your team. Who owns your after-hours restoration handoffs? "
-                    "For managers, ask which properties lack shutoff maps or written after-hours response instructions. Offer a short readiness walk, not an unsolicited coverage review. "
-                    "Inbound calls receive immediate triage when staffed; outside staffed hours, describe the actual callback process rather than claiming continuous dispatch. "
-                    "Send the customer a written recap of access, requested service, known hazards, and next contact so an urgent conversation becomes an auditable handoff."
-                ),
-                (
-                    "Handle objections by identifying the decision underneath them. We already have a vendor means ask where overflow or documentation failures occur, then offer a backup role with no exclusivity demand. "
-                    "Your price is higher means compare quantities, monitoring visits, disposal, specialist work, and exclusions line by line; do not inflate a later supplement to recover an artificially cheap opening quote. "
-                    "The insurer has not approved it means distinguish optional work from genuinely urgent protective work and present a lawful authorization path without predicting reimbursement. "
-                    "Can you absorb my deductible receives a clear explanation of lawful pricing and customer obligations, with no disguised gift card or false invoice. "
-                    "Our adjuster wants fewer drying days means supply actual moisture trends, equipment logs, and the technical rationale, correcting unsupported charges when the evidence does not support them. "
-                    "After the first three paid authorizations, extend the cohort through months two to six using referral requests from completed jobs and verified partner feedback. "
-                    "An illustrative 240-account cumulative cohort converting 5% to qualified incidents creates 12 incidents; eight scoped incidents closing at 75% produce six signed jobs, not twelve. "
-                    "Reach ten only when observed conversion and delivery capacity support additional volume. Keep purchased-lead experiments small until attribution and collection quality are visible."
-                ),
-            ],
-            "table": {
-                "caption": "First-Month Funnel Hypothesis with Explicit Denominators and Operator Responses",
-                "headers": [
-                    "Measured stage and illustrative cohort count",
-                    "Conversion calculation and precise counting boundary",
-                    "Evidence that permits the stage transition",
-                    "Response when the stage underperforms expectations",
-                ],
-                "rows": [
-                    [
-                        "Research produces 120 unique business accounts across five plays",
-                        "Starting denominator excludes duplicate addresses and repeated management organizations",
-                        "Record identifies service fit, territory, public source, and organization",
-                        "Coordinator removes weak-fit records before any outreach volume increases",
-                    ],
-                    [
-                        "Contact validation identifies 90 reachable decision-makers within the cohort",
-                        "Ninety divided by 120 equals seventy-five percent contact validation",
-                        "Current role and permitted contact route are directly verified",
-                        "Replace stale records and investigate ownership or management changes",
-                    ],
-                    [
-                        "Substantive conversations occur with 30 validated business decision-makers",
-                        "Thirty divided by ninety equals approximately 33.3 percent engagement",
-                        "Conversation establishes response needs, existing arrangements, and potential relevance",
-                        "Owner revises the offer before increasing sequence frequency",
-                    ],
-                    [
-                        "Readiness visits or referral introductions occur for twelve accounts",
-                        "Twelve divided by thirty equals forty percent next-step conversion",
-                        "Visit occurs or an authorized introduction reaches the coordinator",
-                        "Offer a smaller readiness task with a definite purpose",
-                    ],
-                    [
-                        "Eight qualified incidents produce six authorized written restoration scopes",
-                        "Six divided by eight equals seventy-five percent scoped-incident conversion",
-                        "Scorecard, safe access, payment clarity, and capacity support estimating",
-                        "Inspect qualification failures rather than discounting every incomplete opportunity",
-                    ],
-                    [
-                        "Three signed paid work orders become the first wins",
-                        "Three divided by six equals fifty percent scope conversion",
-                        "Authorized signature covers real paid work and payment terms",
-                        "Review lost reasons and stop counting unpaid readiness agreements",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Build and verify the first territory cohort",
-                    "action": "Research 120 business accounts and assign each to one of the five mapped plays.",
-                    "detail": "Store source, observation date, territory fit, contact basis, and decision-maker; remove duplicates before outreach.",
-                },
-                {
-                    "step": 2,
-                    "title": "Run the restrained business-contact sequence",
-                    "action": "Use the day-one email, day-three call, day-seven resource, and day-fifteen closeout.",
-                    "detail": "Honor removal requests immediately and record conversations separately from sent messages; use lawful contact methods.",
-                },
-                {
-                    "step": 3,
-                    "title": "Qualify each incident before estimating",
-                    "action": "Complete the weighted scorecard and the four pre-flight checks before reserving field capacity.",
-                    "detail": "Identify signer, access, source control, hazards, payment responsibility, and evidence needs; mandatory restrictions override scores.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close, execute, and reconcile the first cohort",
-                    "action": "Count signed paid work orders, then track completion, collections, and realized job contribution.",
-                    "detail": "Ask for an authorized referral after a successful handoff and update channel spending from collected results.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Convert the first wins into documented cash and repeatable referrals",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Treat the first signed work order as the beginning of conversion, not its end. The dispatcher creates one job identifier linking the contract, estimate version, photographs, drying records, subcontract orders, customer communications, and invoices. "
-                    "The field supervisor records baseline conditions before disturbance, labels rooms consistently, and assigns daily documentation ownership. Automate reminders and photo routing, not technical conclusions. "
-                    "A missing moisture reading cannot be reconstructed from a calendar entry, and equipment left onsite does not automatically justify every billed day. "
-                    "Use job-cost tracking to compare committed labor, purchased materials, subcontract changes, and equipment against the authorized scope before the next expenditure. "
-                    "When concealed damage changes the work, explain the finding and obtain the required written authorization rather than silently expanding demolition. "
-                    "Screen renovation activities for applicable EPA lead requirements under 40 CFR part 745, and evaluate OSHA asbestos obligations under 29 CFR 1926.1101 before disturbing suspect material. "
-                    "An emergency does not erase worker-protection duties. For storm work, qualified personnel must address fall hazards before tarping or roof access. "
-                    "Keep customer updates short and factual: completed work, measured conditions, next action, access requirements, and pending decisions. This reduces repeated calls while preserving an accurate record of what the contractor actually did."
-                ),
-                (
-                    "Build collections around the customer contract and substantiated work, not around a promise to secure an insurance settlement. Issue invoices at lawful contractual milestones, reconcile deposits, and separate authorized changes from disputed items. "
-                    "Where a check includes a lender or other payee, ask the customer to confirm endorsement and release procedures early; never assume a contractor can bypass those controls. "
-                    "For a carrier's scope question, provide the estimate, photographs, readings, dates, and quantity calculations. For a coverage or policy-rights dispute, stay within the contractor role and direct the customer to the appropriate authorized party. "
-                    "Track days from service to invoice separately from days from invoice to cash so administrative delay does not masquerade as insurer delay. "
-                    "Illustratively, a 30-day collection delay on $60,000 of completed monthly billings can leave roughly $60,000 more cash tied up if the same volume continues and other terms stay constant. "
-                    "The cash effect depends on deposits, payables, and actual costs; it is not another revenue stream or a change to the scorecard. "
-                    "Review receivables every week with named follow-up owners, documented disputes, and promised payment dates. Never manufacture liens, threaten remedies unavailable under local law, or withhold truthful completion records to pressure payment."
-                ),
-                (
-                    "At each monthly review, rank the five plays by collected contribution, crew hours, travel burden, dispute frequency, and repeat introductions, not by signed estimate totals alone. "
-                    "The canonical Conservative and Base cases both use 2 FT + 2 C; reaching Base therefore requires better throughput, scope mix, utilization, or realized pricing rather than pretending labor is unlimited. "
-                    "Scaled uses 3 FT + 3 C, totaling 6 people, and its $450,000 annual owner profit requires the stated 18% margin on $2,500,000 gross billings. "
-                    "Do not annualize the first three emergency jobs into that result. Track leading constraints instead: technician hours already committed, next-day monitoring slots, equipment ready for deployment, contractor acceptance, and cash due before the next payroll. "
-                    "Pause a channel when it fills the calendar with distant, poorly authorized, or heavily disputed work. Expand the strongest lane only after completed jobs show stable documentation and collectible economics. "
-                    "Ask satisfied customers and partners for specific introductions, without exposing loss details or paying prohibited referral compensation. "
-                    "By month six, the useful outcome is three to ten paid, well-documented wins and a repeatable source of suitable work, not a database of distressed properties. Preserve the ability to decline a bad loss quickly; that discipline protects the entire pod."
-                ),
-            ],
-            "table": {
-                "caption": "Delivery-to-Cash Controls for a Constrained Restoration Pod",
-                "headers": [
-                    "Control point and accountable operating role",
-                    "Required artifact or measurable operating signal",
-                    "Failure mode that destroys otherwise attractive economics",
-                    "Corrective action before additional demand is accepted",
-                ],
-                "rows": [
-                    [
-                        "Dispatcher links every accepted incident to one job identifier",
-                        "Contract, estimate, photographs, readings, and invoices share consistent references",
-                        "Duplicate records hide missing authorizations and create contradictory customer updates",
-                        "Coordinator reconciles the record before issuing the next invoice",
-                    ],
-                    [
-                        "Field supervisor verifies drying evidence and equipment deployment daily",
-                        "Room-level readings connect installed equipment with measurable drying progress",
-                        "Unsupported equipment days trigger disputes and consume scarce fleet capacity",
-                        "Supervisor revises deployment from actual conditions and documents decisions",
-                    ],
-                    [
-                        "Owner-estimator reviews scope changes before committing additional project cost",
-                        "Written change record identifies new conditions, quantities, and customer authorization",
-                        "Unapproved demolition creates rework, disputed bills, and exposed labor costs",
-                        "Estimator obtains required authorization or limits work to authorized scope",
-                    ],
-                    [
-                        "Coordinator tracks invoice readiness separately from customer payment timing",
-                        "Service dates, invoice dates, dispute reasons, and cash receipts remain distinct",
-                        "Administrative backlog appears as outside delay and obscures preventable cash strain",
-                        "Owner assigns dated resolution tasks and removes invoicing bottlenecks",
-                    ],
-                    [
-                        "Dispatcher protects monitoring capacity before accepting another urgent response",
-                        "Schedule includes travel, daily visits, retrieval, and confirmed specialist attendance",
-                        "New leads displace existing drying visits and increase total project duration",
-                        "Dispatcher offers realistic timing or refers excess demand elsewhere",
-                    ],
-                    [
-                        "Owner reviews channel economics using completed and collected project cohorts",
-                        "Collected contribution connects referral source with hours and dispute frequency",
-                        "Large signed estimates conceal slow collections and weak realized margins",
-                        "Reduce weak channels and grow only demonstrated executable demand",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The best restoration lead is the loss you can safely authorize, document, deliver, and collect without breaking tomorrow's schedule.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Map the five plays inside a defensible drive-time territory and assign ownership within the 2 FT + 2 C pod.",
-        "Research 120 business accounts using verified public signals, recording source dates, contact basis, and current decision-makers.",
-        "Deploy the 100-point qualification scorecard with mandatory safety, licensing, authority, and payment checks before dispatch.",
-        "Run the 15-business-day outreach cadence and measure each transition from unique account to signed paid work order.",
-        "Link contracts, Xactimate estimates, photographs, psychrometric records, changes, and invoices under one job identifier.",
-        "Review collected contribution, receivables, monitoring capacity, and referrals weekly before expanding toward three to ten wins.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "Texas Insurance Code § 4102.163 — Prohibited contractor conflicts",
-            "url": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.4102.htm#4102.163",
-            "relevance": (
-                "A contractor may not act as a public adjuster on property where the contractor provides or may provide contracting services; "
-                "separate contractor scope evidence from representation of policy rights."
-            ),
-        },
-        {
-            "title": "Texas Insurance Code § 707.002 — Prohibited deductible conduct",
-            "url": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.707.htm#707.002",
-            "relevance": (
-                "Build estimates, advertising, and customer payment conversations without the prohibited deductible-waiver or rebate arrangements described by the statute."
-            ),
-        },
-        {
-            "title": "Florida Statutes § 468.8419 — Mold-related services prohibited acts",
-            "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0400-0499/0468/Sections/0468.8419.html",
-            "relevance": (
-                "Check prohibited assessment-remediation conflicts and other restrictions before accepting Florida mold work or combining service roles."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Commercial outreach requires accurate sender information, truthful subjects, a valid postal address, an effective opt-out process, and observance of the statute's other requirements."
-            ),
-        },
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on specified telephone communications",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Evaluate applicable calling and messaging restrictions before adding automated communications; a public mobile number does not establish permission for every contact method."
-            ),
-        },
-        {
-            "title": "40 CFR § 745.82 — Renovation rule applicability",
-            "url": "https://www.ecfr.gov/current/title-40/section-745.82",
-            "relevance": (
-                "Determine whether work disturbing painted surfaces falls within federal renovation requirements, including the limited treatment of qualifying emergency renovations."
-            ),
-        },
-        {
-            "title": "29 CFR § 1926.1101 — Asbestos in construction",
-            "url": "https://www.ecfr.gov/current/title-29/section-1926.1101",
-            "relevance": (
-                "Evaluate asbestos exposure, work classification, competent-person responsibilities, and required protective practices before disturbing relevant building materials."
-            ),
-        },
-        {
-            "title": "29 CFR § 1926.501 — Duty to have fall protection",
-            "url": "https://www.ecfr.gov/current/title-29/section-1926.501",
-            "relevance": (
-                "Plan applicable fall-protection measures before roof access, storm tarping, or other restoration tasks involving covered fall hazards."
-            ),
-        },
-    ],
-}
+CHAPTER_6 = {'id': 'Q6',
+ 'chapter_id': 'Q6',
+ 'chapter_number': 6,
+ 'question_number': 6,
+ 'slug': 'tpas-carrier-programs-preferred-vendors',
+ 'question_prompt': 'What are third-party administrators and carrier-directed programs, how do contractors '
+                    "get on them, and what are the risks of the insurer's preferred vendor?",
+ 'kicker': 'Q6 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'TPAs, Carrier Programs, and Preferred Vendors',
+ 'subtitle': 'Getting on TPA lists, winning the Contractor Connections and Alacrity game, Sedgwick claim '
+             'handling and training, TPA licensure, healthcare and self-funded TPA models, types of '
+             'adjusters including remote desk adjusters, and why homeowners avoid insurance-company '
+             'contractors',
+ 'layout_template': 'step_by_step_blueprint',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Restoration operators agree that third-party administrators now sit between '
+                      'contractors and carriers. Jon Schoen says very few adjusters still work for '
+                      'insurers, and The DYOJO host puts the TPA share at upwards of 80% of claims. '
+                      'Programs such as Contractor Connection bundle 30 to 40 carriers, each requiring '
+                      'separate approval. They charge contractors a 5 to 10% fee and impose a preset, '
+                      'discounted price list with no markup. The street mechanics are dictated: a '
+                      'day-stamped report sets dehu and air-mover counts, a 3-day drying cap applies, '
+                      'Xactimate is mandatory and documentation is uploaded twice. David Smith says he '
+                      'never lost a documented dispute and that a program can hand over a $250,000 fire '
+                      'nobody chased. Brian Close counters that guaranteed work is not always profitable, '
+                      'and public adjusters attack preferred vendors as volume shops that shortchange '
+                      'policyholders.',
+ 'key_metrics': [{'label': 'TPA program fee charged to contractors',
+                  'metric': 'TPA program fee charged to contractors',
+                  'value': '5% to 10% of the work',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Schoen reports that TPAs charge the contractor 5 to 10 percent in order to '
+                             'do program work, on top of a preset price list.',
+                  'source': 'Water Damage Restoration Coach - Jon Schoen ([-0hAYhkhJaw @ 00:02:35])'},
+                 {'label': 'Markup lost when entering a program',
+                  'metric': 'Markup lost when entering a program',
+                  'value': '20% over the standard price list',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Outside programs, Schoen marks the standard list up 20%. Inside programs, '
+                             'the list is preset, discounted and cannot be changed.',
+                  'source': 'Water Damage Restoration Coach - Jon Schoen ([-0hAYhkhJaw @ 00:07:43])'},
+                 {'label': 'Contractor Connection drying cap and claimed savings',
+                  'metric': 'Contractor Connection drying cap and claimed savings',
+                  'value': '3-day drying cap; $20M claimed savings',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Contractor Connection won Nationwide back from Alacrity by capping drying at '
+                             '3 days and claiming $20M in savings.',
+                  'source': 'Water Damage Restoration Coach - Jon Schoen ([-0hAYhkhJaw @ 00:03:50])'},
+                 {'label': 'Single unchased program assignment',
+                  'metric': 'Single unchased program assignment',
+                  'value': '$250,000 fire loss',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'David Smith, an Oregon mitigation owner, says a program can hand a '
+                             'contractor a $250,000 fire they never had to chase.',
+                  'source': 'The DYOJO (The DYOJO) ([onSDIprTeAU @ 00:11:17])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['The restoration operators agree on the first fact of this market: the '
+                              'carrier adjuster is no longer the gatekeeper. Jon Schoen puts it flatly: '
+                              "'very few adjusters now work for the insurance companies and most of their "
+                              "work goes through third- party administrators.' He traces the shift to TPAs "
+                              'offering to run claims for free while carriers cut adjuster headcount '
+                              '[-0hAYhkhJaw @ 00:04:23]. On The DYOJO panel, the host put the TPA share at '
+                              'upwards of 80% of claims. He quoted growth from 1.21B to 271B across 2010 '
+                              'to 2020 [onSDIprTeAU @ 00:19:10]. Schoen stresses that a program is not one '
+                              'door but dozens. Contractor Connection alone holds 30 to 40 carriers, '
+                              'including USAA, Nationwide, State Farm and Allstate, and a contractor must '
+                              'win approval from each carrier inside each program [-0hAYhkhJaw @ '
+                              '00:01:00]. Sylvia Browy draws the same line from the adjuster side. She '
+                              'describes Sedgwick as a TPA that handles claims for others and sells no '
+                              'policies, in contrast to State Farm as a direct carrier [u947iwIhI7A @ '
+                              '00:00:41]. The operating consequence is simple. Anyone running mitigation '
+                              'or repairs is negotiating with an administrator whose client is the '
+                              'carrier. Every approval, rotation slot and price list is set at that '
+                              "administrative layer, not at the homeowner's kitchen table.",
+                              'Every restoration voice agrees that the volume carries a toll. Schoen '
+                              "states the TPA will 'charge the contractor 5 10%' to do the work. On top of "
+                              "that sits a preset, discounted price list with line items removed: 'their "
+                              "price list is is preset you can't change it.' Outside programs, he marks "
+                              'the standard list up 20% [-0hAYhkhJaw @ 00:07:43]. Ty Penzone, a Washington '
+                              'repair contractor with 20-plus years in the trade, says the same thing in '
+                              "fewer words: 'the line items are what the line items are' [onSDIprTeAU @ "
+                              '00:16:04]. Brian Close of American Restoration runs recon only and stays '
+                              "off programs. He frames program work as guaranteed work that is 'not always "
+                              "guaranteed to be profitable,' the fallback an owner reaches for before "
+                              'bankruptcy [onSDIprTeAU @ 00:02:58]. Schoen adds the sharpest edge. Even '
+                              "inside a program, 'you're still not guaranteed to get paid,' and a "
+                              'homeowner can walk off with the money [-0hAYhkhJaw @ 00:04:45]. The '
+                              'baseline prerequisite is margin discipline. A shop entering programs must '
+                              'price its overhead against a 5 to 10 percent fee, a frozen list with no '
+                              'markup, and collection risk the program does not absorb. Operators who '
+                              'cannot run lean on those terms are buying volume with their own balance '
+                              'sheet.',
+                              'The third consensus point is documentation. It comes from the mitigation '
+                              'side as hard as from the repair side. David Smith, an Oregon mitigation '
+                              'owner with 11 years in, says reviewer pushback means you lack '
+                              'documentation, and that he never lost a dispute he had documented '
+                              "[onSDIprTeAU @ 00:37:35]. His rule is 'documentation, documentation, "
+                              "documentation, regardless of where your work is coming from.' That holds "
+                              'whether the end user is a carrier, a reviewer or a homeowner, because you '
+                              'will have to explain the reason for your repair process [onSDIprTeAU @ '
+                              '00:48:01]. Schoen gets specific about what program reviewers want to see: '
+                              'moisture readings must show specific humidity dropping [-0hAYhkhJaw @ '
+                              '00:08:21]. Ty Penzone treats the relationship as a partnership rather than '
+                              'a vendor transaction, and the panel credits TPAs with partnering with '
+                              'contractors straight through COVID [onSDIprTeAU @ 01:03:47]. The '
+                              'prerequisites the operators agree on stack up in order. First comes a local '
+                              'foundation before chasing programs. Next is a willingness to learn both the '
+                              "program's rules and each carrier's rules, plus admin capacity for duplicate "
+                              'uploads and estimating. Last is the habit of logging every reading and '
+                              'photo as if the file will be argued.'],
+               'table': {'caption': 'Where restoration practitioners agree on TPA and carrier program work',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Adjuster layer has moved to TPAs',
+                                   'Very few carrier adjusters remain and most claim work routes through '
+                                   'administrators',
+                                   'Market access is negotiated with administrators rather than with '
+                                   'carrier claim desks',
+                                   'Water Damage Restoration Coach - Jon Schoen ([-0hAYhkhJaw @ '
+                                   '00:04:23])'],
+                                  ['Programs bundle dozens of separate carriers',
+                                   'Contractor Connection holds 30 to 40 carriers including USAA, '
+                                   'Nationwide and Allstate',
+                                   'Approval must be won carrier by carrier inside every single program '
+                                   'you join',
+                                   'Water Damage Restoration Coach - Jon Schoen ([-0hAYhkhJaw @ '
+                                   '00:01:00])'],
+                                  ['Entry costs a percentage of every job',
+                                   'The TPA charges the contractor a 5 to 10 percent fee to do the work',
+                                   'Price the fee into overhead before accepting any rotation slot or '
+                                   'assignment',
+                                   'Water Damage Restoration Coach - Jon Schoen ([-0hAYhkhJaw @ '
+                                   '00:02:35])'],
+                                  ['Program pricing is frozen and discounted',
+                                   'Preset discounted list with line items removed and no ability to '
+                                   'change it',
+                                   'You give up the 20 percent markup Schoen applies on non-program work',
+                                   'Water Damage Restoration Coach - Jon Schoen ([-0hAYhkhJaw @ '
+                                   '00:07:43])'],
+                                  ['Guaranteed volume is not guaranteed profit',
+                                   'Brian Close calls program work guaranteed but not always guaranteed to '
+                                   'be profitable',
+                                   'Treat programs as one channel and keep testing whether each file '
+                                   'actually pays',
+                                   'The DYOJO (The DYOJO) ([onSDIprTeAU @ 00:02:58])'],
+                                  ['Documentation wins reviewer disputes',
+                                   'David Smith says he never lost a dispute that he had properly '
+                                   'documented',
+                                   'Log readings, photos and reasons for repair as if every file gets '
+                                   'challenged',
+                                   'The DYOJO (The DYOJO) ([onSDIprTeAU @ 00:37:35])'],
+                                  ['Diversify against a sudden model interrupt',
+                                   'Ty Penzone runs diversified business models so one program shift '
+                                   'cannot sink him',
+                                   'Keep local and direct work alive alongside program rotation at all '
+                                   'times',
+                                   'The DYOJO (The DYOJO) ([onSDIprTeAU @ 00:22:19])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Getting on a list is a sales campaign, not an application. Schoen's "
+                              'playbook starts with applying to every program, expecting to pay a fee, and '
+                              'accepting there is no guarantee of placement. The opening comes when an '
+                              "incumbent underperforms in a territory and the 'switch flips' [-0hAYhkhJaw "
+                              "@ 00:10:19]. The next move is relationship work. Get the regional manager's "
+                              'name and number, introduce yourself, and invite them to walk your facility '
+                              "and inspect your equipment. In his words, it is 'very important to have the "
+                              "regional manager's name and number so you can introduce yourself' "
+                              '[-0hAYhkhJaw @ 00:11:42]. He also works the field side by having adjusters '
+                              'and agents push for the company. That push lands hardest when claim volume '
+                              'is high and the program needs capacity [-0hAYhkhJaw @ 00:12:01]. David '
+                              "Smith's addition is commitment. Once inside, learn both the program "
+                              'requirements and the carrier requirements, because both rule sets apply to '
+                              'the same file [onSDIprTeAU @ 00:12:23]. The sequence matters. Applications '
+                              'sit dormant until a slot opens. The regional manager decides who fills that '
+                              'slot, and adjuster and agent advocacy tips the decision. Whether a '
+                              'contractor stays on the list once the switch flips depends on mastering two '
+                              'rulebooks.',
+                              'Inside the program, the drying math is dictated rather than negotiated. '
+                              "Schoen describes the 'micia' report, timestamped day by day, which sets "
+                              'dehumidifier and air-mover counts that can fall below S500. If the room '
+                              'calls for a small dehu, you are paid for a small even if you placed a large '
+                              '[-0hAYhkhJaw @ 00:06:02]. David Smith sees contractors overshoot in the '
+                              "other direction. They set '45 D HUs and 75 fans in two rooms' and then do "
+                              'not get paid for it [onSDIprTeAU @ 00:44:40]. The paperwork load is a fixed '
+                              'cost to plan for. Documentation must be uploaded twice, once to your own '
+                              'system and once to the program, though some CRMs auto-upload [-0hAYhkhJaw @ '
+                              '00:05:23]. Xactimate is mandatory and a second software platform may be '
+                              'required. Schoen tells owners to either train admin staff or sub the '
+                              'paperwork out [-0hAYhkhJaw @ 00:06:42]. The practical read is direct. Set '
+                              "equipment to match what the program's report will pay. Log readings daily "
+                              'to show specific humidity dropping, and keep estimating in Xactimate from '
+                              'the first visit forward. Shops that set equipment by feel end up arguing '
+                              'with a reviewer over gear they already paid to haul in, run and pull back '
+                              'out.',
+                              'The economics reward speed and volume rather than per-job margin. Schoen '
+                              'describes somewhat regular job flow through rotation, scored on arrival '
+                              "speed and direct customer reviews. He is blunt that you are 'going to pay 5 "
+                              "10% a fee to be on the program' [-0hAYhkhJaw @ 00:08:41]. He adds that "
+                              'mitigation pays well while construction is harder [-0hAYhkhJaw @ 00:09:17]. '
+                              'The program wars show what TPAs actually sell to carriers. Alacrity won '
+                              'Nationwide by promising $5M a year in savings, with no roughly $100 setup '
+                              'fee and no $150 service-call fee. Contractor Connection took the account '
+                              'back with a 3-day drying cap it pitched as $20M in savings [-0hAYhkhJaw @ '
+                              '00:03:50]. Each of those savings is a line the contractor no longer bills. '
+                              'Ty Penzone explains how repair shops still make the channel work: subs '
+                              'accept lower rates in exchange for year-round volume [onSDIprTeAU @ '
+                              '00:55:23]. Put the numbers together and the model is clear. Arrival speed '
+                              'and reviews win the rotation, and mitigation carries the margin while '
+                              'construction fights the list. Every dollar a TPA promises a carrier comes '
+                              'out of fees and drying days the contractor used to control. The model only '
+                              'works when crews and subs stay busy enough to spread the fee across many '
+                              'files.'],
+               'table': {'caption': 'Program numbers, tools and rules restoration operators work under',
+                         'headers': ['Mechanic',
+                                     'Exact Figure or Tool',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Program participation fee',
+                                   '5 to 10 percent of the work paid to the TPA',
+                                   'Build the fee into overhead before accepting rotation assignments from '
+                                   'any program',
+                                   'Water Damage Restoration Coach - Jon Schoen ([-0hAYhkhJaw @ '
+                                   '00:02:35])'],
+                                  ['Non-program markup benchmark',
+                                   '20 percent over the standard price list outside programs',
+                                   'Measure exactly what the preset program list costs against normal '
+                                   'retail pricing',
+                                   'Water Damage Restoration Coach - Jon Schoen ([-0hAYhkhJaw @ '
+                                   '00:07:43])'],
+                                  ['Contractor Connection drying cap',
+                                   '3-day drying cap pitched to the carrier as $20M in savings',
+                                   'Drying plans and readings must show progress inside the three-day '
+                                   'window',
+                                   'Water Damage Restoration Coach - Jon Schoen ([-0hAYhkhJaw @ '
+                                   '00:03:50])'],
+                                  ['Alacrity waived contractor fees',
+                                   'No roughly $100 setup fee and no $150 service-call fee',
+                                   'Alacrity used the waived fees to promise Nationwide $5M a year in '
+                                   'savings',
+                                   'Water Damage Restoration Coach - Jon Schoen ([-0hAYhkhJaw @ '
+                                   '00:03:13])'],
+                                  ['Equipment count report',
+                                   'Day-stamped micia report dictates dehu and air-mover counts below S500',
+                                   'Place equipment to match the report, since a large dehu pays as a '
+                                   'small one',
+                                   'Water Damage Restoration Coach - Jon Schoen ([-0hAYhkhJaw @ '
+                                   '00:06:02])'],
+                                  ['Estimating and admin software',
+                                   'Xactimate mandatory, possibly a second platform, with duplicate '
+                                   'documentation uploads',
+                                   'Train admin staff or sub the paperwork out rather than overloading '
+                                   'field crews',
+                                   'Water Damage Restoration Coach - Jon Schoen ([-0hAYhkhJaw @ '
+                                   '00:06:42])'],
+                                  ['Estimate lift from outside reviewer service',
+                                   'Sponsor Enliten claims at least 5 percent, up to 45 percent, 20 to 25 '
+                                   'percent average',
+                                   'Presented during the sponsor segment as the gain on contractor '
+                                   'estimates',
+                                   'The DYOJO (The DYOJO) ([onSDIprTeAU @ 00:39:23])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'How program contractors get placed and stay placed',
+                           'body': 'These are the field-tested moves restoration owners use to break onto '
+                                   'TPA lists and stay in the rotation once they are in.',
+                           'items': ['Invite the regional manager to physically inspect your facility and '
+                                     'equipment, and keep their name and number on hand to introduce '
+                                     'yourself [Water Damage Restoration Coach - Jon Schoen — -0hAYhkhJaw '
+                                     '@ 00:11:42].',
+                                     'Have adjusters and agents push for your company, which works best '
+                                     'when claim volume is high and the program needs capacity [Water '
+                                     'Damage Restoration Coach - Jon Schoen — -0hAYhkhJaw @ 00:12:01].',
+                                     'Recruit hungry subs who want the work, because program volume only '
+                                     'pays if you can staff it [The DYOJO (The DYOJO) — onSDIprTeAU @ '
+                                     '00:51:30].',
+                                     'Ask the top performers in the program directly how they do it rather '
+                                     'than reinventing the workflow alone [The DYOJO (The DYOJO) — '
+                                     'onSDIprTeAU @ 01:08:24].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Apply to every program and pull the list',
+                              'action': 'Submit applications to every TPA program, pay the fee, and get '
+                                        'the TPA list.',
+                              'detail': 'Apply everywhere, expect a fee with no guarantee, and wait for '
+                                        'the switch to flip when an incumbent underperforms. Get the TPA '
+                                        "list from the 'Raa,' and treat the 15-minute Calendly call as a "
+                                        'pitch [Water Damage Restoration Coach - Jon Schoen — -0hAYhkhJaw '
+                                        '@ 00:10:19].'},
+                             {'step': 2,
+                              'title': 'Open the regional manager relationship',
+                              'action': "Get the regional manager's contact and invite them to inspect "
+                                        'your facility.',
+                              'detail': 'Introduce yourself directly and bring the manager in to see your '
+                                        'facility and equipment so you are top of mind when a slot opens '
+                                        '[Water Damage Restoration Coach - Jon Schoen — -0hAYhkhJaw @ '
+                                        '00:11:42].'},
+                             {'step': 3,
+                              'title': 'Stand up the admin and estimating stack',
+                              'action': 'Run Xactimate, plan for a second platform, and staff the double '
+                                        'upload.',
+                              'detail': 'Xactimate is mandatory and a second software may be needed. Train '
+                                        'admin staff or sub the paperwork out, and use a CRM that '
+                                        'auto-uploads where possible [Water Damage Restoration Coach - Jon '
+                                        'Schoen — -0hAYhkhJaw @ 00:06:42].'},
+                             {'step': 4,
+                              'title': 'Place equipment to the report and document everything',
+                              'action': 'Match dehu and air-mover counts to the program report and log '
+                                        'daily readings.',
+                              'detail': 'Do not set 45 dehus and 75 fans in two rooms you will not get '
+                                        'paid for. Document the reason for every repair step regardless of '
+                                        'who the end user is [The DYOJO (The DYOJO) — onSDIprTeAU @ '
+                                        '00:48:01].'}]},
+              {'section_number': 3,
+               'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Program work versus going direct is the sharpest split on the restoration '
+                              'side. Jon Schoen sits on Contractor Connection, Alacrity, and Sedgwick and '
+                              'still frames the deal as a toll: the TPA charges the contractor 5 to 10% to '
+                              'do the work, the price list is preset and discounted, and outside the '
+                              'programs Schoen marks the standard list up 20% instead [-0hAYhkhJaw @ '
+                              '00:02:35]. Brian Close of American Restoration runs recon only and stays '
+                              "off the programs, calling program volume guaranteed work that is 'not "
+                              "always guaranteed to be profitable' and the fallback a shop reaches for "
+                              'right before bankruptcy [onSDIprTeAU @ 00:02:58]. David Smith, eleven years '
+                              'into Oregon mitigation, pushes back hard: a program can hand you a $250,000 '
+                              'fire you never chased, and the payoff only comes if you commit and learn '
+                              "both the program rules and each carrier's requirements [onSDIprTeAU @ "
+                              '00:11:17]. Ty Penzone, twenty-plus years in Washington repairs, reports '
+                              'that going direct demanded heavy marketing spend, so the real choice is '
+                              'sweat equity plus some financial outlay, or more financial outlay and less '
+                              "sweat [onSDIprTeAU @ 00:33:09]. David's own sequencing is the practical "
+                              'middle path: build a local direct foundation first, then run program and '
+                              'direct channels side by side.',
+                              "The second fault line is whether a carrier's preferred vendor is a partner "
+                              'or a liability. Mike of The Claim Squad Public Adjusters calls preferred '
+                              'vendors beginners grinding volume on thin margins who get dropped if they '
+                              'treat policyholders fairly, and tells homeowners to answer the intake '
+                              "question 'Do you need water mitigation?' by declining and naming their own "
+                              'vendor [h_W9kUbadMM @ 00:03:07]. On-Site Adjusting goes further, warning '
+                              "that the insurer's contractor removes and dumps evidence before coverage is "
+                              'even decided, so an attorney, public adjuster, or engineer should be on '
+                              'site within days [oEc6cQdcK6I @ 00:00:32]. The DYOJO panel tells the '
+                              "opposite story from inside the network: when Ty Penzone's own house burned "
+                              'in 2008, a network vendor did the repair [onSDIprTeAU @ 00:34:09]. Chris '
+                              "Zimmerman adds a contractor's warning about the public adjuster route "
+                              'itself: once a letter of representation lands, the insurer stops talking to '
+                              'the contractor, the homeowner risks getting ghosted, cancelling the letter '
+                              'is difficult, and the result may cost more and turn out worse [esg8I0BJFLM '
+                              '@ 00:05:18]. Zimmerman also stresses that bringing in a public adjuster is '
+                              "the homeowner's decision and belongs on the table only once a claim has "
+                              'stalled.',
+                              "The third split is how much leverage anyone has against the administrator's "
+                              "paper. On the repair side, one DYOJO voice shrugs that 'the line items are "
+                              "what the line items are' [onSDIprTeAU @ 00:16:04], while David Smith "
+                              'insists reviewer pushback only means the file lacks documentation and '
+                              'reports never losing a documented dispute [onSDIprTeAU @ 00:37:35]. The '
+                              'benefits-plan practitioners fight the same war over contracts. The '
+                              "independent-TPA voice on Chris Hamilton's channel argues that shifting "
+                              "administrators 'shouldn't be at all that difficult' and that brokers who "
+                              'renew a bundled solution for 20-plus years are hitting the easy button '
+                              '[LEzohuG5ykg @ 00:02:28]. Claire Brockbank of 32BJ, running about 200,000 '
+                              'lives, paints a harder picture: bad contracts block program exits, force '
+                              'upside-down claims, and cede data ownership, and even after a disciplined '
+                              'RFP a buyer should expect to win roughly a third of the asks [pNIYu-t990E @ '
+                              '00:31:59]. The 32BJ alternative playbook is to send the RFP with the '
+                              "buyer's own contract, demand a redline in every response, plant parallel "
+                              "'Easter egg' questions to catch sales and legal contradictions, and play "
+                              "Aetna, United, and Anthem against each other whenever one calls an ask 'not "
+                              "industry practice.' Both camps land on the same lever: owning the data and "
+                              'the documentation.'],
+               'table': {'caption': 'Program vs. Independent Playbooks: Where Practitioners Split',
+                         'headers': ['Fault Line', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Program volume versus direct-only restoration work',
+                                   'Join every TPA program and accept the 5-10% fee plus preset pricing',
+                                   'Stay non-program, recon only, and treat programs as the pre-bankruptcy '
+                                   'fallback',
+                                   'Water Damage Restoration Coach - Jon Schoen ([-0hAYhkhJaw @ '
+                                   '00:02:35]); The DYOJO ([onSDIprTeAU @ 00:02:58])'],
+                                  ['Size of the upside from committing to programs',
+                                   'Commit fully because programs can hand you an unchased $250,000 fire',
+                                   'Going direct demands heavy marketing spend plus sweat equity and money',
+                                   'The DYOJO ([onSDIprTeAU @ 00:11:17]); The DYOJO ([onSDIprTeAU @ '
+                                   '00:33:09])'],
+                                  ["Trusting the carrier's preferred mitigation vendor on a loss",
+                                   'Decline the intake mitigation offer and name your own chosen vendor',
+                                   "A network vendor repaired Ty Penzone's own burned house in 2008",
+                                   'The Claim Squad Public Adjusters ([h_W9kUbadMM @ 00:03:07]); The DYOJO '
+                                   '([onSDIprTeAU @ 00:34:09])'],
+                                  ['Bringing an outside advocate onto a program claim',
+                                   'Get an attorney, public adjuster, or engineer on site within days',
+                                   'A letter of representation cuts the contractor out and risks worse '
+                                   'results',
+                                   'On-Site Adjusting ([oEc6cQdcK6I @ 00:00:32]); Chris Zimmerman '
+                                   '([esg8I0BJFLM @ 00:05:18])'],
+                                  ['Fighting program line items and desk reviewer cuts',
+                                   'Accept that the line items are simply what the line items are',
+                                   'Documented disputes never lost because pushback signals missing '
+                                   'documentation in the file',
+                                   'The DYOJO ([onSDIprTeAU @ 00:16:04]); The DYOJO ([onSDIprTeAU @ '
+                                   '00:37:35])'],
+                                  ['Switching or renegotiating with an incumbent plan administrator',
+                                   "Switching administrators shouldn't be difficult, and always demand "
+                                   'your own data',
+                                   'Expect to win about a third of asks because contracts block exits',
+                                   'Chris Hamilton ([LEzohuG5ykg @ 00:02:28]); Relentless Health Value '
+                                   '([pNIYu-t990E @ 00:31:59])'],
+                                  ['Carrier staff adjuster job versus a TPA adjuster seat',
+                                   'State Farm offers stability, a clear ladder, 401k, pension, and '
+                                   'bonuses',
+                                   'Sedgwick offers remote flexibility and varied caseloads at possibly '
+                                   'slightly lower starting pay',
+                                   'Be A Claims Adjuster ([u947iwIhI7A @ 00:01:46]); Be A Claims Adjuster '
+                                   '([u947iwIhI7A @ 00:02:29])']]}},
+              {'section_number': 4,
+               'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive trap is placing equipment the program will not pay for. '
+                              'Jon Schoen explains that the micia report is timestamped day by day and '
+                              'dictates dehumidifier and air-mover counts, possibly below S500, so if the '
+                              'room calls for a small dehu you are paid for a small even when you placed a '
+                              'large [-0hAYhkhJaw @ 00:06:02]. The caps come straight from TPA sales '
+                              'pitches to carriers: Alacrity won Nationwide by promising $5M a year in '
+                              'savings by dropping the roughly $100 setup fee and $150 service-call fee, '
+                              'and Contractor Connection won the account back with a three-day drying cap '
+                              'claiming $20M in savings [-0hAYhkhJaw @ 00:03:50]. David Smith sees '
+                              "contractors set '45 D HUs and 75 fans in two rooms' and then get nothing "
+                              "for it [onSDIprTeAU @ 00:44:40]. Schoen's readings rule closes the loop: "
+                              'the logs must show specific humidity dropping day over day [-0hAYhkhJaw @ '
+                              '00:08:21]. Even when the file is clean, Schoen warns payment is still not '
+                              'guaranteed, because a homeowner can walk away with the money. The economics '
+                              "check is simple: run the job to the program's equipment math and drying "
+                              'window, not to your own habits, and log readings that prove every day '
+                              'billed.',
+                              'The second trap is building a company whose survival depends on someone '
+                              "else's dispatch queue. Ty Penzone's flooring company ran 125 homes a year "
+                              'from 2002 to 2006 while charging retail clients 1.5 times, then fell to one '
+                              'job in a month in 2008 [onSDIprTeAU @ 00:56:46]. One DYOJO panelist puts it '
+                              "bluntly: 'I had a business that its entire solvency was built around doing "
+                              "150 jobs a year plus' [onSDIprTeAU @ 00:59:09], which is why Ty argues for "
+                              "running diversified models to survive a 'model interrupt.' Back-office load "
+                              'is the quieter drain. Jon Schoen reports that documentation must be '
+                              'uploaded twice unless a CRM auto-uploads, that Xactimate is mandatory and a '
+                              'second software may be required, and that owners should plan to train admin '
+                              'staff or sub the paperwork out [-0hAYhkhJaw @ 00:06:42]. Joe Boyle of '
+                              "ClearFile sees the same scheduling trap from the administrator's own "
+                              'licensing desk: approvals take one week to three months, renewals cluster '
+                              'January through March, and financials must be current within 30 to 60 days, '
+                              "so step one is 'a very modest timeline' [kR0zavFV0HU @ 00:02:38]. "
+                              'Underestimating paperwork time, on either side of the TPA relationship, '
+                              'quietly kills margin and deadlines.',
+                              'The third trap is signing or working under paper nobody read. On Relentless '
+                              "Health Value, 32BJ's Claire Brockbank and host Stacey Richter peg about 95% "
+                              "of employers as deferring to the TPA's paper and losing rights in fine "
+                              "print like a 'footnote on page 78,' because 'very few of us have "
+                              "contracting expertise, so we accept the language' [pNIYu-t990E @ 00:06:09]. "
+                              'The cost was concrete: upside-down claims ran 32BJ about $10M in one year, '
+                              'with a $100 bill paid at $200, and the typical failure has sales '
+                              'overpromising, lawyers retracting, and contracting still open a year into '
+                              "implementation [pNIYu-t990E @ 00:04:19]. Their rule after signing is 'You "
+                              "have to police this.' On the claims side, Leah Small of Chisholm Chisholm & "
+                              'Kilpatrick reports that Sedgwick recommends approval or denial without '
+                              'paying benefits, often aims to minimize payouts, and leans on file reviews '
+                              'instead of exams so treating physicians get dismissed [lnhw4pYCOFU @ '
+                              '00:01:29]. The fatal mistake is a thin appeal: in most cases no new '
+                              'evidence is allowed after the appeal closes, so every denial basis has to '
+                              'be rebutted with vocational reports, symptom journals, and physician '
+                              'reports up front [lnhw4pYCOFU @ 00:02:54]. Whether the counterparty is a '
+                              'plan buyer or a claimant, losing the record early is losing the fight.'],
+               'table': {'caption': 'Firsthand Traps and the Economics Behind Them',
+                         'headers': ['Trap', 'Firsthand Evidence', 'Economics Check', 'Expert Source'],
+                         'rows': [["Over-placing drying equipment beyond the program's allowances",
+                                   'The micia report pays a small dehu even when a large was placed',
+                                   'Match equipment to program math because 45 dehus and 75 fans go unpaid',
+                                   'Water Damage Restoration Coach - Jon Schoen ([-0hAYhkhJaw @ '
+                                   '00:06:02]); The DYOJO ([onSDIprTeAU @ 00:44:40])'],
+                                  ["Running a drying job past the program's window cap",
+                                   'Contractor Connection won Nationwide back with a three-day drying cap',
+                                   'That cap was sold to the carrier as $20M in savings',
+                                   'Water Damage Restoration Coach - Jon Schoen ([-0hAYhkhJaw @ '
+                                   '00:03:50])'],
+                                  ['Assuming program jobs guarantee a collected payment at the end',
+                                   'A homeowner can walk away with the money even on program work',
+                                   'Budget for collection risk on top of the 5-10% program fee',
+                                   'Water Damage Restoration Coach - Jon Schoen ([-0hAYhkhJaw @ '
+                                   '00:04:45])'],
+                                  ['Building company solvency on a single volume channel',
+                                   'A flooring company fell from 125 homes yearly to one job a month in '
+                                   '2008',
+                                   'Diversify business models before a model interrupt hits the job '
+                                   'pipeline',
+                                   'The DYOJO ([onSDIprTeAU @ 00:56:46]); The DYOJO ([onSDIprTeAU @ '
+                                   '00:22:19])'],
+                                  ["Accepting the administrator's contract paper without any redlines",
+                                   'Upside-down claims cost 32BJ about $10M in a single year',
+                                   'A $100 bill got paid at $200, so send your own contract with the RFP',
+                                   'Relentless Health Value ([pNIYu-t990E @ 00:04:19]); Relentless Health '
+                                   'Value ([pNIYu-t990E @ 00:14:17])'],
+                                  ['Letting the preferred vendor gut the loss before coverage is decided',
+                                   'Evidence gets removed, shored up, and thrown in a dumpster before the '
+                                   'coverage decision',
+                                   'Get a moisture map and documentation before mitigation dries '
+                                   'everything out',
+                                   'On-Site Adjusting ([oEc6cQdcK6I @ 00:00:00]); On-Site Adjusting '
+                                   '([oEc6cQdcK6I @ 00:00:47])'],
+                                  ['Walking into a TPA appeal with thin or vague evidence',
+                                   'In most cases no new evidence is allowed after the appeal closes',
+                                   'Rebut every denial basis with vocational reports, symptom journals, '
+                                   'and physician reports',
+                                   'CCK Law Long-Term Disability ([lnhw4pYCOFU @ 00:02:54]); CCK Law '
+                                   'Long-Term Disability ([lnhw4pYCOFU @ 00:01:47])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Stop Before You Sign the Paper or Place a Single Dehu',
+                           'body': 'Each gate below comes from a loss, cut, or collapse the practitioners '
+                                   'lived through or watched happen. Clear all four before taking program '
+                                   "volume or signing an administrator's contract.",
+                           'items': ["Pull the program's micia equipment counts before placing dehus and "
+                                     'air movers, because an oversized unit gets paid as the small one the '
+                                     'room called for [Water Damage Restoration Coach - Jon Schoen — '
+                                     '-0hAYhkhJaw @ 00:06:02].',
+                                     'Confirm Xactimate seats and any second software, and decide whether '
+                                     'to train admin staff or sub the paperwork out before the first '
+                                     'program job lands [Water Damage Restoration Coach - Jon Schoen — '
+                                     '-0hAYhkhJaw @ 00:06:42].',
+                                     'Model the business so no single channel carries solvency; a shop '
+                                     'built around 150 jobs a year plus collapsed to one job a month in '
+                                     '2008 [The DYOJO — onSDIprTeAU @ 00:59:09].',
+                                     "Redline the administrator's contract before signing and police "
+                                     'vendor compliance afterward, because the fine print is where exits '
+                                     'and data ownership disappear [Relentless Health Value — pNIYu-t990E '
+                                     '@ 00:34:31].']}}],
+ 'pull_quote': '"So, really it\'s documentation, documentation, documentation, regardless of where your '
+               "work is coming from, who the end user is, who you're selling, a carrier, a reviewer, or a "
+               'homeowner directly." — The DYOJO (onSDIprTeAU @ 00:48:01).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Apply to every TPA program, expect an application fee with no guarantee, and stay '
+                      'ready for the moment an incumbent underperforms and the switch flips [Water Damage '
+                      'Restoration Coach - Jon Schoen — -0hAYhkhJaw @ 00:10:19].',
+                      "Get the regional manager's name and number, introduce yourself, and invite them to "
+                      'inspect your facility and equipment [Water Damage Restoration Coach - Jon Schoen — '
+                      '-0hAYhkhJaw @ 00:11:42].',
+                      'Have adjusters and agents push for you with the program, especially when claim '
+                      'volume is high [Water Damage Restoration Coach - Jon Schoen — -0hAYhkhJaw @ '
+                      '00:12:01].',
+                      'Build a local direct foundation first, then run program and direct work side by '
+                      'side [The DYOJO — onSDIprTeAU @ 00:25:18].',
+                      'Recruit hungry subs who will accept lower rates in exchange for year-round program '
+                      'volume [The DYOJO — onSDIprTeAU @ 00:51:30].',
+                      'Get documentation and a moisture map on the loss before mitigation dries everything '
+                      'and leaves no proof [On-Site Adjusting — oEc6cQdcK6I @ 00:00:47].'],
+ 'statutory_citations': [{'title': 'Water Damage Restoration Coach - Jon Schoen — How to Get on Insurance '
+                                   "Restoration Third Party Administrator's TPA's Lists [00:06:02]",
+                          'url': 'https://www.youtube.com/watch?v=-0hAYhkhJaw&t=362s',
+                          'relevance': 'Primary practitioner testimony on micia equipment caps, preset '
+                                       'price lists, and the 5-10% program fee.'},
+                         {'title': 'The DYOJO (The DYOJO) — How do you win the insurance claims TPA game '
+                                   '(Contractor Connections & Alacrity)? TDP 58 (PVJ 012) [00:48:01]',
+                          'url': 'https://www.youtube.com/watch?v=onSDIprTeAU&t=2881s',
+                          'relevance': 'Primary practitioner testimony on program versus direct economics, '
+                                       'documentation, and volume-dependency collapse.'},
+                         {'title': 'Relentless Health Value — Running a TPA (Third Party Administrator) '
+                                   'RFP Process That Is Less of a Wild West Fiduciary Shootout [00:06:09]',
+                          'url': 'https://www.youtube.com/watch?v=pNIYu-t990E&t=369s',
+                          'relevance': 'Primary practitioner testimony on administrator contract fine '
+                                       'print, redlines, and upside-down claims.'},
+                         {'title': 'The Claim Squad Public Adjusters — 5 Reasons Not to Use Your Insurance '
+                                   'Company Contractor: Water Mitigation or Restoration Company [00:03:07]',
+                          'url': 'https://www.youtube.com/watch?v=h_W9kUbadMM&t=187s',
+                          'relevance': 'Primary practitioner testimony on preferred-vendor conflicts and '
+                                       "declining the carrier's mitigation intake offer."}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '-0hAYhkhJaw',
+                       'title': "How to Get on Insurance Restoration Third Party Administrator's TPA's "
+                                'Lists',
+                       'channel': 'Water Damage Restoration Coach - Jon Schoen',
+                       'author': 'Water Damage Restoration Coach - Jon Schoen',
+                       'text': 'They charge the contractor 5 to 10% in order to do the work.',
+                       'tip': 'They charge the contractor 5 to 10% in order to do the work.',
+                       'timestamp': 155,
+                       'timestamp_seconds': 155,
+                       'timestamp_label': '[00:02:35]',
+                       'url': 'https://www.youtube.com/watch?v=-0hAYhkhJaw&t=155s',
+                       'markdown': '[00:02:35](https://www.youtube.com/watch?v=-0hAYhkhJaw&t=155s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-0hAYhkhJaw',
+                       'title': "How to Get on Insurance Restoration Third Party Administrator's TPA's "
+                                'Lists',
+                       'channel': 'Water Damage Restoration Coach - Jon Schoen',
+                       'author': 'Water Damage Restoration Coach - Jon Schoen',
+                       'text': "Very important to have the regional manager's name and number so you can "
+                               'introduce yourself.',
+                       'tip': "Very important to have the regional manager's name and number so you can "
+                              'introduce yourself.',
+                       'timestamp': 702,
+                       'timestamp_seconds': 702,
+                       'timestamp_label': '[00:11:42]',
+                       'url': 'https://www.youtube.com/watch?v=-0hAYhkhJaw&t=702s',
+                       'markdown': '[00:11:42](https://www.youtube.com/watch?v=-0hAYhkhJaw&t=702s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'onSDIprTeAU',
+                       'title': 'How do you win the insurance claims TPA game (Contractor Connections & '
+                                'Alacrity)? TDP 58 (PVJ 012)',
+                       'channel': 'The DYOJO (The DYOJO)',
+                       'author': 'The DYOJO (The DYOJO)',
+                       'text': "So, really it's documentation, documentation, documentation, regardless of "
+                               "where your work is coming from, who the end user is, who you're selling, a "
+                               'carrier, a reviewer, or a homeowner directly, you are going to have to '
+                               'document and explain the reason for your repair process.',
+                       'tip': "So, really it's documentation, documentation, documentation, regardless of "
+                              "where your work is coming from, who the end user is, who you're selling, a "
+                              'carrier, a reviewer, or a homeowner directly, you are going to have to '
+                              'document and explain the reason for your repair process.',
+                       'timestamp': 2881,
+                       'timestamp_seconds': 2881,
+                       'timestamp_label': '[00:48:01]',
+                       'url': 'https://www.youtube.com/watch?v=onSDIprTeAU&t=2881s',
+                       'markdown': '[00:48:01](https://www.youtube.com/watch?v=onSDIprTeAU&t=2881s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'onSDIprTeAU',
+                       'title': 'How do you win the insurance claims TPA game (Contractor Connections & '
+                                'Alacrity)? TDP 58 (PVJ 012)',
+                       'channel': 'The DYOJO (The DYOJO)',
+                       'author': 'The DYOJO (The DYOJO)',
+                       'text': 'The line items are what the line items are.',
+                       'tip': 'The line items are what the line items are.',
+                       'timestamp': 964,
+                       'timestamp_seconds': 964,
+                       'timestamp_label': '[00:16:04]',
+                       'url': 'https://www.youtube.com/watch?v=onSDIprTeAU&t=964s',
+                       'markdown': '[00:16:04](https://www.youtube.com/watch?v=onSDIprTeAU&t=964s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pNIYu-t990E',
+                       'title': 'Running a TPA (Third Party Administrator) RFP Process That Is Less of a '
+                                'Wild West Fiduciary Shootout',
+                       'channel': 'Relentless Health Value',
+                       'author': 'Relentless Health Value',
+                       'text': 'And very few of us have contracting expertise, so we accept the language.',
+                       'tip': 'And very few of us have contracting expertise, so we accept the language.',
+                       'timestamp': 369,
+                       'timestamp_seconds': 369,
+                       'timestamp_label': '[00:06:09]',
+                       'url': 'https://www.youtube.com/watch?v=pNIYu-t990E&t=369s',
+                       'markdown': '[00:06:09](https://www.youtube.com/watch?v=pNIYu-t990E&t=369s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LEzohuG5ykg',
+                       'title': 'What does a TPA or third party administrator do for my company benefits '
+                                'plan?',
+                       'channel': 'Chris Hamilton',
+                       'author': 'Chris Hamilton',
+                       'text': 'I would say choose a TPA that gives you your data.',
+                       'tip': 'I would say choose a TPA that gives you your data.',
+                       'timestamp': 312,
+                       'timestamp_seconds': 312,
+                       'timestamp_label': '[00:05:12]',
+                       'url': 'https://www.youtube.com/watch?v=LEzohuG5ykg&t=312s',
+                       'markdown': '[00:05:12](https://www.youtube.com/watch?v=LEzohuG5ykg&t=312s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'z0-3oV0C8EU',
+                       'title': 'Understanding Third-Party Administrators (TPAs) in Healthcare Insurance',
+                       'channel': 'Navigating the Business of Medicine',
+                       'author': 'Navigating the Business of Medicine',
+                       'text': 'TPAs are usually a lot cheaper than going through a standard insurance '
+                               'company.',
+                       'tip': 'TPAs are usually a lot cheaper than going through a standard insurance '
+                              'company.',
+                       'timestamp': 58,
+                       'timestamp_seconds': 58,
+                       'timestamp_label': '[00:00:58]',
+                       'url': 'https://www.youtube.com/watch?v=z0-3oV0C8EU&t=58s',
+                       'markdown': '[00:00:58](https://www.youtube.com/watch?v=z0-3oV0C8EU&t=58s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nBqdaYbbpKg',
+                       'title': 'Life at Third Party Administrator - Owen Paradis - JP Farley - True '
+                                'Captive Summit',
+                       'channel': 'Self-Funded',
+                       'author': 'Self-Funded',
+                       'text': 'Our motto is humanizing every experience, not treating members as numbers '
+                               'and focusing only on the bottom line.',
+                       'tip': 'Our motto is humanizing every experience, not treating members as numbers '
+                              'and focusing only on the bottom line.',
+                       'timestamp': 364,
+                       'timestamp_seconds': 364,
+                       'timestamp_label': '[00:06:04]',
+                       'url': 'https://www.youtube.com/watch?v=nBqdaYbbpKg&t=364s',
+                       'markdown': '[00:06:04](https://www.youtube.com/watch?v=nBqdaYbbpKg&t=364s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'u947iwIhI7A',
+                       'title': 'State Farm vs Sedgwick: Which is Better for New Claims Adjusters?',
+                       'channel': 'Be A Claims Adjuster',
+                       'author': 'Be A Claims Adjuster',
+                       'text': 'State Farm is a direct insurance carrier.',
+                       'tip': 'State Farm is a direct insurance carrier.',
+                       'timestamp': 41,
+                       'timestamp_seconds': 41,
+                       'timestamp_label': '[00:00:41]',
+                       'url': 'https://www.youtube.com/watch?v=u947iwIhI7A&t=41s',
+                       'markdown': '[00:00:41](https://www.youtube.com/watch?v=u947iwIhI7A&t=41s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lnhw4pYCOFU',
+                       'title': 'How Sedgwick Handles LTD Claims and Why Denials Happen',
+                       'channel': 'CCK Law Long-Term Disability',
+                       'author': 'CCK Law Long-Term Disability',
+                       'text': 'You have the right to file an administrative appeal of that denial.',
+                       'tip': 'You have the right to file an administrative appeal of that denial.',
+                       'timestamp': 107,
+                       'timestamp_seconds': 107,
+                       'timestamp_label': '[00:01:47]',
+                       'url': 'https://www.youtube.com/watch?v=lnhw4pYCOFU&t=107s',
+                       'markdown': '[00:01:47](https://www.youtube.com/watch?v=lnhw4pYCOFU&t=107s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7lU917xnSRE',
+                       'title': 'Third Party Administrators',
+                       'channel': 'Self Insured Reporting',
+                       'author': 'Self Insured Reporting',
+                       'text': 'The platform pulls members at 50% of the specific and downloads their '
+                               'claims in one click.',
+                       'tip': 'The platform pulls members at 50% of the specific and downloads their '
+                              'claims in one click.',
+                       'timestamp': 68,
+                       'timestamp_seconds': 68,
+                       'timestamp_label': '[00:01:08]',
+                       'url': 'https://www.youtube.com/watch?v=7lU917xnSRE&t=68s',
+                       'markdown': '[00:01:08](https://www.youtube.com/watch?v=7lU917xnSRE&t=68s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xXGIjQfUG4s',
+                       'title': 'Claim access for insurers and third-party administrators',
+                       'channel': 'MN Labor and Industry',
+                       'author': 'MN Labor and Industry',
+                       'text': 'Select bulk edit, grant access, pick the subset of claims, choose the '
+                               'member, and save.',
+                       'tip': 'Select bulk edit, grant access, pick the subset of claims, choose the '
+                              'member, and save.',
+                       'timestamp': 154,
+                       'timestamp_seconds': 154,
+                       'timestamp_label': '[00:02:34]',
+                       'url': 'https://www.youtube.com/watch?v=xXGIjQfUG4s&t=154s',
+                       'markdown': '[00:02:34](https://www.youtube.com/watch?v=xXGIjQfUG4s&t=154s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'esg8I0BJFLM',
+                       'title': 'What All Roofing Contractors Need to Know About Adjusters',
+                       'channel': 'Chris Zimmerman',
+                       'author': 'Chris Zimmerman',
+                       'text': 'The two predominant ones are Seek Now and Hancock, but these are people '
+                               'who are not licensed adjusters.',
+                       'tip': 'The two predominant ones are Seek Now and Hancock, but these are people who '
+                              'are not licensed adjusters.',
+                       'timestamp': 142,
+                       'timestamp_seconds': 142,
+                       'timestamp_label': '[00:02:22]',
+                       'url': 'https://www.youtube.com/watch?v=esg8I0BJFLM&t=142s',
+                       'markdown': '[00:02:22](https://www.youtube.com/watch?v=esg8I0BJFLM&t=142s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'h_W9kUbadMM',
+                       'title': '5 Reasons Not to Use Your Insurance Company Contractor: Water Mitigation '
+                                'or Restoration Company',
+                       'channel': 'The Claim Squad Public Adjusters',
+                       'author': 'The Claim Squad Public Adjusters',
+                       'text': "When they ask 'Do you need water mitigation?' decline and name your own "
+                               'vendor.',
+                       'tip': "When they ask 'Do you need water mitigation?' decline and name your own "
+                              'vendor.',
+                       'timestamp': 187,
+                       'timestamp_seconds': 187,
+                       'timestamp_label': '[00:03:07]',
+                       'url': 'https://www.youtube.com/watch?v=h_W9kUbadMM&t=187s',
+                       'markdown': '[00:03:07](https://www.youtube.com/watch?v=h_W9kUbadMM&t=187s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nHMaLQmm8nw',
+                       'title': 'How to ACTUALLY work as a remote desk adjuster',
+                       'channel': 'Adjuster TV',
+                       'author': 'Adjuster TV',
+                       'text': 'The top priority is getting all of your roughly 34 state licenses, which '
+                               'runs about $1,500.',
+                       'tip': 'The top priority is getting all of your roughly 34 state licenses, which '
+                              'runs about $1,500.',
+                       'timestamp': 273,
+                       'timestamp_seconds': 273,
+                       'timestamp_label': '[00:04:33]',
+                       'url': 'https://www.youtube.com/watch?v=nHMaLQmm8nw&t=273s',
+                       'markdown': '[00:04:33](https://www.youtube.com/watch?v=nHMaLQmm8nw&t=273s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kR0zavFV0HU',
+                       'title': 'TPA Licensure 101: What Every Third-Party Administrator Needs to Know',
+                       'channel': 'Regulatory Joe',
+                       'author': 'Regulatory Joe',
+                       'text': 'So step number one, have a very modest timeline.',
+                       'tip': 'So step number one, have a very modest timeline.',
+                       'timestamp': 158,
+                       'timestamp_seconds': 158,
+                       'timestamp_label': '[00:02:38]',
+                       'url': 'https://www.youtube.com/watch?v=kR0zavFV0HU&t=158s',
+                       'markdown': '[00:02:38](https://www.youtube.com/watch?v=kR0zavFV0HU&t=158s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LQ4DKKitI6o',
+                       'title': 'Claim Toolkit Training - 06/17/2021 (Sedgwick)',
+                       'channel': 'Claim Toolkit',
+                       'author': 'Claim Toolkit',
+                       'text': 'The database updates 20 or more times a day, so re-run your saved reports '
+                               'weekly.',
+                       'tip': 'The database updates 20 or more times a day, so re-run your saved reports '
+                              'weekly.',
+                       'timestamp': 1271,
+                       'timestamp_seconds': 1271,
+                       'timestamp_label': '[00:21:11]',
+                       'url': 'https://www.youtube.com/watch?v=LQ4DKKitI6o&t=1271s',
+                       'markdown': '[00:21:11](https://www.youtube.com/watch?v=LQ4DKKitI6o&t=1271s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oEc6cQdcK6I',
+                       'title': 'Don’t Let the Insurance Company’s Contractor Ruin Your Claim 😳 | Public '
+                                'Adjuster Explains',
+                       'channel': 'On-Site Adjusting',
+                       'author': 'On-Site Adjusting',
+                       'text': "There's a strong possibility your insurance company will deny it and now "
+                               "all this stuff has been removed, shored up, and it's in a dumpster.",
+                       'tip': "There's a strong possibility your insurance company will deny it and now "
+                              "all this stuff has been removed, shored up, and it's in a dumpster.",
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=oEc6cQdcK6I&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=oEc6cQdcK6I&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'}]}

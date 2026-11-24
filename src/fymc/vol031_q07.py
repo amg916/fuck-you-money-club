@@ -1,1042 +1,825 @@
 from __future__ import annotations
 
-CHAPTER_7 = {
-    "id": "Q7",
-    "chapter_id": "Q7",
-    "chapter_number": 7,
-    "question_number": 7,
-    "slug": "complete-fleet-operating-process-production-blueprint-90-day-cohort",
-    "question_prompt": "How does an operator execute uber & commercial fleet arbitrage end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
-    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
-    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
-    "subtitle": "VIN-Level Intake, Uber Fleet Waterfalls, TLC/TCP Dispatch, SQLite Settlement Controls, and a Cash-Reconciled Fleet Cohort",
-    "layout_template": "research_exhibit",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #31, Uber & Commercial Fleet Arbitrage, ranks #15 of 36 with an "
-        "89/100 Money-to-Manpower Score. This chapter translates 10 mapped plays into "
-        "one executable operating sequence: qualify vehicles and drivers, verify coverage "
-        "and permits, reserve capacity, collect authorized charges, and reconcile every "
-        "settlement. Annual owner profit is $25,200 Conservative, $144,900 Base, and "
-        "$336,000 Scaled. The Base model separates $690,000 gross billings from $379,500 "
-        "retained revenue and $234,600 operating costs. Six copy-pasteable SQLite reference "
-        "modules demonstrate transactional reservations, immutable journals, payment "
-        "deduplication, and an idempotent external-work boundary. A worked 90-day ramp "
-        "ends at ten active vehicle-equivalents and $57,500 monthly billings, while "
-        "explicitly bridging receivables, owner payables, startup spending, and bank cash."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$180,000",
-            "context": "Annual gross billings; $99,000 retained revenue at 55%.",
-            "note": "14% gross-basis net margin; 25.45% retained margin; $25,200 owner profit; 1 FT + 3 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$690,000",
-            "context": "Annual gross billings; $379,500 retained revenue at 55%.",
-            "note": "21.0% gross-basis net margin; 38.18% retained margin; $144,900 owner profit; 1 FT + 3 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual gross billings; $660,000 retained revenue at 55%.",
-            "note": "28% gross-basis net margin; 50.91% retained margin; $336,000 owner profit; 2 FT + 4 C.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Turn a lead into a permitted, insured, collectible vehicle assignment",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a route-specific operating packet rather than a vehicle shopping list. "
-                    "Capture the investor identity, VIN, title or lease authority, lienholder restrictions, "
-                    "garaging address, proposed driver, dispatch territory, airport use, and intended service "
-                    "class. Separate ordinary rideshare leasing from commercially licensed Black SUV work; "
-                    "an eligible vehicle does not establish an eligible operator, driver, or trip. Obtain "
-                    "the actual insurance forms, endorsements, exclusions, deductibles, cancellation notice "
-                    "terms, and driver schedule from the broker. In California, map transportation network "
-                    "company activity against Public Utilities Code section 5433 and separately evaluate "
-                    "charter-party authority under section 5371. In New York City, verify TLC vehicle, "
-                    "driver, and applicable base licensing against the intended dispatch arrangement. "
-                    "Airport permission is another record, not an inference from platform activation. "
-                    "Score commercial readiness using documented route eligibility, usable insurance pricing, "
-                    "and funded operating capacity; never use demographic proxies. The intake score prioritizes "
-                    "review but cannot override a failed coverage requirement. Reject a mismatched insurance "
-                    "class before accepting keys, deposits, or investor promises. Store document references "
-                    "and expiry dates, while restricting access to licenses and consumer reports. Every "
-                    "accepted packet receives one durable application identifier and one proposed VIN reservation."
-                ),
-                (
-                    "Convert the accepted packet into a contract-defined waterfall. Specify who invoices the "
-                    "driver, who collects platform settlements, which party owns receivables, and which amounts "
-                    "are refundable deposits rather than revenue. Uber Fleet arrangements and payment features "
-                    "vary by market and account; obtain the actual enabled settlement terms instead of "
-                    "assuming universal automatic lease deductions. Where a supported split is unavailable, "
-                    "use a separately authorized collection method and match its settlement reference to "
-                    "the weekly obligation. Record driver fare earnings separately from operator lease, "
-                    "dispatch, and management charges. For this chapter's agency presentation, every $100 "
-                    "of modeled gross billings produces $55 retained revenue and $45 owner or pass-through "
-                    "payables. ASC 606 principal-versus-agent conclusions still depend on the contracts and "
-                    "control of each promised service; the 55% factor is the supplied scorecard assumption, "
-                    "not a universal accounting rule. A $1,000 refundable security deposit creates $1,000 "
-                    "bank cash and $1,000 deposit liability, with zero operating revenue. Never distribute "
-                    "that balance as profit. Obtain ACH authorization with the processor's required language, "
-                    "record revocation handling, and price chargebacks into collection procedures rather "
-                    "than silently transferring them to an investor."
-                ),
-                (
-                    "Release the vehicle only after independent evidence supports driver eligibility, continuous "
-                    "coverage, current permits, and signed commercial terms. Automated MVR retrieval through "
-                    "an authorized provider can shorten review, but report use must follow the actual "
-                    "permissible purpose. For employment screening, 15 U.S.C. section 1681b(b) establishes "
-                    "disclosure, authorization, and pre-adverse-action requirements; section 1681m addresses "
-                    "applicable adverse-action notices. Do not assume every driver lease creates employment "
-                    "or that every report purpose follows identical procedures. At handover, photograph "
-                    "all panels, tires, odometer, fuel level, accessories, and existing damage; have the "
-                    "driver acknowledge the condition record. Install OBD-II location and maintenance alerts "
-                    "only under disclosed, authorized operating terms. Treat starter-interrupt hardware as "
-                    "a safety-sensitive recovery mechanism, never as automatic debt collection. Require "
-                    "verified stationary status, applicable legal authority, and human approval before any "
-                    "permitted intervention; otherwise use notices and a recovery vendor. Assign separate "
-                    "owners for dispatch, collision response, maintenance scheduling, and settlement review. "
-                    "The Base team is one full-time operator plus three contractors, not four interchangeable "
-                    "generalists. Schedule the first settlement review before the first vehicle leaves, "
-                    "because collection defects are cheaper to fix before a driver accumulates arrears."
-                ),
-            ],
-            "table": {
-                "caption": "VIN-to-Cash Operating Handoffs and Evidence Requirements",
-                "headers": [
-                    "Operating handoff and accountable owner",
-                    "Specific evidence required before proceeding",
-                    "Unit economics and ledger treatment",
-                    "Failure response and recovery path",
-                ],
-                "rows": [
-                    [
-                        "Intake coordinator creates the durable application record.",
-                        "VIN, owner authority, garaging address, route, and driver are documented.",
-                        "One application consumes review capacity before generating any billable revenue.",
-                        "Reject restricted leases before promising deployment dates or collecting deposits.",
-                    ],
-                    [
-                        "Insurance broker verifies the proposed commercial use.",
-                        "Policy forms identify insured parties, scheduled drivers, deductibles, and exclusions.",
-                        "A $300 monthly premium increase removes $3,600 annual contribution per vehicle.",
-                        "Reprice the contract or decline deployment when coverage becomes uneconomic.",
-                    ],
-                    [
-                        "Dispatch contractor verifies the market-specific operating permissions.",
-                        "TLC or TCP authority and airport permissions match the actual service.",
-                        "A rejected airport trip contributes zero dispatch revenue to forecasts.",
-                        "Route only to permitted work instead of borrowing another operator's credentials.",
-                    ],
-                    [
-                        "Screening coordinator completes the applicable driver report workflow.",
-                        "Permissible purpose, authorization, report review, and required notices remain traceable.",
-                        "A $35 screening expense stays operating expense rather than owner distributions.",
-                        "Pause assignment while disputed report information receives the required handling.",
-                    ],
-                    [
-                        "Settlement operator signs the waterfall and collection authority.",
-                        "Signed schedules define lease charges, pass-throughs, deposits, and refund treatment.",
-                        "Every modeled $100 billing creates $55 revenue and $45 settlement liability.",
-                        "Use authorized direct collection when platform-supported splitting is unavailable.",
-                    ],
-                    [
-                        "Maintenance contractor completes condition evidence and safety inspection.",
-                        "Timestamped photographs, tire measurements, odometer readings, and service history agree.",
-                        "A $400 repair reserve remains distinguishable from current repair expenditure.",
-                        "Hold delivery until defects are repaired and inspection evidence is refreshed.",
-                    ],
-                    [
-                        "Primary operator authorizes handover and first settlement review.",
-                        "Current eligibility evidence and cleared funds match the reserved VIN.",
-                        "Refundable deposits increase bank cash and liabilities by equal amounts.",
-                        "Reassign only after the existing reservation is transactionally released.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before keys, dispatch access, or owner distributions",
-                "body": "Each check requires a named reviewer and retrievable evidence; a readiness score cannot substitute for the underlying record.",
-                "items": [
-                    "Match VIN, driver, garaging territory, and actual commercial activity to the broker-confirmed coverage schedule and effective dates.",
-                    "Verify platform eligibility separately from TLC/TCP authority and airport-specific permissions for every intended dispatch lane.",
-                    "Confirm collection authority, owner waterfall, refundable-deposit treatment, and collision-deductible responsibility in signed contracts.",
-                    "Require cleared funds, condition photographs, a unique VIN reservation, and a booked first-settlement review before handover.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Register the candidate and route",
-                    "action": "Create one application with stable identifiers and document references.",
-                    "detail": "Record owner authority, VIN, driver, service class, territory, proposed prices, and the precise source of the lead.",
-                },
-                {
-                    "step": 2,
-                    "title": "Verify and reserve",
-                    "action": "Complete evidence review before creating the exclusive VIN assignment.",
-                    "detail": "Resolve coverage and permit mismatches, sign the waterfall, and reserve capacity within one database transaction.",
-                },
-                {
-                    "step": 3,
-                    "title": "Fund and hand over",
-                    "action": "Confirm actual bank settlement and complete physical condition acceptance.",
-                    "detail": "Post refundable funds to deposit liabilities; activate only while evidence remains current and required funds remain available.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close the settlement cycle",
-                    "action": "Match invoices, processor settlements, bank entries, and owner statements.",
-                    "detail": "Clear exceptions before distributions, retain the settlement identifiers, and reconcile receivables and liabilities independently.",
-                },
-            ],
-        },
-        {
-            "heading": "2. Build the six-module ledger and make retries economically harmless",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use SQLite for a single-host small-team deployment, with the database on durable local "
-                    "storage rather than a shared network filesystem. The six reference modules below "
-                    "concatenate in numerical order into one Python 3.9 script. They use integer cents, "
-                    "foreign keys, unique business keys, explicit transactions, immutable journal rows, "
-                    "and a unique active reservation per VIN. BEGIN IMMEDIATE serializes competing writers "
-                    "before they read balances or change assignments, eliminating check-then-write races "
-                    "inside this deployment boundary. A reused request key with a different payload fails "
-                    "instead of silently overwriting history. Journal creation and its lines commit together; "
-                    "a process crash cannot leave a partially posted entry through the provided write "
-                    "functions. Keep raw database access behind the trusted service account because direct "
-                    "SQL can bypass application-level business rules. Store encrypted documents outside the "
-                    "ledger and retain only evidence references here. Configure encrypted backups, restoration "
-                    "tests, access logging, and monitored disk capacity before live collection. These snippets "
-                    "are a reference implementation, not a tested installation report. Their assertions "
-                    "must pass against the deployment's actual adapter, retention policy, and permission "
-                    "model before real vehicles or money depend on them."
-                ),
-                (
-                    "The verification and funds-held state machine deliberately separates evidence from cash. "
-                    "A reviewer records coverage, permit, driver, and contract evidence with a shared earliest "
-                    "expiry timestamp. Funding requires a confirmed bank reference; a submitted payment "
-                    "instruction is insufficient. The same funding reference cannot credit two applications "
-                    "because its global request key includes the immutable payload digest. Activation checks "
-                    "the evidence deadline, deposit threshold, and exclusive VIN reservation inside the same "
-                    "write transaction. Suspension blocks new invoice generation without deleting the assignment "
-                    "or releasing refundable funds. Closing requires a confirmed deposit return after suspension "
-                    "and releases the reservation atomically. This is an internal restricted-funds workflow, "
-                    "not a representation that the operator offers regulated escrow services. Where a "
-                    "contract requires genuine escrow, substitute the authorized custodian's confirmed ledger "
-                    "events and segregated accounts. The sample conservatively treats held deposits as "
-                    "unavailable for operating payouts. Collision deductions, disputes, partial refunds, and "
-                    "contract amendments require separately designed adjustment events rather than editing "
-                    "posted journals. Extend the state machine explicitly for those events, with two-person "
-                    "review and reversal entries. Never repair a production discrepancy by changing old "
-                    "amounts until the bank balance appears convenient."
-                ),
-                (
-                    "External work needs a separate correctness boundary. The transactional outbox records "
-                    "a provisioning intent alongside activation, but it does not claim that a database "
-                    "transaction can make an unrelated provider execute exactly once. The adapter must "
-                    "support durable idempotency keys, retrieval by that key, and payload agreement. Two "
-                    "workers may attempt delivery concurrently; both must receive the same provider receipt, "
-                    "and the database records that receipt once. A timeout leaves the intent pending for "
-                    "lookup and retry with the original key. If a provider lacks those semantics, stop "
-                    "automatic delivery and reconcile manually; do not generate a fresh key. Invoices "
-                    "recognize retained revenue and owner liabilities, collections reduce receivables, and "
-                    "payouts reduce liabilities without recognizing revenue again. The reconciliation view "
-                    "exposes bank cash, receivables, retained revenue, operating expense, refundable deposits, "
-                    "and owner payables independently. Daily QA checks balanced journals, exclusive reservations, "
-                    "nonnegative restricted-fund coverage, and stale active evidence. Run additional deployment "
-                    "tests for simultaneous activation, repeated funding callbacks, crash-after-provider-success, "
-                    "and duplicate settlement files. Platform exports, bank confirmations, and owner statements "
-                    "remain the external sources of truth; a balanced internal ledger can still contain "
-                    "a correctly balanced but commercially wrong transaction."
-                ),
-            ],
-            "table": {
-                "caption": "Six-Module Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table",
-                "headers": [
-                    "Module and production responsibility",
-                    "Copy-pasteable Python and SQL reference",
-                    "Concurrency and accounting control",
-                    "Deployment boundary and operator requirement",
-                ],
-                "rows": [
-                    [
-                        "Module 1 establishes durable tables and transaction primitives.",
-                        """import hashlib
-import json
-import sqlite3
-import time
-from contextlib import contextmanager
-
-SCHEMA = '''
-CREATE TABLE IF NOT EXISTS applications (
-    app_id TEXT PRIMARY KEY,
-    vehicle_id TEXT NOT NULL,
-    cohort TEXT NOT NULL,
-    score INTEGER NOT NULL CHECK(score BETWEEN 0 AND 100),
-    state TEXT NOT NULL CHECK(state IN (
-        'submitted', 'verified', 'funded', 'active', 'suspended', 'closed'
-    )),
-    evidence TEXT NOT NULL DEFAULT '{}',
-    checks_until INTEGER NOT NULL DEFAULT 0,
-    hold_cents INTEGER NOT NULL DEFAULT 0 CHECK(hold_cents >= 0)
-);
-CREATE TABLE IF NOT EXISTS reservations (
-    vehicle_id TEXT PRIMARY KEY,
-    app_id TEXT NOT NULL UNIQUE REFERENCES applications(app_id)
-);
-CREATE TABLE IF NOT EXISTS requests (
-    request_key TEXT PRIMARY KEY,
-    digest TEXT NOT NULL
-);
-CREATE TABLE IF NOT EXISTS outbox (
-    request_key TEXT PRIMARY KEY,
-    app_id TEXT NOT NULL REFERENCES applications(app_id),
-    payload TEXT NOT NULL,
-    status TEXT NOT NULL DEFAULT 'ready'
-        CHECK(status IN ('ready', 'delivered')),
-    receipt TEXT
-);
-CREATE TABLE IF NOT EXISTS journals (
-    journal_id TEXT PRIMARY KEY,
-    app_id TEXT REFERENCES applications(app_id),
-    memo TEXT NOT NULL
-);
-CREATE TABLE IF NOT EXISTS lines (
-    journal_id TEXT NOT NULL REFERENCES journals(journal_id),
-    line_no INTEGER NOT NULL,
-    account TEXT NOT NULL CHECK(account IN (
-        'bank', 'ar', 'revenue', 'owner_payable', 'opex', 'deposit_liability'
-    )),
-    cents INTEGER NOT NULL CHECK(cents <> 0),
-    PRIMARY KEY(journal_id, line_no)
-);
-CREATE TRIGGER IF NOT EXISTS lines_no_update
-BEFORE UPDATE ON lines BEGIN
-    SELECT RAISE(ABORT, 'Posted lines are immutable');
-END;
-CREATE TRIGGER IF NOT EXISTS lines_no_delete
-BEFORE DELETE ON lines BEGIN
-    SELECT RAISE(ABORT, 'Posted lines are immutable');
-END;
-CREATE TRIGGER IF NOT EXISTS journals_no_update
-BEFORE UPDATE ON journals BEGIN
-    SELECT RAISE(ABORT, 'Posted journals are immutable');
-END;
-CREATE TRIGGER IF NOT EXISTS journals_no_delete
-BEFORE DELETE ON journals BEGIN
-    SELECT RAISE(ABORT, 'Posted journals are immutable');
-END;
-'''
-
-def connect(path):
-    db = sqlite3.connect(path, timeout=30, isolation_level=None)
-    db.row_factory = sqlite3.Row
-    db.execute("PRAGMA foreign_keys=ON")
-    db.execute("PRAGMA busy_timeout=30000")
-    db.execute("PRAGMA journal_mode=WAL")
-    db.execute("PRAGMA synchronous=FULL")
-    db.executescript(SCHEMA)
-    return db
-
-@contextmanager
-def transaction(db):
-    db.execute("BEGIN IMMEDIATE")
-    try:
-        yield
-        db.execute("COMMIT")
-    except BaseException:
-        db.execute("ROLLBACK")
-        raise
-
-def packed(value):
-    return json.dumps(value, sort_keys=True, separators=(",", ":"))
-
-def require(condition, message):
-    if not condition:
-        raise ValueError(message)
-
-def positive_cents(value):
-    require(type(value) is int and value > 0, "Use positive integer cents")
-
-def once(db, key, payload):
-    require(db.in_transaction, "A write transaction is required")
-    digest = hashlib.sha256(packed(payload).encode("utf-8")).hexdigest()
-    row = db.execute(
-        "SELECT digest FROM requests WHERE request_key=?", (key,)
-    ).fetchone()
-    if row:
-        require(row["digest"] == digest, "Request key payload conflict")
-        return False
-    db.execute("INSERT INTO requests VALUES (?, ?)", (key, digest))
-    return True
-
-def application(db, app_id):
-    row = db.execute(
-        "SELECT * FROM applications WHERE app_id=?", (app_id,)
-    ).fetchone()
-    require(row is not None, "Application must exist")
-    return row
-
-def balance(db, account, app_id=None):
-    sql = (
-        "SELECT COALESCE(SUM(l.cents), 0) FROM lines l "
-        "JOIN journals j USING(journal_id) WHERE l.account=?"
-    )
-    values = [account]
-    if app_id is not None:
-        sql += " AND j.app_id=?"
-        values.append(app_id)
-    return db.execute(sql, values).fetchone()[0]
-
-def journal(db, key, app_id, memo, entries):
-    require(db.in_transaction, "A write transaction is required")
-    require(bool(entries), "Journal requires entries")
-    require(all(type(v) is int and v != 0 for _, v in entries),
-            "Journal lines require nonzero integer cents")
-    require(sum(v for _, v in entries) == 0, "Journal must balance")
-    db.execute("INSERT INTO journals VALUES (?, ?, ?)", (key, app_id, memo))
-    db.executemany(
-        "INSERT INTO lines VALUES (?, ?, ?, ?)",
-        [(key, i, account, cents)
-         for i, (account, cents) in enumerate(entries, 1)]
-    )
-
-def free_cash(db):
-    return balance(db, "bank") + balance(db, "deposit_liability")
-""",
-                        "Immediate write transactions protect every balance check and subsequent mutation.",
-                        "Use one connection per worker and local storage with restricted direct access.",
-                    ],
-                    [
-                        "Module 2 scores intake without replacing evidence review.",
-                        """def intake(db, request_key, app_id, vehicle_id, cohort, facts):
-    required = ("route_fit", "priced_coverage", "funded_capacity")
-    require(all(type(facts.get(k)) is bool for k in required),
-            "Readiness inputs must be explicit booleans")
-    require(all(isinstance(v, str) and v.strip()
-                for v in (request_key, app_id, vehicle_id, cohort)),
-            "Identifiers must be nonempty strings")
-    weights = {"route_fit": 40, "priced_coverage": 35, "funded_capacity": 25}
-    score = sum(weight for key, weight in weights.items() if facts[key])
-    payload = [app_id, vehicle_id, cohort, facts]
-    with transaction(db):
-        if not once(db, "intake:" + request_key, payload):
-            return
-        db.execute(
-            "INSERT INTO applications "
-            "(app_id, vehicle_id, cohort, score, state) "
-            "VALUES (?, ?, ?, ?, 'submitted')",
-            (app_id, vehicle_id, cohort, score)
-        )
-""",
-                        "Unique application identifiers and payload digests reject duplicate conflicting intake.",
-                        "Readiness scoring prioritizes review while coverage and permits remain mandatory.",
-                    ],
-                    [
-                        "Module 3 verifies evidence and controls restricted funds.",
-                        """def verify(db, request_key, app_id, proofs, valid_until):
-    require(type(valid_until) is int, "Expiry must be epoch seconds")
-    required = ("coverage", "permit", "driver", "contract")
-    for name in required:
-        proof = proofs.get(name, {})
-        require(proof.get("ok") is True and bool(proof.get("ref")),
-                "Every required check needs affirmative evidence")
-    with transaction(db):
-        if not once(db, "verify:" + request_key,
-                    [app_id, proofs, valid_until]):
-            return
-        row = application(db, app_id)
-        require(row["state"] in ("submitted", "suspended"),
-                "Verification requires a reviewable state")
-        require(row["score"] >= 75, "Readiness score is below threshold")
-        require(valid_until > int(time.time()), "Evidence has expired")
-        db.execute(
-            "UPDATE applications SET state='verified', evidence=?, "
-            "checks_until=? WHERE app_id=?",
-            (packed(proofs), valid_until, app_id)
-        )
-
-def fund(db, confirmed_bank_reference, app_id, cents):
-    positive_cents(cents)
-    require(bool(confirmed_bank_reference), "Bank reference is required")
-    key = "fund:" + confirmed_bank_reference
-    with transaction(db):
-        if not once(db, key, [app_id, cents]):
-            return
-        row = application(db, app_id)
-        require(row["state"] == "verified", "Verify before funding")
-        journal(db, key, app_id, "Confirmed refundable funds",
-                [("bank", cents), ("deposit_liability", -cents)])
-        db.execute(
-            "UPDATE applications SET state='funded', "
-            "hold_cents=hold_cents+? WHERE app_id=?", (cents, app_id)
-        )
-
-def activate(db, request_key, app_id, minimum_hold_cents):
-    positive_cents(minimum_hold_cents)
-    with transaction(db):
-        if not once(db, "activate:" + request_key,
-                    [app_id, minimum_hold_cents]):
-            return
-        row = application(db, app_id)
-        require(row["state"] in ("verified", "funded"),
-                "Activation requires verified or funded status")
-        require(row["checks_until"] > int(time.time()),
-                "Refresh evidence before activation")
-        require(row["hold_cents"] >= minimum_hold_cents,
-                "Required refundable funds have not cleared")
-        occupied = db.execute(
-            "SELECT app_id FROM reservations WHERE vehicle_id=?",
-            (row["vehicle_id"],)
-        ).fetchone()
-        if occupied:
-            require(occupied["app_id"] == app_id,
-                    "Vehicle already belongs to another assignment")
-        else:
-            db.execute("INSERT INTO reservations VALUES (?, ?)",
-                       (row["vehicle_id"], app_id))
-        db.execute("UPDATE applications SET state='active' WHERE app_id=?",
-                   (app_id,))
-        payload = packed({
-            "operation": "provision_record",
-            "app_id": app_id,
-            "vehicle_id": row["vehicle_id"]
-        })
-        db.execute(
-            "INSERT INTO outbox(request_key, app_id, payload) "
-            "VALUES (?, ?, ?) ON CONFLICT(request_key) DO NOTHING",
-            ("provision:" + app_id, app_id, payload)
-        )
-
-def suspend(db, request_key, app_id, reason):
-    require(bool(reason), "Suspension requires an evidence reference")
-    with transaction(db):
-        if not once(db, "suspend:" + request_key, [app_id, reason]):
-            return
-        row = application(db, app_id)
-        require(row["state"] == "active", "Only active assignments suspend")
-        db.execute("UPDATE applications SET state='suspended' WHERE app_id=?",
-                   (app_id,))
-
-def close_after_confirmed_refund(db, bank_reference, app_id, cents):
-    positive_cents(cents)
-    require(bool(bank_reference), "Confirmed refund reference is required")
-    key = "refund:" + bank_reference
-    with transaction(db):
-        if not once(db, key, [app_id, cents]):
-            return
-        row = application(db, app_id)
-        require(row["state"] == "suspended", "Suspend before closing")
-        require(row["hold_cents"] == cents, "Return the entire remaining hold")
-        require(balance(db, "bank") >= cents, "Bank funds are insufficient")
-        journal(db, key, app_id, "Confirmed refundable funds return",
-                [("deposit_liability", cents), ("bank", -cents)])
-        db.execute(
-            "UPDATE applications SET hold_cents=0, state='closed' "
-            "WHERE app_id=?", (app_id,)
-        )
-        db.execute("DELETE FROM reservations WHERE app_id=?", (app_id,))
-""",
-                        "VIN uniqueness and funding-reference deduplication hold across concurrent writers.",
-                        "Bank callbacks require authenticated verification before these internal functions execute.",
-                    ],
-                    [
-                        "Module 4 delivers an outbox intent with provider idempotency.",
-                        """def deliver(db, request_key, provider):
-    require(getattr(provider, "durable_idempotency", False) is True,
-            "Provider must guarantee durable idempotency and key lookup")
-    row = db.execute(
-        "SELECT * FROM outbox WHERE request_key=?", (request_key,)
-    ).fetchone()
-    require(row is not None, "Outbox intent must exist")
-    if row["status"] == "delivered":
-        return row["receipt"]
-    payload = json.loads(row["payload"])
-    result = provider.lookup(request_key)
-    if result is None:
-        result = provider.create(payload, idempotency_key=request_key)
-    require(result["idempotency_key"] == request_key,
-            "Provider returned a different request key")
-    require(packed(result["payload"]) == row["payload"],
-            "Provider payload does not match the committed intent")
-    require(isinstance(result["receipt"], str) and bool(result["receipt"]),
-            "Provider must return a stable receipt")
-    with transaction(db):
-        current = db.execute(
-            "SELECT status, receipt FROM outbox WHERE request_key=?",
-            (request_key,)
-        ).fetchone()
-        if current["status"] == "delivered":
-            require(current["receipt"] == result["receipt"],
-                    "Provider returned conflicting receipts")
-        else:
-            db.execute(
-                "UPDATE outbox SET status='delivered', receipt=? "
-                "WHERE request_key=?",
-                (result["receipt"], request_key)
-            )
-    return result["receipt"]
-""",
-                        "Concurrent retries converge only under the documented external idempotency contract.",
-                        "Without provider support, stop automatic delivery and resolve ambiguous outcomes manually.",
-                    ],
-                    [
-                        "Module 5 posts settlements and exposes the reconciliation view.",
-                        """REPORT_SQL = '''
-CREATE VIEW IF NOT EXISTS reconciliation AS
-SELECT
-    COALESCE(SUM(CASE WHEN account='bank' THEN cents ELSE 0 END), 0)
-        AS bank_cents,
-    COALESCE(SUM(CASE WHEN account='ar' THEN cents ELSE 0 END), 0)
-        AS receivable_cents,
-    COALESCE(SUM(CASE WHEN account='revenue' THEN -cents ELSE 0 END), 0)
-        AS retained_revenue_cents,
-    COALESCE(SUM(CASE WHEN account='owner_payable' THEN -cents ELSE 0 END), 0)
-        AS owner_payable_cents,
-    COALESCE(SUM(CASE WHEN account='deposit_liability' THEN -cents ELSE 0 END), 0)
-        AS refundable_deposit_cents,
-    COALESCE(SUM(CASE WHEN account='opex' THEN cents ELSE 0 END), 0)
-        AS operating_cost_cents,
-    COALESCE(SUM(CASE
-        WHEN account='revenue' THEN -cents
-        WHEN account='opex' THEN -cents
-        ELSE 0 END), 0) AS operating_profit_cents
-FROM lines;
-'''
-
-def install_reports(db):
-    require(not db.in_transaction, "Install reporting outside transactions")
-    db.executescript(REPORT_SQL)
-
-def post_event(db, request_key, kind, app_id, cents):
-    positive_cents(cents)
-    require(kind in ("invoice", "collect", "owner_payout", "opex"),
-            "Choose a supported economic event")
-    key = "economic:" + request_key
-    with transaction(db):
-        if not once(db, key, [kind, app_id, cents]):
-            return
-        if kind != "opex":
-            row = application(db, app_id)
-        if kind == "invoice":
-            require(row["state"] == "active", "Invoice active assignments only")
-            require(row["checks_until"] > int(time.time()),
-                    "Evidence expired before invoice recognition")
-            retained = (cents * 55 + 50) // 100
-            entries = [("ar", cents), ("revenue", -retained),
-                       ("owner_payable", -(cents - retained))]
-        elif kind == "collect":
-            require(balance(db, "ar", app_id) >= cents,
-                    "Collection exceeds this application's receivable")
-            entries = [("bank", cents), ("ar", -cents)]
-        elif kind == "owner_payout":
-            require(-balance(db, "owner_payable", app_id) >= cents,
-                    "Distribution exceeds this application's payable")
-            require(free_cash(db) >= cents, "Restricted deposits are unavailable")
-            entries = [("owner_payable", cents), ("bank", -cents)]
-        else:
-            require(free_cash(db) >= cents, "Operating cash is insufficient")
-            entries = [("opex", cents), ("bank", -cents)]
-        journal(db, key, app_id, kind, [(a, v) for a, v in entries if v])
-""",
-                        "Locked balance checks prevent concurrent overcollection, overdistribution, or deposit spending.",
-                        "Record charges only after service recognition and independently verify every bank settlement.",
-                    ],
-                    [
-                        "Module 6 runs integrity checks and a repeatable smoke test.",
-                        """def qa(db):
-    with transaction(db):
-        require(db.execute("PRAGMA integrity_check").fetchone()[0] == "ok",
-                "SQLite integrity check failed")
-        require(not db.execute("PRAGMA foreign_key_check").fetchall(),
-                "Foreign key check failed")
-        bad = db.execute(
-            "SELECT j.journal_id FROM journals j "
-            "LEFT JOIN lines l USING(journal_id) "
-            "GROUP BY j.journal_id "
-            "HAVING COUNT(l.line_no)<2 OR COALESCE(SUM(l.cents), 0)<>0"
-        ).fetchall()
-        require(not bad, "Journal balance or line-count failure")
-        require(balance(db, "ar") >= 0, "Receivables became negative")
-        require(balance(db, "owner_payable") <= 0, "Owner liabilities reversed")
-        require(balance(db, "deposit_liability") <= 0, "Deposit liabilities reversed")
-        require(free_cash(db) >= 0, "Restricted funds exceed available bank cash")
-        bad = db.execute(
-            "SELECT a.app_id FROM applications a "
-            "LEFT JOIN reservations r ON r.app_id=a.app_id "
-            "WHERE a.state='active' AND "
-            "(r.vehicle_id IS NULL OR r.vehicle_id<>a.vehicle_id "
-            "OR a.checks_until<=?)", (int(time.time()),)
-        ).fetchall()
-        require(not bad, "Active assignment or evidence check failed")
-        for row in db.execute("SELECT app_id, hold_cents FROM applications"):
-            require(
-                row["hold_cents"] ==
-                -balance(db, "deposit_liability", row["app_id"]),
-                "Application hold and deposit ledger disagree"
-            )
-        return dict(db.execute("SELECT * FROM reconciliation").fetchone())
-
-def self_test():
-    db = connect(":memory:")
-    install_reports(db)
-    facts = {"route_fit": True, "priced_coverage": True, "funded_capacity": True}
-    intake(db, "lead-001", "app-001", "vin-example-001", "month-1", facts)
-    proofs = {
-        name: {"ok": True, "ref": "evidence/" + name}
-        for name in ("coverage", "permit", "driver", "contract")
-    }
-    verify(db, "review-001", "app-001", proofs, int(time.time()) + 86400)
-    fund(db, "bank-deposit-001", "app-001", 100000)
-    fund(db, "bank-deposit-001", "app-001", 100000)
-    activate(db, "handover-001", "app-001", 100000)
-    post_event(db, "invoice-001", "invoice", "app-001", 575000)
-    post_event(db, "collection-001", "collect", "app-001", 575000)
-    post_event(db, "collection-001", "collect", "app-001", 575000)
-    post_event(db, "distribution-001", "owner_payout", "app-001", 258750)
-    post_event(db, "expense-001", "opex", None, 195500)
-    result = qa(db)
-    require(result["retained_revenue_cents"] == 316250, "Revenue test failed")
-    require(result["operating_profit_cents"] == 120750, "Profit test failed")
-    require(result["bank_cents"] == 220750, "Cash test failed")
-    require(result["refundable_deposit_cents"] == 100000, "Deposit test failed")
-    db.close()
-
-if __name__ == "__main__":
-    self_test()
-    print("Reference smoke test passed")
-""",
-                        "One consistent read transaction prevents false alarms during concurrent legitimate posting.",
-                        "Smoke tests exclude external adapters, migrations, opening equity, disputes, and backup recovery.",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Walk the first 90 days from scrubbed leads to the Base run rate",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Define the cohort unit before discussing growth. Here one active vehicle-equivalent "
-                    "produces $5,750 monthly gross operator billings: $4,500 lease charges, $750 separately "
-                    "earned commercial dispatch service charges, and $500 separately contracted investor "
-                    "management charges. These are illustrative blended prices, not quoted Uber rates "
-                    "or passenger fares. Dispatch charges exclude underlying trip GMV, and management "
-                    "charges cannot duplicate services already included in the lease. An investor-facing "
-                    "management invoice remains an explicit charge even if settlement permits offsetting "
-                    "it against that investor's distribution. Actual implementation must preserve the "
-                    "gross charge and its offset rather than recognizing it twice. The 55% retained "
-                    "share yields $3,162.50 monthly revenue per equivalent. Month 1 activates four "
-                    "equivalents, Month 2 adds three, and Month 3 adds three, producing four, seven, "
-                    "and ten full-month productive equivalents respectively. Leads arrive early enough "
-                    "for activation at each modeled month's opening; partial-month starts must instead "
-                    "use actual service days. Scrubbed leads never enter billings. The model assumes "
-                    "existing owner-supplied vehicles and no vehicle purchases, so startup cash does "
-                    "not secretly finance depreciating metal. Capacity means permitted, insured, "
-                    "serviceable assignments, not merely signed investor expressions of interest."
-                ),
-                (
-                    "Apply one collection rule consistently: 90% of each month's billings arrives during "
-                    "that month, and the remaining 10% arrives the following month. There are no "
-                    "opening receivables, bad debts, or post-activation cancellations in this worked "
-                    "case. Scrubs represent rejected applications, not losses concealed inside the "
-                    "collection assumption. Owner and pass-through distributions equal 45% of actual "
-                    "collections, leaving corresponding unpaid liabilities against outstanding receivables. "
-                    "Monthly operating costs comprise $10,000 fixed overhead plus $955 per productive "
-                    "equivalent. The resulting $13,820, $16,685, and $19,550 total costs include variable "
-                    "labor and operating items beyond the scorecard's $2,500–$15,000 headline monthly "
-                    "overhead range; that range must not be treated as the entire expense bridge. "
-                    "Month 1 therefore records $12,650 retained revenue and a $1,170 operating loss, "
-                    "but consumes $2,435 cash because some earnings remain uncollected. Month 2 earns "
-                    "$5,452.50 and generates $4,503.75 cash. Month 3 earns $12,075 and generates "
-                    "$11,126.25 cash. Keep accrual profit and bank movement in adjacent columns; "
-                    "otherwise the improving fleet can appear less profitable simply because "
-                    "receivables are increasing as new contracts enter service."
-                ),
-                (
-                    "Fund the launch with $30,000 operator capital, within the supplied $12,000–$65,000 "
-                    "startup range, and spend $12,000 before Day 1 on documented setup, insurance "
-                    "deposits, inspections, and equipment. This simplified cash bridge treats the "
-                    "entire launch spend as a separate cash use; actual capitalization and expense "
-                    "classification require the underlying invoices. Opening operating cash is therefore "
-                    "$18,000. After the three monthly operating movements, bank cash reaches $31,195, "
-                    "excluding refundable driver deposits that would add equal cash and liabilities. "
-                    "Cumulative ramp operating profit is $16,357.50, while cumulative operating cash "
-                    "generation is $13,195. The $3,162.50 difference equals $5,750 ending receivables "
-                    "less $2,587.50 unpaid owner and pass-through liabilities. Relative to the original "
-                    "$30,000 contribution, cash has increased only $1,195 after launch spending. "
-                    "At ten stable equivalents, the next month's collections catch up to $57,500, "
-                    "and operating cash converges to $12,075. Annualizing that stabilized month "
-                    "produces exactly $690,000 gross billings, $379,500 retained revenue, $234,600 "
-                    "operating costs, and $144,900 owner profit. Do not annualize the three-month "
-                    "ramp average or describe startup spending as part of the recurring Base margin."
-                ),
-            ],
-            "table": {
-                "caption": "Worked 90-Day Cohort Walk",
-                "headers": [
-                    "Period and lead-cohort disposition",
-                    "Productive capacity and gross billings",
-                    "Collections and owner cash distributions",
-                    "Operating costs and accrual owner profit",
-                    "Operating cash movement and cumulative bridge",
-                    "Closing balance checks and specific loss treatment",
-                ],
-                "rows": [
-                    [
-                        "Before Day 1, prepare launch evidence without recognizing operating cohorts.",
-                        "Zero productive equivalents create zero lease, dispatch, or management billings.",
-                        "$30,000 capital enters; $12,000 documented launch spending leaves the bank.",
-                        "Launch spending stays separate from the recurring operating-profit comparison.",
-                        "$18,000 opening operating cash remains after the separate launch expenditure.",
-                        "Opening receivables and owner payables both equal zero dollars.",
-                    ],
-                    [
-                        "Month 1 receives 12 leads; eight scrub; four activate at opening.",
-                        "Four productive equivalents generate $23,000 gross and $12,650 retained revenue.",
-                        "$20,700 collected; $9,315 distributed against recognized owner and pass-through liabilities.",
-                        "$13,820 total operating costs produce a $1,170 accrual operating loss.",
-                        "Operating cash decreases $2,435; cumulative movement is negative $2,435; bank $15,565.",
-                        "$2,300 receivables and $1,035 owner payables remain; zero booked credit losses.",
-                    ],
-                    [
-                        "Month 2 receives ten leads; seven scrub; three join four survivors.",
-                        "Seven productive equivalents generate $40,250 gross and $22,137.50 retained revenue.",
-                        "$38,525 collected, including $2,300 prior receivables; $17,336.25 distributed to owners.",
-                        "$16,685 total operating costs produce $5,452.50 accrual owner operating profit.",
-                        "Operating cash increases $4,503.75; cumulative movement $2,068.75; bank balance $20,068.75.",
-                        "$4,025 receivables and $1,811.25 owner payables remain; zero booked credit losses.",
-                    ],
-                    [
-                        "Month 3 receives ten leads; seven scrub; three join seven survivors.",
-                        "Ten productive equivalents generate $57,500 gross and $31,625 retained revenue.",
-                        "$55,775 collected, including $4,025 prior receivables; $25,098.75 distributed to owners.",
-                        "$19,550 total operating costs produce $12,075 accrual owner operating profit.",
-                        "Operating cash increases $11,126.25; cumulative movement $13,195; bank balance $31,195.",
-                        "$5,750 receivables and $2,587.50 owner payables remain; zero booked credit losses.",
-                    ],
-                    [
-                        "Day 90 totals reconcile 32 leads, 22 scrubs, and ten activations.",
-                        "Twenty-one productive equivalent-months generate $120,750 gross and $66,412.50 retained revenue.",
-                        "$115,000 total collections support $51,750 actual owner and pass-through distributions.",
-                        "$50,055 total operating costs leave $16,357.50 cumulative accrual operating profit.",
-                        "$13,195 operating cash less $12,000 launch spending equals $1,195 net cash gain.",
-                        "$16,357.50 profit minus $3,162.50 net receivables equals $13,195 operating cash.",
-                    ],
-                    [
-                        "Stabilized Month 4 assumes ten survivors and no additional capacity growth.",
-                        "Ten productive equivalents again generate $57,500 gross and $31,625 retained revenue.",
-                        "$57,500 collected as prior balances roll forward; $25,875 distributed to owners.",
-                        "$19,550 total operating costs again leave $12,075 accrual owner operating profit.",
-                        "$12,075 operating cash now matches profit because working capital stops expanding.",
-                        "Ending receivables stay $5,750 and owner payables stay $2,587.50.",
-                    ],
-                    [
-                        "Annual Base run rate multiplies stabilized monthly economics by twelve months.",
-                        "$690,000 annual gross billings produce exactly $379,500 annual retained revenue.",
-                        "Steady-state annual collections reach $690,000; owner and pass-through distributions $310,500.",
-                        "$234,600 annual operating costs leave exactly $144,900 annual owner net profit.",
-                        "21.0% gross-basis net margin corresponds to 38.18% rounded retained margin.",
-                        "One full-time operator and three contractors support the modeled recurring workload.",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Map ten plays, isolate upside, and scale only reconciled capacity",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Map ten plays to the operating system without pretending that every useful control "
-                    "creates additional revenue. The table names nine fleet process plays and the supplied "
-                    "catalogue play free_llc_fintech_bounty_stacking; the nine descriptive fleet names are "
-                    "local operating labels, not additional catalogue identifiers. Driver leases, commercial "
-                    "dispatch, and investor co-hosting supply the worked billing mix. Funded matching, "
-                    "screening, toll recovery, maintenance reserves, downtime substitution, and airport "
-                    "scheduling protect collection or capacity. Their illustrative savings must not be "
-                    "added again to a margin already assuming competent execution. Match each claimed "
-                    "benefit to a specific baseline, measured event, and ledger account. For example, "
-                    "recovering $120 of documented tolls against $120 of toll expense is cost recovery, "
-                    "not $120 of retained operator profit. A prepaid maintenance reserve is not an "
-                    "expense until the applicable accounting treatment recognizes the underlying service "
-                    "or obligation. Similarly, an investor's vehicle purchase price never becomes operator "
-                    "revenue merely because the operator arranged deployment. Review contribution by "
-                    "contract and VIN monthly. If the dispatch lane destroys the lease lane's utilization, "
-                    "choose the better verified contribution instead of celebrating two incompatible "
-                    "revenue forecasts attached to the same vehicle and shift."
-                ),
-                (
-                    "Implement the fintech play as an optional founder-launch concierge, not a condition "
-                    "for obtaining a fleet assignment. Offer $0 formation service fees while the founder "
-                    "pays the actual mandatory state filing charge. Prequalify a genuine 30-day operating "
-                    "revenue intent and present a sequential business infrastructure checklist covering "
-                    "banking, cards, payroll, bookkeeping, and merchant processing where each product "
-                    "fits the business and provider eligibility rules. Disclose referral compensation "
-                    "and all provider fees, minimum balances, funding requirements, and clawback conditions. "
-                    "The checklist title may describe required business infrastructure, but individual "
-                    "affiliate products remain optional. Four qualified founders earning $600 each "
-                    "produce $2,400 gross referral revenue; four at $1,800 produce $7,200, before "
-                    "support costs and reversals. Those figures are illustrative offer-dependent upside "
-                    "and contribute zero dollars to the canonical Base fleet case. Recognize an "
-                    "individual bounty only when the contractual earning condition is satisfied and "
-                    "reversal exposure is appropriately addressed. If using funded-account verification "
-                    "to unlock promotional operating-agreement and bookkeeping templates, disclose that "
-                    "condition beforehand and offer a non-affiliate route. Never withhold purchased "
-                    "formation deliverables, required entity records, or access to the founder's accounts."
-                ),
-                (
-                    "Scale by comparing measured service capacity with the exact scenario bridge. Conservative "
-                    "economics retain $99,000 from $180,000 gross billings and spend $73,800 to produce "
-                    "$25,200 profit. Base retains $379,500 and spends $234,600 to produce $144,900. "
-                    "Scaled retains $660,000 from $1,200,000 gross and spends $324,000 to produce "
-                    "$336,000, with two full-time staff and four contractors. These are separate "
-                    "scorecard cases, not evidence that revenue automatically improves margins. Require "
-                    "documented reasons for each efficiency gain: fewer manual settlement exceptions, "
-                    "better scheduled utilization, lower avoidable downtime, or genuinely favorable "
-                    "contract terms. At Base, a $300 monthly insurance increase across ten equivalents "
-                    "removes $36,000 annual profit unless repriced. One $5,000 collision deductible "
-                    "consumes more than four-tenths of the modeled $12,075 monthly profit. Losing "
-                    "one month's $5,750 billing equivalent removes $3,162.50 retained revenue before "
-                    "any avoided variable cost, while a substitute vehicle may add expense. Review "
-                    "these stresses before investor distributions. Preserve the smallest team that "
-                    "can independently verify cash and safety-critical records, then add capacity "
-                    "only after the existing fleet produces clean reconciliations and serviceable "
-                    "reserves under a realistic adverse operating month."
-                ),
-            ],
-            "table": {
-                "caption": "Ten Mapped Operator Plays: Unit Math, Ledger Placement, and Risk Fallbacks",
-                "headers": [
-                    "Mapped play and concrete operating mechanism",
-                    "Illustrative unit math with economic classification",
-                    "Evidence and settlement treatment required",
-                    "Specific risk fallback when execution breaks",
-                ],
-                "rows": [
-                    [
-                        "Driver-lease waterfall priority uses enabled platform features or authorized direct collection.",
-                        "Ten $4,500 monthly lease charges contribute $45,000 gross billings before splits.",
-                        "Contractual priority and actual settlement authority must match the collection method.",
-                        "Replace unavailable platform deductions with documented direct billing and arrears limits.",
-                    ],
-                    [
-                        "Commercial Black SUV shift dispatch sells separately contracted eligible dispatch services.",
-                        "Ten $750 monthly service equivalents contribute $7,500 gross operator dispatch billings.",
-                        "Keep passenger fares and driver earnings outside recognized operator service charges.",
-                        "Stop unpermitted routes and preserve eligible lease utilization during dispatch shortages.",
-                    ],
-                    [
-                        "Zero-owned-metal investor co-hosting manages vehicles supplied by outside vehicle owners.",
-                        "Ten $500 monthly management charges contribute $5,000 gross separately invoiced services.",
-                        "Document investor authority and prevent duplicate charges for already bundled services.",
-                        "Replace withdrawing investors with verified supply without purchasing emergency speculative inventory.",
-                    ],
-                    [
-                        "Funded depot matching reserves serviceable vehicles only against cleared operating commitments.",
-                        "Four $1,000 refundable deposits create $4,000 cash and equal deposit liabilities.",
-                        "Match each deposit reference to one application and one exclusive VIN reservation.",
-                        "Hold the assignment rather than counting uncollected deposits as working capital.",
-                    ],
-                    [
-                        "Automated MVR onboarding organizes authorized screening and report exception handling.",
-                        "Ten $35 screenings create $350 operating expense rather than incremental fleet revenue.",
-                        "Retain permissible-purpose evidence and apply the procedure appropriate to report use.",
-                        "Pause handover while disputed records and required notices receive proper handling.",
-                    ],
-                    [
-                        "Automated toll pass-through matches transponder activity to the contracted vehicle assignment.",
-                        "Recovering $120 documented tolls offsets $120 expense without creating automatic profit.",
-                        "Attach authority, trip timestamps, transponder identity, and permitted charges to statements.",
-                        "Reverse mismatched tolls and investigate vehicle swaps before charging the driver.",
-                    ],
-                    [
-                        "Maintenance reserve scheduling converts mileage alerts into funded preventive service appointments.",
-                        "Ten $200 monthly reserve allocations earmark $2,000 without automatically creating expense.",
-                        "Distinguish internal cash earmarks from third-party liabilities and actual repair invoices.",
-                        "Reduce distributions and remove unsafe vehicles when reserves cannot cover required service.",
-                    ],
-                    [
-                        "Downtime substitution pairs inspected spare capacity with eligible affected drivers.",
-                        "Avoiding three $150 lost billing days preserves $450 gross before substitute costs.",
-                        "Verify replacement coverage and permits before estimating any saved retained contribution.",
-                        "Issue contract-defined credits when no safe and properly covered substitute exists.",
-                    ],
-                    [
-                        "Permitted airport scheduling allocates authorized commercial shifts against real booking demand.",
-                        "Eight $75 operator service charges produce $600 gross only for completed services.",
-                        "Treat airport permission and applicable TCP/TLC authority as separate operating records.",
-                        "Move demand to permitted routes without representing ordinary access as commercial permission.",
-                    ],
-                    [
-                        "free_llc_fintech_bounty_stacking offers optional zero-service-fee formation and infrastructure co-registration.",
-                        "Four earned $600 bounties yield $2,400 gross; Base fleet revenue includes none.",
-                        "Track provider eligibility, funded-account evidence, compensation disclosures, and reversal windows separately.",
-                        "Prequalify 30-day revenue intent and condition optional templates transparently on verified funding.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the settlement edge before adding vehicles",
-                "body": "Veteran operators protect verified collection, vehicle availability, and clean owner statements before pursuing nominal fleet size.",
-                "items": [
-                    "Ask the broker to price the exact VIN-driver-route combination before quoting investor yield; a generic rideshare certificate cannot price Black SUV exposure.",
-                    "Photograph the transponder serial and odometer at every handover so toll allocation survives a midweek vehicle swap without spreadsheet guesswork.",
-                    "Schedule maintenance immediately after the recurring collection checkpoint and compare saved downtime against the actual replacement-vehicle premium.",
-                    "Publish owner statements showing opening payable, gross charge allocation, collected cash, deductions, distributions, and closing payable instead of sending a single unexplained net transfer.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A fleet is not producing profit until every active VIN has valid authority, every dollar has one ledger home, and every owner distribution reconciles to collected cash.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Build the VIN-driver-route packet and verify actual coverage, dispatch authority, airport permissions, and contract collection rights.",
-        "Deploy the six reference modules behind authenticated internal services, then test concurrent reservations, duplicate callbacks, provider timeouts, and backup restoration.",
-        "Separate gross billings, retained revenue, owner payables, refundable deposits, and passenger fare GMV in every report.",
-        "Run the four-seven-ten productive-equivalent cohort and reconcile the $31,195 Day 90 cash balance to launch funding, spending, and working capital.",
-        "Keep fintech referral revenue outside the canonical fleet cases and document optional participation, earning conditions, reversals, and promotional-template terms.",
-        "Reprice insurance stress, collision deductibles, and downtime before expanding beyond the Base team or distributing reserve cash.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "California Public Utilities Code section 5433 — Transportation network company insurance",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PUC&sectionNum=5433.",
-            "relevance": "Map the actual rideshare activity periods, required insurance, and responsible coverage before authorizing vehicle use.",
-        },
-        {
-            "title": "California Public Utilities Code section 5371 — Charter-party carrier operating authority",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PUC&sectionNum=5371.",
-            "relevance": "Evaluate required operating authority for covered charter-party activity separately from platform vehicle eligibility.",
-        },
-        {
-            "title": "15 U.S.C. section 1681b — Permissible purposes of consumer reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681b",
-            "relevance": "Establish the permissible purpose for driver report access and apply subsection (b) requirements when reports are obtained for employment purposes.",
-        },
-        {
-            "title": "15 U.S.C. section 1681m — Requirements on users of consumer reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681m",
-            "relevance": "Design applicable adverse-action notices when a report contributes to an unfavorable eligibility decision.",
-        },
-        {
-            "title": "16 CFR section 255.5 — Disclosure of material connections",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5",
-            "relevance": "Disclose material referral relationships when endorsing banking, payroll, card, bookkeeping, or merchant products through the optional founder concierge.",
-        },
-        {
-            "title": "California Civil Code section 1936 — Passenger vehicle rental contracts",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1936.",
-            "relevance": "Assess applicability to the actual vehicle rental arrangement and implement relevant contract, damage-charge, and electronic-surveillance requirements.",
-        },
-    ],
-}
+CHAPTER_7 = {'id': 'Q7',
+ 'chapter_id': 'Q7',
+ 'chapter_number': 7,
+ 'question_number': 7,
+ 'slug': 'off-platform-private-car-rentals-without-turo',
+ 'question_prompt': 'How do I leave Turo and build a private, direct-booking car rental business that '
+                    'scales to dozens or hundreds of cars?',
+ 'kicker': 'Q7 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Off-Platform Rentals: Building a Private Car Rental Business Without Turo',
+ 'subtitle': 'Switching from Turo to private rentals, $1,500-per-car monthly models, 10 cars in 30 days, '
+             '500-car and 70-car fleet case studies, consignment cars with zero capital, B2B rental '
+             'contracts, scaling to 50 cars, step-by-step 2026 roadmaps, and launching a local rental '
+             'business',
+ 'layout_template': 'thirty_day_roadmap',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Private rental operators who left Turo converge on one model: cheap cash-bought '
+                      'economy cars rented weekly to Uber, Lyft and DoorDash drivers who hold them for '
+                      'months, not days. Kel King prices $350-450 per week on $3K-4K cars and demands a '
+                      '90-day payback; King of Rentals nets about $1,000 per car monthly versus roughly '
+                      '$500 on Turo; Alex Auto runs 50+ cars at 40-50% margins. Leads come from Facebook '
+                      "Marketplace posts titled 'cars for rideshare,' Google Business profiles and $10/day "
+                      'Messenger ads, screened by $3-5/hr overseas VAs, with Spireon GoldStar trackers and '
+                      'kill switches enforcing payment. The fault lines are insurance and payments: Kel '
+                      "pitches personal policies with permissible-driver framing while Demario Mccowan's "
+                      'guest Mo calls that suicide, runs commercial cover, files zero collision claims and '
+                      'takes only Cash App, Zelle and cash.',
+ 'key_metrics': [{'label': 'Weekly Rate on a Cash Economy Car',
+                  'metric': 'Weekly Rate on a Cash Economy Car',
+                  'value': '$350-$450 per week',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Kel King's pricing band for rideshare renters on cars bought for $3K-4K, "
+                             'capped at $6,000 all-in',
+                  'source': 'Kel King ([BD6Xfj5F-Fk @ 00:11:47])'},
+                 {'label': 'Net Profit Per Car Per Month, Private vs Turo',
+                  'metric': 'Net Profit Per Car Per Month, Private vs Turo',
+                  'value': '$1,000 net private vs roughly $500 on Turo',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'King of Rentals unit math: $1,500 monthly revenue minus about $500 in costs '
+                             'on a rideshare rental',
+                  'source': 'King of Rentals ([DOrgMXhPDXs @ 00:07:36])'},
+                 {'label': 'Average Rental Duration, Gig Driver vs Turo Guest',
+                  'metric': 'Average Rental Duration, Gig Driver vs Turo Guest',
+                  'value': '60 days vs 3 days (20x)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Rideshare renters stay about 20 times longer, cutting cleaning from seven '
+                             'turns a month to a fraction of one',
+                  'source': 'King of Rentals ([DOrgMXhPDXs @ 00:04:23])'},
+                 {'label': 'Payback Target Per Car',
+                  'metric': 'Payback Target Per Car',
+                  'value': '90 days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Called 'the golden rule for this business' on Kel King's operator panel; "
+                             'each car must return its purchase price within 90 days',
+                  'source': 'Kel King ([7l7A5buuie0 @ 00:41:31])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator who walked off Turo landed on the same customer: the '
+                              'rideshare and delivery driver who needs a car to earn and keeps it for '
+                              'months. Kel King says these renters hold cars six, nine or twelve months, '
+                              "against Turo's three-to-four-day turns, airport runs and dead off-seasons "
+                              '[BD6Xfj5F-Fk @ 00:01:10]. King of Rentals, run by brothers Max and Zach for '
+                              'five years, puts the average gig rental at 60 days versus three on Turo, a '
+                              '20x gap that drops cleaning from seven $15 turns a month to roughly $7.50 '
+                              "[DOrgMXhPDXs @ 00:04:23]. Alex Auto's first private renter in Baltimore "
+                              "kept one car 16 months, and that single car 'practically bought me four "
+                              "cars' [RSpmJqhFEIw @ 00:01:13]. Kel frames turnover as the real enemy: "
+                              "'Turnover is where fleets bleed money,' because every gap between renters "
+                              'means re-cleaning, re-listing and re-screening, and a renter who leaves '
+                              'after two weeks costs more than one who pays for eight months straight '
+                              '[EVlxhXnHHH8 @ 00:03:23]. The pricing logic follows directly: weekly '
+                              'billing, unlimited miles, insurance and maintenance bundled into the rate, '
+                              'and the operator keeps 100% of revenue because no platform skims a cut. Kel '
+                              'puts per-car earnings at $1K-2K a month on that basis.',
+                              'The second consensus is the asset: cheap, boring, cash-bought economy cars. '
+                              'Kel King caps spend at $6,000 all-in, prefers $3K-4K, calls $4,500-5,500 '
+                              "'still fine,' and says never finance and never spend $10K-15K; the "
+                              'shortlist is a Ford Fusion 2.5L or Prius, with Nissans and BMWs banned '
+                              '[BD6Xfj5F-Fk @ 00:11:47]. Alex Auto calls financing the very first mistake '
+                              'of the journey, because the loan keeps billing during downtime and a 2015 '
+                              "rents for about the same as a 2022; Alex's buys run $3,000-5,000 "
+                              '[RSpmJqhFEIw @ 00:03:21]. Mo, the Detroit CEO interviewed on Demario '
+                              "Mccowan's channel, went all-cash after $7,200 a month in car notes plus "
+                              'insurance squeezed the business, and tells anyone holding $3K to buy one '
+                              '$3,000 car and bank its income for the next [taXFg2qEMew @ 00:09:37]. The '
+                              "reinvestment discipline is identical everywhere: Alex's first car made "
+                              '$26,000 in a year and funded three more, and Mo climbed from $10K to $20K '
+                              "to $60K a month while still driving Lyft to cover the bills. Mo's advice to "
+                              'beginners is to start with one car and keep the day job, which Mo did until '
+                              'the fleet reached 60 cars. The yardstick everyone repeats is a 90-day '
+                              "payback; the operator panel on Kel's channel calls it 'the golden rule for "
+                              "this business' [7l7A5buuie0 @ 00:41:31].",
+                              'Under the model sit four prerequisites the operators keep naming. First, '
+                              'recovery hardware: Kel King runs Gold Star trackers by Spireon, and Arthur '
+                              "Fandunyan, renting since 2020 with 2,000+ reservations, says 'kill switch "
+                              "is main priority,' pairing a hardwired GPS cutoff with an OBD backup on a "
+                              'splitter, a lockbox and an after-hours VA procedure [d5fglf-rFOc @ '
+                              '00:11:49]. Second, paper: Fandunyan lists an LLC at $100-300, a state '
+                              'rental license, commercial fleet insurance, an EIN, a bank account and an '
+                              "attorney-drafted agreement, 'not ChatGPT.' Car Rental Coach builds a "
+                              'conversion notice into the contract, adds $250 smoking and $200 cleaning '
+                              'fees, prorated late returns and open-ended improper-return charges, and '
+                              'keeps physical plus digital copies [sP0LfwE7elc @ 00:11:07]. Third, '
+                              'insurance that actually permits private rental: Car Rental Coach warns that '
+                              'off-rental policies from Tint, Rumbly and ABI void private trips, so the '
+                              'operator needs an off-trip policy that allows it, such as GMI [sP0LfwE7elc '
+                              '@ 00:22:23]. Alex Auto pays $86 a month per car for commercial cover and '
+                              "calls it 'super cheap' [RSpmJqhFEIw @ 00:11:05]. Fourth, documented "
+                              'handoffs: Fandunyan shoots 80+ timestamped photos per handoff, and Car '
+                              'Rental Coach takes 50-60 photos with deposits of about $500 on economy cars '
+                              'and $1,000 on pricier ones.'],
+               'table': {'caption': 'Core consensus pillars of the off-platform private rental model',
+                         'headers': ['Consensus Pillar',
+                                     'What Practitioners Do',
+                                     'Key Number Reported',
+                                     'Expert Source'],
+                         'rows': [['Target renter is the full-time gig driver',
+                                   'Rent only to Uber, Lyft and DoorDash drivers who hold cars for months',
+                                   'Renters keep cars six, nine or twelve months versus three-to-four-day '
+                                   'Turo trips',
+                                   'Kel King ([BD6Xfj5F-Fk @ 00:01:10])'],
+                                  ['Long rental duration cuts turnover cost',
+                                   'Build the fleet around weekly renters instead of short daily trips',
+                                   'Gig rentals average 60 days against three days on Turo, roughly 20x',
+                                   'King of Rentals ([DOrgMXhPDXs @ 00:04:23])'],
+                                  ['Economy cars and hybrids only, no luxury',
+                                   'Buy reliable sedans and hybrids off Facebook Marketplace after a '
+                                   'mobile mechanic inspection',
+                                   'Corolla, Civic, Prius, Accord and Camry plus hybrids make the approved '
+                                   'list',
+                                   'Alex Auto ([G-0j82EXJlk @ 00:06:48])'],
+                                  ['Pay cash and refuse all financing',
+                                   'Buy cheap cars outright so no note bills during downtime or repairs',
+                                   '$7,200 a month in notes and insurance pushed the whole fleet to cash',
+                                   'Demario Mccowan ([taXFg2qEMew @ 00:09:37])'],
+                                  ['Ninety-day payback is the golden rule',
+                                   'Price and buy so every car recovers its full cost quickly',
+                                   'Make the entire purchase price back within 90 days of the first rental',
+                                   'DOUBLE DOWN Podcast ([UCJIebqFEj0 @ 00:46:15])'],
+                                  ['Kill switch installed before any handoff',
+                                   'Hardwire hidden GPS with kill switch and keep an OBD backup unit',
+                                   'Kill switch is main priority, plus splitter backup, lockbox and VA '
+                                   'after-hours SOP',
+                                   'Arthur Fandunyan ([d5fglf-rFOc @ 00:11:49])'],
+                                  ['Reinvest early income into the next car',
+                                   'Roll every dollar from the first cars straight into more cars',
+                                   'First car earned $26,000 in one year and bought three more cars',
+                                   'Alex Auto ([G-0j82EXJlk @ 00:02:26])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Kel King's buying script is specific: shop Facebook Marketplace, not "
+                              'auctions, demand a clean title and bring a mechanic [BD6Xfj5F-Fk @ '
+                              '00:13:53]. Mo adds the inspection detail learned over eight years at a '
+                              "Chrysler dealership: target 2010-2012 Fusions with the 2.5L, a '$250 "
+                              "engine' if it dies, walk away from creamy oil because it signals a blown "
+                              'head gasket, itemize needed repairs to negotiate the price down, and match '
+                              'the title VIN to the door tag or windshield tag [-HtlfCgxxtg @ 01:27:39]. '
+                              "Kel's own case car cost about $3,500, rented from December 2024 and earned "
+                              '$18,000+ against roughly $1,300 in expenses, including a $500 valve-cover '
+                              'gasket. Pricing bands converge tightly. King of Rentals charges $350-450 a '
+                              'week for sedans, with $375-425 the safe range, Model 3s at $400-450, Model '
+                              'Ys at $500-600, San Diego and LA running higher, and daily rates of $65-75 '
+                              'sitting about 20% above weekly [DOrgMXhPDXs @ 00:02:04]. A 2010 Civic '
+                              "bought for $2,500-3,000 rents at $250-300 a week in Kel's LA fleet, while a "
+                              "$3K-6K Fusion gets $350-450 [UCJIebqFEj0 @ 00:11:17]. King of Rentals' unit "
+                              'math: $1,500 revenue minus $500 costs leaves $1,000 net per car, against '
+                              'roughly $500 on Turo. Maintenance runs about $125 a month per rideshare car '
+                              'and insurance roughly $100.',
+                              "Lead flow runs through three channels. Kel King's free Marketplace post is "
+                              "titled 'cars for rideshare,' with 'unlimited miles, insurance included, and "
+                              "maintenance included' in the body plus a walkaround video, and the "
+                              "instruction is blunt: 'Don't try to remix it' [UCJIebqFEj0 @ 00:13:53]. Kel "
+                              'says the format pulls hundreds of leads. Car Rental Coach skips Marketplace '
+                              'rental listings and runs Facebook Messenger lead ads with AI copy and '
+                              'images inside a 15-20 mile radius, where $10 a day returns two to three '
+                              'qualified leads daily, backed by a Google Business profile carrying the '
+                              'city name, 10+ photos per car and reviews [sP0LfwE7elc @ 00:20:33]. Arthur '
+                              'Fandunyan works the Hertz, Enterprise and Budget counters with business '
+                              'cards and pays body shops $25-50 per referral [d5fglf-rFOc @ 00:14:25]. '
+                              'Fandunyan warns that gig drivers put 1,500-3,000 miles a week on a car, so '
+                              "they need hard vetting. Screening is where the models split hardest. Kel's "
+                              "overseas team, paid about $3 an hour, filters every lead because 'They're "
+                              "not accepting everybody.' Mo runs no background checks at all, saying they "
+                              "would wipe out 95-98% of the clientele, and requires only a driver's "
+                              'license, age 23+, a flat $300 deposit plus the first week up front, and a '
+                              'gut-feel call on renewals [taXFg2qEMew @ 00:35:57].',
+                              "Collections run weekly and up front. Mo's fleet bills weekly only, no "
+                              "dailies, through Connect Pro, built by Mo's wife, which fires automated "
+                              'Monday texts asking renters to return or extend; before that, at about 50 '
+                              'cars, the team sent manual invoices and scheduled 9 a.m. texts, and a '
+                              "missed invoice meant 'Most actually will not pay' [-HtlfCgxxtg @ 01:40:41]. "
+                              "After losing a PayPal chargeback to a renter who paid with a third party's "
+                              'card, Mo cut cards and went straight to Cash App, Zelle and cash. Apple '
+                              'Pay, Mo adds, kicks accounts off above $100K a year. Car Rental Coach calls '
+                              "card disputes 'a 50/50' and takes the first payment by Zelle or ACH with a "
+                              '$1 hold on a card kept on file [sP0LfwE7elc @ 00:27:50]. Software sits on '
+                              'top: Kel uses HQ as the CRM, Mike_Thebusinessman runs Fleet Finesse at $97 '
+                              'a month standard or $147 premium with license verification, tolls and '
+                              'insurance sales, and King of Rentals points to iFleet at $99 a month after '
+                              'a 14-day trial [pXYcnDt9ASA @ 00:01:46]. Staffing scales by fleet size: '
+                              'Fandunyan hires a $3-5/hr VA at 10-20 cars, a fleet coordinator next and an '
+                              'operations manager at 50+ [d5fglf-rFOc @ 00:19:29]. Kel says one person can '
+                              'solo 12 cars at $20K a month.'],
+               'table': {'caption': 'Exact numbers, tools and rules operators run day to day',
+                         'headers': ['Street Mechanic',
+                                     'Exact Number or Tool',
+                                     'How Operators Run It',
+                                     'Expert Source'],
+                         'rows': [['Weekly sedan pricing band for gig drivers',
+                                   '$350-450 per week, with $375-425 as the safe sedan range',
+                                   'Daily rates of $65-75 run about 20% higher than weekly pricing',
+                                   'King of Rentals ([DOrgMXhPDXs @ 00:02:04])'],
+                                  ['Maximum all-in spend per rental car',
+                                   '$6,000 ceiling, $3K-4K preferred, $4,500-5,500 still fine',
+                                   'Never finance and never put $10K-15K into a single rental car',
+                                   'Kel King ([BD6Xfj5F-Fk @ 00:11:47])'],
+                                  ['Renter intake requirements and deposit rules',
+                                   'Flat $300 deposit plus the first week paid up front',
+                                   "Driver's license and age 23+ required, with no background checks run",
+                                   'Demario Mccowan ([taXFg2qEMew @ 00:35:57])'],
+                                  ['Paid lead generation on Facebook Messenger ads',
+                                   '$10 per day spend targeting a 15-20 mile radius',
+                                   'Returns two to three qualified leads daily using AI-written copy and '
+                                   'images',
+                                   'Car Rental Coach ([sP0LfwE7elc @ 00:20:33])'],
+                                  ['Rental management software and booking website',
+                                   'Fleet Finesse at $97 standard or $147 premium per month, no contract',
+                                   'Premium tier adds license verification, toll handling and insurance '
+                                   'sales to renters',
+                                   'Mike_Thebusinessman ([pXYcnDt9ASA @ 00:01:46])'],
+                                  ['Commercial insurance cost on an economy fleet',
+                                   '$86 per car per month on a commercial policy',
+                                   'Covers a Baltimore fleet of 50+ economy cars rented to gig workers',
+                                   'Alex Auto ([RSpmJqhFEIw @ 00:11:05])'],
+                                  ['Overseas virtual team that screens every lead',
+                                   'Virtual assistants paid around $3 per hour to start',
+                                   'Filters out short-stay renters because two-week renters cost more than '
+                                   'eight-month payers',
+                                   'Kel King ([EVlxhXnHHH8 @ 00:03:38])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small edges the operators actually use',
+                           'body': 'Four moves the fleet owners repeat that rarely make it into the '
+                                   'headline pitch.',
+                           'items': ["Title the free Marketplace post 'cars for rideshare' and put "
+                                     'unlimited miles, insurance included and maintenance included in the '
+                                     'body with a walkaround video; do not remix the wording [Kel King — '
+                                     'UCJIebqFEj0 @ 00:13:53]',
+                                     'Walk away from any Fusion with creamy oil, since it means a blown '
+                                     'head gasket, and itemize every needed repair to the seller to drive '
+                                     'the price down [Demario Mccowan — -HtlfCgxxtg @ 01:27:39]',
+                                     'Take the first payment by Zelle or ACH and put a $1 hold on a card '
+                                     'kept on file, because card disputes are a 50/50 [Car Rental Coach — '
+                                     'sP0LfwE7elc @ 00:27:50]',
+                                     "Source parts through car-part.com: when the other driver's insurer "
+                                     'paid $5-6K, replacement doors cost $600 plus $100 labor and Kel '
+                                     'pocketed the difference [Kel King — BD6Xfj5F-Fk @ 00:15:04]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Buy the car for cash',
+                              'action': 'Buy a clean-title economy car off Facebook Marketplace with a '
+                                        'mechanic present.',
+                              'detail': 'Cap all-in spend at $6,000 with $3K-4K preferred, target the '
+                                        'Fusion 2.5L or Prius, skip Nissans, skip auctions, and match the '
+                                        'title VIN to the door or windshield tag before paying [Kel King — '
+                                        'BD6Xfj5F-Fk @ 00:13:53]'},
+                             {'step': 2,
+                              'title': 'Arm the car and the policy',
+                              'action': 'Install a hidden tracker with kill switch and bind insurance that '
+                                        'permits private rental.',
+                              'detail': 'Kel runs the Gold Star tracker by Spireon and kills the car after '
+                                        '2 hours overdue, following a car stolen for 3 months; Car Rental '
+                                        'Coach warns off-rental policies void private trips and points to '
+                                        'an off-trip policy such as GMI [DOUBLE DOWN Podcast — UCJIebqFEj0 '
+                                        '@ 00:20:08]'},
+                             {'step': 3,
+                              'title': 'Fill the car with a long-term renter',
+                              'action': 'Post the rideshare listing and route every lead through a VA '
+                                        'screen.',
+                              'detail': 'Target Uber and delivery drivers who rent for weeks or months, '
+                                        'have the overseas team at about $3 an hour screen every lead, and '
+                                        'reject renters likely to leave after two weeks [Kel King — '
+                                        'EVlxhXnHHH8 @ 00:03:38]'},
+                             {'step': 4,
+                              'title': 'Collect weekly and reinvest',
+                              'action': 'Bill weekly up front, automate renewal texts and roll income into '
+                                        'the next car.',
+                              'detail': 'Mo rents weekly only, uses Connect Pro to send Monday '
+                                        'return-or-extend texts, and notes that a missed invoice means '
+                                        'most renters will not pay; each car should return its cost within '
+                                        '90 days [Demario Mccowan — -HtlfCgxxtg @ 01:40:41]'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split in private rentals is how the car gets insured. Kel King '
+                              'teaches the low-cost route: a personal policy, the renter framed as a '
+                              'permissible driver, and no mention of rental. Bonzah is the pricier '
+                              'fallback and GMI the commercial option [BD6Xfj5F-Fk @ 00:14:07]. Detroit '
+                              'operator Mo, now running 300-plus cash cars, calls that exact play his '
+                              'biggest early mistake and labels it lying. His insurer came back asking, '
+                              '"Does this person live with you?" and his fix was commercial insurance '
+                              '"right off rip" [-HtlfCgxxtg @ 01:34:09]. In his second Demario Mccowan '
+                              'sit-down he goes further and calls renting on personal insurance "suicide" '
+                              '[taXFg2qEMew @ 00:28:48]. Car Rental Coach adds a third layer that most '
+                              'Turo converts miss. Off-rental policies built for platforms, including '
+                              'Tint, Rumbly and ABI, void private rentals. The operator needs an off-trip '
+                              'policy that explicitly allows private rentals, with GMI as his example. The '
+                              "operator then either sells coverage to the renter or verifies the renter's "
+                              'own policy through Canopy or a call to the insurer, and uninsured renters '
+                              'get pushed to Turo [sP0LfwE7elc @ 00:22:23]. Mo rejects that last option '
+                              "outright. He never uses a client's insurance because most of his customers "
+                              'have none. He self-insures collision and lets the carrier handle liability '
+                              'only.',
+                              'Payment rails and rental length split the room just as hard. Mo runs weekly '
+                              'rentals only, no dailies. After a renter won a dispute by paying with a '
+                              'third party\'s card, he "completely cut that out" and moved to Cash App, '
+                              'Zelle and cash only. He also warns that Apple Pay drops you above $100K a '
+                              'year and that Cash App disputes can reverse funds [-HtlfCgxxtg @ 01:44:42]. '
+                              'Car Rental Coach calls card disputes "a 50/50" and splits the difference. '
+                              'He takes the first payment by Zelle or ACH, then keeps a card on file with '
+                              "a $1 hold [sP0LfwE7elc @ 00:28:04]. His own first win cuts against Mo's "
+                              'weekly-only rule, though. He billed a 2008 Kia Spectra at $60 a day through '
+                              'a daily Square invoice for a full year and cleared roughly $20K in revenue '
+                              'and $14K net. Mike_Thebusinessman goes the opposite way from cash-only and '
+                              'runs card payments through Fleet Finesse. He flags that "The software does '
+                              'not create a Stripe account for you," so operators have to connect their '
+                              'own [pXYcnDt9ASA @ 00:04:42]. King of Rentals keep both doors open and use '
+                              'price as the lever: "Daily\'s always more expensive." They charge $65 to '
+                              '$75 a day against $350 to $450 a week, so dailies run about 20 percent '
+                              'higher [DOrgMXhPDXs @ 00:02:04].',
+                              'Who gets the keys is the third fault line. Mo runs no background checks '
+                              'because they would cut 95 to 98 percent of his clientele. He asks only for '
+                              'a license, age 23-plus and a flat $300 deposit with the first week up '
+                              'front, then goes with his gut on renewals. Only a handful of his renters '
+                              'drive for Uber or Lyft [taXFg2qEMew @ 00:34:25]. Alex Auto, at 50-plus cars '
+                              'in Baltimore, does the opposite. He runs background checks, verifies '
+                              'licenses and sends 30-day maintenance reminders, because negligence and '
+                              'renting to felons are the exceptions that break Graves Amendment protection '
+                              '[RSpmJqhFEIw @ 00:21:10]. Kel King filters every lead through an overseas '
+                              'team paid around $3 an hour. "They\'re not accepting everybody," he says, '
+                              'because a renter who leaves after two weeks costs him more than one who '
+                              'pays for eight months straight [EVlxhXnHHH8 @ 00:03:38]. Steve Ludwig of '
+                              'Select Auto Rentals rejects the gig-driver thesis entirely. A Tesla run '
+                              '10,000 miles a month lands near 120,000 miles after one year of '
+                              'lease-to-purchase, which he calls "not sustainable." His 277-vehicle St. '
+                              'Louis fleet rents vans and Suburbans to churches, schools and '
+                              'transportation companies instead [W_GJwoORfVw @ 00:28:50].'],
+               'table': {'caption': 'Side-by-side playbooks where named operators directly contradict each '
+                                    'other',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['How the rental car gets insured',
+                                   'Personal policy with the renter framed as a permissible driver, never '
+                                   'mentioning rental; Bonzah or GMI as alternatives.',
+                                   'Commercial insurance right off rip; Mo calls permissible-driver adds '
+                                   'lying and personal-policy renting suicide.',
+                                   'Kel King ([BD6Xfj5F-Fk @ 00:14:07]) vs Demario Mccowan ([-HtlfCgxxtg @ '
+                                   '01:32:39])'],
+                                  ['Filing insurance claims after accidents',
+                                   'Treat claims as revenue: loss of use around $1,600 per month of '
+                                   'downtime, storage, towing, diminished value.',
+                                   'Never file collision; every claim hits the loss run report and $80K '
+                                   'paid on $120K premium gets you dropped.',
+                                   'Alex Auto ([RSpmJqhFEIw @ 00:08:41]) vs Demario Mccowan ([taXFg2qEMew '
+                                   '@ 00:31:00])'],
+                                  ['Accepted payment rails for weekly rent',
+                                   'Cash App, Zelle and cash only after losing a card dispute to a renter '
+                                   "using a third party's card.",
+                                   'First payment by Zelle or ACH, then a card on file with a $1 hold '
+                                   'because disputes are 50/50.',
+                                   'Demario Mccowan ([-HtlfCgxxtg @ 01:44:42]) vs Car Rental Coach '
+                                   '([sP0LfwE7elc @ 00:28:04])'],
+                                  ['Background checks on incoming renters',
+                                   'No background checks because they cut 95 to 98 percent of clientele; '
+                                   'license, age 23-plus, $300 deposit.',
+                                   'Background checks plus license verification to protect Graves '
+                                   'Amendment coverage against negligence exceptions.',
+                                   'Demario Mccowan ([taXFg2qEMew @ 00:34:25]) vs Alex Auto ([RSpmJqhFEIw '
+                                   '@ 00:21:10])'],
+                                  ['Using debt to acquire fleet cars',
+                                   "Never finance; Alex's first mistake was financing a car that loses "
+                                   'value faster than it is paid down.',
+                                   'Kel uses a Chase business card at 0 percent for 12 months plus '
+                                   'investor notes at $700 monthly.',
+                                   'Alex Auto ([G-0j82EXJlk @ 00:01:46]) vs DOUBLE DOWN Podcast '
+                                   '([UCJIebqFEj0 @ 00:38:13])'],
+                                  ['Keeping Turo in the channel mix',
+                                   'Run roughly 70 percent Turo and 30 percent private, and get about five '
+                                   'Turo cars before going private.',
+                                   'Relying on a platform like Turo means your business is probably worth '
+                                   'nothing at exit time.',
+                                   'Car Rental Coach ([sP0LfwE7elc @ 00:34:07]) vs King of Rentals '
+                                   '([DOrgMXhPDXs @ 00:09:21])'],
+                                  ['Revenue split on investor-owned cars',
+                                   'Owner keeps 65 percent and the operator keeps 35 percent, with an '
+                                   'onboarding fee but no hosting fee.',
+                                   'Manager charges a flat fee like $400 monthly or 30 to 35 percent of '
+                                   'gross while the investor pays expenses.',
+                                   'Arthur Fandunyan ([d5fglf-rFOc @ 00:03:53]) vs King of Rentals '
+                                   '([sCxmSbzhAjM @ 00:03:43])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The losses start with insurance that does not pay. Car Rental Coach rented '
+                              'a 2008 Kia Spectra to a 20-year-old through Lula. The renter totaled it '
+                              'during a DUI and the insurer refused cover, so it took roughly $1,000 in '
+                              "legal fees to force a $9K payout [sP0LfwE7elc @ 00:05:31]. Mo's first "
+                              'renter totaled a car he had sunk $5,000 to $6,000 into, while it was on the '
+                              'personal policy he now calls his biggest mistake [-HtlfCgxxtg @ 01:33:15]. '
+                              'Then the carriers themselves disappeared. HyreCar and Lula both went '
+                              "bankrupt, HyreCar with about two to three days' notice. Lula went "
+                              'unreachable for a month, so Mo started switching insurers in October, '
+                              'months before Lula closed in March [-HtlfCgxxtg @ 01:03:35]. Working '
+                              'coverage carries a trap too. Every claim lands on the loss run report, and '
+                              'an operator paying $120K a year in premiums while the insurer pays out $80K '
+                              'is "getting dropped." Mo\'s bad loss run forced him to open a new LLC and '
+                              'transfer 100-plus cars into it. He now files claims for liability only, '
+                              'never collision, and tells operators to "Think and act like self-insured" '
+                              '[taXFg2qEMew @ 00:31:00]. He lost 12 to 13 cars by April of a single year.',
+                              'Theft and recovery failures teach the hardware lesson. Car Rental Coach '
+                              'rented a 2012 Kia Optima at $300 a week with no deposit. The renter told a '
+                              'cancer story and had the GPS and kill switch professionally removed. Police '
+                              'called it "civil," and only a $500 bounty hunter got the car back, which '
+                              'left the deal roughly break-even [sP0LfwE7elc @ 00:07:56]. Kel King lost a '
+                              'car for three months before standardizing on the GoldStar by Spireon '
+                              'tracker. He now kills a car two hours after it goes overdue [UCJIebqFEj0 @ '
+                              '00:20:08]. Another of his cars was abandoned by a scammer with a $25,000 '
+                              'fraudulent check inside, then towed and impounded. He negotiated the $5,600 '
+                              'impound bill down to about $4,000, and his moral was "trust your gut" '
+                              "[7l7A5buuie0 @ 00:31:09]. Mo's repo protocol is built from scars like "
+                              'these. The trigger is 24 hours late with no communication, and pickup '
+                              'happens first thing in the morning. He does a drive-by first to check '
+                              'whether the car is blocked in and enables the kill switch early because it '
+                              'lags. He sends two to three people and they do not knock. Belongings go '
+                              'back at the police station lot only after the key is handed over, and he '
+                              'offers $50 to $100 for withheld keys [-HtlfCgxxtg @ 01:51:02].',
+                              'The economics checks are where cheap mistakes compound. King of Rentals '
+                              'list the beginner errors in order. "First thing is they buy the wrong car," '
+                              'meaning luxury units, followed by mispricing such as $200 a week, no rental '
+                              'agreement, and the wrong insurance with no vetting [DOrgMXhPDXs @ '
+                              "00:06:42]. On Kel King's cash-or-trash panel, the Nissan Sentra rates trash "
+                              'because "It\'s the CVT transmissions," while the Ford Fusion 2.5L and the '
+                              'Prius rate cash. Kel also breaks with Mo Breezy and Niger Morgan by calling '
+                              "the Chevy Cruze trash [7l7A5buuie0 @ 00:15:56]. Kel's scaling math depends "
+                              'on keeping cars occupied. "Turnover is where fleets bleed money," he says, '
+                              'because that gap is where every car gets re-cleaned, re-listed and '
+                              're-screened, and every day a car sits empty costs money [EVlxhXnHHH8 @ '
+                              "00:03:23]. Steve Ludwig's own value calculator showed gross looking better "
+                              'than net. His fleet rule is blunt: a new $50,000 to $60,000 van does not '
+                              'rent for more than a 2018, so an emotional purchase becomes a loss. "You '
+                              'cannot get emotional," he says [W_GJwoORfVw @ 00:30:26]. Alex Auto and Mo '
+                              'both found that financing widens every one of these gaps. The note keeps '
+                              'running during downtime, and $7,200 a month in notes and insurance is what '
+                              'drove Mo to buy all-cash.'],
+               'table': {'caption': 'Firsthand losses, what each one cost the operator, and the fix they '
+                                    'adopted',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check or Fix',
+                                     'Expert Source'],
+                         'rows': [['Insurer refuses a total after a DUI',
+                                   'A 2008 Kia Spectra renter totaled the car during a DUI and the insurer '
+                                   'refused to cover the loss.',
+                                   'About $1,000 in legal fees forced a $9K payout; he now insists on an '
+                                   'off-trip policy that allows private.',
+                                   'Car Rental Coach ([sP0LfwE7elc @ 00:05:31])'],
+                                  ['Renter strips GPS and kill switch',
+                                   'A Kia Optima renter at $300 weekly with no deposit had both devices '
+                                   'professionally removed; police called it civil.',
+                                   'A $500 bounty hunter recovered the car at roughly break-even; deposits '
+                                   'now run $500 economy, $1,000 pricier cars.',
+                                   'Car Rental Coach ([sP0LfwE7elc @ 00:07:56])'],
+                                  ['Card chargeback lost on a third-party card',
+                                   "Mo's invoicing and PayPal setup lost a dispute after a renter paid "
+                                   "using somebody else's card.",
+                                   'Cut cards completely and moved to Cash App, Zelle and cash; Apple Pay '
+                                   'drops accounts above $100K yearly.',
+                                   'Demario Mccowan ([-HtlfCgxxtg @ 01:44:42])'],
+                                  ['Missed weekly invoice goes unpaid',
+                                   'Manual invoices and scheduled 9 a.m. texts at around 50 cars let '
+                                   'payments slip through the cracks.',
+                                   'Most renters will not pay unprompted, so automated Monday '
+                                   'return-or-extend texts now run through Connect Pro.',
+                                   'Demario Mccowan ([-HtlfCgxxtg @ 01:42:35])'],
+                                  ['Loss run report triggers a policy drop',
+                                   'Collision claims stacked on the loss run report until the insurer '
+                                   'moved to drop the whole policy.',
+                                   'A new LLC and a transfer of 100-plus cars; claims now go in for '
+                                   'liability only, never collision.',
+                                   'Demario Mccowan ([taXFg2qEMew @ 00:29:29])'],
+                                  ['Financed car sitting through downtime',
+                                   'The loan payment kept running while cars were down, and a 2015 earns '
+                                   'similar rent to a 2022.',
+                                   'Buy $3,000 to $5,000 cash economy cars so idle weeks never carry a '
+                                   'monthly note.',
+                                   'Alex Auto ([RSpmJqhFEIw @ 00:03:21])'],
+                                  ['Luxury car rented during prom season',
+                                   "Mo's Q8 rolled at 124 to 125 mph on 6/1/2022 and his i8 was totaled on "
+                                   '6/1/2023.',
+                                   'Profits from the i8 were rerouted into cash economy cars; prom season '
+                                   'costs him one to three cars yearly.',
+                                   'Demario Mccowan ([-HtlfCgxxtg @ 00:03:50])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four gates before a car leaves the lot',
+                           'body': 'Each gate comes from a car, a payout or a policy that a named operator '
+                                   'actually lost. Clear all four before handing over keys.',
+                           'items': ['Hardwire GPS with a kill switch and add an OBD backup through a '
+                                     'splitter before the first handoff, because "kill switch is main '
+                                     'priority" [Arthur Fandunyan — d5fglf-rFOc @ 00:12:03].',
+                                     'Put commercial or off-trip coverage that explicitly allows private '
+                                     'rentals in place first; Mo says to get commercial insurance right '
+                                     'off rip after a personal-policy rental totaled his car [Demario '
+                                     'Mccowan — -HtlfCgxxtg @ 01:34:49].',
+                                     'Collect a flat $300 deposit plus the first week up front and enforce '
+                                     'the 23-plus age floor, which Mo raised from 19 to 21 to 23 [Demario '
+                                     'Mccowan — taXFg2qEMew @ 00:35:57].',
+                                     'Sign a rental agreement with a conversion notice, $250 smoking and '
+                                     '$200 cleaning fees, and prorated late-return charges, and keep '
+                                     'physical and digital copies [Car Rental Coach — sP0LfwE7elc @ '
+                                     '00:11:07].']}}],
+ 'pull_quote': '"Your loss report is pretty much your report card in the insurance industry." — Demario '
+               'Mccowan (taXFg2qEMew @ 00:29:29).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Buy a cash economy car, either a Ford Fusion 2.5L or a Prius, with no BMWs and no '
+                      'Nissans, and keep the all-in cost under $6,000 [Kel King — BD6Xfj5F-Fk @ 00:12:21].',
+                      'Price at $350 to $450 a week and plan for each car to make its money back in 90 '
+                      'days [Kel King — BD6Xfj5F-Fk @ 00:11:47].',
+                      'Post a Facebook Marketplace listing titled "cars for rideshare" with a walkaround '
+                      'video, and put unlimited miles, insurance included and maintenance included in the '
+                      'body [DOUBLE DOWN Podcast — UCJIebqFEj0 @ 00:13:53].',
+                      'Run Facebook Messenger lead ads with AI copy and images inside a 15 to 20 mile '
+                      'radius; $10 a day brings two to three qualified leads daily [Car Rental Coach — '
+                      'sP0LfwE7elc @ 00:20:33].',
+                      'Rent weekly only and automate a Monday text asking each renter to return or extend '
+                      '[Demario Mccowan — -HtlfCgxxtg @ 01:40:41].',
+                      'Hire a virtual assistant at $3 to $5 an hour once the fleet reaches 10 to 20 cars, '
+                      'then add a fleet coordinator, then an operations manager at 50-plus cars [Arthur '
+                      'Fandunyan — d5fglf-rFOc @ 00:19:29].'],
+ 'statutory_citations': [{'title': 'Demario Mccowan — How I Left Turo and Built a 500-Car Private Rental '
+                                   'Empire (No Platform Needed) [01:32:39]',
+                          'url': 'https://www.youtube.com/watch?v=-HtlfCgxxtg&t=5559s',
+                          'relevance': 'Primary practitioner testimony on rejecting personal and '
+                                       'permissible-driver insurance, avoiding collision claims, and '
+                                       'repossession protocol.'},
+                         {'title': 'Car Rental Coach — How to Run a Private Car Rental Business (No Turo '
+                                   'Needed) [00:22:23]',
+                          'url': 'https://www.youtube.com/watch?v=sP0LfwE7elc&t=1343s',
+                          'relevance': 'Primary practitioner testimony on off-trip policies that allow '
+                                       'private rentals, verifying renter coverage, and disputed-payment '
+                                       'defenses.'},
+                         {'title': 'Kel King — Ditch Turo: Build Your Private Car Rental Empire [00:11:47]',
+                          'url': 'https://www.youtube.com/watch?v=BD6Xfj5F-Fk&t=707s',
+                          'relevance': 'Primary practitioner testimony on weekly pricing, the 90-day '
+                                       'payback rule, and the permissible-driver insurance play.'},
+                         {'title': 'DOUBLE DOWN Podcast — How He Built a 70+ Car  Rental Fleet Making '
+                                   '$105K/Month (Rental Car King) [00:18:35]',
+                          'url': 'https://www.youtube.com/watch?v=UCJIebqFEj0&t=1115s',
+                          'relevance': 'Primary practitioner testimony on Graves Amendment contract '
+                                       'language, Spireon tracker kill rules, and joint-venture capital.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'BD6Xfj5F-Fk',
+                       'title': 'Ditch Turo: Build Your Private Car Rental Empire',
+                       'channel': 'Kel King',
+                       'author': 'Kel King',
+                       'text': "Now, you're going to charge people anywhere from 350 to 450 a week.",
+                       'tip': "Now, you're going to charge people anywhere from 350 to 450 a week.",
+                       'timestamp': 707,
+                       'timestamp_seconds': 707,
+                       'timestamp_label': '[00:11:47]',
+                       'url': 'https://www.youtube.com/watch?v=BD6Xfj5F-Fk&t=707s',
+                       'markdown': '[00:11:47](https://www.youtube.com/watch?v=BD6Xfj5F-Fk&t=707s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BD6Xfj5F-Fk',
+                       'title': 'Ditch Turo: Build Your Private Car Rental Empire',
+                       'channel': 'Kel King',
+                       'author': 'Kel King',
+                       'text': "Don't go to the auction.",
+                       'tip': "Don't go to the auction.",
+                       'timestamp': 833,
+                       'timestamp_seconds': 833,
+                       'timestamp_label': '[00:13:53]',
+                       'url': 'https://www.youtube.com/watch?v=BD6Xfj5F-Fk&t=833s',
+                       'markdown': '[00:13:53](https://www.youtube.com/watch?v=BD6Xfj5F-Fk&t=833s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-HtlfCgxxtg',
+                       'title': 'How I Left Turo and Built a 500-Car Private Rental Empire (No Platform '
+                                'Needed)',
+                       'channel': 'Demario Mccowan',
+                       'author': 'Demario Mccowan',
+                       'text': 'So I always want to keep my loss run report very clean and pretty much I '
+                               "let my insurance handle things that I don't have control over.",
+                       'tip': 'So I always want to keep my loss run report very clean and pretty much I '
+                              "let my insurance handle things that I don't have control over.",
+                       'timestamp': 5826,
+                       'timestamp_seconds': 5826,
+                       'timestamp_label': '[01:37:06]',
+                       'url': 'https://www.youtube.com/watch?v=-HtlfCgxxtg&t=5826s',
+                       'markdown': '[01:37:06](https://www.youtube.com/watch?v=-HtlfCgxxtg&t=5826s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-HtlfCgxxtg',
+                       'title': 'How I Left Turo and Built a 500-Car Private Rental Empire (No Platform '
+                                'Needed)',
+                       'channel': 'Demario Mccowan',
+                       'author': 'Demario Mccowan',
+                       'text': 'So, for me, only weekly.',
+                       'tip': 'So, for me, only weekly.',
+                       'timestamp': 5986,
+                       'timestamp_seconds': 5986,
+                       'timestamp_label': '[01:39:46]',
+                       'url': 'https://www.youtube.com/watch?v=-HtlfCgxxtg&t=5986s',
+                       'markdown': '[01:39:46](https://www.youtube.com/watch?v=-HtlfCgxxtg&t=5986s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DOrgMXhPDXs',
+                       'title': 'How we make $1,500+ per car monthly (WITHOUT Turo)!!',
+                       'channel': 'King of Rentals',
+                       'author': 'King of Rentals',
+                       'text': "Honestly, if you're relying on a platform like Turo, your business is "
+                               'probably worth nothing.',
+                       'tip': "Honestly, if you're relying on a platform like Turo, your business is "
+                              'probably worth nothing.',
+                       'timestamp': 561,
+                       'timestamp_seconds': 561,
+                       'timestamp_label': '[00:09:21]',
+                       'url': 'https://www.youtube.com/watch?v=DOrgMXhPDXs&t=561s',
+                       'markdown': '[00:09:21](https://www.youtube.com/watch?v=DOrgMXhPDXs&t=561s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EVlxhXnHHH8',
+                       'title': 'How to Scale to 10 Rental Cars in 30 Days (No Turo) | $22,200/Month '
+                                'Explained',
+                       'channel': 'Kel King',
+                       'author': 'Kel King',
+                       'text': 'Turnover is where fleets bleed money, the gap between renters that '
+                               're-clean, re-list, and re-screen everything.',
+                       'tip': 'Turnover is where fleets bleed money, the gap between renters that '
+                              're-clean, re-list, and re-screen everything.',
+                       'timestamp': 203,
+                       'timestamp_seconds': 203,
+                       'timestamp_label': '[00:03:23]',
+                       'url': 'https://www.youtube.com/watch?v=EVlxhXnHHH8&t=203s',
+                       'markdown': '[00:03:23](https://www.youtube.com/watch?v=EVlxhXnHHH8&t=203s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pXYcnDt9ASA',
+                       'title': 'This Is the Easiest Way To Start A Private Car Rental Business (Without '
+                                'Turo)',
+                       'channel': 'Mike_Thebusinessman',
+                       'author': 'Mike_Thebusinessman',
+                       'text': 'The software does not create a Stripe account for you.',
+                       'tip': 'The software does not create a Stripe account for you.',
+                       'timestamp': 282,
+                       'timestamp_seconds': 282,
+                       'timestamp_label': '[00:04:42]',
+                       'url': 'https://www.youtube.com/watch?v=pXYcnDt9ASA&t=282s',
+                       'markdown': '[00:04:42](https://www.youtube.com/watch?v=pXYcnDt9ASA&t=282s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'G-0j82EXJlk',
+                       'title': 'How I built a 6 figure PRIVATE car rental business in 2 years (copy me)',
+                       'channel': 'Alex Auto',
+                       'author': 'Alex Auto',
+                       'text': 'When I started my journey, the very first mistake I made was financing my '
+                               'first car instead of purchasing it for very cheap.',
+                       'tip': 'When I started my journey, the very first mistake I made was financing my '
+                              'first car instead of purchasing it for very cheap.',
+                       'timestamp': 106,
+                       'timestamp_seconds': 106,
+                       'timestamp_label': '[00:01:46]',
+                       'url': 'https://www.youtube.com/watch?v=G-0j82EXJlk&t=106s',
+                       'markdown': '[00:01:46](https://www.youtube.com/watch?v=G-0j82EXJlk&t=106s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sP0LfwE7elc',
+                       'title': 'How to Run a Private Car Rental Business (No Turo Needed)',
+                       'channel': 'Car Rental Coach',
+                       'author': 'Car Rental Coach',
+                       'text': 'So just keep doing your research but you need an off-trip rental policy '
+                               'that allows you to do private.',
+                       'tip': 'So just keep doing your research but you need an off-trip rental policy '
+                              'that allows you to do private.',
+                       'timestamp': 1451,
+                       'timestamp_seconds': 1451,
+                       'timestamp_label': '[00:24:11]',
+                       'url': 'https://www.youtube.com/watch?v=sP0LfwE7elc&t=1451s',
+                       'markdown': '[00:24:11](https://www.youtube.com/watch?v=sP0LfwE7elc&t=1451s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'd5fglf-rFOc',
+                       'title': 'How To Start Private Car Rentals in 2026 (Full Roadmap)',
+                       'channel': 'Arthur Fandunyan',
+                       'author': 'Arthur Fandunyan',
+                       'text': 'So, again, kill switch is main priority.',
+                       'tip': 'So, again, kill switch is main priority.',
+                       'timestamp': 723,
+                       'timestamp_seconds': 723,
+                       'timestamp_label': '[00:12:03]',
+                       'url': 'https://www.youtube.com/watch?v=d5fglf-rFOc&t=723s',
+                       'markdown': '[00:12:03](https://www.youtube.com/watch?v=d5fglf-rFOc&t=723s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UCJIebqFEj0',
+                       'title': 'How He Built a 70+ Car  Rental Fleet Making $105K/Month (Rental Car King)',
+                       'channel': 'DOUBLE DOWN Podcast',
+                       'author': 'DOUBLE DOWN Podcast',
+                       'text': "One big thing I have in there is what's called the Graves Amendment, which "
+                               "means I'm not responsible for what my renter does on the road.",
+                       'tip': "One big thing I have in there is what's called the Graves Amendment, which "
+                              "means I'm not responsible for what my renter does on the road.",
+                       'timestamp': 1115,
+                       'timestamp_seconds': 1115,
+                       'timestamp_label': '[00:18:35]',
+                       'url': 'https://www.youtube.com/watch?v=UCJIebqFEj0&t=1115s',
+                       'markdown': '[00:18:35](https://www.youtube.com/watch?v=UCJIebqFEj0&t=1115s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ILKICEKUl_A',
+                       'title': 'How To Start A Car Rental Business in 2026 WITHOUT Cars | On Consignment',
+                       'channel': 'Etienne Elsaesser',
+                       'author': 'Etienne Elsaesser',
+                       'text': 'Ours is we need at least 48 hours written notice to terminate the contract '
+                               'from either party.',
+                       'tip': 'Ours is we need at least 48 hours written notice to terminate the contract '
+                              'from either party.',
+                       'timestamp': 1144,
+                       'timestamp_seconds': 1144,
+                       'timestamp_label': '[00:19:04]',
+                       'url': 'https://www.youtube.com/watch?v=ILKICEKUl_A&t=1144s',
+                       'markdown': '[00:19:04](https://www.youtube.com/watch?v=ILKICEKUl_A&t=1144s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RSpmJqhFEIw',
+                       'title': 'How I Scaled to 50 Rental Cars (And How You Can Too)',
+                       'channel': 'Alex Auto',
+                       'author': 'Alex Auto',
+                       'text': "So, if you've been in an accident, for most state, the statutes of "
+                               'limitation is 2 years.',
+                       'tip': "So, if you've been in an accident, for most state, the statutes of "
+                              'limitation is 2 years.',
+                       'timestamp': 550,
+                       'timestamp_seconds': 550,
+                       'timestamp_label': '[00:09:10]',
+                       'url': 'https://www.youtube.com/watch?v=RSpmJqhFEIw&t=550s',
+                       'markdown': '[00:09:10](https://www.youtube.com/watch?v=RSpmJqhFEIw&t=550s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7l7A5buuie0',
+                       'title': 'How To Start A Car Rental Business in 2026',
+                       'channel': 'Kel King',
+                       'author': 'Kel King',
+                       'text': "That's the golden rule for this business is a 90-day return on investment.",
+                       'tip': "That's the golden rule for this business is a 90-day return on investment.",
+                       'timestamp': 2491,
+                       'timestamp_seconds': 2491,
+                       'timestamp_label': '[00:41:31]',
+                       'url': 'https://www.youtube.com/watch?v=7l7A5buuie0&t=2491s',
+                       'markdown': '[00:41:31](https://www.youtube.com/watch?v=7l7A5buuie0&t=2491s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sCxmSbzhAjM',
+                       'title': 'The Fastest Way to Build a 10-Car Rental Fleet!',
+                       'channel': 'King of Rentals',
+                       'author': 'King of Rentals',
+                       'text': 'You charge your 35% which is 350.',
+                       'tip': 'You charge your 35% which is 350.',
+                       'timestamp': 241,
+                       'timestamp_seconds': 241,
+                       'timestamp_label': '[00:04:01]',
+                       'url': 'https://www.youtube.com/watch?v=sCxmSbzhAjM&t=241s',
+                       'markdown': '[00:04:01](https://www.youtube.com/watch?v=sCxmSbzhAjM&t=241s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZU8uokic3ws',
+                       'title': 'I started a CAR RENTAL business in Greenville',
+                       'channel': 'DylanIsMayor',
+                       'author': 'DylanIsMayor',
+                       'text': "I think we're selling cars too low of for price.",
+                       'tip': "I think we're selling cars too low of for price.",
+                       'timestamp': 533,
+                       'timestamp_seconds': 533,
+                       'timestamp_label': '[00:08:53]',
+                       'url': 'https://www.youtube.com/watch?v=ZU8uokic3ws&t=533s',
+                       'markdown': '[00:08:53](https://www.youtube.com/watch?v=ZU8uokic3ws&t=533s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'W_GJwoORfVw',
+                       'title': 'The B2B Rental Strategy Behind His 277-Vehicle Fleet',
+                       'channel': 'FleetPilot',
+                       'author': 'FleetPilot',
+                       'text': 'This is not a get rich quick thing.',
+                       'tip': 'This is not a get rich quick thing.',
+                       'timestamp': 1777,
+                       'timestamp_seconds': 1777,
+                       'timestamp_label': '[00:29:37]',
+                       'url': 'https://www.youtube.com/watch?v=W_GJwoORfVw&t=1777s',
+                       'markdown': '[00:29:37](https://www.youtube.com/watch?v=W_GJwoORfVw&t=1777s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'taXFg2qEMew',
+                       'title': 'How to Start a Car Rental Business in 2025 (Scale to 400+ Cars)',
+                       'channel': 'Demario Mccowan',
+                       'author': 'Demario Mccowan',
+                       'text': "So when you're in this rental car business, man, my opinion, you should "
+                               'not do any claims.',
+                       'tip': "So when you're in this rental car business, man, my opinion, you should not "
+                              'do any claims.',
+                       'timestamp': 1860,
+                       'timestamp_seconds': 1860,
+                       'timestamp_label': '[00:31:00]',
+                       'url': 'https://www.youtube.com/watch?v=taXFg2qEMew&t=1860s',
+                       'markdown': '[00:31:00](https://www.youtube.com/watch?v=taXFg2qEMew&t=1860s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'}]}

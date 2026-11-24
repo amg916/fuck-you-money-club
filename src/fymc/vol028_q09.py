@@ -1,713 +1,902 @@
 from __future__ import annotations
 
-CHAPTER_9 = {
-    "id": "Q9",
-    "chapter_id": "Q9",
-    "chapter_number": 9,
-    "question_number": 9,
-    "slug": "commercial-cleaning-contracts-statutory-guardrails-outreach",
-    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern commercial cleaning contracts?",
-    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
-    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
-    "subtitle": "FLSA Crew Economics, OSHA Chemical Controls, State Janitorial Registration, Medical-Site Boundaries, and Contract-Ready B2B Scripts",
-    "layout_template": "legal_compliance_notes",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #10, Commercial Cleaning Contracts, ranks #23 with a Money-to-Manpower "
-        "Score of 82/100: this is a labor-intensive operating business, not an automation "
-        "arbitrage. This chapter maps four execution plays: recurring office contracts, "
-        "outpatient medical janitorial service, properly classified W-2 and subcontractor "
-        "delivery, and supervisor-pod retention. Each play requires enforceable scope, "
-        "paid-hour economics, chemical controls, and documented access boundaries. "
-        "Canonical annual owner net profit is $20,000 Conservative, $87,000 Base, and "
-        "$192,000 Scaled, supported by cleaning contract revenue rather than customer "
-        "sales or property value. Use the statutory matrix, clause checklist, and verbatim "
-        "scripts to qualify buyers before mobilizing the four-person starting pod. "
-        "Scheduling, inspection logs, and billing reduce administration; they do not "
-        "erase paid crew hours."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual cleaning contract revenue; only operator service revenue",
-            "note": "8% net margin; $20,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$725,000",
-            "context": "Annual cleaning contract revenue; only operator service revenue",
-            "note": "12.0% net margin; $87,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual cleaning contract revenue; only operator service revenue",
-            "note": "16% net margin; $192,000 annual owner net profit; 2 FT + 4 C (6 people)",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Establish the labor, licensing, and sector perimeter before quoting",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Map this chapter's four operating plays to separate execution files: "
-                    "recurring office contracts, outpatient medical janitorial service, "
-                    "properly classified W-2 and subcontractor delivery, and supervisor-pod "
-                    "retention. These are working labels for the four plays, not four "
-                    "additional revenue streams. Candidate #10 starts with five full-time "
-                    "employees and four contractors; assign one employee as the working "
-                    "supervisor and four as cleaners, while defining contractor packages "
-                    "by genuine independent business deliverables. A contractor label does "
-                    "not establish independence. Apply the Fair Labor Standards Act economic "
-                    "reality analysis, federal employment-tax rules, and each applicable "
-                    "state test separately. California Labor Code section 2775 generally "
-                    "uses an ABC framework, subject to statutory exceptions whose conditions "
-                    "must actually be satisfied. A cleaner performing the company's ordinary "
-                    "cleaning service creates a substantial usual-course issue under that "
-                    "framework. Do not present an invoice, insurance certificate, or entity "
-                    "registration as a cure. Require a dated classification assessment "
-                    "before assigning any contractor, and move controlled employee-like "
-                    "work onto payroll. Supervisor dispatch, required personal attendance, "
-                    "company equipment, and indefinite hourly assignments are evidence to "
-                    "evaluate, not details to hide from the file."
-                ),
-                (
-                    "Build a jurisdiction register from actual worksite addresses, not the "
-                    "customer's headquarters. Record state and municipal wage floors, "
-                    "overtime rules, paid sick leave, meal and rest requirements, payroll "
-                    "timing, workers' compensation coverage, and any local business license. "
-                    "Under 29 U.S.C. sections 206 and 207, covered nonexempt employees receive "
-                    "applicable minimum wages and overtime; more protective state rules "
-                    "still apply. Count required setup, training, and travel between sites "
-                    "during the workday as compensable when the governing rules require it. "
-                    "Do not deduct a meal period during which a cleaner keeps answering "
-                    "dispatch calls. California janitorial employers also need an analysis "
-                    "of Labor Code sections 1420 through 1434, including registration and "
-                    "applicable training and recordkeeping duties. If a contract directly "
-                    "serves a federal agency, examine Service Contract Labor Standards "
-                    "coverage, the incorporated wage determination, and required fringe "
-                    "benefits before pricing. Ordinary private offices do not inherit "
-                    "federal contract wage terms merely because a tenant sells to government. "
-                    "Use Gusto or ADP for payroll configuration, but reconcile settings "
-                    "against the location register and actual time records. Software "
-                    "defaults cannot decide statutory coverage or excuse an incorrect "
-                    "overtime calculation."
-                ),
-                (
-                    "Separate ordinary janitorial work from regulated services before "
-                    "accepting a medical account. OSHA's Hazard Communication Standard, "
-                    "29 CFR 1910.1200, requires the applicable written program, labels, "
-                    "safety data sheets, and employee information and training. Evaluate "
-                    "reasonably anticipated occupational exposure under 29 CFR 1910.1030; "
-                    "covered bloodborne-pathogen work requires exposure controls, training, "
-                    "appropriate protection, and other specified measures. A clinic label "
-                    "alone neither establishes nor eliminates exposure. Define sharps, "
-                    "visible blood, pharmaceutical waste, and regulated medical waste "
-                    "handling as distinct tasks with explicit responsibility and state-specific "
-                    "authorization. Routine janitorial access with merely incidental exposure "
-                    "to protected health information generally does not make the cleaner "
-                    "a HIPAA business associate; document why the actual service fits that "
-                    "boundary. Record destruction or deliberate handling of patient "
-                    "information requires a different assessment. Use EPA-registered "
-                    "disinfectants for the intended application and follow label dilution, "
-                    "surface compatibility, and contact-time directions. Never sell "
-                    "sterilization when the process only supports disinfection. Require "
-                    "the clinic to secure records and identify its infection-prevention "
-                    "contact. Supervisor-pod inspections should verify these boundaries "
-                    "without photographing patient names, charts, screens, or treatment "
-                    "records. Stop excluded work and notify the designated contact "
-                    "rather than improvising a higher-risk service."
-                ),
-            ],
-            "table": {
-                "caption": "Worksite Statutory Perimeter and Evidence Matrix",
-                "headers": [
-                    "Authority and work trigger",
-                    "Required operating treatment",
-                    "Evidence retained by the supervisor",
-                    "Failure response before service continues",
-                ],
-                "rows": [
-                    [
-                        "29 U.S.C. 206 and 207 govern covered employee pay",
-                        "Configure applicable wage floors and weekly overtime calculations",
-                        "Retain accurate time records and reconciled payroll registers",
-                        "Correct underpayments and reprice structurally underfunded service hours",
-                    ],
-                    [
-                        "29 CFR 785.38 addresses travel during the workday",
-                        "Include compensable intersite travel in route labor budgets",
-                        "Retain route timestamps and paid travel reconciliation records",
-                        "Remove unpaid travel assumptions from every affected bid",
-                    ],
-                    [
-                        "California Labor Code 2775 supplies a classification framework",
-                        "Evaluate every applicable test and exception before assignment",
-                        "Retain documented business facts supporting the classification decision",
-                        "Place employee-like assignments on payroll before work begins",
-                    ],
-                    [
-                        "California Labor Code 1420 through 1434 governs janitorial employers",
-                        "Verify registration and applicable training and recordkeeping obligations",
-                        "Retain registration confirmation and required worker training records",
-                        "Delay affected mobilization until applicable requirements are satisfied",
-                    ],
-                    [
-                        "29 CFR 1910.1200 governs workplace hazardous chemical communication",
-                        "Maintain required labels, safety data sheets, and worker training",
-                        "Retain chemical inventory and documented task-specific training completion",
-                        "Isolate improperly labeled products and retrain affected employees",
-                    ],
-                    [
-                        "29 CFR 1910.1030 applies where occupational exposure is anticipated",
-                        "Implement required exposure controls and assigned protective measures",
-                        "Retain exposure assessments and securely maintained required records",
-                        "Stop unprepared exposure tasks and activate incident procedures",
-                    ],
-                    [
-                        "7 U.S.C. 136j restricts pesticide use inconsistent with labeling",
-                        "Match disinfectant application and contact time to label directions",
-                        "Retain current product labels and dilution verification records",
-                        "Replace unsupported claims and correct the application method",
-                    ],
-                    [
-                        "41 U.S.C. 6703 sets covered federal service contract requirements",
-                        "Price incorporated wage determinations and required fringe benefits",
-                        "Retain contract clauses and labor-category wage mapping worksheets",
-                        "Rebuild pricing before accepting an uncovered labor shortfall",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before the four-person pod mobilizes",
-                "body": (
-                    "The working supervisor signs the site-readiness record only after "
-                    "the owner resolves these four concrete operating requirements."
-                ),
-                "items": [
-                    "Match every service address to wage, leave, registration, and workers' compensation requirements; retain dated verification from the responsible authority or insurer.",
-                    "Document employee and contractor classification against each applicable test; do not dispatch an employee-like contractor assignment while the classification issue remains unresolved.",
-                    "Match every chemical and medical-site task to its label, exposure assessment, training record, equipment, and assigned stop-work boundary.",
-                    "Confirm executed scope, effective insurance, tested access credentials, funded payroll timing, and a named customer contact before releasing the first shift.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Turn the walkthrough into enforceable scope and collectible fees",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The contract package should contain a master services agreement, "
-                    "a site-specific statement of work, a task-frequency schedule, an "
-                    "access protocol, and a pricing exhibit that resolve conflicts through "
-                    "an explicit order of precedence. Measure cleanable area rather than "
-                    "leasing area, identify floor types, and count restrooms, fixtures, "
-                    "occupied stations, and waste points. Use ISSA production-rate references "
-                    "as estimating inputs, then validate them through a timed walkthrough "
-                    "and pilot shift; neither a published rate nor a square-foot price "
-                    "proves adequate staffing. Specify office tasks by daily, weekly, "
-                    "monthly, and periodic frequency. For medical accounts, identify "
-                    "approved products, required contact times, isolation-room boundaries, "
-                    "and excluded waste. State who buys liners, paper products, soap, "
-                    "dispensers, and consumables. Define a completed service visit through "
-                    "assigned tasks and inspection evidence rather than a vague promise "
-                    "that premises will always look pristine. Give the customer a defined "
-                    "deficiency reporting window and a practical cure process without "
-                    "eliminating remedies for latent damage. Attach the initial condition "
-                    "record so inherited floor damage does not become a disputed cleaning "
-                    "failure. Obtain customer acknowledgment before the first routine "
-                    "invoice and preserve the signed version."
-                ),
-                (
-                    "Make the fee trigger objectively auditable: a monthly recurring fee "
-                    "for the scheduled service obligation, invoiced on the agreed date, "
-                    "with separate authorized charges for added visits and periodic work. "
-                    "Define how holidays, customer lockouts, closures, and emergency requests "
-                    "affect service and charges. State payment terms, lawful late charges, "
-                    "the invoice-dispute process, and when undisputed amounts remain due. "
-                    "Require written change authorization identifying the task, quantity, "
-                    "price, and start date; a receptionist's informal request should not "
-                    "silently expand nightly labor. Include a transparent repricing mechanism "
-                    "for documented wage mandates, changed occupancy, added cleanable area, "
-                    "and customer-directed frequencies, with notice and an agreed termination "
-                    "option if revised pricing is rejected. Anti-circumvention should protect "
-                    "defined introductions or confidential pricing only within a narrow, "
-                    "supportable scope. Do not convert it into a broad employee no-hire "
-                    "arrangement, an industry-wide customer restriction, or a penalty for "
-                    "ordinary competition. Prefer confidentiality, clear ownership of "
-                    "proposal materials, and payment for services actually authorized. "
-                    "Employment restraints, liquidated damages, and restrictive covenants "
-                    "need jurisdiction-specific review before inclusion. Do not add a "
-                    "restrictive clause merely because a template vendor supplied it."
-                ),
-                (
-                    "Allocate liability to the party controlling the risk and connect "
-                    "each promise to available insurance. Obtain commercial general "
-                    "liability, required workers' compensation, and appropriate automobile "
-                    "coverage; evaluate employee dishonesty, key loss, and chemical or "
-                    "pollution exclusions against actual site exposures. A certificate "
-                    "of insurance is evidence of coverage information, not the additional "
-                    "insured endorsement itself. Request required endorsements and examine "
-                    "policy conditions rather than promising that every spill or theft "
-                    "will be covered. Negotiate a liability cap with a clear measurement "
-                    "period, treatment of consequential damages, and expressly negotiated "
-                    "exceptions; enforceability and mandatory liabilities vary by state. "
-                    "Use fault-based indemnity that addresses defense handling and settlement "
-                    "authority rather than accepting liability for the customer's sole "
-                    "negligence. Specify governing law, forum, escalation contacts, and "
-                    "whether disputes proceed through courts or arbitration. Preserve "
-                    "access to urgent protective relief where appropriate. State that "
-                    "customers own their site records and delivered reports, while the "
-                    "operator retains preexisting checklists and methods subject to the "
-                    "customer's agreed usage rights. Define photo restrictions, access-log "
-                    "retention, credential revocation, return of keys, and deletion of "
-                    "customer data after termination."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Contract Clauses That Protect Paid Hours and Collections",
-                "headers": [
-                    "Clause and commercial purpose",
-                    "Required drafting content",
-                    "Supporting operational evidence",
-                    "Negotiation boundary and failure mode",
-                ],
-                "rows": [
-                    [
-                        "Scope and frequency establish the purchased service obligation",
-                        "List cleanable zones, recurring tasks, exclusions, and frequencies",
-                        "Attach measured walkthrough notes and acknowledged condition photographs",
-                        "Reject unlimited extra tasks disguised as routine cleanliness",
-                    ],
-                    [
-                        "Fee trigger separates recurring obligations from additional purchases",
-                        "State invoice dates, earned charges, closures, and payment terms",
-                        "Match invoices to signed schedules and authorized additional visits",
-                        "Prevent unsupported billing for services outside the agreed trigger",
-                    ],
-                    [
-                        "Change control prevents quiet expansion of paid labor",
-                        "Require authorized task quantities, pricing, and effective service dates",
-                        "Retain buyer authorization linked to the revised dispatch schedule",
-                        "Do not absorb recurring additions through casual frontline requests",
-                    ],
-                    [
-                        "Anti-circumvention protects legitimate interests without broad labor restraints",
-                        "Limit any protection to defined interests and lawful scope",
-                        "Retain specific introductions and confidential materials actually disclosed",
-                        "Reject broad no-hire terms or punitive competition restrictions",
-                    ],
-                    [
-                        "Liability cap establishes an insurable allocation of exposure",
-                        "Define cap period, damage categories, and negotiated exception treatment",
-                        "Match policy wording and endorsements to assumed contractual risks",
-                        "Avoid promising protection that applicable law or insurance excludes",
-                    ],
-                    [
-                        "Dispute resolution creates a predictable collection and escalation path",
-                        "Specify governing law, forum, escalation, and dispute procedure",
-                        "Retain notice delivery records and itemized disputed invoice amounts",
-                        "Preserve lawful remedies while preventing indefinite invoice dispute delays",
-                    ],
-                    [
-                        "IP and data ownership distinguish methods from customer records",
-                        "Allocate report rights, checklist licenses, retention, and deletion duties",
-                        "Maintain a data inventory and role-based access register",
-                        "Never place patient information in routine inspection photographs",
-                    ],
-                    [
-                        "Termination and transition protect people, access, and receivables",
-                        "Define notice, cure, final billing, and credential return",
-                        "Record key handover and completion of customer access revocation",
-                        "Do not hold customer keys hostage over disputed invoices",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Contract habits that veteran cleaning operators use",
-                "body": (
-                    "Small contractual details protect more margin than broad promises "
-                    "about quality when the same crew must cover several sites."
-                ),
-                "items": [
-                    "Photograph existing floor damage without people or sensitive records, label each image by zone, and attach the acknowledged condition record to the statement of work.",
-                    "Time restroom replenishment separately from floor cleaning; hidden dispenser and supply work routinely defeats square-foot-only office bids.",
-                    "Price medical contact-time requirements into the route before selling the visit frequency; chemicals cannot compensate for a shift too short to follow the label.",
-                    "Use a numbered key register with signed transfers and immediate loss escalation; compare key-loss coverage with the building's actual rekey exposure.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Reconcile legal promises to the scorecard and supervisor capacity",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Keep the scorecard arithmetic separate from the staffing feasibility "
-                    "test. Conservative revenue of $250,000 at an eight percent net margin "
-                    "produces $20,000 annual owner net profit and permits $230,000 of "
-                    "total annual costs. Base revenue of $725,000 at twelve percent produces "
-                    "$87,000 profit and permits $638,000 of costs. Scaled revenue of "
-                    "$1,200,000 at sixteen percent produces $192,000 profit and permits "
-                    "$1,008,000 of costs. These are cleaning contract revenues, not client "
-                    "sales, facility property values, or procurement budgets. The first "
-                    "two cases retain five full-time employees plus four contractors; "
-                    "Scaled uses six full-time employees plus five contractors. Do not "
-                    "rewrite full-time employees as occasional workers to force a result. "
-                    "As an illustrative stress test, five employees paid for 2,080 hours "
-                    "each at $20 per hour require $208,000 in straight-time wages. A "
-                    "twenty percent illustrative employment burden raises that amount "
-                    "to $249,600, already exceeding the Conservative total cost allowance "
-                    "before contractor invoices, supplies, insurance, or administration. "
-                    "That case fails under those assumptions. Preserve the canonical "
-                    "numbers as benchmarks, flag the local infeasibility, and decline "
-                    "contracts that depend on unpaid work."
-                ),
-                (
-                    "For every bid, build a service-hour ledger containing productive "
-                    "cleaning time, setup, supply handling, travel, required training, "
-                    "supervisor inspections, expected rework, and paid absence coverage. "
-                    "Separate paid hours from customer-visible cleaning hours. An "
-                    "illustrative office contract at $6,000 monthly revenue yields "
-                    "$72,000 annually. If delivery requires 150 paid hours monthly at "
-                    "$25 loaded hourly cost, labor costs $3,750 monthly; adding $600 "
-                    "for supplies, travel, and site-specific insurance allocation leaves "
-                    "$1,650 monthly contribution before central overhead and owner "
-                    "net profit. It does not establish a 27.5 percent company net "
-                    "margin. Test the full portfolio against the applicable total "
-                    "cost allowance after allocating payroll administration, recruiting, "
-                    "equipment, supervision, and customer acquisition. Treat contractor "
-                    "invoices as delivery costs, not revenue offsets that hide actual "
-                    "scale. Maintain enough cash to bridge payroll and customer payment "
-                    "dates; a signed annual contract does not fund next Friday's wages. "
-                    "The $10,000 to $50,000 startup capital range and $3,000 to $14,000 "
-                    "monthly operating-expense planning range cannot substitute for a "
-                    "complete scaled payroll model. Do not use that expense range as "
-                    "an all-in ceiling for every scenario."
-                ),
-                (
-                    "The four-person pod needs a named coverage plan, not simply nine "
-                    "names in scheduling software. Use Swept or Jobber to assign sites "
-                    "and inspection reminders, QuickBooks Online to connect invoices "
-                    "to the contract register, and a controlled document store for "
-                    "signed agreements and training evidence. One working supervisor "
-                    "cannot clean a full route, inspect every building, recruit replacements, "
-                    "and resolve every access incident without reserved hours. Allocate "
-                    "supervision explicitly and test simultaneous absences before promising "
-                    "service windows. Contractors should receive legitimate independent "
-                    "service packages where classification permits, not serve as an "
-                    "off-payroll reserve for employee shifts. Review concentration monthly "
-                    "using each customer's percentage of recognized revenue, contribution, "
-                    "receivables, and scheduled hours. A large account can create four "
-                    "different dependencies. Establish internal limits based on cash "
-                    "reserves and replacement capacity rather than presenting an arbitrary "
-                    "percentage as a statute. Move to the eleven-person Scaled team only "
-                    "when signed demand and verified hourly economics support the additional "
-                    "employee and contractor. Scheduling, inspection logs, and billing "
-                    "automation reduce administrative friction; they cannot replace "
-                    "required disinfectant contact time, lawful breaks, or physical "
-                    "cleaning labor. Audit those constraints before adding sites."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Economics and Paid-Hour Feasibility Controls",
-                "headers": [
-                    "Case or operational control",
-                    "Exact economics or required calculation",
-                    "Evidence supporting the operating decision",
-                    "Action when the test fails",
-                ],
-                "rows": [
-                    [
-                        "Conservative case retains five employees and four contractors",
-                        "$250,000 revenue less $230,000 costs yields $20,000 profit",
-                        "Eight percent margin requires a complete annual cost schedule",
-                        "Reject local assumptions that exceed the total cost allowance",
-                    ],
-                    [
-                        "Base case retains five employees and four contractors",
-                        "$725,000 revenue less $638,000 costs yields $87,000 profit",
-                        "Twelve percent margin requires reconciled payroll and overhead records",
-                        "Reprice or replace accounts consuming excessive paid delivery hours",
-                    ],
-                    [
-                        "Scaled case uses six employees and five contractors",
-                        "$1,200,000 revenue less $1,008,000 costs yields $192,000 profit",
-                        "Sixteen percent margin requires capacity for eleven total people",
-                        "Defer expansion until signed demand supports added delivery costs",
-                    ],
-                    [
-                        "Illustrative wage stress test exposes insufficient staffing budgets",
-                        "$208,000 wages plus twenty percent burden equals $249,600",
-                        "Five employees each receive 2,080 paid hours annually",
-                        "Mark Conservative infeasible under these stated wage assumptions",
-                    ],
-                    [
-                        "Illustrative office contribution remains separate from company profit",
-                        "$6,000 monthly revenue minus $4,350 costs leaves $1,650",
-                        "Monthly costs include 150 hours and specified site allocations",
-                        "Allocate central overhead before comparing any company net margin",
-                    ],
-                    [
-                        "Payroll liquidity control protects the recurring service obligation",
-                        "Compare dated payroll outflows against collectible customer payment dates",
-                        "Retain receivables aging and a rolling cash forecast",
-                        "Secure sufficient working capital before promising additional staffed visits",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Measure the service",
-                    "action": "Complete a timed walkthrough and classify every requested task.",
-                    "detail": (
-                        "Record cleanable area, fixtures, access delays, chemical contact "
-                        "times, exclusions, and paid travel before calculating the fee."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Price the lawful hours",
-                    "action": "Apply site wage rules and build the complete delivery budget.",
-                    "detail": (
-                        "Include overtime, required benefits, employment burden, absence "
-                        "coverage, contractor invoices, supplies, and supervisor inspection time."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Bind the operating agreement",
-                    "action": "Execute the scope, pricing, access, insurance, and data provisions.",
-                    "detail": (
-                        "Verify buyer authority, registration where required, effective "
-                        "coverage, task training, and the first invoice's contractual trigger."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile after launch",
-                    "action": "Compare the first four weeks of paid hours with the bid.",
-                    "detail": (
-                        "Investigate every material variance, document customer changes, "
-                        "and update the forecast without concealing shortfalls through unpaid labor."
-                    ),
-                },
-            ],
-        },
-        {
-            "heading": "4. Use permission-aware outreach and discovery scripts that survive delivery",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start outreach with a narrow account list: office managers, property "
-                    "managers, and outpatient practice administrators within the pod's "
-                    "service radius. Record the business source, role relevance, contact "
-                    "channel, and suppression status in HubSpot or a controlled spreadsheet. "
-                    "Commercial B2B email remains subject to CAN-SPAM, including accurate "
-                    "routing information, nondeceptive subjects, the applicable advertising "
-                    "identification requirement, a valid physical postal address, and a "
-                    "working opt-out mechanism. Honor opt-outs within ten business days "
-                    "and keep suppression records when changing vendors. Use this email "
-                    "body verbatim after replacing bracketed fields with verified facts: "
-                    "'Hello [name], this is a commercial offer from [company]. We provide "
-                    "recurring office cleaning in [service area]. Would a fifteen-minute "
-                    "walkthrough help you compare your task schedule, access requirements, "
-                    "and inspection process? We quote only after measuring the work. "
-                    "If another colleague handles cleaning, please point me to their "
-                    "business contact. To stop these emails, reply stop or use "
-                    "[working opt-out link]. [Company], [valid postal address].' Use "
-                    "the subject 'Cleaning walkthrough for [site name]' only when the "
-                    "site identification is accurate. Do not imply an existing account "
-                    "relationship or attach fabricated inspection findings."
-                ),
-                (
-                    "For telephone prospecting, distinguish a live manual business call "
-                    "from autodialed calls, artificial or prerecorded voice calls, and "
-                    "texts. The TCPA and FCC rules depend on technology, number type, "
-                    "purpose, and consent; a business listing does not create permission "
-                    "for every channel. State calling and recording laws can add "
-                    "requirements. Keep the default campaign to reviewed manual calls "
-                    "to verified business lines, use accurate caller identification, "
-                    "observe applicable calling restrictions, and honor stop requests. "
-                    "Do not record discovery calls until the recording-law assessment "
-                    "and required permissions are complete. Use this opening: 'Hello, "
-                    "this is [name] with [company]. We provide commercial cleaning in "
-                    "[area]. Is this a reasonable moment for a brief question about "
-                    "your cleaning contract?' If invited, continue: 'Who manages your "
-                    "task schedule and inspections, and when do you next review "
-                    "service performance?' For medical prospects, say: 'We are discussing "
-                    "environmental cleaning, not clinical services. Which spaces and "
-                    "waste tasks would remain with your staff or specialist vendor?' "
-                    "If declined, close: 'Understood. I will mark this contact so "
-                    "we stop outreach.' Record and honor that instruction rather "
-                    "than rotating to another employee or number."
-                ),
-                (
-                    "Discovery should establish authority, scope, and delivery economics "
-                    "before the salesperson promises a start date. Ask: 'Who can "
-                    "authorize this agreement and approve additional work? What is "
-                    "the cleanable area, required visit schedule, occupancy pattern, "
-                    "and current service failure? Which doors, alarms, and restricted "
-                    "rooms affect access? Who supplies consumables? Are there blood, "
-                    "sharps, isolation, or medical-waste tasks? Which insurance endorsements "
-                    "and vendor registrations do you require? What are the invoice "
-                    "submission and payment steps?' Follow with: 'May we perform "
-                    "a measured walkthrough and return a task-level scope with "
-                    "explicit exclusions?' For scope creep, use: 'That task is "
-                    "outside the signed frequency schedule. We can price it as "
-                    "a separate visit or recurring addition; who can authorize "
-                    "the change?' Close proposals with the actual start conditions: "
-                    "'We can confirm mobilization after the agreement, access test, "
-                    "staffing assignment, and required site training are complete.' "
-                    "Do not promise a hospital-grade outcome, insured loss recovery, "
-                    "or immediate crew availability without supporting facts. Log "
-                    "the buyer's answers against all four plays and hand the "
-                    "supervisor a single approved scope. The salesperson remains "
-                    "responsible for transferring commitments, not merely collecting "
-                    "a signature."
-                ),
-            ],
-            "table": {
-                "caption": "Outreach and Discovery Controls for Commercial and Medical Accounts",
-                "headers": [
-                    "Channel or conversation stage",
-                    "Required message and operating behavior",
-                    "Evidence retained in the account record",
-                    "Escalation or stop condition",
-                ],
-                "rows": [
-                    [
-                        "First commercial email to an office decision maker",
-                        "Identify the offer honestly and provide a working opt-out",
-                        "Retain sent content, address source, and suppression checks",
-                        "Stop further promotional email when the recipient opts out",
-                    ],
-                    [
-                        "Manual call to a verified business telephone line",
-                        "Identify the company and request permission to continue",
-                        "Record source, number classification, outcome, and stop instructions",
-                        "End the pitch when the recipient declines further contact",
-                    ],
-                    [
-                        "Proposed automated voice or text outreach campaign",
-                        "Assess technology, number type, consent, and applicable state rules",
-                        "Retain channel-specific permission evidence and documented campaign requirements",
-                        "Do not launch until the proposed method satisfies requirements",
-                    ],
-                    [
-                        "Medical practice discovery before the measured site walkthrough",
-                        "Separate environmental cleaning from clinical work and regulated waste",
-                        "Record exposure boundaries and the designated infection-prevention contact",
-                        "Refer excluded specialist work rather than promising unsupported capability",
-                    ],
-                    [
-                        "Buyer requests extra tasks during an active contract",
-                        "Explain the scope boundary and request priced written authorization",
-                        "Link the approved change to dispatch and billing records",
-                        "Do not silently convert extra work into recurring unpaid labor",
-                    ],
-                    [
-                        "Proposal closing before the first scheduled service shift",
-                        "Confirm authority, access, staffing, training, and invoice submission steps",
-                        "Retain signed exhibits and the supervisor's completed readiness record",
-                        "Withhold a firm mobilization commitment while essential conditions remain unmet",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "A cleaning contract protects margin only when every promised task has a paid hour, "
-        "an authorized scope, and a supervisor who can verify delivery."
-    ),
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Create a worksite-specific register covering wage rules, classification, janitorial registration, chemical controls, medical-task boundaries, and required insurance.",
-        "Measure the first target site and translate ISSA estimating inputs into verified paid hours, contact times, travel, supervision, and absence coverage.",
-        "Reconcile the complete annual cost model to $230,000 Conservative, $638,000 Base, or $1,008,000 Scaled cost allowances without altering the canonical staffing counts.",
-        "Execute a contract package covering scope, fee trigger, change control, narrow legitimate-interest protections, liability allocation, dispute handling, and IP/data ownership.",
-        "Configure scheduling, inspection logs, billing, credential records, and suppression lists with named owners inside the five-employee and four-contractor starting pod.",
-        "Deploy the outreach scripts only after replacing all bracketed fields, verifying channel requirements, and confirming that sales commitments match actual delivery capacity.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "29 U.S.C. 206 — Minimum wage",
-            "url": "https://www.law.cornell.edu/uscode/text/29/206",
-            "relevance": "Establishes federal minimum-wage requirements for covered workers; applicable state and local protections must also be evaluated.",
-        },
-        {
-            "title": "29 U.S.C. 207 — Maximum hours",
-            "url": "https://www.law.cornell.edu/uscode/text/29/207",
-            "relevance": "Requires applicable overtime treatment for covered nonexempt cleaning employees and constrains route and shift pricing.",
-        },
-        {
-            "title": "29 CFR 785.38 — Travel that is all in the day's work",
-            "url": "https://www.ecfr.gov/current/title-29/section-785.38",
-            "relevance": "Addresses travel during the workday, including travel between job sites that belongs in compensable-hour calculations.",
-        },
-        {
-            "title": "California Labor Code 2775 — Worker classification",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2775.&lawCode=LAB",
-            "relevance": "Provides California's general ABC classification framework, subject to statutory exceptions and their specific conditions.",
-        },
-        {
-            "title": "California Labor Code 1423 — Janitorial employer registration",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1423.&lawCode=LAB",
-            "relevance": "Sets registration requirements within California's property service worker protection framework for covered janitorial employers.",
-        },
-        {
-            "title": "California Labor Code 1429.5 — Janitorial worker training",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1429.5.&lawCode=LAB",
-            "relevance": "Addresses applicable sexual violence and harassment prevention training duties within the janitorial employer framework.",
-        },
-        {
-            "title": "29 CFR 1910.1200 — Hazard Communication",
-            "url": "https://www.ecfr.gov/current/title-29/section-1910.1200",
-            "relevance": "Governs applicable workplace chemical programs, labeling, safety data sheets, and employee information and training.",
-        },
-        {
-            "title": "29 CFR 1910.1030 — Bloodborne pathogens",
-            "url": "https://www.ecfr.gov/current/title-29/section-1910.1030",
-            "relevance": "Defines occupational exposure and required protective measures where cleaning tasks create reasonably anticipated bloodborne-pathogen exposure.",
-        },
-        {
-            "title": "7 U.S.C. 136j — Unlawful acts involving pesticides",
-            "url": "https://www.law.cornell.edu/uscode/text/7/136j",
-            "relevance": "Restricts pesticide use inconsistent with labeling, directly affecting disinfectant selection and application procedures.",
-        },
-        {
-            "title": "41 U.S.C. 6703 — Required federal service contract terms",
-            "url": "https://www.law.cornell.edu/uscode/text/41/6703",
-            "relevance": "Establishes required wage, fringe-benefit, and other terms for covered federal service contracts.",
-        },
-        {
-            "title": "45 CFR 160.103 — HIPAA definitions",
-            "url": "https://www.ecfr.gov/current/title-45/section-160.103",
-            "relevance": "Defines business associate and related terms used to assess whether a medical-site service involves covered information-handling functions.",
-        },
-        {
-            "title": "45 CFR 164.502 — Uses and disclosures of protected health information",
-            "url": "https://www.ecfr.gov/current/title-45/section-164.502",
-            "relevance": "Addresses permitted uses and disclosures, including incidental disclosures under the specified conditions relevant to ordinary site access.",
-        },
-        {
-            "title": "15 U.S.C. 7704 — Commercial electronic mail requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Governs commercial email identification, transmission information, postal addresses, opt-out mechanisms, and honoring opt-out requests.",
-        },
-        {
-            "title": "47 U.S.C. 227 — Restrictions on telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Provides the statutory framework for restrictions affecting certain automated calls, artificial or prerecorded voice calls, and related outreach.",
-        },
-        {
-            "title": "47 CFR 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": "Contains FCC requirements relevant to consent, telephone solicitation, do-not-call practices, and covered calling or messaging methods.",
-        },
-    ],
-}
+CHAPTER_9 = {'id': 'Q9',
+ 'chapter_id': 'Q9',
+ 'chapter_number': 9,
+ 'question_number': 9,
+ 'slug': 'janitorial-software-qr-verification-selling-with-systems',
+ 'question_prompt': 'How do janitorial software, QR codes, and inspection apps improve operations and help '
+                    'win contracts?',
+ 'kicker': 'Q9 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Janitorial Software, QR Verification, and Selling with Systems',
+ 'subtitle': 'Swept and Janitorial Manager walkthroughs, timekeeping, alerts and messaging, Scan4Clean QR '
+             'codes, CleanQC inspections, 2026 software rankings, maximizing software ROI, and using '
+             'software in sales to win 80% of bids and $200K contracts',
+ 'layout_template': 'tool_resource_directory',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators and vendors selling into commercial cleaning agree bids are won on proof, '
+                      'not promises: geofenced clock-ins, translated photo instructions, QR feedback '
+                      "codes, inspection reports and client portals that expose the night shift. Swept's "
+                      'Michael Brown claims an 80% close rate at premium prices and cleaner turnover near '
+                      '30% against an industry 100-400%. Matt of Commercial Cleaning CEO credits Clean '
+                      'Smarts QR codes and a pre-built client login for a $200,000-a-year contract, after '
+                      'losing a six-figure account without them. Street mechanics include a $15-$20/hour '
+                      "assistant for instant follow-up, a demo account loaded with the prospect's name, a "
+                      'bid calculator showing roughly 40% gross margin, and 10-20% price increases. '
+                      'Reviewers split on platforms: Janitorial Manager for inspections, Connecteam for '
+                      'cheap rostering, Swept as the safe standard.',
+ 'key_metrics': [{'label': 'Contract win rate using a system-led sales pitch',
+                  'metric': 'Contract win rate using a system-led sales pitch',
+                  'value': '80% of contracts won while selling at a premium price',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Swept co-founder says closing the owner-cleaner information gap with the '
+                             'app, and proving it in the bid, won 80% of contracts; the lost 20% were '
+                             'price-only buyers left to competitors.',
+                  'source': 'Swept ([O45aBb4kNlA @ 00:06:14])'},
+                 {'label': 'Annual cleaner turnover on Swept versus industry',
+                  'metric': 'Annual cleaner turnover on Swept versus industry',
+                  'value': 'About 30% annual turnover vs. 100% to 400% industry-wide',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Michael Brown reports this across tens of thousands of cleaners on Swept, '
+                             'alongside client contract retention he puts at 91 better than industry '
+                             'standards.',
+                  'source': 'Swept ([lPuBkaocWL8 @ 00:14:04])'},
+                 {'label': 'Single contract won with QR feedback and client portal',
+                  'metric': 'Single contract won with QR feedback and client portal',
+                  'value': '$200,000 per year',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Matt credits the Clean Smarts QR feedback system for winning the account, '
+                             'after previously losing a six-figure client that had no timestamped feedback '
+                             'trail.',
+                  'source': 'Commercial Cleaning CEO ([-DEX3b-m000 @ 00:09:44])'},
+                 {'label': "Buyers influenced by a cleaner's use of technology",
+                  'metric': "Buyers influenced by a cleaner's use of technology",
+                  'value': '96% of 500+ surveyed business owners said yes',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Swept survey asking whether, budget aside, a cleaning company's use of "
+                             'technology to improve communication and quality would influence the decision '
+                             'to hire them.',
+                  'source': 'Swept ([O45aBb4kNlA @ 00:22:09])'}],
+ 'sections': [{'heading': "Section 1: The Practitioner Consensus - Proof Sells, Promises Don't",
+               'paragraphs': ['Every seller here lands on the same core point: commercial buyers no longer '
+                              'pay for promises, they pay for proof. Toby Keeping of Swept says every '
+                              'competitor they bid against claimed to be the best, focused on quality, '
+                              'used green products and had the best staff, and none of it could be proven, '
+                              'while a working system showing how cleaners are instructed and monitored '
+                              "could [W0BOiP7F_64 @ 00:21:55]. The Swept co-founder in the 'Win More "
+                              "Janitorial Contracts' webinar went further, having competitors come in to "
+                              "quote a friend's space just to hear their pitch, and found they all said "
+                              'the exact same thing, which leaves an office manager deciding on price '
+                              'alone [O45aBb4kNlA @ 00:10:16]. Contractor Plus frames it as renewal math: '
+                              'clients renew when they can see GPS-stamped check-ins, completed checklists '
+                              'and photo proof of work, and without that every renewal turns into a price '
+                              'negotiation [9IJ1pi5IQ_E @ 00:01:36]. Matt of Commercial Cleaning CEO draws '
+                              'the line at contract size: deals under six figures can close on a '
+                              'handshake, some promises and marketing material, but six-figure accounts '
+                              'demand a whole other level of assurance, systems and proof before the buyer '
+                              'picks you over every other company being examined [-DEX3b-m000 @ 00:00:54]. '
+                              'All four treat the live system as the proof layer that ends price shopping.',
+                              'The second shared conviction: owners are blind to the night shift, and that '
+                              'blindness is what loses accounts. The Swept co-founder cites the iceberg of '
+                              'ignorance, saying owners see only 4% of problems while cleaners know first '
+                              'if they will be late, if a shift was missed, if there was a major spill or '
+                              'if supplies ran out [O45aBb4kNlA @ 00:05:26]. Matt describes the incumbent '
+                              'his team replaced on the $200,000 account as essentially a staffing '
+                              'service: the client had to report every no-show, late arrival and early '
+                              'exit and ask for a replacement, so the pitch became knowing about problems '
+                              'before the client does, without getting out of bed to visit the site every '
+                              'night [-DEX3b-m000 @ 00:02:05]. Toby Keeping recalls hating the 9:00 a.m. '
+                              'customer calls about issues the company had never heard of, even though the '
+                              'cleaner knew when they left, which is why Swept has cleaners report '
+                              'problems in their own language at sign-out so the alert is waiting first '
+                              'thing in the morning [W0BOiP7F_64 @ 00:11:45]. Janitorial Manager wires the '
+                              'same logic into timekeeping, alerting managers when an employee fails to '
+                              'show for a scheduled shift so staffing gets fixed right away and clients '
+                              'stay happy [LFXytjdaxWA @ 00:00:59]. Whoever spots the failure first and '
+                              'calls the client with the fix keeps the account.',
+                              'The baseline prerequisite every practitioner names is cleaner adoption, and '
+                              'they agree it is won by pitching the app as support for the night crew '
+                              'rather than surveillance. Michael Brown, founder and CEO of Swept, warns '
+                              'that telling staff the software was bought because of time theft, with a '
+                              'geofence to track them, will not have them feeling good about it; the '
+                              'all-hands meeting should sell what is in it for them, such as more shifts '
+                              'and more hours [lPuBkaocWL8 @ 00:20:30]. The Swept co-founder adds that '
+                              "timekeeping framed as 'we don't trust you' with biometrics or facial "
+                              'recognition lands badly, so Swept pairs its geofence with multiple '
+                              'languages, messaging and clear instructions to ease the anxiety cleaners '
+                              'feel walking into offices at night [O45aBb4kNlA @ 00:29:35]. Chris at '
+                              'iCleaners sold the switch from Chrono Tech to the crew on practical relief: '
+                              'cleaners now see only the facilities they are assigned, which ends '
+                              'clock-ins at the wrong building, in-app supply requests replace the '
+                              'error-prone Google spreadsheets the team used before, and location messages '
+                              'let every cleaner sharing a building see the same updates [iigVbHUUCBE @ '
+                              '00:01:37]. Brown backs the cleaner-first approach with a hard number: tens '
+                              'of thousands of cleaners on Swept running about 30% annual turnover against '
+                              'an industry range of 100 to 400% [lPuBkaocWL8 @ 00:14:04].'],
+               'table': {'caption': 'Where the practitioners line up: the non-negotiables of selling and '
+                                    'running janitorial accounts with software',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner Says',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Verifiable systems beat generic quality claims in bids',
+                                   'Every competitor claims best staff, quality focus and green products, '
+                                   'and none of those claims can be proven',
+                                   'Show the live cleaner app and management console during the bid '
+                                   'instead of reciting quality promises',
+                                   'Swept ([W0BOiP7F_64 @ 00:21:55])'],
+                                  ['Inspection scorecards are what keep accounts renewing long-term',
+                                   'Clients renew when they see GPS-stamped check-ins, completed '
+                                   'checklists and photo proof of work',
+                                   'Without a documented proof trail, expect every renewal conversation to '
+                                   'collapse into a price negotiation',
+                                   'Contractor Plus ([9IJ1pi5IQ_E @ 00:01:36])'],
+                                  ['Know about failures before the client calls you',
+                                   'Clean Smarts map shows late, in-progress, completed and upcoming '
+                                   'facilities so no-shows get handled first',
+                                   'Call the client with the problem and the fix already in motion instead '
+                                   'of reacting defensively',
+                                   'Commercial Cleaning CEO ([-DEX3b-m000 @ 00:03:20])'],
+                                  ['Owners see only a sliver of real site problems',
+                                   'Iceberg of ignorance: owners know 4% of problems while frontline '
+                                   'cleaners know nearly everything first',
+                                   'Build channels for cleaners to report lateness, spills, missed areas '
+                                   'and supply shortages in real time',
+                                   'Swept ([O45aBb4kNlA @ 00:05:26])'],
+                                  ['Clock-ins must be verified at the actual job site',
+                                   'Geofencing restricts clock-ins to the site and facial recognition '
+                                   'eliminates buddy punching between employees',
+                                   'Lock timekeeping to location so payroll and proof of service hold up '
+                                   'when a client questions hours',
+                                   'Janitorial Manager ([LFXytjdaxWA @ 00:01:17])'],
+                                  ['Instructions must reach cleaners in their own language',
+                                   '66% of the cleaning workforce does not speak English as a first '
+                                   'language, so translation is essential',
+                                   'Load translated instructions with photos of each client space so '
+                                   'cleaners know exactly what is expected',
+                                   'Swept ([Tub9xxD1-7o @ 00:08:48])'],
+                                  ['Inspection trails win and keep regulated accounts like medical offices',
+                                   'Supervisor scans a QR code in the room and runs a quality check right '
+                                   'there on the spot',
+                                   'When bidding a medical office, lead with the documented inspection '
+                                   'trail as the deciding differentiator',
+                                   'Modern Field Service ([Y00vfNH19Q4 @ 00:01:19])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Brown's in-room script runs in a fixed order. Step one is speed: respond to "
+                              'every inbound sales email quickly, and if there is no time, hire a virtual '
+                              'assistant at $15 to $20 an hour, billed by the minute, whose only job is '
+                              'answering those emails and booking the appointment [Tub9xxD1-7o @ '
+                              '00:04:48]. Show up on time in a clean collared polo, then skip the lecture '
+                              'on dwell time and equipment unless the buyer wants it. The co-founder opens '
+                              'the meeting with a question rather than a pitch: tell me how you were let '
+                              'down and what frustrated you about the last cleaning company, so I can show '
+                              'you how I prevent it [O45aBb4kNlA @ 00:14:14]. Next comes the level-set: '
+                              'cleaners work at night while everyone is asleep, 66% of the industry does '
+                              'not speak English as a first language, and the horror stories come from '
+                              'poor management, not bad people [Tub9xxD1-7o @ 00:08:48]. Only then does '
+                              'the cleaner app come out, walking through security codes, checklists, '
+                              'translated instructions with photos, supply requests and the late alert. '
+                              'The close is a question, not a claim: if you ran a cleaning company, would '
+                              'you use this or stick to pen and paper? Brown says that engages the buyer '
+                              'and plants doubt about competitors without saying a negative word about '
+                              'them [Tub9xxD1-7o @ 00:14:52].',
+                              'The sharpest close technique shows up in two separate playbooks: pre-load '
+                              'the prospect into the software before the meeting. Brown would replace the '
+                              "demo's 'Acme Marketing' account with the actual prospect's name, pull a "
+                              'photo of their building off Google, and create a fake account with the '
+                              "office manager's own name in the chat saying something like 'please don't "
+                              "clean the CEO's office tonight,' because people love seeing their name "
+                              '[Tub9xxD1-7o @ 00:13:52]. Matt runs the Clean Smarts version: before the '
+                              "appointment, set up a client profile with the prospect's email, name and "
+                              'any password, assign it to a demonstration location or a pre-built location '
+                              'for their site, then have the client download the app during the quote '
+                              'presentation and log in on their own phone, with the profile picture set to '
+                              'their company logo [-DEX3b-m000 @ 00:14:23]. Inside, the prospect sees the '
+                              'trail of QR submissions, resolution notes, inspection results, completed '
+                              'checklists and staffing updates, which Matt says sets you completely apart '
+                              'in just a few moments [-DEX3b-m000 @ 00:15:05]. Clean Smarts QR codes, '
+                              "posted by area such as 'shipping men's' and 'shipping women's', route "
+                              "anyone's complaint or rating straight to the cleaning company instead of "
+                              "the facility manager's inbox, which Matt credits for winning the "
+                              '$200,000-per-year account [-DEX3b-m000 @ 00:09:44].',
+                              "The numbers side runs through Brown's free bidding tool. Spend quality time "
+                              'with the client first, then ask for ten minutes alone to walk and measure '
+                              'so you are not distracted [Tub9xxD1-7o @ 00:17:33]. In the worked example: '
+                              'a $30-an-hour billing rate, a lobby at 20 minutes and a first-floor '
+                              'bathroom at 15 minutes on Monday, Wednesday and Friday with the bathroom '
+                              'also on Saturday, a $150 monthly add-on, supplies of $300 a month marked up '
+                              '30%, because you should be charging for supplies if you are not, and 11% '
+                              'tax, producing an $880 monthly price; the cost side uses $14-an-hour '
+                              'cleaners and $17-an-hour supervisors doing one hour-long inspection a '
+                              'month, plus $45 in deep-clean supplies, which the tool reports as $888 '
+                              'charged, $483 in expenses, $316 profit and roughly 40% gross margin '
+                              '[Tub9xxD1-7o @ 00:19:54]. The same dashboard tracks quotes won, lost and in '
+                              'progress, so after a month or two you can recalibrate if the job eats extra '
+                              "hours each week. Toby Keeping's variance report is the post-sale check: "
+                              'before payroll, pull every shift that ran 60 minutes over or under schedule '
+                              'to find accounts bleeding money [W0BOiP7F_64 @ 00:19:43]. On the software '
+                              'line itself, the Swept co-founder ties the roughly $7 cost to each contract '
+                              'rather than each cleaner, and says some clients add a $15 software fee to '
+                              'their contracts so they actually make money on Swept [O45aBb4kNlA @ '
+                              '00:31:31].'],
+               'table': {'caption': 'Street-level tools, exact figures and how operators deploy them in '
+                                    'bids and operations',
+                         'headers': ['Tool or Mechanic',
+                                     'Exact Numbers Stated',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Virtual assistant handling every inbound sales email',
+                                   '$15 to $20 an hour, billed by the minute, responding fast and setting '
+                                   'appointments',
+                                   'Fast, professional first response signals to the prospect that your '
+                                   'business is well run',
+                                   'Swept ([Tub9xxD1-7o @ 00:04:48])'],
+                                  ['Free Swept bidding calculator with profit-margin readout',
+                                   '$888 charged, $483 expenses, $316 profit, about 40% gross margin in '
+                                   'the worked example',
+                                   'Price from area minutes, frequency, supply markup and labor cost '
+                                   'before sending a proposal',
+                                   'Swept ([Tub9xxD1-7o @ 00:19:54])'],
+                                  ['Value-backed price increases on existing accounts',
+                                   'Increases of 10, 15, even 20 percent that clients still appreciate '
+                                   'when value is visible',
+                                   'Raise prices once clients see inspection reports and have direct '
+                                   'communication with your team',
+                                   'Swept ([Tub9xxD1-7o @ 00:24:33])'],
+                                  ['Swept entry pricing built around locations, not seats',
+                                   'Minimum 10 locations at $5 or $7 each, so $50 or $70 a month, plus a '
+                                   '$250 setup fee',
+                                   'Graduate to the $7 tier for translation, landline call-in, or more '
+                                   'than one inspector',
+                                   'Swept ([W0BOiP7F_64 @ 00:23:56])'],
+                                  ['Market pricing across janitorial and workforce platforms',
+                                   'Connecteam $29 per hub covering 30 users; Swept about $30 rising to '
+                                   '$225-plus; Jobber $49 plus $29 per user; Field Camp $249 or $699',
+                                   'Per-seat pricing gets ugly at crew scale; Janitorial Manager is '
+                                   'quote-led, so plan a sales call',
+                                   'Modern Field Service ([Y00vfNH19Q4 @ 00:03:56])'],
+                                  ['CleanQC promotional page plus sample inspection in proposals',
+                                   'One promotional page plus a three-page sample inspection, with a '
+                                   '30-day free trial offered',
+                                   'Drop the one-two punch directly into the bid proposal to impress '
+                                   'prospective clients',
+                                   'CleanGuru ([nNPKmshBChQ @ 00:02:18])'],
+                                  ['Janitorial Manager QR codes with estimated completion times',
+                                   'Estimated time per area compared against real scan time punches, plus '
+                                   'an automated nightly email',
+                                   'Spot slow areas, sharpen staff training, and send clients every '
+                                   'scanned area and service time',
+                                   'Janitorial Manager ([NDvJAHP1GQo @ 00:02:30])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small settings that change what the client sees',
+                           'body': 'Field-level habits the operators and vendors swear by once the '
+                                   'software is live on real accounts.',
+                           'items': ['Make cleaners clock in from the schedule tab, not the locations '
+                                     'menu, because only the schedule shows reminder labels like the '
+                                     'every-other-Tuesday boardroom clean [iCleaners Commercial Cleaning '
+                                     'Services — iigVbHUUCBE @ 00:08:57]',
+                                     'Text-message clock-in is convenient, but a cleaner signing in by SMS '
+                                     'gives you no idea where they physically are, so you lose site '
+                                     'verification [Swept — W0BOiP7F_64 @ 00:26:03]',
+                                     'Put your business logo on every QR code placed in client facilities '
+                                     'so the public can scan, see if an area is clean, and rate it, '
+                                     'marketing you for free [Janitorial Manager — NDvJAHP1GQo @ 00:02:11]',
+                                     'Email the inspection report to the customer before the supervisor '
+                                     'leaves the building; doing inspections matters, but sharing them is '
+                                     'what proves you do them [Swept — W0BOiP7F_64 @ 00:18:13]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Set the goal and list the gaps before buying',
+                              'action': 'Pick a concrete growth goal, write the top three things blocking '
+                                        'it, then ask the team and sit through the silence.',
+                              'detail': 'Brown uses doubling revenue in 12 months as the example goal and '
+                                        'says your team will surface constraints like not having enough '
+                                        'cleaners that the owner cannot see [Swept — lPuBkaocWL8 @ '
+                                        '00:03:52]'},
+                             {'step': 2,
+                              'title': 'Interrogate the vendor demo',
+                              'action': 'Ask who their target customer is, what problems they solve, their '
+                                        'roadmap and support, then rank must-haves versus nice-to-haves.',
+                              'detail': 'Brown says to rank every feature with a sentence on why, since no '
+                                        'perfect software exists, and to avoid getting oversold features '
+                                        'with clunky workflows [Swept — lPuBkaocWL8 @ 00:10:05]'},
+                             {'step': 3,
+                              'title': 'Onboard the whole crew with an all-hands',
+                              'action': 'Involve the implementer from the start, hold an all-hands '
+                                        'meeting, and frame the app around what cleaners gain.',
+                              'detail': 'Brown recommends an all-hands team meeting, onboarding everyone '
+                                        'or a small section first, and warns that if nobody logs in the '
+                                        'software is worthless [Swept — lPuBkaocWL8 @ 00:19:43]'},
+                             {'step': 4,
+                              'title': 'Turn the live system into the bid',
+                              'action': "Pre-build the prospect's account, have them install the app at "
+                                        'the meeting, and close by asking how other bidders manage '
+                                        'cleaners.',
+                              'detail': 'Matt has the client download the Clean Smarts app at the quote '
+                                        'presentation and log in with their own email to see the portal on '
+                                        'their phone [Commercial Cleaning CEO — -DEX3b-m000 @ 00:14:37]'}]},
+              {'number': 3,
+               'title': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['No two operators crown the same platform, and each verdict tracks the '
+                              "buyer's crew size and contract mix. Modern Field Service splits the field "
+                              'by job: Janitorial Manager wins inspection depth, work loading, and proof '
+                              'of service, while Swept is framed as the safe industry-standard pick that '
+                              'still lacks automatic assignment by training [Y00vfNH19Q4 @ 00:01:50]. On '
+                              'crew rostering the same reviewer hands the win to Connecteam, a workforce '
+                              'app that is not cleaning software at all, and points to Field Camp when an '
+                              'operator wants AI agents building the weekly roster and pushing deployments '
+                              'over WhatsApp. Contractor Plus ranks its own all-in-one engine first for '
+                              'multi-site portfolios, then lines up Janitorial Manager, Clean '
+                              'Intelligence, Swept, Optima Route, Aspire, Service CEO, BidClips, and '
+                              'Jobber against inspections, multi-site billing, and scaling [9IJ1pi5IQ_E @ '
+                              '00:01:04]. Matt of Commercial Cleaning CEO went the other way, testing so '
+                              'many janitorial management tools that the list stopped mattering, then '
+                              'standardizing on Clean Smarts and requiring it of every franchisee in the '
+                              'brand [-DEX3b-m000 @ 00:15:20]. Michael Brown of Swept argues that a peer '
+                              'telling you to buy is one of the worst reasons to purchase, because another '
+                              "owner's growth story does not mean your gaps match theirs [lPuBkaocWL8 @ "
+                              '00:02:34].',
+                              'The sharpest split is over how hard to police the clock. Janitorial Manager '
+                              'sells the hard line: geofencing so cleaners can only punch inside the '
+                              'fence, plus facial recognition that blocks unauthorized access and '
+                              'eliminates buddy punching [LFXytjdaxWA @ 00:01:17]. Swept builds a geofence '
+                              'too, yet Michael Brown warns owners not to announce the rollout as '
+                              'surveillance, because telling crews the software exists to track them for '
+                              'time theft kills buy-in; the pitch should be more shifts, more hours, and '
+                              'support on the contract [lPuBkaocWL8 @ 00:20:30]. In a separate webinar '
+                              'Q&A, Brown goes further, saying biometrics and facial recognition land on '
+                              'cleaners as a message that the company does not trust them, so Swept '
+                              'positions translation, messaging, and clear instructions ahead of the GPS '
+                              'fence [O45aBb4kNlA @ 00:29:35]. Chris at iCleaners runs a looser honor '
+                              'system on top of the same app: travel time between sites is not policed at '
+                              'all, the start time and the scheduled duration are the only two numbers '
+                              'that matter, and the schedule will not be rewritten weekly for crews who '
+                              'arrive early [iigVbHUUCBE @ 00:06:33]. The operator choice is whether '
+                              'accountability comes from biometric lockdown or from crews who know exactly '
+                              'what is expected and are trusted to deliver it.',
+                              'Pricing logic splits as hard as the feature sets. Swept bills by location, '
+                              'not by head: Toby Keeping laid out a ten-location minimum at five or seven '
+                              'dollars per location depending on translation, landline dial-in, and '
+                              'multi-inspector needs, with cleaner count declared irrelevant [W0BOiP7F_64 '
+                              '@ 00:23:33]. Brown frames that as tying the software expense to a profit '
+                              'center, and reports clients now stamping a fifteen-dollar software fee onto '
+                              'contracts so they actually make money on Swept [O45aBb4kNlA @ 00:31:31]. '
+                              "Modern Field Service reads the same market differently: Connecteam's hub "
+                              'price includes the first 30 users with a free tier under 10, Swept climbs '
+                              'from about 30 a month to 225 plus, Janitorial Manager hides pricing behind '
+                              "a sales call, and Jobber's 29-dollar extra seat makes per-seat math ugly at "
+                              'crew scale [Y00vfNH19Q4 @ 00:03:39]. Hardware philosophy splits as well: '
+                              'Swept built tablets for a New York client, then dropped them because '
+                              'cleaners already live on smartphones and over 80 percent of applicants on '
+                              'its hiring site came through a phone; flip phones and landlines still clock '
+                              'in via IVR [O45aBb4kNlA @ 00:32:25]. Operators choosing between these '
+                              'models are really choosing whether growth gets taxed per cleaner or per '
+                              'building.'],
+               'table': {'caption': 'Competing Playbooks: Platform, Timekeeping, Pricing, and Sales Proof',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Which platform to pick for inspection-heavy janitorial accounts',
+                                   'Janitorial Manager wins on inspection depth, work loading, and proof '
+                                   'of service for clients',
+                                   'Swept is the safe, solid industry-standard pick for an established '
+                                   'janitorial company',
+                                   'Modern Field Service ([Y00vfNH19Q4 @ 00:01:50]); Modern Field Service '
+                                   '([Y00vfNH19Q4 @ 00:04:46])'],
+                                  ['Which engine should build the weekly crew roster',
+                                   'Connecteam recurring shift templates, open-shift claiming, and hour '
+                                   'caps at a fraction of the cost',
+                                   'Field Camp AI agents build the roster from skills and send each '
+                                   'deployment on WhatsApp',
+                                   'Modern Field Service ([Y00vfNH19Q4 @ 00:02:22]); Modern Field Service '
+                                   '([Y00vfNH19Q4 @ 00:02:38])'],
+                                  ['How hard to enforce timekeeping on frontline cleaners',
+                                   'Geofence plus facial recognition to block unauthorized access and '
+                                   'eliminate buddy punching outright',
+                                   'Geofence framed as cleaner support, never sold to crews as tracking '
+                                   'for time theft',
+                                   'Janitorial Manager ([LFXytjdaxWA @ 00:01:17]); Swept ([lPuBkaocWL8 @ '
+                                   '00:20:30])'],
+                                  ["Shared kiosk device versus each cleaner's personal phone",
+                                   'Kiosk mode lets multiple cleaners punch a PIN on one shared device '
+                                   'like a mounted time clock',
+                                   'Tablets dropped because cleaners carry smartphones; flip phones and '
+                                   'landlines clock in through IVR',
+                                   'Janitorial Manager ([LFXytjdaxWA @ 00:00:38]); Swept ([O45aBb4kNlA @ '
+                                   '00:32:25])'],
+                                  ['How the software subscription should be billed to the operator',
+                                   'Per-location pricing with a ten-location minimum regardless of how '
+                                   'many cleaners you run',
+                                   'Connecteam hub pricing includes 30 users while Jobber adds 29 dollars '
+                                   'per extra seat',
+                                   'Swept ([W0BOiP7F_64 @ 00:23:33]); Modern Field Service ([Y00vfNH19Q4 @ '
+                                   '00:03:39])'],
+                                  ['Primary live proof shown in the room to win big accounts',
+                                   'Cleaner app walkthrough with photo instructions, translation, late '
+                                   'alerts, and overnight problem reports',
+                                   'Live no-show map, QR feedback codes, and a client portal installed on '
+                                   "the buyer's own phone",
+                                   'Swept ([O45aBb4kNlA @ 00:16:55]); Commercial Cleaning CEO '
+                                   '([-DEX3b-m000 @ 00:03:20])'],
+                                  ['What quality evidence goes into the written proposal and renewal',
+                                   'Promotional page plus a three-page sample inspection placed right next '
+                                   'to it in the bid',
+                                   'Inspection scorecards with GPS-stamped check-ins, completed '
+                                   'checklists, and photo proof to drive renewals',
+                                   'CleanGuru ([nNPKmshBChQ @ 00:02:18]); Contractor Plus ([9IJ1pi5IQ_E @ '
+                                   '00:01:36])']]}},
+              {'number': 4,
+               'title': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["Michael Brown's most expensive failure mode is the owner who negotiates at "
+                              'length, finally buys, and never logs in; Swept follows up proactively, but '
+                              'nobody can rescue an account that does not sign in, which is why the rule '
+                              'is onboard or die [lPuBkaocWL8 @ 00:17:32]. The second version of the same '
+                              'wreck is the handoff: the owner puts the credit card down, then tells the '
+                              'office manager to start using the tool with no idea what goals it serves or '
+                              'what alternatives were rejected, and the whole transition stalls '
+                              '[lPuBkaocWL8 @ 00:18:40]. Brown also flags the cheap, feature-stuffed '
+                              'product that sounds great in the demo but turns clunky in daily workflow, '
+                              'warning that a few dollars saved at purchase can forfeit tens of thousands '
+                              'in revenue growth [lPuBkaocWL8 @ 00:15:45]. Reviews offer no escape hatch '
+                              'either: Brown reports seeing scathing write-ups from users who never logged '
+                              'in once, alongside tripled-revenue raves, and treats both high-emotion '
+                              'extremes as a reflection of the reviewer more than the vendor. Chris at '
+                              'iCleaners sets the frontline expectation during rollout, telling staff '
+                              'there will be glitches because nothing runs smoothly at first and asking '
+                              'them to bring every question forward [iigVbHUUCBE @ 00:13:06]. Software '
+                              'cannot fix leadership or mindset problems; it only accelerates a process '
+                              'the owner is already willing to run.',
+                              "Matt's costliest lesson at Commercial Cleaning CEO was a six-figure client "
+                              'lost right after a walkthrough: the manager said everything was fine, then '
+                              'a staff meeting weeks later stacked up untimestamped complaints about '
+                              'floors and bathrooms, some possibly months old, and the account was gone '
+                              '[-DEX3b-m000 @ 00:08:17]. The diagnosis was that the current state of the '
+                              'building did not matter, only what everyone else thought, and there was no '
+                              'channel capturing feedback the moment someone saw an issue. The incumbent '
+                              'Matt later displaced on the $200,000 account failed the same way from the '
+                              'other side, forcing the client to report every no-show, late arrival, and '
+                              'early exit until the vendor was effectively just a staffing service '
+                              "[-DEX3b-m000 @ 00:01:51]. Toby Keeping describes the same pain from Swept's "
+                              'own janitorial days: 9:00 a.m. customer calls accusing the crew of cutting '
+                              'corners over issues nobody at the office had heard about, even when the '
+                              'cleaner did the right thing given the circumstances [W0BOiP7F_64 @ '
+                              '00:11:45]. Brown frames it as the iceberg of ignorance, where only 4 '
+                              'percent of problems are known to owners while cleaners already know about '
+                              'lateness, spills, breakage, and supply outages [O45aBb4kNlA @ 00:05:26].',
+                              'The floor-level traps are smaller but they bleed payroll and goodwill. '
+                              'Under the old ChronoTech setup at iCleaners, every cleaner could see nearly '
+                              'every facility, so people clocked in at the wrong site; Chris also warns '
+                              'that clocking in from the Locations tab instead of Schedule hides recurring '
+                              'reminders like the every-other-Tuesday boardroom clean [iigVbHUUCBE @ '
+                              "00:08:57]. Chris adds that missed punches are the cleaner's job to report; "
+                              'if nobody flags the gap, the hours slide to the next pay. Toby Keeping '
+                              'flags the SMS clock-in option as a real hole, because a cleaner logging in '
+                              "by text gives no physical location at all [W0BOiP7F_64 @ 00:26:03]. Toby's "
+                              'weekly fix before payroll is a variance report flagging any shift 60 '
+                              'minutes over or under schedule, which surfaced a 96-hour shift that had to '
+                              'be corrected before it paid out [W0BOiP7F_64 @ 00:19:43]. Toby also notes '
+                              'texting a supervisor directly backfires when the supervisor is unavailable, '
+                              'because the cleaner asks someone else and two people end up solving the '
+                              'same problem. On the contract side, Brown recalls being taken for a ride '
+                              'early on, absorbing extra requests month after month without charging more '
+                              'until the account turned unprofitable and consumed owner time [O45aBb4kNlA '
+                              '@ 00:06:49].'],
+               'table': {'caption': 'Firsthand Failure Modes and the Fixes Practitioners Deployed',
+                         'headers': ['Failure Mode',
+                                     'What Happened',
+                                     'Fix Practitioners Used',
+                                     'Expert Source'],
+                         'rows': [['Buying janitorial software and then never logging in',
+                                   'Owners negotiate and research at length, buy the tool, then never sign '
+                                   'in at all',
+                                   'Onboard or die; carve out a couple hours a week for assessment and '
+                                   'onboarding',
+                                   'Swept ([lPuBkaocWL8 @ 00:17:32])'],
+                                  ['Owner hands implementation to an uninformed office manager',
+                                   'The implementer has no idea of the goals or rejected options, so the '
+                                   'transition stalls',
+                                   'Bring whoever will implement the software into the entire evaluation '
+                                   'and buying journey',
+                                   'Swept ([lPuBkaocWL8 @ 00:18:53])'],
+                                  ["Relying on a site manager's verbal all-clear during inspections",
+                                   'Manager said everything was fine, then a staff meeting of complaints '
+                                   'lost a six-figure account',
+                                   'Timestamped QR feedback codes that ping management the moment staff '
+                                   'see an issue',
+                                   'Commercial Cleaning CEO ([-DEX3b-m000 @ 00:08:17])'],
+                                  ['Forcing the client to report your no-shows and late arrivals',
+                                   'The incumbent vendor behaved like a staffing service while the client '
+                                   'tracked every absence',
+                                   'Live facility map plus late and no-show notifications to fix issues '
+                                   'before the client notices',
+                                   'Commercial Cleaning CEO ([-DEX3b-m000 @ 00:01:51])'],
+                                  ['Shifts recorded far off schedule slipping straight into payroll',
+                                   'A cleaner record showed a 96-hour shift in a row that had to be '
+                                   'modified',
+                                   'Run a 60-minute over-or-under variance report across locations before '
+                                   'every payroll run',
+                                   'Swept ([W0BOiP7F_64 @ 00:19:43])'],
+                                  ['Allowing SMS clock-in without any location verification',
+                                   'A cleaner logs a shift by text message and the physical location goes '
+                                   'unverified',
+                                   'Offer text clock-in only while accepting that on-site verification is '
+                                   'lost entirely',
+                                   'Swept ([W0BOiP7F_64 @ 00:26:03])'],
+                                  ['Wrong-facility clock-ins and skipped recurring room reminders',
+                                   'ChronoTech let everyone see almost every facility, so cleaners clocked '
+                                   'in at the wrong site',
+                                   'Restrict each cleaner to assigned locations and require clock-in from '
+                                   'the Schedule tab',
+                                   'iCleaners Commercial Cleaning Services ([iigVbHUUCBE @ 00:01:37])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Stop-Ship Checks Before You Sign or Roll Out',
+                           'body': 'Hold the purchase and the crew rollout until each of these '
+                                   'practitioner-tested checks is cleared.',
+                           'items': ['Write your top three growth blockers, then ask your team the same '
+                                     'question and sit through the awkward silence before booking any '
+                                     'software demo [Swept — lPuBkaocWL8 @ 00:04:22].',
+                                     'Never pitch the geofence to crews as anti-theft tracking; lead the '
+                                     'all-hands meeting with more shifts, more hours, and what is in it '
+                                     'for them [Swept — lPuBkaocWL8 @ 00:20:30].',
+                                     'Run the 60-minute variance report before payroll and correct '
+                                     'outliers like the 96-hour shift before anything pays out [Swept — '
+                                     'W0BOiP7F_64 @ 00:19:43].',
+                                     "Stop trusting a site manager's verbal all-clear; place QR feedback "
+                                     'codes where staff actually see issues so complaints arrive '
+                                     'timestamped and located [Commercial Cleaning CEO — -DEX3b-m000 @ '
+                                     '00:09:13].']}}],
+ 'pull_quote': '"Software is just a tool, it\'s like a mop and bucket, it is not magic. If you don\'t '
+               'change the mop water, the mop and bucket is going to fail you." — Swept (lPuBkaocWL8 @ '
+               '00:21:00).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Respond to every inbound sales email fast; hire a virtual assistant at 15 to 20 an '
+                      'hour, billed by the minute, to reply and book the appointment [Swept — Tub9xxD1-7o '
+                      '@ 00:04:48].',
+                      'Open the walkthrough by asking how the last cleaning company let them down, then '
+                      'demo the exact app feature that prevents that failure [Swept — O45aBb4kNlA @ '
+                      '00:14:14].',
+                      "Pre-build a client profile with the buyer's email and company logo, then have them "
+                      'log into the portal on their own phone during the presentation [Commercial Cleaning '
+                      'CEO — -DEX3b-m000 @ 00:14:23].',
+                      'Close the demo by asking whether they would trust a company running this system or '
+                      'one working off pen and paper, without ever trashing competitors [Swept — '
+                      'Tub9xxD1-7o @ 00:14:52].',
+                      'Drop the promotional page and a three-page sample inspection directly into the bid '
+                      'proposal as a one-two punch [CleanGuru — nNPKmshBChQ @ 00:02:18].',
+                      'Block 90 minutes at least once a week with the phone off to upsell existing '
+                      'clients, raise prices 10 to 20 percent, and build a referral landing page [Swept — '
+                      'Tub9xxD1-7o @ 00:21:38].'],
+ 'statutory_citations': [{'title': 'Swept — Selling with Swept: How to Win 80% of Your Commercial Cleaning '
+                                   'Contracts [00:08:32]',
+                          'url': 'https://www.youtube.com/watch?v=Tub9xxD1-7o&t=512s',
+                          'relevance': 'Primary practitioner testimony on reframing the bid conversation '
+                                       'and demoing the cleaner app live to win contracts at a premium.'},
+                         {'title': 'Commercial Cleaning CEO — Win $200K Commercial Cleaning Contracts With '
+                                   'This Janitorial Software [00:08:17]',
+                          'url': 'https://www.youtube.com/watch?v=-DEX3b-m000&t=497s',
+                          'relevance': 'Primary practitioner testimony on losing a six-figure account '
+                                       'without QR feedback and winning a $200,000 account with it.'},
+                         {'title': 'Swept — Maximize the ROI of janitorial software [00:17:32]',
+                          'url': 'https://www.youtube.com/watch?v=lPuBkaocWL8&t=1052s',
+                          'relevance': 'Primary practitioner testimony on software buying mistakes, failed '
+                                       'onboarding, and implementation discipline.'},
+                         {'title': 'Swept — Webinar: How to Grow Your Janitorial Business with Swept '
+                                   '[00:19:43]',
+                          'url': 'https://www.youtube.com/watch?v=W0BOiP7F_64&t=1183s',
+                          'relevance': 'Primary practitioner testimony on payroll variance reporting, SMS '
+                                       'clock-in risk, and per-location pricing.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'LFXytjdaxWA',
+                       'title': "Janitorial Manager's Timekeeping Feature",
+                       'channel': 'Janitorial Manager',
+                       'author': 'Janitorial Manager',
+                       'text': 'JM is secured with geo fencing which allows your employees to only clock '
+                               'in and out within the geo fence area, and with facial recognition software '
+                               'JM prevents unauthorized access and eliminates buddy punching between '
+                               'employees.',
+                       'tip': 'JM is secured with geo fencing which allows your employees to only clock in '
+                              'and out within the geo fence area, and with facial recognition software JM '
+                              'prevents unauthorized access and eliminates buddy punching between '
+                              'employees.',
+                       'timestamp': 77,
+                       'timestamp_seconds': 77,
+                       'timestamp_label': '[00:01:17]',
+                       'url': 'https://www.youtube.com/watch?v=LFXytjdaxWA&t=77s',
+                       'markdown': '[00:01:17](https://www.youtube.com/watch?v=LFXytjdaxWA&t=77s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CXVWaxMTpV0',
+                       'title': 'Training - Swept Mobile App',
+                       'channel': 'Service On Command',
+                       'author': 'Service On Command',
+                       'text': 'The biggest thing we do on this is to be able to communicate on this app '
+                               "so that way we're not bugging you when you're off work.",
+                       'tip': 'The biggest thing we do on this is to be able to communicate on this app so '
+                              "that way we're not bugging you when you're off work.",
+                       'timestamp': 238,
+                       'timestamp_seconds': 238,
+                       'timestamp_label': '[00:03:58]',
+                       'url': 'https://www.youtube.com/watch?v=CXVWaxMTpV0&t=238s',
+                       'markdown': '[00:03:58](https://www.youtube.com/watch?v=CXVWaxMTpV0&t=238s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Y00vfNH19Q4',
+                       'title': 'Best Janitorial & Commercial Cleaning Software 2026',
+                       'channel': 'Modern Field Service',
+                       'author': 'Modern Field Service',
+                       'text': "If you're bidding a medical office, that inspection trail is the thing "
+                               'that wins and keeps the contract.',
+                       'tip': "If you're bidding a medical office, that inspection trail is the thing that "
+                              'wins and keeps the contract.',
+                       'timestamp': 79,
+                       'timestamp_seconds': 79,
+                       'timestamp_label': '[00:01:19]',
+                       'url': 'https://www.youtube.com/watch?v=Y00vfNH19Q4&t=79s',
+                       'markdown': '[00:01:19](https://www.youtube.com/watch?v=Y00vfNH19Q4&t=79s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'D60Eb-ryFyc',
+                       'title': 'Finalist for the ISSA Innovation Award 2019: Janitorial Manager by Double '
+                                'A Solutions',
+                       'channel': 'Janitorial Manager',
+                       'author': 'Janitorial Manager',
+                       'text': "There's technology that can be used to solve a lot of these problems and "
+                               'reduce labor costs, at the same time making sure that the payroll is '
+                               'correct and making sure that people are showing up.',
+                       'tip': "There's technology that can be used to solve a lot of these problems and "
+                              'reduce labor costs, at the same time making sure that the payroll is '
+                              'correct and making sure that people are showing up.',
+                       'timestamp': 82,
+                       'timestamp_seconds': 82,
+                       'timestamp_label': '[00:01:22]',
+                       'url': 'https://www.youtube.com/watch?v=D60Eb-ryFyc&t=82s',
+                       'markdown': '[00:01:22](https://www.youtube.com/watch?v=D60Eb-ryFyc&t=82s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lPuBkaocWL8',
+                       'title': 'Maximize the ROI of janitorial software',
+                       'channel': 'Swept',
+                       'author': 'Swept',
+                       'text': "Remember software is just a tool, it's like a mop and bucket, it is not "
+                               "magic; if you don't change the mop water, the mop and bucket is going to "
+                               'fail you.',
+                       'tip': "Remember software is just a tool, it's like a mop and bucket, it is not "
+                              "magic; if you don't change the mop water, the mop and bucket is going to "
+                              'fail you.',
+                       'timestamp': 1260,
+                       'timestamp_seconds': 1260,
+                       'timestamp_label': '[00:21:00]',
+                       'url': 'https://www.youtube.com/watch?v=lPuBkaocWL8&t=1260s',
+                       'markdown': '[00:21:00](https://www.youtube.com/watch?v=lPuBkaocWL8&t=1260s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lPuBkaocWL8',
+                       'title': 'Maximize the ROI of janitorial software',
+                       'channel': 'Swept',
+                       'author': 'Swept',
+                       'text': 'I find that people will spend a lot of time negotiating, researching, '
+                               'going back and forth, they finally buy the software and they actually '
+                               "don't log in.",
+                       'tip': 'I find that people will spend a lot of time negotiating, researching, going '
+                              "back and forth, they finally buy the software and they actually don't log "
+                              'in.',
+                       'timestamp': 1052,
+                       'timestamp_seconds': 1052,
+                       'timestamp_label': '[00:17:32]',
+                       'url': 'https://www.youtube.com/watch?v=lPuBkaocWL8&t=1052s',
+                       'markdown': '[00:17:32](https://www.youtube.com/watch?v=lPuBkaocWL8&t=1052s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'c9NTVgpJrx0',
+                       'title': 'Enhance Your Value with Scan4Clean | QR Codes For Your Cleaning '
+                                'Operations',
+                       'channel': 'Janitorial Manager',
+                       'author': 'Janitorial Manager',
+                       'text': 'Nicole also set up QR codes for her customers and the general public to '
+                               "instantly check an area's status.",
+                       'tip': 'Nicole also set up QR codes for her customers and the general public to '
+                              "instantly check an area's status.",
+                       'timestamp': 97,
+                       'timestamp_seconds': 97,
+                       'timestamp_label': '[00:01:37]',
+                       'url': 'https://www.youtube.com/watch?v=c9NTVgpJrx0&t=97s',
+                       'markdown': '[00:01:37](https://www.youtube.com/watch?v=c9NTVgpJrx0&t=97s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NDvJAHP1GQo',
+                       'title': 'Janitorial Manager QR Code Features and Benefits',
+                       'channel': 'Janitorial Manager',
+                       'author': 'Janitorial Manager',
+                       'text': "JM's QR codes even provide an option to automate communications by way of "
+                               'sending out a nightly email that can show all the scanned areas and the '
+                               'time the services were performed.',
+                       'tip': "JM's QR codes even provide an option to automate communications by way of "
+                              'sending out a nightly email that can show all the scanned areas and the '
+                              'time the services were performed.',
+                       'timestamp': 205,
+                       'timestamp_seconds': 205,
+                       'timestamp_label': '[00:03:25]',
+                       'url': 'https://www.youtube.com/watch?v=NDvJAHP1GQo&t=205s',
+                       'markdown': '[00:03:25](https://www.youtube.com/watch?v=NDvJAHP1GQo&t=205s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iigVbHUUCBE',
+                       'title': 'Using the Swept App',
+                       'channel': 'iCleaners Commercial Cleaning Services',
+                       'author': 'iCleaners Commercial Cleaning Services',
+                       'text': 'In ChronoTech everyone had access to almost every facility and that led to '
+                               'errors when you guys were clocking in, sometimes you would clock in at the '
+                               'wrong facility.',
+                       'tip': 'In ChronoTech everyone had access to almost every facility and that led to '
+                              'errors when you guys were clocking in, sometimes you would clock in at the '
+                              'wrong facility.',
+                       'timestamp': 97,
+                       'timestamp_seconds': 97,
+                       'timestamp_label': '[00:01:37]',
+                       'url': 'https://www.youtube.com/watch?v=iigVbHUUCBE&t=97s',
+                       'markdown': '[00:01:37](https://www.youtube.com/watch?v=iigVbHUUCBE&t=97s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9IJ1pi5IQ_E',
+                       'title': '9 BEST Janitorial Software Platforms in 2026 (Commercial Cleaning Ranked)',
+                       'channel': 'Contractor Plus',
+                       'author': 'Contractor Plus',
+                       'text': 'Inspection score cards are how you keep accounts long-term; without that, '
+                               'every renewal turns into a price negotiation.',
+                       'tip': 'Inspection score cards are how you keep accounts long-term; without that, '
+                              'every renewal turns into a price negotiation.',
+                       'timestamp': 96,
+                       'timestamp_seconds': 96,
+                       'timestamp_label': '[00:01:36]',
+                       'url': 'https://www.youtube.com/watch?v=9IJ1pi5IQ_E&t=96s',
+                       'markdown': '[00:01:36](https://www.youtube.com/watch?v=9IJ1pi5IQ_E&t=96s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nNPKmshBChQ',
+                       'title': 'CleanGuru - CleanQC Janitorial Inspection Software',
+                       'channel': 'CleanGuru',
+                       'author': 'CleanGuru',
+                       'text': 'This promotional page talks about your use of this janitorial inspection '
+                               'app to get and keep a building clean, and you can put that right into your '
+                               'bid proposal.',
+                       'tip': 'This promotional page talks about your use of this janitorial inspection '
+                              'app to get and keep a building clean, and you can put that right into your '
+                              'bid proposal.',
+                       'timestamp': 138,
+                       'timestamp_seconds': 138,
+                       'timestamp_label': '[00:02:18]',
+                       'url': 'https://www.youtube.com/watch?v=nNPKmshBChQ&t=138s',
+                       'markdown': '[00:02:18](https://www.youtube.com/watch?v=nNPKmshBChQ&t=138s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7uKR0mnlF9Q',
+                       'title': 'Swept app cont.',
+                       'channel': 'Stewart Facility Services',
+                       'author': 'Stewart Facility Services',
+                       'text': 'Under the channels tab you will see SFS General, which includes all '
+                               'blanket messages to all Associates and all locations across the board.',
+                       'tip': 'Under the channels tab you will see SFS General, which includes all blanket '
+                              'messages to all Associates and all locations across the board.',
+                       'timestamp': 74,
+                       'timestamp_seconds': 74,
+                       'timestamp_label': '[00:01:14]',
+                       'url': 'https://www.youtube.com/watch?v=7uKR0mnlF9Q&t=74s',
+                       'markdown': '[00:01:14](https://www.youtube.com/watch?v=7uKR0mnlF9Q&t=74s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Tub9xxD1-7o',
+                       'title': 'Selling with Swept: How to Win 80% of Your Commercial Cleaning Contracts',
+                       'channel': 'Swept',
+                       'author': 'Swept',
+                       'text': 'Virtual assistants are 15 to 20 an hour and they will bill you by the '
+                               'minute, and all they will do is respond to sales emails quickly and set up '
+                               'an appointment.',
+                       'tip': 'Virtual assistants are 15 to 20 an hour and they will bill you by the '
+                              'minute, and all they will do is respond to sales emails quickly and set up '
+                              'an appointment.',
+                       'timestamp': 288,
+                       'timestamp_seconds': 288,
+                       'timestamp_label': '[00:04:48]',
+                       'url': 'https://www.youtube.com/watch?v=Tub9xxD1-7o&t=288s',
+                       'markdown': '[00:04:48](https://www.youtube.com/watch?v=Tub9xxD1-7o&t=288s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Tub9xxD1-7o',
+                       'title': 'Selling with Swept: How to Win 80% of Your Commercial Cleaning Contracts',
+                       'channel': 'Swept',
+                       'author': 'Swept',
+                       'text': "Not only have I built trust that I know how to manage my company, I've "
+                               "also put doubt in their minds about our competitors, and I've done it "
+                               'without being negative about our competitors.',
+                       'tip': "Not only have I built trust that I know how to manage my company, I've also "
+                              "put doubt in their minds about our competitors, and I've done it without "
+                              'being negative about our competitors.',
+                       'timestamp': 906,
+                       'timestamp_seconds': 906,
+                       'timestamp_label': '[00:15:06]',
+                       'url': 'https://www.youtube.com/watch?v=Tub9xxD1-7o&t=906s',
+                       'markdown': '[00:15:06](https://www.youtube.com/watch?v=Tub9xxD1-7o&t=906s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-DEX3b-m000',
+                       'title': 'Win $200K Commercial Cleaning Contracts With This Janitorial Software',
+                       'channel': 'Commercial Cleaning CEO',
+                       'author': 'Commercial Cleaning CEO',
+                       'text': 'We lost that six-figure account because we did not have this automatic QR '
+                               'code feedback system in place, but we won many other accounts and '
+                               'specifically this $200,000 per year account because we did have that QR '
+                               'code system in place.',
+                       'tip': 'We lost that six-figure account because we did not have this automatic QR '
+                              'code feedback system in place, but we won many other accounts and '
+                              'specifically this $200,000 per year account because we did have that QR '
+                              'code system in place.',
+                       'timestamp': 569,
+                       'timestamp_seconds': 569,
+                       'timestamp_label': '[00:09:29]',
+                       'url': 'https://www.youtube.com/watch?v=-DEX3b-m000&t=569s',
+                       'markdown': '[00:09:29](https://www.youtube.com/watch?v=-DEX3b-m000&t=569s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gsVsz7Sm98M',
+                       'title': 'Swept Optimize Plan',
+                       'channel': 'Swept',
+                       'author': 'Swept',
+                       'text': 'Swept gives you flexible clock-in options, including mandatory geo fences '
+                               'to ensure clock-ins occur at the site, lowering the risk of time theft.',
+                       'tip': 'Swept gives you flexible clock-in options, including mandatory geo fences '
+                              'to ensure clock-ins occur at the site, lowering the risk of time theft.',
+                       'timestamp': 32,
+                       'timestamp_seconds': 32,
+                       'timestamp_label': '[00:00:32]',
+                       'url': 'https://www.youtube.com/watch?v=gsVsz7Sm98M&t=32s',
+                       'markdown': '[00:00:32](https://www.youtube.com/watch?v=gsVsz7Sm98M&t=32s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'O45aBb4kNlA',
+                       'title': 'Win More Janitorial Contracts (by using Swept)',
+                       'channel': 'Swept',
+                       'author': 'Swept',
+                       'text': 'We did a survey with over 500 business owners, budget aside, asking '
+                               "whether a cleaning company's use of technology to improve communication "
+                               'and quality would influence the decision to hire them, and 96% said yes.',
+                       'tip': 'We did a survey with over 500 business owners, budget aside, asking whether '
+                              "a cleaning company's use of technology to improve communication and quality "
+                              'would influence the decision to hire them, and 96% said yes.',
+                       'timestamp': 1329,
+                       'timestamp_seconds': 1329,
+                       'timestamp_label': '[00:22:09]',
+                       'url': 'https://www.youtube.com/watch?v=O45aBb4kNlA&t=1329s',
+                       'markdown': '[00:22:09](https://www.youtube.com/watch?v=O45aBb4kNlA&t=1329s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'W0BOiP7F_64',
+                       'title': 'Webinar: How to Grow Your Janitorial Business with Swept',
+                       'channel': 'Swept',
+                       'author': 'Swept',
+                       'text': "Every cleaning company out there that we competed against said we're the "
+                               'best, we focused on quality and we use green products, and none of those '
+                               'are things that can be proven.',
+                       'tip': "Every cleaning company out there that we competed against said we're the "
+                              'best, we focused on quality and we use green products, and none of those '
+                              'are things that can be proven.',
+                       'timestamp': 1315,
+                       'timestamp_seconds': 1315,
+                       'timestamp_label': '[00:21:55]',
+                       'url': 'https://www.youtube.com/watch?v=W0BOiP7F_64&t=1315s',
+                       'markdown': '[00:21:55](https://www.youtube.com/watch?v=W0BOiP7F_64&t=1315s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'}]}

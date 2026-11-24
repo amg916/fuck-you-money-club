@@ -1,732 +1,877 @@
 from __future__ import annotations
 
-CHAPTER_8 = {
-    "id": "Q8",
-    "chapter_id": "Q8",
-    "chapter_number": 8,
-    "question_number": 8,
-    "slug": "public-records-apis-data-pipelines-operator-tooling",
-    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small commercial cleaning contracts desk an unfair information edge?",
-    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
-    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
-    "subtitle": "SAM.gov, CMS, Parcel Records, ISSA Workloading, and Inspection-to-Invoice Controls for Four-Person Janitorial Pods",
-    "layout_template": "resource_directory",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #10, Commercial Cleaning Contracts, ranks #23 with a 82/100 "
-        "Money-to-Manpower Score because software organizes labor rather than replacing it. "
-        "This chapter maps four operator plays: recurring commercial route density, medical "
-        "janitorial specialization, public-sector rebid capture, and supervisor-pod retention "
-        "with billing control. Use parcel records, CMS directories, SAM.gov notices, verified "
-        "business contacts, and inspection evidence to identify cleanable sites, reach actual "
-        "buyers, price paid crew hours, and defend invoices. The canonical annual owner "
-        "profits remain $20,000 Conservative, $87,000 Base, and $192,000 Scaled. Keep the "
-        "first two cases within the specified 1 FT + 3 C planning envelope; the scaled "
-        "case requires 2 FT + 4 C. Every enrichment expense must improve a measurable "
-        "site, labor, or collection decision."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual recognized cleaning contract revenue",
-            "note": "8% net margin; $20,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$725,000",
-            "context": "Annual recognized cleaning contract revenue",
-            "note": "12.0% net margin; $87,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual recognized cleaning contract revenue",
-            "note": "16% net margin; $192,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build a Source Register Around Four Revenue Decisions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Organize the desk around four mapped plays, not four disconnected lead "
-                    "lists. Play one builds recurring commercial route density by finding "
-                    "offices, managed buildings, and nearby replacement accounts. Play two "
-                    "qualifies medical janitorial sites whose room mix, exposure controls, "
-                    "and service windows justify differentiated pricing. Play three captures "
-                    "public-sector rebids before the walkthrough deadline, using actual "
-                    "solicitations and award history rather than purchased intent scores. "
-                    "Play four protects supervisor-pod retention and cash collection by "
-                    "connecting inspections, corrective work, approved scope changes, and "
-                    "invoices. Give every record one primary play and one next decision: "
-                    "verify occupancy, identify the buyer, inspect the site, or resolve a "
-                    "delivery exception. For the 1 FT + 3 C planning envelope, assign a "
-                    "designated employee an intake block and a supervisor an evidence-review "
-                    "block; these are duties within existing capacity, not two added hires. "
-                    "Contractor participation depends on actual agreements and classification, "
-                    "not the database label. Limit prospecting to service windows and "
-                    "geographic clusters the pod can cover. A thousand distant addresses "
-                    "cannot compensate for missing evening coverage, and a rich contact "
-                    "record cannot rescue a contract priced below its paid labor requirement."
-                ),
-                (
-                    "Treat the following directory as a source-selection register rather "
-                    "than a promise that every publisher offers a stable API. Official "
-                    "records are usually free to inspect, but retrieval engineering, member "
-                    "resources, exports, and commercial lookups have separate costs. Preserve "
-                    "the source URL, retrieval time, publisher's effective date, query "
-                    "parameters, and evidence category with every result. Publisher latency "
-                    "and your polling interval are different: checking an award daily does "
-                    "not make a delayed award submission current. For each connector, "
-                    "record the live account quota and service terms before activation; "
-                    "where no universal numeric limit is published, use serialized requests, "
-                    "caching, and bounded retries rather than inventing one. Respect "
-                    "Retry-After responses and stop retrying authentication failures. The "
-                    "New York sources illustrate exact municipal access routes; substitute "
-                    "the corresponding local assessor, permitting authority, and procurement "
-                    "office when operating elsewhere. Parcel ownership, permitted construction, "
-                    "and provider enrollment are discovery evidence, not confirmation that "
-                    "a particular buyer controls cleaning procurement. Save the specific "
-                    "record that motivated outreach, then verify occupancy and responsibility "
-                    "directly. This prevents the desk from contacting a landlord about a "
-                    "tenant-managed suite or treating a provider's mailing address as a "
-                    "medical facility."
-                ),
-                (
-                    "For public work, start with SAM.gov opportunity notices filtered by "
-                    "place of performance and NAICS 561720, then inspect the scope instead "
-                    "of assuming the classification is complete. Capture notice identifiers, "
-                    "amendments, site-visit instructions, response deadlines, contract periods, "
-                    "and incorporated wage determinations. USAspending award amounts help "
-                    "describe purchasing history, but obligations, options, modifications, "
-                    "and recognized contractor revenue are different measures. Calculate a "
-                    "possible rebid window from the actual period of performance and "
-                    "option structure; confirm it with current procurement documents. "
-                    "State and municipal contracts often appear only on local portals. "
-                    "Medical discovery follows a different evidence chain: CMS facility "
-                    "records establish a regulated provider identity, NPPES helps reconcile "
-                    "organization names and addresses, and the facility confirms which "
-                    "locations and rooms need janitorial service. Neither registry proves "
-                    "that a listed clinician buys cleaning. For private commercial routes, "
-                    "parcel and building records establish location context while property "
-                    "management websites identify likely operators. Keep historical ownership "
-                    "separate from current management. Across all three acquisition plays, "
-                    "a walkthrough remains the decisive source for cleanable area, "
-                    "access constraints, consumables responsibility, and attainable production "
-                    "rates; public data earns the visit rather than replacing it."
-                ),
-            ],
-            "table": {
-                "caption": "Eighteen Named Sources: Access, Cost, Freshness, Request Discipline, and Fallbacks",
-                "headers": [
-                    "Named source and operator decision",
-                    "Exact access route and cost basis",
-                    "Refresh latency and polling choice",
-                    "Rate-limit and access hygiene",
-                    "Fallback evidence and practical limitation",
-                ],
-                "rows": [
-                    [
-                        "SAM.gov Contract Opportunities identifies federal janitorial rebid opportunities.",
-                        "Use sam.gov/search or api.sam.gov/opportunities/v2/opportunities with an API key; public access is free.",
-                        "Poll qualified searches daily; amendment publication controls actual freshness.",
-                        "Read current key quotas; cache notices and honor throttling responses.",
-                        "Use solicitation attachments and contracting-office clarification when structured fields conflict.",
-                    ],
-                    [
-                        "SAM.gov Entity Information verifies federal supplier identity and registration.",
-                        "Search sam.gov entity records freely; entity API access depends on permissions.",
-                        "Recheck registration before submission; saved extracts can lag later changes.",
-                        "Use permitted public fields; never assume restricted entity access.",
-                        "Request current registration evidence directly from the proposed contracting entity.",
-                    ],
-                    [
-                        "USAspending.gov award records reveal incumbent agencies and purchasing history.",
-                        "POST filters to api.usaspending.gov/api/v2/search/spending_by_award/; public access is free.",
-                        "Check weekly; agency reporting and corrections determine underlying latency.",
-                        "Paginate narrowly by geography and classification; cache completed query results.",
-                        "Reconcile obligations against award documents rather than assuming annual revenue.",
-                    ],
-                    [
-                        "SAM.gov Wage Determinations anchors covered federal service labor estimates.",
-                        "Search sam.gov/content/wage-determinations freely by location and determination attributes.",
-                        "Check during bidding and amendments; incorporated revisions govern contract requirements.",
-                        "Download relevant documents once; retain revision identifiers with bid evidence.",
-                        "Ask the contracting officer to resolve conflicting incorporated wage schedules.",
-                    ],
-                    [
-                        "NYC PASSPort Public and procurement pages identify municipal solicitations.",
-                        "Enter through nyc.gov/site/mocs/passport/about-passport.page; public discovery access is free.",
-                        "Review active pursuits daily; amendments can change deadlines and scope.",
-                        "Use published search and vendor workflows rather than automated login scraping.",
-                        "Check the agency procurement page and named solicitation contact directly.",
-                    ],
-                    [
-                        "NYC ACRIS recorded documents establish ownership and transaction evidence.",
-                        "Search a836-acris.nyc.gov/CP/ freely using borough, block, lot, or party.",
-                        "Recording follows filing; inspect document dates before asserting current ownership.",
-                        "Use public search or published datasets; avoid aggressive document harvesting.",
-                        "Confirm current management directly; recorded ownership does not identify cleaning buyers.",
-                    ],
-                    [
-                        "NYC PLUTO and MapPLUTO provide parcel and building context.",
-                        "Download free releases through nyc.gov/site/planning/data-maps/open-data/dwn-pluto-mappluto.page.",
-                        "Ingest each published release; store its version and publication date.",
-                        "Prefer bulk downloads over repeated requests for individual parcel attributes.",
-                        "Use assessor records and walkthrough measurements; gross area differs from scope.",
-                    ],
-                    [
-                        "NYC DOB NOW permit datasets signal property and occupancy changes.",
-                        "Search data.cityofnewyork.us for DOB NOW Build permits; public datasets are free.",
-                        "Read dataset update metadata; ingest changed records on a weekly schedule.",
-                        "Use the dataset's published Socrata endpoint and narrow modified-date filters.",
-                        "Verify permit status with DOB records and confirm actual facility opening.",
-                    ],
-                    [
-                        "CMS Provider Data Catalog identifies specific medical facility categories.",
-                        "Download free facility datasets from data.cms.gov/provider-data using dataset export controls.",
-                        "Refresh after publisher updates; retain dataset-specific reporting and release dates.",
-                        "Prefer complete exports for small regions; follow each dataset's API documentation.",
-                        "Use state facility licensing records and direct administrator confirmation for coverage.",
-                    ],
-                    [
-                        "NPPES NPI Registry reconciles organization identities and practice addresses.",
-                        "GET npiregistry.cms.hhs.gov/api/?version=2.1 with supported filters; public access is free.",
-                        "Recheck shortlisted organizations weekly; provider submissions determine address currency.",
-                        "Use supported pagination with limit at most 200; cache matched results.",
-                        "Verify the service address directly; individual enrollment does not establish procurement authority.",
-                    ],
-                    [
-                        "OSHA Establishment Search supplies inspection history for diligence questions.",
-                        "Search osha.gov/ords/imis/establishment.html freely by establishment name and geography.",
-                        "Review during qualification; case processing and database updates introduce reporting lag.",
-                        "Search specific entities manually; distinguish similarly named businesses before recording findings.",
-                        "Request relevant safety documentation directly; inspection absence proves little about controls.",
-                    ],
-                    [
-                        "EPA List N verifies disinfectant registration context and label links.",
-                        "Use epa.gov/pesticide-registration/list-n-disinfectants-coronavirus-covid-19 freely, then inspect the product label.",
-                        "Recheck before product substitution; registry listings and approved labels can change.",
-                        "Cache registration references; avoid repeatedly fetching unchanged product search results.",
-                        "Use the EPA registration label and facility protocol for required organisms.",
-                    ],
-                    [
-                        "ISSA workloading resources support task-based janitorial production assumptions.",
-                        "Use issa.com membership and store resources; access varies by purchased resource.",
-                        "Record the resource edition; recalibrate assumptions after measured site trials.",
-                        "Use licensed publications and calculators; do not assume a public API.",
-                        "Build measured task studies when reference conditions differ from actual rooms.",
-                    ],
-                    [
-                        "Google Places API supplies business location and contact discovery.",
-                        "Use places.googleapis.com/v1/places:searchText with credentials; field-based usage incurs published charges.",
-                        "Query shortlisted sites on demand; listings can still reflect outdated operations.",
-                        "Apply field masks, budget alerts, quotas, and applicable caching restrictions.",
-                        "Confirm through official business websites and direct calls before assigning contacts.",
-                    ],
-                    [
-                        "Hunter Domain Search and Email Verifier support business-contact enrichment.",
-                        "Call api.hunter.io/v2/domain-search or email-verifier with credentials; free and paid tiers apply.",
-                        "Run after domain confirmation; reverification is appropriate before an outreach batch.",
-                        "Read current credit rules and limits; deduplicate domains before spending credits.",
-                        "Use the company's published contact route when results lack reliable attribution.",
-                    ],
-                    [
-                        "Twilio Lookup checks telephone formatting and optional line intelligence.",
-                        "GET lookups.twilio.com/v2/PhoneNumbers/{PhoneNumber}; optional data packages have usage-based pricing.",
-                        "Check before authorized calling workflows; number intelligence can change over time.",
-                        "Enable only necessary fields; throttle requests and protect account credentials.",
-                        "Confirm numbers from official business pages; lookup does not establish outreach permission.",
-                    ],
-                    [
-                        "QuickBooks Online Accounting API connects contracts, invoices, and receipts.",
-                        "Use OAuth and quickbooks.api.intuit.com/v3/company/{realmId}/; accounting subscriptions and current platform terms apply.",
-                        "Use events where supported plus nightly reconciliation; posting dates remain distinct.",
-                        "Honor current throttles, deduplicate writes, and reconcile after interrupted sync operations.",
-                        "Export invoice and payment reports for controlled reconciliation when integration fails.",
-                    ],
-                    [
-                        "Swept centralizes janitorial schedules, communications, and inspection evidence.",
-                        "Access sweptworks.com through a paid vendor plan; verify export features before purchase.",
-                        "Capture inspections during service; offline synchronization can delay supervisor visibility.",
-                        "Use supported exports or contracted integrations; do not scrape staff accounts.",
-                        "Maintain controlled inspection forms and roster exports for temporary service continuity.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Exploit the Gap Between a Record and a Workable Route",
-                "body": "The strongest advantage is better qualification before the walkthrough, not a larger purchased contact list.",
-                "items": [
-                    "Overlay shortlisted parcels against actual evening crew routes; prioritize nearby replacement accounts before adding a new travel corridor.",
-                    "Read the last solicitation's exclusions and amendment history before calling an agency; recurring scope disputes often reveal where incumbents lost margin.",
-                    "Match medical locations by organization identity and service address; reject clinician mailing addresses before buying contact enrichment.",
-                    "Ask property managers which spaces they control before measuring area; common corridors and tenant suites can belong to different cleaning agreements.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Run an Evidence-Preserving Enrichment Waterfall",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Create a small relational model with separate organization, site, "
-                    "contact, opportunity, contract, and evidence tables. A company can "
-                    "operate several sites, a building can house several companies, and "
-                    "one property manager can represent several owners. Collapsing these "
-                    "relationships into a single spreadsheet row causes duplicate outreach "
-                    "and scope errors. Use an internal site identifier as the durable "
-                    "key, with parcel identifiers, NPI organization identifiers, agency "
-                    "notice numbers, and accounting customer identifiers stored as source "
-                    "references. Normalize street suffixes and suite formatting, but preserve "
-                    "the original address for review. Match exact source identifiers "
-                    "first, verified address and domain combinations second, and fuzzy "
-                    "names only into a review queue. Never merge two medical practices "
-                    "solely because they share a street address. Store contact roles "
-                    "explicitly: owner, property manager, practice administrator, procurement "
-                    "officer, or facility supervisor. A source assertion should include "
-                    "its evidence URL, observed value, retrieval time, and verification "
-                    "state. Prefer field-level confidence over one opaque lead score, "
-                    "because a verified building address can coexist with an unverified "
-                    "buyer. The supervisor needs to know which assumption still requires "
-                    "a call before committing scarce walkthrough time."
-                ),
-                (
-                    "Run enrichment in a fixed economic order. First obtain free "
-                    "official identity and location evidence. Second inspect the organization's "
-                    "own website for current occupancy, a business domain, service hours, "
-                    "and a published purchasing contact. Third use paid location or "
-                    "domain discovery only when a required field remains unresolved. "
-                    "Fourth verify the chosen business contact and suppress duplicates, "
-                    "previous objections, and invalid addresses before outreach. A paid "
-                    "verification result describes delivery risk; it does not prove "
-                    "that the recipient manages cleaning or wants a solicitation. "
-                    "Commercial email must satisfy 15 U.S.C. 7704, including accurate "
-                    "routing information, required identification and address information, "
-                    "and a functioning opt-out process. Record suppression centrally so "
-                    "another employee cannot restart the sequence from a fresh export. "
-                    "For calls and texts, review the applicable requirements of 47 "
-                    "U.S.C. 227 and the actual dialing method rather than treating "
-                    "a public number as blanket permission. Keep outreach centered on "
-                    "the facility's operating problem: missed inspections, inconsistent "
-                    "coverage, or a coming procurement cycle. Do not collect patient "
-                    "information or individual health details to personalize medical "
-                    "janitorial prospecting; facility-level operational evidence is sufficient "
-                    "for this business."
-                ),
-                (
-                    "Implement the first pipeline with Python's sqlite3, csv, json, "
-                    "urllib.request, and logging modules, plus scheduled execution appropriate "
-                    "to the operator's workstation or approved server. A small desk "
-                    "does not need a distributed event platform to manage several "
-                    "hundred qualified buildings. Keep source adapters separate from "
-                    "matching rules so a changed municipal column does not corrupt "
-                    "the contract ledger. Validate required columns and data types "
-                    "before promotion, quarantine malformed rows, and preserve a checksum "
-                    "of each permitted raw download. Keep credentials outside source "
-                    "files and exclude them from logs. Set explicit connection timeouts, "
-                    "bounded exponential backoff with jitter, and a daily spend ceiling "
-                    "for paid services. Log the request category and source identifier "
-                    "without retaining unnecessary personal fields. Review a sample of "
-                    "accepted matches and every suspected cross-organization merge. "
-                    "Measure qualified walkthroughs per enrichment dollar, not records "
-                    "processed per minute. Within the four-person planning envelope, "
-                    "batch unresolved records into one daily review queue and stop "
-                    "collection when the pod's available walkthrough slots are filled. "
-                    "That capacity rule keeps automation from creating a second "
-                    "administrative workload while field employees are already covering "
-                    "absence, travel, inspection, and corrective service."
-                ),
-            ],
-            "table": {
-                "caption": "Six Waterfall Controls That Prevent Bad Matches and Wasted Enrichment",
-                "headers": [
-                    "Processing stage and accountable duty",
-                    "Required evidence before advancing the record",
-                    "Failure signal requiring human inspection",
-                    "Fallback action preserving operating capacity",
-                ],
-                "rows": [
-                    [
-                        "Intake employee assigns source and primary operator play.",
-                        "Retain source record identifier, effective date, and retrieval timestamp.",
-                        "Source describes an individual rather than a serviceable facility.",
-                        "Move record to identity review before buying additional enrichment.",
-                    ],
-                    [
-                        "Site reviewer separates building identity from tenant identity.",
-                        "Verify suite, service address, and organization relationship against evidence.",
-                        "Several unrelated practices share the same normalized street address.",
-                        "Preserve separate site relationships and request direct occupancy confirmation.",
-                    ],
-                    [
-                        "Contact researcher verifies the organization's current business domain.",
-                        "Match published organization name, location, and official contact page.",
-                        "Search result points to a directory or abandoned website.",
-                        "Use the published switchboard to identify the responsible manager.",
-                    ],
-                    [
-                        "Enrichment owner authorizes only necessary paid lookup fields.",
-                        "Document unresolved field, expected decision benefit, and remaining budget.",
-                        "Credit spending increases without additional qualified walkthroughs being scheduled.",
-                        "Pause paid discovery and review the qualification criteria first.",
-                    ],
-                    [
-                        "Outreach owner checks role relevance and suppression history.",
-                        "Confirm buyer responsibility and apply centralized channel-specific suppression rules.",
-                        "Verified mailbox belongs to a clinician without purchasing responsibility.",
-                        "Use the facility's administrative contact route instead of guessing.",
-                    ],
-                    [
-                        "Pipeline maintainer promotes only validated and attributable records.",
-                        "Pass schema checks, identifier checks, and sampled match review.",
-                        "A publisher changes columns or returns unexpected response content.",
-                        "Quarantine the batch and retain the last validated dataset.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Select one serviceable cluster",
-                    "action": "Filter one territory by travel time, service windows, and available crew capacity.",
-                    "detail": "Tag every candidate with one of the four plays and retain only records that could produce a feasible next action.",
-                },
-                {
-                    "step": 2,
-                    "title": "Resolve site and buyer separately",
-                    "action": "Match official identifiers and service addresses before researching purchasing contacts.",
-                    "detail": "Preserve source evidence, review ambiguous suites, and confirm whether landlord, tenant, agency, or administrator controls the scope.",
-                },
-                {
-                    "step": 3,
-                    "title": "Spend only on unresolved decisions",
-                    "action": "Use paid enrichment after free official records and the organization's own website.",
-                    "detail": "Apply current account quotas, field restrictions, suppression rules, and a daily budget before sending any lookup or outreach batch.",
-                },
-                {
-                    "step": 4,
-                    "title": "Hand off a bounded walkthrough queue",
-                    "action": "Give the supervisor verified sites, buyer roles, evidence links, and remaining scope questions.",
-                    "detail": "Limit scheduled visits to available capacity and feed measured labor assumptions back into qualification and pricing.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Turn Records Into Paid-Hour Bids and Verifiable Operating Requirements",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Convert site intelligence into a room-and-task workload before entering "
-                    "a monthly price. Public gross building area is not cleanable "
-                    "contract area, and an ISSA reference rate is not a universal "
-                    "promise of field productivity. Separate offices, corridors, restrooms, "
-                    "exam rooms, procedure spaces, floor types, fixtures, and service "
-                    "frequencies. Add setup, security access, equipment movement, waste "
-                    "handling, travel that must be paid, inspection, and expected "
-                    "corrective work. As an illustrative site calculation, 20,000 cleanable "
-                    "square feet divided by a locally tested blended rate of 4,000 "
-                    "square feet per productive hour produces five productive hours "
-                    "per visit. Adding one paid hour for access, setup, and "
-                    "inspection yields six paid hours. At 260 annual visits, "
-                    "that is 1,560 paid hours. A hypothetical fully loaded labor "
-                    "cost of $24 per hour produces $37,440 in annual labor "
-                    "cost; adding $7,560 for supplies, supervision allocation, equipment, "
-                    "and other assigned costs produces $45,000 total cost. At a "
-                    "$54,000 annual price, contribution after those assigned costs "
-                    "is $9,000, or 16.67%. This is a site-level illustration, "
-                    "not the portfolio's owner profit; unallocated overhead and actual "
-                    "performance still determine the final result."
-                ),
-                (
-                    "Keep the canonical portfolio cases separate from the illustrative "
-                    "site calculation. Conservative recognizes $250,000 in cleaning contract "
-                    "revenue and $20,000 owner net profit at 8%, leaving "
-                    "$230,000 for all costs. Base recognizes $725,000 and "
-                    "$87,000 at 12.0%, leaving $638,000 for all costs. "
-                    "Scaled recognizes $1,200,000 and $192,000 at 16%, leaving "
-                    "$1,008,000 for all costs. Customer property values, hospital "
-                    "billings, procurement ceilings, and underlying agency spending never "
-                    "enter recognized operator revenue. Conservative and Base retain "
-                    "the specified 1 FT + 3 C roster labels; Scaled "
-                    "uses 2 FT + 4 C, or eleven people. These "
-                    "labels do not supply wage rates, contractor utilization, or "
-                    "scheduled hours. In particular, the Conservative cost envelope "
-                    "requires a direct feasibility check before anyone assumes five "
-                    "employees can be fully funded for a year at local "
-                    "loaded wages alongside four contractors and operating overhead. "
-                    "Do not silently convert the listed full-time roles into "
-                    "part-time labor to make arithmetic fit. Report any unsupported "
-                    "capacity assumption, then retain the canonical figures as the "
-                    "comparison benchmark. Scheduling, inspection logs, and billing reduce "
-                    "leakage; they do not make paid cleaning hours disappear."
-                ),
-                (
-                    "Attach operating requirements to the bid evidence rather than "
-                    "burying them in generic policy documents. The Fair Labor "
-                    "Standards Act provisions at 29 U.S.C. 206 and 207 "
-                    "establish federal minimum-wage and overtime requirements, while state "
-                    "and local rules may impose higher obligations. Employee records "
-                    "under 29 CFR 516.2 must support actual pay calculations. "
-                    "For covered federal service contracts, examine 41 U.S.C. "
-                    "6702 and 6703, the solicitation's wage determination, fringe "
-                    "benefits, and incorporated clauses; do not assume ordinary "
-                    "commercial wage estimates satisfy that scope. A contractor "
-                    "agreement alone does not settle worker classification. Record "
-                    "the applicable federal and state analysis, actual supervision "
-                    "arrangements, and insurance evidence for genuine subcontractors. "
-                    "For chemicals, 29 CFR 1910.1200 requires applicable hazard "
-                    "communication controls, including labels, safety data sheets, and "
-                    "training. Where occupational exposure exists, assess 29 CFR "
-                    "1910.1030 requirements before medical work begins. EPA List "
-                    "N addresses a particular pathogen context; the registered "
-                    "product label and facility protocol determine whether the "
-                    "product fits the required task. Capture dilution, contact "
-                    "time, surface compatibility, PPE, and training in inspection "
-                    "design. Those details change achievable production rates and "
-                    "therefore belong in the price model."
-                ),
-            ],
-            "table": {
-                "caption": "Six Bid Diagnostics Linking Evidence to Labor Cost and Scope",
-                "headers": [
-                    "Diagnostic test and relevant operator play",
-                    "Evidence required before committing the price",
-                    "Cost or safety failure being prevented",
-                    "Required operator response to the finding",
-                ],
-                "rows": [
-                    [
-                        "Route-density play tests travel and service-window compatibility.",
-                        "Compare actual crew routes with access windows and paid travel rules.",
-                        "Nearby buildings require simultaneous service and create hidden overtime.",
-                        "Rebuild the route before offering a recurring contract start date.",
-                    ],
-                    [
-                        "Medical specialization tests room mix and exposure conditions.",
-                        "Document facility protocols, task surfaces, waste boundaries, and exposure assessment.",
-                        "Generic office production rates omit mandatory medical cleaning task time.",
-                        "Time representative tasks and price the verified operating requirements.",
-                    ],
-                    [
-                        "Public-sector rebid play tests incorporated labor cost requirements.",
-                        "Retain applicable wage determination revisions, fringes, clauses, and solicitation amendments.",
-                        "Commercial wage assumptions understate covered employee compensation and required benefits.",
-                        "Recalculate the loaded bid and resolve document conflicts before submission.",
-                    ],
-                    [
-                        "Supervisor retention play tests corrective-work and inspection capacity.",
-                        "Review failed inspections, repeat defects, supervisor hours, and client response commitments.",
-                        "Unpriced revisits consume replacement coverage and destabilize established accounts.",
-                        "Assign corrective time explicitly and change recurring scope when justified.",
-                    ],
-                    [
-                        "Portfolio scenario test reconciles recognized revenue and complete costs.",
-                        "Compare annual revenue, net profit, roster assumptions, and total cost envelopes.",
-                        "Site contribution is incorrectly presented as annual owner net profit.",
-                        "Separate assigned site costs from remaining overhead before reporting margins.",
-                    ],
-                    [
-                        "Contractor deployment test examines actual relationships and service controls.",
-                        "Review applicable classification tests, work arrangements, contracts, and insurance evidence.",
-                        "A contractor label conceals employee obligations or uninsured delivery exposure.",
-                        "Resolve the work structure before assigning recurring independent coverage.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Checks Before a Prospect Becomes a Delivery Commitment",
-                "body": "The supervisor and pricing owner must resolve these four checks before promising price, scope, or a service start date.",
-                "items": [
-                    "Verify cleanable area, room mix, keys, alarms, service windows, consumables ownership, and exclusions through a documented walkthrough.",
-                    "Verify required paid hours, local loaded wages, applicable overtime, covered-contract benefits, and roster capacity against the full cost envelope.",
-                    "Verify worker arrangements, insurance evidence, chemical labels, safety data sheets, and exposure-specific training for the actual assigned work.",
-                    "Verify signed scope, authorized buyer, inspection acceptance method, billing identifiers, payment terms, and the route for documenting changed work.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Close the Loop From Inspection Evidence to Collected Cash",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use one contract identifier to join the schedule, inspection "
-                    "record, corrective ticket, approved change, invoice, and receipt. "
-                    "Swept or another verified janitorial platform can organize field "
-                    "execution, while QuickBooks Online remains the accounting ledger "
-                    "when that is the chosen system. Confirm export rights and "
-                    "integration capabilities in the purchased plan instead of designing "
-                    "around an assumed API. A completed shift is not automatically "
-                    "an accepted inspection, and an accepted inspection is not "
-                    "automatically recognized revenue or collected cash. Preserve those "
-                    "states separately. Capture scheduled and actual paid hours, "
-                    "site identifier, checklist version, defect category, correction "
-                    "owner, client acceptance where required, and the linked "
-                    "billing period. Keep medical inspection records focused on "
-                    "work surfaces and service outcomes; prohibit patient identifiers "
-                    "in notes and avoid photographs containing charts, screens, "
-                    "or people. Restrict employee contact and location information "
-                    "to operational need. When offline submissions arrive late, "
-                    "record both service time and synchronization time. Otherwise "
-                    "the supervisor may misread a transmission delay as a missed "
-                    "visit, dispatch duplicate labor, and damage the very margin "
-                    "the tooling was purchased to protect. Route every exception "
-                    "to a named duty within the existing pod."
-                ),
-                (
-                    "Build diagnostics that answer operational questions, not just "
-                    "whether a scheduled job returned a successful exit code. "
-                    "A source freshness monitor should compare retrieval age with "
-                    "the publisher's release cadence. A schema monitor should "
-                    "detect missing identifiers and changed field types. A "
-                    "matching monitor should report duplicate sites and unresolved "
-                    "suite conflicts. A labor monitor should compare estimated "
-                    "paid hours with actual paid hours by task and "
-                    "account. A billing monitor should identify completed eligible "
-                    "service that has no invoice, invoices without supporting "
-                    "scope, and receipts not matched to the ledger. Test "
-                    "the pipeline with saved, permitted fixtures, including a "
-                    "repeated webhook, an expired credential, a partial export, "
-                    "a changed address, and a delayed inspection upload. "
-                    "For write operations, record an internal operation identifier "
-                    "and reconcile destination state before retrying an ambiguous "
-                    "timeout; blind retries can create duplicate invoices. Use "
-                    "unittest for matching and arithmetic checks, sqlite3 integrity "
-                    "checks for local storage, and structured logs for "
-                    "connector failures. Back up the database and configuration "
-                    "separately from credentials, then perform a restore drill. "
-                    "A backup that nobody has restored is weak evidence "
-                    "that Monday's routes and receivables can survive a failure."
-                ),
-                (
-                    "Review the four plays through one weekly exception meeting. "
-                    "For commercial route density, inspect qualified walkthroughs, "
-                    "paid travel, and the number of viable replacement accounts "
-                    "inside each service cluster. For medical specialization, review "
-                    "room-specific labor variance, inspection defects, and required "
-                    "training completion. For public-sector rebids, review approaching "
-                    "deadlines, unresolved amendments, and wage-sensitive estimate changes. "
-                    "For supervisor-pod retention and billing control, review repeat "
-                    "defects, unbilled eligible work, invoice disputes, aging receivables, "
-                    "and customer concentration. Keep software and enrichment spending "
-                    "inside the canonical total cost envelopes rather than "
-                    "subtracting it after announcing owner profit. Record the "
-                    "hours consumed by administration and supervision alongside "
-                    "field hours; moving a supervisor into data cleanup "
-                    "creates a coverage cost even when no additional "
-                    "subscription appears. Expand collection only after the current "
-                    "queue produces executable visits and profitable service "
-                    "decisions. Expand delivery only after verified crew "
-                    "capacity, not after a dashboard fills with leads. "
-                    "The Scaled case explicitly adds a sixth full-time "
-                    "role and a fifth contractor, so its larger "
-                    "revenue should never be described as the same "
-                    "four-person pod doing unlimited extra work. The "
-                    "information edge is earlier, better decisions about "
-                    "paid labor and retained accounts."
-                ),
-            ],
-            "table": {
-                "caption": "Four Production Diagnostics for a Small Janitorial Desk",
-                "headers": [
-                    "Diagnostic and assigned review responsibility",
-                    "Specific measurement and evidence to inspect",
-                    "Failure injection or reconciliation test",
-                    "Recovery action protecting service and collections",
-                ],
-                "rows": [
-                    [
-                        "Data maintainer reviews source freshness and schema failures.",
-                        "Compare publisher dates, retrieval timestamps, required columns, and quarantined records.",
-                        "Replay an export with a missing identifier and changed column name.",
-                        "Reject promotion, retain validated data, and repair the source adapter.",
-                    ],
-                    [
-                        "Supervisor reviews labor variance and delayed field evidence.",
-                        "Compare paid hours, scheduled scope, defect counts, and upload timestamps.",
-                        "Submit a delayed inspection and confirm no duplicate dispatch occurs.",
-                        "Verify actual service completion before assigning any additional corrective labor.",
-                    ],
-                    [
-                        "Billing owner reviews duplicate writes and unbilled eligible service.",
-                        "Reconcile contract periods, approved changes, invoice identifiers, and posted receipts.",
-                        "Repeat an event and simulate an ambiguous invoice creation timeout.",
-                        "Check destination state before retrying and document any necessary correction.",
-                    ],
-                    [
-                        "Operator reviews continuity, access permissions, and recovery readiness.",
-                        "Inspect successful restores, current roster exports, and credential access assignments.",
-                        "Restore a backup into an isolated test location without live writes.",
-                        "Recover validated schedules and ledgers before reconnecting production integrations.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The best cleaning database tells you which paid hour to sell, protect, or stop wasting.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Create a source register with access routes, current account quotas, permitted retention rules, publisher dates, and a fallback for each selected connector.",
-        "Map every prospect to commercial route density, medical specialization, public-sector rebids, or supervisor-pod retention and billing control.",
-        "Build separate organization, site, contact, opportunity, contract, and evidence records; review ambiguous medical suites before enriching contacts.",
-        "Run one geographic cluster through the free-first enrichment waterfall, with centralized suppression and a capped paid-lookup budget.",
-        "Validate walkthrough labor assumptions, wage requirements, worker arrangements, chemical controls, and the canonical portfolio cost envelopes before pricing.",
-        "Join schedules, inspections, corrections, invoices, and receipts by contract identifier; test duplicate events, delayed uploads, and backup restoration.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. 7704 — Requirements for Commercial Electronic Mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Supports accurate sender information, required commercial-email disclosures, physical address information, and functioning opt-out procedures in prospecting workflows.",
-        },
-        {
-            "title": "47 U.S.C. 227 — Restrictions on Telephone Equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Requires channel-specific review of calling and messaging methods; a publicly listed business number alone does not resolve applicable restrictions.",
-        },
-        {
-            "title": "29 U.S.C. 206 — Minimum Wage",
-            "url": "https://www.law.cornell.edu/uscode/text/29/206",
-            "relevance": "Establishes federal wage requirements that must be evaluated alongside applicable higher state or local wage requirements when loading crew-hour costs.",
-        },
-        {
-            "title": "29 U.S.C. 207 — Maximum Hours",
-            "url": "https://www.law.cornell.edu/uscode/text/29/207",
-            "relevance": "Informs overtime calculations and roster-level review when several customer sites draw on the same covered employees.",
-        },
-        {
-            "title": "29 CFR 516.2 — Employee Records",
-            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-V/subchapter-A/part-516/subpart-A/section-516.2",
-            "relevance": "Specifies records for covered employees, supporting timekeeping, wage calculations, and reconciliation between operational schedules and payroll.",
-        },
-        {
-            "title": "41 U.S.C. 6702 — Service Contract Labor Standards Applicability",
-            "url": "https://www.law.cornell.edu/uscode/text/41/6702",
-            "relevance": "Defines the applicability framework for federal service contracts, requiring scope-specific review before treating a janitorial bid as covered.",
-        },
-        {
-            "title": "41 U.S.C. 6703 — Required Contract Terms",
-            "url": "https://www.law.cornell.edu/uscode/text/41/6703",
-            "relevance": "Addresses required wage, fringe-benefit, and related terms for covered federal service contracts that affect labor estimates.",
-        },
-        {
-            "title": "29 CFR 1910.1200 — Hazard Communication",
-            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-Z/section-1910.1200",
-            "relevance": "Connects chemical inventories, labels, safety data sheets, and employee training to cleaning scope and field inspection controls.",
-        },
-        {
-            "title": "29 CFR 1910.1030 — Bloodborne Pathogens",
-            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-Z/section-1910.1030",
-            "relevance": "Requires exposure-specific assessment and controls where occupational exposure exists, affecting medical janitorial procedures, training, and labor estimates.",
-        },
-        {
-            "title": "7 U.S.C. 136j — Unlawful Acts Under FIFRA",
-            "url": "https://www.law.cornell.edu/uscode/text/7/136j",
-            "relevance": "Includes restrictions on using registered pesticides inconsistently with labeling, supporting product-specific disinfectant selection and application procedures.",
-        },
-    ],
-}
+CHAPTER_8 = {'id': 'Q8',
+ 'chapter_id': 'Q8',
+ 'chapter_number': 8,
+ 'question_number': 8,
+ 'slug': 'post-construction-cleaning-floor-care-specialty-add-ons',
+ 'question_prompt': 'How do I win, price, and execute post-construction cleanups and floor care as add-on '
+                    'revenue?',
+ 'kicker': 'Q8 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Post-Construction Cleaning, Floor Care, and Specialty Add-Ons',
+ 'subtitle': 'Finding construction cleanup jobs, pricing commercial post-construction, supply checklists, '
+             'dust removal, first-job lessons learned, construction as a door into recurring contracts, '
+             'VCT strip-and-wax jobs and pricing, carpet cleaning, and on-the-spot window cleaning sales',
+ 'layout_template': 'legal_compliance_callout',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Post-construction cleaning pays as a lump-sum cash infusion and a door-opener to '
+                      'recurring janitorial, and the operators who make it work bid it off measured '
+                      "production rates, not gut feel. The Janitorial Store's Steve Hansen anchors rough "
+                      'cleans at 10-15 cents, finals at 15-30 cents and touch-ups at 6-12 cents per square '
+                      'foot, with a tracked final-clean rate of 150 square feet per hour; OctoClean plans '
+                      'around 200 square feet per person-hour and bills VCT strip-and-finish at 35-45 '
+                      'cents with a $450 minimum. Darian Jarrett turned a $7,083 medical-office bid into '
+                      'roughly $9,000 through $75-per-hour touch-ups and a subbed pressure-wash. '
+                      'Practitioners split on startup gear, Mark Etherton saying no $10K kit is needed '
+                      'while OctoClean calls the work cleaning on steroids, and on whether to touch '
+                      'prevailing-wage public jobs at all.',
+ 'key_metrics': [{'label': 'Final-Clean Production Rate',
+                  'metric': 'Final-Clean Production Rate',
+                  'value': '150 square feet per hour',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Steve Hansen's tracked rate for a one-time final clean; a 15,000 sq ft "
+                             'building works out to 100 labor hours',
+                  'source': 'The Janitorial Store ([gTK5pzrNCqg @ 00:01:23])'},
+                 {'label': 'Post-Construction Square-Foot Pricing Bands',
+                  'metric': 'Post-Construction Square-Foot Pricing Bands',
+                  'value': 'Rough $0.10-$0.15; final $0.15-$0.30; touch-up $0.06-$0.12 per sq ft',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Average phase pricing from Hansen's research; actual jobs ran from $0.15 up "
+                             'to $1.25 per sq ft',
+                  'source': 'The Janitorial Store ([RNflg846cs4 @ 00:00:47])'},
+                 {'label': 'VCT Strip-and-Refinish Rate',
+                  'metric': 'VCT Strip-and-Refinish Rate',
+                  'value': '$0.35-$0.45 per sq ft with a $450 minimum',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "OctoClean's charged range, flexed for density, finish buildup and access; "
+                             'minimum applies even to a closet',
+                  'source': 'OctoClean Media ([X3MX2xOshA4 @ 00:05:33])'},
+                 {'label': 'First Post-Construction Job Total',
+                  'metric': 'First Post-Construction Job Total',
+                  'value': '$7,083 bid grew to roughly $9,000',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Darian Jarrett's medical office job after about six invoices covering "
+                             'touch-ups, floor scrubs and a subbed pressure wash',
+                  'source': 'Darian Jarrett ([c9LRSgPQlvE @ 00:13:36])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator who has run post-construction jobs treats them as a cash '
+                              'event that should feed a recurring book, not as the whole business. Steve '
+                              'Hansen of The Janitorial Store tells cleaners that if they finish a '
+                              'building without finding out who is moving in, owner or tenant, and '
+                              'pitching three-day or five-day service, they are leaving a lot of money on '
+                              'the table, because the trade swings between buried-busy and dead-slow '
+                              "[RNflg846cs4 @ 00:06:32]. OctoClean's Matt puts it more bluntly: the real "
+                              'value is the contract after occupancy, and even an apartment complex has '
+                              'common areas and turnovers to win once the cleanup is done [9TymiXPWhyY @ '
+                              '00:05:37]. The OctoClean hosts add that the identity should be a commercial '
+                              'cleaning company that performs construction cleaning, never a construction '
+                              'cleaning company, because supers will demand 25 units today and nothing '
+                              'tomorrow, leaving crews sent home [9TymiXPWhyY @ 00:16:28]. Darian Jarrett '
+                              'opens the playbook the same way, calling post-construction a huge cash '
+                              'infusion and a gateway to recurring revenue contracts after the final '
+                              'clean, provided the job is done correctly [_hqGinSApYg @ 00:00:00]. The '
+                              'consensus logic is simple: bid the construction job to profit, but walk out '
+                              'with a janitorial proposal for whoever takes the keys.',
+                              'Practitioners agree the bid lives or dies on knowing the phase vocabulary '
+                              'before walking a site. Mark Etherton builds three separate offers, rough '
+                              'clean, final clean and touch-up clean, each with its own price, and says no '
+                              'general contractor takes a cleaner seriously without a clean, simple, '
+                              'professional proposal template [PG-8SEuPFQk @ 00:01:15]. OctoClean defines '
+                              'the same sequence for contractors: rough is sweeping piles and hauling '
+                              'debris, final starts once fixtures and flooring are in and runs a '
+                              'three-step wipe process, and punch follows after the architect and '
+                              'construction manager send trades back in to make a fresh mess [YE3spKAx9HI '
+                              "@ 00:02:34]. Hansen's walk-through questions start from the same frame: how "
+                              'many phases, how long between rough and final, when cleaning can start, and '
+                              'how many days are allowed, because a 50,000-square-foot final with four '
+                              'days dictates crew size and therefore labor cost [RNflg846cs4 @ 00:03:08]. '
+                              'Darian Jarrett confirms the reality on the ground, warning that crews will '
+                              'mop three, four or even ten times in one building between the initial '
+                              'clean, the middle clean after the punch list and the final [6wtiLyP6-zU @ '
+                              '00:06:08]. Every speaker treats those repeat visits as priced events, never '
+                              'as free goodwill.',
+                              'The baseline kit and paperwork are non-negotiable across the board. '
+                              'Construction Clean Partners says 99 percent of the construction companies '
+                              'it brokers will not work with a cleaner who lacks workers compensation, and '
+                              'argues that on jobs worth $10,000 to $30,000 the policy is worth buying '
+                              'anyway [vx1fwmFh0zM @ 00:01:58]. Darian Jarrett lists the same gate from '
+                              'the vendor side: every contractor automatically asks for a W-9, general '
+                              'liability insurance and workers compensation before a cleaner even reaches '
+                              'the bidder portal [_hqGinSApYg @ 00:08:14]. On the floor, OctoClean trains '
+                              'crews to hit every surface two to three times, first with a dust-capture '
+                              'product such as an Easy Trap duster, then a towel-and-bucket wipe-down, '
+                              'then a final polish, because drywall and ground-concrete dust will not come '
+                              'off in one pass [9TymiXPWhyY @ 00:07:23]. Nova Cleaners rounds out the '
+                              'equipment consensus with a quality shop vac carrying filters rated for fine '
+                              'construction dust, Goo Gone or a steam cleaner for adhesive, a scraper for '
+                              'glass, and both a broom and a push broom on site [S9xoQxmy2bg @ 00:00:14]. '
+                              'The shared mindset is that this is restoration work, closer to turning over '
+                              'a trashed college dorm room than wiping down a tenanted office.'],
+               'table': {'caption': 'Where post-construction practitioners line up on the fundamentals',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner Actually Does',
+                                     'Operator Payoff',
+                                     'Expert Source'],
+                         'rows': [['Construction cleanup should feed recurring janitorial contracts',
+                                   'Finds out who is moving in or leasing and pitches three or five-day '
+                                   'service',
+                                   'Escapes the feast-or-famine cycle that sinks pure construction '
+                                   'cleaning shops',
+                                   'The Janitorial Store ([RNflg846cs4 @ 00:06:32])'],
+                                  ['Sell three distinct phases carrying three distinct prices',
+                                   'Separates rough clean, final clean and touch-up clean on every '
+                                   'proposal',
+                                   'Keeps each return visit billable instead of buried inside one lump '
+                                   'price',
+                                   'Mark Etherton - The Millionaire Playbook ([PG-8SEuPFQk @ 00:01:15])'],
+                                  ['Workers compensation is the entry ticket to contractor work',
+                                   'Carries workers comp because 99 percent of construction companies '
+                                   'require it',
+                                   'Unlocks brokered cleanup jobs listed at $10,000 to $30,000 each',
+                                   'Construction Clean Partners ([vx1fwmFh0zM @ 00:01:58])'],
+                                  ['Vendor packet must be ready before the first ask',
+                                   'Sends W-9, general liability, workers comp and a short introductory '
+                                   'letter',
+                                   'Lands the company on bidder lists that push bid invites every week',
+                                   'Darian Jarrett ([_hqGinSApYg @ 00:08:14])'],
+                                  ['Every surface gets cleaned two to three separate times',
+                                   'Dust-capture wipe, then towel-and-bucket wipe, then a final polish '
+                                   'pass',
+                                   'Survives superintendent inspection without callbacks on drywall and '
+                                   'concrete dust',
+                                   'OctoClean Media ([9TymiXPWhyY @ 00:07:23])'],
+                                  ['Room-by-room sign-off protects the final invoice',
+                                   'Posts a logo sheet marked room completed and gets the super to clear '
+                                   'it',
+                                   'Turns later punch-list requests into billable time and materials, not '
+                                   'free recleans',
+                                   'OctoClean Media ([YE3spKAx9HI @ 00:03:02])'],
+                                  ['Cash reserves must cover supplies and slow contractor payment',
+                                   'Buys barrels, buckets, mops, brooms and rags upfront from reserves or '
+                                   'a card',
+                                   'Keeps the 1st and 15th payroll moving while net 30 stretches to net '
+                                   '45-50',
+                                   'Darian Jarrett ([c9LRSgPQlvE @ 00:01:55])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["The cleanest bid math comes from Steve Hansen's production-rate method. "
+                              'With a tracked final-clean rate of 150 square feet per hour, a '
+                              '15,000-square-foot building equals 100 labor hours; priced at $25 per hour '
+                              "that is $2,500, while the company's tracked square-foot rate of 18 cents "
+                              'yields $2,700 [gTK5pzrNCqg @ 00:01:42]. Labor gets loaded next: seven '
+                              'people over two days, six cleaners at $12 an hour plus a $16 supervisor, '
+                              'totals $1,257.52, and once FICA, unemployment, liability, workers comp, '
+                              'overhead and supplies are added, costs land at $1,979.96, leaving $720.04 '
+                              'or 26 percent at the square-foot price and $520.04 or 20 percent at the '
+                              'hourly price [gTK5pzrNCqg @ 00:05:28]. Hansen picks the hourly number when '
+                              'the contractor sounds price-driven and the square-foot number when quality '
+                              "is the priority. For cleaners without tracked data, the Janitorial Store's "
+                              'averages are 10 to 15 cents for rough, 15 to 30 cents for final and 6 to 12 '
+                              'cents for touch-up, with real jobs ranging from 15 cents to $1.25 '
+                              '[RNflg846cs4 @ 00:00:47]. OctoClean plans on about 200 square feet per '
+                              'person-hour and quotes apartment work at $45 to $50 an hour [9TymiXPWhyY @ '
+                              '00:05:18].',
+                              'Landing the work follows a tested outreach script. Darian Jarrett walks up '
+                              'to active sites, asks the first worker for the superintendent or project '
+                              'manager, asks how to get on the vendor or bidding list, and when nobody is '
+                              "on site calls the number on the contractor's sign [_hqGinSApYg @ 00:02:43]. "
+                              "The exact text that got a project manager to reply reads: 'Good afternoon, "
+                              'this is Darian with my cleaning service. I noticed your project on blank '
+                              'street name and I wanted to see if you need post construction cleaning '
+                              "services. We'd be happy to showcase our previous work and explore the "
+                              "opportunity of becoming a vendor for your team' [_hqGinSApYg @ 00:04:11]. "
+                              'Mark Etherton runs a shorter version in person: introduce yourself, hand '
+                              "over a proposal and ask, 'What do you need clean right now?', a line "
+                              'credited with making thousands [PG-8SEuPFQk @ 00:02:23]. For markets with '
+                              'no local relationships, Construction Clean Partners brokers the '
+                              'introduction, lets the cleaner set the price after a site walk with the PM, '
+                              'then charges either 5 percent of the project at contract signing or 10 '
+                              'percent after the contractor pays in full [vx1fwmFh0zM @ 00:01:39]. '
+                              "Jarrett's third channel is emailing the top 10 to 20 local builders under a "
+                              'subject line like post construction cleaning vendor, then following up '
+                              'until bid invites arrive weekly.',
+                              'Floor care and specialty add-ons are where the margin stacks. OctoClean '
+                              'charges 35 to 45 cents per square foot to strip and refinish VCT or sheet '
+                              'vinyl, sets a $450 minimum even for a closet, adds an hourly '
+                              'furniture-moving charge with a three-hour minimum, and budgets $2,000 to '
+                              '$5,000 for a metal-base 175 RPM machine, an 18-gallon shovelnose wet vac, a '
+                              'Doodle Bug, black strip pads and the 3M flat mop applicator [X3MX2xOshA4 @ '
+                              '00:05:33]. S.N.M. Cleaning Service stripped just under 20,000 square feet '
+                              'in two nights using stripper at 10 to 1, an auto scrubber making three '
+                              'passes with slurry pickup on the third, a 175 swing machine in tight areas, '
+                              'and five coats of finish [8s441oHT2b4 @ 00:01:09]. Steam Boss mixes '
+                              'stripper at 20 ounces per gallon of hot water, dwells it about 10 minutes, '
+                              'rinses several times and lays four coats [jt0SYjId62I @ 00:01:31]. On '
+                              'exteriors, Austin Davis quoted brushing a full building, then switched to '
+                              'downstreamed Cleansol BC, about $120 per five-gallon bucket with a '
+                              'two-to-three-minute dwell, and finished a $2,500 job in two and a half '
+                              'hours [M2j87yHQY10 @ 00:02:05]. Darian Jarrett applies the same line-item '
+                              'rule to punch-list returns, billing an average of $75 an hour plus fuel on '
+                              'long commutes. Every add-on carries its own price.'],
+               'table': {'caption': 'Street numbers for bidding post-construction, floor care and '
+                                    'specialty add-ons',
+                         'headers': ['Line Item',
+                                     'Practitioner Number or Spec',
+                                     'How It Gets Used on the Job',
+                                     'Expert Source'],
+                         'rows': [['Final-clean production rate for one-time detail cleans',
+                                   '150 square feet per hour, tracked across completed final cleans',
+                                   'Divide cleanable square footage by the rate to get total labor hours',
+                                   'The Janitorial Store ([gTK5pzrNCqg @ 00:01:23])'],
+                                  ['Phase pricing bands quoted per square foot',
+                                   'Rough 10-15 cents, final 15-30 cents, touch-up 6-12 cents',
+                                   'Starting averages before a company has its own tracked job numbers',
+                                   'The Janitorial Store ([RNflg846cs4 @ 00:00:47])'],
+                                  ['Per-person detail production on construction cleans',
+                                   'About 200 square feet per hour per person, and no faster',
+                                   'Sizes crews and schedules because detail wiping simply cannot be '
+                                   'rushed',
+                                   'OctoClean Media ([9TymiXPWhyY @ 00:08:10])'],
+                                  ['VCT and sheet vinyl strip and refinish pricing',
+                                   '35-45 cents per square foot with a $450 minimum charge',
+                                   'Range flexes for density, existing finish buildup and access to the '
+                                   'area',
+                                   'OctoClean Media ([X3MX2xOshA4 @ 00:05:33])'],
+                                  ['Floor care equipment buy-in before the first strip job',
+                                   '$2,000 to $5,000 for machine, wet vac, tools and pads',
+                                   'Metal-base 175 RPM machine, 18-gallon shovelnose vac, Doodle Bug, flat '
+                                   'mop applicator',
+                                   'OctoClean Media ([X3MX2xOshA4 @ 00:02:28])'],
+                                  ['Touch-up and punch-list return visits between phases',
+                                   'Average $75 per hour plus fuel when the commute runs long',
+                                   'Billed on separate invoices; about six invoices turned $7,083 into '
+                                   'roughly $9,000',
+                                   'Darian Jarrett ([c9LRSgPQlvE @ 00:08:09])'],
+                                  ['Construction lead broker commission on won cleanup jobs',
+                                   '5 percent at contract signing or 10 percent after paid in full',
+                                   'Owed only if the cleaner actually lands the construction cleanup job',
+                                   'Construction Clean Partners ([vx1fwmFh0zM @ 00:01:39])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Field-Tested Edges From the Job Site',
+                           'body': 'Small moves the practitioners use to protect margin, avoid blame and '
+                                   'pull extra revenue out of every construction cleanup.',
+                           'items': ['Ask whether the windows were covered during construction; if not, '
+                                     'get a signed waiver before scraping drywall mud, paint and grinder '
+                                     'burns, because scraping takes longer and risks scratched glass [The '
+                                     'Janitorial Store — RNflg846cs4 @ 00:08:23]',
+                                     'Scrape paint off glass only while it is soaking wet, razor at a '
+                                     '45-degree angle, and ask the super whether the trade fixes overspray '
+                                     'or the cleaner does it as billable T&M [OctoClean Media — '
+                                     '9TymiXPWhyY @ 00:19:33]',
+                                     'Hit stainless steel with a steam cleaner and microfiber instead of '
+                                     'stainless polish, which leaves streaks; a good steamer saves a ton '
+                                     'of time on adhesive too [Nova Cleaners — S9xoQxmy2bg @ 00:02:16]',
+                                     'Sub out exterior work rather than refusing it: Darian Jarrett hired '
+                                     'a pressure washer for an entryway and dumpster rust stain and kept '
+                                     'about 10 percent of a $917 sub as a referral fee [Darian Jarrett — '
+                                     'c9LRSgPQlvE @ 00:13:19]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Walk the Site and Extract the Scope',
+                              'action': 'Meet the superintendent or project manager on site and run the '
+                                        'full question list before pricing.',
+                              'detail': 'Ask how many phases, the gap between rough and final, the start '
+                                        'date, the days allowed, and who supplies dumpsters, water and '
+                                        'electrical, then lock in an on-site contact for when any of those '
+                                        'are missing [The Janitorial Store — RNflg846cs4 @ 00:03:41]'},
+                             {'step': 2,
+                              'title': 'Read the Spec for Buried Cleans',
+                              'action': 'Read every line of the specification for final, punch and '
+                                        'trade-clean obligations.',
+                              'detail': 'OctoClean missed a buried clause requiring two to three cleans '
+                                        'and paid over $100,000 in labor to go back and do them, so price '
+                                        'every clean the spec actually demands [OctoClean Media — '
+                                        'YE3spKAx9HI @ 00:04:24]'},
+                             {'step': 3,
+                              'title': 'Run the Production-Rate Numbers',
+                              'action': 'Convert square footage to labor hours, load all costs, and '
+                                        'confirm the margin before quoting.',
+                              'detail': 'Divide cleanable square footage by the tracked rate, load wages, '
+                                        'payroll taxes, insurance, overhead and supplies, and check '
+                                        'profit, as in the 15,000 sq ft example netting 26 percent at 18 '
+                                        'cents [The Janitorial Store — gTK5pzrNCqg @ 00:05:28]'},
+                             {'step': 4,
+                              'title': 'Execute Room by Room and Bill the Returns',
+                              'action': 'Clean room by room, document sign-offs daily, and invoice every '
+                                        'punch-list return separately.',
+                              'detail': 'Post a logo sheet marked room completed, have the supervisor '
+                                        'clear each room every day, and bill later punch-list cleaning as '
+                                        'time and materials instead of recleaning for free [OctoClean '
+                                        'Media — YE3spKAx9HI @ 00:03:02]'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over how much iron you need before you walk onto a '
+                              'jobsite. Mark Etherton tells operators flatly that they do not need 10K in '
+                              'equipment: shop vacs, mops, buckets, scrapers, safety gear, rags, ladders '
+                              'and window tools carry day one, and a floor scrubber or buffer is a later '
+                              'purchase [PG-8SEuPFQk @ 00:02:43]. Nova Cleaners lands in the same camp, '
+                              'saying that if all you have is a broom, microfiber cloths and a spray '
+                              'bottle, you go do the first job anyway and learn along the way, even while '
+                              'admitting they would never again show up without a solid steam cleaner '
+                              '[S9xoQxmy2bg @ 00:03:20]. The OctoClean hosts take the opposite line: they '
+                              'call construction work cleaning on steroids, say the equipment cost is the '
+                              'reason a lot of people stay out, and insist you must have all the stuff, '
+                              'not some of it, because you scrub floors with a machine instead of mopping '
+                              "[9TymiXPWhyY @ 00:12:43]. On floor care specifically, OctoClean Media's "
+                              'floor-care pricing breakdown budgets $2,000 to $5,000 for a 175 RPM '
+                              'machine, shovel-nose wet-dry vac, squeegee, Doodle Bug pole and pads, and '
+                              'warns that anyone without experience should learn under a journeyman before '
+                              'stripping a single floor [X3MX2xOshA4 @ 00:02:28].',
+                              'Pricing method is the second fault line. Mark Etherton says to price on '
+                              'dust level, debris level, window count, restroom count, square footage, '
+                              'deadline pressure, manpower and site conditions, explicitly not on how long '
+                              'you think it might take [PG-8SEuPFQk @ 00:02:01]. Steve Hansen of The '
+                              'Janitorial Store does the reverse and builds the number from time: a '
+                              'tracked final-clean production rate of 150 square feet per hour turns a '
+                              '15,000 square-foot building into 100 hours, which Hansen can sell at $25 '
+                              'per hour for $2,500 or at 18 cents a foot for $2,700. Hansen chooses '
+                              'between them by reading the contractor, going hourly at 20 percent profit '
+                              'when the deal is price driven and per-foot at 26 percent when the buyer '
+                              'wants quality work [gTK5pzrNCqg @ 00:06:10]. OctoClean Media runs a faster '
+                              'crew assumption, about 200 square feet an hour per person, and quotes '
+                              "apartments at $45 to $50 an hour [9TymiXPWhyY @ 00:05:18]. Hansen's "
+                              'averages give a sanity band of 10 to 15 cents for rough, 15 to 30 cents for '
+                              "final and 6 to 12 cents for touch-up, though Hansen's own jobs have landed "
+                              'anywhere from 15 cents to $1.25 a foot [RNflg846cs4 @ 00:00:47].',
+                              'Practitioners also split on what construction cleaning is for. Mark '
+                              'Etherton pitches it as one of the fastest ways from zero to six figures, '
+                              'paying 5 to 10 times more than residential work for operators who know what '
+                              'they are doing [PG-8SEuPFQk @ 00:00:36]. The OctoClean hosts treat it as a '
+                              'door-opener: the real value is the contract after occupancy, and the shop '
+                              'should call itself a commercial cleaning company that performs construction '
+                              'cleaning, never a construction cleaning company, because otherwise it is '
+                              'feast or famine [9TymiXPWhyY @ 00:16:28]. Lead generation splits the same '
+                              'way. Darian Jarrett walks active sites, asks for the superintendent or '
+                              'project manager, texts a short vendor pitch, and emails the top 10 to 20 '
+                              'local contractors under a post construction cleaning vendor subject line, '
+                              'asking how to join the bidder list [_hqGinSApYg @ 00:05:01]. Construction '
+                              'Clean Partners sells a brokered route instead: it connects a cleaner to the '
+                              "site manager, submits the cleaner's price as a bid, follows up until the "
+                              'job lands, then steps out so the cleaner contracts and invoices the builder '
+                              'directly, charging 5 percent of the project at signing or 10 percent after '
+                              'the contractor pays in full [vx1fwmFh0zM @ 00:01:39].'],
+               'table': {'caption': 'Competing Playbooks on Post-Construction and Floor Care Execution',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Day-one equipment threshold for new operators',
+                                   'Etherton starts with shop vacs, mops, buckets, scrapers, ladders and '
+                                   'safety gear; scrubber or buffer comes later',
+                                   'OctoClean budgets $2,000 to $5,000 for a floor rig and says you must '
+                                   'have everything',
+                                   'Mark Etherton - The Millionaire Playbook ([PG-8SEuPFQk @ 00:02:43]); '
+                                   'OctoClean Media ([X3MX2xOshA4 @ 00:02:28])'],
+                                  ['What actually drives the bid number',
+                                   'Etherton prices dust, debris, window and restroom counts, deadline '
+                                   'pressure and site conditions, not hours',
+                                   'Hansen divides cleanable square footage by a tracked 150 square feet '
+                                   'per hour production rate',
+                                   'Mark Etherton - The Millionaire Playbook ([PG-8SEuPFQk @ 00:02:01]); '
+                                   'The Janitorial Store ([gTK5pzrNCqg @ 00:01:23])'],
+                                  ['Crew speed assumption on detail final cleans',
+                                   'The Janitorial Store pegs its one-time final clean at 150 square feet '
+                                   'per hour',
+                                   'OctoClean pegs construction detail work at about 200 square feet an '
+                                   'hour per person',
+                                   'The Janitorial Store ([RNflg846cs4 @ 00:04:49]); OctoClean Media '
+                                   '([YE3spKAx9HI @ 00:01:42])'],
+                                  ['VCT strip chemistry and number of finish coats',
+                                   'Steam Boss mixes stripper at about 20 ounces a gallon, dwells about 10 '
+                                   'minutes, then lays three or four coats',
+                                   'S.N.M. runs a 10 to 1 light-duty dilution, about 15 minutes dwell, '
+                                   'then five coats of finish',
+                                   'Steam Boss inc ([jt0SYjId62I @ 00:01:31]); S.N.M. Cleaning Service '
+                                   '([8s441oHT2b4 @ 00:00:41])'],
+                                  ['Machine passes versus hand detailing on strips',
+                                   'S.N.M. autoscrubs big open areas in three passes and swings a 175 '
+                                   'machine in tight areas',
+                                   'Steam Boss hand-details corners, saying most companies would not do '
+                                   'any of this by hand',
+                                   'S.N.M. Cleaning Service ([8s441oHT2b4 @ 00:01:09]); Steam Boss inc '
+                                   '([jt0SYjId62I @ 00:06:45])'],
+                                  ['Chalky construction dust stuck on exterior siding',
+                                   'Austin Davis originally quoted brushing an entire building by hand, '
+                                   'calling it terribly tedious work',
+                                   'Downstreamed Cleans-all BC at about $120 a five-gallon bucket, 2 to 3 '
+                                   'minute dwell, $2,500 job done in 2.5 hours',
+                                   'Austin Davis ([M2j87yHQY10 @ 00:02:05])'],
+                                  ['Paint and adhesive removal on finished surfaces',
+                                   'Darian Jarrett lets Goo Gone sit about five minutes, then uses a putty '
+                                   'knife that will not scratch like a razor',
+                                   'Nova Cleaners pairs Goo Gone with a steam cleaner and paint thinner; '
+                                   'OctoClean scrapes wet glass at 45 degrees',
+                                   'Darian Jarrett ([6wtiLyP6-zU @ 00:03:20]); Nova Cleaners ([S9xoQxmy2bg '
+                                   '@ 00:00:30]); OctoClean Media ([9TymiXPWhyY @ 00:19:33])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive firsthand loss on record comes from OctoClean Media: the '
+                              'hosts did not read the fine print, a job carried two or three cleans buried '
+                              'in the scope of work, and the re-cleans cost over $100,000 in labor '
+                              '[9TymiXPWhyY @ 00:10:36]. Their rule is to read whether the spec says final '
+                              'cleaning only or final, punch and trade clean before pricing. The companion '
+                              'trap is the free re-clean. After the architect and construction manager '
+                              'walk the punch list, trades make a fresh mess, and cleaners who just go '
+                              'back and clean again give away the time-and-materials money that makes the '
+                              'job lucrative; the fix is a logo sheet marked room completed on each '
+                              'finished door and a daily supervisor sign-off [YE3spKAx9HI @ 00:03:02]. '
+                              'Mark Etherton owns the same rookie list: underpricing, not walking the '
+                              'first site, not clarifying scope, not invoicing the same day, and trying to '
+                              'be cheap instead of professional, every one made before fixing them paid '
+                              'off in the thousands [PG-8SEuPFQk @ 00:01:36]. Darian Jarrett flipped '
+                              'punch-list churn into revenue, billing every in-between touch-up at an '
+                              'average $75 an hour, adding fuel when crews commuted far, and the '
+                              'contractor was totally fine paying that premium [c9LRSgPQlvE @ 00:08:09].',
+                              'Cash flow is the second killer. The OctoClean hosts warn that many '
+                              'contractors hiring cleaners are third- or fourth-tier subs, so payment '
+                              'arrives when theirs does, which can stretch six months or longer, and the '
+                              'contracts need watching [9TymiXPWhyY @ 00:02:02]. Darian Jarrett saw a '
+                              'milder version on a first job: terms were net 30 but the check landed '
+                              'closer to net 45 or 50, so barrels, mop buckets, mops, brooms, gloves and '
+                              'rags came out of cash reserves while the 1st-and-15th payroll still had to '
+                              'clear [c9LRSgPQlvE @ 00:02:49]. Labor whiplash compounds it: OctoClean '
+                              'describes supers penalized for running over who demand 25 units today and '
+                              'none tomorrow, forcing crews home, which is why the hosts keep staff at '
+                              'four to six hours a night plus a bench of short-term workers. OctoClean '
+                              'adds that ladder work above a certain height or any boom lift pushes '
+                              'workers comp costs higher. Insurance is the next wall. Construction Clean '
+                              'Partners says 99 percent of its contractors refuse cleaners without workers '
+                              'compensation, though jobs worth $10,000 to $30,000 can justify buying it '
+                              '[vx1fwmFh0zM @ 00:02:16]. Jarrett confirms builders automatically request a '
+                              'W9, general liability and workers comp before the vendor portal clears '
+                              '[_hqGinSApYg @ 00:08:14].',
+                              'Floor care carries its own failure modes. OctoClean Media warns that a bad '
+                              'strip leaves finish that will not adhere or, worse, shiny dirt, a bad '
+                              'finish means stripping the floor again, bye-bye profit, and high-alkaline '
+                              'strippers can ruin Marmoleum and stick the cleaner with replacing a very '
+                              'expensive surface [X3MX2xOshA4 @ 00:01:56]. The same breakdown says a '
+                              'plastic-base machine with add-on weights lasts half as long. Window glass '
+                              'is the liability hotspot: Steve Hansen of The Janitorial Store says '
+                              'uncovered windows come back with drywall mud, paint and grinder burns that '
+                              'pit the glass, so scraping takes longer and risks scratches, and the '
+                              'customer signs a waiver first [RNflg846cs4 @ 00:08:40]. Darian Jarrett '
+                              'destroyed a vacuum on this work and now rules out household and Dyson-style '
+                              'units in favor of a Hoover commercial shoulder vac [6wtiLyP6-zU @ '
+                              '00:07:58]. Mathew Rogers mixed a pre-spray a little too strong and '
+                              'lightened a patch of high-end white wool carpet, a mistake the client '
+                              'noticed immediately as tension rose; liability insurance covered the repair '
+                              'without any out-of-pocket cost, and the same client called back six months '
+                              'later for another job. Rogers frames skipping insurance as one of the '
+                              'biggest beginner mistakes [xzidtSceePw @ 00:04:46].'],
+               'table': {'caption': 'Firsthand Losses, Traps and the Numbers Behind Them',
+                         'headers': ['Failure Mode',
+                                     'What Went Wrong Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Buried multi-clean scope language in the spec',
+                                   'Fine print hid two or three required cleans inside a scope of work '
+                                   'nobody read closely',
+                                   'The re-cleaning cost over $100,000 in labor on that single job',
+                                   'OctoClean Media ([9TymiXPWhyY @ 00:10:36])'],
+                                  ['Free re-cleans after the punch list walk',
+                                   'Trades mess up cleared rooms and crews just go back and clean again '
+                                   'without sign-off',
+                                   'Room completed sheets plus daily supervisor sign-off protect the '
+                                   'lucrative time-and-materials billing',
+                                   'OctoClean Media ([YE3spKAx9HI @ 00:03:02])'],
+                                  ['Slow pay from builders and tiered subs',
+                                   'Net 30 terms stretched to roughly net 45 or 50 while payroll still ran '
+                                   'on the 1st and 15th',
+                                   'Cash reserves or a business credit card must front supplies and labor '
+                                   'for the full cycle',
+                                   'Darian Jarrett ([c9LRSgPQlvE @ 00:02:49])'],
+                                  ['No workers compensation policy on file',
+                                   'Nearly every construction company in the broker network refuses '
+                                   'cleaners without workers comp coverage',
+                                   'Jobs posted at $10,000 to $30,000 can justify buying the policy anyway',
+                                   'Construction Clean Partners ([vx1fwmFh0zM @ 00:02:16])'],
+                                  ['Botched strip or wrong stripper chemistry',
+                                   'Finish fails to adhere or seals in shiny dirt, and high-alkaline '
+                                   'stripper can ruin Marmoleum',
+                                   'Restripping means bye-bye profit and Marmoleum damage means paying for '
+                                   'a very expensive replacement',
+                                   'OctoClean Media ([X3MX2xOshA4 @ 00:00:35]); OctoClean Media '
+                                   '([X3MX2xOshA4 @ 00:01:56])'],
+                                  ['Windows left uncovered during construction',
+                                   'Drywall mud, paint and grinder burns pit the glass, forcing slower '
+                                   'scraping with higher scratch risk',
+                                   'Get a signed waiver before scraping so the cleaner is not blamed for '
+                                   'the pitting',
+                                   'The Janitorial Store ([RNflg846cs4 @ 00:08:40])'],
+                                  ['Job priced off a guessed duration',
+                                   'A $150 carpet job quietly ran almost three hours, far longer than '
+                                   'similar jobs',
+                                   'Time tracking pushed the price to $200, customers kept booking, and '
+                                   'profits rose about 20 percent',
+                                   'Mathew Rogers ([xzidtSceePw @ 00:11:15])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Walk-Away Checks Before You Sign a Construction Clean',
+                           'body': 'Clear all four before committing crew hours, supplies or a price to a '
+                                   'general contractor.',
+                           'items': ['Read the full spec for final only versus final, punch and trade '
+                                     'clean language before quoting, because buried extra cleans are where '
+                                     'the six-figure labor losses hide [OctoClean Media — 9TymiXPWhyY @ '
+                                     '00:10:13].',
+                                     'Confirm water, electrical and dumpsters on the walkthrough and '
+                                     'collect a site contact, since no water means hauling it in and no '
+                                     'power can mean bringing generators [The Janitorial Store — '
+                                     'RNflg846cs4 @ 00:03:41].',
+                                     'Have the W9, general liability and workers compensation packet ready '
+                                     'before chasing bidder lists, because builders ask for all three '
+                                     'automatically [Darian Jarrett — _hqGinSApYg @ 00:08:14].',
+                                     'Hold cash reserves or a business credit line big enough to buy '
+                                     'supplies up front and meet payroll through a net 30 that can land '
+                                     'closer to net 45 or 50 [Darian Jarrett — c9LRSgPQlvE @ '
+                                     '00:02:15].']}}],
+ 'pull_quote': "'We didn't read the fine print and we ended up having to go back and do two or three "
+               'cleans because it was in some area of that scope of work that was essentially buried, and '
+               "it cost us over $100,000 in labor, so I'd never do that again.' — OctoClean Media "
+               '(9TymiXPWhyY @ 00:10:36).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Walk every site with the superintendent or site manager and nail down how many '
+                      'phases, when cleaning can start, and how many days you have to finish, because '
+                      'those answers set crew size and labor cost [The Janitorial Store — RNflg846cs4 @ '
+                      '00:01:51].',
+                      'Divide cleanable square footage by your tracked production rate, price the job both '
+                      'per hour and per square foot, then back out labor, taxes, insurance, overhead and '
+                      'supplies to see the real profit percentage before picking a number [The Janitorial '
+                      'Store — gTK5pzrNCqg @ 00:04:34].',
+                      'Tape a logo sheet marked room completed on each finished door and get the on-site '
+                      'supervisor to check and sign off every day so punch-list messes become billable '
+                      'time and materials [OctoClean Media — YE3spKAx9HI @ 00:03:02].',
+                      'Invoice every between-phase touch-up at an hourly rate, around $75 an hour, and add '
+                      'fuel when the crew commutes far [Darian Jarrett — c9LRSgPQlvE @ 00:08:09].',
+                      'Ladder up from the core clean into add-ons the client asks for on site: blinds, '
+                      'ceiling fans, vents, TVs, mirrors, sconces and chandeliers [Window Cleaning '
+                      'BluePrint — K4OAVqDBtgE @ 00:01:00].',
+                      'While the post-construction job is still running, find out who is moving into the '
+                      'building, owner or tenant, and pitch them recurring service so the one-off turns '
+                      'into contract revenue [The Janitorial Store — RNflg846cs4 @ 00:06:32].'],
+ 'statutory_citations': [{'title': 'OctoClean Media — Construction Cleaning: Build Your Profits! | '
+                                   'OctoClean Podcast Ep. 17 [00:10:36]',
+                          'url': 'https://www.youtube.com/watch?v=9TymiXPWhyY&t=636s',
+                          'relevance': 'Primary practitioner testimony on buried multi-clean scope '
+                                       'language costing over $100,000 in labor and on tiered-sub payment '
+                                       'risk.'},
+                         {'title': 'The Janitorial Store — How to price a post construction cleaning for a '
+                                   'commercial building [00:05:07]',
+                          'url': 'https://www.youtube.com/watch?v=gTK5pzrNCqg&t=307s',
+                          'relevance': 'Primary practitioner testimony on production-rate bidding, '
+                                       'per-hour versus per-square-foot pricing, and backing out costs to '
+                                       'a 20 to 26 percent margin.'},
+                         {'title': 'OctoClean Media — How to Price Floor Care (VCT Strip and Finish '
+                                   'Pricing) [00:05:33]',
+                          'url': 'https://www.youtube.com/watch?v=X3MX2xOshA4&t=333s',
+                          'relevance': 'Primary practitioner testimony on 35 to 45 cent strip and refinish '
+                                       'pricing, the $450 minimum, and costly stripping mistakes.'},
+                         {'title': 'Darian Jarrett — The Truth About My First Post Construction Cleaning '
+                                   'Experience: Lessons Learned [00:13:19]',
+                          'url': 'https://www.youtube.com/watch?v=c9LRSgPQlvE&t=799s',
+                          'relevance': 'Primary practitioner testimony on a $7,083 bid growing to roughly '
+                                       '$9,000 through touch-up invoices and subbed pressure washing.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'jt0SYjId62I',
+                       'title': 'SUPER DIRTY GRIMY VCT Floor strip and wax transformation! #satisfying '
+                                '#cleaning',
+                       'channel': 'Steam Boss inc',
+                       'author': 'Steam Boss inc',
+                       'text': "We're going to be fully stripping both of these floors and then applying "
+                               'three or four coats of wax over the top, whichever makes it look good.',
+                       'tip': "We're going to be fully stripping both of these floors and then applying "
+                              'three or four coats of wax over the top, whichever makes it look good.',
+                       'timestamp': 76,
+                       'timestamp_seconds': 76,
+                       'timestamp_label': '[00:01:16]',
+                       'url': 'https://www.youtube.com/watch?v=jt0SYjId62I&t=76s',
+                       'markdown': '[00:01:16](https://www.youtube.com/watch?v=jt0SYjId62I&t=76s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8s441oHT2b4',
+                       'title': 'STRIP AND REFINISH 20,000 SQUARE FEET of VCT floor - strip & wax 2025',
+                       'channel': 'S.N.M. Cleaning Service',
+                       'author': 'S.N.M. Cleaning Service',
+                       'text': "We're using auto scrubbing to do the stripping on most of the big open "
+                               'areas and a 175 swing machine on the smaller tight areas, making three '
+                               'passes and picking up all the slurry on the third pass.',
+                       'tip': "We're using auto scrubbing to do the stripping on most of the big open "
+                              'areas and a 175 swing machine on the smaller tight areas, making three '
+                              'passes and picking up all the slurry on the third pass.',
+                       'timestamp': 69,
+                       'timestamp_seconds': 69,
+                       'timestamp_label': '[00:01:09]',
+                       'url': 'https://www.youtube.com/watch?v=8s441oHT2b4&t=69s',
+                       'markdown': '[00:01:09](https://www.youtube.com/watch?v=8s441oHT2b4&t=69s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'X3MX2xOshA4',
+                       'title': 'How to Price Floor Care (VCT Strip and Finish Pricing)',
+                       'channel': 'OctoClean Media',
+                       'author': 'OctoClean Media',
+                       'text': 'We charge a range of 35 cents to 45 cents per square foot for stripping '
+                               'and refinishing.',
+                       'tip': 'We charge a range of 35 cents to 45 cents per square foot for stripping and '
+                              'refinishing.',
+                       'timestamp': 333,
+                       'timestamp_seconds': 333,
+                       'timestamp_label': '[00:05:33]',
+                       'url': 'https://www.youtube.com/watch?v=X3MX2xOshA4&t=333s',
+                       'markdown': '[00:05:33](https://www.youtube.com/watch?v=X3MX2xOshA4&t=333s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'X3MX2xOshA4',
+                       'title': 'How to Price Floor Care (VCT Strip and Finish Pricing)',
+                       'channel': 'OctoClean Media',
+                       'author': 'OctoClean Media',
+                       'text': 'Stripping a floor incorrectly results in finish not adhering or worse '
+                               'shiny dirt, and finishing incorrectly means you are stripping the floor '
+                               'again, bye-bye profit.',
+                       'tip': 'Stripping a floor incorrectly results in finish not adhering or worse shiny '
+                              'dirt, and finishing incorrectly means you are stripping the floor again, '
+                              'bye-bye profit.',
+                       'timestamp': 35,
+                       'timestamp_seconds': 35,
+                       'timestamp_label': '[00:00:35]',
+                       'url': 'https://www.youtube.com/watch?v=X3MX2xOshA4&t=35s',
+                       'markdown': '[00:00:35](https://www.youtube.com/watch?v=X3MX2xOshA4&t=35s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vx1fwmFh0zM',
+                       'title': 'How to win a post construction final cleanup job with Construction Clean '
+                                'Partners',
+                       'channel': 'Construction Clean Partners',
+                       'author': 'Construction Clean Partners',
+                       'text': "99% of these construction companies won't work with you unless you have "
+                               'Workers Compensation Insurance.',
+                       'tip': "99% of these construction companies won't work with you unless you have "
+                              'Workers Compensation Insurance.',
+                       'timestamp': 118,
+                       'timestamp_seconds': 118,
+                       'timestamp_label': '[00:01:58]',
+                       'url': 'https://www.youtube.com/watch?v=vx1fwmFh0zM&t=118s',
+                       'markdown': '[00:01:58](https://www.youtube.com/watch?v=vx1fwmFh0zM&t=118s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6wtiLyP6-zU',
+                       'title': 'Everything You NEED for Post-Construction Cleaning (Complete Supply '
+                                'Checklist)',
+                       'channel': 'Darian Jarrett',
+                       'author': 'Darian Jarrett',
+                       'text': "I've personally destroyed one of my vacuums, and you don't want to use a "
+                               'household vacuum or a Dyson or anything like that.',
+                       'tip': "I've personally destroyed one of my vacuums, and you don't want to use a "
+                              'household vacuum or a Dyson or anything like that.',
+                       'timestamp': 478,
+                       'timestamp_seconds': 478,
+                       'timestamp_label': '[00:07:58]',
+                       'url': 'https://www.youtube.com/watch?v=6wtiLyP6-zU&t=478s',
+                       'markdown': '[00:07:58](https://www.youtube.com/watch?v=6wtiLyP6-zU&t=478s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_hqGinSApYg',
+                       'title': 'How to Get Construction Cleaning Contracts (This REALLY Worked)',
+                       'channel': 'Darian Jarrett',
+                       'author': 'Darian Jarrett',
+                       'text': "You're going to need a W9 form, general liability insurance and Workers "
+                               "Compensation Insurance; that's what they're going to ask you for "
+                               'regardless.',
+                       'tip': "You're going to need a W9 form, general liability insurance and Workers "
+                              "Compensation Insurance; that's what they're going to ask you for "
+                              'regardless.',
+                       'timestamp': 494,
+                       'timestamp_seconds': 494,
+                       'timestamp_label': '[00:08:14]',
+                       'url': 'https://www.youtube.com/watch?v=_hqGinSApYg&t=494s',
+                       'markdown': '[00:08:14](https://www.youtube.com/watch?v=_hqGinSApYg&t=494s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PG-8SEuPFQk',
+                       'title': 'How to Start a Construction Cleaning Company (What Most People Get Wrong) '
+                                '#constructioncleaning',
+                       'channel': 'Mark Etherton - The Millionaire Playbook',
+                       'author': 'Mark Etherton - The Millionaire Playbook',
+                       'text': 'You price based on dust level, debris level, window count, restroom count, '
+                               'square footage, deadline pressure, manpower, site conditions, not on how '
+                               'long you think it might take.',
+                       'tip': 'You price based on dust level, debris level, window count, restroom count, '
+                              'square footage, deadline pressure, manpower, site conditions, not on how '
+                              'long you think it might take.',
+                       'timestamp': 121,
+                       'timestamp_seconds': 121,
+                       'timestamp_label': '[00:02:01]',
+                       'url': 'https://www.youtube.com/watch?v=PG-8SEuPFQk&t=121s',
+                       'markdown': '[00:02:01](https://www.youtube.com/watch?v=PG-8SEuPFQk&t=121s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RNflg846cs4',
+                       'title': 'How to price post construction cleaning',
+                       'channel': 'The Janitorial Store',
+                       'author': 'The Janitorial Store',
+                       'text': 'Average pricing for a rough clean is ten to fifteen cents a square foot, a '
+                               'final clean ranges from fifteen to thirty cents, and a touch-up or light '
+                               'clean is usually six to twelve cents a square foot.',
+                       'tip': 'Average pricing for a rough clean is ten to fifteen cents a square foot, a '
+                              'final clean ranges from fifteen to thirty cents, and a touch-up or light '
+                              'clean is usually six to twelve cents a square foot.',
+                       'timestamp': 47,
+                       'timestamp_seconds': 47,
+                       'timestamp_label': '[00:00:47]',
+                       'url': 'https://www.youtube.com/watch?v=RNflg846cs4&t=47s',
+                       'markdown': '[00:00:47](https://www.youtube.com/watch?v=RNflg846cs4&t=47s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9TymiXPWhyY',
+                       'title': 'Construction Cleaning: Build Your Profits! | OctoClean Podcast Ep. 17',
+                       'channel': 'OctoClean Media',
+                       'author': 'OctoClean Media',
+                       'text': "We didn't read the fine print and we ended up having to go back and do two "
+                               'or three cleans because it was essentially buried in the scope of work, '
+                               'and it cost us over $100,000 in labor.',
+                       'tip': "We didn't read the fine print and we ended up having to go back and do two "
+                              'or three cleans because it was essentially buried in the scope of work, and '
+                              'it cost us over $100,000 in labor.',
+                       'timestamp': 636,
+                       'timestamp_seconds': 636,
+                       'timestamp_label': '[00:10:36]',
+                       'url': 'https://www.youtube.com/watch?v=9TymiXPWhyY&t=636s',
+                       'markdown': '[00:10:36](https://www.youtube.com/watch?v=9TymiXPWhyY&t=636s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9TymiXPWhyY',
+                       'title': 'Construction Cleaning: Build Your Profits! | OctoClean Podcast Ep. 17',
+                       'channel': 'OctoClean Media',
+                       'author': 'OctoClean Media',
+                       'text': 'A lot of these contractors hiring you are a third or fourth tier sub, you '
+                               'get paid when they get paid, and you may not get paid for six months or '
+                               'longer.',
+                       'tip': 'A lot of these contractors hiring you are a third or fourth tier sub, you '
+                              'get paid when they get paid, and you may not get paid for six months or '
+                              'longer.',
+                       'timestamp': 122,
+                       'timestamp_seconds': 122,
+                       'timestamp_label': '[00:02:02]',
+                       'url': 'https://www.youtube.com/watch?v=9TymiXPWhyY&t=122s',
+                       'markdown': '[00:02:02](https://www.youtube.com/watch?v=9TymiXPWhyY&t=122s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gTK5pzrNCqg',
+                       'title': 'How to price a post construction cleaning for a commercial building',
+                       'channel': 'The Janitorial Store',
+                       'author': 'The Janitorial Store',
+                       'text': 'From tracking my production rates I know for a fact that my final clean '
+                               'rate is 150 square feet per hour.',
+                       'tip': 'From tracking my production rates I know for a fact that my final clean '
+                              'rate is 150 square feet per hour.',
+                       'timestamp': 83,
+                       'timestamp_seconds': 83,
+                       'timestamp_label': '[00:01:23]',
+                       'url': 'https://www.youtube.com/watch?v=gTK5pzrNCqg&t=83s',
+                       'markdown': '[00:01:23](https://www.youtube.com/watch?v=gTK5pzrNCqg&t=83s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'M2j87yHQY10',
+                       'title': 'Post Construction Cleaning | Construction Dust Solved With No Brushing',
+                       'channel': 'Austin Davis',
+                       'author': 'Austin Davis',
+                       'text': 'We charged $2,500 and we were able to do it in two and a half hours by '
+                               'simply just treating it like a house wash and downstreaming our solution.',
+                       'tip': 'We charged $2,500 and we were able to do it in two and a half hours by '
+                              'simply just treating it like a house wash and downstreaming our solution.',
+                       'timestamp': 125,
+                       'timestamp_seconds': 125,
+                       'timestamp_label': '[00:02:05]',
+                       'url': 'https://www.youtube.com/watch?v=M2j87yHQY10&t=125s',
+                       'markdown': '[00:02:05](https://www.youtube.com/watch?v=M2j87yHQY10&t=125s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YE3spKAx9HI',
+                       'title': 'Post Construction Cleaning Differences: Better Than Commercial Cleaning?',
+                       'channel': 'OctoClean Media',
+                       'author': 'OctoClean Media',
+                       'text': 'When you finish a room you put a piece of paper on the door with your logo '
+                               'on it saying room completed, and then you go to the supervisor on site '
+                               'every day so they check it and sign off.',
+                       'tip': 'When you finish a room you put a piece of paper on the door with your logo '
+                              'on it saying room completed, and then you go to the supervisor on site '
+                              'every day so they check it and sign off.',
+                       'timestamp': 182,
+                       'timestamp_seconds': 182,
+                       'timestamp_label': '[00:03:02]',
+                       'url': 'https://www.youtube.com/watch?v=YE3spKAx9HI&t=182s',
+                       'markdown': '[00:03:02](https://www.youtube.com/watch?v=YE3spKAx9HI&t=182s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xzidtSceePw',
+                       'title': 'How To Start A $1000/Day Carpet Cleaning Business (Free Course)',
+                       'channel': 'Mathew Rogers',
+                       'author': 'Mathew Rogers',
+                       'text': 'There was a job I used to do for $150 that would take me almost 3 hours; I '
+                               'realized my pricing was way off, and I started charging $200 for that same '
+                               'job and customers still booked with me.',
+                       'tip': 'There was a job I used to do for $150 that would take me almost 3 hours; I '
+                              'realized my pricing was way off, and I started charging $200 for that same '
+                              'job and customers still booked with me.',
+                       'timestamp': 675,
+                       'timestamp_seconds': 675,
+                       'timestamp_label': '[00:11:15]',
+                       'url': 'https://www.youtube.com/watch?v=xzidtSceePw&t=675s',
+                       'markdown': '[00:11:15](https://www.youtube.com/watch?v=xzidtSceePw&t=675s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'K4OAVqDBtgE',
+                       'title': 'How To Sell Window Cleaning Jobs On The Spot #keithkalfas #windowcleaning '
+                                '#windowcleaningblueprint',
+                       'channel': 'Window Cleaning BluePrint',
+                       'author': 'Window Cleaning BluePrint',
+                       'text': "Now I'm bringing in ladders early in the morning and I'm cleaning the "
+                               'ceiling fans, dusting them and then doing vents.',
+                       'tip': "Now I'm bringing in ladders early in the morning and I'm cleaning the "
+                              'ceiling fans, dusting them and then doing vents.',
+                       'timestamp': 60,
+                       'timestamp_seconds': 60,
+                       'timestamp_label': '[00:01:00]',
+                       'url': 'https://www.youtube.com/watch?v=K4OAVqDBtgE&t=60s',
+                       'markdown': '[00:01:00](https://www.youtube.com/watch?v=K4OAVqDBtgE&t=60s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'c9LRSgPQlvE',
+                       'title': 'The Truth About My First Post Construction Cleaning Experience: Lessons '
+                                'Learned',
+                       'channel': 'Darian Jarrett',
+                       'author': 'Darian Jarrett',
+                       'text': 'After it was all said and done the number came out to be close to $9,000 '
+                               'off of a $7,000 job.',
+                       'tip': 'After it was all said and done the number came out to be close to $9,000 '
+                              'off of a $7,000 job.',
+                       'timestamp': 831,
+                       'timestamp_seconds': 831,
+                       'timestamp_label': '[00:13:51]',
+                       'url': 'https://www.youtube.com/watch?v=c9LRSgPQlvE&t=831s',
+                       'markdown': '[00:13:51](https://www.youtube.com/watch?v=c9LRSgPQlvE&t=831s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'S9xoQxmy2bg',
+                       'title': 'Here’s what you need to know for your first post construction cleaning (I '
+                                'wish I would have known)',
+                       'channel': 'Nova Cleaners',
+                       'author': 'Nova Cleaners',
+                       'text': 'If I knew then what I know now I never would have showed up to a '
+                               'construction cleaning without a solid steam cleaner.',
+                       'tip': 'If I knew then what I know now I never would have showed up to a '
+                              'construction cleaning without a solid steam cleaner.',
+                       'timestamp': 122,
+                       'timestamp_seconds': 122,
+                       'timestamp_label': '[00:02:02]',
+                       'url': 'https://www.youtube.com/watch?v=S9xoQxmy2bg&t=122s',
+                       'markdown': '[00:02:02](https://www.youtube.com/watch?v=S9xoQxmy2bg&t=122s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'}]}

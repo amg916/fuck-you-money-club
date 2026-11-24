@@ -1,691 +1,806 @@
 from __future__ import annotations
 
-CHAPTER_2 = {
-    "id": "Q2",
-    "chapter_id": "Q2",
-    "chapter_number": 2,
-    "question_number": 2,
-    "slug": "who-pays-fleet-arbitrage-payment-rails",
-    "question_prompt": "Who writes the check in uber & commercial fleet arbitrage, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
-    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "Driver Lease Waterfalls, TLC/TCP Black SUV Dispatch, Investor Co-Hosting, ACH Mandates, and Airport Transfer Settlement",
-    "layout_template": "executive_summary",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #31, Uber & Commercial Fleet Arbitrage, ranks #15 of 36 "
-        "with an 89/100 Money-to-Manpower Score. Its buyers pay for usable "
-        "vehicles, dependable airport capacity, and accountable investor fleet "
-        "administration, not abstract access to an app. This chapter maps 10 "
-        "operator plays to the person controlling payment, the service evidence "
-        "supporting collection, and the fallback when a driver, vehicle, or "
-        "payment rail fails. Formula v2.0 annual owner profit is $25,200 "
-        "Conservative, $144,900 Base, and $336,000 Scaled. Those results use "
-        "$180,000, $690,000, and $1,200,000 gross operator billings, respectively, "
-        "with 55% retained contribution after owner splits and pass-through "
-        "fleet costs. Separate passenger fares, refundable deposits, investor "
-        "principal, and operator fees before designing any settlement waterfall."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$180,000",
-            "context": "Annual gross operator billings; $99,000 retained at 55%",
-            "note": "14% gross-basis net margin; 25.45% retained-basis net margin; $25,200 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$690,000",
-            "context": "Annual gross operator billings; $379,500 retained at 55%",
-            "note": "21.0% gross-basis net margin; 38.18% retained-basis net margin; $144,900 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual gross operator billings; $660,000 retained at 55%",
-            "note": "28% gross-basis net margin; 50.91% retained-basis net margin; $336,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Identify the economic buyer before offering the vehicle",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The first check usually comes from a working driver who needs "
-                    "an eligible, insured vehicle before the next earning window. "
-                    "Their acute pain is lost earning capacity, not vehicle ownership "
-                    "as an aspiration. A $450 weekly lease becomes intelligible when "
-                    "compared with that driver's documented receipts, fuel, tolls, "
-                    "tax provision, and living withdrawals; it does not become "
-                    "affordable merely because a salesperson cites busy airport "
-                    "queues. Verify recent platform statements supplied through an "
-                    "authorized process and separate recurring earnings from temporary "
-                    "incentives. Ask who actually owns the payment account and who "
-                    "can authorize its debits. A spouse's card, an unrelated "
-                    "business account, and a driver's own account create different "
-                    "authorization risks. The agreement should identify the vehicle, "
-                    "permitted use, weekly billing period, included mileage, damage "
-                    "process, and return procedure. A refundable security deposit "
-                    "remains a liability until a valid contractual application "
-                    "occurs. Keep it outside operating revenue and track it by "
-                    "driver. If verified disposable operating cash cannot support "
-                    "the recurring charge, reduce the commitment or decline the "
-                    "placement rather than turning a collection problem into a "
-                    "remote vehicle-control problem."
-                ),
-                (
-                    "The second buyer is an enterprise travel manager, executive "
-                    "assistant, hotel transportation desk, or corporate procurement "
-                    "team purchasing reliable arrival capacity. The person arranging "
-                    "a ride may not control the budget. Establish the contracting "
-                    "entity, purchase-order requirement, spending limit, invoice "
-                    "recipient, and accounts-payable calendar before dispatch. A "
-                    "travel coordinator values an arriving passenger more than a "
-                    "beautiful utilization chart; procurement values a supplier "
-                    "whose invoice matches an authorized reservation. Price waiting "
-                    "time, parking, flight disruption, cancellations, and substitution "
-                    "explicitly. For example, twelve independently booked airport "
-                    "transfers at $150 produce $1,800 of customer billings, not "
-                    "$1,800 of owner profit. Driver compensation, vehicle expense, "
-                    "insurance, and any subcontractor settlement still require "
-                    "funding. Local authority is a service requirement rather than "
-                    "a transferable marketing label: California TCP authority, New "
-                    "York City TLC licensing, and airport access permissions address "
-                    "different jurisdictions and activities. Corporate clients pay "
-                    "to avoid failed pickups and purchasing from an ineligible "
-                    "operator. They do not purchase immunity from airport rules. "
-                    "When a permit, vehicle qualification, or driver credential "
-                    "fails verification, stop assigning that resource and offer "
-                    "a separately verified licensed and insured substitute."
-                ),
-                (
-                    "The third buyer is the vehicle investor, whose pain is "
-                    "unmonitored downtime, unexplained deductions, and declining "
-                    "asset value. Their management agreement authorizes specific "
-                    "services and distributions; possession of their vehicle does "
-                    "not authorize unrestricted withdrawals from their bank account. "
-                    "Specify who approves maintenance, who funds collision "
-                    "deductibles, how reserve balances are held, and when statements "
-                    "become payable. An investor may accept a $300 monthly management "
-                    "fee for documented placement, maintenance coordination, and "
-                    "reconciliation, but will challenge an unexplained percentage "
-                    "of vaguely defined proceeds. Use a distribution statement that "
-                    "opens with collected receipts, lists contractually permitted "
-                    "deductions, and ends with the owner's payable balance. The ten "
-                    "mapped plays below are chapter-level operating applications "
-                    "across the supplied lease, dispatch, and co-hosting edges; "
-                    "only the first carries the supplied canonical play identifier. "
-                    "Their prices illustrate contracts, not market quotations or "
-                    "additional scorecard revenue. Several applications serve the "
-                    "same vehicle and must not be counted twice. A toll recovery, "
-                    "for example, can settle a receivable without creating fee "
-                    "income. Treat each application as a distinct buyer obligation "
-                    "with a measurable service, an authorized payment source, and "
-                    "a workable fallback."
-                ),
-            ],
-            "table": {
-                "caption": "Ten Mapped Operating Plays: Buyer Authority, Unit Economics, and Failure Response",
-                "headers": [
-                    "Mapped operating play and service boundary",
-                    "Payer and specific spending authority",
-                    "Illustrative unit math and accounting boundary",
-                    "Risk fallback and operational response",
-                ],
-                "rows": [
-                    [
-                        "commercial_tlc_tcp_plate_shift_dispatch: commercially registered Black SUV dispatch under locally applicable authority",
-                        "Corporate travel buyer authorizes independent bookings; platform settles eligible platform trips",
-                        "Two staffed ten-hour shifts yield $700 illustrative daily fares; operator fee basis remains separate",
-                        "Remove affected resources; fulfill through independently verified licensed and insured backup operators",
-                    ],
-                    [
-                        "Weekly driver vehicle leasing with documented eligible commercial use",
-                        "Named driver authorizes recurring payments from their verified payment account",
-                        "Four collected weeks at $450 produce $1,800 gross lease billings",
-                        "Pause renewal after failed collection; arrange documented safe voluntary return",
-                    ],
-                    [
-                        "Investor vehicle co-hosting with itemized monthly administration and reporting",
-                        "Vehicle owner signs management authority and approves permitted fee deductions",
-                        "Six vehicles at $300 monthly produce $1,800 management fee billings",
-                        "Suspend new placements when investor maintenance funding or authority lapses",
-                    ],
-                    [
-                        "Dedicated corporate airport transfer blocks sold through independent procurement",
-                        "Travel budget holder issues purchase order covering twelve authorized reservations",
-                        "Twelve completed transfers at $150 produce $1,800 gross customer billings",
-                        "Use verified backup capacity; refund undelivered service under contract terms",
-                    ],
-                    [
-                        "Hotel concierge transfer dispatch through a documented commercial booking agreement",
-                        "Hotel purchasing officer authorizes hotel-paid transfers or disclosed guest checkout",
-                        "Twenty completed dispatches at $25 produce $500 coordination fee billings",
-                        "Require direct authorized checkout when hotel credit exposure exceeds limit",
-                    ],
-                    [
-                        "Black SUV shift scheduling and separately priced fleet dispatch administration",
-                        "Fleet principal authorizes schedule administration under signed management service terms",
-                        "Forty completed shift assignments at $12 produce $480 administration billings",
-                        "Remove unqualified drivers and recalculate charges for unfilled shift assignments",
-                    ],
-                    [
-                        "Eligible replacement vehicle leasing during documented repair-related fleet downtime",
-                        "Driver or fleet customer authorizes replacement rental and permitted use",
-                        "Five paid replacement days at $85 produce $425 gross billings",
-                        "Refund unused days when qualified replacement inventory cannot be delivered",
-                    ],
-                    [
-                        "Toll reconciliation with separately disclosed permitted administration charges",
-                        "Driver agreement authorizes actual toll recovery and lawful disclosed fees",
-                        "Recover $100 toll cost plus $10 fee; evaluate only fee as revenue",
-                        "Reverse duplicate tolls and suspend disputed administration charges pending evidence",
-                    ],
-                    [
-                        "Maintenance coordination for investor-owned vehicles using approved repair budgets",
-                        "Investor approves repair estimate and separately contracted coordination service charge",
-                        "Four approved service events at $40 produce $160 coordination billings",
-                        "Stop vehicle dispatch for safety defects; obtain repair funding separately",
-                    ],
-                    [
-                        "Reserved enterprise transportation capacity funded by a defined service retainer",
-                        "Corporate treasury funds retainer against procurement-approved capacity and service terms",
-                        "A $2,000 advance offsets ten $200 bookings; never count both twice",
-                        "Reconcile unused funds and apply documented cancellation or refund provisions",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Collect against evidence the payer already understands",
-                "body": "Align the invoice with the buyer's operating records rather than forcing them to interpret a fleet ledger.",
-                "items": [
-                    "For driver leases, pair the vehicle identifier and exact lease week with the signed delivery record; do not bury old toll charges inside the next recurring debit.",
-                    "For corporate transfers, place the purchase-order number, passenger reference, flight number, and completed pickup timestamp on the same invoice line.",
-                    "For investor distributions, show opening reserve, receipts, authorized deductions, additions, and closing reserve before showing the amount payable.",
-                    "Test any Uber Fleet Partner payout arrangement with a small live reconciliation before relying on it; feature availability does not establish contractual deduction rights.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Match the settlement mechanism to the obligation",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Payment rail selection starts with the obligation, not the "
-                    "processor's logo. A weekly driver lease benefits from scheduled "
-                    "collection and clear authorization; a large investor funding "
-                    "transfer benefits from verified bank instructions; a disputed "
-                    "asset handover may justify independent escrow. ACH settlement "
-                    "does not eliminate returns, and card capture does not eliminate "
-                    "chargebacks. Keep separate ledger states for invoiced, initiated, "
-                    "processor-settled, bank-reconciled, disputed, and refunded "
-                    "transactions. Never release owner distributions merely because "
-                    "an online dashboard shows an incoming payment. Establish "
-                    "reserve timing from the processor agreement, payment type, "
-                    "observed return experience, and promised distribution schedule. "
-                    "For recurring debits from consumer accounts, Regulation E "
-                    "requires appropriately authenticated authorization and a copy "
-                    "to the consumer; variable amounts can trigger advance-notice "
-                    "requirements. Business accounts and network rules require "
-                    "their own analysis rather than copying consumer language. "
-                    "A processor such as Stripe or an ACH provider can transport "
-                    "an authorized instruction but cannot manufacture consent or "
-                    "validate the underlying lease. Use hosted payment collection "
-                    "where available, keep card credentials out of dispatch notes, "
-                    "and never ask drivers for platform passwords to make "
-                    "collection more convenient."
-                ),
-                (
-                    "A fleet waterfall is a contractual allocation implemented "
-                    "through whatever supported payout configuration actually exists. "
-                    "Do not sell automatic top-of-waterfall deductions before "
-                    "confirming the fleet account's country, product, agreements, "
-                    "permissions, and available statement exports. Where a supported "
-                    "arrangement permits collection of the operator's charge, "
-                    "reconcile the driver's entitlement and every deduction "
-                    "explicitly. Where it does not, invoice the driver through "
-                    "a separate authorized rail. Platform passenger funds are not "
-                    "a general-purpose treasury account for corporate bookings, "
-                    "damage assessments, or unrelated investor distributions. "
-                    "Likewise, an independently sourced airport transfer belongs "
-                    "in its own booking and settlement workflow; never solicit "
-                    "a platform passenger to cancel a trip and pay privately. "
-                    "Contractual retainers and milestone holds describe when "
-                    "money becomes payable, while ACH, wire, and card checkout "
-                    "describe how it moves. Escrow describes independent custody "
-                    "and release conditions. Factoring changes ownership or "
-                    "financing of receivables. Keeping these categories distinct "
-                    "prevents a dangerous sales claim that a retainer is "
-                    "inherently protected or that a wire-funded invoice is "
-                    "immune to fraud. The comparison matrix treats all eight "
-                    "requested mechanisms as settlement choices without "
-                    "pretending they are technically identical."
-                ),
-                (
-                    "Corporate accounts often demand payment terms longer than "
-                    "drivers and backup carriers can finance. If a $10,000 "
-                    "approved invoice is factored at an illustrative 3% fee, "
-                    "the total proceeds before other charges are $9,700, "
-                    "potentially delivered through an initial advance and later "
-                    "reserve release. Confirm recourse, dilution, assignment "
-                    "restrictions, customer notification, and collection control "
-                    "before accepting that liquidity. A disputed pickup can "
-                    "remain the fleet's exposure under a recourse agreement. "
-                    "Retainers solve a different problem: a $2,000 advance "
-                    "funds reserved service but ordinarily remains deferred "
-                    "until the contracted performance occurs. Milestone releases "
-                    "can fit a multi-day event, with documented daily "
-                    "completion controlling each installment. Statutory disbursement "
-                    "is not an ordinary fleet revenue channel; it means a "
-                    "payment governed by a specific court process or legal "
-                    "entitlement, such as a properly established claim "
-                    "distribution. Record the actual authority and recipient "
-                    "rather than inventing a statutory priority for your lease "
-                    "fee. For high-value wires, independently call a previously "
-                    "verified contact before changing beneficiary details. A "
-                    "convincing email thread is not proof that the investor "
-                    "or corporate treasury approved a replacement bank account."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Payment and Settlement Mechanisms Compared for Fleet Operations",
-                "headers": [
-                    "Mechanism and appropriate fleet use",
-                    "Authority and evidence required before collection",
-                    "Clearing characteristics and principal exposure",
-                    "Fee protection and failure response",
-                ],
-                "rows": [
-                    [
-                        "Wire transfer for verified investor funding or large corporate settlements",
-                        "Authorized treasury contact confirms beneficiary through an independently verified channel",
-                        "Bank acceptance does not cure fraud; recall requests offer uncertain recovery",
-                        "Match bank credit to invoice and investigate changed instructions before release",
-                    ],
-                    [
-                        "Independent escrow for specifically negotiated asset delivery or disputed handover",
-                        "All parties sign release conditions with an appropriately authorized escrow provider",
-                        "Provider controls release timing; contested conditions can immobilize operating liquidity",
-                        "Define evidence, deadlines, fees, dispute handling, and return of unused funds",
-                    ],
-                    [
-                        "ACH debit for recurring driver leases with valid account authorization",
-                        "Account holder authorizes debit terms; retain authentication and required consumer copy",
-                        "Settlement remains exposed to applicable returns and unauthorized-payment disputes",
-                        "Reconcile returns daily and suspend new exposure rather than repeated blind debits",
-                    ],
-                    [
-                        "Service retainer for reserved enterprise airport capacity and planned bookings",
-                        "Budget holder signs service scope, advance amount, application, and refund terms",
-                        "Underlying transfer uses another rail; advance normally precedes earned service revenue",
-                        "Track unearned balance separately and invoice completed services without duplicate recognition",
-                    ],
-                    [
-                        "Statutory disbursement for an established legally governed claim or distribution",
-                        "Obtain actual governing authority, recipient entitlement, and administrator payment instructions",
-                        "Timing follows the governing process; ordinary lease charges receive no invented priority",
-                        "Exclude speculative proceeds from dispatch cash planning and maintain claim documentation",
-                    ],
-                    [
-                        "Platform checkout for eligible platform trips or processor-hosted independent bookings",
-                        "Use each platform's permitted account, transaction type, and customer authorization",
-                        "Payout delays, reserves, disputes, and account restrictions can interrupt liquidity",
-                        "Keep independent bookings separate and never divert platform-originated trips off platform",
-                    ],
-                    [
-                        "Receivables factoring for accepted corporate invoices with clear assignment rights",
-                        "Authorized company officer executes agreement and supplies genuine service acceptance evidence",
-                        "Advance differs from final proceeds; recourse and reserve deductions preserve exposure",
-                        "Model every financing charge and stop funding invoices with unresolved service disputes",
-                    ],
-                    [
-                        "Milestone holds for multi-day transportation programs with objective completion evidence",
-                        "Procurement contract defines milestones, acceptance period, withheld amounts, and release authority",
-                        "Money moves through another rail; buyer-controlled holds can extend collection timing",
-                        "Use daily manifests and defined objection deadlines to narrow disputed balances",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Protect the fee without seizing money or disabling mobility",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Credit screening should predict whether the specific payer "
-                    "can satisfy the specific obligation. For a driver, verify "
-                    "identity, permitted driving credentials, authorized vehicle "
-                    "use, recent earnings, existing lease burdens, and ability "
-                    "to fund the first billing period. Obtain motor vehicle "
-                    "records through an authorized provider such as SambaSafety "
-                    "or another appropriate screening service, with the required "
-                    "permissible purpose and authorizations. If a consumer report "
-                    "drives a denial or less favorable terms, evaluate applicable "
-                    "Fair Credit Reporting Act notice duties rather than "
-                    "treating the vendor's score as an unexplained veto. For "
-                    "an enterprise, verify legal entity, signer authority, "
-                    "procurement enrollment, trade references, disputed invoice "
-                    "history, and payment calendar. A genuine company domain "
-                    "does not establish that an assistant can bind its "
-                    "treasury. For an investor, verify ownership, financing "
-                    "restrictions, insurance responsibilities, reserve funding, "
-                    "and authority to place the vehicle in commercial service. "
-                    "Record a credit limit, review date, and named exception "
-                    "owner. Limit exposure using delivered but unpaid service, "
-                    "not merely overdue invoices; a customer can exhaust "
-                    "credit before the first invoice reaches its due date."
-                ),
-                (
-                    "Fee protection begins with measurable performance and narrow "
-                    "deduction rights. Define when a lease week starts, when "
-                    "a transfer counts as completed, which party bears a "
-                    "no-show, and how disputed tolls or damage are reviewed. "
-                    "A fleet cannot establish a damage charge simply by "
-                    "calling it an administrative fee. Pair delivery and "
-                    "return photographs with inspection timestamps, odometer "
-                    "readings, repair estimates, and the contract's allocation "
-                    "of responsibility. Keep routine lease collection separate "
-                    "from contested assessments where the agreement or law "
-                    "requires it. For corporate work, obtain reservation "
-                    "acceptance before dispatch and preserve pickup evidence "
-                    "without spreading passenger information across uncontrolled "
-                    "spreadsheets. UCC Article 9 can matter when receivables "
-                    "or other collateral secure an obligation, but a contract "
-                    "sentence alone does not establish attachment, perfection, "
-                    "or priority; determine the applicable state enactment "
-                    "and collateral rules. Avoid assuming a lien exists on "
-                    "platform proceeds merely because your company supplied "
-                    "the car. If a bankruptcy filing becomes known, escalate "
-                    "collection and possession decisions immediately because "
-                    "the automatic stay may restrict otherwise available "
-                    "remedies. Operational speed cannot repair an invalid "
-                    "collection right after money has moved."
-                ),
-                (
-                    "Telematics should reduce uncertainty, not convert a billing "
-                    "dispute into a safety incident. Use an authorized OBD-II "
-                    "or hardwired system to document mileage, service intervals, "
-                    "and permitted location information under a disclosed "
-                    "data policy. A starter-interrupt device is not a "
-                    "substitute for collection controls. Any contemplated "
-                    "intervention requires a lawful contractual basis, "
-                    "applicable notices, reliable confirmation that the "
-                    "vehicle is parked and unoccupied, and a safe recovery "
-                    "procedure; never interrupt propulsion or immobilize "
-                    "an occupied or moving vehicle. When payment fails, "
-                    "first distinguish bank error, authorization dispute, "
-                    "temporary liquidity shortfall, and outright refusal. "
-                    "Send an itemized statement, offer a documented cure "
-                    "path, stop extending new exposure when permitted, "
-                    "and arrange a safe return or qualified recovery "
-                    "process. Do not repeatedly debit a revoked mandate "
-                    "or hold a driver's unrelated earnings hostage. "
-                    "For corporate buyers, preserve undisputed collection "
-                    "while investigating a disputed booking. For investors, "
-                    "withhold only amounts supported by the management "
-                    "agreement and governing rules. The durable deterrent "
-                    "to circumvention is reliable dispatch, transparent "
-                    "accounting, and enforceable service terms, not "
-                    "credential sharing, intimidation, or hidden deductions."
-                ),
-            ],
-            "table": {
-                "caption": "Counterparty Credit and Fee Evidence Matrix",
-                "headers": [
-                    "Counterparty exposure requiring a decision",
-                    "Evidence that establishes authority or capacity",
-                    "Concrete operating limit or fee protection",
-                    "Response when verification or collection fails",
-                ],
-                "rows": [
-                    [
-                        "Driver entering a recurring weekly vehicle lease obligation",
-                        "Verified identity, eligible credentials, authorized earnings statements, and account mandate",
-                        "Collect first agreed period before handover and define maximum unpaid exposure",
-                        "Decline placement or shorten commitment when documented affordability remains inadequate",
-                    ],
-                    [
-                        "Corporate travel coordinator requesting transportation on deferred payment terms",
-                        "Procurement confirmation, purchase order, authorized signer, and accounts-payable contact details",
-                        "Cap delivered unpaid bookings and require replenishment before additional exposure",
-                        "Move new independent bookings to authorized prepaid checkout when credit is exhausted",
-                    ],
-                    [
-                        "Investor placing an encumbered vehicle into commercial fleet service",
-                        "Ownership documents, permitted commercial use, insurance evidence, and signed management authority",
-                        "Fund agreed maintenance reserve and prohibit deductions beyond enumerated contract rights",
-                        "Pause placement until ownership authority and essential operating funding are verified",
-                    ],
-                    [
-                        "Backup carrier accepting an airport transfer on short notice",
-                        "Current operating authority, coverage confirmation, driver eligibility, and written booking acceptance",
-                        "Match customer promise to subcontracted scope and establish documented settlement timing",
-                        "Select another verified carrier when credentials or service acceptance cannot be confirmed",
-                    ],
-                    [
-                        "Driver facing an added collision deductible or damage assessment",
-                        "Before-and-after inspections, loss evidence, policy terms, and responsibility determination",
-                        "Separate disputed assessments from ordinary billing and apply only supported obligations",
-                        "Preserve evidence, investigate allocation, and reverse charges unsupported by the record",
-                    ],
-                    [
-                        "Payer requesting replacement bank details during an active settlement cycle",
-                        "Independent callback to established contact and documented authorized beneficiary change",
-                        "Hold the changed payment instruction while preserving the underlying payable balance",
-                        "Escalate suspected impersonation and retain original verified instructions until resolved",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before dispatch or vehicle release",
-                "body": "A completed payment instruction cannot compensate for an unauthorized payer, ineligible vehicle, or unsupported deduction.",
-                "items": [
-                    "Verify the contracting entity, actual signer authority, account-holder authorization, payment amount, and first collection status before accepting recurring exposure.",
-                    "Confirm the specific vehicle, driver, operating authority, airport permission, and coverage for every planned use; TLC and TCP credentials are not interchangeable.",
-                    "Confirm the written waterfall, reserve ownership, fee basis, and available platform functionality before promising automatic deductions or investor distributions.",
-                    "Confirm the backup carrier, incident contact, safe return procedure, and dispute workflow before any occupied trip or driver handover.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Reconcile the shift economics to retained contribution and cash",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Model commercial_tlc_tcp_plate_shift_dispatch at the vehicle "
-                    "level before aggregating the business. Two separately staffed "
-                    "ten-hour shifts provide twenty scheduled vehicle hours, "
-                    "not permission for one driver to work twenty hours. "
-                    "Assume each shift completes four eligible trips averaging "
-                    "$87.50 in customer fares: eight trips produce $700 "
-                    "daily fare volume. Assume $140 of applicable platform "
-                    "or booking charges, $280 of driver compensation, and "
-                    "$180 of vehicle, fuel, insurance, and maintenance "
-                    "allocations; the illustrative operating remainder is "
-                    "$100. These assumptions are a dispatch sensitivity "
-                    "test, not the chapter's annual forecast. If your "
-                    "contract earns only a $70 dispatch fee while "
-                    "another principal sells transportation, record the "
-                    "$70 fee basis rather than claiming all $700 "
-                    "as operator revenue. Do not add that fee to "
-                    "the $100 remainder without establishing whose costs "
-                    "and receipts each number represents. Four lost "
-                    "trips remove $350 of fares while many costs "
-                    "persist. Underwrite normal demand, lawful operating "
-                    "hours, airport queue delays, and maintenance downtime "
-                    "without guaranteed surge pricing. When coverage or "
-                    "authority fails, remove the affected vehicle or "
-                    "driver and fulfill accepted work through independently "
-                    "verified licensed and insured backup operators."
-                ),
-                (
-                    "The annual scorecard uses a different, expressly defined "
-                    "boundary: gross operator lease, dispatch, and co-hosting "
-                    "billings multiplied by a 55% retained share. Conservative "
-                    "billings of $180,000 leave $99,000 after $81,000 "
-                    "of owner splits and pass-through fleet costs. "
-                    "Subtracting $73,800 of remaining modeled costs "
-                    "produces $25,200 owner net profit. Base billings "
-                    "of $690,000 leave $379,500 after $310,500 "
-                    "of those deductions; $234,600 of remaining costs "
-                    "leaves $144,900. Scaled billings of $1,200,000 "
-                    "leave $660,000 after $540,000 of deductions; "
-                    "$324,000 of remaining costs leaves $336,000. "
-                    "The corresponding gross-basis net margins are "
-                    "14%, 21.0%, and 28%; retained-basis margins "
-                    "are 25.45%, 38.18%, and 50.91%, rounded "
-                    "to two decimals. Remaining costs are residual "
-                    "totals required by the supplied model, not "
-                    "an invented vendor budget. Do not force "
-                    "them into the separate $2,500–$15,000 monthly "
-                    "opex planning range or subtract that range "
-                    "again. The supplied ASC 606 retained-share "
-                    "convention supports this comparison; actual gross "
-                    "versus net presentation still depends on the "
-                    "principal-agent assessment of each performance "
-                    "obligation. Neither passenger fare volume nor "
-                    "vehicle purchase funding becomes fee revenue "
-                    "simply because it crosses an account you administer."
-                ),
-                (
-                    "Cash control requires a daily bridge from completed "
-                    "service to collected funds and a weekly bridge "
-                    "from collected funds to distributable balances. "
-                    "For every receipt, retain payer, contract, service "
-                    "period, vehicle or booking reference, gross "
-                    "amount, deductions, processor identifier, and bank "
-                    "match. QuickBooks or another suitable ledger "
-                    "can track receivables and liabilities, while "
-                    "exported platform statements and processor "
-                    "reports establish the external evidence. A "
-                    "settlement file is not reconciled until its "
-                    "net deposit and fees agree with the bank "
-                    "and the individual allocations agree with "
-                    "the contracts. Keep refundable deposits, unearned "
-                    "retainers, owner payables, and claims reserves "
-                    "visible rather than sweeping them into "
-                    "available operating cash. Conservative and Base "
-                    "staffing remain one full-time operator plus "
-                    "three contractors; Scaled remains two full-time "
-                    "staff plus four contractors. Design exception "
-                    "queues around that capacity: failed payments, "
-                    "unmatched tolls, expiring coverage, disputed "
-                    "damage, and overdue corporate invoices need "
-                    "named owners and aging. Automation should "
-                    "close matched items and expose exceptions, "
-                    "not silently assign contested charges. Before "
-                    "distribution, rerun the waterfall using collected "
-                    "amounts, preserve required reserves, and "
-                    "deliver a statement that lets the driver "
-                    "or investor reproduce the calculation independently."
-                ),
-            ],
-            "table": {
-                "caption": "Formula v2.0 Annual Reconciliation and Cash Classification",
-                "headers": [
-                    "Scenario or ledger classification",
-                    "Gross billings and retained-share bridge",
-                    "Remaining costs and exact owner profit",
-                    "Margin basis and staffing interpretation",
-                ],
-                "rows": [
-                    [
-                        "Conservative annual case using the supplied Formula v2.0 financial boundary",
-                        "$180,000 gross less $81,000 owner splits and pass-through costs equals $99,000 retained",
-                        "$99,000 retained less $73,800 remaining modeled costs equals $25,200 owner profit",
-                        "14% gross-basis margin; 25.45% retained-basis margin; one full-time operator plus three contractors",
-                    ],
-                    [
-                        "Base annual case using the supplied Formula v2.0 financial boundary",
-                        "$690,000 gross less $310,500 owner splits and pass-through costs equals $379,500 retained",
-                        "$379,500 retained less $234,600 remaining modeled costs equals $144,900 owner profit",
-                        "21.0% gross-basis margin; 38.18% retained-basis margin; one full-time operator plus three contractors",
-                    ],
-                    [
-                        "Scaled annual case using the supplied Formula v2.0 financial boundary",
-                        "$1,200,000 gross less $540,000 owner splits and pass-through costs equals $660,000 retained",
-                        "$660,000 retained less $324,000 remaining modeled costs equals $336,000 owner profit",
-                        "28% gross-basis margin; 50.91% retained-basis margin; two full-time staff plus four contractors",
-                    ],
-                    [
-                        "Custodial and advance balances excluded from earned operating fee totals",
-                        "Refundable deposits, unearned retainers, and owner funding require separate balance tracking",
-                        "Release or recognize only upon the applicable contractual and accounting event",
-                        "Bank balance exceeds spendable cash whenever customers or owners retain valid claims",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Establish payer authority and contract boundaries",
-                    "action": "Record the signer, account holder, approved service, fee basis, and maximum exposure.",
-                    "detail": "Attach procurement authority or driver authorization, signed terms, vehicle eligibility, and the applicable operating permissions before dispatch or handover.",
-                },
-                {
-                    "step": 2,
-                    "title": "Collect through the permitted settlement mechanism",
-                    "action": "Issue an itemized invoice or authorized payment instruction linked to the service record.",
-                    "detail": "Use supported platform functions only for permitted transactions; separate independent corporate bookings, retainers, refundable deposits, and contested assessments.",
-                },
-                {
-                    "step": 3,
-                    "title": "Match performance, processor settlement, and bank movement",
-                    "action": "Reconcile booking or lease evidence to the external settlement report and bank entry.",
-                    "detail": "Assign failed debits, chargebacks, unmatched tolls, and disputed service to named owners; preserve original evidence and avoid duplicate recovery.",
-                },
-                {
-                    "step": 4,
-                    "title": "Apply the waterfall and publish reproducible statements",
-                    "action": "Calculate permitted deductions, required reserves, earned fees, and owner or driver payables.",
-                    "detail": "Distribute only supported balances under the agreed timing; report gross operator billings, 55% modeled retained contribution, and owner profit as separate measures.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "The defensible fee is the one an authorized payer can trace from a completed service to a reconciled bank entry.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Create separate payer profiles for drivers, corporate buyers, investors, and backup carriers, with signer authority and verified settlement contacts.",
-        "Map all ten operating applications to their actual contract and revenue boundary, eliminating duplicate lease, dispatch, retainer, and pass-through recognition.",
-        "Test supported fleet payout functionality and one independent collection cycle before promising automatic waterfall deductions.",
-        "Verify vehicle, driver, coverage, local livery authority, and airport access for both ten-hour shifts; document a separately verified backup carrier.",
-        "Build daily payment exception queues and separate ledgers for refundable deposits, unearned retainers, investor reserves, and owner payables.",
-        "Reproduce the $25,200, $144,900, and $336,000 annual owner-profit cases from gross billings, 55% retained contribution, and the exact remaining modeled costs.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "12 CFR § 1005.10 — Preauthorized transfers",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1005/section-1005.10",
-            "relevance": "Controls authorization, consumer copies, stop-payment rights, and applicable notices for preauthorized electronic transfers involving covered consumer accounts.",
-        },
-        {
-            "title": "California Public Utilities Code § 5371 — Charter-party carrier authority",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=5371.&lawCode=PUC",
-            "relevance": "Establishes the certificate-or-permit requirement for covered charter-party passenger carrier operations; verify the actual authority applicable to the planned service.",
-        },
-        {
-            "title": "California Public Utilities Code § 5433 — Transportation network company insurance",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=5433.&lawCode=PUC",
-            "relevance": "Sets coverage requirements across specified transportation network company activity periods; independently contracted livery and app-off operations require their own coverage analysis.",
-        },
-        {
-            "title": "15 U.S.C. § 1681b — Permissible purposes of consumer reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681b",
-            "relevance": "Requires a valid permissible purpose for obtaining consumer reports; determine the applicable basis before purchasing driver credit or screening reports.",
-        },
-        {
-            "title": "15 U.S.C. § 1681m — Requirements on users of consumer reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681m",
-            "relevance": "Provides adverse-action notice requirements when covered decisions rely on consumer reports, including identifying the reporting source and relevant consumer rights.",
-        },
-        {
-            "title": "11 U.S.C. § 362 — Automatic stay",
-            "url": "https://www.law.cornell.edu/uscode/text/11/362",
-            "relevance": "May restrict collection, possession, lien enforcement, and other actions after a bankruptcy filing; escalate affected fleet recovery and deduction decisions before acting.",
-        },
-    ],
-}
+CHAPTER_2 = {'id': 'Q2',
+ 'chapter_id': 'Q2',
+ 'chapter_number': 2,
+ 'question_number': 2,
+ 'slug': 'vol031-q02-choosing-the-revenue-vehicle-black-suvs-hybrids-cargo-vans',
+ 'question_prompt': 'Which vehicles should I buy for Uber Black, rideshare, and cargo work, and which ones '
+                    'lose money?',
+ 'kicker': 'Q2 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Choosing the Revenue Vehicle: Uber Black SUVs, Rideshare Hybrids, and Cargo Vans',
+ 'subtitle': 'Uber Black SUV qualification rules, black-on-black buying criteria, Escalade and $125K SUV '
+             'payment math, Suburban test drives, why Ford Expeditions underperform, top-ranked rideshare '
+             'cars and hybrids, cargo van picks and zero-down leasing for Amazon Relay, and the benefits '
+             'of owning luxury fleet SUVs',
+ 'layout_template': 'executive_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Black-car, hybrid and cargo-van operators agree that the job picks the vehicle. '
+                      'TJackk calls a five-seat SUV a capped mistake and splits seven-seaters into '
+                      'shortback tier-one units near $40,000 to $50,000 and XL tier-two units that add '
+                      'Uber XXL and private-family work. ESCAPE THE MATRIX runs a 100 percent financed '
+                      '$125,000 Lincoln Navigator at $1,733 a month and $3,000 to $3,300 all in, trading '
+                      '20 UberX rides for five to 10 Black rides at similar money and far bigger upside. '
+                      'Yusuf Benallal shows a 620 credit score turning a 2025 Escalade into a '
+                      '$3,500-a-month trap. rideXserve and The Rideshare CEO push Toyota hybrids for low '
+                      'cost per mile but split on Prius versus RAV4. Mr. RTB warns that Sprinter vans sit '
+                      'near the bottom of logistics, while Your Solvent Uncle ranks zero-down lease '
+                      'programs led by Ryder.',
+ 'key_metrics': [{'label': 'All-In Navigator Purchase, 100 Percent Financed',
+                  'metric': 'All-In Navigator Purchase, 100 Percent Financed',
+                  'value': '$125,000 total at 0% APR, $1,733 per month',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '2024 Lincoln Navigator for NYC Uber Black: about $110,000 car, about $5,000 '
+                             'to $6,000 bumper-to-bumper warranty for 5 years or 100,000 miles, about '
+                             '$9,000 taxes, zero down, all of it financed.',
+                  'source': 'ESCAPE THE MATRIX ([fPh6slkW9Tk @ 00:05:15])'},
+                 {'label': 'Monthly Cost To Run A Black SUV In NYC',
+                  'metric': 'Monthly Cost To Run A Black SUV In NYC',
+                  'value': '$3,000 to $3,300 per month',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '$1,733 car note plus $370 commercial liability insurance plus $900 to $1,200 '
+                             'gas at about 13 mpg, filling up two to three times a week; maintenance '
+                             'dealer-covered through about 28,000 miles.',
+                  'source': 'ESCAPE THE MATRIX ([fPh6slkW9Tk @ 00:06:08])'},
+                 {'label': 'Daily Floor With Five Ride Types On A QX80',
+                  'metric': 'Daily Floor With Five Ride Types On A QX80',
+                  'value': 'About $300 minimum per day; $250 to $400 range',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Infiniti QX80 unlocked X, Comfort, XL, Black and Black SUV; one Black SUV '
+                             'ride can be $150 for an hour. The two-car household averaged $250 to $400 '
+                             'per day switching between the QX80 and Range Rover.',
+                  'source': 'TJackk ([E0a86uKzcuk @ 00:03:08])'},
+                 {'label': '2025 Escalade Cost At A 620 Credit Score',
+                  'metric': '2025 Escalade Cost At A 620 Credit Score',
+                  'value': '$2,993.81 note, about $3,500 per month with insurance',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Caller earning $7,000 to $8,000 a month, owing $40,000 on a 2019 Escalade '
+                             'with 140,000 miles, facing roughly 17 to 22 percent interest; dealer advised '
+                             'canceling the deposit and aiming for 680 and above.',
+                  'source': 'Yusuf Benallal ([xrJ-xGav6Xo @ 00:03:19])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every black-car operator here lands on the same first rule: buy seats and '
+                              'cargo, not a badge. TJackk opened with a 2021 Range Rover, a five-seater, '
+                              'and calls it the mistake that capped the business, because it only unlocked '
+                              'UberX, Comfort and Black, so slow Black hours meant grinding Comfort rides '
+                              'to hit a $400 daily quota [E0a86uKzcuk @ 00:00:29]. The fleet owner says '
+                              'flatly do not get a five-seater SUV, get a seven-seater, and that the Range '
+                              'Rover is exactly what pushed the operation into a 2022 Infiniti QX80 '
+                              '[-QE8dzRh7To @ 00:02:43]. ESCAPE THE MATRIX walks the qualifying list brand '
+                              'by brand, from the Escalade, ESV and electric Escalade IQ to the Suburban, '
+                              'Tahoe, Expedition, Yukon, QX80, Navigator and Rivian R1S, and steers buyers '
+                              'away from the Jeep Wagoneer as unpopular with Black SUV riders and from the '
+                              'Mercedes GLS and BMW X7 as small full-size units likely to lose eligibility '
+                              '[l1oXFuye_F0 @ 00:02:00]. That eligibility risk is not theoretical: the '
+                              'same driver bought a Tesla Model Y for Black, watched it fall from about '
+                              '$62,000 to about $50,000 within months, then saw it pulled off the Uber '
+                              'Black list roughly a year later, forcing an underwater jump into a '
+                              'full-size SUV [fPh6slkW9Tk @ 00:02:51].',
+                              'The second point of agreement is why anyone pays for the metal at all: '
+                              'fewer rides for the same or better money. ESCAPE THE MATRIX says the move '
+                              'off UberX made sense once it was clear that five to 10 Black rides could '
+                              'match a 20-ride X day, and frames the trade as working less, not working '
+                              'harder [fPh6slkW9Tk @ 00:02:33]. The same driver pegs a best-ever X day, '
+                              'with heavy surges, at around $650, against $600, $700 or $800 on a random '
+                              'Tuesday in a Black car, and stresses that the baseline is about the same '
+                              'while the upside is through the roof [fPh6slkW9Tk @ 00:06:43]. TJackk puts '
+                              'the lever on a single fare type: one Black SUV ride can be $150 for an hour '
+                              'and set up the whole day, which is why the QX80, running X, Comfort, XL, '
+                              'Black and Black SUV, held right at $300 minimum per day while the two-car '
+                              'household averaged $250 to $400 [E0a86uKzcuk @ 00:02:50]. Both treat the '
+                              'platforms as the floor and private clients as the ceiling, and TJackk '
+                              'reports that chauffeur peers holding B-list and A-list celebrity clients '
+                              'kept saying they would have called for overflow work, except TJackk did not '
+                              'have a Cadillac ESV [-QE8dzRh7To @ 00:03:16].',
+                              'Outside the black-car lane, the hybrid and van operators reach the same '
+                              'conclusion from the cost side: the job decides the vehicle. rideXserve '
+                              'ranks the Toyota Prius Hybrid number one precisely because, even for a '
+                              'driver who owns an XL, 80 to 90 percent of incoming rides are Uber X, so a '
+                              '47-to-57 mpg Prius minimizes cost per mile, the one benchmark the channel '
+                              'says matters [pOWoMXyVapQ @ 00:18:17]. The Rideshare CEO builds an entire '
+                              'ranking on that logic, arguing that a compact hatchback, a comfort sedan '
+                              'and an SUV do not compete with each other, and ranks them by how many '
+                              'rideshare jobs each shape can cover, which is why the RAV4 Hybrid beats the '
+                              'more efficient Prius [Ap3NIbDoDDg @ 00:00:18]. AOneDriver Recruiting '
+                              'applies the same filter to Amazon Relay, naming the Ford Transit, '
+                              'Mercedes-Benz Sprinter and Ram ProMaster as the three vans that matter and '
+                              'telling drivers to match the van to budget, routes and long-term goals '
+                              '[Yp0LDXpCQnU @ 00:00:46]. Mr. RTB adds the hard ceiling after a year of '
+                              'hundreds of loads: a Sprinter is an entry-level position in a '
+                              'billion-dollar industry, it is not dock height, and it cannot take as many '
+                              'pallets as a box truck, so brokers often push freight elsewhere '
+                              '[JJrV3_EbmeE @ 00:00:36].'],
+               'table': {'caption': 'Where the practitioners agree on choosing a revenue vehicle',
+                         'headers': ['Consensus Point',
+                                     'What The Practitioner Did Or Measured',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Seven seats is the minimum for black-car business',
+                                   'Swapped a five-seat Range Rover for a seven-seat Infiniti QX80 after '
+                                   'earnings capped',
+                                   'Skip any five-seat SUV if private clientele or fleet scale is the plan',
+                                   'TJackk ([-QE8dzRh7To @ 00:02:43])'],
+                                  ['Stacked ride types set the daily earnings floor',
+                                   'QX80 opened X, Comfort, XL, Black and Black SUV and held about $300 '
+                                   'minimum daily',
+                                   'Buy the unit that unlocks the most ride types, not the flashiest '
+                                   'interior',
+                                   'TJackk ([E0a86uKzcuk @ 00:03:08])'],
+                                  ['Black tiers pay for fewer rides, not a higher baseline',
+                                   'Five to 10 Black rides matched a 20-ride UberX day in New York City',
+                                   'Treat the upgrade as buying back hours and chasing upside on surge '
+                                   'days',
+                                   'ESCAPE THE MATRIX ([fPh6slkW9Tk @ 00:02:33])'],
+                                  ['Escalade and Navigator badges unlock limousine farm-out work',
+                                   'Limo companies post Escalade-only or Escalade-or-Navigator-only jobs, '
+                                   'rarely for other models',
+                                   'Top-tier badge pays only if affiliate and limo jobs are part of the '
+                                   'plan',
+                                   'ESCAPE THE MATRIX ([l1oXFuye_F0 @ 00:02:51])'],
+                                  ['Platform eligibility can disappear after purchase',
+                                   'Tesla Model Y was removed from the Uber Black list about a year after '
+                                   'buying',
+                                   'Avoid borderline full-size units like the Mercedes GLS and BMW X7',
+                                   'ESCAPE THE MATRIX ([fPh6slkW9Tk @ 00:02:51])'],
+                                  ['Most rideshare demand still arrives as plain UberX',
+                                   'Even XL owners see 80 to 90 percent of requests come in as UberX',
+                                   'A cheap-per-mile hybrid beats a big car unless the market pays for '
+                                   'metal',
+                                   'rideXserve ([pOWoMXyVapQ @ 00:18:17])'],
+                                  ['Sprinter vans sit near the bottom of the freight pecking order',
+                                   'Almost every load board posting says no Sprinter vans, and brokers '
+                                   'reject brand-new MCs',
+                                   'Budget for a slow first year and hunt consistent contract work early',
+                                   'Mr. RTB ([JJrV3_EbmeE @ 00:01:13])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["TJackk's sizing system is the cleanest buying map anyone gives. Tier one is "
+                              'the large shortback SUV: Infiniti QX80, Ford Expedition XLT, GMC Yukon, '
+                              'Cadillac Escalade, Chevy Tahoe and Lincoln Navigator, all good for about '
+                              '$400 a day on Uber and Lyft but limited to two or three suitcases unless a '
+                              'couple lets the third row fold down for bags [E0a86uKzcuk @ 00:04:50]. Tier '
+                              'two is the large XL with trunk space: Ford Expedition Max, GMC Yukon XL, '
+                              'Cadillac Escalade ESV, Chevy Suburban and the bigger Navigator, which add '
+                              'Uber XXL on top of X, Comfort, XL, Black and Black SUV and can serve '
+                              'families with full luggage [E0a86uKzcuk @ 00:08:30]. The price gap is the '
+                              'decision: tier-one units can be found around $40,000 to $50,000, while '
+                              'tier-two units climb to $60,000 to $70,000 and six figures new, so the rule '
+                              'is tier one for grinding platform volume and tier two for a private-client '
+                              'business [E0a86uKzcuk @ 00:09:28]. ESCAPE THE MATRIX sees the same '
+                              'compression in the middle of the market, noting that in the $65,000 to '
+                              '$90,000 band the vehicles are nearly interchangeable, so the tiebreaker '
+                              'should be which one the driver can live in for 40 to 80 hours a week as a '
+                              'mobile office that will not wreck their back [l1oXFuye_F0 @ 00:04:11].',
+                              'The used-buy screen that TJackk and a business partner run for their '
+                              'Houston fleet has five filters. First, black on black inside and out, since '
+                              'brown seats on a black body will not qualify; the pair jokes that the '
+                              'system can be gamed, declines to explain how, and says not to try it '
+                              '[CB9UNWu4LMM @ 00:00:00]. Second, seven seats. Third, mileage in the 50,000 '
+                              'to 80,000 band with nothing over 100,000, and one owner with high miles '
+                              'beats four or five owners who all drove differently [CB9UNWu4LMM @ '
+                              '00:03:20]. Fourth, a spend cap of $40,000, stretched to $50,000 or $55,000 '
+                              'only with real reserves, because commercial auto insurance, licensing and '
+                              'permits come on top, and $40,000 is what the pair knows it can pay off in '
+                              'under six months. Fifth, a clean Carfax with no accidents, no flood '
+                              'history, no salvage title and a single owner; every vehicle the fleet has '
+                              'bought was one-owner [CB9UNWu4LMM @ 00:07:50]. ESCAPE THE MATRIX, buying '
+                              'new instead, layers on a different protection: a bumper-to-bumper extended '
+                              'warranty to at least 100,000 miles, because factory coverage of roughly '
+                              'four years or 50,000 miles runs out fast at Black SUV mileage and that is '
+                              'usually when the problems start [l1oXFuye_F0 @ 00:03:41].',
+                              'The New York City unit economics are spelled out to the dollar. ESCAPE THE '
+                              'MATRIX financed 100 percent of a $125,000 2024 Lincoln Navigator at 0 '
+                              'percent APR, producing a $1,733 monthly note, then stacked $370 a month in '
+                              'commercial liability insurance and $900 to $1,200 in gas at about 13 mpg, '
+                              'for $3,000 to $3,300 a month all in [fPh6slkW9Tk @ 00:05:36]. Day one cost '
+                              '$97.50 in premium gas plus about $103 in third-row floor liners before the '
+                              'first ping, and the 6 p.m. to 11 p.m. shift produced four trips, including '
+                              'a $136.98 first Black SUV fare, for about $295 [q6qypIL66TM @ 00:04:23]. On '
+                              'volume, the driver reports at least $1,500 a week at 40 hours and $2,000 to '
+                              '$3,000 a week at 60 to 80 hours, while renting out the old Tesla for about '
+                              '$500 a month in profit to offset the Navigator [fPh6slkW9Tk @ 00:09:45]. '
+                              'Yusuf Benallal shows the other side of the same math: a caller with a 620 '
+                              'score, $40,000 owed on a 2019 Escalade and $7,000 to $8,000 in monthly '
+                              'income faced a 17 to 22 percent rate, a $2,993.81 note and about $3,500 a '
+                              'month with insurance, and was told to wait for 680 and above to reach GM '
+                              'Financial tier-one credit [xrJ-xGav6Xo @ 00:04:01].'],
+               'table': {'caption': 'Vehicle and program numbers stated by the practitioners',
+                         'headers': ['Vehicle Or Program',
+                                     'Hard Numbers Stated',
+                                     'Execution Note From The Practitioner',
+                                     'Expert Source'],
+                         'rows': [['2024 Lincoln Navigator L for NYC Uber Black SUV',
+                                   '$125,000 all in, 0% APR, $1,733 note, $370 insurance, 13 mpg',
+                                   'Chosen over the Escalade purely because the 0% APR deal beat paying '
+                                   'interest',
+                                   'ESCAPE THE MATRIX ([fPh6slkW9Tk @ 00:04:11])'],
+                                  ['2025 Cadillac Escalade bought on a 620 credit score',
+                                   'Over $100,000 price, about 20% rate, $2,993.81 note, about $3,500 '
+                                   'monthly',
+                                   'Dealer said cancel and lose the $1,000 deposit rather than lose '
+                                   '$40,000',
+                                   'Yusuf Benallal ([xrJ-xGav6Xo @ 00:03:19])'],
+                                  ['Used Infiniti QX80 as a tier-one shortback SUV',
+                                   'Budget under $40,000, five ride types, about $300 minimum per day',
+                                   'Short trunk and a center console that must be lifted for every family '
+                                   'pickup',
+                                   'TJackk ([-QE8dzRh7To @ 00:04:57])'],
+                                  ['Toyota Prius Hybrid for UberX high-mileage city work',
+                                   '57 mpg fifth generation, used 2021 about $18,450 to $21,000',
+                                   'Caps at Uber X and Green in most markets; add a $200 to $400 cat '
+                                   'shield',
+                                   'The Rideshare CEO ([Ap3NIbDoDDg @ 00:02:18])'],
+                                  ['Toyota Camry Hybrid as the comfort sedan benchmark',
+                                   '51 mpg LE, 38-inch rear legroom, used 2021 to 2022 about $20,000 to '
+                                   '$24,000',
+                                   'Avoid 2018 without the transmission update; run the VIN for recall '
+                                   '26TF01',
+                                   'The Rideshare CEO ([Ap3NIbDoDDg @ 00:04:39])'],
+                                  ['Toyota RAV4 Hybrid for comfort, luggage and airport runs',
+                                   '40 mpg, 37.6 cubic feet of cargo, battery pack $1,500 to $6,200',
+                                   'Avoid 2019 and check 2019 to 2022 all-wheel drive units for cable '
+                                   'corrosion',
+                                   'The Rideshare CEO ([Ap3NIbDoDDg @ 00:07:07])'],
+                                  ['Zero-down cargo, Sprinter and expedited van leases',
+                                   '$500 to $1,500 monthly; Ryder scored 9.7, Penske 9.3, Fluid Truck 8.8',
+                                   'Expect sign-on and admin fees even on zero down, so negotiate them '
+                                   'first',
+                                   'Your Solvent Uncle ([S5qZoSWOz8w @ 00:24:35])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': "Margin Protection Moves From The Drivers' Seat",
+                           'body': 'Small operating edges the practitioners use to keep a revenue vehicle '
+                                   'earning instead of bleeding, across black SUVs, Toyota hybrids and '
+                                   'leased vans.',
+                           'items': ['Clean the Prius battery cooling intake vent by the rear seat; it '
+                                     'clogs with hair and dust, the battery cooks and fails early, and the '
+                                     'fix is a 10-minute job [The Rideshare CEO — Ap3NIbDoDDg @ 00:02:38].',
+                                     'Set the exit plan before buying: either the 150,000-mile flip while '
+                                     'the car still holds value or the 400,000-mile grind to zero, because '
+                                     'a Highlander kept to 395,000 miles still owes $12,000 with zero '
+                                     'trade-in value [rideXserve — pOWoMXyVapQ @ 00:15:13].',
+                                     'Do not dump the old car when upgrading; renting out the former Tesla '
+                                     'clears about $500 a month in profit that chips away at the almost '
+                                     '$3,000 monthly Navigator cost [ESCAPE THE MATRIX — fPh6slkW9Tk @ '
+                                     '00:09:45].',
+                                     'On a zero-down van lease, nail down the sign-on and administrative '
+                                     'fees before signing and make sure the contract classifies the lessee '
+                                     'correctly as owner-operator or fleet owner [Your Solvent Uncle — '
+                                     'S5qZoSWOz8w @ 00:26:14].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pick the lane by the job',
+                              'action': 'Match the vehicle shape to the dominant ride or load type before '
+                                        'shopping.',
+                              'detail': 'Go tier-one shortback SUV for platform volume and tier-two XL '
+                                        'with trunk space for a private-family business; never a five-seat '
+                                        'SUV for Black work [TJackk — E0a86uKzcuk @ 00:09:46]. If the '
+                                        'market is mostly UberX, the boring Prius wins on profit per mile '
+                                        '[rideXserve — pOWoMXyVapQ @ 00:19:21].'},
+                             {'step': 2,
+                              'title': 'Screen the specific unit',
+                              'action': 'Run the five-filter used-buy screen on every candidate.',
+                              'detail': 'Black on black, seven seats, 50,000 to 80,000 miles with nothing '
+                                        'over 100,000, a $40,000 cap, and a clean one-owner Carfax with no '
+                                        'accidents, flood or salvage history [TJackk — CB9UNWu4LMM @ '
+                                        '00:08:05].'},
+                             {'step': 3,
+                              'title': 'Run the financing math before the deposit',
+                              'action': 'Price the full monthly load against realistic income before '
+                                        'committing.',
+                              'detail': 'Add note, insurance and fuel; a 620 score on a new Escalade means '
+                                        'about $3,500 a month on $7,000 to $8,000 income, and losing a '
+                                        '$1,000 deposit beats that [Yusuf Benallal — xrJ-xGav6Xo @ '
+                                        '00:03:19].'},
+                             {'step': 4,
+                              'title': 'Prep the vehicle for day one',
+                              'action': 'Budget the startup spend and position for the first high-value '
+                                        'ping.',
+                              'detail': 'Mount the phone and tablet, fill premium gas, buy third-row floor '
+                                        'liners, then stage at the airport; this driver spent over $200 '
+                                        'before the first ride and landed a Black SUV request on arrival '
+                                        '[ESCAPE THE MATRIX — q6qypIL66TM @ 00:02:45].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is the purchase ceiling. TJackk runs a hard rule: used '
+                              "only, nothing over 40K, because 'at the end of the day, y'all, we driving "
+                              "people around' and buying a new car to drive people around is 'kind of "
+                              "crazy' [E0a86uKzcuk @ 00:04:33] [fIZp2tBd2tY @ 00:02:42]. ESCAPE THE MATRIX "
+                              'went the opposite direction, financing a 2024 Lincoln Navigator at roughly '
+                              '$125,000 all-in, choosing it over the Escalade they actually preferred '
+                              "because Lincoln offered 0% APR, 'as if I bought the car in cash without "
+                              "buying the car in cash' [fPh6slkW9Tk @ 00:04:11]. Their logic is the "
+                              'upside: the baseline matches Uber X, but a random Tuesday in a Black SUV '
+                              'can print $600 to $800 versus a career-best $650 day on X. Yusuf Benallal, '
+                              'working the dealer side, adds a market constraint that cuts against the '
+                              'cheap-used strategy in New York: the call surfaces that NYC Uber Black '
+                              'wants 2024 and newer, so an older, less-depreciated Escalade is off the '
+                              "table there, and the new one is 'the most depreciating SUV on the market' "
+                              '[xrJ-xGav6Xo @ 00:02:35]. Net: the 40K used playbook and the six-figure new '
+                              'playbook both make money in their own markets, and the deciding variables '
+                              'are local model-year rules and financing terms, not taste.',
+                              'Size doctrine splits even inside the same fleet. TJackk calls the five-seat '
+                              'Range Rover the founding mistake: capped at X, Comfort, and Black, forced '
+                              'into volume Comfort rides to hit a $400 daily quota, while the seven-seat '
+                              'QX80 unlocked five ride types and a 300-per-day floor [E0a86uKzcuk @ '
+                              '00:01:30]. Yet the same household reports the Rover renter clears $300 to '
+                              '$400 on five or six rides while their seven-seaters need ten-plus rides for '
+                              '$300, and the partner suspects the Rover itself pulls tips [CB9UNWu4LMM @ '
+                              '00:01:28]. The pair also split on cargo: TJackk pushes long-wheelbase '
+                              'tier-two trucks (Expedition Max, Yukon XL, Escalade ESV, Suburban) for '
+                              'private families with luggage, the partner only cares about seven seats, '
+                              'and both concede trunk space pushes a seven-seater to about 45 to 50 grand '
+                              '[CB9UNWu4LMM @ 00:02:28]. ESCAPE THE MATRIX lands in between: the Suburban '
+                              'for the best balance of luxury, size, and price, the Escalade ESV as top of '
+                              'the top, and the Navigator Black Label L as second tier because '
+                              'limo-company jobs get posted as Escalade-only or Escalade-or-Navigator-only '
+                              '[l1oXFuye_F0 @ 00:02:51]. They also flag the Mercedes GLS and BMW X7 as '
+                              'small full-size SUVs they suspect will lose eligibility, and say skip both '
+                              'Jeep Wagoneers because Black customers do not favor them.',
+                              'Below the Black tier, the hybrid camp disagrees on what to optimize. '
+                              'rideXserve crowns the Prius as king of profit at 47 to 57 mpg, argues 80 to '
+                              '90% of rides are Uber X even for XL owners, and calls buying new for '
+                              "rideshare 'doing charity work' [pOWoMXyVapQ @ 00:18:17]. The Rideshare CEO "
+                              'ranks the same Prius last of three hybrids because it tops out at Uber X '
+                              'and Green in most markets, putting the RAV4 Hybrid first at 40 mpg since it '
+                              'is Comfort-eligible and hauls 37.6 cubic feet behind the seats [Ap3NIbDoDDg '
+                              "@ 00:06:04]. rideXserve's own premium pick, the Highlander, is pitched for "
+                              'private clients, not app volume. Cargo-van operators split the same way. '
+                              'AOneDriver Recruiting frames the van as the paycheck tool: Ford Transit for '
+                              'no-drama dependability at up to 487 cubic feet, the Sprinter for a premium '
+                              'feel and up to 533 cubic feet, the Ram ProMaster for low upfront cost '
+                              '[Yp0LDXpCQnU @ 00:01:03]. Mr. RTB, one year in with a brand new extended '
+                              'Sprinter, says the van sits near the bottom of logistics demand because it '
+                              'is not dock height, cannot take as many pallets as a box truck, and load '
+                              'boards keep posting no Sprinter vans [JJrV3_EbmeE @ 00:00:36].'],
+               'table': {'caption': 'Competing vehicle playbooks: Black SUV, hybrid rideshare, and cargo '
+                                    'van operators side by side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Purchase ceiling for a Black SUV build',
+                                   'Used only, stay under 40K, stretch to 50 or 55K only if finances allow',
+                                   'New 2024 Navigator near $125,000, financed 100% on a 0% APR deal',
+                                   'TJackk ([CB9UNWu4LMM @ 00:05:16]); ESCAPE THE MATRIX ([fPh6slkW9Tk @ '
+                                   '00:04:11])'],
+                                  ['Five-seat midsize SUV versus seven-seat truck',
+                                   'Never buy midsize; it caps you at X, Comfort, and Black only',
+                                   'Rover renter still clears $300 to $400 on five or six rides daily',
+                                   'TJackk ([E0a86uKzcuk @ 00:01:30]); TJackk ([CB9UNWu4LMM @ 00:01:28])'],
+                                  ['Trunk space and long wheelbase priority',
+                                   'Tier two long-wheelbase trucks so private families fit every suitcase',
+                                   'Seven seats is enough; trunk space pushes price to about 45 to 50 '
+                                   'grand',
+                                   'TJackk ([E0a86uKzcuk @ 00:07:17]); TJackk ([CB9UNWu4LMM @ 00:01:59])'],
+                                  ['Which model to buy for Black SUV work',
+                                   'Suburban for balance; Escalade ESV for limo jobs posted Escalade-only',
+                                   'Any large truck that unlocks XL, Black, and Black SUV touches about '
+                                   '400 daily',
+                                   'ESCAPE THE MATRIX ([l1oXFuye_F0 @ 00:02:32]); TJackk ([E0a86uKzcuk @ '
+                                   '00:05:22])'],
+                                  ['Best hybrid for app-based rideshare volume',
+                                   'Prius is king of profit because 80 to 90% of rides are Uber X',
+                                   'RAV4 Hybrid ranks first because the Prius caps at X and Green with no '
+                                   'Comfort',
+                                   'rideXserve ([pOWoMXyVapQ @ 00:18:17]); The Rideshare CEO ([Ap3NIbDoDDg '
+                                   '@ 00:01:59])'],
+                                  ['Cargo van choice for Amazon Relay loads',
+                                   'Transit, Sprinter, or ProMaster matched to your budget, routes, and '
+                                   'long-term goals',
+                                   'Sprinter sits near the bottom; most load board posts say no Sprinter '
+                                   'vans',
+                                   'AOneDriver Recruiting ([Yp0LDXpCQnU @ 00:01:53]); Mr. RTB '
+                                   '([JJrV3_EbmeE @ 00:01:13])'],
+                                  ['Own the van or lease it with zero down',
+                                   'Zero-down lease from Ryder, Penske, or Fluid Truck at roughly $500 to '
+                                   '$1,500 monthly',
+                                   'Buy a brand new 2023 extended Sprinter and fund the commercial '
+                                   'insurance down payment yourself',
+                                   'Your Solvent Uncle ([S5qZoSWOz8w @ 00:24:35]); Mr. RTB ([JJrV3_EbmeE @ '
+                                   '00:04:08])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The economics bite first in the payment stack. ESCAPE THE MATRIX financed '
+                              '100% of a $125,000 Navigator with zero down, landing a $1,733 car note, '
+                              '$370 a month in commercial liability, and $900 to $1,200 in gas at about 13 '
+                              'mpg, for a $3,000 to $3,300 monthly nut; renting out their old Tesla for '
+                              'about $500 a month in profit is what shaves it [fPh6slkW9Tk @ 00:06:08]. '
+                              'That Tesla was its own trap: it dropped from about $62,000 to about $50,000 '
+                              'within two or three months of purchase, costing them almost $12,000 off the '
+                              'bat, then got pulled off the Uber Black list a year later [fPh6slkW9Tk @ '
+                              '00:02:12]. Yusuf Benallal walked a caller back from a 2025 Escalade order: '
+                              '620 credit, $40,000 owed on a 2019 with 140,000 miles, roughly $20,000 '
+                              'underwater, and a projected 20% rate that puts the truck near $3,500 a '
+                              'month on $7,000 to $8,000 of income; the advice was eat the $1,000 deposit '
+                              'rather than lose $40,000 [xrJ-xGav6Xo @ 00:03:19]. rideXserve paid $48,000 '
+                              'for a new 2021 Highlander, still owes $12,000 at over 395,000 miles with '
+                              'zero trade-in value, and says the sale should have happened around 150,000 '
+                              '[pOWoMXyVapQ @ 00:15:33].',
+                              'Mechanical failure is the second trap, and servicing does not save you. '
+                              'TJackk bought a one-owner Ford Expedition at 84,000 miles with a clean '
+                              'history, sent it straight to a renter, and got four to four and a half good '
+                              'months before the alternator died in August; the mechanic fixed it without '
+                              'replacing the battery, the truck shut off mid-intersection with no hazards '
+                              'working, then needed a tow, a battery, a catalytic converter weeks later, '
+                              'and a headlight, for high four figures in about two months [fIZp2tBd2tY @ '
+                              '00:08:32]. They only landed on the Ford because the bank refused to finance '
+                              'the Infiniti they wanted for too many miles for the year. ESCAPE THE MATRIX '
+                              'answers this risk with paper: an extended warranty to at least 100,000 '
+                              'miles, since the basic 4-year or 50,000-mile coverage runs out fast in this '
+                              'business [l1oXFuye_F0 @ 00:03:41]. The Rideshare CEO lists hybrid-specific '
+                              'landmines: Prius catalytic converters as the top theft target at $2,000 to '
+                              '$3,000 to replace, making a $200 to $400 shield part of the purchase, a '
+                              'clogged battery cooling vent that cooks the pack, the 2019 RAV4 Hybrid fuel '
+                              'tank defect, and 2019 to 2022 AWD cable gate corrosion [Ap3NIbDoDDg @ '
+                              '00:02:38].',
+                              'The third trap is buying the truck before the demand. TJackk tells of a '
+                              'driver who paid about $120,000 for an Escalade ESV and now lives at the '
+                              'airport on the apps with no private clientele, and the partner warns that a '
+                              "car bought for today's situation can end up sitting in the driveway if "
+                              'illness hits or the work does not fit [CB9UNWu4LMM @ 00:04:59]. ESCAPE THE '
+                              "MATRIX's first Black SUV shift shows the friction: $97.50 for premium gas, "
+                              '$103 for third-row floor mats, over $200 spent before the first ride, then '
+                              'a 53-minute, 10.53-mile trip for $62.75 and a slow airport finish once the '
+                              'surge died [q6qypIL66TM @ 00:02:45]. Mr. RTB hit the cargo version of the '
+                              'same wall: a 2023 extended 170-inch Sprinter, a stated $33,000 down payment '
+                              'to start commercial insurance, usually Progressive at a steep rate for a '
+                              'young first-timer, and brokers hanging up once they heard a brand new MC; '
+                              'their read is that year one is a tester year and contract work, not gig '
+                              'apps, is what pays consistently [JJrV3_EbmeE @ 00:04:08]. Ryde VIP test '
+                              'drove a 2018 Suburban near 100,000 miles at about $30,000, over 40 after '
+                              'paperwork, and walked, saying the debt would feel like modern slavery '
+                              '[z-YFFXEIrY8 @ 00:14:43].'],
+               'table': {'caption': 'Firsthand losses and the economics check each operator ran afterward',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['EV price drop plus Uber Black eligibility loss',
+                                   'Tesla Model Y fell from about $62,000 to about $50,000, then left the '
+                                   'Black list',
+                                   'Lost almost $12,000 off the bat; now rented out for about $500 monthly '
+                                   'profit',
+                                   'ESCAPE THE MATRIX ([fPh6slkW9Tk @ 00:02:12])'],
+                                  ['Fully financed six-figure SUV with heavy fuel burn',
+                                   '100% financed Navigator at about 13 mpg, filled two to three times '
+                                   'weekly',
+                                   '$1,733 note plus $370 insurance plus $900 to $1,200 gas every month',
+                                   'ESCAPE THE MATRIX ([fPh6slkW9Tk @ 00:05:15])'],
+                                  ['Subprime upgrade into a brand new Escalade',
+                                   'Caller with 620 credit had already put a deposit on a 2025 Escalade '
+                                   'order',
+                                   'About $3,500 monthly against $7,000 to $8,000 income; cancel and lose '
+                                   '$1,000',
+                                   'Yusuf Benallal ([xrJ-xGav6Xo @ 00:03:35])'],
+                                  ['Used Ford Expedition repair cascade after purchase',
+                                   'Alternator, drained battery, catalytic converter, and headlight failed '
+                                   'back to back',
+                                   'High four figures spent in about a two-month span on one truck',
+                                   'TJackk ([fIZp2tBd2tY @ 00:09:20])'],
+                                  ['Holding a depreciating car far too long',
+                                   '2021 Highlander bought brand new for $48,000 now sits past 395,000 '
+                                   'miles',
+                                   'Still owes $12,000 with zero trade-in value; should have sold near '
+                                   '150,000',
+                                   'rideXserve ([pOWoMXyVapQ @ 00:15:53])'],
+                                  ['Brand new MC paired with a Sprinter van',
+                                   'Brokers hang up once they hear a new MC; most loads say no Sprinter '
+                                   'vans',
+                                   'Commercial insurance paid up front while no loads would book in early '
+                                   'months',
+                                   'Mr. RTB ([JJrV3_EbmeE @ 00:03:15])'],
+                                  ['Six-figure truck bought with no private clientele',
+                                   'Driver paid about $120,000 for an Escalade ESV and now lives at the '
+                                   'airport',
+                                   'Six figures sunk into a truck that depends entirely on ride share '
+                                   'platform demand',
+                                   'TJackk ([CB9UNWu4LMM @ 00:04:39])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Pass/Fail Checks Before You Sign for the Truck or Van',
+                           'body': 'Each check is built from a loss these operators took themselves. Fail '
+                                   'one and the vehicle waits.',
+                           'items': ["Confirm your market's model-year floor before ordering; the NYC call "
+                                     'surfaces a 2024-and-newer requirement for Uber Black that kills '
+                                     'cheap older Escalades [Yusuf Benallal — xrJ-xGav6Xo @ 00:02:35].',
+                                     'Stack the full monthly nut before signing: car note, commercial '
+                                     'insurance, and fuel ran $3,000 to $3,300 on a 13 mpg Navigator '
+                                     '[ESCAPE THE MATRIX — fPh6slkW9Tk @ 00:06:08].',
+                                     'When a shop replaces an alternator, make them check or replace the '
+                                     'battery in the same visit; skipping it stranded the Expedition in an '
+                                     'intersection [TJackk — fIZp2tBd2tY @ 00:08:02].',
+                                     'Do not buy a six-figure Black SUV without a private clientele plan, '
+                                     'or you end up living at the airport on the apps [TJackk — '
+                                     'CB9UNWu4LMM @ 00:04:59].']}}],
+ 'pull_quote': '"I did not want to work super super hard 20 to 30 rides a day in order to make $500 a day. '
+               'I would rather do 10 rides a day to make that same $500." — ESCAPE THE MATRIX (fPh6slkW9Tk '
+               '@ 00:09:10).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Buy black on black only; a black SUV with brown seats will not qualify for Uber '
+                      '[TJackk — CB9UNWu4LMM @ 00:00:20].',
+                      'Pull the Carfax and demand one owner, no accidents, no flooding, no salvage title, '
+                      'and roughly 50K to 80K miles with nothing over 100K [TJackk — CB9UNWu4LMM @ '
+                      '00:03:20].',
+                      'Buy an extended warranty that lasts to at least 100,000 miles, because you will '
+                      'pass 50,000 miles before 4 years [ESCAPE THE MATRIX — l1oXFuye_F0 @ 00:03:57].',
+                      'Choose a seven-seat SUV over a five-seater so XL, Black, Black hourly, and Black '
+                      'SUV all open up [TJackk — -QE8dzRh7To @ 00:02:57].',
+                      'On a Prius, install a $200 to $400 catalytic converter shield and clean the battery '
+                      'cooling intake vent by the rear seat [The Rideshare CEO — Ap3NIbDoDDg @ 00:02:38].',
+                      'On a zero-down van lease, negotiate and clarify every fee and confirm your owner '
+                      'operator or fleet owner classification before signing [Your Solvent Uncle — '
+                      'S5qZoSWOz8w @ 00:25:20].'],
+ 'statutory_citations': [{'title': 'ESCAPE THE MATRIX — I Bought a $125,000 SUV To Drive Uber. Everyone '
+                                   'Said I Was Crazy. [00:05:15]',
+                          'url': 'https://www.youtube.com/watch?v=fPh6slkW9Tk&t=315s',
+                          'relevance': 'Primary practitioner testimony on 100% financing a $125,000 '
+                                       'Navigator and the $3,000 to $3,300 monthly operating cost.'},
+                         {'title': 'TJackk — After Owning Multiple Uber Black SUVs — Here’s What Works '
+                                   'Best [00:05:42]',
+                          'url': 'https://www.youtube.com/watch?v=E0a86uKzcuk&t=342s',
+                          'relevance': 'Primary practitioner testimony on tier one shortback versus tier '
+                                       'two long-wheelbase SUVs and the 40K budget ceiling.'},
+                         {'title': 'TJackk — I’d Never Buy This SUV Again for Uber Black [00:08:51]',
+                          'url': 'https://www.youtube.com/watch?v=fIZp2tBd2tY&t=531s',
+                          'relevance': 'Primary practitioner testimony on the Ford Expedition repair '
+                                       'cascade and high four figures spent in two months.'},
+                         {'title': 'Mr. RTB — The TRUTH about the Cargo van business! [00:04:08]',
+                          'url': 'https://www.youtube.com/watch?v=JJrV3_EbmeE&t=248s',
+                          'relevance': 'Primary practitioner testimony on Sprinter van load-board '
+                                       'rejection, new MC barriers, and commercial insurance cost.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'l1oXFuye_F0',
+                       'title': "Best Uber Black SUV Cars in NYC (2026) | What I'd Actually Buy",
+                       'channel': 'ESCAPE THE MATRIX',
+                       'author': 'ESCAPE THE MATRIX',
+                       'text': 'A lot of the times I will see jobs posted from limousine companies that '
+                               "are Escalade-only, or I'll see jobs posted that are "
+                               'Escalade-or-Navigator-only.',
+                       'tip': 'A lot of the times I will see jobs posted from limousine companies that are '
+                              "Escalade-only, or I'll see jobs posted that are Escalade-or-Navigator-only.",
+                       'timestamp': 171,
+                       'timestamp_seconds': 171,
+                       'timestamp_label': '[00:02:51]',
+                       'url': 'https://www.youtube.com/watch?v=l1oXFuye_F0&t=171s',
+                       'markdown': '[00:02:51](https://www.youtube.com/watch?v=l1oXFuye_F0&t=171s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fPh6slkW9Tk',
+                       'title': 'I Bought a $125,000 SUV To Drive Uber. Everyone Said I Was Crazy.',
+                       'channel': 'ESCAPE THE MATRIX',
+                       'author': 'ESCAPE THE MATRIX',
+                       'text': 'With me financing 100% of the vehicle, it made my car payment $1,733 a '
+                               'month.',
+                       'tip': 'With me financing 100% of the vehicle, it made my car payment $1,733 a '
+                              'month.',
+                       'timestamp': 315,
+                       'timestamp_seconds': 315,
+                       'timestamp_label': '[00:05:15]',
+                       'url': 'https://www.youtube.com/watch?v=fPh6slkW9Tk&t=315s',
+                       'markdown': '[00:05:15](https://www.youtube.com/watch?v=fPh6slkW9Tk&t=315s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-QE8dzRh7To',
+                       'title': 'My Fleet: 2 Luxury SUVs For Uber Black & Chauffeur Business',
+                       'channel': 'TJackk',
+                       'author': 'TJackk',
+                       'text': 'For everybody that want to get into the chauffeur business or do Uber '
+                               'Black, do not get a 5-seater SUV, get a seven seater SUV.',
+                       'tip': 'For everybody that want to get into the chauffeur business or do Uber '
+                              'Black, do not get a 5-seater SUV, get a seven seater SUV.',
+                       'timestamp': 177,
+                       'timestamp_seconds': 177,
+                       'timestamp_label': '[00:02:57]',
+                       'url': 'https://www.youtube.com/watch?v=-QE8dzRh7To&t=177s',
+                       'markdown': '[00:02:57](https://www.youtube.com/watch?v=-QE8dzRh7To&t=177s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'q6qypIL66TM',
+                       'title': 'FIRST DAY DRIVING UBER BLACK SUV IN 120K SUV',
+                       'channel': 'ESCAPE THE MATRIX',
+                       'author': 'ESCAPE THE MATRIX',
+                       'text': 'It was 103 with tax and everything, so even before I started work, I '
+                               'already spent over $200 before I even started work.',
+                       'tip': 'It was 103 with tax and everything, so even before I started work, I '
+                              'already spent over $200 before I even started work.',
+                       'timestamp': 165,
+                       'timestamp_seconds': 165,
+                       'timestamp_label': '[00:02:45]',
+                       'url': 'https://www.youtube.com/watch?v=q6qypIL66TM&t=165s',
+                       'markdown': '[00:02:45](https://www.youtube.com/watch?v=q6qypIL66TM&t=165s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'E0a86uKzcuk',
+                       'title': 'After Owning Multiple Uber Black SUVs — Here’s What Works Best',
+                       'channel': 'TJackk',
+                       'author': 'TJackk',
+                       'text': 'We gonna get a large size SUV, and with that Infiniti QX80, it opened us '
+                               'up to more ride options.',
+                       'tip': 'We gonna get a large size SUV, and with that Infiniti QX80, it opened us up '
+                              'to more ride options.',
+                       'timestamp': 153,
+                       'timestamp_seconds': 153,
+                       'timestamp_label': '[00:02:33]',
+                       'url': 'https://www.youtube.com/watch?v=E0a86uKzcuk&t=153s',
+                       'markdown': '[00:02:33](https://www.youtube.com/watch?v=E0a86uKzcuk&t=153s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IjuFeAo7KGE',
+                       'title': 'what vehicles qualify for UBER BLACK SUV?',
+                       'channel': 'ESCAPE THE MATRIX',
+                       'author': 'ESCAPE THE MATRIX',
+                       'text': "They're all going to be gas guzzlers, they're all going to be on the "
+                               'expensive side to maintain, but in order to make big money you have to '
+                               'invest big money into a luxurious vehicle.',
+                       'tip': "They're all going to be gas guzzlers, they're all going to be on the "
+                              'expensive side to maintain, but in order to make big money you have to '
+                              'invest big money into a luxurious vehicle.',
+                       'timestamp': 183,
+                       'timestamp_seconds': 183,
+                       'timestamp_label': '[00:03:03]',
+                       'url': 'https://www.youtube.com/watch?v=IjuFeAo7KGE&t=183s',
+                       'markdown': '[00:03:03](https://www.youtube.com/watch?v=IjuFeAo7KGE&t=183s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xrJ-xGav6Xo',
+                       'title': 'NYC Uber Driver SHOCKED his new Cadillac Escalade will be $3,500 a month! '
+                                '😱🙃 Expensive SUV to drive😩',
+                       'channel': 'Yusuf Benallal',
+                       'author': 'Yusuf Benallal',
+                       'text': "You're going to be at $3,500 a month for this 2025 Escalade in order for "
+                               'you to use this for Uber Black.',
+                       'tip': "You're going to be at $3,500 a month for this 2025 Escalade in order for "
+                              'you to use this for Uber Black.',
+                       'timestamp': 215,
+                       'timestamp_seconds': 215,
+                       'timestamp_label': '[00:03:35]',
+                       'url': 'https://www.youtube.com/watch?v=xrJ-xGav6Xo&t=215s',
+                       'markdown': '[00:03:35](https://www.youtube.com/watch?v=xrJ-xGav6Xo&t=215s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CB9UNWu4LMM',
+                       'title': 'Before You Buy an SUV for Uber Black — Watch This',
+                       'channel': 'TJackk',
+                       'author': 'TJackk',
+                       'text': "I'm okay with paying 40 for a SUV if it got like 60 to 80k miles on it, "
+                               'but that Carfax better be clean or we not buying it.',
+                       'tip': "I'm okay with paying 40 for a SUV if it got like 60 to 80k miles on it, but "
+                              'that Carfax better be clean or we not buying it.',
+                       'timestamp': 485,
+                       'timestamp_seconds': 485,
+                       'timestamp_label': '[00:08:05]',
+                       'url': 'https://www.youtube.com/watch?v=CB9UNWu4LMM&t=485s',
+                       'markdown': '[00:08:05](https://www.youtube.com/watch?v=CB9UNWu4LMM&t=485s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'z-YFFXEIrY8',
+                       'title': 'Uber Driver Test driving a black Chevrolet suburban SUV for Uber black '
+                                'SUV service',
+                       'channel': 'Ryde VIP',
+                       'author': 'Ryde VIP',
+                       'text': "The amount of money it costs, it's way too much; if I do get it, it just "
+                               'would be a debt, I would feel like a slave, like modern slavery.',
+                       'tip': "The amount of money it costs, it's way too much; if I do get it, it just "
+                              'would be a debt, I would feel like a slave, like modern slavery.',
+                       'timestamp': 864,
+                       'timestamp_seconds': 864,
+                       'timestamp_label': '[00:14:24]',
+                       'url': 'https://www.youtube.com/watch?v=z-YFFXEIrY8&t=864s',
+                       'markdown': '[00:14:24](https://www.youtube.com/watch?v=z-YFFXEIrY8&t=864s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fIZp2tBd2tY',
+                       'title': 'I’d Never Buy This SUV Again for Uber Black',
+                       'channel': 'TJackk',
+                       'author': 'TJackk',
+                       'text': 'Do not buy a Ford; it was good when it was good, but we spent high four '
+                               'figures on this car in a two month span.',
+                       'tip': 'Do not buy a Ford; it was good when it was good, but we spent high four '
+                              'figures on this car in a two month span.',
+                       'timestamp': 560,
+                       'timestamp_seconds': 560,
+                       'timestamp_label': '[00:09:20]',
+                       'url': 'https://www.youtube.com/watch?v=fIZp2tBd2tY&t=560s',
+                       'markdown': '[00:09:20](https://www.youtube.com/watch?v=fIZp2tBd2tY&t=560s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Yp0LDXpCQnU',
+                       'title': 'Which Cargo Van Is Best For Amazon Relay In 2025?',
+                       'channel': 'AOneDriver Recruiting',
+                       'author': 'AOneDriver Recruiting',
+                       'text': "If you're watching your budget, the Ram ProMaster is the one to check out; "
+                               'upfront costs are lower and maintenance is simple.',
+                       'tip': "If you're watching your budget, the Ram ProMaster is the one to check out; "
+                              'upfront costs are lower and maintenance is simple.',
+                       'timestamp': 97,
+                       'timestamp_seconds': 97,
+                       'timestamp_label': '[00:01:37]',
+                       'url': 'https://www.youtube.com/watch?v=Yp0LDXpCQnU&t=97s',
+                       'markdown': '[00:01:37](https://www.youtube.com/watch?v=Yp0LDXpCQnU&t=97s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'S5qZoSWOz8w',
+                       'title': 'Amazon Relay Cargo Van Sprinter Van Expedited Van 2026: Leasing Programs '
+                                'I Tested, Why You Need This',
+                       'channel': 'Your Solvent Uncle',
+                       'author': 'Your Solvent Uncle',
+                       'text': "You can think about five hundred dollars to fifteen hundred dollars; we've "
+                               'seen people renting cargo vans for their Amazon Relay for one thousand '
+                               'dollars a month or eight hundred dollars a month.',
+                       'tip': "You can think about five hundred dollars to fifteen hundred dollars; we've "
+                              'seen people renting cargo vans for their Amazon Relay for one thousand '
+                              'dollars a month or eight hundred dollars a month.',
+                       'timestamp': 1475,
+                       'timestamp_seconds': 1475,
+                       'timestamp_label': '[00:24:35]',
+                       'url': 'https://www.youtube.com/watch?v=S5qZoSWOz8w&t=1475s',
+                       'markdown': '[00:24:35](https://www.youtube.com/watch?v=S5qZoSWOz8w&t=1475s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JJrV3_EbmeE',
+                       'title': 'The TRUTH about the Cargo van business!',
+                       'channel': 'Mr. RTB',
+                       'author': 'Mr. RTB',
+                       'text': 'Almost every load on there says no Sprinter vans and that is extremely '
+                               'frustrating to find out in your first couple months.',
+                       'tip': 'Almost every load on there says no Sprinter vans and that is extremely '
+                              'frustrating to find out in your first couple months.',
+                       'timestamp': 73,
+                       'timestamp_seconds': 73,
+                       'timestamp_label': '[00:01:13]',
+                       'url': 'https://www.youtube.com/watch?v=JJrV3_EbmeE&t=73s',
+                       'markdown': '[00:01:13](https://www.youtube.com/watch?v=JJrV3_EbmeE&t=73s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pOWoMXyVapQ',
+                       'title': 'Top 7 Cars for Uber & Lyft Driving in 2026 (Ranked)',
+                       'channel': 'rideXserve',
+                       'author': 'rideXserve',
+                       'text': 'There is zero trade-in value right now; I should have sold it at around '
+                               '150,000 miles so I could have gotten some value out of it.',
+                       'tip': 'There is zero trade-in value right now; I should have sold it at around '
+                              '150,000 miles so I could have gotten some value out of it.',
+                       'timestamp': 953,
+                       'timestamp_seconds': 953,
+                       'timestamp_label': '[00:15:53]',
+                       'url': 'https://www.youtube.com/watch?v=pOWoMXyVapQ&t=953s',
+                       'markdown': '[00:15:53](https://www.youtube.com/watch?v=pOWoMXyVapQ&t=953s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ap3NIbDoDDg',
+                       'title': 'Best Cars for Rideshare Drivers: Hybrid Edition',
+                       'channel': 'The Rideshare CEO',
+                       'author': 'The Rideshare CEO',
+                       'text': 'The Prius tops out at Uber X and Green in most markets, no comfort, and '
+                               'that is a structural earning ceiling.',
+                       'tip': 'The Prius tops out at Uber X and Green in most markets, no comfort, and '
+                              'that is a structural earning ceiling.',
+                       'timestamp': 119,
+                       'timestamp_seconds': 119,
+                       'timestamp_label': '[00:01:59]',
+                       'url': 'https://www.youtube.com/watch?v=Ap3NIbDoDDg&t=119s',
+                       'markdown': '[00:01:59](https://www.youtube.com/watch?v=Ap3NIbDoDDg&t=119s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pHQF2wiVTs4',
+                       'title': '3 Surprising Benefits of Owning an Uber Black Fleet',
+                       'channel': 'TJackk',
+                       'author': 'TJackk',
+                       'text': 'I make money whether these SUVs sitting in my driveway or they rented out, '
+                               'and me and my partner went out last night and we both made $400 each.',
+                       'tip': 'I make money whether these SUVs sitting in my driveway or they rented out, '
+                              'and me and my partner went out last night and we both made $400 each.',
+                       'timestamp': 27,
+                       'timestamp_seconds': 27,
+                       'timestamp_label': '[00:00:27]',
+                       'url': 'https://www.youtube.com/watch?v=pHQF2wiVTs4&t=27s',
+                       'markdown': '[00:00:27](https://www.youtube.com/watch?v=pHQF2wiVTs4&t=27s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'}]}

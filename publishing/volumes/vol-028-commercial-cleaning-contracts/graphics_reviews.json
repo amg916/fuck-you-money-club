@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-measured-scope-to-renewal",
-    "diag-02-local-account-conversion-cohort",
-    "diag-03-base-case-revenue-to-owner-net",
-    "diag-04-sub-niche-contribution-per-paid-hour",
-    "diag-05-preflight-labor-chemical-and-contract-checks",
-    "diag-06-four-seat-core-with-two-seat-expansion",
-    "diag-07-thirty-thousand-reference-startup-allocation",
-    "diag-08-first-thirty-days-execution"
+    "diag-01-lean-launch-sequence",
+    "diag-02-big-account-math-funnel",
+    "diag-03-cold-call-attrition-waterfall",
+    "diag-04-first-contract-percentages",
+    "diag-05-bid-release-gates",
+    "diag-06-classification-and-coverage-map",
+    "diag-07-account-cost-split",
+    "diag-08-franchise-due-diligence-roadmap"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-measured-scope-to-renewal",
-    "diag-02-local-account-conversion-cohort",
-    "diag-03-base-case-revenue-to-owner-net",
-    "diag-04-sub-niche-contribution-per-paid-hour",
-    "diag-05-preflight-labor-chemical-and-contract-checks",
-    "diag-06-four-seat-core-with-two-seat-expansion",
-    "diag-07-thirty-thousand-reference-startup-allocation",
-    "diag-08-first-thirty-days-execution"
+    "diag-01-lean-launch-sequence",
+    "diag-02-big-account-math-funnel",
+    "diag-03-cold-call-attrition-waterfall",
+    "diag-04-first-contract-percentages",
+    "diag-05-bid-release-gates",
+    "diag-06-classification-and-coverage-map",
+    "diag-07-account-cost-split",
+    "diag-08-franchise-due-diligence-roadmap"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-measured-scope-to-renewal": {
+    "diag-01-lean-launch-sequence": {
       "concept_a": {
-        "graphic_id": "diag-01-measured-scope-to-renewal",
+        "graphic_id": "diag-01-lean-launch-sequence",
         "graphic_type": "diagram",
-        "label": "Sell a Measured Scope, Then Prove Delivery",
+        "label": "The Sub-$1,000 Launch Sequence",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-measured-scope-to-renewal",
+        "graphic_id": "diag-01-lean-launch-sequence",
         "graphic_type": "diagram",
-        "label": "Sell a Measured Scope, Then Prove Delivery",
+        "label": "The Sub-$1,000 Launch Sequence",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-measured-scope-to-renewal",
+        "graphic_id": "diag-01-lean-launch-sequence",
         "graphic_type": "diagram",
-        "label": "Sell a Measured Scope, Then Prove Delivery",
+        "label": "The Sub-$1,000 Launch Sequence",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-local-account-conversion-cohort": {
+    "diag-02-big-account-math-funnel": {
       "concept_a": {
-        "graphic_id": "diag-02-local-account-conversion-cohort",
+        "graphic_id": "diag-02-big-account-math-funnel",
         "graphic_type": "diagram",
-        "label": "One Prospect Cohort, Five Measurable Conversions",
+        "label": "Big-Account Math, From Portfolio to Porter Bill Rate",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-local-account-conversion-cohort",
+        "graphic_id": "diag-02-big-account-math-funnel",
         "graphic_type": "diagram",
-        "label": "One Prospect Cohort, Five Measurable Conversions",
+        "label": "Big-Account Math, From Portfolio to Porter Bill Rate",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-local-account-conversion-cohort",
+        "graphic_id": "diag-02-big-account-math-funnel",
         "graphic_type": "diagram",
-        "label": "One Prospect Cohort, Five Measurable Conversions",
+        "label": "Big-Account Math, From Portfolio to Porter Bill Rate",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-case-revenue-to-owner-net": {
+    "diag-03-cold-call-attrition-waterfall": {
       "concept_a": {
-        "graphic_id": "diag-03-base-case-revenue-to-owner-net",
+        "graphic_id": "diag-03-cold-call-attrition-waterfall",
         "graphic_type": "diagram",
-        "label": "$725,000 Contract Revenue to $87,000 Owner Net",
+        "label": "100 Cold Calls Down to 2 Walkthroughs",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-case-revenue-to-owner-net",
+        "graphic_id": "diag-03-cold-call-attrition-waterfall",
         "graphic_type": "diagram",
-        "label": "$725,000 Contract Revenue to $87,000 Owner Net",
+        "label": "100 Cold Calls Down to 2 Walkthroughs",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-case-revenue-to-owner-net",
+        "graphic_id": "diag-03-cold-call-attrition-waterfall",
         "graphic_type": "diagram",
-        "label": "$725,000 Contract Revenue to $87,000 Owner Net",
+        "label": "100 Cold Calls Down to 2 Walkthroughs",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-sub-niche-contribution-per-paid-hour": {
+    "diag-04-first-contract-percentages": {
       "concept_a": {
-        "graphic_id": "diag-04-sub-niche-contribution-per-paid-hour",
+        "graphic_id": "diag-04-first-contract-percentages",
         "graphic_type": "diagram",
-        "label": "Compare Contribution per Paid Service Hour",
+        "label": "The Percentages Behind the First Contract",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-sub-niche-contribution-per-paid-hour",
+        "graphic_id": "diag-04-first-contract-percentages",
         "graphic_type": "diagram",
-        "label": "Compare Contribution per Paid Service Hour",
+        "label": "The Percentages Behind the First Contract",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-sub-niche-contribution-per-paid-hour",
+        "graphic_id": "diag-04-first-contract-percentages",
         "graphic_type": "diagram",
-        "label": "Compare Contribution per Paid Service Hour",
+        "label": "The Percentages Behind the First Contract",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-preflight-labor-chemical-and-contract-checks": {
+    "diag-05-bid-release-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-preflight-labor-chemical-and-contract-checks",
+        "graphic_id": "diag-05-bid-release-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Assigning a Crew",
+        "label": "Four Gates Before a Bid Leaves the Building",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-preflight-labor-chemical-and-contract-checks",
+        "graphic_id": "diag-05-bid-release-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Assigning a Crew",
+        "label": "Four Gates Before a Bid Leaves the Building",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-preflight-labor-chemical-and-contract-checks",
+        "graphic_id": "diag-05-bid-release-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Assigning a Crew",
+        "label": "Four Gates Before a Bid Leaves the Building",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-four-seat-core-with-two-seat-expansion": {
+    "diag-06-classification-and-coverage-map": {
       "concept_a": {
-        "graphic_id": "diag-06-four-seat-core-with-two-seat-expansion",
+        "graphic_id": "diag-06-classification-and-coverage-map",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Two Explicit Expansion Seats",
+        "label": "Classification and Coverage Around the Owner",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-four-seat-core-with-two-seat-expansion",
+        "graphic_id": "diag-06-classification-and-coverage-map",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Two Explicit Expansion Seats",
+        "label": "Classification and Coverage Around the Owner",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-four-seat-core-with-two-seat-expansion",
+        "graphic_id": "diag-06-classification-and-coverage-map",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Two Explicit Expansion Seats",
+        "label": "Classification and Coverage Around the Owner",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-thirty-thousand-reference-startup-allocation": {
+    "diag-07-account-cost-split": {
       "concept_a": {
-        "graphic_id": "diag-07-thirty-thousand-reference-startup-allocation",
+        "graphic_id": "diag-07-account-cost-split",
         "graphic_type": "diagram",
-        "label": "Allocate a $30,000 Reference Launch Budget",
+        "label": "Where Each Account Dollar Goes",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-thirty-thousand-reference-startup-allocation",
+        "graphic_id": "diag-07-account-cost-split",
         "graphic_type": "diagram",
-        "label": "Allocate a $30,000 Reference Launch Budget",
+        "label": "Where Each Account Dollar Goes",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-thirty-thousand-reference-startup-allocation",
+        "graphic_id": "diag-07-account-cost-split",
         "graphic_type": "diagram",
-        "label": "Allocate a $30,000 Reference Launch Budget",
+        "label": "Where Each Account Dollar Goes",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-first-thirty-days-execution": {
+    "diag-08-franchise-due-diligence-roadmap": {
       "concept_a": {
-        "graphic_id": "diag-08-first-thirty-days-execution",
+        "graphic_id": "diag-08-franchise-due-diligence-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Measured, Bid-Ready Operation",
+        "label": "Four Checks Before Buying a Cleaning Franchise",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-first-thirty-days-execution",
+        "graphic_id": "diag-08-franchise-due-diligence-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Measured, Bid-Ready Operation",
+        "label": "Four Checks Before Buying a Cleaning Franchise",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-first-thirty-days-execution",
+        "graphic_id": "diag-08-franchise-due-diligence-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Measured, Bid-Ready Operation",
+        "label": "Four Checks Before Buying a Cleaning Franchise",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:02Z"
+  "updated_at": "2026-11-24T22:21:28Z"
 }

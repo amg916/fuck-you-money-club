@@ -1,714 +1,837 @@
 from __future__ import annotations
 
-CHAPTER_4 = {
-    "id": "Q4",
-    "chapter_id": "Q4",
-    "chapter_number": 4,
-    "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($12,000–$65,000 USD) and configure a lean, low-opex ($2,500–$15,000 USD/mo) production stack without wasting cash on bloated overhead?",
-    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Reserve-First Fleet Launches, Uber Fleet Partner Waterfalls, Commercial Livery Coverage, FMCSA Trigger Intake & a Twelve-Layer Production Stack",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #31, Uber & Commercial Fleet Arbitrage, ranks #15 of 36 with an "
-        "89/100 Money-to-Manpower Score. This chapter maps 10 operator plays into a "
-        "reserve-first launch: driver leasing, investor co-hosting, Black SUV dispatch, "
-        "replacement placements, second-shift utilization, maintenance administration, toll "
-        "administration, airport coordination, renewal reactivation, and FMCSA trigger intake. "
-        "Deploy $12,000–$65,000 without buying speculative inventory, preserve at least half "
-        "as working capital, and hold fixed monthly overhead within $2,500–$15,000. "
-        "Canonical annual owner profits are $25,200 Conservative, $144,900 Base, and "
-        "$336,000 Scaled. A twelve-layer stack connects contracts, collections, telematics, "
-        "driver screening, and settlement evidence. The operating discipline is simple: "
-        "bind the correct insurance, validate the vehicle and driver, then release capital "
-        "against a documented, collectible assignment."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$180,000",
-            "context": "Annual gross operator billings; $99,000 retained contribution at 55%.",
-            "note": "14% gross-billings margin; 25.45% retained margin; $25,200 annual owner net profit; 1 FT + 3 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$690,000",
-            "context": "Annual gross operator billings; $379,500 retained contribution at 55%.",
-            "note": "21.0% gross-billings margin; 38.18% retained margin; $144,900 annual owner net profit; 1 FT + 3 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual gross operator billings; $660,000 retained contribution at 55%.",
-            "note": "28% gross-billings margin; 50.91% retained margin; $336,000 annual owner net profit; 2 FT + 4 C, six people.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Allocate cash to survival before allocating cash to vehicles",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Launch with access to vehicles, not a speculative balance sheet full of them. "
-                    "The three capitalization envelopes below allocate $12,000, $35,000, and $65,000 "
-                    "while preserving $6,000, $20,000, and $35,000 respectively as unrestricted "
-                    "working-capital reserves. Those reserve shares are 50.00%, 57.14%, and 53.85%; "
-                    "driver security deposits and investor-owned money do not count toward them. "
-                    "Use investor vehicle co-hosting or an expressly permitted commercial sublease "
-                    "before considering owned inventory. Obtain written owner and lender permission "
-                    "for the actual use, including paid passenger transportation, multiple drivers, "
-                    "and any proposed shift sharing. A consumer rental agreement or personal "
-                    "auto policy does not become suitable merely because a driver has platform "
-                    "access. The $12,000 envelope supports a tightly bounded pilot only when "
-                    "actual insurance deposits, deductibles, permits, and vehicle commitments fit. "
-                    "If the insurer requires a larger deposit, reduce launch scope or increase "
-                    "capital; never solve the shortage by consuming the protected reserve. "
-                    "A provisional $2,500 deductible, $750 recovery bill, $1,250 downtime allowance, "
-                    "and $1,500 settlement delay already consume its entire $6,000 reserve. "
-                    "Replace every provisional amount with a written quote before assigning "
-                    "the first vehicle, and identify who funds any loss exceeding available cash."
-                ),
-                (
-                    "Reconcile the scorecard through one waterfall before pricing any lease. "
-                    "Conservative annual gross operator billings of $180,000 yield $99,000 at "
-                    "the canonical 55% retained share; $73,800 of remaining operating costs "
-                    "leave $25,200 owner profit. Base billings of $690,000 yield $379,500 "
-                    "retained contribution; $234,600 of remaining costs leave $144,900. Scaled "
-                    "billings of $1,200,000 yield $660,000 retained contribution; $324,000 "
-                    "of remaining costs leave $336,000. The complementary 45% amounts, "
-                    "$81,000, $310,500, and $540,000, represent modeled investor splits and "
-                    "pass-through fleet costs before that retained contribution. Do not deduct "
-                    "the same expense again below the line. Gross-billings margins are 14%, "
-                    "21.0%, and 28%; retained margins round to 25.45%, 38.18%, and 50.91%. "
-                    "Passenger fares, underlying driver ride earnings, vehicle purchase prices, "
-                    "and investor capital are not additional operator revenue. ASC 606 "
-                    "principal-versus-agent analysis depends on each promised service and "
-                    "control assessment, not merely a chosen percentage. Treat 55% as the "
-                    "canonical management waterfall; present net recognized revenue only where "
-                    "the documented agency conclusion supports it. Separate lease accounting "
-                    "from service accounting where the contract contains an actual lease "
-                    "component, and preserve the bridge from bank receipts to each reported amount."
-                ),
-                (
-                    "Keep the stated $2,500–$15,000 monthly overhead envelope distinct from "
-                    "total operating costs. An illustrative reconciliation assigns fixed monthly "
-                    "overhead of $2,500 Conservative, $8,000 Base, and $15,000 Scaled. Annual "
-                    "fixed overhead is therefore $30,000, $96,000, and $180,000. The remaining "
-                    "post-retention variable operating allowances are $43,800, $138,600, and "
-                    "$144,000 annually, or $3,650, $11,550, and $12,000 monthly. These two "
-                    "cost buckets sum exactly to the scorecard residuals, rather than falsely "
-                    "claiming that every scaled expense fits inside $15,000. Build the "
-                    "detailed ledger so contractor labor, servicing, screening, incident handling, "
-                    "and unrecovered downtime each appear once. The staffing assumptions remain "
-                    "1 FT plus 3 contractors for Conservative and Base, and 2 FT plus "
-                    "4 contractors for Scaled; a headcount label does not establish working "
-                    "hours or employee classification. Budget actual scheduled coverage and "
-                    "test local wage obligations before hiring. Keep the founder's personal "
-                    "draw separate from contractual owner distributions. Weekly cash forecasting "
-                    "should show cleared collections, pending payments, upcoming insurance "
-                    "installments, reserve restrictions, and the next two investor settlements. "
-                    "Freeze additional vehicle commitments when a deductible-sized shock would "
-                    "push projected unrestricted cash below the reserve floor."
-                ),
-            ],
-            "table": {
-                "caption": "Three reserve-first launch budgets; columns total $12,000, $35,000, and $65,000 exactly",
-                "headers": [
-                    "Capital allocation and operating purpose",
-                    "$12,000 tightly bounded launch envelope",
-                    "$35,000 controlled operating launch envelope",
-                    "$65,000 expanded operating launch envelope",
-                ],
-                "rows": [
-                    [
-                        "Protected working capital for claims and settlement timing",
-                        "$6,000 reserved exclusively for operating shocks and collection delays.",
-                        "$20,000 reserved against overlapping incidents and owner settlement timing.",
-                        "$35,000 reserved against multiple deductibles and prolonged vehicle downtime.",
-                    ],
-                    [
-                        "Commercial insurance deposit and binding expense allowance",
-                        "$2,500 available only if the actual binding quote fits.",
-                        "$6,000 allocated against written vehicle and driver insurance schedules.",
-                        "$12,000 allocated against documented commercial coverage and installment requirements.",
-                    ],
-                    [
-                        "Entity formation and reviewed operating contract documents",
-                        "$900 funds entity setup and tightly scoped contract review.",
-                        "$1,800 funds owner agreements, driver terms, and bookkeeping setup.",
-                        "$2,500 funds expanded contract review and entity administration setup.",
-                    ],
-                    [
-                        "Jurisdiction permits and required vehicle inspection expenses",
-                        "$600 funds verified local requirements for the selected pilot.",
-                        "$1,700 funds applicable permits, inspection appointments, and vehicle onboarding.",
-                        "$3,000 funds documented jurisdiction requirements across the planned vehicle roster.",
-                    ],
-                    [
-                        "Telematics installation and controlled vehicle access equipment",
-                        "$600 funds approved hardware, installation, and spare key custody.",
-                        "$1,500 funds approved tracking hardware and documented installation checks.",
-                        "$2,500 funds approved devices, secure access, and replacement equipment.",
-                    ],
-                    [
-                        "Driver acquisition and completed onboarding expense allowance",
-                        "$700 funds qualified referrals and individually authorized screening checks.",
-                        "$2,000 funds screened driver cohorts and confirmed placement acquisition.",
-                        "$4,000 funds measured acquisition experiments and verified driver onboarding.",
-                    ],
-                    [
-                        "Software configuration and launch training expense allowance",
-                        "$700 funds initial configuration, staff training, and recovery drills.",
-                        "$2,000 funds integrations, procedure rehearsals, and documented operating training.",
-                        "$6,000 funds expanded setup, access controls, and settlement rehearsal.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the cash that keeps vehicles earning",
-                "body": "The cheapest launch is the one that survives its first interrupted settlement cycle.",
-                "items": [
-                    "Ask the broker to price the actual VIN, driver roster, territory, and use before negotiating an owner payout; a generic commercial indication is not a bindable fleet schedule.",
-                    "Negotiate investor distributions after cleared collections and disclosed reserve funding, rather than promising a fixed payout before driver payment risk is measured.",
-                    "Keep one deductible-sized amount outside the payment processor so a processor reserve or settlement hold cannot immobilize the operating business.",
-                    "Photograph toll-tag serials, odometer readings, keys, and pre-existing damage at every shift handover; those four records often decide whether a disputed charge is collectible.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Assemble twelve layers without building twelve departments",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Buy a narrow operating stack around one vehicle identifier and one "
-                    "assignment identifier. Mercury holds business cash, Google Workspace handles "
-                    "controlled correspondence, Bitwarden separates credentials, Airtable tracks "
-                    "assignments, and Wave maintains the accounting ledger. Stripe collects "
-                    "authorized operator charges; Make moves status events rather than making "
-                    "unreviewable money decisions. Bouncie provides location and trip evidence, "
-                    "while Checkr supplies properly authorized screening. Dropbox Sign, Calendly, "
-                    "and Looker Studio cover signatures, appointments, and reporting. The matrix "
-                    "uses explicit reference tiers and procurement assumptions, not a claim "
-                    "that every vendor offers those prices in every territory today. Confirm "
-                    "current checkout prices, commercial-use eligibility, taxes, minimums, and "
-                    "cancellation terms before purchase. Paid annual commitments also consume "
-                    "cash earlier than their monthly equivalent suggests. For a pilot using "
-                    "one Workspace seat, one Bitwarden Teams seat where permitted, one "
-                    "Bouncie device, and Make Core, the reference recurring subtotal is "
-                    "$29 monthly before payment fees, checks, state charges, and taxes. "
-                    "That subtotal is software and connectivity, not the fleet's operating "
-                    "budget. Do not buy dispatch software until active assignments exceed "
-                    "the documented manual handling capacity, and export critical records "
-                    "weekly so a vendor outage does not erase dispatch continuity."
-                ),
-                (
-                    "Create separate ledger accounts for unrestricted cash, refundable driver "
-                    "deposits, investor amounts payable, operating receipts, and restricted claim "
-                    "reserves. A second bank account can improve control, but it does not "
-                    "by itself satisfy any jurisdiction's trust-account requirements. Collect "
-                    "signed ACH authorization and disclose the payment schedule, failed-payment "
-                    "handling, toll calculation, and disputed-charge process. A $500 successful "
-                    "domestic ACH debit at the reference 0.8% rate costs $4; a $900 debit "
-                    "reaches the $5 cap. Add verification, return, dispute, and optional "
-                    "service charges where applicable. Payment initiation is not cleared cash, "
-                    "and a platform payout is not proof that every driver deduction was "
-                    "authorized. Use Uber Fleet Partner functionality only where the specific "
-                    "market and account support the proposed arrangement; otherwise invoice "
-                    "the contracted charge through a separate authorized rail. Reconcile "
-                    "gross receipts to owner allocations, operator contribution, refunds, "
-                    "and deposits before posting distributions. Store payment tokens rather "
-                    "than raw bank credentials. Dual review belongs on owner bank-detail "
-                    "changes and exceptional refunds, not on every routine dispatch action. "
-                    "A weekly export should let another operator reproduce every settlement "
-                    "without access to the founder's inbox or personal phone."
-                ),
-                (
-                    "Coverage follows the exposure, not the app logo. Have the broker "
-                    "document the actual policy response while a driver is offline, available "
-                    "for requests, traveling to a pickup, and transporting a passenger. "
-                    "California's Transportation Network Company provisions, including Public "
-                    "Utilities Code section 5433, address defined TNC activity; they do "
-                    "not replace charter-party requirements for a separate Black SUV livery "
-                    "operation. Verify vehicle eligibility, operator authority, airport access, "
-                    "rental permission, and any required driver licensing independently. Record "
-                    "policy exclusions, deductibles, reporting duties, renewal dates, and who "
-                    "pays for downtime. MVR access must have a permissible purpose under "
-                    "the Driver's Privacy Protection Act, 18 U.S.C. 2721; consumer-report "
-                    "use also requires the applicable Fair Credit Reporting Act procedures. "
-                    "For employment-purpose reports, obtain the required disclosure and written "
-                    "authorization, and follow pre-adverse and adverse-action procedures when "
-                    "applicable. Keep screening reports outside the general dispatch board "
-                    "with restricted retention and access. Disclose location collection and "
-                    "limit it to legitimate fleet operations. Bouncie tracking does not "
-                    "provide starter interruption. If separate immobilization equipment is "
-                    "ever considered, require vehicle-compatible installation and a lawful, "
-                    "documented stationary-only process; never disable a moving vehicle or "
-                    "use remote interruption as an improvised collections tactic."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-layer procurement matrix: explicit reference prices, bounded roles, and lean substitutes",
-                "headers": [
-                    "Layer and named vendor selection",
-                    "Reference tier and exact pricing assumption",
-                    "Production responsibility and implementation boundary",
-                    "Cheaper alternative and switching condition",
-                ],
-                "rows": [
-                    [
-                        "Layer 01: Mercury business banking and cash separation",
-                        "Standard account reference: $0 monthly account fee; confirm eligibility and ancillary fees.",
-                        "Separate operating cash and settlement records without treating deposits as earned revenue.",
-                        "Use an eligible local bank's fee-waived business account when cash deposits matter.",
-                    ],
-                    [
-                        "Layer 02: Google Workspace business identity and correspondence",
-                        "Business Starter reference: $7 per user monthly with annual commitment, before taxes.",
-                        "Own business email, shared calendars, and restricted contract folders under company administration.",
-                        "Retain an existing business email plan if administrator control and recovery already work.",
-                    ],
-                    [
-                        "Layer 03: Bitwarden Teams credential management and recovery",
-                        "Teams reference: $4 per user monthly, billed annually; confirm current seat requirements.",
-                        "Assign individual accounts and control shared credentials without circulating passwords through messages.",
-                        "Use Bitwarden's eligible free organization tier while its sharing limits remain sufficient.",
-                    ],
-                    [
-                        "Layer 04: Airtable assignment register and operating checklist",
-                        "Free plan reference: $0 monthly; verify current record, attachment, and automation limits.",
-                        "Track vehicle assignments, exceptions, renewal dates, and evidence links without storing screening reports.",
-                        "Use a protected Google Sheet with validated fields and restricted editing permissions.",
-                    ],
-                    [
-                        "Layer 05: Wave Starter bookkeeping and ledger exports",
-                        "Starter reference: $0 subscription; payment services and optional features carry separate charges.",
-                        "Maintain settlement accounts and export transactions for professional review of reporting treatment.",
-                        "Keep an existing bookkeeper-managed ledger rather than migrating solely for a free subscription.",
-                    ],
-                    [
-                        "Layer 06: Stripe ACH Direct Debit operator collections",
-                        "Standard reference: 0.8% per successful domestic ACH debit, capped at $5, before extras.",
-                        "Collect authorized operator charges while tracking pending payments, returns, disputes, and reserves.",
-                        "Accept reconciled bank transfers when volume is low and payment references remain reliable.",
-                    ],
-                    [
-                        "Layer 07: Make Core event integration and routing",
-                        "Core reference: $9 monthly equivalent billed annually for the 10,000-credit allowance.",
-                        "Route assignment events and reminders with idempotency keys and visible failure queues.",
-                        "Use Make Free at $0 while its current allowance supports measured event volume.",
-                    ],
-                    [
-                        "Layer 08: Checkr motor vehicle record screening workflow",
-                        "MVR procurement allowance: $9.50 per report plus state fees; obtain the actual quote.",
-                        "Order only authorized reports and restrict results to the designated screening decision maker.",
-                        "Use a legally available state-authorized record channel with equivalent identity and purpose controls.",
-                    ],
-                    [
-                        "Layer 09: Bouncie vehicle location and trip evidence",
-                        "Reference device budget: $89 hardware plus $9 monthly service per vehicle; reconfirm terms.",
-                        "Capture location and trip evidence after permission; this device does not perform immobilization.",
-                        "Use owner-provided commercial telematics access when permissions and export rights are documented.",
-                    ],
-                    [
-                        "Layer 10: Dropbox Sign Free contract execution evidence",
-                        "Free tier reference: $0 monthly with three signature requests monthly; confirm current limits.",
-                        "Execute the small pilot's agreements and preserve completed documents with their audit records.",
-                        "Use signed paper documents and controlled scans when electronic request volume exceeds allowance.",
-                    ],
-                    [
-                        "Layer 11: Calendly Free handover appointment scheduling",
-                        "Free tier reference: $0 monthly with one event type; confirm current scheduling limits.",
-                        "Schedule inspection and handover windows without accepting unverified drivers into active assignments.",
-                        "Use a shared Workspace calendar when appointment coordination remains a short daily task.",
-                    ],
-                    [
-                        "Layer 12: Looker Studio operational reporting and exceptions",
-                        "No-cost Looker Studio tier: $0 subscription; paid connectors and source services remain separate.",
-                        "Display cleared receipts, downtime, reserve headroom, and overdue evidence from permissioned exports.",
-                        "Use protected spreadsheet pivot tables until recurring reporting consumes measurable operator time.",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Fund ten mapped plays with measurable units and honest trigger data",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The supplied catalog play is fmcsa_dot_inspection_trigger_arbitrage, TRACK_1: "
-                    "FMCSA/DOT New-Authority & Roadside Violation Trigger Funnels. Run a daily "
-                    "ingestion job against available official FMCSA Census, Licensing & Insurance, "
-                    "and SMS or inspection datasets, preserving source publication dates and "
-                    "the last successful import. Daily polling does not make every source "
-                    "a daily feed: public SMS information has its own update schedule, "
-                    "and some inspection details are restricted or unavailable. Deduplicate "
-                    "by USDOT number, distinguish an application from active authority, and "
-                    "avoid inferring current insurance from an old snapshot. The supplied "
-                    "phrase about a mandatory 21-day insurance-filing window must not become "
-                    "a deadline claim in sales material. Federal activation depends on "
-                    "applicable insurance filings, process-agent designation, and authority "
-                    "procedures; 49 CFR 365.115 specifies the relevant protest procedure "
-                    "rather than a universal 21-day insurance deadline. Use twenty-one days "
-                    "only as an internal follow-up sequence. Fresh HOS or maintenance "
-                    "records are signals for a factual status review, not proof that "
-                    "a fleet needs your product. Route mismatched freight prospects away "
-                    "from passenger-fleet leasing rather than spending scarce acquisition "
-                    "cash on leads that cannot use the authorized service."
-                ),
-                (
-                    "Operate the trigger funnel under transparent private-agency branding with "
-                    "a free BOC-3 and MCS-150 status-check tool. Link directly to the "
-                    "official record, show its date, and state precisely which item the "
-                    "tool checked. Do not imply government affiliation or file a carrier's "
-                    "BOC-3 unless the filing is made through an eligible process agent. "
-                    "For an illustrative cohort, 200 relevant records producing 20 inbound "
-                    "hand-raisers and four paid $250 administrative engagements generate "
-                    "$1,000 gross billings. Applying the chapter's planning waterfall gives "
-                    "$550 retained contribution, not $1,000 profit. With $200 acquisition "
-                    "spend and $180 direct handling cost below retention, the cohort leaves "
-                    "$170 before fixed overhead; classify vendor costs consistently to "
-                    "avoid double counting. If qualification or conversion falls short, "
-                    "stop outbound expansion and retain the inbound status-check fallback. "
-                    "Do not sell authority filing or insurance placement beyond the "
-                    "business's actual permissions. The other nine chapter-mapped plays "
-                    "use descriptive operating names rather than invented catalog identifiers. "
-                    "Their table economics are independent pricing tests, not additive "
-                    "forecasts: one vehicle-week cannot be booked simultaneously as a "
-                    "full weekly lease, replacement placement, and second-shift sale. "
-                    "Measure incremental contribution only after displaced revenue and "
-                    "additional servicing exposure have been deducted."
-                ),
-                (
-                    "Use weekly driver leasing, zero-owned-metal investor co-hosting, and "
-                    "Black SUV shift dispatch as the core operating configurations. A "
-                    "$500 weekly lease produces $275 retained contribution at 55%; a "
-                    "$1,000 co-hosting billing period produces $550; six $150 dispatch "
-                    "service charges produce $495 from $900 billed. Those are operator "
-                    "charges, not passenger fares, and every configuration requires a "
-                    "contract that supports its collection priority. The remaining plays "
-                    "monetize narrowly defined services or otherwise idle capacity: replacement "
-                    "placements, off-peak second shifts, maintenance administration, toll "
-                    "administration, airport coordination, and renewal reactivation. Each "
-                    "requires separate scope, permission, and evidence rather than an "
-                    "undisclosed deduction. Charge toll administration separately from the "
-                    "underlying toll, and exclude reimbursed toll principal from the "
-                    "illustrative service billing. For maintenance administration, track "
-                    "approved coordination work rather than applying an unexplained repair "
-                    "markup. Airport coordination cannot cure absent vehicle credentials "
-                    "or pickup authorization. Renewal reactivation should recover a real "
-                    "documented customer relationship, not repeatedly bill a dormant account. "
-                    "For every play, record cash acquisition cost, occupied vehicle hours, "
-                    "incident exposure, collection timing, and fallback capacity. Advance "
-                    "capital only when a paid pilot demonstrates that the proposed "
-                    "increment improves reserve-adjusted contribution rather than merely "
-                    "raising gross billings."
-                ),
-            ],
-            "table": {
-                "caption": "Ten chapter-mapped plays: illustrative units use 55% retained contribution before remaining costs",
-                "headers": [
-                    "Mapped play and permitted operating scope",
-                    "Illustrative gross operator billing unit",
-                    "Retained contribution and measurement requirement",
-                    "Failure signal and concrete operating fallback",
-                ],
-                "rows": [
-                    [
-                        "Weekly driver leases using an expressly authorized commercial vehicle agreement",
-                        "One completed vehicle-week billed at $500 creates $500 gross operator billings.",
-                        "$500 multiplied by 55% produces $275 retained before remaining operating expenses.",
-                        "If payment fails, suspend future assignments and follow the contract's lawful recovery procedure.",
-                    ],
-                    [
-                        "Zero-owned-metal investor vehicle co-hosting with documented owner distribution terms",
-                        "One contracted management billing period generates $1,000 gross operator service billings.",
-                        "$1,000 multiplied by 55% produces $550 retained before remaining operating expenses.",
-                        "If owner economics deteriorate, renegotiate the next period instead of guaranteeing unfunded distributions.",
-                    ],
-                    [
-                        "Commercial Black SUV shift dispatch within verified local operating authority",
-                        "Six separately contracted $150 dispatch service charges generate $900 gross operator billings.",
-                        "$900 multiplied by 55% produces $495 retained; passenger fares remain separately classified.",
-                        "If vehicle credentials lapse, stop affected dispatch and use properly authorized replacement capacity.",
-                    ],
-                    [
-                        "Replacement vehicle placements for screened drivers with documented temporary vehicle permission",
-                        "Four authorized replacement days at $80 daily generate $320 gross operator billings.",
-                        "$320 multiplied by 55% produces $176 retained before incremental replacement handling expenses.",
-                        "If no eligible vehicle exists, decline placement and refer the driver without promising availability.",
-                    ],
-                    [
-                        "Off-peak second-shift leases permitted by owner, insurer, platform, and jurisdiction",
-                        "Five additional authorized shifts at $60 each generate $300 gross operator billings.",
-                        "$300 multiplied by 55% produces $165 retained before added cleaning and wear costs.",
-                        "If fatigue, handover disputes, or insurance restrictions emerge, revert to single-driver vehicle assignment.",
-                    ],
-                    [
-                        "Maintenance reserve administration limited to disclosed coordination services and segregated records",
-                        "Ten approved coordination events at $25 each generate $250 gross service billings.",
-                        "$250 multiplied by 55% produces $137.50 retained; repair reimbursements are separately tracked.",
-                        "If approval evidence is missing, absorb the administrative error rather than imposing an unsupported charge.",
-                    ],
-                    [
-                        "Toll administration using matched trip evidence and disclosed lawful service fees",
-                        "Twenty permitted $5 administration charges generate $100 service billings, excluding underlying toll principal.",
-                        "$100 multiplied by 55% produces $55 retained before exception handling and payment expenses.",
-                        "If contract or local rules prohibit the fee, pass through documented tolls without markup.",
-                    ],
-                    [
-                        "Airport trip coordination restricted to properly credentialed vehicles and authorized pickup locations",
-                        "Eight contracted $30 coordination charges generate $240 gross operator service billings.",
-                        "$240 multiplied by 55% produces $132 retained before remaining dispatch and support expenses.",
-                        "If airport access fails verification, decline the airport assignment and offer eligible non-airport work.",
-                    ],
-                    [
-                        "Renewal reactivation services for documented customers requesting renewed assignment support",
-                        "Four requested $75 reactivation services generate $300 gross operator service billings.",
-                        "$300 multiplied by 55% produces $165 retained before screening and coordination expenses.",
-                        "If the customer does not request service, stop outreach and assess no reactivation charge.",
-                    ],
-                    [
-                        "fmcsa_dot_inspection_trigger_arbitrage: TRACK_1 FMCSA/DOT New-Authority & Roadside Violation Trigger Funnels",
-                        "Four qualified $250 administrative engagements generate $1,000 gross operator service billings.",
-                        "$550 retained minus $200 acquisition and $180 direct handling leaves $170 before fixed overhead.",
-                        "If trigger quality deteriorates, use private branding, free status checks, and inbound hand-raiser funnels.",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Rehearse the entire assignment before accepting the first live exposure",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use the expected one-to-three-month first-deal period to eliminate "
-                    "uncertain dependencies, not to accumulate subscriptions. During the first "
-                    "week, select one jurisdiction, one vehicle configuration, and one "
-                    "driver segment; obtain the relevant operating requirements and insurance "
-                    "quotes. During the next phase, execute the owner agreement, verify "
-                    "commercial-use permission, open business accounts, and complete applicable "
-                    "entity and tax registrations. Obtain the IRS employer identification "
-                    "number through the official channel rather than paying a reseller "
-                    "for a routine application. Install permitted telematics only after "
-                    "the owner authorizes installation, and inspect the device's effect "
-                    "on vehicle operation. A California charter-party operation should "
-                    "resolve Public Utilities Code section 5371 authority separately "
-                    "from any TNC-specific question; a New York City assignment requires "
-                    "the applicable TLC vehicle and driver credentials. Airport requirements "
-                    "also belong in the local checklist rather than a nationwide "
-                    "assumption. Store expiration dates with a named responsible person "
-                    "and an advance reminder. The launch schedule remains conditional "
-                    "on actual permissions and bound coverage. When an application "
-                    "takes longer than expected, retain cash and continue qualification "
-                    "work instead of assigning an uninsured vehicle to preserve an "
-                    "arbitrary launch date."
-                ),
-                (
-                    "Conduct a dry run using a fictional assignment record clearly "
-                    "marked as a test, then a controlled authorized live payment "
-                    "where required to verify the rail. Confirm the driver agreement, "
-                    "vehicle schedule, inspection record, owner authorization, and insurance "
-                    "evidence all reference the same vehicle and effective period. "
-                    "Reconcile the test payment through processing fees, retained contribution, "
-                    "owner allocation, and the accounting export; never fabricate a "
-                    "successful settlement screenshot. Introduce a duplicate webhook and "
-                    "verify that the system does not issue a duplicate invoice "
-                    "or distribution. Simulate an ACH return, an expired policy, "
-                    "a missing toll receipt, and an unavailable primary operator. "
-                    "The exceptions queue should identify a responsible person and "
-                    "the next permitted action without exposing screening documents "
-                    "to dispatch staff. Practice returning a vehicle with photographs, "
-                    "odometer readings, key custody, and a timestamped damage comparison. "
-                    "Rehearse a collision report that prioritizes emergency response, "
-                    "insurer notification, evidence preservation, and replacement planning. "
-                    "Do not improvise liability admissions or promise reimbursement "
-                    "before facts and contractual responsibilities are established. "
-                    "The drill passes only when another trained person can "
-                    "reconstruct the full assignment and settlement from company "
-                    "records without relying on private messages."
-                ),
-                (
-                    "Release production capacity in small increments after observing cleared "
-                    "collections and actual support load. The first vehicle establishes "
-                    "billing accuracy, claim handling, downtime, and owner settlement "
-                    "discipline; it does not prove that ten vehicles will behave "
-                    "identically. Review the cash forecast weekly and recalculate reserve "
-                    "coverage after each claim, renewal quote, or expansion commitment. "
-                    "Compare quoted insurance cost against annualized contribution per "
-                    "vehicle, and remove assignments whose premium increase erases "
-                    "the remaining spread. Record missed shifts and maintenance "
-                    "downtime as unavailable capacity rather than quietly retaining "
-                    "full utilization assumptions. Audit toll disputes by vehicle, "
-                    "driver, timestamp, and tag identifier before authorizing any "
-                    "pass-through. The founder should review exceptions and cash, "
-                    "while contractors handle documented dispatch, cleaning, or administrative "
-                    "tasks within their agreed scope. Add the second full-time "
-                    "position only when recurring workload and the Scaled contribution "
-                    "bridge support it. Export contracts, assignment records, and "
-                    "settlement evidence before changing vendors. A production stack "
-                    "is ready when it can absorb a payment return, "
-                    "a vehicle outage, and an absent operator without losing "
-                    "records or exhausting unrestricted cash. Expansion follows "
-                    "that demonstrated resilience, not the number of available "
-                    "vehicles an investor offers."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-flight evidence register: verify each condition before releasing its related exposure",
-                "headers": [
-                    "Operating exposure requiring a documented decision",
-                    "Evidence required before the first assignment",
-                    "Accountable reviewer and repeat verification cadence",
-                    "Failure response preserving cash and operating continuity",
-                ],
-                "rows": [
-                    [
-                        "Entity identity and business collection account ownership",
-                        "Formation record, EIN confirmation, account ownership, and authorized signer details match the contracting entity.",
-                        "Founder verifies setup and reviews every proposed signer or bank-detail change.",
-                        "Hold collections under mismatched identities until contracts and receiving accounts are corrected.",
-                    ],
-                    [
-                        "Vehicle ownership and permission for the intended commercial use",
-                        "Owner agreement, lender permission where required, VIN schedule, and commercial-use terms are documented.",
-                        "Fleet coordinator checks each addition, substitution, renewal, and proposed shift-sharing change.",
-                        "Reject the vehicle assignment rather than relying on verbal permission or consumer rental terms.",
-                    ],
-                    [
-                        "Bound insurance responding to every planned operating exposure",
-                        "Broker supplies binding confirmation, applicable policy terms, scheduled vehicles, driver conditions, and deductible amounts.",
-                        "Founder reviews inception, material changes, cancellation notices, and each approaching renewal.",
-                        "Stop affected assignments immediately and preserve reserve cash while obtaining suitable coverage.",
-                    ],
-                    [
-                        "Local operating authority and airport access requirements",
-                        "Applicable carrier, vehicle, driver, inspection, and airport credentials cover the actual service.",
-                        "Dispatch lead verifies credentials before activation and tracks their expiration dates.",
-                        "Restrict dispatch to fully authorized service types and decline unsupported airport assignments.",
-                    ],
-                    [
-                        "Authorized screening and controlled personal information access",
-                        "Permissible purpose, required authorizations, screening decisions, and applicable adverse-action records are retained securely.",
-                        "Designated screening reviewer checks each driver and each authorized repeat review.",
-                        "Keep the driver inactive until the required process and eligibility decision are complete.",
-                    ],
-                    [
-                        "Collections waterfall and repeatable owner settlement accounting",
-                        "Signed payment terms, test reconciliation, fee mapping, and duplicate-event handling work from end to end.",
-                        "Bookkeeping owner reviews each settlement batch and all payment exceptions before distribution.",
-                        "Hold disputed amounts and repair reconciliation before issuing unsupported owner or driver charges.",
-                    ],
-                    [
-                        "Reserve sufficiency and incident response continuity",
-                        "Unrestricted reserve exceeds the approved floor and the incident drill has a named backup.",
-                        "Founder reviews weekly and immediately after a claim, major return, or premium increase.",
-                        "Freeze expansion, reduce uncommitted capacity, and restore reserves before accepting another vehicle exposure.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four verifications before a vehicle earns its first dollar",
-                "body": "Each verification must reference stored evidence and a named reviewer, not an unchecked dashboard status.",
-                "items": [
-                    "Cash verification: bank-cleared unrestricted reserves meet the selected capital floor after all launch commitments; refundable deposits and investor payables remain excluded.",
-                    "Vehicle verification: VIN, ownership permission, inspection, local authority, driver eligibility, and bound insurance match the exact proposed assignment.",
-                    "Settlement verification: an authorized test reproduces gross operator charges, the canonical 55% management waterfall, fees, owner allocations, and the accounting export without duplicate postings.",
-                    "Incident verification: a trained backup can handle a collision, payment return, vehicle outage, and evidence export using company-controlled records and the documented escalation procedure.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Price the actual exposure",
-                    "action": "Collect vehicle-specific insurance, permit, equipment, and onboarding quotes before committing capital.",
-                    "detail": "Choose the smallest viable launch envelope and reject any configuration that spends the protected reserve before operations begin.",
-                },
-                {
-                    "step": 2,
-                    "title": "Bind contracts to one operating record",
-                    "action": "Create the vehicle and assignment identifiers, execute agreements, and attach verified permission and coverage evidence.",
-                    "detail": "Separate dispatch-accessible operating data from restricted screening reports, bank information, and identity documents.",
-                },
-                {
-                    "step": 3,
-                    "title": "Rehearse cash and exception handling",
-                    "action": "Run the payment, settlement, return, duplicate-event, and incident drills with a trained backup operator.",
-                    "detail": "Record actual outcomes, repair failed controls, and repeat the affected test before releasing the related live exposure.",
-                },
-                {
-                    "step": 4,
-                    "title": "Release one measured assignment",
-                    "action": "Activate the first verified assignment and review cleared cash, downtime, support load, and reserve headroom weekly.",
-                    "detail": "Add capacity only after the operating records support contribution and the next commitment preserves the reserve floor.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "A fleet becomes scalable when every assignment protects the reserve, not when every parking space holds a vehicle.",
-    "diagram_id": "diag-07",
-    "action_checklist": [
-        "Select the $12,000, $35,000, or $65,000 launch envelope and protect at least 50% as unrestricted working capital after launch commitments.",
-        "Build the exact gross-to-retained-to-profit bridge for all three canonical scenarios, assigning each owner split, pass-through, and remaining expense once.",
-        "Obtain written vehicle-use permission, applicable local credentials, and a bound insurance response for every planned driver and operating period.",
-        "Confirm current vendor tiers and terms, then configure the twelve-layer pilot stack with company-controlled access and weekly evidence exports.",
-        "Deploy the FMCSA intake workflow with source timestamps, private-agency branding, factual status checks, and an inbound fallback rather than false federal deadline claims.",
-        "Complete the four pre-flight verifications, rehearse payment and incident failures, and release only the first fully evidenced assignment.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "49 CFR 365.115 — Protests",
-            "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-365/subpart-A/section-365.115",
-            "relevance": "Check the applicable authority-application protest procedure; do not market a universal 21-day insurance-filing deadline.",
-        },
-        {
-            "title": "49 CFR 387.7 — Financial responsibility required",
-            "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387/subpart-A/section-387.7",
-            "relevance": "For motor carriers within this provision's scope, verify required responsibility and evidence rather than inferring active coverage from a lead record.",
-        },
-        {
-            "title": "49 CFR 366.4 — Designation of process agents",
-            "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-366/section-366.4",
-            "relevance": "Distinguish a public BOC-3 status check from the regulated designation and filing process applicable to the carrier.",
-        },
-        {
-            "title": "49 CFR 390.19 — Motor carrier identification reports",
-            "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-390/subpart-B/section-390.19",
-            "relevance": "Ground MCS-150 status tools in actual identification-report and update requirements while checking applicability and current provisions.",
-        },
-        {
-            "title": "18 U.S.C. 2721 — Prohibition on release and use of certain personal information from State motor vehicle records",
-            "url": "https://www.law.cornell.edu/uscode/text/18/2721",
-            "relevance": "Establish a permissible purpose for motor vehicle record access and restrict personal information to authorized operational use.",
-        },
-        {
-            "title": "15 U.S.C. 1681b — Permissible purposes of consumer reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681b",
-            "relevance": "Determine the lawful screening purpose and apply employment-purpose disclosure, authorization, and pre-adverse-action requirements where applicable.",
-        },
-        {
-            "title": "15 U.S.C. 1681m — Requirements on users of consumer reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681m",
-            "relevance": "Provide required adverse-action notices when a covered decision relies on consumer-report information.",
-        },
-        {
-            "title": "California Public Utilities Code section 5433 — Transportation network company insurance",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PUC&sectionNum=5433.",
-            "relevance": "Map California TNC insurance obligations to the relevant operating activity without treating them as universal commercial livery coverage.",
-        },
-        {
-            "title": "California Public Utilities Code section 5371 — Charter-party carrier authority",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PUC&sectionNum=5371.",
-            "relevance": "Determine required California charter-party authority before assigning vehicles to services within the statute's scope.",
-        },
-        {
-            "title": "California Civil Code section 1936 — Rental passenger vehicle agreements",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1936.",
-            "relevance": "Where applicable, review rental agreement terms, damage responsibility, charges, and disclosures before implementing driver lease and billing provisions.",
-        },
-    ],
-}
+CHAPTER_4 = {'id': 'Q4',
+ 'chapter_id': 'Q4',
+ 'chapter_number': 4,
+ 'question_number': 4,
+ 'slug': 'licensing-the-fleet-nyc-tlc-plates-california-tcp-permits',
+ 'question_prompt': 'What permits and plates do I need to legally operate for-hire vehicles in New York '
+                    'City and California?',
+ 'kicker': 'Q4 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Licensing the Fleet: NYC TLC Plates and California TCP Permits',
+ 'subtitle': 'Obtaining and renting out TLC/FHV plates, plate storage rules, the for-hire vehicle cap, TLC '
+             'license steps and exam questions, NYC TLC leasing-company business models, filing a TCP '
+             'permit online, TCP vehicle requirements, and common TCP application pitfalls',
+ 'layout_template': 'comparison_matrix',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Two plate regimes, one playbook: control the scarce credential and rent or operate '
+                      'around it. In NYC, the for-hire cap keeps plates scarce, so holders rent whole cars '
+                      'at $250+ a week or lease the plate alone at $250-$500 a month, while FastTrack '
+                      'locks plate-plus-insurance at $289 a week for 56 weeks against a $1,000 deposit. In '
+                      "California, BusinessRocket's Alex and Khushnud Numonov agree the TCP belongs inside "
+                      'an LLC or corporation. It runs $1,000 for Class B or $1,500 for Class A, and it '
+                      'dies on sequencing errors: no commercial registration, a blocking lienholder, or '
+                      'insurance bought before a pending TCP number exists. Fleet operators disagree hard '
+                      'on economics. I Touch claims roughly 10% margins, Michael calls that too '
+                      'optimistic, and Emil says plates are worthless next to cash flow.',
+ 'key_metrics': [{'label': 'California TCP Filing Fee by Class',
+                  'metric': 'California TCP Filing Fee by Class',
+                  'value': '$1,000 (Class B, 125-mile limit) / $1,500 (Class A, unlimited)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Fees Khushnud Numonov paid and walked through in the TCP portal. Class B '
+                             'caps trips at 125 miles pickup-to-drop-off; Class A covers routine LA-to-SF '
+                             'runs.',
+                  'source': 'Khushnud Numonov ([67saVKNzHxc @ 00:10:24])'},
+                 {'label': 'FastTrack NYC Plate + Insurance Weekly Rate',
+                  'metric': 'FastTrack NYC Plate + Insurance Weekly Rate',
+                  'value': '$289/week ($115 plate + $174 insurance), locked for 56 weeks',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "FastTrack's plate-only rental to drivers who own their cars, with its own "
+                             'policy outside American Transit, Hereford, or Maya. Backed by a $1,000 '
+                             'deposit.',
+                  'source': 'AutoMarketplace ([DiLCf_drK0E @ 00:08:31])'},
+                 {'label': 'NYC Leasing Fleet Operating Margin',
+                  'metric': 'NYC Leasing Fleet Operating Margin',
+                  'value': '5% (Michael, 2023), ~10% (I Touch), 6-7% (Emil)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Margins reported by three NYC fleet owners running roughly 200-400 cars each '
+                             'on weekly driver rentals. I Touch attributes the higher margin to owning a '
+                             'repair shop.',
+                  'source': 'AutoMarketplace ([kuB7bxLZKa0 @ 00:37:10])'},
+                 {'label': 'NYC TLC Plate Application + DMV Pickup Cost',
+                  'metric': 'NYC TLC Plate Application + DMV Pickup Cost',
+                  'value': '~$650 TLC application + ~$425-$450 at the DMV within 20 days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Costs to plate your own car once the Uber base letter and the FH-1 from a '
+                             'TLC insurer are in hand. The TLC turnaround is about two weeks.',
+                  'source': 'Soniclove21 ([TwvZcpkzAxo @ 00:03:13])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ["New York's for-hire plate market runs on artificial scarcity, and every NYC "
+                              'practitioner builds around it. CBS New York reports more than 120,000 '
+                              'licensed vehicles. It also reports an app-car cruising limit that forces '
+                              'empty time down from 41% to 31%, and a temporary cap on new for-hire '
+                              'vehicles extended for another year [o74VMchARlA @ 00:02:20]. ESCAPE THE '
+                              'MATRIX states the consequence bluntly: the city is not issuing new plates, '
+                              'so a plate already in hand earns money whether or not the holder ever '
+                              'drives [NtZcNRbIgUo @ 00:00:35]. The same channel says part-timers probably '
+                              'should not chase a plate just to drive and should work Long Island or '
+                              'Westchester instead. Non-drivers, however, are pushed to register under a '
+                              'corporation anyway and then sell or rent the plate [Y8ppyxLqw9E @ '
+                              '00:00:59]. Fleet owners on AutoMarketplace price that scarcity directly. A '
+                              'one-plate corporation changes hands for $30,000 to $40,000, and Michael '
+                              'argues that plate value tracks policy much like a medallion [kuB7bxLZKa0 @ '
+                              '00:59:24]. The shared operating posture follows from that. Treat the plate '
+                              'as a capital asset parked inside an entity. Monetize it through rental, '
+                              'through resale, or through a fleet that rents cars to drivers by the week, '
+                              'rather than letting it sit idle.',
+                              'On the California side, the consensus starts with the wrapper. Alex of '
+                              'BusinessRocket calls the TCP, governed by the CPUC, the only legal way to '
+                              'run your own drivers and vehicles without paying commission. That is how '
+                              "the 40% the platforms take out ends up in the operator's own pocket "
+                              '[MTc0vheuAy8 @ 00:01:28]. Because the TCP is non-transferable, Alex holds '
+                              'it inside an LLC and sells the company rather than the permit. A company '
+                              'with a clean loss run fetches about $5,000 to $12,000, and the LLC lets '
+                              'drivers come aboard as partners instead of W-2 employees for about $200 to '
+                              '$300 [yv_URA4bMDw @ 00:01:47]. The trap for skipping the entity is '
+                              'concrete: a TCP held personally means restarting the entire process just to '
+                              'add a spouse or partner [s51s14MY4hI @ 00:01:13]. Khushnud Numonov lands in '
+                              'the same place from a different direction. Their attorney recommended an S '
+                              'Corp, and a sole-proprietor viewer reported success without an entity. '
+                              'Khushnud still steers operators to an LLC or corporation because they '
+                              'cannot promise the sole-prop route will work [67saVKNzHxc @ 00:01:55]. '
+                              'Every California voice treats the entity as step zero. It is the asset that '
+                              'carries the permit, the insurance history, the credit-building, and the '
+                              'eventual resale value of the whole operation.',
+                              "The third consensus point is that the vehicle's paperwork, not the vehicle "
+                              "itself, decides whether the operation launches. Alex's first pitfall is "
+                              'registration. Converting a regular registration to commercial after '
+                              'purchase is extremely difficult. Commercial does not mean registered in the '
+                              'company name; it means the DMV recognizes the car as business-use. So buy '
+                              'the car commercially registered from day one [s51s14MY4hI @ 00:00:14]. '
+                              'Khushnud Numonov is equally blunt that a financed personal vehicle will not '
+                              'work. The owner either pays it off or converts it to a commercial loan, '
+                              'which Khushnud says is hard without perfect credit [eXUCLdNVhYc @ '
+                              '00:08:16]. In New York the same discipline applies to plates. Jeremy '
+                              'Mosvich of FastTrack insists that registration and insurance must match the '
+                              'LLC holding the plate, which is why FastTrack co-registers each car with '
+                              'the customer as second registrant [DiLCf_drK0E @ 00:14:20]. Coverage is '
+                              'specialized on both coasts. Soniclove21 warns that mainstream carriers such '
+                              'as State Farm cannot write the TLC coverage a plated car needs, so '
+                              'operators buy through a TLC broker or app [TwvZcpkzAxo @ 00:02:04]. The '
+                              'lesson is to align the entity, registration, and correct commercial policy '
+                              'before money goes into the car. Every mismatch forces a rebuy, a refinance, '
+                              'or another trip to the DMV.'],
+               'table': {'caption': 'Where NYC and California practitioners agree on licensing the fleet',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['NYC for-hire plates are capped and scarce',
+                                   'TLC extended the temporary cap on new for-hire vehicles for another '
+                                   'full year',
+                                   'Existing plates become the asset worth renting, storing, or selling',
+                                   'CBS New York ([o74VMchARlA @ 00:02:20])'],
+                                  ['A held plate earns money without the holder driving',
+                                   'No new plates are issued, so idle plates can be rented out for income',
+                                   'Rent the whole car or lease the plate alone to another driver',
+                                   'ESCAPE THE MATRIX ([NtZcNRbIgUo @ 00:00:35])'],
+                                  ['The TCP must sit inside an LLC or corporation',
+                                   'The TCP is non-transferable, but a clean-loss-run company sells for '
+                                   'about $5,000-$12,000',
+                                   'Form the entity first so the permit can be sold with the company',
+                                   'BusinessRocket ([yv_URA4bMDw @ 00:01:47])'],
+                                  ['Commercial registration has to come before everything else',
+                                   'Converting a regular registration later is extremely difficult, so buy '
+                                   'the car commercially registered',
+                                   'Tell the dealership explicitly that you want commercial registration '
+                                   'at purchase',
+                                   'BusinessRocket ([s51s14MY4hI @ 00:00:14])'],
+                                  ['The commercial policy goes late in the sequence',
+                                   'Buy commercial insurance last, right before the PUC application, '
+                                   'through a livery-expert broker',
+                                   'Holding off on insurance avoids paying for the wrong policy and then '
+                                   'rebuying it',
+                                   'Khushnud Numonov ([eXUCLdNVhYc @ 00:13:18])'],
+                                  ["NYC registration and insurance must match the plate's LLC",
+                                   'FastTrack co-registers each car, with the customer listed as second '
+                                   'registrant',
+                                   'Peer-to-peer plate deals without matching paperwork leave renters '
+                                   'exposed',
+                                   'AutoMarketplace ([DiLCf_drK0E @ 00:14:20])'],
+                                  ['Drug testing is mandatory for every TCP driver',
+                                   'Random tests come out of the blue, with about 24 hours to report',
+                                   'Budget for the program and keep drivers ready for surprise calls',
+                                   'Rideshare Professor ([MTc0vheuAy8 @ 00:02:36])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Khushnud Numonov's portal run is the cleanest do-it-yourself blueprint. "
+                              'Agents charge $400 for the TCP and another $400 for the LAX permit, which '
+                              'Khushnud counts as roughly two days of work, so they filed alone using a '
+                              'copyable cheat sheet. In the portal, create an account as a Transportation '
+                              'Carrier and declare majority ownership. Then enter the California Secretary '
+                              'of State file number and DBA, and order the DMV EPN. The EPN costs about '
+                              '$15, takes one to two weeks, and blocks progress, so Khushnud says to start '
+                              'it early [67saVKNzHxc @ 00:07:16]. Class B costs $1,000 and caps trips at '
+                              '125 miles pickup-to-drop-off. Class A costs $1,500, is unlimited, and is '
+                              'the tier for routine Los Angeles to San Francisco runs [67saVKNzHxc @ '
+                              '00:10:24]. The nine portal sections include a projected P&L, where Khushnud '
+                              "entered $100,000 in revenue, $9,000 in insurance, and zero workers' comp. "
+                              'Payment is ACH only with a 2.6% fee, for a total of $1,026. Approval landed '
+                              'two to three days after submission, and the certificate arrived by email '
+                              '[67saVKNzHxc @ 00:19:10]. Alex quotes a slower clock of five to seven weeks '
+                              'for the whole PUC process at the same $1,000 base price. Alex also says '
+                              'most people do not need the $1,500 advanced tier [MTc0vheuAy8 @ 00:02:02].',
+                              'The California registration mechanics are cheap but unforgiving. Alex '
+                              'prices the commercial conversion at a $5 or $25 fee through a scale '
+                              'certificate, with a turnaround of about 30 days. Alex also warns that a '
+                              'lienholder can refuse the conversion, leaving refinancing as the only fix '
+                              '[yv_URA4bMDw @ 00:04:00]. Khushnud Numonov breaks the process into physical '
+                              'steps. Weigh the vehicle at a public scale for a nominal fee, and never '
+                              'walk into the DMV without the certificate of unladen weight. Then file for '
+                              'Type 31 commercial registration, which covers vehicles under 11,500 pounds, '
+                              'and add party buses only after the TCP is in hand [eXUCLdNVhYc @ 00:12:12]. '
+                              'Khushnud also reads out a line-item budget: $500 to $1,000 for professional '
+                              'filing help, about $300 for a DBA or up to several thousand for an S-corp '
+                              'or LLC, and $1,000 to $1,500 for the PUC filing. The DMV pull notice costs '
+                              '$5 and the weight certificate $20. The total comes to under $10,000 without '
+                              'a vehicle, or about $5,000 for someone who already owns an unfinanced, '
+                              "unleased car. Khushnud's advice is to start with one driver and one "
+                              'inexpensive vehicle [eXUCLdNVhYc @ 00:05:12]. Airports come last. LAX, John '
+                              'Wayne, and Ontario require permits while Burbank does not, and Khushnud '
+                              'warns that unpermitted pickups bring huge fines, driver arrest, and impound '
+                              '[eXUCLdNVhYc @ 00:17:23].',
+                              'New York mechanics split into plating your own car and renting plates out. '
+                              "Soniclove21's plating sequence starts with holding a TLC permit and getting "
+                              'a base letter from Uber, because Lyft does not issue one. Next, buy TLC '
+                              'liability through a broker and collect the FH-1 and declaration. Then apply '
+                              'on the TLC site for about $650, with roughly a two-week turnaround. Calling '
+                              'daily confirms receipt but does not speed anything up. The DMV visit within '
+                              '20 days costs about $425 to $450 [TwvZcpkzAxo @ 00:03:13]. ESCAPE THE '
+                              'MATRIX gives plate holders two options. Rent the whole car at $250 a week '
+                              'against $500 monthly insurance plus $100 in maintenance, netting the stated '
+                              '$400 a month. Or lease the plate alone for $250 to $500 a month so the '
+                              "renter's own car takes the wear [NtZcNRbIgUo @ 00:02:13]. FastTrack "
+                              'institutionalizes the plate-only model. It charges $115 a week for the '
+                              'plate plus $174 for its own insurance policy, $289 locked for 56 weeks '
+                              'behind a $1,000 deposit, with registration and TLC renewal fees included '
+                              '[DiLCf_drK0E @ 00:08:31]. Owners pausing a plate can use the storage route '
+                              'AutoMarketplace describes. Storage lasts up to 90 consecutive days once per '
+                              'two-year cycle. Coming out costs a $125 transfer, plus the $625 renewal if '
+                              'the license shows fail to renew [8QnFsW_-2_0 @ 00:09:21].'],
+               'table': {'caption': 'Line-item costs and timelines quoted by practitioners for TCP permits '
+                                    'and TLC plates',
+                         'headers': ['Line Item',
+                                     'Figure Stated',
+                                     'Mechanic or Condition',
+                                     'Expert Source'],
+                         'rows': [['California DMV EPN enrollment inside the TCP portal',
+                                   'About $15 and one to two weeks to process',
+                                   'Not free, and it blocks portal progress, so order it first',
+                                   'Khushnud Numonov ([67saVKNzHxc @ 00:07:16])'],
+                                  ['TCP portal payment for a Class B permit',
+                                   '$1,026 total, including the 2.6% ACH processing fee',
+                                   'ACH only with no cards accepted; approval came in two to three days',
+                                   'Khushnud Numonov ([67saVKNzHxc @ 00:15:30])'],
+                                  ['Commercial registration conversion through a scale certificate',
+                                   'A $5 or $25 fee with about 30 days of turnaround',
+                                   'A lienholder can refuse the conversion, leaving refinancing as the '
+                                   'only fix',
+                                   'BusinessRocket ([yv_URA4bMDw @ 00:04:00])'],
+                                  ['TCP drug and alcohol testing program enrollment',
+                                   'About $120 per year with two to three random calls',
+                                   'The TCP pulls results directly; the operator uploads the signed '
+                                   'agreement',
+                                   'Khushnud Numonov ([67saVKNzHxc @ 00:12:34])'],
+                                  ['NYC TLC insurance for a single plated car',
+                                   'About $3,500 a year liability and $1,800 a year physical damage',
+                                   'Only liability is needed to proceed; regular carriers like State Farm '
+                                   'cannot write it',
+                                   'Soniclove21 ([TwvZcpkzAxo @ 00:01:20])'],
+                                  ['NYC plate pickup at the DMV after TLC approval',
+                                   'About $425 to $450, due within 20 days of the letter',
+                                   'Bring the emailed letter, proof of insurance, and the FH-1, then '
+                                   'surrender old plates',
+                                   'Soniclove21 ([TwvZcpkzAxo @ 00:03:54])'],
+                                  ['FastTrack plate-plus-insurance rental for owner drivers',
+                                   '$115 plate plus $174 insurance, $289 weekly for 56 weeks',
+                                   'A $1,000 deposit, liability-only coverage, and a GPS tracker installed '
+                                   'on the car',
+                                   'AutoMarketplace ([DiLCf_drK0E @ 00:08:31])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Shortcuts operators actually used to save weeks and thousands',
+                           'body': 'These are the moves practitioners flagged as the difference between a '
+                                   'clean launch and a costly restart.',
+                           'items': ['Order the DMV EPN on day one. It costs about $15, takes one to two '
+                                     'weeks, and stalls the entire TCP portal application until it clears '
+                                     '[Khushnud Numonov — 67saVKNzHxc @ 00:07:16].',
+                                     "At the dealership, say the exact words 'I want commercial "
+                                     "registration'. Commercial means DMV business-use recognition, not "
+                                     'just the company name on the paperwork [BusinessRocket — s51s14MY4hI '
+                                     '@ 00:00:42].',
+                                     'Get a broker insurance quote and confirm Uber, Lyft, or vendor '
+                                     'vehicle parameters before buying. Stretch limos, shuttles, and '
+                                     'Sprinters can insure cheaper than a Prius or sedan, and off-spec '
+                                     'cars get declined [BusinessRocket — JmrjPmk_Gpo @ 00:00:44].',
+                                     'Use the WAV route in NYC. A used Toyota Sienna at about $45,000 runs '
+                                     'about $1,300 a month all-in and qualifies for XL. TLC waives the WAV '
+                                     'application fee, and WAV rides pay an extra $25 [ESCAPE THE MATRIX — '
+                                     'Y8ppyxLqw9E @ 00:02:13].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Form the entity and set up the business rails',
+                              'action': 'Register an LLC or corporation, then open a business checking '
+                                        "account with the entity's number.",
+                              'detail': 'Khushnud Numonov considers an LLC or an S or C corporation the '
+                                        'easiest wrapper. The entity file number and DBA are required '
+                                        'inside the TCP portal, and a corporation lets you add partners '
+                                        'without refiling [Khushnud Numonov — eXUCLdNVhYc @ 00:07:12].'},
+                             {'step': 2,
+                              'title': 'Weigh the vehicle and lock commercial registration',
+                              'action': 'Weigh the vehicle at a public scale and take the unladen weight '
+                                        'certificate to the DMV for Type 31 commercial registration.',
+                              'detail': 'Never go to the DMV without the weight certificate, or you will '
+                                        'make a return trip. Type 31 covers vehicles under 11,500 pounds, '
+                                        'and a financed personal vehicle must be paid off or moved to a '
+                                        'commercial loan first [Khushnud Numonov — eXUCLdNVhYc @ '
+                                        '00:11:55].'},
+                             {'step': 3,
+                              'title': 'File the TCP and enroll in drug testing',
+                              'action': 'Open the TCP portal as a Transportation Carrier, choose Class B '
+                                        '($1,000) or Class A ($1,500), and upload the drug program '
+                                        'agreement.',
+                              'detail': 'Complete all nine portal sections, including the projected P&L, '
+                                        "and pay by ACH with the 2.6% fee. Khushnud's Class B payment came "
+                                        'to $1,026, and approval arrived by email two to three days after '
+                                        'submitting [Khushnud Numonov — 67saVKNzHxc @ 00:19:10].'},
+                             {'step': 4,
+                              'title': 'Bind the TCP policy once a pending number exists',
+                              'action': 'Buy commercial insurance through a livery broker only after the '
+                                        'pending TCP number is issued, then finish the TCP.',
+                              'detail': "Alex's order is to open the company, start the TCP, get your "
+                                        'insurance, and finish the TCP. A policy written without a pending '
+                                        'TCP number is the wrong policy nine out of 10 times and has to be '
+                                        'cancelled and rebought [BusinessRocket — yv_URA4bMDw @ '
+                                        '00:05:22].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Khushnud Numonov filed their own TCP through the online portal rather than '
+                              'pay agents $400 for the TCP plus another $400 for the LAX permit, calling '
+                              '$400 roughly two days of work, so they built a copyable cheat sheet and did '
+                              'it themselves, and they report approval two to three days after submitting, '
+                              'with the certificate arriving by email [67saVKNzHxc @ 00:00:17]. Alex of '
+                              'BusinessRocket runs the opposite playbook: hire a consultant, because doing '
+                              'the steps out of order means overspending by thousands of dollars '
+                              '[yv_URA4bMDw @ 00:01:10]. Timelines split along the same line. Alex tells '
+                              'Torsten the whole PUC process takes anywhere between five and seven weeks '
+                              'right now, and that the license itself costs $1,000 [MTc0vheuAy8 @ '
+                              '00:02:02]. Kush, in a second walkthrough built on a hollywoodlimousine.com '
+                              'checklist they repeatedly say they are not affiliated with, budgets 30 to '
+                              '60 days just for the drug-testing enrollment notice and then another 30 to '
+                              '60 days for the permit, up to four months end to end [eXUCLdNVhYc @ '
+                              '00:17:04]. The operator read is blunt: the DIY route saves the $800 agent '
+                              'bill and can clear in days when every document is staged, while the '
+                              'consultant route buys correct sequencing from a shop that says it has '
+                              'handled over 10,000 licenses.',
+                              'The entity question produces near-consensus among the California operators, '
+                              "but with different reasoning. Khushnud Numonov's attorney advised an S "
+                              'Corp, and a sole-prop viewer reported that route worked, but they still '
+                              'steer operators to an LLC or corporation because they cannot promise the '
+                              'sole-prop path holds [67saVKNzHxc @ 00:01:55]. Alex of BusinessRocket goes '
+                              'further: a TCP license is non-transferable, so the only exit is selling the '
+                              'company that holds it, and a company with a clean loss run can probably '
+                              'sell for about $5,000 to $12,000 [yv_URA4bMDw @ 00:02:52]. Insurance timing '
+                              "is the sharpest split. Kush's nine-step checklist puts commercial insurance "
+                              'last, bought right before the PUC application through a livery-expert '
+                              "broker, with workers' comp skipped for a solo owner-driver but required "
+                              'once non-officer drivers come aboard [eXUCLdNVhYc @ 00:13:18]. Alex insists '
+                              'the TCP policy cannot be obtained until you hold a pending TCP number, and '
+                              'that nine out of ten policies written before that point are the wrong '
+                              "policy, forcing a cancel-and-rebuy [s51s14MY4hI @ 00:00:42]. Alex's own "
+                              'sequence settles it in practice: open the company, start the TCP, get your '
+                              'insurance, finish the TCP, and never let a broker bind a policy before the '
+                              'pending number exists.',
+                              'In New York the disagreement is over how to monetize a capped plate. ESCAPE '
+                              'THE MATRIX lays out two peer-to-peer options: rent the whole car at $250 a '
+                              'week against $500 a month in full-coverage insurance and $100 in '
+                              'maintenance, or lease the plate alone for $50 to $125 a week so the renter '
+                              'bolts it onto their own vehicle and your car takes no wear [NtZcNRbIgUo @ '
+                              '00:02:13]. Jeremy Mosvich of FastTrack says peer-to-peer plate deals are '
+                              'exactly where renters get burned: the owner can reclaim the plate, and '
+                              "because in the government's eyes you may be the title holder but not the "
+                              'registrant, the renter cannot retrieve an impounded car. FastTrack instead '
+                              'co-registers the vehicle and charges $115 a week for the plate plus $174 '
+                              'for its own insurance, locked at $289 for 56 weeks [DiLCf_drK0E @ '
+                              "00:18:16]. ESCAPE THE MATRIX's 2022 playbook skips renting altogether by "
+                              'plating a wheelchair-accessible Toyota Sienna, where TLC waives the '
+                              'application fee and rides pay an extra $25 [Y8ppyxLqw9E @ 00:02:13]. On '
+                              'valuation, Emil says plates are worthless and values a business on cash '
+                              'flow, while Michael counters that plate value depends on policy, much like '
+                              'a medallion [kuB7bxLZKa0 @ 00:40:48].'],
+               'table': {'caption': 'Side-by-side playbooks where California TCP and NYC TLC practitioners '
+                                    'split',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Filing the California TCP yourself versus hiring outside help',
+                                   'Khushnud Numonov skipped the $400 TCP and $400 LAX agent fees and was '
+                                   'approved in two to three days',
+                                   'Alex of BusinessRocket says hire a consultant because out-of-order '
+                                   'steps overspend by thousands of dollars',
+                                   'Khushnud Numonov ([67saVKNzHxc @ 00:00:17]); BusinessRocket '
+                                   '([yv_URA4bMDw @ 00:01:10])'],
+                                  ['When to bind the commercial TCP insurance policy',
+                                   'Kush buys commercial insurance last, right before filing the PUC '
+                                   'application, through a livery-expert broker',
+                                   'Alex says no TCP policy can be obtained until a pending TCP number has '
+                                   'been issued',
+                                   'Khushnud Numonov ([eXUCLdNVhYc @ 00:13:18]); BusinessRocket '
+                                   '([s51s14MY4hI @ 00:00:42])'],
+                                  ['Choosing TCP Class A versus Class B at filing',
+                                   'Kush prices Class B at $1,000 with a 125-mile pickup-to-drop-off limit '
+                                   'and Class A at $1,500 for LA-to-SF runs',
+                                   'Alex says the $1,500 advanced license is something most people simply '
+                                   'do not need',
+                                   'Khushnud Numonov ([67saVKNzHxc @ 00:10:24]); Rideshare Professor '
+                                   '([MTc0vheuAy8 @ 00:02:19])'],
+                                  ['How long the PUC process to a TCP actually takes',
+                                   'Alex tells Torsten the whole PUC process runs five to seven weeks '
+                                   'right now',
+                                   'Kush budgets 30 to 60 days for drug-testing enrollment, then another '
+                                   '30 to 60 days for the permit',
+                                   'Rideshare Professor ([MTc0vheuAy8 @ 00:02:02]); Khushnud Numonov '
+                                   '([eXUCLdNVhYc @ 00:17:04])'],
+                                  ['Monetizing an idle NYC TLC plate you hold',
+                                   'Rent the whole car at $250 a week or lease the bare plate for $50 to '
+                                   '$125 a week',
+                                   'FastTrack co-registers the car at $115 plate plus $174 insurance, $289 '
+                                   'weekly locked for 56 weeks',
+                                   'ESCAPE THE MATRIX ([NtZcNRbIgUo @ 00:02:13]); AutoMarketplace '
+                                   '([DiLCf_drK0E @ 00:08:31])'],
+                                  ['What an NYC plate is actually worth to a buyer',
+                                   'Emil says plates are worthless and values a leasing business on its '
+                                   'cash flow',
+                                   'Michael says plate value depends on policy and behaves much like a '
+                                   'taxi medallion',
+                                   'AutoMarketplace ([kuB7bxLZKa0 @ 00:40:48])'],
+                                  ['Getting new NYC plates while the cap is in force',
+                                   'Plate a wheelchair-accessible Sienna, with TLC waiving the WAV '
+                                   'application fee and $25 extra per ride',
+                                   'The AutoMarketplace host expects any future plate release to be '
+                                   'EV-only, except for WAV',
+                                   'ESCAPE THE MATRIX ([Y8ppyxLqw9E @ 00:02:13]); AutoMarketplace '
+                                   '([DiLCf_drK0E @ 00:42:00])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive California trap is the registration. Alex warns that '
+                              'converting a regular registration to commercial after the fact is extremely '
+                              'difficult, that commercial does not mean registered in the company name, '
+                              "and that you must tell the dealership outright, 'I want commercial "
+                              "registration' [s51s14MY4hI @ 00:00:14]. On Rideshare Professor's "
+                              'walkthrough Alex adds that a lienholder can refuse the conversion, a '
+                              'mistake that can cost you $50,000 to $60,000, with refinancing as the only '
+                              'fix [sYJ0eQpgXks @ 00:05:27]. Kush layers on the DMV mechanics: a financed '
+                              'personal vehicle will not work, transferring an owned car into the business '
+                              'may be treated as a taxable sale, and you should never walk into the DMV '
+                              'without the certificate of unladen weight or you will be making a return '
+                              "trip [eXUCLdNVhYc @ 00:11:55]. BusinessRocket's vehicle breakdown adds the "
+                              'platform trap: the CPUC sets no vehicle requirement at all, but Uber, Lyft, '
+                              'and third-party vendors do, and they do not care how nice the car looks; if '
+                              'it falls outside their parameters they decline it, forcing a resale and a '
+                              'restart [JmrjPmk_Gpo @ 00:01:22]. The economics check is simple: call the '
+                              'platform and an insurance broker before you shop, because stretch limos, '
+                              'shuttles, and Sprinters can insure cheaper than a Prius.',
+                              "New York fleet owners on AutoMarketplace's leasing panel put hard numbers "
+                              'on how thin the business runs. I Touch, with about 400 cars near JFK, walks '
+                              '$500 of weekly rent down through $150 of insurance, a $150 car payment, and '
+                              "$50 to $75 of other costs until, as they put it, now we're left with 200 "
+                              'bucks, roughly a 10% margin [kuB7bxLZKa0 @ 00:29:36]. Michael, running '
+                              'about 200 cars in Sunset Park, calls 10% too optimistic, reports 5% for '
+                              '2023, and says they have lost at least $1 million over ten years to staged '
+                              'accidents and theft, plus $18,000 in EZPass collections from a single '
+                              'driver at $100 per unpaid toll violation [kuB7bxLZKa0 @ 00:14:48]. Emil '
+                              'books 2 to 3 total losses every two months, carries liability only, and '
+                              'caps driver damage exposure at $1,000 [kuB7bxLZKa0 @ 00:20:16]. Policy '
+                              'pressure stacks on top: the TLC extended the temporary cap on new for-hire '
+                              'vehicles another year and set a cruising limit, with app companies fined '
+                              '$350 for each 100 miles over the limit logged by each car [o74VMchARlA @ '
+                              '00:02:00]. Officials say that could add up to hundreds of thousands of '
+                              'dollars in fines, and drivers interviewed fear lower earnings.',
+                              "New York paperwork deadlines are where idle plates die. AutoMarketplace's "
+                              'storage walkthrough caps storage at 90 consecutive days once per two-year '
+                              'cycle, and warns that the TLC UP portal shows red not-eligible text until '
+                              'you surrender plates at the DMV for an FS-6; coming out, start at least two '
+                              'to three weeks before the deadline, because the transfer takes three to '
+                              'five business days at $125, plus $625 if the license sits in fail-to-renew '
+                              '[8QnFsW_-2_0 @ 00:06:27]. Both that walkthrough and Soniclove21 flag the '
+                              '20-day window: once the plate letter arrives you have 20 days to reach a '
+                              'DMV in the five boroughs with the letter, proof of insurance, and FH-1, and '
+                              'pay roughly $425 to $500 [TwvZcpkzAxo @ 00:03:54]. Soniclove21 also warns '
+                              'that regular carriers like State Farm cannot provide the coverage you need, '
+                              'so the FH-1 has to come from a TLC insurer bought through a broker or app, '
+                              'and calling the TLC daily confirms receipt but does not speed the roughly '
+                              'two-week review [TwvZcpkzAxo @ 00:02:04]. On the driver side, Driver Study '
+                              'Guides drills the rules that cost licenses: no one else may drive your FHV '
+                              'except in an emergency, driving impaired means revocation, and late renewal '
+                              'is allowed only up to 180 days after expiry, with a fee [I6r7SzCicUo @ '
+                              '00:00:49].'],
+               'table': {'caption': 'Firsthand traps, measured losses, and the economics check behind each',
+                         'headers': ['Trap',
+                                     'What Happened or Was Measured',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Lienholder blocks the commercial registration conversion',
+                                   'Alex warns a lienholder can refuse the conversion, leaving refinancing '
+                                   'as the only fix',
+                                   'Alex puts the cost of this single mistake at $50,000 to $60,000',
+                                   'Rideshare Professor ([sYJ0eQpgXks @ 00:05:27]); BusinessRocket '
+                                   '([yv_URA4bMDw @ 00:04:00])'],
+                                  ['Insurance bought before the pending TCP number exists',
+                                   'Nine out of ten policies written without a pending TCP number are the '
+                                   'wrong policy',
+                                   'You cancel and rebuy the policy, wasting the money already paid on the '
+                                   'first one',
+                                   'BusinessRocket ([s51s14MY4hI @ 00:00:59])'],
+                                  ['Unpermitted pickups at California airports',
+                                   'LAX, John Wayne, and Ontario require airport permits while Burbank '
+                                   'does not',
+                                   'Kush says fines are huge and drivers may be arrested and vehicles '
+                                   'impounded',
+                                   'Khushnud Numonov ([eXUCLdNVhYc @ 00:18:20])'],
+                                  ['Random drug tests that arrive out of the blue',
+                                   'Torsten got a random test and had to reach the office within about 24 '
+                                   'hours',
+                                   "Kush's program costs about $120 a year with two to three random calls "
+                                   'annually',
+                                   'Rideshare Professor ([MTc0vheuAy8 @ 00:03:01]); Khushnud Numonov '
+                                   '([67saVKNzHxc @ 00:12:34])'],
+                                  ['Thin NYC fleet margins under staged accidents and theft',
+                                   'Michael reports a 5% margin and at least $1 million lost over ten '
+                                   'years',
+                                   'I Touch claims about 10% with a repair shop, while Emil runs 6 to 7%',
+                                   'AutoMarketplace ([kuB7bxLZKa0 @ 00:37:10])'],
+                                  ['Missing the plate storage exit deadline',
+                                   'Transfer confirmation takes three to five business days, then 20 days '
+                                   'to claim plates',
+                                   'Budget the $125 transfer fee, $625 renewal if lapsed, and about $500 '
+                                   'at the DMV',
+                                   'AutoMarketplace ([8QnFsW_-2_0 @ 00:09:21])'],
+                                  ['Peer-to-peer plate rental that ends in an impound',
+                                   'The plate owner can reclaim the plate and the renter cannot retrieve '
+                                   'an impounded car',
+                                   "At FastTrack, walking away forfeits the $1,000 deposit and six weeks' "
+                                   'notice forfeits $500',
+                                   'AutoMarketplace ([DiLCf_drK0E @ 00:16:52])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Stop Checks Before You Put a Car or Plate on the Road',
+                           'body': 'Each check maps to a loss or forced restart that practitioners '
+                                   'reported firsthand; clear all four before spending on vehicles, '
+                                   'policies, or rentals.',
+                           'items': ['Confirm the vehicle is bought commercially registered from the '
+                                     'dealership and that no lienholder can refuse the conversion '
+                                     '[BusinessRocket — s51s14MY4hI @ 00:00:14].',
+                                     'Hold off binding any TCP insurance policy until the pending TCP '
+                                     'number is issued, or expect to cancel and rebuy [BusinessRocket — '
+                                     's51s14MY4hI @ 00:00:42].',
+                                     'Secure the LAX, John Wayne, or Ontario airport permit before any '
+                                     'airport pickup, since fines, driver arrest, and impound follow '
+                                     '[Khushnud Numonov — eXUCLdNVhYc @ 00:17:23].',
+                                     'Refuse any NYC plate rental where you are not on the registration, '
+                                     'because a title holder who is not the registrant cannot pull a car '
+                                     'from impound [AutoMarketplace — DiLCf_drK0E @ 00:18:16].']}}],
+ 'pull_quote': '"In the government\'s eyes, you may be the title holder, but you\'re not the registrant." '
+               '— AutoMarketplace (DiLCf_drK0E @ 00:18:16).',
+ 'diagram_id': 'diag-07',
+ 'action_checklist': ['Form an LLC or corporation before filing so the non-transferable TCP can later be '
+                      'sold along with the company [BusinessRocket — yv_URA4bMDw @ 00:01:47].',
+                      'Start the DMV EPN pull-notice enrollment early, budgeting about $15 and one to two '
+                      'weeks, because it blocks portal progress [Khushnud Numonov — 67saVKNzHxc @ '
+                      '00:07:16].',
+                      'Weigh the vehicle at a public scale and bring the certificate of unladen weight to '
+                      'the DMV for Type 31 commercial registration [Khushnud Numonov — eXUCLdNVhYc @ '
+                      '00:11:55].',
+                      'Confirm the vehicle fits Uber, Lyft, or vendor parameters and get a broker '
+                      'insurance quote before shopping for it [BusinessRocket — JmrjPmk_Gpo @ 00:01:22].',
+                      'Enroll in a drug and alcohol program, roughly $120 a year, and upload the agreement '
+                      'to the TCP portal [Khushnud Numonov — 67saVKNzHxc @ 00:12:34].',
+                      'In NYC, get the Uber base letter and the FH-1 from a TLC insurer, apply for plates, '
+                      'then claim them at a five-borough DMV within 20 days [Soniclove21 — TwvZcpkzAxo @ '
+                      '00:03:54].'],
+ 'statutory_citations': [{'title': 'Khushnud Numonov — How To Apply For TCP PERMIT Online For FREE Step By '
+                                   'Step | Uber Black/Limo Business [00:10:24]',
+                          'url': 'https://www.youtube.com/watch?v=67saVKNzHxc&t=624s',
+                          'relevance': 'Primary practitioner testimony on self-filing the California TCP, '
+                                       'Class A versus Class B pricing, and the ACH-only portal payment.'},
+                         {'title': 'BusinessRocket — TCP License: Avoid These 3 Pitfalls for a Successful '
+                                   'TCP License | Essential Tips for new TCP Permit [00:00:42]',
+                          'url': 'https://www.youtube.com/watch?v=s51s14MY4hI&t=42s',
+                          'relevance': 'Primary practitioner testimony on commercial registration, '
+                                       'insurance timing against the pending TCP number, and entity '
+                                       'structure.'},
+                         {'title': 'AutoMarketplace — Fast Track Mobility Enters NYC’s TLC Plate Rental '
+                                   'Market as Drivers Seek Flexible Ownership Options [00:18:16]',
+                          'url': 'https://www.youtube.com/watch?v=DiLCf_drK0E&t=1096s',
+                          'relevance': 'Primary practitioner testimony on NYC plate rental pricing, '
+                                       'co-registration, and peer-to-peer impound risk.'},
+                         {'title': 'AutoMarketplace — 🤔🐆🎙️ NYC TLC Leasing: "Predatory" Business Model '
+                                   '(?), Plates, EVs & More [00:29:36]',
+                          'url': 'https://www.youtube.com/watch?v=kuB7bxLZKa0&t=1776s',
+                          'relevance': 'Primary practitioner testimony on NYC fleet unit economics, '
+                                       'margins, losses, and plate valuation disputes.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '67saVKNzHxc',
+                       'title': 'How To Apply For TCP PERMIT Online For FREE Step By Step | Uber '
+                                'Black/Limo Business',
+                       'channel': 'Khushnud Numonov',
+                       'author': 'Khushnud Numonov',
+                       'text': 'So it will be TCP Class B and it will cost you one thousand dollars, TCP '
+                               'Class A will cost you 1,500.',
+                       'tip': 'So it will be TCP Class B and it will cost you one thousand dollars, TCP '
+                              'Class A will cost you 1,500.',
+                       'timestamp': 624,
+                       'timestamp_seconds': 624,
+                       'timestamp_label': '[00:10:24]',
+                       'url': 'https://www.youtube.com/watch?v=67saVKNzHxc&t=624s',
+                       'markdown': '[00:10:24](https://www.youtube.com/watch?v=67saVKNzHxc&t=624s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NtZcNRbIgUo',
+                       'title': 'How to Rent Out Your FHV/TLC License Plates',
+                       'channel': 'ESCAPE THE MATRIX',
+                       'author': 'ESCAPE THE MATRIX',
+                       'text': 'Cars right now in New York City rent for a minimum of two hundred and '
+                               'fifty dollars a week.',
+                       'tip': 'Cars right now in New York City rent for a minimum of two hundred and fifty '
+                              'dollars a week.',
+                       'timestamp': 104,
+                       'timestamp_seconds': 104,
+                       'timestamp_label': '[00:01:44]',
+                       'url': 'https://www.youtube.com/watch?v=NtZcNRbIgUo&t=104s',
+                       'markdown': '[00:01:44](https://www.youtube.com/watch?v=NtZcNRbIgUo&t=104s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DiLCf_drK0E',
+                       'title': 'Fast Track Mobility Enters NYC’s TLC Plate Rental Market as Drivers Seek '
+                                'Flexible Ownership Options',
+                       'channel': 'AutoMarketplace',
+                       'author': 'AutoMarketplace',
+                       'text': 'We are charging a $1,000 deposit.',
+                       'tip': 'We are charging a $1,000 deposit.',
+                       'timestamp': 748,
+                       'timestamp_seconds': 748,
+                       'timestamp_label': '[00:12:28]',
+                       'url': 'https://www.youtube.com/watch?v=DiLCf_drK0E&t=748s',
+                       'markdown': '[00:12:28](https://www.youtube.com/watch?v=DiLCf_drK0E&t=748s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DiLCf_drK0E',
+                       'title': 'Fast Track Mobility Enters NYC’s TLC Plate Rental Market as Drivers Seek '
+                                'Flexible Ownership Options',
+                       'channel': 'AutoMarketplace',
+                       'author': 'AutoMarketplace',
+                       'text': "In the government's eyes, you may be the title holder, but you're not the "
+                               'registrant.',
+                       'tip': "In the government's eyes, you may be the title holder, but you're not the "
+                              'registrant.',
+                       'timestamp': 1096,
+                       'timestamp_seconds': 1096,
+                       'timestamp_label': '[00:18:16]',
+                       'url': 'https://www.youtube.com/watch?v=DiLCf_drK0E&t=1096s',
+                       'markdown': '[00:18:16](https://www.youtube.com/watch?v=DiLCf_drK0E&t=1096s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Y8ppyxLqw9E',
+                       'title': 'How to get TLC plates in NYC 2022',
+                       'channel': 'ESCAPE THE MATRIX',
+                       'author': 'ESCAPE THE MATRIX',
+                       'text': 'The secret way to get TLC plates in New York City right now is by getting '
+                               'a WAV car, a wheelchair accessible vehicle, most of the times we see those '
+                               'as minivans.',
+                       'tip': 'The secret way to get TLC plates in New York City right now is by getting a '
+                              'WAV car, a wheelchair accessible vehicle, most of the times we see those as '
+                              'minivans.',
+                       'timestamp': 133,
+                       'timestamp_seconds': 133,
+                       'timestamp_label': '[00:02:13]',
+                       'url': 'https://www.youtube.com/watch?v=Y8ppyxLqw9E&t=133s',
+                       'markdown': '[00:02:13](https://www.youtube.com/watch?v=Y8ppyxLqw9E&t=133s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'I6r7SzCicUo',
+                       'title': 'TLC Exam Questions and Answers #1 | NYC Taxi & Uber Drivers (EN + UZ)',
+                       'channel': 'Driver Study Guides',
+                       'author': 'Driver Study Guides',
+                       'text': 'The answer is A. Only by pre-arrangement through a license base.',
+                       'tip': 'The answer is A. Only by pre-arrangement through a license base.',
+                       'timestamp': 146,
+                       'timestamp_seconds': 146,
+                       'timestamp_label': '[00:02:26]',
+                       'url': 'https://www.youtube.com/watch?v=I6r7SzCicUo&t=146s',
+                       'markdown': '[00:02:26](https://www.youtube.com/watch?v=I6r7SzCicUo&t=146s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aSeLmSHmhns',
+                       'title': 'How to Get a TLC License 2026 | Drive Uber & Lyft in NYC - Complete '
+                                'Step-by-Step Guide',
+                       'channel': 'Web4U',
+                       'author': 'Web4U',
+                       'text': 'To sign up with Uber and Lyft you need your TLC license number.',
+                       'tip': 'To sign up with Uber and Lyft you need your TLC license number.',
+                       'timestamp': 507,
+                       'timestamp_seconds': 507,
+                       'timestamp_label': '[00:08:27]',
+                       'url': 'https://www.youtube.com/watch?v=aSeLmSHmhns&t=507s',
+                       'markdown': '[00:08:27](https://www.youtube.com/watch?v=aSeLmSHmhns&t=507s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8QnFsW_-2_0',
+                       'title': '🔐🚖 NYC TLC Plate (FHV License) Storage: Step-by-Step Guide for Drivers & '
+                                'Fleets',
+                       'channel': 'AutoMarketplace',
+                       'author': 'AutoMarketplace',
+                       'text': 'It says you have 20 days to go to a DMV within the five boroughs to claim '
+                               'your new TLC plates.',
+                       'tip': 'It says you have 20 days to go to a DMV within the five boroughs to claim '
+                              'your new TLC plates.',
+                       'timestamp': 755,
+                       'timestamp_seconds': 755,
+                       'timestamp_label': '[00:12:35]',
+                       'url': 'https://www.youtube.com/watch?v=8QnFsW_-2_0&t=755s',
+                       'markdown': '[00:12:35](https://www.youtube.com/watch?v=8QnFsW_-2_0&t=755s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kuB7bxLZKa0',
+                       'title': '🤔🐆🎙️ NYC TLC Leasing: "Predatory" Business Model (?), Plates, EVs & More',
+                       'channel': 'AutoMarketplace',
+                       'author': 'AutoMarketplace',
+                       'text': "So, now we're left with 200 bucks.",
+                       'tip': "So, now we're left with 200 bucks.",
+                       'timestamp': 1776,
+                       'timestamp_seconds': 1776,
+                       'timestamp_label': '[00:29:36]',
+                       'url': 'https://www.youtube.com/watch?v=kuB7bxLZKa0&t=1776s',
+                       'markdown': '[00:29:36](https://www.youtube.com/watch?v=kuB7bxLZKa0&t=1776s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'o74VMchARlA',
+                       'title': 'For-Hire Vehicle Cap Approved In NYC',
+                       'channel': 'CBS New York',
+                       'author': 'CBS New York',
+                       'text': 'The app company will be fined $350 for each 100 miles over the cruising '
+                               'limit logged by each car.',
+                       'tip': 'The app company will be fined $350 for each 100 miles over the cruising '
+                              'limit logged by each car.',
+                       'timestamp': 120,
+                       'timestamp_seconds': 120,
+                       'timestamp_label': '[00:02:00]',
+                       'url': 'https://www.youtube.com/watch?v=o74VMchARlA&t=120s',
+                       'markdown': '[00:02:00](https://www.youtube.com/watch?v=o74VMchARlA&t=120s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TwvZcpkzAxo',
+                       'title': 'TLC Plates NYC',
+                       'channel': 'Soniclove21',
+                       'author': 'Soniclove21',
+                       'text': 'The application for TLC plates, the cost is approximately 650 dollars, it '
+                               'takes approximately two weeks for them to get back to you.',
+                       'tip': 'The application for TLC plates, the cost is approximately 650 dollars, it '
+                              'takes approximately two weeks for them to get back to you.',
+                       'timestamp': 193,
+                       'timestamp_seconds': 193,
+                       'timestamp_label': '[00:03:13]',
+                       'url': 'https://www.youtube.com/watch?v=TwvZcpkzAxo&t=193s',
+                       'markdown': '[00:03:13](https://www.youtube.com/watch?v=TwvZcpkzAxo&t=193s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sYJ0eQpgXks',
+                       'title': 'TCP License. The Complete Guide+How to become a private driver operating '
+                                'Uber, Lyft+private clients',
+                       'channel': 'Rideshare Professor',
+                       'author': 'Rideshare Professor',
+                       'text': 'Cost you 50, $60,000, so be very very aware of what he just said.',
+                       'tip': 'Cost you 50, $60,000, so be very very aware of what he just said.',
+                       'timestamp': 327,
+                       'timestamp_seconds': 327,
+                       'timestamp_label': '[00:05:27]',
+                       'url': 'https://www.youtube.com/watch?v=sYJ0eQpgXks&t=327s',
+                       'markdown': '[00:05:27](https://www.youtube.com/watch?v=sYJ0eQpgXks&t=327s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JmrjPmk_Gpo',
+                       'title': 'TCP License: Vehicle Requirements for the California TCP Limousine / '
+                                'Charter Party License',
+                       'channel': 'BusinessRocket',
+                       'author': 'BusinessRocket',
+                       'text': "They don't care how nice it looks, if it doesn't go into their parameters "
+                               "they'll decline the car.",
+                       'tip': "They don't care how nice it looks, if it doesn't go into their parameters "
+                              "they'll decline the car.",
+                       'timestamp': 96,
+                       'timestamp_seconds': 96,
+                       'timestamp_label': '[00:01:36]',
+                       'url': 'https://www.youtube.com/watch?v=JmrjPmk_Gpo&t=96s',
+                       'markdown': '[00:01:36](https://www.youtube.com/watch?v=JmrjPmk_Gpo&t=96s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yv_URA4bMDw',
+                       'title': 'TCP License: A Complete Guide - How to create a TCP License. Important '
+                                'Information about TCP License',
+                       'channel': 'BusinessRocket',
+                       'author': 'BusinessRocket',
+                       'text': 'A TCP license is non-transferable.',
+                       'tip': 'A TCP license is non-transferable.',
+                       'timestamp': 107,
+                       'timestamp_seconds': 107,
+                       'timestamp_label': '[00:01:47]',
+                       'url': 'https://www.youtube.com/watch?v=yv_URA4bMDw&t=107s',
+                       'markdown': '[00:01:47](https://www.youtube.com/watch?v=yv_URA4bMDw&t=107s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MTc0vheuAy8',
+                       'title': 'Businessrocket.com founder and Rideshare Professor discussing TCP and '
+                                'Fleets',
+                       'channel': 'Rideshare Professor',
+                       'author': 'Rideshare Professor',
+                       'text': 'The whole PUC process to get a TCP takes anywhere between 5 and 7 weeks '
+                               'right now.',
+                       'tip': 'The whole PUC process to get a TCP takes anywhere between 5 and 7 weeks '
+                              'right now.',
+                       'timestamp': 122,
+                       'timestamp_seconds': 122,
+                       'timestamp_label': '[00:02:02]',
+                       'url': 'https://www.youtube.com/watch?v=MTc0vheuAy8&t=122s',
+                       'markdown': '[00:02:02](https://www.youtube.com/watch?v=MTc0vheuAy8&t=122s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eXUCLdNVhYc',
+                       'title': 'How To Get PUC/TCP PERMIT For Uber Black & Limo Company',
+                       'channel': 'Khushnud Numonov',
+                       'author': 'Khushnud Numonov',
+                       'text': 'Do not go to DMV to register your vehicle commercially without the '
+                               'certificate of unladen weight or you will have to make a return trip to '
+                               'the DMV.',
+                       'tip': 'Do not go to DMV to register your vehicle commercially without the '
+                              'certificate of unladen weight or you will have to make a return trip to the '
+                              'DMV.',
+                       'timestamp': 715,
+                       'timestamp_seconds': 715,
+                       'timestamp_label': '[00:11:55]',
+                       'url': 'https://www.youtube.com/watch?v=eXUCLdNVhYc&t=715s',
+                       'markdown': '[00:11:55](https://www.youtube.com/watch?v=eXUCLdNVhYc&t=715s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 's51s14MY4hI',
+                       'title': 'TCP License: Avoid These 3 Pitfalls for a Successful TCP License | '
+                                'Essential Tips for new TCP Permit',
+                       'channel': 'BusinessRocket',
+                       'author': 'BusinessRocket',
+                       'text': 'The insurance that you buy for the TCP license actually cannot be obtained '
+                               'until you have a pending TCP number.',
+                       'tip': 'The insurance that you buy for the TCP license actually cannot be obtained '
+                              'until you have a pending TCP number.',
+                       'timestamp': 42,
+                       'timestamp_seconds': 42,
+                       'timestamp_label': '[00:00:42]',
+                       'url': 'https://www.youtube.com/watch?v=s51s14MY4hI&t=42s',
+                       'markdown': '[00:00:42](https://www.youtube.com/watch?v=s51s14MY4hI&t=42s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'}]}

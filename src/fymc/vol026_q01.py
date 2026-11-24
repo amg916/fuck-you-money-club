@@ -1,612 +1,871 @@
 from __future__ import annotations
 
-CHAPTER_1 = {
-    "id": "Q1",
-    "chapter_id": "Q1",
-    "chapter_number": 1,
-    "question_number": 1,
-    "slug": "what-exactly-is-government-surplus-auctions",
-    "question_prompt": "What exactly is government surplus auctions, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
-    "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
-    "title": "What Exactly Is Government Surplus Auctions?",
-    "subtitle": "GSA, GovPlanet, GovDeals and Public Surplus: Title Chains, SF-97, DEMIL Controls and B2B Resale Spreads",
-    "layout_template": "opportunity_overview",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Government surplus auctions turn public-sector asset disposal into a disciplined inventory-resale business. "
-        "Candidate #17, Pipeline Rank #29 of 29, scores 79/100 because transport, working capital, inspection and "
-        "removal labor constrain leverage. This chapter maps six operating plays: distressed_asset_recovery, fleet "
-        "title arbitrage, industrial equipment remarketing, institutional furniture bundling, parts harvesting and "
-        "scheduled buyer matching. The latter five are chapter-level implementations, not additional catalog identifiers. "
-        "Recognized operator revenue is gross resale proceeds when acting as principal; acquisition, hauling and "
-        "refurbishment remain costs. Canonical annual owner profits are $12,000 Conservative, $80,500 Base and "
-        "$200,000 Scaled. Durable operators win through inspection evidence, clean transfer documents, predictable "
-        "removal and repeat commercial buyers, rather than spectacular auction screenshots."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$150,000",
-            "context": "Annual gross resale proceeds recognized by the inventory principal",
-            "note": "8% net margin; $12,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$575,000",
-            "context": "Annual gross resale proceeds recognized by the inventory principal",
-            "note": "14.0% net margin; $80,500 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual gross resale proceeds recognized by the inventory principal",
-            "note": "20% net margin; $200,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Define the inventory business before choosing an auction platform",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Government surplus auctions are a disposal channel, not a single asset class or a procurement "
-                    "contracting strategy. A public agency sells vehicles, machinery, furniture or other property it no "
-                    "longer needs; an operator purchases selected lots, completes removal, improves marketability and "
-                    "resells to a different buyer population. Federal public sales operate within authorities including "
-                    "40 U.S.C. 545 and 41 CFR Part 102-38. Municipal sellers follow their own applicable disposal "
-                    "authorities and sale documents. GSA Auctions and GSA Fleet Sales provide federal channels; "
-                    "GovDeals and Public Surplus host many local-government sellers. GovPlanet offers equipment "
-                    "auctions, including certain government-origin assets, but platform identity alone does not establish "
-                    "the seller, asset history or transfer restrictions. Read the actual lot terms. This business differs "
-                    "from buying tax liens, pursuing unclaimed funds or bidding to supply agencies under the FAR. "
-                    "Its basic product is usable equipment delivered with credible condition evidence and transferable "
-                    "rights. The operator earns the difference between an inconvenient public disposal transaction and "
-                    "a useful commercial purchase. That difference must pay for inspection, capital, hauling, repairs, "
-                    "storage, selling effort and mistakes before it becomes owner profit. A low winning bid is only "
-                    "the opening entry in that calculation."
-                ),
-                (
-                    "The revenue boundary follows the operator's role in the resale transaction. A principal that "
-                    "controls purchased inventory before transfer to its customer generally recognizes gross resale "
-                    "proceeds when the applicable revenue-recognition conditions are satisfied. Buying an asset for "
-                    "$14,000 and selling it for $23,000 creates $23,000 of resale revenue, not $9,000 of revenue "
-                    "and not $37,000 of transaction volume. Purchase cost, buyer premium, transport and refurbishment "
-                    "belong in the cost structure, with inventory accounting determining their timing. Customer deposits "
-                    "received before performance are not automatically earned revenue. Sales tax collected for a taxing "
-                    "authority is excluded from revenue; expected returns and price concessions also affect the amount "
-                    "recognized. By contrast, an agent arranging another owner's $23,000 sale for a $2,300 commission "
-                    "generally recognizes its $2,300 fee rather than the underlying asset value. Merely taking payment "
-                    "does not settle the principal-versus-agent analysis. Document control, performance obligations, "
-                    "inventory exposure and pricing responsibility. The canonical scorecard uses principal resale "
-                    "proceeds, so combining brokerage GMV with owned-inventory revenue would inflate throughput and "
-                    "destroy margin comparability. Maintain separate ledger accounts for owned stock, consigned stock, "
-                    "customer deposits, collected taxes and earned service fees."
-                ),
-                (
-                    "Choose a narrow operating archetype before opening dozens of auction alerts. Fleet specialists "
-                    "understand VIN verification, title packets, odometer disclosures and the commercial buyers for "
-                    "specific vehicle configurations. Industrial equipment traders know power requirements, attachment "
-                    "compatibility, loading geometry and the cost of proving operation. Institutional furniture traders "
-                    "win through standardized sets, measured dimensions and economical delivery, not through individual "
-                    "chairs with attractive photographs. Technology recovery operators need asset identification, "
-                    "sanitization evidence and a lawful downstream route for batteries and unusable components. Parts "
-                    "specialists require model-level demand knowledge and a documented disposition path for residual "
-                    "material. These are different businesses even when the same municipality supplies inventory. Start "
-                    "with one category, one removal radius and two reachable buyer segments. The stated startup capital "
-                    "range is $15,000 to $80,000, monthly operating expense range is $3,000 to $15,000, and first-deal "
-                    "window is one to six months. Those ranges describe the opportunity, not permission to spend the "
-                    "maximum before proving sell-through. Reserve money for unloading, unexpected repairs and slow "
-                    "collections rather than committing the entire account to hammer prices. A repeatable buyer "
-                    "conversation is more valuable than a broad watchlist because it defines the specifications worth "
-                    "purchasing and the defects that make a cheap lot unusable."
-                ),
-            ],
-            "table": {
-                "caption": "Five operator archetypes and the evidence each must own",
-                "headers": [
-                    "Operator archetype and natural inventory",
-                    "Commercial buyer and purchasing requirement",
-                    "Durable capability that supports pricing",
-                    "Primary failure and practical fallback",
-                ],
-                "rows": [
-                    [
-                        "Fleet specialists buying retired service trucks and utility vehicles",
-                        "Local contractors needing documented vehicles with useful work configurations",
-                        "VIN reconciliation, title packet review and repeatable mechanical inspection",
-                        "Untransferable paperwork blocks resale; avoid bidding until requirements are resolved",
-                    ],
-                    [
-                        "Industrial traders buying forklifts, generators and maintenance shop machinery",
-                        "Plant managers needing verified capacity, power compatibility and delivery",
-                        "Functional testing, rigging coordination and precise attachment compatibility records",
-                        "Hidden component damage erases spread; price against documented salvage demand",
-                    ],
-                    [
-                        "Furniture consolidators buying matching institutional desks, chairs and shelving",
-                        "Office installers and schools purchasing consistent sets with measured dimensions",
-                        "Batch photography, economical loading and standardized delivered bundle quotations",
-                        "Mixed damaged pieces consume storage; preprice clearance by usable count",
-                    ],
-                    [
-                        "Technology recovery operators buying identifiable computers and network equipment",
-                        "Refurbishers requiring serial records, usable configurations and sanitization evidence",
-                        "Configuration testing, data handling controls and established downstream recovery partners",
-                        "Locked equipment destroys resale value; reject inaccessible management configurations",
-                    ],
-                    [
-                        "Parts specialists buying eligible equipment with established component demand",
-                        "Repair shops sourcing verified components for specific installed equipment",
-                        "Model crosswalks, functional component testing and residual material disposal planning",
-                        "Slow individual parts trap capital; secure an intact wholesale alternative",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "2. Underwrite the asset, transfer documents and removal obligation together",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Auction platforms provide access, but the seller's contract determines the actual purchase. Capture "
-                    "the lot description, photographs, amendments, inspection rules, payment instructions, buyer premium, "
-                    "tax treatment and removal deadline before submitting a bid. Fees vary by seller, sale and lot; "
-                    "never transfer a remembered GovDeals percentage to Public Surplus or assume every GSA-related "
-                    "sale has identical charges. Build a worksheet that distinguishes hammer price, percentage premium, "
-                    "fixed transaction charges, applicable taxes and conditional export or document costs. Obtain a "
-                    "written hauling quote identifying loading responsibility, equipment dimensions, estimated weight, "
-                    "appointment restrictions and whether the site supplies a functioning forklift. A truck reservation "
-                    "without a loading plan is not a removal plan. Inspection should target expensive uncertainty: "
-                    "cold starts, hour-meter plausibility, hydraulic leaks, battery condition, accessories and missing "
-                    "controllers. Photographs can establish configuration without establishing operability. If inspection "
-                    "is unavailable, price the lot against an evidenced downside exit rather than an optimistic repair "
-                    "estimate. Do not assume an as-is seller must refund a disappointing purchase. Dispute rights, "
-                    "abandonment consequences and payment-default remedies depend on the applicable terms and law. "
-                    "Preserve correspondence and ask specific questions early enough that the answers can change the "
-                    "bid rather than merely explain a loss."
-                ),
-                (
-                    "Vehicle paperwork and restricted-property controls require separate diligence because mechanical "
-                    "condition cannot cure a defective transfer path. An SF-97, United States Government Certificate "
-                    "to Obtain Title to a Vehicle, is evidence used in obtaining a state title; it is not itself "
-                    "a state title or proof that every vehicle qualifies for road registration. Compare the VIN on "
-                    "the asset, listing, invoice and transfer documents, then confirm the receiving state's requirements "
-                    "for that vehicle category before bidding. Odometer disclosure requirements under 49 CFR Part 580 "
-                    "apply subject to their scope and exemptions. Salvage history, missing supporting documents and "
-                    "off-road design can change the resale audience. Separately, military-origin equipment may carry "
-                    "demilitarization, end-use, export or disposal conditions. Record the applicable DEMIL information "
-                    "and sale-specific obligations; do not infer unrestricted status from camouflage, platform branding "
-                    "or a seller's casual description. The U.S. Munitions List in 22 CFR 121.1 and export prohibitions "
-                    "in 15 CFR Part 736 illustrate distinct control systems that can require classification work. "
-                    "Use a qualified specialist for restricted categories and exclude lots whose lawful possession, "
-                    "transfer or required processing cannot be established. A prospective foreign buyer does not "
-                    "resolve the seller's export responsibilities."
-                ),
-                (
-                    "The comparison matrix separates attractive demand from operational fit. Portable generators may "
-                    "have broad contractor demand, yet load testing and fuel-system work can exceed the expected "
-                    "spread. Laboratory equipment can appear valuable against original purchase price while missing "
-                    "software licenses, probes or calibration records. School furniture often sells in quantities that "
-                    "overwhelm a small warehouse even when the per-unit purchase price looks trivial. For each "
-                    "sub-vertical, record three independent facts: a comparable completed sale, a buyer's minimum "
-                    "acceptable specification and a credible removal quote. Treat asking prices as leads rather than "
-                    "valuation evidence. Favor routes where one outbound truck can serve several buyers or where "
-                    "repeat buyers collect inspected inventory themselves. Maintain a dated lot file in Airtable or "
-                    "a spreadsheet, with invoices and inspection photographs linked through stable asset identifiers. "
-                    "Track bid-to-win rate, landed-cost variance, days to ready-for-sale and days to collected payment. "
-                    "A category with modest spreads and reliable forty-day cash conversion can outperform a "
-                    "spectacular-looking machine held for a year. Establish disposition deadlines before purchase: "
-                    "retail listing first, specialist wholesale offer second, verified parts or scrap outlet last. "
-                    "The fallback should be executable with current buyers and transport capacity, not simply "
-                    "described as selling it somewhere else."
-                ),
-            ],
-            "table": {
-                "caption": "Sixteen sub-verticals: named sourcing rails, fee exposure, moats and loss triggers",
-                "headers": [
-                    "Sub-vertical and named sourcing channel",
-                    "Fee structure and landed-cost treatment",
-                    "Small-team moat and likely resale buyer",
-                    "Failure or reversal trigger and fallback",
-                ],
-                "rows": [
-                    [
-                        "Light service vehicles sourced through GSA Fleet Sales listings",
-                        "Read sale-specific charges; add title, inspection and transportation costs",
-                        "Verified maintenance evidence attracts contractors buying familiar fleet configurations",
-                        "Title defects halt retail resale; resolve documents before committing capital",
-                    ],
-                    [
-                        "Municipal utility trucks offered through GovDeals agency seller accounts",
-                        "Apply the displayed buyer premium plus applicable taxes and hauling",
-                        "Documented service bodies and lift operation attract local trade businesses",
-                        "Hydraulic failure destroys pricing; obtain a repair ceiling before bidding",
-                    ],
-                    [
-                        "School buses listed by districts through Public Surplus auctions",
-                        "Use seller-specific premium terms plus towing, storage and transfer expenses",
-                        "Configuration knowledge supports sales to qualified fleet and conversion buyers",
-                        "Registration limits shrink demand; verify a lawful destination before purchase",
-                    ],
-                    [
-                        "Grounds maintenance mowers offered through GovDeals municipal seller listings",
-                        "Include displayed premium, blade service, transport and missing attachment costs",
-                        "Seasonal buyer relationships reward tested decks and identifiable service parts",
-                        "Engine damage defeats seasonal pricing; preprice whole-unit wholesale liquidation",
-                    ],
-                    [
-                        "Portable generators appearing in GovPlanet equipment auction sale catalogs",
-                        "Model posted transaction charges alongside load testing and freight expenses",
-                        "Verified output under load supports contractor and rental-company purchases",
-                        "Unproven output invites disputes; sell with measured results or parts valuation",
-                    ],
-                    [
-                        "Forklifts offered through GovDeals and Public Surplus industrial lots",
-                        "Budget listed premium plus specialist hauling and battery evaluation expenses",
-                        "Mast dimensions and documented capacity match specific warehouse operating requirements",
-                        "Battery replacement consumes spread; secure battery pricing before bid submission",
-                    ],
-                    [
-                        "Air compressors listed through GSA Auctions equipment disposal sales",
-                        "Follow the posted payment terms and add rigging and testing",
-                        "Power specifications and verified pressure delivery serve maintenance shop buyers",
-                        "Receiver damage creates serious exposure; obtain competent inspection before resale",
-                    ],
-                    [
-                        "Machine shop tools appearing through GSA Auctions federal disposals",
-                        "Add applicable sale charges, precision inspection and professional machinery removal",
-                        "Measured wear and compatible tooling attract established fabrication shop buyers",
-                        "Missing controls defeat functionality; price specialist repair or documented component resale",
-                    ],
-                    [
-                        "Commercial kitchen equipment sold through Public Surplus institutional accounts",
-                        "Include stated premium, disconnection, sanitation work and refrigeration service costs",
-                        "Verified dimensions and electrical requirements simplify independent restaurant purchasing decisions",
-                        "Refrigerant or compressor problems erase spread; use qualified service assessment",
-                    ],
-                    [
-                        "Institutional furniture bundles sourced from GovDeals public agency listings",
-                        "Allocate listed premium and freight across counted usable matching pieces",
-                        "Consistent sets and consolidated delivery appeal to office installation businesses",
-                        "Broken mixed inventory fills storage; liquidate usable bundles before individual pieces",
-                    ],
-                    [
-                        "Library shelving offered through Public Surplus municipal facility sales",
-                        "Price premium, dismantling labor, hardware recovery and protected transportation together",
-                        "Complete bay measurements and hardware kits attract schools and archives",
-                        "Missing braces prevent assembly; confirm completeness before agreeing resale specifications",
-                    ],
-                    [
-                        "Business computers listed through GovDeals education and agency accounts",
-                        "Add posted premium, testing, sanitization and battery handling to acquisition",
-                        "Serial-level configuration records support repeat sales to established equipment refurbishers",
-                        "Management locks prevent reuse; confirm release or choose authorized material recovery",
-                    ],
-                    [
-                        "Network switches appearing in GSA Auctions technology disposal listings",
-                        "Model sale-specific charges, configuration testing and lawful software entitlement costs",
-                        "Exact model identification and clean configuration evidence attract specialist resellers",
-                        "Unsupported licensing changes value; quote hardware capabilities without promising entitlements",
-                    ],
-                    [
-                        "Laboratory instruments sold through Public Surplus university seller accounts",
-                        "Include stated premium, fragile packing, calibration assessment and specialist shipping",
-                        "Complete probes and verified functions attract laboratories with matching workflows",
-                        "Missing software or calibration blocks use; seek specialist wholesale quotations",
-                    ],
-                    [
-                        "Trailers and containers appearing in GovPlanet equipment auction catalogs",
-                        "Apply posted transaction charges plus loading, chassis condition and delivery",
-                        "Accurate dimensions and documented floor condition support commercial storage buyers",
-                        "Transfer or structural defects limit use; establish lawful destination requirements first",
-                    ],
-                    [
-                        "Eligible military-origin equipment offered through GovPlanet government-related sale listings",
-                        "Include stated charges and every sale-specific processing or documentation obligation",
-                        "Documented eligibility and restriction handling support properly qualified domestic buyers",
-                        "DEMIL or export conditions block resale; exclude unresolved restricted inventory entirely",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy evidence before buying equipment",
-                "body": "Veteran operators reduce uncertainty before the auction clock makes haste feel productive.",
-                "items": [
-                    "Ask the custodian to photograph the data plate, electrical panel and missing-accessory areas; generic exterior photographs rarely answer the expensive questions.",
-                    "Quote freight using actual loading conditions, not mileage alone; explicitly identify who supplies ramps, rigging, forklift capacity and appointment coordination.",
-                    "Request a sample of the promised vehicle document packet with sensitive fields removed, then confirm the document type with the receiving motor-vehicle agency.",
-                    "Record completed-sale comparables by configuration and condition; an asking price for a tested machine cannot support a bid on an untested incomplete unit.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Reconcile gross resale proceeds to the three owner-profit cases",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The canonical Conservative case is $150,000 of annual gross resale revenue at an 8% net "
-                    "margin, producing $12,000 of annual owner net profit with two full-time people and three "
-                    "contractors. Base is $575,000 at 14.0%, producing $80,500 with the same stated team structure. "
-                    "Scaled is $1,000,000 at 20%, producing $200,000 with three full-time people and four contractors, "
-                    "seven people total. The corresponding total annual cost envelopes are $138,000, $494,500 and "
-                    "$800,000. These are the scorecard cases, not additive revenue streams or automatic results from "
-                    "hiring those teams. Contractor counts do not imply full-year utilization, and headcount alone "
-                    "does not establish affordable payroll. Build an explicit labor budget covering employee wages, "
-                    "employer costs, contractor invoices and the treatment of working-owner compensation. Do not "
-                    "silently remove labor to preserve a target margin. If measured staffing expense and other "
-                    "costs exceed a case's cost envelope, that case is operationally infeasible under those "
-                    "assumptions. Likewise, owner profit is not a promise that every listed team member receives "
-                    "that amount. The scorecard's capital-intensive designation reflects inventory funding, physical "
-                    "handling and limited automation leverage. Evaluate both earnings and cash tied up, because "
-                    "a profitable resale booked late does not fund tomorrow's auction payment."
-                ),
-                (
-                    "A worked lot illustrates the Base arithmetic without changing the annual targets. Assume "
-                    "$23,000 of recognized resale proceeds, a $14,000 hammer price, an illustrative 10% buyer premium "
-                    "of $1,400, $900 transport, $1,500 refurbishment and $600 direct handling. Those costs total "
-                    "$18,400, leaving $4,600 before allocated overhead. Allocate another $1,380 of operating expense "
-                    "to produce $3,220 of modeled owner profit, exactly 14% of revenue. Twenty-five identical "
-                    "completed sales yield $575,000 revenue and $80,500 profit. This is a mathematical bridge, "
-                    "not evidence that twenty-five real lots will carry identical costs or support the stated "
-                    "staffing. The premium is an example, not a published platform rate. Test the overhead "
-                    "allocation against actual payroll, rent, insurance, selling expenses, carrying costs and expected "
-                    "losses. For bidding, solve backward: a $23,000 expected sale less $3,220 required profit, "
-                    "$900 transport, $1,500 refurbishment, $600 handling and $1,380 overhead leaves $15,400 for "
-                    "hammer plus premium. With only a 10% premium applicable, the hammer ceiling is $14,000. "
-                    "Additional nonrecoverable taxes or charges reduce that ceiling. Never increase the resale "
-                    "estimate merely because another bidder crosses the calculated limit."
-                ),
-                (
-                    "Cash conversion makes the same margin either manageable or dangerous. In the worked example, "
-                    "the $14,000 hammer, $1,400 premium, $900 hauling and $1,500 refurbishment consume $17,800 "
-                    "before handling and overhead. Four overlapping lots therefore require $71,200 for those "
-                    "components alone, well beyond the low end of the startup capital range. Customer payment "
-                    "terms can extend the funding gap after delivery, so separate days held from days awaiting "
-                    "collection. A hypothetical $1,000 repair overrun reduces the worked lot's $3,220 profit to "
-                    "$2,220; a further $2,000 selling-price reduction leaves only $220. Track these sensitivities "
-                    "before accepting thin spreads on uninspected equipment. Inventory aging should trigger an "
-                    "action, such as fresh condition evidence, a different buyer channel or an executable wholesale "
-                    "quote, rather than indefinite optimism. Maintain a weekly cash calendar with auction settlement, "
-                    "removal, repair authorization, payroll and expected customer receipts. Reserve disposal and "
-                    "transport money even for unsuccessful lots. The monthly operating expense range does not "
-                    "replace a cash budget, and inventory purchases are not interchangeable with recurring overhead. "
-                    "Reconcile each asset's realized proceeds and complete cost record to the general ledger; "
-                    "aggregate margin improves only when individual losses remain visible rather than being buried "
-                    "inside the next purchase."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical annual cases and the worked Base-case cost bridge",
-                "headers": [
-                    "Case or calculation with exact basis",
-                    "Recognized operator revenue and cost treatment",
-                    "Profit result and required staffing interpretation",
-                    "Operator implication before committing additional inventory capital",
-                ],
-                "rows": [
-                    [
-                        "Conservative annual case uses the canonical 8% net margin",
-                        "$150,000 gross resale proceeds less $138,000 total modeled costs",
-                        "$12,000 annual owner net profit; two full-time people plus three contractors",
-                        "Validate labor affordability before treating the stated team as funded",
-                    ],
-                    [
-                        "Base annual case uses the canonical 14.0% net margin",
-                        "$575,000 gross resale proceeds less $494,500 total modeled costs",
-                        "$80,500 annual owner net profit; two full-time people plus three contractors",
-                        "Require realized lot records to support the complete expense envelope",
-                    ],
-                    [
-                        "Scaled annual case uses the canonical 20% net margin",
-                        "$1,000,000 gross resale proceeds less $800,000 total modeled costs",
-                        "$200,000 annual owner net profit; three full-time people plus four contractors",
-                        "Seven-person capacity requires repeatable throughput and funded working capital",
-                    ],
-                    [
-                        "Worked Base lot assumes one completed $23,000 principal resale",
-                        "$18,400 direct modeled costs plus $1,380 allocated operating expense",
-                        "$3,220 modeled owner profit equals exactly 14% of resale revenue",
-                        "Rebuild every allocation using actual costs rather than preserving example assumptions",
-                    ],
-                    [
-                        "Base repetition bridge assumes twenty-five economically identical completed sales",
-                        "Twenty-five multiplied by $23,000 equals $575,000 annual resale proceeds",
-                        "Twenty-five multiplied by $3,220 equals $80,500 annual owner profit",
-                        "Use this arithmetic bridge without assuming identical real-world lot performance",
-                    ],
-                    [
-                        "Downside sensitivity combines repair overruns with lower realized selling prices",
-                        "$22,780 revised total cost against $23,000 originally expected proceeds",
-                        "$220 remaining profit after revenue instead declines to $21,000",
-                        "Apply the actual revised cost of $20,780 against reduced revenue",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before submitting a binding bid",
-                "body": "A bid becomes defensible only when the transfer path, downside economics and removal resources agree.",
-                "items": [
-                    "Verify buyer eligibility, resale documentation requirements, seller identity and the precise vehicle or equipment transfer documents promised by the sale.",
-                    "Confirm applicable DEMIL, end-use, export and restricted-item obligations; exclude any lot whose lawful acquisition or disposition remains unresolved.",
-                    "Save a bid-limit worksheet containing the actual premium, applicable tax treatment, transport quote, repair allowance and executable downside buyer price.",
-                    "Confirm payment funding, removal appointment availability, loading equipment and insured transport before the deadline can turn inventory into a default loss.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Build six repeatable plays around evidence, buyers and cash discipline",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The catalog play distressed_asset_recovery, Distressed Asset Recovery under TRACK_1, applies here "
-                    "as acquisition spread on administratively inconvenient surplus, not as a claim that the "
-                    "operator owns public money awaiting recovery. Consider an eligible equipment lot bought for "
-                    "$2,800 with a $280 illustrative premium, $600 hauling and $400 preparation. At a $5,000 "
-                    "resale, the $920 contribution before overhead falls to $580 after $340 allocated overhead. "
-                    "The edge is resolving description, access or buyer-matching friction without assuming hidden "
-                    "legal rights. The broader play's fallback is diversification across multi-state dockets and "
-                    "attorney-backed filing partnerships where required; those recovery-fee activities need separate "
-                    "authority, contracts and revenue accounts rather than being blended into auction resale totals. "
-                    "The second chapter-level implementation, fleet title arbitrage, means buying a vehicle whose "
-                    "documented transfer route and useful configuration are undervalued, not manufacturing or "
-                    "bypassing title evidence. An $8,000 purchase, $800 premium, $1,200 repairs and $700 hauling "
-                    "against a $12,000 resale leave $1,300 before overhead. If registration eligibility cannot be "
-                    "established, decline the lot. A lawful wholesale buyer can be a fallback for an eligible "
-                    "vehicle, but wholesaling cannot cure missing ownership rights or transfer restrictions."
-                ),
-                (
-                    "Industrial equipment remarketing converts technical verification into a saleable specification. "
-                    "A $6,000 machine plus $600 premium, $900 rigging and $1,000 service costs $8,500 before "
-                    "overhead; a $10,500 resale leaves $2,000 contribution. Require a competent test of the "
-                    "functions the buyer actually needs, not merely a video showing an illuminated control panel. "
-                    "If repair economics deteriorate, seek a documented specialist wholesale quote before purchasing "
-                    "additional parts. Institutional furniture bundling uses a different advantage: consistent sets "
-                    "and dense transport. Twenty usable desks sold at $150 each generate $3,000 revenue. A "
-                    "$1,000 lot, $100 premium, $500 removal and $300 cleaning leave $1,100 contribution before "
-                    "overhead. Count usable pieces, confirm dimensions and photograph matching finishes before "
-                    "promising a bundle. If only twelve desks are usable, the same $1,900 costs against $1,800 "
-                    "revenue produce a $100 loss before overhead. These examples show why original procurement "
-                    "price is a poor bidding anchor. The real determinants are current functionality, completeness "
-                    "and the next buyer's alternatives. Neither implementation should absorb unlimited warehouse "
-                    "space: set a category-specific aging limit and a wholesale exit price that includes another "
-                    "round of loading and transport."
-                ),
-                (
-                    "Parts harvesting and scheduled buyer matching complete the six-play operating map. Eligible "
-                    "equipment bought for $1,200 with $120 premium, $300 hauling and $500 dismantling costs "
-                    "$2,120. Eight tested components sold for $350 each generate $2,800, leaving $680 before "
-                    "overhead, selling fees, returns and residual disposal. Unsold components are inventory, not "
-                    "earned revenue. Reject restricted equipment and use documented material-recovery partners for "
-                    "remaining waste. Scheduled buyer matching instead starts with a buyer's written specification "
-                    "and delivery window. Ten eligible cabinets sold for $400 each generate $4,000; a $2,000 "
-                    "purchase, $200 premium, $600 hauling and $300 preparation leave $900 before overhead. "
-                    "Purchase as principal only when funding and alternate buyers survive cancellation; an agency "
-                    "arrangement would require fee-based revenue treatment. Automate auction alerts, bid-limit "
-                    "worksheets and inventory tracking, but keep condition judgments and transfer checks with "
-                    "accountable people. Weekly review should identify which buyer requests repeat, which sellers "
-                    "describe lots accurately and which transport routes remain economical. Durable moats accumulate "
-                    "in those records and relationships. Fragile beginner hype concentrates on winning bids, "
-                    "headline retail prices and gross transaction screenshots while ignoring elapsed time, incomplete "
-                    "equipment, unpaid labor and the cost of moving the same asset twice."
-                ),
-            ],
-            "table": {
-                "caption": "Six mapped operating plays with unit contribution and executable fallbacks",
-                "headers": [
-                    "Play mapping and repeatable operating mechanism",
-                    "Illustrative unit revenue and complete stated cost arithmetic",
-                    "Economic boundary and evidence supporting the spread",
-                    "Risk fallback before further capital is committed",
-                ],
-                "rows": [
-                    [
-                        "distressed_asset_recovery: acquire eligible surplus stranded by administrative selling friction",
-                        "$5,000 resale less $4,080 direct costs and $340 overhead leaves $580",
-                        "Principal resale records gross proceeds; broader recovery engagements record earned fees",
-                        "Diversify multi-state dockets with attorney-backed filing partnerships where required",
-                    ],
-                    [
-                        "Fleet title arbitrage: match documented vehicle configurations with commercial users",
-                        "$12,000 resale less $10,700 stated direct costs leaves $1,300 contribution",
-                        "Verify ownership documents and registration path before assigning retail value",
-                        "Use lawful wholesale buyers only after ownership and transfer eligibility checks",
-                    ],
-                    [
-                        "Industrial equipment remarketing: prove useful functionality for specialized equipment buyers",
-                        "$10,500 resale less $8,500 stated direct costs leaves $2,000 contribution",
-                        "Functional evidence and rigging quotes support pricing before overhead allocation",
-                        "Request specialist wholesale offers when repair costs exceed the original ceiling",
-                    ],
-                    [
-                        "Institutional furniture bundling: consolidate matching usable pieces into delivered sets",
-                        "$3,000 resale less $1,900 stated direct costs leaves $1,100 contribution",
-                        "Count twenty usable desks rather than assuming every auctioned piece sells",
-                        "Clear matched usable bundles rapidly when condition or warehouse capacity deteriorates",
-                    ],
-                    [
-                        "Parts harvesting: dismantle eligible equipment into tested model-specific replacement components",
-                        "$2,800 component proceeds less $2,120 stated costs leaves $680 contribution",
-                        "Deduct selling fees, returns, residual disposal and overhead before owner profit",
-                        "Retain an intact wholesale alternative before dismantling destroys that exit",
-                    ],
-                    [
-                        "Scheduled buyer matching: source eligible inventory against documented recurring specifications",
-                        "$4,000 resale less $3,100 stated direct costs leaves $900 contribution",
-                        "Principal inventory sales use gross revenue; agency arrangements use earned fees",
-                        "Maintain alternate buyers and working capital if the intended purchaser cancels",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Qualify one category and its repeat buyers",
-                    "action": "Choose one removal radius, one asset family and two commercial buyer segments.",
-                    "detail": "Record required specifications, completed-sale evidence, unacceptable defects and expected payment terms before enabling auction alerts.",
-                },
-                {
-                    "step": 2,
-                    "title": "Build the lot evidence and bid-limit packet",
-                    "action": "Attach sale terms, inspection evidence, transfer requirements and a written removal quote.",
-                    "detail": "Calculate the maximum hammer price after actual premiums, applicable taxes, repair exposure, overhead allocation and required profit.",
-                },
-                {
-                    "step": 3,
-                    "title": "Receive, verify and prepare the purchased asset",
-                    "action": "Reconcile identifiers and documents, photograph received condition and record every preparation expense.",
-                    "detail": "Keep restricted or unresolved property out of resale listings; assign a specific owner to document resolution, safe storage and any permitted return process.",
-                },
-                {
-                    "step": 4,
-                    "title": "Sell, collect and close the lot ledger",
-                    "action": "Transfer the promised asset, document customer acceptance where applicable and reconcile collected payment.",
-                    "detail": "Recognize revenue under the actual transaction terms, close the complete cost record and compare realized margin and cash duration with the original bid worksheet.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "The winning bid is a liability until clean documents, controlled removal and a paying buyer turn it into a realized spread.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Select one surplus category and interview two reachable commercial buyer segments about exact specifications, defects and payment terms.",
-        "Create separate ledger accounts for owned inventory, consigned property, customer deposits, collected taxes and earned service fees.",
-        "Build a bid-limit worksheet using actual lot premiums, applicable taxes, written freight quotes, repair exposure and required owner profit.",
-        "Verify vehicle transfer documents, receiving-state title requirements and every applicable DEMIL, end-use or export restriction before bidding.",
-        "Fund a cash calendar covering auction payment, removal, refurbishment, recurring expenses and delayed customer collection without counting future deposits as profit.",
-        "Reconcile realized results to the $12,000 Conservative, $80,500 Base and $200,000 Scaled annual owner-profit cases using complete cost and labor records.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "40 U.S.C. 545 — Procedure for disposal of surplus property",
-            "url": "https://www.law.cornell.edu/uscode/text/40/545",
-            "relevance": "Provides federal surplus-disposal procedures, including public advertising and circumstances permitting negotiated sales; distinguishes statutory disposal authority from marketplace branding.",
-        },
-        {
-            "title": "41 CFR Part 102-38 — Sale of Personal Property",
-            "url": "https://www.ecfr.gov/current/title-41/subtitle-C/chapter-102/subchapter-B/part-102-38",
-            "relevance": "Establishes federal personal-property sale requirements, including sale methods, purchaser eligibility and contract administration; individual sale terms still determine lot-specific obligations.",
-        },
-        {
-            "title": "49 CFR 580.5 — Disclosure of odometer information",
-            "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-580/section-580.5",
-            "relevance": "Defines transferor and transferee odometer disclosure requirements within Part 580; vehicle-specific exemptions and state title procedures must also be checked.",
-        },
-        {
-            "title": "California Vehicle Code Section 5902 — Transferee notice requirements",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=5902.",
-            "relevance": "Illustrates state-level transferee obligations after acquiring a vehicle; operators must apply the receiving jurisdiction's actual title and registration requirements.",
-        },
-        {
-            "title": "22 CFR 121.1 — The United States Munitions List",
-            "url": "https://www.ecfr.gov/current/title-22/chapter-I/subchapter-M/part-121/section-121.1",
-            "relevance": "Identifies controlled defense-article categories relevant to classification and transfer review; military origin alone neither settles classification nor replaces sale-specific DEMIL obligations.",
-        },
-        {
-            "title": "15 CFR Part 736 — General Prohibitions",
-            "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-736",
-            "relevance": "Sets Export Administration Regulations general prohibitions relevant to exports, reexports and certain transfers; proposed overseas resale requires separate classification and transaction review.",
-        },
-    ],
-}
+CHAPTER_1 = {'id': 'Q1',
+ 'chapter_id': 'Q1',
+ 'chapter_number': 1,
+ 'question_number': 1,
+ 'slug': 'government-auction-platforms-and-bidding-mechanics',
+ 'question_prompt': 'Where do government surplus auctions actually happen, and how do I register, search, '
+                    'and place bids on the main platforms?',
+ 'kicker': 'Q1 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Finding the Sales: Government Auction Platforms and How Bidding Works',
+ 'subtitle': 'GSAAuctions.gov online and offline bidding, GovDeals listings, Public Surplus, '
+             'RealEstateSales.gov registration, UX Auctions search tools, and city, county, state, and '
+             'federal sale sources',
+ 'layout_template': 'opportunity_overview',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners agree the inventory is real, public, and fragmented: East Coast '
+                      'Classics found Delaware, New Castle County, and Wilmington each selling through a '
+                      'different platform, while UX Auctions and GovAuctions name GSA Auctions, GovDeals, '
+                      'Public Surplus, and Municibid as the core channels, no dealer license required. The '
+                      "street math is fee-driven: GovDeals buyer's premiums run 5% to 12.5%, US Gov Bid "
+                      'charges a $100 one-time registration plus a $60 wire fee, and Public Surplus caps '
+                      'card purchases at $4,000. UX Auctions logged 310 Florida running vehicles under '
+                      '$3,000 and Norfolk keyed vehicles at a $1,300 middle price versus $550 without '
+                      'keys. Winning hinges on proxy bids, soft-close extensions, reserves, and short '
+                      'pickup windows. The split is over condition risk: Greg Berry sells $70-battery '
+                      'upside on non-runners, while East Coast Classics passed on Crown Vics too rough to '
+                      'export.',
+ 'key_metrics': [{'label': "GovDeals Buyer's Premium Range",
+                  'metric': "GovDeals Buyer's Premium Range",
+                  'value': '5% to 12.5% added to the final bid',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Premium is set by each selling municipality; registration on GovDeals itself '
+                             'costs nothing.',
+                  'source': 'East Coast Classics ([q09PUtJPIxs @ 00:04:12])'},
+                 {'label': 'Keyed vs Keyless Vehicle Middle Price',
+                  'metric': 'Keyed vs Keyless Vehicle Middle Price',
+                  'value': '$1,300 with a key vs $550 without',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Middle sold price for vehicles at Norfolk, Virginia government auctions, '
+                             'split by whether a key was present.',
+                  'source': 'UX Auctions ([Z87d62pWVEk @ 00:08:33])'},
+                 {'label': 'Public Surplus Card Rules',
+                  'metric': 'Public Surplus Card Rules',
+                  'value': 'Card hold once bidding passes $500; $4,000 credit card purchase cap',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Public Surplus places a hold for a portion of the bid above $500 and limits '
+                             'card purchases to $4,000.',
+                  'source': 'East Coast Classics ([q09PUtJPIxs @ 00:05:25])'},
+                 {'label': 'Timed Auction Clock',
+                  'metric': 'Timed Auction Clock',
+                  'value': '3-10 day auctions; 5-15 business days to pay; 1-4 week pickup',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Typical online government surplus auction run time, payment window, and '
+                             'removal window.',
+                  'source': 'GovAuctions ([Ie7zxVOXjeE @ 00:01:21])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['The baseline every practitioner agrees on is that the sales are real and '
+                              'open to anyone. GovAuctions frames it bluntly: agencies are legally '
+                              'required to dispose of seized and surplus property, cannot hold it '
+                              'indefinitely, and push it to the public through auctions, with most lots '
+                              'needing no special license or dealer credentials [x8_btciMVuY @ 00:00:15]. '
+                              'UX Auctions sets the bar at two conditions: if you are old enough to sign a '
+                              'contract and you can pay, you can bid, no dealer license and no connections '
+                              'required [Z87d62pWVEk @ 00:02:42]. Greg Berry, who founded Municibid in '
+                              '2006 after watching a town council sell a police car worth $3,000 for $300 '
+                              'or $400 to one or two interested people, says anyone in the United States '
+                              'and Canada can bid, and roughly 80 percent of the bidder base is '
+                              'businesses: landscapers buying dump trucks, snow removal outfits buying '
+                              'plow trucks, construction firms buying heavy equipment [pRzKRg71z4s @ '
+                              '00:09:43]. The supply is also not a trickle. Matthew Lesko pegs GSA '
+                              'Auctions alone at $250 million a year in vehicles, furniture, electronics, '
+                              'and machinery, with roughly 300 sales running at any time and an estimated '
+                              'one and a half to two billion dollars in federal property moving annually '
+                              '[Ezeprg6O_GU @ 00:00:02].',
+                              'The second consensus point is that no single site holds the market, so '
+                              'finding sales is legwork. East Coast Classics calls the search the hardest '
+                              'part of the whole process, says Google is your best friend for queries like '
+                              'public auctions or public surplus in your area, and reports that in '
+                              'Delaware the state sells through US Gov Bid, New Castle County through '
+                              'GovDeals, and the city of Wilmington through Public Surplus, all within '
+                              'minutes of each other [q09PUtJPIxs @ 00:01:38]. MrDavidAdelman makes the '
+                              'same complaint: there is no consolidated place listing everything, local, '
+                              'state, and federal governments tend not to cooperate, and listings may only '
+                              'mention some of the items being sold, so call the local or state office, '
+                              'check the newspaper, and look at notices posted in city and county '
+                              'buildings [gnsqwRYhRPY @ 00:01:51]. UX Auctions maps the channels: cities '
+                              'and counties on GovDeals, Public Surplus, and Municibid, the federal fleet '
+                              'through GSA Auctions and GSA Fleet sales, some agencies through hired local '
+                              'auction companies, and impounded cars straight off city tow lots, with a '
+                              'sale sometimes listed only a week or two [Z87d62pWVEk @ 00:04:23]. '
+                              'GovAuctions adds that the biggest challenge across three platforms is '
+                              'simply not missing lots [ubzNe62V_y4 @ 00:01:21].',
+                              'Every speaker who touches condition lands on the same rule: government '
+                              'property sells as is, and the bidder carries the risk. UX Auctions points '
+                              'to fine print on a real Florida listing stating the description rests on a '
+                              'limited 5 to 10 minute visual inspection, then reminds buyers there is no '
+                              'warranty and no returns, so zoom in on tires, dash, body, and engine bay or '
+                              'go see it [Z87d62pWVEk @ 00:08:55]. Greg Berry tells Municibid buyers to be '
+                              'buyer beware, ask every question, and use the on-site viewing most selling '
+                              'agencies allow to kick the tires before bidding, adding that pretty much '
+                              'everything on Municibid sells as is and largely out of warranty '
+                              '[pRzKRg71z4s @ 00:15:01]. East Coast Classics is the harshest on this '
+                              'point: get off your rump, make the phone call, schedule an appointment, and '
+                              'physically inspect, because one car that read and photographed well online '
+                              'could be smelled before reaching the windows and turned out to be a former '
+                              'K9 unit [q09PUtJPIxs @ 00:05:55]. GovAuctions closes the loop for '
+                              'resellers: condition is often unknown, there are no returns, and shipping '
+                              'can eat into your margin fast, so know what you are looking at before you '
+                              'bid [x8_btciMVuY @ 00:01:05].'],
+               'table': {'caption': 'Where the practitioners agree on access, platforms, and risk',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Sales are real and legally mandated',
+                                   'Agencies must dispose of seized and surplus property and cannot hold '
+                                   'it indefinitely',
+                                   'Treat the inventory as a steady, recurring public pipeline rather than '
+                                   'rumor',
+                                   'GovAuctions ([x8_btciMVuY @ 00:00:15])'],
+                                  ['No dealer license is needed to bid',
+                                   'Anyone old enough to sign a contract who can pay is allowed to bid',
+                                   'Regular buyers compete for the same lots professionals and fleet '
+                                   'resellers chase',
+                                   'UX Auctions ([Z87d62pWVEk @ 00:02:42])'],
+                                  ['Platforms split by jurisdiction in one area',
+                                   'Delaware state uses US Gov Bid, county uses GovDeals, Wilmington uses '
+                                   'Public Surplus',
+                                   'Map every city, county, and state seller in your area separately',
+                                   'East Coast Classics ([q09PUtJPIxs @ 00:01:38])'],
+                                  ['No single consolidated listing source exists',
+                                   'Local, state, and federal governments advertise separately and rarely '
+                                   'cooperate on listings',
+                                   'Combine web searches, phone calls, newspapers, and posted notices at '
+                                   'government buildings',
+                                   'MrDavidAdelman ([gnsqwRYhRPY @ 00:01:51])'],
+                                  ['Everything sells as is with no returns',
+                                   'Listing descriptions rest on a limited 5 to 10 minute visual '
+                                   'inspection',
+                                   'Inspect in person or send someone before you commit a bid',
+                                   'UX Auctions ([Z87d62pWVEk @ 00:08:55])'],
+                                  ['Businesses dominate the bidder pool',
+                                   'Landscapers, snow removal outfits, and construction firms buy '
+                                   'repeatedly from government sellers',
+                                   'Expect experienced, repeat business buyers bidding against you on work '
+                                   'equipment',
+                                   'homebusinessmag ([pRzKRg71z4s @ 00:09:43])'],
+                                  ['Three core platforms carry most active lots',
+                                   'GSA Auctions handles federal property; GovDeals and Public Surplus '
+                                   'carry state and local',
+                                   'Start scouting on these three before chasing smaller regional sellers',
+                                   'GovAuctions ([x8_btciMVuY @ 00:00:48])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The fee stack changes by platform, and East Coast Classics has run the '
+                              'numbers on all three Delaware channels. US Gov Bid now charges a one-time '
+                              "$100 registration fee but carries no buyer's premium, which makes it "
+                              'cheapest on higher-dollar buys; the catch is payment, either a wire with a '
+                              '$60 processing fee that recently rose from $30, plus roughly $30 your own '
+                              "bank charges, or an overnighted cashier's check, so a $10 pair of jack "
+                              'stands can land near $100 all-in, while a $3,200 Chevy Tahoe came in at a '
+                              'little under 3 percent in fees [q09PUtJPIxs @ 00:03:09]. GovDeals '
+                              "registration costs nothing, but a buyer's premium set by each municipality "
+                              'runs from 5 percent to 12.5 percent, offset by easy PayPal or credit card '
+                              'payment and customer service seven days a week [q09PUtJPIxs @ 00:04:12]. '
+                              'Public Surplus files vehicles under motor pools, places a hold on your card '
+                              'for a portion of the bid once bidding passes $500, and caps credit card '
+                              'purchases at $4,000 [q09PUtJPIxs @ 00:05:25]. UX Auctions tells new bidders '
+                              'to check four terms before anything else: payment method and deadline, '
+                              "buyer's premium, pickup window, and whether you get a title or a bill of "
+                              'sale [Z87d62pWVEk @ 00:06:20].',
+                              'The bidding engine runs on proxy logic. GSA explains that an English-style '
+                              'online auction accepts a flat bid, which is the starting bid or current bid '
+                              'plus the increment, or a proxy bid set at the most you will pay; the system '
+                              'spends only enough to beat a competing proxy plus one increment, the '
+                              'greater proxy always wins, an exact tie goes to whoever entered first, and '
+                              'an inactivity period at the end means the sale closes only after a set '
+                              'stretch with no bids [JzuRczRAlW8 @ 00:02:23]. UX Auctions tells bidders to '
+                              'enter their number as the max and let the system work, because early prices '
+                              'mean almost nothing: the Monday before a Florida sale, 103 Explorers sat at '
+                              '$5 to $10, and Guilford County lots were stuck at $200 to $250 days before '
+                              'close; many sites also add minutes when a late bid lands, so sniping the '
+                              'last second is unreliable, and reserve lots do not sell if bidding stays '
+                              "under the seller's floor [Z87d62pWVEk @ 00:15:10]. GSA's redesign flags "
+                              'lots yellow at one to two hours left and red under one hour, and lists the '
+                              'top four high bids under the place-bid button [csOCrIHnuSo @ 00:01:47].',
+                              'Pricing your number comes from sold data, not dealer stickers. UX Auctions '
+                              'says to pull the middle price of the same year and model, ideally in the '
+                              'same state over recent months, then adjust down for high miles, no key, or '
+                              "a branded title, and add bid, buyer's premium, fees, towing or shipping, "
+                              'title and registration, and inspection-day repairs to get the real cost; '
+                              'the keys gap alone is stark, with Norfolk keyed vehicles at a $1,300 middle '
+                              "price against $550 without [Z87d62pWVEk @ 00:08:33]. The UX Network's "
+                              'November 19, 2026 report gives fresh comps: a 2009 Crown Victoria with '
+                              '106,000 miles at $2,405, a 2019 Tahoe at $6,651, a 2011 International '
+                              'tandem dump truck at $5,200, and a 1987 Humvee diesel with 3,500 miles at '
+                              '$7,506 [c9mCACUk14Y @ 00:01:26]. East Coast Classics watched Crown Vics '
+                              "live: a 2003 captain's car with 108,000 miles stalled at $450, a "
+                              '153,000-mile unit with 4,700 idle hours drew six bidders to $625 with hours '
+                              'to go, and a clean 118,000-mile county car sold for $650 to a single bidder '
+                              '[q09PUtJPIxs @ 00:11:03]. GovAuctions puts the clock at 3 to 10 day '
+                              'auctions, 5 to 15 business days to pay, and 1 to 4 week pickups '
+                              '[Ie7zxVOXjeE @ 00:01:21].'],
+               'table': {'caption': 'Platform fees, bidding rules, and timelines operators plan around',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Rule',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['US Gov Bid fee structure',
+                                   "$100 one-time registration, no buyer's premium, $60 wire processing "
+                                   'fee',
+                                   'Favor it on higher-dollar purchases where percentage premiums '
+                                   'elsewhere would bite',
+                                   'East Coast Classics ([q09PUtJPIxs @ 00:02:22])'],
+                                  ["GovDeals buyer's premium",
+                                   'Set per municipality, seen from 5% up to 12.5% of the bid',
+                                   "Fold the specific seller's premium into your maximum before bidding",
+                                   'East Coast Classics ([q09PUtJPIxs @ 00:04:12])'],
+                                  ['Public Surplus card rules',
+                                   'Card hold once bidding passes $500; $4,000 credit card purchase cap',
+                                   'Plan payment in advance for any lot likely to exceed the card cap',
+                                   'East Coast Classics ([q09PUtJPIxs @ 00:05:25])'],
+                                  ['GSA proxy bidding',
+                                   'Greater proxy always wins; identical proxies go to the earlier bidder',
+                                   'Enter your true maximum early rather than nibbling at increments',
+                                   'GSA (General Services Administration) ([JzuRczRAlW8 @ 00:02:23])'],
+                                  ['GSA Buy Now listings',
+                                   'First bidder at the fixed price wins and goes straight to payment',
+                                   'Keep a credit card on your profile to lock fixed-price lots instantly',
+                                   'GSA (General Services Administration) ([JzuRczRAlW8 @ 00:02:46])'],
+                                  ['Keyed versus keyless vehicles',
+                                   'Norfolk middle price of $1,300 with a key versus $550 without',
+                                   'Discount keyless units hard and budget a tow off the lot',
+                                   'UX Auctions ([Z87d62pWVEk @ 00:08:33])'],
+                                  ['Timed auction timeline',
+                                   '3 to 10 day runs, 5 to 15 business days to pay, 1 to 4 week pickup',
+                                   'Calendar every payment and pickup deadline the moment you win',
+                                   'GovAuctions ([Ie7zxVOXjeE @ 00:01:21])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Edges the Regulars Use',
+                           'body': 'Small habits that separate repeat buyers from first-timers chasing '
+                                   'listing photos.',
+                           'items': ['Search US Gov Bid past auctions going back years to pull historical '
+                                     'selling prices on everything sold before you set a max [East Coast '
+                                     'Classics — q09PUtJPIxs @ 00:03:24].',
+                                     'Work the yard: a maintenance supervisor who openly shared what they '
+                                     'knew about the fleet turned one county lot into a potential honey '
+                                     'hole, with every car there slated for upcoming auctions [East Coast '
+                                     'Classics — q09PUtJPIxs @ 00:11:03].',
+                                     'Read the seller playbook: GovDeals tells agencies to run 7 to 10 '
+                                     'days, end Monday through Thursday in the afternoon or evening, avoid '
+                                     'weekends and holidays, and stagger end times at least 10 minutes '
+                                     'apart, so watch those closing windows [GovDeals Media — Q4B13yVVzZQ '
+                                     '@ 00:01:11].',
+                                     'Cannot make inspection day? Hire a mobile inspection service with '
+                                     'ASE certified mechanics to check the vehicle and send a photo report '
+                                     'before you bid, provided the yard allows outside inspectors [UX '
+                                     'Auctions — Z87d62pWVEk @ 00:10:18].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Map Every Local Seller',
+                              'action': 'Search for the state, county, and city auction platforms in your '
+                                        'area and register on each.',
+                              'detail': 'Google public auctions or public surplus for your area and expect '
+                                        'each level of government to use a different company, then '
+                                        'register as a bidder on each [East Coast Classics — q09PUtJPIxs @ '
+                                        '00:01:25]. Hunt the agency that would logically own the item, '
+                                        'such as an agriculture agency for used tractors [MrDavidAdelman — '
+                                        'gnsqwRYhRPY @ 00:03:09].'},
+                             {'step': 2,
+                              'title': 'Register and Read the Terms',
+                              'action': 'Create accounts, keep a card on file where required, and read the '
+                                        'four terms on every sale.',
+                              'detail': 'Signup is free on most sites with name, address, phone, and '
+                                        'email, some require a credit card on file, and the terms to check '
+                                        "are payment method and deadline, buyer's premium, pickup window, "
+                                        'and title or bill of sale [UX Auctions — Z87d62pWVEk @ 00:06:01]. '
+                                        'For federal real estate, verify through Login.gov, submit the bid '
+                                        'form and registration deposit, and register separately for each '
+                                        'property [GSA (General Services Administration) — zFGATosXViU @ '
+                                        '00:04:11].'},
+                             {'step': 3,
+                              'title': 'Inspect and Set Your Number',
+                              'action': 'Go on inspection day with tools, then price off sold middle '
+                                        'prices plus every added cost.',
+                              'detail': 'Bring a flashlight, rag, gloves, phone, and an OBD2 scanner if '
+                                        'allowed, and walk away from frame rust you can poke through, '
+                                        'signs of a flood, or a VIN that does not match; everything else '
+                                        'gets factored into the bid [UX Auctions — Z87d62pWVEk @ '
+                                        '00:11:50].'},
+                             {'step': 4,
+                              'title': 'Bid Proxy, Pay Fast, Remove Legally',
+                              'action': 'Enter your max as a proxy, pay inside the deadline, and have '
+                                        'removal sorted before close.',
+                              'detail': 'Set a firm maximum, expect payment deadlines as tight as two to '
+                                        'three business days, and bring valid ID plus proof of payment at '
+                                        'pickup [The Salmon Runs — jaeWKn_Nu68 @ 00:01:08]. Know how the '
+                                        'vehicle leaves the lot: in Delaware a $20 temporary tag gives 60 '
+                                        'days of legal driving, while other sellers require a tow [East '
+                                        'Coast Classics — q09PUtJPIxs @ 00:06:23].'}]},
+              {'title': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The first split is over where to hunt. East Coast Classics treats discovery '
+                              'as a manual grind: Google public auctions or public surplus for your area '
+                              'and keep digging, because in Delaware the state sells through US Gov Bid, '
+                              'New Castle County through GovDeals, and the city of Wilmington through '
+                              'Public Surplus [q09PUtJPIxs @ 00:01:25]. The channel calls GovDeals the big '
+                              'dog with robust filtering that can still overwhelm an unfocused buyer, '
+                              'ranks US Gov Bid as a small player, and slots Public Surplus in the middle. '
+                              'UX Auctions runs the opposite playbook: one search box at uxsearch.app that '
+                              'hits GovDeals, GSA, Public Surplus, Municibid and police auction sites at '
+                              'once, plus a schedule page that maps every police and government sale it '
+                              'finds [Z87d62pWVEk @ 00:00:20]. GovAuctions splits the difference, framing '
+                              'GovDeals as the high-volume classroom for learning how prices settle and '
+                              'Public Surplus as the place sleeper deals from schools and counties hide, '
+                              'then telling buyers to work a fixed schedule with a short list of '
+                              'categories and locations rather than checking every site by hand '
+                              '[ubzNe62V_y4 @ 00:01:05]. MrDavidAdelman goes fully analog: no consolidated '
+                              'list exists, so call or email local and state offices, read the local '
+                              'paper, and scan postings at city and county buildings [gnsqwRYhRPY @ '
+                              '00:02:23].',
+                              'Cost structure is where the platforms diverge hardest, and East Coast '
+                              'Classics has run the numbers on all three. US Gov Bid now charges a '
+                              "one-time $100 registration fee but no buyer's premium, which makes it the "
+                              'lowest-fee venue on higher-dollar buys; their $3,200 Chevy Tahoe landed at '
+                              'a little less than 3% in fees [q09PUtJPIxs @ 00:03:24]. The catch is '
+                              'payment: wire the money with a $60 processing fee, up from $30, plus '
+                              "roughly $30 from your own bank, or overnight a cashier's check, so a $10 "
+                              'pair of jack stands turns into a $100 purchase. GovDeals flips that model '
+                              "with free registration, PayPal or credit card payment, and a buyer's "
+                              'premium they have seen run from 5% to 12.5% depending on the municipality. '
+                              'Public Surplus places a hold on your card once bidding passes $500 and caps '
+                              'card purchases at $4,000. UX Auctions confirms the patchwork, warning that '
+                              "some sales take credit cards while others accept only a cashier's check or "
+                              "wire, and that the buyer's premium sits on top of the winning bid "
+                              '[Z87d62pWVEk @ 00:06:37]. The payment clock itself is disputed: The Salmon '
+                              'Runs says deadlines typically land within two to three business days '
+                              '[jaeWKn_Nu68 @ 00:01:08], while GovAuctions quotes five to fifteen business '
+                              'days [Ie7zxVOXjeE @ 00:01:21].',
+                              'Not everyone bids in a timed online lot. Matthew Lesko pitches the free '
+                              'route: Lesko says small businesses, including veteran-owned ones, plus '
+                              'nonprofits, schools, clinics, child care centers and museums can get '
+                              'surplus for free, citing a requirement of at least 51% ownership or control '
+                              'by economically disadvantaged citizens and income under $400,000, and '
+                              'recalling a nonprofit radio station that landed an ex Air Force base '
+                              '[Ezeprg6O_GU @ 00:03:16]. GSA runs a parallel offline lane: sealed bids by '
+                              'mail or email stay sealed until the date on the invitation for bid, term '
+                              'contracts can demand recurring removals over a set period, and fixed-price '
+                              'retail sales go first-come, first-served [Dga3YkAiGmw @ 00:01:04]. Greg '
+                              'Berry of Municibid describes the resale playbook instead: buyers turning '
+                              'fire hoses into wallets sold on Etsy, a car guy who accidentally bought 20 '
+                              'or 30 traffic lights and built a side business reselling them, refinishers '
+                              'flipping wood furniture, and bulk lots bought at a discount then sold off '
+                              'individually [pRzKRg71z4s @ 00:10:19]. GovAuctions frames the format choice '
+                              'as temperament: online timed auctions run over several days and let you '
+                              'research at your own pace, while live events move faster with real-time '
+                              'bidding [Ie7zxVOXjeE @ 00:00:48].'],
+               'table': {'caption': 'Competing playbooks practitioners run on the same government surplus '
+                                    'decisions',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['How to locate the right local sale platform',
+                                   'Google public auctions per town, county and state because each '
+                                   'jurisdiction may use a different platform',
+                                   'Search GovDeals, GSA, Public Surplus and Municibid all at once through '
+                                   'one aggregator search box',
+                                   'East Coast Classics ([q09PUtJPIxs @ 00:01:25]); UX Auctions '
+                                   '([Z87d62pWVEk @ 00:00:20])'],
+                                  ['Which fee model hurts less on your buy',
+                                   "US Gov Bid charges $100 once, no buyer's premium, but wire or "
+                                   "cashier's check only",
+                                   'GovDeals registers free and takes PayPal or card, but adds a 5% to '
+                                   '12.5% premium',
+                                   'East Coast Classics ([q09PUtJPIxs @ 00:02:39]); East Coast Classics '
+                                   '([q09PUtJPIxs @ 00:04:12])'],
+                                  ['How fast the winning invoice must be paid',
+                                   'Payment deadlines are often strict, typically within two to three '
+                                   'business days of winning',
+                                   'Online auctions run 3 to 10 days, then buyers get 5 to 15 business '
+                                   'days',
+                                   'The Salmon Runs ([jaeWKn_Nu68 @ 00:01:08]); GovAuctions ([Ie7zxVOXjeE '
+                                   '@ 00:01:21])'],
+                                  ['How far to trust the online listing description',
+                                   'GovDeals write-ups run thorough; one car inspected better than its own '
+                                   'description suggested',
+                                   'Great photos and a good description hid a former K9 car you could '
+                                   'smell',
+                                   'East Coast Classics ([q09PUtJPIxs @ 00:04:27]); East Coast Classics '
+                                   '([q09PUtJPIxs @ 00:05:55])'],
+                                  ['Whether to pay at all for the surplus',
+                                   'Bid competitively against the general public in timed online or '
+                                   'in-person live auctions',
+                                   'Nonprofits, schools, clinics and qualifying small businesses get '
+                                   'surplus property for free, per Lesko',
+                                   'Matthew Lesko ([Ezeprg6O_GU @ 00:03:16]); GovAuctions ([Ie7zxVOXjeE @ '
+                                   '00:00:48])'],
+                                  ['How the bid itself gets placed and decided',
+                                   'Enter a proxy maximum and let GSA bid only as much as needed to lead',
+                                   'Sealed bids by mail or email stay closed until the invitation for bid '
+                                   'date',
+                                   'GSA (General Services Administration) ([JzuRczRAlW8 @ 00:02:03]); GSA '
+                                   '(General Services Administration) ([Dga3YkAiGmw @ 00:00:46])'],
+                                  ['Which big platform a beginner should work first',
+                                   'GovDeals offers huge volume for learning how prices settle, but needs '
+                                   'a sorting routine',
+                                   'Public Surplus carries schools and counties, where sleeper deals get '
+                                   'less bidder attention',
+                                   'GovAuctions ([ubzNe62V_y4 @ 00:00:49]); GovAuctions ([ubzNe62V_y4 @ '
+                                   '00:01:05])']]}},
+              {'title': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Condition is where buyers bleed. East Coast Classics went to Avalon, New '
+                              "Jersey to vet Crown Victorias for a buddy named Frank: the 2003 captain's "
+                              'car at 108,000 miles carried a long door scratch and fender rust, the Oreo '
+                              'car had rust, sticker shadows and 4,700 idle hours, and two more on a '
+                              'second lot would not start, one needing a fuel pump and one a starter, '
+                              'leaving them parts cars bid in the high $300s [q09PUtJPIxs @ 00:09:22]. '
+                              'Another car read good and looked good online, yet East Coast Classics '
+                              'smelled it before reaching the windows and later learned it was a former K9 '
+                              'car. UX Auctions points out that listing descriptions can rest on a limited '
+                              '5 to 10 minute visual inspection and that government vehicles sell as is '
+                              'with no warranty and no returns [Z87d62pWVEk @ 00:09:14]. Its walk-away '
+                              'list is frame rust you can poke through, flood signs like a musty smell, '
+                              'damp carpet or a water line, and a VIN that does not match the listing. '
+                              'Keys move price too: in Norfolk, keyed vehicles sold at a middle price of '
+                              "$1,300 versus $550 without [Z87d62pWVEk @ 00:08:33]. Greg Berry's "
+                              'counterpoint is that a non-runner may only need a $70 battery [pRzKRg71z4s '
+                              '@ 00:15:50].',
+                              'The second trap is logistics after the hammer. East Coast Classics has seen '
+                              'removal windows of seven days at some lots and two at others, and notes '
+                              'Delaware sells a $20 temporary tag good for 60 days while other '
+                              'jurisdictions force a tow [q09PUtJPIxs @ 00:06:23]. UX Auctions documents '
+                              'the penalties: miss a payment deadline and you can lose the vehicle and get '
+                              'blocked from bidding again; Guilford County gave a three-day pickup window, '
+                              'Wednesday through Friday with no other times, and Montgomery County, '
+                              'Maryland charges a daily storage fee before forfeiting the vehicle with no '
+                              'refund [Z87d62pWVEk @ 00:17:24]. Montgomery County also requires a tow '
+                              'truck, tow dolly, trailer, temporary plates or dealer plates to move it, '
+                              'and its buyers must apply for a salvage title within 90 days, while Norfolk '
+                              'buyers get a bill of sale and affidavit with 30 days to file at the '
+                              'Virginia DMV. GovAuctions warns that condition is often unknown, there are '
+                              'no returns, and shipping can eat into your margin fast [x8_btciMVuY @ '
+                              '00:01:23]. MrDavidAdelman watched a pallet of computers go for less than '
+                              'the cost of a single computer while in the right place at the right time, '
+                              'but without a truck [gnsqwRYhRPY @ 00:05:28].',
+                              "The last check is the bidder's own head. UX Auctions calls getting caught "
+                              'up in the moment the biggest mistake new bidders make, and prescribes the '
+                              'fix: price off real winning bids for the same year, model and state, use '
+                              'the middle price rather than an average one crazy sale can distort, then '
+                              "total bid plus buyer's premium, fees, towing or shipping, title, "
+                              'registration and repairs [Z87d62pWVEk @ 00:12:10]. Early prices are noise; '
+                              'on the Monday before the Florida sale, 103 Explorers still sat at $5 to '
+                              '$10, sites extend the clock when late bids land, and a reserve can kill the '
+                              'sale even if you are high bidder. The Salmon Runs adds sales tax to that '
+                              'cost stack and says to set a firm maximum and stick to it [jaeWKn_Nu68 @ '
+                              '00:00:52]. Chill Crayon Explains frames these as competitive auctions '
+                              'rather than bargains handed out, where the real trick is calculating every '
+                              'cost before placing a bid [J0zoheNKu-E @ 00:03:55]. MrDavidAdelman confirms '
+                              '$100 cars exist but warns they will most likely not be in mint condition, '
+                              'so kick the tires, test drive if allowed, and check the car is not a '
+                              'salvage car [gnsqwRYhRPY @ 00:03:30].'],
+               'table': {'caption': 'Firsthand losses, traps and the countermeasures practitioners teach',
+                         'headers': ['Failure Mode',
+                                     'What Happened or Was Measured',
+                                     'Countermeasure Taught',
+                                     'Expert Source'],
+                         'rows': [['Fee stacking on a cheap US Gov Bid lot',
+                                   'A $10 pair of jack stands became about $100 after wire processing and '
+                                   'bank fees',
+                                   'Save US Gov Bid for higher-dollar buys where total fees stayed under '
+                                   '3%',
+                                   'East Coast Classics ([q09PUtJPIxs @ 00:03:09])'],
+                                  ['Trusting photos and description without seeing it',
+                                   'A car that read good and looked good online turned out a smelly former '
+                                   'K9 car',
+                                   'Make the phone call, schedule an appointment and physically inspect '
+                                   'before any bid',
+                                   'East Coast Classics ([q09PUtJPIxs @ 00:05:55])'],
+                                  ['Leaving a won vehicle past the pickup deadline',
+                                   'Montgomery County charges a daily storage fee, then forfeits the '
+                                   'vehicle with no refund',
+                                   'Line up a tow truck or car shipper before the auction ever ends',
+                                   'UX Auctions ([Z87d62pWVEk @ 00:17:42])'],
+                                  ['Missing the payment deadline after winning the lot',
+                                   'Late payers can lose the vehicle and some sites block them from '
+                                   'bidding again',
+                                   'Have money lined up and know the exact deadline before the auction '
+                                   'closes',
+                                   'UX Auctions ([Z87d62pWVEk @ 00:17:24])'],
+                                  ['Shipping costs eating a below-market purchase',
+                                   'Condition is often unknown, there are no returns, and shipping erodes '
+                                   'margin fast',
+                                   'Know exactly what you are looking at before you place any bid',
+                                   'GovAuctions ([x8_btciMVuY @ 00:01:23])'],
+                                  ['Showing up to a bargain with no transport',
+                                   'A pallet of computers sold below the price of one computer, but no '
+                                   'truck',
+                                   'Do the research and prepare hauling ahead so the treasure can actually '
+                                   'leave',
+                                   'MrDavidAdelman ([gnsqwRYhRPY @ 00:05:28])'],
+                                  ['Buying equipment attachments that do not fit',
+                                   'Vehicle and heavy equipment attachments may not work with the machine '
+                                   'you own',
+                                   'Confirm the attachment works with the exact equipment you plan to '
+                                   'install it on',
+                                   'homebusinessmag ([pRzKRg71z4s @ 00:20:42])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Kill Switches Before You Place a Bid',
+                           'body': 'Every item below comes from a loss, forfeiture or bad buy the '
+                                   'practitioners reported. If any one fails, pass on the lot and wait for '
+                                   'the next sale.',
+                           'items': ["Read the terms of sale for payment method and deadline, buyer's "
+                                     'premium, pickup window, and whether you get a title or a bill of '
+                                     'sale, because this is where people get burned [UX Auctions — '
+                                     'Z87d62pWVEk @ 00:06:20].',
+                                     'Walk away from frame rust you can poke through, any flood sign such '
+                                     'as a musty smell, damp carpet or water line, or a VIN that does not '
+                                     'match the listing [UX Auctions — Z87d62pWVEk @ 00:11:50].',
+                                     'Confirm the removal window, which ran from seven days down to two, '
+                                     'and how the vehicle legally leaves the lot, temporary tag or tow, '
+                                     'before bidding [East Coast Classics — q09PUtJPIxs @ 00:06:23].',
+                                     "Price in sales tax, buyer's premiums and shipping fees, then set a "
+                                     'firm maximum bid that fits the budget and stick to it [The Salmon '
+                                     'Runs — jaeWKn_Nu68 @ 00:00:52].']}}],
+ 'pull_quote': '"Take your number, write it down and stick to it. If the bidding goes past it, let it go. '
+               'There\'s another sale next week." — UX Auctions (Z87d62pWVEk @ 00:13:51).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Search public auctions and public surplus separately for your city, county and '
+                      'state, since each may sell through a different platform such as US Gov Bid, '
+                      'GovDeals or Public Surplus [East Coast Classics — q09PUtJPIxs @ 00:01:25].',
+                      'Register as a bidder on each platform you find, budgeting the $100 one-time US Gov '
+                      'Bid fee and expecting free registration on GovDeals [East Coast Classics — '
+                      'q09PUtJPIxs @ 00:02:09].',
+                      'Pull real winning bids for the same year, model and state from recent months and '
+                      'use the middle price, not the highest or lowest [UX Auctions — Z87d62pWVEk @ '
+                      '00:13:14].',
+                      'Inspect in person with a flashlight, rag, gloves, phone and an OBD2 scanner, or '
+                      'hire a mobile ASE-certified inspection service if the yard allows outside '
+                      'inspectors [UX Auctions — Z87d62pWVEk @ 00:10:36].',
+                      'Enter a proxy bid at the maximum you are willing to pay so GSA Auctions bids on '
+                      'your behalf only as much as needed to lead [GSA (General Services Administration) — '
+                      'JzuRczRAlW8 @ 00:02:03].',
+                      'After winning, confirm payment processed, bring valid ID and proof of payment to '
+                      'pickup, and inspect the item on site against its description [The Salmon Runs — '
+                      'jaeWKn_Nu68 @ 00:01:41].'],
+ 'statutory_citations': [{'title': 'East Coast Classics — HOW TO FIND and BUY at Government Surplus '
+                                   'Auctions [00:02:39]',
+                          'url': 'https://www.youtube.com/watch?v=q09PUtJPIxs&t=159s',
+                          'relevance': 'Primary practitioner testimony on US Gov Bid, GovDeals and Public '
+                                       'Surplus fees, payment limits and firsthand Crown Victoria '
+                                       'inspections.'},
+                         {'title': 'UX Auctions — How to Buy at Government Auctions: Police Cars & Surplus '
+                                   'Vehicles [00:06:20]',
+                          'url': 'https://www.youtube.com/watch?v=Z87d62pWVEk&t=380s',
+                          'relevance': 'Primary practitioner testimony on terms of sale, inspection '
+                                       'walk-away signals, middle-price valuation and post-win deadlines.'},
+                         {'title': 'GSA (General Services Administration) — GSA Auctions: Online Bidding '
+                                   'Opportunities [00:02:03]',
+                          'url': 'https://www.youtube.com/watch?v=JzuRczRAlW8&t=123s',
+                          'relevance': 'Primary practitioner testimony on proxy bidding, tie-break rules, '
+                                       'inactivity periods and Buy Now mechanics.'},
+                         {'title': 'homebusinessmag — Government Auctions – A Great Resource for Your '
+                                   'Business or as its Own Start-up [00:15:01]',
+                          'url': 'https://www.youtube.com/watch?v=pRzKRg71z4s&t=901s',
+                          'relevance': 'Primary practitioner testimony on buyer-beware diligence, '
+                                       "non-runner upside and resale flipping playbooks from Municibid's "
+                                       'founder.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'q09PUtJPIxs',
+                       'title': 'HOW TO FIND and BUY at Government Surplus Auctions',
+                       'channel': 'East Coast Classics',
+                       'author': 'East Coast Classics',
+                       'text': 'Even though US Gov Bid started charging a one-time $100 registration fee, '
+                               'they still seem to have the lowest auction fees out there, at least on the '
+                               'higher dollar purchases.',
+                       'tip': 'Even though US Gov Bid started charging a one-time $100 registration fee, '
+                              'they still seem to have the lowest auction fees out there, at least on the '
+                              'higher dollar purchases.',
+                       'timestamp': 159,
+                       'timestamp_seconds': 159,
+                       'timestamp_label': '[00:02:39]',
+                       'url': 'https://www.youtube.com/watch?v=q09PUtJPIxs&t=159s',
+                       'markdown': '[00:02:39](https://www.youtube.com/watch?v=q09PUtJPIxs&t=159s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'q09PUtJPIxs',
+                       'title': 'HOW TO FIND and BUY at Government Surplus Auctions',
+                       'channel': 'East Coast Classics',
+                       'author': 'East Coast Classics',
+                       'text': "That premium is different for each municipality and I've seen the premium "
+                               'as low as 5% and as high as twelve and a half percent, so be aware of that '
+                               'when bidding.',
+                       'tip': "That premium is different for each municipality and I've seen the premium "
+                              'as low as 5% and as high as twelve and a half percent, so be aware of that '
+                              'when bidding.',
+                       'timestamp': 252,
+                       'timestamp_seconds': 252,
+                       'timestamp_label': '[00:04:12]',
+                       'url': 'https://www.youtube.com/watch?v=q09PUtJPIxs&t=252s',
+                       'markdown': '[00:04:12](https://www.youtube.com/watch?v=q09PUtJPIxs&t=252s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Z87d62pWVEk',
+                       'title': 'How to Buy at Government Auctions: Police Cars & Surplus Vehicles',
+                       'channel': 'UX Auctions',
+                       'author': 'UX Auctions',
+                       'text': 'Take your number, write it down and stick to it. If the bidding goes past '
+                               "it, let it go. There's another sale next week.",
+                       'tip': 'Take your number, write it down and stick to it. If the bidding goes past '
+                              "it, let it go. There's another sale next week.",
+                       'timestamp': 831,
+                       'timestamp_seconds': 831,
+                       'timestamp_label': '[00:13:51]',
+                       'url': 'https://www.youtube.com/watch?v=Z87d62pWVEk&t=831s',
+                       'markdown': '[00:13:51](https://www.youtube.com/watch?v=Z87d62pWVEk&t=831s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Z87d62pWVEk',
+                       'title': 'How to Buy at Government Auctions: Police Cars & Surplus Vehicles',
+                       'channel': 'UX Auctions',
+                       'author': 'UX Auctions',
+                       'text': 'Miss the deadline and you can lose the vehicle and some sites will block '
+                               'you from bidding again.',
+                       'tip': 'Miss the deadline and you can lose the vehicle and some sites will block '
+                              'you from bidding again.',
+                       'timestamp': 1044,
+                       'timestamp_seconds': 1044,
+                       'timestamp_label': '[00:17:24]',
+                       'url': 'https://www.youtube.com/watch?v=Z87d62pWVEk&t=1044s',
+                       'markdown': '[00:17:24](https://www.youtube.com/watch?v=Z87d62pWVEk&t=1044s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'x8_btciMVuY',
+                       'title': 'Are government auctions actually legit?',
+                       'channel': 'GovAuctions',
+                       'author': 'GovAuctions',
+                       'text': 'Condition is often unknown, there are no returns, and shipping can eat '
+                               'into your margin fast.',
+                       'tip': 'Condition is often unknown, there are no returns, and shipping can eat into '
+                              'your margin fast.',
+                       'timestamp': 83,
+                       'timestamp_seconds': 83,
+                       'timestamp_label': '[00:01:23]',
+                       'url': 'https://www.youtube.com/watch?v=x8_btciMVuY&t=83s',
+                       'markdown': '[00:01:23](https://www.youtube.com/watch?v=x8_btciMVuY&t=83s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ezeprg6O_GU',
+                       'title': 'GOVERNMENT SURPLUS! Get Free & Cheap Property, Equipment, Cars & More',
+                       'channel': 'Matthew Lesko',
+                       'author': 'Matthew Lesko',
+                       'text': 'Health centers, clinics, child care centers, schools, colleges, you get '
+                               'all this stuff for free.',
+                       'tip': 'Health centers, clinics, child care centers, schools, colleges, you get all '
+                              'this stuff for free.',
+                       'timestamp': 256,
+                       'timestamp_seconds': 256,
+                       'timestamp_label': '[00:04:16]',
+                       'url': 'https://www.youtube.com/watch?v=Ezeprg6O_GU&t=256s',
+                       'markdown': '[00:04:16](https://www.youtube.com/watch?v=Ezeprg6O_GU&t=256s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'csOCrIHnuSo',
+                       'title': 'GSA Auctions Redesign',
+                       'channel': 'GSA (General Services Administration)',
+                       'author': 'GSA (General Services Administration)',
+                       'text': 'We have also made it easier to track active bids with improved photo '
+                               'viewers and color coded alerts. Yellow, 1 to 2 hours remaining. Red, less '
+                               'than one hour remaining.',
+                       'tip': 'We have also made it easier to track active bids with improved photo '
+                              'viewers and color coded alerts. Yellow, 1 to 2 hours remaining. Red, less '
+                              'than one hour remaining.',
+                       'timestamp': 107,
+                       'timestamp_seconds': 107,
+                       'timestamp_label': '[00:01:47]',
+                       'url': 'https://www.youtube.com/watch?v=csOCrIHnuSo&t=107s',
+                       'markdown': '[00:01:47](https://www.youtube.com/watch?v=csOCrIHnuSo&t=107s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Dga3YkAiGmw',
+                       'title': 'GSA Auctions: Offline Bidding Opportunities',
+                       'channel': 'GSA (General Services Administration)',
+                       'author': 'GSA (General Services Administration)',
+                       'text': 'Unlike a sealed bid auction that usually has a one-time removal of '
+                               'property, a term contract may require recurring removals of property over '
+                               'a specified period of time.',
+                       'tip': 'Unlike a sealed bid auction that usually has a one-time removal of '
+                              'property, a term contract may require recurring removals of property over a '
+                              'specified period of time.',
+                       'timestamp': 64,
+                       'timestamp_seconds': 64,
+                       'timestamp_label': '[00:01:04]',
+                       'url': 'https://www.youtube.com/watch?v=Dga3YkAiGmw&t=64s',
+                       'markdown': '[00:01:04](https://www.youtube.com/watch?v=Dga3YkAiGmw&t=64s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JzuRczRAlW8',
+                       'title': 'GSA Auctions: Online Bidding Opportunities',
+                       'channel': 'GSA (General Services Administration)',
+                       'author': 'GSA (General Services Administration)',
+                       'text': 'When two proxy bids compete, the greater of the two proxy limits always '
+                               'wins. When two proxy bids are the same, the bidder who placed the proxy '
+                               'bid first wins.',
+                       'tip': 'When two proxy bids compete, the greater of the two proxy limits always '
+                              'wins. When two proxy bids are the same, the bidder who placed the proxy bid '
+                              'first wins.',
+                       'timestamp': 143,
+                       'timestamp_seconds': 143,
+                       'timestamp_label': '[00:02:23]',
+                       'url': 'https://www.youtube.com/watch?v=JzuRczRAlW8&t=143s',
+                       'markdown': '[00:02:23](https://www.youtube.com/watch?v=JzuRczRAlW8&t=143s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'c9mCACUk14Y',
+                       'title': '60-SECOND GOVERNMENT AUCTION REPORT — NOVEMBER 19, 2026!',
+                       'channel': 'UX Auctions',
+                       'author': 'UX Auctions',
+                       'text': 'A 2019 Chevy Tahoe from the Lawrence County Sheriff listed as runs and '
+                               'drives sold for $6,651.',
+                       'tip': 'A 2019 Chevy Tahoe from the Lawrence County Sheriff listed as runs and '
+                              'drives sold for $6,651.',
+                       'timestamp': 20,
+                       'timestamp_seconds': 20,
+                       'timestamp_label': '[00:00:20]',
+                       'url': 'https://www.youtube.com/watch?v=c9mCACUk14Y&t=20s',
+                       'markdown': '[00:00:20](https://www.youtube.com/watch?v=c9mCACUk14Y&t=20s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Q4B13yVVzZQ',
+                       'title': 'GovDeals New Asset Listing Experience',
+                       'channel': 'GovDeals Media',
+                       'author': 'GovDeals Media',
+                       'text': 'For best results, run auctions for 7 to 10 days. Schedule end times Monday '
+                               'through Thursday. Avoid weekends and holidays.',
+                       'tip': 'For best results, run auctions for 7 to 10 days. Schedule end times Monday '
+                              'through Thursday. Avoid weekends and holidays.',
+                       'timestamp': 71,
+                       'timestamp_seconds': 71,
+                       'timestamp_label': '[00:01:11]',
+                       'url': 'https://www.youtube.com/watch?v=Q4B13yVVzZQ&t=71s',
+                       'markdown': '[00:01:11](https://www.youtube.com/watch?v=Q4B13yVVzZQ&t=71s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zFGATosXViU',
+                       'title': 'How to Register and Bid for GSA Real Property on RealEstateSales.gov',
+                       'channel': 'GSA (General Services Administration)',
+                       'author': 'GSA (General Services Administration)',
+                       'text': 'Only bonafide bidders are allowed to bid on GSA real estate online auction '
+                               'sales. Each property has a unique invitation for bid contract and you must '
+                               'register for each property you want to bid on.',
+                       'tip': 'Only bonafide bidders are allowed to bid on GSA real estate online auction '
+                              'sales. Each property has a unique invitation for bid contract and you must '
+                              'register for each property you want to bid on.',
+                       'timestamp': 251,
+                       'timestamp_seconds': 251,
+                       'timestamp_label': '[00:04:11]',
+                       'url': 'https://www.youtube.com/watch?v=zFGATosXViU&t=251s',
+                       'markdown': '[00:04:11](https://www.youtube.com/watch?v=zFGATosXViU&t=251s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ie7zxVOXjeE',
+                       'title': 'How government surplus auctions work in 60 seconds',
+                       'channel': 'GovAuctions',
+                       'author': 'GovAuctions',
+                       'text': 'Online auctions typically run for 3 to 10 days, then you have 5 to 15 '
+                               'business days to pay.',
+                       'tip': 'Online auctions typically run for 3 to 10 days, then you have 5 to 15 '
+                              'business days to pay.',
+                       'timestamp': 81,
+                       'timestamp_seconds': 81,
+                       'timestamp_label': '[00:01:21]',
+                       'url': 'https://www.youtube.com/watch?v=Ie7zxVOXjeE&t=81s',
+                       'markdown': '[00:01:21](https://www.youtube.com/watch?v=Ie7zxVOXjeE&t=81s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pRzKRg71z4s',
+                       'title': 'Government Auctions – A Great Resource for Your Business or as its Own '
+                                'Start-up',
+                       'channel': 'homebusinessmag',
+                       'author': 'homebusinessmag',
+                       'text': 'It could just be a matter of a battery, a 70 dollar battery, now the car '
+                               'runs.',
+                       'tip': 'It could just be a matter of a battery, a 70 dollar battery, now the car '
+                              'runs.',
+                       'timestamp': 950,
+                       'timestamp_seconds': 950,
+                       'timestamp_label': '[00:15:50]',
+                       'url': 'https://www.youtube.com/watch?v=pRzKRg71z4s&t=950s',
+                       'markdown': '[00:15:50](https://www.youtube.com/watch?v=pRzKRg71z4s&t=950s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jaeWKn_Nu68',
+                       'title': 'How To Buy From Government Auctions - Step By Step',
+                       'channel': 'The Salmon Runs',
+                       'author': 'The Salmon Runs',
+                       'text': 'If you win, pay close attention to the payment deadlines, which are often '
+                               'strict, typically within two to three business days.',
+                       'tip': 'If you win, pay close attention to the payment deadlines, which are often '
+                              'strict, typically within two to three business days.',
+                       'timestamp': 68,
+                       'timestamp_seconds': 68,
+                       'timestamp_label': '[00:01:08]',
+                       'url': 'https://www.youtube.com/watch?v=jaeWKn_Nu68&t=68s',
+                       'markdown': '[00:01:08](https://www.youtube.com/watch?v=jaeWKn_Nu68&t=68s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'J0zoheNKu-E',
+                       'title': 'Government Surplus Auctions Where You Can Buy Things For Pennies On The '
+                                'Dollar',
+                       'channel': 'Chill Crayon Explains',
+                       'author': 'Chill Crayon Explains',
+                       'text': 'The real trick is finding legitimate government listings, researching the '
+                               'items condition and market value, and calculating every cost before '
+                               'placing a bid.',
+                       'tip': 'The real trick is finding legitimate government listings, researching the '
+                              'items condition and market value, and calculating every cost before placing '
+                              'a bid.',
+                       'timestamp': 235,
+                       'timestamp_seconds': 235,
+                       'timestamp_label': '[00:03:55]',
+                       'url': 'https://www.youtube.com/watch?v=J0zoheNKu-E&t=235s',
+                       'markdown': '[00:03:55](https://www.youtube.com/watch?v=J0zoheNKu-E&t=235s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gnsqwRYhRPY',
+                       'title': 'A Guide to Government Auction Sites',
+                       'channel': 'MrDavidAdelman',
+                       'author': 'MrDavidAdelman',
+                       'text': 'I have seen a pallet of computers go for less than the cost of a single '
+                               'computer, because I was in the right place at the right time, but without '
+                               'a truck.',
+                       'tip': 'I have seen a pallet of computers go for less than the cost of a single '
+                              'computer, because I was in the right place at the right time, but without a '
+                              'truck.',
+                       'timestamp': 328,
+                       'timestamp_seconds': 328,
+                       'timestamp_label': '[00:05:28]',
+                       'url': 'https://www.youtube.com/watch?v=gnsqwRYhRPY&t=328s',
+                       'markdown': '[00:05:28](https://www.youtube.com/watch?v=gnsqwRYhRPY&t=328s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ubzNe62V_y4',
+                       'title': 'Best Government Auction Sites: GSA vs GovDeals vs Public Surplus',
+                       'channel': 'GovAuctions',
+                       'author': 'GovAuctions',
+                       'text': 'Rather than checking each site by hand every day, make a habit of setting '
+                               'a regular schedule and keeping a short list of categories and locations '
+                               'you care about.',
+                       'tip': 'Rather than checking each site by hand every day, make a habit of setting a '
+                              'regular schedule and keeping a short list of categories and locations you '
+                              'care about.',
+                       'timestamp': 81,
+                       'timestamp_seconds': 81,
+                       'timestamp_label': '[00:01:21]',
+                       'url': 'https://www.youtube.com/watch?v=ubzNe62V_y4&t=81s',
+                       'markdown': '[00:01:21](https://www.youtube.com/watch?v=ubzNe62V_y4&t=81s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'}]}

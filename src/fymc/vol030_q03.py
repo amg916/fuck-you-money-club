@@ -1,716 +1,870 @@
 from __future__ import annotations
 
-CHAPTER_3 = {
-    "id": "Q3",
-    "chapter_id": "Q3",
-    "chapter_number": 3,
-    "question_number": 3,
-    "slug": "unit-economics-margin-waterfall-working-capital-float",
-    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for lending & flash-funding arbitrage?",
-    "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
-    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
-    "subtitle": "Escrow-Locked Fee Cohorts, ASC 606 Presentation, UCC Account Control, Promotional Credit Costs & Chapter 11 Recovery Timing",
-    "layout_template": "financial_breakdown",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #30, Lending & Flash-Funding Arbitrage, holds Rank #04 of 36 "
-        "with a 93/100 Money-to-Manpower Score across 14 mapped plays. The "
-        "economic asset is an earned funding fee, documented EMD participation, "
-        "or origination point, never principal passing through escrow. Formula "
-        "v2.0 fixes annual owner profit at $36,000 Conservative, $227,375 Base, "
-        "and $522,500 Scaled. This chapter reconstructs those outcomes through "
-        "explicit fee cohorts, reversals, contractor labor, acquisition costs, "
-        "capital charges, credit losses, and overhead. It separates fee DSO "
-        "from principal release locks, sizes simultaneous funding commitments, "
-        "and tests promotional-credit resets and bankruptcy-claim delays. "
-        "The operating discipline is simple: price every locked dollar, "
-        "verify repayment cash independently, and reject apparent yield "
-        "created by omitted costs or unsupported recoveries."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual gross earned-fee basis; escrow principal excluded",
-            "note": "30% margin; $36,000 owner profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$535,000",
-            "context": "Annual gross earned-fee basis; escrow principal excluded",
-            "note": "42.5% margin; $227,375 owner profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$950,000",
-            "context": "Annual gross earned-fee basis; escrow principal excluded",
-            "note": "55% margin; $522,500 owner profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Define the earned-fee cohort before measuring yield",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Build the ledger around a funded transaction identifier, not the wire "
-                    "amount. For each transaction, record committed principal, principal "
-                    "actually released, contractual fee, earned date, fee settlement date, "
-                    "principal return date, capital provider, and beneficiary verification "
-                    "evidence. A $100,000 escrow advance that returns $103,500 contains "
-                    "$100,000 of recovered principal and $3,500 of potential fee income; "
-                    "it does not create $103,500 of revenue. Separate refundable deposits "
-                    "and unearned charges from earned fees. An origination point on a "
-                    "$100,000 facility produces $1,000 only when the contract and applicable "
-                    "accounting policy support recognition. Track principal as an asset "
-                    "and recovered principal as an asset conversion. Do not recognize "
-                    "uncollected interest merely because the bank statement shows a "
-                    "larger payoff request. Use QuickBooks Online or a comparable ledger "
-                    "with a transaction subledger exported from the settlement platform. "
-                    "ALTA settlement statements, executed funding agreements, and bank "
-                    "confirmations must reconcile to the same identifier. A proof-of-funds "
-                    "letter documents stated capacity, not cash already available for "
-                    "repayment. Revenue quality depends on enforceable entitlement, "
-                    "completed performance, and collection evidence rather than the "
-                    "apparent velocity of repeated wires. Report funded counts alongside "
-                    "canceled applications so the denominator cannot conceal underwriting waste."
-                ),
-                (
-                    "The illustrative cohorts reproduce the canonical fee totals without "
-                    "inventing principal revenue. Conservative comprises 40 transactional "
-                    "closings at $2,000, 20 EMD participations at $1,500, and ten "
-                    "originations at $1,000: $120,000 across 70 fee events. Base comprises "
-                    "100 closings at $3,500, 60 EMD participations at $2,500, and 35 "
-                    "originations at $1,000: $535,000 across 195 events. Scaled comprises "
-                    "150 closings at $4,500, 80 EMD participations at $3,000, and 35 "
-                    "originations at $1,000: $950,000 across 265 events. These are "
-                    "reconciliation assumptions, not observed production or quoted market "
-                    "pricing. Count a fee event separately from a unique customer; a "
-                    "repeat sponsor can generate several events, while one closing can "
-                    "contain multiple separately documented services. Avoid billing the "
-                    "same service twice under different labels. The EMD assumptions "
-                    "require enforceable participation economics and eligible escrow "
-                    "conditions. Ordinary early-stage earnest-money advances often lack "
-                    "unconditional end-buyer cash, so they fail this platform's release "
-                    "standard. Exclude those opportunities rather than weakening verification "
-                    "to preserve the modeled count. If the eligible pipeline cannot "
-                    "supply 60 Base participations, reduce revenue explicitly and rebuild "
-                    "the cost waterfall; do not substitute unsigned JV expectations."
-                ),
-                (
-                    "Resolve gross-versus-net presentation at the contract level. The "
-                    "scorecard uses the operator's earned transactional fees, EMD JV "
-                    "splits, and origination points before the modeled deductions. It "
-                    "does not authorize recognizing a partner's entire settlement "
-                    "entitlement. If a JV collects $5,000 but this operator owns a "
-                    "50% participation, the modeled EMD fee is $2,500. Store retained_share "
-                    "as 0.50 for that contract and reconcile the other $2,500 to its "
-                    "owner. Where ASC 606 applies, evaluate principal-versus-agent "
-                    "presentation; lending interest and certain origination fees instead "
-                    "require analysis under the relevant lending guidance, including "
-                    "ASC 310-20. Do not force every funding charge into service revenue. "
-                    "Here, the fee cohorts already reflect the operator's entitlement, "
-                    "so applying a second participation haircut would understate income. "
-                    "The reversal allowance below reduces that earned-fee planning basis "
-                    "for expected concessions and failed settlements. Accordingly, the "
-                    "canonical margins use gross fee revenue as their denominator, "
-                    "not financial-statement revenue after contra-revenue adjustments. "
-                    "Preserve both views in the workbook with explicit labels. Review "
-                    "state licensing and interest characterization before quoting a "
-                    "$3,500 charge for three days: commercial purpose, a corporate "
-                    "borrower, or a fee label alone does not establish an exemption."
-                ),
-            ],
-            "table": {
-                "caption": "Earned-Fee Cohorts and Recognition Boundaries by Operating Rail",
-                "headers": [
-                    "Operating rail and evidence",
-                    "Conservative fee construction",
-                    "Base fee construction",
-                    "Scaled fee construction",
-                ],
-                "rows": [
-                    [
-                        "Transactional closings require separately executed funding fee agreements",
-                        "Forty completed closings multiply by $2,000, producing $80,000",
-                        "One hundred completed closings multiply by $3,500, producing $350,000",
-                        "One hundred fifty completed closings multiply by $4,500, producing $675,000",
-                    ],
-                    [
-                        "EMD participations include only the operator's enforceable entitlement",
-                        "Twenty qualifying participations multiply by $1,500, producing $30,000",
-                        "Sixty qualifying participations multiply by $2,500, producing $150,000",
-                        "Eighty qualifying participations multiply by $3,000, producing $240,000",
-                    ],
-                    [
-                        "Origination fees require completed performance and documented accounting treatment",
-                        "Ten recognized origination events multiply by $1,000, producing $10,000",
-                        "Thirty-five recognized origination events multiply by $1,000, producing $35,000",
-                        "Thirty-five recognized origination events multiply by $1,000, producing $35,000",
-                    ],
-                    [
-                        "Annual gross fee basis excludes all returned funding principal",
-                        "Seventy earned fee events together produce exactly $120,000",
-                        "One hundred ninety-five earned fee events produce exactly $535,000",
-                        "Two hundred sixty-five earned fee events produce exactly $950,000",
-                    ],
-                    [
-                        "JV retained_share applies before entering the operator revenue cohort",
-                        "A $3,000 settlement with 50% entitlement contributes only $1,500",
-                        "A $5,000 settlement with 50% entitlement contributes only $2,500",
-                        "A $6,000 settlement with 50% entitlement contributes only $3,000",
-                    ],
-                    [
-                        "Principal movement belongs in the funding asset subledger",
-                        "A returned $100,000 advance adds zero earned fee revenue",
-                        "A returned $100,000 advance adds zero earned fee revenue",
-                        "A returned $100,000 advance adds zero earned fee revenue",
-                    ],
-                    [
-                        "Release eligibility requires independently verified unconditional end-buyer cash",
-                        "Reject unsupported deposits even when projected fee revenue falls",
-                        "Remove ineligible EMD events before relying on cohort totals",
-                        "Increase verified eligible production rather than relaxing release conditions",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Keep attractive settlement totals from contaminating earnings",
-                "body": (
-                    "Veteran operators reconcile entitlement, release authority, and collection "
-                    "timing before discussing annualized fee yield."
-                ),
-                "items": [
-                    "Assign separate principal, earned-fee, partner-payable, and reversal accounts to every escrow identifier; a returned advance must never credit fee revenue.",
-                    "Obtain the settlement agent's wire callback number from an independently established source, then verify beneficiary instructions outside the originating email thread.",
-                    "Track cancellation reasons by referring wholesaler and title office; repeated unfunded end-buyers should change acquisition spending before they become credit losses.",
-                    "Require written fee allocation on each JV statement; calculate retained_share once, then prohibit a second partner deduction in the owner-profit workbook.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Reconcile every dollar from fee billings to owner profit",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Treat the canonical owner-profit figures as fixed reconciliation "
-                    "targets and the expense allocation as an explicit illustrative "
-                    "budget. Conservative deducts $6,000 of fee reversals, $24,000 of "
-                    "delivery labor, $18,000 of acquisition spending, $12,000 of capital "
-                    "charges, $6,000 of expected principal losses, and $18,000 of overhead. "
-                    "The $84,000 deduction leaves $36,000. Base deducts $16,050, $72,000, "
-                    "$55,000, $75,000, $21,400, and $68,175 respectively. Total deductions "
-                    "of $307,625 leave $227,375. Scaled deducts $19,000, $110,000, "
-                    "$75,000, $95,000, $28,500, and $100,000, leaving $522,500 after "
-                    "$427,500 of deductions. Those profits divided by $120,000, "
-                    "$535,000, and $950,000 equal 30%, 42.5%, and 55%. The "
-                    "reversal rates decline from 5% to 3% to 2% because "
-                    "the illustration assumes better screening, not because scale "
-                    "automatically eliminates disputes. Expected principal-loss budgets "
-                    "equal 5%, 4%, and 3% of the fee basis solely "
-                    "as planning allocations; actual loss estimation must use funded "
-                    "exposure, default probability, recoveries, and concentration. Replace "
-                    "these allocations with observed cohort experience without silently "
-                    "altering the published canonical scenario. Any revised production "
-                    "forecast belongs in a separately labeled operating version."
-                ),
-                (
-                    "Make contractor delivery labor measurable rather than hiding it "
-                    "inside a target margin. The Base $72,000 budget can represent "
-                    "1,200 settlement-review hours at $40 plus 600 underwriting-support "
-                    "hours at $40, allocated between two contractors. At 195 fee "
-                    "events, that is $369.23 of delivery labor per event before "
-                    "acquisition work. Base acquisition spending of $55,000 across "
-                    "50 newly activated sponsor relationships gives a $1,100 customer "
-                    "CAC; dividing by 195 events gives $282.05 of acquisition expense "
-                    "per event, a different metric. Record repeat business separately "
-                    "so neither denominator is mistaken for the other. The owner "
-                    "is the single full-time operator in Conservative and Base. "
-                    "Scaled uses two full-time people and three contractors; its "
-                    "$110,000 delivery budget includes $60,000 of contractor charges "
-                    "and $50,000 of loaded nonowner employee cost. Owner profit "
-                    "remains the residual available for owner compensation and distributions, "
-                    "without deducting an additional hypothetical owner salary. Overhead "
-                    "covers software, insurance, bookkeeping, professional review, and "
-                    "administration. Its monthly equivalents are $1,500, $5,681.25, and "
-                    "$8,333.33; adding paid delivery labor produces $3,500, $11,681.25, "
-                    "and $17,500. Therefore, the advertised $2,000–$12,000 monthly opex "
-                    "range cannot serve as an all-in ceiling at Scaled."
-                ),
-                (
-                    "Maintain two loss mechanisms because a canceled fee and missing "
-                    "principal have different economics. Fee scrubs, negotiated refunds, "
-                    "and billing reversals reduce the fee basis; losses on funding "
-                    "assets consume capital and require an exposure-based allowance. "
-                    "A cash reserve is a liquidity designation, not an additional "
-                    "expense when the same expected loss has already entered the "
-                    "waterfall. When an anticipated loss becomes a write-off, charge "
-                    "the established allowance and recognize only the necessary "
-                    "incremental adjustment. Likewise, paying a previously accrued "
-                    "refund settles a liability rather than creating a second "
-                    "deduction. At Base, $535,000 less $16,050 of reversals yields "
-                    "$518,950 of net fees before the remaining expenses. Dividing "
-                    "$227,375 by that net figure produces approximately 43.81%, "
-                    "which must not replace the scorecard's 42.5% gross-basis margin. "
-                    "Allocate the $75,000 Base capital budget transparently: 100 "
-                    "transactional events at $500 cost $50,000, 60 EMD events "
-                    "at $400 cost $24,000, and facility administration costs $1,000. "
-                    "These are negotiated-budget assumptions, not lending quotes. "
-                    "Avoid counting a capital partner's share twice when the "
-                    "contract already defines revenue net of that entitlement. "
-                    "Reconcile contractual payment priority before assigning any amount "
-                    "to revenue, financing cost, or partner payable."
-                ),
-            ],
-            "table": {
-                "caption": "Formula v2.0 Gross-Fee-to-Owner-Profit Waterfall in Annual Dollars",
-                "headers": [
-                    "Waterfall line and treatment",
-                    "Conservative annual reconciliation",
-                    "Base annual reconciliation",
-                    "Scaled annual reconciliation",
-                ],
-                "rows": [
-                    [
-                        "Start with earned operator fees before modeled reversal deductions",
-                        "$120,000 gross fees exclude every dollar of escrow principal",
-                        "$535,000 gross fees exclude every dollar of escrow principal",
-                        "$950,000 gross fees exclude every dollar of escrow principal",
-                    ],
-                    [
-                        "Deduct fee scrubs and reversals as contra-revenue allowances",
-                        "Subtract $6,000 for expected reversals, representing 5% of fees",
-                        "Subtract $16,050 for expected reversals, representing 3% of fees",
-                        "Subtract $19,000 for expected reversals, representing 2% of fees",
-                    ],
-                    [
-                        "Show net fees as a subtotal without another deduction",
-                        "$114,000 remains after subtracting the fee reversal allowance",
-                        "$518,950 remains after subtracting the fee reversal allowance",
-                        "$931,000 remains after subtracting the fee reversal allowance",
-                    ],
-                    [
-                        "Deduct paid delivery labor including contractors and nonowner employees",
-                        "Subtract $24,000 of paid contractor review and settlement labor",
-                        "Subtract $72,000 of paid contractor review and settlement labor",
-                        "Subtract $110,000 including $60,000 contractors and $50,000 loaded employment",
-                    ],
-                    [
-                        "Deduct acquisition spending using distinct customer and transaction denominators",
-                        "Subtract $18,000 of referral development and customer acquisition spending",
-                        "Subtract $55,000 of referral development and customer acquisition spending",
-                        "Subtract $75,000 of referral development and customer acquisition spending",
-                    ],
-                    [
-                        "Deduct capital charges without treating principal repayments as expenses",
-                        "Subtract $12,000 of documented financing and facility servicing charges",
-                        "Subtract $75,000 of documented financing and facility servicing charges",
-                        "Subtract $95,000 of documented financing and facility servicing charges",
-                    ],
-                    [
-                        "Deduct expected principal losses separately from fee reversal allowances",
-                        "Subtract $6,000 of estimated credit losses on funded exposures",
-                        "Subtract $21,400 of estimated credit losses on funded exposures",
-                        "Subtract $28,500 of estimated credit losses on funded exposures",
-                    ],
-                    [
-                        "Deduct overhead separately from paid delivery and financing expenses",
-                        "Subtract $18,000 for insurance, software, administration, and professional review",
-                        "Subtract $68,175 for insurance, software, administration, and professional review",
-                        "Subtract $100,000 for insurance, software, administration, and professional review",
-                    ],
-                    [
-                        "Retain canonical owner profit using gross fees as denominator",
-                        "$36,000 owner profit equals 30% of $120,000 gross fees",
-                        "$227,375 owner profit equals 42.5% of $535,000 gross fees",
-                        "$522,500 owner profit equals 55% of $950,000 gross fees",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Size principal locks separately from fee DSO and promotional credit",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "A profitable cohort can fail because principal returns after "
-                    "the next commitment becomes payable. Measure three clocks: "
-                    "principal lock from funding release to reusable cleared cash, "
-                    "fee DSO from earned date to collection, and facility repayment "
-                    "from borrowing to its contractual due date. The Base illustration "
-                    "assumes $100,000 average transactional principal for 100 events "
-                    "and three calendar days of lock. Average occupied capital "
-                    "is $100,000 times 100 times three divided by 365, or "
-                    "$82,192. Add 60 EMD events at $25,000 with ten-day locks: "
-                    "$41,096 average occupied capital. Their combined $123,288 average "
-                    "does not establish adequate capacity. Two simultaneous transactional "
-                    "closings require $200,000, and three simultaneous EMD positions "
-                    "require another $75,000. These overlap assumptions are planning "
-                    "limits, not measured percentiles. Weekend cutoffs, bank holidays, "
-                    "recording delays, and returned wires can expand calendar-day "
-                    "locks even when documents describe same-day funding. End-buyer "
-                    "cash must be unconditional, independently verified on deposit, "
-                    "and available under the settlement instructions before release "
-                    "strictly to a bonded title or settlement agent. Bonding does "
-                    "not replace verification or prove that a loss is covered. "
-                    "Confirm coverage limits, exclusions, and the identity of the "
-                    "protected party rather than treating a certificate as repayment."
-                ),
-                (
-                    "Build the liquidity envelope from cash obligations rather than "
-                    "adding every balance-sheet metric together. Base cash operating "
-                    "deductions, excluding reversal and credit-loss allowances, total "
-                    "$270,175 annually. A 21-day expense runway therefore requires "
-                    "$15,544 rounded to whole dollars. Add the $275,000 simultaneous "
-                    "principal commitment and a separately designated $37,450 cash "
-                    "buffer matching the modeled reversal and credit-loss allowances. "
-                    "The resulting planning envelope is $327,994. This buffer is "
-                    "cash earmarked against already modeled expenses, not another "
-                    "profit deduction. With $100,000 of genuinely available equity, "
-                    "the remaining capacity requirement is $227,994; with $25,000, "
-                    "it is $302,994. Neither figure establishes that a lender "
-                    "will provide the facility. At five-day fee DSO, Base fee "
-                    "receivables average approximately $7,329 using $535,000 divided "
-                    "by 365 times five. Report that receivable as a collection "
-                    "indicator rather than automatically adding it to the expense "
-                    "runway, which already bridges operating payments. A daily cash "
-                    "schedule must capture exact overlaps, collateral restrictions, "
-                    "facility availability, and minimum balances. Never count money "
-                    "in a client's escrow account as unrestricted corporate cash. "
-                    "UCC account control concerns collateral rights; it does not "
-                    "itself authorize withdrawals or displace settlement instructions."
-                ),
-                (
-                    "The aged_shelf_corp_tradeline_credit_stacking play must compare a "
-                    "reinstated entity with genuine, disclosed business borrowing, "
-                    "not treat entity age as operating history. Verify beneficial "
-                    "ownership, tax filings, actual revenue, existing liens, and "
-                    "the lender's permitted use of proceeds. A promotional $50,000 "
-                    "facility with a 3% transfer charge costs $1,500 even at "
-                    "zero stated APR. Repaying it over ten months requires "
-                    "$5,000 of monthly principal reduction plus the charge and "
-                    "any other contractual costs. If $20,000 remains when a "
-                    "24% APR begins, one month costs approximately $400 of "
-                    "interest before daily-balance effects. Cash advances may carry "
-                    "immediate interest and a separate fee; a purchase promotion "
-                    "does not establish a usable wire facility. Do not simulate "
-                    "purchases, cycle merchant transactions, or overstate business "
-                    "history to create escrow liquidity. Compare the fully loaded "
-                    "cost with a transparent term facility: $50,000 held for "
-                    "90 days at 18% simple annual interest costs approximately "
-                    "$2,219 before origination charges. Include only the selected "
-                    "funding route in the capital-cost ledger. If underwriting "
-                    "disclosures are inaccurate or repayment depends on fresh "
-                    "applications, halt applications, correct disclosures, and use "
-                    "a transparent term facility or reduce financed spending. "
-                    "Unused promotional limits are not committed settlement cash."
-                ),
-            ],
-            "table": {
-                "caption": "Base Liquidity Envelope, DSO Diagnostics, and Funding-Rail Controls",
-                "headers": [
-                    "Cash requirement or funding rail",
-                    "Concrete calculation and operating assumption",
-                    "Evidence required before relying on capacity",
-                    "Fallback when timing or eligibility changes",
-                ],
-                "rows": [
-                    [
-                        "Transactional principal occupancy measures average cash tied in escrow",
-                        "$100,000 times 100 events times three days divided by 365 equals $82,192",
-                        "Match funding timestamps to cleared reusable principal return timestamps",
-                        "Extend lock assumptions when weekends or recording delays recur",
-                    ],
-                    [
-                        "EMD principal occupancy assumes only release-eligible funded participation events",
-                        "$25,000 times 60 events times ten days divided by 365 equals $41,096",
-                        "Document refundable terms, cash verification, and participation payment priority",
-                        "Exclude early-stage deposits lacking the required unconditional end-buyer cash",
-                    ],
-                    [
-                        "Peak principal capacity follows explicit simultaneous funding commitment limits",
-                        "Two $100,000 closings plus three $25,000 deposits require $275,000",
-                        "Maintain a dated commitment calendar and confirmed facility availability",
-                        "Decline additional commitments before exhausting verified available funding capacity",
-                    ],
-                    [
-                        "Operating runway bridges actual cash expenses during collection interruptions",
-                        "$270,175 annual cash deductions times 21 divided by 365 equals $15,544",
-                        "Reconcile payable dates against fee collection and bank settlement dates",
-                        "Shorten discretionary spending commitments while preserving verification and servicing",
-                    ],
-                    [
-                        "Designated loss cash protects already budgeted reversals and credit losses",
-                        "$16,050 plus $21,400 establishes a separate $37,450 cash buffer",
-                        "Keep reserve designations separate from new income statement expenses",
-                        "Replenish depleted cash after updating realized loss and exposure estimates",
-                    ],
-                    [
-                        "Fee DSO diagnoses collection lag without duplicating expense runway",
-                        "$535,000 annual fees times five divided by 365 equals $7,329",
-                        "Measure earned dates against actual fee deposits rather than invoices",
-                        "Replace average DSO with deal-level receipts during settlement interruptions",
-                    ],
-                    [
-                        "Promotional corporate credit requires truthful underwriting and permitted disbursement",
-                        "$50,000 at a 3% transfer charge creates $1,500 immediate cost",
-                        "Read promotion exclusions, cash advance terms, and contractual repayment dates",
-                        "Halt applications, correct disclosures, then refinance transparently or reduce spending",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight conditions before committing the wire",
-                "body": (
-                    "A positive spreadsheet contribution does not authorize release. "
-                    "Each transaction must satisfy these observable operating conditions."
-                ),
-                "items": [
-                    "Independently verify unconditional end-buyer cash on deposit, authorized disbursement instructions, and release exclusively to the identified bonded title or settlement agent.",
-                    "Confirm fee enforceability, applicable commercial-lending licensing or exemption, and usury treatment for the actual borrower, collateral, jurisdiction, and charge structure.",
-                    "Demonstrate that the daily cash schedule survives the funded principal lock, contracted facility repayment date, and an additional four-day settlement delay.",
-                    "Verify borrower and entity disclosures against source records, confirm permitted credit proceeds, and reject any repayment plan dependent on undisclosed new applications.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Create the dated funding packet",
-                    "action": "Join the signed agreement, settlement statement, and beneficiary verification to one transaction identifier.",
-                    "detail": "Record earned fees separately from principal, partner entitlements, refundable deposits, and contingent charges.",
-                },
-                {
-                    "step": 2,
-                    "title": "Reserve daily funding capacity",
-                    "action": "Enter principal release, expected reuse, fee collection, and facility repayment on the same daily cash schedule.",
-                    "detail": "Deduct existing commitments and restricted balances before calculating available capacity; apply the four-day delay stress.",
-                },
-                {
-                    "step": 3,
-                    "title": "Verify the settlement cash independently",
-                    "action": "Confirm unconditional buyer funds and authenticated wire instructions with the authorized settlement agent.",
-                    "detail": "Use an independently sourced callback channel and retain the confirmation record; changed instructions restart verification.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close the principal and fee ledgers",
-                    "action": "Match returned principal, collected fees, capital charges, contractor invoices, and any reversals after settlement.",
-                    "detail": "Release unused capacity only when cash is reusable; update cohort DSO, lock duration, CAC, and allowance experience.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Stress the margin and quarantine slow bankruptcy recoveries",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Stress costs against the fixed fee cohorts before allowing "
-                    "growth assumptions to rescue the answer. Apply three simultaneous "
-                    "changes: fee reversals rise by two percentage points of "
-                    "gross fees, acquisition spending rises 20%, and capital "
-                    "charges rise 25%. Conservative incurs $2,400, $3,600, and "
-                    "$3,000 of additional deductions, reducing profit from $36,000 "
-                    "to $27,000 and margin to 22.5%. Base incurs $10,700, "
-                    "$11,000, and $18,750, reducing profit by $40,450 to "
-                    "$186,925, or approximately 34.94%. Scaled incurs $19,000, "
-                    "$15,000, and $23,750, reducing profit by $57,750 to "
-                    "$464,750, or approximately 48.92%. These stressed outcomes "
-                    "are overlays, not replacements for the canonical scenarios. "
-                    "A separate uninsured $100,000 incremental principal loss beyond "
-                    "existing allowances would reduce unstressed Base profit to "
-                    "$127,375. It would exceed Conservative annual profit by "
-                    "$64,000. That concentration matters more than a small "
-                    "improvement in fee conversion. Separately, expanding Base transactional "
-                    "locks from three to seven days increases average transactional "
-                    "capital from $82,192 to $191,781, approximately $109,589 more. "
-                    "This is an average funding increase, not a sufficient "
-                    "peak facility limit. Recalculate simultaneous commitments and "
-                    "repricing before accepting delayed transactions; the capital "
-                    "charge stress does not automatically fund the extra principal."
-                ),
-                (
-                    "The chapter11_trade_claim_convenience_class_rollup play belongs in "
-                    "a separate duration bucket because bankruptcy distributions "
-                    "do not replenish a 72-hour escrow facility. Consider a "
-                    "documented $10,000 trade claim purchased for $2,500. Assume "
-                    "an 80% probability of allowance and an applicable plan "
-                    "distribution of 60% of allowed face value. Expected "
-                    "receipts are $4,800, before timing adjustments. Subtract "
-                    "$2,500 purchase price, $400 verification and servicing, "
-                    "and $450 carrying cost, representing two years at "
-                    "9% simple interest on the purchase price. Expected "
-                    "contribution is $1,450 over two years, not annual "
-                    "flash-funding income. The simplified allowance assumption treats "
-                    "disallowance as zero recovery; replace it with supported "
-                    "claim-specific outcomes when available. If the applicable "
-                    "recovery becomes 30%, expected receipts fall to $2,400 "
-                    "and contribution becomes negative $950. Obtain invoices, "
-                    "delivery evidence, debtor payment history, transfer documentation, "
-                    "and the operative plan rather than buying from Schedule "
-                    "E/F alone. A scheduled liability does not establish "
-                    "final allowance or a distribution entitlement. Under 11 "
-                    "U.S.C. 502, objections can change the allowed amount. "
-                    "Use PACER and the court-authorized claims agent to "
-                    "reconcile claim numbers, amendments, objections, voting treatment, "
-                    "and distribution status before committing acquisition cash."
-                ),
-                (
-                    "Convenience-class treatment arises from the actual plan and "
-                    "11 U.S.C. 1122(b), not from mechanically dividing a "
-                    "large claim into smaller invoices. Read thresholds, election "
-                    "deadlines, aggregation provisions, transferee treatment, and restrictions "
-                    "on claim splitting before modeling any enhanced recovery. "
-                    "Federal Rule of Bankruptcy Procedure 3001(e) distinguishes "
-                    "transfer procedures; for a qualifying transfer after proof "
-                    "of claim has been filed, file evidence of transfer "
-                    "and account for the transferor's 21-day objection period "
-                    "after the clerk's notice. Other transfer circumstances require "
-                    "their own procedure. Do not equate completion of that "
-                    "process with allowance or payment. If an objection "
-                    "or plan provision defeats the thesis, stop affected "
-                    "purchases, enforce documented seller recourse where available, "
-                    "and price only supported general-unsecured recoveries. Seller "
-                    "recourse is worth the seller's actual ability and "
-                    "obligation to pay. Keep these claims outside the "
-                    "three canonical fee cohorts; their inclusion would otherwise "
-                    "fabricate current revenue and conceal long-duration capital "
-                    "consumption. Monthly management review should reconcile published "
-                    "scenario profit, current cash availability, and downside exposure "
-                    "as separate outputs. Grow only after realized collection "
-                    "timing and delivery capacity support the next commitment. "
-                    "The durable edge is verified repayment plus disciplined "
-                    "capital allocation, not a spectacular annualized yield on "
-                    "money that cannot yet be reused."
-                ),
-            ],
-            "table": {
-                "caption": "Scenario Sensitivities and Bankruptcy-Claim Duration Boundaries",
-                "headers": [
-                    "Stress or adjacent operating play",
-                    "Concrete unit math and result",
-                    "Failure mechanism that changes the decision",
-                    "Required fallback or operating response",
-                ],
-                "rows": [
-                    [
-                        "Conservative combined reversal, acquisition, and capital cost stress",
-                        "$36,000 less $2,400, $3,600, and $3,000 leaves $27,000 profit",
-                        "A small fee cohort cannot absorb repeated settlement cancellations",
-                        "Reduce acquisition commitments and decline transactions with thin net contribution",
-                    ],
-                    [
-                        "Base combined reversal, acquisition, and capital cost stress",
-                        "$227,375 less $10,700, $11,000, and $18,750 leaves $186,925 profit",
-                        "Higher financing charges and weaker referral quality compress cash earnings",
-                        "Reprice new commitments and rebuild customer-level acquisition payback calculations",
-                    ],
-                    [
-                        "Scaled combined reversal, acquisition, and capital cost stress",
-                        "$522,500 less $19,000, $15,000, and $23,750 leaves $464,750 profit",
-                        "Additional volume does not remove concentrated principal loss exposure",
-                        "Cap simultaneous sponsor exposure and preserve independent settlement verification",
-                    ],
-                    [
-                        "Base transactional principal locks expand from three to seven days",
-                        "Average transactional capital rises approximately $109,589 to reach $191,781",
-                        "Delayed recording or payout releases consume otherwise reusable funding capacity",
-                        "Secure additional committed capacity or reduce concurrent funded transaction counts",
-                    ],
-                    [
-                        "Incremental uninsured principal loss exceeds the established allowance",
-                        "A further $100,000 loss reduces unstressed Base profit to $127,375",
-                        "One failed repayment can overwhelm many successfully collected transaction fees",
-                        "Stop related releases and pursue documented recovery rights immediately",
-                    ],
-                    [
-                        "Chapter 11 documented trade claim with supported recovery assumptions",
-                        "$4,800 expected receipts less $2,500, $400, and $450 yields $1,450",
-                        "Allowance objections and long distribution timelines impair expected contribution",
-                        "Fund from separately allocated patient capital rather than settlement liquidity",
-                    ],
-                    [
-                        "Convenience-class thesis fails and supported recovery falls to 30%",
-                        "$2,400 expected receipts less $3,350 total costs creates $950 loss",
-                        "Plan aggregation provisions or objections eliminate the assumed recovery advantage",
-                        "Stop purchases, enforce available seller recourse, and price general-unsecured recoveries",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A funding fee becomes an edge only when the principal returns on time and every deduction has already been counted.",
-    "diagram_id": "diag-03",
-    "action_checklist": [
-        "Reconcile 70, 195, and 265 illustrative fee events to the exact $120,000, $535,000, and $950,000 canonical gross-fee totals, excluding escrow principal and partner entitlements.",
-        "Build separate contra-revenue, paid delivery, CAC, capital-charge, credit-loss, and overhead accounts that reconcile to $36,000, $227,375, and $522,500 owner profit.",
-        "Create a daily principal-release and fee-collection calendar; test the Base $327,994 liquidity envelope against actual overlap, restricted balances, and facility availability.",
-        "Verify unconditional end-buyer cash, bonded settlement-agent identity, authenticated wire instructions, and applicable state fee and lending requirements before each release.",
-        "Document promotional-credit charges, permitted uses, truthful entity history, reset dates, and principal repayment capacity; halt inaccurate applications and replace unsupported borrowing.",
-        "Maintain bankruptcy claims in a separate duration portfolio with source claim evidence, Rule 3001(e) transfer tracking, plan-specific class analysis, and supported recovery pricing.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "California Financial Code Section 22100 — Finance Lender and Broker Licensing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22100.",
-            "relevance": (
-                "Requires licensing for covered finance-lender or broker activity; "
-                "evaluate the actual transaction and applicable exemptions before "
-                "pricing or funding California lending operations."
-            ),
-        },
-        {
-            "title": "California Financial Code Section 22050 — Specified Exemptions",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22050.",
-            "relevance": (
-                "Provides specified exemptions whose factual conditions must be "
-                "checked rather than inferred from commercial purpose or entity age."
-            ),
-        },
-        {
-            "title": "New York General Obligations Law Section 5-501 — Interest Rates",
-            "url": "https://www.nysenate.gov/legislation/laws/GOB/5-501",
-            "relevance": (
-                "Provides a primary interest-rate framework; analyze applicable "
-                "rates, charge characterization, borrower rules, and statutory "
-                "exceptions before relying on short-duration funding fees."
-            ),
-        },
-        {
-            "title": "UCC Section 9-104 — Control of Deposit Account",
-            "url": "https://www.law.cornell.edu/ucc/9/9-104",
-            "relevance": (
-                "Explains deposit-account control for secured transactions. Check "
-                "the governing state's enacted text and distinguish collateral "
-                "control from contractual authority to disburse escrow funds."
-            ),
-        },
-        {
-            "title": "11 U.S.C. Section 502 — Allowance of Claims or Interests",
-            "url": "https://www.law.cornell.edu/uscode/text/11/502",
-            "relevance": (
-                "Supports claim-allowance and objection analysis before assigning "
-                "recovery probabilities or recording expected bankruptcy distributions."
-            ),
-        },
-        {
-            "title": "11 U.S.C. Section 1122(b) — Administrative Convenience Class",
-            "url": "https://www.law.cornell.edu/uscode/text/11/1122",
-            "relevance": (
-                "Permits a separate class of qualifying small unsecured claims "
-                "subject to court-approved parameters; the operative plan determines "
-                "whether purchased claims receive the assumed treatment."
-            ),
-        },
-        {
-            "title": "Federal Rule of Bankruptcy Procedure 3001(e) — Transferred Claims",
-            "url": "https://www.law.cornell.edu/rules/frbp/rule_3001",
-            "relevance": (
-                "Establishes procedures for transferred claims, including evidence "
-                "of certain transfers after filing and the transferor's 21-day "
-                "objection period following the clerk's notice."
-            ),
-        },
-    ],
-}
+CHAPTER_3 = {'id': 'Q3',
+ 'chapter_id': 'Q3',
+ 'chapter_number': 3,
+ 'question_number': 3,
+ 'slug': 'transactional-funding-costs-terms-lender-selection',
+ 'question_prompt': 'What does transactional funding really cost, what terms should I expect, and how do I '
+                    'avoid overpaying or picking the wrong funder?',
+ 'kicker': 'Q3 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Transactional Funding Costs, Terms & Lender Selection',
+ 'subtitle': 'Transaction fees and 1%-range pricing, rate comparisons, upfront and application fees, how '
+             'long the money can stay in, extended transactional funding, seller-carryback deals, why some '
+             'closing agents resist it, how lenders differ, what funders require, and real net-profit deal '
+             'examples',
+ 'layout_template': 'financial_analysis',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Funders and wholesalers agree that transactional funding is same-day capital that '
+                      'sits inside escrow. It funds the A-to-B purchase and is repaid from the B-to-C '
+                      'sale. Funders skip the credit check, income verification and underwriting as long '
+                      'as a contracted end buyer exists. The street price clusters around 1% of the A-to-B '
+                      'amount. Velocity Advantage Capital charges 1% or less, and Dave Dinkel calls '
+                      'anything above 1% overpaying. The Full Deal REI shows a 1.5% fee on $150,000 '
+                      'costing $2,250, which grows to $3,750 when two title companies or a rushed close '
+                      'add roughly another point. The traps are junk fees for entry, processing and '
+                      'cancellation, plus minimums as high as $1,795. Practitioners split on whether '
+                      '30-to-90-day extended funding counts as transactional funding at all, and on '
+                      'whether price or execution should drive lender selection.',
+ 'key_metrics': [{'label': 'Velocity Flat Funding Rate',
+                  'metric': 'Velocity Flat Funding Rate',
+                  'value': '1% or less on each deal',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'The Velocity Advantage Capital founder says the rate stays the same on every '
+                             'deal, after paying 3% to 4% to other funders while double closing in '
+                             'Charlotte, North Carolina.',
+                  'source': 'Velocity Advantage Capital ([HGfRd2Z2i24 @ 00:01:44])'},
+                 {'label': 'Rate Spread On A $200,000 Double Close',
+                  'metric': 'Rate Spread On A $200,000 Double Close',
+                  'value': '$1,500 at 3/4 of 1% versus $4,000 at 2%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Dave Dinkel converts advertised percentages into dollars on one $200,000 '
+                             'double closing. A half point costs $1,000 and a full point costs $2,000.',
+                  'source': 'LearnREInvesting ([0u7L7Q7CE5o @ 00:01:11])'},
+                 {'label': 'Veteran Innovative Lending 2025 Volume',
+                  'metric': 'Veteran Innovative Lending 2025 Volume',
+                  'value': '424 deals closed and $21.1 million funded in 2025',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Cortez cites the 2025 closings by the partners of Veteran Innovative Lending '
+                             'as their credibility for funding EMD, double closes and stack-method deals.',
+                  'source': 'Fund My Real Estate Deal ([a--96aHg5xs @ 00:00:21])'},
+                 {'label': 'Tennessee No-Money Wholesale Net',
+                  'metric': 'Tennessee No-Money Wholesale Net',
+                  'value': '$30,070.71 net profit at 1% plus a $50 wire fee',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Dinkel shows a $38,000 A-to-B purchase resold for $72,900. Transactional '
+                             'funding of $39,727.93 covered the buy, and the investor put up no earnest '
+                             'money deposit.',
+                  'source': 'LearnREInvesting ([BbugvWp8qsA @ 00:00:42])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every funder here describes the same core product. It is short-term capital '
+                              'dropped into one specific closing so the A-to-B purchase can fund before '
+                              'the B-to-C resale pays out. Sure Flow Capital Partners calls it partnering '
+                              'with a funding source for money that often never leaves escrow, and insists '
+                              'the operator is not a borrower but the person running the deal [2OXgeuq7LZU '
+                              '@ 00:00:01]. The same channel spells out the order-of-operations snag. The '
+                              'end buyer pays minutes later, but real money still has to fund the first '
+                              'leg. That money moves in and out the same day, sometimes within hours, and '
+                              'the operator keeps the spread minus closing costs and fees [2OXgeuq7LZU @ '
+                              '00:01:20]. The Full Deal REI calls it borrowing for an afternoon. The '
+                              'funding usually covers the full purchase price and often the first-side '
+                              'closing costs, with both closings typically at the same title company on '
+                              'the same day [H-3pmQVYvCI @ 00:00:47]. Dave Dinkel of LearnREInvesting adds '
+                              'the timing discipline. In some states the closing agent escrows both sides '
+                              'until every document and dollar is in place, and court orders or city '
+                              'inspections can delay a closing for days or months. The funder should still '
+                              'wire only on the day of the final closing, which is why the product gets '
+                              'called flash funding or one-day funding [sZe_QRsB_NE @ 00:00:29].',
+                              'The second point of agreement is what the funder does not ask for. Cortez '
+                              'of Veteran Innovative Lending, speaking on Fund My Real Estate Deal, says '
+                              'flatly that it is not a traditional loan. There is typically no credit '
+                              'check, no income verification and no underwriting, as long as the contracts '
+                              "are in place and every party understands how the deal works. Cortez's "
+                              "overriding goal is that the lender's money never goes hard, which mitigates "
+                              'most of the risk [a--96aHg5xs @ 00:01:59]. The Full Deal REI confirms that '
+                              'most funders skip credit pulls, bank statements and tax returns because the '
+                              'closing itself repays them the same day. Some will even issue proof of '
+                              'funds for the double close when a seller or listing agent wants to see that '
+                              "the wholesaler can perform [H-3pmQVYvCI @ 00:05:28]. Dinkel's Tennessee "
+                              'offer reads like a spec sheet for the same idea: 100% financing of the '
+                              'A-to-B price, proof of funds provided, no appraisal, no LTV or ARV '
+                              'calculation, no minimum fee, no processing fee and a simple one-page '
+                              'funding agreement [BbugvWp8qsA @ 00:00:00]. The one condition nobody bends '
+                              'on, per Dinkel, is an end buyer under contract to purchase the property '
+                              'after the first transaction closes [a0yQnepWIA4 @ 00:01:54].',
+                              'The practitioners also agree on when a double close is worth paying for. '
+                              'The Full Deal REI is blunt that assigning is usually cheaper and lists four '
+                              'triggers for transactional funding. The first is a no-assignment clause, '
+                              'which is common on bank-owned REO deals and short sales. The second is an '
+                              'end buyer who refuses an assignment or wants the wholesaler on title for a '
+                              'clean chain. The third is state rules that make assignments harder or '
+                              'riskier. The fourth is a fee so large that printing it on an assignment '
+                              'invites the buyer to renegotiate [H-3pmQVYvCI @ 00:03:54]. Dinkel draws the '
+                              'profit line with a number. The team generally keeps an assigned profit '
+                              'below fifteen thousand dollars, because above that the seller or end buyer '
+                              'may change their mind and the deal dies [VGIfE33jspg @ 00:01:03]. Dinkel '
+                              'prices the fix as slightly less than twice the first closing, which is '
+                              'small compared to losing the deal [VGIfE33jspg @ 00:01:20]. The Velocity '
+                              'Advantage Capital founder ran double closings locally in Charlotte, North '
+                              'Carolina, and describes the pain that pushed them into lending. Funder '
+                              'requirements changed every deal, capital was sometimes unavailable, and '
+                              "fees swung between 3% and 4%, all of it hitting the wholesaler's bottom "
+                              'line [HGfRd2Z2i24 @ 00:00:19].'],
+               'table': {'caption': 'Where the funders and wholesalers line up on transactional funding '
+                                    'basics',
+                         'headers': ['Consensus Point',
+                                     'What The Practitioners Report',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Capital lives inside escrow, not in your bank account',
+                                   'Short-term money placed inside one specific transaction that often '
+                                   'never leaves escrow',
+                                   'Treat it as deal plumbing rather than debt that follows you for years',
+                                   'Sure Flow Capital Partners ([2OXgeuq7LZU @ 00:00:20])'],
+                                  ['The first leg must fund before the second leg pays',
+                                   'Real money funds the A-to-B purchase before the B-to-C sale pays the '
+                                   'operator',
+                                   'Line up the funder before closing day so the seller gets paid first',
+                                   'Sure Flow Capital Partners ([2OXgeuq7LZU @ 00:01:20])'],
+                                  ['No credit check, income verification, or underwriting review',
+                                   'Funders typically skip credit, income, and underwriting when the '
+                                   'signed contracts are in place',
+                                   'Your deal quality and signed contracts are the real qualification file',
+                                   'Fund My Real Estate Deal ([a--96aHg5xs @ 00:01:59])'],
+                                  ['A contracted end buyer is the one non-negotiable requirement',
+                                   'The absolute requirement lenders will not budge on is an end buyer '
+                                   'under contract',
+                                   'Never submit a deal until the B-to-C contract is fully signed by your '
+                                   'buyer',
+                                   'LearnREInvesting ([a0yQnepWIA4 @ 00:01:54])'],
+                                  ['Assign when you can, double close when you are forced',
+                                   'Assigning is usually cheaper; double close for no-assignment clauses, '
+                                   'REO, short sales, or large fees',
+                                   'Run the cheaper assignment path first unless one of the four triggers '
+                                   'applies',
+                                   'The Full Deal REI ([H-3pmQVYvCI @ 00:03:54])'],
+                                  ['Keep any assigned profit under a fifteen thousand dollar ceiling',
+                                   'Assigned profit is generally held below fifteen thousand dollars so '
+                                   'the seller or buyer does not walk',
+                                   'Switch to a double close once your spread clears roughly fifteen '
+                                   'thousand dollars',
+                                   'LearnREInvesting ([VGIfE33jspg @ 00:01:03])'],
+                                  ['Funder consistency matters as much as the headline rate',
+                                   'Changing requirements, missing capital, and fees swinging between 3% '
+                                   'and 4% bottlenecked a wholesaling business',
+                                   'Pick one dependable funder with a repeatable process and a fixed rate',
+                                   'Velocity Advantage Capital ([HGfRd2Z2i24 @ 00:00:36])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Dinkel breaks the bill into line items. The funding fee is a percentage of '
+                              'the lender funds actually sent to the A-to-B closing, so one hundred '
+                              'thousand dollars at 1% costs one thousand dollars. On top of that sits a '
+                              "wire fee that varies with the lender's bank. Then comes the minimum fee, "
+                              'which on amounts under thirty thousand dollars ranges from $350 to $1,795. '
+                              'Dinkel also flags three junk fees to hunt for. The first is a '
+                              "non-refundable fee to enter the lender's system. The second is a "
+                              'cancellation fee charged when the deal dies, even if no money moved. The '
+                              'third is a processing fee that is just the entry fee renamed [AvFYUxl4Gx8 @ '
+                              "00:00:33]. Dinkel's ceiling is to never pay more than 1% of the A-to-B "
+                              'funds unless the lender negotiates lower or the deal needs over one million '
+                              'dollars [AvFYUxl4Gx8 @ 00:01:22]. A separate cost breakdown from Dinkel '
+                              'quotes funding fees of 1% to 2%, usually negotiated on closings of one '
+                              'million dollars or more. That breakdown lists minimums of $350 to $1,495 '
+                              'and cancellation fees of $399 to $750. Dinkel says only the funding, wire '
+                              'and minimum fees are what an investor should expect to pay [6muHPduCEtc @ '
+                              '00:00:15]. On points, two points on one hundred thousand dollars is two '
+                              'thousand dollars, which Dinkel books as a cost of doing business for the '
+                              'investor [sZe_QRsB_NE @ 00:01:31].',
+                              'The Full Deal REI runs a labeled example with a $150,000 A-to-B purchase, a '
+                              '$185,000 B-to-C sale and a $35,000 gross spread. At an example fee of 1.5%, '
+                              'the funder takes $2,250 straight out of the spread at closing. Two full '
+                              'sets of title work, settlement fees and possible transfer taxes come out '
+                              'after that [H-3pmQVYvCI @ 00:02:08]. The hidden leak is setup. Two '
+                              'different title companies, or a rushed and messy closing, can add roughly '
+                              'another 1%, pushing the cost to 2.5%. That is $3,750, of which $1,500 is '
+                              'lost to poor coordination [H-3pmQVYvCI @ 00:03:00]. Cortez uses the '
+                              'identical $150,000-to-$185,000 frame. The funder puts $150,000 in escrow, '
+                              "the end buyer's wire repays the $150,000 plus the fee, and the wholesaler "
+                              "keeps $35,000 minus that fee [a--96aHg5xs @ 00:02:35]. Dinkel's rate "
+                              'comparison converts percentages into dollars on a $200,000 double close: '
+                              '3/4 of 1% is $1,500, 1% is $2,000, 1.5% is $3,000 and 2% is $4,000. A half '
+                              'point is $1,000 on one deal, and a full point is $2,000. Dinkel says a '
+                              'large Georgia wholesaler who only occasionally double closes would have '
+                              'saved over $100,000 in funding costs with that comparison chart '
+                              '[0u7L7Q7CE5o @ 00:01:11].',
+                              'The intake process is deliberately routine. Velocity Advantage Capital '
+                              'sends a link with a short Q&A covering business name, contact details, '
+                              'property address and closing company. The request lands in their CRM, and '
+                              'an intro email goes out usually within an hour or two and definitely within '
+                              '24 hours [Fb1_zsDd4XE @ 00:00:40]. In a second walkthrough, the founder '
+                              'quotes 10 to 15 minutes for that email, at a rate of 1% or less on every '
+                              'deal [HGfRd2Z2i24 @ 00:02:15]. From there the funder works directly with '
+                              'the title company or closing attorney. Near closing, the wholesaler signs a '
+                              'few confirmation-of-process and fee documents. On closing day the funder '
+                              'wires to the closing company and recovers principal plus fee on the second '
+                              'closing [Fb1_zsDd4XE @ 00:01:26]. Cortez stretches the same capital into '
+                              'adjacent plays. One is funding earnest money, which can reach 1% of the '
+                              'price as wholesaling laws change, or five to ten thousand dollars in some '
+                              'cases. The other is bridging the stack method. On a $100,000 purchase, the '
+                              'funder brings the 20% down payment, and a seller carry of 30% repays that '
+                              '20% plus an extra 10%, so the buyer walks out of closing with cash '
+                              '[a--96aHg5xs @ 00:04:57].'],
+               'table': {'caption': 'Street-level cost lines and worked numbers for transactional funding',
+                         'headers': ['Cost Line Or Mechanic',
+                                     'Stated Figure',
+                                     'How It Hits The Operator',
+                                     'Expert Source'],
+                         'rows': [['Funding fee charged on the A-to-B funds',
+                                   '1% example where $100,000 funded costs $1,000',
+                                   'Comes straight off your spread at the B-to-C closing',
+                                   'LearnREInvesting ([AvFYUxl4Gx8 @ 00:00:16])'],
+                                  ['Minimum fee on small A-to-B fundings',
+                                   '$350 to $1,795 on amounts under $30,000',
+                                   'Can dominate the total cost of a small A-to-B purchase',
+                                   'LearnREInvesting ([AvFYUxl4Gx8 @ 00:00:33])'],
+                                  ['Cancellation fee when the deal dies',
+                                   '$399 to $750 charged when the deal does not close',
+                                   'Hits you even when no lender money was ever wired',
+                                   'LearnREInvesting ([6muHPduCEtc @ 00:00:32])'],
+                                  ['Worked double close funding fee example',
+                                   '1.5% on $150,000 equals $2,250 out of a $35,000 spread',
+                                   'Paid on top of two full sets of closing costs on both sides',
+                                   'The Full Deal REI ([H-3pmQVYvCI @ 00:02:08])'],
+                                  ['Two title companies or a rushed close',
+                                   'Roughly another 1%, for a 2.5% total or $3,750',
+                                   'Costs about $1,500 purely from poor closing setup',
+                                   'The Full Deal REI ([H-3pmQVYvCI @ 00:03:00])'],
+                                  ['Tennessee no-money wholesale double close',
+                                   '1% plus $50 wire on a $38,000 buy resold at $72,900',
+                                   'Net profit of $30,070.71 with no investor earnest money in the deal',
+                                   'LearnREInvesting ([BbugvWp8qsA @ 00:00:42])'],
+                                  ['Velocity flat rate and same process every time',
+                                   '1% or less on each deal with an identical process',
+                                   'Predictable cost versus the 3% to 4% the founder paid elsewhere',
+                                   'Velocity Advantage Capital ([HGfRd2Z2i24 @ 00:01:44])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Spread Protection Moves From The Funding Desk',
+                           'body': 'These are the moves the funders and wholesalers use to keep fees from '
+                                   'eating the spread and to keep the deal alive through closing day.',
+                           'items': ['Compare net dollar costs, not percentages. Check the minimum fee, '
+                                     'because it can dominate smaller A-to-B transactions, and confirm '
+                                     'exactly which funding amount the percentage applies to '
+                                     '[LearnREInvesting — 0u7L7Q7CE5o @ 00:02:10].',
+                                     'Use one title company for both sides, and build the funding fee plus '
+                                     'two sets of closing costs into your numbers before you sign with the '
+                                     'seller, not after [The Full Deal REI — H-3pmQVYvCI @ 00:03:17].',
+                                     'Require a meaningful non-refundable deposit from your end buyer, '
+                                     'with a clause letting escrow release it to you if the buyer fails to '
+                                     'close, so their skin in the game covers your EMD [The Full Deal REI '
+                                     '— H-3pmQVYvCI @ 00:06:18].',
+                                     'Watch where the profit lands on the settlement statement. In one '
+                                     "deal the listing agent put the student's profit on the second page "
+                                     'of the HUD, so the seller saw no profit on page one '
+                                     '[LearnREInvesting — 2MOHSWLCCqc @ 00:02:08].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock Both Contracts With Matching Names',
+                              'action': 'Get the A-to-B and B-to-C contracts signed by all parties, with '
+                                        'identical names and property address on both, and confirm the '
+                                        'spread covers the fee and both sets of closing costs.',
+                              'detail': 'Funders want both contracts signed, matching names and address, '
+                                        'enough spread to absorb the funding fee and every closing cost, '
+                                        'and same-day closings; if the math is too tight they pass [The '
+                                        'Full Deal REI — H-3pmQVYvCI @ 00:04:53].'},
+                             {'step': 2,
+                              'title': 'Interview The Funder And Get Terms In Writing',
+                              'action': 'Call a real representative and run the full question list: '
+                                        'excluded states, upfront fees, dead-deal charges, minimum, '
+                                        'funding fee, wire fee, back-end fees, extended closings, notice '
+                                        'needed, and EMD funding.',
+                              'detail': 'Dinkel says asking these questions also shows how cooperative the '
+                                        'funder will be when things go wrong near closing '
+                                        '[LearnREInvesting — l-l8leRQ_KE @ 00:00:31]. Dinkel also says to '
+                                        'get the final fee and funding conditions in writing before the '
+                                        'closing package is finalized [LearnREInvesting — 0u7L7Q7CE5o @ '
+                                        '00:02:48].'},
+                             {'step': 3,
+                              'title': 'Submit Intake And Hand Off To The Closer',
+                              'action': "Fill out the funder's intake form with business details, property "
+                                        'address, and the title company or closing attorney, then '
+                                        'introduce the funder to whoever handles the closing.',
+                              'detail': 'Velocity says the investor only needs to introduce the funder to '
+                                        'the closing company, and the funder works with them directly '
+                                        'until closing day instead of chasing the wholesaler for weeks or '
+                                        'months [Velocity Advantage Capital — Fb1_zsDd4XE @ 00:00:57].'},
+                             {'step': 4,
+                              'title': 'Fund The A-To-B And Recover On The B-To-C',
+                              'action': "Make sure the end buyer's funds are with the title company, let "
+                                        'the funder wire the A-to-B, close both legs, and collect the '
+                                        'spread after the funder is repaid.',
+                              'detail': "The funder usually will not wire until the buyer's money is "
+                                        'sitting with the title company [The Full Deal REI — H-3pmQVYvCI @ '
+                                        '00:05:09]. On the second closing, the funder gets its principal '
+                                        'and fee back and the investor keeps the profit [Velocity '
+                                        'Advantage Capital — Fb1_zsDd4XE @ 00:01:42].'}]},
+              {'heading': '3. Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is price. Velocity Advantage Capital built its whole '
+                              'pitch around frustration with funders who charged 3% one deal and 4% the '
+                              'next, and now quotes a flat 1% or less on every deal with the same process '
+                              'each time [HGfRd2Z2i24 @ 00:00:55]. Dave Dinkel of LearnREInvesting draws a '
+                              'harder line: in no case should a wholesaler pay more than 1% of the A-to-B '
+                              'funds unless the lender negotiates lower or the amount needed tops one '
+                              'million dollars [AvFYUxl4Gx8 @ 00:01:22]. The Full Deal REI deliberately '
+                              'refuses to quote a live price and instead models 1.5% on a $150,000 '
+                              'purchase, a $2,250 hit straight out of the spread before the wholesaler '
+                              "sees a dime [H-3pmQVYvCI @ 00:02:08]. Dinkel's comparison of the 13 most "
+                              'active funders converts those percentages into dollars on a $200,000 double '
+                              'close: 0.75% is $1,500, 1% is $2,000, 1.5% is $3,000 and 2% is $4,000, so a '
+                              'single point swings $2,000 on one deal [0u7L7Q7CE5o @ 00:00:50]. Yet the '
+                              'same comparison warns against picking off a single printed percentage, '
+                              "arguing that the funder's ability to execute the specific transaction, "
+                              'minimums and add-ons matter as much as the headline rate.',
+                              'Practitioners also split on what the product even is. Sure Flow Capital '
+                              'Partners insists transactional funding is not a loan: the wholesaler is the '
+                              'operator, not a borrower, and the money generally never leaves escrow or '
+                              'follows anyone for 30 years [2OXgeuq7LZU @ 00:02:00]. Dave Dinkel openly '
+                              'calls it a very short-term loan for the purchase of a property, usually in '
+                              'effect for less than one or two hours [VGIfE33jspg @ 00:00:15]. The bigger '
+                              'fight is over duration. In one episode Dinkel says lenders advertising 30, '
+                              '60 or even 90-day transactional funding are not really offering '
+                              'transactional funding at all, because they charge points plus interest for '
+                              'the extended period, while true transactional funding carries only points '
+                              'and ancillary fees [sZe_QRsB_NE @ 00:01:15]. In another episode Dinkel '
+                              'embraces extended transactional funding as a short-term loan of up to 90 '
+                              "days, built for REO closings where the bank's closing agent almost never "
+                              'allows a double close, short sales carrying 30-to-180-day deed '
+                              'restrictions, and foreclosure or tax deed auction wins that must be paid by '
+                              "cashier's check by noon the following day [a0yQnepWIA4 @ 00:00:14]. The "
+                              'operator takeaway is to name the product precisely: same-day flash funding '
+                              'and a multi-week hold are priced and structured differently.',
+                              'Whether to double close at all is the third fault line. The Full Deal REI '
+                              'says that if you can assign, assigning is usually cheaper, and reserves '
+                              'double closes for no-assignment clauses common on REO and short sales, end '
+                              'buyers who want the wholesaler on title, state rules that make assignments '
+                              'riskier, and fat fees that make buyers renegotiate once they see the profit '
+                              '[H-3pmQVYvCI @ 00:03:32]. Dave Dinkel puts a number on that last trigger, '
+                              'generally keeping assigned profit below $15,000 and accepting a double '
+                              'close cost that runs slightly less than twice the first closing because it '
+                              'is small compared to losing the deal [VGIfE33jspg @ 00:01:03]. Lenders '
+                              'pushing wider playbooks go further. The 22-year Air Force veteran behind '
+                              'Fund My Real Estate Deal funds earnest money deposits that can reach 1% of '
+                              'the purchase price, sometimes five to ten thousand dollars, as wholesaling '
+                              'laws change [a--96aHg5xs @ 00:00:42]. Sure Flow Capital Partners uses '
+                              'transactional money to satisfy the down payment a DSCR lender wants to see '
+                              'on a seller carryback, also called the stack or Morby method, so creative '
+                              'structures do not fall apart at the finish line [9HWpfZS4eQM @ 00:01:18].'],
+               'table': {'caption': 'Contested Calls on Transactional Funding Price, Product Definition '
+                                    'and Deal Structure',
+                         'headers': ['Contested Question',
+                                     'Position One',
+                                     'Position Two or Counterweight',
+                                     'Expert Source'],
+                         'rows': [['Fair ceiling for the funding fee on A-to-B money',
+                                   'Velocity Advantage Capital quotes 1% or less, identical on every '
+                                   'single deal',
+                                   'Dinkel says never exceed 1% unless the funding tops one million '
+                                   'dollars',
+                                   'Velocity Advantage Capital ([HGfRd2Z2i24 @ 00:01:44]); '
+                                   'LearnREInvesting ([AvFYUxl4Gx8 @ 00:01:22])'],
+                                  ['Typical market fee range quoted by working practitioners',
+                                   'Dinkel lists the double closing funding fee as one to two percent plus',
+                                   'The Full Deal REI models 1.5% as illustration, $2,250 on $150,000 '
+                                   'funded',
+                                   'LearnREInvesting ([6muHPduCEtc @ 00:00:15]); The Full Deal REI '
+                                   '([H-3pmQVYvCI @ 00:02:08])'],
+                                  ['Is transactional funding a loan or a transaction partnership',
+                                   'Sure Flow says it is not a loan; you are the operator running the deal',
+                                   'Dinkel calls it a very short-term loan lasting under one or two hours',
+                                   'Sure Flow Capital Partners ([2OXgeuq7LZU @ 00:02:00]); '
+                                   'LearnREInvesting ([VGIfE33jspg @ 00:00:15])'],
+                                  ['Do 30, 60 or 90 day products count as transactional funding',
+                                   'Dinkel says no, because extended periods carry points plus interest '
+                                   'charges',
+                                   "Dinkel's extended product runs up to 90 days for REO, short sale and "
+                                   'auction holds',
+                                   'LearnREInvesting ([sZe_QRsB_NE @ 00:01:15]); LearnREInvesting '
+                                   '([a0yQnepWIA4 @ 00:00:00])'],
+                                  ['Assign the contract or pay for a full double close',
+                                   'The Full Deal REI says assign whenever possible because assigning is '
+                                   'usually cheaper',
+                                   'Dinkel double closes once assigned profit would exceed roughly $15,000 '
+                                   'to protect the deal',
+                                   'The Full Deal REI ([H-3pmQVYvCI @ 00:03:32]); LearnREInvesting '
+                                   '([VGIfE33jspg @ 00:01:03])'],
+                                  ['How far transactional money should stretch beyond the double close',
+                                   'Fund My Real Estate Deal funds EMD up to 1% of the purchase price',
+                                   'Sure Flow funds the DSCR down payment on seller carryback stack method '
+                                   'deals',
+                                   'Fund My Real Estate Deal ([a--96aHg5xs @ 00:00:42]); Sure Flow Capital '
+                                   'Partners ([9HWpfZS4eQM @ 00:01:18])'],
+                                  ['Response speed promised after a deal is submitted for funding',
+                                   'Velocity promises an intro email within 10 to 15 minutes of submitting '
+                                   'the request',
+                                   'The same channel elsewhere says an hour or two, definitely within 24 '
+                                   'hours',
+                                   'Velocity Advantage Capital ([HGfRd2Z2i24 @ 00:02:15]); Velocity '
+                                   'Advantage Capital ([Fb1_zsDd4XE @ 00:00:40])']]}},
+              {'heading': '4. Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The first trap is paying for nothing. Dave Dinkel flags so-called junk '
+                              "fees: an entry fee into the lender's system that is non-refundable if the "
+                              'deal dies, which matters because a high percentage of deals do not close '
+                              'for reasons the investor never controlled, plus cancellation fees charged '
+                              'even when the lender never sent a dollar [AvFYUxl4Gx8 @ 00:00:49]. In a '
+                              'companion breakdown, Dinkel prices those cancellation fees at $399 to $750 '
+                              'and labels the administrative fee a pure additional profit source for the '
+                              "lender [6muHPduCEtc @ 00:00:32]. Dinkel's position is that there should "
+                              'never be any upfront cost for transactional funding, yet some lenders '
+                              'charge an application fee just to decide whether they will fund at all '
+                              '[l-l8leRQ_KE @ 00:00:00]. The Full Deal REI treats big upfront application '
+                              'fees as a walk-away red flag, along with 24-hour deadline pressure, proof '
+                              'of funds letters sold as a product with no real money behind them, no '
+                              'verifiable reviews or track record, and a title company that has never '
+                              'heard of the funder [H-3pmQVYvCI @ 00:06:51]. The common defense: interview '
+                              'a live representative and get the final fee in writing before the closing '
+                              'package is finalized.',
+                              'The second failure point is the closing table itself. Dave Dinkel reports '
+                              'that some closing agents hate transactional funding: conventional-loan '
+                              'veterans who will not bend their regulator-driven checklists even for cash '
+                              'buyers, attorneys who close real estate as a sideline between traffic '
+                              'tickets and criminal cases, and end-buyer attorneys who treat every '
+                              'investor as a criminal, including one who demanded to see the closing '
+                              "agent's escrow account holding the funder's money before releasing the "
+                              "client's wire [PlXZzAIYwfI @ 00:02:07]. Dinkel also reports being called in "
+                              'more than a few times to save closings wrecked by an inexperienced or '
+                              'inflexible funder, and swapping the closing agent means restarting title '
+                              'work and getting both the seller and end buyer to agree [6muHPduCEtc @ '
+                              "00:01:21]. Velocity Advantage Capital's founder hit a different wall while "
+                              'double closing in Charlotte, North Carolina: requirements changed every '
+                              'time, nobody was dependable, and sometimes funders simply had no capital '
+                              'available [HGfRd2Z2i24 @ 00:00:36]. REO purchases add another hard stop, '
+                              "because the bank's chosen closing agent will almost never allow a double "
+                              'close, forcing the B-to-C leg elsewhere on another day [a0yQnepWIA4 @ '
+                              "00:00:14]. Dinkel's fix is blunt: get referrals for investor-friendly "
+                              "closing agents and handle the end buyer's attorney as the issue presents "
+                              'itself.',
+                              'The third trap is math done too late. The Full Deal REI shows how two title '
+                              'companies or a rushed, messy closing can add roughly another 1% on top of a '
+                              '1.5% fee, lifting the cost to 2.5%, or $3,750 on a $150,000 purchase, which '
+                              'is $1,500 gone from poor setup; the rule is one title company for both '
+                              'sides and funding costs built in before signing with the seller '
+                              '[H-3pmQVYvCI @ 00:03:00]. The same channel locates the real risk in the '
+                              "wholesaler's earnest money: demand a meaningful non-refundable deposit from "
+                              'the end buyer with an escrow release clause, and favor cash, private money '
+                              "and hard money buyers because FHA's ninety-day resale rule can block a fast "
+                              'flip [H-3pmQVYvCI @ 00:06:34]. Dave Dinkel adds that FHA underwriting '
+                              'cannot even begin until the investor is recorded on title, so a financed '
+                              'end buyer typically needs four to eight weeks [a0yQnepWIA4 @ 00:02:10]. The '
+                              'stakes compound across volume: a large Georgia wholesaler who mostly '
+                              'assigns but occasionally double closes told Dinkel that the comparison '
+                              'chart would have saved over $100,000 in funding costs over the past years '
+                              '[0u7L7Q7CE5o @ 00:00:16]. Funding cost belongs in the offer price, not in a '
+                              'closing-day surprise.'],
+               'table': {'caption': 'Firsthand Failure Modes, Hidden Costs and Countermeasures in '
+                                    'Transactional Funding',
+                         'headers': ['Failure Mode',
+                                     'Damage Reported',
+                                     'Countermeasure Taught',
+                                     'Expert Source'],
+                         'rows': [['Non-refundable system entry or application fee charged upfront',
+                                   'Money lost when a high percentage of deals never close',
+                                   'Ask about every fee first; there should never be upfront costs',
+                                   'LearnREInvesting ([AvFYUxl4Gx8 @ 00:00:49]); LearnREInvesting '
+                                   '([l-l8leRQ_KE @ 00:00:00])'],
+                                  ['Cancellation and administrative junk fees on a dead deal',
+                                   'Cancellation fees of $399 to $750 even when no money moved',
+                                   'Expect only funding, wire and minimum fees; challenge everything else',
+                                   'LearnREInvesting ([6muHPduCEtc @ 00:00:32])'],
+                                  ['Minimum fee swallowing a small A-to-B purchase amount',
+                                   'Minimums of $350 to $1,795 on amounts under $30,000',
+                                   'Check the minimum fee before comparing headline percentage rates',
+                                   'LearnREInvesting ([AvFYUxl4Gx8 @ 00:00:33]); LearnREInvesting '
+                                   '([0u7L7Q7CE5o @ 00:02:10])'],
+                                  ['Two title companies or a rushed, messy closing setup',
+                                   'Roughly another 1%, turning $2,250 into $3,750 on $150,000',
+                                   'Use one title company for both sides of the double close',
+                                   'The Full Deal REI ([H-3pmQVYvCI @ 00:03:00])'],
+                                  ['End buyer walks away on the scheduled closing day',
+                                   "Wholesaler's earnest money sitting with the seller side is exposed",
+                                   'Require a meaningful non-refundable buyer deposit plus escrow release '
+                                   'clause',
+                                   'The Full Deal REI ([H-3pmQVYvCI @ 00:06:18])'],
+                                  ['Financed end buyer hits FHA resale and recording rules',
+                                   'Ninety-day resale rule blocks flips; underwriting takes four to eight '
+                                   'weeks',
+                                   'Favor cash, private and hard money buyers, or use extended funding',
+                                   'The Full Deal REI ([H-3pmQVYvCI @ 00:06:34]); LearnREInvesting '
+                                   '([a0yQnepWIA4 @ 00:02:10])'],
+                                  ['Hostile or inflexible closing agent or end buyer attorney',
+                                   'Deals stall; one attorney demanded to see escrowed funds first',
+                                   'Use referred investor-friendly closing agents and experienced, '
+                                   'flexible funders',
+                                   'LearnREInvesting ([PlXZzAIYwfI @ 00:02:07]); LearnREInvesting '
+                                   '([6muHPduCEtc @ 00:01:21])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Kill the Funder or the Deal Before Closing Day',
+                           'body': 'Practitioner-reported pitfalls that should stop a double close before '
+                                   'a single wire is requested.',
+                           'items': ['Walk if the funder demands a big upfront application fee or pushes a '
+                                     '24-hour funding deadline, and confirm your title company has heard '
+                                     'of them [The Full Deal REI — H-3pmQVYvCI @ 00:06:51].',
+                                     'Get the total expected funding charge on the actual A-to-B amount in '
+                                     'writing, including wire, processing, document rush, extended hold '
+                                     'and split title company fees [LearnREInvesting — 0u7L7Q7CE5o @ '
+                                     '00:02:30].',
+                                     'If the spread cannot absorb the funding fee plus two sets of closing '
+                                     'costs, it is not a double close deal [The Full Deal REI — '
+                                     'H-3pmQVYvCI @ 00:03:17].',
+                                     'Lock a non-refundable end buyer deposit with an escrow release '
+                                     'clause before your own earnest money is exposed [The Full Deal REI — '
+                                     'H-3pmQVYvCI @ 00:06:18].']}}],
+ 'pull_quote': '"If your spread can\'t absorb the funding fee plus two sets of closing costs, it\'s not a '
+               'double close deal." attributed to The Full Deal REI (H-3pmQVYvCI @ 00:03:17).',
+ 'diagram_id': 'diag-03',
+ 'action_checklist': ['Interview a live funder representative with the full question list: excluded '
+                      'states, upfront fees, cost if the deal dies, minimum, wire fee, back-end fees, '
+                      'extended closings and notice needed [LearnREInvesting — l-l8leRQ_KE @ 00:00:15].',
+                      'Convert every quoted rate into dollars on your actual A-to-B amount and check the '
+                      'minimum fee before choosing a funder [LearnREInvesting — 0u7L7Q7CE5o @ 00:02:10].',
+                      'Make sure names and the property address match on the A-to-B and B-to-C contracts '
+                      'before submitting the deal [The Full Deal REI — H-3pmQVYvCI @ 00:04:53].',
+                      "Submit the deal through the funder's intake form with business details, property "
+                      'address and closing company, then hand the funder off to the title company or '
+                      'closing attorney [Velocity Advantage Capital — Fb1_zsDd4XE @ 00:00:20].',
+                      'Schedule both closings for the same day at one investor-friendly title company and '
+                      'get end buyer funds in before the funder wires [The Full Deal REI — H-3pmQVYvCI @ '
+                      '00:05:09].',
+                      'When a holding period is unavoidable, such as REO, deed-restricted short sales or '
+                      'auction wins, line up extended transactional funding or a hard money loan '
+                      '[LearnREInvesting — a0yQnepWIA4 @ 00:01:20].'],
+ 'statutory_citations': [{'title': 'The Full Deal REI — How Much Does Transactional Funding Cost (Real '
+                                   'Example + What Lenders Require) [00:03:00]',
+                          'url': 'https://www.youtube.com/watch?v=H-3pmQVYvCI&t=180s',
+                          'relevance': 'Primary practitioner testimony on the hidden extra 1% from split '
+                                       'title companies and rushed closings.'},
+                         {'title': 'LearnREInvesting — Real Estate Investing - What is a Transaction Fee '
+                                   'in Transactional Funding? [00:01:22]',
+                          'url': 'https://www.youtube.com/watch?v=AvFYUxl4Gx8&t=82s',
+                          'relevance': 'Primary practitioner testimony on the 1% ceiling and junk fees to '
+                                       'watch for.'},
+                         {'title': 'LearnREInvesting — Comparison of Transactional Funding Rates (Avoid '
+                                   'Overpaying!) [00:00:50]',
+                          'url': 'https://www.youtube.com/watch?v=0u7L7Q7CE5o&t=50s',
+                          'relevance': 'Primary practitioner testimony on comparing funder pricing in '
+                                       'dollars rather than percentages.'},
+                         {'title': 'LearnREInvesting — Transactional Funding Hated By Some Closing Agents! '
+                                   'Transactional Funding Information [00:02:07]',
+                          'url': 'https://www.youtube.com/watch?v=PlXZzAIYwfI&t=127s',
+                          'relevance': 'Primary practitioner testimony on closing agent and end buyer '
+                                       'attorney friction that derails double closes.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'Fb1_zsDd4XE',
+                       'title': 'How to Use TRANSACTIONAL Funding for Double Closings',
+                       'channel': 'Velocity Advantage Capital',
+                       'author': 'Velocity Advantage Capital',
+                       'text': "On the day of closing once everybody's signed and everything's ready to go "
+                               'we fund the deal, send it directly to the closing company, they close that '
+                               'first contract with the seller, then close it with a second contract with '
+                               'the end buyer.',
+                       'tip': "On the day of closing once everybody's signed and everything's ready to go "
+                              'we fund the deal, send it directly to the closing company, they close that '
+                              'first contract with the seller, then close it with a second contract with '
+                              'the end buyer.',
+                       'timestamp': 86,
+                       'timestamp_seconds': 86,
+                       'timestamp_label': '[00:01:26]',
+                       'url': 'https://www.youtube.com/watch?v=Fb1_zsDd4XE&t=86s',
+                       'markdown': '[00:01:26](https://www.youtube.com/watch?v=Fb1_zsDd4XE&t=86s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'a--96aHg5xs',
+                       'title': 'Transactional Funding Explained: Close More Deals in 2026',
+                       'channel': 'Fund My Real Estate Deal',
+                       'author': 'Fund My Real Estate Deal',
+                       'text': 'It is not a traditional loan. We typically do not do credit checks, '
+                               "there's not an income verification, and there's no underwriting.",
+                       'tip': "It is not a traditional loan. We typically do not do credit checks, there's "
+                              "not an income verification, and there's no underwriting.",
+                       'timestamp': 119,
+                       'timestamp_seconds': 119,
+                       'timestamp_label': '[00:01:59]',
+                       'url': 'https://www.youtube.com/watch?v=a--96aHg5xs&t=119s',
+                       'markdown': '[00:01:59](https://www.youtube.com/watch?v=a--96aHg5xs&t=119s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HGfRd2Z2i24',
+                       'title': 'Transactional Funding And Double Closings—What You Need To Know',
+                       'channel': 'Velocity Advantage Capital',
+                       'author': 'Velocity Advantage Capital',
+                       'text': "Sometimes it'd be 3%, sometimes it'd be 4%, and every single time it was a "
+                               "little bit different, so that's obviously going to affect your bottom "
+                               'line, your profit.',
+                       'tip': "Sometimes it'd be 3%, sometimes it'd be 4%, and every single time it was a "
+                              "little bit different, so that's obviously going to affect your bottom line, "
+                              'your profit.',
+                       'timestamp': 55,
+                       'timestamp_seconds': 55,
+                       'timestamp_label': '[00:00:55]',
+                       'url': 'https://www.youtube.com/watch?v=HGfRd2Z2i24&t=55s',
+                       'markdown': '[00:00:55](https://www.youtube.com/watch?v=HGfRd2Z2i24&t=55s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2OXgeuq7LZU',
+                       'title': "Don't Lose Your Deal! How Transactional Funding Saves Double Closings",
+                       'channel': 'Sure Flow Capital Partners',
+                       'author': 'Sure Flow Capital Partners',
+                       'text': 'The problem is good deals die because the cash is not there at the exact '
+                               'moment that you need it.',
+                       'tip': 'The problem is good deals die because the cash is not there at the exact '
+                              'moment that you need it.',
+                       'timestamp': 183,
+                       'timestamp_seconds': 183,
+                       'timestamp_label': '[00:03:03]',
+                       'url': 'https://www.youtube.com/watch?v=2OXgeuq7LZU&t=183s',
+                       'markdown': '[00:03:03](https://www.youtube.com/watch?v=2OXgeuq7LZU&t=183s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'AvFYUxl4Gx8',
+                       'title': 'Real Estate Investing - What is a Transaction Fee in Transactional '
+                                'Funding?',
+                       'channel': 'LearnREInvesting',
+                       'author': 'LearnREInvesting',
+                       'text': 'In no case should you be paying more than one percent of the funds of the '
+                               'A to B closing unless your transactional lender will negotiate a lower '
+                               'rate than quoted or the amount you need is over one million dollars.',
+                       'tip': 'In no case should you be paying more than one percent of the funds of the A '
+                              'to B closing unless your transactional lender will negotiate a lower rate '
+                              'than quoted or the amount you need is over one million dollars.',
+                       'timestamp': 82,
+                       'timestamp_seconds': 82,
+                       'timestamp_label': '[00:01:22]',
+                       'url': 'https://www.youtube.com/watch?v=AvFYUxl4Gx8&t=82s',
+                       'markdown': '[00:01:22](https://www.youtube.com/watch?v=AvFYUxl4Gx8&t=82s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0u7L7Q7CE5o',
+                       'title': 'Comparison of Transactional Funding Rates (Avoid Overpaying!)',
+                       'channel': 'LearnREInvesting',
+                       'author': 'LearnREInvesting',
+                       'text': "Don't choose a transactional funder based on a single percentage printed "
+                               'on a website; go with an experienced provider who can help you when you '
+                               'hit roadblocks.',
+                       'tip': "Don't choose a transactional funder based on a single percentage printed on "
+                              'a website; go with an experienced provider who can help you when you hit '
+                              'roadblocks.',
+                       'timestamp': 187,
+                       'timestamp_seconds': 187,
+                       'timestamp_label': '[00:03:07]',
+                       'url': 'https://www.youtube.com/watch?v=0u7L7Q7CE5o&t=187s',
+                       'markdown': '[00:03:07](https://www.youtube.com/watch?v=0u7L7Q7CE5o&t=187s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0u7L7Q7CE5o',
+                       'title': 'Comparison of Transactional Funding Rates (Avoid Overpaying!)',
+                       'channel': 'LearnREInvesting',
+                       'author': 'LearnREInvesting',
+                       'text': 'A half point difference equals $1,000 on this deal, and a full point '
+                               'equals $2,000.',
+                       'tip': 'A half point difference equals $1,000 on this deal, and a full point equals '
+                              '$2,000.',
+                       'timestamp': 71,
+                       'timestamp_seconds': 71,
+                       'timestamp_label': '[00:01:11]',
+                       'url': 'https://www.youtube.com/watch?v=0u7L7Q7CE5o&t=71s',
+                       'markdown': '[00:01:11](https://www.youtube.com/watch?v=0u7L7Q7CE5o&t=71s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'l-l8leRQ_KE',
+                       'title': 'Real Estate Investing - What Upfront Fees are there for Transactional '
+                                'Funding?',
+                       'channel': 'LearnREInvesting',
+                       'author': 'LearnREInvesting',
+                       'text': 'There should never be any upfront cost for transactional funding, but some '
+                               'transactional lenders charge an application fee for them to decide whether '
+                               'they will or will not fund your deal.',
+                       'tip': 'There should never be any upfront cost for transactional funding, but some '
+                              'transactional lenders charge an application fee for them to decide whether '
+                              'they will or will not fund your deal.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=l-l8leRQ_KE&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=l-l8leRQ_KE&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sZe_QRsB_NE',
+                       'title': 'Transactional Funding How Long Can You Use It?|Real Estate '
+                                'Investing|Best|Lending|lender|Fl',
+                       'channel': 'LearnREInvesting',
+                       'author': 'LearnREInvesting',
+                       'text': 'Transactional funding lenders who advertise 30, 60, or even 90-day '
+                               'transactional funding are actually not transactional funding because the '
+                               'lender charges points and interest for the extended time period.',
+                       'tip': 'Transactional funding lenders who advertise 30, 60, or even 90-day '
+                              'transactional funding are actually not transactional funding because the '
+                              'lender charges points and interest for the extended time period.',
+                       'timestamp': 75,
+                       'timestamp_seconds': 75,
+                       'timestamp_label': '[00:01:15]',
+                       'url': 'https://www.youtube.com/watch?v=sZe_QRsB_NE&t=75s',
+                       'markdown': '[00:01:15](https://www.youtube.com/watch?v=sZe_QRsB_NE&t=75s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6muHPduCEtc',
+                       'title': 'Real Estate Investing - Transactional Funding Costs',
+                       'channel': 'LearnREInvesting',
+                       'author': 'LearnREInvesting',
+                       'text': "In more than a few cases I've been asked to save a closing because of an "
+                               'inexperienced or inflexible transactional funder.',
+                       'tip': "In more than a few cases I've been asked to save a closing because of an "
+                              'inexperienced or inflexible transactional funder.',
+                       'timestamp': 81,
+                       'timestamp_seconds': 81,
+                       'timestamp_label': '[00:01:21]',
+                       'url': 'https://www.youtube.com/watch?v=6muHPduCEtc&t=81s',
+                       'markdown': '[00:01:21](https://www.youtube.com/watch?v=6muHPduCEtc&t=81s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2MOHSWLCCqc',
+                       'title': '20 Deals Using Transactional Funding With No Upfront Fees',
+                       'channel': 'LearnREInvesting',
+                       'author': 'LearnREInvesting',
+                       'text': 'Here are the 20 deals: $439,000 net profit, $2.5 million funded, and these '
+                               'were all done with no money from the investor student in the deal.',
+                       'tip': 'Here are the 20 deals: $439,000 net profit, $2.5 million funded, and these '
+                              'were all done with no money from the investor student in the deal.',
+                       'timestamp': 280,
+                       'timestamp_seconds': 280,
+                       'timestamp_label': '[00:04:40]',
+                       'url': 'https://www.youtube.com/watch?v=2MOHSWLCCqc&t=280s',
+                       'markdown': '[00:04:40](https://www.youtube.com/watch?v=2MOHSWLCCqc&t=280s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'H-3pmQVYvCI',
+                       'title': 'How Much Does Transactional Funding Cost (Real Example + What Lenders '
+                                'Require)',
+                       'channel': 'The Full Deal REI',
+                       'author': 'The Full Deal REI',
+                       'text': 'Use one title company for both sides, and build the funding cost into your '
+                               'numbers before you ever sign a contract with the seller, not after.',
+                       'tip': 'Use one title company for both sides, and build the funding cost into your '
+                              'numbers before you ever sign a contract with the seller, not after.',
+                       'timestamp': 197,
+                       'timestamp_seconds': 197,
+                       'timestamp_label': '[00:03:17]',
+                       'url': 'https://www.youtube.com/watch?v=H-3pmQVYvCI&t=197s',
+                       'markdown': '[00:03:17](https://www.youtube.com/watch?v=H-3pmQVYvCI&t=197s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'H-3pmQVYvCI',
+                       'title': 'How Much Does Transactional Funding Cost (Real Example + What Lenders '
+                                'Require)',
+                       'channel': 'The Full Deal REI',
+                       'author': 'The Full Deal REI',
+                       'text': "Let's talk red flags: big upfront application fees before anything closes, "
+                               'be careful.',
+                       'tip': "Let's talk red flags: big upfront application fees before anything closes, "
+                              'be careful.',
+                       'timestamp': 411,
+                       'timestamp_seconds': 411,
+                       'timestamp_label': '[00:06:51]',
+                       'url': 'https://www.youtube.com/watch?v=H-3pmQVYvCI&t=411s',
+                       'markdown': '[00:06:51](https://www.youtube.com/watch?v=H-3pmQVYvCI&t=411s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'a0yQnepWIA4',
+                       'title': 'What Is Extended Transactional Funding?',
+                       'channel': 'LearnREInvesting',
+                       'author': 'LearnREInvesting',
+                       'text': 'When you purchase an REO or bank owned foreclosure you likely will have to '
+                               'use the closing agent the bank uses, and this closing agent will almost '
+                               'never allow a double closing.',
+                       'tip': 'When you purchase an REO or bank owned foreclosure you likely will have to '
+                              'use the closing agent the bank uses, and this closing agent will almost '
+                              'never allow a double closing.',
+                       'timestamp': 14,
+                       'timestamp_seconds': 14,
+                       'timestamp_label': '[00:00:14]',
+                       'url': 'https://www.youtube.com/watch?v=a0yQnepWIA4&t=14s',
+                       'markdown': '[00:00:14](https://www.youtube.com/watch?v=a0yQnepWIA4&t=14s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BbugvWp8qsA',
+                       'title': 'Transactional Funding In Tennessee Net Profit $30,070.71 No Money Deal',
+                       'channel': 'LearnREInvesting',
+                       'author': 'LearnREInvesting',
+                       'text': 'Same day double closings only, one day rate is 1% of the amount funded '
+                               'plus a $50 wire fee.',
+                       'tip': 'Same day double closings only, one day rate is 1% of the amount funded plus '
+                              'a $50 wire fee.',
+                       'timestamp': 22,
+                       'timestamp_seconds': 22,
+                       'timestamp_label': '[00:00:22]',
+                       'url': 'https://www.youtube.com/watch?v=BbugvWp8qsA&t=22s',
+                       'markdown': '[00:00:22](https://www.youtube.com/watch?v=BbugvWp8qsA&t=22s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9HWpfZS4eQM',
+                       'title': 'How to Fund Seller Carryback Deals with Transactional Funding',
+                       'channel': 'Sure Flow Capital Partners',
+                       'author': 'Sure Flow Capital Partners',
+                       'text': 'The primary lender wants to see down payment come from somewhere real at '
+                               'closing, and transactional funding can satisfy that down payment '
+                               'requirement.',
+                       'tip': 'The primary lender wants to see down payment come from somewhere real at '
+                              'closing, and transactional funding can satisfy that down payment '
+                              'requirement.',
+                       'timestamp': 100,
+                       'timestamp_seconds': 100,
+                       'timestamp_label': '[00:01:40]',
+                       'url': 'https://www.youtube.com/watch?v=9HWpfZS4eQM&t=100s',
+                       'markdown': '[00:01:40](https://www.youtube.com/watch?v=9HWpfZS4eQM&t=100s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VGIfE33jspg',
+                       'title': 'Transactional Funding| Warning Transactional Lenders Not The Same',
+                       'channel': 'LearnREInvesting',
+                       'author': 'LearnREInvesting',
+                       'text': 'We generally try to keep the profit below fifteen thousand dollars if we '
+                               'are assigning the contract to an end buyer.',
+                       'tip': 'We generally try to keep the profit below fifteen thousand dollars if we '
+                              'are assigning the contract to an end buyer.',
+                       'timestamp': 63,
+                       'timestamp_seconds': 63,
+                       'timestamp_label': '[00:01:03]',
+                       'url': 'https://www.youtube.com/watch?v=VGIfE33jspg&t=63s',
+                       'markdown': '[00:01:03](https://www.youtube.com/watch?v=VGIfE33jspg&t=63s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PlXZzAIYwfI',
+                       'title': 'Transactional Funding Hated By Some Closing Agents! Transactional Funding '
+                                'Information',
+                       'channel': 'LearnREInvesting',
+                       'author': 'LearnREInvesting',
+                       'text': 'In one case we had an attorney for the end buyer who wanted to see the '
+                               "closing agent's escrow account with our funds in the account before "
+                               'allowing his client to send the money.',
+                       'tip': 'In one case we had an attorney for the end buyer who wanted to see the '
+                              "closing agent's escrow account with our funds in the account before "
+                              'allowing his client to send the money.',
+                       'timestamp': 127,
+                       'timestamp_seconds': 127,
+                       'timestamp_label': '[00:02:07]',
+                       'url': 'https://www.youtube.com/watch?v=PlXZzAIYwfI&t=127s',
+                       'markdown': '[00:02:07](https://www.youtube.com/watch?v=PlXZzAIYwfI&t=127s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'}]}

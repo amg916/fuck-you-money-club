@@ -1,744 +1,808 @@
 from __future__ import annotations
 
-CHAPTER_4 = {
-    "id": "Q4",
-    "chapter_id": "Q4",
-    "chapter_number": 4,
-    "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($30,000–$120,000 USD) and configure a lean, low-opex ($6,000–$25,000 USD/mo) production stack without wasting cash on bloated overhead?",
-    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Reserve-First ETA Capital, SBA and Seller-Note Structures, Twelve Software Layers, and Verified Closing Readiness",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #13, Business Acquisition, ranks #17 with a 86/100 Money-to-Manpower "
-        "Score: the constraint is capital and operating labor, not software access. "
-        "This chapter maps seven operator plays: reserve-first capitalization, QoE-led "
-        "price discipline, SBA and seller-note structuring, aged-entity and tradeline "
-        "credit discipline, lean infrastructure consolidation, liability isolation, "
-        "and a cash-led 100-day turnaround. Keep 55% of startup capital in identifiable "
-        "working-capital reserves, underwrite every financing source, and install only "
-        "systems that protect collections, payroll, reporting, and customer continuity. "
-        "Canonical annual owner profits remain $60,000 Conservative, $243,750 Base, and "
-        "$540,000 Scaled, after interest but before principal repayments. Acquisition "
-        "funding, business sales, software spending, and owner distributions must remain "
-        "separate ledgers throughout the six-to-eighteen-month search and transition."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$750,000",
-            "context": "Annual acquired-business sales; not acquisition financing proceeds",
-            "note": "8% margin; $60,000 annual owner net profit after interest, before principal repayments; 2 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,875,000",
-            "context": "Annual acquired-business sales; not purchase consideration",
-            "note": "13.0% margin; $243,750 annual owner net profit after interest, before principal repayments; 2 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$3,000,000",
-            "context": "Annual acquired-business sales; not financing capacity",
-            "note": "18% margin; $540,000 annual owner net profit after interest, before principal repayments; 3 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Ring-fence working capital before negotiating the purchase",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Play one, reserve-first capitalization, starts with a sources-and-uses "
-                    "schedule that distinguishes buyer cash from purchase price. Allocate "
-                    "55% of the $30,000–$120,000 startup envelope to working-capital and "
-                    "liquidity reserves before bidding. The three illustrative budgets below "
-                    "sum to $200,000, $600,000, and $1,000,000; they are funding envelopes, "
-                    "not additional scorecard scenarios. Keep reserves in separately identified "
-                    "business accounts or ledger subaccounts, with weekly reporting of "
-                    "unrestricted balances. Security deposits, lender-controlled cash, escrowed "
-                    "purchase consideration, and unavailable credit lines do not count as "
-                    "spendable reserves. The $600,000 envelope commits $330,000 to reserves "
-                    "and only $180,000 to acquisition equity. If the transaction requires "
-                    "$250,000 of buyer equity, raise another $70,000 or change the transaction; "
-                    "do not silently raid payroll liquidity. Reserve coverage against the "
-                    "illustrative monthly overhead bands equals 7.33 months at $110,000 "
-                    "divided by $15,000, 8.25 months at $330,000 divided by $40,000, and "
-                    "7.86 months at $550,000 divided by $70,000. Those ratios measure "
-                    "overhead coverage, not total survival runway. Inventory purchases, "
-                    "seasonal receivables, taxes, principal payments, and necessary equipment "
-                    "replacement belong in a separate thirteen-week cash forecast. An "
-                    "apparently comfortable cash balance can disappear when annual insurance "
-                    "premiums and the first post-closing payroll fall in the same week."
-                ),
-                (
-                    "Play two, QoE-led price discipline, converts diligence from a report "
-                    "purchase into a funding decision. Commission a transaction-sized Quality "
-                    "of Earnings review that bridges tax returns, bank deposits, sales "
-                    "journals, payroll, and monthly management accounts. Require separate "
-                    "schedules for customer concentration, aged receivables, inventory "
-                    "obsolescence, deferred revenue, owner add-backs, and maintenance capital "
-                    "expenditure. A seller claiming $300,000 of adjusted earnings might "
-                    "include a $60,000 owner compensation add-back while the buyer must "
-                    "hire a $90,000 replacement manager. Substituting the actual replacement "
-                    "cost reduces that claimed earnings figure by $90,000, to $210,000, "
-                    "assuming all other adjustments survive verification. Do not add the "
-                    "same owner salary twice or price the business on labor that somebody "
-                    "still must perform. At a negotiated four-times earnings multiple, "
-                    "that correction changes illustrative enterprise value by $360,000. "
-                    "Treat this as transaction math, not a revision to the canonical "
-                    "annual profit cases. Define the working-capital peg using representative "
-                    "monthly balances and seasonality rather than the seller's best month. "
-                    "Document which receivables, inventory, payables, and customer deposits "
-                    "transfer. If source records cannot support collections or normalized "
-                    "earnings, suspend exclusivity spending, narrow the diligence scope, "
-                    "renegotiate consideration, or leave before irreversible closing costs "
-                    "consume the reserve."
-                ),
-                (
-                    "Play three, SBA and seller-note structuring, separates acquisition "
-                    "consideration from operating liquidity. An illustrative $1,000,000 "
-                    "purchase could use $180,000 buyer equity, $720,000 senior financing, "
-                    "and a $100,000 seller note; fees and the $330,000 reserve remain "
-                    "separate uses in the $600,000 startup envelope. This capital stack "
-                    "is arithmetic, not a statement that any lender will accept the "
-                    "structure. Obtain written treatment of equity injection, seller "
-                    "standby, subordination, collateral, distributions, and permitted "
-                    "working-capital uses under the applicable program and loan documents. "
-                    "Under 13 CFR 120.150, repayment ability matters; an eligible business "
-                    "still needs credible cash generation. Model payment commencement "
-                    "dates explicitly, especially when a deferred seller note begins "
-                    "amortizing after the transition. Canonical owner profit already "
-                    "includes interest expense, so subtracting interest again understates "
-                    "cash availability. Conversely, principal repayment is excluded and "
-                    "must be deducted before distributions. An illustrative $72,000 annual "
-                    "principal requirement leaves negative $12,000, $171,750, and $468,000 "
-                    "from the Conservative, Base, and Scaled profits, respectively, before "
-                    "incremental capital expenditure, working-capital changes, and owner-level "
-                    "taxes. These are cash bridges, not new profit forecasts. Reject a "
-                    "financing structure that only works by stripping reserves or assuming "
-                    "immediate customer growth; reduce the price, change payment timing, "
-                    "or select a smaller acquisition."
-                ),
-            ],
-            "table": {
-                "caption": "Reserve-First Startup Budgets: Three Funding Envelopes, Each Holding 55% for Liquidity",
-                "headers": [
-                    "Capital use and operating purpose",
-                    "$200,000 buyer-capital envelope",
-                    "$600,000 buyer-capital envelope",
-                    "$1,000,000 buyer-capital envelope",
-                ],
-                "rows": [
-                    [
-                        "Working-capital reserve remains identifiable and available for operations",
-                        "$110,000 reserved for collections gaps, payroll, and seasonal purchases",
-                        "$330,000 reserved for collections gaps, payroll, and seasonal purchases",
-                        "$550,000 reserved for collections gaps, payroll, and seasonal purchases",
-                    ],
-                    [
-                        "Acquisition equity funds consideration without consuming the operating reserve",
-                        "$50,000 buyer equity requires a suitably small financed transaction",
-                        "$180,000 buyer equity supports only independently underwritten purchase economics",
-                        "$320,000 buyer equity remains subject to lender injection requirements",
-                    ],
-                    [
-                        "Diligence funding purchases evidence before the buyer commits irrevocably",
-                        "$16,000 funds scoped accounting, legal, lien, and customer verification",
-                        "$36,000 funds deeper QoE, tax, legal, and operational verification",
-                        "$50,000 funds expanded QoE, contracts, inventory, and specialist verification",
-                    ],
-                    [
-                        "Closing and financing costs remain separate from purchase consideration",
-                        "$10,000 allowance requires written lender, counsel, and filing estimates",
-                        "$24,000 allowance requires written lender, counsel, and filing estimates",
-                        "$35,000 allowance requires written lender, counsel, and filing estimates",
-                    ],
-                    [
-                        "Transition funding protects service continuity during controlled ownership transfer",
-                        "$8,000 covers prioritized training, credentials, insurance, and customer handoffs",
-                        "$18,000 covers prioritized training, credentials, insurance, and customer handoffs",
-                        "$25,000 covers prioritized training, credentials, insurance, and customer handoffs",
-                    ],
-                    [
-                        "Infrastructure allowance includes subscriptions, setup labor, and migration contingency",
-                        "$6,000 ceiling favors existing systems and minimal implementation work",
-                        "$12,000 ceiling supports measured configuration without premature enterprise contracts",
-                        "$20,000 ceiling supports additional migration work without uncontrolled customization",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the reserve where acquisition budgets usually leak",
-                "body": (
-                    "An attractive headline purchase price can conceal expensive working-capital "
-                    "delivery, replacement labor, and payment-timing problems."
-                ),
-                "items": [
-                    "Require an opening balance-sheet illustration with the letter of intent; identify customer deposits and prepaid obligations before agreeing to the working-capital peg.",
-                    "Pay diligence providers against named deliverables and staged scopes; release the next tranche only after bank-to-ledger reconciliation supports the seller's revenue.",
-                    "Negotiate a specific seller transition schedule with hours, introductions, and documentation; avoid paying a vague consulting retainer for availability that never materializes.",
-                    "Request the lender's complete fee estimate and draft debt schedule early; compare reserve balances after closing, not merely the quoted interest rate.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Install twelve infrastructure layers without buying an enterprise stack",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Play five, lean infrastructure consolidation, starts by inventorying the "
-                    "target's working systems before purchasing replacements. Preserve a "
-                    "reliable point-of-sale, dispatch, inventory, or industry billing system "
-                    "through closing unless ownership transfer or security defects make "
-                    "continued use untenable. The twelve-layer matrix supplies explicit "
-                    "USD budgeting inputs, not live vendor quotations: verify prices, "
-                    "feature limits, taxes, renewal terms, and acquisition eligibility "
-                    "before committing. Annual-billed plans can require cash upfront "
-                    "even when the table expresses monthly equivalents. For ten named "
-                    "users and ten managed computers, the listed paid inputs total "
-                    "$443 monthly: Microsoft 365 $60, Bitwarden $40, QuickBooks $38, "
-                    "Gusto $91 for seven employees, Dropbox Sign $15, Make $9, "
-                    "and Backblaze $90. The remaining listed tiers carry zero subscription "
-                    "charges under the stated assumptions. That produces $5,316 in "
-                    "annual recurring subscriptions before taxes, transaction fees, "
-                    "implementation, and specialized operating software. Against the "
-                    "$12,000 infrastructure allowance, $6,684 remains for those additional "
-                    "items. Contractor payment charges, extra CRM seats, backup exclusions, "
-                    "and additional payroll jurisdictions require separate quotes. Do not "
-                    "confuse cheap software with low business overhead: seven employees, "
-                    "insurance, premises, materials, and debt service dominate this model. "
-                    "Each new subscription needs a named owner, export method, cancellation "
-                    "date, and measurable operational purpose."
-                ),
-                (
-                    "Configure identity before automation. Use individually assigned Microsoft "
-                    "365 accounts, multifactor authentication, separate administrative "
-                    "credentials, and a documented recovery contact controlled by the "
-                    "buyer. Store service credentials in Bitwarden collections with "
-                    "role-based access; never inherit the seller's shared mailbox as "
-                    "the permanent administrator account. Microsoft 365 Business Basic "
-                    "does not supply a complete endpoint-management and device-security "
-                    "program, so inventory device protection separately and budget "
-                    "any missing controls. QuickBooks Simple Start is a narrow planning "
-                    "baseline, not a fit for every acquired company: inventory, multiple "
-                    "operational users, consolidated entities, and detailed job costing "
-                    "can justify a different tier or retention of the incumbent ledger. "
-                    "Never share one login to evade seat limits. Keep payroll in "
-                    "Gusto only after verifying state coverage, tax setup, historical "
-                    "balances, benefit deductions, and the closing-date employer arrangement. "
-                    "HubSpot's free tier should serve a small relationship handoff, "
-                    "not a complex sales organization. Export customer and supplier "
-                    "records before changing account ownership. Run a test invoice, "
-                    "a test credit, and a bank reconciliation against controlled "
-                    "sample records. If migration fails, retain the existing system "
-                    "under an explicit transition arrangement and delay the cutover; "
-                    "the buyer needs uninterrupted collections more than a fashionable "
-                    "technology architecture."
-                ),
-                (
-                    "Automation belongs behind reconciled source data. Use Airtable for "
-                    "a short transition register, Make for bounded notifications and "
-                    "document routing, and Looker Studio for read-only reporting. Do "
-                    "not let an untested integration create supplier payments or change "
-                    "bank instructions. At an assumed 400 workflow runs per month "
-                    "using twenty billable credits each, an 8,000-credit workload fits "
-                    "the matrix's 10,000-credit planning tier with a 2,000-credit "
-                    "buffer; validate actual vendor metering because connector actions "
-                    "can consume different amounts. Route failures to a named operator "
-                    "and retain a manual checklist that works without the integration. "
-                    "Backblaze workstation backup protects supported local files, not "
-                    "automatically every cloud mailbox or database; inventory each "
-                    "data source and test its separate export or backup path. "
-                    "Cloudflare DNS access must transfer with the domain registrar "
-                    "account, recovery methods, and billing ownership. Reduce duplicate "
-                    "subscriptions only after confirming retention and export requirements. "
-                    "For twelve users, twelve computers, and eight payroll employees, "
-                    "the same pricing inputs total $487 monthly, assuming unchanged "
-                    "tiers elsewhere. The modest $44 increase illustrates why software "
-                    "seat optimization cannot rescue weak acquisition economics. Review "
-                    "the stack after thirty days of actual transaction volumes, then "
-                    "upgrade the specific bottleneck rather than purchasing a bundled "
-                    "suite to anticipate hypothetical complexity."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-Layer Infrastructure Matrix: Explicit Planning Prices, Operational Roles, and Lean Fallbacks",
-                "headers": [
-                    "Layer and named vendor",
-                    "Exact tier and budgeting input",
-                    "Required acquisition operating role",
-                    "Lean alternative and switching condition",
-                ],
-                "rows": [
-                    [
-                        "Identity, email, and shared documents through Microsoft 365",
-                        "Business Basic: assume $6 per user monthly, billed annually",
-                        "Assign ten identities; centralize mail, shared files, and recovery",
-                        "Retain transferable incumbent licenses when ownership and security remain sound",
-                    ],
-                    [
-                        "Credential custody and role-based sharing through Bitwarden",
-                        "Teams: assume $4 per user monthly, billed annually",
-                        "Separate finance credentials, administrator secrets, and contractor access collections",
-                        "Use a controlled KeePassXC vault temporarily with documented custody procedures",
-                    ],
-                    [
-                        "Operating accounts and transaction visibility through Mercury banking platform",
-                        "Core business account: assume $0 monthly subscription before service charges",
-                        "Separate reserve reporting from operating payments and reconcile daily movements",
-                        "Retain an existing bank account only under valid ownership arrangements",
-                    ],
-                    [
-                        "General ledger and basic invoicing through QuickBooks Online",
-                        "Simple Start: assume $38 monthly before promotions and applicable taxes",
-                        "Maintain a single-company ledger when features match actual accounting requirements",
-                        "Keep the incumbent ledger when inventory or job costing requires it",
-                    ],
-                    [
-                        "Employee payroll and employer filings through Gusto",
-                        "Simple: assume $49 monthly plus $6 per employee monthly",
-                        "Budget $91 monthly for seven employees before additional payroll services",
-                        "Retain the existing payroll bureau until conversion balances reconcile completely",
-                    ],
-                    [
-                        "Customer handoff and relationship tracking through HubSpot",
-                        "Free CRM: assume $0 subscription with two working user seats",
-                        "Track key customer contacts, renewal dates, and assigned retention actions",
-                        "Use a permissioned shared spreadsheet for a small relationship register",
-                    ],
-                    [
-                        "Routine electronic signatures through Dropbox Sign document workflows",
-                        "Essentials: assume $15 monthly equivalent for one annually billed seat",
-                        "Execute ordinary vendor forms with controlled templates and signer evidence",
-                        "Use documented wet signatures when lender or transaction documents require them",
-                    ],
-                    [
-                        "Transition issues and task ownership through Airtable",
-                        "Free: assume $0 subscription within the 1,000-record base limit",
-                        "Assign issue owners, due dates, dependencies, and evidence links centrally",
-                        "Use Microsoft Lists within existing licensing when record volume remains modest",
-                    ],
-                    [
-                        "Bounded back-office notifications and document routing through Make",
-                        "Core: assume $9 monthly equivalent annually for 10,000 monthly credits",
-                        "Automate reconciled reminders while keeping payment execution outside initial workflows",
-                        "Run documented manual checklists until measured repetition justifies integration maintenance",
-                    ],
-                    [
-                        "Read-only operating dashboards through Google Looker Studio",
-                        "Standard self-service version: assume $0 subscription before paid data connectors",
-                        "Display collections, payroll timing, customer concentration, and cash forecast variance",
-                        "Publish controlled spreadsheet reports when connector reliability or costs disappoint",
-                    ],
-                    [
-                        "Supported workstation file recovery through Backblaze Computer Backup",
-                        "Computer Backup: assume $9 per computer monthly under monthly billing",
-                        "Protect ten supported computers and prove recovery with sampled restores",
-                        "Use encrypted rotating local backups with tested offsite copy custody",
-                    ],
-                    [
-                        "Domain routing and basic web-edge controls through Cloudflare",
-                        "Free plan: assume $0 subscription for the initial domain configuration",
-                        "Transfer DNS control, document records, and restrict administrative account access",
-                        "Retain registrar DNS when existing availability and access controls suffice",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Underwrite credit honestly and isolate inherited liabilities",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Play four is aged_shelf_corp_tradeline_credit_stacking, the TRACK_1 "
-                    "aged-entity and tradeline credit discipline play. Compare a reinstated "
-                    "entity with a newly formed acquisition vehicle on documented liabilities, "
-                    "ownership, filings, banking acceptance, and actual financing terms; "
-                    "entity age is not operating history. A ten-year-old dormant corporation "
-                    "does not have ten years of revenue, and purchased tradelines do "
-                    "not establish repayment capacity. Never attribute the seller's "
-                    "operating record to a separate borrower without accurately explaining "
-                    "the transaction and supplying lender-requested evidence. Verify "
-                    "reinstatement costs, tax arrears, judgments, prior guarantees, and "
-                    "liens before placing capital into an old entity. Promotional "
-                    "credit requires equally plain arithmetic. A hypothetical $50,000 "
-                    "facility with a twelve-month zero-interest promotion and a 3% "
-                    "upfront fee costs $1,500 before other charges. Retiring principal "
-                    "within twelve months requires $4,166.67 monthly, with the final "
-                    "payment adjusted for rounding. Confirm whether the promotion covers "
-                    "purchases, transfers, or cash advances and whether guarantees, "
-                    "utilization changes, or missed payments alter the terms. If "
-                    "$20,000 remains afterward at an illustrative 24% APR, simple "
-                    "first-month interest is about $400 before issuer-specific daily "
-                    "calculations. Halt applications when disclosures or repayment "
-                    "capacity fail; correct the record, use a transparent term facility, "
-                    "or reduce financed spending rather than opening more accounts."
-                ),
-                (
-                    "Play six, liability isolation, begins with transaction structure "
-                    "rather than an entity filing receipt. An asset purchase can "
-                    "define assumed obligations, but statutory successor exposure, liens, "
-                    "tax claims, and contract restrictions still require investigation. "
-                    "An equity purchase generally leaves the target's obligations "
-                    "inside the acquired entity. Maintain separate operating accounts, "
-                    "books, contracts, and documented intercompany transfers where multiple "
-                    "entities are justified; extra companies without operational purpose "
-                    "add fees and reconciliation risk. Bank onboarding requires accurate "
-                    "entity and authorized-person information under the bank's customer "
-                    "identification procedures, including the framework in 31 CFR "
-                    "1020.220. Confirm legal names and payment instructions through "
-                    "independently obtained contact channels before wiring closing funds. "
-                    "Search applicable state UCC records under the debtor's exact "
-                    "legal name, obtain payoff letters, and coordinate lien releases. "
-                    "UCC 9-315 explains why a security interest can continue in "
-                    "collateral after disposition unless the applicable exception "
-                    "or secured-party authorization applies. A database search alone "
-                    "does not establish clean title. Have transaction counsel address "
-                    "state enactments, tax liens, titled assets, and any required "
-                    "clearances. For applicable asset acquisitions, reconcile the "
-                    "purchase-price allocation under 26 U.S.C. 1060 and the parties' "
-                    "Form 8594 reporting. If evidence remains incomplete, change "
-                    "closing deliverables or escrow arrangements rather than treating "
-                    "a seller's verbal assurance as a release."
-                ),
-                (
-                    "Insurance and employment hygiene protect the same reserve as "
-                    "credit discipline. Obtain bindable quotes before finalizing the "
-                    "capital budget, with the correct legal entity, operations, "
-                    "locations, payroll, vehicles, and revenue estimates. Compare "
-                    "general liability, property, workers' compensation, cyber, "
-                    "professional liability where relevant, and business interruption "
-                    "against the actual operating exposures. Claims-made policies "
-                    "need particular attention to retroactive dates, prior acts, "
-                    "and extended reporting options; a new policy may not cover "
-                    "earlier events. An illustrative $12,000 annual premium paid "
-                    "upfront consumes $12,000 of cash immediately even though "
-                    "management reporting recognizes $1,000 monthly. Record that "
-                    "timing difference in the cash forecast. Verify license transferability "
-                    "directly with the issuing authority, including ownership-change "
-                    "requirements for regulated trades and locations. Review employee "
-                    "classification, accrued leave, benefit obligations, wage claims, "
-                    "and payroll tax balances without assuming the seller's labels "
-                    "are correct. Under 8 CFR 274a.2, choose and document the "
-                    "applicable Form I-9 approach for continuing acquired employees; "
-                    "retaining predecessor records carries responsibility for their "
-                    "defects. Separate employees from genuine contractors based on "
-                    "the applicable legal tests, not the desired headcount. If "
-                    "coverage, licenses, or payroll setup cannot support uninterrupted "
-                    "operations, arrange a lawful documented transition or defer "
-                    "the affected activity instead of spending reserves to improvise "
-                    "after closing."
-                ),
-            ],
-            "table": {
-                "caption": "Entity, Credit, Banking, and Liability Evidence Required Before Funds Move",
-                "headers": [
-                    "Exposure requiring specific investigation",
-                    "Evidence the operator must obtain",
-                    "Concrete unit math or decision test",
-                    "Failure response preserving buyer liquidity",
-                ],
-                "rows": [
-                    [
-                        "Reinstated entities can carry liabilities without genuine operating history",
-                        "Obtain state status, tax records, ownership history, and litigation searches",
-                        "Compare total reinstatement liabilities against a clean acquisition vehicle's cost",
-                        "Use a clean vehicle when historical exposure exceeds documented transaction benefits",
-                    ],
-                    [
-                        "Promotional credit creates repayment cliffs despite initially low interest",
-                        "Obtain written promotional terms, eligible transactions, fees, and guarantee requirements",
-                        "$50,000 principal requires roughly $4,166.67 monthly retirement across twelve months",
-                        "Halt applications, correct disclosures, and resize spending or secure term financing",
-                    ],
-                    [
-                        "Banking mistakes can misdirect closing wires or commingle reserves",
-                        "Verify account ownership, authorized signers, beneficiary details, and independent callbacks",
-                        "Classify restricted balances separately before calculating the 55% liquid reserve",
-                        "Pause the transfer until both counterparties independently verify payment instructions",
-                    ],
-                    [
-                        "Existing liens can survive a transfer of operating assets",
-                        "Collect exact-name searches, payoff letters, releases, and counsel's closing instructions",
-                        "Match every secured obligation to collateral and an identified discharge mechanism",
-                        "Require satisfactory release arrangements before delivering the affected purchase funds",
-                    ],
-                    [
-                        "Insurance timing and coverage gaps can overwhelm apparent monthly savings",
-                        "Collect bindable quotations, named insured schedules, exclusions, and prior-acts treatment",
-                        "$12,000 prepaid premium consumes cash immediately despite $1,000 monthly expense",
-                        "Bind correct coverage or defer exposed operations until protection becomes effective",
-                    ],
-                    [
-                        "Employee and license transitions can interrupt lawful ongoing operations",
-                        "Verify employer setup, payroll balances, I-9 treatment, and license-transfer requirements",
-                        "Reconcile every transferring worker and required license to a responsible owner",
-                        "Use a documented permitted transition or defer activities lacking required readiness",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Prove the cash bridge and launch a controlled 100-day turnaround",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Play seven, a cash-led 100-day turnaround, starts before closing "
-                    "with a rehearsal rather than a transformation announcement. Build "
-                    "an opening cash forecast from bank balances, collectible receivables, "
-                    "supplier terms, payroll dates, taxes, debt schedules, and committed "
-                    "capital expenditure. Assign every input an owner and refresh "
-                    "the forecast weekly. The canonical business economics remain "
-                    "$750,000 sales less $690,000 expenses for $60,000 profit, "
-                    "$1,875,000 less $1,631,250 for $243,750, and $3,000,000 "
-                    "less $2,460,000 for $540,000. These expense totals include "
-                    "interest and exclude principal repayment. For planning, allocate "
-                    "$15,000, $40,000, and $70,000 monthly to a defined recurring "
-                    "overhead subset, respectively. Annualized, those amounts equal "
-                    "$180,000, $480,000, and $840,000, leaving $510,000, "
-                    "$1,151,250, and $1,620,000 of other scorecard expenses. "
-                    "Those residuals cover costs outside the selected overhead "
-                    "subset; they are not spare cash. Define the account mapping "
-                    "explicitly so labor, premises, software, and interest cannot "
-                    "be counted twice. The monthly range is therefore not a "
-                    "claim that the entire acquired company operates on that "
-                    "amount. If a target's actual cost structure cannot fit "
-                    "these definitions without hiding expenses, display the variance "
-                    "and re-underwrite the transaction rather than changing the "
-                    "canonical profit labels."
-                ),
-                (
-                    "Stress the cash forecast using customer behavior rather than "
-                    "a uniform percentage reduction applied to profit. At Base "
-                    "sales of $1,875,000 annually, average monthly revenue is "
-                    "$156,250. An additional fifteen days of collections delay "
-                    "ties up approximately $78,125 when using a thirty-day "
-                    "month and assuming evenly distributed credit sales. That "
-                    "consumes 23.67% of the $330,000 reserve without changing "
-                    "recognized revenue or necessarily changing earnings. A customer "
-                    "representing 20% of Base sales accounts for $375,000 "
-                    "annually; losing that account reduces profit by the lost "
-                    "contribution after avoidable costs, not automatically by "
-                    "$375,000 or by 13% of that amount. Obtain customer-level "
-                    "gross contribution evidence before assigning a downside "
-                    "profit figure. Also test a supplier moving from thirty-day "
-                    "terms to payment before shipment, an equipment failure, "
-                    "and the first scheduled seller-note payment. Set intervention "
-                    "triggers in cash terms, such as forecast unrestricted "
-                    "cash falling below the next two payrolls plus committed "
-                    "tax and debt payments. Responses should have identified "
-                    "owners: accelerate undisputed collections, postpone discretionary "
-                    "projects, negotiate documented supplier terms, or draw an "
-                    "already authorized facility within its covenants. Do not "
-                    "count unapproved credit applications or hoped-for owner "
-                    "contributions as available liquidity. Re-run the forecast "
-                    "after each material customer or supplier change."
-                ),
-                (
-                    "Before releasing closing funds, require evidence that the "
-                    "buyer can collect money, pay people, access essential "
-                    "systems, and satisfy transaction conditions on the first "
-                    "operating day. The readiness matrix below names artifacts "
-                    "rather than ceremonial meetings. Rehearse payment approvals "
-                    "with a harmless test transaction where permitted, restore "
-                    "a selected backup, validate invoice routing, and walk "
-                    "through payroll calculations without accidentally submitting "
-                    "duplicate wages. Retain written owner assignments for "
-                    "banking, accounting, customer retention, personnel, and "
-                    "technology. Conservative and Base staffing remain seven "
-                    "full-time employees plus three contractors; Scaled remains "
-                    "eight plus four, or twelve people. Do not present "
-                    "external advisers as an invisible operating workforce "
-                    "when recurring work belongs in the cost base. During "
-                    "days one through thirty, stabilize billing and customer "
-                    "relationships; during days thirty-one through sixty, "
-                    "correct reporting and purchasing leakage; during days "
-                    "sixty-one through one hundred, pursue measured pricing "
-                    "and process changes. Keep the original cash forecast "
-                    "alongside actual results so favorable timing cannot "
-                    "masquerade as operating improvement. If opening balances, "
-                    "licenses, insurance, or debt conditions remain unresolved, "
-                    "escalate to the responsible transaction professional and "
-                    "delay the affected commitment. The completion standard "
-                    "is an evidenced operating capability with funded "
-                    "liquidity, not a collection of signed software contracts "
-                    "or an ambitious integration calendar."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-Flight Readiness Matrix: Six Evidence Tests for a Controlled Operating Handoff",
-                "headers": [
-                    "Readiness test and accountable owner",
-                    "Evidence required before operating handoff",
-                    "Quantified acceptance condition or reconciliation",
-                    "Fallback when evidence does not support readiness",
-                ],
-                "rows": [
-                    [
-                        "Buyer finance lead verifies funded liquidity and closing uses",
-                        "Provide bank evidence, sources-and-uses schedule, and restrictions on cash",
-                        "Reconcile startup uses completely and preserve the allocated 55% reserve",
-                        "Raise capital, resize consideration, or postpone closing without consuming reserves",
-                    ],
-                    [
-                        "Controller reconciles operating economics to the canonical scorecard",
-                        "Provide account mapping, expense bridge, debt schedule, and opening balances",
-                        "Show $60,000, $243,750, and $540,000 annual profit cases without principal",
-                        "Correct double counting and disclose target variances before underwriting proceeds",
-                    ],
-                    [
-                        "Payroll owner validates the first buyer-controlled payroll cycle",
-                        "Provide employee roster, tax setup, benefit deductions, and funding dates",
-                        "Match seven employees or eight employees to the selected staffing case",
-                        "Retain a supported transition provider until payroll conversion reconciles completely",
-                    ],
-                    [
-                        "Customer lead verifies uninterrupted invoicing and collections capability",
-                        "Provide test invoices, customer contacts, remittance instructions, and aged receivables",
-                        "Model the $78,125 Base liquidity impact of fifteen additional collection days",
-                        "Correct routing, contact affected customers, and preserve manual invoice delivery",
-                    ],
-                    [
-                        "Technology owner proves account custody and recoverable operating records",
-                        "Provide administrator inventory, recovery contacts, export samples, and restore evidence",
-                        "Verify access for each assigned role without reusing shared seller credentials",
-                        "Keep a documented incumbent transition and delay unproven migration steps",
-                    ],
-                    [
-                        "Transaction lead confirms legal, insurance, and lender conditions",
-                        "Provide license evidence, insurance binders, lien arrangements, and signed financing terms",
-                        "Match every required closing deliverable to an accountable professional and artifact",
-                        "Defer affected commitments until the specific defect receives documented resolution",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight verifications before irreversible commitments",
-                "body": (
-                    "A verification passes only when another responsible operator can inspect "
-                    "the evidence and reproduce the underlying reconciliation."
-                ),
-                "items": [
-                    "Capital verification: bank evidence reconciles to every closing use, restricted cash is excluded, and the designated working-capital reserve remains funded.",
-                    "Economics verification: source records support acquired-business sales, normalized costs, interest, principal schedules, and the thirteen-week cash forecast without double counting.",
-                    "Continuity verification: named owners demonstrate invoicing, payroll preparation, administrative access, backup recovery, customer handoffs, and effective insurance.",
-                    "Authority verification: transaction counsel and the lender resolve applicable entity, lien, license, employment, tax, disclosure, and financing conditions before the affected funds move.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the funding model",
-                    "action": "Reconcile buyer capital, purchase consideration, transaction expenses, and reserves.",
-                    "detail": (
-                        "Use the selected startup envelope, identify each financing source, "
-                        "exclude restricted balances, and preserve the 55% reserve allocation."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Rehearse operating continuity",
-                    "action": "Test collections, payroll preparation, access recovery, and ledger reconciliation.",
-                    "detail": (
-                        "Use controlled samples, prevent duplicate submissions, retain test "
-                        "evidence, and assign a manual fallback to each essential workflow."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Verify transaction conditions",
-                    "action": "Collect written evidence for financing, liens, licenses, insurance, and employer setup.",
-                    "detail": (
-                        "Have the responsible professionals resolve discrepancies and match "
-                        "every closing obligation to a named owner and specific artifact."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Run the first hundred days from cash",
-                    "action": "Refresh the thirteen-week forecast weekly and compare actual results with underwriting.",
-                    "detail": (
-                        "Stabilize customers first, repair reporting second, and authorize "
-                        "measured improvements only after cash impacts and fallback procedures are explicit."
-                    ),
-                },
-            ],
-        },
-    ],
-    "pull_quote": (
-        "Buy the cash engine, reserve the fuel, and refuse a capital stack that only works when nothing goes wrong."
-    ),
-    "diagram_id": "diag-07",
-    "action_checklist": [
-        "Select a $200,000, $600,000, or $1,000,000 planning envelope and reconcile all uses while retaining 55% in identifiable working-capital reserves.",
-        "Commission a scoped QoE review that reconciles bank receipts, replacement labor, customer concentration, working capital, and the purchase-price assumptions.",
-        "Obtain written financing terms and build a cash bridge that deducts principal without subtracting interest twice.",
-        "Price the twelve infrastructure layers using current written vendor terms, retain reliable incumbent systems, and document every migration fallback.",
-        "Verify entity records, banking authority, lien-release arrangements, license continuity, insurance effectiveness, and the employer transition with the responsible professionals.",
-        "Complete the four pre-flight verifications, rehearse essential workflows, and launch a weekly thirteen-week cash review for the first hundred operating days.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. 636(a) — Small Business Administration business loans",
-            "url": "https://www.law.cornell.edu/uscode/text/15/636",
-            "relevance": (
-                "Establishes the statutory framework for SBA business lending; acquisition "
-                "financing still requires transaction-specific program and lender underwriting."
-            ),
-        },
-        {
-            "title": "13 CFR 120.150 — Lending criteria",
-            "url": "https://www.ecfr.gov/current/title-13/section-120.150",
-            "relevance": (
-                "Connects SBA lending decisions to creditworthiness and reasonable assurance "
-                "of repayment rather than entity age or promotional borrowing availability."
-            ),
-        },
-        {
-            "title": "13 CFR 120.110 — Businesses ineligible for SBA business loans",
-            "url": "https://www.ecfr.gov/current/title-13/section-120.110",
-            "relevance": (
-                "Requires checking the target's business activity against program exclusions "
-                "before spending heavily on an assumed SBA financing structure."
-            ),
-        },
-        {
-            "title": "31 CFR 1020.220 — Customer identification programs for banks",
-            "url": "https://www.ecfr.gov/current/title-31/section-1020.220",
-            "relevance": (
-                "Explains why business banking onboarding needs accurate customer identity "
-                "information and verification rather than reliance on an aged entity's appearance."
-            ),
-        },
-        {
-            "title": "26 U.S.C. 1060 — Special allocation rules for certain asset acquisitions",
-            "url": "https://www.law.cornell.edu/uscode/text/26/1060",
-            "relevance": (
-                "Governs purchase-price allocation for applicable asset acquisitions and "
-                "supports coordinated buyer and seller reporting through Form 8594."
-            ),
-        },
-        {
-            "title": "UCC 9-315 — Secured party's rights on disposition of collateral",
-            "url": "https://www.law.cornell.edu/ucc/9/9-315",
-            "relevance": (
-                "Provides the model secured-transactions rule explaining continuing interests "
-                "in transferred collateral; counsel must apply the relevant state's enacted text."
-            ),
-        },
-        {
-            "title": "8 CFR 274a.2 — Verification of identity and employment authorization",
-            "url": "https://www.ecfr.gov/current/title-8/section-274a.2",
-            "relevance": (
-                "Governs employment verification and informs the documented treatment of "
-                "continuing acquired employees and predecessor Form I-9 records."
-            ),
-        },
-    ],
-}
+CHAPTER_4 = {'id': 'Q4',
+ 'chapter_id': 'Q4',
+ 'chapter_number': 4,
+ 'question_number': 4,
+ 'slug': 'deal-sourcing-off-market-origination-online-marketplaces',
+ 'question_prompt': 'Where do buyers find businesses to acquire, both off-market and on online '
+                    'marketplaces, and what outreach tools do they use?',
+ 'kicker': 'Q4 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Deal Sourcing: Off-Market Origination and Online Marketplaces',
+ 'subtitle': "Codie Sanchez's hidden-business playbook, finding boomer businesses with no competition, "
+             'step-by-step sourcing, off-market HVAC and search-fund origination case studies (5–10 seller '
+             'meetings a month, sourcing without cold calling), a roll-up origination system built in 4 '
+             'weeks, studying closed deals before calling brokers, buying and selling on Acquire.com, and '
+             'cold-calling, CRM, and outbound stacks (HubSpot, Apollo, Clay, Smartlead, Pipedrive, Close)',
+ 'layout_template': 'comparison_matrix',
+ 'reading_time_minutes': 15,
+ 'executive_summary': "Practitioners agree the best small businesses aren't publicly listed: roughly "
+                      '10,000 boomers retire daily, the average owner is 67, and the 7 Ds drive exits, so '
+                      'operators win by being the first call. Off-market mechanics range from Sales '
+                      "Navigator lists worked by an assistant to Avi's Apify-to-Instantly pipeline that "
+                      'produced 23 qualified HVAC opportunities and 3 deals in diligence in under three '
+                      'weeks on 500 emails a day. On-market, Kenny Finance cut 1,500 BizBuySell listings '
+                      'to 72, Codie Sanchez targets 50-100 reviewed deals, 30-50 NDAs and LOIs on about '
+                      '20%, and Acquire.com accepts about 46% of submissions behind escrow and ID checks. '
+                      'Disagreements center on marketplace fees, quoted as a 4% success fee versus 8%, 7% '
+                      'and 6% tiers, on HubSpot versus Pipedrive or Close, and on done-for-you versus '
+                      'done-with-you origination.',
+ 'key_metrics': [{'label': 'Off-Market HVAC Opportunities Generated',
+                  'metric': 'Off-Market HVAC Opportunities Generated',
+                  'value': '23 qualified opportunities and 3 deals in due diligence in under 3 weeks',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Private equity HVAC/MEP campaign across 19 states using exit-trigger '
+                             'targeting, operator-buyer copy and spread sending risk',
+                  'source': 'Avi ([cS2OjyHbq8U @ 00:21:43])'},
+                 {'label': 'Acquire.com Listing Acceptance Rate',
+                  'metric': 'Acquire.com Listing Acceptance Rate',
+                  'value': 'About 46% of submitted startups accepted',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Andrew Gazdecki on how many startups submitted to the marketplace pass '
+                             'vetting and get listed',
+                  'source': 'acquiredotcom ([nu3zh5FOFME @ 00:10:16])'},
+                 {'label': 'Daily Deal Funnel Targets',
+                  'metric': 'Daily Deal Funnel Targets',
+                  'value': '50-100 reviewed, 30-50 NDAs, LOIs on about 20%, 10-20 minutes per day',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Codie Sanchez's funnel benchmarks for a buyer working listings and "
+                             'off-market targets consistently',
+                  'source': 'Codie Sanchez ([3mtS8rOAqoM @ 01:13:51])'},
+                 {'label': 'Search Fund Qualified Seller Meetings',
+                  'metric': 'Search Fund Qualified Seller Meetings',
+                  'value': '5-10 qualified appointments per month, sustained over multiple months',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'CGS Partners search fund targeting Illinois and Indiana specialty '
+                             'distribution and HVAC via calls, LinkedIn and email',
+                  'source': 'Marco Palmero ([iPMw4FjbyRQ @ 00:02:48])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every practitioner sourcing small companies starts from the same supply '
+                              'shock. Mind Of Monte puts it at roughly 10,000 boomers retiring every day, '
+                              'up to 40% of them business owners, often with no second generation willing '
+                              'to take the keys, and calls it a once-in-a-lifetime window [MVmF4HlTHGM @ '
+                              '00:00:00]. Codie Sanchez pegs the average owner at 67 and sorts seller '
+                              'motivation through the 7 Ds: departure, divorce, disease, disagreement, '
+                              'distress, death through probate and plain dullness, noting distress is '
+                              'where assets trade for pennies on the dollar [3mtS8rOAqoM @ 00:04:08]. '
+                              'Kenny Finance compresses the thesis into one line, the best businesses are '
+                              "not for sale, so the operator's whole job is to be the first call when a "
+                              'great company finally comes to market [7znMZDlxFBU @ 00:13:23]. Marco '
+                              'Palmero adds the structural reason listings alone fail: on-market deal flow '
+                              'gets capped the moment a thesis or geography narrows, which is exactly the '
+                              'box searchers and roll-up buyers live in [x4qfCP1pVmE @ 00:01:30]. The '
+                              'shared conclusion across all four is blunt. Listed inventory is the floor, '
+                              'not the ceiling, and proprietary origination aimed at aging owners is where '
+                              'buyer competition thins out, which is the core promise of the '
+                              'no-competition boomer play.',
+                              'The second point of agreement is that owners choose the buyer before they '
+                              'choose the price. Mind Of Monte tells operators to build a deal structure '
+                              'that lets the seller keep their lifestyle after the handoff [MVmF4HlTHGM @ '
+                              '00:01:46]. Codie Sanchez sharpens the avatar: the ideal seller is retiring, '
+                              'wants more than the bank will lend, wants an annuity, runs a boring '
+                              'business and already knows you, while the bad avatar is young, '
+                              'fast-growing, complex and juggling many offers [3mtS8rOAqoM @ 00:11:37]. '
+                              'Marco Palmero coaches searchers to lean on what private equity cannot '
+                              'claim, that they are buying one business and stewarding the legacy, the '
+                              'employees and the 20-40 year project the owner built [x4qfCP1pVmE @ '
+                              "00:05:58]. Avi's HVAC campaign weaponizes the same instinct with the "
+                              "subject line 'This one's not from PE' and an opening jab at the private "
+                              'equity intern with a spreadsheet, positioning the sender as an '
+                              'operator-buyer [cS2OjyHbq8U @ 00:11:32]. Across the four, the message is '
+                              'identical. The consensus is that legacy, employees and a structure built '
+                              "around the seller's life open doors, and that anything that reads as "
+                              'corporate or spreadsheet-driven gets filtered out by the owner before a '
+                              'first call ever happens.',
+                              'Nobody tells operators to ignore listings; the consensus is to work them '
+                              'hard as one lane among several. Kenny Finance runs three sourcing channels '
+                              'side by side, public listings, business brokers and cold outreach, and '
+                              'walks through each one as its own repeatable workflow [7znMZDlxFBU @ '
+                              '00:02:02]. Codie Sanchez warns that every on-market listing pulls in '
+                              "100-plus inquiries, so the buyer's first message has to follow the rule 'Be "
+                              "good. Be brief. Be gone.' or it drowns in the pile [3mtS8rOAqoM @ "
+                              '00:27:13]. On the online marketplace side, Andrew Gazdecki of Acquire.com '
+                              'is categorical that nobody should ever do an acquisition without escrow, '
+                              'because it protects the buyer from scams and bad actors [nu3zh5FOFME @ '
+                              '00:19:48]. jackhaigh confirms the platform gate from the user seat: buyers '
+                              'must verify their account before they can make an offer at all, a step the '
+                              'reviewer treats as obvious for any buyer on the platform [_m1Q0kLTooU @ '
+                              '00:03:43]. The baseline prerequisites therefore repeat across every speaker '
+                              'who touches a marketplace or a broker. Verify identity early, keep the '
+                              'opening pitch short, move faster than the crowd of competing inquiries, and '
+                              'route every dollar through third-party escrow rather than a direct transfer '
+                              'when the counterparty is a stranger.'],
+               'table': {'caption': 'Where Deal-Sourcing Practitioners Agree',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner Reports',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Boomer retirement wave creates large unlisted seller supply',
+                                   'Roughly 10,000 boomers retire daily and up to 40% own businesses, '
+                                   'often with no second generation',
+                                   'Target aging owners directly instead of waiting for listings to appear',
+                                   'Mind Of Monte ([MVmF4HlTHGM @ 00:00:00])'],
+                                  ['The best businesses are not publicly for sale',
+                                   'Be the first call when a great company comes to market, ahead of other '
+                                   'buyers',
+                                   'Build broker and owner relationships before any sale process starts',
+                                   'Kenny Finance ([7znMZDlxFBU @ 00:13:23])'],
+                                  ['Seller motivation follows the 7 Ds exit framework',
+                                   'Departure, divorce, disease, disagreement, distress, death and '
+                                   'dullness, with average owner age of 67',
+                                   'Screen target lists for life-event exit triggers, not just financials',
+                                   'Codie Sanchez ([3mtS8rOAqoM @ 00:04:08])'],
+                                  ['On-market flow caps out on narrow theses and geographies',
+                                   'When geography or thesis is narrow, listed deal flow alone cannot fill '
+                                   'the pipeline',
+                                   'Layer proprietary outreach on top of listings whenever the buy box is '
+                                   'tight',
+                                   'Marco Palmero ([x4qfCP1pVmE @ 00:01:30])'],
+                                  ['Legacy and stewardship messaging beats corporate private equity copy',
+                                   'Searchers buy a single business and steward the 20-40 year project and '
+                                   'its employees',
+                                   'Lead outreach with legacy, values and local ties instead of '
+                                   'spreadsheets',
+                                   'Marco Palmero ([x4qfCP1pVmE @ 00:05:58])'],
+                                  ['Exit-trigger targeting produces qualified off-market HVAC flow quickly',
+                                   '23 qualified opportunities and 3 deals in due diligence in under three '
+                                   'weeks',
+                                   'Combine exit-trigger targeting, operator-buyer copy and spread sending '
+                                   'risk together',
+                                   'Avi ([cS2OjyHbq8U @ 00:00:00])'],
+                                  ['Escrow and verification are non-negotiable on online marketplaces',
+                                   'Never do an acquisition without escrow because it protects against '
+                                   'scams and bad actors',
+                                   'Route every marketplace deal through escrow and fully verified '
+                                   'accounts',
+                                   'acquiredotcom ([nu3zh5FOFME @ 00:19:48])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["The off-market machine starts with list building. Avi's HVAC team scraped "
+                              'Google Maps through Apify plus a Google SERP proxy to pull 9,000-11,000 '
+                              'contacts across HVAC and MEP operators, checked SIC codes, found emails '
+                              'with Find Email and Email Finder, cleaned them through MillionVerifier and '
+                              'piped everything via n8n, now driven by Claude Code with n8n, into '
+                              'Instantly for sending [cS2OjyHbq8U @ 00:07:10]. Mind Of Monte runs a '
+                              'lighter version: filter target criteria inside Sales Navigator, build the '
+                              'list, then hand it to an assistant or idle staff who reach out one owner at '
+                              'a time [MVmF4HlTHGM @ 00:03:13]. Kenny Finance shows the manual variant, '
+                              'searching phrases like top family-owned managed service provider '
+                              'California, sizing the target with ChatGPT, having ChatGPT draft the '
+                              'outreach email, and following up every one to two weeks across hundreds of '
+                              'targets [7znMZDlxFBU @ 00:18:16]. Marco Palmero insists the channel mix '
+                              'stays wide, testing email, LinkedIn, voicemail drops, letters and text, '
+                              'then keeping only what works for the specific thesis [x4qfCP1pVmE @ '
+                              '00:04:49]. The mechanics scale from one assistant with a Sales Navigator '
+                              'seat to a fully automated scrape-verify-send pipeline, but every version '
+                              'runs on a defined list, persistent follow-up and more than one touchpoint.',
+                              'Listings get worked as a filter exercise, not a browsing habit. Kenny '
+                              'Finance set BizBuySell filters to Texas, roughly a $2M price and about '
+                              '$500K cash flow, cutting 1,500 listings down to 72, then struck fitness, '
+                              'smoke shops, restaurants, law firms and healthcare before using the contact '
+                              'form to request an NDA [7znMZDlxFBU @ 00:03:54]. Codie Sanchez prescribes '
+                              'daily alerts and a disciplined habit of reviewing about 100 deals, built on '
+                              'a pitch that offers to sign the NDA and run two to four weeks of diligence '
+                              '[3mtS8rOAqoM @ 00:28:04]. On Acquire.com specifically, Andrew Gazdecki has '
+                              'buyers set a budget, revenue, profit and tech-stack criteria, save filtered '
+                              'lists such as more than $500,000 profit, and filter by revenue multiple, '
+                              'minimum profit, location and growth rate, with an LOI builder, asset '
+                              'purchase agreement builder and free Escrow.com closing built in '
+                              "[qjwlutaiugE @ 00:00:30]. Gazdecki's LOI advice leans on structure, "
+                              'packaging seller financing, a conditional holdback or a three-to-six-month '
+                              'transition period into the offer before drafting the APA and closing '
+                              'through escrow [nu3zh5FOFME @ 00:18:54]. The common pattern is tight '
+                              'filters first, NDA second, and an LOI that protects the buyer through deal '
+                              'structure rather than through headline price alone.',
+                              'The numbers behind the outreach machine are specific. Avi spreads sending '
+                              'risk across lookalike domains, never the main domain, scaling from about '
+                              '100 to 149 mailboxes pushing 500 emails a day in total, capping Microsoft '
+                              'inboxes at 5 a day and Google or SMTP at 20, warming up for two to three '
+                              'weeks and holding 91% inbox placement [cS2OjyHbq8U @ 00:16:56]. ToolColumn '
+                              'prices a HubSpot, Apollo, Clay and Smartlead stack for two-to-eight-person '
+                              'teams at $950-$3,200 a month as a directional planning figure, and stresses '
+                              'that suppression, reply ownership and rollback rules between HubSpot and '
+                              'Smartlead must be written down [W6A4gRp6eow @ 00:01:51]. Lean Stack argues '
+                              'the CRM line item hides the real cost: HubSpot Professional runs over '
+                              '$1,200 a month for 15 users plus $1,500-$3,000 of mandatory onboarding, and '
+                              'should only be chosen with heavy inbound and a dedicated RevOps hire '
+                              "[CoNZbm4aVto @ 00:02:06]. Kyle Norton's Owner.com data, built on Snowflake, "
+                              'scrapers and a confidence score, shows why list quality is the multiplier, '
+                              'with prospect accuracy lifted from 40% to 85%, BDRs roughly twice as '
+                              'efficient and decision-maker connect rates climbing from 3% to 14-16% '
+                              '[KAz03HJ5nHg @ 00:12:09]. Clean data, distributed sending and a cheap CRM '
+                              'the team actually updates carry the unit economics.'],
+               'table': {'caption': 'Street Mechanics, Tools and Unit Numbers for Deal Origination',
+                         'headers': ['Mechanic',
+                                     'Exact Numbers or Tools',
+                                     'How It Is Run',
+                                     'Expert Source'],
+                         'rows': [['Off-market HVAC scraping and email verification stack',
+                                   'Apify Google Maps scraper and SERP proxy yielding 9-11K contacts, '
+                                   'MillionVerifier',
+                                   'SIC code checks, email finders, then n8n feeding Instantly for sending',
+                                   'Avi ([cS2OjyHbq8U @ 00:07:10])'],
+                                  ['Cold email sending infrastructure and deliverability limits',
+                                   'About 100-149 mailboxes, 500 emails per day, 91% inbox placement',
+                                   'Lookalike domains, Microsoft 5/day, Google and SMTP 20/day, 2-3 week '
+                                   'warmup',
+                                   'Avi ([cS2OjyHbq8U @ 00:16:56])'],
+                                  ['BizBuySell filter funnel for on-market business listings',
+                                   'Texas, about $2M price, about $500K cash flow, 1,500 cut to 72 '
+                                   'listings',
+                                   'Strike excluded industries, then use the contact form and sign the NDA',
+                                   'Kenny Finance ([7znMZDlxFBU @ 00:03:54])'],
+                                  ['Daily deal funnel targets for a working buyer',
+                                   '50-100 deals reviewed, 30-50 NDAs signed, LOIs on about 20%',
+                                   'Spend 10-20 minutes per day working the pipeline without skipping days',
+                                   'Codie Sanchez ([3mtS8rOAqoM @ 01:13:51])'],
+                                  ['Acquire.com buyer membership and seller success fee',
+                                   'Sellers pay 4% at close; buyers pay $390/yr or $780/yr',
+                                   '$390 covers startups under $250K revenue; $780 unlocks all startups '
+                                   'plus tools',
+                                   'acquiredotcom ([qjwlutaiugE @ 00:05:10])'],
+                                  ['Marketplace deal structure on a $500K startup acquisition',
+                                   '80% or $400K paid at close, with $100K seller-financed',
+                                   'Seller note on the remaining $100K runs over 12-24 months',
+                                   'acquiredotcom ([nu3zh5FOFME @ 00:33:34])'],
+                                  ['Outbound tooling cost and record ownership rules',
+                                   '$950-$3,200 per month as a directional planning figure for 2-8 person '
+                                   'teams',
+                                   'Explicit suppression, reply ownership and rollback rules between '
+                                   'HubSpot and Smartlead',
+                                   'ToolColumn ([W6A4gRp6eow @ 00:01:51])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Insider Pro-Tips From the Sourcing Desk',
+                           'body': 'Small operational edges the practitioners use to get answered first, '
+                                   'land in the inbox and keep data clean.',
+                           'items': ['Never send cold acquisition email from the main domain; run about 3 '
+                                     'to 5 mailboxes per lookalike domain and keep Microsoft inboxes '
+                                     'low-volume because Microsoft flags domains that send a lot [Avi — '
+                                     'cS2OjyHbq8U @ 00:17:26].',
+                                     'Skip browsing broker websites because the listings duplicate '
+                                     'BizBuySell; email the broker directly and aim to be the first call '
+                                     'when a great company comes to market [Kenny Finance — 7znMZDlxFBU @ '
+                                     '00:08:53].',
+                                     'On marketplaces, complete ID verification and connect LinkedIn, '
+                                     'which lifts seller response rates by more than 50% [Codie Sanchez — '
+                                     '3mtS8rOAqoM @ 00:44:52].',
+                                     'Fix prospect data before hiring more than 1-2 BDRs; once accuracy '
+                                     'climbed to 85%, each Owner.com BDR produced over $60K closed-won ARR '
+                                     'per month [SaaStr AI — KAz03HJ5nHg @ 00:12:09].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock the deal box and thesis',
+                              'action': 'Write the buy box before pulling a single list.',
+                              'detail': 'Target under $10M revenue, blue-collar fragmented industries and '
+                                        'at least a 15% margin, passing on proprietary, patent-pending or '
+                                        'biotech plays [Codie Sanchez — 3mtS8rOAqoM @ 00:14:22]; get '
+                                        'clarity on the thesis first, including risk profile and preferred '
+                                        'deal structure [Marco Palmero — x4qfCP1pVmE @ 00:02:21].'},
+                             {'step': 2,
+                              'title': 'Build a layered, verified target list',
+                              'action': 'Scrape, enrich and verify owners against the thesis.',
+                              'detail': 'Pull contacts with the Apify Google Maps scraper and SERP proxy, '
+                                        'check SIC codes, find emails and verify through MillionVerifier '
+                                        '[Avi — cS2OjyHbq8U @ 00:07:10]; layer multiple databases instead '
+                                        'of one provider to reach 80-90% accuracy [Marco Palmero — '
+                                        'x4qfCP1pVmE @ 00:18:10].'},
+                             {'step': 3,
+                              'title': 'Launch operator-buyer outreach across channels',
+                              'action': 'Send researched, non-corporate copy through more than one '
+                                        'channel.',
+                              'detail': "Use a subject like 'This one's not from PE', reference about 15 "
+                                        'minutes of research per owner and ask directly for a chat [Avi — '
+                                        'cS2OjyHbq8U @ 00:11:32]; run calls, LinkedIn and email together '
+                                        'to sustain 5-10 qualified seller meetings per month [Marco '
+                                        'Palmero — iPMw4FjbyRQ @ 00:02:32].'},
+                             {'step': 4,
+                              'title': 'Route positive replies inside the hour',
+                              'action': 'Stream positive replies to a shared channel and answer fast.',
+                              'detail': 'Push positive replies into Slack from an Airtable CRM and respond '
+                                        'within 5 minutes to 1 hour [Avi — cS2OjyHbq8U @ 00:20:42]; move '
+                                        'qualified owners to NDA with a 2-4 week diligence pitch because '
+                                        'time kills all deals [Codie Sanchez — 3mtS8rOAqoM @ 00:28:04].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ["The broker question splits the room. Codie Sanchez tells buyers flatly 'do "
+                              "not use a broker for the buy side,' pricing buy-side representation at "
+                              "roughly $10K per month plus 3–7% and adding 'I do not recommend them at "
+                              "all' [3mtS8rOAqoM @ 00:38:15]. Kenny Finance works the opposite edge of the "
+                              'same channel: sell-side brokers are a primary pipe, found by Googling '
+                              "'business broker Michigan,' and the move is to skip browsing their listings "
+                              'because they duplicate BizBuySell, email the broker directly, and become '
+                              "'the first call when a great company comes to market' [7znMZDlxFBU @ "
+                              '00:13:23]. Mind Of Monte treats brokers as a screening service, because '
+                              'cold first contact will not surface economics, pay structures, stakeholders '
+                              "or profitability, while brokers sort that out 'ahead of time' [MVmF4HlTHGM "
+                              '@ 00:02:58]. Marco Palmero pushes back on broker-first sequencing entirely: '
+                              'searchers who start with brokers and only fall back on proprietary '
+                              'origination late lose the compounding effect, since owners sit on 2–6 month '
+                              'exit horizons and proprietary results take 3–6 months to arrive '
+                              '[x4qfCP1pVmE @ 00:12:58]. The operator synthesis: never pay a buy-side '
+                              'retainer, treat sell-side brokers as a relationship to be first in line '
+                              'with, and launch proprietary outreach on day one rather than as a fallback.',
+                              'Online marketplace economics arrive in conflicting numbers. jackhaigh '
+                              'quotes Acquire.com seller closing fees on a sliding scale of 8% under '
+                              "$250K, 7% from $250K to $1M and 6% above $1M, calls them 'a bit high,' and "
+                              'promises a sale in 1–2 months [_m1Q0kLTooU @ 00:04:30]. Anna Stepura, who '
+                              'listed a startup on Acquire.com, Flippa and Tiny Acquisitions, reports no '
+                              'listing subscription and a flat 4% success fee, contrasts that with '
+                              'investment bankers charging 5–12% plus occasional upfront fees, and pegs '
+                              'the realistic timeline at 4–6 months [oplaAtHYPlU @ 00:00:53]. Andrew '
+                              'Gazdecki, speaking as Acquire.com CEO, matches the 4% at close and prices '
+                              'the buyer side at $390 per year for startups under $250K revenue or $780 '
+                              'per year for all startups plus tools [qjwlutaiugE @ 00:05:10]. Fit is '
+                              'contested too: jackhaigh rates the platform weak for blogs, local '
+                              'businesses and tiny sites, while Codie Sanchez works the on-market channel '
+                              'for blue-collar targets and warns that every listing draws 100+ inquiries, '
+                              "so the pitch must be 'Be good. Be brief. Be gone.' [3mtS8rOAqoM @ "
+                              '00:27:13]. Confirm the fee in writing at signing rather than trusting any '
+                              "reviewer's table, budget the longer 4–6 month clock, and route SaaS targets "
+                              'to Acquire.com while hunting local blue-collar deals elsewhere.',
+                              "The origination stack itself is a fault line. Lean Stack's cost audit says "
+                              'HubSpot only makes sense with heavy inbound and a dedicated RevOps hire, or '
+                              'VC funding, sending agencies and ops-heavy shops to Pipedrive plus Make and '
+                              '80-calls-a-day sales floors to Close [CoNZbm4aVto @ 00:04:34]. ToolColumn '
+                              'builds the opposite way, making HubSpot owner of contact, company, '
+                              'lifecycle, deal, owner and suppression records while Apollo sources lists, '
+                              'Clay enriches selectively and Smartlead only sends [W6A4gRp6eow @ '
+                              '00:00:23]. Avi skips both camps: the HVAC campaign that produced 23 '
+                              'qualified opportunities ran on an Airtable CRM rather than Salesforce or '
+                              'HubSpot [cS2OjyHbq8U @ 00:19:48]. The build question splits as well. Marco '
+                              'Palmero sells two models: done-for-you, where the firm runs the system and '
+                              'delivers opportunities, and done-with-you, where the buyer owns assets that '
+                              "'pay you dividends' over time; the Bed and Biscuit roll-up took the second "
+                              'route and was running in-house within 4 weeks [6qKxeAkc2YY @ 00:03:54]. '
+                              'Small buy-side teams without a RevOps owner should start lean, because '
+                              "ToolColumn's own rule is to skip the full stack when Apollo alone is enough "
+                              'and add Clay only once enrichment depth becomes a repeatable constraint. '
+                              "Lean Stack's tiebreaker is blunt: pick the stack the team actually "
+                              'updates.'],
+               'table': {'caption': 'Side-by-side playbooks where deal sourcing practitioners split',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Whether to pay a broker on the buy side',
+                                   'Codie Sanchez refuses buy-side brokers costing about $10K monthly plus '
+                                   '3–7%',
+                                   'Kenny Finance emails sell-side brokers directly to become the first '
+                                   'call',
+                                   'Codie Sanchez ([3mtS8rOAqoM @ 00:38:15]); Kenny Finance ([7znMZDlxFBU '
+                                   '@ 00:13:23])'],
+                                  ['Acquire.com seller fee actually charged at close',
+                                   'jackhaigh reports tiers of 8%, 7% and 6% scaled by deal size',
+                                   'Anna Stepura and Andrew Gazdecki both report a flat 4% success fee',
+                                   'jackhaigh ([_m1Q0kLTooU @ 00:04:30]); Anna Stepura: AI for Business '
+                                   '([oplaAtHYPlU @ 00:00:53]); acquiredotcom ([qjwlutaiugE @ 00:05:10])'],
+                                  ['Realistic time to close an online marketplace sale',
+                                   'jackhaigh says sellers typically see a completed sale within 1–2 '
+                                   'months',
+                                   'Anna Stepura budgets a realistic 4–6 month timeline from end to end',
+                                   'jackhaigh ([_m1Q0kLTooU @ 00:02:58]); Anna Stepura: AI for Business '
+                                   '([oplaAtHYPlU @ 00:08:50])'],
+                                  ['Financing structure that gets the deal closed fastest',
+                                   'Codie Sanchez uses seller financing closing in 1–3 weeks versus 3–9 '
+                                   'months SBA',
+                                   'Kenny Finance stacks SBA loans with seller financing and puts 10%+ '
+                                   'down',
+                                   'Codie Sanchez ([3mtS8rOAqoM @ 00:09:35]); Kenny Finance ([7znMZDlxFBU '
+                                   '@ 00:21:36])'],
+                                  ['Which CRM sits at the center of origination',
+                                   'Lean Stack picks Pipedrive or Close and reserves HubSpot for VC-funded '
+                                   'teams',
+                                   'ToolColumn makes HubSpot the record owner; Avi runs everything on '
+                                   'Airtable instead',
+                                   'Lean Stack ([CoNZbm4aVto @ 00:04:34]); ToolColumn ([W6A4gRp6eow @ '
+                                   '00:00:23]); Avi ([cS2OjyHbq8U @ 00:19:48])'],
+                                  ['Primary outreach channel for reaching off-market owners',
+                                   'Avi runs cold email at 500 sends per day across lookalike domains',
+                                   'Marco Palmero layers email, LinkedIn, voicemail drops, letters and '
+                                   'text messages',
+                                   'Avi ([cS2OjyHbq8U @ 00:16:56]); Marco Palmero ([x4qfCP1pVmE @ '
+                                   '00:04:49])'],
+                                  ['Who builds and runs the origination machine long term',
+                                   'Done-for-you: the outside firm runs the system and delivers '
+                                   'opportunities',
+                                   "Done-with-you: the buyer owns assets that 'pay you dividends' over "
+                                   'time',
+                                   'Marco Palmero ([6qKxeAkc2YY @ 00:03:54])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Bad prospect data is the most expensive trap reported. Kyle Norton, CRO at '
+                              'Owner.com, found BDRs wasting about 40% of their time while prospect data '
+                              'sat at 40% accuracy; rebuilding the pipeline with Snowflake, scrapers, a '
+                              'confidence score and People Data Labs mobile numbers pushed accuracy to 85% '
+                              'and decision-maker connect rates from 3% to 14–16%, and the rule that came '
+                              'out of it is to hire no more than 1–2 BDRs before the data is fixed '
+                              '[KAz03HJ5nHg @ 00:12:09]. Norton also paid for discipline: rejecting about '
+                              '40% of prospects dropped closed-won for two months, and Jason on the board '
+                              'said none of it showed in revenue [KAz03HJ5nHg @ 00:08:16]. Marco Palmero '
+                              "warns against relying on a single data provider, arguing that 'you can "
+                              "achieve 80, 85, 90% accuracy by integrating multiple resources together' "
+                              '[x4qfCP1pVmE @ 00:18:10]. Kenny Finance shows how AI research drifts: a '
+                              'target managed service provider called ICS was stated as founded in 1981, '
+                              'ChatGPT later answered 1987, and its revenue came back as a loose $9–24M '
+                              'estimate [7znMZDlxFBU @ 00:13:41]. The check is simple: verify every '
+                              'AI-enriched field against a second source before it drives outreach volume '
+                              "or valuation math, because Norton's read is that about 80% of companies "
+                              'have a pipeline problem, not a rep problem.',
+                              'Sending infrastructure fails quietly. Avi never sends from the main domain, '
+                              'spreads roughly 100 mailboxes (later scaled to 149) across lookalike '
+                              'domains at about 3 to 5 per domain, runs 500 emails a day across the '
+                              'system, and holds Microsoft mailboxes to 5 a day versus 20 for Google and '
+                              "SMTP because 'Microsoft emails are very sensitive' to domains that send a "
+                              'lot, with 2–3 weeks of warmup buying 91% inbox placement [cS2OjyHbq8U @ '
+                              '00:18:14]. ToolColumn traces stack breakage to collision rather than weak '
+                              "tools, since 'every tool thinks it owns the same record,' and runs QA for "
+                              'duplicate domains, poor fit, bad owners, suppression misses, credit burn '
+                              "and rollback, warning that 'weekly maintenance is the real cost' at about 6 "
+                              'hours [W6A4gRp6eow @ 00:02:38]. Lean Stack documents the CRM version of the '
+                              "same leak: bills doubling after database limits, a CRM 'on an island' "
+                              'forcing manual CSV exports every Friday, and freelance integrators charging '
+                              "'two grand' for fragile setups [CoNZbm4aVto @ 00:00:37]. SoftSavvy adds the "
+                              'dialer trap, warning against picking on starting price or ignoring CRM '
+                              "sync, because 'if the reps hate using it, adoption dies' [uJWyOGsPXbA @ "
+                              '00:12:02]. Budget maintenance hours and 24-month ownership cost, not '
+                              'entry-tier license fees.',
+                              'Marketplace and deal-level traps hit after the first reply. Anna Stepura '
+                              "warns that 'scammers would be everywhere,' that fake buyers have to be "
+                              'screened manually instead of auto-accepted, and that a lawyer should be '
+                              'retained early, even with company names hidden until the NDA [oplaAtHYPlU @ '
+                              "00:05:18]. Andrew Gazdecki's rule is absolute, 'don't ever do an "
+                              "acquisition without using escrow,' because it protects against scams and "
+                              'bad actors, and the platform runs social-presence checks to weed out '
+                              'drop-shipping scam listings while accepting only about 46% of submissions '
+                              '[nu3zh5FOFME @ 00:19:48]. Codie Sanchez shows the economics check that '
+                              'flags attractive listings: an HVAC business asking $4M on $1.28M cash flow '
+                              'posted 174% cash-on-cash yet ran a 12% margin, below the 15-cent floor in '
+                              "Sanchez's deal box [3mtS8rOAqoM @ 00:42:09]. Kenny Finance flags the "
+                              'mirror-image mismatch, a $150K asking price against $550K cash flow, as a '
+                              'red flag, and rejects whole categories, including restaurants, smoke shops, '
+                              "fitness, healthcare and law firms, the last because 'AI will replace' them "
+                              '[7znMZDlxFBU @ 00:05:36]. The gate: escrow every close, retain the lawyer '
+                              'before the LOI, screen every buyer or seller identity, and run margin and '
+                              'price-to-cash-flow sanity math before any diligence hours get spent.'],
+               'table': {'caption': 'Firsthand failure modes and the economics checks that catch them',
+                         'headers': ['Failure Mode',
+                                     'What Practitioners Saw Firsthand',
+                                     'Economics Check Or Fix',
+                                     'Expert Source'],
+                         'rows': [['Bad prospect data wasting the most expensive rep hours',
+                                   'Owner.com BDRs wasted about 40% of their time on 40%-accurate data',
+                                   'Fix data to 85% accuracy before hiring beyond 1–2 BDRs',
+                                   'SaaStr AI ([KAz03HJ5nHg @ 00:12:09])'],
+                                  ['Single data provider leaving coverage gaps across the target list',
+                                   'Marco Palmero warns against relying on any one data provider for lists',
+                                   'Layer multiple databases together to reach 80–90% accuracy and '
+                                   'coverage',
+                                   'Marco Palmero ([x4qfCP1pVmE @ 00:18:10])'],
+                                  ['Burning the main domain with cold acquisition email volume',
+                                   'Microsoft flags domains that send a lot and routes them to spam',
+                                   'Use lookalike domains, 3–5 mailboxes each, 5/day Microsoft, 20/day '
+                                   'Google',
+                                   'Avi ([cS2OjyHbq8U @ 00:18:14])'],
+                                  ['Tools fighting over ownership of the same contact record',
+                                   'Stacks break because every tool thinks it owns the same record',
+                                   'Write record ownership down first and budget about 6 hours weekly '
+                                   'maintenance',
+                                   'ToolColumn ([W6A4gRp6eow @ 00:02:38])'],
+                                  ['CRM bill shock and fragile freelance integrations after launch',
+                                   "Bills doubled past database limits; integrators charged 'two grand' "
+                                   'for fragile setups',
+                                   'Calculate 24-month total cost of ownership, never just the entry tier',
+                                   'Lean Stack ([CoNZbm4aVto @ 00:00:37])'],
+                                  ['Fake buyers and scam listings on online marketplaces',
+                                   'Anna Stepura says scammers are everywhere and fake buyers demand '
+                                   'screening',
+                                   'Screen buyers manually, retain a lawyer early, close only through '
+                                   'escrow',
+                                   'Anna Stepura: AI for Business ([oplaAtHYPlU @ 00:05:18]); '
+                                   'acquiredotcom ([nu3zh5FOFME @ 00:19:48])'],
+                                  ['Starting broker-first and going proprietary far too late',
+                                   'Searches run 18–36 months while proprietary results need 3–6 months to '
+                                   'land',
+                                   'Launch proprietary origination on day one alongside broker '
+                                   'relationships',
+                                   'Marco Palmero ([x4qfCP1pVmE @ 00:12:58])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Kill Switches Before You Scale Origination',
+                           'body': 'Each gate below comes from a loss, reversal or bottleneck a '
+                                   'practitioner hit firsthand. Clear all four before adding headcount, '
+                                   'mailboxes or marketplace spend.',
+                           'items': ['Do not scale BDRs or callers past 1–2 until contact data reaches '
+                                     'roughly 85% accuracy and decision-maker connect rates move off 3% '
+                                     '[SaaStr AI — KAz03HJ5nHg @ 00:12:09].',
+                                     'Never send cold acquisition email from the main domain; warm '
+                                     'lookalike domains for 2–3 weeks and hold Microsoft mailboxes to 5 '
+                                     'sends per day [Avi — cS2OjyHbq8U @ 00:18:14].',
+                                     'No acquisition closes without escrow, domestic or international, '
+                                     'because it protects against scams and bad actors [acquiredotcom — '
+                                     'nu3zh5FOFME @ 00:19:48].',
+                                     'Reject any target below the 15% margin floor before spending NDA or '
+                                     'diligence time, even when headline cash-on-cash shows 174% [Codie '
+                                     'Sanchez — 3mtS8rOAqoM @ 00:42:09].']}}],
+ 'pull_quote': '"So the best thing you can do is be the first call when a great company comes to market. '
+               'The best businesses aren\'t for sale." — Kenny Finance (7znMZDlxFBU @ 00:13:23).',
+ 'diagram_id': 'diag-07',
+ 'action_checklist': ['Define the deal box first: under $10M revenue, blue-collar and fragmented, at least '
+                      '15% margin, and no proprietary, patent-pending or biotech plays [Codie Sanchez — '
+                      '3mtS8rOAqoM @ 00:14:22].',
+                      'Filter BizBuySell by state, price and cash flow (Texas, about $2M price, about '
+                      '$500K cash flow cut 1,500 listings to 72), then use the contact form and sign the '
+                      'NDA [Kenny Finance — 7znMZDlxFBU @ 00:03:54].',
+                      'Email sell-side brokers directly instead of browsing their duplicated listings, and '
+                      'work to be the first call when a great company comes to market [Kenny Finance — '
+                      '7znMZDlxFBU @ 00:13:23].',
+                      'Scrape off-market targets with the Apify Google Maps scraper, verify emails with '
+                      'MillionVerifier, qualify with a GPT agent plus Perplexity Sonar, and send through '
+                      'Instantly [Avi — cS2OjyHbq8U @ 00:07:10].',
+                      'Run multichannel touches across email, LinkedIn, voicemail drops, letters and text; '
+                      'owners who ignored 3–4 emails replied after a LinkedIn message or text [Marco '
+                      'Palmero — x4qfCP1pVmE @ 00:11:42].',
+                      'Write a short closed-deal case study and glance at it during broker calls to show '
+                      'skin in the game and credible associations [The Acquisition Manager — zYUvLwZ6ipc @ '
+                      '00:00:35].'],
+ 'statutory_citations': [{'title': 'Codie Sanchez — How to Find Businesses to Buy NO ONE ELSE Knows About '
+                                   '(80 MINUTE Playbook) [00:38:15]',
+                          'url': 'https://www.youtube.com/watch?v=3mtS8rOAqoM&t=2295s',
+                          'relevance': 'Primary practitioner testimony on rejecting buy-side brokers, '
+                                       'seller-financing speed and the 15% margin deal box.'},
+                         {'title': "Avi — 23 Off-Market HVAC Opportunities: Here's Exactly How We Got Them "
+                                   '(Private Equity Case Study) [00:17:26]',
+                          'url': 'https://www.youtube.com/watch?v=cS2OjyHbq8U&t=1046s',
+                          'relevance': 'Primary practitioner testimony on cold email infrastructure, '
+                                       'mailbox limits and off-market HVAC targeting.'},
+                         {'title': 'acquiredotcom — An Acquire com Guide to Buying the Best Startups with '
+                                   'Andrew Gazdecki [00:19:48]',
+                          'url': 'https://www.youtube.com/watch?v=nu3zh5FOFME&t=1188s',
+                          'relevance': 'Primary practitioner testimony on marketplace vetting, escrow '
+                                       'discipline and seller-financed startup deal structures.'},
+                         {'title': 'Marco Palmero — How Search Funds Source Proprietary Deals Without Cold '
+                                   'Calling [00:12:58]',
+                          'url': 'https://www.youtube.com/watch?v=x4qfCP1pVmE&t=778s',
+                          'relevance': 'Primary practitioner testimony on proprietary origination timing, '
+                                       'multichannel outreach and layered data coverage.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'MVmF4HlTHGM',
+                       'title': 'How to Buy Boomer Business With No Competition',
+                       'channel': 'Mind Of Monte',
+                       'author': 'Mind Of Monte',
+                       'text': "They don't like the industry, they don't want to work with family, you "
+                               'name it.',
+                       'tip': "They don't like the industry, they don't want to work with family, you name "
+                              'it.',
+                       'timestamp': 47,
+                       'timestamp_seconds': 47,
+                       'timestamp_label': '[00:00:47]',
+                       'url': 'https://www.youtube.com/watch?v=MVmF4HlTHGM&t=47s',
+                       'markdown': '[00:00:47](https://www.youtube.com/watch?v=MVmF4HlTHGM&t=47s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3mtS8rOAqoM',
+                       'title': 'How to Find Businesses to Buy NO ONE ELSE Knows About (80 MINUTE '
+                                'Playbook)',
+                       'channel': 'Codie Sanchez',
+                       'author': 'Codie Sanchez',
+                       'text': "Please do not buy other people's hopes and dreams. We buy realities and "
+                               'profits.',
+                       'tip': "Please do not buy other people's hopes and dreams. We buy realities and "
+                              'profits.',
+                       'timestamp': 905,
+                       'timestamp_seconds': 905,
+                       'timestamp_label': '[00:15:05]',
+                       'url': 'https://www.youtube.com/watch?v=3mtS8rOAqoM&t=905s',
+                       'markdown': '[00:15:05](https://www.youtube.com/watch?v=3mtS8rOAqoM&t=905s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_m1Q0kLTooU',
+                       'title': 'Acquire.com Review: An Honest Look At The Pros & Cons 👍👎 (2026)',
+                       'channel': 'jackhaigh',
+                       'author': 'jackhaigh',
+                       'text': 'Obviously, you do need to verify your account to be able to make an offer.',
+                       'tip': 'Obviously, you do need to verify your account to be able to make an offer.',
+                       'timestamp': 223,
+                       'timestamp_seconds': 223,
+                       'timestamp_label': '[00:03:43]',
+                       'url': 'https://www.youtube.com/watch?v=_m1Q0kLTooU&t=223s',
+                       'markdown': '[00:03:43](https://www.youtube.com/watch?v=_m1Q0kLTooU&t=223s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oplaAtHYPlU',
+                       'title': 'How to Sell Your Startup Company | Acquire.com *full guide in 10 min*',
+                       'channel': 'Anna Stepura: AI for Business',
+                       'author': 'Anna Stepura: AI for Business',
+                       'text': "Even though I'm so sorry to tell you, scammers would be everywhere.",
+                       'tip': "Even though I'm so sorry to tell you, scammers would be everywhere.",
+                       'timestamp': 318,
+                       'timestamp_seconds': 318,
+                       'timestamp_label': '[00:05:18]',
+                       'url': 'https://www.youtube.com/watch?v=oplaAtHYPlU&t=318s',
+                       'markdown': '[00:05:18](https://www.youtube.com/watch?v=oplaAtHYPlU&t=318s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'W6A4gRp6eow',
+                       'title': 'HubSpot + Apollo + Clay + Smartlead: The Outbound Stack Boundary',
+                       'channel': 'ToolColumn',
+                       'author': 'ToolColumn',
+                       'text': 'If your outbound stack breaks, it usually does not break because one tool '
+                               'is weak. It breaks because every tool thinks it owns the same record.',
+                       'tip': 'If your outbound stack breaks, it usually does not break because one tool '
+                              'is weak. It breaks because every tool thinks it owns the same record.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=W6A4gRp6eow&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=W6A4gRp6eow&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uJWyOGsPXbA',
+                       'title': 'Best Cold Calling Software for SMB Sales Teams in 2026',
+                       'channel': 'SoftSavvy',
+                       'author': 'SoftSavvy',
+                       'text': 'If the reps hate using it, adoption dies.',
+                       'tip': 'If the reps hate using it, adoption dies.',
+                       'timestamp': 722,
+                       'timestamp_seconds': 722,
+                       'timestamp_label': '[00:12:02]',
+                       'url': 'https://www.youtube.com/watch?v=uJWyOGsPXbA&t=722s',
+                       'markdown': '[00:12:02](https://www.youtube.com/watch?v=uJWyOGsPXbA&t=722s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CoNZbm4aVto',
+                       'title': 'HubSpot vs Pipedrive vs Close CRM: Stop Overpaying for B2B SaaS (Full '
+                                'Cost Audit)',
+                       'channel': 'Lean Stack',
+                       'author': 'Lean Stack',
+                       'text': 'Always calculate the 24-month total cost of ownership, never the entry '
+                               'tier.',
+                       'tip': 'Always calculate the 24-month total cost of ownership, never the entry '
+                              'tier.',
+                       'timestamp': 310,
+                       'timestamp_seconds': 310,
+                       'timestamp_label': '[00:05:10]',
+                       'url': 'https://www.youtube.com/watch?v=CoNZbm4aVto&t=310s',
+                       'markdown': '[00:05:10](https://www.youtube.com/watch?v=CoNZbm4aVto&t=310s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KAz03HJ5nHg',
+                       'title': 'How to Build Go-to-Market Efficiency in SMB Sales with Owner.com CRO Kyle '
+                                'Norton',
+                       'channel': 'SaaStr AI',
+                       'author': 'SaaStr AI',
+                       'text': 'BDRs were wasting about 40% of their time, and fixing prospect data moved '
+                               'accuracy from 40% to 85%.',
+                       'tip': 'BDRs were wasting about 40% of their time, and fixing prospect data moved '
+                              'accuracy from 40% to 85%.',
+                       'timestamp': 729,
+                       'timestamp_seconds': 729,
+                       'timestamp_label': '[00:12:09]',
+                       'url': 'https://www.youtube.com/watch?v=KAz03HJ5nHg&t=729s',
+                       'markdown': '[00:12:09](https://www.youtube.com/watch?v=KAz03HJ5nHg&t=729s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7znMZDlxFBU',
+                       'title': 'How I Find Businesses to Buy: Step-by-Step Method',
+                       'channel': 'Kenny Finance',
+                       'author': 'Kenny Finance',
+                       'text': 'So the best thing you can do is be the first call when a great company '
+                               "comes to market. The best businesses aren't for sale.",
+                       'tip': 'So the best thing you can do is be the first call when a great company '
+                              "comes to market. The best businesses aren't for sale.",
+                       'timestamp': 803,
+                       'timestamp_seconds': 803,
+                       'timestamp_label': '[00:13:23]',
+                       'url': 'https://www.youtube.com/watch?v=7znMZDlxFBU&t=803s',
+                       'markdown': '[00:13:23](https://www.youtube.com/watch?v=7znMZDlxFBU&t=803s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cS2OjyHbq8U',
+                       'title': "23 Off-Market HVAC Opportunities: Here's Exactly How We Got Them (Private "
+                                'Equity Case Study)',
+                       'channel': 'Avi',
+                       'author': 'Avi',
+                       'text': 'About 3 to five mailboxes per domain is usually what I would recommend.',
+                       'tip': 'About 3 to five mailboxes per domain is usually what I would recommend.',
+                       'timestamp': 1046,
+                       'timestamp_seconds': 1046,
+                       'timestamp_label': '[00:17:26]',
+                       'url': 'https://www.youtube.com/watch?v=cS2OjyHbq8U&t=1046s',
+                       'markdown': '[00:17:26](https://www.youtube.com/watch?v=cS2OjyHbq8U&t=1046s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qjwlutaiugE',
+                       'title': 'Acquire.com - How It Works',
+                       'channel': 'acquiredotcom',
+                       'author': 'acquiredotcom',
+                       'text': 'Sellers pay a 4% fee at close, and buyers pay $390 a year for startups '
+                               'under $250K in revenue or $780 a year for all startups plus tools.',
+                       'tip': 'Sellers pay a 4% fee at close, and buyers pay $390 a year for startups '
+                              'under $250K in revenue or $780 a year for all startups plus tools.',
+                       'timestamp': 310,
+                       'timestamp_seconds': 310,
+                       'timestamp_label': '[00:05:10]',
+                       'url': 'https://www.youtube.com/watch?v=qjwlutaiugE&t=310s',
+                       'markdown': '[00:05:10](https://www.youtube.com/watch?v=qjwlutaiugE&t=310s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iPMw4FjbyRQ',
+                       'title': 'Search Fund Case Study: 5–10 Qualified Seller Meetings Every Month',
+                       'channel': 'Marco Palmero',
+                       'author': 'Marco Palmero',
+                       'text': 'The system delivered 5 to 10 qualified appointments every month, sustained '
+                               'over multiple months.',
+                       'tip': 'The system delivered 5 to 10 qualified appointments every month, sustained '
+                              'over multiple months.',
+                       'timestamp': 168,
+                       'timestamp_seconds': 168,
+                       'timestamp_label': '[00:02:48]',
+                       'url': 'https://www.youtube.com/watch?v=iPMw4FjbyRQ&t=168s',
+                       'markdown': '[00:02:48](https://www.youtube.com/watch?v=iPMw4FjbyRQ&t=168s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nu3zh5FOFME',
+                       'title': 'An Acquire com Guide to Buying the Best Startups with Andrew Gazdecki',
+                       'channel': 'acquiredotcom',
+                       'author': 'acquiredotcom',
+                       'text': "Don't ever do an acquisition without using escrow; it protects you from "
+                               'scams, it protects you from bad actors.',
+                       'tip': "Don't ever do an acquisition without using escrow; it protects you from "
+                              'scams, it protects you from bad actors.',
+                       'timestamp': 1188,
+                       'timestamp_seconds': 1188,
+                       'timestamp_label': '[00:19:48]',
+                       'url': 'https://www.youtube.com/watch?v=nu3zh5FOFME&t=1188s',
+                       'markdown': '[00:19:48](https://www.youtube.com/watch?v=nu3zh5FOFME&t=1188s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'x4qfCP1pVmE',
+                       'title': 'How Search Funds Source Proprietary Deals Without Cold Calling',
+                       'channel': 'Marco Palmero',
+                       'author': 'Marco Palmero',
+                       'text': "So, the first thing I would recommend if you're a searcher is that you "
+                               'need to get clarity on your thesis.',
+                       'tip': "So, the first thing I would recommend if you're a searcher is that you need "
+                              'to get clarity on your thesis.',
+                       'timestamp': 141,
+                       'timestamp_seconds': 141,
+                       'timestamp_label': '[00:02:21]',
+                       'url': 'https://www.youtube.com/watch?v=x4qfCP1pVmE&t=141s',
+                       'markdown': '[00:02:21](https://www.youtube.com/watch?v=x4qfCP1pVmE&t=141s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6qKxeAkc2YY',
+                       'title': 'Roll-Up Buyer Case Study: Deal Origination System Built in 4 Weeks',
+                       'channel': 'Marco Palmero',
+                       'author': 'Marco Palmero',
+                       'text': 'The result was a complete origination system that they owned and that they '
+                               'could control and adapt over time.',
+                       'tip': 'The result was a complete origination system that they owned and that they '
+                              'could control and adapt over time.',
+                       'timestamp': 218,
+                       'timestamp_seconds': 218,
+                       'timestamp_label': '[00:03:38]',
+                       'url': 'https://www.youtube.com/watch?v=6qKxeAkc2YY&t=218s',
+                       'markdown': '[00:03:38](https://www.youtube.com/watch?v=6qKxeAkc2YY&t=218s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zYUvLwZ6ipc',
+                       'title': 'How I Study Closed Deals Before Calling Brokers | Commercial Real Estate '
+                                'Case Study Review',
+                       'channel': 'The Acquisition Manager',
+                       'author': 'The Acquisition Manager',
+                       'text': "So, you got to be able to articulate what's going on.",
+                       'tip': "So, you got to be able to articulate what's going on.",
+                       'timestamp': 35,
+                       'timestamp_seconds': 35,
+                       'timestamp_label': '[00:00:35]',
+                       'url': 'https://www.youtube.com/watch?v=zYUvLwZ6ipc&t=35s',
+                       'markdown': '[00:00:35](https://www.youtube.com/watch?v=zYUvLwZ6ipc&t=35s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'}]}

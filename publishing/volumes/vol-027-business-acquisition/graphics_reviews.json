@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-acquisition-to-operating-control",
-    "diag-02-single-cohort-sourcing-funnel",
-    "diag-03-base-case-earnings-waterfall",
-    "diag-04-subniche-collection-yields",
-    "diag-05-preflight-statutory-risk-tree",
-    "diag-06-four-core-six-scaled-pod",
-    "diag-07-75000-reference-buyer-capital-allocation",
-    "diag-08-first-thirty-days-search-sprint"
+    "diag-01-eta-buy-side-process",
+    "diag-02-sba-seller-note-capital-stack",
+    "diag-03-search-to-purchase-waterfall",
+    "diag-04-multiple-arbitrage-ladder",
+    "diag-05-sba-acquisition-gates",
+    "diag-06-asset-deal-protection-architecture",
+    "diag-07-sourcing-workload-benchmarks",
+    "diag-08-first-30-days-controls"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-acquisition-to-operating-control",
-    "diag-02-single-cohort-sourcing-funnel",
-    "diag-03-base-case-earnings-waterfall",
-    "diag-04-subniche-collection-yields",
-    "diag-05-preflight-statutory-risk-tree",
-    "diag-06-four-core-six-scaled-pod",
-    "diag-07-75000-reference-buyer-capital-allocation",
-    "diag-08-first-thirty-days-search-sprint"
+    "diag-01-eta-buy-side-process",
+    "diag-02-sba-seller-note-capital-stack",
+    "diag-03-search-to-purchase-waterfall",
+    "diag-04-multiple-arbitrage-ladder",
+    "diag-05-sba-acquisition-gates",
+    "diag-06-asset-deal-protection-architecture",
+    "diag-07-sourcing-workload-benchmarks",
+    "diag-08-first-30-days-controls"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-acquisition-to-operating-control": {
+    "diag-01-eta-buy-side-process": {
       "concept_a": {
-        "graphic_id": "diag-01-acquisition-to-operating-control",
+        "graphic_id": "diag-01-eta-buy-side-process",
         "graphic_type": "diagram",
-        "label": "Buy Verified Earnings; Then Protect Them",
+        "label": "The Buy-Instead-of-Build Process",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-acquisition-to-operating-control",
+        "graphic_id": "diag-01-eta-buy-side-process",
         "graphic_type": "diagram",
-        "label": "Buy Verified Earnings; Then Protect Them",
+        "label": "The Buy-Instead-of-Build Process",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-acquisition-to-operating-control",
+        "graphic_id": "diag-01-eta-buy-side-process",
         "graphic_type": "diagram",
-        "label": "Buy Verified Earnings; Then Protect Them",
+        "label": "The Buy-Instead-of-Build Process",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-single-cohort-sourcing-funnel": {
+    "diag-02-sba-seller-note-capital-stack": {
       "concept_a": {
-        "graphic_id": "diag-02-single-cohort-sourcing-funnel",
+        "graphic_id": "diag-02-sba-seller-note-capital-stack",
         "graphic_type": "diagram",
-        "label": "One Cohort, Five Evidence Filters",
+        "label": "The 90/5/5 Capital Stack",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-single-cohort-sourcing-funnel",
+        "graphic_id": "diag-02-sba-seller-note-capital-stack",
         "graphic_type": "diagram",
-        "label": "One Cohort, Five Evidence Filters",
+        "label": "The 90/5/5 Capital Stack",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-single-cohort-sourcing-funnel",
+        "graphic_id": "diag-02-sba-seller-note-capital-stack",
         "graphic_type": "diagram",
-        "label": "One Cohort, Five Evidence Filters",
+        "label": "The 90/5/5 Capital Stack",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-case-earnings-waterfall": {
+    "diag-03-search-to-purchase-waterfall": {
       "concept_a": {
-        "graphic_id": "diag-03-base-case-earnings-waterfall",
+        "graphic_id": "diag-03-search-to-purchase-waterfall",
         "graphic_type": "diagram",
-        "label": "From $1,875,000 Sales to $243,750 Owner Net",
+        "label": "200 Companies to One Purchase",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-case-earnings-waterfall",
+        "graphic_id": "diag-03-search-to-purchase-waterfall",
         "graphic_type": "diagram",
-        "label": "From $1,875,000 Sales to $243,750 Owner Net",
+        "label": "200 Companies to One Purchase",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-case-earnings-waterfall",
+        "graphic_id": "diag-03-search-to-purchase-waterfall",
         "graphic_type": "diagram",
-        "label": "From $1,875,000 Sales to $243,750 Owner Net",
+        "label": "200 Companies to One Purchase",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-subniche-collection-yields": {
+    "diag-04-multiple-arbitrage-ladder": {
       "concept_a": {
-        "graphic_id": "diag-04-subniche-collection-yields",
+        "graphic_id": "diag-04-multiple-arbitrage-ladder",
         "graphic_type": "diagram",
-        "label": "Collection Yield by Acquisition Sub-Niche",
+        "label": "The Multiple Arbitrage Ladder",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-subniche-collection-yields",
+        "graphic_id": "diag-04-multiple-arbitrage-ladder",
         "graphic_type": "diagram",
-        "label": "Collection Yield by Acquisition Sub-Niche",
+        "label": "The Multiple Arbitrage Ladder",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-subniche-collection-yields",
+        "graphic_id": "diag-04-multiple-arbitrage-ladder",
         "graphic_type": "diagram",
-        "label": "Collection Yield by Acquisition Sub-Niche",
+        "label": "The Multiple Arbitrage Ladder",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-preflight-statutory-risk-tree": {
+    "diag-05-sba-acquisition-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-preflight-statutory-risk-tree",
+        "graphic_id": "diag-05-sba-acquisition-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Committing Closing Funds",
+        "label": "Four Gates Under SOP 50 10 8.1",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-preflight-statutory-risk-tree",
+        "graphic_id": "diag-05-sba-acquisition-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Committing Closing Funds",
+        "label": "Four Gates Under SOP 50 10 8.1",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-preflight-statutory-risk-tree",
+        "graphic_id": "diag-05-sba-acquisition-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Committing Closing Funds",
+        "label": "Four Gates Under SOP 50 10 8.1",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-four-core-six-scaled-pod": {
+    "diag-06-asset-deal-protection-architecture": {
       "concept_a": {
-        "graphic_id": "diag-06-four-core-six-scaled-pod",
+        "graphic_id": "diag-06-asset-deal-protection-architecture",
         "graphic_type": "diagram",
-        "label": "Four Core Seats; Two Explicit Scale Additions",
+        "label": "Asset Deal Buyer Protection Architecture",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-four-core-six-scaled-pod",
+        "graphic_id": "diag-06-asset-deal-protection-architecture",
         "graphic_type": "diagram",
-        "label": "Four Core Seats; Two Explicit Scale Additions",
+        "label": "Asset Deal Buyer Protection Architecture",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-four-core-six-scaled-pod",
+        "graphic_id": "diag-06-asset-deal-protection-architecture",
         "graphic_type": "diagram",
-        "label": "Four Core Seats; Two Explicit Scale Additions",
+        "label": "Asset Deal Buyer Protection Architecture",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-75000-reference-buyer-capital-allocation": {
+    "diag-07-sourcing-workload-benchmarks": {
       "concept_a": {
-        "graphic_id": "diag-07-75000-reference-buyer-capital-allocation",
+        "graphic_id": "diag-07-sourcing-workload-benchmarks",
         "graphic_type": "diagram",
-        "label": "Allocate a $75,000 Reference Startup Budget",
+        "label": "Sourcing Workload Benchmarks",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-75000-reference-buyer-capital-allocation",
+        "graphic_id": "diag-07-sourcing-workload-benchmarks",
         "graphic_type": "diagram",
-        "label": "Allocate a $75,000 Reference Startup Budget",
+        "label": "Sourcing Workload Benchmarks",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-75000-reference-buyer-capital-allocation",
+        "graphic_id": "diag-07-sourcing-workload-benchmarks",
         "graphic_type": "diagram",
-        "label": "Allocate a $75,000 Reference Startup Budget",
+        "label": "Sourcing Workload Benchmarks",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-first-thirty-days-search-sprint": {
+    "diag-08-first-30-days-controls": {
       "concept_a": {
-        "graphic_id": "diag-08-first-thirty-days-search-sprint",
+        "graphic_id": "diag-08-first-30-days-controls",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Decision-Ready Acquisition Search",
+        "label": "The First Four Weeks After Close",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-first-thirty-days-search-sprint",
+        "graphic_id": "diag-08-first-30-days-controls",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Decision-Ready Acquisition Search",
+        "label": "The First Four Weeks After Close",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-first-thirty-days-search-sprint",
+        "graphic_id": "diag-08-first-30-days-controls",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Decision-Ready Acquisition Search",
+        "label": "The First Four Weeks After Close",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:02Z"
+  "updated_at": "2026-11-24T22:21:28Z"
 }

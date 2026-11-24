@@ -1,704 +1,861 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 1 FT + 2 C (3 people) lending & flash-funding arbitrage team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Python Webhooks, Verified Escrow Cash, Controlled POF Issuance, Payoff Ledgers & Reply-First Deal Distribution",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #30, Lending & Flash-Funding Arbitrage, ranks #04 of 36 with a "
-        "93/100 Money-to-Manpower Score. This chapter operationalizes 14 mapped plays "
-        "as a small-team system: Python receives authenticated events, document models "
-        "extract evidence, deterministic rules reconcile escrow balances, and humans "
-        "authorize consequential commitments. The operating target is 70%+ removal of "
-        "repetitive work, measured against a fixed task baseline rather than inflated "
-        "message counts. Conservative, Base, and Scaled annual owner profits remain "
-        "$36,000, $227,375, and $522,500 respectively. Earned funding fees, EMD JV "
-        "splits, and origination points generate revenue; escrow principal never does. "
-        "Reply-first distribution feeds verified underwriting, while independent wire "
-        "callbacks, unconditional end-buyer cash, and exception queues constrain "
-        "liquidity exposure before volume increases."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual earned funding fees, EMD JV splits, and origination points; excludes escrow principal.",
-            "note": "30% net margin; $36,000 annual owner net profit; 1 FT + 2 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$535,000",
-            "context": "Annual earned funding fees, EMD JV splits, and origination points; excludes escrow principal.",
-            "note": "42.5% net margin; $227,375 annual owner net profit; 1 FT + 2 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$950,000",
-            "context": "Annual earned funding fees, EMD JV splits, and origination points; excludes escrow principal.",
-            "note": "55% net margin; $522,500 annual owner net profit; 2 FT + 3 C.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build an evidence pipeline before automating capital commitments",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Give the one full-time principal ownership of credit decisions, treasury "
-                    "authorization, and exception closure; assign one contractor to document "
-                    "operations and the other to relationship qualification and scheduling. "
-                    "Separate preparation from authorization even when the same people cover "
-                    "multiple shifts. Build the intake path with a signed webhook, Python "
-                    "validation worker, durable queue, evidence store, and PostgreSQL ledger. "
-                    "The standard-library implementation can use hmac, hashlib, json, decimal, "
-                    "and urllib.request; hosting and database adapters remain deployment choices. "
-                    "Authenticate the raw request body before parsing, enforce a timestamp "
-                    "window, and persist a provider event identifier under a uniqueness "
-                    "constraint. Return success only after durable acceptance, then process "
-                    "asynchronously. Every application receives a deal identifier connecting "
-                    "borrower entity, property, purchase contract, resale contract, settlement "
-                    "agent, funding source, expected payoff, and supporting evidence. Use "
-                    "allowlisted file types, malware scanning, size limits, and isolated "
-                    "document conversion before extraction. Treat every uploaded instruction "
-                    "as untrusted content, never as authority to change a beneficiary or "
-                    "call another service. The 14 mapped plays below are chapter-local "
-                    "workflow mappings; only the supplied outbound play identifier is "
-                    "presented as a catalog identifier. This distinction prevents invented "
-                    "catalog labels from contaminating downstream reporting and implementation."
-                ),
-                (
-                    "Automated POF and underwriting intake should produce an evidence packet, "
-                    "not an autonomous promise to lend. Extract names, dates, contract "
-                    "amounts, deposit deadlines, assignment restrictions, financing contingencies, "
-                    "and escrow contacts into a versioned schema. Require each extracted "
-                    "field to carry its document identifier, page reference, and source "
-                    "text. Validate dates with datetime, amounts with Decimal, and required "
-                    "fields with explicit type checks; reject arithmetic that depends on "
-                    "a model interpreting punctuation. Compare entity names across contracts "
-                    "and verified formation records, then route mismatches to the document "
-                    "contractor. A language model may summarize conflicting provisions but "
-                    "cannot resolve them by choosing the more convenient document. Issue "
-                    "a proof-of-funds letter only after the principal verifies available "
-                    "capacity, authorized issuer identity, permitted recipient, expiration, "
-                    "and transaction-specific conditions. A POF letter describes verified "
-                    "capacity within its stated scope; it does not establish that end-buyer "
-                    "cash is already deposited. Bind the generated PDF to a content hash, "
-                    "record the approving person, and retain the exact issued version. "
-                    "If capacity changes, suspend further issuance and contact affected "
-                    "recipients through authenticated channels. Never create a reusable "
-                    "letter that implies unlimited funding across simultaneous transactions."
-                ),
-                (
-                    "Measure the automation claim with a fixed reference basket covering "
-                    "research, qualification, fulfillment, and acquisition administration. "
-                    "Suppose one basket previously required 600 staff minutes: 180 for "
-                    "research, 150 for qualification, 180 for fulfillment preparation, and "
-                    "90 for acquisition administration. Target residual effort of 40, 45, "
-                    "55, and 20 minutes respectively. Removing 440 of 600 minutes produces "
-                    "73.3% time reduction while preserving 160 minutes of human review. "
-                    "These are pilot assumptions, not observed throughput. Compare matched "
-                    "baskets with similar document counts and exception rates, and include "
-                    "callbacks, corrections, queue supervision, and failed attempts in "
-                    "the residual measure. Keep principal-release decisions outside the "
-                    "automatable task denominator and report their workload separately. "
-                    "Score extraction accuracy by field criticality: a wrong middle "
-                    "initial and a wrong beneficiary account must never share equal "
-                    "severity. Run the first twenty complete applications in shadow mode, "
-                    "comparing generated packets against independently prepared packets. "
-                    "Missing source evidence, stale balances, or contradictory payoff "
-                    "instructions force manual handling. A schema change starts a fresh "
-                    "regression run using retained, access-controlled fixtures. When the "
-                    "model service fails, the same form and checklist remain usable "
-                    "manually, with queued work resuming only after reconciliation."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped Plays 01–07: Evidence Acquisition and Controlled Underwriting",
-                "headers": [
-                    "Chapter-local mapped play",
-                    "Concrete automation and unit",
-                    "Human evidence requirement",
-                    "Failure recovery and stop condition",
-                ],
-                "rows": [
-                    [
-                        "01: Authenticated webhook intake for every new application",
-                        "One signed event creates one durable deal record",
-                        "Contractor resolves duplicate identities before merging applicant records",
-                        "Invalid signatures receive rejection without invoking document processing",
-                    ],
-                    [
-                        "02: Source-linked contract extraction for both closing legs",
-                        "Two contracts produce one structured comparison evidence packet",
-                        "Principal reviews contingencies and each missing source reference",
-                        "Unreadable pages move into the manual transcription queue",
-                    ],
-                    [
-                        "03: Verified entity research with documented source provenance",
-                        "One entity lookup attaches dated formation record evidence",
-                        "Contractor checks signer authority against the submitted documents",
-                        "Conflicting entity names suspend commitments until independently resolved",
-                    ],
-                    [
-                        "04: Controlled POF drafting against verified available capacity",
-                        "One approved version consumes a documented capacity reservation",
-                        "Principal confirms issuer authority and transaction-specific letter scope",
-                        "Expired capacity evidence blocks issuance and prompts reverification",
-                    ],
-                    [
-                        "05: Deterministic qualification rules for proposed funding structures",
-                        "Each application receives separate amount and timing checks",
-                        "Principal reviews jurisdiction, purpose, collateral, and repayment mechanics",
-                        "Unresolved lending classification moves the application into review",
-                    ],
-                    [
-                        "06: Settlement-agent verification using independently sourced contact records",
-                        "One callback record binds each approved beneficiary version",
-                        "Contractor records contact origin and principal reviews discrepancies",
-                        "Any beneficiary change invalidates the previous verification record",
-                    ],
-                    [
-                        "07: Exception routing with aging and named ownership",
-                        "Each failed validation creates one deduplicated assigned ticket",
-                        "Assigned reviewer records evidence and a specific resolution",
-                        "Overdue critical tickets freeze dependent funding workflow transitions",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make the packet easy to reject before making it fast",
-                "body": (
-                    "Experienced transactional funders optimize evidence quality before "
-                    "application volume; these tactics prevent polished documents from "
-                    "disguising missing cash or unavailable capacity."
-                ),
-                "items": [
-                    "Place deposit availability evidence beside the resale contract, not behind the POF letter; a letter and a pending transfer cannot substitute for deposited end-buyer cash.",
-                    "Hash beneficiary instructions and include the hash in the review record so a later PDF replacement cannot silently inherit an earlier callback.",
-                    "Reserve capacity across outstanding POF commitments and active fundings; review overlapping closing windows before issuing another transaction-specific letter.",
-                    "Track exceptions by settlement office and underlying cause; reward clean evidence packets with faster scheduling rather than weaker verification.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Lock wire verification and payoff reconciliation to explicit states",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Represent the deal as explicit states: received, evidence_complete, "
-                    "cash_verified, human_authorized, funded, payoff_pending, and reconciled. "
-                    "Each transition requires named evidence and records actor, timestamp, "
-                    "previous state, new state, and transaction version. Only a principal "
-                    "with treasury authority can enter human_authorized, and that state "
-                    "must expire when material facts change. Release funds strictly to "
-                    "bonded title or settlement agents after independently verifying "
-                    "unconditional end-buyer cash on deposit and the documented closing "
-                    "sequence. Verify the agent's identity, licensing where required, "
-                    "applicable bond, and account ownership through independent sources; "
-                    "a certificate emailed by the applicant is only a starting document. "
-                    "Call a previously validated number, not a number supplied inside "
-                    "new wire instructions. Document who confirmed the cash, when it "
-                    "became available, and whether any hold or condition remains. A "
-                    "screenshot marked pending fails this test. Treat beneficiary changes "
-                    "as a new verification event requiring a fresh callback and "
-                    "authorization. New York UCC § 4-A-202 illustrates why agreed bank "
-                    "security procedures matter, but following a workflow does not "
-                    "establish that every fraudulent order will be recoverable. The "
-                    "bank's authenticated treasury interface remains the execution channel; "
-                    "the language model never receives wire-release credentials."
-                ),
-                (
-                    "Maintain separate ledgers for principal movements, earned fees, "
-                    "unearned amounts, funding costs, and operating expenses. A $200,000 "
-                    "principal advance with a $2,500 earned funding fee produces $2,500 "
-                    "of operator revenue, not $202,500. When $202,500 returns, match "
-                    "$200,000 to the principal receivable and $2,500 to the contractual "
-                    "fee receivable, subject to the documented earning event. Store "
-                    "amounts as integer cents or Decimal values with explicit currency, "
-                    "never binary floating-point values. Each posting carries deal "
-                    "identifier, bank reference, settlement statement version, value "
-                    "date, and allocation reason. Import bank and escrow evidence "
-                    "independently, then reconcile both against the contract schedule. "
-                    "A $500 shortfall creates an open exception; it never disappears "
-                    "inside a favorable aggregate balance. Use reversals rather than "
-                    "editing posted entries, and require review for write-offs or fee "
-                    "concessions. When a JV agreement allocates only a retained split "
-                    "to the operator, recognize that earned share rather than the "
-                    "whole pool. Do not apply an invented retained-share percentage "
-                    "to the canonical scorecard. Determine principal-versus-agent "
-                    "presentation from the actual arrangement and applicable ASC 606 "
-                    "analysis, while keeping client property value and escrow throughput "
-                    "outside operating revenue in every dashboard."
-                ),
-                (
-                    "Separate 24-to-72-hour double-close liquidity from earnest-money "
-                    "exposure and promotional corporate-credit funding. A $100,000 "
-                    "advance outstanding for two days consumes $200,000 principal-days; "
-                    "the same amount outstanding for thirty days consumes $3,000,000 "
-                    "principal-days. That fifteenfold difference matters more than a "
-                    "shared fee label. Earnest-money arrangements proposed before an "
-                    "end buyer has unconditional cash deposited do not qualify for "
-                    "this automated funding lane. Route them to structural review "
-                    "and do not release capital under this chapter's release rule. "
-                    "For a 0%-APR corporate facility, inspect permitted uses, cash "
-                    "advance pricing, transfer fees, maturity, and promotional expiry "
-                    "before treating availability as usable liquidity. A $50,000 "
-                    "draw with a 3% transfer fee costs $1,500 even when promotional "
-                    "interest is zero. Never disguise transaction purpose to bypass "
-                    "issuer restrictions. At a missed payoff deadline, stop recycling "
-                    "the exposed amount, notify the principal, obtain a verified "
-                    "settlement status, and update the liquidity forecast. California "
-                    "Financial Code § 22100 requires licensing for covered finance "
-                    "lending unless an exemption applies; Florida § 687.03 imposes "
-                    "interest limits subject to its scope and exceptions. Evaluate "
-                    "actual terms and jurisdiction before pricing, rather than assuming "
-                    "a commercial label removes these constraints."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped Plays 08–14: Treasury Controls, Recovery and Distribution",
-                "headers": [
-                    "Chapter-local mapped play",
-                    "Concrete automation and unit",
-                    "Consequential human decision",
-                    "Specific fallback or containment action",
-                ],
-                "rows": [
-                    [
-                        "08: Verified cash evidence bound to closing sequence",
-                        "One deposit confirmation supports one current funding decision",
-                        "Principal validates unconditional availability before authorizing capital release",
-                        "Pending deposits keep the transaction outside executable states",
-                    ],
-                    [
-                        "09: Beneficiary fingerprinting with versioned independent callback records",
-                        "One changed account digit invalidates prior authorization evidence",
-                        "Principal confirms independently verified replacement instructions before execution",
-                        "Conflicting instructions freeze funding and trigger agent escalation",
-                    ],
-                    [
-                        "10: Escrow payoff ledger with separate principal allocations",
-                        "One receipt creates separately balanced principal and fee postings",
-                        "Reviewer resolves every unmatched amount against settlement evidence",
-                        "Partial receipts remain open without artificial balancing entries",
-                    ],
-                    [
-                        "11: Liquidity reservation and promotional-credit expiry monitoring",
-                        "Each active commitment reduces immediately available funding capacity",
-                        "Principal checks facility restrictions and upcoming repayment obligations",
-                        "Unavailable credit removes capacity before additional letters issue",
-                    ],
-                    [
-                        "12: Closing-status notifications and overdue payoff exception routing",
-                        "Each missed deadline creates one priority recovery assignment",
-                        "Principal decides exposure treatment using verified settlement status",
-                        "Exposed capital remains reserved until documented recovery occurs",
-                    ],
-                    [
-                        "13: Evidence-led programmatic publishing and partner referral loops",
-                        "One useful calculator routes interested visitors into qualification",
-                        "Reviewer checks pricing assumptions and any referral compensation",
-                        "Incorrect pages are withdrawn while affected leads receive corrections",
-                    ],
-                    [
-                        "14: high_velocity_dm_outbound_systems with reply-first warm signal routing",
-                        "Each user trigger permits one contextual initial conversation",
-                        "Relationship contractor qualifies replies before sending external links",
-                        "Platform restrictions pause dispatch without rotating around enforcement",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before capital leaves the account",
-                "body": (
-                    "A green dashboard is insufficient. The principal must inspect "
-                    "current evidence for all four checks and record the decision."
-                ),
-                "items": [
-                    "Confirm the settlement agent's verified identity, required license, applicable bond, approved account ownership, and independently sourced callback record.",
-                    "Confirm unconditional end-buyer cash on deposit, current availability, approved closing sequence, and absence of unresolved release conditions.",
-                    "Confirm current beneficiary fingerprint, matched contract versions, available funding capacity, and independently reviewed amount and timing.",
-                    "Confirm transaction-specific state lending, usury, escrow, and funding-source requirements are resolved; expired or conflicting evidence stops release.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Assemble the immutable decision packet",
-                    "action": "Collect current contracts, agent verification, deposit confirmation, and beneficiary instructions.",
-                    "detail": "Bind every document hash and reviewer note to one deal version; reject missing or superseded evidence.",
-                },
-                {
-                    "step": 2,
-                    "title": "Verify independently and authorize explicitly",
-                    "action": "Complete the callback and have the principal review cash availability and release conditions.",
-                    "detail": "Record the source telephone number, confirming person, verification time, authorization expiry, and exact authorized amount.",
-                },
-                {
-                    "step": 3,
-                    "title": "Execute through authenticated treasury controls",
-                    "action": "Use the bank's authorized interface with preparer and approver separation where supported.",
-                    "detail": "Capture the bank reference without storing treasury credentials in document systems, prompts, or messaging logs.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile before recycling capacity",
-                    "action": "Match returned principal and earned fees against bank and escrow evidence.",
-                    "detail": "Release the capacity reservation only after verified principal recovery; route shortfalls and late returns into named exceptions.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Turn warm signals into qualified deals without scaling spam",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Implement high_velocity_dm_outbound_systems as a user-triggered "
-                    "conversation router, not a cold-message cannon. Publish a useful "
-                    "closing-readiness checklist, invite a relevant comment or reaction, "
-                    "and use an approved platform integration to acknowledge that action. "
-                    "Require a user-initiated comment, reaction, or inbound message before "
-                    "automated DM dispatch, and send external links only after the "
-                    "prospect replies. A trigger permits a contextual response within "
-                    "platform rules, not unlimited follow-up. Store trigger identifier, "
-                    "channel, timestamp, topic, and suppression status; deduplicate by "
-                    "person and conversation. Route replies among authorized inboxes "
-                    "by relationship owner and workload, never to evade platform "
-                    "restrictions. PeerFloodError, permission errors, or delivery "
-                    "anomalies pause the affected channel and create a review task. "
-                    "Do not rotate accounts to outrun enforcement. Silent Message "
-                    "Request graveyards are a measurement problem: report delivered "
-                    "messages, actual replies, qualified packets, and funded deals "
-                    "separately. The relationship contractor asks about property state, "
-                    "closing date, settlement agent, requested amount, and end-buyer "
-                    "cash readiness before offering intake. A language model can "
-                    "draft the question sequence, but it cannot promise funding, "
-                    "quote an unapproved fee, invent a relationship, or imply that "
-                    "a comment has secured a credit commitment."
-                ),
-                (
-                    "Model a monthly warm funnel with 400 explicit triggers, 160 "
-                    "replies, 48 qualified conversations, 24 complete packets, and "
-                    "eight funded transactions. Those assumptions imply 40% "
-                    "trigger-to-reply, 30% reply-to-qualified, 50% qualified-to-packet, "
-                    "and 33.3% packet-to-funded conversion. At a $2,500 earned fee, "
-                    "the cohort generates $20,000 revenue before its allocated costs. "
-                    "A $400 content and distribution budget, $80 of automated runs, "
-                    "and eight contractor hours at $30 produce $720 acquisition "
-                    "cost, or $90 per funded transaction. This is a test cohort, "
-                    "not the Base annual scenario: eight monthly fundings would "
-                    "produce 96 annual transactions, below the 214-deal Base bridge. "
-                    "If only four deals fund, acquisition cost doubles to $180 "
-                    "and cohort revenue halves to $10,000. Attribute outcomes by "
-                    "original trigger and deduplicate repeat applicants so multiple "
-                    "inboxes cannot claim the same closing. Review the denominator "
-                    "when funding is delayed into another month; a pending deal "
-                    "is not a conversion. Use a thirty-day cohort report with "
-                    "a later reconciliation window, and publish conversion ranges "
-                    "only after enough observations exist. Pause content themes "
-                    "that attract large numbers of requests without verifiable "
-                    "escrow cash or plausible closing timelines."
-                ),
-                (
-                    "Build the distribution flywheel around useful operating artifacts: "
-                    "a state-specific intake worksheet, a principal-days calculator, "
-                    "an escrow-readiness checklist, and an anonymized closing "
-                    "postmortem. Programmatic pages should contain reviewed state "
-                    "requirements, dated assumptions, and concrete examples rather "
-                    "than copied city names wrapped around identical claims. Publish "
-                    "a page only when its sourcing and operator utility justify "
-                    "its existence; refresh or withdraw it when the underlying "
-                    "rules change. Let title and settlement relationships generate "
-                    "voluntary introductions after a clean close, but do not turn "
-                    "that relationship into automatic compensation for settlement "
-                    "service referrals. For covered federally related mortgage "
-                    "transactions, 12 U.S.C. § 2607 restricts referral fees and "
-                    "unearned fee splitting. Any proposed partner payment needs "
-                    "transaction-specific review before launch. Use commercial "
-                    "email only with accurate sender information, nondeceptive "
-                    "subjects, a valid postal address, and a functioning opt-out "
-                    "process under 15 U.S.C. § 7704. Synchronize suppression "
-                    "records before dispatch. Seek explicit permission before "
-                    "publishing customer stories, and remove identifying "
-                    "property and bank details. Feed actual rejection reasons "
-                    "back into content selection: explain cash availability "
-                    "and closing sequence more clearly instead of purchasing "
-                    "more poorly matched traffic. Quality increases distribution "
-                    "efficiency without weakening underwriting."
-                ),
-            ],
-            "table": {
-                "caption": "Reply-First Distribution Matrix with Illustrative Monthly Funnel Math",
-                "headers": [
-                    "Distribution or conversion stage",
-                    "Operating unit and assumed math",
-                    "Human review and ownership",
-                    "Failure recovery and measurement discipline",
-                ],
-                "rows": [
-                    [
-                        "Useful checklist attracts explicit user comments or reactions",
-                        "Four hundred monthly triggers establish the cohort denominator",
-                        "Relationship contractor reviews topic relevance and platform permissions",
-                        "No initiating signal means no automated direct message",
-                    ],
-                    [
-                        "Contextual initial message requests an actual prospect reply",
-                        "One hundred sixty replies equal forty percent conversion",
-                        "Contractor checks ambiguous requests before continuing the conversation",
-                        "External links remain withheld until the prospect replies",
-                    ],
-                    [
-                        "Qualification conversation identifies closing readiness and jurisdiction fit",
-                        "Forty-eight qualified conversations represent thirty percent of replies",
-                        "Principal handles requests requiring exceptions to published criteria",
-                        "Unready applicants receive useful guidance without funding promises",
-                    ],
-                    [
-                        "Structured intake converts qualified conversations into complete packets",
-                        "Twenty-four packets equal half the qualified conversation cohort",
-                        "Document contractor resolves missing evidence before underwriting review",
-                        "Incomplete packets stay separate from completed application statistics",
-                    ],
-                    [
-                        "Reviewed funding decisions convert complete packets into closings",
-                        "Eight funded deals earn twenty thousand dollars total",
-                        "Principal authorizes each transaction after independent cash verification",
-                        "Delayed fundings remain pending until actual release occurs",
-                    ],
-                    [
-                        "Cohort cost attribution links labor and automation spending",
-                        "Seven hundred twenty dollars divided by eight equals ninety",
-                        "Operator checks invoices and allocated contractor hours monthly",
-                        "Four fundings instead produce one hundred eighty dollars each",
-                    ],
-                    [
-                        "Post-close artifacts generate voluntary introductions and repeat interest",
-                        "One reviewed postmortem supplies reusable educational operating material",
-                        "Reviewer checks customer permission and proposed partner compensation",
-                        "Sensitive details are removed before any external publication",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Price the automation, reconcile the scorecard, and rehearse recovery",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Budget each automated run as an explicit unit, not a "
-                    "mysterious software subscription. An illustrative packet-processing "
-                    "run uses $0.12 for document-model inference, $0.02 for "
-                    "extraction, $0.03 for queue and worker execution, $0.01 "
-                    "for storage and logging, and $0.02 for permitted event "
-                    "delivery: $0.20 total. These are planning allowances, not "
-                    "vendor quotations; measure actual invoices and token usage "
-                    "before buying volume. Three thousand runs monthly cost "
-                    "$600, or $7,200 annually, before human review and fixed "
-                    "subscriptions. A run is a defined processing attempt, not "
-                    "a funded deal, and retries consume additional runs. If "
-                    "review takes four minutes at a $30 hourly contractor "
-                    "rate, the reviewed packet adds $2 of labor. Count "
-                    "unique packets, attempts per packet, and review minutes "
-                    "separately so caching does not hide rework. Apply a "
-                    "per-deal spending ceiling and alert when repeated OCR "
-                    "or model calls exceed it. Route oversized or damaged "
-                    "documents to manual preparation rather than looping "
-                    "indefinitely. The $2,000–$12,000 monthly operating-expense "
-                    "range is a planning envelope for the operating stack, "
-                    "not a replacement for total scenario deductions, which "
-                    "also reflect labor, funding-related costs, and other "
-                    "modeled expenses. Reserve startup liquidity separately "
-                    "from software spending."
-                ),
-                (
-                    "Preserve the canonical Formula v2.0 cases exactly. Conservative "
-                    "revenue of $120,000 less $84,000 total deductions leaves "
-                    "$36,000 owner net profit at 30%. Base revenue of "
-                    "$535,000 less $307,625 leaves $227,375 at 42.5%. Scaled "
-                    "revenue of $950,000 less $427,500 leaves $522,500 at "
-                    "55%. An illustrative volume bridge is sixty annual "
-                    "fundings at $2,000 earned revenue for Conservative, "
-                    "214 at $2,500 for Base, and 380 at $2,500 "
-                    "for Scaled. These blended fees can represent earned "
-                    "transactional fees, qualifying EMD JV splits, and "
-                    "origination points; they are not statements about "
-                    "principal size or permissible pricing in every state. "
-                    "Conservative and Base retain one full-time operator "
-                    "plus two contractors. Scaled uses two full-time "
-                    "operators plus three contractors, five people total. "
-                    "The scorecard does not establish automated staffing "
-                    "savings beyond those teams. Treat automation spending "
-                    "as part of the existing deduction envelope, not "
-                    "another subtraction after owner profit. The "
-                    "$25,000–$100,000 startup-capital range does not "
-                    "automatically support every advance size; match "
-                    "committed liquidity to simultaneous reservations and "
-                    "verified repayment timing. Growth is constrained by "
-                    "peak capital exposure, qualified demand, and human "
-                    "review capacity rather than by webhook throughput."
-                ),
-                (
-                    "Design recovery around at-least-once event delivery and "
-                    "exactly-once economic effects. Persist an idempotency key "
-                    "for every state-changing request, use a transactional "
-                    "outbox for notifications, and make ledger posting "
-                    "identifiers unique. Retry transient service failures "
-                    "with exponential backoff and jitter, then move "
-                    "exhausted jobs into a dead-letter queue with a "
-                    "named owner. Never retry a potentially executed "
-                    "wire merely because a response timed out; obtain "
-                    "the bank's transaction status first. Store secrets "
-                    "outside prompts and source files, limit service "
-                    "accounts to their specific task, and redact "
-                    "account numbers from routine logs. Evaluate "
-                    "coverage under 16 CFR Part 314 and implement "
-                    "the applicable information-security program, including "
-                    "access controls, encryption, monitoring, and incident "
-                    "response requirements. Backups need restoration tests, "
-                    "not just successful upload messages. Rehearse a "
-                    "duplicate webhook, a changed beneficiary, a model "
-                    "outage, and an overdue payoff every quarter. "
-                    "For each exercise, record detection time, exposure "
-                    "contained, manual recovery steps, and reconciliation "
-                    "evidence. Add people when verified review queues "
-                    "exceed service targets, not when a dashboard "
-                    "celebrates message volume. Release new automation "
-                    "in shadow mode, then limited production, with "
-                    "a reversible switch to the last tested workflow. "
-                    "The scalable asset is a reproducible decision "
-                    "record, not unattended access to capital."
-                ),
-            ],
-            "table": {
-                "caption": "Formula v2.0 Reconciliation, Run Economics and Recovery Controls",
-                "headers": [
-                    "Scenario or controlled operating unit",
-                    "Revenue or direct cost calculation",
-                    "Profit, review or staffing consequence",
-                    "Interpretation and specific operating fallback",
-                ],
-                "rows": [
-                    [
-                        "Conservative canonical annual case with sixty illustrative fundings",
-                        "Sixty times $2,000 equals $120,000 earned annual revenue",
-                        "$84,000 deductions leave $36,000 profit at thirty percent",
-                        "One full-time operator plus two contractors preserve review separation",
-                    ],
-                    [
-                        "Base canonical annual case with 214 illustrative fundings",
-                        "Two hundred fourteen times $2,500 equals $535,000 revenue",
-                        "$307,625 deductions leave $227,375 profit at 42.5 percent",
-                        "One full-time operator plus two contractors retain authorization ownership",
-                    ],
-                    [
-                        "Scaled canonical annual case with 380 illustrative fundings",
-                        "Three hundred eighty times $2,500 equals $950,000 revenue",
-                        "$427,500 deductions leave $522,500 profit at fifty-five percent",
-                        "Two full-time operators plus three contractors expand review coverage",
-                    ],
-                    [
-                        "One illustrative automated packet-processing attempt before human review",
-                        "$0.12 plus $0.02 plus $0.03 plus $0.01 plus $0.02 equals $0.20",
-                        "Four review minutes at $30 hourly add $2",
-                        "Repeated failures stop automated attempts and trigger manual preparation",
-                    ],
-                    [
-                        "Three thousand monthly processing attempts under illustrative allowances",
-                        "Three thousand times $0.20 equals $600 monthly spending",
-                        "Twelve months produce $7,200 before review and subscriptions",
-                        "Actual invoices replace assumptions before higher-volume purchasing decisions",
-                    ],
-                    [
-                        "Matched repetitive-work basket across four defined operating functions",
-                        "Six hundred baseline minutes less 160 equals 440 removed",
-                        "Seventy-three point three percent reduction retains explicit human review",
-                        "Include corrections and supervision before claiming measured automation savings",
-                    ],
-                    [
-                        "Ambiguous bank response following an authorized wire request",
-                        "One timeout creates one investigation rather than another transfer",
-                        "Principal verifies bank status before considering further treasury action",
-                        "Unique transaction references prevent duplicate economic postings during recovery",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Automate the evidence trail and the next useful question, never the assumption that somebody else's money has arrived.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Deploy signed webhook intake with replay protection, durable acceptance, unique event identifiers, and document-isolation controls before enabling any model extraction.",
-        "Benchmark the 600-minute repetitive-work basket in shadow mode and include review, corrections, retries, and supervision when testing the 73.3% reduction hypothesis.",
-        "Bind each POF letter and funding authorization to verified capacity, current document hashes, independent settlement-agent verification, and unconditional end-buyer cash evidence.",
-        "Implement separate principal and earned-fee ledger accounts, unique posting references, reversible corrections, and a payoff exception queue before recycling capital.",
-        "Launch high_velocity_dm_outbound_systems only with user-initiated triggers, reply-before-link sequencing, synchronized suppression, and channel shutdown on platform restrictions.",
-        "Reconcile all three canonical profit cases, measure actual cost per processing attempt, and rehearse duplicate events, changed beneficiaries, service outages, and late payoffs.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "California Financial Code § 22100 — Finance lender and broker licensing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=22100.&lawCode=FIN",
-            "relevance": (
-                "Determine whether the actual lending or brokering activity requires "
-                "a license and document the applicable exemption, if any, before "
-                "offering transaction-specific terms."
-            ),
-        },
-        {
-            "title": "Florida Statutes § 687.03 — Unlawful rates of interest",
-            "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0687/Sections/0687.03.html",
-            "relevance": (
-                "Evaluate the transaction's covered charges, amount, term, and "
-                "applicable exceptions rather than assuming that a short duration "
-                "or commercial-purpose label removes interest limitations."
-            ),
-        },
-        {
-            "title": "New York UCC § 4-A-202 — Authorized and verified payment orders",
-            "url": "https://www.law.cornell.edu/ucc/4A/4A-202",
-            "relevance": (
-                "The linked model UCC text explains authorization and agreed "
-                "security-procedure mechanics. Verify the governing state's "
-                "enacted provision and the bank agreement for each treasury relationship."
-            ),
-        },
-        {
-            "title": "12 U.S.C. § 2607 — Prohibition against kickbacks and unearned fees",
-            "url": "https://www.law.cornell.edu/uscode/text/12/2607",
-            "relevance": (
-                "Review settlement-service referral compensation and fee splitting "
-                "for transactions within the statute's federally related mortgage "
-                "loan scope before launching paid partner distribution."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Apply accurate transmission information, nondeceptive subjects, "
-                "required identification and address information, and timely "
-                "opt-out handling to covered commercial email."
-            ),
-        },
-        {
-            "title": "16 CFR § 314.4 — Elements of an information security program",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314/section-314.4",
-            "relevance": (
-                "For covered institutions, implement applicable safeguards for "
-                "customer information and evaluate available exceptions by their "
-                "specific scope rather than treating small-team status as exclusion."
-            ),
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'loan-documents-security-usury',
+ 'question_prompt': 'Which documents secure a loan or partnership, and what interest-rate and legal limits '
+                    'must lenders respect?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Loan Documents, Security & Usury',
+ 'subtitle': 'Promissory notes, deeds of trust, mortgages and pledges, land contracts, seller-financing '
+             'notes, the private lender document set, liens and insurance, business loan agreements, usury '
+             'laws (including California and litigation finance), predatory lending, and real estate joint '
+             'venture agreements',
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Private lenders and JV operators converge on one rule: the promissory note is the '
+                      'IOU, but the recorded deed of trust or mortgage is what lets you take the house. '
+                      'Hard Money Mastermind runs about 80 pages per loan, puts personal guarantees on 98% '
+                      'of deals, and treats the closing instruction letter as the single most important '
+                      'document. The Real Estate Lender pegs recording at $38, the lender title premium '
+                      'near $1,850, and insurance around $2,400 a year. Usury is the kill switch: Lender '
+                      'Link fixes California at a 10% APR cap with points included, Scott Horne pegs Texas '
+                      'at 18% individual and 24% corporate, and fees can turn a six-month loan into 50%. '
+                      'The split comes on JVs: Clint Coons calls JV agreements lawsuit generators, while '
+                      'Molly Tennant teaches them for quick $20,000 closing money.',
+ 'key_metrics': [{'label': 'Share of Loans Carrying Personal Guarantees',
+                  'metric': 'Share of Loans Carrying Personal Guarantees',
+                  'value': '98% of loans; self-directed IRA loans are the exception, with LTV dropped from '
+                           '65% to 50%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Jason of Hard Money Bankers, lending since 2007 across 4,000+ loans, on how '
+                             'the shop backs collateral with a named guarantor',
+                  'source': 'Hard Money Mastermind ([bNJYDcDSFxU @ 00:05:23])'},
+                 {'label': 'California Usury Cap on Private Mortgage Loans',
+                  'metric': 'California Usury Cap on Private Mortgage Loans',
+                  'value': '10% maximum, measured on an APR basis with points and fees included',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Nema Daghbandan of Geraci Law Firm: business-purpose status does not exempt '
+                             'the loan, and a 9.99% note rate is not automatically safe',
+                  'source': 'Lender Link ([W1fiiFnsFhE @ 00:01:20])'},
+                 {'label': 'Texas Usury Caps by Borrower Type',
+                  'metric': 'Texas Usury Caps by Borrower Type',
+                  'value': '18% for individuals, 24% for corporate entities',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Scott Horne on Texas owner-finance limits, with points, origination, '
+                             'processing, appraisal and lender-required surveys counted toward APR',
+                  'source': "Scott Horne's Owner Finance Network ([XdrwPF-D1FI @ 00:00:32])"},
+                 {'label': 'Default Interest Rate in Live Trial',
+                  'metric': 'Default Interest Rate in Live Trial',
+                  'value': '21% default rate on a $5M loan; balance grew to about $6.4M',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Ayala Law PA case where delayed refinancing let default interest accrue '
+                             'daily and a new lender retroactively assessed 21%+ on past late payments',
+                  'source': 'Ayala Law PA ([0cBnXayz9w4 @ 00:01:58])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every lender in this lineup splits the paper the same way: the promissory '
+                              'note is the IOU, and it cannot touch the house. Investor Army frames the '
+                              "note as the borrower's promise at 5, 10 or 12 percent for six months to a "
+                              'year, while the deed stays with the investor and the deed of trust is the '
+                              'instrument that lets the lender foreclose [ltZrMvVSfdw @ 00:02:46]. Manuel '
+                              'Angelus of The Real Estate Lender says it bluntly: the note alone cannot '
+                              'reach the property, and an unrecorded lien is a secret between friends, so '
+                              'recording for about $38 is what sets priority, with property taxes still '
+                              'ranking ahead of everyone [Bp3FsnPecRY @ 00:02:26]. Jason of Hard Money '
+                              'Bankers, lending since 2007 across 4,000-plus loans, keeps the note '
+                              'unrecorded but insists on holding the original, while the mortgage or deed '
+                              'of trust goes on record [bNJYDcDSFxU @ 00:03:09]. Angie Diarth of Inland '
+                              'Professional Title runs the same three-document stack on seller-financed '
+                              'closings: the warranty deed passes title, the note sets the terms, and the '
+                              'recorded deed of trust forces the buyer to carry insurance and pay taxes '
+                              '[JExnsYGsNd8 @ 00:01:57]. The operator takeaway is simple: money moves on '
+                              'the note, but leverage lives in the recorded lien.',
+                              "The second consensus point is that the borrower's personal balance sheet "
+                              'sits behind the collateral. Trevor Calton of Real Estate Finance Academy '
+                              'states that loans are typically made with recourse, and non-recourse only '
+                              'exists if the documents define it; the lender can both sue on the note and '
+                              'foreclose on the mortgage [Z-MpltBp8qA @ 00:00:19]. Jason of Hard Money '
+                              "Mastermind backs that with hard numbers: 98% of the shop's loans carry "
+                              'personal guarantees, and the one exception, self-directed IRA loans, gets '
+                              'underwritten tighter with LTV dropped from 65% to 50% [bNJYDcDSFxU @ '
+                              '00:05:23]. William Dolan of Esquire Advice explains why guarantees matter '
+                              "in a blowup: in bankruptcy unsecured creditors get little and 'survives "
+                              "discharge' clauses are unenforceable, but the guarantor stays on the hook, "
+                              'so the guarantor needs a strong balance sheet because retirement funds are '
+                              'hard to reach [hy-UeKXcTUA @ 00:05:55]. Even on the JV side, Clint Coons '
+                              'builds the guarantee into the structure, with the gap funder and the '
+                              'operator both signing personal guarantees for the hard money lender, '
+                              'pitching it to a reluctant funder as protection through default notices and '
+                              'real ownership that keeps them committed [6bibMzU1L3U @ 00:04:18]. The '
+                              'pattern across all four: collateral first, a named human signing second.',
+                              'The third consensus point: usury is measured on the all-in cost, not the '
+                              'note rate, and the paper must be clean enough to enforce and sell. Scott '
+                              'Horne lists the fees that count toward APR, points, origination, '
+                              'processing, appraisal and lender-required surveys, while title closing '
+                              'costs and buyer inspections stay out [XdrwPF-D1FI @ 00:03:10]. Nema '
+                              'Daghbandan of Geraci Law Firm, speaking on Lender Link, lands in the same '
+                              'place for California: a 10% cap on an APR basis with points and fees '
+                              'included, so a 9.99% note rate is not automatically safe [W1fiiFnsFhE @ '
+                              '00:01:20]. Ayala Law PA warns from a live trial that the combined rate has '
+                              'to stay under the Florida limits, and a lender that blows past them risks '
+                              'being unable to enforce even the principal [0cBnXayz9w4 @ 00:04:24]. On the '
+                              'instrument itself, Damen Capital Fund draws the hardest line in the room: '
+                              'always use a promissory note with a deed of trust or mortgage, never a land '
+                              'contract, because land contracts drag in seller liability, title policy '
+                              'loss, double transfer tax and forced foreclosure after thresholds like 5 '
+                              'years or 20% paid, which is why the fund pays significantly less for them '
+                              '[mrt2bJ7XfNU @ 00:00:21]. Clean paper and honest APR math are the two '
+                              'prerequisites these lenders share.'],
+               'table': {'caption': 'Baseline rules multiple lenders and attorneys agree on before money '
+                                    'moves',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Do',
+                                     'Why It Matters',
+                                     'Expert Source'],
+                         'rows': [['Deed stays with investor while lender holds security instrument',
+                                   'Borrower keeps the deed and lender records a deed of trust',
+                                   'A $70K loan on a $100K ARV rides a 30% leverage cushion',
+                                   'Investor Army ([ltZrMvVSfdw @ 00:02:46])'],
+                                  ['Recording the lien is what creates priority over later claims',
+                                   'Pay roughly $38 to record and lock the lien position',
+                                   'The note alone cannot touch the house and taxes rank first',
+                                   'The Real Estate Lender ([Bp3FsnPecRY @ 00:02:26])'],
+                                  ['Recourse is the default unless the documents define non-recourse',
+                                   'Lender sues on the note and forecloses on the mortgage together',
+                                   'Technical defaults like unpaid taxes trigger acceleration of the full '
+                                   'balance',
+                                   'Real Estate Finance Academy with Trevor Calton ([Z-MpltBp8qA @ '
+                                   '00:00:19])'],
+                                  ['Personal guarantees sit behind nearly every private hard money loan',
+                                   'Guarantees on 98% of loans with IRA loans cut to 50% LTV',
+                                   'A guarantor stays liable even when bankruptcy wipes the borrower '
+                                   'entity',
+                                   'Hard Money Mastermind ([bNJYDcDSFxU @ 00:05:23])'],
+                                  ['Usury is tested on APR including lender fees and points',
+                                   'Count points, origination, processing, appraisal and lender-required '
+                                   'surveys toward rate',
+                                   'Title closing costs and buyer inspections stay outside the APR '
+                                   'calculation',
+                                   "Scott Horne's Owner Finance Network ([XdrwPF-D1FI @ 00:03:10])"],
+                                  ['Promissory note with deed of trust beats any land contract',
+                                   'Always pair the note with a recorded deed of trust or mortgage',
+                                   'Land contract paper is harder to sell and fetches significantly less '
+                                   'money',
+                                   'Damen Capital Fund ([mrt2bJ7XfNU @ 00:00:21])'],
+                                  ['Lender title coverage is mandatory on every secured real estate loan',
+                                   "Require a lender's title policy with riders plus assignment of rents",
+                                   'Unsecured creditors get little when the borrower lands in bankruptcy '
+                                   'court',
+                                   'Esquire Advice ([hy-UeKXcTUA @ 00:05:20])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Jason's hard money stack runs about 80 pages per loan, and the build order "
+                              'is worth copying. On top of the note and recorded mortgage or deed of trust '
+                              'sit an assignment of rents, the LLC documents and corporate resolution '
+                              'signed by all members, a commercial-purpose affidavit, a construction '
+                              'security agreement, an AML declaration and an ACH authorization; powers of '
+                              'attorney and remote online notaries go on the avoid list [bNJYDcDSFxU @ '
+                              '00:09:55]. The document Jason calls most important is the closing '
+                              'instruction letter, three to four pages the title company must sign, '
+                              'because the title company does not represent the lender; the commitment '
+                              'gets verified directly with the insurer, sticking to Chicago, Fidelity, '
+                              'First American or Old Republic, and money wires only after the HUD-1 and '
+                              'the signed letter are in hand [bNJYDcDSFxU @ 00:11:31]. William Dolan '
+                              "layers on an assignment of contractor agreements and a lender's title "
+                              'policy with riders [hy-UeKXcTUA @ 00:02:41]. Manuel Angelus tells lenders '
+                              'to actually read the policy exceptions on a premium of about $1,850, then '
+                              'name themselves mortgagee and loss payee on insurance running about $2,400 '
+                              'a year, and reverify during the loan because vacancy after 30 to 60 days, '
+                              "builder's risk and flood are the gaps that bite [Bp3FsnPecRY @ 00:05:58].",
+                              "The underwriting math is stated in plain dollars. Investor Army's flip runs "
+                              'a $40,000 purchase plus $30,000 of repairs against a $100,000 ARV, with the '
+                              'lender advancing $70,000 and leaning on a 30% leverage position for '
+                              'protection [ltZrMvVSfdw @ 00:00:44]. Manuel Angelus works a bigger deal: '
+                              '$285,000 purchase, $65,000 rehab, $460,000 estimated ARV and a $200,000 '
+                              'loan, which pencils to roughly 70% LTV, about 57% LTC and about 43% of ARV, '
+                              'paying about $1,666.67 a month at 10% interest-only [Bp3FsnPecRY @ '
+                              "00:04:04]. Clint Coons, walking through the JV agreement on Toby Mathis's "
+                              'channel, routes funder money to escrow instead of the investor: $50,000 '
+                              'within 5 days for acquisition, $20,000 within 20 days for rehab and an '
+                              'interest reserve booked at $8,000 even though $800 a month over 8 months '
+                              'computes to $6,400, for $78,000 total secured by a second deed of trust '
+                              'behind Green Turtle LLC [FiBdpAVfzMo @ 00:15:41]. Scott Horne then shows '
+                              'how fees wreck the headline rate: a $50,000 fee on a $200,000 six-month '
+                              'loan works out to 50%, and $2,500 charged on $10,000 of 30-day earnest '
+                              'money works out to 300% [XdrwPF-D1FI @ 00:04:46]. Every one of these '
+                              'operators runs the full-term APR before quoting a rate to anyone.',
+                              'Usury compliance is engineered, not hoped for. In California, Daghbandan '
+                              'identifies two exits from the 10% cap: a loan arranged by a licensed real '
+                              'estate broker who earned a fee and secured by real property, or a loan made '
+                              'by a California Finance Lender; the exemption is an ongoing requirement, so '
+                              'an unlicensed holder adding rate, points or even an extra $50,000 advance '
+                              'at the same rate on a modification loses it, while a pure 12-month time '
+                              'extension is fine and late charges, default interest and prepayment '
+                              'penalties sit outside usury entirely [W1fiiFnsFhE @ 00:02:48]. In Texas, '
+                              'Scott Horne points to the 60-day cure available through a usury savings '
+                              'clause, while warning that borrowers can still sue for up to about 4 years '
+                              '[XdrwPF-D1FI @ 00:07:09]. On equity-style deals the payout is scripted in '
+                              "advance: Clint Coons's LLC example nets $100,000, returns the funder's "
+                              '$75,000, and splits the remaining $25,000 at $12,500 each [6bibMzU1L3U @ '
+                              '00:08:35]. The JV agreement waterfall pays sale costs, a first lien capped '
+                              "at $150,000, any other second lien of $20,000 to $30,000, Party A's $78,000 "
+                              "plus $12,000 of Exhibit B additions for $90,000, Party B's receipted costs, "
+                              'then a 50/50 split [FiBdpAVfzMo @ 00:19:36].'],
+               'table': {'caption': 'Exact numbers, costs and execution rules quoted by the lenders and '
+                                    'attorneys',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Rule',
+                                     'Execution Detail',
+                                     'Expert Source'],
+                         'rows': [['Personal guarantee coverage and the self-directed IRA exception',
+                                   'Guarantees on 98% of loans; IRA loans drop from 65% to 50% LTV',
+                                   'Every LLC member signs the corporate resolution and loan documents',
+                                   'Hard Money Mastermind ([bNJYDcDSFxU @ 00:05:23])'],
+                                  ['Closing instruction letter controls the title company before funding',
+                                   'Three to four pages signed by title within an 80-page stack',
+                                   'Wire only after HUD-1 review and the signed instruction letter',
+                                   'Hard Money Mastermind ([bNJYDcDSFxU @ 00:11:31])'],
+                                  ['Recording, title premium and lender-named hazard insurance costs',
+                                   'About $38 recording, $1,850 title premium, $2,400 yearly insurance',
+                                   'Name lender as mortgagee and loss payee and reverify coverage mid-loan',
+                                   'The Real Estate Lender ([Bp3FsnPecRY @ 00:05:27])'],
+                                  ['California usury exemptions for private real estate secured loans',
+                                   '10% APR cap unless licensed broker arranges or CFL lends',
+                                   'Unlicensed holder adding rate or points on modification loses '
+                                   'exemption',
+                                   'Lender Link ([W1fiiFnsFhE @ 00:01:48])'],
+                                  ['Texas usury caps by borrower type and cure window',
+                                   '18% individuals, 24% corporate entities, 60-day cure via savings '
+                                   'clause',
+                                   'Borrowers can still sue for about 4 years seeking treble damages',
+                                   "Scott Horne's Owner Finance Network ([XdrwPF-D1FI @ 00:00:32])"],
+                                  ['Pre-formed Wyoming single-member LLCs used as JV deal vehicles',
+                                   '$50 per year carrying cost and formation inside 24 hours',
+                                   'Pre-form at least 3 LLCs owned by the Corp with you as manager',
+                                   'Clint Coons Esq. | Real Estate Asset Protection ([6bibMzU1L3U @ '
+                                   '00:10:04])'],
+                                  ['Escrowed JV funding tranches secured by a second deed of trust',
+                                   '$50K in 5 days, $20K in 20 days, $8K reserve, $78K total',
+                                   "Funds go to escrow and never directly into the investor's hands",
+                                   'Toby Mathis Esq | Tax Planning & Asset Protection ([FiBdpAVfzMo @ '
+                                   '00:12:10])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Closing-Table Moves the Lenders Actually Use',
+                           'body': 'These are the small execution details the practitioners lean on to '
+                                   'keep a lien enforceable, a JV funded on time, and collateral reachable '
+                                   'when a deal goes sideways.',
+                           'items': ['Never release a wire until the HUD-1 is reviewed and the title '
+                                     'company has signed the closing instruction letter, because the title '
+                                     'company does not represent the lender [Hard Money Mastermind — '
+                                     'bNJYDcDSFxU @ 00:17:38]',
+                                     'Keep Wyoming LLCs pre-formed: a Florida LLC was still incomplete on '
+                                     'day 6 of a 10-day close, so a Wyoming entity was formed the same day '
+                                     'to save the deal [Clint Coons Esq. | Real Estate Asset Protection — '
+                                     '6bibMzU1L3U @ 00:10:22]',
+                                     'Cap any refinance debt the investor can add at around 10% of FMV and '
+                                     "take a pledge of the investor's LLC interests as extra collateral "
+                                     '[Toby Mathis Esq | Tax Planning & Asset Protection — FiBdpAVfzMo @ '
+                                     '00:09:30]',
+                                     'For an LLC-interest pledge, take possession of the certificate, file '
+                                     'a UCC-1, make sure the LLC opted into UCC Article 8, and check the '
+                                     'operating agreement for stale managers [Esquire Advice — hy-UeKXcTUA '
+                                     '@ 00:02:58]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock Down the Borrowing Entity and Signing Authority',
+                              'action': "Pull the borrower's LLC documents, corporate resolution and "
+                                        'operating agreement and confirm who can bind the entity.',
+                              'detail': 'Jason requires LLC docs and a corporate resolution with all '
+                                        'members signing, and refuses powers of attorney and remote online '
+                                        'notaries [Hard Money Mastermind — bNJYDcDSFxU @ 00:07:02]; '
+                                        'William Dolan warns to watch for stale managers still listed in '
+                                        'operating agreements [Esquire Advice — hy-UeKXcTUA @ 00:04:29].'},
+                             {'step': 2,
+                              'title': 'Run the All-In APR Against the State Cap',
+                              'action': 'Add points, origination, processing, appraisal and '
+                                        'lender-required surveys to interest over the actual term and '
+                                        'compare to the cap.',
+                              'detail': 'Scott Horne shows a $50,000 fee on a $200,000 six-month loan '
+                                        "hitting 50% [Scott Horne's Owner Finance Network — XdrwPF-D1FI @ "
+                                        '00:04:46]; in California the cap is 10% APR unless a licensed '
+                                        'broker arranges the loan or a CFL makes it [Lender Link — '
+                                        'W1fiiFnsFhE @ 00:01:48].'},
+                             {'step': 3,
+                              'title': 'Assemble the Stack and Close Through the Instruction Letter',
+                              'action': 'Build the note, deed of trust, guarantees, assignment of rents '
+                                        'and affidavits, then deliver the closing instruction letter to '
+                                        'title.',
+                              'detail': 'The roughly 80-page set includes a commercial-purpose affidavit, '
+                                        'construction security agreement, AML declaration and ACH '
+                                        'authorization, with the title commitment verified directly '
+                                        'against Chicago, Fidelity, First American or Old Republic [Hard '
+                                        'Money Mastermind — bNJYDcDSFxU @ 00:11:31].'},
+                             {'step': 4,
+                              'title': 'Record, Insure and Reverify Through Payoff',
+                              'action': 'Record the deed of trust, get named mortgagee and loss payee, and '
+                                        'recheck coverage gaps during the loan.',
+                              'detail': 'Manuel Angelus records for about $38 to set priority, carries '
+                                        'about $2,400 a year of insurance naming the lender, and rechecks '
+                                        "vacancy, builder's risk and flood gaps before issuing "
+                                        'reconveyance at payoff [The Real Estate Lender — Bp3FsnPecRY @ '
+                                        '00:05:27].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over the joint venture paper itself. Clint Coons '
+                              "tells investors to skip the 'JV agreement garbage' entirely. In his view a "
+                              "JV agreement 'ensures a lawsuit': a gap funder can wire $20K, walk away "
+                              'with the project $25K short, and the hard money lender forecloses before '
+                              'anyone gets to court [6bibMzU1L3U @ 00:01:36]. The Coons playbook is to '
+                              'pre-form at least three Wyoming single-member LLCs owned by the Corp and '
+                              'make offers through them. Once an offer is accepted, the gap funder and the '
+                              'investor personally become 50/50 members, and both sign personal guarantees '
+                              "for the hard money lender [6bibMzU1L3U @ 00:04:18]. Coons's own walkthrough "
+                              'on the Toby Mathis channel still calls the LLC the best vehicle, but it '
+                              'treats a written JV agreement as the fallback. That agreement is never '
+                              'signed in your own name, because it can be treated as a general '
+                              'partnership. It is armored with escrow funding, a second deed of trust, and '
+                              "a recorded, notarized copy in the property's county [FiBdpAVfzMo @ "
+                              '00:01:57]. Molly Tennant runs the opposite direction for small checks. Her '
+                              'JV agreement covers someone bringing $20,000 to close and getting paid '
+                              'back, or short-term lending for a share of an assignment fee. It is capped '
+                              'at three parties, and past that an LLC becomes the smarter wrapper '
+                              '[TTA8OtC6qJs @ 00:00:56].',
+                              'Security paper splits along two lines: land contract versus a note plus a '
+                              "recorded lien, and mortgage versus deed of trust. Damen Capital Fund's rule "
+                              'is absolute: always use a promissory note with a deed of trust or mortgage, '
+                              'never a land contract. Land contracts drag in seller liability, double '
+                              'transfer tax, title-clouding memoranda, liens filed by upset buyers, and '
+                              'forced foreclosure after roughly five years or 20% paid [mrt2bJ7XfNU @ '
+                              '00:00:21]. William Dolan of Esquire Advice frames the choice by state. '
+                              'Mortgage states force judicial foreclosure, while deed of trust states give '
+                              'the trustee a power of sale. When the collateral is stock or LLC interests, '
+                              'the playbook flips to a pledge, possession of the certificate, and a UCC-1, '
+                              'with an Article 8 opt-in and a commercially reasonable sale [hy-UeKXcTUA @ '
+                              '00:01:49]. Angie Diarth at Inland Professional Title adds that a '
+                              'seller-financier can choose judicial or non-judicial foreclosure and take '
+                              'either the property or just the money [JExnsYGsNd8 @ 00:03:40]. Guarantee '
+                              'policy splits too. Jason at Hard Money Mastermind puts personal guarantees '
+                              'on 98% of loans. Self-directed IRA loans are the exception, so the cushion '
+                              "comes from dropping LTV from 65% to 50% instead. Dolan's counterweight is "
+                              'that a guarantor is only worth the balance sheet behind them [bNJYDcDSFxU @ '
+                              '00:05:23].',
+                              'Usury is where the rate math and the jurisdictions refuse to line up. Scott '
+                              'Horne works with Texas caps of 18% for individuals and 24% for corporate '
+                              'entities, and believes Arizona has none. He counts points, origination, '
+                              'processing, appraisal and lender-required surveys toward APR, while '
+                              'excluding title closing costs and buyer inspections [XdrwPF-D1FI @ '
+                              '00:00:32]. In California, Nema Daghbandan of Geraci Law Firm says business '
+                              'purpose does not create an exemption. The cap is 10% on an APR basis, so a '
+                              '9.99% note rate loaded with points is not automatically safe. The escape '
+                              'hatches are a licensed broker arranging a loan secured by real property, or '
+                              'a California Finance Lender making it [W1fiiFnsFhE @ 00:01:20]. Daghbandan '
+                              'carves late charges, default interest and prepayment penalties out of the '
+                              'usury math as borrower elections. Ayala Law, by contrast, argued in a live '
+                              'trial that a lender cannot double-charge late fees and default interest at '
+                              'all [0cBnXayz9w4 @ 00:03:04]. TownCenter Partners pushes a separate line '
+                              'for litigation finance. If repayment is contingent on recovery, there is no '
+                              'loan and no usury. Some courts, however, look past the contract language '
+                              'and ask whether the litigant is virtually certain to win [YahUsg3anlA @ '
+                              '00:01:34].'],
+               'table': {'caption': 'Competing playbooks on deal vehicles, security instruments, '
+                                    'guarantees and usury exposure',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Vehicle for a funder plus investor flip',
+                                   'Pre-form three Wyoming single-member LLCs, admit the funder as a 50/50 '
+                                   'member with personal guarantees',
+                                   'Written JV agreement as the fallback, funded through escrow and backed '
+                                   'by a second deed of trust',
+                                   'Clint Coons Esq. | Real Estate Asset Protection ([6bibMzU1L3U @ '
+                                   '00:02:55]); Toby Mathis Esq | Tax Planning & Asset Protection '
+                                   '([FiBdpAVfzMo @ 00:01:57])'],
+                                  ['Small bring-to-close or short-term money',
+                                   'JV agreement for $20,000 to close, repaid a set amount, capped at '
+                                   'three parties',
+                                   'More than three parties means forming an LLC with an operating '
+                                   'agreement instead',
+                                   'Molly Tennant ([TTA8OtC6qJs @ 00:03:04])'],
+                                  ['Security instrument on seller-financed land',
+                                   'Promissory note with a recorded deed of trust or mortgage for clean '
+                                   'title',
+                                   'Land contract, which buyers of paper pay significantly less for on '
+                                   'resale',
+                                   'Damen Capital Fund ([mrt2bJ7XfNU @ 00:07:53])'],
+                                  ['Foreclosure path and non-real-estate collateral',
+                                   'Deed of trust states allow a trustee power of sale without court',
+                                   'Mortgage states force judicial foreclosure; LLC interests need a '
+                                   'pledge plus a UCC-1',
+                                   'Esquire Advice ([hy-UeKXcTUA @ 00:01:49]); Inland Professional Title '
+                                   'LLC ([JExnsYGsNd8 @ 00:03:40])'],
+                                  ['Personal guarantee policy on private loans',
+                                   'Personal guarantees on 98% of loans, with all LLC members signing '
+                                   'resolutions',
+                                   'Self-directed IRA loans skip the guarantee, so LTV drops from 65% to '
+                                   '50%',
+                                   'Hard Money Mastermind ([bNJYDcDSFxU @ 00:05:23])'],
+                                  ['Usury ceiling the lender prices against',
+                                   'Texas caps at 18% for individuals and 24% for corporate entities',
+                                   'California caps at 10% APR unless a licensed broker or a CFL is '
+                                   'involved',
+                                   "Scott Horne's Owner Finance Network ([XdrwPF-D1FI @ 00:00:32]); Lender "
+                                   'Link ([W1fiiFnsFhE @ 00:01:48])'],
+                                  ['Whether litigation funding counts as a loan',
+                                   'Majority test: repayment contingent on recovery means no absolute duty '
+                                   'and no loan',
+                                   'Minority courts ask if recovery is virtually certain, for example '
+                                   'funding an appeal after a trial win',
+                                   'TownCenter Partners Litigation Finance ([YahUsg3anlA @ 00:00:57])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The first failure mode is the money partner who stops funding mid-deal. '
+                              'Clint Coons describes a gap funder who wires $20K, leaves the project $25K '
+                              'short, and lets the hard money lender foreclose before a breach suit can '
+                              'even be filed. Time pressure compounds it. A Florida LLC was still '
+                              'incomplete on day 6 of a 10-day close and had to be replaced the same day '
+                              'by a Wyoming LLC, which carries $50 a year in costs [6bibMzU1L3U @ '
+                              "00:10:04]. The second failure mode is a runaway operator. Coons's "
+                              'walkthrough cites a $400K demolition horror story. The responses are to bar '
+                              'Party B from exceeding the budget by $8K without approval, and to force a '
+                              'listing within 7 days of completion. Price drops are scripted at 8%, then '
+                              '5% at 60, 90 and 120 days, down to a $490K break-even floor, after which '
+                              'the property converts to a rental [FiBdpAVfzMo @ 00:25:12]. Scott Horne '
+                              'flags the structural trap: a JV built only to dodge usury limits is a sham. '
+                              'The funder has to genuinely participate or hold real ownership in the LLC '
+                              'or on the deed [XdrwPF-D1FI @ 00:08:27]. Molly Tennant adds that breach is '
+                              'pursued separately, so breach disclosures belong in the agreement up front '
+                              '[TTA8OtC6qJs @ 00:01:56].',
+                              'Closing-table failures are where private lenders lose principal without any '
+                              'borrower default. Jason at Hard Money Mastermind refuses powers of attorney '
+                              'and remote online notaries, and reminds lenders that the title company does '
+                              'not represent them. He verifies the title commitment directly with the '
+                              'insurer. He wires only after the HUD-1 and a signed three-to-four-page '
+                              'closing instruction letter are in hand [bNJYDcDSFxU @ 00:17:38]. Manuel '
+                              'Angelus at The Real Estate Lender puts it bluntly: an unrecorded lien is a '
+                              'secret between friends. A $38 recording fee is what sets priority, and '
+                              'property taxes still jump ahead of everyone [Bp3FsnPecRY @ 00:02:26]. '
+                              'Angelus also warns that insurance quietly fails mid-loan. Vacancy '
+                              "exclusions kick in at 30 to 60 days, builder's risk may be missing, and "
+                              'flood leaves gaps. The lender has to be named mortgagee and loss payee and '
+                              'must reverify coverage during the term, not just at closing [Bp3FsnPecRY @ '
+                              '00:05:58]. William Dolan of Esquire Advice raises the authority trap. '
+                              'Operating agreements often list stale managers, so the person signing for '
+                              'the borrowing LLC may have no power to bind it. And once bankruptcy hits, '
+                              'unsecured lenders collect little [hy-UeKXcTUA @ 00:04:29].',
+                              "Rate and default math is the third trap, and it cuts both ways. Ayala Law's "
+                              'live trial involved a $5M balloon loan. Delayed refinancing let 21% default '
+                              'interest accrue daily, and a new lender retroactively assessed default '
+                              'interest on past late payments under a no-waiver clause. The balance '
+                              'swelled to about $6.4M, and the lawsuit itself then blocked the refinance '
+                              '[0cBnXayz9w4 @ 00:03:19]. On the lender side, Nema Daghbandan warns about '
+                              'modifications of California loans by an unlicensed holder. Adding rate or '
+                              'points, or even advancing an extra $50,000 at the same rate, loses the '
+                              'exemption because no licensed party is involved anymore. That turns an '
+                              'exempt loan into usury exposure [W1fiiFnsFhE @ 00:04:14]. Scott Horne shows '
+                              'how fees blow up APR. A $50K fee on a $200K six-month loan works out to '
+                              '50%, and $2,500 on $10K of 30-day earnest money works out to 300%. Texas '
+                              'borrowers can sue for up to about four years for interest, principal, fees '
+                              'and possibly treble damages, even after a 60-day savings-clause cure '
+                              "[XdrwPF-D1FI @ 00:06:38]. Quad's Mississippi case shows the borrower's "
+                              'audit: a 33.04% APR against a 14% cap on loans above $5,000 is a 19-point '
+                              'excess [eFyovu8iZIA @ 01:02:26].'],
+               'table': {'caption': 'Firsthand failure modes with the economics check or fix each '
+                                    'practitioner applied',
+                         'headers': ['Failure Mode',
+                                     'What Went Wrong',
+                                     'Economics Check or Fix',
+                                     'Expert Source'],
+                         'rows': [['Gap funder walks away mid-project',
+                                   'Funder wires $20K, leaves a $25K hole, and the hard money lender '
+                                   'forecloses first',
+                                   'Admit the funder as an LLC member who signs the personal guarantee too',
+                                   'Clint Coons Esq. | Real Estate Asset Protection ([6bibMzU1L3U @ '
+                                   '00:01:36])'],
+                                  ['Operator blows the rehab budget',
+                                   'A $400K demolition horror story drained the venture with no spending '
+                                   'limits',
+                                   'Cap overruns at $8K without approval and script price drops to a $490K '
+                                   'floor',
+                                   'Toby Mathis Esq | Tax Planning & Asset Protection ([FiBdpAVfzMo @ '
+                                   '00:25:12])'],
+                                  ['Unrecorded lien or lapsed insurance',
+                                   'An unrecorded lien loses priority, and vacancy past 30 to 60 days '
+                                   'voids coverage',
+                                   'Pay the $38 recording fee and the roughly $1,850 title premium, and '
+                                   'name the lender loss payee at roughly $2,400 a year',
+                                   'The Real Estate Lender ([Bp3FsnPecRY @ 00:02:26])'],
+                                  ['Lending without an equity cushion',
+                                   'Lender exposed when the loan approaches full after-repair value on a '
+                                   'flip',
+                                   'Buy at $40K with $30K repairs and a $100K ARV, then lend $70K to keep '
+                                   'a 30% leverage position',
+                                   'Investor Army ([ltZrMvVSfdw @ 00:01:11])'],
+                                  ['Default interest stacked on late fees',
+                                   '21% default interest on a $5M loan pushed the balance to about $6.4M',
+                                   'Require fixed, ascertainable late penalties and a stated default rate '
+                                   'with no lender recalculation discretion',
+                                   'Ayala Law PA ([0cBnXayz9w4 @ 00:04:39])'],
+                                  ['Fees silently push APR over the cap',
+                                   'A $50K fee on a $200K six-month loan computes to a 50% rate',
+                                   'Count points, origination, processing, appraisal and surveys before '
+                                   'quoting any rate',
+                                   "Scott Horne's Owner Finance Network ([XdrwPF-D1FI @ 00:04:46])"],
+                                  ['Note and security documents out of sync',
+                                   'Note terms conflict with the deed of trust, and non-recourse is '
+                                   'assumed but never defined',
+                                   'Cross-reference both documents, and spell out recourse or non-recourse '
+                                   'explicitly in the note',
+                                   'Gary Pryde ([nKwv-ImRqjo @ 00:05:13]); Real Estate Finance Academy '
+                                   'with Trevor Calton ([Z-MpltBp8qA @ 00:00:35])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Stop Signals Before a Dollar Leaves the Account',
+                           'body': 'These four checks come straight from the losses, lawsuits and blown '
+                                   'exemptions the practitioners lived through. If any one fails, the wire '
+                                   'stays home.',
+                           'items': ['Wire nothing until the HUD-1 and the signed closing instruction '
+                                     'letter are back from title, and reject powers of attorney and remote '
+                                     'online notaries [Hard Money Mastermind — bNJYDcDSFxU @ 00:17:38].',
+                                     'Recalculate the all-in APR with points, origination, processing, '
+                                     'appraisal and lender-required surveys over the actual loan term '
+                                     "before quoting a rate [Scott Horne's Owner Finance Network — "
+                                     'XdrwPF-D1FI @ 00:03:10].',
+                                     'On California paper, never add rate, points or new advances through '
+                                     'an unlicensed modification; a pure time extension is the only safe '
+                                     'change [Lender Link — W1fiiFnsFhE @ 00:06:32].',
+                                     'Confirm the lender is named mortgagee and loss payee, and reverify '
+                                     "vacancy, builder's risk and flood coverage during the loan [The Real "
+                                     'Estate Lender — Bp3FsnPecRY @ 00:05:58].']}}],
+ 'pull_quote': '"An unrecorded lien is a secret between friends." — The Real Estate Lender (Bp3FsnPecRY @ '
+               '00:02:26).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Pre-form at least three Wyoming single-member LLCs owned by your Corp, so offers '
+                      'can go out the same day a deal appears [Clint Coons Esq. | Real Estate Asset '
+                      'Protection — 6bibMzU1L3U @ 00:02:55].',
+                      'Pair every promissory note with a recorded deed of trust or mortgage and refuse '
+                      'land contracts on seller-financed land [Damen Capital Fund — mrt2bJ7XfNU @ '
+                      '00:00:21].',
+                      'Run the note checklist (principal, rate, maturity, collateral legal description, '
+                      'default, prepayment, acceleration, notarization) and cross-check it against the '
+                      'deed of trust [Gary Pryde — nKwv-ImRqjo @ 00:05:13].',
+                      'Build the full package: personal guarantee, assignment of rents, LLC resolution '
+                      'signed by all members, commercial-purpose affidavit, AML declaration and ACH '
+                      'authorization [Hard Money Mastermind — bNJYDcDSFxU @ 00:05:58].',
+                      'Route JV funding into escrow in tranches ($50K acquisition, $20K rehab, $8K '
+                      "interest reserve) and record the notarized agreement in the property's county [Toby "
+                      'Mathis Esq | Tax Planning & Asset Protection — FiBdpAVfzMo @ 00:12:10].',
+                      'In California, originate through a licensed mortgage broker or a CFL to keep the '
+                      'usury exemption alive above the 10% APR cap [Lender Link — W1fiiFnsFhE @ '
+                      '00:09:16].'],
+ 'statutory_citations': [{'title': 'Lender Link — California Usury Laws for Private Mortgage Lending '
+                                   '[00:01:20]',
+                          'url': 'https://www.youtube.com/watch?v=W1fiiFnsFhE&t=80s',
+                          'relevance': 'Primary practitioner testimony on the California 10% APR cap and '
+                                       'the licensed broker and CFL exemptions.'},
+                         {'title': "Scott Horne's Owner Finance Network — Usury Laws Explained (Avoid "
+                                   'Illegal Interest Rates + Fee Traps) | Scott Horne [00:03:10]',
+                          'url': 'https://www.youtube.com/watch?v=XdrwPF-D1FI&t=190s',
+                          'relevance': 'Primary practitioner testimony on which fees count toward APR and '
+                                       'on Texas usury exposure.'},
+                         {'title': 'Hard Money Mastermind — The Exact Loan Documents We Use as Private '
+                                   'Lenders [00:11:31]',
+                          'url': 'https://www.youtube.com/watch?v=bNJYDcDSFxU&t=691s',
+                          'relevance': 'Primary practitioner testimony on the private lender document '
+                                       'stack and the closing instruction letter.'},
+                         {'title': 'Damen Capital Fund — Promissory Note vs Land Contract — Which to Use '
+                                   'for Land | Module 6 of 14 [00:00:21]',
+                          'url': 'https://www.youtube.com/watch?v=mrt2bJ7XfNU&t=21s',
+                          'relevance': 'Primary practitioner testimony on choosing a note and deed of '
+                                       'trust over a land contract.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '6bibMzU1L3U',
+                       'title': 'Setting up a Real Estate Joint Venture',
+                       'channel': 'Clint Coons Esq. | Real Estate Asset Protection',
+                       'author': 'Clint Coons Esq. | Real Estate Asset Protection',
+                       'text': 'A JV agreement ensures a lawsuit when the gap funder walks away and the '
+                               'hard money lender forecloses.',
+                       'tip': 'A JV agreement ensures a lawsuit when the gap funder walks away and the '
+                              'hard money lender forecloses.',
+                       'timestamp': 96,
+                       'timestamp_seconds': 96,
+                       'timestamp_label': '[00:01:36]',
+                       'url': 'https://www.youtube.com/watch?v=6bibMzU1L3U&t=96s',
+                       'markdown': '[00:01:36](https://www.youtube.com/watch?v=6bibMzU1L3U&t=96s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FiBdpAVfzMo',
+                       'title': 'Real Estate Joint Venture Agreement Walkthrough',
+                       'channel': 'Toby Mathis Esq | Tax Planning & Asset Protection',
+                       'author': 'Toby Mathis Esq | Tax Planning & Asset Protection',
+                       'text': 'Never sign the joint venture agreement in your own name because it could '
+                               'be treated as a general partnership.',
+                       'tip': 'Never sign the joint venture agreement in your own name because it could be '
+                              'treated as a general partnership.',
+                       'timestamp': 193,
+                       'timestamp_seconds': 193,
+                       'timestamp_label': '[00:03:13]',
+                       'url': 'https://www.youtube.com/watch?v=FiBdpAVfzMo&t=193s',
+                       'markdown': '[00:03:13](https://www.youtube.com/watch?v=FiBdpAVfzMo&t=193s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ltZrMvVSfdw',
+                       'title': 'Promissory Note, Deed Of Trust, and Deed Explained',
+                       'channel': 'Investor Army',
+                       'author': 'Investor Army',
+                       'text': 'The deed of trust is the security instrument that lets the lender '
+                               'foreclose.',
+                       'tip': 'The deed of trust is the security instrument that lets the lender '
+                              'foreclose.',
+                       'timestamp': 166,
+                       'timestamp_seconds': 166,
+                       'timestamp_label': '[00:02:46]',
+                       'url': 'https://www.youtube.com/watch?v=ltZrMvVSfdw&t=166s',
+                       'markdown': '[00:02:46](https://www.youtube.com/watch?v=ltZrMvVSfdw&t=166s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nKwv-ImRqjo',
+                       'title': '"Master the Basics: What You MUST Know About Promissory Notes Secured by '
+                                'Deeds of Trust!"',
+                       'channel': 'Gary Pryde',
+                       'author': 'Gary Pryde',
+                       'text': 'Cross-reference the promissory note and the deed of trust so their terms '
+                               'stay consistent.',
+                       'tip': 'Cross-reference the promissory note and the deed of trust so their terms '
+                              'stay consistent.',
+                       'timestamp': 313,
+                       'timestamp_seconds': 313,
+                       'timestamp_label': '[00:05:13]',
+                       'url': 'https://www.youtube.com/watch?v=nKwv-ImRqjo&t=313s',
+                       'markdown': '[00:05:13](https://www.youtube.com/watch?v=nKwv-ImRqjo&t=313s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mrt2bJ7XfNU',
+                       'title': 'Promissory Note vs Land Contract — Which to Use for Land | Module 6 of 14',
+                       'channel': 'Damen Capital Fund',
+                       'author': 'Damen Capital Fund',
+                       'text': 'Always use a promissory note with a deed of trust or mortgage.',
+                       'tip': 'Always use a promissory note with a deed of trust or mortgage.',
+                       'timestamp': 21,
+                       'timestamp_seconds': 21,
+                       'timestamp_label': '[00:00:21]',
+                       'url': 'https://www.youtube.com/watch?v=mrt2bJ7XfNU&t=21s',
+                       'markdown': '[00:00:21](https://www.youtube.com/watch?v=mrt2bJ7XfNU&t=21s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mrt2bJ7XfNU',
+                       'title': 'Promissory Note vs Land Contract — Which to Use for Land | Module 6 of 14',
+                       'channel': 'Damen Capital Fund',
+                       'author': 'Damen Capital Fund',
+                       'text': "If you use land contracts, you're making your notes much harder to sell "
+                               'and much less valuable.',
+                       'tip': "If you use land contracts, you're making your notes much harder to sell and "
+                              'much less valuable.',
+                       'timestamp': 473,
+                       'timestamp_seconds': 473,
+                       'timestamp_label': '[00:07:53]',
+                       'url': 'https://www.youtube.com/watch?v=mrt2bJ7XfNU&t=473s',
+                       'markdown': '[00:07:53](https://www.youtube.com/watch?v=mrt2bJ7XfNU&t=473s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Z-MpltBp8qA',
+                       'title': 'Promissory Notes Explained: What Borrowers Actually Sign (And Why It '
+                                'Matters)',
+                       'channel': 'Real Estate Finance Academy with Trevor Calton',
+                       'author': 'Real Estate Finance Academy with Trevor Calton',
+                       'text': 'Important to note is that typically loans are made with recourse.',
+                       'tip': 'Important to note is that typically loans are made with recourse.',
+                       'timestamp': 19,
+                       'timestamp_seconds': 19,
+                       'timestamp_label': '[00:00:19]',
+                       'url': 'https://www.youtube.com/watch?v=Z-MpltBp8qA&t=19s',
+                       'markdown': '[00:00:19](https://www.youtube.com/watch?v=Z-MpltBp8qA&t=19s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bNJYDcDSFxU',
+                       'title': 'The Exact Loan Documents We Use as Private Lenders',
+                       'channel': 'Hard Money Mastermind',
+                       'author': 'Hard Money Mastermind',
+                       'text': 'Now, 98% of our loans have personal guarantees.',
+                       'tip': 'Now, 98% of our loans have personal guarantees.',
+                       'timestamp': 323,
+                       'timestamp_seconds': 323,
+                       'timestamp_label': '[00:05:23]',
+                       'url': 'https://www.youtube.com/watch?v=bNJYDcDSFxU&t=323s',
+                       'markdown': '[00:05:23](https://www.youtube.com/watch?v=bNJYDcDSFxU&t=323s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bNJYDcDSFxU',
+                       'title': 'The Exact Loan Documents We Use as Private Lenders',
+                       'channel': 'Hard Money Mastermind',
+                       'author': 'Hard Money Mastermind',
+                       'text': 'The closing instruction letter is the most important document, running '
+                               'three to four pages and signed by the title company.',
+                       'tip': 'The closing instruction letter is the most important document, running '
+                              'three to four pages and signed by the title company.',
+                       'timestamp': 691,
+                       'timestamp_seconds': 691,
+                       'timestamp_label': '[00:11:31]',
+                       'url': 'https://www.youtube.com/watch?v=bNJYDcDSFxU&t=691s',
+                       'markdown': '[00:11:31](https://www.youtube.com/watch?v=bNJYDcDSFxU&t=691s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hy-UeKXcTUA',
+                       'title': 'Securing a Promissory Note - Real Estate, Stock, LLC Interests, and More '
+                                '- Mortgages and Pledges',
+                       'channel': 'Esquire Advice',
+                       'author': 'Esquire Advice',
+                       'text': 'Mortgage states require judicial foreclosure, while deed of trust states '
+                               'allow a trustee power of sale.',
+                       'tip': 'Mortgage states require judicial foreclosure, while deed of trust states '
+                              'allow a trustee power of sale.',
+                       'timestamp': 109,
+                       'timestamp_seconds': 109,
+                       'timestamp_label': '[00:01:49]',
+                       'url': 'https://www.youtube.com/watch?v=hy-UeKXcTUA&t=109s',
+                       'markdown': '[00:01:49](https://www.youtube.com/watch?v=hy-UeKXcTUA&t=109s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JExnsYGsNd8',
+                       'title': 'Seller Financing: Note and Deed of Trust',
+                       'channel': 'Inland Professional Title LLC',
+                       'author': 'Inland Professional Title LLC',
+                       'text': 'In Washington, foreclosure begins after 30 days delinquent, with 120 days '
+                               'to cure.',
+                       'tip': 'In Washington, foreclosure begins after 30 days delinquent, with 120 days '
+                              'to cure.',
+                       'timestamp': 177,
+                       'timestamp_seconds': 177,
+                       'timestamp_label': '[00:02:57]',
+                       'url': 'https://www.youtube.com/watch?v=JExnsYGsNd8&t=177s',
+                       'markdown': '[00:02:57](https://www.youtube.com/watch?v=JExnsYGsNd8&t=177s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Bp3FsnPecRY',
+                       'title': 'How Private Lenders Protect Their Money: Notes, Liens & Insurance',
+                       'channel': 'The Real Estate Lender',
+                       'author': 'The Real Estate Lender',
+                       'text': 'An unrecorded lien is a secret between friends.',
+                       'tip': 'An unrecorded lien is a secret between friends.',
+                       'timestamp': 146,
+                       'timestamp_seconds': 146,
+                       'timestamp_label': '[00:02:26]',
+                       'url': 'https://www.youtube.com/watch?v=Bp3FsnPecRY&t=146s',
+                       'markdown': '[00:02:26](https://www.youtube.com/watch?v=Bp3FsnPecRY&t=146s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XdrwPF-D1FI',
+                       'title': 'Usury Laws Explained (Avoid Illegal Interest Rates + Fee Traps) | Scott '
+                                'Horne',
+                       'channel': "Scott Horne's Owner Finance Network",
+                       'author': "Scott Horne's Owner Finance Network",
+                       'text': 'Learn how to properly calculate your interest rate over the term of your '
+                               'loan.',
+                       'tip': 'Learn how to properly calculate your interest rate over the term of your '
+                              'loan.',
+                       'timestamp': 488,
+                       'timestamp_seconds': 488,
+                       'timestamp_label': '[00:08:08]',
+                       'url': 'https://www.youtube.com/watch?v=XdrwPF-D1FI&t=488s',
+                       'markdown': '[00:08:08](https://www.youtube.com/watch?v=XdrwPF-D1FI&t=488s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'W1fiiFnsFhE',
+                       'title': 'California Usury Laws for Private Mortgage Lending',
+                       'channel': 'Lender Link',
+                       'author': 'Lender Link',
+                       'text': 'The key is basically that there is a 10% cap on interest rate.',
+                       'tip': 'The key is basically that there is a 10% cap on interest rate.',
+                       'timestamp': 80,
+                       'timestamp_seconds': 80,
+                       'timestamp_label': '[00:01:20]',
+                       'url': 'https://www.youtube.com/watch?v=W1fiiFnsFhE&t=80s',
+                       'markdown': '[00:01:20](https://www.youtube.com/watch?v=W1fiiFnsFhE&t=80s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'W1fiiFnsFhE',
+                       'title': 'California Usury Laws for Private Mortgage Lending',
+                       'channel': 'Lender Link',
+                       'author': 'Lender Link',
+                       'text': "It's lost the usury exemption because there's no licensed party involved "
+                               'anymore.',
+                       'tip': "It's lost the usury exemption because there's no licensed party involved "
+                              'anymore.',
+                       'timestamp': 269,
+                       'timestamp_seconds': 269,
+                       'timestamp_label': '[00:04:29]',
+                       'url': 'https://www.youtube.com/watch?v=W1fiiFnsFhE&t=269s',
+                       'markdown': '[00:04:29](https://www.youtube.com/watch?v=W1fiiFnsFhE&t=269s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YahUsg3anlA',
+                       'title': 'How Usury & Other Consumer Lending Regulations Can Affect Litigation '
+                                'Finance Agreements',
+                       'channel': 'TownCenter Partners Litigation Finance',
+                       'author': 'TownCenter Partners Litigation Finance',
+                       'text': 'In most jurisdictions the test whether an agreement involves a loan is '
+                               'whether the agreement creates an absolute duty to repay.',
+                       'tip': 'In most jurisdictions the test whether an agreement involves a loan is '
+                              'whether the agreement creates an absolute duty to repay.',
+                       'timestamp': 57,
+                       'timestamp_seconds': 57,
+                       'timestamp_label': '[00:00:57]',
+                       'url': 'https://www.youtube.com/watch?v=YahUsg3anlA&t=57s',
+                       'markdown': '[00:00:57](https://www.youtube.com/watch?v=YahUsg3anlA&t=57s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0cBnXayz9w4',
+                       'title': 'Business Loan Agreements: What Every Business Owner Should Review',
+                       'channel': 'Ayala Law PA',
+                       'author': 'Ayala Law PA',
+                       'text': 'You cannot double charge like late fees and default interest rate.',
+                       'tip': 'You cannot double charge like late fees and default interest rate.',
+                       'timestamp': 184,
+                       'timestamp_seconds': 184,
+                       'timestamp_label': '[00:03:04]',
+                       'url': 'https://www.youtube.com/watch?v=0cBnXayz9w4&t=184s',
+                       'markdown': '[00:03:04](https://www.youtube.com/watch?v=0cBnXayz9w4&t=184s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eFyovu8iZIA',
+                       'title': 'High Interest Rates #Usury Law #Predatory Lending',
+                       'channel': 'The Secret TLC 777',
+                       'author': 'The Secret TLC 777',
+                       'text': "The highest they can charge, that's the maximum they can charge in "
+                               'Mississippi for installment loan, is 36 percent, write this down.',
+                       'tip': "The highest they can charge, that's the maximum they can charge in "
+                              'Mississippi for installment loan, is 36 percent, write this down.',
+                       'timestamp': 3482,
+                       'timestamp_seconds': 3482,
+                       'timestamp_label': '[00:58:02]',
+                       'url': 'https://www.youtube.com/watch?v=eFyovu8iZIA&t=3482s',
+                       'markdown': '[00:58:02](https://www.youtube.com/watch?v=eFyovu8iZIA&t=3482s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TTA8OtC6qJs',
+                       'title': 'Real Estate Joint Venture Agreement Explained by Molly Tennant',
+                       'channel': 'Molly Tennant',
+                       'author': 'Molly Tennant',
+                       'text': "There's only three parties because honestly when you get more than that "
+                               'you should probably form an LLC.',
+                       'tip': "There's only three parties because honestly when you get more than that you "
+                              'should probably form an LLC.',
+                       'timestamp': 184,
+                       'timestamp_seconds': 184,
+                       'timestamp_label': '[00:03:04]',
+                       'url': 'https://www.youtube.com/watch?v=TTA8OtC6qJs&t=184s',
+                       'markdown': '[00:03:04](https://www.youtube.com/watch?v=TTA8OtC6qJs&t=184s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

@@ -1,729 +1,855 @@
 from __future__ import annotations
 
-CHAPTER_4 = {
-    "id": "Q4",
-    "chapter_id": "Q4",
-    "chapter_number": 4,
-    "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($18,000–$75,000 USD) and configure a lean, low-opex ($4,000–$20,000 USD/mo) production stack without wasting cash on bloated overhead?",
-    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Reserve-First Mitigation Budgets, Xactimate Evidence, IICRC Drying Records, Contractor-Safe Collections & Disclosed Facility Subcontracting",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #15, Insurance Restoration, holds Rank #13 with a 87/100 Money-to-Manpower "
-        "Score because equipment, labor, and disputed receivables consume cash before owners "
-        "collect profit. Allocate at least half of startup capital to working reserves, then "
-        "buy only the capacity that documented demand supports. This chapter maps five plays: "
-        "the supplied facility ghost-brokering play, plus four chapter-local operating plays: "
-        "reserve-first mobilization, rental-to-owned drying capacity, evidence-to-cash collections, "
-        "and staged crew activation. These local labels are operating methods, not additional "
-        "catalog entries. Canonical annual owner profits remain $40,000 Conservative, $195,000 "
-        "Base, and $450,000 Scaled. Build around measured moisture, defensible Xactimate quantities, "
-        "controlled subcontracting, and a narrow software stack; keep claim negotiation, restricted "
-        "work, and unfunded mobilizations outside the production lane."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$500,000",
-            "context": "Annual gross restoration billings; materials and subcontractors included in costs",
-            "note": "8% net margin; $40,000 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,500,000",
-            "context": "Annual gross restoration billings; materials and subcontractors included in costs",
-            "note": "13.0% net margin; $195,000 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$2,500,000",
-            "context": "Annual gross restoration billings; materials and subcontractors included in costs",
-            "note": "18% net margin; $450,000 annual owner net profit; 3 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Ring-fence working cash before buying production capacity",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Insurance restoration fails when an attractive equipment yard hides an empty "
-                    "operating account. Treat the $18,000–$75,000 startup range as cash available "
-                    "for deployment, not permission to purchase that much machinery. The three "
-                    "budgets below reserve $40,000, $95,000, and $190,000 respectively: 53.3%, "
-                    "54.3%, and 54.3% of total capital. Equipment, vehicles, deposits, training, "
-                    "and initial insurance payments consume the remainder. These are illustrative "
-                    "capital packages, not replacements for the canonical revenue scenarios. "
-                    "The chapter-local reserve-first mobilization play starts with separate "
-                    "operating, tax, and reserve ledger buckets, backed by bank accounts where "
-                    "useful. Give dispatch visibility into available mobilization cash without "
-                    "granting authority to move reserves. Build a thirteen-week cash forecast "
-                    "from signed work, actual payment milestones, payroll dates, rental commitments, "
-                    "and supplier terms. Exclude unsigned supplements, prospective catastrophe "
-                    "volume, and assumed insurer releases from cash available today. A disputed "
-                    "invoice is an asset requiring collection effort, not payroll funding. "
-                    "Review the forecast every Monday and after every material claim dispute. "
-                    "The fallback for an unfunded mobilization is a smaller authorized scope, "
-                    "a lawful customer milestone payment, or a documented referral—not silent "
-                    "borrowing from payroll taxes or another customer's restricted funds."
-                ),
-                (
-                    "Distinguish readiness overhead from the full cost of delivering restoration. "
-                    "The $4,000–$20,000 monthly operating range is a planning envelope for the "
-                    "lean fixed stack; job labor, subcontractors, materials, disposal, and surge "
-                    "rentals still enter the complete job-cost ledger. It cannot credibly "
-                    "represent every monthly expense at all three canonical revenue levels. "
-                    "Conservative revenue of $500,000 less $40,000 owner profit implies $460,000 "
-                    "annual total expense, or approximately $38,333 monthly. Base implies "
-                    "$1,305,000 annual expense, or $108,750 monthly; Scaled implies $2,050,000, "
-                    "or approximately $170,833 monthly. Subcontractor and material spending "
-                    "already sits inside those totals. Do not deduct it twice or present "
-                    "insurance claim value as incremental operator revenue. A $25,000 monthly "
-                    "fixed-overhead plan uses $300,000 annually, leaving $1,005,000 within the "
-                    "Base expense envelope for remaining delivery costs. That arithmetic is "
-                    "a constraint, not proof of feasibility. Quote actual wages, payroll "
-                    "burdens, insurance, and production utilization before hiring. The "
-                    "Conservative team remains five full-time staff plus six contractors; "
-                    "the low overhead endpoint does not make those employees free. A phased "
-                    "prelaunch crew is a readiness tactic, not a revised scorecard team."
-                ),
-                (
-                    "Make the chapter-local rental-to-owned drying capacity play pass a utilization "
-                    "test. Suppose a dehumidifier costs $3,000 delivered, equivalent rental costs "
-                    "$75 per deployed day, and owned maintenance plus handling adds $10 per "
-                    "deployed day. Simple purchase recovery requires $3,000 divided by $65, "
-                    "approximately 47 deployed days, before storage, repairs, capital cost, and "
-                    "resale value. These are explicit planning assumptions, not vendor quotes "
-                    "or insurer reimbursement rates. Two sporadic losses do not justify "
-                    "a warehouse of units. Start with calibrated meters, essential extraction "
-                    "tools, a small compatible drying fleet, and a reserved rental relationship "
-                    "with Sunbelt Rentals or United Rentals. The fallback is rented surge "
-                    "capacity with written availability, delivery terms, and cleaning expectations. "
-                    "Stress-test the middle capital package separately: keep a $25,000 emergency "
-                    "floor inside its $95,000 reserve, leaving $70,000 deployable. Two months "
-                    "of $25,000 fixed overhead consume $50,000, leaving only $20,000 for "
-                    "unreimbursed job cash. That is the real mobilization limit without "
-                    "additional committed funding. Never call the entire reserve runway while "
-                    "also counting it as equipment capital. Release purchases only when the "
-                    "remaining reserve still covers the forecast's deepest cash trough."
-                ),
-            ],
-            "table": {
-                "caption": "Three Startup Capital Packages With Protected Working-Cash Reserves",
-                "headers": [
-                    "Capital allocation and operating purpose",
-                    "$75,000 lean launch package",
-                    "$175,000 controlled launch package",
-                    "$350,000 expanded launch package",
-                ],
-                "rows": [
-                    [
-                        "Working cash remains protected against collection delays",
-                        "$40,000 reserve; protect payroll and authorized mobilization spending",
-                        "$95,000 reserve; maintain a separate $25,000 emergency floor",
-                        "$190,000 reserve; segregate catastrophe exposure from routine operations",
-                    ],
-                    [
-                        "Drying and extraction equipment follows measured utilization",
-                        "$12,000 equipment allowance; rent additional drying capacity initially",
-                        "$30,000 equipment allowance; purchase frequently deployed compatible units",
-                        "$60,000 equipment allowance; standardize maintenance and serial tracking",
-                    ],
-                    [
-                        "Vehicle deployment emphasizes reliability rather than appearance",
-                        "$8,000 vehicle allowance; fund inspected used-vehicle access initially",
-                        "$20,000 vehicle allowance; support one dependable deployment vehicle",
-                        "$38,000 vehicle allowance; expand only against dispatch demand",
-                    ],
-                    [
-                        "Licensing and insurance require actual written quotations",
-                        "$6,000 initial allowance; obtain coverage before accepting work",
-                        "$12,000 initial allowance; fund quoted deposits and registrations",
-                        "$24,000 initial allowance; address larger payroll and exposure",
-                    ],
-                    [
-                        "Software and training support repeatable evidence production",
-                        "$4,000 initial allowance; prioritize estimator access and training",
-                        "$8,000 initial allowance; add disciplined field-documentation onboarding support",
-                        "$16,000 initial allowance; train leads before expanding access",
-                    ],
-                    [
-                        "Premises and launch costs avoid decorative overhead",
-                        "$5,000 allowance; secure modest storage and essential deposits",
-                        "$10,000 allowance; establish practical staging and equipment security",
-                        "$22,000 allowance; support controlled staging without oversized premises",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy the bottleneck, not the showroom",
-                "body": (
-                    "Preserve the cash that allows trained crews to finish work while "
-                    "the customer and carrier resolve payment timing."
-                ),
-                "items": [
-                    "Track deployed days by equipment serial number; buy the next unit only after the rental-versus-ownership calculation survives a low-volume month.",
-                    "Inspect used dehumidifiers under load, verify drain operation, and budget meter calibration before comparing sticker prices.",
-                    "Negotiate rental delivery, weekend pickup, cleaning charges, and storm availability together; a cheap day rate with unavailable inventory solves nothing.",
-                    "Keep separate cash-forecast lines for invoiced work, disputed supplements, and collected funds; dispatch can spend only committed available cash.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Configure twelve layers without creating twelve administrative jobs",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use the twelve-layer matrix as a procurement worksheet, not a claim "
-                    "that twelve paid subscriptions are necessary. Each exact dollar amount "
-                    "is an illustrative budget input for the named tier and billing basis; "
-                    "it is not a verified current vendor quotation. Confirm regional prices, "
-                    "minimum users, annual commitments, taxes, storage limits, and export rights "
-                    "before purchase. The modeled stack totals $597 monthly equivalent: "
-                    "$35 email, $6 identity, $35 accounting, $119 dispatch, $200 estimating, "
-                    "$79 photographs, $18 signatures, $60 voice, $20 credential storage, "
-                    "$15 backup, $10 endpoint protection, and zero incremental dashboard cost. "
-                    "Annual equivalent is $7,164. Annual-billed subscriptions can require cash "
-                    "upfront, so monthly equivalents belong in overhead while actual invoice "
-                    "dates belong in the cash forecast. The lean capital package therefore "
-                    "cannot prepay every modeled subscription and still fund training from "
-                    "its $4,000 allowance. Activate fewer seats, choose monthly billing where "
-                    "available, and defer overlapping products. The core production chain "
-                    "is dispatch, evidence, estimate, invoice, and collection. Buy a paid "
-                    "layer only when it closes a measured failure in that chain or "
-                    "satisfies a specific contractual requirement."
-                ),
-                (
-                    "Define one job identifier before configuring integrations. Dispatch creates "
-                    "the identifier; photographs, psychrometric readings, estimates, change orders, "
-                    "rental tickets, subcontractor invoices, and customer receipts inherit it. "
-                    "CompanyCam records scene evidence, while Xactimate holds priced scope; "
-                    "neither substitutes for a controlled drying log. Record affected material, "
-                    "room, instrument identifier, moisture readings, temperature, relative humidity, "
-                    "equipment placement, and visit time using a consistent IICRC-informed "
-                    "procedure appropriate to the loss. Compare affected materials against "
-                    "documented dry standards rather than declaring completion from elapsed "
-                    "days alone. Technicians capture measurements and access limitations; "
-                    "the estimator determines supported quantities and explains exceptions. "
-                    "The chapter-local evidence-to-cash collections play targets preventable "
-                    "rework rather than aggressive policy advocacy. If a $12,000 invoice "
-                    "requires $8,000 direct cash and collection arrives thirty days late, "
-                    "that $8,000 remains tied up for another month; four similar jobs "
-                    "tie up $32,000. The fallback for disputed scope is an itemized "
-                    "factual supplement with photographs, dimensions, equipment logs, and "
-                    "signed work changes. Do not manufacture readings, extend drying time "
-                    "to fill a rental allowance, or represent a customer in coverage "
-                    "negotiations without the required separate authority."
-                ),
-                (
-                    "Automate reminders and reconciliation before automating judgment. Dispatch "
-                    "can warn when a daily reading is missing, a rental pickup is "
-                    "overdue, or an invoice has passed its contractual milestone. It "
-                    "should not automatically declare a room dry, accept a contaminated "
-                    "water assignment, or convert every photographed surface into demolition. "
-                    "Restrict technicians to their assigned jobs, require multifactor "
-                    "authentication, and keep carrier portals out of shared browser "
-                    "profiles. A credential vault stores individual access, not a "
-                    "universal adjuster login. Export a complete test job before committing "
-                    "to annual subscriptions: original images, timestamps, readings, estimate "
-                    "versions, signed authorizations, and payment history must remain usable "
-                    "outside the vendor interface. Calculate automation value conservatively. "
-                    "Twenty jobs monthly with fifteen minutes saved each release five "
-                    "hours; at an assumed $35 loaded hourly cost, that is $175 "
-                    "of capacity, not automatically $175 of cash savings. A $250 "
-                    "integration cannot justify itself from that task alone. First use "
-                    "native exports and a controlled spreadsheet; add integrations only "
-                    "when field completeness or collection performance improves measurably. "
-                    "The fallback for an outage is a numbered offline capture pack, "
-                    "followed by same-day reconciliation when service returns."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-Layer Named-Vendor Stack: Exact Modeled Tier Budgets, Roles, and Lean Substitutes",
-                "headers": [
-                    "Production layer and selected vendor",
-                    "Named tier and exact planning price",
-                    "Role and evidence ownership rule",
-                    "Cheaper alternative and explicit operating tradeoff",
-                ],
-                "rows": [
-                    [
-                        "Company email and controlled records: Google Workspace",
-                        "Business Starter: model $7 per user monthly, five users, $35 total",
-                        "Use company addresses and job folders with assigned custodians",
-                        "Start with fewer licensed office users; preserve individual field access",
-                    ],
-                    [
-                        "Endpoint sign-in and account separation: Microsoft Entra",
-                        "ID P1: model one administrator license at $6 monthly",
-                        "Budget pilot identity testing; license every benefiting user before expansion",
-                        "Use Entra ID Free initially; accept reduced identity-policy functionality",
-                    ],
-                    [
-                        "Bookkeeping and bank reconciliation: Intuit QuickBooks Online",
-                        "Simple Start: model $35 monthly for one company",
-                        "Record gross billings and reconcile receipts without hiding subcontractor costs",
-                        "Use a controlled ledger spreadsheet; fund accountant review separately",
-                    ],
-                    [
-                        "Dispatch and customer scheduling: Jobber field-service software",
-                        "Connect: model $119 monthly equivalent with annual billing",
-                        "Assign visits and owners; verify included seats before purchasing",
-                        "Use Google Calendar and Forms; reconcile assignments manually each morning",
-                    ],
-                    [
-                        "Restoration estimating and scope versions: Verisk Xactimate",
-                        "Standard: model $2,400 annually, equivalent to $200 monthly",
-                        "Create supported estimates; validate platform access and local price lists",
-                        "Use a contracted estimator; obtain editable files and confidentiality terms",
-                    ],
-                    [
-                        "Job photographs and chronological evidence: CompanyCam field capture",
-                        "Pro: model $79 monthly equivalent for the assumed team package",
-                        "Capture labeled images; verify package seats and export completeness",
-                        "Use managed phone uploads; manually enforce timestamps and room labels",
-                    ],
-                    [
-                        "Work authorizations and change signatures: Dropbox Sign",
-                        "Essentials: model one sender at $18 monthly equivalent",
-                        "Preserve signed versions and associated transaction audit records",
-                        "Use signed PDF returns; check signer identity and archive originals",
-                    ],
-                    [
-                        "Customer voice routing and dispatch calls: Zoom Phone",
-                        "US and Canada Unlimited: model four users at $15 monthly each",
-                        "Route urgent calls; configure overflow without relying on personal numbers",
-                        "Use one dedicated business mobile; document missed-call escalation manually",
-                    ],
-                    [
-                        "Individual credential storage and recovery: Bitwarden shared vault",
-                        "Teams: model five users at $4 monthly each",
-                        "Separate individual accounts and document owner-controlled emergency recovery",
-                        "Use individual free vaults; accept reduced shared administrative controls",
-                    ],
-                    [
-                        "Off-device computer backup and recovery: Backblaze computer protection",
-                        "Computer Backup: model two annual licenses at $90 each",
-                        "Protect office endpoints; test exports because cloud applications remain separate",
-                        "Use encrypted rotating drives; assign offsite custody and restore checks",
-                    ],
-                    [
-                        "Office endpoint security and alert ownership: Microsoft Defender",
-                        "Defender for Business: model three users at $3.33 monthly, rounded to $10",
-                        "Protect enrolled office devices; license every covered user as required",
-                        "Use built-in operating-system protections; manually track patches and device access",
-                    ],
-                    [
-                        "Weekly cash and job dashboard: Google Looker Studio",
-                        "Standard self-service tier: model $0 incremental monthly subscription cost",
-                        "Display spreadsheet metrics; restrict links and verify source refresh dates",
-                        "Use existing Sheets charts; retain manual weekly exception review",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Establish entity, insurance, and contracting boundaries before selling",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Form the operating entity through the relevant state filing office, "
-                    "obtain its IRS employer identification number, and open bank accounts "
-                    "under the same legal identity used on contracts and insurance. "
-                    "Confirm contractor licensing, local registration, and any separate "
-                    "mold assessment or remediation requirements for each service territory. "
-                    "An IICRC credential supports professional competence; it does not "
-                    "replace a state license. Match the actual operations described "
-                    "to the insurer with water extraction, demolition, drying, smoke "
-                    "cleaning, and any microbial work you intend to perform. Obtain "
-                    "written explanations of pollution exclusions, microbial limitations, "
-                    "professional services exclusions, subcontractor conditions, commercial "
-                    "auto coverage, equipment coverage, and workers' compensation obligations. "
-                    "A certificate summarizes coverage; it does not amend an exclusion "
-                    "or establish additional-insured status by itself. Require relevant "
-                    "endorsements where the contract demands them. Keep customer money, "
-                    "tax liabilities, and owner distributions distinguishable in the "
-                    "ledger. Verify any state trust-fund rules before treating a "
-                    "deposit as unrestricted cash. Confirm changed supplier bank details "
-                    "through a known telephone number, not the number in the "
-                    "change email. One fraudulent $15,000 transfer would consume 37.5% "
-                    "of the lean package's $40,000 working reserve."
-                ),
-                (
-                    "Build collections around construction facts and the customer's payment "
-                    "obligation, not a promise of insurer reimbursement. The authorization "
-                    "identifies the property, permitted emergency work, rate basis, "
-                    "equipment charges, access, payment milestones, and change-order method. "
-                    "Explain who owes payment when coverage is disputed. Texas Insurance "
-                    "Code §4102.051 requires licensing for public adjusting, and "
-                    "§4102.163 restricts acting as a public adjuster for property "
-                    "on which the person provides contracting services. Keep estimating "
-                    "your own work distinct from representing the insured in "
-                    "settlement negotiations; other states draw their own boundaries. "
-                    "Texas Insurance Code §707.002 requires payment of applicable "
-                    "property-insurance deductibles, with related contractor restrictions "
-                    "in Business & Commerce Code §27.02. Do not advertise deductible "
-                    "waivers or disguise them as rebates. Separately, screen pre-1978 "
-                    "housing and covered child-occupied facilities for EPA renovation "
-                    "requirements before disturbing painted surfaces; evaluate applicable "
-                    "exceptions rather than assuming emergency work erases every duty. "
-                    "The fallback for work outside licensing, training, or insurance "
-                    "scope is a documented referral to a qualified provider. "
-                    "A signed customer request cannot cure an unlicensed activity, "
-                    "an excluded exposure, or an unsafe production method."
-                ),
-                (
-                    "The supplied mapped play, gsa_municipal_set_aside_facility_ghost_brokering, "
-                    "means disclosed coordination between eligible facility-service primes "
-                    "and qualified subcontractors, not a shell prime collecting a "
-                    "spread. For a hypothetical $100,000 federal services award, assume "
-                    "$40,000 goes to a nonsimilarly situated qualified subcontractor "
-                    "and $60,000 remains for genuine prime performance, administration, "
-                    "and margin. A documented $3,000 coordination fee must fit within "
-                    "that economics, reflect real services, and satisfy solicitation, "
-                    "disclosure, and compensation rules. It is not another $100,000 "
-                    "of restoration revenue for the coordinator. Where applicable, "
-                    "13 CFR §125.6 limits payments to nonsimilarly situated "
-                    "subcontractors on covered service contracts to 50% of the "
-                    "relevant government-paid amount; exclusions and similarly situated "
-                    "entities require careful classification. Construction contracts "
-                    "have different thresholds. Check FAR 52.219-14 when included "
-                    "and FAR 52.215-23 where applicable to excessive pass-through "
-                    "charges. Municipal eligibility and subcontracting rules come "
-                    "from the actual local solicitation, not automatically from "
-                    "federal clauses. Document capability, supervision, licenses, "
-                    "pricing, and performance responsibility before bidding. Exclude "
-                    "opaque pass-throughs and false eligibility claims. The explicit "
-                    "fallback is to withdraw noncompliant bids and operate as "
-                    "a disclosed subcontractor on unrestricted work."
-                ),
-            ],
-            "table": {
-                "caption": "Entity, Coverage, Statutory Boundary, and Facility-Contract Verification Matrix",
-                "headers": [
-                    "Exposure requiring a specific operating decision",
-                    "Evidence required before accepting the exposure",
-                    "Failure mode that consumes cash or authority",
-                    "Practical fallback preserving legitimate service delivery",
-                ],
-                "rows": [
-                    [
-                        "Legal identity and contractor authority across service territories",
-                        "Match entity filings, tax identity, licenses, contracts, and banking",
-                        "An incorrect contracting entity complicates collection and insurance response",
-                        "Correct documentation before signature; restrict dispatch to authorized territories",
-                    ],
-                    [
-                        "Microbial, pollution, auto, and employee injury insurance exposure",
-                        "Obtain relevant policy wording, endorsements, exclusions, and payroll classifications",
-                        "A generic certificate conceals exclusions for the actual loss",
-                        "Narrow scope or use an appropriately insured specialist provider",
-                    ],
-                    [
-                        "Public-adjusting boundaries when explaining restoration charges to carriers",
-                        "Document factual scope communication and applicable state licensing boundaries",
-                        "Coverage advocacy crosses into separately regulated representation of insureds",
-                        "Provide quantities and evidence; refer representation to authorized professionals",
-                    ],
-                    [
-                        "Deductible collection and customer payment obligations under state law",
-                        "Use accurate contracts, customer receipts, and transparent price adjustments",
-                        "Disguised rebates undermine required deductible payment and invoice integrity",
-                        "Collect lawful amounts; decline arrangements requiring concealed payment offsets",
-                    ],
-                    [
-                        "Lead disturbance and respiratory exposure during selective demolition",
-                        "Record building screening, task assessment, training, and applicable protections",
-                        "Emergency scheduling bypasses required work practices or worker protections",
-                        "Isolate the area and engage qualified specialty personnel",
-                    ],
-                    [
-                        "Federal and municipal facility-service prime and subcontractor relationships",
-                        "Retain eligibility evidence, solicitation clauses, disclosed roles, and performance budgets",
-                        "A nominal prime adds fees without required substantive performance",
-                        "Withdraw noncompliant bids; subcontract transparently on unrestricted work instead",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Prove readiness with a funded dry run before taking emergency calls",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The chapter-local staged crew activation play turns staffing into "
-                    "a capacity decision rather than a ceremonial opening date. "
-                    "Use the canonical five full-time staff and six contractors "
-                    "for Conservative and Base planning, and six full-time staff "
-                    "plus seven contractors for Scaled planning. Contractor count "
-                    "means an available qualified network, not evidence that "
-                    "thirteen people fit a five-person payroll. Confirm worker "
-                    "classification under applicable tests rather than issuing "
-                    "a contractor form to someone managed as an employee. "
-                    "Before activating another deployment lane, model its direct "
-                    "cash requirement. An illustrative two-person crew working "
-                    "forty hours each at $35 loaded hourly cost consumes "
-                    "$2,800 weekly before vehicles, materials, rentals, or "
-                    "supervision. Four weeks consumes $11,200; this is a "
-                    "subset of operating costs, not an addition to an "
-                    "already fully burdened payroll forecast. Maintain documented "
-                    "on-call arrangements and realistic response promises. The "
-                    "fallback when demand exceeds funded capacity is a "
-                    "prequalified referral or subcontracted scope with clear "
-                    "supervision and payment terms. Never dispatch a tired "
-                    "crew to an electrical, structural, or contaminated-water "
-                    "hazard simply because the answering service promised immediate entry."
-                ),
-                (
-                    "Run one simulated loss through the complete production system "
-                    "before publishing emergency response claims. The exercise begins "
-                    "with a caller reporting water intrusion and ends with "
-                    "a reconciled mock receipt. Verify that intake captures "
-                    "location, caller authority, access restrictions, apparent hazards, "
-                    "and the source-control status without promising coverage. "
-                    "The crew records initial conditions, safe access decisions, "
-                    "equipment serials, room dimensions, and moisture observations. "
-                    "The estimator produces a versioned scope, and a second "
-                    "person checks quantities against field evidence. Accounting "
-                    "then links the authorization, vendor charges, invoice, and "
-                    "receipt to the same job identifier. Test equipment "
-                    "pickup because forgotten rentals silently destroy contribution. "
-                    "A five-day avoidable rental at $75 daily costs "
-                    "$375; across eight jobs it consumes $3,000, equal "
-                    "to the illustrative dehumidifier purchase price. Test "
-                    "respiratory-protection readiness wherever required: under "
-                    "29 CFR §1926.103, construction respiratory protection follows "
-                    "§1910.134 requirements, including applicable medical evaluation, "
-                    "fit testing, training, and program administration. PPE "
-                    "purchased but never fitted is not operational capacity. "
-                    "Record every failed handoff with an owner and "
-                    "a correction date before assigning real work."
-                ),
-                (
-                    "Measure readiness through evidence, not a completed shopping "
-                    "list. The minimum dashboard shows unrestricted cash, "
-                    "thirteen-week low cash point, authorized backlog, deployed "
-                    "equipment days, missing daily readings, unbilled completed "
-                    "work, disputed receivables, and collection age by customer. "
-                    "Separate invoice age from insurer correspondence age "
-                    "because the contract determines who owes payment. "
-                    "Use a weekly owner review to stop new "
-                    "unfunded mobilizations when cash crosses the agreed "
-                    "floor. Do not use a blanket credit line "
-                    "as evidence of liquidity unless availability, covenants, "
-                    "draw conditions, and repayment terms are confirmed. "
-                    "A first deal may arrive in one to "
-                    "six months, so a two-month reserve plan "
-                    "needs a documented response to a six-month "
-                    "sales cycle. That response can be reduced "
-                    "prelaunch overhead, staged hiring, unrestricted service "
-                    "work within competence, or additional committed capital. "
-                    "It cannot be fictional revenue. Finally, tie "
-                    "the operating review back to the scorecard: "
-                    "$40,000, $195,000, and $450,000 remain the "
-                    "annual owner-profit targets at the stated volumes. "
-                    "Startup purchases, working-capital timing, debt principal, "
-                    "and owner withdrawals affect cash differently "
-                    "from recognized operating expense; reconcile those "
-                    "differences instead of equating bank balance with profit."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-Launch Evidence Tests and Failure Responses for a Funded Restoration Operation",
-                "headers": [
-                    "Readiness test with an accountable operating owner",
-                    "Concrete evidence required to pass the test",
-                    "Measured failure and immediate containment response",
-                    "Retest condition before increasing production exposure",
-                ],
-                "rows": [
-                    [
-                        "Owner tests reserve separation and thirteen-week cash coverage",
-                        "Bank balances reconcile to commitments and the protected reserve floor",
-                        "A forecast shortfall stops additional unfunded equipment and job commitments",
-                        "Committed funding or reduced spending restores positive forecast cash",
-                    ],
-                    [
-                        "Field lead tests extraction, drying, and measurement readiness",
-                        "Equipment operates under load and instruments have documented checks",
-                        "Failed equipment is tagged out and replaced with reserved rentals",
-                        "A complete simulated deployment produces usable readings and safe operation",
-                    ],
-                    [
-                        "Estimator tests Xactimate quantities against actual field evidence",
-                        "Room dimensions, photographs, equipment logs, and scope versions agree",
-                        "Unsupported items return for correction before any customer invoice",
-                        "Independent review confirms quantities and explains remaining documented exceptions",
-                    ],
-                    [
-                        "Administrator tests authorization, deductible language, and collection workflow",
-                        "Signed terms identify scope, payer obligations, changes, and milestones",
-                        "Ambiguous payment terms stop expanded work pending documented clarification",
-                        "Revised documents support factual billing without unauthorized claim representation",
-                    ],
-                    [
-                        "Safety lead tests task-specific personnel and protection readiness",
-                        "Relevant training, assessments, fit tests, and emergency contacts are documented",
-                        "Uncontrolled hazards prevent entry and trigger qualified specialist assistance",
-                        "Hazards are controlled and assigned personnel meet task requirements",
-                    ],
-                    [
-                        "Bookkeeper tests job export, invoice matching, and receipt reconciliation",
-                        "A mock job exports completely and reconciles to its ledger",
-                        "Missing records stop subscription expansion and require workflow correction",
-                        "A second dry run preserves every record through collection",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four verifications before the first production dispatch",
-                "body": (
-                    "A passing result requires retained evidence and a named owner; "
-                    "a verbal assurance does not release spending or field work."
-                ),
-                "items": [
-                    "Verify that at least 50% of startup capital remains allocated to working cash and that the first job fits the thirteen-week forecast without breaching the emergency floor.",
-                    "Verify entity identity, territory-specific licensing, actual policy coverage, and subcontractor qualifications against the precise work being sold.",
-                    "Verify a complete test job containing authorization, room-level evidence, drying records, supported estimate, invoice, payment record, and usable exports.",
-                    "Verify task-specific safety readiness, functioning equipment, rental backup, on-call staffing, and a referral path for work outside competence or funded capacity.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Lock the capital and cash model",
-                    "action": "Select the capital package and segregate its working-cash reserve.",
-                    "detail": (
-                        "Replace every modeled price with a written quote, schedule actual "
-                        "payment dates, and retain a protected emergency floor in the forecast."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Configure only the critical production chain",
-                    "action": "Connect dispatch, evidence capture, estimating, invoicing, and collections.",
-                    "detail": (
-                        "Use one job identifier, individual access, tested exports, and "
-                        "documented offline procedures before adding optional integrations."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Run and inspect the simulated loss",
-                    "action": "Complete intake through equipment pickup and receipt reconciliation.",
-                    "detail": (
-                        "Assign independent reviewers to cash, safety, scope, and records; "
-                        "correct failed handoffs before accepting production exposure."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Release a funded, bounded first assignment",
-                    "action": "Dispatch only within documented authority, competence, and cash capacity.",
-                    "detail": (
-                        "Review daily evidence and commitments, then reconcile actual "
-                        "job costs and collection timing before expanding the next deployment."
-                    ),
-                },
-            ],
-        },
-    ],
-    "pull_quote": "Your first production asset is the cash that lets a qualified crew finish while a disputed invoice waits.",
-    "diagram_id": "diag-07",
-    "action_checklist": [
-        "Allocate at least 50% of startup capital to working cash, establish an emergency floor, and map every planned payment into a thirteen-week forecast.",
-        "Obtain written equipment, rental, insurance, payroll, and software quotes; replace illustrative prices before committing startup funds.",
-        "Configure one job identifier across dispatch, photographs, psychrometric records, Xactimate scope, authorizations, invoices, and receipts.",
-        "Verify contractor and remediation authority, task-specific insurance, public-adjusting boundaries, deductible rules, and applicable worker-protection requirements.",
-        "Document substantive prime and subcontractor roles for facility opportunities; withdraw noncompliant bids and pursue disclosed unrestricted subcontracting instead.",
-        "Complete a full simulated loss, correct every failed handoff, and release only a first assignment that stays inside funded production capacity.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "13 CFR §125.6 — Limitations on subcontracting",
-            "url": "https://www.ecfr.gov/current/title-13/section-125.6",
-            "relevance": (
-                "Establishes applicable subcontracting limitations, including treatment of "
-                "similarly situated entities and different service and construction categories."
-            ),
-        },
-        {
-            "title": "FAR 52.219-14 — Limitations on Subcontracting",
-            "url": "https://www.acquisition.gov/far/52.219-14",
-            "relevance": (
-                "Provides the federal contract clause to inspect when structuring eligible "
-                "prime performance and disclosed subcontracting for covered awards."
-            ),
-        },
-        {
-            "title": "FAR 52.215-23 — Limitations on Pass-Through Charges",
-            "url": "https://www.acquisition.gov/far/52.215-23",
-            "relevance": (
-                "Addresses excessive pass-through charges where the clause applies; "
-                "coordination fees must reflect genuine value and contractual requirements."
-            ),
-        },
-        {
-            "title": "Texas Insurance Code §4102.051 — Public Insurance Adjuster License Required",
-            "url": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.4102.htm#4102.051",
-            "relevance": (
-                "Requires the relevant license for public-adjusting activity in Texas, "
-                "separate from restoration estimating and construction work."
-            ),
-        },
-        {
-            "title": "Texas Insurance Code §4102.163 — Prohibited Contractor-Adjuster Conduct",
-            "url": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.4102.htm#4102.163",
-            "relevance": (
-                "Restricts acting as a public adjuster in connection with property "
-                "for which the person provides or may provide contracting services."
-            ),
-        },
-        {
-            "title": "Texas Insurance Code §707.002 — Payment of Deductible",
-            "url": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.707.htm#707.002",
-            "relevance": (
-                "Requires insureds to pay applicable property-insurance deductibles, "
-                "informing customer payment terms and collection documentation."
-            ),
-        },
-        {
-            "title": "Texas Business & Commerce Code §27.02 — Deductible-Related Prohibited Conduct",
-            "url": "https://statutes.capitol.texas.gov/Docs/BC/htm/BC.27.htm#27.02",
-            "relevance": (
-                "Addresses contractor conduct involving payment, waiver, rebate, or "
-                "other assistance with required property-insurance deductibles."
-            ),
-        },
-        {
-            "title": "40 CFR §745.85 — Work Practice Standards for Renovation",
-            "url": "https://www.ecfr.gov/current/title-40/section-745.85",
-            "relevance": (
-                "Defines applicable lead-safe renovation practices and specific emergency "
-                "provisions for covered housing and child-occupied facilities."
-            ),
-        },
-        {
-            "title": "29 CFR §1926.103 — Respiratory Protection in Construction",
-            "url": "https://www.ecfr.gov/current/title-29/section-1926.103",
-            "relevance": (
-                "Applies the respiratory-protection requirements of 29 CFR §1910.134 "
-                "to construction activities requiring respiratory protection."
-            ),
-        },
-        {
-            "title": "29 CFR §1910.134 — Respiratory Protection",
-            "url": "https://www.ecfr.gov/current/title-29/section-1910.134",
-            "relevance": (
-                "Specifies applicable respiratory-program, medical-evaluation, fit-testing, "
-                "selection, use, training, and recordkeeping requirements."
-            ),
-        },
-    ],
-}
+CHAPTER_4 = {'id': 'Q4',
+ 'chapter_id': 'Q4',
+ 'chapter_number': 4,
+ 'question_number': 4,
+ 'slug': 'roof-claim-supplementing',
+ 'question_prompt': 'How do roofing contractors supplement insurance claims to recover items the '
+                    "adjuster's estimate missed?",
+ 'kicker': 'Q4 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Roof Claim Supplementing',
+ 'subtitle': 'Proving estimates wrong line by line, the 12 roof components that matter in Xactimate, Texas '
+             'supplement writing, who to send the supplement to, explaining supplements to homeowners, '
+             'maxing roof-only claims, in-house vs. outsourced supplementers, 15-minute roof and siding '
+             'estimates, and measurement-to-contract workflows',
+ 'layout_template': 'comparison_matrix',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Roofing supplement practitioners agree the first carrier estimate is short and must '
+                      'be rebuilt line by line against evidence: measurement reports, tear-off photos, '
+                      'code citations, and bolded notes on every changed line. Estimate Mastery took a '
+                      '$21,027 RCV file to $47,192 with O&P. Roof Sales Mastery pegs the real average '
+                      'supplement at $4,000 to $4,500 and sells a 100-plus item master list, macros, and '
+                      'homeowner letters it says win O&P 75 to 80% of the time. Chad Michael submits '
+                      "before the build and over the field adjuster's head, concedes small items for "
+                      'rapport, and reports 40%-plus increases. Dustin Taylor writes full redecks from '
+                      'attic photos to stay in the conversation. American Roof Supplements pushes back on '
+                      'maximization, aiming for the most accurate, supportable estimate and charging $50 '
+                      'per estimate and $150 per supplement.',
+ 'key_metrics': [{'label': 'Single-file supplement lift',
+                  'metric': 'Single-file supplement lift',
+                  'value': '$21,027 RCV original to $47,192 RCV with O&P, about a $26,000 difference',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Estimate Mastery's reviewed roof and siding file after repricing to April "
+                             '2025, upgrading three-tab to architectural, and adding code, labor, and '
+                             'siding items',
+                  'source': 'Estimate Mastery ([q6R8Iom5Uz8 @ 00:19:04])'},
+                 {'label': 'Average approved supplement',
+                  'metric': 'Average approved supplement',
+                  'value': "$2,500 advertised; $4,000 to $4,500 'real'; some users average $5,000 to "
+                           '$7,000',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Roof Sales Mastery's figures across contractors trained since 2014 using its "
+                             'master list and objection scripts',
+                  'source': 'Roof Sales Mastery ([sICOGLUjsao @ 00:20:09])'},
+                 {'label': 'Supplement increase and close-out speed',
+                  'metric': 'Supplement increase and close-out speed',
+                  'value': '40%+ increases, closed out in two weeks or less',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Chad Michael's results from submitting before the build to corporate claims "
+                             'instead of the field adjuster',
+                  'source': 'Chad Michael - The Practitioner ([bVX2IRINNSM @ 00:56:56])'},
+                 {'label': 'Outsourced supplement pricing',
+                  'metric': 'Outsourced supplement pricing',
+                  'value': '$50 per estimate, $150 per supplement, first one free, no percentage or '
+                           'monthly fee',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "American Roof Supplements' flat-fee service, with the first five claims "
+                             'walked through by phone',
+                  'source': 'American Roof Supplements ([HpoMhPz1KfU @ 00:10:23])'}],
+ 'sections': [{'title': 'The Practitioner Consensus',
+               'paragraphs': ['Every practitioner on the roofing side starts from the same premise: the '
+                              'first carrier estimate is short, and the gap is systematic rather than '
+                              'accidental. Becca Switzer of Roof Sales Mastery frames it as carrier math, '
+                              'a State Farm saving of $1,000 on each of 500,000 claims, and tells '
+                              'contractors to supplement 100% of claims because a file never comes back '
+                              "with everything paid [jj-GWZEtOc0 @ 00:02:33]. The same channel's sales "
+                              'call runs the math at 100,000 claims times $1,000 for $100M, while the '
+                              'contractor-side version is 100 claims times $10,000 for $1M [q63afBPc6eY @ '
+                              '00:02:12]. Adjusters are described as paid to mitigate loss, with one '
+                              'Liberty Mutual adjuster\'s card literally reading "loss mitigation," so '
+                              'objections are expected as part of the job rather than taken personally '
+                              '[sICOGLUjsao @ 00:13:18]. Chad Michael adds the operational layer: start '
+                              'the dumpster, wet drywall removal, materials, and permits to "plant our '
+                              'flag" and keep the claim moving instead of waiting on the carrier '
+                              '[4dhIe6HGIs0 @ 00:16:20]. Even the most accuracy-focused shop, American '
+                              'Roof Supplements, opens its sample file with a carrier estimate of about '
+                              '$12,000 carrying "10 smaller things" wrong, not one dramatic miss, which is '
+                              'exactly the kind of leakage the volume-driven channels build their entire '
+                              'pitch around [HpoMhPz1KfU @ 00:00:52].',
+                              'The second point of agreement is that a supplement is built line by line '
+                              "against the carrier's own estimate, with evidence attached to every "
+                              'difference. American Roof Supplements lays the two estimates side by side, '
+                              'lists existing quantity, proposed quantity, and evidence for each line, '
+                              'labels photos by roof location, strips out unsupported upgrades, then runs '
+                              'a "Show me why" test on the whole file [HpoMhPz1KfU @ 00:08:20]. Its '
+                              'beginner workflow runs seven steps: get the carrier estimate, gather '
+                              'evidence, compare line by line, identify legitimate differences, build or '
+                              'revise with notes, organize documentation, and submit and respond '
+                              '[TkCEjbO6vQs @ 00:04:30]. Chad Michael works the same direction, '
+                              'reconciling from the top of the carrier estimate downward, backed by a PDF '
+                              'of codes and photos [4dhIe6HGIs0 @ 00:02:16]. American Roof Supplements '
+                              'reduces every roof component to four questions, namely what it is, where it '
+                              'is, how it is measured, and what documents it, and uses that drill to keep '
+                              'eave footage separate from rake footage, count pipe boots that aerials hide '
+                              'behind dormers, and avoid confusing the ridge cap with the vent underneath '
+                              'it [DR03Zlogfe0 @ 00:00:48]. The shared rule under all four voices is '
+                              'blunt: measurements drive quantity changes, photos drive damage items, '
+                              'cited requirements drive code items, and anything discovered at tear-off '
+                              'gets photographed before it is covered back up.',
+                              'Practitioners also agree on how the file should look and how hard to push. '
+                              'Estimate Mastery bolds every changed line and adds a note explaining why '
+                              'its line items differ from the original statement of loss, so the reviewer '
+                              'sees the argument without hunting for it [q6R8Iom5Uz8 @ 00:13:44]. Nobody '
+                              'recommends trench warfare over small items. Chad Michael concedes roughly '
+                              '$100 items on purpose to build rapport and keeps phone calls with adjusters '
+                              'friendly rather than combative [bVX2IRINNSM @ 00:28:20]. Becca Switzer is '
+                              '"not teaching you guys to argue for fifteen days over a turtle vent" and '
+                              'calls $5,800 received against a $6,700 ask good enough to close '
+                              '[jj-GWZEtOc0 @ 00:18:01]. The homeowner has to be briefed before any of '
+                              'this starts. Adam Bensman of The STRONG Roofer explains the supplement at '
+                              'color selection at the latest, reframes price as an objective assessment, '
+                              'walks through Xactimate as the third-party platform insurers use, and '
+                              'pitches the evidence packet as protection from surprise costs that '
+                              '"doesn\'t change a darn thing for you" [zxGa72oAf0w @ 00:02:17]. The '
+                              'warning attached is sharp: homeowners left without a narrative invent one, '
+                              'decide the contractor is a "slime ball" chasing free money, and the job '
+                              'ends with uncollected money and bad reviews instead of referrals.'],
+               'table': {'caption': 'Where roofing supplement practitioners line up on baseline practice',
+                         'headers': ['Consensus Point',
+                                     'How Practitioners Execute It',
+                                     'Stated Reason or Payoff',
+                                     'Expert Source'],
+                         'rows': [['Supplement every claim, not just the obvious losers',
+                                   'Treat 100% of carrier estimates as incomplete and build a supplement '
+                                   'on each',
+                                   'Carriers save $1,000 per claim across 500,000 claims at scale',
+                                   'Roof Sales Mastery ([jj-GWZEtOc0 @ 00:02:33])'],
+                                  ['Reconcile against the carrier estimate strictly line by line',
+                                   'Side-by-side estimates listing existing quantity, proposed quantity, '
+                                   'and evidence per line',
+                                   'Separates complaining from proving and exposes unsupported upgrades '
+                                   'before submission',
+                                   'American Roof Supplements ([HpoMhPz1KfU @ 00:08:20])'],
+                                  ['Photograph hidden components before the roof is covered again',
+                                   'Shoot wall flashing, decking, and tear-off discoveries before and '
+                                   'during removal',
+                                   'Aerial images cannot see wall flashing, so field photos carry the item',
+                                   'American Roof Supplements ([HpoMhPz1KfU @ 00:05:03])'],
+                                  ['Bold every changed line and explain it in a note',
+                                   'Bold changed items in Xactimate and add a note tied to each change',
+                                   'Reviewer sees exactly why lines differ from the original statement of '
+                                   'loss',
+                                   'Estimate Mastery ([q6R8Iom5Uz8 @ 00:13:44])'],
+                                  ['Expect scripted objections from every adjuster on common items',
+                                   'Prepare answers for in the waste, not complex enough, and no code '
+                                   'upgrades',
+                                   'Adjusters are paid to mitigate loss, so objections are part of their '
+                                   'job',
+                                   'Roof Sales Mastery ([sICOGLUjsao @ 00:12:56])'],
+                                  ['Concede small dollars to protect rapport and cycle time',
+                                   'Give up roughly $100 items early instead of fighting them on the phone',
+                                   'Keeps adjusters cooperative and supports two-week close-outs instead '
+                                   'of months',
+                                   'Chad Michael - The Practitioner ([bVX2IRINNSM @ 00:28:20])'],
+                                  ['Brief the homeowner before the supplement is ever filed',
+                                   'Explain the supplement by color selection or deposit check at the '
+                                   'latest',
+                                   'Prevents homeowners inventing a story that casts the contractor as a '
+                                   'slime ball',
+                                   'The STRONG Roofer w/ Adam Bensman ([zxGa72oAf0w @ 00:02:17])']]}},
+              {'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The build itself runs on macros. Alina Wilson of Estimate Mastery keeps '
+                              'over 120 macros and says they are the only way to write a full roof and '
+                              'siding estimate in 10 to 15 minutes, because the search bar is slow and '
+                              'extra characters pull up the wrong item [fdW0W_-MR-s @ 00:01:00]. The rules '
+                              'are specific: one trade per macro, double-click to load it into the item or '
+                              'quick-entry screen, fill calculator fields from the roof report including '
+                              'waste, and treat the loaded macro as a checklist, deleting lines like a '
+                              'gable cornice return only after checking photos, field notes, and the '
+                              'measurement report. Wilson used to leave off chimney flashing while running '
+                              'a third-party supplementing business until it went on the macro. Roof Sales '
+                              'Mastery puts a hand-built estimate at 30 to 35 minutes and says macros cut '
+                              'that in half [sICOGLUjsao @ 00:00:39]. Dustin Taylor structures the Texas '
+                              'file with bold F9 headings for carrier approved line items and supplement '
+                              'line items, mirrors the carrier\'s order, and runs a macro drop with "skip '
+                              'duplicates" turned on, which caught 2 items on that job [gtsj3GY7D8c @ '
+                              '00:20:19]. Chad Michael orders the estimate as a sandwich that follows the '
+                              'job: removes first, then accessory R&R, then replaces [bVX2IRINNSM @ '
+                              '00:26:28].',
+                              "The money lives in specific line items. Estimate Mastery's sample file "
+                              'started at $21,027 RCV on a May 2024 price list, was repriced to April 2025 '
+                              'on the argument that nobody can buy gas at 2024 prices, switched three-tab '
+                              'to architectural, added starter on rakes and hips at a unit price of 8.57, '
+                              'then layered fascia, vents, rain caps, code-cited ice-and-water, hand-load '
+                              'labor, tarp and contents labor, project management hours, and permit to '
+                              'reach $47,192 RCV with O&P [q6R8Iom5Uz8 @ 00:19:04]. Dustin Taylor '
+                              'corrected a carrier bid of 29-gauge metal to the 22 gauge actually on the '
+                              'roof, roughly 5.40 versus 9 per LF, about $4 per LF more, and used the '
+                              '24-gauge line because no 22-gauge item exists in Xactimate [gtsj3GY7D8c @ '
+                              "00:03:20]. Becca Switzer's fascia substitution swaps roughly $3 per foot "
+                              'prefab for $10 per foot custom-bent, turning $400 into $1,200, and the '
+                              'master list math says asking for 18 items and getting half approved yields '
+                              '9, triple the old result [jj-GWZEtOc0 @ 00:10:15]. Chad Michael caught a '
+                              'missing ridge cap of about 240 to 250 LF and argued waste should be 15% '
+                              "rather than the adjuster's 10% once ridge, starter, and valley are counted "
+                              'inside it [bVX2IRINNSM @ 00:03:52].',
+                              'Routing and packaging are treated as mechanics, not afterthoughts. Chad '
+                              'Michael never sends the supplement to the field adjuster, because that '
+                              'invites them back out and prolongs the claim, and instead submits over '
+                              "everybody's head to ASI corporate claims, before the build, within 2 days, "
+                              'setting a 2-week expectation so a one-week answer looks like over-delivery '
+                              '[bVX2IRINNSM @ 00:19:04]. At State Farm, the move is getting past the robot '
+                              'and asking for Team 53, whose inside adjusters carry more authority than '
+                              'the field adjuster. Becca Switzer packages everything into one PDF rather '
+                              'than 62 attachments, opens with a non-aggressive "as you requested" '
+                              'paragraph, and gives each item its why, documentation, and a photo, adding '
+                              'an O&P cover sheet [jj-GWZEtOc0 @ 00:20:34]. Objection handling runs on "if '
+                              'this then that" scripts with 2 to 5 rounds expected, such as asking $5k and '
+                              'settling at $4k, while roughly 1 in 20 adjusters simply approve '
+                              '[sICOGLUjsao @ 00:14:46]. Homeowner letters are the escalation "dynamite": '
+                              'the sales call claims O&P lands 75 to 80% of the time once the letter goes '
+                              'in, drawn from 25 to 30 templates covering partial approvals, discontinued '
+                              'materials, stonewalling, preferred contractors, and multiple bids '
+                              '[q63afBPc6eY @ 00:07:50].'],
+               'table': {'caption': 'Tools, line items, and numbers practitioners use to build and price '
+                                    'supplements',
+                         'headers': ['Tool or Line Item',
+                                     'Exact Number or Setting',
+                                     'How It Is Used',
+                                     'Expert Source'],
+                         'rows': [['Xactimate macro library built one trade at a time',
+                                   'Over 120 macros; full roof and siding in 10 to 15 minutes',
+                                   'Loaded as a checklist, then trimmed against photos and measurement '
+                                   'report',
+                                   'Estimate Mastery ([fdW0W_-MR-s @ 00:01:31])'],
+                                  ['Macro drop with skip duplicates switched on',
+                                   'Caught 2 duplicate items on the Texas metal roof file',
+                                   'Run as QA before adding general conditions and O&P at the end',
+                                   'Dustin Taylor ([gtsj3GY7D8c @ 00:20:19])'],
+                                  ['Fascia substitution from prefab to custom-bent',
+                                   'Roughly $3 per foot prefab swapped for $10 per foot custom-bent',
+                                   'Turns a $400 fascia line into $1,200, adding about $800 per file',
+                                   'Roof Sales Mastery ([jj-GWZEtOc0 @ 00:10:15])'],
+                                  ['Price list repricing on the supplement submission',
+                                   'May 2024 price list updated to April 2025 on resubmission',
+                                   'Argue current pricing, but do not chase about $100 in repricing alone',
+                                   'Estimate Mastery ([q6R8Iom5Uz8 @ 00:08:14])'],
+                                  ['Waste factor on ridge, starter, and valley material',
+                                   "Adjuster's 10% challenged, 15% requested with ridge counted inside",
+                                   'Paired with a missing ridge cap of roughly 240 to 250 LF',
+                                   'Chad Michael - The Practitioner ([bVX2IRINNSM @ 00:03:52])'],
+                                  ["TradeForge AI supplement letter from the adjuster's estimate",
+                                   'Uploaded adjuster Xactimate; letter cites code, math, and manufacturer '
+                                   'specs',
+                                   'Review the ready email, then rerun update analysis if anything is '
+                                   'missing',
+                                   'Tradeforge CRM ([Kiez0kPNuRk @ 00:03:26])'],
+                                  ['Outsourced estimate and supplement writing on flat fees',
+                                   '$50 per estimate, $150 per supplement, first one free',
+                                   'No percentage and no monthly fee; first five claims walked through by '
+                                   'phone',
+                                   'American Roof Supplements ([HpoMhPz1KfU @ 00:10:23])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small Moves That Move the Check',
+                           'body': 'Line-level leverage points practitioners use to unlock O&P, beat '
+                                   'component objections, and set the negotiating anchor.',
+                           'items': ['One interior water spot unlocks O&P on the whole job; Chad Michael '
+                                     'cites a $28,000 job with a $5,400 to $5,600 gap riding on a single '
+                                     'closet water spot [Chad Michael - The Practitioner — bVX2IRINNSM @ '
+                                     '00:43:18].',
+                                     'When State Farm says masking is included in paint, pull the '
+                                     'Xactimate component breakdown and show it lists no masking materials '
+                                     '[Roof Sales Mastery — Jvj3So17gtA @ 00:01:55].',
+                                     'Start A-bucket items from the highest position, such as '
+                                     'detach-and-reset instead of mask; on a Florida file where $8K was '
+                                     'cut to $4K, the play was sending $16K [Chad Michael - The '
+                                     'Practitioner — 4dhIe6HGIs0 @ 00:09:28].',
+                                     'Use the State Farm summary sample page showing GC O&P at 10 and 10 '
+                                     'as leverage in the homeowner conversation [Estimate Mastery — '
+                                     'q6R8Iom5Uz8 @ 00:02:00].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Capture the roof before it disappears',
+                              'action': 'Pull a measurement report, four elevation photos, and tear-off '
+                                        'documentation the next morning.',
+                              'detail': 'Shoot wall flashing, decking, valleys, and pipe boots before and '
+                                        'during tear-off because aerials miss them, and separate what was '
+                                        'observed from what is only suspected [American Roof Supplements — '
+                                        'DR03Zlogfe0 @ 00:09:02].'},
+                             {'step': 2,
+                              'title': 'Load macros and reconcile against the carrier estimate',
+                              'action': 'Drop a one-trade macro, fill calculator fields from the roof '
+                                        'report, and delete only what evidence rules out.',
+                              'detail': 'Use the macro as a checklist for low-slope double coverage, 30 lb '
+                                        'versus 15 lb felt, and supervisory hours, then run skip '
+                                        'duplicates before finalizing [Estimate Mastery — fdW0W_-MR-s @ '
+                                        '00:03:03].'},
+                             {'step': 3,
+                              'title': 'Write the supplement with bolded changes and code notes',
+                              'action': 'Bold every changed line, add an F9 note explaining the '
+                                        'difference, and footnote code items.',
+                              'detail': 'Notes explain why line items differ from the original statement '
+                                        'of loss [Estimate Mastery — q6R8Iom5Uz8 @ 00:13:44]; Chad Michael '
+                                        'adds 2012 IRC footnotes, with drip edge code on page 12 [Chad '
+                                        'Michael - The Practitioner — bVX2IRINNSM @ 00:40:21].'},
+                             {'step': 4,
+                              'title': 'Route above the field adjuster and work objections',
+                              'action': 'Submit one PDF before the build, then answer objections with '
+                                        'if-this-then-that scripts.',
+                              'detail': 'Never send to the field adjuster, since it invites them back and '
+                                        'prolongs the claim [Chad Michael - The Practitioner — bVX2IRINNSM '
+                                        '@ 00:00:30]; expect 2 to 5 rounds, such as asking $5k and '
+                                        'settling at $4k [Roof Sales Mastery — sICOGLUjsao @ 00:14:46].'}]},
+              {'section_number': 3,
+               'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is philosophy. American Roof Supplements sets the goal '
+                              "as 'the most accurate, supportable estimate for the legitimate covered "
+                              "work,' rejects aiming for the biggest possible estimate, and warns that "
+                              "'habits are not line items': anything added out of routine rather than "
+                              'because the roof shows it has no place on the file [TkCEjbO6vQs @ 00:04:15] '
+                              '[HpoMhPz1KfU @ 00:10:06]. Roof Sales Mastery runs the opposite play. Ridge, '
+                              "starter, O&P and drip edge are the 'basic BS' every adjuster has a scripted "
+                              'rebuttal for, so the money lives in a master list of 100-plus items: '
+                              'cornice returns, generators, harnesses, OSHA supervision hours, ladder '
+                              'jacks, a single-axle dump truck, hand loading, window cleaning. They wave '
+                              "off the 'fluffing' charge because the adjuster decides what gets paid "
+                              '[q63afBPc6eY @ 00:04:41]. Chad Michael sits closer to Roof Sales Mastery on '
+                              'the opening position: start every item from the highest position, '
+                              'detach-and-reset instead of mask, and when a Florida carrier cut $8K to '
+                              '$4K, the counter went out at $16K [4dhIe6HGIs0 @ 00:09:28]. The operator '
+                              'choice is whether the file reads as an audit trail of one specific roof or '
+                              'as an opening anchor built off a master checklist, and the two camps price '
+                              'their services and train their people around those opposite answers.',
+                              'Routing and posture split next. Chad Michael never sends the supplement to '
+                              'the field adjuster, because that invites them back out and prolongs the '
+                              "claim. The file goes 'over everybody's head' to corporate claims, and it "
+                              'goes in before the build, so the contractor learns which items the carrier '
+                              "will resist while there is still time to photograph them. That is the 'two "
+                              "bites at the apple' play, with a target of submission within two days and a "
+                              'response inside a week [bVX2IRINNSM @ 00:00:30] [bVX2IRINNSM @ 00:18:44]. '
+                              "Roof Sales Mastery's Becca Switzer is softer on tone and longer on "
+                              "persistence: open with a non-aggressive 'as you requested' paragraph, "
+                              'attach the why, the documentation and a photo to every line, work '
+                              'if-this-then-that objection scripts, and take the compromise, because '
+                              '$6,700 asked against $5,800 received is good enough [jj-GWZEtOc0 @ '
+                              '00:18:01]. Estimate Mastery adds a third posture: play strictly by '
+                              "Xactimate's inclusion rules whether they help or hurt, which is why pipe "
+                              'jack and exhaust cap removal stay folded into shingle removal while RNR '
+                              'drip edge earns its own line [q6R8Iom5Uz8 @ 00:04:08]. The tension is speed '
+                              'versus rapport: going over heads compresses the timeline, while the '
+                              'conciliatory email keeps the adjuster in the deal across two to five '
+                              'rounds.',
+                              'O&P and decking are where the playbooks diverge on proof. Roof Sales '
+                              "Mastery calls the three-trade requirement a 'smoke screen objection' and "
+                              'builds an entire module around maxing out roof-only claims on brick homes '
+                              'that carry nothing but three-tab shingles and felt, with no gutters to add '
+                              '[Jvj3So17gtA @ 00:00:35]. Chad Michael counters with history: the '
+                              "three-trade rule shifted around 2011 to 'complexity and/or coordination,' "
+                              'started by State Farm, and there is no law behind it, so the fight is over '
+                              'logged coordination rather than trade count [4dhIe6HGIs0 @ 00:24:47]. On '
+                              'decking, Dustin Taylor wrote a full redeck on a Texas file off attic '
+                              "photos, with no tape-measure proof of the spaced-deck gap, explicitly 'to "
+                              "be in the conversation' with the carrier [gtsj3GY7D8c @ 00:18:16]. American "
+                              'Roof Supplements draws the hard line against that move: do not assume '
+                              'decking damage, capture a wide photo, a close photo, measurements and '
+                              "location, and remember that 'necessary replacement does not automatically "
+                              "mean covered replacement' [HpoMhPz1KfU @ 00:06:18]. Operators running the "
+                              'Taylor play are betting the carrier negotiates off whatever scope is '
+                              'written down; operators running the American Roof Supplements play are '
+                              'betting that a clean evidence chain wins the line on the first pass without '
+                              'a second round of argument.'],
+               'table': {'caption': 'Side-by-side playbooks where named practitioners take opposite '
+                                    'positions on the same supplement decision.',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Overall estimate philosophy and how much to request',
+                                   'Build the most accurate, supportable estimate for legitimate covered '
+                                   'work and refuse to chase the biggest number',
+                                   'Work a master list of 100-plus outside-the-box items so you add ten '
+                                   'more lines instead of three or four',
+                                   'American Roof Supplements ([TkCEjbO6vQs @ 00:04:15]); Roof Sales '
+                                   'Mastery ([sICOGLUjsao @ 00:07:38])'],
+                                  ['Who receives the supplement once it is written',
+                                   'Skip the field adjuster, independent and desk adjusters and submit '
+                                   "over everybody's head to corporate claims",
+                                   "Send a non-aggressive 'as you requested' intro email with why, "
+                                   'documentation and photo for each item',
+                                   'Chad Michael - The Practitioner ([bVX2IRINNSM @ 00:01:33]); Roof Sales '
+                                   'Mastery ([jj-GWZEtOc0 @ 00:13:46])'],
+                                  ['Opening position on items the carrier already cut',
+                                   'Start from the highest position, detach-and-reset over mask, and '
+                                   'answer an $8K-to-$4K cut with $16K',
+                                   'Play by Xactimate inclusion rules whether they favor you or not and '
+                                   'skip chasing roughly $100 repricing',
+                                   'Chad Michael - The Practitioner ([4dhIe6HGIs0 @ 00:09:28]); Estimate '
+                                   'Mastery ([q6R8Iom5Uz8 @ 00:04:08])'],
+                                  ['Decking when only attic evidence exists',
+                                   'Write a full redeck from attic photos without tape-measure proof just '
+                                   'to be in the conversation',
+                                   'Separate what you observed from what you suspect and never assume '
+                                   'decking damage without measurements and location',
+                                   'Dustin Taylor ([gtsj3GY7D8c @ 00:18:16]); American Roof Supplements '
+                                   '([DR03Zlogfe0 @ 00:06:09])'],
+                                  ['Lever used to unlock overhead and profit',
+                                   "Homeowner letters are the 'stick of dynamite' and anecdotally land O&P "
+                                   '75 to 80 percent of the time',
+                                   'One interior water spot in a closet unlocked O&P on a $28,000 job with '
+                                   'a $5,400 to $5,600 gap',
+                                   'Roof Sales Mastery ([q63afBPc6eY @ 00:07:50]); Chad Michael - The '
+                                   'Practitioner ([bVX2IRINNSM @ 00:43:18])'],
+                                  ['Who actually writes and sends the supplements',
+                                   'Designate one in-house supplementer so every supplement in the company '
+                                   'flows through that single trained person',
+                                   'Outsource at $50 per estimate and $150 per supplement, or let AI draft '
+                                   "the letter from the adjuster's Xactimate",
+                                   'Roof Sales Mastery ([rui1iBgQxWY @ 00:00:34]); American Roof '
+                                   'Supplements ([HpoMhPz1KfU @ 00:10:23]); Tradeforge CRM ([Kiez0kPNuRk @ '
+                                   '00:03:26])'],
+                                  ['How to win a pricing dispute on a line',
+                                   'Reprice to the current month list because you cannot buy gas at 2024 '
+                                   'prices, or use a higher sub bid plus 10 and 10',
+                                   'Treat the belief that Xactimate pricing settles every cost dispute as '
+                                   'one of the five core supplement mistakes',
+                                   'Estimate Mastery ([q6R8Iom5Uz8 @ 00:08:14]); Chad Michael - The '
+                                   'Practitioner ([4dhIe6HGIs0 @ 00:32:50]); American Roof Supplements '
+                                   '([TkCEjbO6vQs @ 00:08:30])']]}},
+              {'section_number': 4,
+               'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most repeated failure is documenting too late or trusting the aerial. '
+                              'American Roof Supplements names five core mistakes: supplementing from '
+                              'memory, adding items without evidence, assuming every roof uses the same '
+                              'items, assuming Xactimate pricing settles every cost dispute, and '
+                              'documenting too late. Tear-off discoveries get photographed before they are '
+                              'covered, or they are gone [TkCEjbO6vQs @ 00:08:30]. The same shop warns '
+                              'that aerial images cannot see wall flashing, that pipe boots hide behind '
+                              'dormers on measurement reports so the count has to come off the actual '
+                              'roof, and that valleys must never be guessed from satellite [HpoMhPz1KfU @ '
+                              "00:05:03] [DR03Zlogfe0 @ 00:06:47]. Estimate Mastery's Alina Wilson, who "
+                              'previously owned a third-party supplementing business, admits to constantly '
+                              'leaving off chimney flashing until it went onto a macro that forces a '
+                              'decision every time: deal with the line or delete it [fdW0W_-MR-s @ '
+                              '00:03:48]. Wilson also flags the Xactimate search bar as a trap in its own '
+                              'right, because it is slow and a few extra characters pull up the wrong line '
+                              'item. The fix the three converge on is a checklist loaded before the '
+                              'estimate is written, then checked against photos, field notes and the '
+                              'measurement report, rather than memory applied after the fact.',
+                              'The second failure mode sits on the homeowner side. Adam Bensman of The '
+                              'STRONG Roofer says that when the supplement is explained badly, homeowners '
+                              "assume the contractor is chasing their insurer for 'free money,' worry "
+                              "about the deductible, and the contractor ends up 'not collecting money and "
+                              "bad reviews.' Without a narrative for what happens next, homeowners invent "
+                              "one and cast the roofer as a 'slime ball' [zxGa72oAf0w @ 00:01:05] "
+                              "[zxGa72oAf0w @ 00:08:27]. Bensman's fix is timing, explaining it at color "
+                              'selection or the deposit check at the latest, and framing it as protection '
+                              'from financial surprises. American Roof Supplements adds the mirror trap: '
+                              'never promise the homeowner payment, because construction scope and '
+                              'insurance coverage are different questions [HpoMhPz1KfU @ 00:07:44]. Inside '
+                              'the company, the same channel reports owners who tell their sales force '
+                              "'supplements don't work,' pay reps commission on the original amount, and "
+                              'collect the supplement money themselves on the back end; their fishing '
+                              'analogy says the best bait is the one you believe in [wi2YpyR1was @ '
+                              "00:03:00]. Roof Sales Mastery's counterpart warning: when reps supplement "
+                              'their own jobs, results go inconsistent, rep number two pulls about half of '
+                              'rep number one, and a lazy rep simply lets items go.',
+                              'The economics checks cut against the marketing. Chad Michael warns that 10 '
+                              'and 10 O&P is not your margin, puts the target at 50 to 70 percent profit, '
+                              'and refuses to spend an hour arguing over 10 feet of drip edge [4dhIe6HGIs0 '
+                              "@ 00:42:38]. Roof Sales Mastery's own figures need auditing before anyone "
+                              'builds a forecast on them. One sales call advertises a $4,500 average '
+                              'across 165 jobs for $742,500, cites Brad at $45,400 across five supplements '
+                              "while speaking the average as '$980,' and then resets the realistic "
+                              'expectation at $6,000 to $7,000 [q63afBPc6eY @ 00:10:27]. On a separate '
+                              "call the same channel advertises a $2,500 average, calls the 'real' figure "
+                              '$4,000 to $4,500, and runs the floor case: 100 claims at just $250 each is '
+                              "still $25,000 [sICOGLUjsao @ 00:20:09]. Becca Switzer's carrier-level "
+                              'reality check is blunter: Allstate and Safeco may pay 2 of 11 items, and '
+                              'the stated expectation is a $2,500-plus average increase per claim '
+                              '[jj-GWZEtOc0 @ 00:18:50]. Time is the other cost line. Estimate Mastery '
+                              'will not chase about $100 in repricing, and Roof Sales Mastery says '
+                              'untrained supplementing takes three times as long, which is the per-hour '
+                              'test behind the drip-edge rule.'],
+               'table': {'caption': 'Firsthand traps reported by practitioners, with the cost and the fix '
+                                    'they applied.',
+                         'headers': ['Failure Mode',
+                                     'What Went Wrong',
+                                     'Fix or Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Trusting aerials for components the camera cannot see',
+                                   'Aerial images miss wall flashing and hide pipe boots behind dormers on '
+                                   'measurement reports',
+                                   'Photograph before and during tear-off and count boots, vents and '
+                                   'flashing on the roof itself',
+                                   'American Roof Supplements ([HpoMhPz1KfU @ 00:05:03])'],
+                                  ['Double-charging work already included in another line',
+                                   'Line items carry their own unit, quantity and inclusions, so '
+                                   'overlapping lines get flagged',
+                                   "Check each line's unit, quantity and inclusions before submission and "
+                                   'never stack the same labor twice',
+                                   'American Roof Supplements ([HpoMhPz1KfU @ 00:04:09])'],
+                                  ['Typing line items through the Xactimate search bar',
+                                   'The search bar is slow and extra characters pull up the wrong item on '
+                                   'the estimate',
+                                   'Use one-trade macros as a checklist so a full roof and siding estimate '
+                                   'runs 10 to 15 minutes',
+                                   'Estimate Mastery ([fdW0W_-MR-s @ 00:00:31])'],
+                                  ['Duplicate lines after dropping a macro onto an existing estimate',
+                                   'Macro lines overlapped carrier-approved items already sitting in the '
+                                   'estimate structure',
+                                   "Run the macro drop with 'skip duplicates' enabled, which caught two "
+                                   'items on one file',
+                                   'Dustin Taylor ([gtsj3GY7D8c @ 00:20:19])'],
+                                  ['Routing the supplement back to the field adjuster',
+                                   'Sending to the field adjuster invites them back out and drags the '
+                                   'claim on for months',
+                                   'Submit to corporate or inside adjusters, who hold more authority, and '
+                                   'close out in two weeks or less',
+                                   'Chad Michael - The Practitioner ([bVX2IRINNSM @ 00:00:30])'],
+                                  ['Fighting weeks over a single low-value line item',
+                                   'Two-week arguments over a chimney pipe or fifteen days over a turtle '
+                                   'vent burn time for nothing',
+                                   'Settle in two to five rounds and accept a compromise like $5,800 '
+                                   'received on $6,700 asked',
+                                   'Roof Sales Mastery ([sICOGLUjsao @ 00:14:29]); Roof Sales Mastery '
+                                   '([jj-GWZEtOc0 @ 00:18:18])'],
+                                  ['Decking refused by the carrier in the middle of the job',
+                                   'Deck problems surfaced at tear-off without prior approval while the '
+                                   'roof is already open',
+                                   'Get decking approved beforehand; if refused mid-job, declare an '
+                                   'emergency, document and proceed at your own risk',
+                                   'Chad Michael - The Practitioner ([4dhIe6HGIs0 @ 00:39:44])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear These Before the Supplement Leaves the Office',
+                           'body': 'Every item below comes from a practitioner who lost time, money or the '
+                                   "homeowner's trust by skipping it.",
+                           'items': ['Tear-off discoveries are photographed before they are covered, with '
+                                     'wide shot, close shot, measurements and roof location labeled '
+                                     '[American Roof Supplements — TkCEjbO6vQs @ 00:07:23].',
+                                     'The file is addressed to corporate or inside claims, never back to '
+                                     'the field adjuster who wrote the original scope [Chad Michael - The '
+                                     'Practitioner — bVX2IRINNSM @ 00:00:30].',
+                                     'The homeowner has heard the supplement explained at color selection '
+                                     'or the deposit check, framed as protection from financial surprises, '
+                                     'with no payment promised [The STRONG Roofer w/ Adam Bensman — '
+                                     'zxGa72oAf0w @ 00:02:17].',
+                                     'Decking is approved before the build, or the mid-job emergency '
+                                     'documentation plan is ready and the risk is accepted [Chad Michael - '
+                                     'The Practitioner — 4dhIe6HGIs0 @ 00:38:28].']}}],
+ 'pull_quote': "'Adjusters are constantly banking on your ignorance.' — attributed to Roof Sales Mastery "
+               '(rui1iBgQxWY @ 00:08:02).',
+ 'diagram_id': 'diag-07',
+ 'action_checklist': ['Lay the carrier estimate and yours side by side and, for every line, list the '
+                      'existing quantity, proposed quantity and the evidence behind it [American Roof '
+                      'Supplements — HpoMhPz1KfU @ 00:08:20].',
+                      'Load a one-trade macro and use it as a checklist against photos, field notes and '
+                      'the measurement report, deleting what the roof does not have [Estimate Mastery — '
+                      'fdW0W_-MR-s @ 00:03:03].',
+                      'Bold every changed line and add a note explaining why it differs from the original '
+                      'statement of loss [Estimate Mastery — q6R8Iom5Uz8 @ 00:13:44].',
+                      "Package the supplement as one PDF with an 'as you requested' intro and the why, "
+                      'documentation and a photo for each item [Roof Sales Mastery — jj-GWZEtOc0 @ '
+                      '00:13:46].',
+                      'Submit within two days and before the build, and set a two-week expectation with '
+                      'the homeowner so you over-deliver [Chad Michael - The Practitioner — bVX2IRINNSM @ '
+                      '00:19:04].',
+                      'Explain the supplement to the homeowner at color selection at the latest, reframing '
+                      'price as an objective assessment [The STRONG Roofer w/ Adam Bensman — zxGa72oAf0w @ '
+                      '00:02:17].'],
+ 'statutory_citations': [{'title': 'Chad Michael - The Practitioner — Who To Send Xactimate Estimate To? | '
+                                   'Roof Claim Supplement [00:18:44]',
+                          'url': 'https://www.youtube.com/watch?v=bVX2IRINNSM&t=1124s',
+                          'relevance': 'Primary practitioner testimony on submitting the supplement before '
+                                       "the build and routing it over the field adjuster's head."},
+                         {'title': 'American Roof Supplements — Xactimate 101 How Roofing Supplements '
+                                   'Actually Work (Beginner’s Guide) [00:04:30]',
+                          'url': 'https://www.youtube.com/watch?v=TkCEjbO6vQs&t=270s',
+                          'relevance': 'Primary practitioner testimony on the seven-step accuracy-first '
+                                       'supplement workflow and the evidence rules behind it.'},
+                         {'title': 'Estimate Mastery — Estimate Review - Supplementing in Xactimate '
+                                   '[00:19:04]',
+                          'url': 'https://www.youtube.com/watch?v=q6R8Iom5Uz8&t=1144s',
+                          'relevance': 'Primary practitioner testimony on a $21,027 carrier estimate '
+                                       'supplemented to $47,192 RCV with O&P.'},
+                         {'title': 'Roof Sales Mastery — Best Way to Learn Roof Supplementing & Xactimate '
+                                   '[00:08:04]',
+                          'url': 'https://www.youtube.com/watch?v=jj-GWZEtOc0&t=484s',
+                          'relevance': 'Primary practitioner testimony on the master-list maximization '
+                                       'approach and objection handling.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'HpoMhPz1KfU',
+                       'title': 'How to Prove an Insurance Estimate Wrong — Line by Line in Xactimate',
+                       'channel': 'American Roof Supplements',
+                       'author': 'American Roof Supplements',
+                       'text': 'That is the difference between complaining and proving.',
+                       'tip': 'That is the difference between complaining and proving.',
+                       'timestamp': 88,
+                       'timestamp_seconds': 88,
+                       'timestamp_label': '[00:01:28]',
+                       'url': 'https://www.youtube.com/watch?v=HpoMhPz1KfU&t=88s',
+                       'markdown': '[00:01:28](https://www.youtube.com/watch?v=HpoMhPz1KfU&t=88s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HpoMhPz1KfU',
+                       'title': 'How to Prove an Insurance Estimate Wrong — Line by Line in Xactimate',
+                       'channel': 'American Roof Supplements',
+                       'author': 'American Roof Supplements',
+                       'text': 'Necessary replacement does not automatically mean covered replacement.',
+                       'tip': 'Necessary replacement does not automatically mean covered replacement.',
+                       'timestamp': 397,
+                       'timestamp_seconds': 397,
+                       'timestamp_label': '[00:06:37]',
+                       'url': 'https://www.youtube.com/watch?v=HpoMhPz1KfU&t=397s',
+                       'markdown': '[00:06:37](https://www.youtube.com/watch?v=HpoMhPz1KfU&t=397s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'q6R8Iom5Uz8',
+                       'title': 'Estimate Review - Supplementing in Xactimate',
+                       'channel': 'Estimate Mastery',
+                       'author': 'Estimate Mastery',
+                       'text': 'We added a note to explain why our line items are different than the '
+                               'original statement of loss.',
+                       'tip': 'We added a note to explain why our line items are different than the '
+                              'original statement of loss.',
+                       'timestamp': 855,
+                       'timestamp_seconds': 855,
+                       'timestamp_label': '[00:14:15]',
+                       'url': 'https://www.youtube.com/watch?v=q6R8Iom5Uz8&t=855s',
+                       'markdown': '[00:14:15](https://www.youtube.com/watch?v=q6R8Iom5Uz8&t=855s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gtsj3GY7D8c',
+                       'title': 'Writing Xactimate Roofing Supplement - Texas',
+                       'channel': 'Dustin Taylor',
+                       'author': 'Dustin Taylor',
+                       'text': "I feel like to me that's just more of an ethics thing, like bid what you "
+                               'have.',
+                       'tip': "I feel like to me that's just more of an ethics thing, like bid what you "
+                              'have.',
+                       'timestamp': 1202,
+                       'timestamp_seconds': 1202,
+                       'timestamp_label': '[00:20:02]',
+                       'url': 'https://www.youtube.com/watch?v=gtsj3GY7D8c&t=1202s',
+                       'markdown': '[00:20:02](https://www.youtube.com/watch?v=gtsj3GY7D8c&t=1202s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'q63afBPc6eY',
+                       'title': 'How to Supplement Insurance Roofing Claims with Xactimate',
+                       'channel': 'Roof Sales Mastery',
+                       'author': 'Roof Sales Mastery',
+                       'text': "That's your stick of dynamite, okay, so overhead and profit works like a "
+                               'charm.',
+                       'tip': "That's your stick of dynamite, okay, so overhead and profit works like a "
+                              'charm.',
+                       'timestamp': 470,
+                       'timestamp_seconds': 470,
+                       'timestamp_label': '[00:07:50]',
+                       'url': 'https://www.youtube.com/watch?v=q63afBPc6eY&t=470s',
+                       'markdown': '[00:07:50](https://www.youtube.com/watch?v=q63afBPc6eY&t=470s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DR03Zlogfe0',
+                       'title': 'Roofer Explains Roofing Terms: 12 Roof Components That Matter in '
+                                'Xactimate',
+                       'channel': 'American Roof Supplements',
+                       'author': 'American Roof Supplements',
+                       'text': 'Measurement reports must match the building.',
+                       'tip': 'Measurement reports must match the building.',
+                       'timestamp': 86,
+                       'timestamp_seconds': 86,
+                       'timestamp_label': '[00:01:26]',
+                       'url': 'https://www.youtube.com/watch?v=DR03Zlogfe0&t=86s',
+                       'markdown': '[00:01:26](https://www.youtube.com/watch?v=DR03Zlogfe0&t=86s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4dhIe6HGIs0',
+                       'title': 'The Ultimate Insurance Claim Supplement',
+                       'channel': 'Chad Michael - The Practitioner',
+                       'author': 'Chad Michael - The Practitioner',
+                       'text': "I'm willing to remove it from the estimate at this time provided you're "
+                               "willing to revisit this when it's no longer a hypothetical.",
+                       'tip': "I'm willing to remove it from the estimate at this time provided you're "
+                              "willing to revisit this when it's no longer a hypothetical.",
+                       'timestamp': 1128,
+                       'timestamp_seconds': 1128,
+                       'timestamp_label': '[00:18:48]',
+                       'url': 'https://www.youtube.com/watch?v=4dhIe6HGIs0&t=1128s',
+                       'markdown': '[00:18:48](https://www.youtube.com/watch?v=4dhIe6HGIs0&t=1128s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4dhIe6HGIs0',
+                       'title': 'The Ultimate Insurance Claim Supplement',
+                       'channel': 'Chad Michael - The Practitioner',
+                       'author': 'Chad Michael - The Practitioner',
+                       'text': "I'm not going to argue over 10 feet of drip edge and spend an hour doing "
+                               'it.',
+                       'tip': "I'm not going to argue over 10 feet of drip edge and spend an hour doing "
+                              'it.',
+                       'timestamp': 2607,
+                       'timestamp_seconds': 2607,
+                       'timestamp_label': '[00:43:27]',
+                       'url': 'https://www.youtube.com/watch?v=4dhIe6HGIs0&t=2607s',
+                       'markdown': '[00:43:27](https://www.youtube.com/watch?v=4dhIe6HGIs0&t=2607s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zxGa72oAf0w',
+                       'title': 'Explaining Supplements to Homeowners: How Roof Insurance Claim '
+                                'Supplements Work',
+                       'channel': 'The STRONG Roofer w/ Adam Bensman',
+                       'author': 'The STRONG Roofer w/ Adam Bensman',
+                       'text': 'What this does is it protects you, protects you from financial surprises, '
+                               'okay, because no one likes financial surprises.',
+                       'tip': 'What this does is it protects you, protects you from financial surprises, '
+                              'okay, because no one likes financial surprises.',
+                       'timestamp': 409,
+                       'timestamp_seconds': 409,
+                       'timestamp_label': '[00:06:49]',
+                       'url': 'https://www.youtube.com/watch?v=zxGa72oAf0w&t=409s',
+                       'markdown': '[00:06:49](https://www.youtube.com/watch?v=zxGa72oAf0w&t=409s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fdW0W_-MR-s',
+                       'title': '1 Click Secret - Write a roof & siding estimate in 15 minutes using this '
+                                'one tool in Xactimate',
+                       'channel': 'Estimate Mastery',
+                       'author': 'Estimate Mastery',
+                       'text': 'It acts like a checklist and this is really useful for you to not forget '
+                               'to add line items to your estimate.',
+                       'tip': 'It acts like a checklist and this is really useful for you to not forget to '
+                              'add line items to your estimate.',
+                       'timestamp': 212,
+                       'timestamp_seconds': 212,
+                       'timestamp_label': '[00:03:32]',
+                       'url': 'https://www.youtube.com/watch?v=fdW0W_-MR-s&t=212s',
+                       'markdown': '[00:03:32](https://www.youtube.com/watch?v=fdW0W_-MR-s&t=212s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bVX2IRINNSM',
+                       'title': 'Who To Send Xactimate Estimate To? | Roof Claim Supplement',
+                       'channel': 'Chad Michael - The Practitioner',
+                       'author': 'Chad Michael - The Practitioner',
+                       'text': 'My approach calls for you give them the estimate before the bill.',
+                       'tip': 'My approach calls for you give them the estimate before the bill.',
+                       'timestamp': 1124,
+                       'timestamp_seconds': 1124,
+                       'timestamp_label': '[00:18:44]',
+                       'url': 'https://www.youtube.com/watch?v=bVX2IRINNSM&t=1124s',
+                       'markdown': '[00:18:44](https://www.youtube.com/watch?v=bVX2IRINNSM&t=1124s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jj-GWZEtOc0',
+                       'title': 'Best Way to Learn Roof Supplementing & Xactimate',
+                       'channel': 'Roof Sales Mastery',
+                       'author': 'Roof Sales Mastery',
+                       'text': "So how you ask is sometimes more important than even what you're asking "
+                               'for.',
+                       'tip': "So how you ask is sometimes more important than even what you're asking "
+                              'for.',
+                       'timestamp': 888,
+                       'timestamp_seconds': 888,
+                       'timestamp_label': '[00:14:48]',
+                       'url': 'https://www.youtube.com/watch?v=jj-GWZEtOc0&t=888s',
+                       'markdown': '[00:14:48](https://www.youtube.com/watch?v=jj-GWZEtOc0&t=888s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Kiez0kPNuRk',
+                       'title': 'Roof Measurement → Supplement → Signed Contract in One Workflow | '
+                                'TradeForge for Roofers',
+                       'channel': 'Tradeforge CRM',
+                       'author': 'Tradeforge CRM',
+                       'text': "Now, it's on their dashboard and it's going to be part of the entire "
+                               'process because the adjuster will ask for that for sure.',
+                       'tip': "Now, it's on their dashboard and it's going to be part of the entire "
+                              'process because the adjuster will ask for that for sure.',
+                       'timestamp': 42,
+                       'timestamp_seconds': 42,
+                       'timestamp_label': '[00:00:42]',
+                       'url': 'https://www.youtube.com/watch?v=Kiez0kPNuRk&t=42s',
+                       'markdown': '[00:00:42](https://www.youtube.com/watch?v=Kiez0kPNuRk&t=42s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sICOGLUjsao',
+                       'title': 'The Basic Process of Supplementing Insurance Claims for Roofers',
+                       'channel': 'Roof Sales Mastery',
+                       'author': 'Roof Sales Mastery',
+                       'text': "They can say no to you, but they can't exactly say no to their customer if "
+                               "what you're asking for is legit.",
+                       'tip': "They can say no to you, but they can't exactly say no to their customer if "
+                              "what you're asking for is legit.",
+                       'timestamp': 1143,
+                       'timestamp_seconds': 1143,
+                       'timestamp_label': '[00:19:03]',
+                       'url': 'https://www.youtube.com/watch?v=sICOGLUjsao&t=1143s',
+                       'markdown': '[00:19:03](https://www.youtube.com/watch?v=sICOGLUjsao&t=1143s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rui1iBgQxWY',
+                       'title': 'Should You Designate an In-House Supplementer for Roof Claims?',
+                       'channel': 'Roof Sales Mastery',
+                       'author': 'Roof Sales Mastery',
+                       'text': 'Adjusters are constantly banking on your ignorance.',
+                       'tip': 'Adjusters are constantly banking on your ignorance.',
+                       'timestamp': 482,
+                       'timestamp_seconds': 482,
+                       'timestamp_label': '[00:08:02]',
+                       'url': 'https://www.youtube.com/watch?v=rui1iBgQxWY&t=482s',
+                       'markdown': '[00:08:02](https://www.youtube.com/watch?v=rui1iBgQxWY&t=482s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Jvj3So17gtA',
+                       'title': 'Maxing Out Roof Only Claims',
+                       'channel': 'Roof Sales Mastery',
+                       'author': 'Roof Sales Mastery',
+                       'text': "They believe that you need three trades because that's the smoke screen "
+                               'objection that adjusters give.',
+                       'tip': "They believe that you need three trades because that's the smoke screen "
+                              'objection that adjusters give.',
+                       'timestamp': 35,
+                       'timestamp_seconds': 35,
+                       'timestamp_label': '[00:00:35]',
+                       'url': 'https://www.youtube.com/watch?v=Jvj3So17gtA&t=35s',
+                       'markdown': '[00:00:35](https://www.youtube.com/watch?v=Jvj3So17gtA&t=35s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wi2YpyR1was',
+                       'title': 'Supplement Training: Step by Step Instructions for Roofing Contractors',
+                       'channel': 'American Roof Supplements',
+                       'author': 'American Roof Supplements',
+                       'text': 'Then I do the first supplement for free.',
+                       'tip': 'Then I do the first supplement for free.',
+                       'timestamp': 104,
+                       'timestamp_seconds': 104,
+                       'timestamp_label': '[00:01:44]',
+                       'url': 'https://www.youtube.com/watch?v=wi2YpyR1was&t=104s',
+                       'markdown': '[00:01:44](https://www.youtube.com/watch?v=wi2YpyR1was&t=104s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TkCEjbO6vQs',
+                       'title': 'Xactimate 101 How Roofing Supplements Actually Work (Beginner’s Guide)',
+                       'channel': 'American Roof Supplements',
+                       'author': 'American Roof Supplements',
+                       'text': 'A professional supplement is just as much about knowing what not to '
+                               'request as knowing what to add.',
+                       'tip': 'A professional supplement is just as much about knowing what not to request '
+                              'as knowing what to add.',
+                       'timestamp': 599,
+                       'timestamp_seconds': 599,
+                       'timestamp_label': '[00:09:59]',
+                       'url': 'https://www.youtube.com/watch?v=TkCEjbO6vQs&t=599s',
+                       'markdown': '[00:09:59](https://www.youtube.com/watch?v=TkCEjbO6vQs&t=599s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'}]}

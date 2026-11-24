@@ -1,1114 +1,857 @@
 from __future__ import annotations
 
-ENGINE_1 = r'''
-# Module 1: initialize one local SQLite ledger before starting workers.
-import hashlib
-import json
-import sqlite3
-from contextlib import contextmanager
-from datetime import date, datetime
-
-SCHEMA = """
-CREATE TABLE IF NOT EXISTS requests (
-    request_key TEXT PRIMARY KEY,
-    payload_hash TEXT NOT NULL,
-    result_json TEXT NOT NULL
-);
-CREATE TABLE IF NOT EXISTS leads (
-    lead_id TEXT PRIMARY KEY,
-    source TEXT NOT NULL,
-    external_id TEXT NOT NULL,
-    payload_json TEXT NOT NULL,
-    score INTEGER NOT NULL CHECK(score BETWEEN 0 AND 100),
-    disposition TEXT NOT NULL CHECK(disposition IN ('qualified', 'scrubbed')),
-    UNIQUE(source, external_id)
-);
-CREATE TABLE IF NOT EXISTS contracts (
-    contract_id TEXT PRIMARY KEY,
-    lead_id TEXT NOT NULL UNIQUE REFERENCES leads(lead_id),
-    monthly_cents INTEGER NOT NULL
-        CHECK(typeof(monthly_cents) = 'integer' AND monthly_cents > 0),
-    state TEXT NOT NULL CHECK(state IN
-        ('scoped', 'priced', 'signed', 'verified', 'active', 'paused', 'closed'))
-);
-CREATE TABLE IF NOT EXISTS evidence (
-    evidence_id INTEGER PRIMARY KEY,
-    contract_id TEXT NOT NULL REFERENCES contracts(contract_id),
-    kind TEXT NOT NULL,
-    digest TEXT NOT NULL CHECK(length(digest) = 64),
-    UNIQUE(contract_id, kind, digest)
-);
-CREATE TABLE IF NOT EXISTS transitions (
-    transition_id INTEGER PRIMARY KEY,
-    request_key TEXT NOT NULL UNIQUE,
-    contract_id TEXT NOT NULL REFERENCES contracts(contract_id),
-    old_state TEXT NOT NULL,
-    new_state TEXT NOT NULL,
-    changed_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
-);
-CREATE TABLE IF NOT EXISTS services (
-    service_id TEXT PRIMARY KEY,
-    contract_id TEXT NOT NULL REFERENCES contracts(contract_id),
-    period TEXT NOT NULL,
-    minutes INTEGER NOT NULL CHECK(typeof(minutes) = 'integer' AND minutes > 0),
-    acceptance_digest TEXT NOT NULL CHECK(length(acceptance_digest) = 64),
-    UNIQUE(contract_id, period)
-);
-CREATE TABLE IF NOT EXISTS invoices (
-    invoice_id TEXT PRIMARY KEY,
-    service_id TEXT NOT NULL UNIQUE REFERENCES services(service_id),
-    period TEXT NOT NULL,
-    cents INTEGER NOT NULL CHECK(typeof(cents) = 'integer' AND cents > 0)
-);
-CREATE TABLE IF NOT EXISTS receipts (
-    receipt_id TEXT PRIMARY KEY,
-    bank_ref TEXT NOT NULL UNIQUE,
-    invoice_id TEXT NOT NULL REFERENCES invoices(invoice_id),
-    period TEXT NOT NULL,
-    cents INTEGER NOT NULL CHECK(typeof(cents) = 'integer' AND cents > 0)
-);
-CREATE TABLE IF NOT EXISTS costs (
-    cost_id TEXT PRIMARY KEY,
-    source_ref TEXT NOT NULL UNIQUE,
-    expense_period TEXT NOT NULL,
-    cash_period TEXT NOT NULL,
-    category TEXT NOT NULL,
-    cents INTEGER NOT NULL CHECK(typeof(cents) = 'integer' AND cents > 0)
-);
-CREATE VIEW IF NOT EXISTS reconciliation AS
-WITH periods AS (
-    SELECT period FROM invoices
-    UNION SELECT period FROM receipts
-    UNION SELECT expense_period FROM costs
-    UNION SELECT cash_period FROM costs
-), totals AS (
-    SELECT p.period,
-        COALESCE((SELECT SUM(i.cents) FROM invoices i
-                  WHERE i.period = p.period), 0) AS revenue_cents,
-        COALESCE((SELECT SUM(r.cents) FROM receipts r
-                  WHERE r.period = p.period), 0) AS collected_cents,
-        COALESCE((SELECT SUM(c.cents) FROM costs c
-                  WHERE c.expense_period = p.period), 0) AS expense_cents,
-        COALESCE((SELECT SUM(c.cents) FROM costs c
-                  WHERE c.cash_period = p.period), 0) AS paid_cents
-    FROM periods p
-)
-SELECT period, revenue_cents, collected_cents, expense_cents, paid_cents,
-       revenue_cents - expense_cents AS operating_profit_cents,
-       collected_cents - paid_cents AS cash_change_cents
-FROM totals;
-CREATE VIEW IF NOT EXISTS receivables AS
-SELECT i.invoice_id, i.period, i.cents AS invoiced_cents,
-       COALESCE(SUM(r.cents), 0) AS collected_cents,
-       i.cents - COALESCE(SUM(r.cents), 0) AS outstanding_cents
-FROM invoices i
-LEFT JOIN receipts r ON r.invoice_id = i.invoice_id
-GROUP BY i.invoice_id, i.period, i.cents;
-"""
-
-def connect(path):
-    db = sqlite3.connect(str(path), timeout=30, isolation_level=None)
-    db.row_factory = sqlite3.Row
-    db.execute("PRAGMA foreign_keys = ON")
-    db.execute("PRAGMA busy_timeout = 30000")
-    db.execute("PRAGMA synchronous = FULL")
-    return db
-
-def initialize(path):
-    db = connect(path)
-    try:
-        db.execute("PRAGMA journal_mode = WAL")
-        db.executescript(SCHEMA)
-    finally:
-        db.close()
-
-def canonical(value):
-    return json.dumps(value, sort_keys=True, separators=(",", ":"),
-                      allow_nan=False)
-
-def positive_integer(value):
-    if type(value) is not int or value <= 0:
-        raise ValueError("A positive integer is required")
-    return value
-
-def period_value(value):
-    parsed = datetime.strptime(value, "%Y-%m")
-    if parsed.strftime("%Y-%m") != value:
-        raise ValueError("Use a zero-padded calendar period")
-    return value
-
-def digest_value(value):
-    if len(value) != 64 or any(c not in "0123456789abcdef" for c in value):
-        raise ValueError("Use a lowercase SHA-256 document digest")
-    return value
-
-@contextmanager
-def write_transaction(db):
-    db.execute("BEGIN IMMEDIATE")
-    try:
-        yield
-        db.execute("COMMIT")
-    except BaseException:
-        if db.in_transaction:
-            db.execute("ROLLBACK")
-        raise
-
-def once(db, request_key, payload, action):
-    if not request_key:
-        raise ValueError("A durable request key is required")
-    fingerprint = hashlib.sha256(canonical(payload).encode("utf-8")).hexdigest()
-    with write_transaction(db):
-        existing = db.execute(
-            "SELECT payload_hash, result_json FROM requests WHERE request_key = ?",
-            (request_key,)
-        ).fetchone()
-        if existing:
-            if existing["payload_hash"] != fingerprint:
-                raise ValueError("Request key was reused with different contents")
-            return json.loads(existing["result_json"])
-        result = action()
-        db.execute(
-            "INSERT INTO requests VALUES (?, ?, ?)",
-            (request_key, fingerprint, canonical(result))
-        )
-        return result
-'''
-
-ENGINE_2 = r'''
-# Module 2: score an inspected opportunity and create its scoped contract.
-def intake(db, request_key, lead_id, contract_id, source, external_id,
-           monthly_cents, direct_cost_cents, route_fit, access_ready):
-    positive_integer(monthly_cents)
-    positive_integer(direct_cost_cents)
-    if type(route_fit) is not bool or type(access_ready) is not bool:
-        raise ValueError("Route and access findings must be explicit booleans")
-    payload = {
-        "operation": "intake", "lead_id": lead_id, "contract_id": contract_id,
-        "source": source, "external_id": external_id,
-        "monthly_cents": monthly_cents, "direct_cost_cents": direct_cost_cents,
-        "route_fit": route_fit, "access_ready": access_ready
-    }
-
-    def action():
-        encoded = canonical(payload)
-        existing = db.execute(
-            "SELECT lead_id, payload_json, score, disposition FROM leads "
-            "WHERE source = ? AND external_id = ?", (source, external_id)
-        ).fetchone()
-        if existing:
-            if existing["payload_json"] != encoded:
-                raise ValueError("Existing lead requires an explicit reviewed revision")
-            return {"lead_id": existing["lead_id"], "score": existing["score"],
-                    "disposition": existing["disposition"]}
-        contribution_ok = (
-            (monthly_cents - direct_cost_cents) * 100 >= monthly_cents * 20
-        )
-        score = 20 + (40 if contribution_ok else 0)
-        score += 20 if route_fit else 0
-        score += 20 if access_ready else 0
-        disposition = "qualified" if score >= 80 else "scrubbed"
-        db.execute(
-            "INSERT INTO leads VALUES (?, ?, ?, ?, ?, ?)",
-            (lead_id, source, external_id, encoded, score, disposition)
-        )
-        if disposition == "qualified":
-            db.execute(
-                "INSERT INTO contracts VALUES (?, ?, ?, 'scoped')",
-                (contract_id, lead_id, monthly_cents)
-            )
-        return {"lead_id": lead_id, "score": score, "disposition": disposition}
-
-    return once(db, request_key, payload, action)
-'''
-
-ENGINE_3 = r'''
-# Module 3: evidence-backed verification; no financial escrow is implemented.
-REQUIRED_EVIDENCE = frozenset({
-    "signed_scope", "wage_plan", "safety_screen", "insurance", "access_test"
-})
-ALLOWED_TRANSITIONS = {
-    "scoped": {"priced", "closed"},
-    "priced": {"signed", "closed"},
-    "signed": {"verified", "closed"},
-    "verified": {"active", "closed"},
-    "active": {"paused", "closed"},
-    "paused": {"active", "closed"},
-    "closed": set()
-}
-
-def attach_evidence(db, request_key, contract_id, kind, digest):
-    if kind not in REQUIRED_EVIDENCE:
-        raise ValueError("Use a supported evidence category")
-    digest_value(digest)
-    payload = {"operation": "evidence", "contract_id": contract_id,
-               "kind": kind, "digest": digest}
-
-    def action():
-        db.execute(
-            "INSERT INTO evidence(contract_id, kind, digest) VALUES (?, ?, ?) "
-            "ON CONFLICT(contract_id, kind, digest) DO NOTHING",
-            (contract_id, kind, digest)
-        )
-        return {"contract_id": contract_id, "kind": kind, "digest": digest}
-
-    return once(db, request_key, payload, action)
-
-def transition(db, request_key, contract_id, target):
-    payload = {"operation": "transition", "contract_id": contract_id,
-               "target": target}
-
-    def action():
-        row = db.execute(
-            "SELECT state FROM contracts WHERE contract_id = ?", (contract_id,)
-        ).fetchone()
-        if row is None:
-            raise ValueError("Contract does not exist")
-        old = row["state"]
-        if target not in ALLOWED_TRANSITIONS[old]:
-            raise ValueError("State transition is disallowed")
-        if target in {"verified", "active"}:
-            present = {
-                item["kind"] for item in db.execute(
-                    "SELECT kind FROM evidence WHERE contract_id = ?",
-                    (contract_id,)
-                )
-            }
-            if not REQUIRED_EVIDENCE.issubset(present):
-                raise ValueError("Required verification evidence is incomplete")
-        changed = db.execute(
-            "UPDATE contracts SET state = ? WHERE contract_id = ? AND state = ?",
-            (target, contract_id, old)
-        ).rowcount
-        if changed != 1:
-            raise RuntimeError("Contract state changed unexpectedly")
-        db.execute(
-            "INSERT INTO transitions(request_key, contract_id, old_state, new_state) "
-            "VALUES (?, ?, ?, ?)", (request_key, contract_id, old, target)
-        )
-        return {"contract_id": contract_id, "state": target}
-
-    return once(db, request_key, payload, action)
-'''
-
-ENGINE_4 = r'''
-# Module 4: close a completed monthly service and issue its invoice atomically.
-def close_service(db, request_key, contract_id, service_id, invoice_id,
-                  period, minutes, acceptance_digest):
-    period_value(period)
-    positive_integer(minutes)
-    digest_value(acceptance_digest)
-    payload = {
-        "operation": "close_service", "contract_id": contract_id,
-        "service_id": service_id, "invoice_id": invoice_id, "period": period,
-        "minutes": minutes, "acceptance_digest": acceptance_digest
-    }
-
-    def action():
-        contract = db.execute(
-            "SELECT state, monthly_cents FROM contracts WHERE contract_id = ?",
-            (contract_id,)
-        ).fetchone()
-        if contract is None or contract["state"] != "active":
-            raise ValueError("Only active contracts can close monthly service")
-        db.execute(
-            "INSERT INTO services VALUES (?, ?, ?, ?, ?)",
-            (service_id, contract_id, period, minutes, acceptance_digest)
-        )
-        db.execute(
-            "INSERT INTO invoices VALUES (?, ?, ?, ?)",
-            (invoice_id, service_id, period, contract["monthly_cents"])
-        )
-        return {"invoice_id": invoice_id, "cents": contract["monthly_cents"]}
-
-    return once(db, request_key, payload, action)
-'''
-
-ENGINE_5 = r'''
-# Module 5: match bank receipts and record expense versus payment periods.
-def receive_cash(db, request_key, receipt_id, bank_ref, invoice_id, period, cents):
-    period_value(period)
-    positive_integer(cents)
-    payload = {
-        "operation": "receive_cash", "receipt_id": receipt_id, "bank_ref": bank_ref,
-        "invoice_id": invoice_id, "period": period, "cents": cents
-    }
-
-    def action():
-        row = db.execute(
-            "SELECT outstanding_cents FROM receivables WHERE invoice_id = ?",
-            (invoice_id,)
-        ).fetchone()
-        if row is None or cents > row["outstanding_cents"]:
-            raise ValueError("Receipt exceeds the invoice balance or lacks an invoice")
-        db.execute(
-            "INSERT INTO receipts VALUES (?, ?, ?, ?, ?)",
-            (receipt_id, bank_ref, invoice_id, period, cents)
-        )
-        return {"receipt_id": receipt_id, "cents": cents}
-
-    return once(db, request_key, payload, action)
-
-def record_cost(db, request_key, cost_id, source_ref, expense_period,
-                cash_period, category, cents):
-    period_value(expense_period)
-    period_value(cash_period)
-    positive_integer(cents)
-    if category not in {"wages", "subcontract", "supplies", "travel",
-                        "relief_repairs", "overhead"}:
-        raise ValueError("Use a supported operating cost category")
-    payload = {
-        "operation": "record_cost", "cost_id": cost_id, "source_ref": source_ref,
-        "expense_period": expense_period, "cash_period": cash_period,
-        "category": category, "cents": cents
-    }
-
-    def action():
-        db.execute(
-            "INSERT INTO costs VALUES (?, ?, ?, ?, ?, ?)",
-            (cost_id, source_ref, expense_period, cash_period, category, cents)
-        )
-        return {"cost_id": cost_id, "cents": cents}
-
-    return once(db, request_key, payload, action)
-
-def snapshot(db):
-    db.execute("BEGIN")
-    try:
-        monthly = [
-            dict(row) for row in db.execute(
-                "SELECT * FROM reconciliation ORDER BY period"
-            )
-        ]
-        balances = [
-            dict(row) for row in db.execute(
-                "SELECT * FROM receivables ORDER BY invoice_id"
-            )
-        ]
-        db.execute("COMMIT")
-        return {"monthly": monthly, "receivables": balances}
-    except BaseException:
-        if db.in_transaction:
-            db.execute("ROLLBACK")
-        raise
-'''
-
-ENGINE_6 = r'''
-# Module 6: isolated acceptance checks, including concurrent replay.
-from concurrent.futures import ThreadPoolExecutor
-from pathlib import Path
-from tempfile import TemporaryDirectory
-
-def require(condition, message):
-    if not condition:
-        raise AssertionError(message)
-
-def expect_value_error(action):
-    try:
-        action()
-    except ValueError:
-        return
-    raise AssertionError("Expected a rejected operation")
-
-def run_reference_checks():
-    with TemporaryDirectory() as directory:
-        path = Path(directory) / "cohort.sqlite3"
-        initialize(path)
-        db = connect(path)
-        try:
-            intake(db, "lead:1", "lead-1", "contract-1", "referral", "site-1",
-                   100000, 60000, True, True)
-            transition(db, "price:1", "contract-1", "priced")
-            transition(db, "sign:1", "contract-1", "signed")
-            expect_value_error(
-                lambda: transition(db, "early:1", "contract-1", "verified")
-            )
-            for kind in sorted(REQUIRED_EVIDENCE):
-                attach_evidence(
-                    db, "evidence:" + kind, "contract-1", kind,
-                    hashlib.sha256(kind.encode("utf-8")).hexdigest()
-                )
-            transition(db, "verify:1", "contract-1", "verified")
-            transition(db, "activate:1", "contract-1", "active")
-            close_service(
-                db, "service:1", "contract-1", "service-1", "invoice-1",
-                "2026-01", 600, "a" * 64
-            )
-
-            def worker(_):
-                connection = connect(path)
-                try:
-                    return receive_cash(
-                        connection, "receipt:1", "receipt-1", "bank-line-1",
-                        "invoice-1", "2026-02", 60000
-                    )
-                finally:
-                    connection.close()
-
-            with ThreadPoolExecutor(max_workers=8) as pool:
-                results = list(pool.map(worker, range(16)))
-            require(all(item == results[0] for item in results),
-                    "Concurrent replays must return identical results")
-            require(
-                db.execute("SELECT COUNT(*) FROM receipts").fetchone()[0] == 1,
-                "Concurrent replays must create exactly one receipt"
-            )
-            expect_value_error(
-                lambda: receive_cash(
-                    db, "receipt:1", "receipt-1", "bank-line-1",
-                    "invoice-1", "2026-02", 50000
-                )
-            )
-            expect_value_error(
-                lambda: receive_cash(
-                    db, "receipt:2", "receipt-2", "bank-line-2",
-                    "invoice-1", "2026-02", 50000
-                )
-            )
-            record_cost(
-                db, "cost:1", "cost-1", "payroll-line-1",
-                "2026-01", "2026-02", "wages", 10000
-            )
-            report = snapshot(db)
-            by_period = {row["period"]: row for row in report["monthly"]}
-            require(by_period["2026-01"]["operating_profit_cents"] == 90000,
-                    "Accrued operating profit must reconcile")
-            require(by_period["2026-02"]["cash_change_cents"] == 50000,
-                    "Collection less paid expense must reconcile")
-            require(report["receivables"][0]["outstanding_cents"] == 40000,
-                    "Remaining receivable must equal unpaid invoice value")
-            require(
-                db.execute("SELECT COUNT(*) FROM requests WHERE request_key = ?",
-                           ("receipt:2",)).fetchone()[0] == 0,
-                "Rejected receipts must roll back their request records"
-            )
-            require(db.execute("PRAGMA integrity_check").fetchone()[0] == "ok",
-                    "SQLite integrity check must succeed")
-            require(not list(db.execute("PRAGMA foreign_key_check")),
-                    "Every foreign key must resolve")
-            return {"checks": "passed", "concurrent_replays": 16,
-                    "receipt_rows": 1, "outstanding_cents": 40000}
-        finally:
-            db.close()
-
-# Execute run_reference_checks() explicitly after copying all six modules.
-# This reference supplies checks; it does not claim they were executed here.
-'''
-
-CHAPTER_7 = {
-    "id": "Q7",
-    "chapter_id": "Q7",
-    "chapter_number": 7,
-    "question_number": 7,
-    "slug": "commercial-cleaning-end-to-end-production-ledger-90-day-cohort",
-    "question_prompt": "How does an operator execute commercial cleaning contracts end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
-    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
-    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
-    "subtitle": "ISSA-Informed Bidding, W-2 Supervisor Pods, OSHA Chemical Controls, SQLite Event Integrity, and Net-30 Cash Reconciliation",
-    "layout_template": "research_exhibit",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #10, Commercial Cleaning Contracts, ranks #23 with a Money-to-Manpower "
-        "Score of 82/100: this is a labor-intensive production business, not software "
-        "revenue disguised as facilities work. This chapter maps four operator plays: "
-        "recurring commercial routes, medical janitorial scopes, production-rate bidding, "
-        "and supervisor-led scheduling, inspection, and billing. The operating unit is "
-        "five full-time people plus four contractor relationships, with paid capacity "
-        "checked before every replacement or expansion. A six-module SQLite reference "
-        "connects qualified intake to verified service, invoices, receipts, and reconciled "
-        "cash. The worked quarter produces $181,250 revenue and $21,750 operating profit, "
-        "matching the $725,000 Base annual revenue and $87,000 owner profit. Conservative "
-        "and Scaled annual owner profits remain $20,000 and $192,000 respectively."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual cleaning contract revenue; no client operating revenue included",
-            "note": "8% net margin; $20,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$725,000",
-            "context": "Annual cleaning contract revenue; $638,000 annual operating costs",
-            "note": "12.0% net margin; $87,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual cleaning contract revenue; expansion requires additional paid capacity",
-            "note": "16% net margin; $192,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Convert inspected demand into four capacity-priced operator plays",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a site record, not a square-footage quote. Assign one durable "
-                    "lead identifier to the property, buyer, service address, referral source, "
-                    "and requested start date. Walk the site with the facility contact and "
-                    "separate cleanable floor area from leased area; identify restroom fixtures, "
-                    "occupied workstations, flooring, waste streams, security windows, and "
-                    "daytime interruptions. For this chapter, the four mapped plays are P1 "
-                    "recurring commercial routes, P2 medical janitorial scopes, P3 production-rate "
-                    "bidding, and P4 supervisor-pod execution with scheduling, inspections, and "
-                    "billing. They are connected operating motions, not four independently "
-                    "additive revenue forecasts. P1 supplies route density; P2 supplies explicitly "
-                    "bounded clinical work; P3 protects contribution; P4 prevents accepted work "
-                    "from becoming unbilled labor. Record the incumbent termination date and "
-                    "purchase-order requirements before promising mobilization. A qualified lead "
-                    "must fit both the service window and the paid labor envelope. The reference "
-                    "score favors contribution, route fit, and tested access, but a high score "
-                    "does not authorize service. The signed scope, site safety assessment, "
-                    "insurance evidence, and payroll plan still control activation. Reject "
-                    "unpriced isolation-room work and ambiguous sharps handling rather than "
-                    "burying those tasks inside ordinary trash removal."
-                ),
-                (
-                    "Build the estimate from task quantities multiplied by visit frequency and "
-                    "measured minutes. Use licensed ISSA estimating materials as a starting "
-                    "reference, then time the actual restroom, vacuuming, hard-floor, and "
-                    "touchpoint sequence during a supervised trial. Do not treat a published "
-                    "production rate as a promise across different furniture density or soil "
-                    "loads. Add setup, chemical preparation, equipment movement, paid travel, "
-                    "quality checks, and relief coverage separately. An illustrative Base month "
-                    "supports 1,040 service hours: 720 employee production hours and 320 hours "
-                    "purchased from genuine independent service businesses. Five full-time "
-                    "people provide approximately 866.67 paid hours monthly, leaving 146.67 "
-                    "employee hours for supervision, travel, training, and administration. At "
-                    "$25 loaded employee cost per paid hour, employee expense is approximately "
-                    "$21,666.67; subcontract service at $40 per hour adds $12,800. Revenue of "
-                    "$60,416.67 therefore averages $58.09 per delivered service hour, before "
-                    "supplies, transport, relief, and overhead. That arithmetic is a planning "
-                    "envelope, not permission to schedule every minute. Reprice a site when "
-                    "observed production exceeds its allowance, and verify that medical "
-                    "dwell-time requirements fit the actual sequence rather than an optimistic "
-                    "spreadsheet."
-                ),
-                (
-                    "Assign the five full-time positions as one working supervisor and four "
-                    "cleaners; the supervisor's compensation is already inside the labor budget. "
-                    "The four contractor relationships buy defined service scopes, not four "
-                    "extra unpaid people or disguised employee shifts. Classification follows "
-                    "the actual relationship under applicable wage, tax, and state tests; "
-                    "a certificate of insurance and a signed contractor form do not settle "
-                    "that question. Use W-2 payroll when the operating facts require it. Under "
-                    "29 U.S.C. 207, covered nonexempt employees generally earn overtime after "
-                    "forty hours in a workweek; travel between job sites during the workday "
-                    "is addressed by 29 CFR 785.38. Check each person's weekly schedule rather "
-                    "than averaging overtime away across the month. The modeled monthly direct "
-                    "cost also includes $3,600 supplies, $2,400 transport, and $4,700 of "
-                    "scheduled relief labor and equipment upkeep. Add $8,000 overhead to "
-                    "reach approximately $53,166.67 total operating cost. The quoted "
-                    "$3,000–$14,000 monthly overhead planning range cannot represent all "
-                    "payroll-inclusive spending at Base volume. Customer concentration remains "
-                    "a separate exposure: replacing one large medical account can consume "
-                    "the whole supervisor's mobilization capacity even when annual revenue "
-                    "appears unchanged."
-                ),
-            ],
-            "table": {
-                "caption": "Four Mapped Plays and the Four-Person Production Envelope",
-                "headers": [
-                    "Operating motion and accountable production owner",
-                    "Required field evidence before committing capacity",
-                    "Economic constraint and practical failure signal",
-                    "Recorded output feeding the next operating step",
-                ],
-                "rows": [
-                    [
-                        "P1 recurring commercial routes, owned by the working supervisor",
-                        "Measured cleanable area, fixture counts, access windows, and visit frequency",
-                        "Reject distant stops when paid travel destroys the quoted contribution",
-                        "A signed task-frequency schedule attached to the durable contract identifier",
-                    ],
-                    [
-                        "P2 medical janitorial scopes, supervised with site-specific exposure assessment",
-                        "Documented room boundaries, approved products, exposure findings, and escalation contacts",
-                        "Exclude unpriced sharps handling and separately estimate required protective procedures",
-                        "A medical scope appendix specifying responsibilities and cleaning acceptance evidence",
-                    ],
-                    [
-                        "P3 production-rate bidding, maintained by the supervisor using timed trials",
-                        "ISSA-informed task estimates reconciled against observed site-specific production minutes",
-                        "Budget 1,040 delivered service hours before accepting additional recurring commitments",
-                        "A costed estimate separating wages, purchased service, supplies, and supervision",
-                    ],
-                    [
-                        "P4 supervisor-pod execution, connecting scheduling, inspection records, and billing",
-                        "Assigned workers, completed access tests, inspection results, and exception ownership",
-                        "Reserve 146.67 employee hours for travel, supervision, training, and administration",
-                        "Accepted monthly service records that release invoices without duplicate posting",
-                    ],
-                    [
-                        "Five full-time positions, including one paid working supervisor",
-                        "Weekly payroll records showing work, travel, training, and overtime exposure",
-                        "Approximately $21,666.67 monthly loaded employee expense within the Base envelope",
-                        "Payroll-source identifiers reconciled against cost records and bank settlement evidence",
-                    ],
-                    [
-                        "Four contractor relationships purchasing distinct independently operated service scopes",
-                        "Documented classification analysis, insurance coverage, scope responsibility, and service acceptance",
-                        "Approximately 320 purchased service hours at an illustrative $40 hourly equivalent",
-                        "Approved subcontract invoices matched to distinct sites and accepted service periods",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the minutes that disappear between the bid and the shift",
-                "body": "Veteran cleaning operators defend route economics with observed production evidence, not optimistic area ratios.",
-                "items": [
-                    "Time the last restroom of the shift, not only the first demonstration restroom; fatigue and restocking often change the production allowance.",
-                    "Run the actual key, alarm, elevator, and loading-dock sequence before the first paid shift; record failed access as a mobilization defect.",
-                    "Keep floor restoration and periodic carpet extraction outside ordinary nightly frequency unless their labor and machine costs are explicitly funded.",
-                    "Photograph supply levels and equipment condition without patient information; compare consumption per visit before blaming unexplained margin erosion on wages.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Install a transactional production ledger before automating handoffs",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use one authoritative operational subledger for contract state, accepted "
-                    "service, invoices, cash receipts, and operating costs. The six modules "
-                    "below are sequential Python source fragments: concatenate them in order "
-                    "into one reference script, initialize a local database once, and give "
-                    "each worker its own connection. They use only the standard library. "
-                    "Store money as integer cents and durations as integer minutes; never "
-                    "round a floating-point subtotal into the ledger. A source-system key "
-                    "identifies the business object, while a separate request key identifies "
-                    "the attempted operation. Both matter: retry protection alone cannot stop "
-                    "two different requests from billing the same monthly service. UNIQUE "
-                    "constraints therefore protect source leads, contract periods, service "
-                    "invoices, bank references, and cost references independently. Every "
-                    "mutation begins with BEGIN IMMEDIATE, checks existing state under the "
-                    "same write lock, inserts all dependent records, and commits the "
-                    "idempotency result atomically. Concurrent retries either observe the "
-                    "committed result or wait; changed contents under the same key fail. "
-                    "A lock timeout returns failure for a later same-key retry. There is "
-                    "no read-then-write race outside the transaction in these write paths, "
-                    "and a failed operation leaves neither partial business records nor "
-                    "a successful request marker."
-                ),
-                (
-                    "The verification state machine is scoped, priced, signed, verified, "
-                    "active, paused, and closed. Its hold is an internal restriction on "
-                    "mobilization, not a customer-money escrow arrangement. Contract funds "
-                    "remain ordinary cleaning receipts unless a separately designed banking "
-                    "arrangement actually exists. Attach document digests for signed scope, "
-                    "wage planning, safety screening, insurance, and access testing; the "
-                    "digest links to a controlled document repository and does not prove "
-                    "that the document is accurate or current. The supervisor must review "
-                    "the contents, monitor expiry dates outside this compact reference, "
-                    "and pause service when a required condition lapses. Module four "
-                    "implements one completed recurring service period per contract and "
-                    "atomically creates its invoice at the stored monthly price. Do not "
-                    "feed partial-month work, deposits, adjustments, or variable project "
-                    "charges into that function. Those require explicit schedules, credit "
-                    "documents, and additional posting types. Cleaning revenue represents "
-                    "the operator's earned service fees; a medical customer's collections, "
-                    "a property owner's rent roll, and customer purchase-order ceilings "
-                    "are not operator revenue. Completion evidence must support the "
-                    "service period, while the financial close separately tests whether "
-                    "recognition matches the actual contract and accounting policy."
-                ),
-                (
-                    "Keep this SQLite file on local persistent storage behind one "
-                    "authorized ledger service, not on a shared network filesystem. "
-                    "Restrict direct database writes so scheduling connectors cannot bypass "
-                    "the transaction functions. Connecteam or Swept can supply assignments "
-                    "and inspection exports; QuickBooks Online can receive reviewed invoice "
-                    "and expense exports. They are peripheral systems, not competing "
-                    "sources of invoice identity. Never make a remote billing call inside "
-                    "a database transaction and assume it shares the commit. This "
-                    "reference deliberately performs no external side effects; an added "
-                    "integration needs a transactional outbox and destination-side "
-                    "idempotency, with delivery receipts reconciled independently. Module "
-                    "five matches bank cash without allowing receipts above the invoice "
-                    "balance, and its snapshot uses one read transaction for consistent "
-                    "monthly and receivable views. Costs carry separate expense and "
-                    "payment periods so accrual profit does not masquerade as available "
-                    "cash. The compact model supports fully paid cost documents, not "
-                    "partial accounts-payable settlements. Module six supplies concurrent "
-                    "replay, rejected-transition, overpayment, rollback, and integrity "
-                    "checks; these checks are provided for execution, not reported as "
-                    "already run. Back up through SQLite's backup interface and test "
-                    "restoration before relying on the ledger for a payroll-week close."
-                ),
-            ],
-            "table": {
-                "caption": "6-Module Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table",
-                "headers": [
-                    "Sequential module and specific production responsibility",
-                    "Copy-pasteable Python and embedded SQLite implementation",
-                    "Concurrency boundary and financial integrity protection",
-                    "Operator acceptance evidence before live operational use",
-                ],
-                "rows": [
-                    [
-                        "Module one establishes constrained storage and the atomic request wrapper",
-                        ENGINE_1,
-                        "BEGIN IMMEDIATE serializes writers; independent UNIQUE constraints defend natural identities",
-                        "Initialize once, restrict direct writes, and verify a restored local backup",
-                    ],
-                    [
-                        "Module two converts inspected intake into scored and scoped opportunities",
-                        ENGINE_2,
-                        "Lead identity and request identity are checked within the same transaction",
-                        "Review real production costs before allowing the illustrative qualification score",
-                    ],
-                    [
-                        "Module three enforces document-backed verification and controlled service activation",
-                        ENGINE_3,
-                        "State checks, evidence checks, transition history, and updates commit together",
-                        "Verify document contents and current validity rather than trusting digests alone",
-                    ],
-                    [
-                        "Module four posts accepted recurring service and its invoice together",
-                        ENGINE_4,
-                        "One contract-period service and one service invoice prevent duplicate monthly billing",
-                        "Use completed fixed-fee periods only; route adjustments through separately designed documents",
-                    ],
-                    [
-                        "Module five matches receipts and separates expense recognition from payment",
-                        ENGINE_5,
-                        "Locked balance checks prevent concurrent over-allocation; snapshots share one read transaction",
-                        "Match each bank line to its invoice and each cost to evidence",
-                    ],
-                    [
-                        "Module six exercises replay, rollback, receivable arithmetic, and database integrity",
-                        ENGINE_6,
-                        "Sixteen concurrent same-key receipts must create exactly one committed receipt",
-                        "Execute the supplied checks and retain actual results before operational adoption",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before a site becomes active",
-                "body": "Activation requires independently checked operational evidence; a sales signature alone does not release a crew.",
-                "items": [
-                    "Confirm cleanable quantities, task frequencies, contractual price, purchase-order identity, and the first invoice recipient against the signed scope.",
-                    "Verify paid weekly capacity, overtime treatment, between-site travel, and the actual classification of every assigned service provider.",
-                    "Review chemical labels, safety data sheets, exposure findings, protective equipment, and the site's sharps and incident-response boundaries.",
-                    "Test physical access and alarm procedures, inspect insurance evidence, and assign one supervisor to resolve the first-shift exceptions.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Run each shift as evidence-backed production and close exceptions before billing",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Publish the coming week's route only after comparing contracted minutes "
-                    "with paid availability by person and service window. The supervisor "
-                    "owns assignment changes, substitute training, and client communication; "
-                    "cleaners should not discover a medical scope change from an informal "
-                    "message left at reception. Each shift packet includes site identity, "
-                    "access instructions, task frequencies, product names, dilution method, "
-                    "required protective equipment, and escalation contacts. Under 29 CFR "
-                    "1910.1200, maintain the applicable written hazard communication program, "
-                    "labels, safety data sheets, and employee information and training. "
-                    "Select disinfectants registered for the intended use and follow "
-                    "label instructions, including contact time and surface restrictions; "
-                    "7 U.S.C. 136j(a)(2)(G) generally prohibits pesticide use inconsistent "
-                    "with labeling, subject to statutory exceptions. A misted surface "
-                    "that dries before its required wet contact time is a production "
-                    "defect, even when an inspection photograph looks clean. Do not mix "
-                    "chemicals or substitute a product based only on fragrance or price. "
-                    "Separate clean and dirty equipment, record dilution-system faults, "
-                    "and stop tasks when the specified protective or ventilation "
-                    "conditions cannot be met. Schedule corrective work as paid capacity "
-                    "rather than asking employees to absorb it off the clock."
-                ),
-                (
-                    "Medical janitorial work begins with an exposure determination, not "
-                    "a blanket assumption that every clinic requires identical procedures. "
-                    "Where occupational exposure to blood or other potentially infectious "
-                    "materials exists, 29 CFR 1910.1030 establishes requirements including "
-                    "an exposure control plan, appropriate controls, training, hepatitis "
-                    "B vaccination provisions, and post-exposure evaluation. Confirm "
-                    "which party handles regulated waste, sharps containers, isolation "
-                    "areas, and spill response. A cleaner encountering an uncapped "
-                    "needle should isolate the area and invoke the agreed response, "
-                    "not improvise pickup to preserve a route's completion percentage. "
-                    "The supervisor inspects a rotating sample of high-risk surfaces "
-                    "and a separate sample of ordinary appearance tasks; otherwise "
-                    "a polished lobby can conceal failed restroom execution. Record "
-                    "severity, affected room, failed task, corrective owner, and closure "
-                    "time. Avoid patient information in photographs and free-text notes. "
-                    "Link rework to the original service identifier so the site-level "
-                    "cost report includes the second visit. A complaint closed by "
-                    "telephone without confirming the correction remains an unresolved "
-                    "quality event. Contractor rework obligations belong in the "
-                    "purchased scope, but employee rework still creates compensable "
-                    "time and must enter payroll."
-                ),
-                (
-                    "At month-end, reconcile planned visits, completed visits, exceptions, "
-                    "accepted service, invoices, and bank receipts in that order. A "
-                    "missing inspection record is an evidence problem; a missed visit "
-                    "may also be a price or service-credit problem. Resolve the "
-                    "contractual treatment before using the fixed-fee close function. "
-                    "The reference records one monthly invoice per completed contract "
-                    "period and does not silently reduce invoice amounts when the "
-                    "bank pays short. For a disputed deduction, preserve the original "
-                    "invoice, investigate the reason, and issue an authorized adjustment "
-                    "through a separately implemented credit workflow. Reconcile payroll "
-                    "to approved time, subcontract invoices to accepted scopes, and "
-                    "supply spending to delivered stock. The supervisor prepares the "
-                    "evidence packet; an existing owner or bookkeeper reviews the "
-                    "bank reconciliation within the stated overhead budget, rather "
-                    "than adding an invisible tenth full-time person. Separate "
-                    "preparation from review whenever practical and retain the review "
-                    "record. Every Friday, inspect aging receivables and the next "
-                    "two payroll dates together. A profitable contract paid late "
-                    "can exhaust the pod's working cash before its annual margin "
-                    "changes. Invoice delivery confirmation and a named accounts-payable "
-                    "contact are therefore production outputs, not optional office "
-                    "cleanup."
-                ),
-            ],
-            "table": {
-                "caption": "Shift-to-Cash Forensic Controls for Commercial and Medical Routes",
-                "headers": [
-                    "Observed operating exception requiring a named owner",
-                    "Evidence that distinguishes cause from superficial symptoms",
-                    "Immediate operational action within paid pod capacity",
-                    "Ledger consequence and financial review responsibility",
-                ],
-                "rows": [
-                    [
-                        "Access failure prevents the assigned crew from entering the site",
-                        "Timestamped access attempt, tested credentials, and facility contact response history",
-                        "Supervisor contacts the client and reschedules only within available paid capacity",
-                        "Record actual travel and labor costs; resolve contractual billing treatment separately",
-                    ],
-                    [
-                        "Measured task duration repeatedly exceeds the original production estimate",
-                        "Timed task samples separated from travel, restocking, interruptions, and rework",
-                        "Revise task sequencing or negotiate a priced scope change with the buyer",
-                        "Compare site contribution before accepting another renewal at the existing price",
-                    ],
-                    [
-                        "Disinfectant application fails the product's required wet contact interval",
-                        "Product label, dilution record, application method, and observed drying interval",
-                        "Retrain the assigned worker and schedule an appropriately sequenced paid correction",
-                        "Attribute corrective labor and supplies to the original site's service period",
-                    ],
-                    [
-                        "Potential blood exposure or discovered sharps exceeds ordinary janitorial boundaries",
-                        "Site exposure determination, agreed response responsibilities, and documented incident facts",
-                        "Isolate the affected area and activate the established exposure response procedure",
-                        "Retain incident costs separately while protecting sensitive worker and patient information",
-                    ],
-                    [
-                        "Customer payment arrives below the original outstanding invoice amount",
-                        "Bank settlement identifier, remittance explanation, invoice identity, and client correspondence",
-                        "Apply only received cash and investigate the deduction with accounts payable",
-                        "Preserve the residual receivable until a supported credit workflow resolves it",
-                    ],
-                    [
-                        "Payroll cash requirement precedes collection of the largest outstanding account",
-                        "Aging report compared against payroll dates and unrestricted bank cash balances",
-                        "Escalate collection and defer expansion that would consume the same cash buffer",
-                        "Review liquidity separately from earned profit and document the resulting decision",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Release a capacity-checked shift",
-                    "action": "Compare assigned task minutes with each person's paid weekly availability.",
-                    "detail": "Include travel, required training, relief, and overtime exposure before the supervisor publishes the route.",
-                },
-                {
-                    "step": 2,
-                    "title": "Capture service and exception evidence",
-                    "action": "Record completion against the site-specific task schedule and original service identifier.",
-                    "detail": "Escalate access, chemical, exposure, and scope exceptions immediately; avoid sensitive information in inspection media.",
-                },
-                {
-                    "step": 3,
-                    "title": "Accept the recurring service period",
-                    "action": "Resolve missed work and contractual credits before posting the fixed-fee monthly close.",
-                    "detail": "Attach the acceptance digest and allow the transaction to create service and invoice records together.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile cash and review capacity",
-                    "action": "Match bank receipts, payroll, subcontract bills, and paid operating costs to durable source references.",
-                    "detail": "Review receivable aging, the next two payroll dates, site contribution, and remaining route capacity before adding work.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Walk a mature Base cohort through ninety days without confusing profit and cash",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The worked cohort begins with an operating portfolio, not a "
-                    "zero-revenue launch. Ten active contracts collectively produce the "
-                    "Base annual service value of $725,000. Opening unrestricted cash "
-                    "is $40,000, and opening receivables are $60,416.67 for the "
-                    "preceding month's completed work. All invoices in this illustration "
-                    "collect the following month; no bad debts, financing flows, "
-                    "capital purchases, owner distributions, or income-tax payments "
-                    "occur during the quarter. Those omissions define the cash "
-                    "bridge rather than suggesting such flows never exist. The "
-                    "opening cash balance is existing working capital, not another "
-                    "quarter of revenue or a second charge for startup investment. "
-                    "Monthly service values are $60,416.67, $60,416.67, and $60,416.66; "
-                    "the final cent is the illustrative allocation needed to make "
-                    "one quarter exactly $181,250. Actual invoices must use "
-                    "contract-authorized price schedules, not an arbitrary ledger "
-                    "rounding adjustment. The compact fixed-monthly-price reference "
-                    "requires an added reviewed schedule workflow for that allocation. "
-                    "Monthly operating costs follow the same cent allocation "
-                    "at $53,166.67, $53,166.67, and $53,166.66. Each month therefore "
-                    "earns $7,250. The quarter's $21,750 profit annualizes to "
-                    "$87,000 at exactly 12.0%, while its $159,500 costs annualize "
-                    "to $638,000."
-                ),
-                (
-                    "Track selling activity separately from the active billing portfolio. "
-                    "Month one receives twelve leads: four are scrubbed for scope "
-                    "or route mismatch, two lose competitively, two sign, and four "
-                    "remain open. Month two combines fourteen new leads with those "
-                    "four carryovers; five scrub, three lose, two sign, and eight "
-                    "remain open. Month three combines sixteen new leads with "
-                    "eight carryovers; six scrub, four lose, two sign, and twelve "
-                    "remain open. Across the quarter, forty-two unique leads "
-                    "reconcile to fifteen scrubs, nine losses, six wins, and "
-                    "twelve open opportunities. The six wins replace scheduled "
-                    "departures rather than increasing the portfolio above ten "
-                    "active accounts: each month's two wins start in the "
-                    "following month as two incumbents leave. Month-three wins "
-                    "therefore support month-four continuity, not quarter-three "
-                    "billing. Replacement scopes are assumed to preserve aggregate "
-                    "fees and service hours; verify that assumption site by "
-                    "site before accepting it. P1 and P2 supply replacement "
-                    "demand, P3 rejects uneconomic work, and P4 absorbs mobilization "
-                    "inside the paid supervision allowance. No sales conversion "
-                    "percentage creates extra cleaning capacity, and an unsigned "
-                    "pipeline opportunity creates neither revenue nor a receivable."
-                ),
-                (
-                    "Collections are $60,416.67 in each month because month three "
-                    "collects month two's invoice, not its own slightly smaller "
-                    "invoice. Quarterly cash received is consequently $181,250.01. "
-                    "Subtract $159,500 paid operating costs to obtain $21,750.01 "
-                    "incremental cash and $61,750.01 ending unrestricted cash. "
-                    "Ending receivables are $60,416.66. The bridge is exact: "
-                    "$21,750 profit plus the $0.01 decrease in receivables "
-                    "equals $21,750.01 cash generation. This is why a "
-                    "one-cent difference belongs in the reconciliation rather "
-                    "than being hidden as miscellaneous revenue. In the "
-                    "illustration, every operating cost is both incurred "
-                    "and paid within its month; the reference ledger can "
-                    "separate those periods when reality differs. A delayed "
-                    "large invoice would reduce bank cash and increase "
-                    "receivables without immediately changing earned revenue. "
-                    "Run that collection stress before spending the buffer "
-                    "on another route. The Conservative case remains "
-                    "$250,000 revenue, $230,000 costs, and $20,000 owner "
-                    "profit with five full-time people and four contractor "
-                    "relationships. Scaled remains $1,200,000 revenue, "
-                    "$1,008,000 costs, and $192,000 owner profit with "
-                    "six full-time people and five contractor relationships. "
-                    "Neither alternative can be reached by multiplying "
-                    "this quarter's invoices while holding productive labor "
-                    "and supervision permanently fixed."
-                ),
-            ],
-            "table": {
-                "caption": "Worked 90-Day Cohort Walk",
-                "headers": [
-                    "Month and separately identified lead or financial cohort",
-                    "Cohort movement, service recognition, or operating expense",
-                    "Cash timing, scrubs, losses, and balance-sheet consequence",
-                    "Reconciliation result and next-period operating responsibility",
-                ],
-                "rows": [
-                    [
-                        "Month 1 lead cohort begins with twelve new inspected opportunities",
-                        "Four scrubbed, two lost, two signed, and four opportunities remain open",
-                        "Signed replacements generate no current-month cash merely because contracts were executed",
-                        "Two signed sites replace two departures next month without expanding paid capacity",
-                    ],
-                    [
-                        "Month 1 financial cohort serves ten already active recurring contracts",
-                        "Revenue $60,416.67 less operating expense $53,166.67 produces $7,250 earned profit",
-                        "Collect opening receivables $60,416.67; pay costs $53,166.67; ending receivables $60,416.67",
-                        "Cumulative incremental cash $7,250; unrestricted cash rises from $40,000 to $47,250",
-                    ],
-                    [
-                        "Month 2 lead cohort combines fourteen new leads with four carryovers",
-                        "Five scrubbed, three lost, two signed, and eight opportunities remain open",
-                        "Prior-month wins replace departures; this month's signatures support next-month service",
-                        "Maintain ten active contracts and verify unchanged aggregate pricing and production hours",
-                    ],
-                    [
-                        "Month 2 financial cohort preserves the same ten-contract production envelope",
-                        "Revenue $60,416.67 less operating expense $53,166.67 produces $7,250 earned profit",
-                        "Collect Month 1 invoices $60,416.67; pay $53,166.67; ending receivables $60,416.67",
-                        "Cumulative incremental cash $14,500; unrestricted cash reaches $54,500 after operating payments",
-                    ],
-                    [
-                        "Month 3 lead cohort combines sixteen new leads with eight carryovers",
-                        "Six scrubbed, four lost, two signed, and twelve opportunities remain open",
-                        "Quarter totals reconcile forty-two leads into fifteen scrubs, nine losses, six wins",
-                        "Twelve open opportunities remain; latest two wins replace Month 4 departures",
-                    ],
-                    [
-                        "Month 3 financial cohort completes the exact quarterly Base allocation",
-                        "Revenue $60,416.66 less operating expense $53,166.66 produces $7,250 earned profit",
-                        "Collect Month 2 invoices $60,416.67; pay $53,166.66; ending receivables $60,416.66",
-                        "Quarter revenue $181,250; profit $21,750; cumulative cash gain $21,750.01; ending cash $61,750.01",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A cleaning contract becomes a business asset only when its paid minutes, accepted work, invoice, and bank receipt tell the same story.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Map every active site to the four operating plays and rebuild its estimate from measured tasks, visit frequencies, paid travel, and relief coverage.",
-        "Prove that the five full-time positions and four contractor relationships can deliver the planned 1,040 monthly service hours without hidden overtime or misclassification.",
-        "Copy the six reference modules sequentially, execute the supplied acceptance checks, and retain actual results plus a successful database restoration record.",
-        "Require signed scope, wage planning, safety screening, current insurance review, and tested site access before activating a contract.",
-        "Close each monthly service against accepted evidence, reconcile bank receipts by unique reference, and investigate every residual invoice balance.",
-        "Reproduce the $181,250 revenue, $21,750 profit, and $21,750.01 cash bridge before allocating the working-capital buffer to expansion.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "29 U.S.C. 207 — Maximum hours",
-            "url": "https://www.law.cornell.edu/uscode/text/29/207",
-            "relevance": "Covered nonexempt employee overtime must be assessed by workweek; monthly route averages cannot erase overtime obligations.",
-        },
-        {
-            "title": "29 CFR 785.38 — Travel that is all in the day's work",
-            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-V/subchapter-B/part-785/subpart-C/subject-group-ECFRad996a1050fcae8/section-785.38",
-            "relevance": "Travel between job sites during the workday is working time and belongs in route costing and payroll records.",
-        },
-        {
-            "title": "29 CFR 1910.1200 — Hazard communication",
-            "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1200",
-            "relevance": "Cleaning chemical operations require applicable hazard communication programs, labeling, safety data sheets, and employee information and training.",
-        },
-        {
-            "title": "29 CFR 1910.1030 — Bloodborne pathogens",
-            "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1030",
-            "relevance": "Occupational exposure findings determine applicable medical-site controls, training, vaccination provisions, and post-exposure response requirements.",
-        },
-        {
-            "title": "7 U.S.C. 136j(a)(2)(G) — Pesticide use inconsistent with labeling",
-            "url": "https://www.law.cornell.edu/uscode/text/7/136j",
-            "relevance": "Disinfectant application must follow applicable labeling requirements, including use directions and contact time, subject to statutory exceptions.",
-        },
-    ],
-}
+CHAPTER_7 = {'id': 'Q7',
+ 'chapter_id': 'Q7',
+ 'chapter_number': 7,
+ 'question_number': 7,
+ 'slug': 'government-public-sector-janitorial-bids',
+ 'question_prompt': 'How do I find, price, and write winning proposals for government and public-sector '
+                    'janitorial contracts?',
+ 'kicker': 'Q7 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Government and Public-Sector Janitorial Bids',
+ 'subtitle': 'SAM.gov searches, no-bid shortcuts, federal proposal walkthroughs, city hall and San '
+             'Francisco RFP teardowns, school contracts, UK council and NHS tenders, pricing government '
+             'bids, readiness for bigger contracts, and factoring workers comp, GL and bond costs into '
+             'estimates',
+ 'layout_template': 'thirty_day_roadmap',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners agree public janitorial work is won on registration discipline, '
+                      'mandatory site visits, airtight compliance, and cash reserves deep enough to float '
+                      'payroll through net 30 to 60 terms plus about 30 extra days for new vendors. The '
+                      'street math is specific: divide cost by 0.8 for a true 20% margin, stack 15% '
+                      'payroll tax, 30% overhead, and 20% profit on a production-rate labor build, and '
+                      'bill federal work off 1,920 hours, not 2,080, or risk Department of Labor back pay. '
+                      'Winning technical volumes lean on quality-control plans, staffing plans, and green '
+                      'chemistry. The live split is over price: Sheenapreneur calls janitorial a '
+                      'bottom-feeder market where agencies usually pick the lowest bid, while Commercial '
+                      'Cleaning CEO and GovKidMethod report weighted, best-value scoring where past '
+                      'performance and technical approach can beat the cheapest number.',
+ 'key_metrics': [{'label': 'True 20% Margin Monthly Price',
+                  'metric': 'True 20% Margin Monthly Price',
+                  'value': 'About $3,729/month on about $2,983/month in total cost',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Worked example of 5 nights x 4 hours at $22/hr loaded 25%, plus $180 '
+                             'supplies, $120 transportation, and $300 overhead, divided by 0.8 rather than '
+                             'marked up 20%.',
+                  'source': 'Small Business Bid School ([uARedcLLS5c @ 00:02:12])'},
+                 {'label': 'Federal Billable Hours Per Year',
+                  'metric': 'Federal Billable Hours Per Year',
+                  'value': '1,920 billable hours out of 2,080 paid hours',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'SCA wage determinations carry two weeks of vacation and two weeks of '
+                             'holidays; failing to price the gap has produced DOL back-pay findings in the '
+                             "'hundreds of thousands.'",
+                  'source': 'GovKidMethod ([dr59GJ2T5v4 @ 00:43:54])'},
+                 {'label': 'Five-Year Federal Janitorial Spend',
+                  'metric': 'Five-Year Federal Janitorial Spend',
+                  'value': 'About $10B over five fiscal years (DoD $5.3B, GSA about $1.6B)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'USASpending advanced search on NAICS 561720 across the last five fiscal '
+                             'years, with DHS, VA, and DOT at roughly $0.5B each.',
+                  'source': 'GovKidMethod ([ua_m84N0cwA @ 00:02:54])'},
+                 {'label': 'Production-Rate Monthly Bid',
+                  'metric': 'Production-Rate Monthly Bid',
+                  'value': '$4,972/month for 25,000 sq ft cleaned 4 days a week',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '25,000 sq ft at 2,300 sq ft/hr, 185 hours/month at $15/hr, plus 15% payroll '
+                             'tax, 30% overhead, and 20% profit.',
+                  'source': 'victoria menifee ([5htVyehKCRo @ 01:14:23])'}],
+ 'sections': [{'number': 1,
+               'title': 'The Practitioner Consensus',
+               'paragraphs': ['Every operator who has actually chased public janitorial work starts in the '
+                              'same place: registration and keyword discipline. Commercial Cleaning CEO '
+                              'tells owners to phone city or town hall and ask for vendor relations, the '
+                              'buyer, the purchaser, or the asset manager, then register in each Vendor '
+                              'Portal with email notifications routed through dedicated tags for state, '
+                              "county, and city, and to search 'custodial' or 'janitorial' instead of "
+                              "'commercial cleaning' [j4duUCt9Dlw @ 00:01:35]. Owlsfield Financial Corp "
+                              "runs the same play across levels: Delaware's 'my marketplace' notices, "
+                              'entity registration at sam.gov for federal work, and separate systems for '
+                              'cities and school districts, followed by reading every document for '
+                              'locations, hours, insurance, security rules, and deadline [LARqKW_L-QI @ '
+                              '00:00:46]. GovKidMethod sizes the federal prize before anyone registers, '
+                              'pulling five fiscal years of NAICS 561720 spend on USASpending and landing '
+                              'on roughly $10B, led by DoD at $5.3B and GSA near $1.6B [ua_m84N0cwA @ '
+                              '00:02:54]. CleanTender reports the identical fragmentation problem in the '
+                              'UK, where about 415 local bodies use different tendering websites and '
+                              'England alone runs over 60 portals, so consolidated feeds like Contracts '
+                              'Finder, Public Contracts Scotland, Sell 2 Wales, and eSourcing NI become '
+                              'the starting point before any council site [M3p8970sZyg @ 00:00:20].',
+                              'The second point of agreement among operators who have actually submitted '
+                              'is that compliance kills more bids than price does. Commercial Cleaning CEO '
+                              'reports that site visits are often mandatory, that non-attendees are '
+                              "'immediately rejected,' that some walkthroughs demand pre-approval or "
+                              'security clearance, that the lowest number does not automatically win '
+                              'because agencies score against a weighting formula, and that agencies '
+                              'prefer local firms while out-of-state companies rarely win [j4duUCt9Dlw @ '
+                              '00:05:39]. GovKidMethod breaks every federal proposal into three '
+                              'components, pricing, past performance, and technical, and walks through a '
+                              "VA cemetery solicitation awarded to the 'most advantageous' offer rather "
+                              'than the cheapest, with prices checked against competing bids, historical '
+                              'prices, the government estimate, and market research [dOj6rxt15uE @ '
+                              "00:06:21]. Owlsfield Financial Corp states it flatly: 'A missing "
+                              "requirement or late bid can eliminate an otherwise strong proposal,' so "
+                              'acknowledge every amendment, submit before the deadline, and save the '
+                              'confirmation [LARqKW_L-QI @ 00:01:45]. Stronger Built reaches the same '
+                              "verdict on the $6.51M San Francisco RFP, where late submissions 'are "
+                              "literally not even considered,' missing one piece of minimum-qualification "
+                              "documentation is an 'automatic fail,' and failing to show good faith LBE "
+                              'outreach gets a bid rejected as non-responsive [EoNW1HDL3PI @ 00:06:01].',
+                              'The third consensus point is that winning and operating are separate tests, '
+                              'and cash flow decides which one you pass. Karen Denton KSC frames the '
+                              '$100K, $250K, and $1M contracts that beginners chase against staffing, '
+                              'payroll, insurance, equipment, supplies, supervision, quality control, and '
+                              'cash flow, and asks one blunt question before any bid goes out: could you '
+                              'fund payroll for 10 employees before the first payment arrives, because '
+                              "'You might have to pay your employees before your customer even pays you' "
+                              '[xeZ8_Jlv0AI @ 00:01:44]. GovKidMethod quantifies the gap on federal work '
+                              'as net 30 or net 60 plus roughly 30 extra days for new vendors, which means '
+                              "floating payroll is simply 'how government contracting is' [dr59GJ2T5v4 @ "
+                              '00:18:03]. Owlsfield Financial Corp tells beginners to start with a '
+                              'manageable local job or subcontract to an established cleaner, to invoice '
+                              "exactly as the contract requires after award, and to 'Learn the process "
+                              "before committing to a contract your cash flow cannot support' [LARqKW_L-QI "
+                              '@ 00:02:17]. Sheenapreneur adds the labor side of capacity: build the crew '
+                              'before projects land so they have synergy, because when supervisors or crew '
+                              "quit, quality 'rolls downhill,' and residential-only cleaners get exposed "
+                              'by empty-building work that shows everything [hyUO_-BE-qc @ 00:02:17].'],
+               'table': {'caption': 'Baseline rules every practitioner applies before pricing a public '
+                                    'janitorial bid',
+                         'headers': ['Consensus Principle',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Search with agency vocabulary, not sales vocabulary',
+                                   'Agencies list the work under custodial or janitorial, not commercial '
+                                   'cleaning',
+                                   'Set portal alerts on both terms with separate state, county, and city '
+                                   'tags',
+                                   'Commercial Cleaning CEO ([j4duUCt9Dlw @ 00:04:06])'],
+                                  ['Treat every site visit as mandatory and attend in person',
+                                   'Non-attendees are immediately rejected and some walkthroughs require '
+                                   'security clearance',
+                                   'Send the owner, collect the emailed sign-in sheet, and size up '
+                                   'competitors',
+                                   'Commercial Cleaning CEO ([j4duUCt9Dlw @ 00:05:39])'],
+                                  ['Best value usually beats lowest price on scored solicitations',
+                                   'Award goes to the most advantageous bid weighing past experience and '
+                                   'price together',
+                                   'Build pricing, past performance, and technical volumes with equal care '
+                                   'and detail',
+                                   'GovKidMethod ([dOj6rxt15uE @ 00:10:33])'],
+                                  ['Cash flow capacity matters more than headline contract size',
+                                   'Payroll for 10 employees may come due before the first customer '
+                                   'payment',
+                                   'Prove you can fund payroll before chasing $250K or $1M contracts',
+                                   'Karen Denton KSC ([xeZ8_Jlv0AI @ 00:01:44])'],
+                                  ['Federal payment terms run slower than commercial accounts',
+                                   'Net 30 or 60 plus about 30 extra days for brand new vendors',
+                                   'Budget to float payroll through the entire first invoice cycle on '
+                                   'every award',
+                                   'GovKidMethod ([dr59GJ2T5v4 @ 00:18:03])'],
+                                  ['Compliance failures are fatal regardless of how good the price is',
+                                   'Late submissions and one missing qualification document mean automatic '
+                                   'failure',
+                                   'Acknowledge amendments, submit before the deadline, and save the '
+                                   'confirmation receipt',
+                                   'Stronger Built ([EoNW1HDL3PI @ 00:06:01])'],
+                                  ['Build the crew and supervision before the contract lands',
+                                   'When supervisors or crew quit, cleaning quality rolls downhill across '
+                                   'the account',
+                                   'Recruit a synergized crew or line up an experienced subcontractor '
+                                   'before award',
+                                   'Sheenapreneur ([hyUO_-BE-qc @ 00:02:17])']]}},
+              {'number': 2,
+               'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Small Business Bid School runs the cleanest unit-economics build: 5 nights '
+                              'at 4 hours is 20 hours a week, times 4.33 weeks is about 86.67 hours a '
+                              "month, and a $22 wage loaded 25% for payroll taxes and workers' comp "
+                              'becomes $27.50 an hour, or roughly $2,383 a month in labor [uARedcLLS5c @ '
+                              '00:00:38]. Add $180 supplies, $120 transportation, and $300 overhead for '
+                              'about $2,983 in cost, then divide by 0.8, not multiply by 1.2, to hit a '
+                              "true 20% margin at about $3,729 a month, because 'A 20% profit margin is "
+                              "not the same as adding 20% to your costs' [uARedcLLS5c @ 00:02:12]. "
+                              'victoria menifee builds from production rate instead: 25,000 sq ft divided '
+                              'by 2,300 sq ft per hour is about 11 hours, times 4 days is 44 hours a week, '
+                              'times 4.2 weeks is 185 hours, times $15 is $2,772, plus 15% payroll tax is '
+                              '$3,187.80, plus 30% overhead is $4,144, plus 20% profit lands at $4,972 '
+                              '[5htVyehKCRo @ 01:07:06]. The rule of thumb behind it is 50% labor, 30% '
+                              'overhead, 20% profit, and never below 10% profit [5htVyehKCRo @ 01:14:41]. '
+                              'Both builds load labor first and stack every other cost on top, and Small '
+                              'Business Bid School warns that holidays, absences, and supervision belong '
+                              'in the number before any margin is applied.',
+                              'On federal work the wage floor is set for you. GovKidMethod prices a VA '
+                              'cemetery bid off a wage determination of $14.25 plus $4.54 health and '
+                              'welfare, about $18.79 an hour, then layers FICA, FUTA, and SUTA on top, and '
+                              'builds incremental increases into each option year [dOj6rxt15uE @ '
+                              "00:31:22]. On Florentina's live Questa Ranger District bid the same "
+                              'operator hammers the hours trap: the SCA determination carries two weeks of '
+                              "vacation and two weeks of holidays, so there are 2,080 hours in a year 'but "
+                              "you can only bill the government off of 1920 hours,' and Department of "
+                              "Labor back-pay findings have hit 'hundreds of thousands' [dr59GJ2T5v4 @ "
+                              '00:43:54]. Line items are priced per CLIN as unit times quantity: the '
+                              'monthly service CLIN times 12, strip and wax times 1, windows twice a year, '
+                              'and liners and paper flagged as government-furnished are left out of the '
+                              'price entirely [dr59GJ2T5v4 @ 00:15:44]. Kizzy Parks works a different '
+                              'determination of $16.20 an hour plus $4.98 health and welfare up to 40 '
+                              'hours, enters pricing both on the schedule page and on the SF1449, and '
+                              'divides the annual total by 12 because the agency pays monthly [UVPaRFj3LDE '
+                              '@ 00:09:03]. Following the notice on SAM daily is part of the mechanic, '
+                              "because one student's set-aside flipped to full and open midstream.",
+                              'The technical volume is where operators separate from price-only bidders. '
+                              "Commercial Cleaning CEO's local proposal ran past 100 pages, two printed "
+                              'copies meant over 200 pages, and it packed a staffing plan, org chart, '
+                              'personnel handbook, quality control and biohazard procedures, a training '
+                              'roster, a green chemical chart, key procedures, equipment and consumables '
+                              'lists, a building-by-building schedule, and a commitment to APPA Level 1 '
+                              'out of five levels [j4duUCt9Dlw @ 00:16:48]. Format rules are enforced '
+                              'literally; another client of the same operator mis-submitted on a flash '
+                              'drive and binder requirement. Sheenapreneur has won contracts on the '
+                              'quality-control plan alone, built around contingencies such as a 2-hour '
+                              'supervisor response, with green products named in both the capability '
+                              'statement and the proposal [hyUO_-BE-qc @ 00:22:45]. Kizzy Parks, who '
+                              "claims over $70M in contract wins, uses ChatGPT to draft the 'about us' "
+                              "section and a 200-word management plan, then rewrites it in the agency's "
+                              'own language and lists staff by name without resumes [UVPaRFj3LDE @ '
+                              '00:13:51]. GovKidMethod attaches one merged PDF to a short email, PDFs the '
+                              'pricing sheet first, and fills forms with smallpdf.com at about $108 a year '
+                              '[dOj6rxt15uE @ 01:03:10]. Kizzy Parks instead combines the cover sheet and '
+                              'pricing into one PDF, attaches the DFARS and SF1449 separately, requests '
+                              'acknowledgment of receipt, and follows up after three weeks.'],
+               'table': {'caption': 'Pricing mechanics, rates, and tools practitioners use on public '
+                                    'janitorial bids',
+                         'headers': ['Mechanic',
+                                     'Exact Numbers or Tool',
+                                     'How It Is Applied',
+                                     'Expert Source'],
+                         'rows': [['True margin math instead of a simple markup',
+                                   '$2,983 total monthly cost divided by 0.8 equals about $3,729',
+                                   'Divide cost by one minus the target margin rather than adding a '
+                                   'percentage',
+                                   'Small Business Bid School ([uARedcLLS5c @ 00:02:12])'],
+                                  ['Production-rate labor build from square footage',
+                                   '25,000 sq ft at 2,300 sq ft per hour yields $4,972 monthly',
+                                   'Stack 15% payroll tax, then 30% overhead, then 20% profit on labor',
+                                   'victoria menifee ([5htVyehKCRo @ 01:14:23])'],
+                                  ['Billable versus paid hours on wage-determination contracts',
+                                   '2,080 paid hours versus 1,920 billable hours in each contract year',
+                                   'Load vacation and holidays into the rate to avoid DOL back pay',
+                                   'GovKidMethod ([dr59GJ2T5v4 @ 00:43:54])'],
+                                  ["Reverse-engineering the incumbent's real hourly wage",
+                                   '$2,158 monthly divided by 4.3333 weeks works out to $12/hr at 8 hours',
+                                   'Price above the incumbent to pay a decent wage and still profit',
+                                   "Bea's Business ([3vr4bkvaByo @ 00:01:12])"],
+                                  ['Bond premium stepping by contract value and term',
+                                   'Starting around $7 per $1,000 of contract value, decreasing as value '
+                                   'grows',
+                                   'Add about 1% extra premium per month beyond 24 months of term',
+                                   'Runjob Software ([0pkOO_oVhN8 @ 00:02:22])'],
+                                  ['Market square-foot rates in a live state market',
+                                   'Georgia in 2024 ran 10 to 30 cents per square foot',
+                                   'Expect competing bids as low as 4 to 5 cents per square foot',
+                                   'Sheenapreneur ([hyUO_-BE-qc @ 00:10:33])'],
+                                  ['Floor-care line items measured during the site visit',
+                                   'Homewise ranges from a $1.14 low to a high read as $1.38 per sq ft',
+                                   'Measure the atrium and break room in person, then price toward the '
+                                   'high end',
+                                   "Bea's Business ([3vr4bkvaByo @ 00:05:07])"]]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Moves that let operators see more of the board than competing bidders',
+                           'body': 'Small, specific habits the practitioners use to gather intelligence, '
+                                   'trim the price, and force better solicitations before the deadline.',
+                           'items': ['Ask the questions you do not want competitors to hear in the '
+                                     'hallway, not by email, because emailed Q&A goes to every bidder; '
+                                     'Matt privately asked how many staff the job should take and why the '
+                                     'contract was rebid [Commercial Cleaning CEO — j4duUCt9Dlw @ '
+                                     '00:15:35].',
+                                     'Strip government-furnished liners and paper out of the price and '
+                                     'lead with bio-based supplies as an edge on federal custodial bids '
+                                     '[GovKidMethod — dr59GJ2T5v4 @ 00:22:45].',
+                                     "Sort FPDS by 'date signed' and target contracts ending in 90 days to "
+                                     '4 months; a $27,000 embassy BPA surfaced exactly this way [victoria '
+                                     'menifee — 5htVyehKCRo @ 00:46:54].',
+                                     'Email contracting often: one emailed question from Derek forced an '
+                                     'amendment that added a pricing schedule the solicitation had omitted '
+                                     '[GovKidMethod — dOj6rxt15uE @ 00:59:08].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Register and wire the alerts',
+                              'action': 'Register in every relevant vendor portal and in SAM, then set '
+                                        'keyword alerts on custodial and janitorial.',
+                              'detail': 'Call city or town hall for vendor relations, register in the '
+                                        'Vendor Portal with separate email tags for state, county, and '
+                                        'city, and store each vendor ID and login securely [Commercial '
+                                        'Cleaning CEO — j4duUCt9Dlw @ 00:02:08]. For federal work, '
+                                        'register the entity at sam.gov, expedite the CAGE code, and '
+                                        'verify the bank account in SAM [Kizzy Parks — UVPaRFj3LDE @ '
+                                        '00:17:44].'},
+                             {'step': 2,
+                              'title': 'Walk the site and interrogate the incumbent',
+                              'action': "Attend every site visit, count the work, and pull the incumbent's "
+                                        'pricing.',
+                              'detail': 'Count spaces, restrooms, and floor types at the site visit '
+                                        '[Owlsfield Financial Corp — LARqKW_L-QI @ 00:01:29]. Ask the CO '
+                                        'who the incumbent is, the contract number, and the total value '
+                                        '[Kizzy Parks — UVPaRFj3LDE @ 00:07:11], then divide the '
+                                        "incumbent's monthly price by 4.3333 weeks to back out the real "
+                                        "hourly wage [Bea's Business — 3vr4bkvaByo @ 00:01:12]."},
+                             {'step': 3,
+                              'title': 'Build the number from labor up',
+                              'action': 'Load wages, add supplies, transportation, and overhead, then '
+                                        'apply margin by division.',
+                              'detail': "Load the wage 25% for payroll taxes and workers' comp, add "
+                                        'supplies, transportation, and overhead, and divide by 0.8 for a '
+                                        'true 20% margin [Small Business Bid School — uARedcLLS5c @ '
+                                        '00:02:12]. On wage-determination work, price against 1,920 '
+                                        'billable hours, not 2,080 [GovKidMethod — dr59GJ2T5v4 @ '
+                                        '00:43:54].'},
+                             {'step': 4,
+                              'title': 'Assemble, acknowledge, submit, confirm',
+                              'action': 'Acknowledge every addendum, submit in the exact required format, '
+                                        'and confirm receipt.',
+                              'detail': "Acknowledge addenda by title and date or enter 'none,' name files "
+                                        "with the company name plus 'complete,' and download the submitted "
+                                        "files to confirm everything is correct [Bea's Business — "
+                                        '3vr4bkvaByo @ 00:07:07]. Request acknowledgment of receipt and '
+                                        'follow up after three weeks [Kizzy Parks — UVPaRFj3LDE @ '
+                                        '00:19:32].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether price alone decides janitorial awards. '
+                              'Sheenapreneur calls janitorial a "bottom feeder" market where agencies '
+                              'usually pick the lowest price, but adds that agencies burned by the lowest '
+                              "bidder will pay more, and that agencies have raised the operator's price "
+                              'for great work [hyUO_-BE-qc @ 00:08:07]. Commercial Cleaning CEO argues the '
+                              'opposite on local and state bids: read the whole document, because lowest '
+                              'price does not automatically win and a weighting formula decides the score '
+                              '[j4duUCt9Dlw @ 00:06:25]. GovKidMethod backs that reading on a VA cemetery '
+                              'solicitation, where award goes to the "most advantageous" bid based on past '
+                              'experience and price, with prices compared against other bids, historical '
+                              'prices, the government estimate and market research [dOj6rxt15uE @ '
+                              '00:10:33]. Kizzy Parks lands on both sides inside one walkthrough, first '
+                              'telling bidders price is the first criterion, then saying "experience in '
+                              'past performance are more important than price" [UVPaRFj3LDE @ 00:11:02]. '
+                              'For an operator, the split means the evaluation clause, not instinct, sets '
+                              'the bid posture. Where the notice scores on weighting or best advantage, '
+                              'the technical volume and staffing plan carry real points; where agencies '
+                              "have been burned by a cheap incumbent, Sheenapreneur's experience says a "
+                              'higher, well-documented number can still be the winning number.',
+                              'The second fight is over the math itself. Small Business Bid School warns '
+                              'that "a 20% profit margin is not the same as adding 20% to your costs," and '
+                              'builds its worked example by dividing total cost of about $2,983 by 0.8 to '
+                              'land near $3,729 a month [uARedcLLS5c @ 00:02:12]. victoria menifee stacks '
+                              'percentages instead: labor of $2,772, plus 15% payroll tax to $3,187.80, '
+                              'plus 30% overhead to $4,144, plus 20% profit to $4,972, with a rule of '
+                              'thumb of 50% labor, 30% overhead and 20% profit and never below 10% profit '
+                              '[5htVyehKCRo @ 01:14:23]. The burden assumptions also differ: Small '
+                              "Business Bid School loads 25% for payroll taxes and workers' comp, while "
+                              "victoria menifee uses 15% for payroll tax. GovKidMethod's book model starts "
+                              'lower still, bidding around 15% and then adding roughly 10% through '
+                              '"earning multipliers" to reach 25% across base-plus-four contracts '
+                              '[ua_m84N0cwA @ 00:22:07]. Sheenapreneur anchors on the street rate instead: '
+                              '10 to 30 cents per square foot in Georgia in 2024, with 4 to 5 cents seen '
+                              'in the wild, and warns that an extra $50 a month in profit may not be worth '
+                              'it [hyUO_-BE-qc @ 00:10:33]. Run the same job through both the division '
+                              'method and the stacked method before submitting.',
+                              'Practitioners also split on how a newcomer should enter the market. '
+                              'Sheenapreneur says the preferred route is subcontracting to an experienced '
+                              'company [hyUO_-BE-qc @ 00:04:20]. GovKidMethod shows the limits of that '
+                              'route: one live ranger-district bid allowed no subcontracting at all, above '
+                              'the simplified acquisition threshold the prime must do at least half the '
+                              'work, and on the sub seat the verdict is blunt: "I think subcontractors got '
+                              'it really hard" [dr59GJ2T5v4 @ 01:09:42]. victoria menifee runs a different '
+                              'playbook, chasing no-bid routes such as micro purchases up to $10,000, '
+                              'sources sought and expiring contracts, claiming the average first contract '
+                              'takes 18 months against a 3 to 6 month target, and suggesting work in '
+                              'another state when the local market is thin [5htVyehKCRo @ 00:03:16]. '
+                              'Commercial Cleaning CEO pulls the opposite way on geography for local and '
+                              'state bids: agencies prefer local firms, out-of-state companies rarely win, '
+                              'and it helps when the owner personally attends the site visit [j4duUCt9Dlw '
+                              '@ 00:08:13]. The same speaker treats federal work as "a whole different '
+                              'ball game," while victoria menifee builds the entire shortcut around '
+                              'federal micro purchases that require SAM registration and a bank merchant '
+                              'account accepting credit cards, with no PayPal or third parties.'],
+               'table': {'caption': 'Side-by-side playbooks where government janitorial practitioners '
+                                    'split',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Whether the lowest price wins the award',
+                                   'Sheenapreneur: janitorial is a bottom feeder market and agencies '
+                                   'usually pick the lowest price',
+                                   'Commercial Cleaning CEO: lowest price does not automatically win '
+                                   'because a weighting formula scores every bid',
+                                   'Sheenapreneur ([hyUO_-BE-qc @ 00:08:07]); Commercial Cleaning CEO '
+                                   '([j4duUCt9Dlw @ 00:06:25])'],
+                                  ['How the profit margin is calculated on cost',
+                                   'Small Business Bid School divides total cost by 0.8 for a true 20% '
+                                   'margin',
+                                   'victoria menifee stacks 15% payroll tax, 30% overhead and 20% profit '
+                                   'on top of labor',
+                                   'Small Business Bid School ([uARedcLLS5c @ 00:02:12]); victoria menifee '
+                                   '([5htVyehKCRo @ 01:11:05])'],
+                                  ['Pricing unit used to build the bid number',
+                                   'Sheenapreneur quotes 10 to 30 cents per square foot in Georgia during '
+                                   '2024',
+                                   "Bea's Business prices $30 per hour times employees, hours and days for "
+                                   '$10,400 monthly',
+                                   "Sheenapreneur ([hyUO_-BE-qc @ 00:10:33]); Bea's Business ([3vr4bkvaByo "
+                                   '@ 00:03:08])'],
+                                  ['Subcontracting as the entry route for newcomers',
+                                   'Owlsfield Financial Corp: start with a manageable local job or '
+                                   'subcontract to an established cleaner',
+                                   'GovKidMethod: some bids ban subcontracting outright and above SAP the '
+                                   'prime must do half the work',
+                                   'Owlsfield Financial Corp ([LARqKW_L-QI @ 00:02:17]); GovKidMethod '
+                                   '([dr59GJ2T5v4 @ 00:41:34])'],
+                                  ['Where to hunt for the very first contract',
+                                   'victoria menifee: no-bid micro purchases, sources sought and expiring '
+                                   'contracts within 3 to 6 months',
+                                   'Commercial Cleaning CEO: local and state vendor portals plus in-person '
+                                   'buyer visits with a card and gift',
+                                   'victoria menifee ([5htVyehKCRo @ 00:01:06]); Commercial Cleaning CEO '
+                                   '([j4duUCt9Dlw @ 00:03:23])'],
+                                  ['How much past performance weighs in evaluation',
+                                   'Kizzy Parks first tells bidders that price is the first evaluation '
+                                   'criterion',
+                                   'Kizzy Parks later ranks past performance above price; GovKidMethod '
+                                   'says not every contract requires it',
+                                   'Kizzy Parks ([UVPaRFj3LDE @ 00:11:02]); GovKidMethod ([dOj6rxt15uE @ '
+                                   '00:48:56])'],
+                                  ['Profit target over the life of the contract',
+                                   'victoria menifee targets 20% profit and says never go below 10% profit',
+                                   'GovKidMethod book model bids around 15% and grows to 25% through '
+                                   'earning multipliers',
+                                   'victoria menifee ([5htVyehKCRo @ 01:14:41]); GovKidMethod '
+                                   '([ua_m84N0cwA @ 00:22:07])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most repeated firsthand trap is winning work the bank account cannot '
+                              'carry. Karen Denton KSC separates winning a contract from being able to '
+                              'operate it, and sets a blunt test before bidding: could you fund payroll '
+                              'for 10 employees before the first payment arrives, because "you might have '
+                              'to pay your employees before your customer even pays you" [xeZ8_Jlv0AI @ '
+                              '00:01:44]. GovKidMethod puts numbers on the gap: federal payment runs net '
+                              '30 or net 60, plus roughly 30 extra days for new vendors, so the contractor '
+                              'floats payroll, and the government never fronts money for resale, which '
+                              'leaves asking suppliers for credit against the purchase order [dr59GJ2T5v4 '
+                              '@ 00:18:03]. Owlsfield Financial Corp closes the loop after award: invoice '
+                              'exactly as the contract requires and keep cash for the next payroll, and '
+                              'learn the process before committing to a contract your cash flow cannot '
+                              'support [LARqKW_L-QI @ 00:02:00]. Commercial Cleaning CEO adds the timing '
+                              'squeeze on the front end, with about one week between walkthrough and due '
+                              'date on a proposal that ran past 100 pages, printed twice for more than 200 '
+                              'pages [j4duUCt9Dlw @ 00:22:40]. Staffing up inside that window, with '
+                              'payroll leaving before the first check arrives, is where undercapitalized '
+                              'bidders break.',
+                              'Labor-cost errors are the second failure mode, and they surface late. '
+                              'GovKidMethod warns that an SCA wage determination carries $4.54 an hour in '
+                              'health and welfare plus two weeks of vacation and two weeks of holidays, so '
+                              'the bid bills against 1,920 hours, not 2,080, and Department of Labor '
+                              'back-pay findings of "hundreds of thousands" have been seen; the verdict is '
+                              '"It\'s not funny at all" [dr59GJ2T5v4 @ 00:43:54]. Runjob Software flags '
+                              "workers' comp coded one rate per worker class as a common mistake, since "
+                              'the same laborer rates differently sweeping than working on the 30th floor '
+                              'or 16 feet underground, and the annual audit trues up whatever was '
+                              'estimated [0pkOO_oVhN8 @ 00:01:23]. Bonds compound it: premiums are stepped '
+                              'from around $7 per $1,000 of contract value, weaker firms pay more, and '
+                              'terms beyond 24 months add about 1% per month. victoria menifee admits '
+                              'misclassifying employees as subcontractors early on and warns it invites '
+                              'IRS complaints [5htVyehKCRo @ 01:11:21]. Small Business Bid School lists '
+                              'the quieter leaks: required wages, benefits, insurance and equipment in the '
+                              'solicitation, plus holidays, absences and supervision, because "a contract '
+                              'that looks profitable on paper can become unprofitable if you underestimate '
+                              'the work" [uARedcLLS5c @ 00:02:57].',
+                              'The third cluster is losing on paperwork before price is even read. '
+                              'Commercial Cleaning CEO reports mandatory site visits where non-attendees '
+                              'are "immediately rejected," sometimes behind pre-approval or security '
+                              'clearance, and another client who mis-submitted against an explicit flash '
+                              'drive and binder format requirement [j4duUCt9Dlw @ 00:05:39]. Stronger '
+                              "Built walks through San Francisco's $6.51 million janitorial RFP, where "
+                              'failing to show LBE good faith efforts means rejection as non-responsive, '
+                              'skipped aggregates must carry exactly 1 cent in the price cells, late '
+                              'submissions "are literally not even considered," and missing one '
+                              'minimum-qualification document is an "automatic fail" [EoNW1HDL3PI @ '
+                              '00:06:31]. Kizzy Parks tells bidders to follow the notice on SAM daily for '
+                              "amendments, after one student's set-aside switched to full and open, and to "
+                              'keep attachments small and request acknowledgment of receipt [UVPaRFj3LDE @ '
+                              '00:09:39]. GovKidMethod shows the upside of pushing: an email to '
+                              'contracting forced an amendment adding a pricing schedule the agency had '
+                              'omitted, so the lesson is to email contracting often, then submit one '
+                              'merged PDF on a short email [dOj6rxt15uE @ 00:59:08]. The pattern across '
+                              'all four speakers is the same: compliance misses are binary, and no amount '
+                              'of sharp pricing survives a rejected envelope.'],
+               'table': {'caption': 'Firsthand failures reported by practitioners and the economics check '
+                                    'each one demands',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check Or Fix',
+                                     'Expert Source'],
+                         'rows': [['Toilet brushes left at every toilet in a school',
+                                   'Kids played with the brushes that were left beside each toilet on '
+                                   'campus',
+                                   'Keep closets inaccessible to kids, follow OSHA and never leave mop '
+                                   'water standing',
+                                   'Commercial Cleaning CEO ([z_tdT6I7K7U @ 00:03:31])'],
+                                  ['Skipping on-site training with the crew or subs',
+                                   'Skipping training cost days of go-backs to redo cleaning that was '
+                                   'missed',
+                                   'Train on-site in the first two hours, top to bottom, even when using '
+                                   'subcontractors',
+                                   'Sheenapreneur ([hyUO_-BE-qc @ 00:15:58])'],
+                                  ['One rag used throughout an entire dorm clean',
+                                   'A cleaner used the same rag throughout and left a pubic hair in the '
+                                   'microwave',
+                                   'Some solicitations now ban single-rag use, so hire experienced people '
+                                   'and supervise them',
+                                   'Sheenapreneur ([hyUO_-BE-qc @ 00:14:30])'],
+                                  ['Offers due one day before performance starts',
+                                   'USDA Niagara Falls offers were due Dec 15 with the period of '
+                                   'performance starting Dec 16',
+                                   'Have staffing lined up before award because there is less than one day '
+                                   'to staff up',
+                                   'GovKidMethod ([dr59GJ2T5v4 @ 00:09:01])'],
+                                  ['School quote priced too high to close the deal',
+                                   'A roughly $160,000 per year initial quote came in too high for the '
+                                   'school',
+                                   'Shift trash, chairs and desk wiping to teachers and students, move '
+                                   'floors weekly, never cut hallways or bathrooms',
+                                   'Commercial Cleaning CEO ([z_tdT6I7K7U @ 00:12:07])'],
+                                  ['Matching an incumbent price that hides a poverty wage',
+                                   "The incumbent's $2,158 per month for one person worked out to $12 or "
+                                   '$8.25 per hour',
+                                   'Price above the incumbent so the bid pays a decent wage and still '
+                                   'earns a profit',
+                                   "Bea's Business ([3vr4bkvaByo @ 00:01:12])"],
+                                  ['Underestimating the reading load on UK tenders',
+                                   'A 60-page spec must be read for TUPE risks plus BICSc and ISO '
+                                   'accreditation match',
+                                   'Budget days for spec review and the social value response, not just '
+                                   'for finding the notice',
+                                   'CleanTender ([M3p8970sZyg @ 00:01:20])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Bid/No-Bid Kill Switches',
+                           'body': 'Run every solicitation through these four practitioner-reported '
+                                   'pitfalls before a single page of the proposal gets written. A fail on '
+                                   'any one is a no-bid.',
+                           'items': ['Prove you can fund payroll for 10 employees before the first '
+                                     'customer payment lands, or walk away from the bid [Karen Denton KSC '
+                                     '— xeZ8_Jlv0AI @ 00:01:44].',
+                                     'Price SCA labor against 1,920 billable hours, not 2,080, with health '
+                                     'and welfare, vacation and holidays loaded, or face back pay '
+                                     '[GovKidMethod — dr59GJ2T5v4 @ 00:45:10].',
+                                     "Code workers' comp by activity rather than by worker class, because "
+                                     'the annual audit trues up every underestimate [Runjob Software — '
+                                     '0pkOO_oVhN8 @ 00:01:23].',
+                                     'Confirm mandatory site visit attendance and the exact submission '
+                                     'format first, since non-attendees are immediately rejected '
+                                     '[Commercial Cleaning CEO — j4duUCt9Dlw @ 00:05:39].']}}],
+ 'pull_quote': '"If you had to have a government contract in order to get government contracts, nobody '
+               'would have government contracts." — GovKidMethod (dr59GJ2T5v4 @ 00:27:53).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Register in each city, county and state vendor portal, set email notifications with '
+                      'dedicated tags, and search custodial or janitorial instead of commercial cleaning '
+                      '[Commercial Cleaning CEO — j4duUCt9Dlw @ 00:02:08].',
+                      'Build the price from weekly hours times 4.33 weeks, load 25% for payroll taxes and '
+                      "workers' comp, add supplies, transportation and overhead, then divide by 0.8 for a "
+                      'true 20% margin [Small Business Bid School — uARedcLLS5c @ 00:00:38].',
+                      'Pull the wage determination, add health and welfare plus FICA, FUTA and SUTA, and '
+                      'bill against 1,920 hours to cover vacation and holidays [GovKidMethod — dOj6rxt15uE '
+                      '@ 00:32:50].',
+                      'Ask the contracting officer who the incumbent is, the contract number and the total '
+                      'value before setting your number [Kizzy Parks — UVPaRFj3LDE @ 00:07:11].',
+                      'Include a quality-control and contingency plan with a 2-hour supervisor response, '
+                      'since contracts have been won on the QCP alone [Sheenapreneur — hyUO_-BE-qc @ '
+                      '00:22:45].',
+                      'If the bid is lost, request a debrief within 72 hours [GovKidMethod — dr59GJ2T5v4 @ '
+                      '00:54:17].'],
+ 'statutory_citations': [{'title': 'Commercial Cleaning CEO — How To Win Government Commercial Cleaning '
+                                   'Contracts [00:06:25]',
+                          'url': 'https://www.youtube.com/watch?v=j4duUCt9Dlw&t=385s',
+                          'relevance': 'Primary practitioner testimony on weighted evaluation, mandatory '
+                                       'site visits and local-firm preference in city, county and state '
+                                       'janitorial bids.'},
+                         {'title': 'GovKidMethod — Janitorial GovCon Bids (beta.sam.gov) | LIVE with '
+                                   'GovKidMethod [00:43:54]',
+                          'url': 'https://www.youtube.com/watch?v=dr59GJ2T5v4&t=2634s',
+                          'relevance': 'Primary practitioner testimony on SCA wage determinations, 1,920 '
+                                       'billable hours and Department of Labor back-pay exposure.'},
+                         {'title': 'Small Business Bid School — How to Price a Government Cleaning '
+                                   'Contract (Step-by-Step) [00:02:12]',
+                          'url': 'https://www.youtube.com/watch?v=uARedcLLS5c&t=132s',
+                          'relevance': 'Primary practitioner testimony on margin math, dividing cost by '
+                                       '0.8 rather than marking up 20%.'},
+                         {'title': "Karen Denton KSC — Ready to Win Big Cleaning Contracts  Here's What "
+                                   'You Must Know First! [00:01:44]',
+                          'url': 'https://www.youtube.com/watch?v=xeZ8_Jlv0AI&t=104s',
+                          'relevance': 'Primary practitioner testimony on funding payroll before the first '
+                                       'customer payment arrives.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'j4duUCt9Dlw',
+                       'title': 'How To Win Government Commercial Cleaning Contracts',
+                       'channel': 'Commercial Cleaning CEO',
+                       'author': 'Commercial Cleaning CEO',
+                       'text': 'And by the way typically in government contracts it is rolled into the '
+                               'monthly price.',
+                       'tip': 'And by the way typically in government contracts it is rolled into the '
+                              'monthly price.',
+                       'timestamp': 789,
+                       'timestamp_seconds': 789,
+                       'timestamp_label': '[00:13:09]',
+                       'url': 'https://www.youtube.com/watch?v=j4duUCt9Dlw&t=789s',
+                       'markdown': '[00:13:09](https://www.youtube.com/watch?v=j4duUCt9Dlw&t=789s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uARedcLLS5c',
+                       'title': 'How to Price a Government Cleaning Contract (Step-by-Step)',
+                       'channel': 'Small Business Bid School',
+                       'author': 'Small Business Bid School',
+                       'text': 'A 20% profit margin is not the same as adding 20% to your costs.',
+                       'tip': 'A 20% profit margin is not the same as adding 20% to your costs.',
+                       'timestamp': 132,
+                       'timestamp_seconds': 132,
+                       'timestamp_label': '[00:02:12]',
+                       'url': 'https://www.youtube.com/watch?v=uARedcLLS5c&t=132s',
+                       'markdown': '[00:02:12](https://www.youtube.com/watch?v=uARedcLLS5c&t=132s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0pkOO_oVhN8',
+                       'title': 'Calculation of Workers’ Compensation, General Liability (GL) & Bond in '
+                                'your Estimates',
+                       'channel': 'Runjob Software',
+                       'author': 'Runjob Software',
+                       'text': "The same laborer carries a different workers' comp rate sweeping a floor "
+                               'than working on the 30th floor or 16 feet underground.',
+                       'tip': "Rate workers' comp by activity, not by one code per worker class.",
+                       'timestamp': 83,
+                       'timestamp_seconds': 83,
+                       'timestamp_label': '[00:01:23]',
+                       'url': 'https://www.youtube.com/watch?v=0pkOO_oVhN8&t=83s',
+                       'markdown': '[00:01:23](https://www.youtube.com/watch?v=0pkOO_oVhN8&t=83s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'z_tdT6I7K7U',
+                       'title': 'How to Win Commercial Cleaning Contracts With Schools',
+                       'channel': 'Commercial Cleaning CEO',
+                       'author': 'Commercial Cleaning CEO',
+                       'text': 'We quoted this school approximately $160,000 per year as the initial '
+                               'quote.',
+                       'tip': 'We quoted this school approximately $160,000 per year as the initial quote.',
+                       'timestamp': 727,
+                       'timestamp_seconds': 727,
+                       'timestamp_label': '[00:12:07]',
+                       'url': 'https://www.youtube.com/watch?v=z_tdT6I7K7U&t=727s',
+                       'markdown': '[00:12:07](https://www.youtube.com/watch?v=z_tdT6I7K7U&t=727s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xeZ8_Jlv0AI',
+                       'title': 'Ready to Win Big Cleaning Contracts  Here’s What You Must Know First!',
+                       'channel': 'Karen Denton KSC',
+                       'author': 'Karen Denton KSC',
+                       'text': 'You might have to pay your employees before your customer even pays you.',
+                       'tip': 'You might have to pay your employees before your customer even pays you.',
+                       'timestamp': 104,
+                       'timestamp_seconds': 104,
+                       'timestamp_label': '[00:01:44]',
+                       'url': 'https://www.youtube.com/watch?v=xeZ8_Jlv0AI&t=104s',
+                       'markdown': '[00:01:44](https://www.youtube.com/watch?v=xeZ8_Jlv0AI&t=104s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dOj6rxt15uE',
+                       'title': 'Government Bid Proposal Training: Start a Cleaning Business (Janitorial) '
+                                'for the Government!',
+                       'channel': 'GovKidMethod',
+                       'author': 'GovKidMethod',
+                       'text': 'Good news is not every contract requires past performance.',
+                       'tip': 'Good news is not every contract requires past performance.',
+                       'timestamp': 2936,
+                       'timestamp_seconds': 2936,
+                       'timestamp_label': '[00:48:56]',
+                       'url': 'https://www.youtube.com/watch?v=dOj6rxt15uE&t=2936s',
+                       'markdown': '[00:48:56](https://www.youtube.com/watch?v=dOj6rxt15uE&t=2936s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hyUO_-BE-qc',
+                       'title': 'TOP 10 things you need to get started in Janitorial! | Government '
+                                'Contracting',
+                       'channel': 'Sheenapreneur',
+                       'author': 'Sheenapreneur',
+                       'text': 'You will not save time or money by skimping out with bad supplies.',
+                       'tip': 'You will not save time or money by skimping out with bad supplies.',
+                       'timestamp': 272,
+                       'timestamp_seconds': 272,
+                       'timestamp_label': '[00:04:32]',
+                       'url': 'https://www.youtube.com/watch?v=hyUO_-BE-qc&t=272s',
+                       'markdown': '[00:04:32](https://www.youtube.com/watch?v=hyUO_-BE-qc&t=272s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LARqKW_L-QI',
+                       'title': 'Government Cleaning Contracts: How to Bid and Win More Business',
+                       'channel': 'Owlsfield Financial Corp',
+                       'author': 'Owlsfield Financial Corp',
+                       'text': 'A missing requirement or late bid can eliminate an otherwise strong '
+                               'proposal.',
+                       'tip': 'A missing requirement or late bid can eliminate an otherwise strong '
+                              'proposal.',
+                       'timestamp': 105,
+                       'timestamp_seconds': 105,
+                       'timestamp_label': '[00:01:45]',
+                       'url': 'https://www.youtube.com/watch?v=LARqKW_L-QI&t=105s',
+                       'markdown': '[00:01:45](https://www.youtube.com/watch?v=LARqKW_L-QI&t=105s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5htVyehKCRo',
+                       'title': 'SECRET SHORTCUT TO GOVERNMENT CLEANING CONTRACT TO WIN BIG (NO-BID '
+                                'METHOD)',
+                       'channel': 'victoria menifee',
+                       'author': 'victoria menifee',
+                       'text': 'So micro purchases are goods or services up to $10,000.',
+                       'tip': 'So micro purchases are goods or services up to $10,000.',
+                       'timestamp': 216,
+                       'timestamp_seconds': 216,
+                       'timestamp_label': '[00:03:36]',
+                       'url': 'https://www.youtube.com/watch?v=5htVyehKCRo&t=216s',
+                       'markdown': '[00:03:36](https://www.youtube.com/watch?v=5htVyehKCRo&t=216s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5htVyehKCRo',
+                       'title': 'SECRET SHORTCUT TO GOVERNMENT CLEANING CONTRACT TO WIN BIG (NO-BID '
+                                'METHOD)',
+                       'channel': 'victoria menifee',
+                       'author': 'victoria menifee',
+                       'text': 'The rhythm for the intro letter is going to be every two weeks.',
+                       'tip': 'The rhythm for the intro letter is going to be every two weeks.',
+                       'timestamp': 1886,
+                       'timestamp_seconds': 1886,
+                       'timestamp_label': '[00:31:26]',
+                       'url': 'https://www.youtube.com/watch?v=5htVyehKCRo&t=1886s',
+                       'markdown': '[00:31:26](https://www.youtube.com/watch?v=5htVyehKCRo&t=1886s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Hoy7bWdKYOA',
+                       'title': 'Government Contracting Decoded: From Basics to Bidding',
+                       'channel': 'Squared Compass',
+                       'author': 'Squared Compass',
+                       'text': 'Government contracting is how federal, state, and local agencies purchase '
+                               'the goods and services they need to operate.',
+                       'tip': 'Government contracting is how federal, state, and local agencies purchase '
+                              'the goods and services they need to operate.',
+                       'timestamp': 30,
+                       'timestamp_seconds': 30,
+                       'timestamp_label': '[00:00:30]',
+                       'url': 'https://www.youtube.com/watch?v=Hoy7bWdKYOA&t=30s',
+                       'markdown': '[00:00:30](https://www.youtube.com/watch?v=Hoy7bWdKYOA&t=30s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dr59GJ2T5v4',
+                       'title': 'Janitorial GovCon Bids (beta.sam.gov) | LIVE with GovKidMethod',
+                       'channel': 'GovKidMethod',
+                       'author': 'GovKidMethod',
+                       'text': 'If you had to have a government contract in order to get government '
+                               'contracts, nobody would have government contracts.',
+                       'tip': 'If you had to have a government contract in order to get government '
+                              'contracts, nobody would have government contracts.',
+                       'timestamp': 1673,
+                       'timestamp_seconds': 1673,
+                       'timestamp_label': '[00:27:53]',
+                       'url': 'https://www.youtube.com/watch?v=dr59GJ2T5v4&t=1673s',
+                       'markdown': '[00:27:53](https://www.youtube.com/watch?v=dr59GJ2T5v4&t=1673s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dr59GJ2T5v4',
+                       'title': 'Janitorial GovCon Bids (beta.sam.gov) | LIVE with GovKidMethod',
+                       'channel': 'GovKidMethod',
+                       'author': 'GovKidMethod',
+                       'text': "You have to build that in, which is why there's 2080 hours in a year, but "
+                               'you can only bill the government off of 1920 hours.',
+                       'tip': "You have to build that in, which is why there's 2080 hours in a year, but "
+                              'you can only bill the government off of 1920 hours.',
+                       'timestamp': 2710,
+                       'timestamp_seconds': 2710,
+                       'timestamp_label': '[00:45:10]',
+                       'url': 'https://www.youtube.com/watch?v=dr59GJ2T5v4&t=2710s',
+                       'markdown': '[00:45:10](https://www.youtube.com/watch?v=dr59GJ2T5v4&t=2710s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ua_m84N0cwA',
+                       'title': 'The Lucrative Janitorial Services Government Contracts Industry!',
+                       'channel': 'GovKidMethod',
+                       'author': 'GovKidMethod',
+                       'text': 'After five years, you will have accumulated over $600,000 in profit.',
+                       'tip': 'After five years, you will have accumulated over $600,000 in profit.',
+                       'timestamp': 1472,
+                       'timestamp_seconds': 1472,
+                       'timestamp_label': '[00:24:32]',
+                       'url': 'https://www.youtube.com/watch?v=ua_m84N0cwA&t=1472s',
+                       'markdown': '[00:24:32](https://www.youtube.com/watch?v=ua_m84N0cwA&t=1472s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UVPaRFj3LDE',
+                       'title': 'How to Write a Proposal to the Government (Strategy + Full Walkthrough)',
+                       'channel': 'Kizzy Parks',
+                       'author': 'Kizzy Parks',
+                       'text': 'Your total price because they are paying you monthly you take that sum and '
+                               'divide it by 12.',
+                       'tip': 'Your total price because they are paying you monthly you take that sum and '
+                              'divide it by 12.',
+                       'timestamp': 319,
+                       'timestamp_seconds': 319,
+                       'timestamp_label': '[00:05:19]',
+                       'url': 'https://www.youtube.com/watch?v=UVPaRFj3LDE&t=319s',
+                       'markdown': '[00:05:19](https://www.youtube.com/watch?v=UVPaRFj3LDE&t=319s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3vr4bkvaByo',
+                       'title': 'Step-by-Step: Fill Out a Government Cleaning Contract with Me!',
+                       'channel': "Bea's Business",
+                       'author': "Bea's Business",
+                       'text': 'Download the files that you submitted just to make sure everything is '
+                               'correct.',
+                       'tip': 'Download the files that you submitted just to make sure everything is '
+                              'correct.',
+                       'timestamp': 460,
+                       'timestamp_seconds': 460,
+                       'timestamp_label': '[00:07:40]',
+                       'url': 'https://www.youtube.com/watch?v=3vr4bkvaByo&t=460s',
+                       'markdown': '[00:07:40](https://www.youtube.com/watch?v=3vr4bkvaByo&t=460s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EoNW1HDL3PI',
+                       'title': 'City and County of San Francisco Janitorial Services RFP '
+                                '(SFGOV-0000011743).- Stronger Built LLC',
+                       'channel': 'Stronger Built',
+                       'author': 'Stronger Built',
+                       'text': 'Miss even one piece of this documentation, automatic fail.',
+                       'tip': 'Miss even one piece of this documentation, automatic fail.',
+                       'timestamp': 391,
+                       'timestamp_seconds': 391,
+                       'timestamp_label': '[00:06:31]',
+                       'url': 'https://www.youtube.com/watch?v=EoNW1HDL3PI&t=391s',
+                       'markdown': '[00:06:31](https://www.youtube.com/watch?v=EoNW1HDL3PI&t=391s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'M3p8970sZyg',
+                       'title': 'How to Find, Bid and Win UK Cleaning Contracts (2026 Walkthrough)',
+                       'channel': 'CleanTender',
+                       'author': 'CleanTender',
+                       'text': "To win those, you need to get on the buyer's radar yourself.",
+                       'tip': "To win those, you need to get on the buyer's radar yourself.",
+                       'timestamp': 80,
+                       'timestamp_seconds': 80,
+                       'timestamp_label': '[00:01:20]',
+                       'url': 'https://www.youtube.com/watch?v=M3p8970sZyg&t=80s',
+                       'markdown': '[00:01:20](https://www.youtube.com/watch?v=M3p8970sZyg&t=80s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'}]}

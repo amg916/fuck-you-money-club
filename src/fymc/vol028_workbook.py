@@ -1,1560 +1,878 @@
 from __future__ import annotations
 
-
 def build_volume_028_workbook() -> dict:
-    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
-        return {
-            "name": name,
-            "type": input_type,
-            "prompt": prompt,
-            "example": example,
-        }
-
-    return {
-        "workbook_id": "wb-028-commercial-cleaning-contracts",
-        "volume_id": "vol-028-commercial-cleaning-contracts",
-        "title": "Commercial Cleaning Contracts — Operator Companion Workbook",
-        "subtitle": (
-            "6 Printable Operator Worksheets for Recurring Commercial and Medical "
-            "Janitorial Contracts: Production-Rate Bidding, Crew Economics, Chemical "
-            "Safety, Supervisor Pods, Working Capital, and Transferable Contract Value"
-        ),
-        "worksheets": [
-            {
-                "worksheet_id": "ws-01",
-                "number": 1,
-                "title": "Opportunity, Vertical Underwriting and Counterparty Qualification",
-                "purpose": (
-                    "Select recurring cleaning opportunities that fit verified crew capacity, "
-                    "payment resources, and site-specific safety requirements. Convert a "
-                    "walkthrough into measurable scope, distinguish commercial offices from "
-                    "medical environments, and qualify the actual purchasing entity before "
-                    "committing a price or mobilization date."
-                ),
-                "chapter_ref": "Q1, Q2, Q6",
-                "instructions": [
-                    (
-                        "Choose one service territory and one initial facility segment. "
-                        "Measure driving time during the actual evening shift, identify "
-                        "supervisor coverage, and exclude sites whose access restrictions "
-                        "or specialist procedures exceed the team's documented capability."
-                    ),
-                    (
-                        "Conduct a room-by-room walkthrough with the facilities contact. "
-                        "Record cleanable area, flooring, fixture counts, waste streams, "
-                        "occupancy, cleaning frequencies, and access windows; building "
-                        "marketing area alone cannot support a defensible labor estimate."
-                    ),
-                    (
-                        "Translate observed tasks into paid minutes using licensed ISSA "
-                        "reference material and your own timed trials. Record the reference "
-                        "edition and conditions, then add setup, travel, interruptions, "
-                        "and supervision rather than hiding them inside productivity assumptions."
-                    ),
-                    (
-                        "Verify the contracting entity, signer authority, invoice destination, "
-                        "purchase-order requirements, and payment history through authorized "
-                        "business references. Obtain written confirmation of scope ownership "
-                        "when a property manager purchases services for a separate building owner."
-                    ),
-                    (
-                        "Compare the opportunity against concentration limits and the "
-                        "canonical portfolio scenarios. Keep contract revenue separate from "
-                        "client property value or medical collections, and reject attractive "
-                        "headline pricing when staffing, credit, or scope assumptions remain unsupported."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Target vertical and territory",
-                        "textarea",
-                        (
-                            "Define the facility category, practical service radius, purchasing "
-                            "role, and excluded work. Explain why available supervisors, "
-                            "equipment, and training can support this segment without relying "
-                            "on future hires."
-                        ),
-                        (
-                            "Target professional offices within a 25-minute evening drive "
-                            "of the equipment depot. Pursue facilities managers controlling "
-                            "10,000 to 40,000 cleanable square feet. Exclude operating rooms, "
-                            "hazardous spill response, and exterior high-access windows. "
-                            "One supervisor can inspect two nearby sites during a scheduled "
-                            "four-hour coverage window."
-                        ),
-                    ),
-                    field(
-                        "Measured facility scope",
-                        "textarea",
-                        (
-                            "Record cleanable square footage by surface, restroom fixtures, "
-                            "touchpoints, occupancy, and service frequency. Identify areas "
-                            "excluded from routine cleaning and state who verified the "
-                            "measurements during the walkthrough."
-                        ),
-                        (
-                            "The facilities manager verified 20,000 cleanable square feet: "
-                            "12,000 carpet, 6,000 resilient flooring, and 2,000 restroom "
-                            "and breakroom surfaces. Service occurs five nights weekly, "
-                            "using a 260-visit annual planning assumption. The scope includes "
-                            "12 restroom fixtures and excludes tenant storage rooms, "
-                            "exterior glass, and periodic floor restoration."
-                        ),
-                    ),
-                    field(
-                        "Medical environment boundary",
-                        "textarea",
-                        (
-                            "Identify whether the site contains patient-care areas, blood "
-                            "exposure tasks, sharps, isolation rooms, or protected records. "
-                            "Separate ordinary janitorial duties from procedures requiring "
-                            "additional training, equipment, and explicit contractual responsibility."
-                        ),
-                        (
-                            "A proposed outpatient clinic includes six examination rooms "
-                            "and a reception area. Clinic staff retain sharps handling "
-                            "and instrument processing. Before pricing examination-room "
-                            "cleaning, the supervisor documents exposure tasks, disinfectant "
-                            "requirements, and the clinic's written protocol. The office "
-                            "bid remains separate until those additional labor minutes "
-                            "and controls are measured."
-                        ),
-                    ),
-                    field(
-                        "Production-rate evidence",
-                        "textarea",
-                        (
-                            "Document task quantities, measured production rates, equipment "
-                            "assumptions, and source dates. Use ISSA material as a starting "
-                            "reference, then explain adjustments supported by observed "
-                            "furniture density, soil load, and access conditions."
-                        ),
-                        (
-                            "A timed trial assigns 1.50 hours to carpet care, 1.00 "
-                            "to hard floors, 1.00 to restrooms, and 0.50 to waste "
-                            "and touchpoints per visit. Total direct cleaning is 4.00 "
-                            "hours. Record the licensed ISSA reference edition separately; "
-                            "these are site trial results, not universal published rates."
-                        ),
-                    ),
-                    field(
-                        "Counterparty and signer authority",
-                        "textarea",
-                        (
-                            "Identify the legal purchaser, service beneficiary, authorized "
-                            "signer, and accounts-payable contact. Describe the evidence "
-                            "connecting the signer to the purchaser and resolve whether "
-                            "a property manager acts as agent."
-                        ),
-                        (
-                            "Example purchaser Harbor Office Holdings LLC owns the serviced "
-                            "building. Its property manager signs only after providing "
-                            "written agency authority naming that entity. Accounts payable "
-                            "confirms the invoice email and purchase-order number. The "
-                            "contract identifies Harbor as payment obligor rather than "
-                            "assuming the management company's brand establishes credit."
-                        ),
-                    ),
-                    field(
-                        "Payment terms and credit exposure",
-                        "textarea",
-                        (
-                            "Specify invoice timing, contractual due dates, dispute procedures, "
-                            "reference checks, and maximum unpaid exposure. Connect the "
-                            "payment cycle to payroll funding rather than treating booked "
-                            "revenue as immediately available cash."
-                        ),
-                        (
-                            "The proposal bills $4,000 monthly in arrears with payment "
-                            "due 30 days after a valid invoice. Two authorized trade "
-                            "references report payments within 35 days. Finance models "
-                            "roughly 60 days from initial service to first cash and "
-                            "requires $10,200 of dedicated operating coverage before mobilization."
-                        ),
-                    ),
-                    field(
-                        "Access and service continuity",
-                        "textarea",
-                        (
-                            "List permitted service windows, badge issuance, alarm procedures, "
-                            "storage rights, water access, and after-hours contacts. Assign "
-                            "responsibility for lost access and explain how downtime "
-                            "changes the labor estimate or service calendar."
-                        ),
-                        (
-                            "Cleaning runs from 6:00 p.m. to 10:00 p.m., Monday "
-                            "through Friday. The customer provides two named badges, "
-                            "a locked chemical cabinet, and a working janitor sink. "
-                            "If access fails, the crew calls the facilities contact "
-                            "and records waiting time; rescheduling and charge treatment "
-                            "follow the signed access clause."
-                        ),
-                    ),
-                    field(
-                        "Scope exclusions and change triggers",
-                        "textarea",
-                        (
-                            "State included outcomes and measurable triggers for repricing. "
-                            "Address increased occupancy, added square footage, unusual soil, "
-                            "periodic services, and emergency requests so supervisors can "
-                            "distinguish defects from newly requested work."
-                        ),
-                        (
-                            "The $4,000 monthly scope covers the measured office and "
-                            "listed tasks. Carpet extraction, floor stripping, construction "
-                            "dust, and emergency spills require separate written pricing. "
-                            "An added 2,000 square feet triggers a new task-time "
-                            "study. Occupancy changes prompt review when documented "
-                            "service minutes increase for two consecutive weeks."
-                        ),
-                    ),
-                    field(
-                        "Concentration and renewal exposure",
-                        "textarea",
-                        (
-                            "Calculate the proposed customer's share of recognized annual "
-                            "revenue and identify correlated building ownership or management "
-                            "relationships. Record renewal dates and a concrete mitigation "
-                            "when several contracts could terminate together."
-                        ),
-                        (
-                            "A $48,000 annual contract represents 6.62% of the "
-                            "$725,000 Base revenue benchmark. Three buildings under "
-                            "the same payment obligor would total $144,000, or "
-                            "19.86%. Management reviews shared ownership before adding "
-                            "a fourth building and schedules prospecting outside that "
-                            "group rather than treating each address as independent diversification."
-                        ),
-                    ),
-                    field(
-                        "Opportunity decision and scorecard anchor",
-                        "textarea",
-                        (
-                            "Record the pursuit decision, evidence still required, and "
-                            "named decision owner. Anchor expectations to the candidate's "
-                            "actual rank, score, revenue basis, and staffing dependence "
-                            "instead of presenting cleaning as passive income."
-                        ),
-                        (
-                            "Proceed to a paid site trial, subject to verified access "
-                            "and funding. Commercial Cleaning Contracts is Candidate "
-                            "#10, pipeline rank #23 of 29, with a 82/100 "
-                            "Money-to-Manpower Score. Its component scores are 21, "
-                            "12, 6, 11, and 6 respectively; growth requires "
-                            "additional paid crew hours, not software alone."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The operations lead and finance owner sign the measured scope, "
-                    "counterparty record, capacity estimate, and cash requirement. Do not "
-                    "issue a binding start date while purchasing authority, medical-task "
-                    "boundaries, access, or payroll coverage remains unresolved."
-                ),
-            },
-            {
-                "worksheet_id": "ws-02",
-                "number": 2,
-                "title": "Unit Economics, Rework Reserve and Working-Capital Float",
-                "purpose": (
-                    "Build an auditable contract contribution model from paid hours, "
-                    "not square footage alone. Quantify rework, collections timing, "
-                    "and overhead allocations while preserving the canonical Conservative, "
-                    "Base, and Scaled portfolio outcomes as benchmarks requiring a "
-                    "separate executable staffing and cost plan."
-                ),
-                "chapter_ref": "Q3, Q4",
-                "instructions": [
-                    (
-                        "Enter annual service visits before calculating monthly averages. "
-                        "Use the actual contract calendar for live bids, including "
-                        "holidays and shutdowns; the worked example uses 260 visits "
-                        "solely to keep its annual labor reconciliation explicit."
-                    ),
-                    (
-                        "Build loaded labor from wages, employer taxes, insurance, "
-                        "benefits, and paid nonproductive time. Do not count travel "
-                        "or setup twice when those hours already appear as separate "
-                        "lines in the paid-time schedule."
-                    ),
-                    (
-                        "Separate direct cleaning, mobilization, supervision, consumables, "
-                        "equipment, administration, and expected defect cost. Reconcile "
-                        "annual totals first, then divide by twelve so rounded monthly "
-                        "figures do not create unexplained annual differences."
-                    ),
-                    (
-                        "Calculate working capital from the timing of actual cash "
-                        "outflows and collections. Stress a delayed first payment, "
-                        "a disputed invoice, and a payroll cycle arriving before "
-                        "receivables clear; revenue recognition does not fund wages."
-                    ),
-                    (
-                        "Compare the contract illustration with all three canonical "
-                        "scenarios without rewriting their published numbers. Label "
-                        "contribution separately from owner net profit, and flag "
-                        "any wage or capacity assumption that makes a benchmark "
-                        "unattainable under the proposed staffing plan."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Canonical scenario reconciliation",
-                        "textarea",
-                        (
-                            "Enter annual recognized cleaning revenue, net margin, owner "
-                            "net profit, implied total cost, and team composition for "
-                            "every canonical scenario. Preserve the published values "
-                            "even when operational feasibility requires further investigation."
-                        ),
-                        (
-                            "Conservative: $250,000 revenue, 8% margin, $20,000 owner "
-                            "net, $230,000 implied cost, 1 FT + 3 C. Base: "
-                            "$725,000, 12.0%, $87,000, $638,000, 1 FT + 3 C. "
-                            "Scaled: $1,200,000, 16%, $192,000, $1,008,000, "
-                            "2 FT + 4 C, totaling 6 people. These are portfolio benchmarks."
-                        ),
-                    ),
-                    field(
-                        "Direct cleaning labor",
-                        "textarea",
-                        (
-                            "Calculate direct annual hours from visits and task time, "
-                            "then apply a documented loaded hourly cost. Identify "
-                            "what the burden includes and reserve separate lines "
-                            "for paid activities outside direct cleaning."
-                        ),
-                        (
-                            "The office requires 260 visits multiplied by 4.00 "
-                            "direct hours, equaling 1,040 annual hours. A $20 "
-                            "wage plus an illustrative 25% employer burden produces "
-                            "$25 per paid hour. Direct cleaning therefore costs "
-                            "$26,000 annually, or $2,166.67 monthly after rounding. "
-                            "Local payroll and insurance quotes must replace the illustrative burden."
-                        ),
-                    ),
-                    field(
-                        "Mobilization and supervision costs",
-                        "textarea",
-                        (
-                            "Price intersite travel, setup, teardown, required meetings, "
-                            "and supervisor coverage. State whether each quantity is "
-                            "measured per visit or per month and distinguish payroll "
-                            "cost from any separate vehicle expense."
-                        ),
-                        (
-                            "Allow 0.80 additional paid hours per visit for setup "
-                            "and allocated intersite travel: 208 annual hours at "
-                            "$25 cost $5,200. Supervisor inspection allocation is "
-                            "$2,400 annually. Combined cost is $7,600, or "
-                            "$633.33 monthly. Vehicle expense, if incurred, must "
-                            "be priced separately rather than assumed inside the hourly wage."
-                        ),
-                    ),
-                    field(
-                        "Nonlabor cost schedule",
-                        "textarea",
-                        (
-                            "Enter consumables, equipment ownership or rental, insurance "
-                            "allocation, and administration. Identify customer-provided supplies "
-                            "and explain how replacement equipment is funded without "
-                            "counting both purchase cash and depreciation as operating expense."
-                        ),
-                        (
-                            "Annual operating allocations are $1,800 for chemicals "
-                            "and consumables, $1,200 for equipment usage, and "
-                            "$3,000 for insurance and administration. Their combined "
-                            "$6,000 equals $500 monthly. Customer restroom paper "
-                            "is excluded and purchased directly by the customer. "
-                            "Equipment purchase cash is tracked separately in the startup budget."
-                        ),
-                    ),
-                    field(
-                        "Scrub and defect reserve",
-                        "textarea",
-                        (
-                            "Estimate expected callback hours and materials from defect "
-                            "frequency and correction time. Treat planned periodic floor "
-                            "work separately, and explain how actual corrections consume "
-                            "the management reserve without duplicating expense."
-                        ),
-                        (
-                            "Budget 48 annual callback hours at $25, creating "
-                            "a $1,200 management rework allowance, or $100 "
-                            "monthly. That supports twelve four-hour corrections. "
-                            "Routine floor restoration remains separately priced. Actual "
-                            "callback payroll is tagged to the defect code and "
-                            "compared with the allowance; accounting records actual "
-                            "expense rather than a second automatic payroll charge."
-                        ),
-                    ),
-                    field(
-                        "Price and contribution bridge",
-                        "textarea",
-                        (
-                            "Reconcile annual contract revenue to direct and allocated "
-                            "costs, contribution, and any further portfolio overhead. "
-                            "Show both dollars and percentages, making clear which "
-                            "profit measure the selling team may quote."
-                        ),
-                        (
-                            "Annual price is $48,000. Costs total $26,000 + "
-                            "$5,200 + $2,400 + $1,800 + $1,200 + "
-                            "$3,000 + $1,200 = $40,800. Contribution is "
-                            "$7,200, or 15%. An illustrative additional $1,440 "
-                            "portfolio allocation leaves $5,760, or 12%; this "
-                            "single-contract illustration does not establish the Base portfolio result."
-                        ),
-                    ),
-                    field(
-                        "Working-capital float calculation",
-                        "textarea",
-                        (
-                            "Model the interval from first service to collected payment "
-                            "and identify cash outflows within that interval. Add "
-                            "a specific disruption buffer, distinguishing required funding "
-                            "from receivables balance and accounting profit."
-                        ),
-                        (
-                            "Monthly operating cost is $3,400. Monthly arrears "
-                            "billing with net-30 terms can put first cash roughly "
-                            "60 days after service starts. Planning coverage is "
-                            "two months of cost, $6,800, plus one $3,400 "
-                            "buffer, totaling $10,200. Approximately $8,000 of "
-                            "earned or invoiced exposure is revenue exposure, not the funding calculation."
-                        ),
-                    ),
-                    field(
-                        "Startup cash and expense boundaries",
-                        "textarea",
-                        (
-                            "Allocate startup resources across equipment, deposits, onboarding, "
-                            "and payroll float. Explain how the stated monthly "
-                            "operating range relates to launch scale rather than "
-                            "mistaking it for every mature portfolio expense."
-                        ),
-                        (
-                            "A $35,000 launch budget allocates $10,000 equipment, "
-                            "$3,000 insurance deposits, $2,000 onboarding, and "
-                            "$20,000 float. It sits within the $10,000–$50,000 "
-                            "startup range. The $3,000–$14,000 monthly operating "
-                            "range describes a planning envelope; Base implied "
-                            "all-in annual cost is $638,000, averaging $53,166.67 monthly."
-                        ),
-                    ),
-                    field(
-                        "Labor sensitivity and feasibility exception",
-                        "textarea",
-                        (
-                            "Stress wage increases, productivity slippage, and the "
-                            "canonical team labels against the available cost budget. "
-                            "Document infeasibility explicitly rather than concealing it "
-                            "through unpaid owner work or misclassified labor."
-                        ),
-                        (
-                            "A 10% increase in the $25 loaded rate adds "
-                            "$3,120 across 1,248 direct and mobilization hours. "
-                            "Separately, five full-time employees at 2,080 hours "
-                            "and $25 loaded cost require $260,000 before "
-                            "contractors. That exceeds Conservative's $230,000 total "
-                            "cost benchmark; the benchmark remains unchanged, but this staffing-cost interpretation fails."
-                        ),
-                    ),
-                    field(
-                        "Repricing and cash intervention",
-                        "textarea",
-                        (
-                            "Define numeric triggers for repricing, collection escalation, "
-                            "and suspension review. Name the responsible role and "
-                            "specify how contractual notice requirements prevent an "
-                            "improvised service interruption during a payment dispute."
-                        ),
-                        (
-                            "Review pricing when paid hours exceed bid hours "
-                            "by 10% for four weeks. Finance contacts accounts "
-                            "payable five days after the due date and escalates "
-                            "at fifteen days. At thirty overdue days, the "
-                            "owner reviews contractual notice and cure provisions "
-                            "before changing service, while preserving the next two payroll cycles."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "Finance verifies the $40,800 contract cost bridge, $7,200 "
-                    "contribution, and $10,200 funding model. Portfolio planning must "
-                    "retain all canonical figures and separately resolve any staffing "
-                    "feasibility exception before those benchmarks become an operating budget."
-                ),
-            },
-            {
-                "worksheet_id": "ws-03",
-                "number": 3,
-                "title": "Execution, Service Ledger and Technical QA Pre-Flight",
-                "purpose": (
-                    "Translate the signed scope into repeatable shifts, controlled "
-                    "chemical use, traceable time records, and invoice-ready evidence. "
-                    "Give supervisors a practical inspection routine that detects "
-                    "missed work early while protecting customer access information "
-                    "and separating approved extras from routine service."
-                ),
-                "chapter_ref": "Q7, Q8",
-                "instructions": [
-                    (
-                        "Create one service specification for each site and version "
-                        "it whenever scope changes. Link tasks to rooms, frequencies, "
-                        "estimated minutes, and acceptance evidence so cleaners do "
-                        "not have to interpret a sales proposal during a shift."
-                    ),
-                    (
-                        "Verify badges, keys, alarm instructions, emergency contacts, "
-                        "storage, equipment condition, and chemical documentation before "
-                        "the first visit. Conduct a supervised dry run and "
-                        "record any access delay as an operational defect requiring ownership."
-                    ),
-                    (
-                        "Use individual time records with site and task codes. "
-                        "Capture required paid activities and preserve corrections "
-                        "with reviewer identity; a schedule is an expectation, "
-                        "whereas the payroll ledger must reflect actual compensable work."
-                    ),
-                    (
-                        "Inspect observable outcomes using a fixed sampling plan "
-                        "and documented severity rules. Record room identifiers "
-                        "instead of sensitive customer content, and connect each "
-                        "failed item to correction time, responsible staff, and follow-up verification."
-                    ),
-                    (
-                        "Reconcile service completion, authorized extras, payroll, supply "
-                        "usage, and billing each week. Investigate mismatches before "
-                        "month-end invoicing so missing evidence does not turn "
-                        "a completed service into a preventable collection dispute."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Versioned service specification",
-                        "textarea",
-                        (
-                            "List task frequencies, area identifiers, estimated minutes, "
-                            "and acceptance criteria. Record the effective version "
-                            "and customer acknowledgment so an old checklist cannot "
-                            "silently override a newly signed scope."
-                        ),
-                        (
-                            "Specification HARBOR-03 takes effect on the first "
-                            "service date. Restrooms receive fixture cleaning, "
-                            "touchpoint treatment, restocking from customer supplies, "
-                            "and floor care each visit. Carpet spotting is "
-                            "daily; full extraction is excluded. The customer "
-                            "acknowledges the specification and a 240-minute direct "
-                            "cleaning estimate before the supervisor publishes shift assignments."
-                        ),
-                    ),
-                    field(
-                        "Shift and route construction",
-                        "textarea",
-                        (
-                            "Convert site labor into named assignments, route order, "
-                            "supervision windows, and backup coverage. Distinguish elapsed "
-                            "shift duration from total labor hours when multiple "
-                            "cleaners work simultaneously on the same site."
-                        ),
-                        (
-                            "Two cleaners each receive 2.00 direct hours and "
-                            "0.40 allocated setup or travel hours per visit. "
-                            "Combined paid time is 4.80 hours, although the "
-                            "paired assignment occupies roughly 2.40 elapsed hours. "
-                            "The supervisor checks the site on Tuesday and "
-                            "Friday within the separately budgeted inspection allocation."
-                        ),
-                    ),
-                    field(
-                        "Access custody and emergency contacts",
-                        "textarea",
-                        (
-                            "Define badge and key custody, authorized access recipients, "
-                            "loss reporting, and emergency escalation. Keep secrets "
-                            "out of printable worksheets and explain how access "
-                            "is revoked when personnel leave the assignment."
-                        ),
-                        (
-                            "Badge A17 is assigned to the shift lead and "
-                            "badge A18 to the second cleaner. The worksheet "
-                            "records custody but no alarm code. Codes stay "
-                            "in a restricted password manager. Lost badges "
-                            "are reported immediately to building security; departing "
-                            "staff return access items before their assignment is closed."
-                        ),
-                    ),
-                    field(
-                        "Chemical and equipment pre-flight",
-                        "textarea",
-                        (
-                            "Record product identity, label instructions, safety data "
-                            "sheet access, dilution method, equipment checks, and "
-                            "required protective equipment. State who confirms that "
-                            "the chosen product is suitable for the actual surface."
-                        ),
-                        (
-                            "The supervisor confirms the selected EPA-registered "
-                            "disinfectant label permits the intended surface and "
-                            "requires five minutes of wet contact in this "
-                            "example. Staff verify dilution, maintain wetness for "
-                            "that interval, and inspect vacuum cords before "
-                            "use. The actual purchased product label controls; "
-                            "five minutes is not assumed for every disinfectant."
-                        ),
-                    ),
-                    field(
-                        "Timekeeping and payroll evidence",
-                        "textarea",
-                        (
-                            "Specify individual time entry, location attribution, correction "
-                            "review, and retention responsibilities. Include between-site "
-                            "travel and required meetings where compensable, and "
-                            "prohibit deleting work merely because a budget was exceeded."
-                        ),
-                        (
-                            "Cleaner 014 records 2.00 direct hours, 0.25 "
-                            "setup hours, and 0.15 intersite travel hours "
-                            "for the assignment. A missed clock-out is "
-                            "corrected using their written account and supervisor "
-                            "review. The original entry remains visible in "
-                            "the audit history; the customer billing budget "
-                            "does not cap earned payroll."
-                        ),
-                    ),
-                    field(
-                        "Inspection sampling and defect severity",
-                        "textarea",
-                        (
-                            "Set an inspection sample, pass calculation, severity "
-                            "definitions, and corrective deadlines. Explain which "
-                            "failures require immediate response regardless of the "
-                            "overall score and avoid substituting appearance checks "
-                            "for infection-control evidence."
-                        ),
-                        (
-                            "Inspect twenty scored items per visit sample. "
-                            "Nineteen passes produce 95%, but a blocked "
-                            "exit or unsecured chemical container requires immediate "
-                            "correction even at that score. A visibly "
-                            "missed waste bin receives next-shift correction. "
-                            "Visual inspection confirms observed cleaning outcomes; "
-                            "it does not establish microbial reduction or replace required contact-time records."
-                        ),
-                    ),
-                    field(
-                        "Service event ledger",
-                        "textarea",
-                        (
-                            "Define the minimum record linking a scheduled visit "
-                            "to actual work, inspection, and billing. Include "
-                            "unique identifiers, timestamps, exception status, and "
-                            "review ownership without collecting unnecessary customer information."
-                        ),
-                        (
-                            "Event HARBOR-2026-1201 stores site ID, scheduled "
-                            "date, two worker IDs, 4.80 paid hours, "
-                            "checklist version HARBOR-03, inspection score, and "
-                            "supervisor review time. Its status changes from "
-                            "scheduled to completed to verified. A linked "
-                            "exception records one supply shortage without copying "
-                            "customer documents or placing alarm details in the ledger."
-                        ),
-                    ),
-                    field(
-                        "Extra work authorization",
-                        "textarea",
-                        (
-                            "Describe how requested work outside scope becomes "
-                            "an authorized service item. Capture the requester, "
-                            "price, labor estimate, timing, and evidence that "
-                            "the requester can bind the paying customer."
-                        ),
-                        (
-                            "The facilities manager requests a separately scheduled "
-                            "carpet extraction for $650. The change record "
-                            "states six labor hours, $75 materials and "
-                            "equipment allocation, the service area, and the "
-                            "authorized purchaser's acceptance. The crew performs "
-                            "the work only after scheduling confirmation, and "
-                            "billing uses a separate line rather than changing recurring revenue."
-                        ),
-                    ),
-                    field(
-                        "Weekly ledger reconciliation",
-                        "textarea",
-                        (
-                            "Reconcile visits, paid hours, supply issues, corrections, "
-                            "and authorized extras against the bid. Name "
-                            "the reviewer and explain how exceptions move "
-                            "to payroll correction, operating review, or customer billing."
-                        ),
-                        (
-                            "Five visits should produce 24.00 paid direct "
-                            "and mobilization hours. The ledger shows 25.50, "
-                            "including a documented 1.50-hour callback costing "
-                            "$37.50 at the loaded rate. Payroll retains "
-                            "all hours. Operations tags the callback against "
-                            "the rework allowance, while billing retains the "
-                            "agreed monthly price because the correction is contractor-caused."
-                        ),
-                    ),
-                    field(
-                        "Invoice readiness and evidence package",
-                        "textarea",
-                        (
-                            "Specify the records needed to issue a correct "
-                            "invoice and resolve a dispute. Check contract "
-                            "entity, purchase order, service period, authorized "
-                            "extras, applicable tax treatment, and customer delivery requirements."
-                        ),
-                        (
-                            "The monthly package contains the $4,000 recurring "
-                            "charge, service dates, purchase order H-441, "
-                            "and the approved $650 extraction line. It "
-                            "references completion records without attaching worker "
-                            "personal data. Finance verifies jurisdiction-specific tax "
-                            "treatment and sends the invoice to the confirmed "
-                            "accounts-payable address, recording delivery and the contractual due date."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The supervisor completes a dry run and verifies access, "
-                    "equipment, task timing, and exception handling. Finance traces "
-                    "one sample visit through timekeeping, inspection, and invoicing, "
-                    "with every mismatch assigned a correction owner and deadline."
-                ),
-            },
-            {
-                "worksheet_id": "ws-04",
-                "number": 4,
-                "title": "Statutory, Licensing, Contract and Outreach Audit",
-                "purpose": (
-                    "Turn wage, classification, chemical, insurance, and outreach "
-                    "requirements into specific operating evidence. Identify which "
-                    "rules actually apply to each location and contract, assign "
-                    "owners for unresolved requirements, and prevent a generic "
-                    "subcontract agreement from substituting for lawful workforce design."
-                ),
-                "chapter_ref": "Q5, Q9",
-                "instructions": [
-                    (
-                        "Build a jurisdiction map for every serviced location, "
-                        "not just the company mailing address. Verify business "
-                        "registration, tax treatment, wage floors, paid-leave rules, "
-                        "and specialized licensing using current official sources "
-                        "before assigning responsibility or quoting labor."
-                    ),
-                    (
-                        "Classify each worker relationship from actual operating "
-                        "facts. Review control, independence, equipment, customers, "
-                        "and applicable federal and state tests; a contractor "
-                        "label, invoice, or certificate of insurance does "
-                        "not independently settle employment status."
-                    ),
-                    (
-                        "Translate the chemical inventory and exposure assessment "
-                        "into training, protective equipment, labeling, and emergency "
-                        "procedures. Medical sites require task-specific evaluation "
-                        "rather than a blanket assumption that every cleaner "
-                        "has identical exposure or privacy obligations."
-                    ),
-                    (
-                        "Review customer and subcontract terms together so "
-                        "service promises, insurance endorsements, incident reporting, "
-                        "and termination rights align. Identify federal service "
-                        "contract clauses separately because wage determinations "
-                        "can materially change a seemingly ordinary janitorial bid."
-                    ),
-                    (
-                        "Audit prospecting channels before scaling outreach. "
-                        "Document sender identity, suppression handling, telephone "
-                        "technology, and data sources, then retain evidence "
-                        "showing why a particular campaign satisfies the "
-                        "rules applicable to its recipients and communication method."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Jurisdiction and registration register",
-                        "textarea",
-                        (
-                            "List the service address, governing state and municipality, "
-                            "required registrations, and responsible verifier. Include "
-                            "service-tax treatment and specialist work restrictions, "
-                            "using dated official findings rather than broad assumptions."
-                        ),
-                        (
-                            "Before opening a California service territory, the "
-                            "operations owner checks state registration, the "
-                            "city's business-license requirements, and janitorial "
-                            "employer registration under California Labor Code "
-                            "sections 1420–1434. The register stores source "
-                            "links, review dates, renewal deadlines, and applicability "
-                            "findings. Tax treatment is separately verified for "
-                            "the precise services and billing jurisdiction."
-                        ),
-                    ),
-                    field(
-                        "Minimum wage, overtime and paid time",
-                        "textarea",
-                        (
-                            "Identify applicable wage floors, overtime calculations, "
-                            "compensable travel, and required payroll records. "
-                            "Aggregate each employee's work across customer "
-                            "sites and include additional state requirements "
-                            "where they provide broader protection."
-                        ),
-                        (
-                            "Under 29 U.S.C. sections 206 and 207, "
-                            "apply covered wage and overtime requirements. "
-                            "An employee working 38 hours at one "
-                            "site and 6 at another has 44 "
-                            "hours, not two separate short weeks. Review "
-                            "29 CFR 785.38 for workday travel and "
-                            "29 CFR 516.2 for required records."
-                        ),
-                    ),
-                    field(
-                        "Worker classification evidence",
-                        "textarea",
-                        (
-                            "Record the facts supporting employee or independent "
-                            "business treatment under each applicable test. "
-                            "Identify conflicting evidence, the review owner, "
-                            "and required changes before using a subcontract "
-                            "structure in the labor budget."
-                        ),
-                        (
-                            "A cleaner working the company's fixed route, "
-                            "using its supplies, and receiving detailed daily "
-                            "direction is budgeted as W-2 labor pending "
-                            "review. Federal tax analysis considers 26 U.S.C. "
-                            "3121(d)(2). California analysis also examines Labor "
-                            "Code 2775 and any applicable 2776 exception; "
-                            "a business-to-business agreement alone does not establish eligibility."
-                        ),
-                    ),
-                    field(
-                        "Subcontractor operating file",
-                        "textarea",
-                        (
-                            "Define the documents and ongoing checks required "
-                            "for a genuine subcontract business. Address "
-                            "staffing responsibility, payroll obligations, insurance, "
-                            "scope, audit rights, and any client consent "
-                            "required before subcontracted work begins."
-                        ),
-                        (
-                            "The subcontract file contains entity verification, "
-                            "tax documentation, signed scope, insurance evidence, "
-                            "and confirmation of who employs the assigned "
-                            "crew. The customer contract expressly permits "
-                            "the arrangement. California Labor Code 2810.3 "
-                            "is reviewed where applicable to shared liability. "
-                            "The scorecard's C headcount is a planning "
-                            "label, not evidence that any individual is lawfully classified."
-                        ),
-                    ),
-                    field(
-                        "Hazard communication and chemical controls",
-                        "textarea",
-                        (
-                            "Map the chemical inventory to labels, safety "
-                            "data sheets, employee training, protective equipment, "
-                            "and dilution controls. Identify the specific "
-                            "standard and the records demonstrating that "
-                            "assigned workers understand the hazards."
-                        ),
-                        (
-                            "The employer maintains its hazard communication "
-                            "program under 29 CFR 1910.1200, including "
-                            "container labeling, accessible safety data sheets, "
-                            "and required training. PPE selection follows "
-                            "the task assessment under 29 CFR 1910.132. "
-                            "Disinfectant use follows the EPA label; "
-                            "7 U.S.C. 136j(a)(2)(G) addresses use inconsistent "
-                            "with pesticide labeling, subject to statutory exceptions."
-                        ),
-                    ),
-                    field(
-                        "Bloodborne exposure and medical privacy",
-                        "textarea",
-                        (
-                            "Determine whether assigned duties create occupational "
-                            "bloodborne exposure and whether services involve "
-                            "protected health information beyond incidental contact. "
-                            "Document the resulting controls without treating "
-                            "every medical cleaning contract as identical."
-                        ),
-                        (
-                            "Where occupational exposure exists, apply 29 "
-                            "CFR 1910.1030, including an exposure control "
-                            "plan, required training, and hepatitis B "
-                            "vaccination availability within ten working days "
-                            "of initial assignment, subject to specified "
-                            "exceptions. Janitorial incidental contact does not "
-                            "automatically create a HIPAA business associate; "
-                            "evaluate actual functions under 45 CFR 160.103."
-                        ),
-                    ),
-                    field(
-                        "Insurance and incident allocation",
-                        "textarea",
-                        (
-                            "Record required coverage, limits, endorsements, exclusions, "
-                            "deductibles, and renewal dates. Distinguish customer "
-                            "contract requirements from statutory obligations and "
-                            "confirm that medical tasks, vehicle use, "
-                            "and subcontracting fit the actual policy wording."
-                        ),
-                        (
-                            "The customer requests $1 million per occurrence "
-                            "and $2 million aggregate general liability, "
-                            "plus workers' compensation as required by "
-                            "the operating state. The broker verifies "
-                            "the actual additional-insured endorsement rather "
-                            "than relying only on a certificate. "
-                            "The supervisor reports property damage immediately "
-                            "and preserves facts without promising uninsured reimbursement."
-                        ),
-                    ),
-                    field(
-                        "Contract remedies and public procurement",
-                        "textarea",
-                        (
-                            "Review scope, payment, indemnity, cure rights, "
-                            "termination, assignment, and public-contract obligations. "
-                            "Identify any applicable wage determination "
-                            "before bidding and document who confirms "
-                            "that contract terms match the modeled costs."
-                        ),
-                        (
-                            "The private office agreement provides written "
-                            "defect notice and a defined correction "
-                            "period before termination for remediable service "
-                            "failures. A separate covered federal service "
-                            "solicitation exceeding $2,500 requires review "
-                            "under 41 U.S.C. 6701–6707 and FAR "
-                            "52.222-41, including applicable wage and fringe "
-                            "requirements; ordinary private-office labor assumptions cannot simply carry over."
-                        ),
-                    ),
-                    field(
-                        "Email, calling and suppression controls",
-                        "textarea",
-                        (
-                            "Identify each outreach channel, recipient source, "
-                            "sender disclosures, opt-out process, and calling "
-                            "technology. Record applicable federal and "
-                            "state rules, including circumstances where "
-                            "business recipients still receive statutory protection."
-                        ),
-                        (
-                            "Commercial email follows 15 U.S.C. 7704 "
-                            "with accurate headers, nondeceptive subjects, "
-                            "required identification, a valid postal address, "
-                            "and an effective opt-out honored within "
-                            "ten business days. Calling and texting "
-                            "receive separate review under 47 U.S.C. "
-                            "227 and applicable state rules; a "
-                            "business contact is not a universal exemption."
-                        ),
-                    ),
-                    field(
-                        "Evidence ownership and remediation",
-                        "textarea",
-                        (
-                            "Assign every requirement an owner, evidence "
-                            "location, review date, and correction deadline. "
-                            "Explain which unresolved conditions prevent "
-                            "staff assignment or service commencement "
-                            "and how completion is independently checked."
-                        ),
-                        (
-                            "The operations owner controls chemical training "
-                            "records, payroll controls wage configuration, "
-                            "and finance tracks insurance renewals. A "
-                            "missing product safety data sheet prevents "
-                            "use of that product until corrected. "
-                            "The supervisor verifies the replacement record "
-                            "and worker instruction before resuming the "
-                            "task, while unaffected contracted cleaning continues with suitable approved materials."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The responsible owners verify current jurisdictional requirements, "
-                    "worker treatment, wage settings, insurance evidence, and task-specific "
-                    "safety controls. Unresolved medical exposure, unlawful pay practices, "
-                    "or unauthorized subcontracting must be corrected before the affected "
-                    "assignment begins."
-                ),
-            },
-            {
-                "worksheet_id": "ws-05",
-                "number": 5,
-                "title": "Automation, Growth Flywheel and Risk Fallback Tracker",
-                "purpose": (
-                    "Automate scheduling, inspection records, and billing without "
-                    "concealing the labor required to fulfill contracts. Build "
-                    "a measurable local sales process, connect qualified opportunities "
-                    "to available crew capacity, and maintain workable fallbacks "
-                    "for software outages, absences, collection delays, and customer loss."
-                ),
-                "chapter_ref": "Q6, Q10",
-                "instructions": [
-                    (
-                        "Choose a small operating stack with clear system "
-                        "ownership. Define which application holds customer "
-                        "records, schedules, time, inspections, and invoices, "
-                        "then use stable identifiers to prevent duplicate "
-                        "sites or mismatched records across integrations."
-                    ),
-                    (
-                        "Automate routine transfers only after the manual "
-                        "process reconciles. Validate incoming fields, keep "
-                        "a retry log, and route exceptions to "
-                        "a named person; a failed integration must "
-                        "not silently skip payroll or issue duplicate invoices."
-                    ),
-                    (
-                        "Measure outbound activity through qualified walkthroughs "
-                        "and signed recurring revenue, not email volume "
-                        "alone. Match each prospect segment to proof "
-                        "of service capability and exclude contacts that "
-                        "have opted out or fall outside the territory."
-                    ),
-                    (
-                        "Tie every proposed start date to verified "
-                        "staffing, training, equipment, and cash coverage. "
-                        "Automation can reduce coordination effort, but "
-                        "the portfolio still needs paid cleaning hours "
-                        "and supervisor capacity for each additional contracted visit."
-                    ),
-                    (
-                        "Rehearse the fallback for an absent cleaner, "
-                        "failed timekeeping application, delayed customer payment, "
-                        "and lost anchor account. Record the response "
-                        "owner, activation threshold, recovery evidence, and "
-                        "cost instead of assuming software availability guarantees service continuity."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "System map and record ownership",
-                        "textarea",
-                        (
-                            "Name the tools used for prospecting, scheduling, "
-                            "timekeeping, inspection, and accounting. Assign "
-                            "the authoritative owner of each data "
-                            "element and define stable identifiers "
-                            "that survive customer or site name changes."
-                        ),
-                        (
-                            "HubSpot holds prospect activity, Jobber holds "
-                            "service schedules, an approved timekeeping "
-                            "system records actual hours, and QuickBooks "
-                            "Online holds invoices and payments. Site "
-                            "ID SITE-028-001 appears in every system. "
-                            "The operations administrator owns site identity; "
-                            "finance owns customer billing identity and "
-                            "does not let a marketing import overwrite payment terms."
-                        ),
-                    ),
-                    field(
-                        "Schedule publication and exception handling",
-                        "textarea",
-                        (
-                            "Define how recurring work becomes crew assignments "
-                            "and how access changes, holidays, absences, "
-                            "and overtime conflicts are detected. "
-                            "Specify who resolves exceptions before "
-                            "workers receive the final schedule."
-                        ),
-                        (
-                            "The scheduler creates five weekly visits "
-                            "from the signed service calendar. A "
-                            "validation step checks badges, training "
-                            "status, availability, and projected weekly "
-                            "hours before publication. A sixth visit "
-                            "requested for a holiday event enters "
-                            "an exception queue; the supervisor obtains "
-                            "scope and price confirmation rather than allowing automatic unpaid schedule expansion."
-                        ),
-                    ),
-                    field(
-                        "Inspection capture and privacy controls",
-                        "textarea",
-                        (
-                            "Describe the mobile inspection form, required "
-                            "fields, acceptable photographs, permissions, and "
-                            "retention process. Minimize captured information "
-                            "and ensure supervisors can document "
-                            "defects without recording customer records "
-                            "or private occupant activity."
-                        ),
-                        (
-                            "A Microsoft Forms inspection captures site "
-                            "ID, room code, twenty scored items, "
-                            "severity, and correction owner. Photos "
-                            "show the affected surface only; screens, "
-                            "patient names, and documents stay outside "
-                            "the frame. Access is limited to "
-                            "assigned operations staff, and the retention "
-                            "schedule follows contractual needs and documented recordkeeping requirements."
-                        ),
-                    ),
-                    field(
-                        "Billing automation and duplicate prevention",
-                        "textarea",
-                        (
-                            "Specify the verified event that permits "
-                            "invoice creation, the unique billing "
-                            "key, validation checks, and retry "
-                            "behavior. Separate recurring charges from "
-                            "extras and prevent automation from "
-                            "converting unreviewed requests into billed revenue."
-                        ),
-                        (
-                            "The billing key combines customer ID, "
-                            "contract ID, service month, and charge "
-                            "type. A verified monthly service "
-                            "summary prepares one $4,000 draft "
-                            "invoice. Retrying the workflow finds "
-                            "the same key instead of creating "
-                            "another charge. The $650 extraction "
-                            "requires its own accepted change record and completion evidence before inclusion."
-                        ),
-                    ),
-                    field(
-                        "Prospect list and outreach sequence",
-                        "textarea",
-                        (
-                            "Define a narrow prospect segment, permitted "
-                            "contact sources, useful message content, "
-                            "follow-up timing, and suppression handling. "
-                            "Make the offer specific to "
-                            "facility operating problems rather than "
-                            "promising unsupported savings or service outcomes."
-                        ),
-                        (
-                            "Build a list of forty nearby "
-                            "professional offices using public business "
-                            "directories and customer referrals. Offer "
-                            "a walkthrough focused on missed-task "
-                            "patterns and measurable frequencies. Send "
-                            "one relevant introduction and one "
-                            "follow-up after seven business days. "
-                            "Check suppression before each send and record the recipient's response without buying indiscriminate lists."
-                        ),
-                    ),
-                    field(
-                        "Sales funnel and acquisition economics",
-                        "textarea",
-                        (
-                            "Calculate movement from targeted accounts "
-                            "to conversations, walkthroughs, proposals, and "
-                            "wins. Include sales labor and "
-                            "travel in acquisition cost, and "
-                            "compare that cost with contribution "
-                            "rather than gross contract revenue."
-                        ),
-                        (
-                            "Forty targeted accounts yield eight conversations, "
-                            "four walkthroughs, two proposals, and "
-                            "one $48,000 annual contract in "
-                            "this planning example. Acquisition spending "
-                            "is $1,200 including sales labor "
-                            "and travel. At $600 monthly "
-                            "contract contribution, simple acquisition payback "
-                            "is two months of contribution, separate from collection timing and mobilization cash."
-                        ),
-                    ),
-                    field(
-                        "Renewal and referral flywheel",
-                        "textarea",
-                        (
-                            "Define the recurring customer review, "
-                            "evidence presented, renewal timing, and "
-                            "referral request. Link growth to "
-                            "documented service quality while avoiding "
-                            "incentives that cause supervisors to "
-                            "hide complaints or manipulate inspection scores."
-                        ),
-                        (
-                            "Each month, the account lead reviews "
-                            "completed visits, inspection scores, callbacks, "
-                            "and agreed changes with the "
-                            "facilities manager. Renewal discussion begins "
-                            "ninety days before expiry. After "
-                            "two consecutive months with resolved "
-                            "defects and timely reporting, request "
-                            "one introduction to a nearby building manager; referral credit never depends on suppressing complaints."
-                        ),
-                    ),
-                    field(
-                        "Absence and turnover fallback",
-                        "textarea",
-                        (
-                            "Set absence thresholds, relief coverage, "
-                            "training requirements, customer communication, and "
-                            "incremental cost. Ensure the response "
-                            "does not depend on off-clock "
-                            "labor or untrained temporary staff "
-                            "performing medical or chemical tasks."
-                        ),
-                        (
-                            "A cleaner reports absence two hours "
-                            "before service. The scheduler contacts "
-                            "a trained relief employee with "
-                            "current site access and checks "
-                            "their weekly hours. Two added "
-                            "hours at a $30 loaded "
-                            "rate cost $60. If coverage "
-                            "cannot satisfy the contracted window, the supervisor contacts the customer and documents the agreed recovery plan."
-                        ),
-                    ),
-                    field(
-                        "Software outage and recovery drill",
-                        "textarea",
-                        (
-                            "Describe offline scheduling, time capture, "
-                            "access to safety information, and "
-                            "later reconciliation. Name the recovery "
-                            "owner and explain how backfilled "
-                            "records are distinguished from original "
-                            "entries without losing actual paid time."
-                        ),
-                        (
-                            "During a four-hour application outage, "
-                            "the shift lead uses the "
-                            "printed route sheet and individual "
-                            "time forms. Safety data sheets "
-                            "remain accessible in the site "
-                            "binder. The administrator imports records "
-                            "the next morning with an "
-                            "outage tag, checks duplicates, and obtains supervisor confirmation before payroll export and invoice preparation resume."
-                        ),
-                    ),
-                    field(
-                        "Capacity-aware growth and risk triggers",
-                        "textarea",
-                        (
-                            "Set measurable limits for contracted "
-                            "hours, customer concentration, receivable aging, "
-                            "and supervisor load. Explain the "
-                            "specific response when a limit "
-                            "is crossed and keep hiring "
-                            "decisions connected to collected cash."
-                        ),
-                        (
-                            "Pause new start-date commitments when "
-                            "next month's assigned hours exceed "
-                            "90% of verified available capacity. "
-                            "Review any payment obligor exceeding "
-                            "20% of annual revenue and "
-                            "any invoice thirty days overdue. "
-                            "The owner prioritizes collections, recruits "
-                            "trained relief capacity, or delays starts; sending more proposals is not a remedy for an understaffed route."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "Operations demonstrates one schedule-to-inspection-to-invoice cycle, "
-                    "a duplicate-safe retry, and an offline recovery. Sales may "
-                    "commit additional starts only when named staffing, required "
-                    "training, supervisor coverage, and working capital support the "
-                    "new service obligations."
-                ),
-            },
-            {
-                "worksheet_id": "ws-06",
-                "number": 6,
-                "title": "30-Day Launch, Supervisor Pod KPIs and Exit Readiness",
-                "purpose": (
-                    "Organize the first thirty days around evidence, "
-                    "paid capacity, and cash protection rather than "
-                    "an arbitrary sales deadline. Establish supervisor "
-                    "pod metrics and a transferable operating record "
-                    "that supports renewal, delegation, and eventual "
-                    "buyer review without overstating earnings or contract durability."
-                ),
-                "chapter_ref": "Q11, Q12",
-                "instructions": [
-                    (
-                        "Set thirty-day deliverables that remain useful "
-                        "even if the first contract closes "
-                        "later. The expected first-deal window "
-                        "is one to four months, so "
-                        "track completed underwriting and operating "
-                        "readiness separately from signed revenue."
-                    ),
-                    (
-                        "Assign a named owner and dated "
-                        "evidence requirement to each weekly "
-                        "milestone. Release spending in relation "
-                        "to verified opportunities and required "
-                        "readiness, preserving payroll float instead "
-                        "of buying a full equipment fleet before scope is known."
-                    ),
-                    (
-                        "Construct each supervisor pod from "
-                        "actual paid hours, travel geography, "
-                        "inspection duties, relief availability, and "
-                        "training coverage. A headcount label "
-                        "does not establish productive capacity, "
-                        "and contractor availability must be evidenced rather than assumed."
-                    ),
-                    (
-                        "Review quality, labor variance, safety, "
-                        "collections, and concentration together each "
-                        "week. Investigate deteriorating leading indicators "
-                        "before they become lost contracts, "
-                        "and preserve reported defects rather "
-                        "than rewarding a superficially perfect dashboard."
-                    ),
-                    (
-                        "Maintain buyer-ready records from the "
-                        "first signed contract: service scope, "
-                        "renewal rights, assignment terms, payroll "
-                        "support, equipment ownership, and reconciled "
-                        "earnings. Separate documented transferable operations "
-                        "from relationships or unpaid owner work that disappear after a sale."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Days 1–7: underwriting and setup",
-                        "textarea",
-                        (
-                            "Identify first-week deliverables, accountable roles, "
-                            "spending limits, and evidence of "
-                            "completion. Prioritize jurisdictional checks, "
-                            "target selection, insurance quotations, "
-                            "and a realistic cash plan "
-                            "before promising a service launch."
-                        ),
-                        (
-                            "By day seven, the owner "
-                            "selects a 25-minute service territory, "
-                            "qualifies forty target offices, and "
-                            "obtains payroll and insurance estimates. "
-                            "Finance builds the $35,000 startup "
-                            "allocation and preserves $20,000 "
-                            "for float. Operations completes the "
-                            "jurisdiction register and records three authorized walkthrough appointments without counting them as contracted revenue."
-                        ),
-                    ),
-                    field(
-                        "Days 8–14: walkthroughs and price proof",
-                        "textarea",
-                        (
-                            "Set second-week targets for measured "
-                            "scope, task timing, counterparty checks, "
-                            "and proposal preparation. Specify which "
-                            "assumptions require direct observation "
-                            "and what evidence prevents an "
-                            "unsupported low bid from being released."
-                        ),
-                        (
-                            "By day fourteen, operations measures "
-                            "three sites and performs one "
-                            "authorized timing trial. Finance reconciles "
-                            "the office illustration to $48,000 "
-                            "annual price and $40,800 cost. "
-                            "The owner verifies purchasing authority "
-                            "and payment routing before issuing "
-                            "two proposals. Any unmeasured medical task remains outside those prices until its procedure and labor requirement are established."
-                        ),
-                    ),
-                    field(
-                        "Days 15–21: workforce and operating rehearsal",
-                        "textarea",
-                        (
-                            "Define hiring or subcontract review, "
-                            "training, access preparation, and systems "
-                            "testing for the third week. "
-                            "Keep contingent staffing plans explicit "
-                            "and avoid treating candidate interest "
-                            "as confirmed available cleaning capacity."
-                        ),
-                        (
-                            "By day twenty-one, the supervisor "
-                            "checks two employee candidates, completes "
-                            "required onboarding for confirmed assignments, "
-                            "and rehearses the 4.80-hour paid "
-                            "visit plan. The administrator tests "
-                            "time capture and a draft "
-                            "invoice using a training record. "
-                            "No worker receives unsupervised chemical duties before task-specific instruction, and no unsigned customer is marked active."
-                        ),
-                    ),
-                    field(
-                        "Days 22–30: launch or readiness checkpoint",
-                        "textarea",
-                        (
-                            "State fourth-week actions for both "
-                            "a signed contract and a "
-                            "still-open sales process. Define "
-                            "launch evidence, first inspection, "
-                            "cash verification, and the next "
-                            "decision without forcing revenue into an artificial deadline."
-                        ),
-                        (
-                            "If the contract is signed, "
-                            "verify access and $10,200 operating "
-                            "coverage, conduct the first supervised "
-                            "visit, and review the first "
-                            "five service events. If negotiations "
-                            "continue, preserve cash and schedule "
-                            "the next decision meeting. A "
-                            "day-thirty readiness result is acceptable within the one-to-four-month first-deal planning window; an unsigned proposal remains pipeline."
-                        ),
-                    ),
-                    field(
-                        "Supervisor pod capacity model",
-                        "textarea",
-                        (
-                            "Translate the canonical team label "
-                            "into explicit employee roles, paid "
-                            "hours, productive fractions, and "
-                            "contractor commitments. Test required "
-                            "service hours against available capacity "
-                            "and expose any gap before approving growth."
-                        ),
-                        (
-                            "For Base's 5 FT + "
-                            "4 C, illustrate four cleaners "
-                            "at 2,080 hours and 80% "
-                            "direct productivity: 6,656 hours. "
-                            "One supervisor adds 520 direct "
-                            "hours. Four independently reviewed contractor "
-                            "commitments at 1,040 hours and "
-                            "80% productivity add 3,328, totaling 10,504 direct hours. Contractor hours are assumptions requiring written availability, not promised capacity."
-                        ),
-                    ),
-                    field(
-                        "Revenue capacity and service-mix bridge",
-                        "textarea",
-                        (
-                            "Compare revenue per productive hour "
-                            "with the contract model and "
-                            "portfolio target. Identify required "
-                            "changes in price, task productivity, "
-                            "service mix, or staffing without "
-                            "silently changing the canonical revenue or team figures."
-                        ),
-                        (
-                            "The office model earns $48,000 "
-                            "over 1,040 direct hours, or "
-                            "$46.15 per hour. Base revenue "
-                            "of $725,000 would require approximately "
-                            "15,708 direct hours at that "
-                            "unrounded rate, exceeding illustrative capacity "
-                            "by 5,204 hours. At 10,504 "
-                            "hours, required revenue averages $69.02 per hour. Validate a different service mix or capacity plan before treating Base as executable."
-                        ),
-                    ),
-                    field(
-                        "Weekly pod KPI scorecard",
-                        "textarea",
-                        (
-                            "Define a small set of "
-                            "quality, labor, coverage, cash, "
-                            "and safety metrics with calculation "
-                            "rules, thresholds, and owners. "
-                            "Use paired measures so cost "
-                            "improvements cannot conceal missed work or unpaid time."
-                        ),
-                        (
-                            "The weekly review tracks completed "
-                            "visits divided by scheduled visits, "
-                            "inspection passes divided by sampled "
-                            "items, actual versus budgeted paid "
-                            "hours, callback cost, and overdue "
-                            "receivables. Targets are 100% visit "
-                            "coverage, at least 95% inspection "
-                            "passes, and no unexplained unpaid hours. Safety-critical defects trigger immediate response regardless of aggregate performance."
-                        ),
-                    ),
-                    field(
-                        "Owner role and earnings normalization",
-                        "textarea",
-                        (
-                            "Document the owner's recurring tasks, "
-                            "hours, compensation treatment, and "
-                            "replacement cost. Reconcile recorded "
-                            "earnings to a transferable operating "
-                            "model without adding back expenses "
-                            "that a successor would still incur."
-                        ),
-                        (
-                            "The owner performs fifteen weekly "
-                            "hours of sales and dispatch. "
-                            "At an illustrative $35 loaded "
-                            "replacement rate for 52 weeks, "
-                            "that role costs $27,300 annually. "
-                            "If it is absent from "
-                            "the underlying cost model, a "
-                            "buyer-style sensitivity reduces $87,000 Base owner net to $59,700. The canonical $87,000 remains unchanged and is clearly distinguished from this sensitivity."
-                        ),
-                    ),
-                    field(
-                        "Transferability and contract ledger",
-                        "textarea",
-                        (
-                            "List executed contracts, renewal dates, "
-                            "termination rights, assignment conditions, "
-                            "customer concentration, and supporting "
-                            "service records. Identify customer "
-                            "consents or equipment ownership "
-                            "evidence needed for a potential transfer of operations."
-                        ),
-                        (
-                            "The contract ledger records Harbor's "
-                            "$48,000 annual recurring revenue, "
-                            "signed scope, renewal date, "
-                            "termination provisions, and assignment "
-                            "language. If assignment requires "
-                            "customer consent, the owner records "
-                            "that dependency rather than labeling "
-                            "the revenue automatically transferable. Equipment serial numbers, purchase records, maintenance history, and any lender interests are maintained in a separate asset register."
-                        ),
-                    ),
-                    field(
-                        "Scale decision and exit-readiness review",
-                        "textarea",
-                        (
-                            "State the next ninety-day decision, "
-                            "required evidence, capital limits, "
-                            "and unresolved risks. Preserve "
-                            "the Scaled benchmark while "
-                            "requiring proof that additional "
-                            "crew hours, supervision, collections, and documentation support expansion."
-                        ),
-                        (
-                            "The next review requires three "
-                            "months of reconciled contract results, "
-                            "documented relief coverage, and "
-                            "adequate cash before adding sites. "
-                            "Scaled remains $1,200,000 revenue, "
-                            "16% margin, $192,000 owner net, "
-                            "and 2 FT + 4 C. "
-                            "The owner must substantiate the $1,008,000 cost envelope and eleven-person capacity; scheduling software alone does not establish either result."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The owner signs a thirty-day evidence ledger, a funded "
-                    "ninety-day plan, and a pod capacity reconciliation. Exit "
-                    "readiness requires traceable earnings, documented owner replacement "
-                    "work, accessible service records, and an explicit register of "
-                    "contract-transfer conditions and unresolved operating risks."
-                ),
-            },
-        ],
-    }
+    return {'workbook_id': 'wb-028-commercial-cleaning-contracts',
+ 'volume_id': 'vol-028-commercial-cleaning-contracts',
+ 'title': 'Commercial Cleaning Contracts — Practitioner Testimony Operator Workbook',
+ 'subtitle': 'From a sub-$1,000 launch to six-figure accounts: lean founder playbooks, first-contract '
+             'walkthroughs and proposals, cold-call and paid-search prospecting, production-rate bid math, '
+             'stress-tested worked bids, and the proof packages that win day porter, medical, and '
+             'big-client contracts',
+ 'worksheets': [{'worksheet_id': 'ws-01',
+                 'number': 1,
+                 'title': 'Lean Launch and First Contract Planner',
+                 'purpose': 'Map a lean launch budget, a first-week calling plan, and the '
+                            'walkthrough-to-close sequence that wins the first recurring contract on '
+                            'dependability and speed, priced from day one for the labor the account will '
+                            'eventually need.',
+                 'chapter_ref': 'Q1-Q2',
+                 'instructions': ['Separate every launch expense into buy-now and defer-until-close '
+                                  'columns before spending a single dollar on supplies or insurance.',
+                                  'Set a daily calling target and project the walkthroughs and contracts '
+                                  'that volume should produce over the first thirty days.',
+                                  'Price the first account for hired labor, not for your own time, and '
+                                  'confirm worker classification before any helper starts.',
+                                  'Arrive early to every walkthrough, measure only cleanable square '
+                                  'footage, and qualify the prospect on pain, decision, and budget.',
+                                  'Send the proposal within two to three hours of the walkthrough and '
+                                  'expand only when current accounts run smoothly.'],
+                 'fields': [{'name': 'launch_budget_ledger',
+                             'type': 'textarea',
+                             'prompt': 'List every dollar you will spend before your first signed '
+                                       'contract, separating items you must buy now from items you will '
+                                       'defer until a deal closes, such as supplies and insurance. Write '
+                                       'the total and confirm it stays under your launch ceiling.',
+                             'example': 'Buy now: $99 CBN membership, about $200 for the LLC, and a $25 '
+                                        'domain, roughly $324 against a $1,000 ceiling [AJ SIMMONS — '
+                                        'VrlDbQP4iQI @ 00:14:20]. Defer: zero cleaning supplies until a '
+                                        'deal closes. Insurance is quoted today but purchased only when a '
+                                        'deal is ready to close [AJ SIMMONS — VrlDbQP4iQI @ 00:15:12].'},
+                            {'name': 'week_one_call_plan',
+                             'type': 'textarea',
+                             'prompt': 'Write your first-week calling target, the daily dial count Monday '
+                                       'through Friday, and the walkthroughs you expect from that volume. '
+                                       'Then project how many additional calls it will take to convert '
+                                       'those walkthroughs into recurring contracts and monthly revenue.',
+                             'example': 'Target 400 calls in week one, projecting one to four '
+                                        'walkthroughs. Another 1,500 calls should yield one to four '
+                                        'contracts worth about $2K a month recurring [AJ SIMMONS — '
+                                        'VrlDbQP4iQI @ 00:14:20]. 100 calls a day means 2,000 a month, '
+                                        '10-20 appointments and at least 1-2 closes [AJ SIMMONS — '
+                                        'ZDdd0TDbbFo @ 00:03:56].'},
+                            {'name': 'hands_on_vs_hire_decision',
+                             'type': 'textarea',
+                             'prompt': 'Decide whether you will clean the first accounts yourself or hire '
+                                       'from day one, and explain why. Note which tasks you must '
+                                       'personally learn before delegating and the point at which a helper '
+                                       'takes over the account.',
+                             'example': 'I will clean the gym account myself for the first months, because '
+                                        "'you have to do everything yourself first' [AJ SIMMONS — "
+                                        "7pVd69Als0I @ 00:00:57]. Counterpoint logged: AJ also says 'Hire "
+                                        "people from day one' [AJ SIMMONS — srB5UatlJlU @ 00:16:38]. "
+                                        'Compromise: I work alongside the first helper, then step back '
+                                        'once the checklist runs without me.'},
+                            {'name': 'labor_priced_rate',
+                             'type': 'text',
+                             'prompt': 'State the monthly price for your first account and show it covers '
+                                       'the labor you will eventually hire, not just your own time. Record '
+                                       'the wage you assume, the expected labor share, and the net margin '
+                                       'you are protecting.',
+                             'example': "Priced the gymnastics facility 'to have employees in there' from "
+                                        'the first invoice [DJ The Boss — ZVDOV6jG8Dw @ 00:09:55]. '
+                                        'Benchmark split: labor 60%, supplies 10%, marketing and '
+                                        'operations 10%, net 15-20% [UpFlip — d4Iip7BHXwg @ 00:08:13]. If '
+                                        'my quote only works while I personally clean, it fails the gate '
+                                        'and gets repriced before sending.'},
+                            {'name': 'worker_classification_check',
+                             'type': 'text',
+                             'prompt': 'Name the accountant or bookkeeper who will confirm how your first '
+                                       'helper is classified, the date of that conversation, and the '
+                                       'classification decided. This must be settled before the helper '
+                                       'works a single shift on any account.',
+                             'example': 'Booked a call with our bookkeeper before the first helper starts '
+                                        'on the gym account, because one operator paid a $12,000 '
+                                        'misclassification fine [UpFlip — d4Iip7BHXwg @ 00:24:43]. '
+                                        'Decision recorded in writing with the date. If the bookkeeper '
+                                        "cannot confirm the classification in time, the helper's start "
+                                        'date moves; I cover the shifts until it is settled.'},
+                            {'name': 'prospect_list_source',
+                             'type': 'textarea',
+                             'prompt': 'Build a qualified prospect list and describe where each name came '
+                                       'from, such as Google Maps, referrals, or a networking group. Write '
+                                       'the number of qualified prospects, the filter you used, and the '
+                                       'first referral channel you will join.',
+                             'example': 'Pulled 50 qualified offices from Google Maps, since 50 qualified '
+                                        'prospects beat hundreds of random calls [Janitorial Empire — '
+                                        '8ireVJkHvoo @ 00:02:03]. Referral channel: a BNI group of 15 to '
+                                        '30 people, doing the one-to-ones and expecting 3 to 4 offices '
+                                        '[Mike Mak — G2qoM4LqGdM @ 00:04:46]. Every name gets a source tag '
+                                        'on the list.'},
+                            {'name': 'walkthrough_observation_notes',
+                             'type': 'textarea',
+                             'prompt': 'Record what you observed during the walkthrough, starting with the '
+                                       'lobby wait. List the dust, smudges, and fixture details you '
+                                       'checked, your laser-measured cleanable square footage, and any '
+                                       'test the point of contact set for you.',
+                             'example': 'Arrived 20 minutes early; lobby showed cobwebs, ledge dust, floor '
+                                        'smudges and window fingerprints [AJ SIMMONS — IMsJ1NxKfUk @ '
+                                        '00:04:13]. Checked partition ledges, blinds and toilet bolts when '
+                                        'the manager tested me [AJ SIMMONS — Xvc-7yo1lng @ 00:05:39]. '
+                                        'Laser-measured cleanable space only, skipping storage, so the bid '
+                                        'does not run way too high [AJ SIMMONS — mk-8avM72Ms @ 00:02:52].'},
+                            {'name': 'qualification_and_pain',
+                             'type': 'textarea',
+                             'prompt': "Write the prospect's answers to the three qualifiers of pain, "
+                                       'decision, and budget. Identify who signs, what frustrates them '
+                                       'about the current cleaner, and the number you will float if the '
+                                       'budget conversation stalls before the proposal stage.',
+                             'example': 'Pain: the current vendor skips restroom restocking. Decision: the '
+                                        'office manager influences, the owner signs. Budget: stalled, so I '
+                                        'floated a number 25-30% higher, per the three qualifiers of pain, '
+                                        'decision and budget [OctoClean Media — 1tf8JMWxi98 @ 00:00:44]. '
+                                        'Because a cleaner is already in place, I offered a complimentary '
+                                        "quote 'on file' [AJ SIMMONS — ZDdd0TDbbFo @ 00:05:20]."},
+                            {'name': 'proposal_turnaround_and_contents',
+                             'type': 'textarea',
+                             'prompt': 'Log the time the walkthrough ended and the time the proposal was '
+                                       'sent. List the sections included, covering facility understanding, '
+                                       'your systems, the scope, security procedures, and the work-order '
+                                       'rule for extras, so it can be forwarded upward.',
+                             'example': 'Walkthrough ended 10:15, proposal sent 12:40, inside the '
+                                        'two-to-three-hour gate [AJ SIMMONS — QBuGc_Q36dg @ 00:05:39]. '
+                                        'Sections: facility understanding, systems, defined scope '
+                                        '[OctoClean Media — OzSRs5osKKI @ 00:01:34]; alarm, locks, lights '
+                                        'and calling-security steps, since silence on security cost a '
+                                        '$50,000-a-year account [Cleaning Launch — V84a_KWRYU4 @ '
+                                        '00:07:28]. Written to stand alone when forwarded.'},
+                            {'name': 'close_terms_and_onboarding',
+                             'type': 'textarea',
+                             'prompt': 'Record the closing terms you secured, including payment timing, '
+                                       'contract length, and references offered. Then list the onboarding '
+                                       'steps for the first two weeks and the condition that must be true '
+                                       'before you pursue the next account.',
+                             'example': 'Closed a 12-month agreement on net 15 after asking for upfront '
+                                        'payment [AJ SIMMONS — VrlDbQP4iQI @ 00:16:03]. Closed with '
+                                        'references instead of pricing a scope of work [AJ SIMMONS — '
+                                        'QBuGc_Q36dg @ 00:04:54]. Onboarding: keys, alarm codes, supply '
+                                        'closet, first-week check-in. Next account waits until current '
+                                        'accounts run smoothly [ONLY MAIDS PODCAST — aQj7G__L-iE @ '
+                                        '00:23:04].'}],
+                 'completion_gate': 'Complete when launch spending stays under the ceiling with supplies '
+                                    'and insurance deferred, the first price covers hired labor, '
+                                    'classification is confirmed in writing, and the proposal left within '
+                                    'three hours of the walkthrough.'},
+                {'worksheet_id': 'ws-02',
+                 'number': 2,
+                 'title': 'Prospecting Engine and Production-Rate Bid Builder',
+                 'purpose': 'Design the outreach machine that opens doors through cold calls, cold email, '
+                            'in-person visits, and paid search, then convert each qualified walkthrough '
+                            'into a labor-hour bid built on tested production rates and an honest bill '
+                            'rate.',
+                 'chapter_ref': 'Q3-Q4',
+                 'instructions': ['Script every opener so it leads with a neighbor reference and asks only '
+                                  'for a walkthrough or permission to follow up.',
+                                  'Set dial volume, email caps, and paid-search guardrails in writing '
+                                  'before any outreach begins or any ad dollar is spent.',
+                                  'Collect cleanable square footage, not building totals, and use '
+                                  'headcount when the prospect cannot give the number.',
+                                  'Convert footage into hours with your own tested production rate, then '
+                                  'multiply by visits, 52 weeks, and divide by 12.',
+                                  'Never shrink the honest labor estimate to look competitive; load every '
+                                  'real cost before the price leaves your hands.'],
+                 'fields': [{'name': 'call_opener_script',
+                             'type': 'textarea',
+                             'prompt': 'Write your cold-call opener word for word. Remove any line that '
+                                       'leads with your name, company name, or services, and replace it '
+                                       'with a neighbor reference. State the single ask of the call, which '
+                                       'must be a walkthrough or follow-up permission.',
+                             'example': "Opener: 'We just started serving that facility next door,' before "
+                                        'any name, because buildings take hundreds of calls a day '
+                                        "[Commercial Cleaning CEO — f9f6YA_kX78 @ 00:00:55]. 'Can I speak "
+                                        'to the person in charge of your janitorial services, would you be '
+                                        "open to us coming out and giving you a quote' [Jeremy Dixon — "
+                                        '-LFfJivPXKw @ 00:02:41]. No price over the phone.'},
+                            {'name': 'dial_volume_and_dialer',
+                             'type': 'text',
+                             'prompt': 'Set the daily dial target and name who makes the calls, you or a '
+                                       'trained setter. Write the expected funnel from 100 calls down to '
+                                       'walkthroughs, and state the close rate you need to reach your '
+                                       'yearly contract goal.',
+                             'example': 'Owner dials 50 a day now, the top of the 20-50 range, against '
+                                        '250-400 for a trained setter [Anton Pantio — -1k_o5iWj8w @ '
+                                        '00:08:12]. Funnel: 100 calls, 20-30 reached, 10-15 conversations, '
+                                        '3-5 qualified, 1-2 walkthroughs; 8 walkthroughs a month at 25% '
+                                        'equals 2 contracts monthly, 24 a year [Carolyn Arellano — '
+                                        'xJ6TUBTc4Qo @ 00:03:26].'},
+                            {'name': 'number_screening_and_location',
+                             'type': 'text',
+                             'prompt': 'Describe how you screen phone numbers before dialing and what you '
+                                       'say when a prospect asks where you are based. Note which number '
+                                       'patterns you skip, which you call direct, and how the answer keeps '
+                                       'the conversation local.',
+                             'example': 'Skip 844 and 1-800 numbers because they route into a call tree; '
+                                        'dial local 303-style numbers, which signal a privately owned '
+                                        'business [The Profitable Cleaner — u3njpVGKi3M @ 00:12:01]. When '
+                                        "asked where we are based, answer with the prospect's own city, "
+                                        "the way Linton's setters do across about 90 served cities [Daniel "
+                                        'Linton — B415KkGunUw @ 00:09:39].'},
+                            {'name': 'cold_email_sequence',
+                             'type': 'textarea',
+                             'prompt': 'Outline your cold email sequence, including the list source, the '
+                                       'sending tool, the number of emails, and the daily send volume. '
+                                       'Note the seasonal angle you will use and the safeguard that keeps '
+                                       'your sending domain off blacklists.',
+                             'example': 'Four-email property manager sequence built with Lemlist plus D7 '
+                                        "Lead Finder; a December send asks to 'quote for 2025' because "
+                                        'December is slow for property managers [Constantin Schröck — '
+                                        'Q5K2zTuisJc @ 00:04:22]. That campaign drew 8 positive replies '
+                                        '[Constantin Schröck — Q5K2zTuisJc @ 00:00:00]. Capped daily '
+                                        'volume well below 1,000, never from Gmail [Commercial Cleaning '
+                                        'CEO — esIqvQsbxco @ 00:15:55].'},
+                            {'name': 'paid_search_guardrails',
+                             'type': 'textarea',
+                             'prompt': 'Set your Google Ads guardrails before spending a dollar. Record '
+                                       'the daily budget, the target cost per conversion, the target '
+                                       'conversion rate, and the rule for when you raise spend, so the '
+                                       'platform never controls your money.',
+                             'example': 'Daily budget $100; targets of $60-70 per conversion at a 20-25% '
+                                        'rate, benchmarked against a janitorial account that ran $95 per '
+                                        'conversion at 24% [Clicks Geek — EuwGlvViI4w @ 00:01:28]. Raise '
+                                        'spend only $25 a week while both numbers hold [Clicks Geek — '
+                                        "EuwGlvViI4w @ 00:03:10]. Rule: 'don't give Google the power to go "
+                                        "spend your money' [Commercial Cleaning CEO — esIqvQsbxco @ "
+                                        '00:12:04].'},
+                            {'name': 'property_manager_access',
+                             'type': 'textarea',
+                             'prompt': 'Name the route you will use to reach property managers who rarely '
+                                       'answer cold calls, such as trade groups, email, or in-person '
+                                       'visits. Write the specific group or site, the meeting cadence, and '
+                                       'the first introduction you plan to request.',
+                             'example': "Join IFMA, the trade group The Profitable Cleaner's "
+                                        'property-manager guest pointed to. In person: pull up on '
+                                        'construction trailers at 5 to 6 AM to catch project managers and '
+                                        'general contractors, the way Charles Banks fed post-construction '
+                                        'work [AJ SIMMONS — du4OAGZv9AE @ 00:15:26]. Talk to the right '
+                                        'people and reference neighbors [Commercial Cleaning CEO — '
+                                        'wC3VDZWQwZk @ 00:13:12].'},
+                            {'name': 'cleanable_square_footage',
+                             'type': 'text',
+                             'prompt': 'Record the cleanable square footage, not the building total, and '
+                                       'how you obtained it. If the prospect did not know it, show the '
+                                       'headcount estimate you used and whether the job clears your '
+                                       'in-house minimum bid.',
+                             'example': 'Prospect quoted building square footage; I asked for cleanable '
+                                        'space, remembering the 655,000 sq ft claim that held an 823 sq ft '
+                                        'office [OctoClean Media — zAGjNnpTUcY @ 00:17:52]. Headcount: 20 '
+                                        'employees at about 200 cleanable sq ft each, roughly 4,000 sq ft '
+                                        '[OctoClean Media — zAGjNnpTUcY @ 00:18:31]. Weekly service, so '
+                                        'the in-house minimum price applies [AJ SIMMONS — vqE3IAR7B18 @ '
+                                        '00:12:18].'},
+                            {'name': 'production_rate_hours',
+                             'type': 'textarea',
+                             'prompt': 'Convert cleanable square footage into labor hours using a '
+                                       'production rate you have tested on your own crews. Show the rate, '
+                                       'the hours per visit, the visit count, and the monthly hours after '
+                                       'multiplying by 52 and dividing by 12.',
+                             'example': '4,000 cleanable sq ft at a tested 3,500 sq ft per hour equals '
+                                        'about 1.14 hours per visit, inside the 3,500-4,000 office band '
+                                        '[ONLY MAIDS PODCAST — aQj7G__L-iE @ 00:05:57]. Five visits a week '
+                                        'times 52, divided by 12, gives roughly 24.7 hours a month '
+                                        '[OctoClean Media — SXNq_81x8SY @ 00:05:48]. Walk time is priced '
+                                        'separately [ISSA Media — nBB03PNbUHI @ 00:06:03].'},
+                            {'name': 'bill_rate_and_split',
+                             'type': 'textarea',
+                             'prompt': 'Set your hourly bill rate from the going wage for incoming '
+                                       'janitors in your territory, not the legal minimum. Show the '
+                                       'multiplier, the monthly base, the supply charge, and how the '
+                                       'result lands against a forty-thirty-thirty cost split.',
+                             'example': 'Going rate for incoming janitors here is $15, so doubling gives a '
+                                        '$30 bill rate [AJ SIMMONS — 7VHAkhs_HG4 @ 00:02:48]. 24.7 hours '
+                                        'at $30 is $741, plus 3% supplies, about $22, for roughly $763 '
+                                        '[Carolyn Arellano — IJlyq2UAXqU @ 00:06:05]. Labor lands near '
+                                        '49%, above the 40/30/30 target, so I revisit the rate [7 Figure '
+                                        'Cleaning — 1_z-Kgj0GYM @ 00:01:17].'},
+                            {'name': 'honest_estimate_check',
+                             'type': 'textarea',
+                             'prompt': 'Compare your honest labor estimate against the price you are '
+                                       'tempted to send. Record whether you trimmed hours to look '
+                                       'competitive, the square-foot cross-check figure if you ran one, '
+                                       'and the final number you will defend.',
+                             'example': 'Honest estimate is five hours a visit; I refused to present '
+                                        "three, because 'the work doesn't disappear because you lowered "
+                                        "your price' [Clean Ops Guide — 9ojOIxznBUc @ 00:06:46]. "
+                                        'Cross-check at 19-20 cents per foot, then met in the middle '
+                                        '[Darian Jarrett — QlIScHN-MPE @ 00:00:15]. Loaded back office, '
+                                        'transportation, churn and overtime first [OctoClean Media — '
+                                        'cVCpNgEj_zc @ 00:06:12].'}],
+                 'completion_gate': 'Complete when the opener leads with a neighbor reference, dial and ad '
+                                    'guardrails are written, cleanable footage is confirmed, and the bid '
+                                    'shows tested production hours, a market-based bill rate, and an '
+                                    'unshrunk labor estimate.'},
+                {'worksheet_id': 'ws-03',
+                 'number': 3,
+                 'title': 'Worked Bid Calculator and Big-Account Readiness Sheet',
+                 'purpose': 'Run a full worked bid from fixture counts to a stress-tested monthly price, '
+                            'protect cash flow through slow payment terms, and assemble the niche '
+                            'selection, day porter math, and low-risk proof package that big clients '
+                            'require.',
+                 'chapter_ref': 'Q5-Q6',
+                 'instructions': ['Count fixtures as individual units and subtract walls and fixed '
+                                  'furniture from measured footage before applying any production rate.',
+                                  'Load the base wage with every payroll liability, then build full cost '
+                                  'line by line including forgotten site tasks.',
+                                  'Divide full cost by one minus the target margin, price weekly service '
+                                  'at 4.33 weeks, and stress-test one extra hour.',
+                                  'Bank one month of account costs before pursuing the next contract, '
+                                  'because slow terms push payment toward day 60.',
+                                  'Choose a stable niche, confirm the porter bill rate clears wage plus '
+                                  'load, and package proof that makes you look safe.'],
+                 'fields': [{'name': 'fixture_and_area_count',
+                             'type': 'textarea',
+                             'prompt': 'Inventory every fixture and surface before pricing, counting '
+                                       'toilets, urinals, and sinks as individual units rather than rooms. '
+                                       'Record each flooring type, the measured square footage, and the '
+                                       'deduction you applied for walls and fixed furniture on this site.',
+                             'example': 'Counted 6 toilets, 2 urinals and 5 sinks as units, not two '
+                                        'bathrooms, since units are what take time [Commercial Cleaning '
+                                        'CEO — IMbK5m7qbY0 @ 00:07:02]. Flooring: carpet offices, VCT '
+                                        'break room, tile restrooms [ISSA Media — nBB03PNbUHI @ 00:05:11]. '
+                                        'Measured 12,000 sq ft, subtracted 15% for walls and furniture, '
+                                        'leaving 10,200 cleanable [Commercial Cleaning CEO — IMbK5m7qbY0 @ '
+                                        '00:10:01].'},
+                            {'name': 'loaded_labor_rate',
+                             'type': 'text',
+                             'prompt': 'Calculate the true hourly cost of each cleaner by stacking payroll '
+                                       'liabilities on the base wage. List unemployment, FICA, and workers '
+                                       'comp loads, the source you used to benchmark the starting wage, '
+                                       'and the final loaded hourly figure.',
+                             'example': 'Benchmarked starting pay on Indeed before setting the wage; a '
+                                        'PayScale report runs about $100 [Commercial Cleaning CEO — '
+                                        '598Td1ks52Y @ 00:04:22]. Base $15 plus state and federal '
+                                        'unemployment, FICA and workers comp equals $17.71 an hour '
+                                        '[Commercial Cleaning CEO — IMbK5m7qbY0 @ 00:04:42]. Every later '
+                                        'step of the bid uses $17.71, never the raw $15 wage.'},
+                            {'name': 'full_cost_build',
+                             'type': 'textarea',
+                             'prompt': 'Build the full monthly cost of the account line by line. Include '
+                                       'labor hours at the loaded rate, supplies, equipment wear, '
+                                       'overhead, and every forgotten site task such as keys, alarm codes, '
+                                       'lock-up, restocking, and inspections before any margin math.',
+                             'example': 'Reference model for 10,000 sq ft, five nights: 86.6 labor hours '
+                                        'at a $22.50 loaded rate, plus $225 supplies, $125 equipment wear '
+                                        'and $350 overhead, totaling $2,650 [Janitorial Empire — '
+                                        'PmZvMyhPjCM @ 00:03:49]. Added lines for keys, alarm codes, '
+                                        'lock-up, restock checks and quality inspections before quoting '
+                                        '[True Trade Cost — 8lFhFbsEuDc @ 00:01:49].'},
+                            {'name': 'margin_division_and_weeks',
+                             'type': 'textarea',
+                             'prompt': 'Convert full cost into price by dividing by one minus your target '
+                                       'margin, not by adding a markup. Show the weekly figure multiplied '
+                                       'by 4.33 weeks, the target margin chosen, and the rounded monthly '
+                                       'price that goes on the proposal.',
+                             'example': '$2,650 divided by 0.75 is about $3,530, rounded to roughly $3,600 '
+                                        'a month [Janitorial Empire — PmZvMyhPjCM @ 00:03:49]. Weekly '
+                                        'pricing always uses 4.33 weeks: a $65 twice-weekly visit is $563 '
+                                        'a month, not $520, recovering about $516 a year [Channel Zero '
+                                        "Marketing — Ey7iPjW1uZQ @ 00:13:44]. Clean Proposals' 30% floor "
+                                        'is noted for comparison.'},
+                            {'name': 'stress_test',
+                             'type': 'text',
+                             'prompt': 'Stress-test the bid by adding one extra worker hour per visit and '
+                                       'recalculating profit and margin. Record the original margin, the '
+                                       'stressed margin, and whether the price still holds or must be '
+                                       'revised before sending to the client.',
+                             'example': 'Reference case: a 20,000 sq ft, three-visit model priced at '
+                                        '$2,800 moves from five to six worker hours per visit, cost rises '
+                                        'to $2,425, profit drops to $375, and margin falls from 25% to '
+                                        'about 13.4% [Bid & Profit Lab — T-l3Df3Iino @ 00:04:10]. My bid '
+                                        'gets the same test before it leaves [Bid & Profit Lab — '
+                                        'T-l3Df3Iino @ 00:04:26].'},
+                            {'name': 'deep_clean_and_scope_clause',
+                             'type': 'textarea',
+                             'prompt': 'Price the initial deep clean as a separate one-off line and write '
+                                       'the clause that reopens pricing when the client adds space or '
+                                       'staff. Note the minimum visit charge you enforce on small jobs '
+                                       'regardless of hourly math.',
+                             'example': 'Initial deep clean billed as its own one-time line; contract '
+                                        'clause reopens the monthly price if the client adds space or '
+                                        'staff, because scope creep is the silent margin killer [Solo '
+                                        'Business Systems — hf0U17FyA58 @ 00:08:15]. Small visits carry a '
+                                        '$65 floor whatever the hourly math says; price it like someone '
+                                        'will be hired to work it [Channel Zero Marketing — Ey7iPjW1uZQ @ '
+                                        '00:22:36].'},
+                            {'name': 'cash_flow_reserve',
+                             'type': 'text',
+                             'prompt': 'State the cash reserve you hold before chasing the next account, '
+                                       "measured in months of the new account's costs. Record the payment "
+                                       'terms you accepted, when the first payment realistically lands, '
+                                       'and how payroll is covered meanwhile.',
+                             'example': "Banked one full month of the new account's costs, about $2,650, "
+                                        'before pursuing account two, because net 30 money lands around '
+                                        'day 60 [Solo Business Systems — hf0U17FyA58 @ 00:09:25]. '
+                                        'Following the rule to reject net 30 and net 60 terms and pay '
+                                        'within 5 to 7 days of being paid [Commercial Cleaning CEO — '
+                                        'o6xwPfuhTI4 @ 00:18:59].'},
+                            {'name': 'niche_target_selection',
+                             'type': 'textarea',
+                             'prompt': 'Pick the high-profit niche you will target next and justify it. '
+                                       'Name the client type, why it rewards stability, the compliance '
+                                       'requirements crews must meet, and the margin range you expect '
+                                       'compared with smaller accounts in your current book.',
+                             'example': 'Target: private medical offices, not hospitals; one company '
+                                        'reached 97%+ medical revenue, about $550k a year, roughly one '
+                                        'year in [Commercial Cleaning CEO — gqEvFieh5-k @ 00:02:15]. '
+                                        'Compliance: bloodborne pathogen training, PPE and sharps handling '
+                                        'for every crew member [nurselyf — Efj3Vo_qlBY @ 00:00:45]. Margin '
+                                        'expectation for large accounts: 35-40% versus 50-60% on small '
+                                        '[Commercial Cleaning CEO — -IxCGolievQ @ 00:21:40].'},
+                            {'name': 'day_porter_pricing',
+                             'type': 'textarea',
+                             'prompt': 'Price a day porter position from hours, wage, and bill rate. Show '
+                                       'daily hours, days per week, annual hours divided by twelve, the '
+                                       'loaded bill rate, and confirm the bill rate clears wage plus load '
+                                       'before the bid goes out.',
+                             'example': 'Four hours a day, five days, 10am-2pm: 1,040 hours a year divided '
+                                        'by 12, rounded to 87 hours a month. An $18 wage loaded to a $26 '
+                                        'bill rate gives $2,262 monthly [The Janitorial Store — '
+                                        '1c9Ty46MQbg @ 00:01:28]. Bidding $16 on a $15 wage would lose '
+                                        'money every hour [OctoClean Media — 52I2LNERY3E @ 00:20:41].'},
+                            {'name': 'low_risk_proof_package',
+                             'type': 'textarea',
+                             'prompt': 'List the proof you will include to look less risky to a large '
+                                       'client. Cover communication speed, written SOPs, QC reporting, a '
+                                       'custom never-miss checklist, background checks where required, and '
+                                       'reporting for any new property manager who inherits the account.',
+                             'example': 'Being small is not the problem, looking risky is [Commercial '
+                                        'Cleaning CEO — yfZUE5PZgvk @ 00:18:45]. Asked what one thing '
+                                        'current cleaners always miss and built the never-miss checklist '
+                                        'around it [Mike Mak — 92cY7nLDqTI @ 00:04:11]. Every new property '
+                                        'manager gets a personal welcome with a historical snapshot report '
+                                        'and a forward-looking report [Commercial Cleaning CEO — '
+                                        'TCaVkVk94bc @ 00:08:10].'}],
+                 'completion_gate': 'Complete when fixtures are counted as units, cost is fully loaded, '
+                                    'price is divided by one minus margin at 4.33 weeks, the extra-hour '
+                                    'stress test passes, one month of costs is banked, and the proof '
+                                    'package is assembled.'},
+                {'worksheet_id': 'ws-04',
+                 'number': 4,
+                 'title': 'Public Bids and Post-Construction Pricing Worksheet',
+                 'purpose': 'Pressure-test your readiness for government janitorial bids and construction '
+                            'cleanup work by building cash reserves, compliance checklists, true-margin '
+                            'pricing, and phase-by-phase production math before any proposal or builder '
+                            'quote leaves your hands.',
+                 'chapter_ref': 'Q7-Q8',
+                 'instructions': ['Start with the payroll float field; if you cannot fund payroll through '
+                                  'slow public and builder payment cycles, stop before pricing anything.',
+                                  'Use measured square footage, tracked production rates, and loaded wages '
+                                  "in every calculation rather than gut feel or a competitor's number.",
+                                  'Price public work by dividing total cost by one minus your target '
+                                  'margin, never by adding a markup percentage to cost.',
+                                  'Read every solicitation and construction spec in full, noting mandatory '
+                                  'site visits, submission formats, and buried extra cleans.',
+                                  'Keep the completed sheet in each bid file so pricing assumptions can be '
+                                  'checked when the contract is awarded or audited.'],
+                 'fields': [{'name': 'payroll_float_reserve',
+                             'type': 'text',
+                             'prompt': 'Calculate the cash you need to float payroll before the first '
+                                       'public or builder payment lands. Count net 30 to 60 terms, roughly '
+                                       '30 extra days for new vendors, and the crew size you would field '
+                                       'on day one.',
+                             'example': 'Karen Denton warns you might pay employees before the customer '
+                                        'pays you, so the gate is funding payroll for 10 employees first '
+                                        '[Karen Denton KSC — xeZ8_Jlv0AI @ 00:01:44]. Darian Jarrett adds '
+                                        'that net 30 can land closer to net 45 or 50 [Darian Jarrett — '
+                                        'c9LRSgPQlvE @ 00:02:15]. Reserve target: 10-person payroll '
+                                        'through day 60.'},
+                            {'name': 'public_contract_targets',
+                             'type': 'textarea',
+                             'prompt': 'List the public contracts you will chase this quarter. For each, '
+                                       'record where you found it, the contract end date, the agency, and '
+                                       'why it fits your crew size, cash reserves, and past performance, '
+                                       'plus which registration steps remain open.',
+                             'example': 'Sort FPDS by date signed and target contracts ending in 90 days '
+                                        'to 4 months; Victoria Menifee surfaced a $27,000 embassy BPA '
+                                        'exactly this way [victoria menifee — 5htVyehKCRo @ 00:46:54]. '
+                                        'GovKidMethod notes not every contract requires past performance '
+                                        '[GovKidMethod — dOj6rxt15uE @ 00:48:56], so a newer firm logs '
+                                        'those first. Each row gets the end date and agency.'},
+                            {'name': 'site_visit_and_submission_check',
+                             'type': 'textarea',
+                             'prompt': 'Before drafting any public bid, confirm mandatory site visit '
+                                       'attendance, the exact submission format, the deadline, and every '
+                                       'required form. Note which questions you will ask privately in '
+                                       'person and which you will email to contracting, so nothing '
+                                       'disqualifies the proposal.',
+                             'example': 'Non-attendees at a mandatory site visit are immediately rejected '
+                                        '[Commercial Cleaning CEO — j4duUCt9Dlw @ 00:05:39]. Matt asked '
+                                        'privately in the hallway how many staff the job should take and '
+                                        'why it was rebid. Separately, one emailed question from Derek '
+                                        'forced an amendment adding a pricing schedule the solicitation '
+                                        'had omitted [GovKidMethod — dOj6rxt15uE @ 00:59:08].'},
+                            {'name': 'true_margin_monthly_price',
+                             'type': 'text',
+                             'prompt': 'Build your monthly public-sector price by totaling labor, loaded '
+                                       'payroll, supplies, transportation, and overhead, then dividing by '
+                                       'one minus your target margin. Show the markup version beside it on '
+                                       'paper so the gap between the two methods is visible.',
+                             'example': 'Small Business Bid School stresses a 20% margin is not the same '
+                                        'as adding 20% to cost [Small Business Bid School — uARedcLLS5c @ '
+                                        '00:02:12]. Five nights at four hours, $22 an hour loaded 25%, '
+                                        'plus $180 supplies, $120 transportation and $300 overhead, totals '
+                                        'about $2,983; divided by 0.8, that becomes about $3,729 a month.'},
+                            {'name': 'sca_billable_hours',
+                             'type': 'text',
+                             'prompt': 'For any federal service contract, record paid hours, billable '
+                                       'hours, the health and welfare rate, and the vacation and holiday '
+                                       'load from the wage determination. Explain how your labor line '
+                                       'prices the gap between paid and billable time.',
+                             'example': 'GovKidMethod bills federal work off 1,920 billable hours out of '
+                                        '2,080 paid, because SCA wage determinations carry two weeks of '
+                                        'vacation and two weeks of holidays [GovKidMethod — dr59GJ2T5v4 @ '
+                                        '00:43:54]. Skipping that gap has produced Department of Labor '
+                                        'back-pay findings in the hundreds of thousands, so health and '
+                                        'welfare get loaded too.'},
+                            {'name': 'workers_comp_activity_coding',
+                             'type': 'textarea',
+                             'prompt': 'Map each crew activity on the bid to its workers comp class code, '
+                                       'then model premium as payroll by class code times the state base '
+                                       'rate times the carrier loss cost multiplier. Flag activities '
+                                       'likely to shift at audit.',
+                             'example': 'Runjob Software notes the same laborer carries a different comp '
+                                        'rate sweeping a floor than working on the 30th floor or 16 feet '
+                                        'underground, and the annual audit trues up every underestimate '
+                                        '[Runjob Software — 0pkOO_oVhN8 @ 00:01:23]. New York janitorial '
+                                        'base rates ran $12.31 down to $3.03 in 2022 [The Coyle Group - '
+                                        'Business Insurance — HSh0vcHYmUI @ 00:00:56].'},
+                            {'name': 'post_construction_spec_read',
+                             'type': 'textarea',
+                             'prompt': 'Read the full construction cleaning spec and list every phase you '
+                                       'are actually being asked to perform: rough, final, punch, '
+                                       'touch-up, and trade cleans. Note buried extra cleans, window '
+                                       'coverage, and who handles overspray on the glass.',
+                             'example': 'OctoClean warns that final only versus final, punch and trade '
+                                        'clean language is where six-figure labor losses hide [OctoClean '
+                                        'Media — 9TymiXPWhyY @ 00:10:13]. Ask the super whether the trade '
+                                        'fixes overspray or the cleaner bills it as T&M. If windows went '
+                                        'uncovered, get a signed waiver before scraping [The Janitorial '
+                                        'Store — RNflg846cs4 @ 00:08:23].'},
+                            {'name': 'post_construction_price_build',
+                             'type': 'textarea',
+                             'prompt': 'Price the construction cleanup from measured square footage and a '
+                                       'tracked production rate. Record phase pricing per square foot, '
+                                       'labor hours, crew size, and the conditions that push you up, such '
+                                       'as dust, debris, windows, restrooms, and deadline pressure.',
+                             'example': 'Steve Hansen tracks finals at 150 square feet per hour, so 15,000 '
+                                        'square feet becomes 100 labor hours [The Janitorial Store — '
+                                        'gTK5pzrNCqg @ 00:01:23]. His bands run rough $0.10 to $0.15, '
+                                        'final $0.15 to $0.30, touch-up $0.06 to $0.12. Mark Etherton '
+                                        'prices on dust, debris, windows, restrooms and deadline pressure '
+                                        '[Mark Etherton - The Millionaire Playbook — PG-8SEuPFQk @ '
+                                        '00:02:01].'},
+                            {'name': 'site_readiness_and_paperwork',
+                             'type': 'textarea',
+                             'prompt': 'List the site conditions and paperwork you must confirm before '
+                                       'quoting a builder: water, electrical power, dumpsters, a named '
+                                       'site contact, plus your W9, general liability, and workers '
+                                       'compensation proof ready to send the same day.',
+                             'example': 'Builders ask for a W9, general liability and workers compensation '
+                                        'regardless [Darian Jarrett — _hqGinSApYg @ 00:08:14], and '
+                                        'Construction Clean Partners says 99% will not work with you '
+                                        'without comp. On the walkthrough, confirm water, power and '
+                                        'dumpsters, because no water means hauling it in and no power can '
+                                        'mean generators [The Janitorial Store — RNflg846cs4 @ 00:03:41].'},
+                            {'name': 'floor_care_addon_menu',
+                             'type': 'textarea',
+                             'prompt': 'Design your specialty add-on menu for VCT strip-and-refinish, '
+                                       'touch-ups, and subbed exterior work. Set a per-square-foot range, '
+                                       'a job minimum, the adjustments for density and finish buildup, and '
+                                       'the referral fee you keep on subcontracted work.',
+                             'example': 'OctoClean bills strip-and-refinish at 35 to 45 cents a square '
+                                        'foot with a $450 minimum, even on a closet [OctoClean Media — '
+                                        'X3MX2xOshA4 @ 00:05:33]. Darian Jarrett grew a $7,083 '
+                                        'medical-office bid to roughly $9,000 through $75-per-hour '
+                                        'touch-ups and a subbed pressure wash, keeping about 10 percent of '
+                                        'the $917 sub [Darian Jarrett — c9LRSgPQlvE @ 00:13:19].'}],
+                 'completion_gate': 'Complete only when payroll float is funded, site visit and submission '
+                                    'requirements are confirmed, the bid is priced at a true margin with '
+                                    'SCA hours and comp class codes loaded, and the construction spec, '
+                                    'site utilities, and W9, liability, and comp packet are all verified.'},
+                {'worksheet_id': 'ws-05',
+                 'number': 5,
+                 'title': 'Systems Proof and Bloodborne Safety Worksheet',
+                 'purpose': 'Turn timekeeping, QR feedback, and inspection reporting into proof that wins '
+                            'bids, and lock in a bloodborne pathogen program covering spill response, '
+                            'sharps handling, waste routing, vaccination offers, and training records for '
+                            'every crew member.',
+                 'chapter_ref': 'Q9-Q10',
+                 'instructions': ['Answer the growth blocker field before evaluating any platform, so '
+                                  'software is chosen to solve a named problem rather than bought on '
+                                  'impulse.',
+                                  'Describe each system as the client will experience it: what they see, '
+                                  'when they receive it, and how it proves the work happened.',
+                                  "Write crew-facing language from the cleaner's point of view, leading "
+                                  'with shifts, hours, and fewer interruptions off the clock.',
+                                  'Treat every blood, vomit, or unknown spill as infectious when '
+                                  'completing the safety fields, and write steps a new hire could follow '
+                                  'alone.',
+                                  'Review the safety and records fields every time turnover brings in a '
+                                  'new group of cleaners.'],
+                 'fields': [{'name': 'growth_blockers',
+                             'type': 'textarea',
+                             'prompt': 'Before booking any software demo, write your top three growth '
+                                       'blockers in plain language. Then ask your team the same question, '
+                                       'record their answers word for word, and note where their list '
+                                       'differs from yours and why.',
+                             'example': 'Swept advises writing the top three blockers, then asking the '
+                                        'team and sitting through the awkward silence [Swept — lPuBkaocWL8 '
+                                        '@ 00:04:22]. Michael Brown warns that people negotiate and '
+                                        'research at length, finally buy the software, and never log in. '
+                                        'Software is a tool like a mop and bucket; it fails if the mop '
+                                        'water never changes.'},
+                            {'name': 'clock_in_verification',
+                             'type': 'textarea',
+                             'prompt': 'Describe how cleaners will clock in and how you will verify they '
+                                       'are physically on site. Specify geofencing, facial recognition, or '
+                                       'schedule-based clock-ins, and explain which convenient shortcuts '
+                                       'you will refuse because they break location verification.',
+                             'example': 'Janitorial Manager limits clock-ins to the geofence and uses '
+                                        'facial recognition to eliminate buddy punching [Janitorial '
+                                        'Manager — LFXytjdaxWA @ 00:01:17]. Swept cautions that '
+                                        'text-message clock-in gives no idea where the cleaner physically '
+                                        'is [Swept — W0BOiP7F_64 @ 00:26:03]. Clock in from the schedule '
+                                        'tab so reminders like the every-other-Tuesday boardroom clean '
+                                        'appear.'},
+                            {'name': 'crew_rollout_message',
+                             'type': 'textarea',
+                             'prompt': 'Draft the opening of the all-hands meeting where you introduce '
+                                       'timekeeping and geofencing to your crews. Lead with what is in it '
+                                       'for them, such as more shifts and hours, and list the phrases you '
+                                       'will avoid saying.',
+                             'example': 'Swept says never pitch the geofence as anti-theft tracking; open '
+                                        'with more shifts, more hours and what is in it for them [Swept — '
+                                        'lPuBkaocWL8 @ 00:20:30]. Service On Command frames in-app '
+                                        'messaging as a way to communicate without bugging staff off the '
+                                        'clock [Service On Command — CXVWaxMTpV0 @ 00:03:58]. Avoid: '
+                                        'watching, catching, stealing.'},
+                            {'name': 'payroll_variance_review',
+                             'type': 'text',
+                             'prompt': 'Set your pre-payroll review routine. State which variance report '
+                                       'you run, the threshold that flags a shift, who corrects outliers, '
+                                       'and the rule that nothing pays out until every flagged entry is '
+                                       'fixed or explained in writing.',
+                             'example': 'Swept runs the 60-minute variance report before payroll and '
+                                        'corrects outliers like a 96-hour shift before anything pays out '
+                                        '[Swept — W0BOiP7F_64 @ 00:19:43]. Janitorial Manager adds that '
+                                        'technology can reduce labor costs while making sure payroll is '
+                                        'correct and people show up [Janitorial Manager — D60Eb-ryFyc @ '
+                                        '00:01:22]. Flag threshold: 60 minutes.'},
+                            {'name': 'qr_feedback_placement',
+                             'type': 'textarea',
+                             'prompt': 'Map where QR feedback codes will go in each client facility. '
+                                       'Choose spots where staff and the public actually notice issues, '
+                                       'decide what the scan reports, and set who receives the nightly '
+                                       'summary of scanned areas and service times.',
+                             'example': "Matt stopped trusting a site manager's verbal all-clear and "
+                                        'placed codes where staff see issues, so complaints arrive '
+                                        'timestamped and located [Commercial Cleaning CEO — -DEX3b-m000 @ '
+                                        '00:09:13]. Janitorial Manager puts the business logo on every '
+                                        'code and can send a nightly email listing scanned areas and '
+                                        'service times [Janitorial Manager — NDvJAHP1GQo @ 00:03:25].'},
+                            {'name': 'inspection_reporting',
+                             'type': 'textarea',
+                             'prompt': 'Define your inspection routine for each account: who inspects, how '
+                                       'often, which checklist is used, and how the report reaches the '
+                                       'customer. Explain how you will prove inspections happen rather '
+                                       'than simply claiming they do in proposals.',
+                             'example': 'Swept emails the inspection report to the customer before the '
+                                        'supervisor leaves the building, because sharing inspections is '
+                                        'what proves you do them [Swept — W0BOiP7F_64 @ 00:18:13]. Modern '
+                                        'Field Service adds that when bidding a medical office, the '
+                                        'inspection trail is the thing that wins and keeps the contract '
+                                        '[Modern Field Service — Y00vfNH19Q4 @ 00:01:19].'},
+                            {'name': 'system_led_sales_pitch',
+                             'type': 'textarea',
+                             'prompt': 'Script the proof section of your next proposal. Describe the demo '
+                                       "account you will load with the prospect's name, the client portal "
+                                       'login, QR codes, and inspection samples, and state which '
+                                       'price-only buyers you will knowingly let go.',
+                             'example': "Swept's co-founder won 80% of contracts at premium prices by "
+                                        'proving the app in the bid; the lost 20% were price-only buyers '
+                                        '[Swept — O45aBb4kNlA @ 00:06:14]. Matt credits QR codes and a '
+                                        'pre-built client login for a $200,000-a-year contract after '
+                                        'losing a six-figure account without them [Commercial Cleaning CEO '
+                                        '— -DEX3b-m000 @ 00:09:44].'},
+                            {'name': 'bbp_spill_protocol',
+                             'type': 'textarea',
+                             'prompt': 'Write your step-by-step blood and unknown spill protocol for crews '
+                                       'on every account. Include area lockout, PPE, sharps handling, '
+                                       'absorbing, the disinfectant dilution, the wet dwell time, bagging, '
+                                       'glove removal order, handwashing, and how the incident gets '
+                                       'logged.',
+                             'example': 'Greg at OctoClean mixes 2 1/4 cups water with 1/4 cup 5.25% '
+                                        'bleach for a 1:10 dilution and keeps the surface wet for three '
+                                        'minutes [OctoClean Media — Z8hsIGjmi_c @ 00:00:59]. Open the '
+                                        'biohazard bag first, then swap to fresh gloves before grabbing '
+                                        'the clean disinfectant bottle [OctoClean Media — Z8hsIGjmi_c @ '
+                                        '00:02:57].'},
+                            {'name': 'sharps_and_waste_route',
+                             'type': 'textarea',
+                             'prompt': 'Document how sharps are picked up, contained, and removed, and '
+                                       'confirm the waste route for spent spill kits at each site. Name '
+                                       'the container, the tools used, and who you call so nothing '
+                                       'contaminated reaches the regular dumpster.',
+                             'example': 'Set the sharps container on the ground with the lid open before '
+                                        'lifting the syringe, never holding container and needle together '
+                                        '[MA Exec. Office of Labor and Workforce Development — 4xmWcKLIfmA '
+                                        '@ 00:14:09]. Imperial Brady warns that kit bags tossed in the '
+                                        'dumpster turn the whole dumpster into hazardous waste charged to '
+                                        'the facility [Imperial Brady — tCz-yNw0WBo @ 00:08:08].'},
+                            {'name': 'bbp_training_and_records',
+                             'type': 'textarea',
+                             'prompt': 'Plan annual bloodborne pathogen training for your actual turnover. '
+                                       'Estimate how many people you will train each year, the course '
+                                       'cost, the hepatitis B vaccine offer timeline, waiver handling, '
+                                       'exposure follow-up, and how long records are kept.',
+                             'example': 'Keep It Clean sizes 100 employees at 200% turnover as 300 people '
+                                        'trained a year, with the course under $30 [Keep It Clean — '
+                                        '8EjRhmcPsz0 @ 00:04:06]. Offer the free hepatitis B series by day '
+                                        '10 and keep training records with dates and attendee names for '
+                                        'three years [Training Videos — AxPTARAhtdA @ 00:04:45].'}],
+                 'completion_gate': 'Complete only when growth blockers are written by owner and team, '
+                                    'clock-ins are location-verified, a variance review runs before every '
+                                    'payroll, QR and inspection reports reach clients automatically, and '
+                                    'the spill, sharps, waste, vaccine, and training-record procedures are '
+                                    'written and assigned.'},
+                {'worksheet_id': 'ws-06',
+                 'number': 6,
+                 'title': 'Workforce Classification, Coverage, and Ownership Worksheet',
+                 'purpose': 'Classify every cleaner by control rather than paperwork, size insurance and '
+                            'bonding to your real headcount, and test any franchise, subcontract, or '
+                            'remote model against what you actually keep per hour and whether you truly '
+                            'own the contracts you service.',
+                 'chapter_ref': 'Q11-Q12',
+                 'instructions': ['Fill in the classification fields person by person, judging each '
+                                  'relationship by who controls schedules, supplies, uniforms, and '
+                                  'training.',
+                                  'Bring the classification and insurance answers to an accountant or '
+                                  'bookkeeper before adding the next helper or subcontractor.',
+                                  'Record actual quoted premiums and bond amounts rather than estimates, '
+                                  'and note the date each quote was received.',
+                                  'Convert every franchise, subcontract, or remote package into dollars '
+                                  'kept and true hours worked before judging it.',
+                                  'Revisit this sheet whenever headcount, contract ownership terms, or '
+                                  'your crew model changes.'],
+                 'fields': [{'name': 'classification_control_audit',
+                             'type': 'textarea',
+                             'prompt': 'For every person who cleans for you, answer the control questions '
+                                       'honestly: who sets the schedule, who supplies equipment and '
+                                       'uniforms, who trains them, and whether they serve other clients. '
+                                       'Record the resulting W2 or 1099 classification.',
+                             'example': 'Commercial Cleaning CEO puts it plainly: it is not about taxes, '
+                                        'it is about control [Commercial Cleaning CEO — 9BXhBVRp_XU @ '
+                                        '00:03:59]. DJ The Boss adds that part-timers using your equipment '
+                                        'and training are employees. A contractor doing business only with '
+                                        'you is probably an employee [The Janitorial Store — YC2NrvVJqlg @ '
+                                        '00:03:13].'},
+                            {'name': 'misclassification_risk',
+                             'type': 'textarea',
+                             'prompt': 'Identify the events most likely to trigger a classification audit '
+                                       'in your business, such as a released worker filing for '
+                                       'unemployment or an injured cleaner claiming comp. Estimate the '
+                                       'exposure and name the accountant or bookkeeper reviewing it.',
+                             'example': 'The Janitorial Store ran 1099 labor for about a year until a '
+                                        'laid-off employee claimed unemployment and the company paid a '
+                                        'fine and penalties [The Janitorial Store — YC2NrvVJqlg @ '
+                                        "00:01:38]. UpFlip's operator paid a $12,000 misclassification "
+                                        'fine, so settle classification with an accountant before the '
+                                        'first helper starts [UpFlip — d4Iip7BHXwg @ 00:24:43].'},
+                            {'name': 'subcontractor_compliance',
+                             'type': 'textarea',
+                             'prompt': 'If you use subcontractors, list the proof you collect from each '
+                                       'before they start: current general liability, workers comp, and '
+                                       'evidence of other clients. Describe how your checklists and job '
+                                       'queue enforce quality without directing how they clean.',
+                             'example': 'Your policy covers you and your legal employees, not subs, so '
+                                        'collect their liability and comp proof [The Professional Cleaner '
+                                        '— DDLzG49aDvU @ 00:04:43]. Jon Margalit never hands contractors '
+                                        'schedules, supplies, uniforms or how-to instructions; network '
+                                        'contractors who follow the process get more work and the rest '
+                                        'fall off naturally [Jon Margalit — 8gbn-TCd4l4 @ 00:04:15].'},
+                            {'name': 'insurance_stack',
+                             'type': 'textarea',
+                             'prompt': 'List every policy you carry or need: general liability limits, '
+                                       'workers comp, janitorial bond amount, and any add-on riders. '
+                                       'Record the monthly or annual premium for each, and set your '
+                                       'threshold for paying small damage claims out of pocket.',
+                             'example': 'The Professional Cleaner recommends $1,000,000 aggregate and '
+                                        '$500,000 per occurrence general liability at $30 to $100 a month '
+                                        '[The Professional Cleaner — DDLzG49aDvU @ 00:03:20], and would '
+                                        'pay a $500 floor restoration personally because filing raises '
+                                        'rates. For luxury homes, mentioning a fine-art rider during the '
+                                        'walkthrough typically drew a response of how soon can you start.'},
+                            {'name': 'bond_sizing',
+                             'type': 'text',
+                             'prompt': 'Choose your janitorial bond amount based on headcount and the '
+                                       'properties you serve. Record the bond level, the annual premium '
+                                       'quoted, and which prospects or contracts require it, and note when '
+                                       'headcount growth will force a larger bond.',
+                             'example': 'Surety Bonds Direct quotes five employees at $150 a year for a '
+                                        '$15,000 bond and $171 for $25,000 [Surety Bonds Direct — '
+                                        'uMW_ZJMW0ZU @ 00:03:46]. Commercial firms with 10 employees pay '
+                                        '$328 for a $50,000 bond and $547 for $150,000, typically choosing '
+                                        '$50,000 up to $250,000 by property [Surety Bonds Direct — '
+                                        'uMW_ZJMW0ZU @ 00:04:12].'},
+                            {'name': 'w2_positioning',
+                             'type': 'textarea',
+                             'prompt': 'Decide how your crew model shows up in proposals. If you run W2 '
+                                       'crews, write the sentence you will use when buyers ask about 1099 '
+                                       'versus W2, and explain how that choice supports brand control and '
+                                       'retention.',
+                             'example': 'Commercial Cleaning CEO reviewed past proposals and found clients '
+                                        'who asked about 1099 versus W2 consistently reacted with '
+                                        'excitement to hearing the crew was W2 [Commercial Cleaning CEO — '
+                                        '9BXhBVRp_XU @ 00:10:06]. Draft line: every cleaner on your site '
+                                        'is our W2 employee, trained, background-checked and covered by '
+                                        'our workers comp.'},
+                            {'name': 'franchise_fee_stack',
+                             'type': 'textarea',
+                             'prompt': 'If you are weighing a unit franchise, list every fee: royalty, '
+                                       'marketing, admin and collection, insurance, and the finder fee per '
+                                       'new account. Convert the stack into a percentage of billing and '
+                                       'the dollars you actually keep.',
+                             'example': 'Commercial Cleaning CEO stacks royalty near 10 percent, marketing '
+                                        '2 to 10, and admin and collection 5 to 10 into 20 to 35 percent, '
+                                        'sometimes 40, so $1,000 billed nets $600 to $800 [Commercial '
+                                        'Cleaning CEO — xqw9zag57Uk @ 00:05:18]. Mike Mak paid four times '
+                                        'monthly value per new account [Mike Mak — 6MDrTK46_8g @ '
+                                        '00:04:31].'},
+                            {'name': 'effective_hourly_wage',
+                             'type': 'text',
+                             'prompt': 'Convert any franchise or subcontract package into a true hourly '
+                                       'wage. Divide the post-fee monthly payout by the hours you would '
+                                       'honestly work, then compare it against the $16 to $30 range the '
+                                       'account should have paid.',
+                             'example': 'Clean For A Dream shows a $705 monthly payout on a five-night '
+                                        'account that should take 24 to 44 hours, yet franchisees actually '
+                                        'work about 100 hours, roughly $7 an hour [Clean For A Dream — '
+                                        'fs86ZhCBfJ8 @ 00:51:00]. Ben Bragg says the franchising industry '
+                                        'is designed to supplement income, not create owners.'},
+                            {'name': 'contract_ownership_check',
+                             'type': 'textarea',
+                             'prompt': 'Confirm who owns each customer contract you service. Note whether '
+                                       'a franchisor or prime can reassign accounts when the customer is '
+                                       'happy, what new accounts cost, and the two questions you will ask '
+                                       'before signing anything.',
+                             'example': 'AJ Simmons describes walking away with pretty much nothing after '
+                                        'fees and underbidding, feeling like a glorified employee [AJ '
+                                        'SIMMONS — Bbay8f0-XFM @ 00:03:28]. Win Driggins puts it simply: '
+                                        'the hidden business is the contract itself. Mike Mak asks what '
+                                        'the support fees are and what a new account costs [Mike Mak — '
+                                        '6MDrTK46_8g @ 00:06:32].'},
+                            {'name': 'remote_model_math',
+                             'type': 'textarea',
+                             'prompt': 'If you are considering a remote or laptop-run model, rerun the '
+                                       'per-job math with real acquisition cost, card fees, software, '
+                                       'insurance, refunds, and recleans. Compare the net per job against '
+                                       'a commercial contract alternative before scaling into hundreds of '
+                                       'jobs.',
+                             'example': 'Mike Mak shows a $225 clean leaving a $90 owner split that '
+                                        'shrinks to about $30 after $40 to $50 acquisition, card fees, '
+                                        'software, insurance, refunds and recleans [Mike Mak — kbRmM3sctgA '
+                                        '@ 00:03:13]. Logan Robison charges new short-term rental hosts a '
+                                        '$150 onboarding fee plus a mandatory deep clean [Logan Robison — '
+                                        'mrd8LK8fcFM @ 00:25:24].'}],
+                 'completion_gate': 'Complete only when every cleaner is classified by control and '
+                                    'reviewed by an accountant, sub liability and comp proof is on file, '
+                                    'insurance and bond premiums are recorded from real quotes, and any '
+                                    'franchise, subcontract, or remote model is converted to dollars kept, '
+                                    'true hourly pay, and confirmed contract ownership.'}]}

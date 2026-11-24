@@ -1,657 +1,831 @@
 from __future__ import annotations
 
-CHAPTER_12 = {
-    "id": "Q12",
-    "chapter_id": "Q12",
-    "chapter_number": 12,
-    "question_number": 12,
-    "slug": "first-thirty-day-acquisition-sprint-kill-fix-scale",
-    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching business acquisition, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
-    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
-    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
-    "subtitle": "A 30-Day ETA Search Launch Linking QoE, SBA Eligibility, Seller Notes, UCC Lien Releases, and Cash-Controlled Day 30/60/90 Decisions",
-    "layout_template": "thirty_day_plan",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #13, Business Acquisition, ranks #17 with a Money-to-Manpower "
-        "Score of 86/100 because purchased cash flow still requires capital, "
-        "operators, and disciplined debt service. This sprint activates seven "
-        "mapped plays: sourcing, screening, QoE, capital structuring, transaction "
-        "execution, transition, and operating automation. Days 1–30 launch a "
-        "measurable acquisition search; they do not compress the expected "
-        "6–18-month first-deal timeline. Annual owner profit remains $60,000 "
-        "Conservative, $243,750 Base, and $540,000 Scaled, after interest and "
-        "before principal repayments. Protect the seven-employee, three-contractor "
-        "operating pod with staged diligence, a $12,000 first-month search ceiling, "
-        "and explicit Day 30/60/90 decisions. Kill unsupported transactions, fix "
-        "bounded evidence gaps, and scale only repeatable sourcing and verified "
-        "operating economics."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$750,000",
-            "context": "Annual acquired-business sales; margin after interest, before principal repayments",
-            "note": "8% margin; $60,000 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,875,000",
-            "context": "Annual acquired-business sales; margin after interest, before principal repayments",
-            "note": "13.0% margin; $243,750 annual owner net profit; 2 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$3,000,000",
-            "context": "Annual acquired-business sales; margin after interest, before principal repayments",
-            "note": "18% margin; $540,000 annual owner net profit; 3 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Days 1–7: Define the Buy Box, Staff the Pod, and Ring-Fence Cash",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start the clock when the sponsor authorizes the search, not when a seller "
-                    "accepts an offer. Candidate #13 typically requires 4–10 months to reach "
-                    "a first deal, so a successful opening month produces a qualified pipeline, "
-                    "documented underwriting, and a funded next stage rather than purchased "
-                    "revenue. Map the work into seven explicit chapter plays: P1 proprietary "
-                    "and broker sourcing; P2 buy-box screening; P3 Quality of Earnings; P4 "
-                    "SBA, conventional, and seller-note structuring; P5 diligence and transaction "
-                    "execution; P6 employee and customer transition; and P7 reporting automation "
-                    "and operating improvement. Assign each record one current play, one owner, "
-                    "one next action, and one evidence link in Airtable or HubSpot. On Day 1, "
-                    "write the acquisition thesis around service geography, recurring demand, "
-                    "transferable licenses, customer concentration, and manager replacement cost. "
-                    "On Day 2, convert the thesis into a rejection checklist and score ten "
-                    "historical listings. Reject a thesis that works only by treating the "
-                    "seller's unpaid labor as free capacity. Record the required operator "
-                    "salary before estimating debt capacity, and distinguish businesses worth "
-                    "investigating from businesses the sponsor can actually fund without "
-                    "consuming the operating reserve."
-                ),
-                (
-                    "The canonical Conservative and Base operating configuration is seven "
-                    "full-time employees plus three contractors, not ten new search hires. "
-                    "Use seven employee seats for general management, accounting coordination, "
-                    "sales and account retention, service scheduling, and three delivery roles. "
-                    "Use the three contractor seats for a transaction attorney, a CPA with "
-                    "QoE capability, and an industry specialist covering systems and license "
-                    "transfer. These are functional assignments for a suitable target; map "
-                    "them to actual people before an offer and do not assume every industry "
-                    "supports this organization. Before closing, the sponsor performs sourcing "
-                    "and coordinates staged contractor work; target employees remain under "
-                    "the seller's authority. Request information through authorized seller "
-                    "channels rather than assigning work to staff the buyer does not employ. "
-                    "On Day 3, create a responsibility register showing which tasks become "
-                    "buyer responsibilities only at closing. On Day 4, obtain written contractor "
-                    "scopes with hour caps and exclusions. On Day 5, test a seller package "
-                    "handoff using a redacted sample. Require P3 findings to reach P4 underwriting "
-                    "and P6 staffing assumptions through the same versioned model, preventing "
-                    "separate teams from quietly using different earnings."
-                ),
-                (
-                    "Authorize an illustrative $12,000 first-month search ceiling inside the "
-                    "$30,000–$120,000 startup-capital envelope, without implying that its "
-                    "lower end funds every target. Allocate $1,500 to data and outreach, $2,000 "
-                    "to initial legal review, $4,000 to limited accounting diligence, $1,000 "
-                    "to lender packaging, $1,000 to site visits, and $2,500 to contingency. "
-                    "Measure the ceiling as cash already paid plus noncancelable commitments, "
-                    "so an unpaid engagement letter cannot hide spending. Keep purchase equity, "
-                    "closing costs, and operating liquidity in separate ledger categories. "
-                    "The quoted $6,000–$25,000 monthly opex range is a planning input, not "
-                    "the complete expense bridge behind every revenue scenario; verify payroll, "
-                    "direct costs, debt service, and working capital separately. On Day 6, "
-                    "build a thirteen-week cash forecast and tag every proposed commitment "
-                    "to a play. On Day 7, reconcile the forecast with bank balances and "
-                    "contractor scopes. Stop discretionary commitments at 80% of the month "
-                    "ceiling, or $9,600, until remaining work is reprioritized. Never raid "
-                    "the target's payroll reserve to preserve a search schedule or keep an "
-                    "unpromising seller conversation alive."
-                ),
-            ],
-            "table": {
-                "caption": "Week One: Daily Authorization, Pod Ownership, and Capital-Control Deliverables",
-                "headers": [
-                    "Day and mapped play",
-                    "Accountable operating assignment",
-                    "Required tangible deliverable",
-                    "Acceptance test and failure response",
-                ],
-                "rows": [
-                    [
-                        "Day 1 activates P1 sourcing and thesis definition",
-                        "Sponsor owns thesis; industry specialist challenges operating assumptions",
-                        "One-page buy box states geography, revenue model, and exclusions",
-                        "Reject categories whose licenses or manager requirements defeat ownership",
-                    ],
-                    [
-                        "Day 2 activates P2 screening against historical listings",
-                        "Sponsor screens ten examples using identical written criteria",
-                        "Ten scored records expose unsupported add-backs and concentration",
-                        "Revise inconsistent rules before contacting any additional sellers",
-                    ],
-                    [
-                        "Day 3 maps P6 transition responsibilities before ownership",
-                        "General-manager seat owns post-close responsibilities; seller controls current staff",
-                        "Seven employee seats and three contractor seats receive assignments",
-                        "Resolve duplicate ownership and unstaffed critical duties before offers",
-                    ],
-                    [
-                        "Day 4 prices P3 and P5 contractor work",
-                        "CPA and attorney provide staged scopes with capped hours",
-                        "Signed scopes separate preliminary review from full transaction diligence",
-                        "No open-ended engagement consumes capital reserved for purchase equity",
-                    ],
-                    [
-                        "Day 5 rehearses P3 evidence transfer into underwriting",
-                        "Accounting coordinator seat documents the future reporting handoff",
-                        "Redacted package moves through versioned model and exception register",
-                        "Every material earnings assumption links to retrievable source evidence",
-                    ],
-                    [
-                        "Day 6 builds P4 liquidity and commitment controls",
-                        "Sponsor prepares thirteen-week cash forecast with contractor commitments",
-                        "Separate ledgers track search spending, equity, and operating reserves",
-                        "Forecast includes unpaid commitments rather than only bank withdrawals",
-                    ],
-                    [
-                        "Day 7 reviews all seven mapped play owners",
-                        "Sponsor reconciles balances while contractors confirm remaining scope",
-                        "Week-one review records spending, capacity, and unresolved evidence",
-                        "At $9,600 committed spending, suspend new discretionary search work",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Pre-Flight Tests Before Paid Diligence Expands",
-                "body": (
-                    "Release only the next evidence-producing tranche. A promising listing "
-                    "does not justify funding the entire transaction workstream."
-                ),
-                "items": [
-                    "Verify sponsor liquidity with current account evidence; separate acquisition equity from search spending and the thirteen-week operating reserve.",
-                    "Confirm a named owner for each of the seven plays and a feasible seven-employee, three-contractor target organization before assuming labor savings.",
-                    "Obtain a seller-authorized document channel, confidentiality terms, and written limits on customer or employee contact before collecting sensitive operating records.",
-                    "Require capped CPA and attorney scopes plus an updated commitment ledger showing first-month search exposure no greater than $12,000.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Days 8–14: Build a Qualified Funnel and Reconstruct Earnings",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "On Day 8, assemble 120 deduplicated prospects from broker listings, "
-                    "industry directories, referral partners, and targeted owner research. "
-                    "Distinguish a researched record from a contacted owner and a received "
-                    "package from a qualified opportunity. On Day 9, send twenty personalized "
-                    "first contacts; on Day 10, send twenty more and schedule broker calls. "
-                    "Describe the actual buy box, capital readiness, and management plan "
-                    "without implying committed financing. On Day 11, review responses and "
-                    "request confidentiality agreements only where the seller fits the thesis. "
-                    "On Day 12, seek eight usable packages containing three years of income "
-                    "statements, current year-to-date results, monthly sales, customer "
-                    "concentration, employee roles, and asking terms. Eight packages is an "
-                    "operating target, not a promised response rate. On Day 13, screen every "
-                    "available package using the same criteria; on Day 14, select up to three "
-                    "for deeper work. Record missing documents as specific requests with "
-                    "owners and dates rather than filling model cells with invented values. "
-                    "Keep seller-facing activity under P1, qualification under P2, and "
-                    "paid reconstruction under P3, so a growing contact count cannot "
-                    "masquerade as an expanding investable pipeline."
-                ),
-                (
-                    "Reconstruct earnings from source records before negotiating on a seller's "
-                    "multiple. Export monthly general-ledger detail from QuickBooks Online or "
-                    "Xero where authorized, then tie reported sales to bank deposits, merchant "
-                    "settlements, accounts-receivable movements, and sales-tax liabilities. "
-                    "Deposits are corroboration, not a substitute for revenue recognition: "
-                    "loan proceeds, owner transfers, customer prepayments, and collected taxes "
-                    "must not become acquired-business sales. Inspect at least three recent "
-                    "months and the prior year-end bridge during the limited review, then "
-                    "expand the period when seasonality or exceptions justify full QoE. "
-                    "Build an add-back schedule with evidence, recurrence assessment, replacement "
-                    "cost, and proposed lender treatment. An owner's salary is not entirely "
-                    "discretionary when the seven-person employee pod still needs a general "
-                    "manager. Challenge related-party rent against a sustainable lease and "
-                    "replace missing maintenance with a realistic expense. Treat an unexplained "
-                    "revenue reconciliation difference above 2% of the tested period's sales "
-                    "as a Fix trigger, not proof of misconduct. Require a dated explanation "
-                    "within ten business days; falsified records or a refusal to provide "
-                    "material support instead justify killing that transaction."
-                ),
-                (
-                    "Preserve the scorecard while testing each target against it. Conservative "
-                    "annual sales of $750,000 at 8% produce $60,000 owner net profit; Base "
-                    "sales of $1,875,000 at 13.0% produce $243,750; Scaled sales of $3,000,000 "
-                    "at 18% produce $540,000. These are acquired operating-business revenues, "
-                    "not purchase prices, loan principal, or transaction values. Monthly "
-                    "arithmetic equivalents are $62,500 sales and $5,000 profit; $156,250 "
-                    "sales and $20,312.50 profit; and $250,000 sales and $45,000 profit. "
-                    "Use those equivalents only as comparison lines, since actual collections "
-                    "may be seasonal. All three profit cases are after interest and before "
-                    "principal repayments. For example, subtracting an illustrative $100,000 "
-                    "annual principal obligation from Base profit leaves $143,750 before "
-                    "other cash-flow adjustments; it does not establish distributable cash. "
-                    "Prepare separate bridges for depreciation, capital expenditure, working "
-                    "capital, and applicable taxes. Do not force an expensive acquisition "
-                    "into the Base case by deleting principal from the cash forecast or "
-                    "adding financing proceeds to revenue. The purchase model must show "
-                    "whether the required return survives the actual price, funding mix, "
-                    "replacement labor, and retained liquidity."
-                ),
-            ],
-            "table": {
-                "caption": "Week Two: Daily Sourcing Counts and QoE Evidence Requirements",
-                "headers": [
-                    "Day and mapped play",
-                    "Specific operator work",
-                    "Evidence delivered to shared model",
-                    "Quantitative or documentary acceptance test",
-                ],
-                "rows": [
-                    [
-                        "Day 8 builds P1 prospect research inventory",
-                        "Sponsor deduplicates broker, directory, referral, and owner-research records",
-                        "Research inventory contains 120 named prospects with source links",
-                        "Count each operating business once despite multiple broker listings",
-                    ],
-                    [
-                        "Day 9 launches P1 personalized owner outreach",
-                        "Sponsor sends twenty first contacts matching the documented thesis",
-                        "CRM stores recipient, thesis fit, message, and follow-up date",
-                        "Exclude bounced messages from the delivered first-contact denominator",
-                    ],
-                    [
-                        "Day 10 completes P1 initial contact cohort",
-                        "Sponsor sends twenty additional contacts and schedules broker discussions",
-                        "Forty delivered first contacts receive channel and cohort tags",
-                        "Separate owner replies from automated acknowledgments and broker broadcasts",
-                    ],
-                    [
-                        "Day 11 converts P1 replies into P2 qualification",
-                        "Sponsor checks thesis fit before requesting confidentiality agreements",
-                        "Qualification notes record seller objectives and available document categories",
-                        "No outreach claim presents uncommitted lending as approved capital",
-                    ],
-                    [
-                        "Day 12 collects P2 packages for evidence screening",
-                        "Sponsor requests eight usable packages through seller-authorized channels",
-                        "Packages contain historical results, current trading, staffing, and concentration",
-                        "Record document gaps explicitly without fabricating operating model inputs",
-                    ],
-                    [
-                        "Day 13 routes qualified packages into P3 review",
-                        "CPA challenges deposits, recognition timing, add-backs, and replacement labor",
-                        "Exception register links each adjustment to a dated source",
-                        "Unexplained tested-period sales differences above 2% require remediation",
-                    ],
-                    [
-                        "Day 14 selects P3 candidates for deeper underwriting",
-                        "Sponsor advances up to three evidence-supported opportunities for modeling",
-                        "Ranked shortlist shows price range, normalized earnings, and unresolved risks",
-                        "Advance quality evidence rather than filling a predetermined shortlist",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy Evidence Before You Buy a Multiple",
-                "body": (
-                    "Veteran buyers compress low-cost rejection work and preserve specialist "
-                    "hours for discrepancies that can change price or ownership risk."
-                ),
-                "items": [
-                    "Ask for monthly sales before the polished presentation; seasonality and sudden quarter-end spikes determine which bank and receivable periods deserve inspection.",
-                    "Price the seller's replacement role before debating discretionary add-backs; a departing owner who dispatches jobs and sells accounts represents two operating dependencies.",
-                    "Send the same short lender package to a limited, tracked lender cohort; compare reserve requirements and seller-note treatment instead of collecting vague borrowing estimates.",
-                    "Maintain a rejected-deal ledger with reasons and evidence; recurring license-transfer or customer-concentration failures are signals to repair the thesis, not increase outreach blindly.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Days 15–21: Price Debt, Expose Transfer Risk, and Design the Handoff",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "On Day 15, build a sources-and-uses model for each surviving target "
-                    "including price, fees, inventory treatment, working-capital delivery, "
-                    "equity, senior debt, and any seller note. On Day 16, request written "
-                    "preliminary lender feedback on borrower eligibility, business eligibility, "
-                    "equity, liquidity, collateral, and seller-note terms. SBA lending requires "
-                    "attention to 13 CFR 120.110 and 120.150, together with current program "
-                    "procedures and the lender's actual credit requirements. Do not assume "
-                    "a seller note automatically counts as equity or may receive current "
-                    "payments. On Day 17, stress the proposed capital structure with sales "
-                    "down 15%, direct-cost ratios unchanged, fixed cash costs unchanged, "
-                    "and floating borrowing rates up two percentage points. Calculate debt "
-                    "service coverage as consistently defined cash available for debt service "
-                    "divided by scheduled cash interest plus principal on all payable debt. "
-                    "This chapter's underwriting hurdles are at least 1.35 times in the "
-                    "base underwriting case and 1.10 times under stress; they are internal "
-                    "policy choices, not universal SBA thresholds. Use the stricter applicable "
-                    "lender covenant when it differs, and document how standby debt, leases, "
-                    "owner compensation, and taxes enter the lender's calculation."
-                ),
-                (
-                    "On Day 18, have the attorney map transfer risks across assets, equity, "
-                    "contracts, licenses, employee obligations, and tax accounts. Search "
-                    "applicable UCC filing offices using verified debtor names and jurisdictions, "
-                    "then obtain payoff and release mechanics rather than assuming an asset "
-                    "purchase erases liens. UCC 9-315 generally preserves a security interest "
-                    "after disposition unless the secured party authorizes a disposition free "
-                    "of it or another rule applies; the controlling state's enactment matters. "
-                    "On Day 19, prepare a transaction-specific diligence index with dated "
-                    "requests for tax filings, litigation, payroll liabilities, permits, "
-                    "leases, insurance claims, and material contracts. In a qualifying asset "
-                    "acquisition, Internal Revenue Code section 1060 requires purchase-price "
-                    "allocation using the applicable residual method; align the agreement "
-                    "and Form 8594 reporting. A letter of intent should identify the intended "
-                    "structure, working-capital mechanism, evidence conditions, exclusivity "
-                    "period, and treatment of seller debt without pretending the final "
-                    "allocation is already resolved. Kill a transaction if a required license "
-                    "cannot transfer or be replaced on an acceptable timetable. Fix a "
-                    "documentable release or consent gap only when a responsible party "
-                    "accepts a dated, verifiable cure."
-                ),
-                (
-                    "On Day 20, draft the first hundred days of ownership without exercising "
-                    "control before closing. Identify the ten largest customers, every "
-                    "single-person process dependency, and the employees needed for payroll, "
-                    "scheduling, billing, and delivery continuity. Obtain seller permission "
-                    "before customer or employee contact, and use aggregated data where "
-                    "individual records are unnecessary. On Day 21, test the proposed "
-                    "handoff against the seven employee and three contractor seats. The "
-                    "general manager owns P6 transition, the accounting coordinator owns "
-                    "P7 reporting, and the industry specialist supports systems migration "
-                    "without becoming an invisible permanent employee. Reconcile employment "
-                    "authorization procedures with 8 U.S.C. 1324a and transaction-specific "
-                    "successor practices; employee records need restricted access and clear "
-                    "custody. Keep payroll, banking, and customer communications unchanged "
-                    "until authorized transition steps are ready. Automate a read-only "
-                    "weekly reporting pack before changing invoicing or bank permissions. "
-                    "The minimum pack shows collected cash, receivable aging, gross margin, "
-                    "scheduled debt service, and thirteen-week liquidity. A target requiring "
-                    "a permanent eleventh person at Base economics needs a revised model "
-                    "or a lower price, not an unexplained headcount exception hidden "
-                    "inside a contractor invoice."
-                ),
-            ],
-            "table": {
-                "caption": "Week Three: Debt, Statutory Transfer Mechanics, and Operating Continuity",
-                "headers": [
-                    "Day and mapped play",
-                    "Required specialist or pod owner",
-                    "Concrete diligence or transition artifact",
-                    "Failure test and operating response",
-                ],
-                "rows": [
-                    [
-                        "Day 15 converts P3 earnings into P4 capitalization",
-                        "Sponsor models purchase uses with CPA-reviewed earnings assumptions",
-                        "Sources-and-uses schedule includes fees, equity, debt, and working capital",
-                        "Reject structures that consume required operating liquidity at closing",
-                    ],
-                    [
-                        "Day 16 tests P4 lender eligibility and terms",
-                        "Lender reviews borrower profile while attorney checks transaction structure",
-                        "Written preliminary feedback identifies equity, reserves, and seller-note treatment",
-                        "Treat unresolved borrowing assumptions as conditions rather than available funds",
-                    ],
-                    [
-                        "Day 17 stresses P4 total scheduled debt service",
-                        "Sponsor applies sales decline and floating-rate increase consistently",
-                        "Base and stress models show 1.35-times and 1.10-times hurdles",
-                        "Reprice or restructure failures without inventing unsupported cost reductions",
-                    ],
-                    [
-                        "Day 18 investigates P5 liens and transfer restrictions",
-                        "Attorney checks debtor names, filing jurisdictions, and secured-party releases",
-                        "Lien register links each filing to payoff and release mechanics",
-                        "No required lien release remains merely a seller assurance",
-                    ],
-                    [
-                        "Day 19 assembles P5 diligence and allocation requirements",
-                        "CPA and attorney coordinate tax records and asset-allocation methodology",
-                        "Diligence index covers liabilities, contracts, permits, and section 1060",
-                        "Untransferable essential operating rights terminate the current transaction path",
-                    ],
-                    [
-                        "Day 20 designs P6 customer and employee continuity",
-                        "General-manager seat maps key relationships through seller-authorized information",
-                        "Hundred-day handoff identifies ten largest customers and process dependencies",
-                        "No buyer contacts restricted stakeholders without explicit seller permission",
-                    ],
-                    [
-                        "Day 21 prototypes P7 read-only accounting and operations reporting",
-                        "Accounting coordinator seat and industry specialist test reporting ownership",
-                        "Weekly pack reconciles collections, aging, margins, debt, and liquidity",
-                        "Repair source reconciliation before automating payments or customer-facing workflows",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the evidence version",
-                    "action": "Archive the seller package, source extracts, and adjustment register under one dated model version.",
-                    "detail": "Record reporting periods and permissions; preserve original files so later revisions cannot overwrite the evidence behind a price decision.",
-                },
-                {
-                    "step": 2,
-                    "title": "Rebuild earnings and cash separately",
-                    "action": "Have the CPA reconcile sales and challenge add-backs before the sponsor sizes debt.",
-                    "detail": "Keep recognized revenue, interest expense, principal repayments, purchase funding, and working-capital movements in distinct model lines.",
-                },
-                {
-                    "step": 3,
-                    "title": "Resolve transfer and funding conditions",
-                    "action": "Have the attorney and lender assign dated owners to every material release, consent, eligibility question, and financing condition.",
-                    "detail": "Advance only conditions with verifiable completion paths; an essential license without a workable transfer or replacement path ends that transaction.",
-                },
-                {
-                    "step": 4,
-                    "title": "Authorize the next bounded tranche",
-                    "action": "Record the investment decision, remaining evidence gaps, contractor-hour limits, and updated thirteen-week liquidity.",
-                    "detail": "Authorize a specific investigation or negotiation step rather than unrestricted spending; preserve the seven-play responsibility register through closing.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Days 22–30: Decide Kill, Fix, or Scale Without Mistaking Activity for Ownership",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "On Day 22, complete the three preliminary underwriting files if enough "
-                    "qualified packages exist; otherwise document the actual count and "
-                    "bottleneck. On Day 23, validate customer concentration against invoices "
-                    "and contract terms, escalating any customer above 25% of sales for "
-                    "specific retention and debt-stress analysis. On Day 24, review draft "
-                    "indications of interest with the CPA and attorney, including the "
-                    "proposed working-capital mechanism. On Day 25, update the lender "
-                    "package with accepted adjustments and unresolved conditions. On Day "
-                    "26, obtain seller responses on material gaps and identify which can "
-                    "be cured within ten business days. On Day 27, rehearse the seven-play "
-                    "handoff and the first payroll, invoice batch, and weekly reporting "
-                    "cycle using samples rather than live changes. On Day 28, reconcile "
-                    "paid and committed search costs against $12,000. On Day 29, circulate "
-                    "a decision memo with evidence links and a funded next-stage plan. "
-                    "On Day 30, record Kill, Fix, or Scale separately for the thesis, "
-                    "each target, and each sourcing channel. One rejected business "
-                    "does not invalidate a healthy search, and one attractive listing "
-                    "does not validate an uneconomic acquisition thesis."
-                ),
-                (
-                    "Apply the decision hierarchy in order: hard failures first, remediation "
-                    "second, expansion last. Kill an individual target immediately for "
-                    "verified falsification, an essential operating right without a viable "
-                    "transfer path, or economics that still miss underwriting hurdles "
-                    "after a documented repricing and restructuring attempt. Freeze new "
-                    "discretionary commitments when cumulative search exposure exceeds "
-                    "$12,000 at Day 30, $21,000 at Day 60, or $30,000 at Day 90. "
-                    "Those later limits extend this illustrative search budget; they are "
-                    "not additional monthly allowances. Fix a bounded evidence gap with "
-                    "a named owner, a ten-business-day deadline, and no more than $1,500 "
-                    "of remediation spending inside the existing ceiling. Scale at Day "
-                    "30 only with forty delivered first contacts, eight usable packages, "
-                    "three completed screens, and at least one candidate meeting the "
-                    "preliminary debt hurdles. At Day 60, require eighty cumulative "
-                    "contacts, sixteen packages, six underwriting files, and two written "
-                    "indications of interest. At Day 90, require 120 contacts, twenty-four "
-                    "packages, nine underwriting files, and one lender-reviewed, diligence-ready "
-                    "LOI proposal. A seller signature is not required to validate "
-                    "the search process within a 6–18-month acquisition cycle."
-                ),
-                (
-                    "Scale means authorize the next bounded search or diligence tranche, "
-                    "not hire ahead of revenue or acquire the first available company. "
-                    "Increase delivered first-contact volume by no more than 25% in the "
-                    "next thirty days while holding package quality and spending limits. "
-                    "If a milestone is missed, diagnose conversion by cohort: replies per "
-                    "delivered contact, usable packages per substantive reply, and qualifying "
-                    "targets per completed underwriting file. Rewrite one bottleneck at a "
-                    "time and retest it before buying more leads. Kill or materially "
-                    "redefine the thesis at Day 90 if twenty-four usable packages and "
-                    "nine completed files produce zero viable targets; insufficient evidence "
-                    "instead earns a bounded Fix, not a fabricated failure rate. After "
-                    "closing, start a separate ownership clock. Expand operating capacity "
-                    "only after four consecutive weeks with at least 95% scheduled "
-                    "service completion, no overdue payroll or debt service, and a "
-                    "thirteen-week cash forecast that stays above the reserve floor. "
-                    "Define that floor as eight weeks of unavoidable cash operating "
-                    "payments plus the next scheduled debt payment, without double counting. "
-                    "Moving from seven employees and three contractors to the Scaled "
-                    "eight-and-four configuration requires a separately funded labor case; "
-                    "the $540,000 annual profit scenario is not permission to spend it early."
-                ),
-            ],
-            "table": {
-                "caption": "Final-Week Execution and Quantitative Day 30/60/90 Kill, Fix, or Scale Matrix",
-                "headers": [
-                    "Decision date or execution window",
-                    "Required evidence and operating milestone",
-                    "Kill or Fix response and boundary",
-                    "Scale authorization and capital constraint",
-                ],
-                "rows": [
-                    [
-                        "Days 22–24 complete P3 underwriting and P4 offer preparation",
-                        "Three preliminary files; invoice-supported concentration; working-capital terms reviewed",
-                        "Customer exposure above 25% requires retention and stress analysis",
-                        "Advance only supported pricing to attorney-reviewed indications of interest",
-                    ],
-                    [
-                        "Days 25–27 align P4 funding with P6 transition readiness",
-                        "Updated lender package, dated seller responses, and sample handoff rehearsal",
-                        "Unresolved material gaps receive owners and ten-business-day cure deadlines",
-                        "Authorize samples and planning without exercising pre-close operating control",
-                    ],
-                    [
-                        "Days 28–30 reconcile spending and decide across all plays",
-                        "Commitment ledger, evidence-linked memo, and funded next-stage search plan",
-                        "Separate target rejection from channel repair and thesis termination",
-                        "Release only the named next tranche within cumulative spending limits",
-                    ],
-                    [
-                        "Day 30 Kill or Fix decision precedes expansion",
-                        "Compare $12,000 exposure ceiling with actual pipeline and evidence",
-                        "Kill hard-failure targets; fix missed milestones within ten business days",
-                        "No expansion while remediation exceeds $1,500 or total spending ceiling",
-                    ],
-                    [
-                        "Day 30 Scale decision requires complete initial evidence",
-                        "Forty contacts, eight packages, three screens, one debt-hurdle-qualified candidate",
-                        "Missing evidence or failed underwriting sends the process to Fix",
-                        "Increase next-period contact volume at most 25%; preserve $21,000 Day-60 ceiling",
-                    ],
-                    [
-                        "Day 60 Kill or Fix decision tests repeatability",
-                        "Review $21,000 cumulative exposure and documented results by sourcing cohort",
-                        "Freeze excess commitments; terminate incurable targets; assign bounded bottleneck repairs",
-                        "Do not convert a budget overrun into an automatic capital increase",
-                    ],
-                    [
-                        "Day 60 Scale decision requires deeper transaction readiness",
-                        "Eighty contacts, sixteen packages, six files, two written interest indications",
-                        "Both indications need supported pricing; unresolved material risks prevent advancement",
-                        "Fund next diligence tranche while preserving $30,000 cumulative Day-90 ceiling",
-                    ],
-                    [
-                        "Day 90 Kill or Fix decision tests thesis viability",
-                        "Twenty-four usable packages and nine files establish the review sample",
-                        "Zero viable targets kills or redefines thesis; smaller samples require Fix",
-                        "No automatic extension beyond $30,000 without a new funded authorization",
-                    ],
-                    [
-                        "Day 90 Scale decision authorizes a bounded transaction pursuit",
-                        "120 contacts, twenty-four packages, nine files, one lender-reviewed LOI proposal",
-                        "Require internal debt hurdles and no unresolved hard-failure conditions",
-                        "Authorize scoped diligence; neither seller signature nor closing is presumed",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Scale the quality of evidence before you scale the amount of capital at risk.",
-    "diagram_id": "diag-08",
-    "action_checklist": [
-        "By Day 7, assign P1 through P7 to named owners, map the seven employee and three contractor seats, and reconcile the $12,000 search commitment ceiling.",
-        "By Day 14, research 120 prospects, deliver forty personalized first contacts, pursue eight usable packages, and select evidence-supported candidates rather than filling shortlist quotas.",
-        "By Day 17, reconcile earnings to source records and test at least 1.35-times base debt coverage and 1.10-times stressed coverage using all scheduled payable debt.",
-        "By Day 21, document lender conditions, lien-release mechanics, license and contract transfer paths, section 1060 allocation work, and a seller-authorized transition plan.",
-        "By Day 30, issue separate Kill, Fix, or Scale decisions for each target, sourcing channel, and thesis; cap bounded remediation at $1,500 inside the existing budget.",
-        "At Days 60 and 90, enforce the $21,000 and $30,000 cumulative ceilings, retest evidence milestones, and separate search expansion from any post-close staffing expansion.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "13 CFR 120.110 — Businesses ineligible for SBA business loans",
-            "url": "https://www.ecfr.gov/current/title-13/chapter-I/part-120/subpart-A/section-120.110",
-            "relevance": (
-                "Screen target activities for SBA business-loan eligibility before spending "
-                "on a structure that depends on SBA financing; confirm current program "
-                "requirements with the proposed lender."
-            ),
-        },
-        {
-            "title": "13 CFR 120.150 — Lending criteria",
-            "url": "https://www.ecfr.gov/current/title-13/chapter-I/part-120/subpart-A/section-120.150",
-            "relevance": (
-                "Anchor lender discussions in creditworthiness and reasonable assurance "
-                "of repayment. The chapter's 1.35-times and 1.10-times coverage tests "
-                "are internal underwriting policies, not thresholds asserted by this section."
-            ),
-        },
-        {
-            "title": "26 U.S.C. 1060 — Special allocation rules for certain asset acquisitions",
-            "url": "https://www.law.cornell.edu/uscode/text/26/1060",
-            "relevance": (
-                "Coordinate the applicable residual-method purchase-price allocation "
-                "and buyer-seller reporting for qualifying asset acquisitions, including "
-                "the associated Form 8594 work."
-            ),
-        },
-        {
-            "title": "UCC 9-315 — Secured party's rights on disposition of collateral and in proceeds",
-            "url": "https://www.law.cornell.edu/ucc/9/9-315",
-            "relevance": (
-                "Use the model provision to identify why an asset sale alone may not "
-                "remove a security interest; counsel must verify the controlling state's "
-                "enacted text and obtain transaction-specific payoff and release mechanics."
-            ),
-        },
-        {
-            "title": "8 U.S.C. 1324a — Unlawful employment of aliens",
-            "url": "https://www.law.cornell.edu/uscode/text/8/1324a",
-            "relevance": (
-                "Assign responsibility for employment-authorization verification and "
-                "employee-record custody during the acquisition handoff, applying "
-                "transaction-specific successor procedures rather than assuming every "
-                "transfer requires the same documentation treatment."
-            ),
-        },
-    ],
-}
+CHAPTER_12 = {'id': 'Q12',
+ 'chapter_id': 'Q12',
+ 'chapter_number': 12,
+ 'question_number': 12,
+ 'slug': 'post-acquisition-first-100-days-integration-roll-ups',
+ 'question_prompt': 'What must a new owner do in the first 30 to 100 days after closing, and how do '
+                    'acquirers scale through integration and roll-ups?',
+ 'kicker': 'Q12 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Post-Acquisition: The First 100 Days, Integration, and Roll-Ups',
+ 'subtitle': 'First 30/90/100-day plans, financial controls and cash visibility, finance and IT '
+             "integration decisions, why acquisitions underperform, a new owner's firsthand first 100 "
+             'days, post-acquisition marketing, integration case studies (40+ mergers at a $3B '
+             'multinational), middle-market integration, and scaling from $100K to $50M via acquisitions '
+             'and a $60M SBA-started freight roll-up',
+ 'layout_template': 'action_worksheet_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': "Operators converge on one rule for the first 100 days: don't break the business. "
+                      'Stabilize cash, people and controls before accelerating, tell employees before '
+                      'customers, and keep the market from seeing a blackout. Lighthouse Capital wants a '
+                      '13-week cash forecast live within two weeks, dual bank signatures by Day 15, and a '
+                      'close of 10 business days or less for three straight months by Day 100. Walker '
+                      'Deibel reports revenue fell 5-10% in the year after each of seven acquisitions, so '
+                      "the plan must survive a stress test. Deibel's roll-up model centralizes back "
+                      'office, buys at 4-5x and targets 7-7.5x exits. The fights are about timing: Deibel '
+                      'has watched drastic early change both create value and wreck a personally '
+                      'guaranteed loan, while Middle Market Smart warns that delaying hard decisions is a '
+                      'top integration mistake.',
+ 'key_metrics': [{'label': '13-Week Cash Forecast Go-Live Deadline',
+                  'metric': '13-Week Cash Forecast Go-Live Deadline',
+                  'value': 'Live within 2 weeks of closing; red flag at a gap above 10% for two '
+                           'consecutive weeks',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Forecast updated weekly against actuals with every gap explained in writing, '
+                             'set as the first financial control after close',
+                  'source': 'Lighthouse Capital ([OwAOc9xgv9U @ 00:00:51])'},
+                 {'label': 'Month-End Close Target By Day 100',
+                  'metric': 'Month-End Close Target By Day 100',
+                  'value': '10 business days or less for 3 consecutive months; red flag above 15 business '
+                           'days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Close-speed benchmark an investor should see proven by Day 100 alongside the '
+                             'Day 30 Control Memo',
+                  'source': 'Lighthouse Capital ([OwAOc9xgv9U @ 00:01:55])'},
+                 {'label': 'Post-Acquisition Revenue Dip',
+                  'metric': 'Post-Acquisition Revenue Dip',
+                  'value': 'Revenue fell 5-10% in the year after every one of 7 acquisitions',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Deibel's own deal history, used to argue for stress-testing the P&L and "
+                             'never showing a bank declining revenue',
+                  'source': 'Walker Deibel ([fFDPLnXTi0o @ 00:06:22])'},
+                 {'label': 'Lead Flow Loss From Going Dark',
+                  'metric': 'Lead Flow Loss From Going Dark',
+                  'value': 'Lead flow dipped 40% within 3 weeks',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'The Jen case: closed Friday, press release Monday, then silence; stabilized '
+                             'within 10 days of intervention but trust took months to rebuild',
+                  'source': 'Strategy Leaders Inc. ([OeJwN9bz5dE @ 00:12:31])'}],
+ 'sections': [{'heading': '1. The Practitioner Consensus: Stabilize, See the Cash, Sequence the People',
+               'paragraphs': ['The loudest point of agreement is defensive. The acquirer-operator on '
+                              "Patrick O'Connell's show states it flatly: the number one objective in the "
+                              "first 90 days is don't break the business [6AT45jrM2CU @ 00:17:47]. That "
+                              'same operator admits diligence leaves you roughly 60% informed, so the move '
+                              'is to clean the data and run the company on it for about 60 days before '
+                              'rewiring anything. Lighthouse Capital frames the same sequence as days 0 to '
+                              '30 being purely for stabilizing and listening, with growth initiatives only '
+                              'unlocked in days 61 to 100 once cash controls work, summed up as you '
+                              'literally have to stabilize before you can accelerate [slGlxgrDvps @ '
+                              '00:04:57]. Walker Deibel lands in the same place from the small-business '
+                              'side: no changes in the first 30 to 60 days, and keep an idea notebook '
+                              'instead, because half or more of the ideas you have in the first 90 days '
+                              'turn out not to be very good [fFDPLnXTi0o @ 00:03:19]. Bridgeyard applies '
+                              'the identical logic to IT, separating day-one continuity from later '
+                              'integration so the team stops treating every integration wish as an urgent '
+                              'requirement [wjVsYwI5G_E @ 00:00:43]. The shared baseline: protect cash '
+                              'flow and service first, collect ideas, act later, and only with data in '
+                              'hand.',
+                              'Cash visibility is the second non-negotiable. Lighthouse Capital puts it '
+                              "bluntly: if you can't see the cash, you can't tell whether the business you "
+                              'just bought is getting better or worse, so a 13-week cash forecast must be '
+                              'live within two weeks of closing, updated weekly against actuals, with '
+                              'every gap explained in writing [OwAOc9xgv9U @ 00:00:51]. Byron Thomas '
+                              'Recruitment ranks the same tool first among its five 100-day pressure '
+                              'points, pairing the 13-week forecast with variance analysis for lenders '
+                              '[NotNaT329hg @ 00:14:57]. Neo Expertise supplies the discipline underneath: '
+                              'days 1 to 30 are inventory only, and from day 31 to 60 you stop reading and '
+                              'start proving, checking bank against ledger and customer statements rather '
+                              'than the aging report, because the example they open with is €3M of '
+                              'receivables nobody can vouch for [4kQ8R30J5q4 @ 00:00:33]. The same team '
+                              "flags 'we will clean it up at year-end' as the phrase that tells you the "
+                              'finance function is already drifting. Walker Deibel turns all of this into '
+                              "a posture rather than a report: build cash, don't drain it, since the "
+                              "business's own cash flow is what repays the senior loan [fFDPLnXTi0o @ "
+                              '00:01:06]. Weekly cash, proven balances and a growing cushion are the '
+                              'shared prerequisites before anyone touches pricing, headcount or systems.',
+                              "On people, the consensus is sequencing and restraint. Walker Deibel's order "
+                              'is fixed: step one, employees on the first day, in an all-hands covering '
+                              'the vision and why they matter, so the deal happens with them rather than '
+                              'to them; step two, customers, starting with the 20% who bring in 80% of '
+                              'revenue, while suppliers wait a couple of weeks [fFDPLnXTi0o @ 00:02:17]. '
+                              'Robin Goldenberg of Strategy Leaders Inc. runs the identical ladder for '
+                              'marketing: team first, then customers, then vendors, and only then the '
+                              'marketplace [OeJwN9bz5dE @ 00:08:59]. The PE-held CEO guest on Middle '
+                              'Market Smart takes it to the shop floor, meeting every employee on day one, '
+                              'running round tables and calling customers personally, then locking in a '
+                              'Monday sales review covering forecast, pipeline and top customers, plus '
+                              'plant visits and truck ride-alongs [9fvL0IINg6k @ 00:12:31]. Patrick '
+                              "O'Connell's guest adds the hard line: don't cut people in the first 90 "
+                              'days, and leave ego at the door while onboarding yourself alongside the '
+                              'team [6AT45jrM2CU @ 00:27:25]. Across all four, the logic is identical. The '
+                              'existing team and the top accounts carry the cash flow, so they hear the '
+                              'news first, directly, and from the new owner rather than from a press '
+                              'release.'],
+               'table': {'caption': 'Where the operators agree on the first 100 days',
+                         'headers': ['Consensus Principle',
+                                     'What It Looks Like In Practice',
+                                     'Expert Source'],
+                         'rows': [['Stabilize the operation before chasing any growth initiative',
+                                   'Days 0-30 stabilize and listen; growth work starts in days 61-100 only '
+                                   'once cash controls actually work',
+                                   'Lighthouse Capital ([slGlxgrDvps @ 00:02:42])'],
+                                  ['Do not break the business in the first 90 days',
+                                   'Diligence leaves you roughly 60% informed, so clean the data and run '
+                                   'on it for about 60 days',
+                                   "Patrick O'Connell - M&A Transaction Services ([6AT45jrM2CU @ "
+                                   '00:14:02])'],
+                                  ['Get weekly cash visibility live almost immediately after closing',
+                                   '13-week cash forecast updated weekly against actuals, live within two '
+                                   'weeks, gaps explained in writing',
+                                   'Lighthouse Capital ([OwAOc9xgv9U @ 00:00:51])'],
+                                  ['Tell employees first, then customers, then everyone else',
+                                   'Day-one all-hands on vision, then meet the 20% of customers bringing '
+                                   '80% of revenue, defer suppliers a couple of weeks',
+                                   'Walker Deibel ([fFDPLnXTi0o @ 00:02:17])'],
+                                  ['Never go dark on the market after the announcement',
+                                   'Preload a welcome email, a meet-the-new-leadership social series and '
+                                   'cross-promotions before close',
+                                   'Strategy Leaders Inc. ([OeJwN9bz5dE @ 00:11:31])'],
+                                  ['Lock down governance and decision rights early on',
+                                   'Set decision rights, identify and retain critical talent early, and '
+                                   'keep integration out of a project team',
+                                   'Middle Market Smart ([9fvL0IINg6k @ 00:05:35])'],
+                                  ['Lead with the business, not the technology stack',
+                                   'Strategy and processes first, quick wins early, higher-risk ERP work '
+                                   'later on a three-year roadmap',
+                                   'Digital Transformation with Eric Kimberling ([a7XwL5Q-ttE @ '
+                                   '00:10:30])']]}},
+              {'heading': '2. Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The finance mechanics are specific down to the day. Lighthouse Capital '
+                              'keeps one register of every bank account, requires dual signatures, and '
+                              'splits duties so the person who approves a payment never sends it; any '
+                              'account still on a single signature after Day 15 is a red flag [OwAOc9xgv9U '
+                              '@ 00:01:07]. The same desk sets the close target at 10 business days or '
+                              'less for three consecutive months by Day 100, flags anything over 15 '
+                              'business days, and makes a Day 30 Control Memo the first proof an investor '
+                              'requests [OwAOc9xgv9U @ 00:01:55]. Neo Expertise layers on the '
+                              'reconciliation rules: every intercompany balance needs a named entity and a '
+                              'named person who agrees the number, account mapping gets signed off by '
+                              'someone who will still be there in a year, and a policy-differences '
+                              'document is produced because that one document will save you your first '
+                              'audit [4kQ8R30J5q4 @ 00:01:05]. Governance runs on one shared list with one '
+                              'owner and one date per item, a weekly meeting with the local controller, '
+                              'and priority on whatever the auditor will ask. Byron Thomas Recruitment '
+                              'sets the stretch goal: convert a founder-led 20-day cash close into an '
+                              'accrual close by working day 5, the test it uses to judge whether the '
+                              'incumbent team has elasticity [NotNaT329hg @ 00:04:59].',
+                              "The tooling is named down to the vendor. E2E's team on the McGuireWoods LLP "
+                              'panel finds most lower middle market targets on QuickBooks Online with '
+                              'inconsistent coding, books sitting between cash and accrual, and manual '
+                              'payables and receivables, and standardizes on QuickBooks Online, Ramp for '
+                              'expenses and vendors, Gusto for payroll and Fathom for KPI dashboards '
+                              '[_sFK2HgcBFo @ 00:08:00]. Their economics argument: a full-time CFO runs '
+                              '$200K to $250K, so a fractional CFO makes sense, and the first full-time '
+                              'finance hire is usually a bookkeeper or data-entry role [_sFK2HgcBFo @ '
+                              '00:11:11]. Brian Boland and Onu Okebie of HTL went straight at working '
+                              'capital after their first deal: receivables were collected in 30 days but '
+                              'vendors were being paid in 10, so they sped up invoicing, offered early-pay '
+                              'discounts, gradually stress-tested payment days vendor by vendor, and moved '
+                              'from checks to electronic payments, while replacing a single-user Access '
+                              'database with a TMS that cut vendor setup from 30 to 40 minutes down to 30 '
+                              'seconds [YsZAnvfQAqk @ 00:29:37]. They paired that with an SBA Express line '
+                              'of credit, calling the right-sized payment formula a huge working capital '
+                              "benefit. Patrick O'Connell's guest runs the SaaS version, using Stripe to "
+                              'collapse net-30 receivables to same-day cash and testing new pricing on new '
+                              'customers first [6AT45jrM2CU @ 00:50:22].',
+                              "For roll-ups, the numbers are explicit. Walker Deibel's model is ten "
+                              'companies averaging $2M EBITDA for $20M combined, bought at 4x to 5x and '
+                              'sold at 7x to 7.5x on multiple expansion, with marketing, accounting, '
+                              'governance and HR centralized and each company paying a low and reasonable '
+                              "management fee [uY1iPCwJqk8 @ 00:11:22]. Deibel insists you can't run ten "
+                              'companies separately: meld the culture, meld the systems, and seat a formal '
+                              'board, with the eventual exit pitched to private equity at 7x to 9x. Byron '
+                              'Thomas Recruitment prices the same arbitrage at buying at 6x and folding '
+                              'into a 12x platform, but warns that add-on-heavy platforms exit about 12 '
+                              'months later, turning a five-year exit into six, and that exit buyers '
+                              'discount for three payroll systems or unmapped charts of accounts '
+                              '[NotNaT329hg @ 00:09:19]. HTL shows the operating version: shipper pays '
+                              '$1,000, the carrier gets $900, HTL keeps $100, staffing runs about one '
+                              'employee per $1M of revenue, and raising outside capital after three '
+                              'bootstrapped deals brought roughly 10x the money for the same dilution '
+                              '[YsZAnvfQAqk @ 00:35:03]. For prioritization inside each acquired unit, '
+                              "Patrick O'Connell's guest uses RICE scoring to find the constraint, noting "
+                              'that lifting customer success from 1 to 7 beats lifting sales from 4 to 6 '
+                              '[6AT45jrM2CU @ 00:22:08].'],
+               'table': {'caption': 'Street mechanics, exact numbers and named tools',
+                         'headers': ['Mechanic',
+                                     'Exact Number Or Tool',
+                                     'How The Operator Runs It',
+                                     'Expert Source'],
+                         'rows': [['13-week rolling cash forecast after close',
+                                   'Live within 2 weeks of close; red flag at a gap above 10% for two '
+                                   'straight weeks',
+                                   'Update weekly against actuals and explain every variance in writing to '
+                                   'investors',
+                                   'Lighthouse Capital ([OwAOc9xgv9U @ 00:00:51])'],
+                                  ['Bank mandates and payment approval split',
+                                   'Dual signatures on every account; any single signature after Day 15 is '
+                                   'a red flag',
+                                   'Keep one register of all accounts; the payment approver never sends '
+                                   'the payment',
+                                   'Lighthouse Capital ([OwAOc9xgv9U @ 00:01:07])'],
+                                  ['Month-end close speed target by Day 100',
+                                   '10 business days or less for 3 consecutive months',
+                                   'Treat any close running longer than 15 business days as a red flag',
+                                   'Lighthouse Capital ([OwAOc9xgv9U @ 00:01:55])'],
+                                  ['Lower middle market finance stack',
+                                   'QuickBooks Online, Ramp, Gusto and Fathom; a full-time CFO costs $200K '
+                                   'to $250K',
+                                   'Fix inconsistent coding, get books off the cash-accrual hybrid, run a '
+                                   'fractional CFO',
+                                   'McGuireWoods LLP ([_sFK2HgcBFo @ 00:08:00])'],
+                                  ['Working capital squeeze on payables and receivables',
+                                   'Receivables collected in 30 days while vendors were paid in 10 days',
+                                   'Invoice fast, offer early-pay discounts, stress-test vendor payment '
+                                   'days, move checks to electronic',
+                                   'Acquiring Minds ([YsZAnvfQAqk @ 00:29:37])'],
+                                  ['Transition cost visibility for IT migration',
+                                   'Illustrative fast option £20,000 versus staged £12,000 plus 3 x £4,000 '
+                                   'parallel service, totaling £24,000',
+                                   'Show sensitivity and never present a provisional comparison as a '
+                                   'guaranteed saving',
+                                   'Bridgeyard ([wjVsYwI5G_E @ 00:03:32])'],
+                                  ['Roll-up multiple expansion math',
+                                   'Ten companies at $2M EBITDA each, bought at 4-5x, sold at 7-7.5x',
+                                   'Centralize marketing, accounting, governance and HR behind a low '
+                                   'management fee per company',
+                                   'Walker Deibel ([uY1iPCwJqk8 @ 00:11:22])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Week-One Moves the Operators Actually Run',
+                           'body': 'Small, specific asks that surface the real state of the business '
+                                   'before any big change lands.',
+                           'items': ['Before Friday, ask for three things: the last completed bank '
+                                     'reconciliation for every account, the age of the oldest suspense '
+                                     'item, and what the local controller would fix first, since they '
+                                     'already know and usually nobody has asked them [Neo Expertise — '
+                                     '4kQ8R30J5q4 @ 00:02:14]',
+                                     'Record 1 to 2 hour tribal-knowledge interviews with key staff and '
+                                     'convert the transcripts into SOPs and FAQs instead of waiting for '
+                                     "documentation to appear [Patrick O'Connell - M&A Transaction "
+                                     'Services — 6AT45jrM2CU @ 00:23:24]',
+                                     'Give every temporary system access an owner, a scope, an expiry date '
+                                     'and a removal action, because a calendar reminder cannot extend a '
+                                     'service or change a contract [Bridgeyard — wjVsYwI5G_E @ 00:01:58]',
+                                     'Instead of buyer-funded retention bonuses that signal you are flush, '
+                                     'have the seller pay thank-you bonuses half now and half escrowed for '
+                                     '12 months, and match them if needed [The Intentional Owner — '
+                                     'cC2-F0YZb9M @ 00:28:53]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Stand Up Cash and Bank Controls (Days 0-15)',
+                              'action': 'Launch a 13-week cash forecast and convert every bank account to '
+                                        'dual signatures.',
+                              'detail': 'Forecast live within two weeks of close and updated weekly '
+                                        'against actuals; register every account, separate approver from '
+                                        'sender, and treat any single-signature account after Day 15 as a '
+                                        'red flag [Lighthouse Capital — OwAOc9xgv9U @ 00:01:07]'},
+                             {'step': 2,
+                              'title': 'Run the Day-One Announcement Ladder',
+                              'action': 'Hold an all-hands with employees first, then make personal '
+                                        'contact with top customers.',
+                              'detail': 'Cover the vision and why the team matters, then meet the 20% of '
+                                        'customers producing 80% of revenue, and push supplier '
+                                        'conversations back a couple of weeks [Walker Deibel — fFDPLnXTi0o '
+                                        '@ 00:02:17]'},
+                             {'step': 3,
+                              'title': 'Trace One Real Transaction Through IT (Days 1-30)',
+                              'action': 'Follow one live process end to end before approving any '
+                                        'migration.',
+                              'detail': 'Trace a real transaction such as order processing through every '
+                                        'dependency, tie remaining supplier support (for example 8 weeks) '
+                                        'to the delivery plan, and treat 30 days as a review horizon '
+                                        'rather than a deadline [Bridgeyard — wjVsYwI5G_E @ 00:01:22]'},
+                             {'step': 4,
+                              'title': 'Prove Balances and Deliver the First Group Close (Days 31-100)',
+                              'action': 'Prove every balance against a second source, then close one month '
+                                        'on the group calendar.',
+                              'detail': 'Days 31-60 check bank against ledger and customer statements '
+                                        'against the aging report; days 61-100 get mapping signed off by '
+                                        'someone staying a year, produce the policy-differences document, '
+                                        'and deliver one month-end close on the group calendar [Neo '
+                                        'Expertise — 4kQ8R30J5q4 @ 00:01:22]'}]},
+              {'section_number': 3,
+               'title': 'Where Practitioners Disagree & Alternative Playbooks',
+               'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is tempo. Walker Deibel runs a hard freeze for the first '
+                              '30 to 60 days, keeps an idea notebook instead, and openly rejects the '
+                              "opposite camp's 'no change for 12 months' rule; Deibel has watched drastic "
+                              'early change twice, once creating great value and once wrecking a '
+                              'personally guaranteed loan, so the preferred move is small streamlining in '
+                              "months three and four [fFDPLnXTi0o @ 00:03:57]. Patrick O'Connell's guest "
+                              'lands even more conservative on people: no cuts in the first 90 days, '
+                              'because the only non-negotiable objective is not breaking the business '
+                              '[6AT45jrM2CU @ 00:27:25]. The Intentional Owner pushes back on blanket '
+                              'patience. Firing to force change is disruptive, yet the same hosts describe '
+                              'a web and PPC overhaul three to five months after buying a dumpster '
+                              'business and killing a product line that ran negative gross margin, arguing '
+                              'that only the person who owns the risk gets to make that call [cC2-F0YZb9M '
+                              '@ 00:44:31]. A Middle Market Smart guest frames delay itself as one of the '
+                              "three classic integration mistakes, invoking West Point's line about making "
+                              "the right hard decision, and treats post-close 'deal fatigue' as the moment "
+                              'operators take their foot off the pedal [9fvL0IINg6k @ 00:35:41].',
+                              "Deal announcements split the room. Walker Deibel's sequence is rigid: "
+                              'employees on day one at an all-hands built around vision and why they '
+                              'matter, then the 20% of customers producing 80% of revenue, with suppliers '
+                              "deferred a couple of weeks, because telling the team first lets you 'round "
+                              "them up real fast' [fFDPLnXTi0o @ 00:02:17]. Robin Goldenberg of Strategy "
+                              'Leaders Inc. runs the same order (team, customers, vendors, then '
+                              'marketplace) but insists the public side be preloaded with a welcome email, '
+                              'a meet-the-new-leadership social series and cross-promotions, warning that '
+                              'you cannot afford to go dark even for two weeks [OeJwN9bz5dE @ 00:11:31]. '
+                              "The Intentional Owner's fence operator runs the opposite play on stock "
+                              'deals: stay quiet to protect contracts, let the private equity press '
+                              'release land roughly a month later, and, as one host argues, when 25 key '
+                              'customers make up 80% of revenue the downside of announcing outweighs the '
+                              'upside, while silence also limits competitors poaching staff [cC2-F0YZb9M @ '
+                              '00:13:15]. The tree-care owner on the same show took a third route on an '
+                              'add-on: the seller wrote a retirement letter, confirmed the team was '
+                              'retained, stayed roughly 60 days, and old pricing was honored for 60 days, '
+                              'turning the letter into business development [cC2-F0YZb9M @ 00:08:49].',
+                              'Retention money and finance leadership produce the most explicit '
+                              'side-by-side contrasts. The Intentional Owner hosts warn that buyer-paid '
+                              'retention bonuses are hard to calibrate, with a $40K bonus for an $80K '
+                              "employee as the example, signal that the new owner is 'flush,' and buy time "
+                              "rather than engagement, calling the real fix 'a hearts and minds solve' "
+                              'rather than a money solve; their alternative is seller-funded thank-you '
+                              'bonuses, half paid now and half escrowed for 12 months, which the buyer has '
+                              'matched [cC2-F0YZb9M @ 00:26:39]. A Middle Market Smart guest goes the '
+                              'other way, starting integration pre-close and writing six-month to one-year '
+                              'retention bonuses after a buyer asked for 120 days, with half a million '
+                              'dollars in bonuses treated as acquisition cost booked below the EBITDA line '
+                              '[9fvL0IINg6k @ 00:40:25]. On the finance seat, Byron Thomas Recruitment '
+                              'lays out three options: back the incumbent controller with scaffolding, '
+                              'bring in an interim integration finance specialist for six to nine months, '
+                              'or upgrade to a divisional CFO early [NotNaT329hg @ 00:24:26]. Even there '
+                              'the two hosts split: one says a capability assessment risks spooking the '
+                              'controller into a flight risk, the other answers that it should run '
+                              'discreetly, mapped to the operating model rather than staged as a '
+                              'performance review [NotNaT329hg @ 00:04:30].'],
+               'table': {'caption': 'Alternative post-acquisition playbooks where operators split on '
+                                    'timing, messaging, money and structure',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Timing of operational changes after the close',
+                                   'Freeze changes for 30 to 60 days, then small streamlining in months '
+                                   'three and four',
+                                   'Move fast on obvious bleeders: cut a negative gross margin line, '
+                                   'overhaul web and PPC within 3-5 months',
+                                   'Walker Deibel ([fFDPLnXTi0o @ 00:03:57]) vs The Intentional Owner '
+                                   '([cC2-F0YZb9M @ 00:44:31])'],
+                                  ['Announcing the deal to customers and the market',
+                                   'Never go dark: preload a welcome email, a meet-the-new-leadership '
+                                   'series and cross-promotions',
+                                   'Stay quiet on stock deals to protect contracts; press release roughly '
+                                   'one month later',
+                                   'Strategy Leaders Inc. ([OeJwN9bz5dE @ 00:11:31]) vs The Intentional '
+                                   'Owner ([cC2-F0YZb9M @ 00:10:28])'],
+                                  ['How to fund key-employee retention after closing',
+                                   'Buyer writes six-month to one-year retention bonuses, booked as '
+                                   'acquisition cost below EBITDA',
+                                   'Seller-funded thank-you bonuses, half paid now and half escrowed for '
+                                   '12 months',
+                                   'Middle Market Smart ([9fvL0IINg6k @ 00:40:25]) vs The Intentional '
+                                   'Owner ([cC2-F0YZb9M @ 00:28:53])'],
+                                  ['Who runs the acquired finance function going forward',
+                                   'Back the incumbent controller with scaffolding and a discreet, '
+                                   'objective capability assessment',
+                                   'Interim integration finance specialist for six to nine months, or a '
+                                   'divisional CFO early',
+                                   'Byron Thomas Recruitment ([NotNaT329hg @ 00:25:31])'],
+                                  ['Headcount and productivity targets in year one',
+                                   'No cuts in the first 90 days; track revenue and EBITDA per employee '
+                                   'instead of quota math',
+                                   'Cut a three-person marketing team down to one person using AI tools',
+                                   "Patrick O'Connell - M&A Transaction Services ([6AT45jrM2CU @ "
+                                   '00:30:44]) vs Middle Market Smart ([9fvL0IINg6k @ 00:30:18])'],
+                                  ['Roll-up architecture for stacking multiple acquired companies',
+                                   'Centralize marketing, accounting, governance and HR; charge each '
+                                   'company a low management fee',
+                                   'Buy five different defensible niches across regions and cross-sell '
+                                   'full truckload, LTL and hazmat',
+                                   'Walker Deibel ([uY1iPCwJqk8 @ 00:13:27]) vs Acquiring Minds '
+                                   '([YsZAnvfQAqk @ 00:17:18])'],
+                                  ['Systems versus business process as the first integration lever',
+                                   'Lead with business strategy and basics; higher-risk technology comes '
+                                   'later in a three-year roadmap',
+                                   'Rip out the single-user Access database for a TMS right after closing '
+                                   'deal one',
+                                   'Digital Transformation with Eric Kimberling ([a7XwL5Q-ttE @ 00:11:30]) '
+                                   'vs Acquiring Minds ([YsZAnvfQAqk @ 00:41:12])']]}},
+              {'section_number': 4,
+               'title': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The first trap is flying blind on cash. Lighthouse Capital wants a 13-week '
+                              'cash forecast live within two weeks of closing, updated weekly against '
+                              'actuals with gaps explained in writing, and flags a variance above 10% for '
+                              'two consecutive weeks as a red flag [OwAOc9xgv9U @ 00:00:51]. The same '
+                              'channel treats any bank account still on a single signature after Day 15 as '
+                              'a failure, since the person approving a payment must never be the one '
+                              'sending it, and calls a month-end close longer than 15 business days a '
+                              'warning sign against a target of 10 days for three straight months by Day '
+                              '100 [OwAOc9xgv9U @ 00:01:07]. Neo Expertise names the excuse that lets the '
+                              "mess compound, 'We will clean it up at year-end,' using the example of €3M "
+                              'of receivables nobody can vouch for during the first 30 days [4kQ8R30J5q4 @ '
+                              '00:00:16]. Byron Thomas Recruitment describes where this ends: a '
+                              'founder-led 20-day cash close that cannot produce a clean month-end three '
+                              'months post-close, and an Excel or CSV bridge that becomes permanent across '
+                              "three or four bolt-ons in 18 months until it 'fails in an unmapped "
+                              "spreadsheet cell at 11:00 p.m. on a Tuesday' [NotNaT329hg @ 00:19:07].",
+                              'Revenue and debt service break next. Walker Deibel reports revenue fell 5% '
+                              'to 10% in the year after every one of seven acquisitions, which is why '
+                              'Deibel never shows a bank a declining-revenue forecast and stress-tests the '
+                              'P&L before buying, often coming out more comfortable after the stress test '
+                              '[fFDPLnXTi0o @ 00:06:22]. The Intentional Owner puts the debt math bluntly: '
+                              'firing people to force change is disruptive, and a 20% cash-flow drop can '
+                              'push the debt service coverage ratio below 1 [cC2-F0YZb9M @ 00:41:51]. '
+                              "Patrick O'Connell's guest avoids any customer above 20% concentration, "
+                              'flagging it as SBA debt risk, and runs a voice-of-customer tour plus an NPS '
+                              'baseline instead of guessing [6AT45jrM2CU @ 00:25:49]. Strategy Leaders '
+                              "Inc. supplies the cleanest firsthand loss: in the 'Jen' case, the deal "
+                              'closed on a Friday, a press release went out Monday, then nothing; lead '
+                              'flow dipped 40% within three weeks, things stabilized within 10 days of '
+                              'intervention, but trust took months to rebuild [OeJwN9bz5dE @ 00:12:31]. '
+                              "Robin Goldenberg's broader warning is that momentum tanks in the first 30 "
+                              'to 60 days after close, and the fix is a 90-day arc that launches publicly '
+                              'by Day 60.',
+                              "The slower failures are synergy leakage and talent loss. UNSW eLearning's "
+                              'integration model shows talent drain as a reinforcing loop in which '
+                              "turnover removes the most capable people first, and 'synergy creep' as "
+                              'removed costs returning, such as redundant staff replaced by contractors '
+                              'six months later [WUI9T65UP54 @ 00:04:56]. Byron Thomas Recruitment adds '
+                              'the accounting version: the CFO must own the synergy baseline, because '
+                              'operating costs get quietly pushed into one-off costs, so tracking has to '
+                              'run for three years; they also describe the translation-layer trap where '
+                              'Big Four dashboards come back as a broken PDF once the advisors leave '
+                              '[NotNaT329hg @ 00:21:30]. A Middle Market Smart guest has watched millions '
+                              'spent on technology that stays on the shelf because the culture was not '
+                              'ready, and warns that two CRMs mean lost data unless you pick one and train '
+                              'everyone [9fvL0IINg6k @ 00:13:38]. On the roll-up capital side, Acquiring '
+                              'Minds guests Brian Boland and Onu Okebie signed an LOI before raising and '
+                              'then sat six to eight weeks without progress [YsZAnvfQAqk @ 01:04:03]; '
+                              "self-funded search investors also rejected their first proposal as 'not "
+                              "compelling enough,' so they rebuilt it starting from the investor's return "
+                              'and backing into dilution, landing near a 30% to 35% IRR.'],
+               'table': {'caption': 'Firsthand failure modes with the trigger operators saw and the '
+                                    'economics check that catches it',
+                         'headers': ['Failure Mode',
+                                     'Trigger Practitioners Reported',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Cash invisibility in the first weeks after closing',
+                                   'Forecast variance above 10% for two consecutive weeks with no written '
+                                   'explanation',
+                                   '13-week cash forecast live within two weeks, reconciled weekly against '
+                                   'actuals',
+                                   'Lighthouse Capital ([OwAOc9xgv9U @ 00:00:51])'],
+                                  ['Payment fraud exposure through weak bank mandates',
+                                   'Any account still running on a single signature after Day 15',
+                                   'One register of all accounts; the approver of a payment never sends it',
+                                   'Lighthouse Capital ([OwAOc9xgv9U @ 00:01:07])'],
+                                  ['Post-close revenue dip squeezing the debt model',
+                                   'Revenue fell 5-10% in the year after each of seven acquisitions',
+                                   'Stress-test the P&L and never show the bank declining revenue',
+                                   'Walker Deibel ([fFDPLnXTi0o @ 00:06:22])'],
+                                  ['Disruptive firing pushing debt coverage below 1',
+                                   'Forced change triggers a 20% cash-flow drop on a levered deal',
+                                   'Confirm DSCR survives a 20% cash-flow hit before cutting people',
+                                   'The Intentional Owner ([cC2-F0YZb9M @ 00:41:51])'],
+                                  ['Marketing blackout immediately after the announcement goes out',
+                                   'Closed Friday, press release Monday, then silence; leads down 40% '
+                                   'within three weeks',
+                                   'Preload a welcome email and leadership series; never go dark for two '
+                                   'weeks',
+                                   'Strategy Leaders Inc. ([OeJwN9bz5dE @ 00:12:31])'],
+                                  ['Synergy creep quietly reversing the promised cost savings',
+                                   'Redundant staff replaced by contractors roughly six months after '
+                                   'removal',
+                                   'CFO owns the baseline; track synergies for three years against one-off '
+                                   'reclassification',
+                                   'UNSW eLearning ([WUI9T65UP54 @ 00:04:56]) and Byron Thomas Recruitment '
+                                   '([NotNaT329hg @ 00:21:30])'],
+                                  ['Inherited seller debt souring the deal after closing',
+                                   'Buyer assumed printing equipment loans and was upset about nine months '
+                                   'later',
+                                   'Ask sellers to come debt-free; any assumed debt reduces the valuation',
+                                   'Walker Deibel ([fFDPLnXTi0o @ 00:07:38])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Day-100 Kill Switches',
+                           'body': 'Four pass/fail checks pulled straight from the losses and red flags '
+                                   'operators reported. Fail one and the growth agenda waits until it is '
+                                   'fixed.',
+                           'items': ['Every bank account on dual signatures by Day 15 and a 13-week cash '
+                                     'forecast live by week two, or the business is effectively '
+                                     'unmonitored [Lighthouse Capital — OwAOc9xgv9U @ 00:01:07].',
+                                     'No single customer above 20% concentration sitting on top of SBA '
+                                     'debt; run the voice-of-customer tour before assuming retention '
+                                     "[Patrick O'Connell - M&A Transaction Services — 6AT45jrM2CU @ "
+                                     '00:25:49].',
+                                     'Seller delivers the company debt-free, and any debt you do assume '
+                                     'comes straight off the valuation [Walker Deibel — fFDPLnXTi0o @ '
+                                     '00:08:31].',
+                                     'Underwrite only what the tax returns show; a seller touting $200K of '
+                                     'off-books cash is a net negative, not upside [The Intentional Owner '
+                                     '— cC2-F0YZb9M @ 00:32:12].']}}],
+ 'pull_quote': '"So, you know, if nothing else, like your number one objective in the first 90 days is '
+               'don\'t break the business." — Patrick O\'Connell - M&A Transaction Services (6AT45jrM2CU @ '
+               '00:17:47)',
+ 'diagram_id': 'diag-08',
+ 'action_checklist': ['Hold a Day 1 all-hands on vision and why employees matter, tell employees before '
+                      'customers, then personally meet the 20% of customers producing 80% of revenue '
+                      '[Walker Deibel — fFDPLnXTi0o @ 00:02:00].',
+                      'Stand up a 13-week cash forecast within two weeks of closing, update it weekly '
+                      'against actuals and explain every gap in writing [Lighthouse Capital — OwAOc9xgv9U '
+                      '@ 00:00:51].',
+                      'In days 31 to 60, prove every balance with a second source (bank versus ledger, '
+                      'customer statements versus aging) and give each intercompany balance a named owner '
+                      '[Neo Expertise — 4kQ8R30J5q4 @ 00:00:33].',
+                      'Trace one real transaction such as order processing through its dependencies, and '
+                      'give every temporary access an owner, scope, expiry date and removal action '
+                      '[Bridgeyard — wjVsYwI5G_E @ 00:01:22].',
+                      'Record 1-2 hour tribal-knowledge interviews with key staff and turn the recordings '
+                      "into SOPs and FAQs [Patrick O'Connell - M&A Transaction Services — 6AT45jrM2CU @ "
+                      '00:23:24].',
+                      'Right-size working capital: invoice fast, offer early-pay discounts, stress-test '
+                      'payment days vendor by vendor and move from checks to electronic payments '
+                      '[Acquiring Minds — YsZAnvfQAqk @ 00:29:37].'],
+ 'statutory_citations': [{'title': "Patrick O'Connell - M&A Transaction Services — The First 100 Days: How "
+                                   'to Succeed After a Business Acquisition [00:17:47]',
+                          'url': 'https://www.youtube.com/watch?v=6AT45jrM2CU&t=1067s',
+                          'relevance': 'Primary practitioner testimony on first-90-day priorities, '
+                                       'customer concentration limits and headcount discipline.'},
+                         {'title': 'Walker Deibel — Everything you need to know about Post Acquisition and '
+                                   'Execution [00:03:57]',
+                          'url': 'https://www.youtube.com/watch?v=fFDPLnXTi0o&t=237s',
+                          'relevance': 'Primary practitioner testimony on change timing, post-close '
+                                       'revenue dips and debt-free deal structure.'},
+                         {'title': 'Lighthouse Capital — Post-Acquisition Financial Controls: The First 30 '
+                                   'Days [00:00:51]',
+                          'url': 'https://www.youtube.com/watch?v=OwAOc9xgv9U&t=51s',
+                          'relevance': 'Primary practitioner testimony on 13-week cash forecasting, bank '
+                                       'mandates and close-speed red flags.'},
+                         {'title': 'The Intentional Owner — How to Navigate the First 90 Days '
+                                   'Post-Acquisition - The Intentional Owner #15 [00:24:44]',
+                          'url': 'https://www.youtube.com/watch?v=cC2-F0YZb9M&t=1484s',
+                          'relevance': 'Primary practitioner testimony on retention bonuses, quiet versus '
+                                       'loud deal announcements and DSCR risk.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'uY1iPCwJqk8',
+                       'title': 'Turning $100K into $50 Million Through Business Acquisitions',
+                       'channel': 'Walker Deibel',
+                       'author': 'Walker Deibel',
+                       'text': "You can't just have 10 companies like separately; you need to meld the "
+                               'culture, you need to meld the systems, you need to put together a formal '
+                               'board.',
+                       'tip': "You can't just have 10 companies like separately; you need to meld the "
+                              'culture, you need to meld the systems, you need to put together a formal '
+                              'board.',
+                       'timestamp': 739,
+                       'timestamp_seconds': 739,
+                       'timestamp_label': '[00:12:19]',
+                       'url': 'https://www.youtube.com/watch?v=uY1iPCwJqk8&t=739s',
+                       'markdown': '[00:12:19](https://www.youtube.com/watch?v=uY1iPCwJqk8&t=739s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4kQ8R30J5q4',
+                       'title': 'Post-Acquisition Finance Integration: First 100 Days Checklist '
+                                '#PostAcquisitionIntegration',
+                       'channel': 'Neo Expertise',
+                       'author': 'Neo Expertise',
+                       'text': 'So, days 31 to 60, you stop reading and start proving.',
+                       'tip': 'So, days 31 to 60, you stop reading and start proving.',
+                       'timestamp': 33,
+                       'timestamp_seconds': 33,
+                       'timestamp_label': '[00:00:33]',
+                       'url': 'https://www.youtube.com/watch?v=4kQ8R30J5q4&t=33s',
+                       'markdown': '[00:00:33](https://www.youtube.com/watch?v=4kQ8R30J5q4&t=33s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_sFK2HgcBFo',
+                       'title': 'The First 100 Days: Practical Guidance for PE Investors Post-Acquisition',
+                       'channel': 'McGuireWoods LLP',
+                       'author': 'McGuireWoods LLP',
+                       'text': "We're in it for a long-term partnership, but we also are very willing to "
+                               'work ourselves out of a job.',
+                       'tip': "We're in it for a long-term partnership, but we also are very willing to "
+                              'work ourselves out of a job.',
+                       'timestamp': 756,
+                       'timestamp_seconds': 756,
+                       'timestamp_label': '[00:12:36]',
+                       'url': 'https://www.youtube.com/watch?v=_sFK2HgcBFo&t=756s',
+                       'markdown': '[00:12:36](https://www.youtube.com/watch?v=_sFK2HgcBFo&t=756s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'slGlxgrDvps',
+                       'title': 'The First 100 Days After a Private Equity Deal: What LPs Should Check',
+                       'channel': 'Lighthouse Capital',
+                       'author': 'Lighthouse Capital',
+                       'text': 'You literally have to stabilize before you can accelerate.',
+                       'tip': 'You literally have to stabilize before you can accelerate.',
+                       'timestamp': 297,
+                       'timestamp_seconds': 297,
+                       'timestamp_label': '[00:04:57]',
+                       'url': 'https://www.youtube.com/watch?v=slGlxgrDvps&t=297s',
+                       'markdown': '[00:04:57](https://www.youtube.com/watch?v=slGlxgrDvps&t=297s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wjVsYwI5G_E',
+                       'title': 'The First 30 Days After an Acquisition: What IT Must Decide Before '
+                                'Migration',
+                       'channel': 'Bridgeyard',
+                       'author': 'Bridgeyard',
+                       'text': 'A long application inventory will not necessarily expose the dependency '
+                               'that can stop trading.',
+                       'tip': 'A long application inventory will not necessarily expose the dependency '
+                              'that can stop trading.',
+                       'timestamp': 100,
+                       'timestamp_seconds': 100,
+                       'timestamp_label': '[00:01:40]',
+                       'url': 'https://www.youtube.com/watch?v=wjVsYwI5G_E&t=100s',
+                       'markdown': '[00:01:40](https://www.youtube.com/watch?v=wjVsYwI5G_E&t=100s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OwAOc9xgv9U',
+                       'title': 'Post-Acquisition Financial Controls: The First 30 Days',
+                       'channel': 'Lighthouse Capital',
+                       'author': 'Lighthouse Capital',
+                       'text': 'Crucially, and this is to prevent fraud, the person who approves a payment '
+                               'should never, ever be the same person who sends it.',
+                       'tip': 'Crucially, and this is to prevent fraud, the person who approves a payment '
+                              'should never, ever be the same person who sends it.',
+                       'timestamp': 98,
+                       'timestamp_seconds': 98,
+                       'timestamp_label': '[00:01:38]',
+                       'url': 'https://www.youtube.com/watch?v=OwAOc9xgv9U&t=98s',
+                       'markdown': '[00:01:38](https://www.youtube.com/watch?v=OwAOc9xgv9U&t=98s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cC2-F0YZb9M',
+                       'title': 'How to Navigate the First 90 Days Post-Acquisition - The Intentional '
+                                'Owner #15',
+                       'channel': 'The Intentional Owner',
+                       'author': 'The Intentional Owner',
+                       'text': "That's not actually a money solve, that's like a hearts and minds solve.",
+                       'tip': "That's not actually a money solve, that's like a hearts and minds solve.",
+                       'timestamp': 1599,
+                       'timestamp_seconds': 1599,
+                       'timestamp_label': '[00:26:39]',
+                       'url': 'https://www.youtube.com/watch?v=cC2-F0YZb9M&t=1599s',
+                       'markdown': '[00:26:39](https://www.youtube.com/watch?v=cC2-F0YZb9M&t=1599s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NotNaT329hg',
+                       'title': 'Post-Deal Finance Integration: Why Acquisitions Underperform in the First '
+                                '100 Days',
+                       'channel': 'Byron Thomas Recruitment',
+                       'author': 'Byron Thomas Recruitment',
+                       'text': 'It fails in an unmapped spreadsheet cell at 11:00 p.m. on a Tuesday.',
+                       'tip': 'It fails in an unmapped spreadsheet cell at 11:00 p.m. on a Tuesday.',
+                       'timestamp': 1147,
+                       'timestamp_seconds': 1147,
+                       'timestamp_label': '[00:19:07]',
+                       'url': 'https://www.youtube.com/watch?v=NotNaT329hg&t=1147s',
+                       'markdown': '[00:19:07](https://www.youtube.com/watch?v=NotNaT329hg&t=1147s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6AT45jrM2CU',
+                       'title': 'The First 100 Days: How to Succeed After a Business Acquisition',
+                       'channel': "Patrick O'Connell - M&A Transaction Services",
+                       'author': "Patrick O'Connell - M&A Transaction Services",
+                       'text': 'So, you know, if nothing else, like your number one objective in the first '
+                               "90 days is don't break the business.",
+                       'tip': 'So, you know, if nothing else, like your number one objective in the first '
+                              "90 days is don't break the business.",
+                       'timestamp': 1067,
+                       'timestamp_seconds': 1067,
+                       'timestamp_label': '[00:17:47]',
+                       'url': 'https://www.youtube.com/watch?v=6AT45jrM2CU&t=1067s',
+                       'markdown': '[00:17:47](https://www.youtube.com/watch?v=6AT45jrM2CU&t=1067s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fFDPLnXTi0o',
+                       'title': 'Everything you need to know about Post Acquisition and Execution',
+                       'channel': 'Walker Deibel',
+                       'author': 'Walker Deibel',
+                       'text': "Half or more of your ideas, you're going to realize over these first 90 "
+                               "days, weren't very good ideas.",
+                       'tip': "Half or more of your ideas, you're going to realize over these first 90 "
+                              "days, weren't very good ideas.",
+                       'timestamp': 199,
+                       'timestamp_seconds': 199,
+                       'timestamp_label': '[00:03:19]',
+                       'url': 'https://www.youtube.com/watch?v=fFDPLnXTi0o&t=199s',
+                       'markdown': '[00:03:19](https://www.youtube.com/watch?v=fFDPLnXTi0o&t=199s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9fvL0IINg6k',
+                       'title': 'Middle Market Smart – Episode 3 (Part 2 of 2) The M&A Playbook for Middle '
+                                'Market Leaders',
+                       'channel': 'Middle Market Smart',
+                       'author': 'Middle Market Smart',
+                       'text': 'Integration is not time-bound by the day the deal closes.',
+                       'tip': 'Integration is not time-bound by the day the deal closes.',
+                       'timestamp': 2266,
+                       'timestamp_seconds': 2266,
+                       'timestamp_label': '[00:37:46]',
+                       'url': 'https://www.youtube.com/watch?v=9fvL0IINg6k&t=2266s',
+                       'markdown': '[00:37:46](https://www.youtube.com/watch?v=9fvL0IINg6k&t=2266s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YsZAnvfQAqk',
+                       'title': '$60m Roll-Up That Started With an SBA Acquisition | Brian Boland and Onu '
+                                'Okebie Interview',
+                       'channel': 'Acquiring Minds',
+                       'author': 'Acquiring Minds',
+                       'text': "So, there's a huge working capital benefit there if you can right size "
+                               'that formula.',
+                       'tip': "So, there's a huge working capital benefit there if you can right size that "
+                              'formula.',
+                       'timestamp': 1777,
+                       'timestamp_seconds': 1777,
+                       'timestamp_label': '[00:29:37]',
+                       'url': 'https://www.youtube.com/watch?v=YsZAnvfQAqk&t=1777s',
+                       'markdown': '[00:29:37](https://www.youtube.com/watch?v=YsZAnvfQAqk&t=1777s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4jPZ0fzlgQY',
+                       'title': 'How to make a successful M&A deal - 100 Days and Beyond',
+                       'channel': '100 Days and Beyond Podcast',
+                       'author': '100 Days and Beyond Podcast',
+                       'text': 'After the merger the goals have to align, and people have to put their ego '
+                               'to bed.',
+                       'tip': 'After the merger the goals have to align, and people have to put their ego '
+                              'to bed.',
+                       'timestamp': 2526,
+                       'timestamp_seconds': 2526,
+                       'timestamp_label': '[00:42:06]',
+                       'url': 'https://www.youtube.com/watch?v=4jPZ0fzlgQY&t=2526s',
+                       'markdown': '[00:42:06](https://www.youtube.com/watch?v=4jPZ0fzlgQY&t=2526s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OeJwN9bz5dE',
+                       'title': 'What to Do After an Acquisition: A No-BS Marketing Playbook',
+                       'channel': 'Strategy Leaders Inc.',
+                       'author': 'Strategy Leaders Inc.',
+                       'text': "You can't afford to go dark, not even for 2 weeks.",
+                       'tip': "You can't afford to go dark, not even for 2 weeks.",
+                       'timestamp': 691,
+                       'timestamp_seconds': 691,
+                       'timestamp_label': '[00:11:31]',
+                       'url': 'https://www.youtube.com/watch?v=OeJwN9bz5dE&t=691s',
+                       'markdown': '[00:11:31](https://www.youtube.com/watch?v=OeJwN9bz5dE&t=691s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OeJwN9bz5dE',
+                       'title': 'What to Do After an Acquisition: A No-BS Marketing Playbook',
+                       'channel': 'Strategy Leaders Inc.',
+                       'author': 'Strategy Leaders Inc.',
+                       'text': 'Within 3 weeks, lead flow dipped by 40%.',
+                       'tip': 'Within 3 weeks, lead flow dipped by 40%.',
+                       'timestamp': 751,
+                       'timestamp_seconds': 751,
+                       'timestamp_label': '[00:12:31]',
+                       'url': 'https://www.youtube.com/watch?v=OeJwN9bz5dE&t=751s',
+                       'markdown': '[00:12:31](https://www.youtube.com/watch?v=OeJwN9bz5dE&t=751s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'a7XwL5Q-ttE',
+                       'title': 'How A $3B Multinational Company Integrated 40+ Mergers and Acquisitions '
+                                '[M&A Integration Case Study]',
+                       'channel': 'Digital Transformation with Eric Kimberling',
+                       'author': 'Digital Transformation with Eric Kimberling',
+                       'text': 'Every organization we work with, including this one, has some degree of '
+                               'resistance.',
+                       'tip': 'Every organization we work with, including this one, has some degree of '
+                              'resistance.',
+                       'timestamp': 507,
+                       'timestamp_seconds': 507,
+                       'timestamp_label': '[00:08:27]',
+                       'url': 'https://www.youtube.com/watch?v=a7XwL5Q-ttE&t=507s',
+                       'markdown': '[00:08:27](https://www.youtube.com/watch?v=a7XwL5Q-ttE&t=507s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WUI9T65UP54',
+                       'title': 'Post-Acquisition Integration Dynamics',
+                       'channel': 'UNSW eLearning',
+                       'author': 'UNSW eLearning',
+                       'text': 'Low engagement also leads to increased employee turnover; often the most '
+                               'talented and capable people leave first.',
+                       'tip': 'Low engagement also leads to increased employee turnover; often the most '
+                              'talented and capable people leave first.',
+                       'timestamp': 194,
+                       'timestamp_seconds': 194,
+                       'timestamp_label': '[00:03:14]',
+                       'url': 'https://www.youtube.com/watch?v=WUI9T65UP54&t=194s',
+                       'markdown': '[00:03:14](https://www.youtube.com/watch?v=WUI9T65UP54&t=194s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'}]}

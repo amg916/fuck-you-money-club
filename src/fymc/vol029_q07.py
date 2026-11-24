@@ -1,1105 +1,846 @@
 from __future__ import annotations
 
-CHAPTER_7 = {
-    "id": "Q7",
-    "chapter_id": "Q7",
-    "chapter_number": 7,
-    "question_number": 7,
-    "slug": "insurance-restoration-operating-process-production-blueprint-90-day-cohort",
-    "question_prompt": "How does an operator execute insurance restoration end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
-    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
-    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
-    "subtitle": "IICRC Drying Records, Xactimate Scope Evidence, Serialized SQLite Posting, Lender-Held Proceeds & UPPA-Safe Collections",
-    "layout_template": "research_exhibit",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #15, Insurance Restoration, sits at Rank #13 with a 87/100 "
-        "Money-to-Manpower Score because physical production and slow collections dominate "
-        "the economics. This chapter maps five operator plays: water mitigation, fire and "
-        "smoke restoration, mold remediation, storm reconstruction, and documented supplements "
-        "with collections. A five-employee, six-contractor pod executes one evidence-backed "
-        "workflow from authorized entry through reconciled receipts. The engineering reference "
-        "serializes ledger writes, rejects conflicting retries, and separates lender-held "
-        "proceeds from received cash. The worked cohort produces $375,000 quarterly billings "
-        "and $48,750 owner profit while exposing a $92,500 month-end funding trough. Annual "
-        "owner profit remains $40,000 Conservative, $195,000 Base, and $450,000 Scaled; "
-        "restoration billings, not insured property values, supply the revenue denominator."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$500,000",
-            "context": "Annual gross restoration billings; subcontractor and material costs remain inside expenses.",
-            "note": "8% net margin; $40,000 annual owner net profit; 2 FT + 2 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$1,500,000",
-            "context": "Annual gross restoration billings; subcontractor and material costs remain inside expenses.",
-            "note": "13.0% net margin; $195,000 annual owner net profit; 2 FT + 2 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$2,500,000",
-            "context": "Annual gross restoration billings; subcontractor and material costs remain inside expenses.",
-            "note": "18% net margin; $450,000 annual owner net profit; 3 FT + 3 C.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Assign the four-person pod before accepting the loss",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with five mapped plays, not five independent departments: water mitigation, "
-                    "fire and smoke restoration, mold remediation, storm reconstruction, and documented "
-                    "supplements with collections. These are this chapter's operating labels for "
-                    "Candidate #15's domain, not additional revenue streams layered onto its scorecard. "
-                    "The Base pod contains an owner-estimator, a dispatcher who also owns receivables, "
-                    "a field lead, and two restoration technicians. Six recurring contractors supply "
-                    "electrical, plumbing, roofing, drywall, painting, and qualified remediation capacity; "
-                    "their fees remain job costs. Assign each subcontracted scope to a named business, "
-                    "verified license where required, insurance record, purchase order, and scheduled "
-                    "inspection. The three-person internal field crew cannot simultaneously run three "
-                    "complex containment projects simply because a dashboard shows available leads. "
-                    "The dispatcher reserves labor hours, equipment days, and contractor windows before "
-                    "promising arrival. The owner controls estimating and unusual scope decisions; the "
-                    "field lead controls physical release of work areas. Collection responsibility "
-                    "never migrates informally to whichever technician answers the phone. This division "
-                    "supports ten completed jobs monthly in the worked example only if actual scope "
-                    "and measured capacity support that throughput; it is a planning assumption, not "
-                    "an industry productivity benchmark."
-                ),
-                (
-                    "Intake begins with property address, responsible customer, loss date, observed "
-                    "hazard, source status, access authority, and referral origin. Create one lead "
-                    "identifier before dispatch and retain the original call record under a limited "
-                    "access policy. A severity score ranks response urgency; it does not decide "
-                    "insurance coverage or replace a safety assessment. An active electrical hazard, "
-                    "structural instability, suspected asbestos disturbance, or uncontrolled water "
-                    "source changes the deployment plan immediately. Document who isolated utilities "
-                    "and which specialist authorized the relevant condition before technicians enter. "
-                    "For water losses, collect unaffected comparison readings, material moisture "
-                    "measurements, temperature, relative humidity, and equipment placement. Record meter "
-                    "model, measurement location, timestamp, and the technician responsible. IICRC S500 "
-                    "and S520 inform technical practice, but neither is a universal statutory license "
-                    "or an insurer payment commitment. Fire work adds residue classification, odor "
-                    "pathways, contents custody, and cleaning tests. Mold work adds containment design "
-                    "and jurisdiction-specific assessment requirements. Storm work adds temporary "
-                    "weatherproofing, roof access controls, and permit sequencing. Each branch rejoins "
-                    "the same signed scope, documented production, invoice, and collection workflow "
-                    "rather than creating a disconnected spreadsheet."
-                ),
-                (
-                    "Contract with the property customer for described restoration services, payment "
-                    "terms, change orders, and access; do not sell a promised claim outcome. Florida "
-                    "provides a useful concrete boundary: section 626.854 regulates public adjusting "
-                    "and distinguishes explaining a contractor's bid from prohibited claim representation. "
-                    "Section 489.147 restricts specified contractor insurance practices, including "
-                    "deductible-waiver inducements. Apply the actual property's jurisdiction before "
-                    "using any script. The estimator can explain measured quantities, drying duration, "
-                    "labor categories, and omitted construction work without interpreting coverage "
-                    "or negotiating the insured's policy rights. Refer policy disputes to the "
-                    "customer's appropriately licensed representative. Before disturbing painted "
-                    "surfaces in covered pre-1978 housing, evaluate EPA renovation requirements under "
-                    "40 CFR 745.85 and applicable exceptions; emergency work does not erase every "
-                    "subsequent obligation. Evaluate asbestos construction requirements under 29 CFR "
-                    "1926.1101 before demolition, and respiratory protection duties under 29 CFR "
-                    "1910.134 when respirator use requires them. These checks determine crew selection, "
-                    "containment, scheduling, and cost. They belong in the production plan, not in "
-                    "an improvised footer after the customer has already authorized demolition."
-                ),
-            ],
-            "table": {
-                "caption": "Four-Person Pod: Intake-to-Cash Responsibility and Evidence Matrix",
-                "headers": [
-                    "Operating handoff and assigned accountable person",
-                    "Required evidence before the handoff advances",
-                    "Named rail or concrete control applied",
-                    "Failure response protecting capacity and collected margin",
-                ],
-                "rows": [
-                    [
-                        "Dispatcher creates one property-specific lead before scheduling.",
-                        "Customer identity, access authority, source status, and hazard observations.",
-                        "ServiceTitan or DASH dispatch record carries the immutable lead identifier.",
-                        "Duplicate referrals merge operationally without creating another billable job.",
-                    ],
-                    [
-                        "Owner-estimator selects the primary play and scope boundary.",
-                        "Signed customer scope identifies services, exclusions, and payment mechanics.",
-                        "Xactimate estimate version links quantities to dated site evidence.",
-                        "Coverage questions move to the customer's licensed claim representative.",
-                    ],
-                    [
-                        "Field lead assigns water mitigation tasks to two technicians.",
-                        "Room-level readings include unaffected comparisons and equipment placement evidence.",
-                        "Encircle photos and meter logs support IICRC drying documentation.",
-                        "Unexplained drying stalls trigger source investigation before equipment extensions.",
-                    ],
-                    [
-                        "Field lead sequences fire cleaning and contents handling.",
-                        "Cleaning tests, residue observations, and contents custody transfers remain linked.",
-                        "Barcode inventory separates retained contents from authorized disposal decisions.",
-                        "Failed cleaning tests stop broad treatment and require revised scope.",
-                    ],
-                    [
-                        "Qualified remediation contractor performs the assigned mold work.",
-                        "Required credentials, containment plan, and assessment boundaries are documented.",
-                        "Jurisdiction-specific mold rules determine independent assessment and release requirements.",
-                        "Missing qualifications suspend that specialty scope without concealing the delay.",
-                    ],
-                    [
-                        "Roofing contractor coordinates storm repairs with electrical and plumbing trades.",
-                        "Permit requirements, temporary protection, and trade inspection dependencies are recorded.",
-                        "Purchase orders identify installation scope and permitted change-order authority.",
-                        "Unsafe access or failed inspections prevent downstream enclosure work.",
-                    ],
-                    [
-                        "Owner-estimator prepares supplements with dispatcher-managed evidence retrieval.",
-                        "Changed conditions connect photographs, quantities, authorization, and incremental cost.",
-                        "Xactimate revisions preserve original estimates and separately explain scope changes.",
-                        "Unsupported lines remain outside collectible billings until properly resolved.",
-                    ],
-                    [
-                        "Dispatcher reconciles receipts while owner reviews disputed balances weekly.",
-                        "Bank references match invoices, customer allocations, and lender release evidence.",
-                        "SQLite posting rejects duplicated bank references and conflicting request retries.",
-                        "Short payments remain visible receivables rather than automatic revenue reductions.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before equipment or demolition leaves the yard",
-                "body": "The dispatcher records the evidence and the accountable reviewer for each check; a verbal assurance does not replace the underlying record.",
-                "items": [
-                    "Confirm customer signing authority, site access, service scope, and the jurisdiction-specific contractor or remediation credentials required for this loss.",
-                    "Confirm source control, electrical and structural conditions, suspect-material handling, and the field lead's documented hazard review.",
-                    "Reserve actual crew hours, drying equipment, containment supplies, and named contractor windows without double-booking the three-person field team.",
-                    "Confirm payment terms, lawful deductible handling, lender endorsement requirements, and the customer's separate route for policy-coverage disputes.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Register and triage",
-                    "action": "Create a stable lead key and assign one primary operator play.",
-                    "detail": "Capture authority and hazards before ranking urgency; reject out-of-area or unqualified work with a recorded reason.",
-                },
-                {
-                    "step": 2,
-                    "title": "Verify and mobilize",
-                    "action": "Link immutable authorization, baseline, and safety evidence before production.",
-                    "detail": "The field lead confirms crew capacity and specialty requirements, then advances the versioned job state.",
-                },
-                {
-                    "step": 3,
-                    "title": "Produce and substantiate",
-                    "action": "Capture daily technical records and customer-authorized scope changes.",
-                    "detail": "Separate equipment deployment evidence from drying necessity and explain every supplement through measured work.",
-                },
-                {
-                    "step": 4,
-                    "title": "Bill and reconcile",
-                    "action": "Post earned invoices, verified bank receipts, and paid operating costs.",
-                    "detail": "Track lender holds separately, resolve unmatched receipts, and close only fully reconciled jobs with released holds.",
-                },
-            ],
-        },
-        {
-            "heading": "2. Build a serialized evidence ledger with explicit replay semantics",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use the six modules below as one copy-pasteable reference program: concatenate "
-                    "the code cells in numeric order into restoration_ledger.py and execute it with "
-                    "Python 3.9 or later. Imports remain entirely within the standard library. The "
-                    "program creates an isolated test database, exercises the cohort, and prints "
-                    "its reconciled totals only when its assertions pass. It is a narrow operational "
-                    "subledger, not a complete accounting package. Each modeled job receives one "
-                    "earned final invoice; no customer advance, tax collection, retainage liability, "
-                    "credit memo, or unpaid supplier balance enters this example. Add separately "
-                    "balanced accounts and corresponding tests before extending those boundaries. "
-                    "The amount helper requires positive integer cents, avoiding binary floating "
-                    "point in postings. Invoice totals represent gross restoration billings, including "
-                    "the subcontracted production recovered through customer prices. Equipment purchase "
-                    "funding, owner distributions, and borrowing belong outside the example's operating "
-                    "cash bridge. Artifact hashes point to separately retained evidence; a digest "
-                    "alone proves neither customer authority nor technical adequacy. The reviewer "
-                    "must examine the underlying document before recording its digest. Store those "
-                    "documents in access-controlled project storage, not in unrestricted ledger exports."
-                ),
-                (
-                    "Every mutation acquires SQLite's write reservation with BEGIN IMMEDIATE before "
-                    "reading business state. A unique request key stores a hash of the complete "
-                    "command and its committed response in the same transaction as the posting. "
-                    "An identical retry receives that response; reuse with changed arguments fails. "
-                    "Unique lead, invoice, bank, and expense references provide a second defense "
-                    "against duplicate economic events submitted under different request keys. "
-                    "Version checks reject stale state transitions instead of silently overwriting "
-                    "another worker's decision. Receipt limits are checked inside the same serialized "
-                    "transaction that inserts cash, preventing concurrent workers from overcollecting "
-                    "against the modeled invoice. These properties eliminate write races within "
-                    "this reference's single authoritative database and prescribed functions; they "
-                    "do not make unrelated email, bank, or field systems transactional. Keep the "
-                    "database on a local filesystem with one authoritative host, restrict direct "
-                    "writes, and use SQLite-aware backups. Do not deploy this WAL design on a shared "
-                    "network drive. A busy timeout becomes a visible failed attempt; the caller may "
-                    "retry the identical command after contention clears. No network request or "
-                    "physical dispatch occurs inside a ledger transaction."
-                ),
-                (
-                    "Verification and escrow tracking remain different concepts. The workflow moves "
-                    "from intake to verified, working, invoiced, and closed; authorization, baseline, "
-                    "and safety hashes are required before verification. A separate hold state tracks "
-                    "clear, held, and released lender-controlled proceeds. The contractor does not "
-                    "become an escrow custodian merely by recording that state. The conservative "
-                    "reference blocks receipts while a job is held and blocks closure until release; "
-                    "actual mixed held and unrestricted payments require an instrument-level extension. "
-                    "A release letter changes status, while a bank-confirmed receipt changes cash. "
-                    "Never post the same amount for both events. Monthly views calculate revenue, "
-                    "paid costs, profit, receivables, and operating cash movement from source postings. "
-                    "The cohort tests check those identities and exercise duplicate delivery, changed "
-                    "payload rejection, stale-version rejection, and held-payment rejection. They "
-                    "are executable checks supplied for the operator to run, not a claim that this "
-                    "chapter has executed them. Before connecting dispatch notifications, add a "
-                    "transactional outbox and a recipient-side deduplication contract; without both, "
-                    "a crash between sending and acknowledging can repeat an external action."
-                ),
-            ],
-            "table": {
-                "caption": "Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table",
-                "headers": [
-                    "Module and copy-paste execution order",
-                    "Executable Python source with embedded SQL",
-                    "Invariant enforced within the authoritative ledger",
-                    "Operator boundary and required production discipline",
-                ],
-                "rows": [
-                    [
-                        "Module one initializes schema, connection policy, and atomic command handling.",
-                        '''import hashlib
-import json
-import sqlite3
-from contextlib import closing
-
-PLAYS = (
-    "water", "fire", "mold", "storm", "supplements_collections"
-)
-
-SCHEMA = """
-CREATE TABLE IF NOT EXISTS jobs (
-    job_id TEXT PRIMARY KEY,
-    lead_key TEXT NOT NULL UNIQUE,
-    play TEXT NOT NULL CHECK (
-        play IN ('water','fire','mold','storm','supplements_collections')
-    ),
-    score INTEGER NOT NULL CHECK (score BETWEEN 0 AND 100),
-    state TEXT NOT NULL DEFAULT 'intake' CHECK (
-        state IN ('intake','verified','working','invoiced','closed')
-    ),
-    hold_state TEXT NOT NULL DEFAULT 'clear' CHECK (
-        hold_state IN ('clear','held','released')
-    ),
-    version INTEGER NOT NULL DEFAULT 0 CHECK (version >= 0)
-);
-CREATE TABLE IF NOT EXISTS evidence (
-    job_id TEXT PRIMARY KEY REFERENCES jobs(job_id),
-    authorization_hash TEXT NOT NULL CHECK (length(authorization_hash) = 64),
-    baseline_hash TEXT NOT NULL CHECK (length(baseline_hash) = 64),
-    safety_hash TEXT NOT NULL CHECK (length(safety_hash) = 64)
-);
-CREATE TABLE IF NOT EXISTS commands (
-    request_key TEXT PRIMARY KEY,
-    payload_hash TEXT NOT NULL,
-    result_json TEXT NOT NULL
-);
-CREATE TABLE IF NOT EXISTS invoices (
-    invoice_key TEXT PRIMARY KEY,
-    job_id TEXT NOT NULL UNIQUE REFERENCES jobs(job_id),
-    period INTEGER NOT NULL CHECK (period > 0),
-    amount INTEGER NOT NULL CHECK (typeof(amount) = 'integer' AND amount > 0)
-);
-CREATE TABLE IF NOT EXISTS receipts (
-    bank_ref TEXT PRIMARY KEY,
-    job_id TEXT NOT NULL REFERENCES jobs(job_id),
-    period INTEGER NOT NULL CHECK (period > 0),
-    amount INTEGER NOT NULL CHECK (typeof(amount) = 'integer' AND amount > 0)
-);
-CREATE TABLE IF NOT EXISTS expenses (
-    source_key TEXT PRIMARY KEY,
-    kind TEXT NOT NULL CHECK (kind IN ('direct','opex')),
-    period INTEGER NOT NULL CHECK (period > 0),
-    amount INTEGER NOT NULL CHECK (typeof(amount) = 'integer' AND amount > 0)
-);
-"""
-
-def connect(path):
-    connection = sqlite3.connect(path, timeout=10, isolation_level=None)
-    connection.row_factory = sqlite3.Row
-    connection.execute("PRAGMA foreign_keys = ON")
-    connection.execute("PRAGMA busy_timeout = 10000")
-    connection.execute("PRAGMA synchronous = FULL")
-    return connection
-
-def initialize(path):
-    with closing(connect(path)) as connection:
-        connection.execute("PRAGMA journal_mode = WAL")
-        connection.executescript(SCHEMA)
-
-def positive_integer(value):
-    if type(value) is not int or value <= 0:
-        raise ValueError("A positive integer is required")
-    return value
-
-def atomic(path, request_key, payload, operation):
-    if not isinstance(request_key, str) or not request_key.strip():
-        raise ValueError("A stable nonempty request key is required")
-    encoded = json.dumps(payload, sort_keys=True, separators=(",", ":"))
-    digest = hashlib.sha256(encoded.encode("utf-8")).hexdigest()
-    with closing(connect(path)) as connection:
-        connection.execute("BEGIN IMMEDIATE")
-        try:
-            prior = connection.execute(
-                "SELECT payload_hash, result_json FROM commands WHERE request_key = ?",
-                (request_key,),
-            ).fetchone()
-            if prior is not None:
-                if prior["payload_hash"] != digest:
-                    raise ValueError("Request key reused with changed command")
-                result = json.loads(prior["result_json"])
-            else:
-                result = operation(connection)
-                connection.execute(
-                    "INSERT INTO commands VALUES (?, ?, ?)",
-                    (request_key, digest, json.dumps(result, sort_keys=True)),
-                )
-            connection.execute("COMMIT")
-            return result
-        except BaseException:
-            connection.execute("ROLLBACK")
-            raise
-
-def job_row(connection, job_id):
-    row = connection.execute(
-        "SELECT * FROM jobs WHERE job_id = ?", (job_id,)
-    ).fetchone()
-    if row is None:
-        raise ValueError("Job identifier does not exist")
-    return row
-
-def current_version(path, job_id):
-    with closing(connect(path)) as connection:
-        return job_row(connection, job_id)["version"]
-''',
-                        "A committed request and its economic effects become one atomic record.",
-                        "Initialize before starting workers and keep the database on local storage.",
-                    ],
-                    [
-                        "Module two scores intake and records qualified or scrubbed decisions.",
-                        '''def intake(
-    path, request_key, job_id, lead_key, play, severity,
-    access_ready, capacity_ready, jurisdiction_ready
-):
-    if play not in PLAYS:
-        raise ValueError("Select one of the five supported plays")
-    if type(severity) is not int or severity not in range(4):
-        raise ValueError("Severity must be an integer from zero through three")
-    flags = (access_ready, capacity_ready, jurisdiction_ready)
-    if any(type(flag) is not bool for flag in flags):
-        raise ValueError("Readiness flags must be explicit booleans")
-    if not job_id or not lead_key:
-        raise ValueError("Stable job and lead identifiers are required")
-    score = severity * 20 + int(access_ready) * 20 + int(capacity_ready) * 20
-    payload = [
-        "intake", job_id, lead_key, play, severity,
-        access_ready, capacity_ready, jurisdiction_ready
-    ]
-
-    def operation(connection):
-        if not jurisdiction_ready or not access_ready or not capacity_ready:
-            reasons = []
-            if not jurisdiction_ready:
-                reasons.append("Required jurisdiction or specialty credentials missing")
-            if not access_ready:
-                reasons.append("Property access authority remains unresolved")
-            if not capacity_ready:
-                reasons.append("Crew or equipment capacity cannot support dispatch")
-            return {
-                "lead_key": lead_key, "status": "scrubbed",
-                "score": score, "reasons": reasons
-            }
-        connection.execute(
-            "INSERT INTO jobs(job_id, lead_key, play, score) VALUES (?, ?, ?, ?)",
-            (job_id, lead_key, play, score),
-        )
-        return {"job_id": job_id, "status": "intake", "score": score}
-
-    return atomic(path, request_key, payload, operation)
-''',
-                        "Dispatch priority remains separate from credentials, access, and physical capacity.",
-                        "A scrubbed lead generates no invoice and consumes no modeled receivable.",
-                    ],
-                    [
-                        "Module three verifies artifact references and advances versioned job states.",
-                        '''def valid_digest(value):
-    if not isinstance(value, str) or len(value) != 64:
-        raise ValueError("Use a complete SHA-256 artifact digest")
-    if any(character not in "0123456789abcdef" for character in value):
-        raise ValueError("Use lowercase hexadecimal artifact digests")
-    return value
-
-def record_evidence(
-    path, request_key, job_id, authorization_hash, baseline_hash, safety_hash
-):
-    hashes = [
-        valid_digest(authorization_hash),
-        valid_digest(baseline_hash),
-        valid_digest(safety_hash),
-    ]
-
-    def operation(connection):
-        row = job_row(connection, job_id)
-        if row["state"] != "intake":
-            raise ValueError("Initial evidence belongs before verification")
-        connection.execute(
-            "INSERT INTO evidence VALUES (?, ?, ?, ?)", (job_id, *hashes)
-        )
-        connection.execute(
-            "UPDATE jobs SET version = version + 1 WHERE job_id = ?", (job_id,)
-        )
-        return {"job_id": job_id, "evidence_recorded": True}
-
-    return atomic(
-        path, request_key, ["evidence", job_id, *hashes], operation
-    )
-
-def advance(path, request_key, job_id, expected_version, target):
-    allowed = {
-        ("intake", "verified"),
-        ("verified", "working"),
-        ("invoiced", "closed"),
-    }
-
-    def operation(connection):
-        row = job_row(connection, job_id)
-        if row["version"] != expected_version:
-            raise ValueError("Stale job version")
-        if (row["state"], target) not in allowed:
-            raise ValueError("State transition is not permitted")
-        if target == "verified":
-            evidence = connection.execute(
-                "SELECT job_id FROM evidence WHERE job_id = ?", (job_id,)
-            ).fetchone()
-            if evidence is None:
-                raise ValueError("Reviewed authorization, baseline, and safety evidence required")
-        if target == "closed":
-            if row["hold_state"] == "held":
-                raise ValueError("Lender-controlled proceeds remain held")
-            billed = connection.execute(
-                "SELECT COALESCE(SUM(amount), 0) FROM invoices WHERE job_id = ?",
-                (job_id,),
-            ).fetchone()[0]
-            received = connection.execute(
-                "SELECT COALESCE(SUM(amount), 0) FROM receipts WHERE job_id = ?",
-                (job_id,),
-            ).fetchone()[0]
-            if billed <= 0 or received != billed:
-                raise ValueError("Invoice and bank receipts must fully reconcile")
-        changed = connection.execute(
-            "UPDATE jobs SET state = ?, version = version + 1 "
-            "WHERE job_id = ? AND version = ?",
-            (target, job_id, expected_version),
-        )
-        if changed.rowcount != 1:
-            raise ValueError("Concurrent state change rejected")
-        return {"job_id": job_id, "state": target, "version": expected_version + 1}
-
-    return atomic(
-        path, request_key,
-        ["advance", job_id, expected_version, target], operation
-    )
-''',
-                        "Stale decisions fail explicitly and verification requires all three artifact references.",
-                        "Hashes reference reviewed documents; they do not perform technical or credential review.",
-                    ],
-                    [
-                        "Module four posts earned invoices, lender holds, bank receipts, and expenses.",
-                        '''def bill(path, request_key, job_id, invoice_key, period, amount):
-    positive_integer(period)
-    positive_integer(amount)
-
-    def operation(connection):
-        row = job_row(connection, job_id)
-        if row["state"] != "working":
-            raise ValueError("Only completed working scope can be invoiced")
-        connection.execute(
-            "INSERT INTO invoices VALUES (?, ?, ?, ?)",
-            (invoice_key, job_id, period, amount),
-        )
-        connection.execute(
-            "UPDATE jobs SET state = 'invoiced', version = version + 1 WHERE job_id = ?",
-            (job_id,),
-        )
-        return {"invoice_key": invoice_key, "earned_billings": amount}
-
-    return atomic(
-        path, request_key,
-        ["bill", job_id, invoice_key, period, amount], operation
-    )
-
-def set_hold(path, request_key, job_id, expected_version, target, evidence_ref):
-    if not evidence_ref:
-        raise ValueError("A lender instruction or release reference is required")
-
-    def operation(connection):
-        row = job_row(connection, job_id)
-        if row["version"] != expected_version:
-            raise ValueError("Stale job version")
-        if row["state"] == "closed":
-            raise ValueError("Closed jobs require a separate correction workflow")
-        pairs = {("clear", "held"), ("held", "released"), ("released", "held")}
-        if (row["hold_state"], target) not in pairs:
-            raise ValueError("Hold transition is not permitted")
-        connection.execute(
-            "UPDATE jobs SET hold_state = ?, version = version + 1 WHERE job_id = ?",
-            (target, job_id),
-        )
-        return {
-            "job_id": job_id, "hold_state": target,
-            "evidence_ref": evidence_ref, "version": expected_version + 1
-        }
-
-    return atomic(
-        path, request_key,
-        ["hold", job_id, expected_version, target, evidence_ref], operation
-    )
-
-def receive(path, request_key, job_id, bank_ref, period, amount):
-    positive_integer(period)
-    positive_integer(amount)
-
-    def operation(connection):
-        row = job_row(connection, job_id)
-        if row["state"] != "invoiced" or row["hold_state"] == "held":
-            raise ValueError("Receipt requires an invoiced job without an active hold")
-        invoice = connection.execute(
-            "SELECT period, amount FROM invoices WHERE job_id = ?", (job_id,)
-        ).fetchone()
-        if invoice is None or period < invoice["period"]:
-            raise ValueError("This reference accepts only receipts against earned invoices")
-        prior = connection.execute(
-            "SELECT COALESCE(SUM(amount), 0) FROM receipts WHERE job_id = ?", (job_id,)
-        ).fetchone()[0]
-        if prior + amount > invoice["amount"]:
-            raise ValueError("Receipt exceeds the remaining invoice balance")
-        connection.execute(
-            "INSERT INTO receipts VALUES (?, ?, ?, ?)",
-            (bank_ref, job_id, period, amount),
-        )
-        connection.execute(
-            "UPDATE jobs SET version = version + 1 WHERE job_id = ?", (job_id,)
-        )
-        return {"bank_ref": bank_ref, "received_cents": amount}
-
-    return atomic(
-        path, request_key,
-        ["receive", job_id, bank_ref, period, amount], operation
-    )
-
-def expense(path, request_key, source_key, kind, period, amount):
-    positive_integer(period)
-    positive_integer(amount)
-    if kind not in ("direct", "opex"):
-        raise ValueError("Expense kind must distinguish direct costs from overhead")
-
-    def operation(connection):
-        connection.execute(
-            "INSERT INTO expenses VALUES (?, ?, ?, ?)",
-            (source_key, kind, period, amount),
-        )
-        return {"source_key": source_key, "paid_cost_cents": amount}
-
-    return atomic(
-        path, request_key,
-        ["expense", source_key, kind, period, amount], operation
-    )
-''',
-                        "Held proceeds never masquerade as cash and concurrent receipts cannot overpost.",
-                        "Expense recognition equals payment timing here; advances and unpaid costs need extensions.",
-                    ],
-                    [
-                        "Module five installs monthly and cumulative reconciliation views without join multiplication.",
-                        '''VIEWS = """
-CREATE VIEW IF NOT EXISTS v_month AS
-WITH periods AS (
-    SELECT period FROM invoices
-    UNION SELECT period FROM receipts
-    UNION SELECT period FROM expenses
-)
-SELECT
-    p.period,
-    COALESCE((SELECT SUM(amount) FROM invoices i
-              WHERE i.period = p.period), 0) AS revenue,
-    COALESCE((SELECT SUM(amount) FROM receipts r
-              WHERE r.period = p.period), 0) AS received,
-    COALESCE((SELECT SUM(amount) FROM expenses e
-              WHERE e.period = p.period AND e.kind = 'direct'), 0) AS direct,
-    COALESCE((SELECT SUM(amount) FROM expenses e
-              WHERE e.period = p.period AND e.kind = 'opex'), 0) AS opex
-FROM periods p;
-
-CREATE VIEW IF NOT EXISTS v_reconciliation AS
-SELECT
-    COALESCE(SUM(revenue), 0) AS revenue,
-    COALESCE(SUM(received), 0) AS received,
-    COALESCE(SUM(direct + opex), 0) AS expenses,
-    COALESCE(SUM(revenue - direct - opex), 0) AS profit,
-    COALESCE(SUM(revenue - received), 0) AS receivable,
-    COALESCE(SUM(received - direct - opex), 0) AS operating_cash
-FROM v_month;
-"""
-
-def install_views(path):
-    with closing(connect(path)) as connection:
-        connection.executescript(VIEWS)
-
-def reconciliation(path):
-    with closing(connect(path)) as connection:
-        return dict(connection.execute(
-            "SELECT * FROM v_reconciliation"
-        ).fetchone())
-''',
-                        "Revenue minus received cash equals receivables under the reference's stated boundaries.",
-                        "Reconcile bank statements separately and investigate every unmatched or misallocated payment.",
-                    ],
-                    [
-                        "Module six runs isolated cohort, replay, contention, and state-control assertions.",
-                        '''def run_checks():
-    from concurrent.futures import ThreadPoolExecutor
-    from pathlib import Path
-    from tempfile import TemporaryDirectory
-
-    def must_reject(operation):
-        try:
-            operation()
-        except ValueError:
-            return
-        raise AssertionError("Expected command rejection did not occur")
-
-    with TemporaryDirectory() as directory:
-        path = str(Path(directory) / "restoration.sqlite")
-        initialize(path)
-        install_views(path)
-        digest = hashlib.sha256(b"reviewed test artifact").hexdigest()
-
-        for month in (1, 2, 3):
-            for scrub in range(6):
-                key = "scrub-%s-%s" % (month, scrub)
-                result = intake(
-                    path, key, key, key, "water", 2, True, False, True
-                )
-                assert result["status"] == "scrubbed"
-
-            for number in range(10):
-                job = "job-%s-%s" % (month, number)
-                intake(
-                    path, "intake-" + job, job, "lead-" + job,
-                    PLAYS[number % len(PLAYS)], 2, True, True, True
-                )
-                record_evidence(
-                    path, "evidence-" + job, job, digest, digest, digest
-                )
-                advance(
-                    path, "verify-" + job, job,
-                    current_version(path, job), "verified"
-                )
-                advance(
-                    path, "work-" + job, job,
-                    current_version(path, job), "working"
-                )
-                bill(
-                    path, "bill-" + job, job, "invoice-" + job,
-                    month, 1_250_000
-                )
-
-                first_job = month == 1 and number == 0
-                if first_job:
-                    set_hold(
-                        path, "hold-" + job, job,
-                        current_version(path, job), "held", "lender-letter-1"
-                    )
-                    must_reject(lambda: receive(
-                        path, "blocked-receipt", job,
-                        "blocked-bank-ref", month, 250_000
-                    ))
-                    set_hold(
-                        path, "release-" + job, job,
-                        current_version(path, job), "released", "release-letter-1"
-                    )
-
-                for offset, amount in ((0, 250_000), (1, 750_000), (2, 250_000)):
-                    period = month + offset
-                    if period > 3:
-                        continue
-                    request = "receipt-%s-%s" % (job, period)
-                    bank = "bank-%s-%s" % (job, period)
-                    args = (path, request, job, bank, period, amount)
-                    if first_job and offset == 0:
-                        with ThreadPoolExecutor(max_workers=2) as pool:
-                            results = list(pool.map(
-                                lambda unused: receive(*args), (0, 1)
-                            ))
-                        assert results[0] == results[1]
-                        must_reject(lambda: receive(
-                            path, request, job, bank, period, amount + 1
-                        ))
-                    else:
-                        receive(*args)
-
-            expense(
-                path, "direct-command-%s" % month,
-                "direct-source-%s" % month, "direct", month, 8_000_000
-            )
-            expense(
-                path, "opex-command-%s" % month,
-                "opex-source-%s" % month, "opex", month, 2_875_000
-            )
-
-        first = "job-1-0"
-        version = current_version(path, first)
-        must_reject(lambda: advance(
-            path, "stale-close", first, version - 1, "closed"
-        ))
-        advance(path, "close-first", first, version, "closed")
-
-        totals = reconciliation(path)
-        assert totals == {
-            "revenue": 37_500_000,
-            "received": 25_000_000,
-            "expenses": 32_625_000,
-            "profit": 4_875_000,
-            "receivable": 12_500_000,
-            "operating_cash": -7_625_000,
-        }
-        with closing(connect(path)) as connection:
-            months = connection.execute(
-                "SELECT * FROM v_month ORDER BY period"
-            ).fetchall()
-            assert [row["received"] for row in months] == [
-                2_500_000, 10_000_000, 12_500_000
-            ]
-            assert connection.execute(
-                "SELECT COUNT(*) FROM invoices"
-            ).fetchone()[0] == 30
-            assert connection.execute(
-                "SELECT COUNT(*) FROM receipts"
-            ).fetchone()[0] == 60
-            assert connection.execute("PRAGMA foreign_key_check").fetchall() == []
-            assert connection.execute("PRAGMA integrity_check").fetchone()[0] == "ok"
-
-        running_cash = 15_000_000
-        balances = []
-        for row in months:
-            running_cash += row["received"] - row["direct"] - row["opex"]
-            balances.append(running_cash)
-        assert balances == [6_625_000, 5_750_000, 7_375_000]
-        assert totals["profit"] * 4 == 19_500_000
-        assert totals["revenue"] * 4 == 150_000_000
-        print("All reference checks passed; totals are integer cents:", totals)
-
-if __name__ == "__main__":
-    run_checks()
-''',
-                        "Thirty earned invoices reconcile with sixty receipts and the exact Base economics.",
-                        "Run this harness locally before adapting imports, workers, or posting boundaries.",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Turn technical production into collectible, reviewable scope",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The field lead runs a daily production review by exception, not by counting "
-                    "uploaded photographs. For a water job, compare successive material readings "
-                    "at the same locations, ambient conditions, equipment configuration, and the "
-                    "documented drying objective. A photograph of an air mover establishes placement "
-                    "only when its location and date are clear; it does not independently establish "
-                    "necessary runtime. If readings plateau, examine source control, concealed "
-                    "assemblies, vapor barriers, air movement, and dehumidifier performance before "
-                    "adding days. Fire work requires representative cleaning tests and a defensible "
-                    "restore-versus-replace decision for each affected material class. Mold work "
-                    "requires containment and remediation records consistent with the assigned "
-                    "assessment and local licensing boundaries. Storm reconstruction requires "
-                    "measurements, material selections, permit events, concealed-condition photographs, "
-                    "and inspection results before covering work. The dispatcher reviews missing "
-                    "records before the crew leaves the property, when a correction remains cheap. "
-                    "One missing cavity photograph can later force an expensive return visit or "
-                    "make a supplement unprovable. Preserve originals and revisions rather than "
-                    "editing a historical report until it agrees with an estimate. Evidence quality "
-                    "reduces collection friction without manufacturing a different physical history."
-                ),
-                (
-                    "Build the estimate from observed work and the customer-authorized scope, then "
-                    "map it into Xactimate line items with the appropriate locality and price-list "
-                    "date. Record unit definitions, dimensions, waste assumptions, equipment duration, "
-                    "and trade dependencies. A supplement packet should explain the original condition, "
-                    "newly discovered fact, incremental work, customer authorization, and supporting "
-                    "quantity. It should not consist of a larger total accompanied by an accusation "
-                    "that an insurer underpaid. Review tax treatment, permit charges, overhead, profit, "
-                    "and subcontractor inclusions consistently; avoid recovering the same cost through "
-                    "both a separate line and an embedded allowance. The owner's weekly review "
-                    "compares sold scope, purchase commitments, labor hours, and likely completion "
-                    "cost. Margin erosion first appears as unpriced additional work, unscheduled "
-                    "return trips, idle equipment, or a trade invoice without a matching purchase "
-                    "order. Job-cost tracking should expose those differences before invoicing. "
-                    "In the reference model, the final invoice is posted only after the modeled "
-                    "work is earned and its amount established. Real progress billing needs an "
-                    "explicit earned-revenue policy and separate advance handling; an insurer's "
-                    "reserve or preliminary estimate is not operator revenue."
-                ),
-                (
-                    "Collections use an invoice-centered script: identify the service supplied, "
-                    "the contractual balance, the payment instrument, the customer's required action, "
-                    "and the next dated follow-up. When a check includes a mortgage lender, obtain "
-                    "the lender's actual endorsement and inspection process instead of predicting "
-                    "its release date. Keep held proceeds in the status register until funds reach "
-                    "the contractor's bank and can be allocated to the invoice. A claim discussion "
-                    "must stay within the contractor's permitted role; explaining measured construction "
-                    "scope differs from representing the insured on coverage or settlement. Do "
-                    "not disguise a deductible waiver as a marketing credit. The dispatcher reviews "
-                    "aging twice weekly, separating missing documents, customer disputes, lender "
-                    "holds, and unapplied bank receipts. The owner handles scope disagreements "
-                    "and authorizes economically justified corrections through a documented process. "
-                    "Never delete a disputed invoice or silently shorten equipment days simply "
-                    "to make the aging report cleaner. The supplied ledger intentionally lacks "
-                    "credit and write-off commands; extend it with immutable adjusting entries "
-                    "before processing either. A zero bad-debt assumption in the cohort means "
-                    "collections remain collectible in the example, not that restoration receivables "
-                    "carry no loss risk."
-                ),
-            ],
-            "table": {
-                "caption": "Technical Evidence, Estimate Integrity, and UPPA-Safe Collection Controls",
-                "headers": [
-                    "Operational exception requiring a named response",
-                    "Specific evidence assembled for the reviewer",
-                    "Permitted action and responsible operating role",
-                    "Ledger or production consequence retained visibly",
-                ],
-                "rows": [
-                    [
-                        "Water readings plateau despite continued deployed drying equipment.",
-                        "Repeated location readings, ambient conditions, source checks, and equipment settings.",
-                        "Field lead investigates assembly conditions before extending the drying plan.",
-                        "Additional equipment duration requires documented necessity rather than automatic billing.",
-                    ],
-                    [
-                        "Fire cleaning tests fail on a material originally priced for restoration.",
-                        "Test method, photographs, material identity, and observed cleaning result.",
-                        "Owner-estimator documents changed scope and obtains the customer's authorization.",
-                        "Replacement costs enter revised scope without deleting the earlier test record.",
-                    ],
-                    [
-                        "Mold scope crosses a specialty licensing or independent assessment boundary.",
-                        "Property jurisdiction, credential verification, assessment scope, and containment records.",
-                        "Qualified specialist performs the restricted work within applicable local requirements.",
-                        "Scheduling and purchase commitments change before unauthorized work begins.",
-                    ],
-                    [
-                        "Storm reconstruction exposes concealed damage after authorized opening work.",
-                        "Before-cover photographs, dimensions, trade findings, and permit inspection evidence.",
-                        "Owner-estimator prepares a measured supplement explaining incremental construction work.",
-                        "Unsupported expected supplements stay outside the reference's earned invoice amount.",
-                    ],
-                    [
-                        "Lender endorsement delays payment on an otherwise completed restoration job.",
-                        "Check parties, lender instructions, inspection status, and written release evidence.",
-                        "Dispatcher tracks customer actions without presenting held proceeds as received.",
-                        "Hold status blocks premature closure while the invoice remains collectible.",
-                    ],
-                    [
-                        "Bank receipt differs from the invoice's remaining contractual balance.",
-                        "Bank reference, remittance detail, invoice allocation, and customer dispute record.",
-                        "Dispatcher investigates allocation while owner reviews any documented scope correction.",
-                        "No automatic write-off conceals short payment or changes earned revenue.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four habits that protect restoration margin before the dispute",
-                "body": "Experienced operators make evidence easy to retrieve while the crew still remembers the work.",
-                "items": [
-                    "Photograph the meter reading and measurement location together, then reuse the same location identifier on every drying visit.",
-                    "Capture concealed-condition dimensions before closure and attach them directly to the affected Xactimate line-item explanation.",
-                    "Obtain the lender's endorsement checklist when payment parties become visible, rather than waiting until a jointly payable check arrives.",
-                    "Separate equipment placement, continued drying necessity, and removal evidence so a reviewer can trace every billed equipment day.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Walk three cohorts from lead scrubs to the Base cash trough",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The worked cohort starts with no opening receivables and uses three identical "
-                    "monthly production cohorts. Each month produces twenty qualified-to-review "
-                    "inquiries: six are scrubbed before contracting for access, credentials, or "
-                    "capacity reasons; four decline the proposal; ten become completed, earned "
-                    "jobs averaging $12,500. Thus each cohort creates $125,000 of gross restoration "
-                    "billings, not $125,000 of insured asset value or carrier claim reserves. "
-                    "The four declined proposals remain CRM funnel events and generate no "
-                    "subledger posting. No accepted job cancels, and no receivable is written "
-                    "off in this deliberately clean Base bridge. Monthly direct production "
-                    "cost is $80,000, including field payroll burden, subcontractors, materials, "
-                    "equipment operating costs, disposal, and directly attributable travel. Monthly "
-                    "overhead is $28,750, including the estimator's and dispatcher's modeled "
-                    "employment costs, premises, insurance, software, administration, and lead "
-                    "acquisition. Keep each expense in only one bucket. Both cost buckets are "
-                    "recognized and paid in the month of production. The resulting $16,250 "
-                    "monthly owner profit is the residual after those costs, before distributions, "
-                    "using the scorecard's owner-profit convention rather than adding another "
-                    "unfunded owner salary."
-                ),
-                (
-                    "Each completed cohort collects twenty percent in its production month, sixty "
-                    "percent in the following month, and twenty percent in the second following "
-                    "month. The first payment is against earned completed work, not an advance "
-                    "deposit. Month 1 therefore receives $25,000 and spends $108,750, producing "
-                    "negative $83,750 operating cash movement despite positive $16,250 profit. "
-                    "Month 2 receives $75,000 from the first cohort and $25,000 from the second, "
-                    "so its cash movement is negative $8,750 and cumulative movement reaches "
-                    "negative $92,500. Month 3 receives $25,000 from the first cohort, $75,000 "
-                    "from the second, and $25,000 from the third. Its $125,000 receipts exceed "
-                    "costs by $16,250, improving cumulative movement to negative $76,250. "
-                    "Quarter-end receivables are $125,000: $25,000 from Month 2 and $100,000 "
-                    "from Month 3. The first cohort is fully collected. The quarter's $48,750 "
-                    "profit minus that $125,000 receivable increase equals negative $76,250 "
-                    "operating cash movement. No escrow balance, expected supplement, or uncashed "
-                    "joint check supplies imaginary cash to close the bridge."
-                ),
-                (
-                    "Open this illustration with $150,000 of available operating cash after any "
-                    "initial equipment purchases and setup payments. Month-end cash becomes "
-                    "$66,250, $57,500, and $73,750. The $92,500 trough is measured at month "
-                    "end; weekly payroll and early material payments can create a deeper "
-                    "intramonth requirement, so the dispatcher maintains a rolling thirteen-week "
-                    "cash schedule using actual due dates. Available opening cash is a modeling "
-                    "input, not a claim that total startup capital always equals $150,000. "
-                    "Candidate #15's supplied startup range remains $18,000 to $75,000, with "
-                    "monthly operating overhead planning between $10,000 and $45,000; this "
-                    "example's $28,750 overhead lies inside that band while direct job costs "
-                    "remain additional. From Month 3 onward, identical cohorts produce $125,000 "
-                    "monthly receipts and $16,250 monthly operating surplus at steady state. "
-                    "Annualizing earned production yields $1,500,000 revenue and $195,000 owner "
-                    "profit at 13.0%, exactly the Base case. It does not erase the launch-period "
-                    "cash investment. Conservative and Scaled retain their separate $500,000 "
-                    "and $2,500,000 revenue cases; the Scaled pod grows to six employees "
-                    "and seven contractors rather than pretending eleven people absorb unlimited work."
-                ),
-            ],
-            "table": {
-                "caption": "Worked 90-Day Cohort Walk",
-                "headers": [
-                    "Cohort or bridge checkpoint with explicit scope",
-                    "Lead conversion, scrubs, and earned gross billings",
-                    "Actual receipt timing and remaining collection exposure",
-                    "Paid direct costs, overhead, and owner profit",
-                    "Operating cash movement and cumulative cash position",
-                ],
-                "rows": [
-                    [
-                        "Month 1 launches the first ten-job production cohort.",
-                        "Twenty inquiries yield six scrubs, four declines, and $125,000 earned billings.",
-                        "Current-cohort receipts total $25,000; its remaining receivable equals $100,000.",
-                        "Pay $80,000 direct costs and $28,750 overhead; earn $16,250 profit.",
-                        "Movement is negative $83,750; cumulative movement is negative $83,750.",
-                    ],
-                    [
-                        "Month 2 launches the second ten-job production cohort.",
-                        "Twenty inquiries again yield six scrubs, four declines, and $125,000 billings.",
-                        "Receive $75,000 from Month 1 plus $25,000 from Month 2.",
-                        "Pay $80,000 direct costs and $28,750 overhead; earn $16,250 profit.",
-                        "Movement is negative $8,750; cumulative movement reaches negative $92,500.",
-                    ],
-                    [
-                        "Month 3 launches the third ten-job production cohort.",
-                        "Twenty inquiries again yield six scrubs, four declines, and $125,000 billings.",
-                        "Receive $25,000 from Month 1, $75,000 from Month 2, and $25,000 currently.",
-                        "Pay $80,000 direct costs and $28,750 overhead; earn $16,250 profit.",
-                        "Movement is positive $16,250; cumulative movement improves to negative $76,250.",
-                    ],
-                    [
-                        "Ninety-day totals combine three cohorts without adding claim values.",
-                        "Sixty inquiries yield eighteen scrubs, twelve declines, thirty jobs, and $375,000 billings.",
-                        "Actual receipts total $250,000; accepted-job losses and posted write-offs equal zero.",
-                        "Direct costs total $240,000; overhead totals $86,250; owner profit totals $48,750.",
-                        "Total paid costs equal $326,250; cumulative operating movement equals negative $76,250.",
-                    ],
-                    [
-                        "Quarter-end receivable bridge identifies exactly which cohorts remain unpaid.",
-                        "Month 1 is fully collected; remaining invoices belong to Months 2 and 3.",
-                        "Month 2 retains $25,000 receivable; Month 3 retains $100,000 receivable.",
-                        "Quarter profit of $48,750 remains unchanged by collection timing alone.",
-                        "Subtract $125,000 receivable growth from profit to obtain negative $76,250 movement.",
-                    ],
-                    [
-                        "Opening cash funds the launch without borrowing inside this example.",
-                        "Available operating cash starts at $150,000 after separate setup spending.",
-                        "Month-end bank balances become $66,250, then $57,500, then $73,750.",
-                        "No equipment acquisition, debt service, or owner distribution enters these costs.",
-                        "Month-end funding trough equals $92,500; daily timing requires additional scrutiny.",
-                    ],
-                    [
-                        "Steady production annualizes exactly to the canonical Base scorecard.",
-                        "Ten monthly jobs at $12,500 create $1,500,000 annual gross restoration billings.",
-                        "Mature monthly receipts equal $125,000 under the unchanged collection schedule.",
-                        "Annual direct costs equal $960,000; overhead equals $345,000; profit equals $195,000.",
-                        "Owner margin is 13.0%; the operating pod remains five employees plus six contractors.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A restoration job is finished only when the physical work, the evidence, and the bank receipt tell the same story.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Assign the five mapped plays across the owner-estimator, dispatcher, field lead, two technicians, and six named specialty contractors.",
-        "Document property-specific licensing, customer authority, source control, hazard review, and actual crew capacity before mobilization.",
-        "Capture original room-level measurements, drying comparisons, cleaning tests, concealed conditions, and customer-authorized changes under stable job identifiers.",
-        "Concatenate and run the six reference modules locally; verify the cohort totals and rejection tests before adapting the ledger.",
-        "Separate earned billings, lender-held proceeds, bank-confirmed receipts, and proposed supplements in every aging and cash report.",
-        "Rebuild the thirteen-week cash forecast weekly and compare actual collections against the $92,500 illustrative month-end funding trough.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "Florida Statutes § 626.854 — Public adjuster definition and prohibitions",
-            "url": "https://www.flsenate.gov/Laws/Statutes/2025/626.854",
-            "relevance": "Distinguishes regulated claim representation from permitted contractor explanations of construction or repair bids; use jurisdiction-specific collection and supplement scripts.",
-        },
-        {
-            "title": "Florida Statutes § 489.147 — Prohibited property insurance practices",
-            "url": "https://www.flsenate.gov/Laws/Statutes/2025/489.147",
-            "relevance": "Establishes concrete restrictions on contractor insurance-related conduct, including specified deductible-waiver inducements and unlicensed public-adjusting activity.",
-        },
-        {
-            "title": "40 CFR § 745.85 — Work practice standards for renovations",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-R/part-745/subpart-E/section-745.85",
-            "relevance": "Defines work practices for covered renovation activity, including containment, waste handling, cleaning, and verification requirements relevant to qualifying restoration work.",
-        },
-        {
-            "title": "29 CFR § 1926.1101 — Asbestos in construction",
-            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-Z/section-1926.1101",
-            "relevance": "Controls applicable asbestos-related construction activity through assessment, regulated areas, work practices, training, and protective measures before disturbance.",
-        },
-        {
-            "title": "29 CFR § 1910.134 — Respiratory protection",
-            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-I/section-1910.134",
-            "relevance": "Specifies respiratory protection program duties, including medical evaluation, fit testing, training, and respirator selection when required use triggers those obligations.",
-        },
-    ],
-}
+CHAPTER_7 = {'id': 'Q7',
+ 'chapter_id': 'Q7',
+ 'chapter_number': 7,
+ 'question_number': 7,
+ 'slug': 'fire-smoke-contents-job-site-documentation',
+ 'question_prompt': 'How do I handle fire, smoke, and contents jobs, and which documentation and scanning '
+                    'tools support the scope?',
+ 'kicker': 'Q7 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Fire, Smoke, Contents, and Job-Site Documentation',
+ 'subtitle': 'Packout vs. clean-in-place, packout for ultrasonic processing, wildfire smoke-damaged '
+             "contents, smoke odor removal, a fire project manager's perspective, the Encircle fire and "
+             'smoke bootcamp, scope sheets, magicplan water documentation, Matterport and Leica RTC '
+             'scanning, Encircle scope-to-estimate, outsourcing PA estimates, and lead-safe interior '
+             'containment',
+ 'layout_template': 'thirty_day_roadmap',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Fire and contents operators converge on one rule: you get paid for what you '
+                      "document. Encircle's Paul Donald, Octagon's Brendy Riley, and bootcamp instructor "
+                      'Chris all tie payment to defensible photos, scans, and narratives built from the '
+                      'first site visit, while FirehouseEducation and Omegasonics treat a digital photo '
+                      'inventory as the floor for every packout. The street mechanics are concrete: '
+                      'Matterport scans placed 5-8 ft apart at 4-4.5 ft height, sponge tests on 1 ft x 1 '
+                      'ft squares, AFDs sized for 6-8 air changes per hour, bubble wrap billed at twenty '
+                      'dollars a box, and AI scopes that turn a voice description into a priced Xactimate '
+                      'file in under 20 minutes. The splits are sharp: ozone versus hydroxyl, Matterport '
+                      "accuracy versus Leica RTC point clouds, Encircle's own 2-5% versus 5-10% "
+                      'revenue-lift claims, and outsourced estimating versus doing it yourself.',
+ 'key_metrics': [{'label': 'AI Scope-to-Priced-Estimate Turnaround',
+                  'metric': 'AI Scope-to-Priced-Estimate Turnaround',
+                  'value': 'Under 20 minutes (scope under 10 minutes plus Xactimate under 5 minutes)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Joe's live voice description of a 15x12x8 Category 1 bedroom and 9x3 "
+                             'hallway, converted to a priced Xactimate estimate',
+                  'source': 'Encircle ([uy09gaqf4AU @ 00:37:55])'},
+                 {'label': 'Wet Smoke Cleaning Time Multiplier',
+                  'metric': 'Wet Smoke Cleaning Time Multiplier',
+                  'value': '4 to 6 times longer to clean than dry smoke',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Chris on why the smoke type must be identified before bidding a fire job',
+                  'source': 'Encircle ([33iGNdZ6fyE @ 00:32:46])'},
+                 {'label': 'Matterport Restoration Scan Spacing and Height',
+                  'metric': 'Matterport Restoration Scan Spacing and Height',
+                  'value': 'Scans 5-8 ft apart; camera at about 4-4.5 ft',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Kylee Kempton's capture protocol for restoration scans at Titan Restoration, "
+                             'versus eye level for realty',
+                  'source': 'Adjuster TV ([86mEe0yHwiw @ 00:13:42])'},
+                 {'label': 'Air Filtration Device Sizing',
+                  'metric': 'Air Filtration Device Sizing',
+                  'value': '6-8 air changes per hour, then drop to 4; target 2,000 particles at 3 microns',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Chris sizing AFDs with a particle counter, citing counts like 13,000 to 500 '
+                             'and 100,000 to 2,000',
+                  'source': 'Encircle ([33iGNdZ6fyE @ 01:36:28])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator who talks money ties it back to the file. Encircle CEO Paul '
+                              'Donald frames the whole business in one line: restoration contractors "only '
+                              'get paid for the work they document," and without defensible data, AI is '
+                              'just "a creative tool generating a plausible story" [uy09gaqf4AU @ '
+                              '00:03:46]. Octagon project manager Brendy Riley lived that on a 7,000 sq ft '
+                              'ski-resort retirement home where a stain rag combusted over a weekend; the '
+                              'smoke path stayed invisible until drywall came off, engineers reviewed the '
+                              'estimates, and the team still got paid for the correct scope because they '
+                              'had "the photo documentation to justify it and the knowledge on how to '
+                              'convey that" [WTz841eMFkk @ 00:11:32]. Bootcamp instructor Chris pushes the '
+                              'same logic upstream: set the restoration objective at the start, the way '
+                              'you would a drying plan, because "if you establish the objective at the '
+                              'beginning then it makes it easier to get paid at the end" [33iGNdZ6fyE @ '
+                              '00:05:10]. On the mitigation side, magicplan sells floor-plan sketches '
+                              'exported straight to Xactimate specifically to "expedite your payment '
+                              'process and ensure full compensation," replacing pen-and-paper sketches '
+                              'with a mobile app that carries photos, moisture readings and signatures in '
+                              'one project [irpHqZ46CG8 @ 00:05:00].',
+                              'On contents, the FirehouseEducation crew gives the cleanest decision rule: '
+                              'medium to heavy fire, or anything needing ultrasonic work, gets packed out '
+                              'to the warehouse, while light smoke is cleaned in place to avoid expense '
+                              'and hassle [w85_KBcX690 @ 00:00:49]. Even a light job flips to a partial '
+                              'packout when the structure needs paint or carpet, and the deciding factors '
+                              'are degree of damage, need for ultrasonic, intensity of cleaning and '
+                              "structural damage. Omegasonics' Frank Pedu sets the floor for every "
+                              'packout: a digital photo inventory is the minimum because it "protects you '
+                              'from fraudulent claims and misplaced contents," and each item\'s original '
+                              'condition and final storage location must be recorded [3UmvqUcOFDc @ '
+                              '00:01:09]. Annissa Coy is blunter: inventory everything on insurance claims '
+                              '[MkCNqNRsk04 @ 00:12:04]. Chris adds the money angle on pre-cleaning: '
+                              'HEPA-vacuuming contents before they ever hit a box raises the save '
+                              "percentage, and since there is no industry labeling standard, Chris's "
+                              'convention is white boxes for clean and brown boxes for dirty [33iGNdZ6fyE '
+                              '@ 03:47:03]. The shared baseline is that contents are not loaded and '
+                              'forgotten; every piece leaves the house photographed, categorized, '
+                              'pre-cleaned where soot is heavy, and assigned to a known storage spot.',
+                              'The cleaning sequence is where the fire specialists line up hardest. Chris '
+                              'teaches four steps of fire remediation, "Source removal cleaning '
+                              'deodorization and then applying surface sealant," with the effort '
+                              'front-loaded, and warns that most disputes come from attacking odor before '
+                              "contaminants are gone [33iGNdZ6fyE @ 02:10:13]. Brendy Riley's field "
+                              'workflow at Octagon mirrors it: environmental controls first to stop soot '
+                              'and carcinogens resettling, then demo, media blasting depending on char '
+                              'level and the clean-versus-replace call, then HEPA vacuum, chem sponge and '
+                              'damp wipe, odor mitigation throughout, and finally a fire and smoke sealer, '
+                              'where "usually it takes one to two applications to mitigate any lingering '
+                              'odors" [WTz841eMFkk @ 00:04:03]. Travis Chauncey of Abbotts explains why '
+                              'the HEPA step is non-negotiable: smoke particulates run under 10 microns, '
+                              'so a regular shop vac will not capture them [iiCSRcut-WA @ 00:01:33]. '
+                              'Annissa Coy carries that into contents, HEPA-vacuuming before boxing, '
+                              'especially under heavy soot, and unpacking only inside the processing '
+                              'center under a HEPA scrubber [MkCNqNRsk04 @ 00:01:37]. Chris puts it flatly '
+                              'elsewhere: the most effective removal is physical, not hydroxy. The '
+                              'consensus baseline: physical removal first, deodorize second, seal last, on '
+                              'a clean, dry surface as the sealer label itself requires.'],
+               'table': {'caption': 'Practitioner consensus on fire, smoke and contents documentation',
+                         'headers': ['Consensus Point',
+                                     'Field Practice',
+                                     'Payoff Reported',
+                                     'Expert Source'],
+                         'rows': [['Documentation drives every dollar paid',
+                                   'Document every task, photo and reading before writing the estimate',
+                                   'Contractors only get paid for the work they document',
+                                   'Encircle ([uy09gaqf4AU @ 00:03:46])'],
+                                  ['Set the restoration objective upfront',
+                                   'Agree restore-or-replace and target condition before cleaning starts, '
+                                   'like a drying plan',
+                                   'Makes it easier to get paid at the end of the job',
+                                   'Encircle ([33iGNdZ6fyE @ 00:05:10])'],
+                                  ['Packout versus clean in place decision',
+                                   'Pack out medium to heavy fire and ultrasonic work; clean light smoke '
+                                   'in place',
+                                   'Avoids expense and hassle on light jobs while protecting heavy ones',
+                                   'FirehouseEducation ([w85_KBcX690 @ 00:00:49])'],
+                                  ['Digital photo inventory as the minimum',
+                                   "Record each item's original condition and final storage location at "
+                                   'packout',
+                                   'Protects against fraudulent claims and misplaced contents',
+                                   'Omegasonics ([3UmvqUcOFDc @ 00:01:09])'],
+                                  ['Remove contaminants before treating any odor',
+                                   'Source removal, cleaning, deodorization, then surface sealant, with '
+                                   'effort front-loaded',
+                                   'Most fire disputes come from attacking odor before contaminants',
+                                   'Encircle ([33iGNdZ6fyE @ 02:10:13])'],
+                                  ['HEPA vacuuming is non-negotiable on smoke',
+                                   'HEPA-vacuum surfaces and contents because smoke particulates run under '
+                                   '10 microns',
+                                   'Captures fine particulates that a regular shop vac would miss',
+                                   'Abbotts Cleanup & Restoration ([iiCSRcut-WA @ 00:01:33])'],
+                                  ['Communicate with adjusters early and constantly',
+                                   'Build a hard scope upfront, raise new items immediately, meet '
+                                   'adjusters on site',
+                                   'No surprises, and the correct scope gets paid',
+                                   'Octagon Cleaning and Restoration ([WTz841eMFkk @ 00:05:14])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Adjuster TV's walkthrough with Kylee Kempton of Titan Restoration in Mesa "
+                              'gives the tightest scan protocol. Water technicians carry a Matterport in '
+                              'every truck, shoot a pre-scan before mitigation and a post-scan after '
+                              'demolition, so the adjuster sees removed versus to-repair work, with '
+                              'Mattertags carrying loss descriptions and quantities [86mEe0yHwiw @ '
+                              '00:06:43]. The capture rules: place scans 5 to 8 ft apart, hold the camera '
+                              'at about 4 to 4.5 ft for restoration rather than eye level, hide behind it '
+                              'to avoid "no alignment" errors, scan just before and after doorways, close '
+                              'blinds so sunlight does not confuse the infrared, mark mirrors early and '
+                              'often, open doors to 45 degrees, and add 2 to 3 extra scans in tight '
+                              'bathrooms [86mEe0yHwiw @ 00:13:42]. For under-sink losses, open the '
+                              'cabinets and drop the tripod to its lowest height. The magicplan workflow '
+                              'layers moisture data on the sketch: insert a restoration humidity and '
+                              'temperature object, drag it onto the annotated humid zone, and log surface '
+                              'and air humidity, date and photos as custom attributes [irpHqZ46CG8 @ '
+                              "00:04:10]. On paper, Adjusterpedia's Mark runs a coded scope sheet because "
+                              'photos alone led to mislabeling and confusion over what was actually '
+                              'damaged [4EdiIO_RCX0 @ 00:00:55].',
+                              "The estimating pipeline is where the minutes get won. In Encircle's demo, "
+                              'the technician dictates a damage description by voice, adds photos, 360s, '
+                              'video, moisture and equipment data, and the platform outputs a narrative, '
+                              'room tasks and IICRC-backed equipment calculations in 5 to 10 minutes '
+                              '[uy09gaqf4AU @ 00:12:32]. In Xactimate, the operator files a vendor data '
+                              'request, matches the claim ID, and sends; AI converts the sketch and maps '
+                              'tasks to line items priced from the price list chosen when the project was '
+                              "created. Joe's live run, a 15x12x8 Category 1 bedroom with carpet saved, "
+                              'pad pulled and a 9x3 hallway of wet hardwood, took about 30 to 60 seconds '
+                              'to describe and produced a priced estimate in under 20 minutes [uy09gaqf4AU '
+                              "@ 00:37:55]. David Herring's field number backs the voice-note method: 998 "
+                              'windows inspected in 3 days versus about 7 the old way, and Herring calls '
+                              'line items produced in the field "a disservice" [uy09gaqf4AU @ 00:22:42]. '
+                              'For firms that would rather hand off the Xactimate build entirely, American '
+                              'Roof Supplements publishes flat pricing: first estimate or supplement free, '
+                              '$50 pre-adjuster estimate, $100 follow-up supplement on a job they '
+                              'estimated and got approved, $150 standalone supplement, no monthly fee or '
+                              'minimum [GK_Was-iK98 @ 00:09:42].',
+                              'Packout and cleaning carry their own unit economics. FirehouseEducation '
+                              'treats materials as billable, charged hourly or built into the per-box '
+                              'price, with bubble wrap running about "twenty dollars a box" and the '
+                              'instruction "don\'t skimp"; specialty TV, lamp, dish-pack and glass-pack '
+                              'boxes come out, plates go on end, dish packs bill higher, and wood gets '
+                              'paper-wrapped before shrink wrap in hot areas [rAAR3Zmm80c @ 00:01:53]. '
+                              'That crew credits the method with very little damage over 16 to 17 years. '
+                              'In the processing center, Annissa Coy runs dishes and dippable items '
+                              'through an ultrasonic with a pre-soak because it is faster "and thus '
+                              'profitable," handles dry-method items with HEPA plus a dry sponge or art '
+                              'gum eraser, and deodorizes with hydroxyl inside the drying chamber '
+                              '[MkCNqNRsk04 @ 00:06:42]. Chris quantifies the structure side: verify '
+                              'cleaning with a 1 ft by 1 ft sponge test using horizontal and vertical '
+                              'passes, size air filtration for 6 to 8 air changes per hour then drop to 4, '
+                              'targeting 2,000 particles at 3 microns, with particle counts like 13,000 '
+                              'down to 500 as proof [33iGNdZ6fyE @ 01:36:28]. Heat-calcined drywall cannot '
+                              'be rehydrated, so replace it at $8 to $16 a sheet, which Chris frames as an '
+                              'extra $4 [33iGNdZ6fyE @ 02:31:11].'],
+               'table': {'caption': 'Street mechanics, exact specs and pricing taught by practitioners',
+                         'headers': ['Mechanic',
+                                     'Exact Spec or Number',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Matterport scan spacing and camera height',
+                                   'Scans 5 to 8 ft apart, camera at about 4 to 4.5 ft',
+                                   'Shoot at restoration height and hide behind the camera to avoid '
+                                   'no-alignment errors',
+                                   'Adjuster TV ([86mEe0yHwiw @ 00:13:42])'],
+                                  ['Matterport floor-plan product accuracy',
+                                   'Accurate to 1 to 2 percent for a very very small fee',
+                                   'Order TrueSketch or TrueSketch Plus to bring the sketch into Xactimate',
+                                   'Adjuster TV ([86mEe0yHwiw @ 00:27:55])'],
+                                  ['AI scope to priced Xactimate estimate',
+                                   'Scope under 10 minutes, Xactimate under 5, priced estimate under 20',
+                                   'Voice description converted to line items from the chosen price list',
+                                   'Encircle ([uy09gaqf4AU @ 00:37:55])'],
+                                  ['Outsourced Xactimate estimate and supplement pricing',
+                                   'First free, $50 pre-adjuster, $100 follow-up, $150 standalone '
+                                   'supplement',
+                                   'Hand off file structuring while the PA keeps review and negotiation',
+                                   'American Roof Supplements ([GK_Was-iK98 @ 00:09:42])'],
+                                  ['Packout materials billed to the job',
+                                   'Bubble wrap about twenty dollars a box, dish packs bill higher',
+                                   'Charge hourly or build materials into the per-box price, never skimp',
+                                   'FirehouseEducation ([rAAR3Zmm80c @ 00:01:53])'],
+                                  ['Air filtration device sizing on fire jobs',
+                                   '6 to 8 air changes per hour, then drop to 4',
+                                   'Target 2,000 particles at 3 microns and document counts with a '
+                                   'particle counter',
+                                   'Encircle ([33iGNdZ6fyE @ 01:36:28])'],
+                                  ['Wet smoke labor multiplier for bidding',
+                                   'Wet smoke takes four to six times longer to clean',
+                                   'Identify the smoke type before bidding any fire job',
+                                   'Encircle ([33iGNdZ6fyE @ 00:32:46])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'What the crews do that rookies skip',
+                           'body': 'Small field habits the practitioners use to protect scans, odor '
+                                   'results, and fragile contents.',
+                           'items': ['Drop the Matterport tripod to its lowest height and open the '
+                                     'cabinets for under-sink water losses, and add 2 to 3 extra scans in '
+                                     'tight bathrooms to cover the tripod blind spot [Adjuster TV — '
+                                     '86mEe0yHwiw @ 00:23:01].',
+                                     'Never let the homeowner do the laundry on a smoke job; it obscures '
+                                     'the source of any remaining odor, so run it in-house or through a '
+                                     'certified vendor, not "Suzy\'s Wash and Fold" [FirehouseEducation — '
+                                     'MkCNqNRsk04 @ 00:09:05].',
+                                     'Send a second PM through the house for a "fresh nose" odor '
+                                     'assessment before the final walkthrough [Octagon Cleaning and '
+                                     'Restoration — WTz841eMFkk @ 00:06:35].',
+                                     'On a floor mirror, unscrew the 3-piece legs, box them in custom '
+                                     'cardboard, blanket the mirror, shrink-wrap the legs to it and add a '
+                                     'fragile sticker, because the loaded pod tilts high '
+                                     '[FirehouseEducation — Appti0ctcGA @ 00:04:17].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Scan and sketch on arrival',
+                              'action': 'Hit the site fast, prep the rooms, and pre-scan the loss before '
+                                        'mitigation touches it.',
+                              'detail': 'Site visit within the first 24 hours with an estimate goal of 48 '
+                                        'hours; set lights on, curtains closed and doors positioned, then '
+                                        'pre-scan before mitigation and post-scan after demo so the '
+                                        'adjuster can compare removed versus to-repair work [Adjuster TV — '
+                                        '86mEe0yHwiw @ 00:03:32].'},
+                             {'step': 2,
+                              'title': 'Dictate the scope narrative',
+                              'action': 'Describe the damage by voice and attach photos, 360s, moisture '
+                                        'and equipment data.',
+                              'detail': 'The platform returns a narrative, room tasks and IICRC-backed '
+                                        'equipment calculations in 5 to 10 minutes, then a vendor data '
+                                        'request matched by claim ID pushes it into Xactimate for '
+                                        'line-item pricing [Encircle — uy09gaqf4AU @ 00:12:32].'},
+                             {'step': 3,
+                              'title': 'Decide packout and inventory contents',
+                              'action': 'Choose full packout, partial packout, or clean in place, and '
+                                        'photo-inventory every item.',
+                              'detail': 'Weigh degree of damage, need for ultrasonic, intensity of '
+                                        'cleaning and structural damage; pack out medium to heavy fire, '
+                                        'clean light smoke in place, and go partial when paint or carpet '
+                                        'work is coming [FirehouseEducation — w85_KBcX690 @ 00:01:39].'},
+                             {'step': 4,
+                              'title': 'Clean, verify, then deodorize and seal',
+                              'action': 'Remove residue physically, prove it with a sponge test, then '
+                                        'deodorize and seal.',
+                              'detail': 'Run a 1 ft by 1 ft sponge test with horizontal and vertical '
+                                        'passes; the post-clean pass should come up clean before any '
+                                        'deodorization or sealer goes on [Encircle — 33iGNdZ6fyE @ '
+                                        '00:45:37].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Odor control is the sharpest split. Annissa Coy at FirehouseEducation bans '
+                              'ozone outright on contents with an "absolutely not," because it bleaches '
+                              'anything damp and takes years off leather. Coy runs hydroxyl inside the '
+                              'drying chamber instead, since it is safe for occupants and works on wet '
+                              'goods [MkCNqNRsk04 @ 00:06:05]. Chris, the umpire-appraiser teaching '
+                              "Encircle's bootcamp, reverses that ranking. On protein fires Chris rates "
+                              'ozone above hydroxy and calls hydroxy three to four times weaker. Chris '
+                              'still holds that the most effective removal is physical, not hydroxy, and '
+                              'warns that whoever over-oxidizes a house owns the result [33iGNdZ6fyE @ '
+                              '02:59:48]. The lever Chris prefers was used by only 3 to 4 percent of '
+                              'attendees: fresh-air dilution. The reasoning is that bringing fresh air in '
+                              'carries less risk than applying another product [33iGNdZ6fyE @ 03:02:49]. '
+                              'Travis Chauncey at Abbotts Cleanup & Restoration runs a homeowner-grade '
+                              'version. Open doors and windows, put positive air pressure in some areas '
+                              'and negative air machines in the affected ones, and move to demolition only '
+                              'if the odor persists [iiCSRcut-WA @ 00:00:43]. The working read is that '
+                              'contents crews lean toward hydroxyl, while structure-side dispute experts '
+                              'lean toward physical removal plus dilution. None of these operators treats '
+                              'an oxidizer as a substitute for actual cleaning.',
+                              'The packout call is driven by damage load, not habit. Annissa Coy of '
+                              'FirehouseEducation sends medium to heavy fire jobs, and anything that needs '
+                              'ultrasonic work, to the warehouse. Light smoke gets cleaned in place to '
+                              'avoid the expense and hassle. Coy still runs a partial packout on light '
+                              'jobs when the structure needs paint or carpet work [w85_KBcX690 @ '
+                              "00:00:49]. Coy's four decision factors are degree of damage, need for "
+                              'ultrasonic, intensity of cleaning, and structural damage. Coy states flatly '
+                              'that structural damage often forces the crew to pack contents up and get '
+                              'them out of the way so it can handle the structure [w85_KBcX690 @ '
+                              '00:01:56]. Brendy Riley, a project manager with 11 years at Octagon, treats '
+                              'the packout as one line in a PM-run logistics stack. That stack also covers '
+                              'textile pickup, art restoration, and storage pods dropped on site. Riley '
+                              'keeps homeowners physically involved in moving items rather than icing them '
+                              'out [WTz841eMFkk @ 00:04:35]. Chris on the Encircle bootcamp argues that '
+                              'the save rate is decided before the truck is loaded, because HEPA '
+                              'pre-cleaning ahead of packout raises the percentage of items saved '
+                              '[33iGNdZ6fyE @ 03:47:03]. So the real disagreement is where the deep '
+                              'cleaning happens. Both camps HEPA the soot off before anything goes into a '
+                              'box.',
+                              'The sharpest arguments over documentation tooling are about accuracy and '
+                              'about who structures the data. Kylee Kempton, the Matterport technician at '
+                              'Titan Restoration, pitches scanning as the cure for digging through 700 '
+                              'photos and making return trips to the site. Kempton claims correct scans '
+                              'are far more accurate than photos and that floor plans land within 1 to 2 '
+                              'percent [86mEe0yHwiw @ 00:04:07]. FirstLook Services runs Matterport and '
+                              'Leica RTC side by side and says accuracy is where Matterport falls off a '
+                              "cliff. In that firm's view Matterport is fine for quick-and-dirty floor "
+                              'plans and visuals but unfit for millimeter or centimeter construction '
+                              'documents, and mirrors throw phantom walls into Revit [C_iLoKezwu4 @ '
+                              '00:01:16]. On the Encircle webinar, David Herring calls line items produced '
+                              'in the field a disservice. Herring argues for narrative damage descriptions '
+                              'instead and says they get about 90 percent more items cleared [uy09gaqf4AU '
+                              '@ 00:23:21]. Mark at Adjusterpedia still swears by a coded paper scope '
+                              'sheet printed on the back of the Xactanalysis claim info. Mark rejects '
+                              'separate roof, interior, and shed sheets as way too much, and insists that '
+                              'anyone skipping a scope sheet is probably not doing as good a job as '
+                              'possible [4EdiIO_RCX0 @ 00:00:19]. The playbooks diverge on capture medium '
+                              'but agree that structured input beats loose photos.'],
+               'table': {'caption': 'Competing playbooks on odor, packout, capture, speed and estimate '
+                                    'production',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Oxidizer choice for smoke odor',
+                                   'No ozone on contents ever; run hydroxyl in the drying chamber because '
+                                   'it is safe on wet items',
+                                   'Physical removal first, ozone beats hydroxy on protein, fresh-air '
+                                   'dilution carries the least risk',
+                                   'FirehouseEducation ([MkCNqNRsk04 @ 00:07:17]); Encircle ([33iGNdZ6fyE '
+                                   '@ 03:02:49])'],
+                                  ['Packout versus clean in place',
+                                   'Pack out medium to heavy fire and ultrasonic work; clean light smoke '
+                                   'in place to save expense',
+                                   'HEPA pre-clean before packout to raise the save percentage regardless '
+                                   'of where items get processed',
+                                   'FirehouseEducation ([w85_KBcX690 @ 00:01:08]); Encircle ([33iGNdZ6fyE '
+                                   '@ 03:47:03])'],
+                                  ['3D scan accuracy for the estimate',
+                                   'Matterport scans are far more accurate than photos and floor plans run '
+                                   'within 1 to 2 percent',
+                                   'Matterport accuracy falls off a cliff for construction documents; use '
+                                   'Leica RTC point clouds instead',
+                                   'Adjuster TV ([86mEe0yHwiw @ 00:27:55]); FirstLook Services '
+                                   '([C_iLoKezwu4 @ 00:01:16])'],
+                                  ['Field capture format',
+                                   'Voice-to-text narrative descriptions converted into a scope, with line '
+                                   'items mapped later by software',
+                                   'Coded paper scope sheet with roof, elevation and interior checklists '
+                                   'filled top down on site',
+                                   'Encircle ([uy09gaqf4AU @ 00:23:21]); Adjusterpedia ([4EdiIO_RCX0 @ '
+                                   '00:01:24])'],
+                                  ['Response speed versus contract first',
+                                   'Site visit inside the first 24 hours with a target estimate delivered '
+                                   'inside 48 hours',
+                                   'Homeowner directs the work; get the contract first, and damage during '
+                                   'that delay is not your problem',
+                                   'Adjuster TV ([86mEe0yHwiw @ 00:03:32]); Encircle ([33iGNdZ6fyE @ '
+                                   '01:54:54])'],
+                                  ['Who builds the Xactimate file',
+                                   'Keep estimating in house when the team is strong, volume is low, or '
+                                   'speed is already high',
+                                   'Outsource only the file structuring while the PA keeps inspection, '
+                                   'negotiation and final review',
+                                   'American Roof Supplements ([GK_Was-iK98 @ 00:04:44]); American Roof '
+                                   'Supplements ([GK_Was-iK98 @ 00:03:20])'],
+                                  ['Revenue lift from AI-assisted scoping',
+                                   'Beta users saw estimates rise an average of about two to five percent '
+                                   'over prior versions',
+                                   'Later on the same webinar Leah claimed a minimum of five to ten '
+                                   'percent more revenue',
+                                   'Encircle ([uy09gaqf4AU @ 00:53:14]); Encircle ([uy09gaqf4AU @ '
+                                   '00:57:11])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The costliest failures come from letting someone else own the scope. Chris '
+                              'describes a loss of more than $600,000 in which an untrained adjuster '
+                              'changed the scope and the contractor followed it. The contractor ultimately '
+                              'was responsible, so the rule taught is never to take work instructions from '
+                              'the adjuster [33iGNdZ6fyE @ 00:09:57]. The same instructor saw a contractor '
+                              "seal odor into a senior home's roof without offering options, on a roughly "
+                              '$800,000 invoice, and the firm was left holding the bag [33iGNdZ6fyE @ '
+                              '00:59:47]. Brendy Riley of Octagon answers with scope discipline set early. '
+                              'Build a hard scope with the adjuster upfront, raise new items the moment '
+                              'they appear so there are no surprises, and meet adjusters on site, since '
+                              'there may be several. On a 7,000-square-foot ski-resort home, a stain rag '
+                              'combusted over a weekend. The smoke path stayed invisible until the drywall '
+                              'came off, and engineers pushed back on the estimates. The crew still got '
+                              'paid for the correct scope, which Riley credits to having the photo '
+                              'documentation to justify it and the knowledge to convey it [WTz841eMFkk @ '
+                              "00:11:32]. Chris's economics check matches that experience: establishing "
+                              'the objective at the beginning makes it easier to get paid at the end '
+                              '[33iGNdZ6fyE @ 00:05:10].',
+                              'Chemistry mistakes cannot be undone, which is why practitioners treat them '
+                              'as economic traps rather than technique notes. Annissa Coy warns that you '
+                              'cannot ozone an item that is damp or wet, because it bleaches the goods and '
+                              'takes years off leather. Soft goods get no ozone at all [MkCNqNRsk04 @ '
+                              '00:06:22]. Chris goes further on structures. Over-oxidation cannot be '
+                              'reversed, houses have ended up transferred to insurers because of it, and '
+                              'many cleaning-chemical labels already read "Do not expose to oxidizers" '
+                              '[33iGNdZ6fyE @ 02:59:48]. Protein fires are the other money pit, accounting '
+                              "for about 60 percent of Chris's disputes. The residue is invisible and "
+                              'tacky, it hardens like shellac within 24 to 72 hours, and oxidizers do '
+                              "little against it. Chris's warning is that protein fires are expensive, "
+                              'with no physical damage and simply a ton of cleaning [33iGNdZ6fyE @ '
+                              '00:36:30]. Coy also forbids homeowner laundry on fire jobs, because it '
+                              'obscures the source of any remaining odor. Textiles go in-house or to a '
+                              "certified vendor rather than Suzy's Wash and Fold [MkCNqNRsk04 @ 00:09:05]. "
+                              'The common thread is that once a residue has been sealed, oxidized, or '
+                              'washed by the wrong hands, the restorer can no longer prove what is causing '
+                              'the lingering smell.',
+                              'Packout and paperwork failures drain margin quietly. Annissa Coy and Jeremy '
+                              'of Faithful Restoration in Billings name the two classic packout losses: '
+                              'damage in transit, and cleaned items going dusty in storage and needing a '
+                              'second cleaning. Jeremy draws on 15 years at a furniture store plus moving '
+                              'labor. The fix is full shrink-wrap, moving blankets on corners, and taking '
+                              "pieces apart before loading, such as a floor mirror's three screw-in legs, "
+                              'because the pod tilts high once it is loaded [Appti0ctcGA @ 00:00:53]. Coy '
+                              'adds a heat trap: in hot areas, paper-wrap wood before the shrink wrap goes '
+                              'on. Coy also says never to skimp on billable materials, citing bubble wrap '
+                              'at about twenty dollars a box [rAAR3Zmm80c @ 00:03:46]. Frank Pedu at '
+                              'Omegasonics treats a digital photo inventory as the minimum, not the goal, '
+                              'because it protects the company from fraudulent claims and misplaced '
+                              "contents. Each item's original condition and final storage location should "
+                              'be logged [3UmvqUcOFDc @ 00:01:09]. On the estimating side, American Roof '
+                              'Supplements puts the public adjuster bottleneck at estimate number six. The '
+                              'firm treats late-night estimating, delayed follow-up, and turned-away files '
+                              'as signs of a capacity problem, and rejects handoffs that amount to forty '
+                              'photos and "figure it out" [GK_Was-iK98 @ 00:00:15].'],
+               'table': {'caption': 'Firsthand traps, measured consequences and the countermeasures '
+                                    'practitioners teach',
+                         'headers': ['Failure Mode',
+                                     'What Happened or Was Measured',
+                                     'Countermeasure Taught',
+                                     'Expert Source'],
+                         'rows': [['Following adjuster work instructions',
+                                   'On a loss over $600,000 the untrained adjuster changed scope and the '
+                                   'contractor was held responsible',
+                                   'Set the restoration objective yourself upfront and never take work '
+                                   'instructions from the adjuster',
+                                   'Encircle ([33iGNdZ6fyE @ 00:09:57])'],
+                                  ['Over-oxidizing a structure',
+                                   'Over-oxidation cannot be reversed and some houses were transferred to '
+                                   'insurers because of it',
+                                   'Remove the source and clean physically first, then favor fresh-air '
+                                   'dilution over another product',
+                                   'Encircle ([33iGNdZ6fyE @ 02:59:48])'],
+                                  ['Trying to save calcined drywall',
+                                   'Heat drives out crystallized water starting near 300 degrees F and the '
+                                   'board cannot be rehydrated',
+                                   'Replace the board at about $8 to $16 a sheet, roughly an extra $4',
+                                   'Encircle ([33iGNdZ6fyE @ 02:31:11])'],
+                                  ['Dehumidifiers inside contaminated space',
+                                   'Running drying equipment in the contaminated area moves residue '
+                                   'through the building air',
+                                   'Build a clean room pulling filtered fresh air, or use desiccants or '
+                                   'heaters instead',
+                                   'Encircle ([33iGNdZ6fyE @ 03:42:02])'],
+                                  ['Photos-only field documentation',
+                                   'Relying on photos alone led to mislabeling and confusion over what was '
+                                   'actually damaged',
+                                   'Run a coded scope sheet and scan it for blanks before leaving each '
+                                   'area',
+                                   'Adjusterpedia ([4EdiIO_RCX0 @ 00:00:55])'],
+                                  ['Botched 3D scan alignment',
+                                   'Movement near the camera throws no-alignment errors and mirrors '
+                                   'confuse the capture',
+                                   'Hide behind the camera, close blinds, and mark mirrors early and often '
+                                   'during the scan',
+                                   'Adjuster TV ([86mEe0yHwiw @ 00:15:18])'],
+                                  ['Filing a claim under the deductible',
+                                   'Small smoke claims below the deductible waste time and can hurt the '
+                                   'insurance rates',
+                                   'Have a restoration company assess whether the claim is worthwhile '
+                                   'before calling the insurer',
+                                   'Abbotts Cleanup & Restoration ([iiCSRcut-WA @ 00:00:30])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Stop-Points Before You Touch Contents or Chemistry',
+                           'body': 'Each gate below comes from a loss, dispute or reversal practitioners '
+                                   'reported firsthand. Clear all four before the crew commits labor or '
+                                   'product.',
+                           'items': ["Never discard an owner's belongings on your own call: you don't have "
+                                     "the authority to throw people's stuff out, and it's not your job "
+                                     '[Encircle — 33iGNdZ6fyE @ 01:20:22].',
+                                     'No ozone on anything damp or wet and none on soft goods, because it '
+                                     'bleaches items and takes years off leather [FirehouseEducation — '
+                                     'MkCNqNRsk04 @ 00:06:22].',
+                                     'Put high humidity in writing with thermo-hygrometer readings so a '
+                                     'carrier that refused stabilization cannot later deny the mold '
+                                     '[Encircle — 33iGNdZ6fyE @ 01:58:57].',
+                                     'On heat-damaged PEX, send a written no-warranty notice to both the '
+                                     'homeowner and the adjuster, because the homeowner is the decision '
+                                     'maker [Encircle — 33iGNdZ6fyE @ 03:49:52].']}}],
+ 'pull_quote': '"If you\'ve over oxidized it you own the result." — Chris, Encircle Fire & Smoke '
+               'Restoration Bootcamp (33iGNdZ6fyE @ 03:00:25).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ["Open every loss in a floor-plan app under the client's last name, complete the "
+                      'project form (property type, age, cause, water category, date noticed, signature), '
+                      'and export the sketch to Xactimate [magicplan — irpHqZ46CG8 @ 00:01:33].',
+                      'Take a 3D pre-scan before mitigation and a post-scan after demolition so the '
+                      'adjuster can compare removed work against to-repair work, with Mattertags carrying '
+                      'loss descriptions and quantities [Adjuster TV — 86mEe0yHwiw @ 00:06:43].',
+                      "HEPA-vacuum heavy soot before boxing, then unpack only the day's work inside the "
+                      'processing center under a HEPA scrubber and bag wrap materials immediately '
+                      '[FirehouseEducation — MkCNqNRsk04 @ 00:01:37].',
+                      "Log each item's original condition and final storage location in a digital photo "
+                      'inventory, packing by category with matched boxes [Omegasonics — 3UmvqUcOFDc @ '
+                      '00:00:51].',
+                      'Verify cleaning with a 1 ft by 1 ft sponge test using a horizontal and a vertical '
+                      'pass; the post-clean pass should come up clean [Encircle — 33iGNdZ6fyE @ 00:45:37].',
+                      'Hand the estimating team an organized packet of measurements, photos, notes and '
+                      'carrier documents, then review the finished Xactimate file personally before it '
+                      'goes out [American Roof Supplements — GK_Was-iK98 @ 00:03:20].'],
+ 'statutory_citations': [{'title': 'Encircle — Fire & Smoke Restoration Bootcamp - Webinar [01:54:54]',
+                          'url': 'https://www.youtube.com/watch?v=33iGNdZ6fyE&t=6894s',
+                          'relevance': 'Primary practitioner testimony on contract-first response, '
+                                       'adjuster scope liability, oxidizer risk and fire remediation '
+                                       'sequencing.'},
+                         {'title': 'FirehouseEducation — How to Clean Smoke-Damaged Contents After a '
+                                   'Wildfire | Ask Annissa [00:06:05]',
+                          'url': 'https://www.youtube.com/watch?v=MkCNqNRsk04&t=365s',
+                          'relevance': 'Primary practitioner testimony on banning ozone for contents, '
+                                       'hydroxyl drying chambers, laundry control and warehouse unpacking '
+                                       'discipline.'},
+                         {'title': 'FirehouseEducation — When Do You Packout or Clean In Place A Contents '
+                                   'Restoration Job? [00:00:49]',
+                          'url': 'https://www.youtube.com/watch?v=w85_KBcX690&t=49s',
+                          'relevance': 'Primary practitioner testimony on packout versus clean-in-place '
+                                       'decision factors.'},
+                         {'title': 'Octagon Cleaning and Restoration — Inside Fire Damage Restoration: A '
+                                   'Project Manager’s Perspective [00:11:32]',
+                          'url': 'https://www.youtube.com/watch?v=WTz841eMFkk&t=692s',
+                          'relevance': 'Primary practitioner testimony on hard scopes with adjusters and '
+                                       'photo documentation that defended a full fire scope against '
+                                       'engineer review.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'irpHqZ46CG8',
+                       'title': 'How to Document Water Damage Restoration Like a Pro',
+                       'channel': 'magicplan',
+                       'author': 'magicplan',
+                       'text': 'Export your sketches to Xactimate to expedite your payment process and '
+                               'ensure full compensation.',
+                       'tip': 'Export your sketches to Xactimate to expedite your payment process and '
+                              'ensure full compensation.',
+                       'timestamp': 300,
+                       'timestamp_seconds': 300,
+                       'timestamp_label': '[00:05:00]',
+                       'url': 'https://www.youtube.com/watch?v=irpHqZ46CG8&t=300s',
+                       'markdown': '[00:05:00](https://www.youtube.com/watch?v=irpHqZ46CG8&t=300s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '86mEe0yHwiw',
+                       'title': 'Matterport Demo and Walkthrough',
+                       'channel': 'Adjuster TV',
+                       'author': 'Adjuster TV',
+                       'text': 'Water technicians take a pre-scan before mitigation and a post-scan after '
+                               'demolition so the adjuster can compare what was removed against what needs '
+                               'repair.',
+                       'tip': 'Water technicians take a pre-scan before mitigation and a post-scan after '
+                              'demolition so the adjuster can compare what was removed against what needs '
+                              'repair.',
+                       'timestamp': 403,
+                       'timestamp_seconds': 403,
+                       'timestamp_label': '[00:06:43]',
+                       'url': 'https://www.youtube.com/watch?v=86mEe0yHwiw&t=403s',
+                       'markdown': '[00:06:43](https://www.youtube.com/watch?v=86mEe0yHwiw&t=403s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uy09gaqf4AU',
+                       'title': 'A New Era of Estimating | Your Data, Your Expertise, From Scope to '
+                                'Estimate — Webinar',
+                       'channel': 'Encircle',
+                       'author': 'Encircle',
+                       'text': 'Every one of their estimates were increased on an average of about two to '
+                               'five percent more than what they were originally estimating for.',
+                       'tip': 'Every one of their estimates were increased on an average of about two to '
+                              'five percent more than what they were originally estimating for.',
+                       'timestamp': 3194,
+                       'timestamp_seconds': 3194,
+                       'timestamp_label': '[00:53:14]',
+                       'url': 'https://www.youtube.com/watch?v=uy09gaqf4AU&t=3194s',
+                       'markdown': '[00:53:14](https://www.youtube.com/watch?v=uy09gaqf4AU&t=3194s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3UmvqUcOFDc',
+                       'title': 'Tips for Proper Restoration Packout',
+                       'channel': 'Omegasonics',
+                       'author': 'Omegasonics',
+                       'text': 'A digital photo inventory protects you from fraudulent claims and '
+                               'misplaced contents.',
+                       'tip': 'A digital photo inventory protects you from fraudulent claims and misplaced '
+                              'contents.',
+                       'timestamp': 69,
+                       'timestamp_seconds': 69,
+                       'timestamp_label': '[00:01:09]',
+                       'url': 'https://www.youtube.com/watch?v=3UmvqUcOFDc&t=69s',
+                       'markdown': '[00:01:09](https://www.youtube.com/watch?v=3UmvqUcOFDc&t=69s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Appti0ctcGA',
+                       'title': 'How To Packout A Fire Restoration Job Without Damage To Contents',
+                       'channel': 'FirehouseEducation',
+                       'author': 'FirehouseEducation',
+                       'text': 'Fully shrink-wrap the piece and put moving blankets on the corners so '
+                               'nothing gets damaged in transit.',
+                       'tip': 'Fully shrink-wrap the piece and put moving blankets on the corners so '
+                              'nothing gets damaged in transit.',
+                       'timestamp': 195,
+                       'timestamp_seconds': 195,
+                       'timestamp_label': '[00:03:15]',
+                       'url': 'https://www.youtube.com/watch?v=Appti0ctcGA&t=195s',
+                       'markdown': '[00:03:15](https://www.youtube.com/watch?v=Appti0ctcGA&t=195s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MkCNqNRsk04',
+                       'title': 'How to Clean Smoke-Damaged Contents After a Wildfire | Ask Annissa',
+                       'channel': 'FirehouseEducation',
+                       'author': 'FirehouseEducation',
+                       'text': 'For instance, you cannot ozone an item if it is damp or wet.',
+                       'tip': 'For instance, you cannot ozone an item if it is damp or wet.',
+                       'timestamp': 382,
+                       'timestamp_seconds': 382,
+                       'timestamp_label': '[00:06:22]',
+                       'url': 'https://www.youtube.com/watch?v=MkCNqNRsk04&t=382s',
+                       'markdown': '[00:06:22](https://www.youtube.com/watch?v=MkCNqNRsk04&t=382s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MkCNqNRsk04',
+                       'title': 'How to Clean Smoke-Damaged Contents After a Wildfire | Ask Annissa',
+                       'channel': 'FirehouseEducation',
+                       'author': 'FirehouseEducation',
+                       'text': 'So, I set my hydroxil and I deodorize in my drying chamber.',
+                       'tip': 'So, I set my hydroxil and I deodorize in my drying chamber.',
+                       'timestamp': 437,
+                       'timestamp_seconds': 437,
+                       'timestamp_label': '[00:07:17]',
+                       'url': 'https://www.youtube.com/watch?v=MkCNqNRsk04&t=437s',
+                       'markdown': '[00:07:17](https://www.youtube.com/watch?v=MkCNqNRsk04&t=437s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rAAR3Zmm80c',
+                       'title': 'How To Packout For Sucess On Contents Restoration Jobs',
+                       'channel': 'FirehouseEducation',
+                       'author': 'FirehouseEducation',
+                       'text': 'Packing materials are billable, either charged hourly or built into the '
+                               "per-box price, so bubble wrap at twenty dollars a box means don't skimp.",
+                       'tip': 'Packing materials are billable, either charged hourly or built into the '
+                              "per-box price, so bubble wrap at twenty dollars a box means don't skimp.",
+                       'timestamp': 113,
+                       'timestamp_seconds': 113,
+                       'timestamp_label': '[00:01:53]',
+                       'url': 'https://www.youtube.com/watch?v=rAAR3Zmm80c&t=113s',
+                       'markdown': '[00:01:53](https://www.youtube.com/watch?v=rAAR3Zmm80c&t=113s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yrUY61hcioM',
+                       'title': 'Fire Damage Contents Pack Outs',
+                       'channel': 'Fred McCutcheon Jr.',
+                       'author': 'Fred McCutcheon Jr.',
+                       'text': "We don't cover the smell, we remove it.",
+                       'tip': "We don't cover the smell, we remove it.",
+                       'timestamp': 48,
+                       'timestamp_seconds': 48,
+                       'timestamp_label': '[00:00:48]',
+                       'url': 'https://www.youtube.com/watch?v=yrUY61hcioM&t=48s',
+                       'markdown': '[00:00:48](https://www.youtube.com/watch?v=yrUY61hcioM&t=48s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w85_KBcX690',
+                       'title': 'When Do You Packout or Clean In Place A Contents Restoration Job?',
+                       'channel': 'FirehouseEducation',
+                       'author': 'FirehouseEducation',
+                       'text': 'Because if we have structural damage, often times we have to pack the '
+                               'contents up, get them out of the way, so we can then handle the structure.',
+                       'tip': 'Because if we have structural damage, often times we have to pack the '
+                              'contents up, get them out of the way, so we can then handle the structure.',
+                       'timestamp': 116,
+                       'timestamp_seconds': 116,
+                       'timestamp_label': '[00:01:56]',
+                       'url': 'https://www.youtube.com/watch?v=w85_KBcX690&t=116s',
+                       'markdown': '[00:01:56](https://www.youtube.com/watch?v=w85_KBcX690&t=116s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WTz841eMFkk',
+                       'title': 'Inside Fire Damage Restoration: A Project Manager’s Perspective',
+                       'channel': 'Octagon Cleaning and Restoration',
+                       'author': 'Octagon Cleaning and Restoration',
+                       'text': 'And you just need the photo documentation to justify it and the knowledge '
+                               'on how to convey that to them.',
+                       'tip': 'And you just need the photo documentation to justify it and the knowledge '
+                              'on how to convey that to them.',
+                       'timestamp': 692,
+                       'timestamp_seconds': 692,
+                       'timestamp_label': '[00:11:32]',
+                       'url': 'https://www.youtube.com/watch?v=WTz841eMFkk&t=692s',
+                       'markdown': '[00:11:32](https://www.youtube.com/watch?v=WTz841eMFkk&t=692s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '33iGNdZ6fyE',
+                       'title': 'Fire & Smoke Restoration Bootcamp - Webinar',
+                       'channel': 'Encircle',
+                       'author': 'Encircle',
+                       'text': "If you've over oxidized it you own the result.",
+                       'tip': "If you've over oxidized it you own the result.",
+                       'timestamp': 10825,
+                       'timestamp_seconds': 10825,
+                       'timestamp_label': '[03:00:25]',
+                       'url': 'https://www.youtube.com/watch?v=33iGNdZ6fyE&t=10825s',
+                       'markdown': '[03:00:25](https://www.youtube.com/watch?v=33iGNdZ6fyE&t=10825s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '33iGNdZ6fyE',
+                       'title': 'Fire & Smoke Restoration Bootcamp - Webinar',
+                       'channel': 'Encircle',
+                       'author': 'Encircle',
+                       'text': 'If you establish the objective at the beginning then it makes it easier to '
+                               'get paid at the end.',
+                       'tip': 'If you establish the objective at the beginning then it makes it easier to '
+                              'get paid at the end.',
+                       'timestamp': 310,
+                       'timestamp_seconds': 310,
+                       'timestamp_label': '[00:05:10]',
+                       'url': 'https://www.youtube.com/watch?v=33iGNdZ6fyE&t=310s',
+                       'markdown': '[00:05:10](https://www.youtube.com/watch?v=33iGNdZ6fyE&t=310s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4NKJ6zuVvTY',
+                       'title': 'Lead Safe Renovator Training - Interior Work Practices',
+                       'channel': 'Testudo LLC',
+                       'author': 'Testudo LLC',
+                       'text': 'Uncertified workers can look for dust and debris but only a certified lead '
+                               'safe renovator can conduct the final visual inspection and the cleaning '
+                               'verification.',
+                       'tip': 'Uncertified workers can look for dust and debris but only a certified lead '
+                              'safe renovator can conduct the final visual inspection and the cleaning '
+                              'verification.',
+                       'timestamp': 635,
+                       'timestamp_seconds': 635,
+                       'timestamp_label': '[00:10:35]',
+                       'url': 'https://www.youtube.com/watch?v=4NKJ6zuVvTY&t=635s',
+                       'markdown': '[00:10:35](https://www.youtube.com/watch?v=4NKJ6zuVvTY&t=635s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4EdiIO_RCX0',
+                       'title': 'Why and How to use Scope Sheets - Tutorial',
+                       'channel': 'Adjusterpedia',
+                       'author': 'Adjusterpedia',
+                       'text': "Not using a scope sheet you're probably not doing as good a job as you can "
+                               'be.',
+                       'tip': "Not using a scope sheet you're probably not doing as good a job as you can "
+                              'be.',
+                       'timestamp': 84,
+                       'timestamp_seconds': 84,
+                       'timestamp_label': '[00:01:24]',
+                       'url': 'https://www.youtube.com/watch?v=4EdiIO_RCX0&t=84s',
+                       'markdown': '[00:01:24](https://www.youtube.com/watch?v=4EdiIO_RCX0&t=84s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GK_Was-iK98',
+                       'title': 'Public Adjusters: Stop Wasting Hours Building Xactimate Estimates',
+                       'channel': 'American Roof Supplements',
+                       'author': 'American Roof Supplements',
+                       'text': 'The cleaner the input, the cleaner the output.',
+                       'tip': 'The cleaner the input, the cleaner the output.',
+                       'timestamp': 412,
+                       'timestamp_seconds': 412,
+                       'timestamp_label': '[00:06:52]',
+                       'url': 'https://www.youtube.com/watch?v=GK_Was-iK98&t=412s',
+                       'markdown': '[00:06:52](https://www.youtube.com/watch?v=GK_Was-iK98&t=412s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'C_iLoKezwu4',
+                       'title': 'Matterport Pro 3 vs Leica RTC Scanners | FirstLook Services',
+                       'channel': 'FirstLook Services',
+                       'author': 'FirstLook Services',
+                       'text': 'Accuracy is where Matterport kind of falls off a cliff.',
+                       'tip': 'Accuracy is where Matterport kind of falls off a cliff.',
+                       'timestamp': 76,
+                       'timestamp_seconds': 76,
+                       'timestamp_label': '[00:01:16]',
+                       'url': 'https://www.youtube.com/watch?v=C_iLoKezwu4&t=76s',
+                       'markdown': '[00:01:16](https://www.youtube.com/watch?v=C_iLoKezwu4&t=76s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iiCSRcut-WA',
+                       'title': 'Video Blog: Removing smoke odor after a fire',
+                       'channel': 'Abbotts Cleanup & Restoration',
+                       'author': 'Abbotts Cleanup & Restoration',
+                       'text': 'Claims below the deductible waste your time and can hurt your insurance '
+                               'rates.',
+                       'tip': 'Claims below the deductible waste your time and can hurt your insurance '
+                              'rates.',
+                       'timestamp': 30,
+                       'timestamp_seconds': 30,
+                       'timestamp_label': '[00:00:30]',
+                       'url': 'https://www.youtube.com/watch?v=iiCSRcut-WA&t=30s',
+                       'markdown': '[00:00:30](https://www.youtube.com/watch?v=iiCSRcut-WA&t=30s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'}]}

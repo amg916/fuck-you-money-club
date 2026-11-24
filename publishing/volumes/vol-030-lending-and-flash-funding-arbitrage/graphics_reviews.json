@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-escrow-locked-funding-workflow",
-    "diag-02-base-case-nested-funding-cohorts",
-    "diag-03-base-case-earned-revenue-waterfall",
-    "diag-04-funding-lane-earned-fee-yields",
-    "diag-05-statutory-and-release-decision-tree",
-    "diag-06-three-to-five-person-funding-pod",
-    "diag-07-startup-capital-four-bucket-allocation",
-    "diag-08-thirty-day-controlled-launch-roadmap"
+    "diag-01-double-close-sequence",
+    "diag-02-proof-of-funds-acceptance",
+    "diag-03-tennessee-no-money-net",
+    "diag-04-assign-vs-double-close-costs",
+    "diag-05-emd-protection-gates",
+    "diag-06-bridge-and-credit-line-architecture",
+    "diag-07-title-side-fee-hygiene",
+    "diag-08-zero-percent-stack-roadmap"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-escrow-locked-funding-workflow",
-    "diag-02-base-case-nested-funding-cohorts",
-    "diag-03-base-case-earned-revenue-waterfall",
-    "diag-04-funding-lane-earned-fee-yields",
-    "diag-05-statutory-and-release-decision-tree",
-    "diag-06-three-to-five-person-funding-pod",
-    "diag-07-startup-capital-four-bucket-allocation",
-    "diag-08-thirty-day-controlled-launch-roadmap"
+    "diag-01-double-close-sequence",
+    "diag-02-proof-of-funds-acceptance",
+    "diag-03-tennessee-no-money-net",
+    "diag-04-assign-vs-double-close-costs",
+    "diag-05-emd-protection-gates",
+    "diag-06-bridge-and-credit-line-architecture",
+    "diag-07-title-side-fee-hygiene",
+    "diag-08-zero-percent-stack-roadmap"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-escrow-locked-funding-workflow": {
+    "diag-01-double-close-sequence": {
       "concept_a": {
-        "graphic_id": "diag-01-escrow-locked-funding-workflow",
+        "graphic_id": "diag-01-double-close-sequence",
         "graphic_type": "diagram",
-        "label": "Five Controls Between Intake and Repaid Capital",
+        "label": "The Two-Contract Double Close Sequence",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-escrow-locked-funding-workflow",
+        "graphic_id": "diag-01-double-close-sequence",
         "graphic_type": "diagram",
-        "label": "Five Controls Between Intake and Repaid Capital",
+        "label": "The Two-Contract Double Close Sequence",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-escrow-locked-funding-workflow",
+        "graphic_id": "diag-01-double-close-sequence",
         "graphic_type": "diagram",
-        "label": "Five Controls Between Intake and Repaid Capital",
+        "label": "The Two-Contract Double Close Sequence",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-base-case-nested-funding-cohorts": {
+    "diag-02-proof-of-funds-acceptance": {
       "concept_a": {
-        "graphic_id": "diag-02-base-case-nested-funding-cohorts",
+        "graphic_id": "diag-02-proof-of-funds-acceptance",
         "graphic_type": "diagram",
-        "label": "From 250 Inquiries to 50 Earned-Fee Closings",
+        "label": "Soft Proof of Funds Acceptance Funnel",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-base-case-nested-funding-cohorts",
+        "graphic_id": "diag-02-proof-of-funds-acceptance",
         "graphic_type": "diagram",
-        "label": "From 250 Inquiries to 50 Earned-Fee Closings",
+        "label": "Soft Proof of Funds Acceptance Funnel",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-base-case-nested-funding-cohorts",
+        "graphic_id": "diag-02-proof-of-funds-acceptance",
         "graphic_type": "diagram",
-        "label": "From 250 Inquiries to 50 Earned-Fee Closings",
+        "label": "Soft Proof of Funds Acceptance Funnel",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-case-earned-revenue-waterfall": {
+    "diag-03-tennessee-no-money-net": {
       "concept_a": {
-        "graphic_id": "diag-03-base-case-earned-revenue-waterfall",
+        "graphic_id": "diag-03-tennessee-no-money-net",
         "graphic_type": "diagram",
-        "label": "Base Case: $535,000 Earned Revenue to $227,375 Owner Profit",
+        "label": "Tennessee No-Money Wholesale Net",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-case-earned-revenue-waterfall",
+        "graphic_id": "diag-03-tennessee-no-money-net",
         "graphic_type": "diagram",
-        "label": "Base Case: $535,000 Earned Revenue to $227,375 Owner Profit",
+        "label": "Tennessee No-Money Wholesale Net",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-case-earned-revenue-waterfall",
+        "graphic_id": "diag-03-tennessee-no-money-net",
         "graphic_type": "diagram",
-        "label": "Base Case: $535,000 Earned Revenue to $227,375 Owner Profit",
+        "label": "Tennessee No-Money Wholesale Net",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-funding-lane-earned-fee-yields": {
+    "diag-04-assign-vs-double-close-costs": {
       "concept_a": {
-        "graphic_id": "diag-04-funding-lane-earned-fee-yields",
+        "graphic_id": "diag-04-assign-vs-double-close-costs",
         "graphic_type": "diagram",
-        "label": "Compare Earned Fee Yield, Not Escrow Throughput",
+        "label": "What a Double Close Costs Versus an Assignment",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-funding-lane-earned-fee-yields",
+        "graphic_id": "diag-04-assign-vs-double-close-costs",
         "graphic_type": "diagram",
-        "label": "Compare Earned Fee Yield, Not Escrow Throughput",
+        "label": "What a Double Close Costs Versus an Assignment",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-funding-lane-earned-fee-yields",
+        "graphic_id": "diag-04-assign-vs-double-close-costs",
         "graphic_type": "diagram",
-        "label": "Compare Earned Fee Yield, Not Escrow Throughput",
+        "label": "What a Double Close Costs Versus an Assignment",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-statutory-and-release-decision-tree": {
+    "diag-05-emd-protection-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-statutory-and-release-decision-tree",
+        "graphic_id": "diag-05-emd-protection-gates",
         "graphic_type": "diagram",
-        "label": "Four Pre-Flight Decisions Before Capital Leaves",
+        "label": "Earnest Money Protection Gates",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-statutory-and-release-decision-tree",
+        "graphic_id": "diag-05-emd-protection-gates",
         "graphic_type": "diagram",
-        "label": "Four Pre-Flight Decisions Before Capital Leaves",
+        "label": "Earnest Money Protection Gates",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-statutory-and-release-decision-tree",
+        "graphic_id": "diag-05-emd-protection-gates",
         "graphic_type": "diagram",
-        "label": "Four Pre-Flight Decisions Before Capital Leaves",
+        "label": "Earnest Money Protection Gates",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-three-to-five-person-funding-pod": {
+    "diag-06-bridge-and-credit-line-architecture": {
       "concept_a": {
-        "graphic_id": "diag-06-three-to-five-person-funding-pod",
+        "graphic_id": "diag-06-bridge-and-credit-line-architecture",
         "graphic_type": "diagram",
-        "label": "A Three-Person Core with Two Explicit Scale Additions",
+        "label": "Exit-First Bridge and Credit Line Architecture",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-three-to-five-person-funding-pod",
+        "graphic_id": "diag-06-bridge-and-credit-line-architecture",
         "graphic_type": "diagram",
-        "label": "A Three-Person Core with Two Explicit Scale Additions",
+        "label": "Exit-First Bridge and Credit Line Architecture",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-three-to-five-person-funding-pod",
+        "graphic_id": "diag-06-bridge-and-credit-line-architecture",
         "graphic_type": "diagram",
-        "label": "A Three-Person Core with Two Explicit Scale Additions",
+        "label": "Exit-First Bridge and Credit Line Architecture",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-four-bucket-allocation": {
+    "diag-07-title-side-fee-hygiene": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-four-bucket-allocation",
+        "graphic_id": "diag-07-title-side-fee-hygiene",
         "graphic_type": "diagram",
-        "label": "Allocate a $75,000 Startup Budget Before Quoting Capacity",
+        "label": "Title-Side Fee Hygiene",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-four-bucket-allocation",
+        "graphic_id": "diag-07-title-side-fee-hygiene",
         "graphic_type": "diagram",
-        "label": "Allocate a $75,000 Startup Budget Before Quoting Capacity",
+        "label": "Title-Side Fee Hygiene",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-four-bucket-allocation",
+        "graphic_id": "diag-07-title-side-fee-hygiene",
         "graphic_type": "diagram",
-        "label": "Allocate a $75,000 Startup Budget Before Quoting Capacity",
+        "label": "Title-Side Fee Hygiene",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-thirty-day-controlled-launch-roadmap": {
+    "diag-08-zero-percent-stack-roadmap": {
       "concept_a": {
-        "graphic_id": "diag-08-thirty-day-controlled-launch-roadmap",
+        "graphic_id": "diag-08-zero-percent-stack-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Documented Funding Desk",
+        "label": "0% Business Credit Stack Roadmap",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-thirty-day-controlled-launch-roadmap",
+        "graphic_id": "diag-08-zero-percent-stack-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Documented Funding Desk",
+        "label": "0% Business Credit Stack Roadmap",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-thirty-day-controlled-launch-roadmap",
+        "graphic_id": "diag-08-zero-percent-stack-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Documented Funding Desk",
+        "label": "0% Business Credit Stack Roadmap",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:02Z"
+  "updated_at": "2026-11-24T22:21:28Z"
 }

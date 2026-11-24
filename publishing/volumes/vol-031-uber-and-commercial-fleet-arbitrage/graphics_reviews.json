@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-vehicle-to-settlement-workflow",
-    "diag-02-driver-qualification-cohort",
-    "diag-03-base-case-contribution-waterfall",
-    "diag-04-subniche-retained-yield-bars",
-    "diag-05-preflight-statutory-risk-tree",
-    "diag-06-four-to-six-person-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-first-thirty-days-roadmap"
+    "diag-01-uber-fleet-launch-sequence",
+    "diag-02-gig-rental-gross-to-net-funnel",
+    "diag-03-fleet-car-weekly-margin-waterfall",
+    "diag-04-revenue-vehicle-monthly-cost",
+    "diag-05-private-black-car-gate-check",
+    "diag-06-owned-booking-pipe-stack",
+    "diag-07-tcp-credential-cover-stack",
+    "diag-08-fix-before-scale-roadmap"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-vehicle-to-settlement-workflow",
-    "diag-02-driver-qualification-cohort",
-    "diag-03-base-case-contribution-waterfall",
-    "diag-04-subniche-retained-yield-bars",
-    "diag-05-preflight-statutory-risk-tree",
-    "diag-06-four-to-six-person-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-first-thirty-days-roadmap"
+    "diag-01-uber-fleet-launch-sequence",
+    "diag-02-gig-rental-gross-to-net-funnel",
+    "diag-03-fleet-car-weekly-margin-waterfall",
+    "diag-04-revenue-vehicle-monthly-cost",
+    "diag-05-private-black-car-gate-check",
+    "diag-06-owned-booking-pipe-stack",
+    "diag-07-tcp-credential-cover-stack",
+    "diag-08-fix-before-scale-roadmap"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-vehicle-to-settlement-workflow": {
+    "diag-01-uber-fleet-launch-sequence": {
       "concept_a": {
-        "graphic_id": "diag-01-vehicle-to-settlement-workflow",
+        "graphic_id": "diag-01-uber-fleet-launch-sequence",
         "graphic_type": "diagram",
-        "label": "Control the Vehicle-to-Cash Chain",
+        "label": "Launching an Uber Fleet One SUV at a Time",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-vehicle-to-settlement-workflow",
+        "graphic_id": "diag-01-uber-fleet-launch-sequence",
         "graphic_type": "diagram",
-        "label": "Control the Vehicle-to-Cash Chain",
+        "label": "Launching an Uber Fleet One SUV at a Time",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-vehicle-to-settlement-workflow",
+        "graphic_id": "diag-01-uber-fleet-launch-sequence",
         "graphic_type": "diagram",
-        "label": "Control the Vehicle-to-Cash Chain",
+        "label": "Launching an Uber Fleet One SUV at a Time",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-driver-qualification-cohort": {
+    "diag-02-gig-rental-gross-to-net-funnel": {
       "concept_a": {
-        "graphic_id": "diag-02-driver-qualification-cohort",
+        "graphic_id": "diag-02-gig-rental-gross-to-net-funnel",
         "graphic_type": "diagram",
-        "label": "From Driver Inquiry to Settled Vehicle Week",
+        "label": "From $1,600 Gross to About $700 Real Net Per Car",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-driver-qualification-cohort",
+        "graphic_id": "diag-02-gig-rental-gross-to-net-funnel",
         "graphic_type": "diagram",
-        "label": "From Driver Inquiry to Settled Vehicle Week",
+        "label": "From $1,600 Gross to About $700 Real Net Per Car",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-driver-qualification-cohort",
+        "graphic_id": "diag-02-gig-rental-gross-to-net-funnel",
         "graphic_type": "diagram",
-        "label": "From Driver Inquiry to Settled Vehicle Week",
+        "label": "From $1,600 Gross to About $700 Real Net Per Car",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-case-contribution-waterfall": {
+    "diag-03-fleet-car-weekly-margin-waterfall": {
       "concept_a": {
-        "graphic_id": "diag-03-base-case-contribution-waterfall",
+        "graphic_id": "diag-03-fleet-car-weekly-margin-waterfall",
         "graphic_type": "diagram",
-        "label": "The $690,000 Base-Case Waterfall",
+        "label": "Where $1,500 in Weekly Fares Goes on a Fleet Car",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-case-contribution-waterfall",
+        "graphic_id": "diag-03-fleet-car-weekly-margin-waterfall",
         "graphic_type": "diagram",
-        "label": "The $690,000 Base-Case Waterfall",
+        "label": "Where $1,500 in Weekly Fares Goes on a Fleet Car",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-case-contribution-waterfall",
+        "graphic_id": "diag-03-fleet-car-weekly-margin-waterfall",
         "graphic_type": "diagram",
-        "label": "The $690,000 Base-Case Waterfall",
+        "label": "Where $1,500 in Weekly Fares Goes on a Fleet Car",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-subniche-retained-yield-bars": {
+    "diag-04-revenue-vehicle-monthly-cost": {
       "concept_a": {
-        "graphic_id": "diag-04-subniche-retained-yield-bars",
+        "graphic_id": "diag-04-revenue-vehicle-monthly-cost",
         "graphic_type": "diagram",
-        "label": "Compare Retention, Not Passenger Fare Volume",
+        "label": "The Monthly Nut on a Revenue Vehicle",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-subniche-retained-yield-bars",
+        "graphic_id": "diag-04-revenue-vehicle-monthly-cost",
         "graphic_type": "diagram",
-        "label": "Compare Retention, Not Passenger Fare Volume",
+        "label": "The Monthly Nut on a Revenue Vehicle",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-subniche-retained-yield-bars",
+        "graphic_id": "diag-04-revenue-vehicle-monthly-cost",
         "graphic_type": "diagram",
-        "label": "Compare Retention, Not Passenger Fare Volume",
+        "label": "The Monthly Nut on a Revenue Vehicle",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-preflight-statutory-risk-tree": {
+    "diag-05-private-black-car-gate-check": {
       "concept_a": {
-        "graphic_id": "diag-05-preflight-statutory-risk-tree",
+        "graphic_id": "diag-05-private-black-car-gate-check",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Vehicle Release",
+        "label": "Ready to Move From Uber Black to Private Clients",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-preflight-statutory-risk-tree",
+        "graphic_id": "diag-05-private-black-car-gate-check",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Vehicle Release",
+        "label": "Ready to Move From Uber Black to Private Clients",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-preflight-statutory-risk-tree",
+        "graphic_id": "diag-05-private-black-car-gate-check",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Vehicle Release",
+        "label": "Ready to Move From Uber Black to Private Clients",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-four-to-six-person-pod": {
+    "diag-06-owned-booking-pipe-stack": {
       "concept_a": {
-        "graphic_id": "diag-06-four-to-six-person-pod",
+        "graphic_id": "diag-06-owned-booking-pipe-stack",
         "graphic_type": "diagram",
-        "label": "Four Seats at Base; Six at Scale",
+        "label": "Own the Booking Pipe",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-four-to-six-person-pod",
+        "graphic_id": "diag-06-owned-booking-pipe-stack",
         "graphic_type": "diagram",
-        "label": "Four Seats at Base; Six at Scale",
+        "label": "Own the Booking Pipe",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-four-to-six-person-pod",
+        "graphic_id": "diag-06-owned-booking-pipe-stack",
         "graphic_type": "diagram",
-        "label": "Four Seats at Base; Six at Scale",
+        "label": "Own the Booking Pipe",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-allocation": {
+    "diag-07-tcp-credential-cover-stack": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-tcp-credential-cover-stack",
         "graphic_type": "diagram",
-        "label": "Deploy $12,000–$65,000 Without Buying a Fleet",
+        "label": "What a TCP Black-Car Credential and Cover Cost Up Front",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-tcp-credential-cover-stack",
         "graphic_type": "diagram",
-        "label": "Deploy $12,000–$65,000 Without Buying a Fleet",
+        "label": "What a TCP Black-Car Credential and Cover Cost Up Front",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-tcp-credential-cover-stack",
         "graphic_type": "diagram",
-        "label": "Deploy $12,000–$65,000 Without Buying a Fleet",
+        "label": "What a TCP Black-Car Credential and Cover Cost Up Front",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-first-thirty-days-roadmap": {
+    "diag-08-fix-before-scale-roadmap": {
       "concept_a": {
-        "graphic_id": "diag-08-first-thirty-days-roadmap",
+        "graphic_id": "diag-08-fix-before-scale-roadmap",
         "graphic_type": "diagram",
-        "label": "Build a Controlled Fleet Launch in 30 Days",
+        "label": "Fix the Process Before Adding Cars",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-first-thirty-days-roadmap",
+        "graphic_id": "diag-08-fix-before-scale-roadmap",
         "graphic_type": "diagram",
-        "label": "Build a Controlled Fleet Launch in 30 Days",
+        "label": "Fix the Process Before Adding Cars",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-first-thirty-days-roadmap",
+        "graphic_id": "diag-08-fix-before-scale-roadmap",
         "graphic_type": "diagram",
-        "label": "Build a Controlled Fleet Launch in 30 Days",
+        "label": "Fix the Process Before Adding Cars",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:02Z"
+  "updated_at": "2026-11-24T22:21:29Z"
 }

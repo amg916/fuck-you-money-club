@@ -1,695 +1,801 @@
 from __future__ import annotations
 
-CHAPTER_2 = {
-    "id": "Q2",
-    "chapter_id": "Q2",
-    "chapter_number": 2,
-    "question_number": 2,
-    "slug": "who-pays-government-surplus-payment-rails",
-    "question_prompt": "Who writes the check in government surplus auctions, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
-    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "GSA, GovPlanet, GovDeals and PublicSurplus: Buyer Authority, SF-97, DEMIL Controls, Settlement Evidence and Protected Resale Spreads",
-    "layout_template": "executive_summary",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #17, Government Surplus Auctions, ranks #29 with a Money-to-Manpower "
-        "Score of 79/100. The business earns gross resale proceeds, not government "
-        "procurement budgets or customer purchasing principal. This chapter maps six "
-        "plays: fleet resale, shop-equipment resale, municipal-equipment resale, parts-lot "
-        "breakup, authorized buyer sourcing, and government_rfp_subcontractor_brokerage. "
-        "The first five are chapter-local operating routes; the sixth is an adjacent "
-        "procurement model with separate accounting. Buyers pay to restore productive "
-        "capacity, secure scarce equipment, or meet contracted delivery obligations. "
-        "Clean settlement requires verified purchasing authority, permitted payment rails, "
-        "documented release conditions, and accurate title representations. Canonical "
-        "annual owner profit is $12,000 Conservative, $80,500 Base, and $200,000 Scaled. "
-        "Preserve those economics by pricing removal, defects, inventory aging, and "
-        "collection friction before bidding."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$150,000",
-            "context": "Annual gross resale proceeds; acquisition, transport and refurbishment included in margin",
-            "note": "8% net margin; $12,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$575,000",
-            "context": "Annual gross resale proceeds; acquisition, transport and refurbishment included in margin",
-            "note": "14.0% net margin; $80,500 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual gross resale proceeds; acquisition, transport and refurbishment included in margin",
-            "note": "20% net margin; $200,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Identify the economic buyer, purchasing authority and reason to pay now",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Government surplus contains two different check writers, and confusing them "
-                    "breaks both sales strategy and bookkeeping. At acquisition, your trading "
-                    "company pays the government seller or its authorized auction collection "
-                    "agent. At resale, a contractor, fleet owner, dealer, manufacturer, or "
-                    "qualified recycler pays your company for an identified asset. The agency "
-                    "disposing of equipment is usually your supplier, not your customer. Its "
-                    "pressures include storage expense, property accountability, and scheduled "
-                    "site clearance; none automatically creates a purchasing budget for your "
-                    "services. The downstream buyer's urgency is more measurable: a disabled "
-                    "truck can strand a crew, an unavailable compressor can stop production, "
-                    "and a missing attachment can delay a contracted job. Ask for the lost "
-                    "productive hours, the replacement rental quote, the required delivery "
-                    "date, and the person authorized to release funds. A buyer facing a "
-                    "$450 daily rental bill can rationally pay $1,800 above another seller's "
-                    "price for four days of earlier usable delivery, provided condition and "
-                    "transport are credible. That comparison establishes a negotiation ceiling, "
-                    "not extra recognized revenue until a sale occurs. Sell documented "
-                    "readiness rather than an auction bargain story."
-                ),
-                (
-                    "Map authority before discussing deposits. A maintenance supervisor can "
-                    "confirm specifications without possessing spending authority; a controller "
-                    "can approve payment without accepting mechanical condition; a public "
-                    "purchasing officer may need an issued purchase order before any commitment "
-                    "binds the organization. Obtain the legal buyer name, billing address, "
-                    "authorized signatory, purchase-order requirement, tax documentation, and "
-                    "accounts-payable contact through independently checked channels. For a "
-                    "public buyer, establish the applicable purchasing method and delegated "
-                    "threshold rather than accepting a verbal promise that an invoice will "
-                    "be processed later. Do not divide invoices to evade purchasing limits. "
-                    "For financed equipment, the lender's conditions matter as much as the "
-                    "buyer's enthusiasm: serial verification, acceptable ownership documents, "
-                    "insurance, and an executed security agreement may precede funding. An "
-                    "escrow provider holds funds according to instructions; it does not "
-                    "create budget authority or cure an unauthorized purchase. Separate the "
-                    "buyer, payer, consignee, and beneficial business relationship whenever "
-                    "their names differ. A legitimate leasing company may pay for its "
-                    "customer, but the file must explain who owns the asset and who may "
-                    "collect it. Stop an unexplained third-party payment before it becomes "
-                    "a disputed delivery."
-                ),
-                (
-                    "The strongest buyer interview tests the failure consequence, not merely "
-                    "the budget. A fleet operator values a transferable vehicle identity, "
-                    "a dealer values wholesale exit liquidity, and a recycler values "
-                    "recoverable material less processing and disposal expense. A buyer "
-                    "requesting regulated equipment may face licensing, export, or handling "
-                    "requirements, but those restrictions constrain the transaction rather "
-                    "than force a purchase. SF-97 is a federal certificate used to obtain "
-                    "vehicle title; it is not itself a state-issued title or permission "
-                    "to operate the vehicle. Confirm the issuing seller's document process "
-                    "and the destination motor-vehicle agency's requirements before promising "
-                    "registration. Likewise, a DEMIL designation must be interpreted against "
-                    "the specific lot, sale terms, and controlling agency requirements; a "
-                    "commercial auction listing does not erase destruction or end-use "
-                    "conditions. Qualify buyers for those conditions before collecting "
-                    "nonrefundable money. Use GSA Auctions for federal listings and review "
-                    "GovPlanet, GovDeals, and PublicSurplus listings at the seller-and-lot "
-                    "level, because platform presence does not establish uniform ownership, "
-                    "payment, or removal terms. The decisive sales document connects one "
-                    "buyer's operating problem to one deliverable asset, with evidence of "
-                    "condition, ownership route, delivery timing, and price."
-                ),
-            ],
-            "table": {
-                "caption": "Six Surplus Buyer Types: Urgency, Authority and Evidence Required Before Commitment",
-                "headers": [
-                    "Buyer and operating pressure",
-                    "Actual spending and acceptance authority",
-                    "Evidence supporting a payable offer",
-                    "Fallback when the purchase stalls",
-                ],
-                "rows": [
-                    [
-                        "Fleet contractor replacing one unavailable revenue-producing service truck",
-                        "Owner or fleet director approves; controller schedules verified payment",
-                        "VIN record, condition report, title route and delivery quotation",
-                        "Offer paid storage only after documented ownership and payment",
-                    ],
-                    [
-                        "Machine shop replacing capacity lost through failed production equipment",
-                        "Plant manager specifies equipment; authorized purchaser signs purchase order",
-                        "Voltage, phase, dimensions, loading requirements and witnessed operating evidence",
-                        "Sell inspected condition without promising unsupported production output",
-                    ],
-                    [
-                        "Landscape contractor securing seasonal municipal mowing or grounds equipment",
-                        "Business owner approves purchase against existing scheduled customer work",
-                        "Attachment compatibility, engine hours, service findings and transport appointment",
-                        "Move inventory to qualified dealers before seasonal demand weakens",
-                    ],
-                    [
-                        "Equipment dealer purchasing stock for an established wholesale channel",
-                        "Dealer principal sets valuation; finance staff confirm settlement instructions",
-                        "Comparable sold units, ownership documents and itemized condition exceptions",
-                        "Reduce exposure through smaller lots and shorter inventory commitments",
-                    ],
-                    [
-                        "Qualified recycler buying recoverable materials with controlled processing obligations",
-                        "Authorized purchasing manager commits within documented facility acceptance rules",
-                        "Material estimate, contamination assessment, restrictions and approved processing route",
-                        "Decline restricted lots when processing evidence cannot be established",
-                    ],
-                    [
-                        "Public works department replacing equipment through authorized purchasing procedures",
-                        "Delegated purchasing official commits; receiving staff document contractual acceptance",
-                        "Valid purchase order, permitted sourcing method and exact acceptance criteria",
-                        "Require authorized procurement documentation before reserving scarce working capital",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Sell the document package before negotiating the last dollar",
-                "body": (
-                    "Experienced surplus buyers discount uncertainty faster than cosmetic wear. "
-                    "Build a buyer-ready evidence packet before offering deferred terms."
-                ),
-                "items": [
-                    "Ask the destination motor-vehicle agency which documents it needs for this specific SF-97 vehicle before promising a registration date.",
-                    "Request the removal contact's loading capabilities, appointment windows and carrier-document requirements before calculating a delivered resale price.",
-                    "Show dated serial photographs and a plain-language condition exception sheet; distinguish observed operation from untested systems.",
-                    "Obtain two qualified dealer exit bids before acquisition, recording inspection conditions and expiration dates rather than treating them as firm liquidity.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Choose the settlement rail by control, timing and release evidence",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with the auction seller's accepted methods and deadlines, then "
-                    "design the downstream collection process around the resulting cash gap. "
-                    "Federal sale payment requirements appear in 41 CFR Part 102-38, "
-                    "Subpart D, while the actual invitation supplies transaction-specific "
-                    "terms. Municipal sellers and commercial auction operators use their "
-                    "own applicable conditions. Never promise escrow, installment settlement, "
-                    "or a credit-card payment unless that seller accepts it for that "
-                    "lot and amount. Read the hammer-price basis, buyer premium, tax "
-                    "treatment, payment deadline, removal deadline, default provisions, and "
-                    "refund process together. A $6,000 hammer price plus a 10% buyer "
-                    "premium produces a $6,600 acquisition invoice before any applicable "
-                    "tax or other charge; it does not establish your customer's resale "
-                    "price. Verify bank instructions through a known platform session or "
-                    "independently obtained seller contact, especially after any emailed "
-                    "change. Send the correct invoice reference and retain the bank's "
-                    "transaction identifier. A payment screenshot proves only that somebody "
-                    "produced an image. Release requires the seller's or your bank's "
-                    "appropriate confirmation, reconciled to the right account and invoice, "
-                    "plus completion of any document conditions."
-                ),
-                (
-                    "The eight methods below are not interchangeable settlement systems. "
-                    "Wire and ACH move funds; platform checkout orchestrates supported "
-                    "methods; escrow and milestone holds allocate performance risk; retainers "
-                    "fund defined services; factoring advances against eligible receivables; "
-                    "statutory disbursement describes payment governed by a public contracting "
-                    "framework. For an unfamiliar buyer collecting a high-value machine, "
-                    "a verified domestic wire may fit better than an ACH debit because "
-                    "debit authorization and return exposure can outlast apparent availability. "
-                    "Wires still carry fraud, mistaken-payment, and legal recovery risks; "
-                    "never describe any rail as immune to dispute. Ask the bank to "
-                    "explain the relevant settlement status rather than inventing a universal "
-                    "waiting period. Escrow works only when the provider accepts the asset "
-                    "type, both parties execute consistent instructions, and release evidence "
-                    "is objective. Define serial numbers, inspection location, acceptance "
-                    "window, transport responsibility, dispute procedure, and fee allocation. "
-                    "A vague promise to release when the buyer is happy invites delay. "
-                    "Milestone holds can protect a downstream installation customer but "
-                    "usually cannot rewrite the upstream auction's payment deadline. Fund "
-                    "that mismatch with committed capital, not an expectation that the "
-                    "auctioneer will extend terms."
-                ),
-                (
-                    "Public-contract payment timing belongs in a separate lane from auction "
-                    "settlement. For qualifying federal procurement, the Prompt Payment Act "
-                    "and 5 CFR Part 1315 govern payment administration, with contract "
-                    "terms and applicable FAR clauses determining invoice and acceptance "
-                    "mechanics. They do not require GSA to finance your surplus purchase "
-                    "or guarantee that a prime contractor pays your brokerage invoice "
-                    "immediately. If factoring supports a service contract, establish an "
-                    "eligible receivable, verify assignment restrictions, and obtain the "
-                    "required notices and acknowledgments before counting an advance. "
-                    "Federal assignment rules under 31 U.S.C. § 3727 and 41 U.S.C. "
-                    "§ 6305 can materially constrain the arrangement; a generic commercial "
-                    "factoring form is insufficient. A $20,000 eligible invoice with an "
-                    "85% advance produces $17,000 of initial liquidity, while the remaining "
-                    "$3,000 is a reserve before fees and adjustments, not new sales. "
-                    "For authorized sourcing services, a $750 retainer credited against "
-                    "a $1,500 earned sourcing fee is part payment of that fee, not "
-                    "additional auction revenue. Record refundable deposits as liabilities "
-                    "until the relevant performance and accounting conditions are met. "
-                    "Reconcile every receipt to its contractual role before measuring margin."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Payment and Settlement Methods: Practical Fit, Authority and Release Controls",
-                "headers": [
-                    "Method and legitimate transaction fit",
-                    "Authority and timing to establish",
-                    "Evidence required before asset release",
-                    "Primary failure mode and risk fallback",
-                ],
-                "rows": [
-                    [
-                        "Bank wire for accepted high-value auction or resale settlement",
-                        "Verified payer authorizes transfer within seller's stated payment deadline",
-                        "Receiving account confirms matched credit; seller confirms required release status",
-                        "Changed instructions trigger independent callback before any funds move",
-                    ],
-                    [
-                        "Independent escrow for mutually accepted documented downstream equipment sales",
-                        "Both parties execute instructions with provider authorized where required",
-                        "Provider confirms funding and objective contractual release conditions are satisfied",
-                        "Rejected inspection follows written dispute process rather than informal promises",
-                    ],
-                    [
-                        "ACH credit or authorized debit where the counterparty accepts it",
-                        "Bank explains processing timing and applicable return exposure before shipment",
-                        "Reconciled bank entry plus risk review supports documented release decision",
-                        "Unfamiliar high-value buyers use another accepted method before collection",
-                    ],
-                    [
-                        "Service retainer funding explicitly scoped authorized buyer sourcing work",
-                        "Signed engagement defines earned amounts, refunds and permitted expense use",
-                        "Ledger distinguishes service fees from refundable deposits and purchasing principal",
-                        "Unperformed work triggers contract-defined refund handling and documented reconciliation",
-                    ],
-                    [
-                        "Statutory disbursement framework for qualifying public procurement contract invoices",
-                        "Authorized contract, proper invoice and acceptance establish payment administration",
-                        "Contract records identify payer obligation and actual disbursement receipt",
-                        "Delayed acceptance requires documented correction and adequate working capital",
-                    ],
-                    [
-                        "Platform checkout using that auction's currently accepted payment methods",
-                        "Authorized bidder accepts lot-specific charges, limits and settlement deadlines",
-                        "Platform invoice shows required paid status and valid release documentation",
-                        "Checkout failure is escalated through official support before deadline",
-                    ],
-                    [
-                        "Receivables factoring for eligible completed and properly documented sales",
-                        "Factor verifies debtor, assignment rights, advance percentage and recourse",
-                        "Written assignment process and confirmed advance support liquidity planning",
-                        "Disputed invoices remain unfunded; reserves and fees reduce cash",
-                    ],
-                    [
-                        "Milestone holds supporting agreed downstream delivery or installation obligations",
-                        "Buyer and seller define measurable milestones and retained amounts",
-                        "Signed acceptance evidence releases each specific contracted payment portion",
-                        "Upstream auction still requires independently funded timely full settlement",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Protect the spread and separate six mapped operating plays",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The canonical scorecard recognizes gross resale proceeds, with acquisition, "
-                    "transport, and refurbishment inside the margin. Conservative is $150,000 "
-                    "revenue less $138,000 total costs, yielding $12,000 annual owner net "
-                    "profit at 8%; Base is $575,000 less $494,500, yielding $80,500 at "
-                    "14.0%; Scaled is $1,000,000 less $800,000, yielding $200,000 at 20%. "
-                    "Teams remain 2 FT + 3 C, 2 FT + 3 C, and "
-                    "3 FT + 4 C respectively. An illustrative Base construction is "
-                    "50 annual sales averaging $11,500. Per sale, allocate $6,000 purchase, "
-                    "$600 buyer premium, $850 transport, $700 refurbishment, $230 selling "
-                    "expense, $110 payment expense, and $1,400 remaining operating costs. "
-                    "Those costs total $9,890, leaving $1,610; multiplying both sides by "
-                    "50 reproduces the Base totals exactly. The allocation is a planning "
-                    "example, not a claim that every lot has identical economics. Include "
-                    "unrecoverable acquisition taxes and realized defect losses within actual "
-                    "costs, and avoid counting sales tax collected for remittance as resale "
-                    "revenue. The monthly opex range of $3,000–$15,000 is a cash-planning "
-                    "input, not an extra deduction layered onto already fully costed "
-                    "scenario margins. Reconcile classifications before changing any profit figure."
-                ),
-                (
-                    "Five chapter-local routes translate that resale engine into specific "
-                    "buyer propositions: fleet resale, shop-equipment resale, municipal-equipment "
-                    "resale, parts-lot breakup, and authorized buyer sourcing. These labels "
-                    "organize this chapter; they are not additional canonical scorecard "
-                    "candidates. The first four can involve ownership and gross resale "
-                    "recognition when the operator acts as principal. Authorized sourcing "
-                    "can instead be an agency service, in which only the earned fee "
-                    "is revenue and customer purchasing principal remains separately tracked. "
-                    "Do not combine that fee-only activity with the canonical gross "
-                    "resale projection without a separate reconciliation. Protect margin "
-                    "through a signed offer identifying the asset, condition exceptions, "
-                    "inspection rights, delivery scope, taxes, payment deadline, and release "
-                    "documents. For a sourcing engagement, define what earns the fee: "
-                    "a documented search, an authorized acquisition, or another objective "
-                    "deliverable. Record introduced counterparties and use a reasonable, "
-                    "specifically scoped non-circumvention provision where enforceable; never "
-                    "rely on secrecy to hide publicly listed auction stock. Avoid bidding "
-                    "from a customer's credentials or collecting platform charges outside "
-                    "permitted channels. When a customer can purchase directly, sell "
-                    "inspection, logistics, and execution value, not an invented exclusive "
-                    "right to access government inventory."
-                ),
-                (
-                    "The sixth mapped play, government_rfp_subcontractor_brokerage, is adjacent "
-                    "procurement rather than surplus resale. Monitor federal SAM.gov "
-                    "opportunities, state procurement portals, and municipal bid boards "
-                    "through permitted feeds or rate-conscious collection for low-bid-density "
-                    "janitorial, grounds, courier, translation, and IT staffing solicitations. "
-                    "Use proposal automation to assemble requirements and evidence, while "
-                    "people validate scope, wage obligations, qualifications, and subcontractor "
-                    "capacity. A $100,000 service contract with $75,000 fulfillment cost "
-                    "creates a $25,000 management spread, or 25% of contract revenue, "
-                    "before proposal expense, insurance, supervision, financing, and other "
-                    "overhead. It is not $25,000 net profit and does not augment the "
-                    "surplus scorecard automatically. A 15–30% target spread requires "
-                    "credible delivery economics, not merely an inexpensive subcontractor. "
-                    "For covered service set-asides, 13 CFR § 125.6 generally limits "
-                    "payments to firms that are not similarly situated to 50% of "
-                    "the amount paid by the government, subject to the rule's "
-                    "applicability and exclusions. Review further subcontracting and the "
-                    "applicable measurement period. If the delivery structure fails, bid "
-                    "unrestricted commercial or municipal work without those federal "
-                    "set-aside caps, or team exclusively with qualified similarly "
-                    "situated entities while still satisfying applicable performance rules."
-                ),
-            ],
-            "table": {
-                "caption": "Six Mapped Plays: Illustrative Unit Economics, Fee Protection and Risk Fallbacks",
-                "headers": [
-                    "Mapped play and payer proposition",
-                    "Illustrative unit math and accounting boundary",
-                    "Fee or spread protection mechanics",
-                    "Operational fallback when assumptions fail",
-                ],
-                "rows": [
-                    [
-                        "Fleet resale supplies documented replacement vehicles to operating contractors",
-                        "$18,000 resale less $15,300 direct costs leaves $2,700 before overhead",
-                        "VIN-specific contract ties payment and release to disclosed ownership documents",
-                        "Use qualified wholesale buyers when title timing exceeds retail needs",
-                    ],
-                    [
-                        "Shop-equipment resale restores machine capacity for local industrial buyers",
-                        "$9,000 resale less $7,200 direct costs leaves $1,800 before overhead",
-                        "Signed inspection record separates observed functions from untested production capabilities",
-                        "Obtain specialist inspection or reduce bid when functionality remains uncertain",
-                    ],
-                    [
-                        "Municipal-equipment resale matches surplus grounds assets with seasonal contractors",
-                        "$12,000 resale less $9,600 direct costs leaves $2,400 before overhead",
-                        "Attachment list and loading scope prevent post-payment delivery scope disputes",
-                        "Exit through dealers before storage and seasonality consume contribution",
-                    ],
-                    [
-                        "Parts-lot breakup supplies identified components to repair businesses",
-                        "Ten $600 sales less $4,800 direct costs leave $1,200 before overhead",
-                        "Serial-level inventory and disclosed testing support individual invoice acceptance",
-                        "Price slow components for lawful bulk recovery and reserve disposal costs",
-                    ],
-                    [
-                        "Authorized buyer sourcing sells inspection and execution without assumed ownership",
-                        "$1,500 earned fee less $600 direct work leaves $900 before overhead",
-                        "$750 credited retainer and written deliverables protect earned service compensation",
-                        "Refund unearned amounts as agreed; exclude customer principal from revenue",
-                    ],
-                    [
-                        "government_rfp_subcontractor_brokerage pairs permitted solicitation monitoring with vetted local fulfillment",
-                        "$100,000 contract less $75,000 fulfillment leaves $25,000 before overhead",
-                        "Written prime-subcontract scope, acceptance evidence and payment terms protect spread",
-                        "Use unrestricted work or qualified similarly situated entities where applicable",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Screen credit, control release and close the cash-to-custody loop",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Counterparty screening should answer whether this entity can pay, "
-                    "whether this person can bind it, and whether this particular "
-                    "transaction makes commercial sense. Check the business registry, "
-                    "operating address, domain history when relevant, independent phone "
-                    "contact, trade references, and consistency between purchase documents "
-                    "and bank remitter. Obtain appropriate credit information with required "
-                    "authorization and check public liens or bankruptcy records when "
-                    "exposure justifies it. A UCC filing can reveal an existing secured "
-                    "credit relationship, but its presence does not establish insolvency "
-                    "and its absence does not prove creditworthiness. Request recent "
-                    "accounts or a lender commitment for material deferred exposure "
-                    "instead of interpreting a polished website as liquidity. Begin "
-                    "unfamiliar accounts with payment before release, and extend terms "
-                    "only against a documented limit, collection process, and loss "
-                    "capacity. If financed resale uses a security interest, determine "
-                    "attachment and perfection under the applicable state's enacted "
-                    "Article 9 and any certificate-of-title rules. A generic retention "
-                    "of title sentence may not protect the seller against competing "
-                    "creditors. Keep credit approval separate from the salesperson's "
-                    "commission incentive, and record who accepted each exception and "
-                    "the maximum dollars exposed."
-                ),
-                (
-                    "Run the transaction through one lot-level record from bid approval "
-                    "to final collection. Store the original listing, terms, bid limit, "
-                    "inspection notes, serial photographs, invoice, payment confirmation, "
-                    "ownership documents, buyer agreement, carrier authorization, and "
-                    "delivery acknowledgment. Auction alerts identify opportunities; bid-limit "
-                    "worksheets enforce downside assumptions; inventory tracking connects "
-                    "cash with physical custody. A spreadsheet or Airtable register can "
-                    "hold these fields, while QuickBooks tracks invoices and costs using "
-                    "the same lot identifier. Automation should flag exceptions rather "
-                    "than silently release equipment. A freight carrier arriving early "
-                    "does not waive payment conditions. Match the driver's collection "
-                    "authority to the approved carrier and lot, confirm loading "
-                    "arrangements, and capture pickup evidence without unnecessarily "
-                    "retaining personal identity documents. For restricted property, "
-                    "complete required screening and seller-prescribed end-use, export, "
-                    "or demilitarization procedures before transfer. Do not assume "
-                    "disassembly converts controlled equipment into unrestricted parts. "
-                    "If the asset or buyer cannot satisfy the stated conditions, "
-                    "decline the acquisition or use an expressly authorized disposal "
-                    "route. Removal deadlines create operational urgency, but urgency "
-                    "never grants permission to change payment recipients, forge "
-                    "release records, or bypass property restrictions."
-                ),
-                (
-                    "Manage working capital as a dated schedule rather than an annual "
-                    "profit percentage. In the Base illustration, acquisition, premium, "
-                    "transport, and refurbishment consume $8,150 per unit before selling "
-                    "and remaining operating costs. Four overlapping units therefore "
-                    "tie up $32,600 before those additional expenses, even though "
-                    "their eventual combined modeled profit is only $6,440. Compare "
-                    "that requirement with the canonical $15,000–$80,000 startup "
-                    "capital range and a realistic first-deal horizon of 1–6 months. "
-                    "A refundable buyer deposit reduces immediate cash pressure only "
-                    "while the corresponding refund obligation remains funded; it is "
-                    "not free equity. Establish aging reviews tied to actual carrying "
-                    "cost and exit bids, with named responsibility for repricing "
-                    "or liquidation. After delivery, reconcile gross invoice proceeds, "
-                    "tax liabilities, payment charges, transport, repairs, credits, "
-                    "and released deposits against the lot record. Investigate "
-                    "overpayments instead of forwarding the difference to an "
-                    "unrelated account; route legitimate refunds through a verified "
-                    "original payment relationship. Close only when ownership "
-                    "documentation, funds, custody, and remaining obligations agree. "
-                    "The operator's durable advantage is not winning more auctions; "
-                    "it is converting selected assets into collected, fully costed "
-                    "sales without losing control of the release."
-                ),
-            ],
-            "table": {
-                "caption": "Six Exception Controls Linking Buyer Credit, Cash Receipt and Physical Release",
-                "headers": [
-                    "Exception requiring an explicit decision",
-                    "Evidence and accountable operating owner",
-                    "Immediate control over money or custody",
-                    "Resolution recorded before transaction closure",
-                ],
-                "rows": [
-                    [
-                        "Buyer requests deferred terms before establishing a payment record",
-                        "Credit owner obtains references, exposure limit and documented repayment basis",
-                        "Hold asset release until accepted credit structure or payment exists",
-                        "Signed terms identify due date, collection responsibility and remaining exposure",
-                    ],
-                    [
-                        "Bank instructions change after invoice delivery or successful prior payment",
-                        "Treasury owner independently calls the previously verified counterparty contact",
-                        "Suspend transfer and reject instructions verified only through changed email",
-                        "Record confirmed recipient details and authorized reason for the change",
-                    ],
-                    [
-                        "Payment remitter differs from buyer without a documented commercial relationship",
-                        "Controller obtains written explanation and verifies financing or agency authority",
-                        "Do not release equipment or refund toward an unrelated account",
-                        "Link payer, buyer, ownership and refund destination in transaction record",
-                    ],
-                    [
-                        "Vehicle ownership paperwork cannot support the promised destination registration",
-                        "Document owner checks seller issuance and destination agency requirements",
-                        "Correct contractual promises before collecting further nonrefundable buyer funds",
-                        "Deliver required documents or execute the agreed cancellation remedy",
-                    ],
-                    [
-                        "Carrier arrives without matching collection authority or confirmed payment status",
-                        "Yard lead checks release reference, carrier appointment and lot identifiers",
-                        "Keep equipment secured while authorized contacts resolve the discrepancy",
-                        "Capture corrected authority and signed pickup evidence before custody changes",
-                    ],
-                    [
-                        "Restricted lot lacks required end-use or demilitarization completion evidence",
-                        "Restrictions owner checks current seller terms and controlling agency instructions",
-                        "Prevent resale or movement inconsistent with the documented restrictions",
-                        "Retain required certificates or follow an expressly authorized disposal route",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before capital leaves the account",
-                "body": (
-                    "The transaction owner records these checks against the exact lot and buyer. "
-                    "An unresolved item changes the bid, funding plan or decision to proceed."
-                ),
-                "items": [
-                    "Verify bidder eligibility, asset restrictions, seller identity, accepted payment method and the full acquisition invoice calculation.",
-                    "Confirm executable removal logistics, loading responsibility, insured transport and a destination able to receive the asset before the deadline.",
-                    "Validate buyer authority, credit exposure, title or ownership route and objective acceptance terms before relying on expected resale cash.",
-                    "Reconcile maximum bid, defect reserve, carrying costs and fallback exit proceeds with available capital without treating refundable deposits as profit.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Qualify the buyer and classify the receipt",
-                    "action": "Identify the legal buyer, authorized signer, payer and intended asset use.",
-                    "detail": (
-                        "Record whether each expected receipt is resale consideration, an earned "
-                        "service fee, a refundable deposit, tax collected or customer purchasing "
-                        "principal; attach supporting agreements before requesting funds."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Lock the payment and evidence requirements",
-                    "action": "Issue lot-specific terms using a payment method both counterparties accept.",
-                    "detail": (
-                        "State invoice references, deadlines, inspection criteria, ownership "
-                        "documents, refund handling and custody release conditions; independently "
-                        "verify recipient instructions and any subsequent changes."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Match settlement to authorized physical release",
-                    "action": "Confirm the required payment status and approve the named collection party.",
-                    "detail": (
-                        "Reconcile bank and platform records, complete restricted-property "
-                        "requirements, match serial numbers and carrier authority, and retain "
-                        "signed collection or delivery evidence."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Close the lot ledger and refresh credit limits",
-                    "action": "Reconcile collected proceeds, all costs, documents and remaining obligations.",
-                    "detail": (
-                        "Post actual margin, preserve refund and tax liabilities, investigate "
-                        "unmatched receipts, update buyer payment history and adjust the next "
-                        "bid limit using realized defect and collection costs."
-                    ),
-                },
-            ],
-        },
-    ],
-    "pull_quote": "A surplus deal is complete only when the money, ownership documents and physical release all tell the same story.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Build one lot register connecting seller terms, buyer authority, serial numbers, acquisition costs, payment evidence and release documents.",
-        "Obtain the exact payment and removal deadlines from each GSA, GovPlanet, GovDeals or PublicSurplus listing before setting the maximum bid.",
-        "Create a buyer qualification packet covering purchasing authority, permitted use, credit exposure, ownership requirements and independently verified payment contacts.",
-        "Configure invoice and ledger categories that separate gross resale proceeds, service fees, refundable deposits, customer purchasing principal and tax liabilities.",
-        "Test the Base worksheet at 50 sales of $11,500 with $9,890 fully allocated cost per sale, reconciling to $80,500 annual owner net profit.",
-        "Document one lawful exit buyer, one removal contingency and one payment-failure response for every acquisition before committing capital.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "40 U.S.C. § 545 — Procedure for disposal",
-            "url": "https://www.govinfo.gov/link/uscode/40/545",
-            "relevance": (
-                "Provides federal surplus-property disposal authority and procedures; "
-                "use the applicable sale invitation to determine the specific transaction terms."
-            ),
-        },
-        {
-            "title": "41 CFR Part 102-38, Subpart D — Completion of Sale",
-            "url": "https://www.ecfr.gov/current/title-41/subtitle-C/chapter-102/subchapter-B/part-102-38/subpart-D",
-            "relevance": (
-                "Addresses completion of federal personal-property sales, including payment "
-                "and title-transfer administration; distinguish these requirements from downstream resale terms."
-            ),
-        },
-        {
-            "title": "13 CFR § 125.6 — Limitations on subcontracting",
-            "url": "https://www.ecfr.gov/current/title-13/chapter-I/part-125/section-125.6",
-            "relevance": (
-                "Controls subcontracting limitations for covered small-business contracts, "
-                "including treatment of similarly situated entities and further subcontracting."
-            ),
-        },
-        {
-            "title": "31 U.S.C. § 3903 — Regulations governing prompt payment",
-            "url": "https://www.govinfo.gov/link/uscode/31/3903",
-            "relevance": (
-                "Supports federal procurement payment administration; it does not supply "
-                "financing or extended payment terms for surplus auction purchases."
-            ),
-        },
-        {
-            "title": "5 CFR Part 1315 — Prompt Payment",
-            "url": "https://www.ecfr.gov/current/title-5/chapter-III/subchapter-B/part-1315",
-            "relevance": (
-                "Defines federal prompt-payment administration, including proper-invoice "
-                "and acceptance considerations relevant to the adjacent procurement play."
-            ),
-        },
-        {
-            "title": "31 U.S.C. § 3727 — Assignments of claims",
-            "url": "https://www.govinfo.gov/link/uscode/31/3727",
-            "relevance": (
-                "Restricts assignment of claims against the United States and establishes "
-                "conditions relevant to eligible federal receivables financing."
-            ),
-        },
-        {
-            "title": "41 U.S.C. § 6305 — Prohibition on transfer of contract and certain allowable assignments",
-            "url": "https://www.govinfo.gov/link/uscode/41/6305",
-            "relevance": (
-                "Distinguishes prohibited federal contract transfers from qualifying assignments "
-                "of payment rights; verify applicability before arranging factoring."
-            ),
-        },
-        {
-            "title": "California Commercial Code § 9203 — Attachment and enforceability of security interests",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=9203.&lawCode=COM",
-            "relevance": (
-                "Provides a concrete state-enacted Article 9 attachment rule for secured "
-                "equipment transactions; apply the governing jurisdiction's rules and separately determine perfection."
-            ),
-        },
-        {
-            "title": "15 CFR § 736.2 — General prohibitions under the Export Administration Regulations",
-            "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-736/section-736.2",
-            "relevance": (
-                "Identifies export-control prohibitions requiring transaction-specific classification, "
-                "destination, end-user and end-use review when surplus equipment falls within scope."
-            ),
-        },
-    ],
-}
+CHAPTER_2 = {'id': 'Q2',
+ 'chapter_id': 'Q2',
+ 'chapter_number': 2,
+ 'question_number': 2,
+ 'slug': 'government-fleet-cars-trucks-police-vehicles',
+ 'question_prompt': 'How do I find, inspect, and win government-surplus cars, trucks, and police vehicles '
+                    'at a price that leaves room for profit?',
+ 'kicker': 'Q2 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Buying Fleet Cars, Trucks, and Police Vehicles',
+ 'subtitle': 'State and local vehicle sales, seized-vehicle lanes, GSA online truck buys, on-site F-250 '
+             'inspections, sub-$5,000 rental-fleet picks, GovDeals tips for new accounts, and splitting a '
+             '$900 Expedition for profit',
+ 'layout_template': 'executive_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators buying retired fleet cars, trucks, and police units agree the vehicles '
+                      'come serviced but sold as-is: good tires and oil changes, no records, no test '
+                      'drives, and wrecks rarely repaired. Street mechanics center on GovDeals radius '
+                      'searches, GSA registration through the auction house, OBD scans and door-sticker '
+                      'checks at preview, a $12 to $15 VIN history, and buyer premiums running about 5% on '
+                      'GSA up to 15% at sheriff sales. Reported numbers range from a $900 Expedition '
+                      'landing near $2,000 all-in against a $5,000-plus KBB to an F-250 hammering at '
+                      '$4,150 and closing at $4,669 with fees. Practitioners split on sniping, with Top 5 '
+                      'Autos pushing last-minute bids while Street Rat Garage says extensions kill the '
+                      'tactic, and on whether real bargains exist at all, since East Coast Classics calls '
+                      'them few and far between.',
+ 'key_metrics': [{'label': 'Ex-Fire-Rescue Expedition All-In vs KBB',
+                  'metric': 'Ex-Fire-Rescue Expedition All-In vs KBB',
+                  'value': '$900 buy, about $2,000 cash in, against KBB of $5,000 to $5,500',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Former fire-rescue/police Ford Expedition bought under $1,000 because of an '
+                             'engine noise, repaired over about 4 days of labor, then sold below KBB to a '
+                             'friend.',
+                  'source': 'Tool Demos ([EFXJtp6q_B8 @ 00:08:56])'},
+                 {'label': 'Fleet F-250 Hammer vs All-In Price',
+                  'metric': 'Fleet F-250 Hammer vs All-In Price',
+                  'value': '$4,150 hammer after 47 bids; $4,669 with fees',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '2006 F-250 4x4, 5.4L, from the Southport fire department, showing 157,119 '
+                             'miles at onsite inspection.',
+                  'source': 'UX Auctions ([IUAs4NGQfyo @ 00:05:15])'},
+                 {'label': 'Buyer Premium by Platform',
+                  'metric': 'Buyer Premium by Platform',
+                  'value': 'About 5% on GSA Auctions, up to 10% on GovPlanet, up to 15% at sheriff '
+                           'auctions',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Premium the speaker says must be added on top of the hammer price before '
+                             'setting a bid ceiling.',
+                  'source': 'Top 5 Autos ([WFVGJDWST7I @ 00:05:16])'},
+                 {'label': '2019 AWD Charger Buy and Spread',
+                  'metric': '2019 AWD Charger Buy and Spread',
+                  'value': '$3,570 hammer with maybe $2,000 profit',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Ex-state Charger sold at a public government surplus vehicle auction; profit '
+                             "is the speaker's estimate, not a realized sale.",
+                  'source': 'Street Rat Garage ([qieQr_fEJQ8 @ 00:40:24])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Across lots in Indiana, Texas, Delaware, and Arizona, the operators '
+                              'converge on one baseline: retired fleet units are maintained but unvetted. '
+                              'Street Rat Garage reports that fleet units arrive with good tires and '
+                              'regular oil changes, while wrecks are rarely repaired [qieQr_fEJQ8 @ '
+                              '00:16:16]. AJ at Handyman Process says GSA is pretty thorough about '
+                              'maintaining its vehicles, but you do not get those records, so bring a '
+                              'mechanic [FZRiWN_dcS4 @ 00:06:55]. East Coast Classics, who has bought a '
+                              'couple dozen cars at surplus sales, confirms service history is limited and '
+                              'warns that genuine deals are few and far between [g9Wt5wG1aGM @ 00:01:08]. '
+                              'The paint is usually gray or white, the drivetrain usually saw scheduled '
+                              'service, and the unknowns sit in damage the agency never fixed. Street Rat '
+                              'Garage adds a reading rule for listings: state employees write up every '
+                              'tiny leak, so a scary condition report should be taken with a grain of salt '
+                              'rather than treated as a death sentence [cqTAqIJLC10 @ 00:15:09]. AJ also '
+                              'calls selection hit or miss, so the consensus play is patience: walk every '
+                              'sale, log what each unit actually brings, and only pounce when a clean '
+                              'fleet truck slips under the crowd.',
+                              'The second point of agreement is that you buy blind on the drive cycle. '
+                              'East Coast Classics lays out the preview rules: start the car, feel the '
+                              'brakes, engage the transmission, test HVAC, lights, and electrical, and '
+                              'plug in an OBD code reader, but the biggest restriction is you cannot drive '
+                              'the car, and some auctions allow no on-site inspection at all [g9Wt5wG1aGM '
+                              '@ 00:03:20]. Street Rat Garage gets the same terms on GovDeals: call ahead, '
+                              'start it, roll it forward and back, but no test drive and no shop '
+                              'inspection [cqTAqIJLC10 @ 00:08:33]. At the San Antonio dealer auction, AJ '
+                              'finds most if not all units unlocked with keys inside, so the move is to '
+                              'fire it up and hook an OBD reader during the preview day [FZRiWN_dcS4 @ '
+                              '00:01:50]. Because the price must absorb that risk, Tool Demos argues these '
+                              'buys only make sense if you have mechanical skill and patience; their $900 '
+                              'ex-fire-rescue Expedition was cheap precisely because of an audible engine '
+                              'noise, which turned out to be a scored cylinder-three exhaust cam lobe and '
+                              'a destroyed roller follower [EFXJtp6q_B8 @ 00:01:31]. The operators agree '
+                              'that the discount exists because the government will not let you find the '
+                              'problem first, and the buyer who can diagnose by ear and scanner collects '
+                              'that spread.',
+                              'Every operator who posted receipts treats the hammer price as a partial '
+                              'number. Top 5 Autos pegs the buyer premium at roughly 5% on GSA Auctions, '
+                              'up to 10% on GovPlanet, and up to 15% at sheriff sales [WFVGJDWST7I @ '
+                              '00:05:16]. UX Auctions documented a 2006 Southport fire department F-250 '
+                              'with 157,119 miles hammer at $4,150 after 47 bids and land at $4,669 with '
+                              'fees [IUAs4NGQfyo @ 00:05:15]. Junk Solutions Experts LLC won a '
+                              'school-district F-150 at $2,000 and was in for $2,250 after buyer premium '
+                              'and tax, noting that can take a little bit out of your profit [El3cLMGi_9s '
+                              '@ 00:13:42]. The crowd is the other cost: Tool Demos warns you can '
+                              'definitely get into bidding wars with people, and that is how the price '
+                              'gets out of control [EFXJtp6q_B8 @ 00:09:31]. Tool Demos landed the '
+                              'Expedition at roughly $2,000 cash in against a KBB of $5,000 to $5,500 '
+                              'after holding the buy under $1,000. The working consensus is to fix a '
+                              'ceiling from comps before the sale opens, price in premium, tax, and '
+                              'transport, and walk away the moment the clock or the room pushes past it.'],
+               'table': {'caption': 'Where the fleet-vehicle buyers agree',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Fleet units arrive serviced but unrepaired',
+                                   'Good tires and regular oil changes, but wrecked units are rarely '
+                                   'repaired before sale',
+                                   'Bid on drivetrain confidence and budget separately for body and '
+                                   'collision damage',
+                                   'Street Rat Garage ([qieQr_fEJQ8 @ 00:16:16])'],
+                                  ['No maintenance records handed to buyers',
+                                   'GSA maintains vehicles on schedule but buyers never receive the '
+                                   'service records',
+                                   'Bring a mechanic to the preview because paperwork will not settle '
+                                   'condition questions',
+                                   'Handyman Process ([FZRiWN_dcS4 @ 00:06:55])'],
+                                  ['Start and scan allowed, driving never allowed',
+                                   'Start, shift, test HVAC, lights, electrical, plug in OBD, but never '
+                                   'drive',
+                                   'Discount every bid for drivetrain faults you cannot feel on the road',
+                                   'East Coast Classics ([g9Wt5wG1aGM @ 00:03:20])'],
+                                  ['State listings overstate minor defects',
+                                   'State employees list every tiny leak in the written condition report',
+                                   'Read scary write-ups with a grain of salt before skipping a unit',
+                                   'Street Rat Garage ([cqTAqIJLC10 @ 00:15:09])'],
+                                  ['Fees change the real purchase price',
+                                   'F-250 hammered at $4,150 after 47 bids and closed at $4,669 with fees',
+                                   'Calculate the all-in number, not the hammer, before placing any bid',
+                                   'UX Auctions ([IUAs4NGQfyo @ 00:05:15])'],
+                                  ['Bidding wars destroy the margin',
+                                   'Competing bidders push prices out of control once a back-and-forth '
+                                   'starts',
+                                   'Set a hard stop price and stay out of escalating bidding fights',
+                                   'Tool Demos ([EFXJtp6q_B8 @ 00:09:31])'],
+                                  ['True bargains are rare and take time',
+                                   'A couple dozen cars bought, yet real deals are few and far between',
+                                   'Expect months of auction trips before you can spot an underpriced unit',
+                                   'East Coast Classics ([g9Wt5wG1aGM @ 00:01:08])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Sourcing starts with geography. Street Rat Garage runs GovDeals Advanced '
+                              'Search, sets Locations to a radius around a ZIP, 150 miles from 46201 in '
+                              "their case, and then opens a seller's other items to see that agency's full "
+                              'inventory [cqTAqIJLC10 @ 00:04:05]. Junk Solutions Experts LLC uses a 100 '
+                              'or 250-mile radius and says shipping only happens if you arrange it with '
+                              'the seller; as they put it, while Kansas may have a great deal on a welder, '
+                              'they are not going to Kansas for a welder [El3cLMGi_9s @ 00:03:39]. New '
+                              'GovDeals accounts are free but start on probation, capped at about three '
+                              'bids at a time, and the watch list counts against the same limit, so watch '
+                              'one unit and bid near the close; probation ends after three completed '
+                              'auctions, meaning bid, win, pick up [El3cLMGi_9s @ 00:01:54]. On the '
+                              'federal side, JR finds trucks on autoauctions.gsa.gov, contacts the auction '
+                              'house running the sale, Metro AAA in Phoenix, emails the registration form '
+                              "with a driver's license scan, and receives an access code and bidder badge "
+                              '[14j6GQVGkBk @ 00:01:12]. Payment is due in 24 to 48 hours and pickup '
+                              'within 30 days, so line up funds and transport before you bid.',
+                              'On the lot, UX Auctions runs a hands-on checklist: never check just one '
+                              'tire, expect drained batteries and check fuses, hunt for keys hidden in a '
+                              'door panel or under a mat, and always check the door sticker so the VIN and '
+                              'paint code match the listing [IUAs4NGQfyo @ 00:01:14]. They flag low brake '
+                              'fluid as a warning sign, check whether coolant was flushed, smell the oil '
+                              'and rub it between your fingers, and note that separately run aftermarket '
+                              'wiring pulls out cleanly because they ran their own wires. Auto Dealer '
+                              'Startup insists on scanning every car even at a dealer-clear sale, '
+                              'rejecting a 2019 unit outright because the OBD port was inoperable: I got '
+                              'to be able to pull that code on it [dzr9aYx98oY @ 00:11:30]. They also read '
+                              'a clear distance of zero as a sign the car sat or the battery died. Street '
+                              'Rat Garage sorts Chargers by sight, where recessed hubcaps mean AWD, and '
+                              'lists the carrier bearing as a common, easy DIY fix while listening for the '
+                              'Hemi tick from long idling [qieQr_fEJQ8 @ 00:02:04]. Before bidding, Top 5 '
+                              'Autos says pay the $12 to $15 fee for a VIN history [WFVGJDWST7I @ '
+                              '00:04:44].',
+                              'Pricing discipline comes from outside comps. JR sets a stop price from KBB '
+                              'before the sale and paid $13,000 plus $888 Arizona tax by credit card for '
+                              'an F-150 that carried an open recall, then pulled transport quotes of $780 '
+                              'for 650 miles or $1,400 for 2,200 miles [14j6GQVGkBk @ 00:02:42]. Junk '
+                              'Solutions Experts LLC checks Facebook Marketplace comps before buying '
+                              'anything, which is how they knew a $453 Durham fireproof cabinet would turn '
+                              'at about $775 within a week [El3cLMGi_9s @ 00:10:43]. At the live Kesler '
+                              'Schaefer lane in Indianapolis, Street Rat Garage watches the screens: '
+                              'current bid is real money, asking means nobody has bid yet, a green flash '
+                              'marks an online bidder, and deals land either at the beginning when people '
+                              'are scared to bid or at the end when they run out of money [6chXsHCTJA4 @ '
+                              '00:12:27]. Their own exit math on a 2008 Ram bought for about $1,396 with '
+                              'fees, where the check-engine light was a loose gas cap, is to list at '
+                              '$3,500 and accept $2,700 to $2,800 because Facebook Marketplace buyers '
+                              'negotiate down [cqTAqIJLC10 @ 00:28:32]. Build the bid backward from that '
+                              'realistic sale price, not from the sticker you post.'],
+               'table': {'caption': 'Fleet auction mechanics and hard numbers',
+                         'headers': ['Mechanic or Number',
+                                     'Exact Figure or Rule',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Buyer premium by auction platform',
+                                   'About 5% on GSA, up to 10% GovPlanet, up to 15% sheriff',
+                                   'Add the premium to every bid ceiling before the final minutes',
+                                   'Top 5 Autos ([WFVGJDWST7I @ 00:05:16])'],
+                                  ['VIN history report before bidding',
+                                   'Pay the $12 to $15 fee on each target vehicle',
+                                   'Run history on any unit you can only judge from a condition report',
+                                   'Top 5 Autos ([WFVGJDWST7I @ 00:04:44])'],
+                                  ['GovDeals new-account probation limits',
+                                   'About three active bids, watch list included, until three auctions '
+                                   'completed',
+                                   'Clear probation with cheap items before chasing a fleet truck',
+                                   'Junk Solutions Experts LLC ([El3cLMGi_9s @ 00:01:31])'],
+                                  ['GSA payment and pickup windows',
+                                   'Payment due within 24 to 48 hours, pickup within 30 days',
+                                   'Arrange funds and a transporter before the auction closes',
+                                   'JR ([14j6GQVGkBk @ 00:01:12])'],
+                                  ['Long-distance transport quotes on a truck',
+                                   '$780 for 650 miles or $1,400 for 2,200 miles',
+                                   'Add hauling into the all-in cost on every out-of-state win',
+                                   'JR ([14j6GQVGkBk @ 00:07:12])'],
+                                  ['Live lane selling speed',
+                                   'Each government vehicle sells in about 30 to 40 seconds',
+                                   'Finish inspections and set limits before the unit reaches the lane',
+                                   'Handyman Process ([FZRiWN_dcS4 @ 00:03:34])'],
+                                  ['Parting-out values on a bent-frame van',
+                                   'Engine about $700, transmission about $600, rear end $300 to $500',
+                                   'Price wrecked fleet units on parts value rather than running value',
+                                   'Street Rat Garage ([qieQr_fEJQ8 @ 00:34:53])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Edges the fleet buyers actually use',
+                           'body': 'Small habits that separate the operators posting spreads from the ones '
+                                   'overpaying in the lane.',
+                           'items': ['Hunt wheel-off listings whose photos look terrible, because those '
+                                     'images scare off other bidders [Street Rat Garage — cqTAqIJLC10 @ '
+                                     '00:24:37].',
+                                     'Watch the color premium: a black Explorer brought $6,600 while '
+                                     'identical white units sold around $5,000, so white units are the '
+                                     'cheaper buy [Street Rat Garage — 6chXsHCTJA4 @ 00:11:02].',
+                                     'Strip police wiring, pull console, rear hatch, and grille from the '
+                                     'junkyard, and flame-restore oxidized black cladding with a propane '
+                                     'torch, flame only on the black, never on the paint [Tool Demos — '
+                                     'EFXJtp6q_B8 @ 00:06:34].',
+                                     'Ask the seller questions directly on the listing before you bid '
+                                     'instead of guessing from the photos [UX Auctions — IUAs4NGQfyo @ '
+                                     '00:05:15].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Scan and register',
+                              'action': 'Set a radius search, open seller inventories, and get bidder '
+                                        'access.',
+                              'detail': 'Run GovDeals Advanced Search by ZIP and radius, then check the '
+                                        "seller's other items [Street Rat Garage — cqTAqIJLC10 @ "
+                                        '00:04:05]; for GSA lots, email the auction house the registration '
+                                        "form plus a driver's license scan to get an access code and "
+                                        'bidder badge [JR — 14j6GQVGkBk @ 00:01:12].'},
+                             {'step': 2,
+                              'title': 'Preview and inspect',
+                              'action': 'Walk the unit with a checklist and an OBD reader during the '
+                                        'preview window.',
+                              'detail': 'Check all four tires, fuses, door sticker VIN and paint code, '
+                                        'brake fluid, coolant, and oil feel and smell [UX Auctions — '
+                                        'IUAs4NGQfyo @ 00:00:19]; start it, shift it, and plug in the OBD '
+                                        'reader, knowing you cannot drive it [East Coast Classics — '
+                                        'g9Wt5wG1aGM @ 00:03:08].'},
+                             {'step': 3,
+                              'title': 'Set the ceiling and bid',
+                              'action': 'Fix a stop price from comps, add premium and transport, then bid '
+                                        'only on real money.',
+                              'detail': 'Set the stop price from KBB before the sale [JR — 14j6GQVGkBk @ '
+                                        '00:02:42]; on the live screens, treat current bid as real money, '
+                                        'ignore asking, and look for deals at the start or end of the run '
+                                        '[Street Rat Garage — 6chXsHCTJA4 @ 00:12:27].'},
+                             {'step': 4,
+                              'title': 'Pay, pick up, and exit',
+                              'action': 'Pay inside the window, collect with paperwork, and price the '
+                                        'resale for negotiation.',
+                              'detail': 'Request a gate pass for pickup [JR — 14j6GQVGkBk @ 00:07:54] and '
+                                        'bring the printed buyer certificate on a weekday [Junk Solutions '
+                                        'Experts LLC — El3cLMGi_9s @ 00:14:17]; list high and accept the '
+                                        'negotiated number, as with the Ram listed at $3,500 to land '
+                                        '$2,700 to $2,800 [Street Rat Garage — cqTAqIJLC10 @ 00:28:32].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over when to pull the trigger. Top 5 Autos tells '
+                              'online buyers to snipe in the last 3-5 minutes of a GSA Auctions, '
+                              'GovPlanet, publicsurplus.com, or county sheriff listing [WFVGJDWST7I @ '
+                              '00:05:35]. Street Rat Garage, watching GovDeals police Chargers close, '
+                              'calls that pointless: most bidders already sit on their hands until the '
+                              "end, and 'sniper bidding' buys nothing because every bid extends the clock, "
+                              'so the last-second ambush just resets the timer and invites a counter '
+                              '[qieQr_fEJQ8 @ 00:33:35]. Junk Solutions Experts LLC lands in the middle '
+                              'for a different reason. On a probation GovDeals account, bids and the watch '
+                              'list draw from the same roughly three-item limit, so they watch a single '
+                              'item and only bid near closing to avoid tying up slots on losers '
+                              '[El3cLMGi_9s @ 00:03:58]. In a live lane the timing logic flips again. At '
+                              'the Kesler Schaefer police and seizure sale in Indianapolis, Street Rat '
+                              'Garage says the deals come either at the very beginning, when the room is '
+                              'scared to open, or at the very end, when buyers have run out of money, and '
+                              'a green flash on the screen means an online bidder just jumped in '
+                              '[6chXsHCTJA4 @ 00:12:27]. Late bidding is common ground; the fight is over '
+                              'whether the final seconds are an edge or just noise.',
+                              'How deep the discount runs depends on who is talking. Top 5 Autos sells the '
+                              'goldmine version: over 25,000 vehicles a year, with seized units, repos, '
+                              'and fleet vehicles retired at 50-80K miles as the best hunting categories, '
+                              'plus case stories of a $55K SUV landing under $18K [WFVGJDWST7I @ '
+                              '00:02:30]. Those case numbers wobble on a close read, with one Suburban '
+                              'quoted at both $14,500 and 14,000 before selling for $9,000. JR, who bought '
+                              'an F-150 by finding it on autoauctions.gsa.gov and registering with a '
+                              'Phoenix auction house, watched over 200 vehicles cross and saw only one go '
+                              'significantly below value, adding that dealers skip sales tax, so their '
+                              'disadvantage against retail buyers is smaller than it looks [14j6GQVGkBk @ '
+                              '00:03:23]. Handyman Process, on a monthly San Antonio dealer lane running '
+                              'government whites and grays, clocked trucks at roughly $2-3k under retail, '
+                              'with 15-passenger vans still hammering at $22k-26k in 30-40 second runs '
+                              'against dealers, the public, and online bidders [FZRiWN_dcS4 @ 00:06:26]. '
+                              'East Coast Classics, after buying a couple dozen surplus cars, puts it '
+                              "bluntly: the deals exist, 'and those deals, they're few and far between' "
+                              '[g9Wt5wG1aGM @ 00:01:08]. The buyers who report firsthand numbers see thin '
+                              'spreads on clean late-model trucks; the fat margins sit in rough, cheap, or '
+                              'mechanically flawed units.',
+                              'Practitioners also split on what to do with the unit once it is home. Tool '
+                              'Demos runs the fix-and-sell play: a $900 ex-fire-rescue and police '
+                              'Expedition, about 4 days of labor, junkyard console, rear hatch, and '
+                              'grille, police wiring stripped, black cladding flame-restored, and roughly '
+                              '$2,000 cash in against a KBB of $5,000-5,500, then sold below KBB to a '
+                              'friend [EFXJtp6q_B8 @ 00:08:56]. Street Rat Garage treats wrecked fleet '
+                              'units as parts inventory. On a frame-bent DNR van with 93K miles that '
+                              'hammered at $825 plus a fee they put at about 7%, the math was engine '
+                              'around $700, transmission around $600, and rear end $300-500 [qieQr_fEJQ8 @ '
+                              '00:34:53]. Auto Dealer Startup rejects flipping as the main exit for cheap '
+                              'fleet-grade cars and rents them instead: a $2,500-3,500 economy car pulls '
+                              '$350-400 a week, the coach skips Teslas as off-strategy, and a partner '
+                              'bought a 301K-mile Camry for $700 and rents it for $350 a week [dzr9aYx98oY '
+                              '@ 00:18:04]. That fleet only takes Ford, Toyota, or Honda, while Dodge, '
+                              'Subaru, and Nissan Sentra get pushed to the flip pile [dzr9aYx98oY @ '
+                              '00:12:53]. Same auction stock, three exits: repair and retail, part out, or '
+                              'weekly rental cash flow.'],
+               'table': {'caption': 'Competing playbooks on timing, pricing, and exits for government '
+                                    'fleet vehicles',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['When to place the winning online bid',
+                                   'Snipe in the last 3-5 minutes of the listing on GSA, GovPlanet, or '
+                                   'sheriff sites',
+                                   'Sniping does not help because each bid extends the clock and most '
+                                   'bidders wait anyway',
+                                   'Top 5 Autos ([WFVGJDWST7I @ 00:05:35]); Street Rat Garage '
+                                   '([qieQr_fEJQ8 @ 00:33:35])'],
+                                  ['Where the deals hide in a live lane',
+                                   'At the start when the room is scared to bid or the end when money runs '
+                                   'out',
+                                   'Dealer lanes sell each vehicle in 30-40 seconds against dealers, '
+                                   'public, and online bidders',
+                                   'Street Rat Garage ([6chXsHCTJA4 @ 00:12:27]); Handyman Process '
+                                   '([FZRiWN_dcS4 @ 00:03:34])'],
+                                  ['How deep the real discount runs',
+                                   'Goldmine pitch of a $55K SUV under $18K with fleet units retired at '
+                                   '50-80K miles',
+                                   'Only 1 of 200+ vehicles went significantly below value because dealers '
+                                   'skip sales tax',
+                                   'Top 5 Autos ([WFVGJDWST7I @ 00:02:30]); JR ([14j6GQVGkBk @ 00:03:23])'],
+                                  ['Primary exit strategy for a cheap unit',
+                                   'Fix it yourself: about $2,000 in versus KBB $5,000-5,500, sold below '
+                                   'KBB to a friend',
+                                   'Rent it: a $2,500-3,500 economy car brings $350-400 a week in the '
+                                   'private fleet',
+                                   'Tool Demos ([EFXJtp6q_B8 @ 00:08:56]); Auto Dealer Startup '
+                                   '([dzr9aYx98oY @ 00:10:08])'],
+                                  ['What to do with wrecked or damaged units',
+                                   'Part out the frame-bent van: engine ~$700, transmission ~$600, rear '
+                                   'end $300-500',
+                                   'Avoid salvage titles entirely and shop only clean government fleet '
+                                   'units in the lane',
+                                   'Street Rat Garage ([qieQr_fEJQ8 @ 00:34:53]); Handyman Process '
+                                   '([FZRiWN_dcS4 @ 00:00:49])'],
+                                  ['Resale pricing on Facebook Marketplace after the buy',
+                                   'List the $1,396 Ram at $3,500 and accept $2,700-2,800 because buyers '
+                                   'negotiate down',
+                                   'Check Marketplace comps before buying, then flip the fireproof cabinet '
+                                   'for about $775 within a week',
+                                   'Street Rat Garage ([cqTAqIJLC10 @ 00:28:32]); Junk Solutions Experts '
+                                   'LLC ([El3cLMGi_9s @ 00:10:43])'],
+                                  ['Which makes deserve your money',
+                                   'Fleet buys only Ford, Toyota, or Honda; Dodge, Subaru, and Sentra are '
+                                   'for flipping',
+                                   'Buy Chargers knowing cams and rollers fail near 100-130K and carrier '
+                                   'bearings are an easy DIY',
+                                   'Auto Dealer Startup ([dzr9aYx98oY @ 00:01:39]); Street Rat Garage '
+                                   '([qieQr_fEJQ8 @ 00:02:57])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive surprises hide behind inspection limits. East Coast '
+                              'Classics lays out the preview ceiling: you can start the car, feel the '
+                              'brakes, engage the transmission, test HVAC, lights, and electrical, and '
+                              "plug in an OBD reader, 'and the biggest is you cannot drive the car,' with "
+                              'a fixed preview window and no makeup session, so the bid has to compensate '
+                              'for that blindness [g9Wt5wG1aGM @ 00:03:20]. Street Rat Garage reports the '
+                              'same wall on GovDeals: call ahead, start it, roll it forward and back, but '
+                              'no test drive and no shop inspection [cqTAqIJLC10 @ 00:08:33]. Tool Demos '
+                              'shows what slips through. The $900 Expedition was cheap because of an '
+                              'audible engine noise, and a scope capture referenced to cylinder 1 plus an '
+                              'amp-clamp relative compression test exposed a scored cylinder-3 exhaust cam '
+                              'lobe and a destroyed roller follower [EFXJtp6q_B8 @ 00:02:08]. Auto Dealer '
+                              'Startup refuses to bid blind on codes even in a dealer-clear lane, walking '
+                              "from a 2019 with an inoperable OBD port because 'I got to be able to pull "
+                              "that code on it,' and reading a clear distance of zero as a car that sat or "
+                              "had a dead battery [dzr9aYx98oY @ 00:11:30]. East Coast Classics' NJ State "
+                              'Police impound Jaguar, with a seized engine, blown brakes, and a leaking '
+                              'radiator, is the endpoint of skipping that discipline.',
+                              'The second trap is the gap between hammer price and all-in cost. Junk '
+                              'Solutions Experts LLC won a school-district F-150 at $2,000 and was at '
+                              "$2,250 after buyer's premium and tax, warning 'that can take a little bit "
+                              "out of your profit' [El3cLMGi_9s @ 00:13:42]. UX Auctions' 157,119-mile "
+                              'Southport fire department F-250 hammered at $4,150 after 47 bids and landed '
+                              'at $4,669 with fees [IUAs4NGQfyo @ 00:05:15]. Top 5 Autos pegs buyer '
+                              'premium at about 5% on GSA Auctions, up to 10% on GovPlanet, and up to 15% '
+                              'at sheriff auctions, plus $300-900 for transport [WFVGJDWST7I @ 00:08:09]. '
+                              'JR stacks the full bill on a long-distance buy: $13,000 for the F-150, $888 '
+                              'Arizona tax paid by credit card, transport quotes of $780 for 650 miles or '
+                              '$1,400 for 2,200 miles, a gate pass at pickup, and an extra 2% owed to New '
+                              'York because AZ-NY reciprocity applied. Without reciprocity, JR warns of '
+                              'double tax and filing DTF-804, DTF-802, and AU-11, and that truck also '
+                              'carried an open recall [14j6GQVGkBk @ 00:08:40]. On a $1,000-class fleet '
+                              'car, a 15% premium plus a transport bill can swallow most of the spread '
+                              'before a wrench turns, which is why every operator who posted real numbers '
+                              'quoted the all-in figure, not the hammer.',
+                              'The last cluster is self-inflicted: bidding emotion and pickup logistics. '
+                              'Street Rat Garage watched a buyer drop a one-and-done $5,000 bid on a '
+                              'Carmel Explorer and overpay by about $600 when the next comparable unit '
+                              "went for $4,400, and warns to read the screens, because 'current bid' is "
+                              "real money while 'asking' means nobody has bid yet [6chXsHCTJA4 @ "
+                              '00:10:04]. The same sale saw a seized Trackhawk hammer at $64,000 on a bill '
+                              'of sale with unknown miles, a number Street Rat Garage figured needed about '
+                              "$70k on resale to clear a profit [6chXsHCTJA4 @ 00:18:29]. Tool Demos' "
+                              'verdict on whether government auctions are worth it hinges on the same '
+                              "trap: 'You can definitely get into bidding wars with people and that's how "
+                              "the price gets out of control' [EFXJtp6q_B8 @ 00:09:31]. Junk Solutions "
+                              'Experts LLC adds the pickup squeeze: weekday-only pickup, a locked account '
+                              'and accruing storage if you no-show, and a seller who sat on marking an '
+                              'item picked up for about 1.5 weeks over Thanksgiving, which froze the '
+                              "speaker's probation bid slots until a call to GovDeals, because 'unless "
+                              "they mark that it's been picked up, Gov deals doesn't know' [El3cLMGi_9s @ "
+                              '00:09:47]. Win at the right number, then have the weekday trailer run '
+                              'locked before the auction closes.'],
+               'table': {'caption': 'Firsthand failure modes and the economics behind them',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Hidden internal engine damage behind a cheap price',
+                                   '$900 Expedition had a scored cylinder-3 exhaust cam lobe and destroyed '
+                                   'roller follower',
+                                   'About 4 days labor and $2,000 cash in, sold below KBB $5,000-5,500',
+                                   'Tool Demos ([EFXJtp6q_B8 @ 00:02:08])'],
+                                  ['Buying an impound car that cannot be tested',
+                                   'NJ State Police impound Jaguar arrived with seized engine, blown '
+                                   'brakes, leaking radiator',
+                                   'Called a perfect example of the bad deals these auctions also produce',
+                                   'East Coast Classics ([g9Wt5wG1aGM @ 00:02:41])'],
+                                  ['One-and-done overbid on identical fleet units',
+                                   'A $5,000 Carmel Explorer bid landed when the next comparable unit sold '
+                                   'for $4,400',
+                                   'Roughly $600 overpaid simply by not waiting for the next unit in line',
+                                   'Street Rat Garage ([6chXsHCTJA4 @ 00:10:04])'],
+                                  ['Seller fails to mark the item picked up',
+                                   'Seller delayed marking pickup about 1.5 weeks over Thanksgiving, '
+                                   'blocking probation bid slots',
+                                   'No-shows get the account locked while storage charges keep accruing on '
+                                   'the item',
+                                   'Junk Solutions Experts LLC ([El3cLMGi_9s @ 00:09:08])'],
+                                  ['Interstate purchase without checking tax reciprocity first',
+                                   'AZ-NY reciprocity cut it to an extra 2% to New York on the F-150',
+                                   'Without reciprocity, risk of double tax plus DTF-804, DTF-802, and '
+                                   'AU-11 filings',
+                                   'JR ([14j6GQVGkBk @ 00:08:40])'],
+                                  ['Skipping basic fluid and tire checks on site',
+                                   'Fire department F-250 walkaround: never check one tire, low brake '
+                                   'fluid is a warning',
+                                   'Truck still drew 47 bids and closed at $4,669 with fees at 157,119 '
+                                   'miles',
+                                   'UX Auctions ([IUAs4NGQfyo @ 00:02:14])'],
+                                  ['Misreading over-disclosed state condition listings as fatal',
+                                   'State employees list every tiny leak, so take it with a grain of salt',
+                                   'Wheel-off listings that look terrible scare off bidders and leave room '
+                                   'for a buy',
+                                   'Street Rat Garage ([cqTAqIJLC10 @ 00:15:09])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before any fleet-vehicle bid goes in',
+                           'body': 'Every item below comes from a loss, overpay, or lockout a practitioner '
+                                   'hit or watched happen in the lane.',
+                           'items': ["Set a KBB-based stop price, then read the screen: 'current bid' is "
+                                     "real money, 'asking' means nobody has bid [JR — 14j6GQVGkBk @ "
+                                     '00:02:42].',
+                                     'Confirm the weekday pickup window and print the buyer certificate '
+                                     'before bidding; no-shows lock the account while storage accrues '
+                                     '[Junk Solutions Experts LLC — El3cLMGi_9s @ 00:05:01].',
+                                     'Price the no-test-drive, fixed-preview risk into the bid, because '
+                                     'there is no makeup session if you miss the window [East Coast '
+                                     'Classics — g9Wt5wG1aGM @ 00:03:48].',
+                                     'Pull codes yourself with an OBD reader and walk from any unit whose '
+                                     'port is dead, even in a dealer-clear lane [Auto Dealer Startup — '
+                                     'dzr9aYx98oY @ 00:11:30].']}}],
+ 'pull_quote': '"You get a good deal either at the beginning or at the end." — Street Rat Garage '
+               '(6chXsHCTJA4 @ 00:12:27).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ["Run GovDeals Advanced Search by ZIP and a 150-mile radius, then open 'Sellers other "
+                      "items' to see the seller's full inventory (Street Rat Garage, cqTAqIJLC10 @ "
+                      '00:04:05).',
+                      "Read the condition report for 'as is' language and pay the $12 to $15 VIN history "
+                      'fee before bidding (Top 5 Autos, WFVGJDWST7I @ 00:04:44).',
+                      'On site, check all four tires, match the door sticker VIN and paint code to the '
+                      'listing, check brake fluid, and smell and rub the oil (UX Auctions, IUAs4NGQfyo @ '
+                      '00:01:14).',
+                      'Walk the lot the day before with your run list, start every unlocked unit, and plug '
+                      'in an OBD reader since no maintenance records are handed over (Handyman Process, '
+                      'FZRiWN_dcS4 @ 00:01:50).',
+                      'Set a KBB stop price, then add buyer premium, sales tax, and $780-$1,400 transport '
+                      'quotes to get the true all-in before bidding (JR, 14j6GQVGkBk @ 00:02:42).',
+                      'Clear new-account probation by completing three cheap auctions, meaning bid, win, '
+                      'pick up, before chasing a vehicle (Junk Solutions Experts LLC, El3cLMGi_9s @ '
+                      '00:15:45).'],
+ 'statutory_citations': [{'title': 'JR — How to Buy a Truck Online (GSA Auction) [00:00:43]',
+                          'url': 'https://www.youtube.com/watch?v=14j6GQVGkBk&t=43s',
+                          'relevance': 'Primary practitioner testimony on GSA registration, payment '
+                                       'windows, stop pricing, transport, and interstate tax on a fleet '
+                                       'F-150.'},
+                         {'title': 'Street Rat Garage — Government surplus auction and seized vehicles '
+                                   '[00:12:27]',
+                          'url': 'https://www.youtube.com/watch?v=6chXsHCTJA4&t=747s',
+                          'relevance': 'Primary practitioner testimony on live-lane police and seized '
+                                       'vehicle hammer prices, screen reading, and bid timing.'},
+                         {'title': "East Coast Classics — Dummy's Guide to Government Surplus Car Auctions "
+                                   '[00:03:20]',
+                          'url': 'https://www.youtube.com/watch?v=g9Wt5wG1aGM&t=200s',
+                          'relevance': 'Primary practitioner testimony on preview limits, no test drives, '
+                                       'payment methods, and good versus bad surplus car buys.'},
+                         {'title': 'Junk Solutions Experts LLC — Govdeals auction tips for new accounts '
+                                   '[00:01:54]',
+                          'url': 'https://www.youtube.com/watch?v=El3cLMGi_9s&t=114s',
+                          'relevance': 'Primary practitioner testimony on GovDeals probation, bid slots, '
+                                       'pickup rules, and all-in cost on a school-district F-150.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'EFXJtp6q_B8',
+                       'title': 'Are government auctions worth it?',
+                       'channel': 'Tool Demos',
+                       'author': 'Tool Demos',
+                       'text': "You can definitely get into bidding wars with people and that's how the "
+                               'price gets out of control.',
+                       'tip': "You can definitely get into bidding wars with people and that's how the "
+                              'price gets out of control.',
+                       'timestamp': 571,
+                       'timestamp_seconds': 571,
+                       'timestamp_label': '[00:09:31]',
+                       'url': 'https://www.youtube.com/watch?v=EFXJtp6q_B8&t=571s',
+                       'markdown': '[00:09:31](https://www.youtube.com/watch?v=EFXJtp6q_B8&t=571s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7H4B9rdQrOU',
+                       'title': 'Government Surplus Auctions Are A Gold Mine Of Money!',
+                       'channel': 'MAN VS MYSTERY',
+                       'author': 'MAN VS MYSTERY',
+                       'text': 'Spent $330 on state surplus pallets with a potential of $2,695, maybe ten '
+                               'times the money.',
+                       'tip': 'Spent $330 on state surplus pallets with a potential of $2,695, maybe ten '
+                              'times the money.',
+                       'timestamp': 1296,
+                       'timestamp_seconds': 1296,
+                       'timestamp_label': '[00:21:36]',
+                       'url': 'https://www.youtube.com/watch?v=7H4B9rdQrOU&t=1296s',
+                       'markdown': '[00:21:36](https://www.youtube.com/watch?v=7H4B9rdQrOU&t=1296s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cqTAqIJLC10',
+                       'title': 'Government auto auctions $1500.00 what did we buy?',
+                       'channel': 'Street Rat Garage',
+                       'author': 'Street Rat Garage',
+                       'text': 'State employees list every tiny leak, so take it with a grain of salt.',
+                       'tip': 'State employees list every tiny leak, so take it with a grain of salt.',
+                       'timestamp': 909,
+                       'timestamp_seconds': 909,
+                       'timestamp_label': '[00:15:09]',
+                       'url': 'https://www.youtube.com/watch?v=cqTAqIJLC10&t=909s',
+                       'markdown': '[00:15:09](https://www.youtube.com/watch?v=cqTAqIJLC10&t=909s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qieQr_fEJQ8',
+                       'title': 'Government surplus, public vehicle auction. Police cars and state owned '
+                                'vehicles, anyone can buy!',
+                       'channel': 'Street Rat Garage',
+                       'author': 'Street Rat Garage',
+                       'text': 'Sniper bidding does not help, because every bid extends the clock.',
+                       'tip': 'Sniper bidding does not help, because every bid extends the clock.',
+                       'timestamp': 2015,
+                       'timestamp_seconds': 2015,
+                       'timestamp_label': '[00:33:35]',
+                       'url': 'https://www.youtube.com/watch?v=qieQr_fEJQ8&t=2015s',
+                       'markdown': '[00:33:35](https://www.youtube.com/watch?v=qieQr_fEJQ8&t=2015s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '14j6GQVGkBk',
+                       'title': 'How to Buy a Truck Online (GSA Auction)',
+                       'channel': 'JR',
+                       'author': 'JR',
+                       'text': 'Set your stop price using KBB before you start bidding.',
+                       'tip': 'Set your stop price using KBB before you start bidding.',
+                       'timestamp': 162,
+                       'timestamp_seconds': 162,
+                       'timestamp_label': '[00:02:42]',
+                       'url': 'https://www.youtube.com/watch?v=14j6GQVGkBk&t=162s',
+                       'markdown': '[00:02:42](https://www.youtube.com/watch?v=14j6GQVGkBk&t=162s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WFVGJDWST7I',
+                       'title': 'Buy a $55K SUV for Under $18K | The Government Auction GOLDMINE Nobody '
+                                'Shows You',
+                       'channel': 'Top 5 Autos',
+                       'author': 'Top 5 Autos',
+                       'text': 'Pay the $12 to $15 fee.',
+                       'tip': 'Pay the $12 to $15 fee.',
+                       'timestamp': 284,
+                       'timestamp_seconds': 284,
+                       'timestamp_label': '[00:04:44]',
+                       'url': 'https://www.youtube.com/watch?v=WFVGJDWST7I&t=284s',
+                       'markdown': '[00:04:44](https://www.youtube.com/watch?v=WFVGJDWST7I&t=284s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IUAs4NGQfyo',
+                       'title': 'Watch a Government Surplus Ford F-250 Onsite Vehicle Inspection',
+                       'channel': 'UX Auctions',
+                       'author': 'UX Auctions',
+                       'text': 'Never check just one tire.',
+                       'tip': 'Never check just one tire.',
+                       'timestamp': 19,
+                       'timestamp_seconds': 19,
+                       'timestamp_label': '[00:00:19]',
+                       'url': 'https://www.youtube.com/watch?v=IUAs4NGQfyo&t=19s',
+                       'markdown': '[00:00:19](https://www.youtube.com/watch?v=IUAs4NGQfyo&t=19s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ulXE2sJ0rv8',
+                       'title': 'Government Surplus Auctions Treasure Hunting How To Make Money Buying '
+                                'Surplus Goods',
+                       'channel': 'StorageUnitAuctions',
+                       'author': 'StorageUnitAuctions',
+                       'text': 'Surplus comes from items agencies no longer use and from IRS, FBI, and ATF '
+                               'seizures.',
+                       'tip': 'Surplus comes from items agencies no longer use and from IRS, FBI, and ATF '
+                              'seizures.',
+                       'timestamp': 24,
+                       'timestamp_seconds': 24,
+                       'timestamp_label': '[00:00:24]',
+                       'url': 'https://www.youtube.com/watch?v=ulXE2sJ0rv8&t=24s',
+                       'markdown': '[00:00:24](https://www.youtube.com/watch?v=ulXE2sJ0rv8&t=24s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'El3cLMGi_9s',
+                       'title': 'Govdeals auction tips for new accounts',
+                       'channel': 'Junk Solutions Experts LLC',
+                       'author': 'Junk Solutions Experts LLC',
+                       'text': 'And by complete, I mean bid, win, pick up.',
+                       'tip': 'And by complete, I mean bid, win, pick up.',
+                       'timestamp': 114,
+                       'timestamp_seconds': 114,
+                       'timestamp_label': '[00:01:54]',
+                       'url': 'https://www.youtube.com/watch?v=El3cLMGi_9s&t=114s',
+                       'markdown': '[00:01:54](https://www.youtube.com/watch?v=El3cLMGi_9s&t=114s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FZRiWN_dcS4',
+                       'title': 'How to buy vehicles from a government auction',
+                       'channel': 'Handyman Process',
+                       'author': 'Handyman Process',
+                       'text': "You don't get those records, but GSA is pretty thorough about maintaining "
+                               'their vehicles.',
+                       'tip': "You don't get those records, but GSA is pretty thorough about maintaining "
+                              'their vehicles.',
+                       'timestamp': 415,
+                       'timestamp_seconds': 415,
+                       'timestamp_label': '[00:06:55]',
+                       'url': 'https://www.youtube.com/watch?v=FZRiWN_dcS4&t=415s',
+                       'markdown': '[00:06:55](https://www.youtube.com/watch?v=FZRiWN_dcS4&t=415s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wQlrhGYORAg',
+                       'title': 'Learn Rescue Emergency Vehicles Police Car, Fire Truck, Ambulance | Best '
+                                'Toddlers Toy Learning Video',
+                       'channel': "Fun'N Learning",
+                       'author': "Fun'N Learning",
+                       'text': 'Toddler toy video naming the police car, fire truck, and ambulance in a '
+                               'kitten rescue story.',
+                       'tip': 'Toddler toy video naming the police car, fire truck, and ambulance in a '
+                              'kitten rescue story.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=wQlrhGYORAg&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=wQlrhGYORAg&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': "Logged for Chapter Q2 coverage; children's vehicle-naming content "
+                                    'with no auction testimony.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'S0me15htAic',
+                       'title': 'Learn Emergency Rescue Vehicles |Police Car, Fire Truck, Ambulance Toy '
+                                'Video for Toddlers',
+                       'channel': "Fun'N Learning",
+                       'author': "Fun'N Learning",
+                       'text': 'Toddler toy video introducing the police car, fire truck, and ambulance by '
+                               'name.',
+                       'tip': 'Toddler toy video introducing the police car, fire truck, and ambulance by '
+                              'name.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=S0me15htAic&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=S0me15htAic&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': "Logged for Chapter Q2 coverage; children's vehicle-naming content "
+                                    'with no auction testimony.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5HQNQKtddhQ',
+                       'title': 'Emergency Vehicle Name Sounds | Police Vehicle, Ambulance Vehicle, Fire '
+                                'truck, Cars, Bus, Helicopter',
+                       'channel': 'QQ Toys TV',
+                       'author': 'QQ Toys TV',
+                       'text': "Children's video teaching emergency vehicle names and sounds, including "
+                               'police vehicles and fire trucks.',
+                       'tip': "Children's video teaching emergency vehicle names and sounds, including "
+                              'police vehicles and fire trucks.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=5HQNQKtddhQ&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=5HQNQKtddhQ&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': "Logged for Chapter Q2 coverage; children's vehicle-naming content "
+                                    'with no auction testimony.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dzr9aYx98oY',
+                       'title': 'Picking a Car for My Private Rental Fleet at the Auction (Under $5,000 '
+                                "Beginner's Guide)",
+                       'channel': 'Auto Dealer Startup',
+                       'author': 'Auto Dealer Startup',
+                       'text': 'I got to be able to pull that code on it.',
+                       'tip': 'I got to be able to pull that code on it.',
+                       'timestamp': 690,
+                       'timestamp_seconds': 690,
+                       'timestamp_label': '[00:11:30]',
+                       'url': 'https://www.youtube.com/watch?v=dzr9aYx98oY&t=690s',
+                       'markdown': '[00:11:30](https://www.youtube.com/watch?v=dzr9aYx98oY&t=690s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'g9Wt5wG1aGM',
+                       'title': "Dummy's Guide to Government Surplus Car Auctions",
+                       'channel': 'East Coast Classics',
+                       'author': 'East Coast Classics',
+                       'text': 'And the biggest is you cannot drive the car.',
+                       'tip': 'And the biggest is you cannot drive the car.',
+                       'timestamp': 200,
+                       'timestamp_seconds': 200,
+                       'timestamp_label': '[00:03:20]',
+                       'url': 'https://www.youtube.com/watch?v=g9Wt5wG1aGM&t=200s',
+                       'markdown': '[00:03:20](https://www.youtube.com/watch?v=g9Wt5wG1aGM&t=200s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6chXsHCTJA4',
+                       'title': 'Government surplus auction and seized vehicles',
+                       'channel': 'Street Rat Garage',
+                       'author': 'Street Rat Garage',
+                       'text': 'You get a good deal either at the beginning or at the end.',
+                       'tip': 'You get a good deal either at the beginning or at the end.',
+                       'timestamp': 747,
+                       'timestamp_seconds': 747,
+                       'timestamp_label': '[00:12:27]',
+                       'url': 'https://www.youtube.com/watch?v=6chXsHCTJA4&t=747s',
+                       'markdown': '[00:12:27](https://www.youtube.com/watch?v=6chXsHCTJA4&t=747s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6chXsHCTJA4',
+                       'title': 'Government surplus auction and seized vehicles',
+                       'channel': 'Street Rat Garage',
+                       'author': 'Street Rat Garage',
+                       'text': "Well, that's a one and done bid.",
+                       'tip': "Well, that's a one and done bid.",
+                       'timestamp': 604,
+                       'timestamp_seconds': 604,
+                       'timestamp_label': '[00:10:04]',
+                       'url': 'https://www.youtube.com/watch?v=6chXsHCTJA4&t=604s',
+                       'markdown': '[00:10:04](https://www.youtube.com/watch?v=6chXsHCTJA4&t=604s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'}]}
