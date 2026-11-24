@@ -5,676 +5,747 @@ CHAPTER_2 = {
     "chapter_id": "Q2",
     "chapter_number": 2,
     "question_number": 2,
-    "slug": "who-pays-seo-empire-payment-rails",
-    "question_prompt": "Who writes the check in building an seo empire, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
+    "slug": "keyword-research-clustering-topical-opportunity",
+    "question_prompt": "How do these practitioners find and cluster keywords, evaluate competition, identify content gaps, and connect keyword selection to topical authority?",
     "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "Advertiser Budgets, Affiliate Attribution, ICANN CZDS Signals, ACH Settlement, Escrow Instructions & Enforceable Media Receivables",
+    "title": "Keyword Research, Clustering & Topical Opportunity",
+    "subtitle": "Semrush and Ahrefs comparisons, keyword grouping, difficulty-score limitations, low-competition and low-CPC searches, print-on-demand research, and silo-level content gaps",
     "layout_template": "executive_summary",
-    "reading_time_minutes": 14,
+    "reading_time_minutes": 15,
     "executive_summary": (
-        "Candidate #25, Building an SEO Empire, ranks #07 with an 89/100 "
-        "Money-to-Manpower Score across 30 mapped plays. The buyer purchases "
-        "qualified attention, attributable customers, or exclusive access to a "
-        "credible niche audience; search rankings themselves do not write checks. "
-        "This chapter separates advertiser authority, merchant commission approval, "
-        "and sponsor procurement from the mechanics that actually deliver cash. "
-        "Annual owner net profit is $16,000 Conservative, $159,250 Base, and "
-        "$405,000 Scaled, against $80,000, $490,000, and $900,000 of recognized "
-        "operator revenue. Referred merchant sales remain outside those totals. "
-        "Use evidence-backed inventory, explicit attribution rules, screened "
-        "counterparties, and bounded payment holds to turn search portfolios into "
-        "collectible receivables rather than impressive dashboards."
+        "These practitioners connect keyword discovery to page selection, competitive inspection, and demonstrated topical traction. "
+        "Edward Sturm emphasizes purchase-intent landing pages and off-site language, while David G. Quaid, appearing with James Dooley, "
+        "describes advancing from attainable phrases after earning clicks. Travis Wilkie, Tutorial Stack, Robbie Richards, and Ahrefs Product "
+        "Updates demonstrate complementary filtering and grouping workflows. WeStudyFunnels and My First Website explain why difficulty "
+        "scores need manual search-result inspection. Income stream surfers applies marketplace rankings and product-title checks to "
+        "print-on-demand research. Topical Authority SEO | Floyi prioritizes contested silos and distinguishes ranking coverage from published "
+        "coverage. Niche AI Tool, Site Verdict, and Consumer Reviews compare tool workflows, with Site Verdict explicitly warning that "
+        "prices and plans can change."
     ),
     "key_metrics": [
         {
-            "label": "Conservative",
-            "value": "$80,000",
-            "context": "Annual advertising, affiliate and sponsorship revenue; merchant sales excluded",
-            "note": "20% net margin; $16,000 annual owner net profit; 1 FT + 3 C",
+            "label": "Demonstrated Semrush cluster",
+            "value": "8 keywords / 5% KD / 950 aggregate volume",
+            "context": "Robbie Richards describes these figures for a low-difficulty cluster in the car-accident attorney example.",
+            "note": "Attributed to Robbie Richards ([P5ET0IvFReQ @ 00:02:38]; [P5ET0IvFReQ @ 00:02:50]).",
         },
         {
-            "label": "Base",
-            "value": "$490,000",
-            "context": "Annual advertising, affiliate and sponsorship revenue; merchant sales excluded",
-            "note": "32.5% net margin; $159,250 annual owner net profit; 1 FT + 3 C",
+            "label": "A low score with exact-target competition",
+            "value": "KD 30 / 3,600 searches / 15 matching titles",
+            "context": "WeStudyFunnels examines the treadmill-under-$1,000 query and counts fifteen leading results targeting the phrase in their titles.",
+            "note": "Attributed to WeStudyFunnels ([PpHWPSjRYPI @ 00:01:51]; [PpHWPSjRYPI @ 00:02:06]; [PpHWPSjRYPI @ 00:04:06]).",
         },
         {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual advertising, affiliate and sponsorship revenue; merchant sales excluded",
-            "note": "45% net margin; $405,000 annual owner net profit; 1 FT + 3 C",
+            "label": "Floyi contested-silo classification",
+            "value": "At least 60% / 10 topics or fewer behind",
+            "context": "Alternative conditions for classifying a silo as contested, using topic counts where domains rank in the top 20.",
+            "note": "Attributed to Topical Authority SEO | Floyi ([0XswjN-Lops @ 00:00:38]).",
         },
     ],
     "sections": [
         {
-            "heading": "1. Sell the buyer's measurable outcome, then locate payment authority",
-            "epistemic_status": "operating_framework",
+            "id": "Q2-S1",
+            "title": "Start with the searches, the business, and the available route into a topic",
             "paragraphs": [
                 (
-                    "An SEO portfolio has three recurring commercial buyers: advertisers "
-                    "purchasing audience access, merchants purchasing attributable acquisition, "
-                    "and sponsors purchasing a defined association with trusted editorial "
-                    "inventory. Their motivations differ even when one comparison page serves "
-                    "all three. A performance manager wants contribution after acquisition "
-                    "cost; a brand director wants defensible reach within a category; an "
-                    "affiliate manager wants incremental orders rather than commissions on "
-                    "customers already arriving through another channel. None must buy SEO "
-                    "because a statute commands that purchase. Advertising and privacy duties "
-                    "instead constrain how their campaigns operate and what evidence they "
-                    "require from publishers. Start discovery with the economic loss: wasted "
-                    "paid clicks, weak conversion, missing category coverage, or dependence "
-                    "on one expensive acquisition source. Ask who controls the budget, who "
-                    "can bind the contracting entity, who validates delivery, and who "
-                    "releases payment. These can be four different people. A media buyer's "
-                    "enthusiasm does not replace a purchase order when procurement requires "
-                    "one. Record the legal entity, billing address, purchase order reference, "
-                    "invoice portal, settlement currency, and named accounts-payable contact "
-                    "before reserving scarce inventory. For agencies, establish whether the "
-                    "agency or disclosed advertiser owes the publisher and whether any "
-                    "pay-when-paid clause transfers advertiser default risk."
+                    "Edward Sturm ([8DuIlUdfY_w @ 00:15:53]) starts the research discussion with the products being sold and the language "
+                    "that corresponds to those products. His instruction is to write that language down and identify bottom-of-funnel "
+                    "keywords used by people ready to buy or arrange a discovery call. Those phrases then inform off-site activity as "
+                    "well as the pages intended to attract customers. David G. Quaid, speaking on James Dooley "
+                    "([mE2Y-3fNorE @ 00:02:04]), describes a different starting position: a site trying to enter payroll software "
+                    "without the authority of an established brand. He searches for phrases containing the relevant words, looking for "
+                    "high volume alongside low keyword difficulty rather than immediately pursuing the principal money term. Robbie "
+                    "Richards ([P5ET0IvFReQ @ 00:00:37]) makes the commercial starting point concrete by entering car-accident and "
+                    "truck-accident seeds because they describe the illustrative attorney's services. His example selects a country "
+                    "database and allows a domain to contribute additional ideas. These accounts keep the initial research attached "
+                    "to what the business offers, but they do not prescribe an identical first page. Sturm describes the purchase "
+                    "language to pursue; Quaid describes finding an attainable entrance; Richards demonstrates expanding service "
+                    "seeds into inspectable groups before selecting the individual pages."
                 ),
                 (
-                    "Price each outcome against the buyer's contribution economics, not "
-                    "your publishing effort. Consider a merchant earning $120 contribution "
-                    "per approved order before acquisition spending. A $60 publisher "
-                    "commission leaves $60 before the merchant's remaining overhead; an "
-                    "affiliate manager can compare that residual with other channels. "
-                    "For a sponsor, an illustrative $6,000 placement producing 300 "
-                    "qualified visits costs $20 per visit. At a documented 5% order "
-                    "conversion rate, those visits produce 15 orders and a $400 "
-                    "acquisition cost, which only works if the sponsor's economics "
-                    "support it. Label those figures assumptions until campaign evidence "
-                    "exists. Sell specified placements, dates, newsletter inclusions, or "
-                    "qualified lead definitions; do not sell guaranteed organic positions. "
-                    "GEO citation capture can strengthen visibility, but an AI answer "
-                    "mention without a visit is neither an affiliate conversion nor "
-                    "a billable advertising impression by default. Google Search Console, "
-                    "GA4, server logs, and merchant reports answer different questions; "
-                    "retain their definitions instead of forcing identical totals. Across "
-                    "multiple sites, keep property-level inventory and buyer concentration "
-                    "visible. A portfolio whose pages rank independently can still share "
-                    "one vulnerable payer, one ad intermediary, or one affiliate program "
-                    "that controls most collectible revenue."
+                    "Niche AI Tool ([r8amrelmKH0 @ 00:01:37]) says the choice between Ahrefs and Semrush comes down to workflow, "
+                    "not a magic score. The channel frames Ahrefs around professional SEO and backlink analysis, and Semrush around "
+                    "work spanning SEO, PPC, social, and content. Consumer Reviews ([Q0qBq0V4xC4 @ 00:04:29]) supplies a project "
+                    "account with that same division: Ahrefs helped examine competitors' traffic and link opportunities, while "
+                    "moving to Semrush supplied tools for a broader content strategy. The reported work included a site audit, "
+                    "a topic cluster, advertising-competitor research, and homepage fixes. Site Verdict "
+                    "([tEUh8E-4D7U @ 00:01:15]) describes both platforms as covering essential SEO needs, then distinguishes "
+                    "Semrush integrations from Ahrefs API and MCP access. The comparison therefore contains overlapping research "
+                    "capabilities alongside different working environments, rather than one shared verdict about every task. "
+                    "For this chapter's keyword work, the demonstrated activities are more specific than the overall product "
+                    "labels: filtering a seed list, examining competitors, organizing topics, and deciding what content to create. "
+                    "Consumer Reviews' preference reflects the broader marketing work described in that account; Niche AI Tool "
+                    "explicitly leaves room for teams to choose either platform for different reasons. Neither account replaces "
+                    "the later demonstrations of how an individual keyword becomes a page candidate."
                 ),
                 (
-                    "Underwrite the counterparty before extending unsecured delivery. Match "
-                    "the contracting entity against the relevant Secretary of State "
-                    "record, validate the business domain through independent contact, "
-                    "and obtain a signed insertion order from someone with documented "
-                    "authority. Public registration proves an entity exists, not that "
-                    "it pays invoices. Request trade references for larger exposures, "
-                    "inspect available commercial credit information, and search applicable "
-                    "UCC filing records when receivable priority matters. A financing "
-                    "statement signals a claimed security interest; it does not alone "
-                    "establish insolvency or the scope of an enforceable lien. Set "
-                    "a provisional credit limit from the smaller of affordable loss "
-                    "and verified payment capacity. For example, two unpaid $6,000 "
-                    "sponsor placements create $12,000 exposure even if each invoice "
-                    "looks modest. Require prepayment or funded escrow before a third "
-                    "placement when the approved limit is $12,000. Verify changed bank "
-                    "instructions through a previously established telephone contact, never "
-                    "the number supplied in the change email. Collect tax documentation "
-                    "through restricted storage rather than shared editorial folders. "
-                    "If a buyer refuses basic entity verification or insists on "
-                    "unlimited dispute rights, offer a smaller prepaid test instead "
-                    "of financing their campaign with your payroll."
+                    "The comparison videos also give different commercial details, and Site Verdict "
+                    "([tEUh8E-4D7U @ 00:01:49]) explicitly says prices and plans can change and directs viewers to official "
+                    "websites for current details. Niche AI Tool ([r8amrelmKH0 @ 00:01:37]) reports an Ahrefs starting price "
+                    "of $99 and Semrush Pro at $129.95, together with different trial arrangements. Consumer Reviews "
+                    "([Q0qBq0V4xC4 @ 00:02:55]) instead describes annual Semrush pricing around $120 monthly and discusses "
+                    "project and tracked-keyword allowances. Those are the respective speakers' reported offers, not a single "
+                    "price schedule assembled from the videos. Tutorial Stack ([fLGvfe6OTgc @ 00:01:45]) makes access relevant "
+                    "to the actual clustering task by showing Keyword Magic Tool as another route, described as useful for "
+                    "a free account or trial, rather than relying exclusively on Keyword Strategy Builder. This keeps the "
+                    "comparison grounded in the work being attempted: the channel demonstrates filtering and sidebar groups "
+                    "as an alternative way to organize related phrases. The supplied accounts thus support describing each "
+                    "workflow and its stated access conditions separately. Their differing prices, trials, and feature "
+                    "descriptions remain attached to their sources, while Site Verdict's own closing instruction provides "
+                    "the explicit check before treating any quoted plan detail as current."
                 ),
             ],
             "table": {
-                "caption": "Buyer Authority, Acute Economics & Collectible Purchase Evidence",
-                "headers": [
-                    "Buyer and actual budget owner",
-                    "Economic reason for releasing the budget",
-                    "Evidence establishing an enforceable payable",
-                    "Credit boundary and practical fallback",
-                ],
+                "caption": "Business and tool-selection starting points described by the assigned practitioners.",
+                "headers": ["Research Decision", "Practitioner Direction", "Expert Source"],
                 "rows": [
                     [
-                        "Direct advertiser with a named performance marketing budget owner",
-                        "Needs incremental customers below a measured contribution based ceiling",
-                        "Signed insertion order identifies inventory, dates, price and debtor",
-                        "Begin with prepaid inventory before allowing unsecured monthly billing",
+                        "Define the commercial language before expanding into unrelated keyword ideas.",
+                        "Write down product language and searches from people ready to buy.",
+                        "Edward Sturm ([8DuIlUdfY_w @ 00:15:53]) explains the product-language starting point.",
                     ],
                     [
-                        "Merchant affiliate manager operating within approved acquisition spending limits",
-                        "Pays approved commissions when attributed customers meet program definitions",
-                        "Archived program terms and accepted conversion records establish entitlement",
-                        "Cap exposure when reversals increase or merchant funding weakens",
+                        "Choose an attainable entrance when the site lacks established authority.",
+                        "Look for relevant payroll phrases combining volume with lower difficulty.",
+                        "David G. Quaid on James Dooley ([mE2Y-3fNorE @ 00:02:04]) describes payroll research.",
                     ],
                     [
-                        "Category sponsor represented by an authorized brand marketing director",
-                        "Purchases credible audience access unavailable through interchangeable display impressions",
-                        "Placement schedule and acceptance criteria accompany the countersigned agreement",
-                        "Reserve inventory only after deposit or verified credit authorization",
+                        "Use offered services to determine the initial research seed phrases.",
+                        "Enter car-accident and truck-accident terms for the illustrative attorney.",
+                        "Robbie Richards ([P5ET0IvFReQ @ 00:00:37]) demonstrates service-led seed selection.",
                     ],
                     [
-                        "Advertising network paying publishers under its own participation agreement",
-                        "Aggregates qualified inventory for buyers seeking measurable audience reach",
-                        "Publisher statements identify payable earnings after defined traffic adjustments",
-                        "Model thresholds, withholding rights and intermediary concentration before expansion",
+                        "Compare the platforms against the work the team actually performs.",
+                        "Choose according to workflow rather than an overall magic score.",
+                        "Niche AI Tool ([r8amrelmKH0 @ 00:01:37]) explicitly prioritizes workflow fit.",
                     ],
                     [
-                        "Agency media team buying for a separately identified advertiser",
-                        "Needs dependable campaign execution across approved specialist publisher properties",
-                        "Contract names the debtor and resolves advertiser payment dependency",
-                        "Reject accidental agency credit exposure hidden inside sequential liability",
+                        "Distinguish focused competitor research from a broader content-planning workspace.",
+                        "The speaker moves from Ahrefs research into Semrush content-strategy work.",
+                        "Consumer Reviews ([Q0qBq0V4xC4 @ 00:04:29]) recounts the startup workflow.",
                     ],
                     [
-                        "Challenger merchant authorizing comparison traffic through its affiliate program",
-                        "Values high intent shoppers evaluating an established competing supplier",
-                        "Written channel permissions specify keywords, landing pages and attribution",
-                        "Use expressly permitted comparison queries when brand bidding is restricted",
+                        "Check current commercial details instead of combining conflicting quoted offers.",
+                        "Visit official websites because the stated prices and plans can change.",
+                        "Site Verdict ([tEUh8E-4D7U @ 00:01:49]) gives the explicit pricing check.",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "Q2-S2",
+            "title": "Turn keyword lists into groups, then decide which groups need pages",
+            "paragraphs": [
+                (
+                    "Travis Wilkie ([0qP8UUWuBSc @ 00:01:09]) demonstrates a Semrush workflow that starts with Keyword Magic "
+                    "Tool results and adds selected phrases to a keto-diet list. He describes clusters as similar variations "
+                    "that one page can rank for, then moves into the strategy builder and clusters the list. Tutorial Stack "
+                    "([fLGvfe6OTgc @ 00:01:00]) shows the other entry point: supply related but varied seeds directly to "
+                    "Keyword Strategy Builder, using ergonomic office chairs and chairs for back pain as examples. The channel "
+                    "asks viewers not to repeat themselves too much when choosing those seeds. Robbie Richards "
+                    "([P5ET0IvFReQ @ 00:07:01]) demonstrates importing an existing set instead of generating everything from "
+                    "scratch: his pasted list contains 214 keywords and produces 38 clusters. Across these demonstrations, "
+                    "the shared operation is organizing a collection that already has a business or topic connection, whether "
+                    "that collection comes from selected results, supplied seeds, or prior research. The speakers show more "
+                    "than one interface and starting point, so their instructions should retain those distinctions. Wilkie's "
+                    "list workflow explains how selection feeds clustering; Tutorial Stack's seed workflow explains how ideas "
+                    "enter generation; Richards' import example explains how an existing research asset can be reorganized "
+                    "without beginning again with an empty list."
+                ),
+                (
+                    "Ahrefs Product Updates ([JMyPIbu7vhw @ 00:00:53]) distinguishes grouping by terms from grouping by parent "
+                    "topic, with sidebar numbers showing the total search volume associated with a word or phrase in the target "
+                    "country. Parent topics help the presenter scan a broad area, while term groups offer a way to investigate "
+                    "more specific angles. The dalgona-coffee example develops an informational post containing relevant "
+                    "subtopics rather than treating every wording as a separate assignment. Travis Wilkie "
+                    "([wSkIVyKv2rY @ 00:00:53]) demonstrates a different narrowing operation in Keywords Explorer: apply a "
+                    "minimum of 50 monthly searches, then commercial and transactional intent, leaving about 65 phrases in "
+                    "the example. He calls this a cluster and exports it for further targeting. Robbie Richards "
+                    "([P5ET0IvFReQ @ 00:03:04]) supplies the next decision that filtering alone does not settle: whether a "
+                    "head-on car-accident attorney phrase requires a dedicated page or can be covered by the main service "
+                    "page. He answers by examining the URLs already ranking. These demonstrations preserve an important "
+                    "difference in what the speakers actually do: a filtered list collects candidates, a sidebar group "
+                    "organizes exploration, and the observed competing pages help determine the eventual page structure. "
+                    "Their examples do not make every collected phrase an automatic new page."
+                ),
+                (
+                    "Robbie Richards ([P5ET0IvFReQ @ 00:03:19]) hovers over the competing URLs for the head-on collision "
+                    "cluster and observes dedicated pages nested beneath broader accident services. That repeated pattern "
+                    "leads him to propose a dedicated page beneath the main car-accident attorney page, incorporating the "
+                    "cluster's variations. Travis Wilkie ([0qP8UUWuBSc @ 00:03:06]) performs a related inspection with keto "
+                    "cookies: opening the competing results reveals recipe pages, which shapes his suggestion to create a "
+                    "better recipe page. Ahrefs Product Updates ([JMyPIbu7vhw @ 00:03:20]) considers a narrower audience "
+                    "inside a competitive topic, using dog food for allergies as a potential separate post when the site "
+                    "is not ready to compete for the broader dog-food query. Tutorial Stack "
+                    "([fLGvfe6OTgc @ 00:02:52]) adds the explicit caution that appearing in a sidebar group does not make "
+                    "a keyword good; difficulty, volume, and the rest of the research still matter. Together, these "
+                    "examples show practitioners moving from a group label to the particular search result and audience. "
+                    "Richards examines dedicated-page targeting, Wilkie examines the content format already appearing, and "
+                    "the Ahrefs presenter examines a specific need within a broader category. The resulting assignment "
+                    "follows those observations, rather than the mere presence of a phrase in generated output."
+                ),
+            ],
+            "table": {
+                "caption": "Grouping operations and the page decisions demonstrated in Semrush and Ahrefs.",
+                "headers": ["Demonstrated Operation", "What the Practitioner Does Next", "Expert Source"],
+                "rows": [
+                    [
+                        "Collect selected Keyword Magic Tool phrases inside a named list.",
+                        "Move into the strategy builder and cluster that selected keyword list.",
+                        "Travis Wilkie ([0qP8UUWuBSc @ 00:02:34]) demonstrates clustering the prepared list.",
                     ],
                     [
-                        "Lead purchaser with an accountable sales operations budget owner",
-                        "Pays for exclusive inquiries matching geography, eligibility and intent",
-                        "Acceptance rules define duplicates, rejected records and permitted data uses",
-                        "Limit lead delivery until rejection evidence and payment reconcile",
+                        "Enter varied related seeds directly into Keyword Strategy Builder.",
+                        "Use office-chair and back-pain language without repeatedly duplicating seeds.",
+                        "Tutorial Stack ([fLGvfe6OTgc @ 00:01:15]) explains varied seed selection.",
                     ],
                     [
-                        "Media acquirer using an investment committee and funded transaction account",
-                        "Buys durable cash generation with transferable rights and operational evidence",
-                        "Purchase agreement separates consideration, adjustments and scheduled escrow releases",
-                        "Keep acquisition proceeds outside recurring advertising and affiliate revenue",
+                        "Import a previously researched set rather than regenerate the entire collection.",
+                        "Paste the existing keywords and run clustering against that list.",
+                        "Robbie Richards ([P5ET0IvFReQ @ 00:07:01]) imports the existing keyword set.",
+                    ],
+                    [
+                        "Organize broad Ahrefs results through parent-topic or term sidebar groups.",
+                        "Inspect the topic and its subtopics before choosing the content coverage.",
+                        "Ahrefs Product Updates ([JMyPIbu7vhw @ 00:02:24]) explains the grouping distinction.",
+                    ],
+                    [
+                        "Narrow Ahrefs matching terms through search volume and buying intent.",
+                        "Export the resulting candidate group for pages or further keyword exploration.",
+                        "Travis Wilkie ([wSkIVyKv2rY @ 00:01:32]) describes exporting the filtered group.",
+                    ],
+                    [
+                        "Inspect whether competing URLs target the specific phrase with dedicated pages.",
+                        "Place a dedicated head-on collision page beneath the broader service page.",
+                        "Robbie Richards ([P5ET0IvFReQ @ 00:03:19]) examines dedicated competitor page targeting.",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Find the payable before negotiating the headline rate",
-                "body": "A high quoted rate has little value when attribution, authority or collection remains discretionary.",
+                "title": "Use the group to ask a better page question",
+                "body": "These tips retain the specific grouping and inspection moves demonstrated by the speakers.",
                 "items": [
-                    "Ask accounts payable to validate invoice routing before publishing the first sponsored placement; preserve the portal receipt with the insertion order.",
-                    "Export affiliate terms and merchant permissions when each campaign starts, then version changes against the affected click dates.",
-                    "Use property-specific sub-identifiers without personal data so a disputed commission can be traced to the originating page and traffic source.",
-                    "Negotiate a small prepaid comparison-page test before offering exclusivity across the entire topical cluster.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Choose the settlement mechanism without confusing it with earned revenue",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Separate the commercial agreement, earning event, invoice, and movement "
-                    "of funds. A sponsor may prepay by ACH, but cash received "
-                    "before placement delivery is not automatically earned revenue. An "
-                    "affiliate dashboard may show pending commissions, but returns, fraud "
-                    "review, attribution disputes, and contractual approval can reduce the "
-                    "eventual payable. A display advertising statement may already be "
-                    "net of the intermediary's share; do not add advertiser spending "
-                    "back into publisher revenue merely to enlarge the business. Define "
-                    "the accounting treatment with the business's accountant and preserve "
-                    "a consistent principal-versus-agent analysis. For operating control, track "
-                    "booked, delivered, approved, invoiced, due, received, and disputed balances "
-                    "separately. An illustrative $9,000 sponsorship with a 50% advance "
-                    "produces $4,500 cash before delivery and a remaining $4,500 "
-                    "collection requirement under the agreed schedule. Document whether a "
-                    "buyer can cancel, what delivered work remains payable, and how "
-                    "unused inventory is handled. Google AdSense, impact.com, Awin, and "
-                    "Amazon Associates have different payment calendars, thresholds, currencies, "
-                    "and adjustment terms. Read the actual account agreement rather "
-                    "than importing a remembered payment interval. A platform balance "
-                    "is a claim against that platform or merchant under its "
-                    "terms, not a bank deposit under your direct control."
-                ),
-                (
-                    "The eight mechanisms below are not eight equivalent bank rails. "
-                    "Wire and ACH move money; escrow and milestone holds allocate "
-                    "release authority; retainers describe advance funding; platform checkout "
-                    "delegates collection; factoring finances a receivable; statutory disbursement "
-                    "depends on a specific legal process. Choose the combination that "
-                    "matches loss severity. Use a domestic wire for a large "
-                    "verified sponsor advance when speed and reconciliation justify bank "
-                    "fees, while recognizing that fraud, bank error, and recall "
-                    "requests still require investigation. Use ACH credit for routine "
-                    "business payments when the buyer can initiate it; an ACH "
-                    "debit requires an appropriate authorization and management of return "
-                    "risk. Neither a screenshot nor a pending bank entry proves "
-                    "unrestricted funds are available. For a domain or media exit, "
-                    "independent escrow can coordinate payment with registrar transfer, "
-                    "asset schedules, and an inspection period. Escrow.com is one "
-                    "commercial example, subject to its supported transactions and terms. "
-                    "The agreement must identify who can release funds and what "
-                    "objective evidence resolves disagreement. A sponsor's internal budget "
-                    "allocation is not escrow, and a salesperson cannot promise release "
-                    "of funds controlled by a separate trustee, court, or financing "
-                    "provider. Verify that authority directly."
-                ),
-                (
-                    "Protect the fee through precise definitions and a short evidence "
-                    "chain. A sponsorship order should specify placement location, duration, "
-                    "creative approval deadlines, disclosure treatment, measurement source, and "
-                    "make-good limits. Affiliate contracts need permitted acquisition channels, "
-                    "attribution windows, deduplication rules, reversal grounds, reporting access, "
-                    "and a dispute deadline. A narrowly drafted introduction fee can "
-                    "protect a documented commercial introduction where agreed and enforceable; "
-                    "it cannot override a merchant's affiliate terms or justify "
-                    "capturing commissions from unrelated later transactions. Avoid broad "
-                    "clauses that effectively claim ownership of every reader. Where "
-                    "a buyer wants a performance hold, bound the amount and "
-                    "release date: holding $1,200 of a $6,000 placement leaves "
-                    "$4,800 payable on delivery and limits the disputed tranche "
-                    "to 20%. Specify whether silence after an evidence review "
-                    "period constitutes acceptance, subject to the governing agreement. "
-                    "For late invoices, send a documented reminder, pause new "
-                    "deliverables under the contract, and escalate through the agreed "
-                    "dispute process. Factoring may accelerate an eligible invoice, "
-                    "but confirm assignment restrictions, notification obligations, recourse, "
-                    "and existing liens first. UCC sections 9-406 and 9-408 "
-                    "have qualifications and jurisdictional variations; they are not "
-                    "permission to ignore every contractual transfer restriction."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Payment, Funding & Release Mechanisms for Search Publishers",
-                "headers": [
-                    "Mechanism and appropriate commercial use",
-                    "Who controls funding and final release",
-                    "Evidence and cost factors to reconcile",
-                    "Principal failure mode and protective response",
-                ],
-                "rows": [
-                    [
-                        "Wire transfer for verified large sponsorship advances or acquisitions",
-                        "Authorized account holder instructs banks after independently verified beneficiary checks",
-                        "Match bank reference, currency, beneficiary and actual credited amount",
-                        "Changed beneficiary fraud requires callback verification through established contact details",
-                    ],
-                    [
-                        "Independent escrow for domain transfers and negotiated media asset sales",
-                        "Escrow provider releases deposited funds under signed transaction instructions",
-                        "Reconcile escrow fees, inspection period and objective transfer completion evidence",
-                        "Ambiguous release conditions require precise asset schedules and dispute procedures",
-                    ],
-                    [
-                        "ACH credit or authorized debit for recurring domestic business payments",
-                        "Buyer initiates credit or publisher initiates properly authorized debit",
-                        "Track settlement entries, returns, bank charges and remittance allocation",
-                        "Returned payments require cash reserves and suspension of further exposure",
-                    ],
-                    [
-                        "Retainer or advance funding for reserved recurring sponsored inventory",
-                        "Buyer funds upfront while agreement controls earning and refund treatment",
-                        "Track delivered inventory against advances without prematurely recognizing all revenue",
-                        "Cancellation disputes require written unused balance and delivery allocation rules",
-                    ],
-                    [
-                        "Statutory disbursement only for an applicable court or legal process",
-                        "Authorized fiduciary or official acts under the controlling legal instrument",
-                        "Verify beneficiary eligibility, order language and documented distribution accounting",
-                        "Ordinary SEO invoices receive no automatic statutory payment priority",
-                    ],
-                    [
-                        "Platform checkout for standardized sponsor packages and authorized commercial offers",
-                        "Processor collects payment subject to merchant terms and reserve rights",
-                        "Reconcile platform fees, chargebacks, settlement batches and buyer order references",
-                        "Card disputes require delivery evidence and sufficient processor reserve coverage",
-                    ],
-                    [
-                        "Factoring for eligible accepted business receivables needing working capital",
-                        "Factor advances funds and collects according to assignment documentation",
-                        "Compare discount, reserve, recourse obligations and total effective funding cost",
-                        "Existing liens or contract restrictions require verified assignment authority first",
-                    ],
-                    [
-                        "Milestone holds for objectively staged campaign delivery or asset migration",
-                        "Named buyer representative releases bounded tranches after documented milestone acceptance",
-                        "Specify each amount, review deadline and accepted evidence before work",
-                        "Indefinite discretionary holds require automatic escalation and limited exposed inventory",
-                    ],
+                    "Hover over ranking URLs to see whether the phrase has dedicated competing pages before assigning it to the main service page. [Robbie Richards — P5ET0IvFReQ @ 00:03:19]",
+                    "Start broad with parent-topic grouping, then click a parent topic to inspect the subtopics it could cover. [Ahrefs Product Updates — JMyPIbu7vhw @ 00:02:08]",
+                    "Open competitor pages within the cluster; Wilkie's keto-cookie inspection reveals recipes rather than leaving the expected format to guesswork. [Travis Wilkie — 0qP8UUWuBSc @ 00:03:06]",
+                    "Treat sidebar grouping as organization, not keyword qualification; continue checking difficulty and volume. [Tutorial Stack — fLGvfe6OTgc @ 00:02:52]",
                 ],
             },
             "sop_steps": [
                 {
                     "step": 1,
-                    "title": "Create the counterparty payment file",
-                    "action": "Verify the contracting entity, authorized signer and accounts-payable workflow.",
-                    "detail": "Store the signed order, credit limit, tax records, billing reference and independently confirmed bank instructions with restricted access.",
+                    "title": "Choose service-led seeds",
+                    "action": "Enter phrases that describe the services being offered.",
+                    "detail": "Richards uses car-accident and truck-accident seeds for the illustrative personal-injury attorney, then selects the database. [Robbie Richards — P5ET0IvFReQ @ 00:00:37]",
                 },
                 {
                     "step": 2,
-                    "title": "Define what earns each dollar",
-                    "action": "Map every placement, approved order or transfer milestone to an earning event.",
-                    "detail": "Specify measurement sources, permitted deductions, review periods and who has authority to accept delivery or release escrow.",
+                    "title": "Collect and cluster the list",
+                    "action": "Add selected Keyword Magic Tool results to a list and run clustering.",
+                    "detail": "Wilkie shows the strategy builder's cluster-your-list operation after collecting the phrases. [Travis Wilkie — 0qP8UUWuBSc @ 00:02:34]",
                 },
                 {
                     "step": 3,
-                    "title": "Reconcile statements to actual settlement",
-                    "action": "Match invoice and platform identifiers against bank transactions and processor reports.",
-                    "detail": "Separate advances, earned amounts, reserves, reversals, fees and foreign-exchange differences instead of forcing one dashboard total.",
+                    "title": "Inspect the ranking page targets",
+                    "action": "Check whether the competing URLs use dedicated pages for the specific query.",
+                    "detail": "Richards finds dedicated head-on collision pages beneath broader accident services and uses that observation to choose a nested page. [Robbie Richards — P5ET0IvFReQ @ 00:03:19]",
                 },
                 {
                     "step": 4,
-                    "title": "Stop exposure before pursuing arrears",
-                    "action": "Apply the agreed credit limit and contractual suspension process to overdue accounts.",
-                    "detail": "Preserve delivered-work evidence, request a dated resolution and pursue the documented dispute route without changing attribution records.",
+                    "title": "Record and prioritize the candidates",
+                    "action": "Export keywords with volume, difficulty, intent, and content type.",
+                    "detail": "Kyle describes a spreadsheet and prioritization combining lower difficulty, higher volume, and strong intent. [My First Website — Z2ya7VWFvh4 @ 00:06:27]",
                 },
             ],
         },
         {
-            "heading": "3. Convert three mapped plays into permissioned, collectible revenue",
-            "epistemic_status": "operating_framework",
+            "id": "Q2-S3",
+            "title": "Evaluate difficulty, traffic, advertising cost, and marketplace competition separately",
             "paragraphs": [
                 (
-                    "For newly_registered_domain_trigger_arbitrage, treat registration signals as "
-                    "prospecting evidence, not proof that an owner needs your service. "
-                    "Request permitted ICANN CZDS zone access and compare daily snapshots; "
-                    "a newly observed delegation is not necessarily a newly registered "
-                    "domain. Use .us RDAP records only where fields are actually "
-                    "public and reuse is permitted, rather than assuming a universally "
-                    "unredacted feed. Cross-match domain tokens with Secretary of State "
-                    "LLC records to identify plausible business entities and published "
-                    "business mailing addresses, not to defeat privacy protection or "
-                    "identify concealed individuals. Confirm the match before mailing. Over "
-                    "72 hours, perform low-rate DNS and HTTP checks for sitemap.xml, "
-                    "SPF, and DMARC, with conservative timeouts and retry limits. "
-                    "Missing SPF or DMARC is a mail-configuration observation, not proof "
-                    "of website compromise. Zero Google indexed pages cannot be established "
-                    "by DNS probes; report limited observed search visibility unless "
-                    "authorized Search Console access supports a stronger finding. An "
-                    "illustrative 1,000 qualified mailers at $1.20 cost $1,200; "
-                    "20 responses and four approved $400 hosting referrals generate "
-                    "$1,600 commission, leaving $400 before research and overhead. "
-                    "Fallback to permitted CZDS files and verified business-record matches "
-                    "instead of high-frequency WHOIS scraping, and mail a clearly "
-                    "private diagnostic with actionable fixes rather than official-looking demands."
+                    "Tutorial Stack ([1Q38-qqOu3c @ 00:01:00]) looks for lower keyword difficulty with useful volume, suggesting "
+                    "100 to 500 searches for someone starting out rather than requiring a very large head term. The tutorial "
+                    "uses question results and the easy difficulty filter to surface candidates. Kyle on My First Website "
+                    "([Z2ya7VWFvh4 @ 00:01:56]) demonstrates a more explicit combination: a maximum difficulty of 35 and "
+                    "minimum volume of 100, followed by sorting and examining longer, problem-oriented phrases. WeStudyFunnels "
+                    "([PpHWPSjRYPI @ 00:01:51]) then shows why an attractive filter result does not complete the analysis. "
+                    "The treadmill-under-$1,000 phrase has difficulty 30 and volume 3,600, yet the speaker finds Wirecutter "
+                    "well below the leading results and later observes extensive exact targeting among competing pages. "
+                    "The point is not that the earlier filters disappear; the demonstrations give them different jobs. "
+                    "Tutorial Stack and Kyle use them to produce a manageable set of possibilities, while WeStudyFunnels "
+                    "examines what the score can miss about a particular result set. The reported figures belong to those "
+                    "examples and do not supply one universal threshold across every site. After filtering, the actual "
+                    "ranked pages still determine whether the apparent opportunity resembles the competition the researcher "
+                    "is prepared to tackle."
                 ),
                 (
-                    "The play typo_squatting_brand_bid_hijacking is implemented here through "
-                    "authorized acquisition, not deceptive domains or stolen attribution. "
-                    "The ACPA, 15 U.S.C. 1125(d), addresses bad-faith registration, "
-                    "trafficking, or use of qualifying confusing domain names; the "
-                    "UDRP is a separate contractual domain dispute mechanism. Neither "
-                    "is a business model to price as routine friction. Obtain "
-                    "written merchant permission specifying brand-plus keywords, paid-search "
-                    "channels, bridge pages, and any restrictions on direct linking. "
-                    "Without that permission, evaluate permitted competitor alternative, "
-                    "pricing, or review queries that lead to a genuine comparison "
-                    "and a challenger that accepts the traffic. Comparative keyword "
-                    "targeting still requires checking applicable trademark rules, ad "
-                    "policies, and program terms; it is not automatically unrestricted. "
-                    "For an illustrative test, 500 clicks at $1.20 cost "
-                    "$600. A 6% approved purchase rate produces 30 commissions "
-                    "at $30, or $900 revenue and $300 contribution before "
-                    "content and overhead. A 20% reversal rate cuts revenue "
-                    "to $720 and contribution to $120. Preserve click identifiers, "
-                    "permissions, and accepted-order reports without collecting unnecessary "
-                    "personal information. If permissions are withdrawn or attribution "
-                    "fails, pause spending and use approved organic comparison inventory; "
-                    "never restore economics through forced redirects, concealed affiliates, "
-                    "or substitution of another publisher's tracking identifiers."
+                    "WeStudyFunnels ([PpHWPSjRYPI @ 00:04:06]) counts fifteen leading treadmill results with the target phrase "
+                    "in their titles and reads that as evidence of active targeting. The speaker contrasts this with a "
+                    "difficulty calculation heavily influenced by backlinks: fewer links to those specific articles do "
+                    "not mean strong domains are absent from the query. Kyle on My First Website "
+                    "([Z2ya7VWFvh4 @ 00:05:48]) likewise says difficulty is an estimate and describes checking results "
+                    "even when a keyword displays KD 15. His inspection considers strong domains, weak backlinks, thin "
+                    "content, and outdated information. Travis Wilkie ([D7f-Pid5IhM @ 00:02:10]) investigates a different "
+                    "number altogether in the advertising workflow: cost per click. He filters the plumbing example from "
+                    "$1 to $15 and then narrows by commercial and transactional intent, later widening the price range. "
+                    "His earlier explanation distinguishes cheaper competitor-business searches from traffic he expects "
+                    "to be more useful. These examples keep organic difficulty and advertising cost attached to their "
+                    "respective tasks. A low difficulty candidate still receives a result-page inspection; a cheaper ad "
+                    "keyword still receives an intent and competitor-name inspection. The speakers are not replacing "
+                    "relevance with the smallest available number. They use the numbers to reduce the list, then inspect "
+                    "what those surviving searches actually represent."
                 ),
                 (
-                    "For domain_drop_catch_backlink_parking_arbitrage, acquire generic descriptive "
-                    "domains only after reviewing trademark exposure, archive history, "
-                    "traffic provenance, existing contractual rights, and transfer status. "
-                    "A domain purchase does not convey the previous operator's "
-                    "copyrighted articles, customer records, or brand permissions. Residual "
-                    "bookmarks and referral links can deliver visitors, but backlink "
-                    "counts do not prove human demand or transferable ranking "
-                    "value. Verify traffic with seller-provided read-only evidence and "
-                    "post-acquisition logs, recognizing that public counters can be "
-                    "manipulated. Illustratively, 3,000 daily requests over 30 days "
-                    "produce 90,000 requests; if 70% are invalid or irrelevant, "
-                    "only 27,000 remain eligible. At $8 realized net publisher "
-                    "revenue per thousand eligible visits, revenue is $216 monthly. "
-                    "A $2,000 acquisition therefore needs more than nine months "
-                    "to recover purchase cost even before hosting and maintenance. "
-                    "Inspect contextual feed contracts before using any zero-click "
-                    "routing; reject deceptive navigation, unwanted downloads, or unsupported "
-                    "user tracking. At Cloudflare, filter demonstrated abusive datacenter "
-                    "sources before monetization while testing for legitimate visitors "
-                    "and preserving necessary verification access. The fallback is "
-                    "an owned, clearly identified lead lander with permitted data "
-                    "collection and contracted buyers. If verified human demand "
-                    "cannot support conservative economics, do not acquire the domain "
-                    "merely because an auction clock is expiring."
+                    "Hamish on Income stream surfers ([C6HdlbqGuF4 @ 00:10:58]) applies the research to print-on-demand "
+                    "marketplaces by entering a marketplace domain, filtering ranking positions, and narrowing titles or "
+                    "URLs to product language such as shirts, necklaces, or earrings. He then checks the keyword in the "
+                    "target country's Google results and examines the marketplace itself. His example distinguishes "
+                    "a crowded marketplace result from a small result set lacking exact-phrase titles, where he considers "
+                    "a specifically titled product. Kyle on My First Website ([Z2ya7VWFvh4 @ 00:04:51]) adds another "
+                    "way to inspect apparent demand: compare the keyword's stated volume with estimated traffic to the "
+                    "leading pages. His example contrasts 200 monthly searches with a page receiving 1,500 visits from "
+                    "30 related keywords. Ahrefs Product Updates ([JMyPIbu7vhw @ 00:03:20]) similarly looks beneath "
+                    "a broad term for an audience-specific angle, finding dog-food allergy queries that appear less "
+                    "competitive. These are different kinds of opportunity, not interchangeable measurements. Hamish "
+                    "checks marketplace visibility and competing product titles; Kyle examines the broader traffic a "
+                    "page receives; the Ahrefs presenter examines a narrower need. Hamish also says there is no minimum "
+                    "search-volume requirement in his marketplace workflow, preserving a different selection approach "
+                    "from Kyle's demonstrated minimum-volume filter rather than forcing both into one rule."
                 ),
             ],
             "table": {
-                "caption": "Mapped Play Economics, Evidence Boundaries & Revenue-Safe Fallbacks",
-                "headers": [
-                    "Play and buyer funding the outcome",
-                    "Unit model separating revenue from costs",
-                    "Evidence needed before accepting the payable",
-                    "Fallback preserving rights and collection quality",
-                ],
+                "caption": "The speakers' numerical filters and the checks that follow them.",
+                "headers": ["Candidate Signal", "Follow-up Inspection or Action", "Expert Source"],
                 "rows": [
                     [
-                        "newly_registered_domain_trigger_arbitrage connects verified businesses with authorized hosting merchants",
-                        "Four approved referrals at four hundred dollars produce sixteen hundred",
-                        "Retain merchant permissions, verified business matches and diagnostic observation timestamps",
-                        "Use permitted zone snapshots instead of repeated individual WHOIS extraction",
+                        "Lower difficulty paired with 100 to 500 searches for beginners.",
+                        "Use questions and the easy filter to locate additional candidate phrases.",
+                        "Tutorial Stack ([1Q38-qqOu3c @ 00:01:00]) describes the beginner volume range.",
                     ],
                     [
-                        "NRD diagnostic mailers address published business locations after entity confirmation",
-                        "One thousand mailers at one dollar twenty cost twelve hundred",
-                        "Describe limited observations accurately without inventing compromise or official affiliation",
-                        "Offer genuine sitemap and mail configuration fixes through private diagnostics",
+                        "Maximum difficulty of 35 paired with minimum volume of 100.",
+                        "Apply both filters before inspecting longer phrases and their intent.",
+                        "My First Website ([Z2ya7VWFvh4 @ 00:01:56]) demonstrates the paired filters.",
                     ],
                     [
-                        "typo_squatting_brand_bid_hijacking becomes permissioned comparison acquisition for participating merchants",
-                        "Five hundred paid clicks cost six hundred against nine hundred commissions",
-                        "Written keyword permissions and approved purchases establish legitimate attribution entitlement",
-                        "Switch to permitted challenger comparisons when merchant brand permissions disappear",
+                        "A difficulty score looks attractive despite extensive exact-query title targeting.",
+                        "Inspect the competing titles instead of assuming fewer backlinks mean ease.",
+                        "WeStudyFunnels ([PpHWPSjRYPI @ 00:04:06]) counts fifteen actively targeting results.",
                     ],
                     [
-                        "Comparison publisher bears acquisition risk while merchants approve eligible orders",
-                        "Twenty percent reversals reduce nine hundred revenue to seven hundred twenty",
-                        "Preserve rejection reasons and reconcile accepted orders before increasing spend",
-                        "Pause paid traffic when disputes consume the remaining contribution margin",
+                        "Advertising candidates fall inside the demonstrated $1 to $15 range.",
+                        "Further narrow the results to commercial and transactional search intent.",
+                        "Travis Wilkie ([D7f-Pid5IhM @ 00:02:10]) demonstrates the CPC filtering example.",
                     ],
                     [
-                        "domain_drop_catch_backlink_parking_arbitrage sells verified human attention to permitted demand",
-                        "Twenty seven thousand eligible visits at eight dollar yield produce two sixteen",
-                        "Inspect trademark clearance, historical content rights and independently corroborated traffic",
-                        "Acquire descriptive domains only and reject unverifiable residual audience claims",
+                        "The leading page attracts traffic beyond one keyword's reported volume.",
+                        "Look at estimated page traffic and its additional related keyword rankings.",
+                        "My First Website ([Z2ya7VWFvh4 @ 00:04:51]) illustrates broader page-level traffic.",
                     ],
                     [
-                        "Owned niche lead landers receive contracted payments from qualified buyers",
-                        "Ten accepted exclusive leads at forty dollars produce four hundred",
-                        "Document permitted data uses, acceptance criteria and recipient identity clearly",
-                        "Replace unsuitable contextual routing with transparent owned lead capture pages",
+                        "Marketplace visibility is absent but competing product titles may be weak.",
+                        "Inspect marketplace result counts and whether titles exactly match the phrase.",
+                        "Income stream surfers ([C6HdlbqGuF4 @ 00:12:34]) contrasts marketplace competition examples.",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "Q2-S4",
+            "title": "Close silo gaps and advance only with the traction the speakers describe",
+            "paragraphs": [
+                (
+                    "Topical Authority SEO | Floyi ([0XswjN-Lops @ 00:00:38]) classifies silos using comparative ranking "
+                    "coverage: leading means matching or exceeding the top competitor's count of topics ranking in the "
+                    "top 20, while contested means at least 60% of that count or being ten topics or fewer behind. "
+                    "Its investment ordering starts with contested silos and the smallest gaps, then moves to leading, "
+                    "open, and trailing silos. Kyle on My First Website ([Z2ya7VWFvh4 @ 00:03:41]) demonstrates a "
+                    "keyword-gap workflow by comparing a site with two to three competitors and filtering the resulting "
+                    "opportunities by difficulty and volume. Hamish on Income stream surfers "
+                    "([C6HdlbqGuF4 @ 00:07:39]) describes comparing one website against four others to uncover phrases "
+                    "the first site is missing. All three approaches use competitors to expose absences, but Floyi adds "
+                    "an explicit map-level ordering to the resulting work. Its recommendation is to finish leading "
+                    "and contested areas before spreading effort across trailing ones, rather than treating every missing "
+                    "keyword as equally urgent. Kyle's and Hamish's comparisons explain how candidates enter the research; "
+                    "Floyi explains which existing silo receives attention first. That distinction keeps a large gap "
+                    "export from replacing the stated decision about where a focused publishing effort should go next."
+                ),
+                (
+                    "David G. Quaid on James Dooley ([mE2Y-3fNorE @ 00:06:07]) describes putting down the next cornerstone "
+                    "and waiting a week: if it does not receive clicks, he does not keep advancing. Instead, he starts "
+                    "another topic cluster or revisits where he misread the authority required. James Dooley "
+                    "([mE2Y-3fNorE @ 00:13:53]) explicitly separates topical coverage from topical authority, describing "
+                    "authority as coverage plus historical data from traffic, links, social activity, and engagement. "
+                    "Edward Sturm ([8DuIlUdfY_w @ 00:09:34]) presents purchase-intent landing pages as contributors "
+                    "to topical authority and places link building and marketing alongside them as off-site contributors. "
+                    "These accounts do not reduce authority to the number of articles produced. Quaid describes "
+                    "progressing through achievable queries and responding to observed clicks; Dooley names the history "
+                    "missing from mere coverage; Sturm emphasizes both commercially focused pages and the language "
+                    "surrounding external mentions. Their different routes also preserve different immediate publishing "
+                    "choices. Sturm does not require a large educational blog to establish the topic, while Quaid "
+                    "describes smaller related terms as an entrance when the desired money term is out of reach. "
+                    "In both accounts, the relationship between the chosen topic and subsequent activity matters more "
+                    "than declaring authority simply because a content map has been filled."
+                ),
+                (
+                    "Topical Authority SEO | Floyi ([0XswjN-Lops @ 00:03:50]) makes each non-ranking topic actionable "
+                    "according to its existing state: create a brief when nothing exists, create a draft from a ready "
+                    "brief, or continue editing the work already started. The tutorial also explains that silo analysis "
+                    "updates when scores recalculate or search results refresh. David G. Quaid on James Dooley "
+                    "([mE2Y-3fNorE @ 00:15:46]) describes building page clusters around the words needed for a target "
+                    "and linking those pages to the final money page. Edward Sturm ([8DuIlUdfY_w @ 00:16:06]) "
+                    "carries the chosen commercial language into link building, public relations, and branding, especially "
+                    "off-site activity. These are distinct next actions after research, rather than a single instruction "
+                    "to publish every remaining phrase. Floyi resumes the actual content work already present; Quaid "
+                    "connects supporting pages with the commercial destination; Sturm aligns external descriptions with "
+                    "the searches that bring customers. The resulting chapter workflow retains the speakers' own "
+                    "checks: identify the business language, group candidates, inspect competing pages, choose the "
+                    "appropriate page coverage, and revisit the topic using ranking or click evidence. Completion of "
+                    "a brief or draft is therefore a different recorded state from a topic entering Floyi's top-20 "
+                    "coverage count, just as publishing coverage differs from the authority Dooley describes."
+                ),
+            ],
+            "table": {
+                "caption": "Silo prioritization and topical progress as the speakers describe them.",
+                "headers": ["Observed State", "Practitioner Next Move", "Expert Source"],
+                "rows": [
+                    [
+                        "A contested silo is close enough to the leading competitor.",
+                        "Prioritize contested silos first and work on the smallest gap.",
+                        "Topical Authority SEO | Floyi ([0XswjN-Lops @ 00:01:37]) explains investment ordering.",
+                    ],
+                    [
+                        "The site already leads a silo but has unfinished topic coverage.",
+                        "Finish leading silos after contested opportunities and retain the lead.",
+                        "Topical Authority SEO | Floyi ([0XswjN-Lops @ 00:01:37]) explains leading-silo priority.",
+                    ],
+                    [
+                        "Competitors rank for relevant phrases that the researched site misses.",
+                        "Compare the site with competitors and filter the missing keyword opportunities.",
+                        "My First Website ([Z2ya7VWFvh4 @ 00:03:58]) demonstrates filtered keyword gaps.",
+                    ],
+                    [
+                        "The next cornerstone page does not receive the expected clicks.",
+                        "Stop advancing and revisit the topic or the required authority.",
+                        "David G. Quaid on James Dooley ([mE2Y-3fNorE @ 00:06:07]) describes the response.",
+                    ],
+                    [
+                        "A non-ranking topic already has a brief or partial draft.",
+                        "Continue the existing work instead of starting every topic from nothing.",
+                        "Topical Authority SEO | Floyi ([0XswjN-Lops @ 00:03:50]) maps work states to actions.",
+                    ],
+                    [
+                        "The business has identified phrases that bring customers or leads.",
+                        "Use that language in link building and other off-site marketing.",
+                        "Edward Sturm ([8DuIlUdfY_w @ 00:16:06]) connects keyword choices with external activity.",
                     ],
                 ],
             },
             "callout": {
                 "kind": "OPERATOR GATE",
-                "title": "Verify four conditions before activating monetization",
-                "body": "Proceed only when the traffic source, commercial rights, payment authority and loss limit are evidenced together.",
+                "title": "Checks the practitioners explicitly place before the next move",
+                "body": "These checks follow the speakers' warnings about misleading scores, intent, coverage, and stalled progress.",
                 "items": [
-                    "Confirm CZDS and business-record reuse permissions, validate entity matches, and remove personal address records from diagnostic mailing lists.",
-                    "Archive written merchant permission for paid-search channels and brand-plus targeting before the first funded click.",
-                    "Review domain history and trademark exposure, then verify human traffic before enabling any feed or lead buyer.",
-                    "Confirm the debtor, settlement account, reversal rules and maximum affordable unpaid balance before scaling inventory.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Reconcile canonical profit, statutory duties and concentration before scaling",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The canonical scenarios recognize advertising, affiliate, and sponsorship "
-                    "revenue, excluding referred merchant sales. One illustrative bridge "
-                    "to Conservative is $40,000 advertising from eight million "
-                    "monetized pageviews at $5 publisher RPM, $30,000 affiliate "
-                    "revenue from 600 approved $50 commissions, and $10,000 "
-                    "sponsorship from five $2,000 packages. That totals $80,000; "
-                    "$64,000 costs leave $16,000 owner net profit at "
-                    "20%, with 2 FT plus 4 C. Base uses "
-                    "$220,000 advertising from 22 million pageviews at $10 "
-                    "RPM, $180,000 from 3,000 approved $60 commissions, "
-                    "and $90,000 from fifteen $6,000 sponsorships. Revenue "
-                    "is $490,000; $330,750 costs leave $159,250 "
-                    "at 32.5%, with the same team count. Scaled uses "
-                    "$360,000 advertising from 30 million pageviews at $12 "
-                    "RPM, $360,000 from 6,000 approved $60 commissions, "
-                    "and $180,000 from twenty $9,000 sponsorships. Revenue "
-                    "is $900,000; $495,000 costs leave $405,000 "
-                    "at 45%, with 3 FT plus 5 C. These "
-                    "component mixes are constructed illustrations, not additional scorecard "
-                    "facts. Define RPM consistently as publisher revenue per thousand "
-                    "monetized pageviews, and prevent duplicated pageviews across properties. "
-                    "Count approved commissions once even when several internal reports "
-                    "describe the same purchase. Diagnostic service fees and media "
-                    "sale proceeds are outside this bridge."
-                ),
-                (
-                    "The supplied $2,500 to $14,000 monthly operating "
-                    "expense range does not by itself explain every scenario's "
-                    "all-in annual costs. Conservative implies approximately $5,333 "
-                    "monthly costs, Base $27,562.50, and Scaled $41,250. "
-                    "Preserve the canonical profit figures and explicitly resolve "
-                    "that budgeting difference before hiring; do not silently "
-                    "treat the monthly range as an all-in ceiling. Build "
-                    "a cost bridge showing payroll, contractor assignments, content "
-                    "rights, infrastructure, acquisition spending, transaction charges, and other "
-                    "scenario expenses with no invented reconciliation entries. The "
-                    "headcounts describe the supplied team configurations; they do "
-                    "not establish salaries or prove that two full-time market-rate "
-                    "employees fit the Conservative budget. Startup capital of "
-                    "$10,000 to $60,000 and a 6–24 month "
-                    "time to first deal make cash timing a separate "
-                    "survival problem. At Base revenue, a hypothetical uniform "
-                    "60-day collection delay ties up roughly $80,548 "
-                    "using annual revenue divided by 365, before considering "
-                    "prepayments or differing channel schedules. Do not subtract "
-                    "that receivable balance again as an operating expense. "
-                    "Stress-test ranking losses and revenue concentration separately: losing "
-                    "a buyer responsible for 30% of Base revenue removes "
-                    "$147,000 of annual sales, with profit impact depending "
-                    "on which associated costs can actually be avoided."
-                ),
-                (
-                    "Make statutory requirements concrete rather than treating them as "
-                    "generic paperwork. Section 5 of the FTC Act, 15 "
-                    "U.S.C. 45, prohibits unfair or deceptive practices; the "
-                    "FTC Endorsement Guides at 16 CFR Part 255 explain "
-                    "material-connection disclosure principles. Put clear affiliate and "
-                    "sponsorship disclosures where readers encounter the recommendation, "
-                    "including mobile comparison layouts, rather than relying solely "
-                    "on a remote policy page. Copyright rights under 17 "
-                    "U.S.C. 106 require attention to article text, images, "
-                    "charts, and acquired archives; a registrar transfer does "
-                    "not transfer those assets automatically. For businesses subject "
-                    "to California Civil Code section 1798.100, implement "
-                    "applicable notice and data-handling requirements; assess sale, "
-                    "sharing, and opt-out duties under section 1798.120 "
-                    "against actual advertising and lead flows. Minimize retained "
-                    "identifiers and map recipients before activating new measurement "
-                    "scripts. Automate technical audits, content refresh queues, "
-                    "and revenue reporting, but retain human review for "
-                    "rights disputes and anomalous settlements. A media exit "
-                    "buyer will scrutinize these records alongside property-level "
-                    "earnings and transferable contracts. Maintain monthly reconciliations, "
-                    "permission archives, concentration reports, and traffic-quality evidence "
-                    "so acquisition diligence can distinguish durable publisher "
-                    "cash generation from temporary ranking spikes or commissions "
-                    "that remain vulnerable to reversal."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Revenue Bridge & Monthly Collection Control Matrix",
-                "headers": [
-                    "Scenario or control requiring explicit reconciliation",
-                    "Recognized revenue and operating evidence",
-                    "Cost, profit or cash exposure calculation",
-                    "Operator decision when the evidence deteriorates",
-                ],
-                "rows": [
-                    [
-                        "Conservative scenario retains two full time and four contractor roles",
-                        "Forty thousand advertising plus thirty thousand affiliates plus ten thousand sponsorship",
-                        "Eighty thousand less sixty four thousand leaves sixteen thousand profit",
-                        "Verify affordable staffing allocation before treating headcount as salaried capacity",
-                    ],
-                    [
-                        "Base scenario retains two full time and four contractor roles",
-                        "Two hundred twenty thousand advertising plus one eighty affiliates plus ninety sponsorship",
-                        "Revenue $490,000 less costs $330,750 leaves owner profit $159,250",
-                        "Require explicit cost bridge above the supplied monthly planning range",
-                    ],
-                    [
-                        "Scaled scenario uses three full time and five contractor roles",
-                        "Three hundred sixty thousand advertising plus equal affiliates plus one eighty sponsorship",
-                        "Nine hundred thousand less four hundred ninety five leaves $405,000",
-                        "Keep eight person staffing and channel concentration visible during expansion",
-                    ],
-                    [
-                        "Collection timing control measures approved earnings awaiting actual bank settlement",
-                        "Hypothetical sixty day delay applies to uniformly earned Base revenue",
-                        "Annual $490,000 divided by 365 times sixty equals approximately $80,548",
-                        "Fund working capital separately rather than overstating annual operating expenses",
-                    ],
-                    [
-                        "Concentration control isolates payer exposure from individual website ranking exposure",
-                        "One buyer representing thirty percent of Base contributes $147,000 revenue",
-                        "Lost revenue affects profit according to genuinely avoidable associated costs",
-                        "Reduce unsecured exposure and develop independently funded replacement buyer channels",
-                    ],
-                    [
-                        "Exit diligence control separates asset consideration from recurring publisher earnings",
-                        "Reconcile platform statements, permission archives and property level bank receipts",
-                        "Escrow balances and acquisition proceeds remain outside this recurring revenue bridge",
-                        "Resolve missing transfer rights before advertising a clean transferable portfolio",
-                    ],
+                    "Inspect exact-query targeting in the ranked titles; a low backlink-led difficulty score can still sit beside strong domains actively pursuing the phrase. [WeStudyFunnels — PpHWPSjRYPI @ 00:05:39]",
+                    "Do not select cheaper competitor-business searches solely for their CPC; Wilkie warns that this traffic is typically less useful in the demonstrated advertising workflow. [Travis Wilkie — D7f-Pid5IhM @ 00:01:21]",
+                    "Keep published coverage separate from ranking coverage: Floyi's silo coverage counts topics ranking in the top 20, not simply pages that have been published. [Topical Authority SEO | Floyi — 0XswjN-Lops @ 00:01:18]",
+                    "When the next cornerstone receives no clicks after the described wait, stop advancing and reassess the cluster or the authority required. [James Dooley — mE2Y-3fNorE @ 00:06:07; testimony by David G. Quaid]",
                 ],
             },
         },
     ],
-    "pull_quote": "A ranking becomes a business asset only when an authorized buyer owes a defined amount that you can actually collect.",
+    "pull_quote": (
+        '"Majority of people in the SEO community think topical authority is topical coverage, and it\'s not." '
+        "— James Dooley ([mE2Y-3fNorE @ 00:13:53])."
+    ),
     "diagram_id": "diag-04",
     "action_checklist": [
-        "Build a payer register naming each legal debtor, budget owner, authorized signer, acceptance reviewer and accounts-payable contact.",
-        "Archive current affiliate terms, paid-search permissions, sponsor insertion orders and property-level rights records before activating campaigns.",
-        "Assign each revenue stream an earning event, settlement mechanism, reversal window, credit limit and documented dispute process.",
-        "Run bounded tests for the three mapped plays, measuring approved publisher revenue after invalid traffic, reversals and acquisition costs.",
-        "Reconcile the $80,000, $490,000 and $900,000 revenue cases to their exact canonical profits and document the monthly cost-range mismatch.",
-        "Maintain monthly bank-to-platform reconciliations, rights evidence, buyer concentration reports and cash-delay stress tests for operating control and exit diligence.",
+        "Write down the language associated with the products and the purchase-intent searches the business wants to reach. (Edward Sturm, 8DuIlUdfY_w @ 00:15:53)",
+        "Group a broad Ahrefs seed by parent topic, then inspect the relevant topic's subtopics before assigning content. (Ahrefs Product Updates, JMyPIbu7vhw @ 00:02:08)",
+        "Inspect competing URLs to decide whether a long-tail query needs a dedicated page beneath a broader service page. (Robbie Richards, P5ET0IvFReQ @ 00:03:19)",
+        "Check the organic titles for active exact-query targeting instead of relying solely on the difficulty score. (WeStudyFunnels, PpHWPSjRYPI @ 00:04:06)",
+        "For print-on-demand research, search in the target country and check where the chosen marketplace appears. (Income stream surfers, C6HdlbqGuF4 @ 00:12:17)",
+        "Prioritize contested silos with the smallest gaps, then finish the silos already being led. (Topical Authority SEO | Floyi, 0XswjN-Lops @ 00:01:37)",
     ],
     "statutory_citations": [
         {
-            "title": "15 U.S.C. 45 — Unfair methods of competition and unfair or deceptive acts or practices",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": "Supports truthful diagnostic claims, accurate comparison representations and transparent advertising practices across publisher properties.",
+            "title": "Edward Sturm — Topical Authority Isn’t Blog Posts - It’s This [00:15:53]",
+            "url": "https://www.youtube.com/watch?v=8DuIlUdfY_w&t=953s",
+            "relevance": "Core practitioner testimony on product language, bottom-of-funnel keywords, and commercial topical focus.",
         },
         {
-            "title": "16 CFR 255.5 — Disclosure of material connections",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5",
-            "relevance": "FTC interpretive guidance addresses disclosure of connections that could affect the weight or credibility of endorsements, including affiliate and sponsor relationships.",
+            "title": "James Dooley — Building Topical Authority: How to Gain Traction For a New Topic (James Dooley ft David G Quaid) [00:13:53]",
+            "url": "https://www.youtube.com/watch?v=mE2Y-3fNorE&t=833s",
+            "relevance": "Core practitioner testimony distinguishing topical coverage from authority supported by historical activity.",
         },
         {
-            "title": "15 U.S.C. 1125(d) — Cyberpiracy prevention",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1125",
-            "relevance": "Addresses bad-faith domain conduct involving protected marks and supports rejecting deceptive typo-domain strategies in favor of authorized acquisition channels.",
+            "title": "Robbie Richards — How to Create Keyword Clusters With Semrush (New Feature) [00:03:04]",
+            "url": "https://www.youtube.com/watch?v=P5ET0IvFReQ&t=184s",
+            "relevance": "Core practitioner testimony on deciding whether a clustered phrase requires a dedicated page.",
         },
         {
-            "title": "17 U.S.C. 106 — Exclusive rights in copyrighted works",
-            "url": "https://www.law.cornell.edu/uscode/text/17/106",
-            "relevance": "Requires separate attention to rights in articles, images and archived assets; ownership of a domain does not establish ownership of its former content.",
+            "title": "Topical Authority SEO | Floyi — 14 How to Run a Competitor Content Gap Analysis by Silo (Floyi Tutorial) [00:01:37]",
+            "url": "https://www.youtube.com/watch?v=0XswjN-Lops&t=97s",
+            "relevance": "Core practitioner testimony on prioritizing contested silos and finishing existing strengths.",
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "8DuIlUdfY_w",
+            "title": "Topical Authority Isn’t Blog Posts - It’s This",
+            "channel": "Edward Sturm",
+            "author": "Edward Sturm",
+            "text": "Write down all the language that corresponds to the products that you're selling.",
+            "tip": "Write down all the language that corresponds to the products that you're selling.",
+            "timestamp": 953,
+            "timestamp_seconds": 953,
+            "timestamp_label": "[00:15:53]",
+            "url": "https://www.youtube.com/watch?v=8DuIlUdfY_w&t=953s",
+            "markdown": "[00:15:53](https://www.youtube.com/watch?v=8DuIlUdfY_w&t=953s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2 corpus.",
         },
         {
-            "title": "California Civil Code section 1798.100 — Consumer information and business duties",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.100.",
-            "relevance": "For covered businesses, informs collection notices, purpose limits and data-handling requirements for advertising measurement and lead capture.",
+            "source_type": "video_pro_tip",
+            "video_id": "mE2Y-3fNorE",
+            "title": "Building Topical Authority: How to Gain Traction For a New Topic (James Dooley ft David G Quaid)",
+            "channel": "James Dooley",
+            "author": "James Dooley",
+            "text": "Topical authority, it's topical coverage plus historical data, which comes from traffic and links and socials and engagement.",
+            "tip": "Topical authority, it's topical coverage plus historical data, which comes from traffic and links and socials and engagement.",
+            "timestamp": 833,
+            "timestamp_seconds": 833,
+            "timestamp_label": "[00:13:53]",
+            "url": "https://www.youtube.com/watch?v=mE2Y-3fNorE&t=833s",
+            "markdown": "[00:13:53](https://www.youtube.com/watch?v=mE2Y-3fNorE&t=833s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2 corpus.",
         },
         {
-            "title": "California Civil Code section 1798.120 — Right to opt out of sale or sharing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.120.",
-            "relevance": "Requires covered operators to assess sale and sharing practices and implement applicable opt-out rights for advertising and lead distribution.",
+            "source_type": "video_pro_tip",
+            "video_id": "0XswjN-Lops",
+            "title": "14 How to Run a Competitor Content Gap Analysis by Silo (Floyi Tutorial)",
+            "channel": "Topical Authority SEO | Floyi",
+            "author": "Topical Authority SEO | Floyi",
+            "text": "Contested silos come first, smallest gap first because a focused push can flip them.",
+            "tip": "Contested silos come first, smallest gap first because a focused push can flip them.",
+            "timestamp": 97,
+            "timestamp_seconds": 97,
+            "timestamp_label": "[00:01:37]",
+            "url": "https://www.youtube.com/watch?v=0XswjN-Lops&t=97s",
+            "markdown": "[00:01:37](https://www.youtube.com/watch?v=0XswjN-Lops&t=97s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2 corpus.",
         },
         {
-            "title": "California Commercial Code section 9406 — Discharge of account debtor and assignment restrictions",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=COM&sectionNum=9406.",
-            "relevance": "Provides a state-enacted UCC framework relevant to invoice assignment, payment notification and specified restrictions when evaluating factoring.",
+            "source_type": "video_pro_tip",
+            "video_id": "0qP8UUWuBSc",
+            "title": "How To Do Keyword Clustering Using Semrush",
+            "channel": "Travis Wilkie",
+            "author": "Travis Wilkie",
+            "text": "Then you can see how these keywords group together.",
+            "tip": "Then you can see how these keywords group together.",
+            "timestamp": 154,
+            "timestamp_seconds": 154,
+            "timestamp_label": "[00:02:34]",
+            "url": "https://www.youtube.com/watch?v=0qP8UUWuBSc&t=154s",
+            "markdown": "[00:02:34](https://www.youtube.com/watch?v=0qP8UUWuBSc&t=154s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2 corpus.",
         },
         {
-            "title": "California Commercial Code section 9408 — Restrictions on assignment of specified rights",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=COM&sectionNum=9408.",
-            "relevance": "Illustrates qualified rules concerning security interests and transfer restrictions; it does not make every contract freely assignable or compel unrestricted performance to an assignee.",
+            "source_type": "video_pro_tip",
+            "video_id": "wSkIVyKv2rY",
+            "title": "How To Do Keyword Clustering Using Ahrefs",
+            "channel": "Travis Wilkie",
+            "author": "Travis Wilkie",
+            "text": "We could switch over to commercial and transactional intent.",
+            "tip": "We could switch over to commercial and transactional intent.",
+            "timestamp": 53,
+            "timestamp_seconds": 53,
+            "timestamp_label": "[00:00:53]",
+            "url": "https://www.youtube.com/watch?v=wSkIVyKv2rY&t=53s",
+            "markdown": "[00:00:53](https://www.youtube.com/watch?v=wSkIVyKv2rY&t=53s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "r8amrelmKH0",
+            "title": "Ahrefs vs Semrush 2026: I Tested Both for 30 Days — The Honest Winner #ahrefs #semrush #aitools",
+            "channel": "Niche AI Tool",
+            "author": "Niche AI Tool",
+            "text": "It genuinely comes down to your workflow, not a magic score.",
+            "tip": "It genuinely comes down to your workflow, not a magic score.",
+            "timestamp": 97,
+            "timestamp_seconds": 97,
+            "timestamp_label": "[00:01:37]",
+            "url": "https://www.youtube.com/watch?v=r8amrelmKH0&t=97s",
+            "markdown": "[00:01:37](https://www.youtube.com/watch?v=r8amrelmKH0&t=97s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "fLGvfe6OTgc",
+            "title": "How to Do Keyword Clustering in Semrush (Step-by-Step)",
+            "channel": "Tutorial Stack",
+            "author": "Tutorial Stack",
+            "text": "Not because it shows up for you that means it's good. You still need to do the rest of your SEO research.",
+            "tip": "Not because it shows up for you that means it's good. You still need to do the rest of your SEO research.",
+            "timestamp": 172,
+            "timestamp_seconds": 172,
+            "timestamp_label": "[00:02:52]",
+            "url": "https://www.youtube.com/watch?v=fLGvfe6OTgc&t=172s",
+            "markdown": "[00:02:52](https://www.youtube.com/watch?v=fLGvfe6OTgc&t=172s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "tEUh8E-4D7U",
+            "title": "Ahrefs vs SEMrush 2026: Which Is Better?",
+            "channel": "Site Verdict",
+            "author": "Site Verdict",
+            "text": "Prices and plans can change. Always check the official websites for current details.",
+            "tip": "Prices and plans can change. Always check the official websites for current details.",
+            "timestamp": 109,
+            "timestamp_seconds": 109,
+            "timestamp_label": "[00:01:49]",
+            "url": "https://www.youtube.com/watch?v=tEUh8E-4D7U&t=109s",
+            "markdown": "[00:01:49](https://www.youtube.com/watch?v=tEUh8E-4D7U&t=109s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "1Q38-qqOu3c",
+            "title": "How to Find Low Competition Keywords in Semrush (Full Tutorial)",
+            "channel": "Tutorial Stack",
+            "author": "Tutorial Stack",
+            "text": "You want a lower KD and a higher volume.",
+            "tip": "You want a lower KD and a higher volume.",
+            "timestamp": 60,
+            "timestamp_seconds": 60,
+            "timestamp_label": "[00:01:00]",
+            "url": "https://www.youtube.com/watch?v=1Q38-qqOu3c&t=60s",
+            "markdown": "[00:01:00](https://www.youtube.com/watch?v=1Q38-qqOu3c&t=60s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "PpHWPSjRYPI",
+            "title": "Where SEMRUSH and Ahrefs Keyword Difficulty Score Fails",
+            "channel": "WeStudyFunnels",
+            "author": "WeStudyFunnels",
+            "text": "The top 15 spots have it in the title, so that means there's a lot of people actively targeting this keyword and publishing content on it.",
+            "tip": "The top 15 spots have it in the title, so that means there's a lot of people actively targeting this keyword and publishing content on it.",
+            "timestamp": 246,
+            "timestamp_seconds": 246,
+            "timestamp_label": "[00:04:06]",
+            "url": "https://www.youtube.com/watch?v=PpHWPSjRYPI&t=246s",
+            "markdown": "[00:04:06](https://www.youtube.com/watch?v=PpHWPSjRYPI&t=246s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Z2ya7VWFvh4",
+            "title": "Semrush Tips: Find Low Competition Keywords That Still Get Traffic",
+            "channel": "My First Website",
+            "author": "My First Website",
+            "text": "Sometimes a keyword says 200 searches per month, but the top pages get 1,500 visits because it ranked for 30 related keywords.",
+            "tip": "Sometimes a keyword says 200 searches per month, but the top pages get 1,500 visits because it ranked for 30 related keywords.",
+            "timestamp": 291,
+            "timestamp_seconds": 291,
+            "timestamp_label": "[00:04:51]",
+            "url": "https://www.youtube.com/watch?v=Z2ya7VWFvh4&t=291s",
+            "markdown": "[00:04:51](https://www.youtube.com/watch?v=Z2ya7VWFvh4&t=291s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "P5ET0IvFReQ",
+            "title": "How to Create Keyword Clusters With Semrush (New Feature)",
+            "channel": "Robbie Richards",
+            "author": "Robbie Richards",
+            "text": "Do I actually need a dedicated page to rank for that keyword or can I capture that actually with just my core car accident attorney page.",
+            "tip": "Do I actually need a dedicated page to rank for that keyword or can I capture that actually with just my core car accident attorney page.",
+            "timestamp": 184,
+            "timestamp_seconds": 184,
+            "timestamp_label": "[00:03:04]",
+            "url": "https://www.youtube.com/watch?v=P5ET0IvFReQ&t=184s",
+            "markdown": "[00:03:04](https://www.youtube.com/watch?v=P5ET0IvFReQ&t=184s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Q0qBq0V4xC4",
+            "title": "Semrush vs Ahrefs: I Used Both – Here's What You Need to Know",
+            "channel": "Consumer Reviews",
+            "author": "Consumer Reviews",
+            "text": "But when it was time to plan a full content strategy, I hit a wall. So, I moved over to Semrush.",
+            "tip": "But when it was time to plan a full content strategy, I hit a wall. So, I moved over to Semrush.",
+            "timestamp": 285,
+            "timestamp_seconds": 285,
+            "timestamp_label": "[00:04:45]",
+            "url": "https://www.youtube.com/watch?v=Q0qBq0V4xC4&t=285s",
+            "markdown": "[00:04:45](https://www.youtube.com/watch?v=Q0qBq0V4xC4&t=285s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "D7f-Pid5IhM",
+            "title": "Semrush For Finding Low CPC Keywords",
+            "channel": "Travis Wilkie",
+            "author": "Travis Wilkie",
+            "text": "We can say maybe we just want commercial and transactional intent keywords.",
+            "tip": "We can say maybe we just want commercial and transactional intent keywords.",
+            "timestamp": 152,
+            "timestamp_seconds": 152,
+            "timestamp_label": "[00:02:32]",
+            "url": "https://www.youtube.com/watch?v=D7f-Pid5IhM&t=152s",
+            "markdown": "[00:02:32](https://www.youtube.com/watch?v=D7f-Pid5IhM&t=152s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "JMyPIbu7vhw",
+            "title": "New: Keyword Grouping in Keywords Explorer",
+            "channel": "Ahrefs Product Updates",
+            "author": "Ahrefs Product Updates",
+            "text": "When doing keyword research with a broad seed, you can start by grouping by parent topic, and then look at the sidebar to learn which specific topics that people are interested in.",
+            "tip": "When doing keyword research with a broad seed, you can start by grouping by parent topic, and then look at the sidebar to learn which specific topics that people are interested in.",
+            "timestamp": 128,
+            "timestamp_seconds": 128,
+            "timestamp_label": "[00:02:08]",
+            "url": "https://www.youtube.com/watch?v=JMyPIbu7vhw&t=128s",
+            "markdown": "[00:02:08](https://www.youtube.com/watch?v=JMyPIbu7vhw&t=128s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "C6HdlbqGuF4",
+            "title": "Why I think Ahrefs and SEMrush are EASILY the Best Print On Demand SEO Keyword Methods",
+            "channel": "Income stream surfers",
+            "author": "Income stream surfers",
+            "text": "Search the keyword on Google and see where your target POD marketplace is.",
+            "tip": "Search the keyword on Google and see where your target POD marketplace is.",
+            "timestamp": 737,
+            "timestamp_seconds": 737,
+            "timestamp_label": "[00:12:17]",
+            "url": "https://www.youtube.com/watch?v=C6HdlbqGuF4&t=737s",
+            "markdown": "[00:12:17](https://www.youtube.com/watch?v=C6HdlbqGuF4&t=737s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2 corpus.",
         },
     ],
 }

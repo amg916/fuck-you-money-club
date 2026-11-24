@@ -5,963 +5,830 @@ CHAPTER_7 = {
     "chapter_id": "Q7",
     "chapter_number": 7,
     "question_number": 7,
-    "slug": "seo-empire-operating-process-production-blueprint-90-day-cohort",
-    "question_prompt": "How does an operator execute building an seo empire end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
+    "slug": "ctr-manipulation-ip-clicks-proxies-user-signal-testing",
+    "question_prompt": "What do these practitioners claim and test about CTR manipulation and user signals, where do their accounts disagree, and what does the proxy tutorial actually establish about browser-profile protocols versus mobile or residential IP assumptions?",
     "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
-    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
-    "subtitle": "Search Console, Ringba, SQLite Journals, Affiliate Settlement, Copyright Controls & a Cash-Reconciled Publishing Cohort",
-    "layout_template": "research_exhibit",
-    "reading_time_minutes": 14,
+    "title": "CTR Manipulation, IP Clicks, Mobile/Residential Proxies & User-Signal Testing",
+    "subtitle": "Agency Assassin, rank-and-rent click tactics, Chrome signals, traffic bots, CTR Driver, long-term tests, skeptical accounts, and HTTP-versus-SOCKS5 browser-profile configuration",
+    "layout_template": "thirty_day_roadmap",
+    "reading_time_minutes": 15,
     "executive_summary": (
-        "Candidate #25, Building an SEO Empire, ranks #07 with an 89/100 "
-        "Money-to-Manpower Score across 30 mapped plays. Execute it as a publishing "
-        "and receivables operation: qualify topics, ship evidence-backed pages, route "
-        "monetizable demand, verify partner acceptance, and reconcile settled cash. "
-        "This chapter connects local pay-per-call routing, newsletter referral economics, "
-        "and differentiated authority-host distribution to an auditable SQLite workflow. "
-        "The worked mature-portfolio cohort produces $122,500 quarterly revenue and "
-        "$39,812.50 operating profit while exposing settlement delays. Canonical annual "
-        "owner profit remains $16,000 Conservative, $159,250 Base, and $405,000 Scaled. "
-        "The production reference separates prepaid liabilities, earned revenue, receivables, "
-        "and cash; rejects conflicting retries; and supplies reproducible checks without "
-        "treating referred merchant sales as publisher revenue."
+        "These sixteen videos present competing accounts of manufactured clicks and user signals. "
+        "William Jones demonstrates Agency Assassin setup; Chris Palmer derives campaign settings "
+        "from existing traffic; Yash Singh tours Awesome Traffic Bot. SEO Jesus advocates restrained "
+        "automation, while Isaac Ranks describes short-term rank-and-rent support. Niels Castermans "
+        "reports next-day gains that usually last four to five days. Leo Poitevin separates rapid "
+        "viral boosts from longer user-signal accumulation. Osborne Digital Marketing emphasizes "
+        "profile readiness and mobile engagement. Sterling Sky reports fading gains; Semantic "
+        "Mastery describes closing Local Fury; Map Labs and Idris Ya'u warn about adverse outcomes. "
+        "Anthony Hayes promotes P2P mobile IP access, but the supplied transcript does not demonstrate "
+        "HTTP-versus-SOCKS5 browser-profile configuration. Across these accounts, setup demonstrations, "
+        "ranking observations, proposed mechanisms, and service claims remain distinct."
     ),
     "key_metrics": [
         {
-            "label": "Conservative",
-            "value": "$80,000",
-            "context": "Annual advertising, affiliate and sponsorship revenue; merchant sales excluded",
-            "note": "20% net margin; $16,000 annual owner net profit; 1 FT + 3 C",
+            "label": "Next-day Chrome-signal movement",
+            "value": "50%",
+            "context": "Share of the displayed sites that Niels says reached the top ten one day later.",
+            "note": "Attributed to Niels Castermans SEO (9RAmTcJcaDE @ 00:06:47).",
         },
         {
-            "label": "Base",
-            "value": "$490,000",
-            "context": "Annual advertising, affiliate and sponsorship revenue; merchant sales excluded",
-            "note": "32.5% net margin; $159,250 annual owner net profit; 1 FT + 3 C",
+            "label": "Website calculation window",
+            "value": "28 days",
+            "context": "Recent Search Console window Palmer uses when deriving the best-page CTR range.",
+            "note": "Attributed to Chris Palmer SEO (mg7C81Ti3DY @ 00:12:30).",
         },
         {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual advertising, affiliate and sponsorship revenue; merchant sales excluded",
-            "note": "45% net margin; $405,000 annual owner net profit; 1 FT + 3 C",
+            "label": "Agency Assassin starting split",
+            "value": "50 calls / 50 CTR",
+            "context": "Jones's demonstrated starting allocation, subsequently distributed across campaign keywords.",
+            "note": "Attributed to William Jones (qEmm1oiXm5U @ 00:04:08).",
         },
     ],
     "sections": [
         {
-            "heading": "1. Convert the 30-play opportunity map into a controlled publishing intake",
-            "epistemic_status": "operating_framework",
+            "heading": "What the speakers mean by CTR, engagement, and a successful click",
             "paragraphs": [
                 (
-                    "Begin with one owned-domain topic cluster, one accountable editor, and one "
-                    "commercial measurement contract before multiplying sites. Candidate #25 has "
-                    "30 mapped plays, but the operating unit is an evidence-backed page connected "
-                    "to a measurable earning event, not a domain registration. Record the query "
-                    "family, search intent, first-party evidence, image license, merchant terms, "
-                    "canonical URL, refresh trigger, and responsible reviewer in the intake record. "
-                    "Use Google Search Console for observed queries, Screaming Frog for crawl "
-                    "diagnostics, and a versioned content manifest for publication history. Score "
-                    "intent fit, evidence quality, and contribution economics separately; a large "
-                    "keyword estimate cannot repair missing expertise or weak payout terms. "
-                    "Programmatic city pages need genuinely local service information and distinct "
-                    "utility, while topical-authority articles need attributable expertise and "
-                    "primary-source support. For GEO citation capture, publish inspectable definitions, "
-                    "dated calculations, and stable references, then monitor an explicitly sampled "
-                    "answer set rather than claiming universal visibility. Preserve originals and "
-                    "permissions under 17 U.S.C. § 106. Public accessibility does not transfer "
-                    "reproduction rights. A failed rights check stops that asset, not the whole "
-                    "portfolio; substitute licensed material, original photography, or a narrower "
-                    "text-only treatment supported by independently collected evidence."
+                    "SEO Jesus ([DYkDCiVseqM @ 00:02:30]) defines click-through rate with a simple "
+                    "example: a search result receives 100 views and ten clicks, producing ten percent. "
+                    "Idris Ya'u ([L-FcnuQBAjc @ 00:00:21]) gives the same numerical illustration, but "
+                    "their discussions quickly move beyond that ratio. SEO Jesus ([DYkDCiVseqM @ "
+                    "00:04:17]) says user signals is the more useful description because the desired "
+                    "sequence includes clicking, spending time on the result, and finding an answer. "
+                    "Isaac Ranks — Rank & Rent ([vBp6IcY8zg0 @ 00:03:26]) describes tasks involving "
+                    "a search, finding the listing, and clicking through, with Chrome, real devices, "
+                    "and a matching country. Isaac subsequently asks for browsing rather than an "
+                    "immediate departure. These accounts therefore discuss several actions under "
+                    "the CTR label rather than one interchangeable quantity. A search-result click "
+                    "is the initial event; browsing and finishing the visit are additional behaviors "
+                    "the speakers want associated with it. The numerical definition does not itself "
+                    "settle which behavior explains a reported ranking change. The speakers also differ "
+                    "in emphasis: SEO Jesus builds an extended argument around satisfaction and the "
+                    "end of a search, whereas Isaac presents a practical sequence for a rank-and-rent "
+                    "site. Both describe engagement after arrival, rather than treating every incoming "
+                    "visit as equivalent merely because it reaches the same destination."
                 ),
                 (
-                    "For rank_and_rent_pay_per_call_routing, start with foundation repair or commercial "
-                    "roofing in one service territory and contract the buyer's accepted-call definition "
-                    "before buying tracking numbers. Ringba or Twilio can route calls and attach "
-                    "source identifiers, but duration over 90 seconds is only one qualification "
-                    "condition: remove duplicates, wrong territories, existing customers where excluded, "
-                    "and requests outside the buyer's service scope. At $150 per accepted call, "
-                    "125 candidate calls with 25 scrubs produce 100 billable calls and $15,000 "
-                    "revenue, comfortably inside the mapped $75–$300 range. The homeowner's eventual "
-                    "roofing invoice is merchant sales volume, never publisher revenue. Maintain "
-                    "prepaid buyer wallets, stop routing when available capacity or balance reaches "
-                    "zero, and require an explicit auto-refill mandate with provider-side idempotency. "
-                    "Track reserved wallet amounts separately from spent amounts so simultaneous "
-                    "calls cannot overspend a shared balance. The reference ledger below posts "
-                    "already confirmed, allocated deposits; the routing adapter must reserve capacity "
-                    "transactionally before connecting a call. Anchor acquisition in organic city "
-                    "and calculator pages. They survive a Business Profile suspension as separate "
-                    "assets, although they remain exposed to organic ranking changes. Verify Maps "
-                    "listings only for eligible partners using real operating addresses."
+                    "William Jones ([qEmm1oiXm5U @ 00:00:35]) begins the Agency Assassin discussion "
+                    "by asking whether basic SEO is finished and whether the business is already "
+                    "in the top ten. That starting point matters because the demonstration concerns "
+                    "stubborn clients, not a claim that every new listing should immediately receive "
+                    "the same campaign. In the separate course overview, William Jones "
+                    "([WA8pctaxk30 @ 00:02:11]) describes calculating settings through Google Search "
+                    "Console and considering mobile and desktop traffic. The overview names course "
+                    "components, but it does not disclose the entire calculation process or supply "
+                    "a measured campaign outcome. Leo Poitevin, speaking on Odys Podcast: The High "
+                    "Stakes Growth Show ([0qIqZKefEc8 @ 00:05:19]), likewise places manipulation after "
+                    "substantial work on content, backlinks, user signals, and user experience. SEO "
+                    "Jesus ([DYkDCiVseqM @ 00:05:16]) says content and backlinks still account for "
+                    "ninety percent of SEO in their explanation. The overlap is a sequence, not "
+                    "agreement about every tool: establish the underlying page or profile, then "
+                    "consider extra engagement where progress has stalled. Jones promotes a course "
+                    "and demonstrates a service interface; Poitevin describes difficult competitive "
+                    "situations; SEO Jesus explains an agency approach. Their shared prerequisite "
+                    "should not turn those different presentations into a single reported experiment "
+                    "with common inputs, a common starting rank, or a common result."
                 ),
                 (
-                    "For newsletter_co_reg_sparkloop_arbitrage, model qualification before celebrating "
-                    "cheap acquisition. One thousand topic-matched readers acquired at $1 each cost "
-                    "$1,000; if 40% independently select another publication and 90% pass its "
-                    "qualification rules, 360 accepted referrals at $3 produce $1,080, or 108% "
-                    "of acquisition spend. That sits inside the mapped 80–130% Day 1 recovery "
-                    "range only as provisional earning coverage unless the partner actually settles "
-                    "that day. Keep co-registration choices unchecked, identify each receiving "
-                    "publication, retain the selection record, and test SparkLoop or Beehiiv Boosts "
-                    "rejection reports against source cohorts. Maintain six or more viable direct "
-                    "sponsorship and affiliate offers rather than depending on one recommendation "
-                    "buyer. For parasitic_free_publishing_account_serp_monopoly, reject the assumption "
-                    "that free accounts confer control over five to eight first-page positions. "
-                    "Use permitted, genuinely distinct assets: reproducible GitHub benchmarks, "
-                    "LinkedIn executive comparisons, and Substack research digests linked through "
-                    "owned bridge domains. Hosting cost can be zero while editorial labor remains "
-                    "material: three six-hour adaptations at $50 per hour cost $900. Measure "
-                    "incremental accepted referrals against that cost. If distribution disappears, "
-                    "retain the owned source, subscriber relationships, and independently useful "
-                    "research rather than recreating prohibited account networks."
+                    "Grey Hat SEO ([rPlpnhqyxtY @ 00:05:00]) presents a CTR and traffic network as "
+                    "a controlled collection of devices or personas. In that video, Chris Palmer "
+                    "wants control over the entire customer sequence rather than purchasing an "
+                    "unspecified quantity of visits. Searches, directions, calls, and later interactions "
+                    "are discussed as parts of that sequence. Semantic Mastery ([VTorygEcF7E @ "
+                    "00:01:02]) describes a related operational ambition: Google profiles with "
+                    "personas, associated Androids, geographic routines, and activity outside a "
+                    "particular campaign. Yet the conclusion is different. Semantic Mastery "
+                    "([VTorygEcF7E @ 00:01:50]) says maintaining apparently validated users became "
+                    "increasingly difficult and expensive, contributing to the decision to close "
+                    "Local Fury. Map Labs ([slTweyz4OSs @ 00:00:27]) distinguishes real accounts "
+                    "from genuine engagement by describing real users making fake interactions on "
+                    "business profiles. Across these accounts, the presence of an account or device "
+                    "is not the same claim as an actual customer arriving at a business. Palmer's "
+                    "network presentation emphasizes controllability; Semantic Mastery's retrospective "
+                    "emphasizes maintenance and declining effectiveness; Map Labs emphasizes what "
+                    "happens after the apparent interaction. Those are materially different accounts "
+                    "of what makes a click valuable. The chapter preserves that disagreement instead "
+                    "of treating a controlled persona, an established account, and a completed customer "
+                    "visit as interchangeable descriptions of the same event."
                 ),
             ],
             "table": {
-                "caption": "Publishing Intake, Mapped-Play Economics & Failure-Containment Matrix",
+                "caption": "Six distinct claims behind the shared CTR vocabulary",
                 "headers": [
-                    "Operating object and accountable owner",
-                    "Specific acceptance evidence before production",
-                    "Unit economics or measurement contract",
-                    "Failure response preserving the owned asset",
+                    "Transcript focus",
+                    "What the speaker actually describes",
+                    "Expert Source",
                 ],
                 "rows": [
                     [
-                        "Owned topic cluster managed by the assigning editor",
-                        "Primary references, audience intent, and licensed media recorded",
-                        "Measure accepted earnings per thousand qualified organic sessions",
-                        "Replace unsupported claims before expanding the publication queue",
+                        "CTR begins as a ratio between displayed results and clicks.",
+                        "The example uses 100 views and ten clicks to explain a ten percent click-through rate.",
+                        "SEO Jesus ([DYkDCiVseqM @ 00:02:30])",
                     ],
                     [
-                        "Programmatic local calculator maintained by the technical editor",
-                        "Distinct local inputs and reproducible calculations accompany every page",
-                        "Compare production cost against accepted referral contribution dollars",
-                        "Consolidate repetitive pages and retain the strongest useful calculator",
+                        "The rank-and-rent task includes more than reaching a URL.",
+                        "Isaac asks for Chrome, real devices, country matching, and a search that finds the listing.",
+                        "Isaac Ranks — Rank & Rent ([vBp6IcY8zg0 @ 00:03:26])",
                     ],
                     [
-                        "Rank-and-rent routing administered by the buyer relationship owner",
-                        "Buyer confirms territory, duplicate window, capacity, and duration criteria",
-                        "One hundred accepted calls times $150 yields $15,000",
-                        "Pause depleted wallets and reroute only to contracted alternatives",
+                        "The course overview promises calculations rather than displaying their results.",
+                        "Jones describes Search Console calculations and distinctions involving mobile and desktop traffic in course materials.",
+                        "William Jones ([WA8pctaxk30 @ 00:02:11])",
                     ],
                     [
-                        "Newsletter referral cohort maintained by the acquisition operator",
-                        "Reader selection evidence matches each named receiving publication",
-                        "Three hundred sixty accepted referrals times $3 yields $1,080",
-                        "Stop weak sources and rotate among six viable offers",
+                        "A controlled traffic network is framed around devices and personas.",
+                        "Palmer describes controlling the customer sequence rather than relying entirely on purchased click services.",
+                        "Grey Hat SEO ([rPlpnhqyxtY @ 00:05:00])",
                     ],
                     [
-                        "Authority-host adaptations assigned to the original research editor",
-                        "Each platform receives distinct evidence and permitted publication formatting",
-                        "Eighteen editorial hours times $50 creates $900 production cost",
-                        "Preserve owned originals when platform distribution or accounts disappear",
+                        "Maintaining apparently validated personas became an increasingly expensive operational burden.",
+                        "The Local Fury account describes difficulty keeping Google profiles effective as traffic validation improved.",
+                        "Semantic Mastery ([VTorygEcF7E @ 00:01:50])",
                     ],
                     [
-                        "GEO citation sample maintained by the research analyst",
-                        "Dated prompts, answer captures, and cited URLs remain reproducible",
-                        "Track sampled citation share without assuming attributable purchase revenue",
-                        "Improve source clarity rather than manufacturing unsupported citation claims",
+                        "Real accounts can still produce interactions that are manufactured.",
+                        "Map Labs describes real users making fake engagements rather than demonstrating genuine customer demand.",
+                        "Map Labs ([slTweyz4OSs @ 00:00:27])",
+                    ],
+                ],
+            },
+        },
+        {
+            "heading": "Campaign settings, IP assumptions, and what the proxy demonstrations establish",
+            "paragraphs": [
+                (
+                    "William Jones ([qEmm1oiXm5U @ 00:01:48]) demonstrates setting a search radius "
+                    "while warning viewers not to assume that a small green geogrid can simply be "
+                    "expanded outward without changing the result. The campaign uses a business name "
+                    "and address to identify the correct listing, followed by keywords and a starting "
+                    "event allocation. William Jones ([qEmm1oiXm5U @ 00:03:27]) cautions against "
+                    "sending a thousand searches where the existing monthly volume is 500. Osborne "
+                    "Digital Marketing ([8-9kfC7btJM @ 00:02:14]) also begins with the existing "
+                    "geogrid: yellow and green areas indicate a different starting position from "
+                    "a profile surrounded by red. Osborne Digital Marketing ([8-9kfC7btJM @ "
+                    "00:03:16]) then checks device proportions, warning against introducing a "
+                    "mobile-heavy campaign when existing discovery is predominantly desktop. These "
+                    "are checks against the business's current situation, not universal campaign "
+                    "defaults. Jones's five-mile demonstration belongs to the displayed examples; "
+                    "Osborne's eligibility discussion belongs to profiles already showing some "
+                    "visibility. Neither account supports copying a radius or device distribution "
+                    "without first looking at the corresponding business data. The common practical "
+                    "instruction is to examine what already ranks, where it ranks, and how people "
+                    "currently find it. Only after those checks do the demonstrations move into "
+                    "keywords, event settings, and the amount of additional activity."
+                ),
+                (
+                    "Chris Palmer SEO ([mg7C81Ti3DY @ 00:12:30]) uses a recent 28-day Search Console "
+                    "window to derive a range from the site's better-performing pages. The method "
+                    "is explicitly tied to changing site conditions rather than a permanently fixed "
+                    "CTR target. Chris Palmer SEO ([mg7C81Ti3DY @ 00:13:40]) excludes a page with "
+                    "one impression and one click because its apparent hundred percent rate would "
+                    "distort the calculation. The spoken arithmetic later includes an acknowledged "
+                    "possible mistake, so the displayed example belongs to the speaker's walkthrough "
+                    "rather than a freshly verified calculation here. Yash Singh ([YwzyoEqNVN4 @ "
+                    "00:02:33]) enters a device split of 35 desktop, 55 mobile, and ten tablet "
+                    "while explicitly saying the choice depends on existing website or profile "
+                    "data. SEO Jesus ([DYkDCiVseqM @ 00:19:04]) instead describes keeping manipulated "
+                    "traffic within ten percent of total monthly website traffic. These are different "
+                    "ways of sizing a campaign: Palmer works from page-level performance, Singh "
+                    "demonstrates adjustable interface values, and SEO Jesus proposes a proportional "
+                    "ceiling. The numbers should remain attached to those explanations. Combining "
+                    "them into a new formula would erase the differences between a sample setting, "
+                    "a site-derived range, and a speaker's general operating preference. Each account "
+                    "asks for existing traffic to influence the chosen settings."
+                ),
+                (
+                    "Anthony Hayes ([C-Nua5kSxAk @ 00:01:00]) describes worldwide mobile IP access "
+                    "and says residential proxies remain an available alternative. Anthony Hayes "
+                    "([C-Nua5kSxAk @ 00:03:50]) also says the mobile app can change an IP from "
+                    "one minute upward and discusses sharing proxy access with other people. "
+                    "Yash Singh ([YwzyoEqNVN4 @ 00:05:09]) demonstrates selecting a proxy option, "
+                    "choosing an import format, and importing or pasting proxy details. Chris Palmer "
+                    "SEO ([mg7C81Ti3DY @ 00:07:36]) expresses a preference for mobile and residential "
+                    "proxies and relates the IP choice to the device being represented. These "
+                    "passages establish what the speakers recommend or show about access, importing, "
+                    "and device alignment. They do not establish an HTTP-versus-SOCKS5 browser-profile "
+                    "procedure: neither protocol is named in the supplied transcripts, and Hayes "
+                    "does not demonstrate switching a browser profile between them. Likewise, the "
+                    "provided material does not show a protocol-selection test proving an IP is "
+                    "mobile or residential. That requested comparison therefore has no demonstrated "
+                    "configuration sequence to reproduce from this corpus. The usable account is "
+                    "narrower and concrete: Hayes presents mobile P2P access, Singh shows where "
+                    "proxy details enter the tool, and Palmer supplies campaign preferences. None "
+                    "of those statements can be expanded into an unseen protocol tutorial or an "
+                    "independent verification of the network behind a supplied address."
+                ),
+            ],
+            "table": {
+                "caption": "Settings shown, recommendations spoken, and protocol details absent from the demonstrations",
+                "headers": [
+                    "Setting or distinction",
+                    "Transcript-grounded interpretation",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "The demonstrated Agency Assassin allocation starts evenly across event types.",
+                        "Jones states 50 calls and 50 CTR before continuing into the campaign's keyword setup.",
+                        "William Jones ([qEmm1oiXm5U @ 00:04:08])",
                     ],
                     [
-                        "Commercial disclosure placement reviewed by the managing editor",
-                        "Material relationships appear clearly beside relevant endorsements and links",
-                        "Separate sponsorship fees from referred merchant transaction totals",
-                        "Repair missing disclosures before promoting the affected commercial asset",
+                        "The better-page calculation uses a recent rather than permanent window.",
+                        "Palmer selects 28 days because site conditions and the relevant performance figures can change.",
+                        "Chris Palmer SEO ([mg7C81Ti3DY @ 00:12:30])",
                     ],
                     [
-                        "Portfolio concentration report maintained by the operating owner",
-                        "Partner, domain, and query-family dependencies reconcile to recognized earnings",
-                        "Stress-test removal of the largest monthly revenue counterparty",
-                        "Freeze discretionary expansion while replacing concentrated earning capacity",
+                        "The example device distribution is adjustable to the business data.",
+                        "Singh enters 35 desktop, 55 mobile, and ten tablet rather than declaring those values universal.",
+                        "Yash Singh ([YwzyoEqNVN4 @ 00:02:33])",
+                    ],
+                    [
+                        "A large desktop share affects the suitability of mobile-heavy activity.",
+                        "Osborne warns that reversing an existing device distribution would contradict what was already working.",
+                        "Osborne Digital Marketing ([8-9kfC7btJM @ 00:03:16])",
+                    ],
+                    [
+                        "The P2P presentation distinguishes mobile access from a residential alternative.",
+                        "Hayes describes worldwide mobile IPs; this passage contains no HTTP-versus-SOCKS5 browser-profile configuration.",
+                        "Anthony Hayes ([C-Nua5kSxAk @ 00:01:00])",
+                    ],
+                    [
+                        "The proxy import demonstration shows selection and entry of details.",
+                        "Singh selects a format and imports proxy information without naming HTTP or SOCKS5 protocols.",
+                        "Yash Singh ([YwzyoEqNVN4 @ 00:05:09])",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Four practices that preserve margin when distribution changes",
-                "body": (
-                    "Optimize accepted contribution and portable evidence, not published-page "
-                    "counts or dashboards that mix pending earnings with cash."
-                ),
+                "title": "Keep each setting attached to the business data behind it",
+                "body": "The speakers' most specific setup advice concerns existing visibility, recent performance, device mix, and the limits of copied example values.",
                 "items": [
-                    "Create a buyer-specific duplicate fingerprint before routing calls; retain the evidence needed to contest scrubs without exposing raw caller data in editorial tools.",
-                    "Keep co-registration earnings provisional until the partner's qualification window closes; chart acceptance rates by acquisition source and receiving publication.",
-                    "Publish original benchmark data on the owned domain first, then adapt its presentation for each permitted host instead of duplicating comparison pages.",
-                    "Refresh pages using lost contribution dollars, not traffic decline alone: a small high-intent calculator can outrank a large informational article in the work queue.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Install the six-module production ledger before connecting monetization adapters",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Treat content production and money movement as related but separate state "
-                    "machines. A published page can exist without revenue; a reported conversion "
-                    "can exist without an enforceable receivable; a prepaid call deposit is cash "
-                    "with a matching liability until the service is earned. The six modules below "
-                    "form one copy-pasteable Python reference when concatenated in numbered order. "
-                    "They use integer cents, immutable journal lines, stable source identifiers, "
-                    "request fingerprints, and SQLite transactions. Each worker opens its own "
-                    "connection against one database on supported local storage. BEGIN IMMEDIATE "
-                    "serializes read-check-write operations, while uniqueness constraints prevent "
-                    "duplicate intake and duplicate event posting. A busy timeout produces an "
-                    "explicit failure rather than an unlocked fallback; retry the complete request "
-                    "with its original key. Do not place this database on a shared network "
-                    "filesystem or reuse connections across worker threads. At higher write "
-                    "concurrency, port the same invariants to PostgreSQL using row locks and "
-                    "unique event keys. These guarantees cover ledger transitions, not arbitrary "
-                    "third-party actions. This reference records confirmed provider events and "
-                    "does not initiate payments, reserve live call inventory, or create an "
-                    "external custody service. Those adapter boundaries require their own "
-                    "authenticated inputs and provider-supported deduplication."
-                ),
-                (
-                    "The verification and escrow vocabulary needs precise implementation. Verification "
-                    "means an authorized reviewer has checked evidence and contractual eligibility; "
-                    "it does not mean cash has arrived. The held state represents an allocated "
-                    "prepaid deposit confirmed at the payment provider, recorded as a liability, "
-                    "not a claim that the publisher operates regulated escrow. Invoice-route "
-                    "approval creates receivables and revenue together. Prepaid approval releases "
-                    "the held liability into revenue without creating a second receipt. Settlement "
-                    "moves an invoice receivable into cash exactly once. A rejected event never "
-                    "becomes revenue; a confirmed held-fund refund reverses the deposit liability "
-                    "and cash. The amount is fixed at intake, so submit a new corrected external "
-                    "record after rejecting an erroneous one rather than silently editing history. "
-                    "Use batch identifiers for finalized advertising statements and accepted affiliate "
-                    "cohorts; retain the underlying partner export outside this compact ledger. "
-                    "Authenticate webhook signatures, merchant account identity, currency, and "
-                    "statement totals before calling the posting function. If an upstream identifier "
-                    "is reused with changed amounts, the fingerprint mismatch stops processing. "
-                    "Disputed paid earnings require documented reversal entries through a separately "
-                    "reviewed extension, not deletion of old journal lines or relabeling a cash "
-                    "receipt as fresh revenue."
-                ),
-                (
-                    "Build the deployment around reproducible evidence rather than confidence in "
-                    "a single happy-path test. The QA module exercises duplicate delivery, an "
-                    "altered duplicate, held funds, approval, settlement, rejection, refunds, and "
-                    "cash expenses against a temporary database. It also runs a two-connection "
-                    "duplicate-settlement test and verifies that only one cash receipt is posted. "
-                    "Every operation must balance to zero, every foreign key must resolve, and "
-                    "every final statement must reconcile cash, receivables, held liabilities, "
-                    "and operating result. These checks are supplied for execution; they have "
-                    "not been run in this chapter. In deployment, add a process-kill test "
-                    "between journal insertion and commit, restore a backup to a clean host, "
-                    "and replay authenticated events in different delivery orders. Out-of-order "
-                    "transitions should fail visibly and remain in the adapter's durable retry "
-                    "queue, never disappear as successful acknowledgments. Keep raw call records "
-                    "and subscriber selections in access-controlled storage with retention limits; "
-                    "the ledger needs opaque identifiers, not full browsing histories. If the "
-                    "California Consumer Privacy Act applies, map collection notices and request "
-                    "handling to actual identifiers and processors. A deletion workflow must "
-                    "distinguish removable audience attributes from records retained under an "
-                    "applicable statutory exception."
-                ),
-            ],
-            "table": {
-                "caption": "Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table",
-                "headers": [
-                    "Numbered module and execution boundary",
-                    "Copy-pasteable Python 3.9 reference implementation",
-                    "Invariant enforced inside the transaction boundary",
-                    "Operator integration and failure handling requirements",
-                ],
-                "rows": [
-                    [
-                        "Module 1: schema, connection setup, and serialized transactions",
-                        '''import contextlib
-import hashlib
-import json
-import sqlite3
-
-SCHEMA = """
-CREATE TABLE IF NOT EXISTS cases (
-    case_id INTEGER PRIMARY KEY,
-    source TEXT NOT NULL,
-    external_id TEXT NOT NULL,
-    request_hash TEXT NOT NULL,
-    offered_cents INTEGER NOT NULL CHECK(offered_cents > 0),
-    score INTEGER NOT NULL CHECK(score BETWEEN 0 AND 100),
-    route TEXT NOT NULL CHECK(route IN ('invoice', 'prepaid')),
-    state TEXT NOT NULL CHECK(state IN (
-        'received', 'verified', 'held', 'approved',
-        'settled', 'rejected', 'refunded'
-    )),
-    UNIQUE(source, external_id)
-);
-CREATE TABLE IF NOT EXISTS operations (
-    event_id TEXT PRIMARY KEY,
-    case_id INTEGER REFERENCES cases(case_id),
-    request_hash TEXT NOT NULL,
-    action TEXT NOT NULL,
-    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
-);
-CREATE TABLE IF NOT EXISTS entries (
-    entry_id INTEGER PRIMARY KEY,
-    event_id TEXT NOT NULL REFERENCES operations(event_id),
-    account TEXT NOT NULL CHECK(account IN (
-        'cash', 'receivable', 'held', 'revenue', 'expense'
-    )),
-    cents INTEGER NOT NULL CHECK(cents != 0),
-    UNIQUE(event_id, account)
-);
-CREATE TRIGGER IF NOT EXISTS entries_no_update
-BEFORE UPDATE ON entries BEGIN
-    SELECT RAISE(ABORT, 'Journal entries are append only');
-END;
-CREATE TRIGGER IF NOT EXISTS entries_no_delete
-BEFORE DELETE ON entries BEGIN
-    SELECT RAISE(ABORT, 'Journal entries are append only');
-END;
-CREATE TRIGGER IF NOT EXISTS operations_no_update
-BEFORE UPDATE ON operations BEGIN
-    SELECT RAISE(ABORT, 'Operation evidence is append only');
-END;
-CREATE TRIGGER IF NOT EXISTS operations_no_delete
-BEFORE DELETE ON operations BEGIN
-    SELECT RAISE(ABORT, 'Operation evidence is append only');
-END;
-"""
-
-def open_ledger(path):
-    conn = sqlite3.connect(path, timeout=30, isolation_level=None)
-    conn.row_factory = sqlite3.Row
-    conn.execute("PRAGMA foreign_keys = ON")
-    conn.execute("PRAGMA busy_timeout = 30000")
-    conn.execute("PRAGMA journal_mode = WAL")
-    conn.execute("PRAGMA synchronous = FULL")
-    conn.executescript(SCHEMA)
-    return conn
-
-def fingerprint(value):
-    raw = json.dumps(value, sort_keys=True, separators=(",", ":"))
-    return hashlib.sha256(raw.encode("utf-8")).hexdigest()
-
-@contextlib.contextmanager
-def atomic(conn):
-    conn.execute("BEGIN IMMEDIATE")
-    try:
-        yield
-        conn.commit()
-    except BaseException:
-        conn.rollback()
-        raise
-
-def positive_cents(value):
-    if type(value) is not int or value <= 0:
-        raise ValueError("Amount must be positive integer cents")
-
-def post_lines(conn, event_id, lines):
-    accounts = [account for account, cents in lines]
-    if len(accounts) != len(set(accounts)):
-        raise ValueError("Combine repeated accounts before posting")
-    if any(type(cents) is not int or cents == 0 for _, cents in lines):
-        raise ValueError("Journal amounts must be nonzero integer cents")
-    if sum(cents for _, cents in lines) != 0:
-        raise ValueError("Journal operation must balance")
-    conn.executemany(
-        "INSERT INTO entries(event_id, account, cents) VALUES (?, ?, ?)",
-        [(event_id, account, cents) for account, cents in lines],
-    )
-''',
-                        "Unique identifiers and serialized writes protect supported ledger operations",
-                        "Run migrations before workers; restrict database access to authorized writers",
-                    ],
-                    [
-                        "Module 2: deterministic intake, scoring, and conflict detection",
-                        '''def intake(conn, source, external_id, offered_cents, route, facts):
-    positive_cents(offered_cents)
-    if not source or not external_id:
-        raise ValueError("Source and external identifier are required")
-    if route not in ("invoice", "prepaid"):
-        raise ValueError("Unsupported earning route")
-    required = ("intent_fit", "evidence_quality", "economics_quality")
-    if set(facts) != set(required):
-        raise ValueError("Provide exactly the three scoring dimensions")
-    if any(type(facts[key]) is not int or not 0 <= facts[key] <= 100
-           for key in required):
-        raise ValueError("Scores must be integers from zero through one hundred")
-    score = (
-        35 * facts["intent_fit"]
-        + 35 * facts["evidence_quality"]
-        + 30 * facts["economics_quality"]
-    ) // 100
-    digest = fingerprint({
-        "source": source, "external_id": external_id,
-        "offered_cents": offered_cents, "route": route, "facts": facts,
-    })
-    with atomic(conn):
-        old = conn.execute(
-            "SELECT case_id, request_hash FROM cases "
-            "WHERE source = ? AND external_id = ?",
-            (source, external_id),
-        ).fetchone()
-        if old is not None:
-            if old["request_hash"] != digest:
-                raise ValueError("Conflicting intake retry")
-            return old["case_id"]
-        cursor = conn.execute(
-            "INSERT INTO cases(source, external_id, request_hash, "
-            "offered_cents, score, route, state) "
-            "VALUES (?, ?, ?, ?, ?, ?, 'received')",
-            (source, external_id, digest, offered_cents, score, route),
-        )
-        return cursor.lastrowid
-''',
-                        "An existing source record cannot silently acquire different economics",
-                        "Evidence review remains mandatory; scoring alone never authorizes monetization",
-                    ],
-                    [
-                        "Module 3: verified-event state machine and held-fund accounting",
-                        '''def apply_event(conn, event_id, case_id, action):
-    if not event_id:
-        raise ValueError("Stable provider-scoped event identifier is required")
-    digest = fingerprint({
-        "case_id": case_id, "action": action,
-    })
-    with atomic(conn):
-        old = conn.execute(
-            "SELECT request_hash FROM operations WHERE event_id = ?",
-            (event_id,),
-        ).fetchone()
-        if old is not None:
-            if old["request_hash"] != digest:
-                raise ValueError("Conflicting event retry")
-            return False
-        row = conn.execute(
-            "SELECT * FROM cases WHERE case_id = ?", (case_id,)
-        ).fetchone()
-        if row is None:
-            raise ValueError("Case identifier does not exist")
-        state, route, amount = row["state"], row["route"], row["offered_cents"]
-        lines = []
-        if action == "verify" and state == "received":
-            target = "verified"
-        elif action == "reject" and state in ("received", "verified"):
-            target = "rejected"
-        elif action == "hold" and state == "verified" and route == "prepaid":
-            target = "held"
-            lines = [("cash", amount), ("held", -amount)]
-        elif action == "approve" and state == "verified" and route == "invoice":
-            target = "approved"
-            lines = [("receivable", amount), ("revenue", -amount)]
-        elif action == "approve" and state == "held" and route == "prepaid":
-            target = "approved"
-            lines = [("held", amount), ("revenue", -amount)]
-        elif action == "settle" and state == "approved" and route == "invoice":
-            target = "settled"
-            lines = [("cash", amount), ("receivable", -amount)]
-        elif action == "refund" and state == "held" and route == "prepaid":
-            target = "refunded"
-            lines = [("held", amount), ("cash", -amount)]
-        else:
-            raise ValueError("Transition conflicts with current state or route")
-        conn.execute(
-            "INSERT INTO operations(event_id, case_id, request_hash, action) "
-            "VALUES (?, ?, ?, ?)",
-            (event_id, case_id, digest, action),
-        )
-        post_lines(conn, event_id, lines)
-        conn.execute(
-            "UPDATE cases SET state = ? WHERE case_id = ?",
-            (target, case_id),
-        )
-        return True
-''',
-                        "State validation and both journal legs commit atomically together",
-                        "Record confirmed external cash events only; reject unauthenticated adapter inputs",
-                    ],
-                    [
-                        "Module 4: paid operating expenses with immutable bank references",
-                        '''def record_opex(conn, event_id, cents, bank_reference):
-    positive_cents(cents)
-    if not event_id or not bank_reference:
-        raise ValueError("Event identifier and bank evidence are required")
-    canonical_event = "bank-expense:" + bank_reference
-    if event_id != canonical_event:
-        raise ValueError("Use the canonical bank-scoped expense identifier")
-    digest = fingerprint({
-        "action": "paid_opex", "cents": cents,
-        "bank_reference": bank_reference,
-    })
-    with atomic(conn):
-        old = conn.execute(
-            "SELECT request_hash FROM operations WHERE event_id = ?",
-            (event_id,),
-        ).fetchone()
-        if old is not None:
-            if old["request_hash"] != digest:
-                raise ValueError("Conflicting expense retry")
-            return False
-        conn.execute(
-            "INSERT INTO operations(event_id, case_id, request_hash, action) "
-            "VALUES (?, NULL, ?, 'paid_opex')",
-            (event_id, digest),
-        )
-        post_lines(conn, event_id, [
-            ("expense", cents), ("cash", -cents),
-        ])
-        return True
-''',
-                        "One canonical bank reference produces one paid expense operation",
-                        "Prefix bank references with account identity before submitting expenses",
-                    ],
-                    [
-                        "Module 5: reconciled revenue, liabilities, and operating cash view",
-                        '''VIEW_SQL = """
-CREATE VIEW IF NOT EXISTS ledger_reconciliation AS
-WITH totals AS (
-    SELECT
-        COALESCE(SUM(CASE WHEN account = 'cash'
-            THEN cents ELSE 0 END), 0) AS cash_movement_cents,
-        COALESCE(SUM(CASE WHEN account = 'receivable'
-            THEN cents ELSE 0 END), 0) AS receivable_cents,
-        -COALESCE(SUM(CASE WHEN account = 'held'
-            THEN cents ELSE 0 END), 0) AS held_liability_cents,
-        -COALESCE(SUM(CASE WHEN account = 'revenue'
-            THEN cents ELSE 0 END), 0) AS revenue_cents,
-        COALESCE(SUM(CASE WHEN account = 'expense'
-            THEN cents ELSE 0 END), 0) AS expense_cents
-    FROM entries
-)
-SELECT *,
-    revenue_cents - expense_cents AS operating_profit_cents,
-    cash_movement_cents + receivable_cents - held_liability_cents
-        - revenue_cents + expense_cents AS reconciliation_gap_cents
-FROM totals;
-"""
-
-def install_views(conn):
-    conn.executescript(VIEW_SQL)
-
-def report(conn):
-    return dict(conn.execute(
-        "SELECT * FROM ledger_reconciliation"
-    ).fetchone())
-''',
-                        "Cash movement plus receivables less held liabilities equals operating profit",
-                        "Add documented opening balances outside this movement-only reference view",
-                    ],
-                    [
-                        "Module 6: executable invariants and concurrent duplicate-settlement checks",
-                        '''def run_qa():
-    import concurrent.futures
-    import os
-    import tempfile
-
-    facts = {
-        "intent_fit": 90,
-        "evidence_quality": 95,
-        "economics_quality": 80,
-    }
-    with tempfile.TemporaryDirectory() as folder:
-        path = os.path.join(folder, "qa.sqlite3")
-        conn = open_ledger(path)
-        try:
-            install_views(conn)
-            invoice = intake(conn, "affiliate", "batch-1", 15000, "invoice", facts)
-            assert intake(
-                conn, "affiliate", "batch-1", 15000, "invoice", facts
-            ) == invoice
-            try:
-                intake(conn, "affiliate", "batch-1", 16000, "invoice", facts)
-            except ValueError:
-                pass
-            else:
-                raise AssertionError("Changed intake must fail")
-            apply_event(conn, "review:invoice-1", invoice, "verify")
-            apply_event(conn, "accept:invoice-1", invoice, "approve")
-
-            def settle_once():
-                worker = open_ledger(path)
-                try:
-                    return apply_event(
-                        worker, "bank:invoice-1", invoice, "settle"
-                    )
-                finally:
-                    worker.close()
-
-            with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
-                futures = [pool.submit(settle_once) for _ in range(2)]
-                outcomes = [future.result() for future in futures]
-            assert sorted(outcomes) == [False, True]
-            try:
-                apply_event(conn, "bank:invoice-1", invoice, "refund")
-            except ValueError:
-                pass
-            else:
-                raise AssertionError("Changed event must fail")
-
-            prepaid = intake(conn, "calls", "call-1", 15000, "prepaid", facts)
-            apply_event(conn, "review:call-1", prepaid, "verify")
-            apply_event(conn, "deposit:call-1", prepaid, "hold")
-            assert report(conn)["held_liability_cents"] == 15000
-            apply_event(conn, "accept:call-1", prepaid, "approve")
-
-            refunded = intake(conn, "calls", "call-2", 5000, "prepaid", facts)
-            apply_event(conn, "review:call-2", refunded, "verify")
-            apply_event(conn, "deposit:call-2", refunded, "hold")
-            apply_event(conn, "refund:call-2", refunded, "refund")
-
-            rejected = intake(conn, "affiliate", "batch-2", 9000, "invoice", facts)
-            apply_event(conn, "reject:batch-2", rejected, "reject")
-            assert record_opex(
-                conn, "bank-expense:acct-1:debit-1", 2000, "acct-1:debit-1"
-            )
-            assert not record_opex(
-                conn, "bank-expense:acct-1:debit-1", 2000, "acct-1:debit-1"
-            )
-            totals = report(conn)
-            assert totals == {
-                "cash_movement_cents": 28000,
-                "receivable_cents": 0,
-                "held_liability_cents": 0,
-                "revenue_cents": 30000,
-                "expense_cents": 2000,
-                "operating_profit_cents": 28000,
-                "reconciliation_gap_cents": 0,
-            }
-            assert conn.execute(
-                "SELECT event_id FROM entries GROUP BY event_id "
-                "HAVING SUM(cents) != 0"
-            ).fetchall() == []
-            assert conn.execute("PRAGMA foreign_key_check").fetchall() == []
-            assert conn.execute("PRAGMA integrity_check").fetchone()[0] == "ok"
-            return totals
-        finally:
-            conn.close()
-''',
-                        "Duplicate delivery cannot double-post receipts through the supported interface",
-                        "Run run_qa explicitly and add restore, interruption, and adapter tests",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before accepting live earning events",
-                "body": (
-                    "Release adapters only after the money model, identity boundary, "
-                    "replay behavior, and recovery procedure have concrete evidence."
-                ),
-                "items": [
-                    "Verify every partner contract specifies currency, acceptance criteria, reversal window, settlement timing, and the source identifier used for deduplication.",
-                    "Run the supplied QA checks against the deployed SQLite version; test concurrent retries and confirm conflicting payloads produce visible failures.",
-                    "Authenticate webhook signatures and merchant identity before posting; restrict ledger files and backups to authorized service and recovery accounts.",
-                    "Restore a backup, replay a finalized statement, and match provider cash to ledger receipts while keeping unused prepaid balances in liabilities.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Walk three mature monthly cohorts from candidate demand to cash",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The Worked 90-Day Cohort Walk begins with a mature portfolio already capable "
-                    "of the Base revenue run rate; it is not a promise that a newly registered "
-                    "site reaches these volumes in 90 days. The canonical first-deal planning "
-                    "window remains 3–12 months and startup capital remains $10,000–$60,000. "
-                    "Each monthly cohort contains 125 candidate service calls, of which 100 qualify "
-                    "at $150, producing $15,000 of performance advertising revenue. Display "
-                    "advertising contributes $10,000, illustrated by 400,000 eligible sessions "
-                    "at a $25 publisher revenue per thousand sessions. Affiliate and newsletter "
-                    "referrals contribute $10,833.33 in Months 1 and 2 and $10,833.34 in "
-                    "Month 3. One delivered sponsorship contributes $5,000 monthly. These "
-                    "streams total $40,833.33, $40,833.33, and $40,833.34, exactly $122,500 "
-                    "for the quarter. Count call charges as advertising fees, referral payouts "
-                    "as affiliate revenue, and the contracted placement as sponsorship revenue. "
-                    "Do not add merchant checkout values, homeowner project prices, total advertiser "
-                    "budgets, or newsletter subscriber lifetime value. Those measures may help "
-                    "evaluate partner economics, but they are not this operator's recognized "
-                    "earnings. Traffic and payout assumptions are illustrative inputs, not "
-                    "canonical scorecard requirements or promised search outcomes."
-                ),
-                (
-                    "Scrubs happen before the recognized amounts enter this cohort. Twenty-five "
-                    "rejected calls per month remove $3,750 of candidate fees, leaving $15,000 "
-                    "accepted. Affiliate statements begin with $12,000 of provisional earnings; "
-                    "qualification failures and reversals remove $1,166.67 in Months 1 and 2 "
-                    "and $1,166.66 in Month 3. Within that provisional pool, the newsletter "
-                    "example supplies $1,200 before its $120 qualification loss, leaving $1,080 "
-                    "accepted. Other affiliate offers supply the remaining accepted amount. "
-                    "These losses are not deducted again from recognized revenue or operating "
-                    "expenses. Assume every recognized display and affiliate amount is finalized "
-                    "at month-end and paid in the following month, while accepted call fees "
-                    "consume current-month prepaid cash and the delivered sponsor pays currently. "
-                    "Opening receivables are zero to isolate the settlement bridge. Month 1 "
-                    "therefore collects $20,000; Months 2 and 3 each collect $40,833.33. "
-                    "Month 3 leaves $20,833.34 receivable for Month 4. The exhibit assumes "
-                    "unused prepaid balances finish each month at zero. In a live wallet "
-                    "operation, any remaining deposits increase both cash and held liabilities, "
-                    "not revenue. Sponsor advances likewise remain deferred until the contracted "
-                    "placement has actually been delivered."
-                ),
-                (
-                    "Charge $27,562.50 of paid operating expense to each month: $17,500 "
-                    "for core staffing and platform overhead plus $10,062.50 for direct "
-                    "production, acquisition, contractor delivery, and other variable costs. "
-                    "The latter includes the newsletter cohort's $1,000 acquisition spend. "
-                    "The supplied $2,500–$14,000 monthly opex range is a planning band; "
-                    "it cannot represent every cost in the canonical Base income statement. "
-                    "This exhibit explicitly treats that band as core overhead and adds "
-                    "variable delivery costs, rather than hiding the mathematical difference. "
-                    "Annual Base costs must equal $490,000 minus $159,250, or $330,750; "
-                    "monthly total costs are therefore $27,562.50. Quarterly operating profit "
-                    "is $39,812.50, but cumulative operating cash movement is only $18,979.16 "
-                    "because $20,833.34 remains collectible. Month 1 requires $7,562.50 "
-                    "of working capital before considering any intramonth payment imbalance. "
-                    "With a separately documented $30,000 opening cash reserve, quarter-end "
-                    "cash is $48,979.16. Four equivalent quarters produce $490,000 revenue "
-                    "and $159,250 owner net profit at 32.5% margin. Annualization describes "
-                    "the operating run rate, not identical quarterly cash receipts; settlement "
-                    "balances carry forward, and actual taxes, financing, and owner distributions "
-                    "require separate schedules outside this simplified cohort."
-                ),
-            ],
-            "table": {
-                "caption": "Worked 90-Day Cohort Walk",
-                "headers": [
-                    "Cohort or bridge checkpoint",
-                    "Accepted demand, scrubs, and recognized revenue",
-                    "Cash timing and actual collections",
-                    "Paid opex and recognized operating profit",
-                    "Cumulative operating cash and receivable bridge",
-                    "Required evidence and operator response",
-                ],
-                "rows": [
-                    [
-                        "Month 1 opens the isolated mature-portfolio settlement cohort",
-                        "125 calls less 25 scrubs; $1,166.67 referral losses; $40,833.33 recognized",
-                        "Current calls and delivered sponsorship collect $20,000 in cash",
-                        "$27,562.50 paid costs leave $13,270.83 recognized operating profit",
-                        "Cumulative movement is negative $7,562.50; receivables total $20,833.33",
-                        "Retain call acceptance export and finalized referral statement evidence",
-                    ],
-                    [
-                        "Month 2 adds the next independently accepted monthly cohort",
-                        "125 calls less 25 scrubs; $1,166.67 referral losses; $40,833.33 recognized",
-                        "Current $20,000 plus prior $20,833.33 produces $40,833.33 collections",
-                        "$27,562.50 paid costs leave $13,270.83 recognized operating profit",
-                        "Cumulative movement reaches $5,708.33; receivables remain $20,833.33 outstanding",
-                        "Match Month 1 remittance identifiers against previously booked receivables",
-                    ],
-                    [
-                        "Month 3 completes the quarter with exact-cent revenue rounding",
-                        "125 calls less 25 scrubs; $1,166.66 referral losses; $40,833.34 recognized",
-                        "Current $20,000 plus prior $20,833.33 produces $40,833.33 collections",
-                        "$27,562.50 paid costs leave $13,270.84 recognized operating profit",
-                        "Cumulative movement reaches $18,979.16; receivables total $20,833.34 outstanding",
-                        "Carry Month 3 display and referral receivables into Month 4",
-                    ],
-                    [
-                        "Quarter total combines three cohorts without counting provisional earnings",
-                        "375 candidate calls yield 300 accepted; recognized revenue totals $122,500",
-                        "Collected cash totals $101,666.66 across the three operating months",
-                        "$82,687.50 paid costs leave $39,812.50 recognized operating profit",
-                        "$18,979.16 cash movement plus $20,833.34 receivables equals quarterly profit",
-                        "Confirm $3,500 referral scrubs and $11,250 candidate call exclusions",
-                    ],
-                    [
-                        "Opening reserve bridge separates capital from earned publishing revenue",
-                        "The $30,000 opening reserve contributes zero additional recognized revenue",
-                        "Opening cash plus operating movement produces $48,979.16 closing cash",
-                        "Reserve funding changes neither paid costs nor recognized operating profit",
-                        "Closing cash $48,979.16 plus receivables $20,833.34 equals $69,812.50",
-                        "Document opening equity separately; the reference view reports movements",
-                    ],
-                    [
-                        "Base annualization repeats operating economics rather than settlement assumptions",
-                        "Four equivalent revenue quarters produce exactly $490,000 recognized earnings",
-                        "Cash follows actual settlement dates and changing opening receivable balances",
-                        "$330,750 annual costs leave $159,250 profit at 32.5% margin",
-                        "Maintain the canonical Base staffing envelope of 1 FT + 3 C",
-                        "Reforecast working capital independently from the annual owner-profit scorecard",
-                    ],
+                    "Do not expand a small green geogrid into a wider radius as though the underlying visibility were unchanged. [William Jones — qEmm1oiXm5U @ 00:01:48]",
+                    "Exclude a one-impression, one-click page from the better-page average rather than letting its hundred percent CTR dominate the calculation. [Chris Palmer SEO — mg7C81Ti3DY @ 00:13:40]",
+                    "Treat the entered 35/55/10 device distribution as an example and use the website or profile's existing data to choose the actual split. [Yash Singh — YwzyoEqNVN4 @ 00:02:33]",
+                    "Check whether existing discovery is mostly desktop before choosing a campaign built around mobile interactions. [Osborne Digital Marketing — 8-9kfC7btJM @ 00:03:16]",
                 ],
             },
             "sop_steps": [
                 {
                     "step": 1,
-                    "title": "Freeze the cohort denominator",
-                    "action": "Assign month, source, contract version, and immutable event identifiers.",
-                    "detail": "Record candidate calls and provisional referrals outside recognized earnings until contractual acceptance is established.",
+                    "title": "Inspect existing Maps visibility",
+                    "action": "Review the geogrid before selecting a campaign area.",
+                    "detail": "Osborne distinguishes profiles showing yellow and green visibility from profiles dominated by red and says the latter are not the same candidate for CTR. [Osborne Digital Marketing — 8-9kfC7btJM @ 00:02:14]",
                 },
                 {
                     "step": 2,
-                    "title": "Post only accepted economics",
-                    "action": "Import final partner statements and apply the verified state transitions.",
-                    "detail": "Match rejected calls and referral reversals to the candidate population so losses cannot disappear or be deducted twice.",
+                    "title": "Read the current device distribution",
+                    "action": "Use the profile's performance data to understand how people find it.",
+                    "detail": "Osborne warns against sending mobile-heavy activity when the established distribution is predominantly desktop. [Osborne Digital Marketing — 8-9kfC7btJM @ 00:03:16]",
                 },
                 {
                     "step": 3,
-                    "title": "Match cash without recognizing it twice",
-                    "action": "Apply bank-scoped receipt identifiers to existing receivables or confirmed held deposits.",
-                    "detail": "Carry unsettled display and affiliate balances into the next month; do not manufacture current-period cash from dashboard earnings.",
+                    "title": "Derive the website range from recent pages",
+                    "action": "Inspect the last 28 days and compare the better-performing pages.",
+                    "detail": "Palmer uses the recent window because pages and websites change, then develops the lower and average values for the target range. [Chris Palmer SEO — mg7C81Ti3DY @ 00:12:30]",
                 },
                 {
                     "step": 4,
-                    "title": "Close the bridge and release the next production budget",
-                    "action": "Reconcile recognized profit to operating cash, receivables, and held liabilities.",
-                    "detail": "Approve discretionary production only after reserving near-term payroll, contracted delivery costs, and potential partner collection delays.",
+                    "title": "Review campaign movement after tracking begins",
+                    "action": "Inspect the tracked keywords and the generated ranking graph.",
+                    "detail": "Jones explains that the campaign begins displaying rankings and their changes after tracking and reporting have run. [William Jones — qEmm1oiXm5U @ 00:06:34]",
                 },
             ],
         },
         {
-            "heading": "4. Close the books, repair weak cohorts, and preserve exit-quality evidence",
-            "epistemic_status": "operating_framework",
+            "heading": "Worked 90-Day Cohort Walk",
             "paragraphs": [
                 (
-                    "Run a weekly production meeting and a separate monthly close. The weekly "
-                    "meeting should decide which pages to publish, refresh, consolidate, or retire "
-                    "using accepted contribution, index coverage, conversion eligibility, and evidence "
-                    "age. Search Console impressions are diagnostic inputs, not accounting records. "
-                    "Investigate indexing losses against crawlability, canonical tags, rendering, "
-                    "internal links, and material content changes before rewriting an entire "
-                    "portfolio. Keep release manifests so a bad template deployment can be "
-                    "reversed without guessing which pages changed. The monthly close should "
-                    "freeze partner exports, reconcile accepted calls to wallet consumption, "
-                    "match affiliate receivables to remittance advice, and verify sponsorship "
-                    "delivery against the contracted placement. Calculate revenue concentration "
-                    "by domain and counterparty as well as by monetization type; several "
-                    "sites paid by one network are still one collection dependency. A "
-                    "25% cut to the exhibit's $10,000 monthly display revenue removes "
-                    "$2,500 of monthly profit if costs remain fixed. The immediate fallback "
-                    "is tighter refresh prioritization and reversible discretionary spending, "
-                    "not automatically flooding the index with more pages. Keep enough liquidity "
-                    "to tolerate one delayed $20,833.34 settlement cycle without forcing "
-                    "editorial shortcuts or interrupting essential hosting and payroll obligations."
+                    "Niels Castermans SEO ([9RAmTcJcaDE @ 00:06:47]) reports that half the displayed "
+                    "sites reached the top ten one day after the Chrome-signal intervention, with "
+                    "two reaching the top three. Niels Castermans SEO ([9RAmTcJcaDE @ 00:08:12]) "
+                    "then says the effect is temporary, averaging four to five days. Leo Poitevin "
+                    "on Odys Podcast: The High Stakes Growth Show ([0qIqZKefEc8 @ 00:41:27]) "
+                    "describes a different rapid intervention: a viral boost involving roughly "
+                    "a thousand people in an hour, followed by effects within two or three hours. "
+                    "Chris Palmer SEO ([mg7C81Ti3DY @ 00:16:44]) supplies the explicit ninety-day "
+                    "reference by saying the displayed pool-renovation page launched within the "
+                    "last ninety days. This worked walk therefore compares separate reported "
+                    "timelines; the corpus does not contain one shared ninety-day cohort followed "
+                    "through every stage. Niels's next-day comparison, Poitevin's rapid traffic "
+                    "account, and Palmer's page-age statement cannot be stitched into a single "
+                    "business's history. They do, however, provide distinct points for reading "
+                    "claims about speed. An immediate ranking change is one observation, the "
+                    "duration of that change is another, and the age of a page is a third. "
+                    "The heading organizes those observations without supplying invented intervening "
+                    "days, new rankings, or a common campaign that the speakers never described."
                 ),
                 (
-                    "Make statutory requirements concrete in the production checklist. The FTC "
-                    "Endorsement Guides at 16 CFR § 255.5 address disclosure of material "
-                    "connections; attach clear sponsorship and affiliate explanations where readers "
-                    "encounter the relevant endorsement rather than burying them in a distant "
-                    "policy page. Section 5 of the FTC Act, 15 U.S.C. § 45, also "
-                    "makes deceptive commercial representations an operating risk: retain substantiation "
-                    "for performance comparisons, pricing claims, and purported first-hand testing. "
-                    "Commercial newsletter operations must implement the applicable sender identification, "
-                    "postal address, and opt-out requirements in 15 U.S.C. § 7704. "
-                    "Synchronize suppression records with sending providers and distinguish a "
-                    "reader's request for one publication from permission to send unrelated "
-                    "promotions. For California businesses within statutory scope, evaluate notice "
-                    "and request duties under Civil Code § 1798.100 and applicable sale "
-                    "or sharing opt-outs under § 1798.120. Do not assume server-side "
-                    "tracking eliminates those duties. Telephone recording rules vary by jurisdiction; "
-                    "if recording is unnecessary, retain duration and routing metadata instead. "
-                    "Where recordings are used, assess applicable notice and permission requirements "
-                    "before activating the feature. These controls reduce disputes while preserving "
-                    "the evidence needed to enforce accepted-call contracts and substantiate "
-                    "commercial content."
+                    "Chris Palmer SEO ([mg7C81Ti3DY @ 00:26:59]) identifies a pool-resurfacing "
+                    "page as thirty days old before checking its result, giving this walk a "
+                    "separate early page-age example rather than a scheduled checkpoint for the "
+                    "ninety-day page. Osborne Digital Marketing ([YGk2zHgGoss @ 00:21:57]) says "
+                    "the usual expectation communicated to clients is up to a month, while "
+                    "acknowledging that results can arrive sooner. Osborne Digital Marketing "
+                    "([YGk2zHgGoss @ 00:22:14]) names five days, seven days, and two weeks as "
+                    "observed possibilities and says that no improvement within a month should "
+                    "prompt further optimization in month two. Yash Singh ([YwzyoEqNVN4 @ "
+                    "00:03:05]) describes gradually moving toward a thirty or forty percent "
+                    "traffic increase over months, following the smaller starting increase "
+                    "introduced immediately beforehand. These accounts concern different clocks: "
+                    "page age, time until movement, time until further optimization, and gradual "
+                    "campaign expansion. Keeping those clocks separate avoids presenting an "
+                    "interface setting as a measured ranking outcome. Osborne also describes "
+                    "an initial boost followed by a plateau and another improvement later, "
+                    "rather than uninterrupted movement. The multi-week portion of the walk "
+                    "therefore contains both reported early gains and an explicit instruction "
+                    "to revisit optimization when the expected improvement has not appeared. "
+                    "It does not supply an automatic escalation schedule for every profile."
                 ),
                 (
-                    "An exit-ready portfolio lets a buyer reproduce earnings without trusting the "
-                    "seller's narrative. Assemble read-only monthly packages containing publication "
-                    "manifests, rights evidence, Search Console exports, partner agreements, accepted-event "
-                    "reports, receivable aging, bank matches, and ledger reconciliation results. "
-                    "Separate owned domains and transferable intellectual property from platform "
-                    "accounts or commercial agreements that require counterparty permission to "
-                    "transfer. Identify personal data before granting diligence access; aggregate "
-                    "audience records and limit disclosure to what the transaction actually "
-                    "requires. Never present five favorable screenshots as proof of durable "
-                    "ranking control or GEO dominance. Show sampled measurements with dates, "
-                    "methodology, and concentration exposure. Preserve the canonical cases when "
-                    "discussing valuation or staffing: Conservative revenue of $80,000 less "
-                    "$64,000 costs yields $16,000 profit with 1 FT + 3 C; "
-                    "Base revenue of $490,000 less $330,750 costs yields $159,250 "
-                    "with 1 FT + 3 C; Scaled revenue of $900,000 less "
-                    "$495,000 costs yields $405,000 with 1 FT + 3 C. "
-                    "The Scaled margin is 45%, not an assumption that workload disappears. "
-                    "Technical audits, refresh queues, and revenue reporting supply leverage; "
-                    "editorial judgment, buyer negotiation, and exception handling remain assigned "
-                    "human responsibilities with documented coverage during absences."
+                    "Sterling Sky Inc ([krFtrxJsFok @ 00:00:52]) says the restaurant moved from "
+                    "the second page to position two quickly, after which rankings were tracked "
+                    "daily for several months. Sterling Sky Inc ([krFtrxJsFok @ 00:01:09]) "
+                    "reports that the gains did not last and that the business moved back "
+                    "toward its earlier position. That longer observation qualifies what a "
+                    "next-day screenshot can establish without denying that the initial movement "
+                    "occurred. Leo Poitevin on Odys Podcast: The High Stakes Growth Show "
+                    "([0qIqZKefEc8 @ 00:13:15]) describes a different accumulation model in "
+                    "which one or two months may move the average relatively little, while "
+                    "stronger results emerge later. Osborne Digital Marketing ([YGk2zHgGoss @ "
+                    "00:20:01]) argues that maintaining real engagement, reviews, photos, and "
+                    "ongoing SEO while CTR runs can help preserve the resulting position. The "
+                    "accounts therefore disagree about persistence and the circumstances that "
+                    "produce it; they do not provide a common ninety-day success rate. Sterling "
+                    "Sky supplies a daily follow-up that faded, Poitevin supplies an explanation "
+                    "of delayed accumulation, and Osborne supplies conditions under which a "
+                    "reduction may hold. The end of this walk remains the end of the supplied "
+                    "observations, not a fabricated day-ninety result. Continuation, reduction, "
+                    "and stopping each have to remain attached to the particular speaker's "
+                    "reported experience and explanation."
                 ),
             ],
             "table": {
-                "caption": "Monthly Close, Statutory Controls & Media-Exit Evidence Matrix",
+                "caption": "Worked 90-Day Cohort Walk: separate reported cases, not a single reconstructed cohort",
                 "headers": [
-                    "Control owner and recurring operating obligation",
-                    "Evidence package retained for independent reproduction",
-                    "Concrete discrepancy or deterioration signal",
-                    "Corrective action and release condition",
+                    "Reported time or stage",
+                    "Observed result or stated interpretation",
+                    "Expert Source",
                 ],
                 "rows": [
                     [
-                        "Managing editor reviews commercial claims before publication and refresh",
-                        "Primary sources, dated tests, and material-connection disclosures remain attached",
-                        "A comparison claims testing without underlying reproducible test records",
-                        "Remove the unsupported assertion and publish the supported narrower comparison",
+                        "Within two or three hours after the described viral push.",
+                        "Poitevin says roughly a thousand people in one hour can produce effects shortly afterward.",
+                        "Odys Podcast: The High Stakes Growth Show ([0qIqZKefEc8 @ 00:41:27])",
                     ],
                     [
-                        "Rights owner checks every commissioned or reused creative asset",
-                        "Licenses, assignment terms, attribution requirements, and original files remain linked",
-                        "An image lacks permission covering the actual commercial publication use",
-                        "Replace the asset with licensed or independently created material",
+                        "One day after the displayed Chrome-signal comparison was started.",
+                        "Niels reports fifty percent of the sites in the top ten and two in the top three.",
+                        "Niels Castermans SEO ([9RAmTcJcaDE @ 00:06:47])",
                     ],
                     [
-                        "Revenue operator closes accepted calls against confirmed prepaid funding",
-                        "Buyer acceptance exports match deposit allocations and earning-event identifiers",
-                        "Routing continues after allocated buyer funds or service capacity expire",
-                        "Pause routing until funded capacity is transactionally reserved again",
+                        "Four to five days describes the stated average persistence.",
+                        "Niels explicitly calls Chrome-signal manipulation temporary rather than presenting the next-day gains as permanent.",
+                        "Niels Castermans SEO ([9RAmTcJcaDE @ 00:08:12])",
                     ],
                     [
-                        "Newsletter operator reviews suppression and receiving-publication selection records",
-                        "Selection events, sending identity, opt-out logs, and provider exports reconcile",
-                        "An acquisition source produces elevated rejection or complaint rates",
-                        "Stop that source and verify the affected subscriber cohort",
+                        "Thirty days describes the age of a separate pool-resurfacing page.",
+                        "Palmer identifies the page age before opening a search to inspect its ranking.",
+                        "Chris Palmer SEO ([mg7C81Ti3DY @ 00:26:59])",
                     ],
                     [
-                        "Bookkeeper matches partner statements and bank receipts every month",
-                        "Finalized earnings, receivable aging, and immutable receipt identifiers reconcile",
-                        "A dashboard earning total lacks corresponding accepted contractual evidence",
-                        "Keep provisional amounts outside revenue until acceptance is documented",
+                        "Month two follows a first month without the expected improvement.",
+                        "Osborne recommends more optimization and also reports movement after five days, seven days, or two weeks.",
+                        "Osborne Digital Marketing ([YGk2zHgGoss @ 00:22:14])",
                     ],
                     [
-                        "Portfolio owner maintains transferable assets and buyer diligence packages",
-                        "Domain ownership, rights schedules, contracts, and aggregate operating reports align",
-                        "A major payout agreement cannot transfer without counterparty permission",
-                        "Obtain written transfer terms or exclude that agreement from valuation",
+                        "Within the last ninety days describes the pool-renovation page launch.",
+                        "Palmer points to the page's recent launch while inspecting its current first-page search appearance.",
+                        "Chris Palmer SEO ([mg7C81Ti3DY @ 00:16:44])",
+                    ],
+                    [
+                        "Several months of daily follow-up tests whether early gains persist.",
+                        "Sterling Sky tracks the restaurant after its rapid move from the second page to position two.",
+                        "Sterling Sky Inc ([krFtrxJsFok @ 00:00:52])",
                     ],
                 ],
             },
         },
+        {
+            "heading": "Where the accounts disagree: penalties, completed visits, and paid persistence",
+            "paragraphs": [
+                (
+                    "SEO Jesus ([DYkDCiVseqM @ 00:21:19]) presents the worst outcome as losing "
+                    "the benefit of clicks that Google does not consider real, rather than "
+                    "de-indexing. Idris Ya'u ([L-FcnuQBAjc @ 00:03:05]) gives a sharply different "
+                    "account, saying unnatural spikes can trigger reviews, dramatic ranking drops, "
+                    "or de-indexing. Semantic Mastery ([VTorygEcF7E @ 00:00:41]) warns that "
+                    "manufactured signals can lead Google to ignore genuine engagement as well. "
+                    "Sterling Sky Inc ([krFtrxJsFok @ 00:03:18]) reports an unusual drop in "
+                    "the tested restaurant's ranking that did not appear in the comparison "
+                    "business discussed afterward. These claims should remain visibly separate. "
+                    "SEO Jesus offers an argument about what Google would do with questionable "
+                    "traffic; Idris describes adverse possibilities; Semantic Mastery explains "
+                    "a service operator's concern; Sterling Sky describes a pattern in tracked "
+                    "results. They are not four independent demonstrations of the same penalty "
+                    "mechanism. In particular, Sterling Sky's discussion connects its observed "
+                    "dip with an explanation heard from another practitioner, rather than "
+                    "showing Google's internal reason for the movement. The disagreement is "
+                    "part of the chapter's evidence: one advocate limits the downside to "
+                    "discounted clicks, while other speakers describe risks beyond simple "
+                    "nonperformance. Replacing either side with a chapter-wide verdict would "
+                    "misrepresent the supplied testimony and hide differences in what each "
+                    "speaker actually observed or argued."
+                ),
+                (
+                    "Map Labs ([slTweyz4OSs @ 00:00:43]) says requested directions may initially "
+                    "help rankings even when the people requesting them never arrive at the "
+                    "business. Map Labs ([slTweyz4OSs @ 00:03:11]) further claims that missing "
+                    "GPS completions allow Google to filter those interactions. Osborne Digital "
+                    "Marketing ([YGk2zHgGoss @ 00:13:02]) describes CTR Driver as using the "
+                    "native Android Maps app to follow roads toward a business at real-time "
+                    "traffic speed, and says this particular action requires a visible address. "
+                    "Osborne Digital Marketing ([YGk2zHgGoss @ 00:29:53]) also argues that "
+                    "ending a search session after finding an answer can be valuable even "
+                    "without a phone, website, or direction click recorded as a conversion "
+                    "action. These are different descriptions of completion: a customer "
+                    "physically arriving, an automated drive described by a provider, and "
+                    "a search session ending because the answer was found. The transcript "
+                    "does not compare them in one controlled test. Nor does the provider's "
+                    "description establish that its drive resolves every concern raised by "
+                    "Map Labs. The practical disagreement is more specific than whether "
+                    "engagement matters at all. It concerns which interactions count, what "
+                    "happens after an apparent direction request, and whether ending the "
+                    "search without another recorded action should be interpreted as successful "
+                    "engagement. Both channels attach strong conclusions to their respective "
+                    "accounts, but those conclusions remain attributed."
+                ),
+                (
+                    "Isaac Ranks — Rank & Rent ([vBp6IcY8zg0 @ 00:05:36]) describes purchased "
+                    "clicks as a short-term boost and says to build reviews, citations, and "
+                    "content alongside them. Isaac Ranks — Rank & Rent ([vBp6IcY8zg0 @ "
+                    "00:05:50]) then asks viewers to compare rankings with spending, suggesting "
+                    "the extra cost may not suit a low-ticket niche. Leo Poitevin on Odys "
+                    "Podcast: The High Stakes Growth Show ([0qIqZKefEc8 @ 00:18:48]) gives "
+                    "an approximate human-manipulation cost of fifty cents per click, making "
+                    "a thousand users about five hundred dollars in that example. William "
+                    "Jones ([qEmm1oiXm5U @ 00:05:12]) emphasizes slow, steady testing rather "
+                    "than maximizing the speed of deployment. Together, those statements "
+                    "frame the recurring operational question without establishing a universal "
+                    "return: what changes, what must continue, and what does the chosen "
+                    "method cost? Isaac's recommendation concerns rank-and-rent economics, "
+                    "Poitevin's example concerns the expense of human actions, and Jones's "
+                    "demonstration concerns pacing inside Agency Assassin. None supplies "
+                    "a common revenue figure or a conversion rate that can be assigned "
+                    "to the chapter's campaigns. The resulting operator discipline stays "
+                    "within their instructions: retain the underlying SEO work, compare "
+                    "movement with expenditure, and inspect the response rather than assuming "
+                    "that more purchased activity produces a proportionate business result. "
+                    "Those are the speakers' checks, not an added profitability formula."
+                ),
+            ],
+            "table": {
+                "caption": "Disagreements that should remain explicit in a campaign review",
+                "headers": [
+                    "Position or reported experience",
+                    "What must remain attached to that account",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "Discounting questionable clicks is described as the worst outcome.",
+                        "SEO Jesus argues that the benefit disappears rather than claiming to show a penalty investigation.",
+                        "SEO Jesus ([DYkDCiVseqM @ 00:21:19])",
+                    ],
+                    [
+                        "Unnatural traffic spikes are described as carrying more serious consequences.",
+                        "Idris names manual reviews, de-indexing, and dramatic ranking drops as risks of artificial patterns.",
+                        "Idris Ya'u ([L-FcnuQBAjc @ 00:03:05])",
+                    ],
+                    [
+                        "Manufactured signals may undermine the treatment of genuine engagement.",
+                        "Semantic Mastery says Google can ignore real engagement when it considers campaign traffic manufactured.",
+                        "Semantic Mastery ([VTorygEcF7E @ 00:00:41])",
+                    ],
+                    [
+                        "A cancellation after about six months preceded worsening listing performance.",
+                        "Map Labs reports fewer views and engagements than before the service, rather than only temporary improvement.",
+                        "Map Labs ([slTweyz4OSs @ 00:01:27])",
+                    ],
+                    [
+                        "Reducing CTR is described as possible after strengthening the profile.",
+                        "Osborne ties persistence to real engagement, reviews, photos, and continued SEO during the campaign.",
+                        "Osborne Digital Marketing ([YGk2zHgGoss @ 00:20:01])",
+                    ],
+                    [
+                        "Rank-and-rent spending should be judged against the movement it produces.",
+                        "Isaac says the additional expense may not be worthwhile for a low-ticket niche.",
+                        "Isaac Ranks — Rank & Rent ([vBp6IcY8zg0 @ 00:05:50])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four checks drawn from the speakers' own pitfalls",
+                "body": "These checks preserve the warnings in the supplied accounts without replacing their disagreements with a single risk verdict.",
+                "items": [
+                    "Check that the profile already has visibility and engagement; a brand-new business with no reviews and no ranking has nothing useful to click in the readiness account. [Osborne Digital Marketing — YGk2zHgGoss @ 00:02:23]",
+                    "Do not continue increasing aggressively merely because the first movement looked encouraging; Palmer names going too big too fast and neglecting impressions among their own mistakes. [Chris Palmer SEO — mg7C81Ti3DY @ 00:47:52]",
+                    "Inspect what happens after a campaign stops rather than assuming that the earlier ranking gain persists; Sterling Sky observed rankings returning toward their previous level. [Sterling Sky Inc — krFtrxJsFok @ 00:01:57]",
+                    "Distinguish direction requests from customers actually reaching the business; Map Labs identifies that gap as the central problem in manufactured engagement. [Map Labs — slTweyz4OSs @ 00:00:43]",
+                ],
+            },
+        },
     ],
-    "pull_quote": "A search portfolio becomes an operating asset when every earned dollar can be traced from useful evidence to accepted demand to reconciled cash.",
+    "pull_quote": (
+        "Treat these clicks as a short-term boost only. Build reviews, citations, and content alongside. "
+        "— Isaac Ranks — Rank & Rent (vBp6IcY8zg0 @ 00:05:36)."
+    ),
     "diagram_id": "diag-01",
     "action_checklist": [
-        "Create one owned-domain intake manifest linking each query cluster to evidence, rights, monetization terms, accountable reviewers, and refresh triggers.",
-        "Contract accepted-call definitions and prepaid routing limits before activating Ringba or Twilio numbers for a local service buyer.",
-        "Run the six ledger modules in order, execute run_qa, and test authenticated adapter replay, backup restoration, and interrupted transactions.",
-        "Launch topic-matched newsletter referrals with unchecked selections, qualification reporting, and at least six viable sponsorship or affiliate alternatives.",
-        "Reproduce the $122,500 quarterly revenue bridge, $39,812.50 operating profit, $18,979.16 cash movement, and $20,833.34 ending receivable balance.",
-        "Close monthly evidence packages covering statutory controls, content rights, partner concentration, transferable assets, and the canonical annual scorecard cases.",
+        "Inspect the existing geogrid and distinguish yellow-and-green visibility from a profile dominated by red before deciding whether CTR fits the current situation. (Osborne Digital Marketing, 8-9kfC7btJM @ 00:02:14)",
+        "Review the last 28 days of page performance before deriving the better-page CTR range. (Chris Palmer SEO, mg7C81Ti3DY @ 00:12:30)",
+        "Exclude one-impression, one-click outliers from the page-average calculation. (Chris Palmer SEO, mg7C81Ti3DY @ 00:13:40)",
+        "Inspect campaign keyword tracking and the ranking graph after reporting begins rather than treating completed setup as a ranking result. (William Jones, qEmm1oiXm5U @ 00:06:34)",
+        "If the campaign shows no improvement within a month, revisit optimization in month two. (Osborne Digital Marketing, YGk2zHgGoss @ 00:22:14)",
+        "Compare rankings with spending while continuing the reviews, citations, and content work described alongside the short-term boost. (Isaac Ranks — Rank & Rent, vBp6IcY8zg0 @ 00:05:36; Isaac Ranks — Rank & Rent, vBp6IcY8zg0 @ 00:05:50)",
     ],
     "statutory_citations": [
         {
-            "title": "17 U.S.C. § 106 — Exclusive rights in copyrighted works",
-            "url": "https://www.law.cornell.edu/uscode/text/17/106",
-            "relevance": "Map reproduction, adaptation, and distribution permissions before publishing third-party text, photography, diagrams, or research assets.",
+            "title": "Sterling Sky Inc — Local SEO Hack: Does CTR Manipulation Work Long-Term? [00:01:09]",
+            "url": "https://www.youtube.com/watch?v=krFtrxJsFok&t=69s",
+            "relevance": "Primary practitioner testimony that the tracked restaurant's initial ranking gains did not persist.",
         },
         {
-            "title": "15 U.S.C. § 45 — Unfair or deceptive acts or practices",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": "Retain substantiation for commercial comparisons, testing claims, pricing representations, and other assertions used to acquire monetizable demand.",
+            "title": "Chris Palmer SEO — Website CTR Manipulation: How To Do CTR Manipulation SEO [00:12:30]",
+            "url": "https://www.youtube.com/watch?v=mg7C81Ti3DY&t=750s",
+            "relevance": "Primary practitioner walkthrough of the recent Search Console window used for campaign calculations.",
         },
         {
-            "title": "16 CFR § 255.5 — Disclosure of material connections",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5",
-            "relevance": "Place clear material-connection disclosures where readers encounter relevant endorsements, sponsorships, and affiliate recommendations.",
+            "title": "Semantic Mastery — Does CTR Manipulation Still Work in Local SEO? [00:01:50]",
+            "url": "https://www.youtube.com/watch?v=VTorygEcF7E&t=110s",
+            "relevance": "Primary operator account of increasing difficulty and expense maintaining apparently validated traffic personas.",
         },
         {
-            "title": "15 U.S.C. § 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Implement applicable commercial-email identification, postal-address, and opt-out requirements across newsletters and connected sending providers.",
+            "title": "Anthony Hayes — Unleash The Power Of P2P Mobile Proxies For Your SERP Strategy [00:01:00]",
+            "url": "https://www.youtube.com/watch?v=C-Nua5kSxAk&t=60s",
+            "relevance": "Primary testimony about worldwide mobile IP access and residential alternatives, without an HTTP-versus-SOCKS5 demonstration.",
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "qEmm1oiXm5U",
+            "title": "CTR Manipulation with Agency Assassin Click Through Rate Manipulation Software  🔥 🤯",
+            "channel": "William Jones",
+            "author": "William Jones",
+            "text": "The key with CTR is testing. Test, test, test, test.",
+            "tip": "The key with CTR is testing. Test, test, test, test.",
+            "timestamp": 226,
+            "timestamp_seconds": 226,
+            "timestamp_label": "[00:03:46]",
+            "url": "https://www.youtube.com/watch?v=qEmm1oiXm5U&t=226s",
+            "markdown": "[00:03:46](https://www.youtube.com/watch?v=qEmm1oiXm5U&t=226s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7 corpus.",
         },
         {
-            "title": "California Civil Code § 1798.100 — General duties of covered businesses",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.100.&lawCode=CIV",
-            "relevance": "For businesses within statutory scope, connect collection notices, purpose limitations, retention practices, and processor arrangements to actual audience data flows.",
+            "source_type": "video_pro_tip",
+            "video_id": "vBp6IcY8zg0",
+            "title": "The CTR Trick That Makes Google Rank Your Site (Rank & Rent)",
+            "channel": "Isaac Ranks — Rank & Rent",
+            "author": "Isaac Ranks — Rank & Rent",
+            "text": "Treat these clicks as a short-term boost only. Build reviews, citations, and content alongside.",
+            "tip": "Treat these clicks as a short-term boost only. Build reviews, citations, and content alongside.",
+            "timestamp": 336,
+            "timestamp_seconds": 336,
+            "timestamp_label": "[00:05:36]",
+            "url": "https://www.youtube.com/watch?v=vBp6IcY8zg0&t=336s",
+            "markdown": "[00:05:36](https://www.youtube.com/watch?v=vBp6IcY8zg0&t=336s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7 corpus.",
         },
         {
-            "title": "California Civil Code § 1798.120 — Right to opt out of sale or sharing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.120.&lawCode=CIV",
-            "relevance": "Evaluate applicable opt-out duties for advertising and referral data flows rather than assuming a tracking architecture determines statutory treatment.",
+            "source_type": "video_pro_tip",
+            "video_id": "WA8pctaxk30",
+            "title": "CTR Manipulation Course: #1 SEO Rankings by Using Click Through Rate Manipulation",
+            "channel": "William Jones",
+            "author": "William Jones",
+            "text": "Day three is where we go over about CTR, how to calculate via Google Search Console.",
+            "tip": "Day three is where we go over about CTR, how to calculate via Google Search Console.",
+            "timestamp": 131,
+            "timestamp_seconds": 131,
+            "timestamp_label": "[00:02:11]",
+            "url": "https://www.youtube.com/watch?v=WA8pctaxk30&t=131s",
+            "markdown": "[00:02:11](https://www.youtube.com/watch?v=WA8pctaxk30&t=131s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "0qIqZKefEc8",
+            "title": "We Tested CTR Manipulation - Here’s What Happened | Leo Poitevin",
+            "channel": "Odys Podcast: The High Stakes Growth Show",
+            "author": "Odys Podcast: The High Stakes Growth Show",
+            "text": "Generally you will count, let's say, $0.50 per click, approximately $0.50 per manipulation.",
+            "tip": "Generally you will count, let's say, $0.50 per click, approximately $0.50 per manipulation.",
+            "timestamp": 1128,
+            "timestamp_seconds": 1128,
+            "timestamp_label": "[00:18:48]",
+            "url": "https://www.youtube.com/watch?v=0qIqZKefEc8&t=1128s",
+            "markdown": "[00:18:48](https://www.youtube.com/watch?v=0qIqZKefEc8&t=1128s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "krFtrxJsFok",
+            "title": "Local SEO Hack: Does CTR Manipulation Work Long-Term?",
+            "channel": "Sterling Sky Inc",
+            "author": "Sterling Sky Inc",
+            "text": "The gains from the CTR manipulation definitely didn't last.",
+            "tip": "The gains from the CTR manipulation definitely didn't last.",
+            "timestamp": 69,
+            "timestamp_seconds": 69,
+            "timestamp_label": "[00:01:09]",
+            "url": "https://www.youtube.com/watch?v=krFtrxJsFok&t=69s",
+            "markdown": "[00:01:09](https://www.youtube.com/watch?v=krFtrxJsFok&t=69s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "VTorygEcF7E",
+            "title": "Does CTR Manipulation Still Work in Local SEO?",
+            "channel": "Semantic Mastery",
+            "author": "Semantic Mastery",
+            "text": "It became increasingly difficult and more expensive to be able to do that with the Google profiles.",
+            "tip": "It became increasingly difficult and more expensive to be able to do that with the Google profiles.",
+            "timestamp": 110,
+            "timestamp_seconds": 110,
+            "timestamp_label": "[00:01:50]",
+            "url": "https://www.youtube.com/watch?v=VTorygEcF7E&t=110s",
+            "markdown": "[00:01:50](https://www.youtube.com/watch?v=VTorygEcF7E&t=110s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "DYkDCiVseqM",
+            "title": "CTR Manipulation: Rank 1 With Google's Secret Algo Revealed",
+            "channel": "SEO Jesus",
+            "author": "SEO Jesus",
+            "text": "When I talk about CTR manipulation, I think it's far more useful to actually think of this in terms of user signals.",
+            "tip": "When I talk about CTR manipulation, I think it's far more useful to actually think of this in terms of user signals.",
+            "timestamp": 241,
+            "timestamp_seconds": 241,
+            "timestamp_label": "[00:04:01]",
+            "url": "https://www.youtube.com/watch?v=DYkDCiVseqM&t=241s",
+            "markdown": "[00:04:01](https://www.youtube.com/watch?v=DYkDCiVseqM&t=241s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "mg7C81Ti3DY",
+            "title": "Website CTR Manipulation: How To Do CTR Manipulation SEO",
+            "channel": "Chris Palmer SEO",
+            "author": "Chris Palmer SEO",
+            "text": "We like to shrink this down to 28 days in order to get the math in the last current month.",
+            "tip": "We like to shrink this down to 28 days in order to get the math in the last current month.",
+            "timestamp": 750,
+            "timestamp_seconds": 750,
+            "timestamp_label": "[00:12:30]",
+            "url": "https://www.youtube.com/watch?v=mg7C81Ti3DY&t=750s",
+            "markdown": "[00:12:30](https://www.youtube.com/watch?v=mg7C81Ti3DY&t=750s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "9RAmTcJcaDE",
+            "title": "New Black Hat SEO Strategy: Chrome Signals Manipulation (Case Study). Rank Within 24H!",
+            "channel": "Niels Castermans SEO",
+            "author": "Niels Castermans SEO",
+            "text": "Chrome signal manipulation is something that's temporary. On average it lasts about four to five days.",
+            "tip": "Chrome signal manipulation is something that's temporary. On average it lasts about four to five days.",
+            "timestamp": 492,
+            "timestamp_seconds": 492,
+            "timestamp_label": "[00:08:12]",
+            "url": "https://www.youtube.com/watch?v=9RAmTcJcaDE&t=492s",
+            "markdown": "[00:08:12](https://www.youtube.com/watch?v=9RAmTcJcaDE&t=492s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "rPlpnhqyxtY",
+            "title": "Click Through Rate Manipulation - CTR SEO:759",
+            "channel": "Grey Hat SEO",
+            "author": "Grey Hat SEO",
+            "text": "A CTR and traffic network is a network of devices.",
+            "tip": "A CTR and traffic network is a network of devices.",
+            "timestamp": 300,
+            "timestamp_seconds": 300,
+            "timestamp_label": "[00:05:00]",
+            "url": "https://www.youtube.com/watch?v=rPlpnhqyxtY&t=300s",
+            "markdown": "[00:05:00](https://www.youtube.com/watch?v=rPlpnhqyxtY&t=300s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "L-FcnuQBAjc",
+            "title": "CTR Manipulation Explained: Does CTR Manipulation Still Work for SEO in 2026?",
+            "channel": "Idris Ya'u",
+            "author": "Idris Ya'u",
+            "text": "Unnatural traffic spikes can trigger manual reviews and the result can be de-indexing or dramatic ranking drops.",
+            "tip": "Unnatural traffic spikes can trigger manual reviews and the result can be de-indexing or dramatic ranking drops.",
+            "timestamp": 185,
+            "timestamp_seconds": 185,
+            "timestamp_label": "[00:03:05]",
+            "url": "https://www.youtube.com/watch?v=L-FcnuQBAjc&t=185s",
+            "markdown": "[00:03:05](https://www.youtube.com/watch?v=L-FcnuQBAjc&t=185s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "YwzyoEqNVN4",
+            "title": "CTR Manipulation For Local SEO: Rank Your GBP #1 (Using Awesome Traffic Bot)",
+            "channel": "Yash Singh",
+            "author": "Yash Singh",
+            "text": "I've added 35 from desktop, mobile 55, then tablet ten. It's totally upon you and how the data of your website or your GMB looks like as of now.",
+            "tip": "I've added 35 from desktop, mobile 55, then tablet ten. It's totally upon you and how the data of your website or your GMB looks like as of now.",
+            "timestamp": 153,
+            "timestamp_seconds": 153,
+            "timestamp_label": "[00:02:33]",
+            "url": "https://www.youtube.com/watch?v=YwzyoEqNVN4&t=153s",
+            "markdown": "[00:02:33](https://www.youtube.com/watch?v=YwzyoEqNVN4&t=153s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "8-9kfC7btJM",
+            "title": "Google Maps CTR Manipulation - Will It Work For You",
+            "channel": "Osborne Digital Marketing",
+            "author": "Osborne Digital Marketing",
+            "text": "You want to be where there's yellow, there's green. Realistically there's yellow and green, you're good to go. If there's red, not good to go.",
+            "tip": "You want to be where there's yellow, there's green. Realistically there's yellow and green, you're good to go. If there's red, not good to go.",
+            "timestamp": 134,
+            "timestamp_seconds": 134,
+            "timestamp_label": "[00:02:14]",
+            "url": "https://www.youtube.com/watch?v=8-9kfC7btJM&t=134s",
+            "markdown": "[00:02:14](https://www.youtube.com/watch?v=8-9kfC7btJM&t=134s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "YGk2zHgGoss",
+            "title": "Google Maps CTR Manipulation Secrets That Rank Maps #1",
+            "channel": "Osborne Digital Marketing",
+            "author": "Osborne Digital Marketing",
+            "text": "If you're not getting an improvement within a month then you should be doing some more optimization in month two.",
+            "tip": "If you're not getting an improvement within a month then you should be doing some more optimization in month two.",
+            "timestamp": 1334,
+            "timestamp_seconds": 1334,
+            "timestamp_label": "[00:22:14]",
+            "url": "https://www.youtube.com/watch?v=YGk2zHgGoss&t=1334s",
+            "markdown": "[00:22:14](https://www.youtube.com/watch?v=YGk2zHgGoss&t=1334s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "slTweyz4OSs",
+            "title": "Google Maps SCAM ALERT! The dark truth about Click-Through Rate Manipulation.",
+            "channel": "Map Labs",
+            "author": "Map Labs",
+            "text": "The problem is that those direction requests never actually end up at your business.",
+            "tip": "The problem is that those direction requests never actually end up at your business.",
+            "timestamp": 43,
+            "timestamp_seconds": 43,
+            "timestamp_label": "[00:00:43]",
+            "url": "https://www.youtube.com/watch?v=slTweyz4OSs&t=43s",
+            "markdown": "[00:00:43](https://www.youtube.com/watch?v=slTweyz4OSs&t=43s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "C-Nua5kSxAk",
+            "title": "Unleash The Power Of P2P Mobile Proxies For Your SERP Strategy",
+            "channel": "Anthony Hayes",
+            "author": "Anthony Hayes",
+            "text": "We're not using residential proxies anymore, but you still can if you want to.",
+            "tip": "We're not using residential proxies anymore, but you still can if you want to.",
+            "timestamp": 60,
+            "timestamp_seconds": 60,
+            "timestamp_label": "[00:01:00]",
+            "url": "https://www.youtube.com/watch?v=C-Nua5kSxAk&t=60s",
+            "markdown": "[00:01:00](https://www.youtube.com/watch?v=C-Nua5kSxAk&t=60s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7 corpus.",
         },
     ],
 }

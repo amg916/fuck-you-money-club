@@ -5,685 +5,847 @@ CHAPTER_9 = {
     "chapter_id": "Q9",
     "chapter_number": 9,
     "question_number": 9,
-    "slug": "contracts-statutory-guardrails-licensing-outreach-scripts",
-    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern building an seo empire?",
+    "slug": "core-updates-traffic-drop-diagnosis-and-recovery",
+    "question_prompt": "How do these update reports, survival testimonies, growth cases, and audit demonstrations assess traffic losses and proposed recovery measures without treating practitioner explanations as proven causes?",
     "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
-    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
-    "subtitle": "Copyright Chains, FTC Disclosures, State Privacy Rights, Affiliate Attribution, CTV Supply Contracts & Buyer-Ready Media Assets",
-    "layout_template": "legal_compliance_notes",
-    "reading_time_minutes": 14,
+    "title": "Core Updates, Traffic-Drop Diagnosis & Recovery",
+    "subtitle": "Helpful Content and core-update reports, hit-versus-helped checks, AI-content losses, survival accounts, semantic EEAT growth, topical-authority critiques, and crawl, indexing, and speed audits",
+    "layout_template": "tool_resource_directory",
+    "reading_time_minutes": 15,
     "executive_summary": (
-        "Candidate #25, Building an SEO Empire, holds Rank #07 with an 89/100 "
-        "Money-to-Manpower Score across 30 mapped plays. This chapter turns statutory "
-        "duties into publishing contracts, attribution controls, vendor restrictions, and "
-        "usable outreach scripts. The annual owner-profit cases remain $16,000 "
-        "Conservative, $159,250 Base, and $405,000 Scaled; referred merchant sales never "
-        "become publisher revenue. Focus on transferable content rights, conspicuous "
-        "endorsement disclosures, state-specific privacy handling, and documented "
-        "advertising inventory. Three sensitive plays receive explicit operating boundaries: "
-        "identity_graph_pixel_arbitrage, coupon_checkout_tab_under_injection, and "
-        "ctv_mfa_programmatic_supply_arbitrage. Build around permissioned data, genuine "
-        "merchant discounts, and human-viewed inventory rather than covert identification, "
-        "fabricated attribution, or inflated screen sessions. Every contract should preserve "
-        "an evidence trail that survives a network review and a media acquisition."
+        "These sixteen transcript accounts separate update reporting, observed site movement, "
+        "practitioner explanations, and proposed repairs. Barry Schwartz reports rollout timing; "
+        "Kate Smoothy adds seasonal and AI-overview complications. Edward Sturm presents severe "
+        "AI-content losses alongside gains, while WordsAtScale demonstrates surviving automated "
+        "projects. Surfside PPC describes unrecovered affiliate sites. BSM demonstrates "
+        "impression-led comparisons; Julian Goldie turns monitoring and content assessment into "
+        "repeatable workflows. Tim The SEO Guru, True SEO, and Bill Mcintosh emphasize reviewed "
+        "content, genuine authorship, and useful answers. Kasra Dash connects service-focused "
+        "planning with crawl, indexing, and speed checks; Koray Tuğberk GÜBÜR demonstrates semantic "
+        "coverage and continued updating. Authority Hacker supplies the interpretive discipline: "
+        "inspect winners, challenge broad explanations, and distinguish observed recovery from "
+        "knowing what caused it."
     ),
     "key_metrics": [
         {
-            "label": "Conservative",
-            "value": "$80,000",
-            "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "20% net margin; $16,000 annual owner net profit; 1 FT + 3 C",
+            "label": "Business-topic drift in reviewed sites",
+            "value": "86 of 172",
+            "context": "Sites in Dash's partially hit sample whose pages had drifted away from what the business sells.",
+            "note": "Attributed to Kasra Dash ([I26NAT6T6Gs @ 00:00:19]).",
         },
         {
-            "label": "Base",
-            "value": "$490,000",
-            "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "32.5% net margin; $159,250 annual owner net profit; 1 FT + 3 C",
+            "label": "Client active-user growth",
+            "value": "almost 62%",
+            "context": "Growth reported for a client that True SEO says came through the preceding core update.",
+            "note": "Attributed to True SEO ([y6yAJ9Ocl3U @ 00:03:18]).",
         },
         {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "45% net margin; $405,000 annual owner net profit; 1 FT + 3 C",
+            "label": "Demonstrated speed-score movement",
+            "value": "57 to 64",
+            "context": "PageSpeed audit score before and after the caching-plugin adjustments shown in the technical audit.",
+            "note": "Attributed to Kasra Dash ([yzNo7jJ8WBE @ 00:22:54]).",
         },
     ],
     "sections": [
         {
-            "heading": "1. Attach an authority and evidence owner to every publishing surface",
-            "epistemic_status": "operating_framework",
+            "id": "q9-section-1",
+            "title": "Read the update report before explaining the loss",
             "paragraphs": [
                 (
-                    "Start the portfolio register with domains, legal entities, audience locations, "
-                    "content sources, monetization partners, and the person who can stop publication. "
-                    "A general search publisher ordinarily needs no federal publishing license, but "
-                    "entity registration, assumed-name filings, local business permits, and tax "
-                    "registrations depend on its actual operations. Sector activity changes the "
-                    "boundary: selling insurance, arranging mortgages, practicing medicine, or "
-                    "providing individualized investment recommendations can trigger separate "
-                    "licensing and compensation restrictions. An affiliate label does not turn a "
-                    "regulated referral into ordinary advertising. For mortgage-related referrals, "
-                    "review RESPA section 8, 12 U.S.C. § 2607, before accepting payment tied to "
-                    "settlement-service business. For health content, distinguish editorial discussion "
-                    "from collecting symptom histories or transmitting leads to clinics. Washington's "
-                    "My Health My Data Act can reach consumer health data outside HIPAA-covered "
-                    "relationships. Maintain separate routing rules for sensitive topics instead of "
-                    "sending every visit into the same advertising stack. A multi-site portfolio "
-                    "should use one central rule register with domain-specific exceptions, named "
-                    "reviewers, effective dates, and supporting contracts. Do not represent Google "
-                    "Search eligibility, affiliate acceptance, or app-store distribution as a "
-                    "government license; each is a separate contractual permission that can disappear "
-                    "without changing the underlying statutory duties."
+                    "RustyBrick Barry Schwartz Search Engine Roundtable "
+                    "([7eYiiLVxrOE @ 00:01:00]) reports Google's description of the November "
+                    "2026 release as a regular update intended to surface relevant, satisfying "
+                    "content across site types, with an anticipated rollout of about two weeks. "
+                    "That report establishes the announced event, rather than identifying a "
+                    "particular site's failure. Kate Smoothy | SEO Specialist "
+                    "([zS5xebRUE5Y @ 00:02:29]) recommends waiting at least a week after completion "
+                    "and comparing that period with the week before the rollout; the same "
+                    "discussion warns that the resulting comparison approaches Black Friday, "
+                    "when purchasing behavior can already distort an e-commerce reading. Bill "
+                    "Mcintosh ([UGKO4HDAk8w @ 00:01:06]) makes a separate distinction: a core "
+                    "update can reorder results without the displaced business having committed "
+                    "a violation, whereas a human-issued manual action is something to check "
+                    "in Search Console. Together, these speakers give the diagnosis its starting "
+                    "questions: which announced rollout is being examined, which dates are being "
+                    "compared, and whether a listed manual action exists. Their accounts do not "
+                    "make a falling graph interchangeable with a penalty. Nor does an expected "
+                    "two-week rollout establish that the event has finished; Smoothy's comparison "
+                    "instruction depends on completion, while Schwartz explicitly says actual "
+                    "rollouts can run beyond the estimate."
                 ),
                 (
-                    "Build the content-rights ledger around 17 U.S.C. §§ 106, 107, and 204. "
-                    "Record the author, source material, signed assignment or license, permitted "
-                    "formats, territory, term, sublicensing rights, and evidence location. Paying a "
-                    "freelancer does not automatically transfer copyright, and commissioned articles "
-                    "do not automatically qualify as works made for hire. Use a present written "
-                    "assignment as the fallback, with identified preexisting materials separately "
-                    "licensed. Fair use requires a contextual four-factor analysis; a short excerpt "
-                    "or source link is not automatic permission. Public-domain cinema also requires "
-                    "title-by-title verification because restoration elements, music, translations, "
-                    "and artwork may carry separate rights. Programmatic pages should contain "
-                    "original analysis or genuinely licensed datasets rather than repackaged "
-                    "competitor text. For GEO citation capture, publish stable URLs, attributable "
-                    "research, revision dates, and reproducible measurements instead of manufacturing "
-                    "quotations or identities. Apply 15 U.S.C. § 45 and the FTC Endorsement Guides "
-                    "to affiliate recommendations and paid reviews: material connections belong "
-                    "where readers encounter the recommendation. FTC rules at 16 CFR Part 465 "
-                    "also address specified fake-review and testimonial practices. Retain screenshots "
-                    "showing the actual disclosure placement on mobile, not merely a policy page "
-                    "that a reader would have to hunt down."
+                    "RustyBrick Barry Schwartz Search Engine Roundtable "
+                    "([GBh1xJ3iSws @ 00:02:23]) reports that the September 2022 core update "
+                    "and the preceding Helpful Content update were separate, relaying Danny "
+                    "Sullivan's statement that there was no direct correlation between them. "
+                    "The same historical recap discusses local-search chatter and uncertainty "
+                    "around other movements, making it an account of several nearby events "
+                    "rather than one explanation for every chart. Kate Smoothy | SEO Specialist "
+                    "([zS5xebRUE5Y @ 00:04:40]) describes a comparable attribution difficulty "
+                    "in the November discussion: Google's AI-feature changes arrived during "
+                    "the core-update period, leaving work to distinguish their effects. Authority "
+                    "Hacker Podcast ([ePxZx_vQNFo @ 00:16:43]) supplies the explicit reasoning "
+                    "warning through its discussion of spurious correlations. Seeing several "
+                    "affected affiliate sites does not, in the hosts' account, establish that "
+                    "affiliate status itself explains the losses. They ask what now occupies "
+                    "the searches those sites lost and whether other affiliate publishers "
+                    "remain there. This comparison keeps the reporting attached to the actual "
+                    "search results instead of turning a cluster of complaints into a universal "
+                    "rule. Historical event labels, simultaneous changes, and the composition "
+                    "of the replacement results all remain part of the speakers' examination; "
+                    "none is collapsed into a single asserted cause."
                 ),
                 (
-                    "Treat privacy as a data-flow decision, not a footer project. Under California "
-                    "Civil Code § 1798.100 and related CCPA provisions, determine coverage using "
-                    "the current thresholds, affiliated-entity rules, and actual processing "
-                    "activities. Covered businesses must distinguish service-provider processing "
-                    "from sale or sharing, provide required notices, and implement applicable "
-                    "opt-out rights, including recognized opt-out preference signals. Colorado and "
-                    "other states add their own applicability tests, sensitive-data requirements, "
-                    "and universal opt-out mechanisms. Wiretapping and session-replay exposure "
-                    "depends on the implementation, information captured, and governing state law; "
-                    "review California Penal Code § 631 before deploying third-party interception "
-                    "technology. A first-party-looking hostname does not settle that question. "
-                    "Children's services require separate COPPA analysis under 15 U.S.C. §§ "
-                    "6501–6506 and 16 CFR Part 312. Avoid combining children's audiences with "
-                    "general-purpose advertising profiles. Google Search spam policies, including "
-                    "scaled-content abuse and site-reputation abuse restrictions, are platform "
-                    "rules rather than statutes, but they can still destroy distribution. Use "
-                    "Search Console, crawl logs, and a versioned deployment register to connect "
-                    "traffic changes to releases. Disable disputed collection first, preserve "
-                    "minimal incident evidence securely, and investigate whether correction, "
-                    "deletion, partner notification, or another response is required before "
-                    "restoring the affected integration."
+                    "Edward Sturm ([kroDk8LuKtY @ 00:03:01]) relays Zack Baldwin's account of "
+                    "a site rebuilt with Claude Code, new location pages and articles, and "
+                    "additional internal links shortly before a sharp decline. Baldwin's "
+                    "reported explanation includes uncertainty about whether AI caused the "
+                    "hit, which matters because the account contains several changes rather "
+                    "than one isolated intervention. WordsAtScale ([mpV06kMELhI @ 00:02:55]) "
+                    "presents a different outcome: an automated review workflow with real "
+                    "screenshots, internal links, comparisons, and other review elements on "
+                    "a project still receiving traffic. Surfside PPC "
+                    "([0_SAQbGnl3Y @ 00:03:31]) describes persistent losses and states a belief "
+                    "that affected sites were effectively blacklisted, drawing partly on "
+                    "stories about similar content ranking on replacement domains. Authority "
+                    "Hacker Podcast ([ePxZx_vQNFo @ 00:38:51]) expressly warns against making "
+                    "general conclusions from one case study, even correcting that tendency "
+                    "in its own conversation. Read together, these testimonies preserve both "
+                    "the losses and the survival accounts without erasing their differences. "
+                    "Sturm's relayed account does not establish which accompanying change "
+                    "mattered; WordsAtScale's continuing traffic does not establish that every "
+                    "automated project survives; Surfside's blacklist explanation remains "
+                    "Surfside's stated interpretation. The chapter can report each practitioner's "
+                    "experience and proposed response without rewriting those accounts as a "
+                    "shared finding about Google's internal mechanism."
                 ),
             ],
             "table": {
-                "caption": "Authority-to-Evidence Matrix for Search Publishing and Sensitive Verticals",
-                "headers": [
-                    "Surface and governing authority",
-                    "Concrete operating requirement",
-                    "Evidence retained by the operator",
-                    "Failure response and commercial fallback",
-                ],
+                "caption": "Separate the announced event, the observed movement, and the speaker's interpretation.",
+                "headers": ["Reported evidence", "How the speaker frames its use", "Expert Source"],
                 "rows": [
                     [
-                        "Freelance publishing under 17 U.S.C. §§ 106 and 204",
-                        "Obtain signed assignments covering articles, illustrations, and transferable derivative rights",
-                        "Store executed agreements beside asset identifiers and contributor payment records",
-                        "Remove disputed assets and commission replacements with documented original sourcing",
+                        "The November release is described as a regular global core update.",
+                        "Treat the two-week rollout as an estimate rather than a completed event.",
+                        "RustyBrick Barry Schwartz Search Engine Roundtable ([7eYiiLVxrOE @ 00:01:00])",
                     ],
                     [
-                        "Affiliate recommendations under 15 U.S.C. § 45 and 16 CFR Part 255",
-                        "Place clear compensation disclosures beside recommendations before commercial links",
-                        "Archive dated mobile screenshots and sponsor substantiation for specific claims",
-                        "Pause affected placements and replace unsupported claims before resuming distribution",
+                        "The comparison period may coincide with unusual Black Friday buying behavior.",
+                        "Keep seasonal purchasing changes in view when interpreting e-commerce performance.",
+                        "Kate Smoothy | SEO Specialist ([zS5xebRUE5Y @ 00:02:29])",
                     ],
                     [
-                        "Consumer reviews governed by applicable 16 CFR Part 465 prohibitions",
-                        "Reject fabricated testimonials and incentives conditioned on favorable consumer sentiment",
-                        "Retain reviewer source records, incentive terms, and records of moderation decisions",
-                        "Remove prohibited reviews and correct syndicated copies through partner contacts",
+                        "The historical recap separates the core release from Helpful Content.",
+                        "Do not combine nearby announcements into one account of every movement.",
+                        "RustyBrick Barry Schwartz Search Engine Roundtable ([GBh1xJ3iSws @ 00:02:23])",
                     ],
                     [
-                        "California covered-business processing under Civil Code § 1798.100 et seq.",
-                        "Map collection, sale, sharing, retention, consumer rights, and processor restrictions",
-                        "Keep processing inventories, request records, and opt-out signal test results",
-                        "Suspend incompatible vendors while preserving necessary service and suppression functions",
+                        "A reported site rebuild and new publishing preceded a sharp decline.",
+                        "Preserve the site owner's uncertainty about which change caused the loss.",
+                        "Edward Sturm ([kroDk8LuKtY @ 00:03:01])",
                     ],
                     [
-                        "Mortgage settlement referrals under 12 U.S.C. § 2607",
-                        "Review compensation substance before accepting settlement-service referral payments or benefits",
-                        "Maintain service descriptions, valuation support, and sector-specific review findings",
-                        "Decline referral-linked fees and evaluate genuinely separate services before contracting",
+                        "A review project using automation continued receiving traffic during the update.",
+                        "Record the demonstrated review elements alongside the speaker's survival explanation.",
+                        "WordsAtScale ([mpV06kMELhI @ 00:02:55])",
                     ],
                     [
-                        "Consumer health information under Washington RCW Chapter 19.373",
-                        "Assess collection and sharing duties before introducing health-related tracking vendors",
-                        "Document applicable permissions, deletion handling, processor terms, and vendor recipients",
-                        "Remove health-data advertising transfers and retain a contextual publishing model",
+                        "The podcast challenges conclusions drawn from clusters of affected affiliate sites.",
+                        "Inspect replacement results rather than assuming affiliate status explains the decline.",
+                        "Authority Hacker Podcast ([ePxZx_vQNFo @ 00:16:43])",
                     ],
                 ],
             },
         },
         {
-            "heading": "2. Make the contract allocate attribution, ownership, payment, and exit risk",
-            "epistemic_status": "operating_framework",
+            "id": "q9-section-2",
+            "title": "Build the hit-versus-helped comparison at page level",
             "paragraphs": [
                 (
-                    "Use a master agreement plus a domain-specific order form for each sponsor, "
-                    "affiliate arrangement, dataset license, and production vendor. Scope should "
-                    "identify URLs or inventory classes, delivery dates, review rounds, allowed "
-                    "claims, placement duration, and what happens when a merchant changes its "
-                    "offer. State that editorial ranking remains independent unless a placement "
-                    "is explicitly purchased and labeled. Separate deliverable acceptance from "
-                    "search ranking: a contract can promise a published comparison and measured "
-                    "click reporting, not control over Google's indexing decisions. Define a fee "
-                    "trigger with the network event, attribution window, validation period, "
-                    "reversal reasons, reporting source, and payment deadline. For sponsorships, "
-                    "specify whether payment buys time, impressions, clicks, or a package, then "
-                    "write the corresponding makegood method. Do not let an ambiguous conversion "
-                    "standard shift every merchant operational problem onto the publisher. A "
-                    "narrow anti-circumvention clause can protect specifically introduced commercial "
-                    "relationships for an agreed period, but it should exclude documented "
-                    "preexisting relationships and ordinary consumer navigation. Reject clauses "
-                    "that pretend to own every future customer interaction. For affiliate "
-                    "programs, capture the accepted program terms and negotiated exceptions because "
-                    "a sales representative's enthusiastic email may not amend the controlling "
-                    "network agreement or authorize a restricted traffic source."
+                    "BSM - A Denver SEO Company ([2jejTy2fWTg @ 00:02:13]) begins its "
+                    "post-update examination in Search Console with total impressions rather "
+                    "than clicks alone. The explanation is practical: improved rankings do "
+                    "not necessarily put a page immediately into the leading position, so "
+                    "visibility can change before clicks show a comparable movement. In the "
+                    "demonstration, the speaker then examines individual pages, finding a "
+                    "recently updated SEO cost guide among the winners and an older SEO "
+                    "packages guide among the losers. Julian Goldie SEO "
+                    "([HWSpTVX7qMI @ 00:03:46]) describes an agent prompt that saves clicks "
+                    "and average position by page for the pre-update week, then compares "
+                    "the same pages after completion plus seven days. True SEO "
+                    "([y6yAJ9Ocl3U @ 00:03:59]) adds a restrained monitoring routine: check "
+                    "Search Console daily, watch clicks and impressions, and open the pages "
+                    "tab to identify what moved. These are complementary demonstrations, "
+                    "not identical date selections: BSM's shown comparison uses a period "
+                    "before the update concluded, whereas Goldie's workflow explicitly "
+                    "anchors its baseline before the update started. Retaining that "
+                    "difference prevents the chapter from silently changing what BSM "
+                    "actually demonstrated. The common operational emphasis is to identify "
+                    "the affected pages and the measurements that changed before choosing "
+                    "which content deserves attention."
                 ),
                 (
-                    "Write ownership provisions for both normal operations and a sale. The "
-                    "publisher should control its domain registrations, CMS accounts, source "
-                    "repositories, analytics configuration, original content, and assignable "
-                    "commercial agreements. A contractor may retain general tools, but the "
-                    "publisher needs durable rights to project-specific output and enough "
-                    "documentation to replace that contractor. Separate licensed datasets from "
-                    "owned research; many licenses prohibit redistribution to an acquirer or "
-                    "training use even when website display is permitted. Personal information "
-                    "is not unrestricted inventory merely because a contract calls it an asset. "
-                    "Limit processing purposes, recipients, retention, onward transfers, and "
-                    "subcontractors, with assistance for applicable access, deletion, and opt-out "
-                    "requests. Specify incident notification timing and the minimum facts the "
-                    "vendor must supply. For content generated with automated tools, require "
-                    "source review, factual verification, and disclosure of third-party "
-                    "restrictions without representing every output as exclusively protectable. "
-                    "Keep a rights manifest that travels with the asset purchase agreement. "
-                    "At diligence, buyers will test whether affiliate accounts, ad agreements, "
-                    "stock-image licenses, and audience records can actually transfer. Where "
-                    "assignment requires permission, identify that dependency early and model "
-                    "temporary revenue interruption instead of promising an uninterrupted switch "
-                    "on the closing date."
+                    "Kate Smoothy | SEO Specialist ([zS5xebRUE5Y @ 00:09:49]) moves the "
+                    "investigation beyond the site's own chart by asking what an AI overview "
+                    "actually says when traffic or sales fall. The example concerns an "
+                    "overview highlighting a competitor's free delivery: if the business "
+                    "also offers it, the suggested response is to compare how prominently "
+                    "that information appears on each page. Reviews provide another example "
+                    "of information that might be present for a competitor but missing "
+                    "from the business's product page. Edward Sturm "
+                    "([kroDk8LuKtY @ 00:11:07]) addresses a different interpretation problem: "
+                    "a site with very few clicks can show large percentage movements "
+                    "because each click represents a substantial share of its total. "
+                    "Authority Hacker Podcast ([ePxZx_vQNFo @ 00:37:04]) adds that third-party "
+                    "traffic estimates can fluctuate because of the tool's calculations "
+                    "or updates, rather than an equivalent change in actual site traffic. "
+                    "The speakers therefore describe distinct checks for distinct readings: "
+                    "inspect the overview's product comparison, consider the size of the "
+                    "click total, and examine what a traffic-estimation graph represents. "
+                    "Smoothy's proposed page changes address missing purchasing information, "
+                    "not an assumed penalty. Sturm's advice addresses volatility at low "
+                    "volume, while Authority Hacker's warning concerns the measurement "
+                    "source rather than the site's content."
                 ),
                 (
-                    "Allocate liability by risk rather than copying a vendor's standard terms. "
-                    "Define covered claims, defense control, settlement consent, insurance "
-                    "requirements, and liability caps with clear treatment of confidentiality, "
-                    "IP claims, data misuse, fraud, and unpaid fees. A twelve-month-fees cap "
-                    "can be commercially negotiable, but a tiny contract may leave major "
-                    "exposure uncovered; evaluate insurance exclusions and each party's ability "
-                    "to pay. Specify governing law, forum, escalation contacts, notice mechanics, "
-                    "and whether arbitration applies, including fees and emergency remedies. "
-                    "Reconcile contract reporting to the canonical scorecard without treating "
-                    "merchant checkout totals as publisher sales. Conservative revenue of "
-                    "$80,000 less $64,000 in modeled total costs leaves $16,000 at 20%. "
-                    "Base revenue of $490,000 less $330,750 leaves $159,250 at 32.5%. "
-                    "Scaled revenue of $900,000 less $495,000 leaves $405,000 at 45%. "
-                    "These are annual whole-business cases, not incremental promises from any "
-                    "single play. Conservative and Base use 1 FT + 3 C; Scaled uses "
-                    "1 FT + 3 C. Allocate contract administration, rights review, reversals, "
-                    "and monitoring within those modeled costs. If actual vendor commitments "
-                    "break the envelope, revise the operating plan rather than quietly "
-                    "changing the canonical profit figures."
+                    "Julian Goldie SEO ([s_GIhK4WE18 @ 00:06:20]) demonstrates turning "
+                    "Google's helpful-content questions into five grading criteria with "
+                    "ChatGPT, then applying them to a page to obtain improvement suggestions. "
+                    "The later instruction is to prioritize pages associated with the "
+                    "largest pre-versus-post losses, rather than automatically rewriting "
+                    "the entire collection. In the newer workflow, Julian Goldie SEO "
+                    "([HWSpTVX7qMI @ 00:04:37]) asks an agent to answer each self-assessment "
+                    "question with yes, partly, or no, quote the supporting line, and "
+                    "provide one specific fix. Tim The SEO Guru "
+                    "([cOL8sezUyEQ @ 00:04:32]) supplies the timing discipline around that "
+                    "assessment: confirm completion through the search status dashboard, "
+                    "record the dates, and wait a full week before analyzing the comparison. "
+                    "Authority Hacker Podcast ([ePxZx_vQNFo @ 01:07:28]) brings the audit "
+                    "back to what competing pages now do better and whether search intent "
+                    "has changed since the old content was written. Together, these "
+                    "instructions support a page-specific explanation of the proposed edit: "
+                    "which answer is missing, what supporting evidence is absent, or "
+                    "which part of the page no longer serves the query. Goldie's grading "
+                    "output is a content-assessment workflow; the speakers do not present "
+                    "its score as a measurement of Google's own ranking calculation."
                 ),
             ],
             "table": {
-                "caption": "Negotiation Checklist for Transferable Search-Media Cash Flows",
-                "headers": [
-                    "Clause and commercial purpose",
-                    "Required drafting detail",
-                    "Evidence and reporting mechanism",
-                    "Fallback when agreement is unavailable",
-                ],
+                "caption": "The diagnostic sequence shown across the comparison and audit demonstrations.",
+                "headers": ["Diagnostic check", "Transcript-grounded action", "Expert Source"],
                 "rows": [
                     [
-                        "Scope clause separating delivered publishing work from ranking outcomes",
-                        "Name covered domains, deliverables, review rounds, placement periods, and exclusions",
-                        "Use dated publication receipts with agreed acceptance criteria and reviewer names",
-                        "Sell a smaller defined package rather than promising uncontrolled search positions",
+                        "Establish whether visibility changed before expecting a matching click increase.",
+                        "Open Search Console search results and begin with total impressions.",
+                        "BSM - A Denver SEO Company ([2jejTy2fWTg @ 00:02:13])",
                     ],
                     [
-                        "Fee trigger connecting validated events to collectible publisher commissions",
-                        "Define attribution window, validation deadlines, reversals, payment dates, and disputes",
-                        "Reconcile network exports against invoices using stable transaction reference identifiers",
-                        "Price fixed sponsorship inventory when conversion validation cannot be independently reconciled",
+                        "Keep the same pages visible in the before-and-after comparison.",
+                        "Save page clicks and average position for the pre-update baseline week.",
+                        "Julian Goldie SEO ([HWSpTVX7qMI @ 00:03:46])",
                     ],
                     [
-                        "Anti-circumvention protection for specifically introduced business relationships and opportunities",
-                        "Limit protected counterparties, duration, covered transactions, and preexisting relationship exclusions",
-                        "Maintain introduction records and a jointly acknowledged protected relationship schedule",
-                        "Use an introduction fee instead of broad restrictions on ordinary commerce",
+                        "Inspect whether a broader comparison changes the reading of performance.",
+                        "Compare March 27 through April 2 with the same dates last year.",
+                        "BSM - A Denver SEO Company ([2jejTy2fWTg @ 00:05:24])",
                     ],
                     [
-                        "IP and data terms supporting lawful operation and asset transfer",
-                        "Separate assignments, licensed inputs, permitted processing, retention, and assignment permissions",
-                        "Maintain signed rights manifests and a recipient-specific data processing inventory",
-                        "Replace nontransferable inputs before marketing the affected portfolio for sale",
+                        "Read the specific competitor advantages selected by the AI overview.",
+                        "Compare product-page delivery information and reviews with the competing page.",
+                        "Kate Smoothy | SEO Specialist ([zS5xebRUE5Y @ 00:09:49])",
                     ],
                     [
-                        "Liability allocation matching exposure to remedies and available insurance",
-                        "Specify indemnities, defense procedures, caps, exclusions, and relevant insurance obligations",
-                        "Retain certificates, policy exclusions, claim notices, and negotiated risk allocation versions",
-                        "Reduce data access or inventory scope when counterparties cannot support exposure",
+                        "Avoid interpreting every large percentage movement as a major hit.",
+                        "Consider how few clicks make each individual click a larger percentage.",
+                        "Edward Sturm ([kroDk8LuKtY @ 00:11:07])",
                     ],
                     [
-                        "Dispute and termination terms preserving continuity during commercial disagreements",
-                        "Define governing law, forum, cure periods, payment survival, and transition assistance",
-                        "Record notice delivery, escalation decisions, account handovers, and outstanding payment balances",
-                        "Maintain replacement suppliers and exportable records before terminating essential operating vendors",
+                        "Require a page assessment to identify its textual support.",
+                        "Ask for yes, partly, or no, a quoted line, and one fix.",
+                        "Julian Goldie SEO ([HWSpTVX7qMI @ 00:04:37])",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Negotiate for the buyer who will inspect the portfolio later",
-                "body": (
-                    "A transferable revenue stream is worth more operationally than a high "
-                    "headline commission supported by missing rights and verbal exceptions."
-                ),
+                "title": "Make the comparison useful before making it dramatic",
+                "body": "These checks come from the speakers' demonstrated monitoring and review routines.",
                 "items": [
-                    "Attach merchant permission for coupon traffic, trademark bidding boundaries, and exclusive-code terms to the actual network agreement.",
-                    "Store mobile disclosure screenshots with page revisions so an old complaint can be matched to the version readers actually saw.",
-                    "Keep domain registration and Search Console ownership under the publisher entity, with contractors receiving revocable role-based access.",
-                    "Maintain an assignment-consent calendar for ad networks, datasets, and image licenses before opening a media-exit data room.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Rebuild the three sensitive plays around permission and verifiable value",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "For identity_graph_pixel_arbitrage, treat a vendor's claimed 35–55% resolution "
-                    "rate as an unverified proposition, not permission to identify visitors. "
-                    "Across 10,000 anonymous bouncing visits, that claim implies 3,500–5,500 "
-                    "matches; it says nothing about accuracy, lawful collection, permitted "
-                    "sharing, or incremental profit. Reject covert matching of IP or device "
-                    "signals against email-hash lookup collections to expose names, LinkedIn "
-                    "profiles, or home addresses. A CNAME endpoint does not convert an outside "
-                    "recipient into the publisher, and SHA-256 hashing does not make linkable "
-                    "personal information anonymous. Use aggregate search-intent reporting or "
-                    "affirmatively enrolled first-party audiences instead. Illustratively, "
-                    "10,000 visits producing 200 enrolled subscribers, with 10% purchasing "
-                    "and a $12 validated commission, yield $240 publisher revenue before "
-                    "acquisition and service costs. Do not buy or exploit bidstream data "
-                    "to reconstruct individual browsing histories. The proposed fallback also "
-                    "needs correction: physical mail falls outside CAN-SPAM's email rules, "
-                    "but remains subject to applicable privacy, consumer-protection, and "
-                    "sector restrictions. Hashed advertising-audience uploads still require "
-                    "appropriate rights and platform permission. US-only edge filtering "
-                    "reduces geographic scope but proves neither residence nor authorization. "
-                    "Suppress consumer cold-email campaigns from this workflow, honor "
-                    "applicable opt-outs, and prohibit vendor reuse through enforceable "
-                    "processing restrictions."
-                ),
-                (
-                    "For coupon_checkout_tab_under_injection, build legitimate checkout-search "
-                    "interception around merchant-approved offers and explicit user action. "
-                    "The legacy identifier does not authorize tab-unders, forced redirects, "
-                    "hidden frames, or attribution cookies placed without a genuine referral. "
-                    "A useful deal page identifies the merchant, eligibility, expiration, "
-                    "exclusions, verification date, affiliate relationship, and what a click "
-                    "will do. Negotiate an exclusive code that provides a real benefit, "
-                    "then confirm whether code attribution, click attribution, or another "
-                    "rule controls commission. Example: 1,000 user-initiated outbound clicks "
-                    "at 20% validated conversion produce 200 orders. At $80 average "
-                    "merchant order value, underlying sales equal $16,000; an 8% commission "
-                    "produces $1,280 publisher revenue. If the publisher owes shoppers 30% "
-                    "of that commission, the $384 cash-back expense leaves $896 before "
-                    "content, support, reversals, and tax treatment. Document the assumed "
-                    "accounting presentation and adjust it if the contractual principal-agent "
-                    "analysis differs. Neither $16,000 nor $896 replaces the commission "
-                    "revenue line in this illustration. Explain cash-back eligibility, "
-                    "validation delays, and cancellation handling before enrollment. When "
-                    "a code expires or merchant permission ends, remove the claim promptly "
-                    "and switch to a clearly described public offer or an unpaid link. "
-                    "Never substitute fake reveal buttons or claim that merchant permission "
-                    "alone eliminates attribution disputes."
-                ),
-                (
-                    "For ctv_mfa_programmatic_supply_arbitrage, treat the proposed fleet of "
-                    "50–200 utility, ambient, public-domain cinema, weather, or casual-gaming "
-                    "channels as a hypothesis requiring staged validation. Roku, FireTV, "
-                    "Samsung Tizen, and mobile distribution each have separate developer, "
-                    "advertising, content, and privacy terms. Buyer CPMs of $18–$35 and "
-                    "audience acquisition quotes of $0–$2 describe different denominators "
-                    "unless the contract explicitly aligns them. Illustratively, one million "
-                    "eligible ad opportunities at 70% paid fill and a $24 gross cleared "
-                    "CPM produce $16,800 in buyer spend. A 25% supply fee leaves $12,600 "
-                    "publisher receipts; subtracting $2,000 acquisition expense leaves $10,600 "
-                    "before content rights, streaming, support, measurement, and other costs. "
-                    "Use gross or net recognized revenue only after examining principal-agent "
-                    "terms; do not automatically book buyer spend. Prohibit hidden playback, "
-                    "manufactured impressions, device spoofing, and simulated remote activity. "
-                    "Use genuine viewer check-ins and stop requesting ads when sessions "
-                    "become inactive under the agreed measurement standard. Maintain accurate "
-                    "app-ads.txt entries, seller identities, and supply-chain declarations; "
-                    "these documents do not establish human attention by themselves. "
-                    "Diversification toward six or more independent SSPs and direct agency "
-                    "PMPs is a concentration target, not permission to resell through "
-                    "undisclosed paths. Launch fewer channels until rights, audience quality, "
-                    "and net collections survive reconciliation."
-                ),
-            ],
-            "table": {
-                "caption": "Sensitive-Play Controls, Unit Economics, and Revenue-Preserving Alternatives",
-                "headers": [
-                    "Play and review boundary",
-                    "Unit math and accounting boundary",
-                    "Required evidence before activation",
-                    "Fallback preserving legitimate publisher value",
-                ],
-                "rows": [
-                    [
-                        "identity_graph_pixel_arbitrage vendor claims require independent rights and accuracy review",
-                        "Ten thousand visits imply 3,500–5,500 claimed matches, not authorized marketable people",
-                        "Obtain collection source records, recipient purposes, contractual restrictions, and deletion capabilities",
-                        "Replace individual resolution with aggregate intent research and voluntarily enrolled subscribers",
-                    ],
-                    [
-                        "Identity-linked mail and audience synchronization remain personal-data processing activities",
-                        "Two hundred enrolled subscribers at 10% conversion and $12 commission produce $240",
-                        "Verify enrollment records, applicable sharing rights, suppression handling, and platform acceptance",
-                        "Remove consumer identity enrichment and monetize contextual sponsorship inventory instead",
-                    ],
-                    [
-                        "coupon_checkout_tab_under_injection operates only through genuine approved referrals and offers",
-                        "Two hundred orders at $80 generate $16,000 merchant sales and $1,280 commissions",
-                        "Retain merchant code authorization, click records, offer terms, and network exceptions",
-                        "Publish accurately labeled public discounts without fabricated exclusivity or forced attribution",
-                    ],
-                    [
-                        "Cash-back promotions require transparent validation, payment, and cancellation terms",
-                        "Thirty percent of $1,280 commissions creates $384 expense and $896 contribution",
-                        "Match shopper obligations to validated transactions and preserve dispute support records",
-                        "Stop new incentives while honoring existing commitments under the published terms",
-                    ],
-                    [
-                        "ctv_mfa_programmatic_supply_arbitrage requires legitimate audiences and accurately represented inventory",
-                        "Seven hundred thousand paid impressions at $24 CPM produce $16,800 buyer spend",
-                        "Retain content licenses, session measurements, cleared impression reports, and fee schedules",
-                        "Reduce channel count and sell verified contextual packages to direct buyers",
-                    ],
-                    [
-                        "CTV supply diversification requires transparent independent paths rather than reseller duplication",
-                        "A 25% supply fee leaves $12,600 before $2,000 illustrative acquisition expense",
-                        "Reconcile app-ads.txt, seller identities, settlement statements, and actual session activity",
-                        "Suspend disputed supply paths and resume only reconciled human-viewed inventory",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four conditions before a sensitive play goes live",
-                "body": (
-                    "The responsible operator records evidence for every condition and disables "
-                    "the affected integration when a condition stops being true."
-                ),
-                "items": [
-                    "Confirm the data source, permitted purpose, recipient role, retention period, and applicable rights handling before any identity-related processing.",
-                    "Obtain written merchant and network permission for the real offer, traffic source, attribution rule, and cash-back structure.",
-                    "Verify each CTV title's rights, authentic session behavior, authorized supply paths, and settlement-level impression reconciliation.",
-                    "Approve a play-specific contribution worksheet that separates merchant sales, buyer spend, publisher revenue, commissions, fees, and variable expenses.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Use truthful scripts and a repeatable launch-to-exit evidence routine",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use commercial email only after documenting the source of the contact, "
-                    "relevance, applicable jurisdiction, and suppression checks. CAN-SPAM, "
-                    "15 U.S.C. § 7704, applies to commercial B2B email as well as consumer "
-                    "messages. It requires accurate routing information, nondeceptive subjects, "
-                    "advertising identification where required, a valid postal address, and "
-                    "a functioning opt-out honored within ten business days. Do not charge "
-                    "for opting out or require more than the permitted identifying "
-                    "information. Keep the mechanism available for the required period and "
-                    "monitor vendors acting on the publisher's behalf. This federal framework "
-                    "does not override other applicable privacy or sector rules, and other "
-                    "countries may require prior permission. A permission-first merchant "
-                    "opener is: 'Commercial partnership inquiry: I publish independent "
-                    "buying guides for readers comparing your product category. Would you "
-                    "like a proposal for an accurately disclosed placement or a genuine "
-                    "exclusive discount? We do not use hidden referrals or promise search "
-                    "positions. Reply stop to end commercial messages.' Before sending, "
-                    "append the actual sender identity and valid postal address from the "
-                    "approved company signature. Suppress requests across the sending stack, "
-                    "not just one salesperson's inbox. Avoid scraped consumer lists and "
-                    "do not switch to automated calls or texts without separately assessing "
-                    "the TCPA and applicable state rules."
-                ),
-                (
-                    "Run discovery as an attribution and truthfulness interview, not a "
-                    "pitch for guaranteed traffic. Read this verbatim: 'Which entity signs "
-                    "the agreement, which products and jurisdictions are included, and "
-                    "who can authorize the offer? What event earns our fee, how long "
-                    "does attribution last, and which cancellations reverse payment? May "
-                    "we use your brand assets on the named pages, and which claims "
-                    "have supporting evidence? What happens to accepted orders if the "
-                    "program ends?' Then ask: 'Will any data leave our sites beyond "
-                    "ordinary referral measurement? Identify each recipient, purpose, "
-                    "retention period, and deletion process before we consider integration.' "
-                    "For a sponsor, use: 'We sell the described placement and reporting "
-                    "package, not editorial conclusions. Readers will see the sponsorship "
-                    "relationship alongside the content. We can correct factual errors "
-                    "without giving a sponsor control over independent comparisons.' For "
-                    "CTV demand, ask: 'Which inventory types, attention rules, geography, "
-                    "seller paths, and invalid-traffic adjustments will you accept in "
-                    "writing?' Record answers in the order form rather than relying "
-                    "on the call recording alone. If a prospect requests fabricated "
-                    "reviews, undisclosed endorsements, or silent tracking, offer a "
-                    "contextual sponsorship or decline the incompatible component. Keep "
-                    "the remaining legitimate transaction available instead of treating "
-                    "every disagreement as an all-or-nothing negotiation."
-                ),
-                (
-                    "Run a four-step evidence routine before launch and after material "
-                    "changes. First, inventory the proposed pages, claims, rights, data "
-                    "flows, and counterparties. Second, sign the controlling agreements "
-                    "and resolve unsupported permissions. Third, test the rendered "
-                    "experience and event chain using controlled accounts and minimal "
-                    "test data. Fourth, reconcile reporting, suppression, rights expiry, "
-                    "and cash collections on a scheduled basis. Use a Playwright "
-                    "mobile screenshot test for disclosure placement, Search Console "
-                    "for indexing signals, and a controlled referral test against "
-                    "Impact or Awin reporting when the program permits testing. Do "
-                    "not generate fake purchases or billable ad impressions to prove "
-                    "the system works. Record exceptions, owners, remediation dates, "
-                    "and the evidence needed to reopen suspended activity. For an "
-                    "exit, create a rights and contract index before sharing "
-                    "commercially sensitive documents, restrict access by diligence "
-                    "role, and avoid exposing raw audience records merely to "
-                    "demonstrate traffic. The buyer's first useful question is "
-                    "whether reported earnings can continue under transferable "
-                    "permissions. Preserve aggregate cohort reports, settlement "
-                    "reconciliations, signed assignments, and incident summaries "
-                    "that answer it. Review retention requirements before deleting "
-                    "records; retain necessary tax, dispute, and contractual evidence "
-                    "while removing personal information that no longer has an "
-                    "appropriate purpose."
-                ),
-            ],
-            "table": {
-                "caption": "Verbatim Discovery Prompts and the Documents That Make Answers Enforceable",
-                "headers": [
-                    "Conversation and intended counterpart",
-                    "Exact operator script",
-                    "Evidence required after the conversation",
-                    "Action when the answer is inadequate",
-                ],
-                "rows": [
-                    [
-                        "Merchant partnership discovery before publishing an exclusive coupon claim",
-                        "'Who can authorize this exact discount and its permitted traffic sources?'",
-                        "Obtain an executed offer schedule identifying authorization, exclusions, and expiration",
-                        "Publish only verified public offers until exclusive permission is documented",
-                    ],
-                    [
-                        "Affiliate payment discovery before accepting performance-based commercial placement terms",
-                        "'Which validated event earns our fee, and which events reverse it?'",
-                        "Attach attribution windows, validation deadlines, reversal codes, and settlement procedures",
-                        "Switch to measurable fixed inventory or decline the disputed payment structure",
-                    ],
-                    [
-                        "Sponsor editorial discussion before allowing review of a comparison article",
-                        "'You may identify factual errors, but will you accept independent conclusions?'",
-                        "Record limited review rights and require adjacent disclosure of paid involvement",
-                        "Offer a clearly identified advertisement rather than disguised editorial influence",
-                    ],
-                    [
-                        "Identity vendor evaluation before any data integration or pilot deployment",
-                        "'Show the collection rights and every recipient before any visitor data moves.'",
-                        "Require purpose restrictions, source records, deletion support, and onward-transfer controls",
-                        "Reject unverifiable individual matching and retain aggregate search-intent analysis instead",
-                    ],
-                    [
-                        "CTV demand qualification before enabling a new programmatic supply relationship",
-                        "'Which session rules, seller paths, and traffic adjustments will you accept?'",
-                        "Obtain inventory standards, supply-chain requirements, adjustment windows, and fee definitions",
-                        "Keep inventory disabled until buyer terms and measurement controls align",
-                    ],
-                    [
-                        "Media buyer diligence before sharing detailed portfolio operating records",
-                        "'Which contracts require assignment permission, and how will you handle restricted data?'",
-                        "Maintain a permission schedule, role-based access register, and transfer restriction summary",
-                        "Share aggregate evidence while arranging necessary consents and excluding restricted records",
-                    ],
+                    "Start with impressions when improved rankings have not yet translated into more clicks. [BSM - A Denver SEO Company — 2jejTy2fWTg @ 00:02:36]",
+                    "Read the AI overview itself; a competitor's highlighted delivery or review information can suggest a concrete page improvement. [Kate Smoothy | SEO Specialist — zS5xebRUE5Y @ 00:09:49]",
+                    "Ask the page-check agent to quote the line supporting its assessment and supply one specific fix. [Julian Goldie SEO — HWSpTVX7qMI @ 00:04:37]",
+                    "Find the pages and keywords with the largest losses before grading and improving the whole content library. [Julian Goldie SEO — s_GIhK4WE18 @ 00:07:03]",
                 ],
             },
             "sop_steps": [
                 {
                     "step": 1,
-                    "title": "Map the proposed release",
-                    "action": "List affected domains, claims, content inputs, vendors, recipients, and payment events.",
-                    "detail": (
-                        "Assign an owner to every rights, privacy, disclosure, and attribution "
-                        "decision; flag sector-specific activity before making commercial promises."
-                    ),
+                    "title": "Record the rollout dates",
+                    "action": "Check the search status dashboard and note the start and completion dates.",
+                    "detail": "Tim recommends confirming completion before comparing results and waiting at least a full week afterward. [Tim The SEO Guru — cOL8sezUyEQ @ 00:04:32]",
                 },
                 {
                     "step": 2,
-                    "title": "Secure documented permissions",
-                    "action": "Execute rights assignments, commercial terms, and necessary processing restrictions.",
-                    "detail": (
-                        "Record controlling versions, signed exceptions, assignment dependencies, "
-                        "termination rights, and the exact event that creates publisher revenue."
-                    ),
+                    "title": "Preserve the page baseline",
+                    "action": "Save clicks and average position by page for the week before the update.",
+                    "detail": "Goldie's scorecard compares those same pages after rollout completion plus seven days and labels steady, small, or large movement. [Julian Goldie SEO — HWSpTVX7qMI @ 00:03:46]",
                 },
                 {
                     "step": 3,
-                    "title": "Test the actual experience",
-                    "action": "Verify mobile disclosures, genuine referral actions, opt-out handling, and approved inventory behavior.",
-                    "detail": (
-                        "Use controlled nonbillable tests where available; preserve screenshots "
-                        "and event records without manufacturing sales or advertising demand."
-                    ),
+                    "title": "Inspect visibility and individual pages",
+                    "action": "Review impressions, clicks, and the pages contributing to the change.",
+                    "detail": "BSM demonstrates similar click totals alongside greater impressions, then identifies the guides that gained or lost visibility. [BSM - A Denver SEO Company — 2jejTy2fWTg @ 00:04:13]",
                 },
                 {
                     "step": 4,
-                    "title": "Reconcile and maintain the evidence",
-                    "action": "Review settlements, reversals, permissions, vendor changes, and retention on a recurring schedule.",
-                    "detail": (
-                        "Suspend defective integrations, document remediation, and update the "
-                        "buyer-ready rights index without exposing unnecessary personal records."
-                    ),
+                    "title": "Compare the winners and audit the content",
+                    "action": "Examine changed intent, competing content, and whether affected pages need improvement or rewriting.",
+                    "detail": "Authority Hacker recommends reviewing what winning competitors now do better and making a full content audit rather than searching for one universal fix. [Authority Hacker Podcast — ePxZx_vQNFo @ 01:07:28]",
                 },
             ],
         },
+        {
+            "id": "q9-section-3",
+            "title": "Compare recovery proposals without flattening the disagreement",
+            "paragraphs": [
+                (
+                    "Edward Sturm ([kroDk8LuKtY @ 00:08:18]) plays Craig Campbell's account "
+                    "of a site populated with 1,200 AI articles that gained traffic, "
+                    "was hit roughly six months later, and did not recover after the "
+                    "team replaced the content. That testimony concerns an attempted "
+                    "recovery that failed, not merely a recommendation about what to "
+                    "change next. WordsAtScale ([mpV06kMELhI @ 00:02:55]) instead shows "
+                    "automated review pages containing real screenshots, internal links, "
+                    "comparisons, pricing screenshots, and other review components, and "
+                    "attributes the project's continuing performance partly to that "
+                    "workflow. Julian Goldie SEO ([s_GIhK4WE18 @ 00:03:57]) highlights "
+                    "the wording that content may be written or reviewed by an expert, "
+                    "while warning against changing a publication date without improving "
+                    "the content. Tim The SEO Guru ([cOL8sezUyEQ @ 00:01:28]) likewise "
+                    "distinguishes AI assistance from large quantities of lightly reviewed "
+                    "pages, rewritten ideas, and unsupported claims. These accounts give "
+                    "the operator concrete differences to examine in the production "
+                    "process: what was reviewed, what original material was added, and "
+                    "what the page helps a reader decide. They also retain different "
+                    "outcomes. Campbell's unsuccessful replacement exercise is not "
+                    "converted into a rule that every domain is permanently damaged, "
+                    "and WordsAtScale's surviving workflow is not substituted for evidence "
+                    "of recovery on Campbell's site."
+                ),
+                (
+                    "Kasra Dash ([I26NAT6T6Gs @ 00:02:50]) says to prioritize services "
+                    "that make money and have search demand before expanding into "
+                    "supporting articles. The criticism is directed at businesses "
+                    "publishing many peripheral posts while leaving their actual "
+                    "services underdeveloped. Dash's source-context method starts "
+                    "with what the business sells, whom it serves, and the attributes "
+                    "it wants associated with its name; buyer questions then become "
+                    "supporting pages linked back to the service. Koray Tuğberk GÜBÜR "
+                    "([DoFTx8z5X2g @ 00:05:16]) examines a different level of coverage: "
+                    "important concepts, their connections across the site, and how "
+                    "competitors use definitions, evidence, and research around them. "
+                    "The demonstration asks not just whether a term appears, but "
+                    "how it is connected within the information graph. WordsAtScale "
+                    "([mpV06kMELhI @ 00:00:50]) similarly says breadth without depth "
+                    "is insufficient and calls for comprehensive topic coverage plus "
+                    "thorough treatment of subtopics. These speakers are not all "
+                    "prescribing a larger publishing count. Dash narrows the starting "
+                    "map to the business; GÜBÜR investigates meaningful conceptual "
+                    "coverage; WordsAtScale emphasizes depth. Their proposals can "
+                    "therefore be reported as different questions about the existing "
+                    "content network, without treating Dash's video title as a "
+                    "rejection of every form of topical organization or treating "
+                    "concept coverage as permission to publish unrelated pages."
+                ),
+                (
+                    "Surfside PPC ([0_SAQbGnl3Y @ 00:02:47]) explains its affiliate-site "
+                    "losses partly through the composition of the results: retailers "
+                    "and niche stores supplied pricing, delivery, and returns while "
+                    "the speaker's site remained purely affiliate. Later, Surfside "
+                    "proposes starting an e-commerce site, even using dropshipped "
+                    "products, as a possible response to continued non-recovery. "
+                    "Authority Hacker Podcast ([ePxZx_vQNFo @ 01:00:02]) offers an "
+                    "important contrasting examination of another affected site: "
+                    "author credentials and additional expertise displays had not "
+                    "produced recovery, while competing results did not necessarily "
+                    "display stronger credentials. Bill Mcintosh "
+                    "([UGKO4HDAk8w @ 00:04:10]) explicitly describes E-E-A-T as a "
+                    "quality framework rather than one ranking score or a switch. "
+                    "True SEO ([y6yAJ9Ocl3U @ 00:03:00]) turns experience into "
+                    "visible work: add actual jobs, photographs, numbers, mistakes, "
+                    "fact-checking, and a real name to AI-assisted drafts. The "
+                    "result is a set of attributed proposals rather than a single "
+                    "recovery formula. Surfside's suggested business-model change "
+                    "responds to its own long-running losses and observed competitors; "
+                    "the other speakers ask what evidence and usefulness appear "
+                    "on the page. Authority Hacker's case also prevents an "
+                    "authorship box from being presented as sufficient merely "
+                    "because several other speakers recommend genuine authorship "
+                    "as part of their content checks."
+                ),
+            ],
+            "table": {
+                "caption": "Keep failed recovery, surviving projects, and proposed improvements distinct.",
+                "headers": ["Practitioner account", "Specific proposal or distinction", "Expert Source"],
+                "rows": [
+                    [
+                        "Campbell's relayed AI-site experiment failed to recover after replacement content.",
+                        "Report the unsuccessful attempt as the outcome of that particular project.",
+                        "Edward Sturm ([kroDk8LuKtY @ 00:08:54])",
+                    ],
+                    [
+                        "Automated review pages include screenshots, comparisons, pricing, and review-specific elements.",
+                        "Examine the actual review workflow described alongside the continuing traffic.",
+                        "WordsAtScale ([mpV06kMELhI @ 00:03:13])",
+                    ],
+                    [
+                        "A business can publish supporting articles while neglecting its main services.",
+                        "Prioritize services by business value and the searches customers actually make.",
+                        "Kasra Dash ([I26NAT6T6Gs @ 00:02:50])",
+                    ],
+                    [
+                        "Concept coverage is examined across connected pages rather than one paragraph.",
+                        "Compare missing concepts and their contextual connections with competing sources.",
+                        "Koray Tuğberk GÜBÜR ([DoFTx8z5X2g @ 00:05:16])",
+                    ],
+                    [
+                        "Persistent affiliate-site losses lead the speaker to consider a different model.",
+                        "Consider the proposed new e-commerce site in the context of Surfside's experience.",
+                        "Surfside PPC ([0_SAQbGnl3Y @ 00:19:11])",
+                    ],
+                    [
+                        "AI drafting cannot supply the business's actual completed jobs and experiences.",
+                        "Add genuine photographs, numbers, mistakes, fact checks, and a real name.",
+                        "True SEO ([y6yAJ9Ocl3U @ 00:03:00])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "q9-section-4",
+            "title": "Repair demonstrated barriers and keep recovery claims specific",
+            "paragraphs": [
+                (
+                    "Kasra Dash ([yzNo7jJ8WBE @ 00:05:37]) demonstrates a page-level "
+                    "indexing investigation with Detailed SEO, checking indexability "
+                    "and whether the canonical points to the intended URL. The "
+                    "same audit expands into Screaming Frog for bulk inspection "
+                    "and later examines architecture, internal links, and pages "
+                    "that are several clicks from the homepage. True SEO "
+                    "([y6yAJ9Ocl3U @ 00:03:37]) includes fixing anything the crawler "
+                    "cannot read among its eight proposed improvements, alongside "
+                    "merging thin pages and linking strong pages to revenue pages. "
+                    "Authority Hacker Podcast ([ePxZx_vQNFo @ 01:09:41]) places "
+                    "technical audits, internal linking, and site structure among "
+                    "the ordinary work that site owners often postpone until an "
+                    "update forces attention. These recommendations make technical "
+                    "inspection a concrete part of diagnosis without requiring "
+                    "a claim that the update specifically targeted canonicals "
+                    "or site architecture. Dash shows a website undergoing a "
+                    "rebuild, with deleted pages and incoming articles that explain "
+                    "some visible errors. That context matters: the audit "
+                    "demonstrates how to locate barriers on the site being "
+                    "examined, not a completed core-update recovery. The "
+                    "operational question is whether important pages can be "
+                    "reached, read, and indexed as intended before attributing "
+                    "their lost visibility solely to a change in how content "
+                    "is ranked against competitors."
+                ),
+                (
+                    "Kasra Dash ([yzNo7jJ8WBE @ 00:22:54]) reruns a speed audit after "
+                    "caching-plugin adjustments and shows its score moving from "
+                    "57 to 64. Earlier in the demonstration, image resizing and "
+                    "optimization are discussed; afterward, mobile rendering and "
+                    "Search Console's crawl information receive attention. The "
+                    "reported improvement is an audit-score movement, not a "
+                    "demonstrated return of lost search traffic. Bill Mcintosh "
+                    "([UGKO4HDAk8w @ 00:09:25]) warns that useful improvements "
+                    "may take months to be fully reflected and describes "
+                    "deletion as a last resort rather than the automatic "
+                    "response to a large decline. Koray Tuğberk GÜBÜR "
+                    "([DoFTx8z5X2g @ 00:01:27]) describes repeatedly updating "
+                    "content, including a six-month routine for the project "
+                    "shown, with revisions responding to query, topical-distance, "
+                    "and user-behavior changes. These are different kinds of "
+                    "progress in the speakers' accounts: a measured technical "
+                    "adjustment, a warning about interpreting recovery timing, "
+                    "and an ongoing content-maintenance practice. Keeping them "
+                    "separate avoids presenting the improved speed score as "
+                    "proof that a ranking loss has been reversed. It also "
+                    "preserves GÜBÜR's emphasis on continuing the work through "
+                    "both gains and losses, rather than changing the entire "
+                    "strategy whenever Search Console shows an emotionally "
+                    "encouraging or discouraging movement."
+                ),
+                (
+                    "Kasra Dash ([yzNo7jJ8WBE @ 00:31:00]) prioritizes critical access "
+                    "and visibility barriers first, then errors on important "
+                    "pages, with slow assets and less urgent linking work "
+                    "following those problems. The demonstration exports errors "
+                    "into a Google Sheet and adds completion checkboxes so "
+                    "the work can be followed. Bill Mcintosh "
+                    "([UGKO4HDAk8w @ 00:09:40]) gives an equally precise "
+                    "interpretation of the manual-actions report: an empty "
+                    "report means no human-issued penalty is listed, not "
+                    "that rankings cannot change for another reason. Authority "
+                    "Hacker Podcast ([ePxZx_vQNFo @ 01:10:10]) warns against "
+                    "stopping all productive work while trying to identify "
+                    "the perfect explanation, recounting a site that returned "
+                    "during a later update after its owner had spent months "
+                    "inactive. Edward Sturm ([kroDk8LuKtY @ 00:12:14]) asks "
+                    "owners facing major losses to inspect the hardest-hit "
+                    "pages honestly, especially whether they satisfy intent "
+                    "quickly and clearly above the fold. The combined closing "
+                    "discipline is specific: distinguish the error actually "
+                    "found, the repair actually completed, the content "
+                    "improvement proposed, and the subsequent search movement. "
+                    "That preserves the practitioners' practical recommendations "
+                    "without claiming that a completed worksheet, an empty "
+                    "manual-actions report, or a better page automatically "
+                    "explains the original drop or establishes that recovery "
+                    "has already occurred."
+                ),
+            ],
+            "table": {
+                "caption": "Technical checks, observed fixes, and the limits of the demonstrated result.",
+                "headers": ["Check or observed result", "Action shown or distinction stated", "Expert Source"],
+                "rows": [
+                    [
+                        "A page's canonical and indexability can be inspected directly.",
+                        "Use Detailed SEO to check whether the intended page is self-referencing.",
+                        "Kasra Dash ([yzNo7jJ8WBE @ 00:05:37])",
+                    ],
+                    [
+                        "Some published pages have few incoming links or none.",
+                        "Inspect internal-link counts and add relevant connections from existing pages.",
+                        "Kasra Dash ([yzNo7jJ8WBE @ 00:14:11])",
+                    ],
+                    [
+                        "The demonstrated speed audit improves from 57 to 64.",
+                        "Record the measured score improvement rather than calling it traffic recovery.",
+                        "Kasra Dash ([yzNo7jJ8WBE @ 00:22:54])",
+                    ],
+                    [
+                        "Caching changes can accompany mobile design or rendering problems.",
+                        "Check that JavaScript and CSS remain accessible during mobile rendering.",
+                        "Kasra Dash ([yzNo7jJ8WBE @ 00:25:38])",
+                    ],
+                    [
+                        "Broken internal links lead to pages returning a 404.",
+                        "Change the destination, build the intended article, or remove the link.",
+                        "Kasra Dash ([yzNo7jJ8WBE @ 00:30:07])",
+                    ],
+                    [
+                        "An empty manual-actions report does not explain every ranking decline.",
+                        "Interpret it as no listed human-issued penalty and continue diagnosis.",
+                        "Bill Mcintosh ([UGKO4HDAk8w @ 00:09:40])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Checks before a recovery claim or a destructive response",
+                "body": "Apply the speakers' explicit cautions about timing, deletion, visibility barriers, and causal explanations.",
+                "items": [
+                    "Do not rewrite the whole site during the rollout; distinguish a small position slip from a much larger fall before choosing deeper work. [Julian Goldie SEO — HWSpTVX7qMI @ 00:01:29]",
+                    "Treat deletion as a last resort and inspect the manual-actions report when a penalty is suspected. [Bill Mcintosh — UGKO4HDAk8w @ 00:09:25]",
+                    "Fix a critical crawler-access block immediately rather than placing it behind ordinary speed or content work. [Kasra Dash — yzNo7jJ8WBE @ 00:31:00]",
+                    "Do not infer causality merely because an action and a ranking movement occurred together; the podcast explicitly warns that the apparent connection may be absent. [Authority Hacker Podcast — ePxZx_vQNFo @ 00:42:46]",
+                ],
+            },
+        },
     ],
-    "pull_quote": "Own the rights, earn the attribution, and make every revenue claim survive the underlying contract.",
+    "pull_quote": (
+        "Diagnose first. Don't tear down a useful site because a chart turned red. "
+        "— Bill Mcintosh ([UGKO4HDAk8w @ 00:09:40])."
+    ),
     "diagram_id": "diag-05",
     "action_checklist": [
-        "Build a domain-by-domain register linking each monetization partner to governing terms, applicable statutory duties, and an accountable operator.",
-        "Obtain signed contributor assignments and inventory licenses, transfer restrictions, expiration dates, and separately protected public-domain-film components.",
-        "Attach offer authorization, fee triggers, attribution windows, reversal rules, payment deadlines, liability allocation, and dispute procedures to every commercial order.",
-        "Replace covert identity enrichment with aggregate measurement or permissioned audiences, and test applicable opt-out, deletion, and recipient restrictions.",
-        "Validate genuine coupon clicks and human-viewed CTV supply, then reconcile merchant sales and buyer spend separately from recognized publisher revenue.",
-        "Deploy the outreach scripts with actual sender identification and postal details, maintain suppression records, and prepare a restricted-access exit evidence index.",
+        "Confirm rollout completion, then wait a full week and compare with the pre-update week. (Tim The SEO Guru, cOL8sezUyEQ @ 00:04:32)",
+        "Review Search Console impressions before assuming unchanged clicks mean unchanged visibility. (BSM - A Denver SEO Company, 2jejTy2fWTg @ 00:02:13)",
+        "Inspect the AI overview for competitor delivery or review information missing from your own product page. (Kate Smoothy | SEO Specialist, zS5xebRUE5Y @ 00:09:49)",
+        "Build supporting pages from actual services, customer questions, and the attributes the business wants associated with it. (Kasra Dash, I26NAT6T6Gs @ 00:05:33)",
+        "Compare important concepts and their contextual connections with competing sources before expanding the semantic content network. (Koray Tuğberk GÜBÜR, DoFTx8z5X2g @ 00:05:16)",
+        "Prioritize critical visibility blocks, then important-page errors, and track completed repairs in a worksheet. (Kasra Dash, yzNo7jJ8WBE @ 00:31:00)",
     ],
     "statutory_citations": [
         {
-            "title": "17 U.S.C. § 106 — Exclusive rights in copyrighted works",
-            "url": "https://www.law.cornell.edu/uscode/text/17/106",
-            "relevance": "Defines the exclusive rights implicated by reproducing, adapting, distributing, and displaying publishing assets.",
+            "title": "BSM - A Denver SEO Company — Google’s March 2025 Core Update—How to Check If You Were Hit or Helped [00:02:13]",
+            "url": "https://www.youtube.com/watch?v=2jejTy2fWTg&t=133s",
+            "relevance": "Primary practitioner demonstration of impression-led Search Console diagnosis and page-level comparison.",
         },
         {
-            "title": "17 U.S.C. § 107 — Limitations on exclusive rights: fair use",
-            "url": "https://www.law.cornell.edu/uscode/text/17/107",
-            "relevance": "Supplies the four-factor analysis for excerpts, commentary, criticism, and other asserted fair uses.",
+            "title": "Authority Hacker Podcast — Surviving Google Core Updates in 2021 (Ep. 247) [00:42:46]",
+            "url": "https://www.youtube.com/watch?v=ePxZx_vQNFo&t=2566s",
+            "relevance": "Primary practitioner discussion of why coincident actions and ranking changes do not establish causality.",
         },
         {
-            "title": "17 U.S.C. § 204 — Execution of transfers of copyright ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": "Supports signed written copyright transfers from contributors rather than reliance on payment alone.",
+            "title": "Koray Tuğberk GÜBÜR — EEAT with SEMANTICS and Topical Authority: 4x Organic SEO Growth through Helpful Content Update [00:05:16]",
+            "url": "https://www.youtube.com/watch?v=DoFTx8z5X2g&t=316s",
+            "relevance": "Primary practitioner demonstration of concept coverage, semantic connections, and competitor comparison.",
         },
         {
-            "title": "15 U.S.C. § 45 — Unfair methods of competition and deceptive acts or practices",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": "Governs deceptive commercial claims, misleading offer presentations, and material advertising representations.",
+            "title": "Kasra Dash — Complete Technical SEO Guide 2026 (Fix Crawl, Index & Speed Issues) [00:31:00]",
+            "url": "https://www.youtube.com/watch?v=yzNo7jJ8WBE&t=1860s",
+            "relevance": "Primary technical-audit testimony prioritizing visibility barriers before less urgent repairs.",
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "kroDk8LuKtY",
+            "title": "Google’s November Core Update Is Crushing AI Content Sites",
+            "channel": "Edward Sturm",
+            "author": "Edward Sturm",
+            "text": "When your site gets fewer clicks, each individual click represents a larger percentage of your total traffic.",
+            "tip": "When your site gets fewer clicks, each individual click represents a larger percentage of your total traffic.",
+            "timestamp": 683,
+            "timestamp_seconds": 683,
+            "timestamp_label": "[00:11:23]",
+            "url": "https://www.youtube.com/watch?v=kroDk8LuKtY&t=683s",
+            "markdown": "[00:11:23](https://www.youtube.com/watch?v=kroDk8LuKtY&t=683s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q9 corpus.",
         },
         {
-            "title": "16 CFR Part 255 — Guides Concerning the Use of Endorsements and Testimonials in Advertising",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255",
-            "relevance": "Provides FTC interpretive guidance for endorsements and clear disclosure of material connections.",
+            "source_type": "video_pro_tip",
+            "video_id": "7eYiiLVxrOE",
+            "title": "It's New 11/11: Google November Core Update Unleashed, ChatGPT Click Insights, Yahoo Scout, SerpApi",
+            "channel": "RustyBrick Barry Schwartz Search Engine Roundtable",
+            "author": "RustyBrick Barry Schwartz Search Engine Roundtable",
+            "text": "Google said this is a regular update designed to better surface relevant satisfying content for searchers for all types of sites.",
+            "tip": "Google said this is a regular update designed to better surface relevant satisfying content for searchers for all types of sites.",
+            "timestamp": 60,
+            "timestamp_seconds": 60,
+            "timestamp_label": "[00:01:00]",
+            "url": "https://www.youtube.com/watch?v=7eYiiLVxrOE&t=60s",
+            "markdown": "[00:01:00](https://www.youtube.com/watch?v=7eYiiLVxrOE&t=60s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q9 corpus.",
         },
         {
-            "title": "16 CFR Part 465 — Rule on the Use of Consumer Reviews and Testimonials",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-465",
-            "relevance": "Prohibits specified fake reviews, testimonial practices, and other covered review manipulation.",
+            "source_type": "video_pro_tip",
+            "video_id": "zS5xebRUE5Y",
+            "title": "GOOGLE UPDATE Is Here (Nov 2026 Core Update) & AI Is Changing SERPs",
+            "channel": "Kate Smoothy | SEO Specialist",
+            "author": "Kate Smoothy | SEO Specialist",
+            "text": "What you want to do is wait at least a week before you start looking at the data. And then you want to compare it to data from the week before the rollout happened.",
+            "tip": "What you want to do is wait at least a week before you start looking at the data. And then you want to compare it to data from the week before the rollout happened.",
+            "timestamp": 149,
+            "timestamp_seconds": 149,
+            "timestamp_label": "[00:02:29]",
+            "url": "https://www.youtube.com/watch?v=zS5xebRUE5Y&t=149s",
+            "markdown": "[00:02:29](https://www.youtube.com/watch?v=zS5xebRUE5Y&t=149s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q9 corpus.",
         },
         {
-            "title": "California Civil Code § 1798.100 — General duties of covered businesses collecting personal information",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.100.&lawCode=CIV",
-            "relevance": "Establishes covered-business duties relevant to collection notices, processing limits, retention, and contractual controls.",
+            "source_type": "video_pro_tip",
+            "video_id": "0_SAQbGnl3Y",
+            "title": "Helpful Content Update 1 Year Later and Google Core Updates Impacting SEO",
+            "channel": "Surfside PPC",
+            "author": "Surfside PPC",
+            "text": "I worked on it for a while trying to recover my earnings which just never recovered.",
+            "tip": "I worked on it for a while trying to recover my earnings which just never recovered.",
+            "timestamp": 55,
+            "timestamp_seconds": 55,
+            "timestamp_label": "[00:00:55]",
+            "url": "https://www.youtube.com/watch?v=0_SAQbGnl3Y&t=55s",
+            "markdown": "[00:00:55](https://www.youtube.com/watch?v=0_SAQbGnl3Y&t=55s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q9 corpus.",
         },
         {
-            "title": "California Civil Code § 1798.120 — Right to opt out of sale or sharing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.120.&lawCode=CIV",
-            "relevance": "Requires covered businesses to respect applicable consumer choices concerning sale or sharing of personal information.",
+            "source_type": "video_pro_tip",
+            "video_id": "cOL8sezUyEQ",
+            "title": "Google's Core Update Is Back in a New Form. Are You Ready?",
+            "channel": "Tim The SEO Guru",
+            "author": "Tim The SEO Guru",
+            "text": "Can readers find answers fast? Did I add something new? Did I show proof such as photos or test results? Did I add more than a quick search would find? Did I explain the details that help people decide.",
+            "tip": "Can readers find answers fast? Did I add something new? Did I show proof such as photos or test results? Did I add more than a quick search would find? Did I explain the details that help people decide.",
+            "timestamp": 173,
+            "timestamp_seconds": 173,
+            "timestamp_label": "[00:02:53]",
+            "url": "https://www.youtube.com/watch?v=cOL8sezUyEQ&t=173s",
+            "markdown": "[00:02:53](https://www.youtube.com/watch?v=cOL8sezUyEQ&t=173s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q9 corpus.",
         },
         {
-            "title": "California Penal Code § 631 — Wiretapping and unauthorized interception",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=631.&lawCode=PEN",
-            "relevance": "Requires implementation-specific review of third-party interception and session-capture arrangements.",
+            "source_type": "video_pro_tip",
+            "video_id": "y6yAJ9Ocl3U",
+            "title": "Google Core Update Explained (November 2026): What Google Really Rewards and 8 SEO Fixes",
+            "channel": "True SEO",
+            "author": "True SEO",
+            "text": "Let AI research and draft. Then add what it can't have, your jobs, your photos, your numbers, your mistakes. Check every fact. Put your real name on it.",
+            "tip": "Let AI research and draft. Then add what it can't have, your jobs, your photos, your numbers, your mistakes. Check every fact. Put your real name on it.",
+            "timestamp": 180,
+            "timestamp_seconds": 180,
+            "timestamp_label": "[00:03:00]",
+            "url": "https://www.youtube.com/watch?v=y6yAJ9Ocl3U&t=180s",
+            "markdown": "[00:03:00](https://www.youtube.com/watch?v=y6yAJ9Ocl3U&t=180s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q9 corpus.",
         },
         {
-            "title": "Washington RCW Chapter 19.373 — Washington My Health My Data Act",
-            "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=19.373",
-            "relevance": "Creates consumer health-data duties that can affect health-content tracking and lead-generation operations outside HIPAA.",
+            "source_type": "video_pro_tip",
+            "video_id": "mpV06kMELhI",
+            "title": "Google March 2026 Core Update: Every Site I Own Survived (Here's Why)",
+            "channel": "WordsAtScale",
+            "author": "WordsAtScale",
+            "text": "Cover your topic comprehensively and cover each subtopic thoroughly.",
+            "tip": "Cover your topic comprehensively and cover each subtopic thoroughly.",
+            "timestamp": 69,
+            "timestamp_seconds": 69,
+            "timestamp_label": "[00:01:09]",
+            "url": "https://www.youtube.com/watch?v=mpV06kMELhI&t=69s",
+            "markdown": "[00:01:09](https://www.youtube.com/watch?v=mpV06kMELhI&t=69s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q9 corpus.",
         },
         {
-            "title": "15 U.S.C. § 7704 — Requirements for transmission of commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Sets commercial-email requirements for sender information, subjects, postal addresses, opt-outs, and suppression timing.",
+            "source_type": "video_pro_tip",
+            "video_id": "s_GIhK4WE18",
+            "title": "Google Helpful Content Update 2024: I Wasn't Prepared for This!😮",
+            "channel": "Julian Goldie SEO",
+            "author": "Julian Goldie SEO",
+            "text": "If you're trying to make your content look fresh and it's not fresh, don't do that.",
+            "tip": "If you're trying to make your content look fresh and it's not fresh, don't do that.",
+            "timestamp": 263,
+            "timestamp_seconds": 263,
+            "timestamp_label": "[00:04:23]",
+            "url": "https://www.youtube.com/watch?v=s_GIhK4WE18&t=263s",
+            "markdown": "[00:04:23](https://www.youtube.com/watch?v=s_GIhK4WE18&t=263s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q9 corpus.",
         },
         {
-            "title": "12 U.S.C. § 2607 — Prohibition against kickbacks and unearned fees",
-            "url": "https://www.law.cornell.edu/uscode/text/12/2607",
-            "relevance": "Restricts covered settlement-service referral compensation and requires review before monetizing mortgage-related introductions.",
+            "source_type": "video_pro_tip",
+            "video_id": "2jejTy2fWTg",
+            "title": "Google’s March 2025 Core Update—How to Check If You Were Hit or Helped",
+            "channel": "BSM - A Denver SEO Company",
+            "author": "BSM - A Denver SEO Company",
+            "text": "Always after a core algorithm update, I basically go to search results and then I take a look at total impressions.",
+            "tip": "Always after a core algorithm update, I basically go to search results and then I take a look at total impressions.",
+            "timestamp": 133,
+            "timestamp_seconds": 133,
+            "timestamp_label": "[00:02:13]",
+            "url": "https://www.youtube.com/watch?v=2jejTy2fWTg&t=133s",
+            "markdown": "[00:02:13](https://www.youtube.com/watch?v=2jejTy2fWTg&t=133s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q9 corpus.",
         },
         {
-            "title": "16 CFR Part 312 — Children's Online Privacy Protection Rule",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-312",
-            "relevance": "Defines requirements for covered collection and handling of children's personal information.",
+            "source_type": "video_pro_tip",
+            "video_id": "GBh1xJ3iSws",
+            "title": "Google September Core Update, Helpful Content Update Done & Possible Local Search Ranking Update",
+            "channel": "RustyBrick Barry Schwartz Search Engine Roundtable",
+            "author": "RustyBrick Barry Schwartz Search Engine Roundtable",
+            "text": "Don't make fluff to increase your word count. Make sure the piece of content is useful.",
+            "tip": "Don't make fluff to increase your word count. Make sure the piece of content is useful.",
+            "timestamp": 437,
+            "timestamp_seconds": 437,
+            "timestamp_label": "[00:07:17]",
+            "url": "https://www.youtube.com/watch?v=GBh1xJ3iSws&t=437s",
+            "markdown": "[00:07:17](https://www.youtube.com/watch?v=GBh1xJ3iSws&t=437s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q9 corpus.",
         },
         {
-            "title": "47 U.S.C. § 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Requires separate assessment before extending email outreach into regulated calling or texting practices.",
+            "source_type": "video_pro_tip",
+            "video_id": "ePxZx_vQNFo",
+            "title": "Surviving Google Core Updates in 2021 (Ep. 247)",
+            "channel": "Authority Hacker Podcast",
+            "author": "Authority Hacker Podcast",
+            "text": "Because something happens when we do something, we establish causality when there might be zero causality.",
+            "tip": "Because something happens when we do something, we establish causality when there might be zero causality.",
+            "timestamp": 2566,
+            "timestamp_seconds": 2566,
+            "timestamp_label": "[00:42:46]",
+            "url": "https://www.youtube.com/watch?v=ePxZx_vQNFo&t=2566s",
+            "markdown": "[00:42:46](https://www.youtube.com/watch?v=ePxZx_vQNFo&t=2566s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q9 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "UGKO4HDAk8w",
+            "title": "Google Core Update ALERT: 3 New SEO Mistakes That Can Tank Your Traffic",
+            "channel": "Bill Mcintosh",
+            "author": "Bill Mcintosh",
+            "text": "E-E-A-T isn't one ranking score, and there's no switch that gives you all four. It's a quality framework.",
+            "tip": "E-E-A-T isn't one ranking score, and there's no switch that gives you all four. It's a quality framework.",
+            "timestamp": 250,
+            "timestamp_seconds": 250,
+            "timestamp_label": "[00:04:10]",
+            "url": "https://www.youtube.com/watch?v=UGKO4HDAk8w&t=250s",
+            "markdown": "[00:04:10](https://www.youtube.com/watch?v=UGKO4HDAk8w&t=250s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q9 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "HWSpTVX7qMI",
+            "title": "Google's November 2026 Core Update Just Dropped (Do This)",
+            "channel": "Julian Goldie SEO",
+            "author": "Julian Goldie SEO",
+            "text": "For each site, save clicks and average position by page for the week before the update. After the rollout ends plus seven days, compare the same pages and label each one steady, small move, or big move.",
+            "tip": "For each site, save clicks and average position by page for the week before the update. After the rollout ends plus seven days, compare the same pages and label each one steady, small move, or big move.",
+            "timestamp": 226,
+            "timestamp_seconds": 226,
+            "timestamp_label": "[00:03:46]",
+            "url": "https://www.youtube.com/watch?v=HWSpTVX7qMI&t=226s",
+            "markdown": "[00:03:46](https://www.youtube.com/watch?v=HWSpTVX7qMI&t=226s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q9 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "I26NAT6T6Gs",
+            "title": "Topical Authority Is DEAD (Do This Instead)",
+            "channel": "Kasra Dash",
+            "author": "Kasra Dash",
+            "text": "Look at the services you sell and ask two things. Which ones make the most money and which ones do people actually search for.",
+            "tip": "Look at the services you sell and ask two things. Which ones make the most money and which ones do people actually search for.",
+            "timestamp": 170,
+            "timestamp_seconds": 170,
+            "timestamp_label": "[00:02:50]",
+            "url": "https://www.youtube.com/watch?v=I26NAT6T6Gs&t=170s",
+            "markdown": "[00:02:50](https://www.youtube.com/watch?v=I26NAT6T6Gs&t=170s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q9 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "DoFTx8z5X2g",
+            "title": "EEAT with SEMANTICS and Topical Authority: 4x Organic SEO Growth through Helpful Content Update",
+            "channel": "Koray Tuğberk GÜBÜR",
+            "author": "Koray Tuğberk GÜBÜR",
+            "text": "When you actually create a semantic content network, you are actually creating an information graph. I wouldn't call it Knowledge Graph because it's something else.",
+            "tip": "When you actually create a semantic content network, you are actually creating an information graph. I wouldn't call it Knowledge Graph because it's something else.",
+            "timestamp": 284,
+            "timestamp_seconds": 284,
+            "timestamp_label": "[00:04:44]",
+            "url": "https://www.youtube.com/watch?v=DoFTx8z5X2g&t=284s",
+            "markdown": "[00:04:44](https://www.youtube.com/watch?v=DoFTx8z5X2g&t=284s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q9 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "yzNo7jJ8WBE",
+            "title": "Complete Technical SEO Guide 2026 (Fix Crawl, Index & Speed Issues)",
+            "channel": "Kasra Dash",
+            "author": "Kasra Dash",
+            "text": "We went from 57 up to 64.",
+            "tip": "We went from 57 up to 64.",
+            "timestamp": 1374,
+            "timestamp_seconds": 1374,
+            "timestamp_label": "[00:22:54]",
+            "url": "https://www.youtube.com/watch?v=yzNo7jJ8WBE&t=1374s",
+            "markdown": "[00:22:54](https://www.youtube.com/watch?v=yzNo7jJ8WBE&t=1374s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q9 corpus.",
         },
     ],
 }

@@ -5,683 +5,1044 @@ CHAPTER_8 = {
     "chapter_id": "Q8",
     "chapter_number": 8,
     "question_number": 8,
-    "slug": "public-records-apis-data-pipelines-operator-tooling",
-    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small building an seo empire desk an unfair information edge?",
+    "slug": "technical-indexing-crawl-budgets-log-diagnostics",
+    "question_prompt": "How do these technical SEO tutorials diagnose crawling, discovery, and indexing problems using site structure, internal links, Search Console, Python, and server logs?",
     "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
-    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
-    "subtitle": "Census and SEC Evidence, Search Console Diagnostics, Podcast Rights Transfers, and Permissioned Search-Feed Economics",
-    "layout_template": "resource_directory",
-    "reading_time_minutes": 14,
+    "title": "Technical Indexing, Crawl Budgets & Log Diagnostics",
+    "subtitle": "Crawl Stats reporting, crawl demand, server-log investigations, Python crawling workflows, internal-link discovery, website-structure problems, and crawled-but-not-indexed troubleshooting",
+    "layout_template": "legal_compliance_callout",
+    "reading_time_minutes": 15,
     "executive_summary": (
-        "Candidate #25, Building an SEO Empire, ranks #07 with an 89/100 "
-        "Money-to-Manpower Score across 30 mapped plays. Its information edge comes "
-        "from reproducible evidence, not bulk scraping or unverifiable ranking folklore. "
-        "This chapter connects official economic datasets, ownership records, search "
-        "diagnostics, podcast inventories, and commercial enrichment to publishing "
-        "decisions a small desk can audit. The canonical annual owner profit cases "
-        "are $16,000 Conservative, $159,250 Base, and $405,000 Scaled, derived from "
-        "advertising, affiliate, and sponsorship revenue rather than referred merchant "
-        "sales. Build source lineage before programmatic pages, establish rights before "
-        "podcast acquisitions, and obtain current distribution permissions before "
-        "testing search feeds. Every pipeline needs bounded costs, freshness rules, "
-        "and a fallback that preserves useful content when a provider disappears."
+        "These tutorials connect discoverable site structure, responsive servers, and worthwhile pages, "
+        "while disagreeing about how widely crawl-budget constraints apply. Daniel Waisberg defines "
+        "budget through capacity and demand at Google Search Central "
+        "([x_GoMrl6_u0 @ 00:02:35]); Andrew Halliday emphasizes stability and trends on James Dooley "
+        "([cv7lfh1AjZc @ 00:02:56]). BKA Content reports gains after restructuring an RV website, "
+        "while Abdul Latif and Chris Palmer emphasize internal discovery and anchors. TM Blast, "
+        "FatRank, Semrush Live, and brightonSEO investigate actual requests rather than relying "
+        "only on crawler simulations. Daniel Heredia demonstrates Python-assisted analysis on "
+        "BoostRoas ([kuSNDOAsr50 @ 00:31:47]). Misha Manko separates indexing notifications from "
+        "pages needing intervention ([vcLkBQxf9Hs @ 00:07:05]); Pearl Lemon cautions against "
+        "misreading resource requests, and Greenlane emphasizes investigating accumulated index bloat."
     ),
     "key_metrics": [
         {
-            "label": "Conservative",
-            "value": "$80,000",
-            "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "20% net margin; $16,000 annual owner net profit; 1 FT + 3 C",
+            "label": "RV website impressions",
+            "value": "Over 1,656% in 2 months",
+            "context": (
+                "BKA Content reports this increase after launching the client's rebuilt website "
+                "with a revised structure and focused subpages."
+            ),
+            "note": "Attributed to BKA Content (n68rh1s-ZdY @ 00:09:10).",
         },
         {
-            "label": "Base",
-            "value": "$490,000",
-            "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "32.5% net margin; $159,250 annual owner net profit; 1 FT + 3 C",
+            "label": "Blog crawl events",
+            "value": "266 unique events over 30 days",
+            "context": (
+                "Greg's pivot table isolates blog activity while investigating whether older "
+                "content draws crawling away from priority service pages."
+            ),
+            "note": "Attributed to TM Blast (1v7Wiw-ptLU @ 00:02:52).",
         },
         {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual advertising, affiliate and sponsorship revenue; excludes referred merchant sales",
-            "note": "45% net margin; $405,000 annual owner net profit; 1 FT + 3 C",
+            "label": "Hospital sitemap crawl coverage",
+            "value": "1.3%",
+            "context": (
+                "The brightonSEO presenter reports this sitemap coverage in the hospital's "
+                "ChatGPT crawl investigation, concentrated on homepage and top-level categories."
+            ),
+            "note": "Attributed to brightonSEO (Q9Nkmc8Cx6I @ 00:11:32).",
         },
     ],
     "sections": [
         {
-            "heading": "1. Build an evidence directory before building another page template",
-            "epistemic_status": "operating_framework",
+            "id": "Q8-S1",
+            "title": "Separate crawl capacity, crawl demand, and the evidence of a problem",
             "paragraphs": [
                 (
-                    "Start with a source register organized around decisions: which topics "
-                    "deserve investment, which entities genuinely exist, which facts change "
-                    "often enough to justify refreshes, and which assets can be acquired "
-                    "with transferable rights. Census ACS supplies geographic denominators; "
-                    "BLS supplies employment and price series; BEA supplies regional economic "
-                    "context. None supplies search demand. Join those records to Search "
-                    "Console observations and separately purchased SERP measurements using "
-                    "explicit geographic identifiers, dates, and query classifications. "
-                    "A county population estimate and a metropolitan employment series "
-                    "cannot be combined merely because their labels look similar. Store "
-                    "vintage, geography, unit, revision status, retrieval timestamp, and "
-                    "source URL with every value. Use data.gov to discover agency catalogs, "
-                    "then retrieve the underlying agency resource rather than treating "
-                    "catalog metadata as evidence. For programmatic publishing, require "
-                    "each page family to answer a distinct reader question with substantive "
-                    "analysis; changing a city name is not differentiation. A useful first "
-                    "batch is 50 locations with three independently checked facts each: "
-                    "150 assertions to validate before expanding to 5,000 pages. If five "
-                    "assertions fail, repair the shared transformation instead of accepting "
-                    "a seemingly small error percentage."
+                    "Daniel Waisberg at Google Search Central ([x_GoMrl6_u0 @ 00:02:35]) defines "
+                    "crawl budget as the number of URLs Google can and wants to crawl, bringing "
+                    "together crawl rate and crawl demand rather than presenting a target every "
+                    "website should maximize. In the tutorial, responsiveness determines how much "
+                    "crawling the server can handle, while demand concerns new addresses and changes "
+                    "to known content. Andrew Halliday on James Dooley ([cv7lfh1AjZc @ 00:01:12]) "
+                    "puts stable hosting first: repeated server errors reduce crawling, so the "
+                    "foundation precedes attempts to attract additional visits. Their practical "
+                    "emphases overlap without making every increase in requests a ranking result. "
+                    "Halliday discusses backlinks, schema, paid traffic, and social signals as ways "
+                    "of building trust and encouraging activity; Waisberg explains the request "
+                    "capacity and indexing demand behind Google's decisions. Daniel Heredia on "
+                    "BoostRoas ([kuSNDOAsr50 @ 00:27:13]) explicitly says crawling is necessary "
+                    "for appearing in results but is not itself a ranking signal. Read these "
+                    "accounts as explanations of different parts of the process: whether the "
+                    "server can respond, whether Google wants the content, and whether fetched "
+                    "content proceeds into indexing. A technically responsive site and an increased "
+                    "request count therefore answer different questions from whether an individual "
+                    "page has become searchable."
                 ),
                 (
-                    "The directory below is a procurement and engineering baseline, not "
-                    "a claim that account entitlements or prices have been checked live. "
-                    "At implementation, save the provider documentation URL, access date, "
-                    "permitted use, authentication method, current quota, and cancellation "
-                    "terms. Free access still consumes engineering time and can carry "
-                    "redistribution restrictions. FRED series may inherit restrictions "
-                    "from their original publishers; federal hosting does not erase "
-                    "third-party rights. Under 17 U.S.C. 105, federal government works "
-                    "receive a particular copyright treatment, but that rule does not "
-                    "automatically cover state records, contractor material, photographs, "
-                    "or embedded commercial data. SEC filings establish reported facts "
-                    "and filing dates, not editorial permission for every included exhibit. "
-                    "California business searches establish registry status, not domain "
-                    "ownership or permission to contact every listed individual. Treat "
-                    "personal information as a separate processing category with a defined "
-                    "purpose, retention period, and access boundary. Publish aggregate "
-                    "business intelligence where possible. An operator who cannot identify "
-                    "the source license and the affected population should keep the "
-                    "dataset outside the publishing pipeline until those questions "
-                    "have concrete answers and an accountable owner."
+                    "The speakers do not give one shared threshold for concern. Gary Illyes at "
+                    "Google Search Central ([LIMqmzuzpVg @ 00:02:35]) estimates that over 90% of "
+                    "sites need not worry about crawl budget; the discussion repeatedly distinguishes "
+                    "large-scale constraints from anxiety about a small website's latest post. "
+                    "Andrew Halliday on FatRank ([GVJrNHhAXME @ 00:07:18]) similarly contrasts a "
+                    "five-page local plumber website with a substantial ecommerce catalog, making "
+                    "site size central to the usefulness of tracking. Misha Manko "
+                    "([nBrto2B9RyE @ 00:08:55]) explicitly takes a different position, saying "
+                    "their experience makes consideration worthwhile once a site has more than "
+                    "100 pages. Greenlane Search Marketing, LLC ([NyNv-u7KkFw @ 00:01:37]) "
+                    "also emphasizes larger, database-driven sites but warns against dismissing "
+                    "smaller ones. These positions remain attributed rather than being collapsed "
+                    "into a universal page-count rule. Their examples direct attention toward "
+                    "actual symptoms: important pages not receiving visits, excessive generated "
+                    "URLs, server limitations, or accumulated content drawing continued attention. "
+                    "The Google discussion also describes demand and quality considerations, not "
+                    "just exhausted server capacity. Consequently, the chapter's contrasting "
+                    "accounts support inspecting the site's recorded behavior before choosing "
+                    "which explanation fits, while preserving each speaker's stated view about "
+                    "where that investigation deserves priority."
                 ),
                 (
-                    "Use the same directory to avoid expensive enrichment in the wrong "
-                    "order. Resolve a company through its official registry, resolve its "
-                    "domain through an authorized ownership workflow, inspect its actual "
-                    "website, and only then buy backlink or SERP measurements. RDAP "
-                    "redaction is a privacy boundary, not an invitation to reconstruct "
-                    "a registrant's identity. For 1,000 candidate domains, an illustrative "
-                    "waterfall that eliminates 700 through free checks leaves 300 paid "
-                    "lookups; at a contracted $0.05 per lookup, the bill is $15 rather "
-                    "than $50. Those rates are planning assumptions, not vendor quotes. "
-                    "Record why each candidate survived so an analyst can reproduce "
-                    "the shortlist without rerunning every API. Recheck decisive facts "
-                    "before an acquisition or editorial claim because cached ownership "
-                    "and licensing records can become stale. Use Common Crawl for "
-                    "historical discovery, not as proof that copied content is reusable. "
-                    "For media-exit preparation, export source contracts, transformation "
-                    "versions, and account-transfer restrictions into the diligence room. "
-                    "A buyer needs to know which useful datasets remain available after "
-                    "a sale, which subscriptions require replacement, and which pages "
-                    "lose their evidentiary foundation if a license ends."
+                    "Daniel Waisberg at Google Search Central ([x_GoMrl6_u0 @ 00:03:54]) walks "
+                    "through three Crawl Stats trends: total requests, downloaded data, and average "
+                    "response time. Requests include unsuccessful attempts, while resources hosted "
+                    "outside the property do not appear in that site's totals. The response-time "
+                    "measure concerns retrieving page content, not rendering the page or retrieving "
+                    "its associated resources. Ismael at Pearl Lemon SEO "
+                    "([aRuxCdZQ1Yo @ 00:06:50]) demonstrates why file-type percentages need "
+                    "interpretation: the example shows JavaScript at 41% and CSS at 32%, yet "
+                    "they explain that the WordPress implementation needs those files for rendering. "
+                    "The tutorial does not treat those proportions as an emergency. Waisberg "
+                    "at Google Search Central ([x_GoMrl6_u0 @ 00:08:10]) separately distinguishes "
+                    "discovery of new URLs from refresh crawling of known pages, and shows "
+                    "breakdowns by crawler type. Together these demonstrations make the report "
+                    "a way to identify what changed, rather than a scoreboard where every "
+                    "resource request counts against useful crawling. Examine the requested "
+                    "addresses, response patterns, and purpose behind the totals. Pearl Lemon's "
+                    "example particularly warns against blocking assets merely because their "
+                    "share looks large; the speaker describes that action as giving Google "
+                    "a fragmented version of the website rather than solving the suspected problem."
                 ),
             ],
             "table": {
-                "caption": "Eighteen Named Sources: Access, Procurement, Freshness, Request Discipline, and Replacement Paths",
-                "headers": [
-                    "Named source and practical purpose",
-                    "Exact access method and cost tier",
-                    "Refresh latency and rate-limit hygiene",
-                    "Fallback source and evidence boundary",
-                ],
+                "caption": "Read the report through the distinctions each speaker actually makes.",
+                "headers": ["Diagnostic distinction", "Transcript-led interpretation", "Expert Source"],
                 "rows": [
                     [
-                        "U.S. Census ACS supplies geographic population and household denominators",
-                        "Use api.census.gov/data with dataset year and geography; public access is free",
-                        "Annual releases; cache by vintage and follow current key requirements and quotas",
-                        "Use Census bulk downloads; preserve margins of error and geographic definitions",
+                        "Separate what Google can crawl from what Google wants to crawl.",
+                        "Use capacity and demand together instead of inventing a universal request target.",
+                        "Google Search Central ([x_GoMrl6_u0 @ 00:02:35])",
                     ],
                     [
-                        "BLS Public Data API supplies labor and inflation series",
-                        "POST series identifiers to api.bls.gov/publicAPI/v2/timeseries/data/; free registration expands access",
-                        "Follow each series release calendar; batch requests within current registration limits",
-                        "Use download.bls.gov series files; retain revisions and seasonal adjustment labels",
+                        "Check stability before seeking additional crawling through other website signals.",
+                        "Halliday identifies repeated 500 errors as a reason Google reduces crawling.",
+                        "James Dooley ([cv7lfh1AjZc @ 00:01:12])",
                     ],
                     [
-                        "BEA regional accounts supply income and economic activity context",
-                        "Request apps.bea.gov/api/data with a registered UserID; public data access is free",
-                        "Release-dependent updates include revisions; cache requests and honor published usage limits",
-                        "Use BEA interactive table downloads; preserve units and industry classification versions",
+                        "Distinguish a small local site from a substantial ecommerce product catalog.",
+                        "Halliday makes medium-to-large scale the important context for sustained crawl tracking.",
+                        "FatRank ([GVJrNHhAXME @ 00:07:18])",
                     ],
                     [
-                        "FRED economic series provide comparative macroeconomic publishing context",
-                        "Call api.stlouisfed.org/fred/series/observations with an API key; access is free",
-                        "Freshness follows original publishers; respect throttling and retain observation vintages",
-                        "Use the original statistical agency; check series-specific redistribution terms first",
+                        "Preserve Manko's different view about when smaller sites deserve attention.",
+                        "Their experience-based recommendation begins considering crawl budget above 100 pages.",
+                        "Misha Manko ([nBrto2B9RyE @ 00:08:55])",
                     ],
                     [
-                        "SEC EDGAR establishes issuer filings and reported business events",
-                        "Retrieve data.sec.gov/submissions/CIK##########.json with an identifying User-Agent; public access is free",
-                        "Filings update throughout business activity; remain below SEC's published request ceiling",
-                        "Use SEC quarterly indexes and filing pages; preserve accession numbers and timestamps",
+                        "Review JavaScript and CSS requests in relation to the actual implementation.",
+                        "Pearl Lemon explains that rendering dependencies can account for substantial resource crawling.",
+                        "Pearl Lemon SEO ([aRuxCdZQ1Yo @ 00:06:50])",
                     ],
                     [
-                        "USPTO Trademark Search helps investigate brand acquisition conflicts",
-                        "Search tmsearch.uspto.gov and inspect records through tsdr.uspto.gov; public searches are free",
-                        "Check live records before purchase; do not automate interactive interfaces without permission",
-                        "Use documented USPTO bulk products; registration results do not establish every relevant right",
-                    ],
-                    [
-                        "California Secretary of State verifies registered business identity",
-                        "Search bizfileonline.sos.ca.gov business records; basic searches are free and documents may cost",
-                        "Recheck immediately before contracting; use supported access rather than bypassing interactive restrictions",
-                        "Order certified records from the state; distinguish entity status from asset ownership",
-                    ],
-                    [
-                        "ICANN RDAP provides domain registration status and registrar references",
-                        "Use lookup.icann.org or IANA-bootstrapped RDAP domain endpoints; public queries are generally free",
-                        "Registry freshness varies; honor server throttling and cache noncritical domain observations",
-                        "Use registrar-assisted transfer verification; redacted fields remain outside identity enrichment",
-                    ],
-                    [
-                        "Crossref identifies scholarly metadata and persistent publication identifiers",
-                        "Query api.crossref.org/works with identifying contact details; public metadata access is free",
-                        "Deposits and corrections arrive continuously; honor response limits and cache DOI records",
-                        "Use publisher DOI landing pages; metadata access does not license article republication",
-                    ],
-                    [
-                        "Podcast Index discovers feeds and historical podcast catalog associations",
-                        "Use api.podcastindex.org/api/1.0 endpoints with documented signed headers; confirm current account terms",
-                        "Indexing follows feed discovery and polling; throttle according to current endpoint documentation",
-                        "Retrieve publisher RSS directly; index presence does not prove ownership or audience",
-                    ],
-                    [
-                        "Apple iTunes Search API helps resolve podcast directory listings",
-                        "Query itunes.apple.com/search with media=podcast and a term; public search access is free",
-                        "Directory indexing can lag feed changes; cache results and observe published request limits",
-                        "Compare direct RSS and publisher accounts; listing existence does not prove backlink value",
-                    ],
-                    [
-                        "Google Search Console measures authorized property search performance",
-                        "Call searchconsole.googleapis.com/webmasters/v3/sites/{siteUrl}/searchAnalytics/query with OAuth; property access is free",
-                        "Data arrives with processing lag; paginate and respect property and project quotas",
-                        "Use Search Console exports; privacy filtering prevents complete query-level reconstruction",
-                    ],
-                    [
-                        "Google Analytics Data API measures consent-aware on-site engagement",
-                        "POST analyticsdata.googleapis.com/v1beta/properties/{propertyId}:runReport with OAuth; standard access is quota-limited",
-                        "Processing latency differs from realtime; inspect property quota consumption and cache reports",
-                        "Use authorized first-party event aggregates; reconcile timezone and attribution differences explicitly",
-                    ],
-                    [
-                        "Chrome UX Report measures field experience across eligible pages",
-                        "POST chromeuxreport.googleapis.com/v1/records:queryRecord with a key; standard API access is free",
-                        "Daily updates summarize a rolling 28-day window; respect project quotas and eligibility limits",
-                        "Use authorized real-user monitoring and PageSpeed Insights; label laboratory measurements separately",
-                    ],
-                    [
-                        "Common Crawl exposes historical web captures for discovery",
-                        "Query index.commoncrawl.org indexes and retrieve permitted WARC ranges; indexes are free",
-                        "Crawl releases are periodic rather than live; cache index queries and limit concurrency",
-                        "Use publisher sitemaps and current pages; historical captures grant no blanket reuse rights",
-                    ],
-                    [
-                        "Ahrefs supplies proprietary backlink observations and domain comparisons",
-                        "Use app.ahrefs.com exports or api.ahrefs.com/v3 with eligible paid API entitlement",
-                        "Index freshness varies by URL; track credit usage and confirm current contractual quotas",
-                        "Use another licensed backlink index plus direct verification; proprietary scores are not interchangeable",
-                    ],
-                    [
-                        "DataForSEO supplies purchased SERP observations for defined markets",
-                        "Submit documented tasks through api.dataforseo.com/v3 with credentials; metered pricing depends on endpoint",
-                        "Task completion latency depends on service tier; cap spend and honor concurrent-task limits",
-                        "Use Search Console for owned properties; manual spot checks cannot replace representative sampling",
-                    ],
-                    [
-                        "System1, Tonic, Sedo, and Media.net require product-specific distribution verification",
-                        "Apply through official partner channels; commercial terms, eligibility, and available products are negotiated",
-                        "Reporting may be provisional and revised; use contract-approved exports and request schedules",
-                        "Use direct sponsorship or conventional display advertising when current feed permission is absent",
+                        "Separate newly discovered URL requests from refresh visits to known pages.",
+                        "Use the purpose breakdown and sample addresses to understand the observed activity.",
+                        "Google Search Central ([x_GoMrl6_u0 @ 00:08:10])",
                     ],
                 ],
             },
         },
         {
-            "heading": "2. Turn source records into bounded, inspectable publishing pipelines",
-            "epistemic_status": "operating_framework",
+            "id": "Q8-S2",
+            "title": "Preserve, validate, and segment the requests that actually reached the site",
             "paragraphs": [
                 (
-                    "Implement ingestion as a sequence of immutable retrievals, typed "
-                    "transformations, validation checks, and separately approved publishing "
-                    "jobs. A small Python desk can use urllib.request for permitted HTTP "
-                    "requests, json and csv for decoding, sqlite3 for checkpoints, hashlib "
-                    "for content fingerprints, and logging for operational records. Keep "
-                    "credentials in an environment-backed secret mechanism rather than "
-                    "source files or published artifacts. The raw ledger should record "
-                    "request parameters without secrets, HTTP status, response checksum, "
-                    "retrieval time, source version, and applicable terms reference. A "
-                    "second table should hold normalized entities and explicit units. "
-                    "Never silently convert suppressed values into zero or let a changed "
-                    "column name populate the wrong page field. Conditional requests "
-                    "using ETag or Last-Modified reduce unnecessary transfers where the "
-                    "server supports them. On HTTP 429, honor Retry-After, reduce "
-                    "concurrency, and apply bounded backoff with jitter; on authorization "
-                    "failure, stop rather than rotating identities. Three failed attempts "
-                    "can place a source into a review queue while the last valid "
-                    "snapshot remains available internally. Publication requires a "
-                    "freshness decision, not merely a successful download, because "
-                    "a technically valid response can contain obsolete evidence."
+                    "Log investigations begin with retaining the evidence. Carl Dalton on FatRank "
+                    "([9YOo5zDOsP8 @ 00:05:00]) describes shared hosting that overwrites logs "
+                    "after a short period and a cron job that moves the current log before "
+                    "the next file begins. Their preferred longer view is about six months, "
+                    "rather than treating isolated daily activity as the whole picture. Andrew "
+                    "Halliday on James Dooley ([cv7lfh1AjZc @ 00:04:35]) asks ideally for "
+                    "three to six months, but says 28 days can begin an investigation, especially "
+                    "for visible server errors. Jamie's presentation on Semrush Live "
+                    "([eelEuYoflG0 @ 00:03:04]) adds a different completeness issue: CDNs, "
+                    "load balancers, and web servers maintain separate records, so collecting "
+                    "only one location may miss where Googlebot actually interacts with the "
+                    "site. Cached edge requests particularly matter when choosing which logs "
+                    "to aggregate. The acquisition task is therefore both historical and "
+                    "architectural: retain enough time to compare behavior, and include the "
+                    "places serving the requests under investigation. Ask the existing log "
+                    "management team what is already captured and how fields are defined. "
+                    "Semrush Live's presentation favors using functionality already in place "
+                    "rather than rebuilding collection simply because an SEO investigation "
+                    "has introduced a new question."
                 ),
                 (
-                    "Budget the waterfall at the entity level and the publishing queue "
-                    "at the decision level. Suppose a monthly run evaluates 2,000 topic "
-                    "candidates, retains 400 after public-source checks, and purchases "
-                    "two illustrative $0.04 enrichments per survivor. The external "
-                    "lookup bill is $32, excluding hosting and labor. If analysts "
-                    "spend five minutes validating each of 40 finalists, the review "
-                    "requires 200 minutes; at an assumed $45 hourly cost, that adds "
-                    "$150. The resulting $182 screening cost is more informative than "
-                    "the API bill alone. Deduplicate identical query-location-device "
-                    "combinations before requesting SERP data, and store the observed "
-                    "timestamp rather than presenting measurements as permanent facts. "
-                    "Use Screaming Frog for technical crawl diagnosis, Search Console "
-                    "for index and query observations, and server logs for crawler "
-                    "behavior on properties the desk controls. Enrich only records "
-                    "whose next business decision could change. A page already awaiting "
-                    "a licensing answer does not need another paid backlink check. "
-                    "When a commercial source fails, preserve its prior observation "
-                    "with a stale label internally; do not substitute a different "
-                    "vendor's score under the original field name."
+                    "The brightonSEO presenter ([Q9Nkmc8Cx6I @ 00:09:02]) warns that apparent "
+                    "bot identities must be checked against provider IP information. Their "
+                    "workflow fetches published address data live during ingestion rather than "
+                    "assuming a downloaded list remains current, and keeps rejected spoofed "
+                    "traffic available for a separate investigation. Semrush Live "
+                    "([eelEuYoflG0 @ 00:06:11]) likewise makes Googlebot validation a step "
+                    "before asking SEO questions of the logs, offering manual checks, scripts, "
+                    "or tools according to the amount of data. Once requests are validated, "
+                    "the point is to organize them around a question. TM Blast "
+                    "([1v7Wiw-ptLU @ 00:02:33]) exports crawled URLs into a pivot table "
+                    "and counts events by blog section, comparing that activity with priority "
+                    "service pages. The example finds 266 blog events over 30 days against "
+                    "893 total events, leading Greg to examine legacy posts and plugin URLs. "
+                    "Those figures describe that site's investigation, not a target allocation "
+                    "for every business. The presenter examines actual destinations and the "
+                    "value of the content before describing removals and blocking tests. This "
+                    "combination of verified identity, URL grouping, and page-level inspection "
+                    "keeps a large volume of requests connected to the specific question "
+                    "of what the site's important pages are receiving."
                 ),
                 (
-                    "Reconcile tooling to the canonical portfolio rather than allowing "
-                    "cheap requests to disguise an expensive operating model. Conservative "
-                    "revenue is $80,000, with $64,000 total costs and $16,000 owner "
-                    "profit at 20%. Base revenue is $490,000, with $330,750 costs "
-                    "and $159,250 owner profit at 32.5%. Scaled revenue is $900,000, "
-                    "with $495,000 costs and $405,000 owner profit at 45%. The teams "
-                    "remain 2 FT plus 4 C, 2 FT plus 4 C, and 3 FT plus "
-                    "5 C respectively. These staffing labels do not prove that "
-                    "market-rate payroll fits every scenario; build a compensation "
-                    "bridge before committing hires. Likewise, the stated $2,500–$14,000 "
-                    "monthly opex range is not automatically the complete annual cost "
-                    "base: identify labor, acquisition, distribution, and other expenses "
-                    "without double counting. A $600 monthly tool package costs "
-                    "$7,200 annually, or 9% of Conservative revenue before anyone "
-                    "uses it. Keep the $10,000–$60,000 startup capital range distinct "
-                    "from recurring expense and reserve runway for the stated "
-                    "3–12 months to a first deal. Faster ingestion cannot accelerate "
-                    "audience trust on command."
+                    "The hospital investigation at brightonSEO ([Q9Nkmc8Cx6I @ 00:11:32]) "
+                    "compares recorded ChatGPT crawling with the XML sitemap and finds only "
+                    "1.3% coverage, concentrated near the top of the site. The presenter "
+                    "then investigates 499 responses and JavaScript-rendered internal links "
+                    "that prevent the relevant bots from reaching deeper content. A temporary "
+                    "dynamic-rendering arrangement serves cached rendered HTML, with refreshes "
+                    "every six hours; the presenter reports improved crawling and uses the "
+                    "case to support a later server-side-rendering upgrade. They explicitly "
+                    "describe the workaround as a difficult-to-maintain bandage, not the "
+                    "root repair. Semrush Live ([eelEuYoflG0 @ 00:14:42]) provides a "
+                    "different example: a broad response-code view looks mostly healthy, "
+                    "but segmenting 500 responses by subfolder exposes a failing AJAX "
+                    "endpoint essential to rendering content. FatRank "
+                    "([9YOo5zDOsP8 @ 00:10:17]) adds an outcome check after link work: "
+                    "if crawler revisits rise without impressions or clicks improving, "
+                    "inspect the content and page weight rather than stopping at the "
+                    "crawl increase. These cases show why overall totals do not finish "
+                    "the diagnosis. Each speaker moves from a broad pattern to a "
+                    "particular destination, dependency, or content problem, then evaluates "
+                    "what changed after the intervention."
                 ),
             ],
             "table": {
-                "caption": "Pipeline Contracts That Prevent Cheap Data From Creating Expensive Errors",
-                "headers": [
-                    "Control and accountable operating boundary",
-                    "Required implementation and retained evidence",
-                    "Concrete failure detection and response",
-                    "Fallback preserving useful publishing operations",
-                ],
+                "caption": "Log investigations connect preserved evidence to a specific operational question.",
+                "headers": ["Evidence to collect", "Investigation taught in the transcript", "Expert Source"],
                 "rows": [
                     [
-                        "Source ingestion owner controls each external request budget",
-                        "Persist request fingerprints, response checksums, timestamps, and documentation references",
-                        "Stop unauthorized requests immediately; queue throttled jobs with bounded retry",
-                        "Retain last valid internal snapshot while evaluating publication freshness",
+                        "Retain dated access logs before the hosting service overwrites existing files.",
+                        "Dalton describes moving the current log before the next day's generation begins.",
+                        "FatRank ([9YOo5zDOsP8 @ 00:05:00])",
                     ],
                     [
-                        "Entity resolution owner maintains durable identifiers and geography",
-                        "Match official identifiers before names; preserve source-specific entity mappings",
-                        "Quarantine conflicting mergers, duplicate identifiers, and inconsistent geographic vintages",
-                        "Publish narrower verified coverage rather than inventing missing entity matches",
+                        "Gather requests from relevant CDN, load-balancer, and web-server recording locations.",
+                        "Aggregate the places serving traffic rather than assuming every layer shares records.",
+                        "Semrush Live ([eelEuYoflG0 @ 00:03:04])",
                     ],
                     [
-                        "Editorial data owner validates facts before template expansion",
-                        "Test units, denominators, date ranges, citations, and suppression handling",
-                        "Block affected templates when shared transformations fail sampled verification",
-                        "Use reviewed static explanations until corrected records pass regression checks",
+                        "Validate claimed crawler identities against current published provider IP address information.",
+                        "Fetch the address information during ingestion and retain spoofed traffic separately.",
+                        "brightonSEO ([Q9Nkmc8Cx6I @ 00:09:02])",
                     ],
                     [
-                        "Revenue operations owner reconciles booked receipts with provider statements",
-                        "Separate advertising earnings, affiliate commissions, sponsorship fees, and reversals",
-                        "Investigate settlement differences before treating provisional dashboards as realized revenue",
-                        "Use contract-backed estimates with explicit reconciliation adjustments and dated evidence",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Register a narrowly justified source",
-                    "action": "Name the publishing decision, source owner, access method, and permitted fields.",
-                    "detail": "Record current terms, quota, retention period, expected freshness, and a replacement source before storing credentials.",
-                },
-                {
-                    "step": 2,
-                    "title": "Ingest a bounded reproducible sample",
-                    "action": "Retrieve 100 representative records with checkpoints and a hard request ceiling.",
-                    "detail": "Keep immutable responses, hashes, retrieval timestamps, and error categories; exclude secrets from diagnostic logs.",
-                },
-                {
-                    "step": 3,
-                    "title": "Validate the transformation contract",
-                    "action": "Compare ten sampled output records against their primary source records.",
-                    "detail": "Test geographic joins, units, suppressed observations, revisions, attribution, and page-level source links before expanding coverage.",
-                },
-                {
-                    "step": 4,
-                    "title": "Publish with rollback and reconciliation",
-                    "action": "Release one reviewed page family and monitor freshness, crawl behavior, and earnings.",
-                    "detail": "Retain the prior version, assign refresh ownership, and reconcile monthly tool costs against the canonical scenario cost base.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Use search diagnostics and acquired podcast rights without inventing signals",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "For serp_signal_navboost_engineering, separate observable visitor outcomes "
-                    "from claims about Google's internal ranking systems. Navboost and Glue "
-                    "have appeared in public discussion and proceedings, but a publisher "
-                    "does not receive a production dashboard for goodClicks, badClicks, "
-                    "or lastLongestClicks. Their names do not establish controllable "
-                    "thresholds, current weighting, or a dependable ranking recipe. "
-                    "Likewise, claims about Chrome session or entropy filters are not "
-                    "a verified specification for this desk. Implement Branded Search "
-                    "Seeding as ordinary brand awareness through useful newsletters, "
-                    "podcast appearances, memorable research, and clearly disclosed "
-                    "sponsorships. Readers may independently search for the brand; do "
-                    "not pay, script, or incentivize them to manufacture searches or "
-                    "click patterns. Never use synthetic proxy click-bots. Build "
-                    "calculators, comparison controls, and source explorers because "
-                    "they help readers complete tasks, not because a timer needs "
-                    "inflating. Real humans, including Chrome users, should encounter "
-                    "useful pages without instructions to imitate ranking signals. "
-                    "The fallback is better topic selection, clearer title and "
-                    "snippet promises, faster pages, and distribution that creates "
-                    "genuine demand regardless of any particular re-ranking system. "
-                    "No available API converts engagement engineering into guaranteed "
-                    "positions or citations."
-                ),
-                (
-                    "Measure title and snippet work with cohorts that account for "
-                    "query mix, device, country, seasonality, and average position. "
-                    "If a stable cohort receives 100,000 impressions monthly, moving "
-                    "observed CTR from 3.0% to 3.6% corresponds to 600 additional "
-                    "clicks, not proof that the title caused all 600. At an "
-                    "illustrative $25 earned revenue per thousand resulting sessions, "
-                    "600 incremental sessions would produce $15, assuming one session "
-                    "per click and comparable monetization. Do not value those "
-                    "visits using an advertiser's auction CPC. Track completed "
-                    "reader tasks and meaningful navigation alongside engagement, "
-                    "because a confusing page can generate long sessions. Use "
-                    "CrUX field measurements for user-experience trends and laboratory "
-                    "tests to diagnose specific regressions. For GEO citation "
-                    "capture, maintain a fixed prompt panel, record model and "
-                    "retrieval dates, and manually verify whether cited pages "
-                    "actually support the answer. A citation appearance is an "
-                    "observation, not a traffic event or booked sale. When rankings "
-                    "fall, compare index coverage, template changes, competitive "
-                    "SERPs, and source freshness before rewriting the entire "
-                    "portfolio. Preserve a control cohort and stop experiments "
-                    "whose reader outcomes deteriorate even when superficial "
-                    "engagement measures rise."
-                ),
-                (
-                    "For expired_podcast_rss_redirect_arbitrage, treat the acquisition as "
-                    "a rights-and-audience transaction rather than an opportunity to "
-                    "take over another publisher's identity. Inspect Podcast Index, "
-                    "Apple directory records, publisher RSS, historical captures, and "
-                    "licensed backlink exports; verify each valuable referring page "
-                    "directly. DR 85+ describes a vendor's domain-level metric and "
-                    "does not establish that Apple Podcasts, Spotify, iHeartRadio, "
-                    "or trade show-notes pass usable ranking value to the target "
-                    "asset. Confirm live links, destinations, attributes, topical "
-                    "fit, and actual referral activity. Prefer a clean $500–$5,000 "
-                    "asset purchase from a retired host covering brand, domain, "
-                    "RSS control, recordings, artwork, and transferable advertising "
-                    "rights. A $2,000 purchase plus $1,000 migration cost requires "
-                    "150,000 monetized downloads to recover $3,000 at an illustrative "
-                    "$20 net sponsorship CPM, before recurring expenses. Existing "
-                    "music, guest, and hosting agreements can prevent dynamic "
-                    "back-catalog insertion even when feed control transfers. "
-                    "Require hosting-supported migration and relevant redirects, "
-                    "not blanket redirects into unrelated commercial pages. "
-                    "If rights or audience evidence fail, abandon the purchase "
-                    "or choose a generic non-trademarked domain only after "
-                    "screening historical use and residual claims."
-                ),
-            ],
-            "table": {
-                "caption": "Search and Podcast Verification: Separate Observations, Rights, and Monetizable Outcomes",
-                "headers": [
-                    "Play-specific evidence and operating question",
-                    "Unit economics and measurable decision",
-                    "Principal failure mode requiring investigation",
-                    "Practical fallback without fabricated signals",
-                ],
-                "rows": [
-                    [
-                        "Search Console cohorts test whether snippet promises attract relevant readers",
-                        "One hundred thousand impressions gaining 0.6 percentage points yield 600 observed clicks",
-                        "Position shifts and query composition can explain apparent title improvements",
-                        "Retain control cohorts and improve useful descriptions without manufactured search behavior",
+                        "Export requested URLs and count events for sections receiving repeated attention.",
+                        "Greg uses an Excel pivot table to examine blog activity against service priorities.",
+                        "TM Blast ([1v7Wiw-ptLU @ 00:02:33])",
                     ],
                     [
-                        "Interactive page analytics test whether readers complete the intended task",
-                        "Six hundred sessions at illustrative $25 session RPM generate $15",
-                        "Long engagement can reflect confusing design rather than successful reader outcomes",
-                        "Simplify the interface and measure task completion before adding more interactions",
+                        "Compare recorded bot visits with the URLs included in the sitemap.",
+                        "The hospital investigation discovers coverage concentrated on homepage and top-level categories.",
+                        "brightonSEO ([Q9Nkmc8Cx6I @ 00:11:32])",
                     ],
                     [
-                        "Podcast acquisition diligence establishes transferable rights and credible retained audience",
-                        "Three thousand dollars requires 150,000 downloads at illustrative $20 net CPM",
-                        "Feed possession can coexist with missing audio or advertising insertion rights",
-                        "Use a signed asset transfer or abandon the unsupported acquisition entirely",
-                    ],
-                    [
-                        "Backlink verification checks actual referring pages rather than headline domain scores",
-                        "Sample every material referring source before assigning any acquisition value",
-                        "High domain metrics can conceal absent links or irrelevant redirect destinations",
-                        "Price the asset on verified audience and rights rather than hypothetical rankings",
+                        "Break server-error responses down by the subfolders and resources being requested.",
+                        "The presentation isolates an AJAX endpoint whose failure obstructed rendering page content.",
+                        "Semrush Live ([eelEuYoflG0 @ 00:14:42])",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Four habits that survive ranking changes and acquisition diligence",
-                "body": "Treat evidence quality, reader usefulness, and transferable rights as the durable assets.",
+                "title": "Make the log dataset answerable before making it impressive",
+                "body": (
+                    "The presenters emphasize preservation, request identity, manageable queries, "
+                    "and questions tied to important pages rather than tool volume alone "
+                    "[Semrush Live — eelEuYoflG0 @ 00:07:26]."
+                ),
                 "items": [
-                    "Export Search Console cohorts before changing titles; preserve query, device, country, date, and position context so a traffic increase is not automatically credited to copy.",
-                    "Snapshot the exact referring podcast pages before signing; a strong host-domain score cannot substitute for a live relevant link to the acquired asset.",
-                    "Test a hosting-supported RSS migration using a controlled feed before touching the purchased catalog; reconcile episode identifiers to prevent duplicate distribution.",
-                    "Publish source methodology and dated revision notes beside original datasets; stable definitions help both human citations and machine retrieval without promising either.",
+                    (
+                        "Trend activity across weeks and months rather than treating one low-crawl "
+                        "day as the conclusion. [James Dooley — cv7lfh1AjZc @ 00:02:56]"
+                    ),
+                    (
+                        "Do not validate a bot from its user agent alone; the presenter says "
+                        "to use IP information because user agents are easy to imitate. "
+                        "[brightonSEO — Q9Nkmc8Cx6I @ 00:10:56]"
+                    ),
+                    (
+                        "Start a new query with a limit of 10, then iterate before expanding "
+                        "the result set and its processing cost. "
+                        "[Semrush Live — eelEuYoflG0 @ 00:09:17]"
+                    ),
+                    (
+                        "Use frequently visited sections as places to examine links leading "
+                        "toward the sections you actually want crawled. "
+                        "[FatRank — 9YOo5zDOsP8 @ 00:06:07]"
+                    ),
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Preserve the relevant request history",
+                    "action": "Collect retained logs and establish where requests are recorded.",
+                    "detail": (
+                        "Include CDN, load-balancer, and web-server records where those layers "
+                        "serve the traffic being investigated. "
+                        "[Semrush Live — eelEuYoflG0 @ 00:03:04]"
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Validate the crawler population",
+                    "action": "Separate verified crawler traffic from merely claimed bot identities.",
+                    "detail": (
+                        "Use current provider IP information during ingestion and keep the "
+                        "spoofed requests available for their own analysis. "
+                        "[brightonSEO — Q9Nkmc8Cx6I @ 00:09:02]"
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Segment requests around important destinations",
+                    "action": "Group URL events by the sections and pages under investigation.",
+                    "detail": (
+                        "Follow Greg's export-and-pivot approach to compare blog activity "
+                        "with the service pages whose crawling matters to the business. "
+                        "[TM Blast — 1v7Wiw-ptLU @ 00:02:33]"
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Check what the intervention changed",
+                    "action": "Compare crawler revisits with impressions and clicks after the work.",
+                    "detail": (
+                        "If additional crawling does not produce movement in impressions "
+                        "or clicks, investigate the page's content and weight. "
+                        "[FatRank — 9YOo5zDOsP8 @ 00:10:17]"
+                    ),
+                },
+            ],
+        },
+        {
+            "id": "Q8-S3",
+            "title": "Build discovery routes and scale the checks with Python",
+            "paragraphs": [
+                (
+                    "BKA Content ([n68rh1s-ZdY @ 00:03:22]) starts website structure with "
+                    "the customer's journey and top navigation, using an RV park to illustrate "
+                    "a homepage, rates, amenities, locations, attractions, company information, "
+                    "and a blog. The presentation recommends placing the blog in the main "
+                    "navigation instead of burying it beneath another page, then developing "
+                    "subpages around the information customers seek. Long-term and short-term "
+                    "stays, serviced neighboring locations, and nearby attractions become "
+                    "specific destinations rather than unrelated topics crowded onto one "
+                    "page. Abdul Latif ([pjmp4gM12iQ @ 00:02:28]) complements that "
+                    "structural account with routes into important pages: link from the "
+                    "homepage and well-visited blog posts to relevant service pages inside "
+                    "useful sentences. Their audit examples concern existing money pages "
+                    "that have few or no internal routes, not simply a shortage of "
+                    "published content. Misha Manko ([vcLkBQxf9Hs @ 00:12:22]) adds "
+                    "a condition to the location-page approach: pages that merely exchange "
+                    "city names while retaining the same text, photos, and questions look "
+                    "like duplicates in their account. They recommend genuinely local "
+                    "material or a consolidated service-area page when meaningful "
+                    "differentiation is unavailable. The speakers therefore describe "
+                    "both a discovery structure and the distinct content that belongs "
+                    "at the destinations it exposes."
+                ),
+                (
+                    "Chris Palmer SEO ([qLr_HlF7dKw @ 00:01:19]) shows the Links section "
+                    "in Search Console as a starting point for examining internally linked "
+                    "pages, then uses Screaming Frog when more anchor detail is needed. "
+                    "Their analysis distinguishes links pointing into a particular page "
+                    "from the wording distributed across the whole site. Chris Palmer SEO "
+                    "([qLr_HlF7dKw @ 00:08:09]) demonstrates the inlink anchor-text "
+                    "visualization, where larger words represent more frequent wording, "
+                    "and connects that inspection to the term variations ranking pages "
+                    "already cover. Abdul Latif ([pjmp4gM12iQ @ 00:03:01]) offers "
+                    "the simpler labeling check: a reader seeing only the anchor should "
+                    "understand the destination, instead of encountering repeated generic "
+                    "instructions to click or learn more. Palmer also describes more "
+                    "aggressive internal optimization through jump links, headings, and "
+                    "follow-noindex pages, reporting their use in competitive examples. "
+                    "Chris Palmer SEO ([qLr_HlF7dKw @ 00:11:10]) presents these as "
+                    "ways of exposing more term variations internally without adding "
+                    "ordinary indexed pages for every variation. These are Palmer's "
+                    "reported tactics, while Latif's account emphasizes clear contextual "
+                    "routes and avoiding indiscriminate linking. Keeping both accounts "
+                    "visible preserves their different emphases: sitewide anchor "
+                    "optimization on one side, and understandable paths to important "
+                    "existing content on the other."
+                ),
+                (
+                    "Daniel Heredia on BoostRoas ([kuSNDOAsr50 @ 00:31:47]) demonstrates "
+                    "Python as a way to inspect linking structure and identify proposed "
+                    "connections between source and target URLs. Their cryptocurrency-site "
+                    "example produces up to 50,000 internal-link opportunities, with "
+                    "keywords, source pages, and destinations available for review. The "
+                    "presentation also describes combining that output with Internal "
+                    "Links Manager on WordPress to create links from supplied terms "
+                    "and targets. BoostRoas ([kuSNDOAsr50 @ 00:33:56]) extends the "
+                    "workflow to bulk PageSpeed Insights analysis, storing measurements "
+                    "so deployments can be compared across URLs rather than checking "
+                    "only the homepage. The brightonSEO presenter "
+                    "([Q9Nkmc8Cx6I @ 00:07:24]) explains another reason for Python: "
+                    "a ten-day log collection occupies 30 to 40 gigabytes before "
+                    "filtering, and even the reduced dataset contains about eight "
+                    "million rows. Filtering around the actual question matters more "
+                    "than trying to inspect everything in a spreadsheet. Heredia "
+                    "also covers regular checks for indexing problems, log parsing, "
+                    "and browser-driven report exports, but does not prescribe "
+                    "programming for every task. BoostRoas "
+                    "([kuSNDOAsr50 @ 00:41:50]) explicitly recommends an existing "
+                    "market solution when it already handles the process. Python "
+                    "serves repeatable collection, comparison, and scale in these "
+                    "demonstrations; it is not presented as a replacement for "
+                    "deciding which pages and symptoms deserve attention."
+                ),
+            ],
+            "table": {
+                "caption": "Discovery work spans architecture, anchor inspection, and repeatable technical checks.",
+                "headers": ["Observed opportunity", "Speaker's operational approach", "Expert Source"],
+                "rows": [
+                    [
+                        "Organize the main navigation around information the prospective customer actually needs.",
+                        "Use the RV park example to distinguish rates, amenities, locations, and attractions.",
+                        "BKA Content ([n68rh1s-ZdY @ 00:03:22])",
+                    ],
+                    [
+                        "Connect strong existing pages with service pages that currently lack attention.",
+                        "Place contextual links from the homepage and popular posts into relevant destinations.",
+                        "Abdul Latif ([pjmp4gM12iQ @ 00:02:28])",
+                    ],
+                    [
+                        "Inspect anchor wording across the entire website as well as individual targets.",
+                        "Use Screaming Frog's inlink anchor-text visualization to examine repeated term variations.",
+                        "Chris Palmer SEO ([qLr_HlF7dKw @ 00:08:09])",
+                    ],
+                    [
+                        "Record Palmer's use of follow-noindex pages and heading-based jump-link anchors.",
+                        "Their competitive examples expose additional internal term variations without ordinary indexed pages.",
+                        "Chris Palmer SEO ([qLr_HlF7dKw @ 00:11:10])",
+                    ],
+                    [
+                        "Build proposed internal links from keywords, source pages, and target destinations.",
+                        "Heredia demonstrates Python-generated opportunities and describes connecting the output to WordPress.",
+                        "BoostRoas ([kuSNDOAsr50 @ 00:31:47])",
+                    ],
+                    [
+                        "Compare page-speed measurements across multiple URLs before and after relevant deployments.",
+                        "Use bulk API analysis and retained measurements instead of inspecting only the homepage.",
+                        "BoostRoas ([kuSNDOAsr50 @ 00:33:56])",
+                    ],
                 ],
             },
         },
         {
-            "heading": "4. Underwrite search-feed access using permissions and settled unit economics",
-            "epistemic_status": "illustrative_model",
+            "id": "Q8-S4",
+            "title": "Diagnose excluded pages without confusing notifications, content, and rendering",
             "paragraphs": [
                 (
-                    "For tier1_search_feed_afd_rsoc_arbitrage, the first dataset is the "
-                    "current contract, not a screenshot of somebody else's revenue. "
-                    "The play's references to Google AFD, RSOC, Yahoo/Bing feeds, "
-                    "System1, Sedo, Tonic, and Media.net are procurement leads, "
-                    "not evidence that a particular product remains offered or "
-                    "accepts this publisher, geography, traffic source, or implementation. "
-                    "Check current first-party program documentation and obtain "
-                    "written product-specific permission before buying traffic. A "
-                    "Google AFD arrangement does not establish RSOC eligibility; "
-                    "a partner relationship does not establish rights to resell "
-                    "or sub-syndicate another provider's feed. Require approved "
-                    "domains, traffic channels, ad labeling, search initiation "
-                    "behavior, reporting access, deduction rules, settlement terms, "
-                    "and termination procedures. Related-search content must genuinely "
-                    "answer the landing-page promise before presenting clearly "
-                    "distinguished advertising choices. Never disguise an advertisement "
-                    "as navigation or force an extra search to reach the promised "
-                    "answer. The promoted $25M–$400M+ annual gross scale is outside "
-                    "this volume's canonical scenarios and is not adopted as a "
-                    "forecast. Evaluate a bounded pilot whose loss the desk can "
-                    "absorb without compromising editorial payroll or source licenses."
+                    "Misha Manko ([vcLkBQxf9Hs @ 00:08:44]) distinguishes crawled-currently-not-indexed "
+                    "from discovered-currently-not-indexed: the first describes a page Google "
+                    "fetched but did not retain in the index, while the second describes "
+                    "a known URL not yet crawled. Their walkthrough treats the report "
+                    "as information requiring interpretation, not a list where every "
+                    "entry must disappear. Feeds, filters, internal searches, account "
+                    "pages, checkout pages, and canonical variants can belong outside "
+                    "the index; important products, articles, categories, and previously "
+                    "trafficked pages deserve a different response. Greenlane Search "
+                    "Marketing, LLC ([NyNv-u7KkFw @ 00:00:48]) approaches the same "
+                    "inventory question through accumulated content, arguing that old "
+                    "indexed material can obstruct attention to newer, more valuable "
+                    "pages. TM Blast ([1v7Wiw-ptLU @ 00:06:47]) describes removing "
+                    "about 100 irrelevant older posts and taking them out of both "
+                    "HTML and XML sitemaps to concentrate attention on current "
+                    "content and core service pages. Those are concrete inventory "
+                    "decisions tied to the speakers' examples, rather than a "
+                    "requirement to delete a fixed share of every site. Manko's "
+                    "distinction supplies the initial sorting question: does the "
+                    "excluded URL represent something the business actually wants "
+                    "indexed, or is its exclusion consistent with the function "
+                    "of that page?"
                 ),
                 (
-                    "The quoted $0.08–$0.35 acquisition clicks and $8–$45 commercial "
-                    "auction CPCs describe different positions in the value chain. "
-                    "The publisher does not collect the advertiser's whole bid, "
-                    "and most purchased visits will not produce a payable "
-                    "downstream click. Use settled earnings per acquired visit. "
-                    "In an illustrative pilot, 10,000 visits at $0.20 cost "
-                    "$2,000. If 20% initiate a related search and 15% of "
-                    "those searchers generate a valid paid click, the result "
-                    "is 300 paid clicks. At $1.50 net publisher earnings "
-                    "per paid click, revenue is $450 and the media loss "
-                    "is $1,550 before tools and labor. Break-even requires "
-                    "$6.67 net per paid click before those extra costs, "
-                    "not merely an impressive auction bid. Track acquisition "
-                    "spend, valid visits, search initiations, payable clicks, "
-                    "provisional earnings, later deductions, and settled receipts "
-                    "by source cohort. If a provider supplies only aggregate "
-                    "reports, narrow the experiment until attribution remains "
-                    "credible. Do not extrapolate a profitable afternoon across "
-                    "a year; auction demand, quality adjustments, seasonality, "
-                    "and payment delays can reverse the result after "
-                    "the traffic bill has already settled."
+                    "The speakers also disagree about how particular cleanup actions "
+                    "affect crawl allocation. FatRank ([9YOo5zDOsP8 @ 00:03:25]) "
+                    "reports that changing an obsolete URL to 410 was followed "
+                    "by more crawling of a struggling category and subsequent "
+                    "movement in impressions and clicks. Gary Illyes at Google "
+                    "Search Central ([LIMqmzuzpVg @ 00:26:37]) explicitly says "
+                    "404, 410, and robots-blocked URLs do not waste crawl budget, "
+                    "then contrasts them with soft 404 responses. The chapter "
+                    "preserves the reported intervention and Google's explanation "
+                    "without turning them into a single agreed mechanism. Pearl "
+                    "Lemon SEO ([aRuxCdZQ1Yo @ 00:09:43]) recommends removing "
+                    "or noindexing low-value pages, fixing parameter duplication, "
+                    "strengthening internal links, and cleaning the sitemap. "
+                    "Misha Manko ([nBrto2B9RyE @ 00:19:19]) separately warns "
+                    "that noindex does not stop fetching because Google can "
+                    "continue accessing a known URL without indexing it. Their "
+                    "different accounts make the intended outcome important: "
+                    "removing an unwanted search result, changing which URLs "
+                    "exist, and influencing which requests occur are not "
+                    "described identically. Keep the diagnosis attached to "
+                    "the actual status, URL, and reported behavior instead "
+                    "of attributing every cleanup result to a universally "
+                    "accepted budget transfer. That preserves the transcript "
+                    "debate while retaining the concrete repairs each "
+                    "speaker teaches."
                 ),
                 (
-                    "Build partner redundancy only where separate contracts explicitly "
-                    "permit the same property and distribution arrangement. Maintain "
-                    "relationships with three or more eligible master syndicators "
-                    "when available, but never assume interchangeability or route "
-                    "rejected traffic to another account. If that breadth is "
-                    "unavailable, reduce concentration through direct sponsorship, "
-                    "affiliate relationships, and conventional display demand instead. "
-                    "Before rendering search units, use proportionate edge controls "
-                    "for suspected automated traffic, including challenges where "
-                    "appropriate, and exclude prohibited sources under the actual "
-                    "contract. Datacenter or VPN classification alone does not "
-                    "prove abuse; measure false positives and avoid covert "
-                    "fingerprinting. Keep acquisition claims accurate, disclose "
-                    "material affiliate or sponsorship relationships clearly, and "
-                    "map applicable privacy duties to the data actually collected. "
-                    "For covered California operations, assess Civil Code "
-                    "1798.100 and 1798.120 against collection notices, service-provider "
-                    "contracts, and sale or sharing practices. The FTC Act "
-                    "and 16 CFR Part 255 govern deceptive representations "
-                    "and endorsement disclosures relevant to monetized publishing. "
-                    "Finally, reconcile feed proceeds within advertising revenue "
-                    "and acquisition spend within costs. Neither advertiser "
-                    "auction value nor referred merchant sales belongs in "
-                    "the $80,000, $490,000, or $900,000 operator revenue totals."
+                    "For a page that should be indexed, Misha Manko "
+                    "([vcLkBQxf9Hs @ 00:30:20]) demonstrates inspecting the URL, "
+                    "running the live test, and viewing the tested page's "
+                    "HTML to see what Google can access. Their technical "
+                    "exception concerns content that arrives too late or "
+                    "depends on JavaScript interaction, leaving an apparently "
+                    "complete human-facing page empty to the crawler. Semrush "
+                    "Live ([eelEuYoflG0 @ 00:16:26]) recommends combining "
+                    "crawl information with logs to find indexable pages "
+                    "without bot hits and to examine whether internal links "
+                    "are actually implemented with an anchor and href "
+                    "value. Daniel Heredia on BoostRoas "
+                    "([kuSNDOAsr50 @ 00:37:36]) adds recurring checks and "
+                    "notifications for accidental indexing directives, robots "
+                    "blocks, or important URLs returning 404 responses. "
+                    "These demonstrations cover different failure points "
+                    "without treating a repeated indexing request as the "
+                    "repair. Misha Manko ([vcLkBQxf9Hs @ 00:21:36]) "
+                    "specifically says requesting indexing again will not "
+                    "change the outcome when the page and website remain "
+                    "unchanged. Their content remedies include consolidating "
+                    "near-identical products, creating genuinely differentiated "
+                    "local pages, and replacing copied supplier material "
+                    "with distinct information. The working sequence in "
+                    "these accounts is to establish accessibility and "
+                    "discovery, inspect what was fetched, repair the "
+                    "identified technical or content issue, and then "
+                    "observe subsequent crawling and indexing behavior."
                 ),
             ],
             "table": {
-                "caption": "Permissioned Feed Pilot: Economics, Quality, and Settlement Controls",
-                "headers": [
-                    "Operating checkpoint and required evidence",
-                    "Concrete calculation or acceptance condition",
-                    "Failure response protecting cash and permissions",
-                    "Fallback channel or retained audit artifact",
-                ],
+                "caption": "Match each indexing symptom to its attributed investigation, preserving disagreements.",
+                "headers": ["Symptom or distinction", "Transcript-led response", "Expert Source"],
                 "rows": [
                     [
-                        "Partner contracting identifies the precise product and authorized traffic sources",
-                        "Written terms must cover each domain, geography, placement, and acquisition channel",
-                        "Do not launch when product eligibility or distribution rights remain unresolved",
-                        "Use direct sponsorship while retaining dated correspondence and current program documentation",
+                        "Distinguish a fetched but excluded page from a known uncrawled URL.",
+                        "Manko explains that these report categories describe different points in the process.",
+                        "Misha Manko ([vcLkBQxf9Hs @ 00:08:44])",
                     ],
                     [
-                        "Traffic purchasing uses a fixed cohort and hard loss ceiling",
-                        "Ten thousand visits multiplied by $0.20 acquisition cost requires $2,000",
-                        "Stop purchases when cohort loss reaches the documented pilot spending boundary",
-                        "Return budget to measured audience development rather than unverified wholesale access",
+                        "Inspect accumulated indexed material alongside the newer pages that deserve attention.",
+                        "Greenlane describes old content potentially obstructing indexing of newer and more valuable material.",
+                        "Greenlane Search Marketing, LLC ([NyNv-u7KkFw @ 00:00:48])",
                     ],
                     [
-                        "Revenue modeling follows payable events rather than advertised auction bids",
-                        "Three hundred paid clicks multiplied by $1.50 net earnings produces $450",
-                        "Reject scaling when settled earnings cannot cover media and incremental operating costs",
-                        "Retain event-level aggregates and provider statements for later reconciliation work",
+                        "Retain the distinction between genuine missing-page responses and soft missing-page responses.",
+                        "Illyes says 404 and 410 do not waste budget, contrasting soft 404 behavior.",
+                        "Google Search Central ([LIMqmzuzpVg @ 00:26:37])",
                     ],
                     [
-                        "Quality review reconciles invalid traffic adjustments and delayed settlement",
-                        "Compare provisional earnings, deductions, payable balance, and actual cash receipts",
-                        "Suspend affected sources and investigate without transferring rejected traffic elsewhere",
-                        "Use permitted alternative demand or remove units while keeping useful content available",
+                        "Avoid assuming a noindex directive means that Google stops requesting the URL.",
+                        "Manko says Google can still fetch known pages without putting them into indexing.",
+                        "Misha Manko ([nBrto2B9RyE @ 00:19:19])",
+                    ],
+                    [
+                        "Inspect the tested HTML when important content appears absent to the crawler.",
+                        "Use URL inspection, the live test, and the tested-page view to examine content.",
+                        "Misha Manko ([vcLkBQxf9Hs @ 00:30:20])",
+                    ],
+                    [
+                        "Detect accidental directives, robots blocking, and important URLs returning missing-page responses.",
+                        "Heredia proposes recurring scraping checks with email or Slack notifications for indexing issues.",
+                        "BoostRoas ([kuSNDOAsr50 @ 00:37:36])",
                     ],
                 ],
             },
             "callout": {
                 "kind": "OPERATOR GATE",
-                "title": "Four checks before publishing data or spending acquisition cash",
-                "body": "A named owner must retain evidence for each check; a promising dashboard does not replace it.",
+                "title": "Checks the speakers require before calling the diagnosis complete",
+                "body": (
+                    "Check actual visibility, surviving internal routes, resource dependencies, "
+                    "and the condition that caused exclusion rather than treating every report "
+                    "entry as the same problem [Misha Manko — vcLkBQxf9Hs @ 00:07:05]."
+                ),
                 "items": [
-                    "Verify current source access, reuse rights, privacy purpose, and refresh limits; test the replacement source before relying on the primary provider.",
-                    "Verify that search experiments use genuine voluntary readership, accurate page promises, and no synthetic or incentivized search behavior.",
-                    "Verify podcast seller authority, recording and artwork rights, hosting transfer mechanics, and sponsor insertion permissions before sending acquisition funds.",
-                    "Verify current feed eligibility, authorized traffic sources, clear ad treatment, bounded pilot loss, and a settled-revenue reconciliation path before launching paid traffic.",
+                    (
+                        "After a redesign, confirm that important service and money pages still "
+                        "have internal links; Latif warns that themes and menus can silently "
+                        "remove those routes. [Abdul Latif — pjmp4gM12iQ @ 00:04:22]"
+                    ),
+                    (
+                        "Do not block JavaScript or CSS merely because resource percentages "
+                        "look high; inspect whether the implementation needs those files "
+                        "to render correctly. [Pearl Lemon SEO — aRuxCdZQ1Yo @ 00:07:12]"
+                    ),
+                    (
+                        "Check whether strong CDN rules intended for AI crawlers also "
+                        "block Google; Manko identifies this as a possible technical "
+                        "exception. [Misha Manko — vcLkBQxf9Hs @ 00:05:58]"
+                    ),
+                    (
+                        "Do not treat the hospital's dynamic-rendering workaround as a "
+                        "finished root repair; the presenter warns that it is difficult "
+                        "to maintain at scale. [brightonSEO — Q9Nkmc8Cx6I @ 00:18:23]"
+                    ),
                 ],
             },
         },
     ],
-    "pull_quote": "The information edge is not collecting more records; it is knowing which evidence can safely change a publishing or spending decision.",
+    "pull_quote": (
+        "\"More links is not the goal. Clearer links is the goal.\" "
+        "Abdul Latif (pjmp4gM12iQ @ 00:04:05)."
+    ),
     "diagram_id": "diag-04",
     "action_checklist": [
-        "Create an eighteen-source register recording current access documentation, permitted uses, cost limits, freshness targets, accountable owners, and replacement sources.",
-        "Build a checkpointed ingestion sample with immutable responses, hashes, typed identifiers, unit checks, and bounded retry behavior.",
-        "Validate 150 factual assertions across fifty pilot location pages before expanding any programmatic template.",
-        "Establish Search Console control cohorts and reader-task measurements before changing titles, snippets, or interactive page components.",
-        "Complete a podcast rights schedule and download-based purchase model before negotiating a $500–$5,000 asset transfer.",
-        "Reconcile any permissioned feed pilot to settled publisher earnings and the canonical annual revenue, expense, staffing, and owner-profit cases.",
+        (
+            "Open Search Console Settings and inspect Crawl Stats trends, host status, "
+            "and request breakdowns before choosing the problem to investigate "
+            "(Google Search Central, x_GoMrl6_u0 @ 00:03:36)."
+        ),
+        (
+            "Retain available server logs and compare trends across time rather than "
+            "making the diagnosis from a single day's requests "
+            "(James Dooley, cv7lfh1AjZc @ 00:02:56)."
+        ),
+        (
+            "Validate crawler identities with provider IP information before "
+            "interpreting the recorded bot activity "
+            "(brightonSEO, Q9Nkmc8Cx6I @ 00:09:02)."
+        ),
+        (
+            "Connect strong existing pages to important service pages through "
+            "contextual internal links "
+            "(Abdul Latif, pjmp4gM12iQ @ 00:02:28)."
+        ),
+        (
+            "Use Python to identify source-page, keyword, and target-page "
+            "combinations for internal-link opportunities "
+            "(BoostRoas, kuSNDOAsr50 @ 00:31:47)."
+        ),
+        (
+            "Inspect the live-tested HTML of important excluded pages to determine "
+            "whether Google can see their content "
+            "(Misha Manko, vcLkBQxf9Hs @ 00:30:20)."
+        ),
     ],
     "statutory_citations": [
         {
-            "title": "17 U.S.C. 105 — Subject matter of copyright: United States Government works",
-            "url": "https://www.law.cornell.edu/uscode/text/17/105",
+            "title": (
+                "Google Search Central — Crawl Budget and the Crawl Stats report - "
+                "Google Search Console Training [00:02:35]"
+            ),
+            "url": "https://www.youtube.com/watch?v=x_GoMrl6_u0&t=155s",
             "relevance": (
-                "Distinguishes federal government works from third-party, state, and "
-                "privately owned materials encountered in public-data publishing."
+                "Core testimony defining crawl budget through crawl rate and demand, "
+                "with the tutorial's subsequent Crawl Stats investigation."
             ),
         },
         {
-            "title": "17 U.S.C. 106 — Exclusive rights in copyrighted works",
-            "url": "https://www.law.cornell.edu/uscode/text/17/106",
+            "title": (
+                "Semrush Live — How to Leverage Insights from Your Site’s Server Logs | "
+                "5 Hours of Technical SEO [00:03:04]"
+            ),
+            "url": "https://www.youtube.com/watch?v=eelEuYoflG0&t=184s",
             "relevance": (
-                "Requires podcast and publishing acquisitions to address relevant "
-                "reproduction, adaptation, distribution, performance, and display rights."
+                "Core practitioner testimony on aggregating logs from different "
+                "infrastructure layers before analyzing crawler behavior."
             ),
         },
         {
-            "title": "15 U.S.C. 45 — Unfair methods of competition and unfair or deceptive acts or practices",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
+            "title": (
+                "BoostRoas — Python SEO: How to Improve Crawling and Indexing - "
+                "Weekly SEO with Daniel Heredia [00:31:47]"
+            ),
+            "url": "https://www.youtube.com/watch?v=kuSNDOAsr50&t=1907s",
             "relevance": (
-                "Provides the statutory basis for evaluating misleading acquisition "
-                "claims, advertising presentation, and monetized publishing representations."
+                "Core practitioner testimony on using Python to analyze internal-link "
+                "structures and identify linking opportunities."
             ),
         },
         {
-            "title": "16 CFR Part 255 — Guides Concerning the Use of Endorsements and Testimonials in Advertising",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255",
+            "title": (
+                "Misha Manko — Crawled - Currently Not Indexed: How to Fix It "
+                "(Live Site, Real Data) [00:08:44]"
+            ),
+            "url": "https://www.youtube.com/watch?v=vcLkBQxf9Hs&t=524s",
             "relevance": (
-                "Explains the FTC's interpretation of endorsement practices, including "
-                "clear disclosure of material connections relevant to affiliates and sponsors."
+                "Core practitioner testimony distinguishing crawled-but-excluded "
+                "pages from discovered URLs that have not yet been crawled."
             ),
         },
+    ],
+    "source_citations": [
         {
-            "title": "California Civil Code 1798.100 — Consumer information collection and processing obligations",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.100.&lawCode=CIV",
-            "relevance": (
-                "Directs covered businesses to assess collection notices, purpose "
-                "limitations, retention practices, and contractual processing requirements."
+            "source_type": "video_pro_tip",
+            "video_id": "n68rh1s-ZdY",
+            "title": "Is Your Website Structure Hurting Your SEO? Do this!",
+            "channel": "BKA Content",
+            "author": "BKA Content",
+            "text": (
+                "We were able to increase their impressions by over 1,656% "
+                "in the space of only 2 months."
             ),
+            "tip": (
+                "We were able to increase their impressions by over 1,656% "
+                "in the space of only 2 months."
+            ),
+            "timestamp": 550,
+            "timestamp_seconds": 550,
+            "timestamp_label": "[00:09:10]",
+            "url": "https://www.youtube.com/watch?v=n68rh1s-ZdY&t=550s",
+            "markdown": "[00:09:10](https://www.youtube.com/watch?v=n68rh1s-ZdY&t=550s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
         },
         {
-            "title": "California Civil Code 1798.120 — Consumer right to opt out of sale or sharing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.120.&lawCode=CIV",
-            "relevance": (
-                "Requires covered operations to evaluate sale or sharing practices "
-                "and implement applicable consumer opt-out rights."
+            "source_type": "video_pro_tip",
+            "video_id": "qLr_HlF7dKw",
+            "title": "On-Page SEO Internal Linking Tips",
+            "channel": "Chris Palmer SEO",
+            "author": "Chris Palmer SEO",
+            "text": (
+                "Internal links tell Google what is important. "
+                "This is what you feel is important."
             ),
+            "tip": (
+                "Internal links tell Google what is important. "
+                "This is what you feel is important."
+            ),
+            "timestamp": 250,
+            "timestamp_seconds": 250,
+            "timestamp_label": "[00:04:10]",
+            "url": "https://www.youtube.com/watch?v=qLr_HlF7dKw&t=250s",
+            "markdown": "[00:04:10](https://www.youtube.com/watch?v=qLr_HlF7dKw&t=250s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
         },
         {
-            "title": "15 U.S.C. 1125 — False designations of origin and related trademark protections",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1125",
-            "relevance": (
-                "Makes historical brand use, confusing presentation, and domain-related "
-                "trademark exposure material checks in podcast and expired-domain acquisitions."
+            "source_type": "video_pro_tip",
+            "video_id": "pjmp4gM12iQ",
+            "title": "Your Best Pages Are Invisible to Google — Internal Linking Explained (2026)",
+            "channel": "Abdul Latif",
+            "author": "Abdul Latif",
+            "text": "More links is not the goal. Clearer links is the goal.",
+            "tip": "More links is not the goal. Clearer links is the goal.",
+            "timestamp": 245,
+            "timestamp_seconds": 245,
+            "timestamp_label": "[00:04:05]",
+            "url": "https://www.youtube.com/watch?v=pjmp4gM12iQ&t=245s",
+            "markdown": "[00:04:05](https://www.youtube.com/watch?v=pjmp4gM12iQ&t=245s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "x_GoMrl6_u0",
+            "title": "Crawl Budget and the Crawl Stats report - Google Search Console Training",
+            "channel": "Google Search Central",
+            "author": "Google Search Central",
+            "text": (
+                "Taking crawl rate and crawl demand together, we can define crawl "
+                "budget as the number of URLs Google can and wants to crawl."
             ),
+            "tip": (
+                "Taking crawl rate and crawl demand together, we can define crawl "
+                "budget as the number of URLs Google can and wants to crawl."
+            ),
+            "timestamp": 155,
+            "timestamp_seconds": 155,
+            "timestamp_label": "[00:02:35]",
+            "url": "https://www.youtube.com/watch?v=x_GoMrl6_u0&t=155s",
+            "markdown": "[00:02:35](https://www.youtube.com/watch?v=x_GoMrl6_u0&t=155s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "1v7Wiw-ptLU",
+            "title": "Using Log File Analysis to Improve How Google Crawls My Website",
+            "channel": "TM Blast",
+            "author": "TM Blast",
+            "text": (
+                "The blog has a total of 266 unique events that took place over 30 days."
+            ),
+            "tip": (
+                "The blog has a total of 266 unique events that took place over 30 days."
+            ),
+            "timestamp": 172,
+            "timestamp_seconds": 172,
+            "timestamp_label": "[00:02:52]",
+            "url": "https://www.youtube.com/watch?v=1v7Wiw-ptLU&t=172s",
+            "markdown": "[00:02:52](https://www.youtube.com/watch?v=1v7Wiw-ptLU&t=172s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "kuSNDOAsr50",
+            "title": (
+                "Python SEO: How to Improve Crawling and Indexing - "
+                "Weekly SEO with Daniel Heredia"
+            ),
+            "channel": "BoostRoas",
+            "author": "BoostRoas",
+            "text": (
+                "With Python you can analyze the internal linking structures "
+                "and also you can detect internal linking opportunities."
+            ),
+            "tip": (
+                "With Python you can analyze the internal linking structures "
+                "and also you can detect internal linking opportunities."
+            ),
+            "timestamp": 1907,
+            "timestamp_seconds": 1907,
+            "timestamp_label": "[00:31:47]",
+            "url": "https://www.youtube.com/watch?v=kuSNDOAsr50&t=1907s",
+            "markdown": "[00:31:47](https://www.youtube.com/watch?v=kuSNDOAsr50&t=1907s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Q9Nkmc8Cx6I",
+            "title": (
+                "Log Files Don't Lie: A 30-Day Crawl Analysis That Changed "
+                "How We Prioritize Technical SEO"
+            ),
+            "channel": "brightonSEO",
+            "author": "brightonSEO",
+            "text": (
+                "Don't ever rely on just the user agent alone. "
+                "You have to rely on the IP address to validate."
+            ),
+            "tip": (
+                "Don't ever rely on just the user agent alone. "
+                "You have to rely on the IP address to validate."
+            ),
+            "timestamp": 656,
+            "timestamp_seconds": 656,
+            "timestamp_label": "[00:10:56]",
+            "url": "https://www.youtube.com/watch?v=Q9Nkmc8Cx6I&t=656s",
+            "markdown": "[00:10:56](https://www.youtube.com/watch?v=Q9Nkmc8Cx6I&t=656s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "LIMqmzuzpVg",
+            "title": "Should I worry about crawl budget? | Search Off the Record",
+            "channel": "Google Search Central",
+            "author": "Google Search Central",
+            "text": (
+                "When I say most, it's probably over 90% of sites on the internet "
+                "don't have to worry about it."
+            ),
+            "tip": (
+                "When I say most, it's probably over 90% of sites on the internet "
+                "don't have to worry about it."
+            ),
+            "timestamp": 155,
+            "timestamp_seconds": 155,
+            "timestamp_label": "[00:02:35]",
+            "url": "https://www.youtube.com/watch?v=LIMqmzuzpVg&t=155s",
+            "markdown": "[00:02:35](https://www.youtube.com/watch?v=LIMqmzuzpVg&t=155s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "cv7lfh1AjZc",
+            "title": "Importance of growing crawl budget (James Dooley Interviews Andrew Halliday)",
+            "channel": "James Dooley",
+            "author": "James Dooley",
+            "text": (
+                "You don't really want to look at a day in isolation. "
+                "You want to trend it more over time."
+            ),
+            "tip": (
+                "You don't really want to look at a day in isolation. "
+                "You want to trend it more over time."
+            ),
+            "timestamp": 176,
+            "timestamp_seconds": 176,
+            "timestamp_label": "[00:02:56]",
+            "url": "https://www.youtube.com/watch?v=cv7lfh1AjZc&t=176s",
+            "markdown": "[00:02:56](https://www.youtube.com/watch?v=cv7lfh1AjZc&t=176s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "9YOo5zDOsP8",
+            "title": "Server Log Analysis | Find and Fix SEO Errors",
+            "channel": "FatRank",
+            "author": "FatRank",
+            "text": (
+                "If it keeps on hitting these pages, you want the internal links "
+                "there to help push the crawler through to the other pages."
+            ),
+            "tip": (
+                "If it keeps on hitting these pages, you want the internal links "
+                "there to help push the crawler through to the other pages."
+            ),
+            "timestamp": 367,
+            "timestamp_seconds": 367,
+            "timestamp_label": "[00:06:07]",
+            "url": "https://www.youtube.com/watch?v=9YOo5zDOsP8&t=367s",
+            "markdown": "[00:06:07](https://www.youtube.com/watch?v=9YOo5zDOsP8&t=367s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "GVJrNHhAXME",
+            "title": "The Real Importance of Crawl Budget for SEO",
+            "channel": "FatRank",
+            "author": "FatRank",
+            "text": (
+                "The more 500 errors you have, the less chance of Google crawling it. "
+                "So they'll decrease your crawl budget."
+            ),
+            "tip": (
+                "The more 500 errors you have, the less chance of Google crawling it. "
+                "So they'll decrease your crawl budget."
+            ),
+            "timestamp": 72,
+            "timestamp_seconds": 72,
+            "timestamp_label": "[00:01:12]",
+            "url": "https://www.youtube.com/watch?v=GVJrNHhAXME&t=72s",
+            "markdown": "[00:01:12](https://www.youtube.com/watch?v=GVJrNHhAXME&t=72s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "eelEuYoflG0",
+            "title": (
+                "How to Leverage Insights from Your Site’s Server Logs | "
+                "5 Hours of Technical SEO"
+            ),
+            "channel": "Semrush Live",
+            "author": "Semrush Live",
+            "text": (
+                "We need to validate the requests from Googlebot are actually Googlebot."
+            ),
+            "tip": (
+                "We need to validate the requests from Googlebot are actually Googlebot."
+            ),
+            "timestamp": 371,
+            "timestamp_seconds": 371,
+            "timestamp_label": "[00:06:11]",
+            "url": "https://www.youtube.com/watch?v=eelEuYoflG0&t=371s",
+            "markdown": "[00:06:11](https://www.youtube.com/watch?v=eelEuYoflG0&t=371s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "nBrto2B9RyE",
+            "title": "Crawl Budget, Explained: What Eats It and How to Get More",
+            "channel": "Misha Manko",
+            "author": "Misha Manko",
+            "text": (
+                "You need to measure everything by yourself. "
+                "You need to trust only your own logs."
+            ),
+            "tip": (
+                "You need to measure everything by yourself. "
+                "You need to trust only your own logs."
+            ),
+            "timestamp": 1720,
+            "timestamp_seconds": 1720,
+            "timestamp_label": "[00:28:40]",
+            "url": "https://www.youtube.com/watch?v=nBrto2B9RyE&t=1720s",
+            "markdown": "[00:28:40](https://www.youtube.com/watch?v=nBrto2B9RyE&t=1720s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "vcLkBQxf9Hs",
+            "title": "Crawled - Currently Not Indexed: How to Fix It (Live Site, Real Data)",
+            "channel": "Misha Manko",
+            "author": "Misha Manko",
+            "text": (
+                "Crawled currently not indexed means that Google crawled your page "
+                "but then chose not to index it for some reason."
+            ),
+            "tip": (
+                "Crawled currently not indexed means that Google crawled your page "
+                "but then chose not to index it for some reason."
+            ),
+            "timestamp": 524,
+            "timestamp_seconds": 524,
+            "timestamp_label": "[00:08:44]",
+            "url": "https://www.youtube.com/watch?v=vcLkBQxf9Hs&t=524s",
+            "markdown": "[00:08:44](https://www.youtube.com/watch?v=vcLkBQxf9Hs&t=524s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "aRuxCdZQ1Yo",
+            "title": "How to Fix Crawl Budget Issues and Improve Your SEO in 2026",
+            "channel": "Pearl Lemon SEO",
+            "author": "Pearl Lemon SEO",
+            "text": (
+                "Not every high JavaScript percentage means there is a technical "
+                "SEO problem. Always diagnose before you optimize."
+            ),
+            "tip": (
+                "Not every high JavaScript percentage means there is a technical "
+                "SEO problem. Always diagnose before you optimize."
+            ),
+            "timestamp": 627,
+            "timestamp_seconds": 627,
+            "timestamp_label": "[00:10:27]",
+            "url": "https://www.youtube.com/watch?v=aRuxCdZQ1Yo&t=627s",
+            "markdown": "[00:10:27](https://www.youtube.com/watch?v=aRuxCdZQ1Yo&t=627s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "NyNv-u7KkFw",
+            "title": "Crawl Budget & Index Bloat: Technical SEO Factors You Can’t Ignore",
+            "channel": "Greenlane Search Marketing, LLC",
+            "author": "Greenlane Search Marketing, LLC",
+            "text": (
+                "A lot of larger sites, especially database-driven sites, "
+                "they tend to be really bloated, but don't discount smaller sites too."
+            ),
+            "tip": (
+                "A lot of larger sites, especially database-driven sites, "
+                "they tend to be really bloated, but don't discount smaller sites too."
+            ),
+            "timestamp": 97,
+            "timestamp_seconds": 97,
+            "timestamp_label": "[00:01:37]",
+            "url": "https://www.youtube.com/watch?v=NyNv-u7KkFw&t=97s",
+            "markdown": "[00:01:37](https://www.youtube.com/watch?v=NyNv-u7KkFw&t=97s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q8 corpus.",
         },
     ],
 }

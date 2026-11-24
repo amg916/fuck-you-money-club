@@ -9,49 +9,49 @@
       "EMPIRE"
     ],
     "deck": [
-      "OWN THE DATASET. CAPTURE SERP & GEO.",
-      "COMPOUND MEDIA EQUITY."
+      "BUILD LOCAL LEAD ASSETS, TOPICAL NETWORKS & AI CONTENT WORKFLOWS",
+      "TEST LINKS, USER SIGNALS & AI SEARCH VISIBILITY AGAINST BUSINESS RESULTS"
     ],
-    "lead": "Programmatic Utility Hubs, Topical-Continuity Domain Rebuilds, Multi-Engine GEO & Scaling a $900k/yr 4-Person Search Portfolio",
-    "summary": "Build resilient search and AI-citation portfolios backed by proprietary calculators, clean link equity, and diversified ad/lead/affiliate yield.",
+    "lead": "Explore practitioner workflows for Rank & Rent, programmatic and AI SEO, CTR and user-signal tests, parasite SEO and expired domains, backlinks, and AI search visibility—alongside their measurement limits and operating costs.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube SEO practitioner testimonies with timestamped inline attribution. They connect keyword selection, site architecture, content production, authority building, visibility testing, technical diagnosis, and monetization while distinguishing reported outcomes from repeatable evidence.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "Rank & Rent, Real-Estate SEO & Local GBP",
+      "Keyword Research, Clustering & Topical Opportunity",
+      "Semantic Authority, Site Architecture & Internal Links",
+      "Programmatic SEO & AI Content Workflows",
+      "Backlinks, PBN-Style Portfolios & Digital PR",
+      "Parasite SEO & Expired-Domain Strategies",
+      "CTR Manipulation, IP Clicks, Mobile/Residential Proxies & User-Signal Testing",
+      "Technical Indexing, Crawl Budgets & Log Diagnostics",
+      "Core Updates, Traffic-Drop Diagnosis & Recovery",
+      "AI Overviews, LLM Search & GEO Visibility",
+      "Display-Ad Monetization, RPM & Affiliate Alternatives",
+      "Agency, SaaS, Directory & Website-Investment Models"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Mine high-intent deal triggers"
+        "QUALIFY",
+        "Start with buyer, seller, or purchase intent; inspect actual search results and exact-query targeting rather than trusting difficulty scores alone."
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "CLUSTER",
+        "Group related queries into page opportunities, compare ranking coverage with published coverage, and prioritize contested topical gaps."
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "ARCHITECT",
+        "Organize market pages, categories, and contextual content networks; plan publication order and connect detailed pages through relevant internal links."
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "BUILD",
+        "Develop local lead-generation assets and programmatic or AI content workflows, alongside the corpus's backlink, digital PR, parasite SEO, and expired-domain strategies."
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "TEST",
+        "Evaluate CTR and user-signal claims alongside local and AI search visibility; account for reporting conditions, ongoing costs, and reversals rather than equating appearances with clicks."
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "DIAGNOSE & MONETIZE",
+        "Investigate indexing, crawl behavior, and traffic drops; assess rental, commission, advertising, affiliate, agency, SaaS, directory, and website-investment models against business results."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "BUILDING AN SEO EMPIRE",
-  "subtitle": "The Complete Playbook for Building an SEO Empire: $80,000–$900,000 USD Annually, Starting with a 1 FT + 3 C (4 People) Publishing Pod",
+  "subtitle": "Building an SEO Empire Through CTR and Click Signals, Rank & Rent, Parasite SEO, Programmatic Pages, Expired Domains, Backlinks, and AI Search/GEO",
   "chapter_count": 12,
-  "total_word_count": 75099,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 63641,
+  "expert_youtube_link_count": 192,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:00Z"
+  "updated_at": "2026-11-24T00:52:01Z"
 }

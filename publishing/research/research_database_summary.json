@@ -1,6 +1,6 @@
 {
-  "abridged_video_count": 8408,
-  "raw_video_count": 8408,
+  "abridged_video_count": 8422,
+  "raw_video_count": 8422,
   "summary": {
     "type": "dict",
     "keys": [
@@ -22,11 +22,11 @@
       "coverage": 6
     },
     "values": {
-      "generated_at": "2026-11-23T22:44:42+00:00",
+      "generated_at": "2026-11-24T00:52:01+00:00",
       "schema_version": "1.0"
     }
   },
-  "generated_at": "2026-11-23T22:44:42Z",
+  "generated_at": "2026-11-24T00:52:01Z",
   "counts": {
     "topics": 8
   },
@@ -34,9 +34,9 @@
     {
       "topic_id": "business_model_and_economics",
       "title": "Business Model, Contingency Economics & Deal Scale",
-      "video_count": 6837,
-      "tip_count": 13631,
-      "channel_count": 4304,
+      "video_count": 6840,
+      "tip_count": 13639,
+      "channel_count": 4306,
       "top_sources": [
         {
           "video_id": "LKEn47f67vQ",
@@ -235,8 +235,8 @@
         "LinkedIn",
         "Excel",
         "CSV",
-        "Ancestry",
         "Bing",
+        "Ancestry",
         "https://paceapproves.com/freefb-yt",
         "FamilySearch",
         "https://probatemastery.com",
@@ -275,9 +275,9 @@
     {
       "topic_id": "probate_and_docket_sourcing",
       "title": "County Probate Dockets, Intestate Filings & Estate Leads",
-      "video_count": 6525,
-      "tip_count": 12974,
-      "channel_count": 4043,
+      "video_count": 6538,
+      "tip_count": 12982,
+      "channel_count": 4051,
       "top_sources": [
         {
           "video_id": "Lt0e4PdSMmo",
@@ -516,9 +516,9 @@
     {
       "topic_id": "unclaimed_property_and_escheat",
       "title": "State Unclaimed Property, Escheated Funds & Treasury Claims",
-      "video_count": 1740,
+      "video_count": 1743,
       "tip_count": 2823,
-      "channel_count": 1239,
+      "channel_count": 1242,
       "top_sources": [
         {
           "video_id": "D-PMjgNe-7s",
@@ -689,11 +689,11 @@
         "Claims Act",
         "Form uh",
         "form as",
+        "form it",
         "form on",
         "form we",
         "form where",
         "form but",
-        "form it",
         "form if",
         "form this",
         "Surprises Act",
@@ -732,9 +732,9 @@
         "https://linkedin.com/Ringba",
         "https://twitter.com/Ringba",
         "https://www.unclaimedceo.com/freemasterclass",
+        "Bing",
         "https://www.unclaimedceo.com/digitalcourse",
         "https://www.unclaimedceo.com/get-my-free-guide",
-        "Bing",
         "https://facebook.com/RingbaCallTracking",
         "Regrid",
         "https://tinyurl.com/unclaimedmentor",
@@ -757,9 +757,9 @@
     {
       "topic_id": "genealogy_and_heirship_proof",
       "title": "Forensic Genealogy, Per-Stirpes Kinship & Proof of Heirship",
-      "video_count": 6734,
-      "tip_count": 11422,
-      "channel_count": 4194,
+      "video_count": 6746,
+      "tip_count": 11383,
+      "channel_count": 4198,
       "top_sources": [
         {
           "video_id": "7M3XZfN7814",
@@ -998,9 +998,9 @@
     {
       "topic_id": "skip_tracing_and_outreach",
       "title": "Skip Tracing, Ethical Heir Contact & Trust Building",
-      "video_count": 4240,
-      "tip_count": 1721,
-      "channel_count": 2639,
+      "video_count": 4254,
+      "tip_count": 1715,
+      "channel_count": 2645,
       "top_sources": [
         {
           "video_id": "DgzklijTLzE",
@@ -1239,9 +1239,9 @@
     {
       "topic_id": "contracts_and_compensation",
       "title": "Fee Agreements, Assignments of Interest & Escrow Disbursement",
-      "video_count": 6167,
-      "tip_count": 10177,
-      "channel_count": 3814,
+      "video_count": 6187,
+      "tip_count": 10267,
+      "channel_count": 3825,
       "top_sources": [
         {
           "video_id": "VBvaq5etzV4",
@@ -1397,8 +1397,8 @@
         "form and",
         "form that",
         "form for",
-        "form to",
         "Form is",
+        "form to",
         "form the",
         "form or",
         "form you",
@@ -1480,9 +1480,9 @@
     {
       "topic_id": "statutory_caps_and_licensing",
       "title": "State Fee Caps, Waiting Periods, PI Licensing & UPL Rules",
-      "video_count": 7277,
-      "tip_count": 7408,
-      "channel_count": 4467,
+      "video_count": 7287,
+      "tip_count": 7416,
+      "channel_count": 4471,
       "top_sources": [
         {
           "video_id": "ttoT3V6duzU",
@@ -1638,8 +1638,8 @@
         "form and",
         "form that",
         "form for",
-        "form to",
         "form is",
+        "form to",
         "form the",
         "form or",
         "form you",
@@ -1721,9 +1721,9 @@
     {
       "topic_id": "automation_and_small_team_ops",
       "title": "Docket Automation, AI Abstracting & Small-Team Operations",
-      "video_count": 5631,
-      "tip_count": 16083,
-      "channel_count": 3642,
+      "video_count": 5646,
+      "tip_count": 16172,
+      "channel_count": 3651,
       "top_sources": [
         {
           "video_id": "zqtx1Soeq5E",
@@ -1895,8 +1895,8 @@
         "form as",
         "Claims Act",
         "HIPAA",
-        "Surprises Act",
         "form it",
+        "Surprises Act",
         "court order",
         "Form uh",
         "form um",
@@ -1968,9 +1968,9 @@
       "headline": "Heir location is paid on contingency, never on up-front fees.",
       "summary": "Across the corpus, operators converge on a pure contingency model: the heir pays nothing out of pocket, the locator advances all research cost, and the fee is a negotiated percentage released only when the estate or state agency actually disburses funds. Charging an heir an advance fee is treated as the single clearest marker of a predatory or unlicensed operator.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 4304,
-      "video_count": 6837,
-      "corroborating_tip_count": 13631,
+      "channel_count": 4306,
+      "video_count": 6840,
+      "corroborating_tip_count": 13639,
       "supporting_links": [
         {
           "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
@@ -2018,9 +2018,9 @@
       "headline": "Fresh county probate and intestate dockets outperform purchased lead lists.",
       "summary": "Practitioners consistently build pipeline from newly filed probate and administration matters pulled directly from county clerk portals rather than resold lists. Filings naming an administrator but no located heirs, and estates sitting open past the local notice period, are the recurring high-value signal.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 4043,
-      "video_count": 6525,
-      "corroborating_tip_count": 12974,
+      "channel_count": 4051,
+      "video_count": 6538,
+      "corroborating_tip_count": 12982,
       "supporting_links": [
         {
           "video_title": "Before Your Next Land Deal: 7 Things to Know - REWBCON 2022 with Seth Williams",
@@ -2068,8 +2068,8 @@
       "headline": "State unclaimed-property and escheat databases supply the repeatable volume.",
       "summary": "Every state treasury or controller maintains a searchable unclaimed-property register, and the consensus workflow is to cross-reference deceased owners there against probate filings. Volume comes from systematic register sweeps; size comes from the rarer escheated estate, surplus-funds and safe-deposit categories.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 1239,
-      "video_count": 1740,
+      "channel_count": 1242,
+      "video_count": 1743,
       "corroborating_tip_count": 2823,
       "supporting_links": [
         {
@@ -2118,9 +2118,9 @@
       "headline": "The deliverable is a document-backed kinship chain, not a name on a list.",
       "summary": "Operators agree that claims succeed or fail on the evidentiary chain: each generational link supported by vital records, each branch mapped per stirpes, and every gap closed before contact. Tree hints from consumer genealogy sites are treated as leads to verify, never as proof to submit.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 4194,
-      "video_count": 6734,
-      "corroborating_tip_count": 11422,
+      "channel_count": 4198,
+      "video_count": 6746,
+      "corroborating_tip_count": 11383,
       "supporting_links": [
         {
           "video_title": "Understanding Aircraft Brokerage: Standards, Risk, and Trust",
@@ -2168,9 +2168,9 @@
       "headline": "Verify identity before contact, then lead with restraint, not the dollar figure.",
       "summary": "The recurring outreach pattern is: skip trace to a confirmed current address and phone, open by letter or a short calm call, state that funds may be owed to the family without naming an amount, and give the heir a way to independently verify the operator. Pressure tactics and inflated figures are consistently reported as the fastest way to lose a signed file.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 2639,
-      "video_count": 4240,
-      "corroborating_tip_count": 1721,
+      "channel_count": 2645,
+      "video_count": 4254,
+      "corroborating_tip_count": 1715,
       "supporting_links": [
         {
           "video_title": "The Negotiation Script I Use When Subleasing Airbnb's | Jorge Contreras",
@@ -2218,9 +2218,9 @@
       "headline": "No work proceeds without a signed fee agreement and third-party escrow.",
       "summary": "Consensus practice is a plain-language, notarized or e-signed agreement that names the estate, states the percentage, discloses the heir's right to claim independently, and routes funds through attorney trust or licensed escrow so the locator never holds the heir's money directly.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 3814,
-      "video_count": 6167,
-      "corroborating_tip_count": 10177,
+      "channel_count": 3825,
+      "video_count": 6187,
+      "corroborating_tip_count": 10267,
       "supporting_links": [
         {
           "video_title": "Topical Authority With Koray Tuğberk GÜBÜR",
@@ -2268,9 +2268,9 @@
       "headline": "Fee caps, waiting periods and licensing are decided per state, before the first call.",
       "summary": "Operators repeatedly stress that the governing rules — percentage caps on unclaimed-property recoveries, mandatory waiting periods after escheat or sale, private-investigator licensing triggers, and the line against practicing law — vary by jurisdiction and must be read in the local statute for every file rather than generalized from another state.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 4467,
-      "video_count": 7277,
-      "corroborating_tip_count": 7408,
+      "channel_count": 4471,
+      "video_count": 7287,
+      "corroborating_tip_count": 7416,
       "supporting_links": [
         {
           "video_title": "Insurance Lawyer vs Public Adjuster: Who Really Protects Homeowners?",
@@ -2318,9 +2318,9 @@
       "headline": "Automated docket monitoring plus AI abstracting lets one or two people run real volume.",
       "summary": "The operational consensus is to automate the repetitive layer — scheduled docket and register pulls, structured intake into a sheet or CRM, AI-assisted abstracting of filings — while keeping genealogy judgment, heir contact and contract execution human. That split is what keeps a two-person shop competitive against staffed firms.",
       "epistemic_status": "Practitioner Consensus",
-      "channel_count": 3642,
-      "video_count": 5631,
-      "corroborating_tip_count": 16083,
+      "channel_count": 3651,
+      "video_count": 5646,
+      "corroborating_tip_count": 16172,
       "supporting_links": [
         {
           "video_title": "How To Find Comps For Land",
@@ -2746,8 +2746,8 @@
         "asset_id": "youtube_thumbnails",
         "asset": "https://i.ytimg.com/vi/<video_id>/*.jpg",
         "asset_type": "youtube_thumbnail_image",
-        "source": "YouTube CDN thumbnails for the 8408 corpus videos",
-        "instance_count": 8408,
+        "source": "YouTube CDN thumbnails for the 8422 corpus videos",
+        "instance_count": 8422,
         "instances": [
           {
             "video_id": "9Q4qYeK5DTg",
@@ -12186,13 +12186,6 @@
             "source_url": "https://www.youtube.com/watch?v=O1As2zxy0es"
           },
           {
-            "video_id": "3G4gPPFTYrM",
-            "title": "How to Create an SEO Portfolio Website Using AI | No Coding Required",
-            "author": "Unique Web School",
-            "thumbnail_url": "https://i.ytimg.com/vi/3G4gPPFTYrM/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=3G4gPPFTYrM"
-          },
-          {
             "video_id": "FO1ASxHYnhE",
             "title": "How to Create a Programmatic SEO Website for Real Estate Using WordPress",
             "author": "Hamida - Programmatic SEO Agency",
@@ -12254,13 +12247,6 @@
             "author": "Ippei - Rank and Rent SEO",
             "thumbnail_url": "https://i.ytimg.com/vi/uJ0bhk9MeDE/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=uJ0bhk9MeDE"
-          },
-          {
-            "video_id": "NIRbajvpihU",
-            "title": "We’ve Just Completed This Real Estate Agent Portfolio Website for a Client | Real Estate Agent Site",
-            "author": "24siteshop – Website Design Agency",
-            "thumbnail_url": "https://i.ytimg.com/vi/NIRbajvpihU/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=NIRbajvpihU"
           },
           {
             "video_id": "yTNs1XDHQIk",
@@ -12585,20 +12571,6 @@
             "source_url": "https://www.youtube.com/watch?v=7eYiiLVxrOE"
           },
           {
-            "video_id": "l0X0MgV5EP4",
-            "title": "Google November 2026 Core Update Officially Released | SEO Ranking Update | SarojTech",
-            "author": "SarojTech",
-            "thumbnail_url": "https://i.ytimg.com/vi/l0X0MgV5EP4/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=l0X0MgV5EP4"
-          },
-          {
-            "video_id": "ThJgF8OZbDk",
-            "title": "Google November Core Update 2026: How to Improve Rankings & Recover Traffic",
-            "author": "Mayank Sahu SEO",
-            "thumbnail_url": "https://i.ytimg.com/vi/ThJgF8OZbDk/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=ThJgF8OZbDk"
-          },
-          {
             "video_id": "zS5xebRUE5Y",
             "title": "GOOGLE UPDATE Is Here (Nov 2026 Core Update) & AI Is Changing SERPs",
             "author": "Kate Smoothy | SEO Specialist",
@@ -12921,11 +12893,11 @@
             "source_url": "https://www.youtube.com/watch?v=C5ddo63kHHI"
           },
           {
-            "video_id": "YK2cFZ61cS8",
-            "title": "How To Use HARO For Free Backlinks",
-            "author": "The School of Digital Marketing",
-            "thumbnail_url": "https://i.ytimg.com/vi/YK2cFZ61cS8/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=YK2cFZ61cS8"
+            "video_id": "k5nS2OGLtYU",
+            "title": "How to Measure & Prove Link Building ROI: Forecast SEO Link Building Value with Link Launch",
+            "author": "Citation Labs Tools & Services",
+            "thumbnail_url": "https://i.ytimg.com/vi/k5nS2OGLtYU/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=k5nS2OGLtYU"
           },
           {
             "video_id": "3vuTHqRjxvQ",
@@ -12940,13 +12912,6 @@
             "author": "Julian Goldie SEO",
             "thumbnail_url": "https://i.ytimg.com/vi/m8uR1-8CGkg/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=m8uR1-8CGkg"
-          },
-          {
-            "video_id": "CT-KwgPNkHI",
-            "title": "How to Create HARO - Help a Reporter Out Backlink | SEO Course | #68",
-            "author": "Umar Tazkeer",
-            "thumbnail_url": "https://i.ytimg.com/vi/CT-KwgPNkHI/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=CT-KwgPNkHI"
           },
           {
             "video_id": "w5fG8eKka5Y",
@@ -13075,20 +13040,6 @@
             "source_url": "https://www.youtube.com/watch?v=CXPwDszPK7g"
           },
           {
-            "video_id": "uWNsW77fwSs",
-            "title": "Small Calculator to do the SEO Traffic Forecasting - Umar Tazkeer",
-            "author": "Umar Tazkeer",
-            "thumbnail_url": "https://i.ytimg.com/vi/uWNsW77fwSs/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=uWNsW77fwSs"
-          },
-          {
-            "video_id": "FU2y92rBoWo",
-            "title": "1.5 Million Traffic Without Backlinks? 😳 | Calculator Site Case Study",
-            "author": "Web Rice Studio",
-            "thumbnail_url": "https://i.ytimg.com/vi/FU2y92rBoWo/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=FU2y92rBoWo"
-          },
-          {
             "video_id": "7sg8dljI1yQ",
             "title": "How to Choose Quality Backlinks for SEO: DR, Traffic, Relevance & Price",
             "author": "Collaborator",
@@ -13180,13 +13131,6 @@
             "source_url": "https://www.youtube.com/watch?v=Q0qBq0V4xC4"
           },
           {
-            "video_id": "dRCq6yZqqKw",
-            "title": "Ahrefs & Semrush Group Buy SEO Tools (2026) | Instant Access | 100% Private & Secure",
-            "author": "OG Shubh",
-            "thumbnail_url": "https://i.ytimg.com/vi/dRCq6yZqqKw/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=dRCq6yZqqKw"
-          },
-          {
             "video_id": "D7f-Pid5IhM",
             "title": "Semrush For Finding Low CPC Keywords",
             "author": "Travis Wilkie",
@@ -13206,13 +13150,6 @@
             "author": "Income stream surfers",
             "thumbnail_url": "https://i.ytimg.com/vi/C6HdlbqGuF4/hqdefault.jpg",
             "source_url": "https://www.youtube.com/watch?v=C6HdlbqGuF4"
-          },
-          {
-            "video_id": "Xo8oCdoM32I",
-            "title": "Unlock Ahrefs & Semrush Premium | Budget-Friendly Method 🔥 SemrushToolz",
-            "author": "Semrush Toolz",
-            "thumbnail_url": "https://i.ytimg.com/vi/Xo8oCdoM32I/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=Xo8oCdoM32I"
           },
           {
             "video_id": "CWvcb0rGN0g",
@@ -13320,13 +13257,6 @@
             "source_url": "https://www.youtube.com/watch?v=YN8hU1e3d-0"
           },
           {
-            "video_id": "zq2twCJ2wuA",
-            "title": "Crawl Budget Optimization Explained (Technical SEO Masterclass)",
-            "author": "Learn From Top Rated Freelancer",
-            "thumbnail_url": "https://i.ytimg.com/vi/zq2twCJ2wuA/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=zq2twCJ2wuA"
-          },
-          {
             "video_id": "x_GoMrl6_u0",
             "title": "Crawl Budget and the Crawl Stats report - Google Search Console Training",
             "author": "Google Search Central",
@@ -13418,18 +13348,186 @@
             "source_url": "https://www.youtube.com/watch?v=aRuxCdZQ1Yo"
           },
           {
-            "video_id": "UXHpsKivCGI",
-            "title": "What is Crawl Budget in SEO? | How Google Crawls and Indexes Your Website",
-            "author": "NSIM AI Integrated Digital Marketing Institute",
-            "thumbnail_url": "https://i.ytimg.com/vi/UXHpsKivCGI/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=UXHpsKivCGI"
+            "video_id": "NyNv-u7KkFw",
+            "title": "Crawl Budget & Index Bloat: Technical SEO Factors You Can’t Ignore",
+            "author": "Greenlane Search Marketing, LLC",
+            "thumbnail_url": "https://i.ytimg.com/vi/NyNv-u7KkFw/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=NyNv-u7KkFw"
           },
           {
-            "video_id": "am4g0hXAA8Q",
-            "title": "Crawl Budget: SEO Mythbusting",
-            "author": "Google Search Central",
-            "thumbnail_url": "https://i.ytimg.com/vi/am4g0hXAA8Q/hqdefault.jpg",
-            "source_url": "https://www.youtube.com/watch?v=am4g0hXAA8Q"
+            "video_id": "qEmm1oiXm5U",
+            "title": "CTR Manipulation with Agency Assassin Click Through Rate Manipulation Software 🔥 🤯",
+            "author": "William Jones",
+            "thumbnail_url": "https://i.ytimg.com/vi/qEmm1oiXm5U/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=qEmm1oiXm5U"
+          },
+          {
+            "video_id": "5WWPM9wLNlY",
+            "title": "CTR Manipulation Map Ranking Secrets - How It Works",
+            "author": "Map Ranking",
+            "thumbnail_url": "https://i.ytimg.com/vi/5WWPM9wLNlY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=5WWPM9wLNlY"
+          },
+          {
+            "video_id": "a_7c98JU32w",
+            "title": "CTR Manipulation for GMB - White Label Local SEO for Agencies",
+            "author": "Map Ranking",
+            "thumbnail_url": "https://i.ytimg.com/vi/a_7c98JU32w/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=a_7c98JU32w"
+          },
+          {
+            "video_id": "-uY7TAQEapM",
+            "title": "CTR Manipulation for SEO - How to Rank on Google Maps [29",
+            "author": "Vasco's SEO Tips",
+            "thumbnail_url": "https://i.ytimg.com/vi/-uY7TAQEapM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=-uY7TAQEapM"
+          },
+          {
+            "video_id": "vBp6IcY8zg0",
+            "title": "The CTR Trick That Makes Google Rank Your Site (Rank & Rent)",
+            "author": "Isaac Ranks — Rank & Rent",
+            "thumbnail_url": "https://i.ytimg.com/vi/vBp6IcY8zg0/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=vBp6IcY8zg0"
+          },
+          {
+            "video_id": "WA8pctaxk30",
+            "title": "CTR Manipulation Course: #1 SEO Rankings by Using Click Through Rate Manipulation",
+            "author": "William Jones",
+            "thumbnail_url": "https://i.ytimg.com/vi/WA8pctaxk30/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=WA8pctaxk30"
+          },
+          {
+            "video_id": "0qIqZKefEc8",
+            "title": "We Tested CTR Manipulation - Here’s What Happened | Leo Poitevin",
+            "author": "Odys Podcast: The High Stakes Growth Show",
+            "thumbnail_url": "https://i.ytimg.com/vi/0qIqZKefEc8/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=0qIqZKefEc8"
+          },
+          {
+            "video_id": "krFtrxJsFok",
+            "title": "Local SEO Hack: Does CTR Manipulation Work Long-Term?",
+            "author": "Sterling Sky Inc",
+            "thumbnail_url": "https://i.ytimg.com/vi/krFtrxJsFok/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=krFtrxJsFok"
+          },
+          {
+            "video_id": "VTorygEcF7E",
+            "title": "Does CTR Manipulation Still Work in Local SEO?",
+            "author": "Semantic Mastery",
+            "thumbnail_url": "https://i.ytimg.com/vi/VTorygEcF7E/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=VTorygEcF7E"
+          },
+          {
+            "video_id": "DYkDCiVseqM",
+            "title": "CTR Manipulation: Rank 1 With Google's Secret Algo Revealed",
+            "author": "SEO Jesus",
+            "thumbnail_url": "https://i.ytimg.com/vi/DYkDCiVseqM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=DYkDCiVseqM"
+          },
+          {
+            "video_id": "mg7C81Ti3DY",
+            "title": "Website CTR Manipulation: How To Do CTR Manipulation SEO",
+            "author": "Chris Palmer SEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/mg7C81Ti3DY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=mg7C81Ti3DY"
+          },
+          {
+            "video_id": "9RAmTcJcaDE",
+            "title": "New Black Hat SEO Strategy: Chrome Signals Manipulation (Case Study). Rank Within 24H!",
+            "author": "Niels Castermans SEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/9RAmTcJcaDE/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=9RAmTcJcaDE"
+          },
+          {
+            "video_id": "rPlpnhqyxtY",
+            "title": "Click Through Rate Manipulation - CTR SEO:759",
+            "author": "Grey Hat SEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/rPlpnhqyxtY/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=rPlpnhqyxtY"
+          },
+          {
+            "video_id": "uH-42eKssR4",
+            "title": "CTR Manipulation The SECRET to SKYROCKETING Google Maps Rankings",
+            "author": "Map Ranking",
+            "thumbnail_url": "https://i.ytimg.com/vi/uH-42eKssR4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=uH-42eKssR4"
+          },
+          {
+            "video_id": "L-FcnuQBAjc",
+            "title": "CTR Manipulation Explained: Does CTR Manipulation Still Work for SEO in 2026?",
+            "author": "Idris Ya'u",
+            "thumbnail_url": "https://i.ytimg.com/vi/L-FcnuQBAjc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=L-FcnuQBAjc"
+          },
+          {
+            "video_id": "Sz4DmVhOpxo",
+            "title": "Black Hat Local SEO: How They Rank on Google Maps (2026)",
+            "author": "SEO Mentor",
+            "thumbnail_url": "https://i.ytimg.com/vi/Sz4DmVhOpxo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=Sz4DmVhOpxo"
+          },
+          {
+            "video_id": "CqByHRKo8mo",
+            "title": "Local SEO: Does CTR Manipulation Work To Rank GBPs?",
+            "author": "The Blueprint Training",
+            "thumbnail_url": "https://i.ytimg.com/vi/CqByHRKo8mo/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=CqByHRKo8mo"
+          },
+          {
+            "video_id": "xK_ECvcYJ9M",
+            "title": "Using CTR (Click Through Rate) Manipulation to Rank Higher in Local SEO | Map Pack",
+            "author": "Saravanan Ganesh",
+            "thumbnail_url": "https://i.ytimg.com/vi/xK_ECvcYJ9M/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=xK_ECvcYJ9M"
+          },
+          {
+            "video_id": "YwzyoEqNVN4",
+            "title": "CTR Manipulation For Local SEO: Rank Your GBP #1 (Using Awesome Traffic Bot)",
+            "author": "Yash Singh",
+            "thumbnail_url": "https://i.ytimg.com/vi/YwzyoEqNVN4/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YwzyoEqNVN4"
+          },
+          {
+            "video_id": "8-9kfC7btJM",
+            "title": "Google Maps CTR Manipulation - Will It Work For You",
+            "author": "Osborne Digital Marketing",
+            "thumbnail_url": "https://i.ytimg.com/vi/8-9kfC7btJM/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=8-9kfC7btJM"
+          },
+          {
+            "video_id": "YGk2zHgGoss",
+            "title": "Google Maps CTR Manipulation Secrets That Rank Maps #1",
+            "author": "Osborne Digital Marketing",
+            "thumbnail_url": "https://i.ytimg.com/vi/YGk2zHgGoss/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=YGk2zHgGoss"
+          },
+          {
+            "video_id": "fSK1KM3C6uQ",
+            "title": "CTR Manipulation Keyword Research For Google Maps SEO",
+            "author": "Chris Palmer SEO",
+            "thumbnail_url": "https://i.ytimg.com/vi/fSK1KM3C6uQ/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=fSK1KM3C6uQ"
+          },
+          {
+            "video_id": "nW4AstHjEtc",
+            "title": "How to Rank #1 on Google Maps (Core 30 Method)",
+            "author": "Caleb Ulku",
+            "thumbnail_url": "https://i.ytimg.com/vi/nW4AstHjEtc/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=nW4AstHjEtc"
+          },
+          {
+            "video_id": "slTweyz4OSs",
+            "title": "Google Maps SCAM ALERT! The dark truth about Click-Through Rate Manipulation.",
+            "author": "Map Labs",
+            "thumbnail_url": "https://i.ytimg.com/vi/slTweyz4OSs/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=slTweyz4OSs"
+          },
+          {
+            "video_id": "C-Nua5kSxAk",
+            "title": "Unleash The Power Of P2P Mobile Proxies For Your SERP Strategy",
+            "author": "Anthony Hayes",
+            "thumbnail_url": "https://i.ytimg.com/vi/C-Nua5kSxAk/hqdefault.jpg",
+            "source_url": "https://www.youtube.com/watch?v=C-Nua5kSxAk"
           },
           {
             "video_id": "t49Ab42PNxE",
@@ -61616,7 +61714,7 @@
         "asset_id": "verbatim_transcript_quotes",
         "asset": "data/transcripts/*.json -> segments[].text",
         "asset_type": "verbatim_transcript_passage",
-        "source": "Spoken content of 8408 third-party videos (76239 captured tips)",
+        "source": "Spoken content of 8422 third-party videos (76397 captured tips)",
         "research_reference_only": true,
         "commercial_republish_allowed": false,
         "commercial_use_allowed": false,
@@ -61632,38 +61730,38 @@
     ]
   },
   "corpus_metrics": {
-    "video_count": 8408,
-    "channel_count": 5083,
-    "total_words": 11831963,
-    "total_hours": 2356.2,
-    "total_pro_tips": 76239,
-    "unique_statutes_and_forms": 2763,
-    "unique_tools_and_portals": 20266
+    "video_count": 8422,
+    "channel_count": 5087,
+    "total_words": 11861277,
+    "total_hours": 2360.64,
+    "total_pro_tips": 76397,
+    "unique_statutes_and_forms": 2768,
+    "unique_tools_and_portals": 20265
   },
   "coverage": {
-    "videos_classified": 8408,
-    "videos_with_multiple_topics": 8404,
-    "tips_classified": 76239,
-    "raw_transcripts_joined": 8408,
+    "videos_classified": 8422,
+    "videos_with_multiple_topics": 8420,
+    "tips_classified": 76397,
+    "raw_transcripts_joined": 8422,
     "topic_video_counts": {
-      "business_model_and_economics": 6837,
-      "probate_and_docket_sourcing": 6525,
-      "unclaimed_property_and_escheat": 1740,
-      "genealogy_and_heirship_proof": 6734,
-      "skip_tracing_and_outreach": 4240,
-      "contracts_and_compensation": 6167,
-      "statutory_caps_and_licensing": 7277,
-      "automation_and_small_team_ops": 5631
+      "business_model_and_economics": 6840,
+      "probate_and_docket_sourcing": 6538,
+      "unclaimed_property_and_escheat": 1743,
+      "genealogy_and_heirship_proof": 6746,
+      "skip_tracing_and_outreach": 4254,
+      "contracts_and_compensation": 6187,
+      "statutory_caps_and_licensing": 7287,
+      "automation_and_small_team_ops": 5646
     },
     "topic_tip_counts": {
-      "business_model_and_economics": 13631,
-      "probate_and_docket_sourcing": 12974,
+      "business_model_and_economics": 13639,
+      "probate_and_docket_sourcing": 12982,
       "unclaimed_property_and_escheat": 2823,
-      "genealogy_and_heirship_proof": 11422,
-      "skip_tracing_and_outreach": 1721,
-      "contracts_and_compensation": 10177,
-      "statutory_caps_and_licensing": 7408,
-      "automation_and_small_team_ops": 16083
+      "genealogy_and_heirship_proof": 11383,
+      "skip_tracing_and_outreach": 1715,
+      "contracts_and_compensation": 10267,
+      "statutory_caps_and_licensing": 7416,
+      "automation_and_small_team_ops": 16172
     }
   },
   "schema_version": "1.0",

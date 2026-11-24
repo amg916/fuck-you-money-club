@@ -1,724 +1,735 @@
 from __future__ import annotations
 
-VOLUME_010_SUBTITLE = (
-    "The Complete Playbook for Building an SEO Empire: "
-    "$80,000–$900,000 USD Annually, Starting with a "
-    "1 FT + 3 C (4 People) Publishing Pod"
-)
-
-VOLUME_010_POSITIONING_ALTERNATIVES = [
-    {
-        "title": "The Search Portfolio Operating System",
-        "subtitle": (
-            "Build a multi-site publishing portfolio with repeatable technical "
-            "audits, content refresh queues, and earned-revenue reporting."
-        ),
-        "audience": (
-            "Publisher-operators starting with one full-time employee and three "
-            "contractors who need site-level economics rather than traffic vanity metrics."
-        ),
-        "research_basis": (
-            "Copyright ownership and endorsement disclosures create concrete "
-            "requirements for repeatable publishing operations. Track image licenses, "
-            "contributor rights, affiliate relationships, and disclosure placement "
-            "alongside each content record. These sources support operating "
-            "requirements, not the modeled revenue or audience demand."
-        ),
-        "sources": [
-            "https://www.law.cornell.edu/uscode/text/17/106",
-            "https://www.law.cornell.edu/uscode/text/17/204",
-            "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5",
-        ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
-    },
-    {
-        "title": "The Evidence-Led Authority Publisher",
-        "subtitle": (
-            "Pair topical authority and selective programmatic SEO with original "
-            "evidence, attributable GEO citations, and transparent monetization."
-        ),
-        "audience": (
-            "Editors and technical founders building useful reference libraries "
-            "instead of interchangeable pages assembled around keyword permutations."
-        ),
-        "research_basis": (
-            "17 U.S.C. 107 makes fair-use analysis fact-specific; it does not "
-            "provide blanket permission to reproduce competing publications. "
-            "15 U.S.C. 45 and 16 CFR 255.1 support truthful commercial claims "
-            "and endorsements. Apply these requirements to comparison pages, "
-            "sponsor copy, quotations, and expert contributions. GEO citation "
-            "capture remains a measured distribution experiment."
-        ),
-        "sources": [
-            "https://www.law.cornell.edu/uscode/text/17/107",
-            "https://www.law.cornell.edu/uscode/text/15/45",
-            "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.1",
-        ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
-    },
-    {
-        "title": "The Transfer-Ready Search Media Portfolio",
-        "subtitle": (
-            "Build auditable content rights, diversified publisher receipts, "
-            "and transferable operating records before pursuing a media exit."
-        ),
-        "audience": (
-            "Small-team portfolio owners preparing acquisition diligence while "
-            "continuing to operate advertising, affiliate, and sponsorship programs."
-        ),
-        "research_basis": (
-            "17 U.S.C. 204 establishes writing requirements for copyright "
-            "ownership transfers, while 17 U.S.C. 201 addresses initial ownership "
-            "and works made for hire. Maintain executed contributor agreements "
-            "and distinguish owned material from licensed material. Advertising "
-            "relationship disclosures remain necessary during ordinary operations; "
-            "asset ownership alone does not establish transferability of platform "
-            "accounts or commercial contracts."
-        ),
-        "sources": [
-            "https://www.law.cornell.edu/uscode/text/17/204",
-            "https://www.law.cornell.edu/uscode/text/17/201",
-            "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5",
-        ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
-    },
+__all__ = [
+    "VOLUME_010_SUBTITLE",
+    "build_volume_010_diagrams_data",
+    "VOLUME_010_POSITIONING_ALTERNATIVES",
 ]
+
+VOLUME_010_SUBTITLE: str = (
+    "Building an SEO Empire Through CTR and Click Signals, Rank & Rent, "
+    "Parasite SEO, Programmatic Pages, Expired Domains, Backlinks, and AI Search/GEO"
+)
 
 
 def build_volume_010_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-search-portfolio-production-loop",
-            "process_flow",
-            "Turn Search Demand into Owned Publishing Assets",
-            "Five operating stages connect useful pages to publisher revenue.",
-            1,
-            "operating_framework",
-            (
-                "The operating sequence covers multi-site search publishing, "
-                "selective programmatic production, and GEO citation tracking. "
-                "Stage numbers express sequence, not revenue forecasts. The "
-                "canonical time to first deal is 3–12 months."
-            ),
-            (
-                "Automate technical audits, refresh queues, and revenue reporting; "
-                "retain human responsibility for evidence, rights, and editorial quality."
-            ),
-            [
-                (
-                    "Map demand",
-                    "Stage 1: select defensible topic clusters",
-                    1.0,
-                    (
-                        "Combine Google Search Console, Ahrefs, and direct SERP "
-                        "inspection to map intent, competing formats, audience "
-                        "needs, and plausible advertising or affiliate demand."
-                    ),
-                ),
-                (
-                    "Design assets",
-                    "Stage 2: establish evidence and page architecture",
-                    2.0,
-                    (
-                        "Specify original research, licensed media, internal links, "
-                        "and differentiated page templates. Reject programmatic "
-                        "variants that add no substantive user value."
-                    ),
-                ),
-                (
-                    "Publish and verify",
-                    "Stage 3: release tested editorial units",
-                    3.0,
-                    (
-                        "Use Screaming Frog and Search Console to inspect status "
-                        "codes, canonicals, rendering, and indexability. Editors "
-                        "verify claims, contributor rights, and commercial disclosures."
-                    ),
-                ),
-                (
-                    "Monetize earned attention",
-                    "Stage 4: connect approved commercial relationships",
-                    4.0,
-                    (
-                        "Record advertising earnings, approved affiliate commissions, "
-                        "and delivered sponsorship revenue. Exclude referred merchant "
-                        "sales, pending commissions, and undelivered sponsor commitments."
-                    ),
-                ),
-                (
-                    "Refresh and package",
-                    "Stage 5: reinvest using auditable asset records",
-                    5.0,
-                    (
-                        "Queue decaying pages in Airtable; reconcile revenue in "
-                        "BigQuery and Looker Studio. Log sampled GEO citations "
-                        "separately from referrals and maintain transfer-ready rights records."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-organic-to-payable-affiliate-cohort",
-            "funnel",
-            "Measure One Cohort through Payable Affiliate Outcomes",
-            "100,000 eligible organic sessions narrow to 530 payable sessions.",
-            6,
-            "illustrative_model",
-            (
-                "Illustrative cohort, not observed performance or an annual "
-                "projection. Every downstream count is a subset of the original "
-                "100,000 sessions, counted once per stage. Use permitted attribution "
-                "records and a stated 60-day reconciliation window. Assume exactly "
-                "one $20 approved commission per payable session."
-            ),
-            (
-                "The cohort earns $10,600 in affiliate revenue: 530 multiplied "
-                "by $20. Merchant order value is excluded. Advertising and "
-                "sponsorship earnings are outside this conversion funnel."
-            ),
-            [
-                (
-                    "Organic entry sessions",
-                    "100,000 sessions establish the original cohort",
-                    100000.0,
-                    (
-                        "Freeze eligible organic landing sessions for the cohort "
-                        "period. Exclude internal traffic and bot traffic; document "
-                        "measurement exclusions instead of treating them as conversions."
-                    ),
-                ),
-                (
-                    "Commercial-content readers",
-                    "40,000 sessions; 40% of entry cohort",
-                    40000.0,
-                    (
-                        "Count sessions reaching at least one relevant comparison "
-                        "or product-selection page. Multiple page views within "
-                        "the same session do not enlarge this stage."
-                    ),
-                ),
-                (
-                    "Affiliate outbound sessions",
-                    "12,000 sessions; 30% of commercial readers",
-                    12000.0,
-                    (
-                        "Count sessions with at least one disclosed affiliate "
-                        "outbound event. Preserve campaign and content identifiers "
-                        "without transmitting unnecessary personal information."
-                    ),
-                ),
-                (
-                    "Attributed purchase sessions",
-                    "600 sessions; 5% of outbound sessions",
-                    600.0,
-                    (
-                        "Match merchant-reported purchase events back to eligible "
-                        "outbound sessions. Deduplicate purchases within each session "
-                        "and retain pending status during returns review."
-                    ),
-                ),
-                (
-                    "Payable purchase sessions",
-                    "530 sessions; 88.33% of purchase sessions",
-                    530.0,
-                    (
-                        "Remove 70 sessions whose purchases were reversed or "
-                        "disallowed. Final conversion is 0.53% of the original "
-                        "cohort; reconcile $10,600 to approved commission statements."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-case-revenue-to-owner-net",
-            "waterfall",
-            "Reconcile $490,000 Gross to $159,250 Owner Net",
-            "Four illustrative cost deductions produce the canonical 32.5% margin.",
-            3,
-            "illustrative_model",
-            (
-                "First and last bars are totals; the four intervening bars are "
-                "negative deductions. Revenue and owner net are canonical; cost "
-                "category allocations are illustrative. Annual costs total $330,750, "
-                "or $27,562.50 monthly. The supplied $2,500–$14,000 monthly opex "
-                "range cannot be an all-in ceiling for this Base case: implied "
-                "annual costs exceed its $240,000 upper annual equivalent by "
-                "$90,750. Resolve that scope difference before budgeting."
-            ),
-            (
-                "$490,000 minus $156,000 minus $84,000 minus $42,000 minus "
-                "$48,750 equals $159,250; $159,250 divided by $490,000 equals "
-                "32.5%. Referred merchant sales never enter publisher gross revenue."
-            ),
-            [
-                (
-                    "Publisher gross revenue",
-                    "$490,000 annual recognized operator revenue",
-                    490000.0,
-                    (
-                        "Illustrative rail allocation is $218,000 advertising, "
-                        "$212,000 approved affiliate commissions, and $60,000 "
-                        "delivered sponsorship revenue; the three components reconcile."
-                    ),
-                ),
-                (
-                    "Full-time labor",
-                    "Subtract $156,000 in modeled annual labor",
-                    -156000.0,
-                    (
-                        "Allocate $156,000 to the single full-time seat in the "
-                        "1 FT + 3 C core pod. Treat this as a modeled loaded "
-                        "labor budget, not a salary survey finding or a separate "
-                        "owner distribution."
-                    ),
-                ),
-                (
-                    "Contracted production",
-                    "Subtract $84,000 in modeled contractor fees",
-                    -84000.0,
-                    (
-                        "The core pod includes three fractional contractor seats, "
-                        "not four. The unchanged $84,000 production envelope covers "
-                        "their purchased capacity and any external vendor/trade "
-                        "sub-crews charged to direct subcontractor/COGS pass-through. "
-                        "External crews are not internal pod headcount; do not "
-                        "add their costs again outside this deduction."
-                    ),
-                ),
-                (
-                    "Publishing infrastructure",
-                    "Subtract $42,000 in modeled infrastructure costs",
-                    -42000.0,
-                    (
-                        "Budget hosting, security maintenance, audit tools, analytics, "
-                        "licensed datasets, and production software. Separate one-time "
-                        "setup purchases from recurring costs to prevent duplication."
-                    ),
-                ),
-                (
-                    "Commercial and administrative costs",
-                    "Subtract $48,750 in modeled remaining expenses",
-                    -48750.0,
-                    (
-                        "Allocate $24,000 to commercial development, $12,000 to "
-                        "bookkeeping and contract administration, and $12,750 to "
-                        "insurance, banking, and other incurred operating expenses."
-                    ),
-                ),
-                (
-                    "Annual owner net profit",
-                    "$159,250 retained after modeled operating costs",
-                    159250.0,
-                    (
-                        "Preserve the canonical Base result. Conservative revenue "
-                        "of $80,000 at 20% yields $16,000; Scaled revenue of "
-                        "$900,000 at 45% yields $405,000."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-subniche-publisher-revenue-yields",
-            "horizontal_bars",
-            "Compare Sub-Niches on Publisher Revenue per 1,000 Sessions",
-            "Equal traffic allocations produce a $49 blended publisher yield.",
-            2,
-            "illustrative_model",
-            (
-                "Illustrative yields, not market benchmarks. Allocate 2,000,000 "
-                "annual sessions to each of five sub-niches: 10,000,000 sessions "
-                "total. All yield components are USD of operator revenue per "
-                "1,000 sessions, after affiliate reversals. Equal traffic weighting "
-                "produces $49 blended yield and $490,000 annual Base revenue."
-            ),
-            (
-                "Across the five equal-traffic segments, advertising contributes "
-                "$218,000, affiliate commissions $212,000, and sponsorships $60,000. "
-                "Yield comparisons require consistent session definitions and periods."
-            ),
-            [
-                (
-                    "Home workshop references",
-                    "$30 earned per 1,000 eligible sessions",
-                    30.0,
-                    (
-                        "$18 advertising plus $10 affiliate commissions plus $2 "
-                        "sponsorship equals $30. At 2,000,000 annual sessions, "
-                        "publisher revenue is $60,000; original photos reduce rights risk."
-                    ),
-                ),
-                (
-                    "Outdoor equipment guides",
-                    "$40 earned per 1,000 eligible sessions",
-                    40.0,
-                    (
-                        "$20 advertising plus $15 affiliate commissions plus $5 "
-                        "sponsorship equals $40. At 2,000,000 annual sessions, "
-                        "publisher revenue is $80,000; monitor seasonal traffic concentration."
-                    ),
-                ),
-                (
-                    "Creative software tutorials",
-                    "$50 earned per 1,000 eligible sessions",
-                    50.0,
-                    (
-                        "$22 advertising plus $23 affiliate commissions plus $5 "
-                        "sponsorship equals $50. At 2,000,000 annual sessions, "
-                        "publisher revenue is $100,000; refresh screenshots after interface changes."
-                    ),
-                ),
-                (
-                    "Small-business workflow guides",
-                    "$60 earned per 1,000 eligible sessions",
-                    60.0,
-                    (
-                        "$24 advertising plus $28 affiliate commissions plus $8 "
-                        "sponsorship equals $60. At 2,000,000 annual sessions, "
-                        "publisher revenue is $120,000; verify affiliate attribution windows."
-                    ),
-                ),
-                (
-                    "Specialist software comparisons",
-                    "$65 earned per 1,000 eligible sessions",
-                    65.0,
-                    (
-                        "$25 advertising plus $30 affiliate commissions plus $10 "
-                        "sponsorship equals $65. At 2,000,000 annual sessions, "
-                        "publisher revenue is $130,000; monitor partner concentration and reversals."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-publication-statutory-risk-checks",
-            "decision_tree",
-            "Resolve Rights, Claims, Privacy, and Distribution before Release",
-            "Each affirmative answer advances; each negative answer triggers repair.",
-            5,
-            "operating_framework",
-            (
-                "Four sequential yes-or-no checks. A failed check sends the "
-                "affected page, tracking feature, or outreach campaign to the "
-                "named corrective action before reassessment. Statutory duties "
-                "depend on the activity and applicable jurisdiction; search "
-                "platform policies are separate contractual and distribution risks."
-            ),
-            (
-                "Record evidence, the responsible owner, and the corrective "
-                "action. Do not treat an automated SEO score as proof of "
-                "copyright permission, truthful advertising, or lawful data handling."
-            ),
-            [
-                (
-                    "Rights established?",
-                    "Yes: advance; no: replace or document permission",
-                    1.0,
-                    (
-                        "Editor checks text, images, datasets, and contributor "
-                        "agreements against 17 U.S.C. 106, 107, and 204. "
-                        "Fair use requires specific analysis; attribution alone "
-                        "does not grant reproduction rights."
-                    ),
-                ),
-                (
-                    "Commercial claims supportable?",
-                    "Yes: advance; no: correct claims and disclosures",
-                    2.0,
-                    (
-                        "Commercial lead checks evidence under 15 U.S.C. 45 "
-                        "and material connections under 16 CFR 255.5. Place "
-                        "clear disclosures with endorsements; do not bury paid "
-                        "relationships in a distant policy page."
-                    ),
-                ),
-                (
-                    "Data handling scoped?",
-                    "Yes: advance; no: disable affected collection",
-                    3.0,
-                    (
-                        "Technical lead maps identifiers, recipients, retention, "
-                        "and applicable rights. Assess Cal. Civ. Code "
-                        "1798.100, 1798.120, and 1798.140 applicability; assess "
-                        "COPPA under 15 U.S.C. 6502 and 16 CFR 312 "
-                        "for child-directed services or relevant actual knowledge."
-                    ),
-                ),
-                (
-                    "Distribution method acceptable?",
-                    "Yes: release; no: revise outreach or templates",
-                    4.0,
-                    (
-                        "Operator checks commercial email against 15 U.S.C. "
-                        "7704, including accurate headers and functioning opt-out. "
-                        "Separately inspect Google spam policies for scaled "
-                        "content abuse, link spam, and site reputation abuse."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-four-core-six-scaled-publishing-seats",
-            "org_architecture",
-            "Operate Four Core Seats; Add Two Only in the Scaled Model",
-            "Conservative and Base: 1 FT + 3 C. Scaled: 2 FT + 4 C.",
-            11,
-            "operating_framework",
-            (
-                "Six entries depict four core seats and two Scaled-only expansion "
-                "seats. A numeric value of 1 marks a person included in the core "
-                "pod; 0 marks an expansion seat excluded from core headcount, "
-                "not an unstaffed role once scaled. The core is 1 FT + 3 C "
-                "(4 people); adding 1 FT + 1 C produces 2 FT + 4 C "
-                "(6 people). Contractor seats are fractional service relationships, "
-                "not full-time equivalents. External vendor/trade sub-crews are "
-                "direct subcontractor/COGS pass-through, not internal pod seats. "
-                "FYMC 2.0 score: 89/100; rank #07 of 29; "
-                "tier: Elite Small-Team Cash Machine."
-            ),
-            (
-                "The four-person core supports the canonical $80,000 Conservative "
-                "and $490,000 Base scenarios; the six-person configuration belongs "
-                "to the $900,000 Scaled scenario. Add the full-time partnerships "
-                "lead and contracted production specialist only when funded workload "
-                "justifies expansion. Resize paid capacity for Conservative revenue; "
-                "scenario revenue alone does not establish workload capacity."
-            ),
-            [
-                (
-                    "Portfolio operator",
-                    "Core seat 1: full-time portfolio and commercial ownership",
-                    1.0,
-                    (
-                        "Own topic allocation, site-level profit reporting, partner "
-                        "concentration, and capital deployment. Reconcile advertising, "
-                        "payable affiliate commissions, and delivered sponsorships. "
-                        "Maintain the rights register and transaction-ready records; "
-                        "retain commercial responsibility until the expansion lead joins."
-                    ),
-                ),
-                (
-                    "Managing editor",
-                    "Core seat 2: contracted editorial ownership",
-                    1.0,
-                    (
-                        "Own evidence standards, contributor briefs, publishing "
-                        "cadence, and refresh priorities within contracted capacity. "
-                        "Review commercial claims, contributor rights, and disclosure "
-                        "placement; prevent duplicative programmatic page expansion."
-                    ),
-                ),
-                (
-                    "Technical SEO engineer",
-                    "Core seat 3: contracted technical delivery",
-                    1.0,
-                    (
-                        "Maintain crawl monitoring, template tests, structured data, "
-                        "analytics connectors, and deployment checks. Route indexing "
-                        "regressions to a tracked repair queue instead of mass "
-                        "resubmission; support the operator's revenue reporting."
-                    ),
-                ),
-                (
-                    "Subject and production specialist",
-                    "Core seat 4: contracted research, writing, and CMS production",
-                    1.0,
-                    (
-                        "Produce original explanations, testing records, and attributable "
-                        "expert contributions. Supply source packets and documented "
-                        "media rights, format accessible pages, and verify internal "
-                        "links. Scope combined research and production work to "
-                        "purchased capacity rather than assuming multiple full-time roles."
-                    ),
-                ),
-                (
-                    "Growth partnerships lead",
-                    "Scaled-only seat 5: additional full-time commercial owner",
-                    0.0,
-                    (
-                        "Add one FT seat in the Scaled configuration to diversify "
-                        "sponsorships and manage partner renewals. Protect editorial "
-                        "independence and document placement obligations before "
-                        "recognizing sponsor revenue; this seat is outside the core pod."
-                    ),
-                ),
-                (
-                    "Production specialist",
-                    "Scaled-only seat 6: additional contracted production capacity",
-                    0.0,
-                    (
-                        "Add one C seat in the Scaled configuration for licensed "
-                        "visuals, accessible CMS formatting, and publication checks. "
-                        "Relieve the core subject specialist's production workload "
-                        "only after measuring editorial review capacity and the "
-                        "refresh backlog; this seat is outside the core pod."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-startup-capital-35000-reference-allocation",
-            "stacked_comparison",
-            "Allocate a $35,000 Reference Startup Plan across Four Buckets",
-            "Lean $10,000, reference $35,000, and expanded $60,000 USD launch plans.",
-            4,
-            "illustrative_model",
-            (
-                "Numeric values depict the $35,000 central/reference startup "
-                "budget within the canonical $10,000–$60,000 USD range. Each "
-                "bucket also specifies lean and expanded allocations; all three "
-                "plans use 40%, 30%, 20%, and 10% shares and sum exactly to "
-                "$10,000, $35,000, and $60,000 respectively. These are illustrative "
-                "cash allocations, not accounting capitalization instructions or "
-                "additional annual costs. Expanded startup funding does not "
-                "automatically activate the Scaled pod."
-            ),
-            (
-                "Lean: $4,000 + $3,000 + $2,000 + $1,000 = $10,000. "
-                "Reference: $14,000 + $10,500 + $7,000 + $3,500 = $35,000. "
-                "Expanded: $24,000 + $18,000 + $12,000 + $6,000 = $60,000. "
-                "Budget continuing funding separately for the canonical 3–12 months "
-                "to first deal and $2,500–$14,000 USD monthly opex range; "
-                "startup capital alone does not guarantee sufficient runway."
-            ),
-            [
-                (
-                    "Original content and evidence",
-                    "$14,000 reference; $4,000 lean; $24,000 expanded; 40%",
-                    14000.0,
-                    (
-                        "Allocate $4,000 of the $10,000 lean plan, $14,000 of "
-                        "the $35,000 reference plan, or $24,000 of the $60,000 "
-                        "expanded plan. Fund original testing, commissioned writing, "
-                        "editing, and documented media licenses."
-                    ),
-                ),
-                (
-                    "Technical publishing foundation",
-                    "$10,500 reference; $3,000 lean; $18,000 expanded; 30%",
-                    10500.0,
-                    (
-                        "Allocate $3,000 of the $10,000 lean plan, $10,500 of "
-                        "the $35,000 reference plan, or $18,000 of the $60,000 "
-                        "expanded plan. Fund templates, hosting setup, backups, "
-                        "access controls, and initial crawl remediation."
-                    ),
-                ),
-                (
-                    "Measurement and commercial setup",
-                    "$7,000 reference; $2,000 lean; $12,000 expanded; 20%",
-                    7000.0,
-                    (
-                        "Allocate $2,000 of the $10,000 lean plan, $7,000 of "
-                        "the $35,000 reference plan, or $12,000 of the $60,000 "
-                        "expanded plan. Fund attribution setup, reporting connectors, "
-                        "partner materials, and contributor agreement preparation."
-                    ),
-                ),
-                (
-                    "Unspent working reserve",
-                    "$3,500 reference; $1,000 lean; $6,000 expanded; 10%",
-                    3500.0,
-                    (
-                        "Allocate $1,000 of the $10,000 lean plan, $3,500 of "
-                        "the $35,000 reference plan, or $6,000 of the $60,000 "
-                        "expanded plan. The reference reserve covers 1.4 months "
-                        "at $2,500 monthly opex or 0.25 months at $14,000. "
-                        "Reserve cash is not an incurred expense; avoid counting "
-                        "the same funded activity again as an additional cash need."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-thirty-day-search-portfolio-sprint",
-            "timeline_roadmap",
-            "Use the First 30 Days to Establish a Measurable Publishing System",
-            "Ship an evidence-backed pilot, not a promised first-month revenue result.",
-            12,
-            "operating_framework",
-            (
-                "Four weekly milestones span Days 1–7, 8–14, 15–21, and "
-                "22–30. Numeric values are milestone end days. Deliverable "
-                "counts are sprint planning assumptions for the four-person "
-                "core pod (1 FT + 3 C), not traffic forecasts. First-deal timing remains "
-                "the canonical 3–12 months."
-            ),
-            (
-                "Finish with a tested pilot, documented rights, functioning "
-                "revenue definitions, and a funded next sprint. Ranking losses, "
-                "slow audience growth, and revenue concentration remain explicit risks."
-            ),
-            [
-                (
-                    "Days 1–7",
-                    "Select one site and one evidence-backed cluster",
-                    7.0,
-                    (
-                        "Operator and editor map 30 queries, review ten competing "
-                        "pages, and select one initial site. Record expected "
-                        "revenue rails, rights requirements, and a twelve-month cash plan."
-                    ),
-                ),
-                (
-                    "Days 8–14",
-                    "Test two templates and commission ten briefs",
-                    14.0,
-                    (
-                        "Technical contractor validates canonicals, indexing controls, "
-                        "mobile rendering, and analytics events. Editor commissions "
-                        "ten distinct briefs and completes the four publication checks."
-                    ),
-                ),
-                (
-                    "Days 15–21",
-                    "Publish ten reviewed pages with traceable evidence",
-                    21.0,
-                    (
-                        "Release the pilot after editorial and technical review. "
-                        "Connect internal links, submit the sitemap, and sample "
-                        "GEO citations across twenty fixed prompts while recording "
-                        "engine, date, wording, and cited destination."
-                    ),
-                ),
-                (
-                    "Days 22–30",
-                    "Audit the pilot and fund the next sprint",
-                    30.0,
-                    (
-                        "Review crawl results, measured impressions, referral events, "
-                        "and production hours. Test revenue reconciliation with "
-                        "clearly labeled synthetic records; rank refresh work and "
-                        "record cash needs without counting pending deals as revenue."
-                    ),
-                ),
-            ],
-        ),
-    ]
+    """Return source-attributed diagrams without invented quantitative series."""
     return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
+        {
+            "diagram_id": "diag-01-local-intent-to-rental-income",
+            "chapter_number": 1,
+            "title": "Local Intent, Connected Pages, and Rental Income",
+            "subtitle": (
+                "Practitioner methods from Real Estate SEO & Web Design "
+                "([xDMs5FogvQ8 @ 00:01:08]), Jacob Shireman "
+                "([Iktexen_-cc @ 00:18:56]), Manan Gupta "
+                "([_DewVbSSXe0 @ 00:06:14]), Caleb Ulku "
+                "([nW4AstHjEtc @ 00:10:29]), and Ippei - Rank and Rent SEO "
+                "([uJ0bhk9MeDE @ 00:07:50])."
+            ),
+            "chart_type": "process_flow",
+            "note": (
+                "The sequence assembles separately attributed practices, rather "
+                "than presenting a shared experiment. Ippei - Rank and Rent SEO "
+                "([uJ0bhk9MeDE @ 00:07:50]) reports continuing rent of $2,000 "
+                "per month for the Grand Rapids tree-service website; "
+                "Real Estate SEO & Web Design "
+                "([xDMs5FogvQ8 @ 00:03:19]) reports a $1.3 million waterfront "
+                "transaction connected to a living-in-Lake-St.-Louis article."
+            ),
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Choose Converting Keywords",
+                    "detail": (
+                        "Start with keywords that convert, prioritizing buyer "
+                        "and seller intent. "
+                        "[Real Estate SEO & Web Design — xDMs5FogvQ8 @ 00:01:08]"
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Inspect Actual Search Results",
+                    "detail": (
+                        "Put prospective keywords into Google and examine "
+                        "what comes up. "
+                        "[Jacob Shireman — Iktexen_-cc @ 00:18:56]"
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Build Cluster Landing Pages",
+                    "detail": (
+                        "Group similar keywords into clusters and build a "
+                        "dedicated landing page for each cluster. "
+                        "[Manan Gupta — _DewVbSSXe0 @ 00:06:14]"
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "Connect Category Descriptions",
+                    "detail": (
+                        "Link each homepage category description to its "
+                        "corresponding detailed page, retaining topical context. "
+                        "[Caleb Ulku — nW4AstHjEtc @ 00:10:29]"
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "Rent or Connect Commission",
+                    "detail": (
+                        "Ippei reports continuing website rent and separately "
+                        "describes connecting to a client's CRM for commission. "
+                        "[Ippei - Rank and Rent SEO — uJ0bhk9MeDE @ 00:07:50] "
+                        "[Ippei - Rank and Rent SEO — uJ0bhk9MeDE @ 00:01:06]"
+                    ),
+                },
             ],
-        )
-        for identifier, kind, title, subtitle, chapter, tag, note, caption, stages in specs
+        },
+        {
+            "diagram_id": "diag-02-linkedin-redirect-case-measures",
+            "chapter_number": 6,
+            "title": "LinkedIn Redirect Case Measures",
+            "subtitle": (
+                "SEO Jesus ([AGcswUV4IEA @ 00:00:00]) describes the purchased "
+                "asset; SEO Jesus ([AGcswUV4IEA @ 00:06:50]) displays the "
+                "traffic movement."
+            ),
+            "chart_type": "funnel",
+            "note": (
+                "The required funnel format contains separate case measures, "
+                "not a conversion funnel. Dollar cost, DR, referring-domain "
+                "count, and displayed traffic are different units. SEO Jesus "
+                "([AGcswUV4IEA @ 00:06:23]) says one week is too early for "
+                "reliable data; SEO Jesus ([AGcswUV4IEA @ 00:09:01]) says "
+                "mixed experiments and missing separate tracking links "
+                "obscured attribution."
+            ),
+            "stages": [
+                {
+                    "label": "Expired-Domain Purchase",
+                    "value": 2000,
+                    "display": "$2,000",
+                    "conversion": (
+                        "Asset cost, not a conversion rate. "
+                        "[SEO Jesus — AGcswUV4IEA @ 00:00:00]"
+                    ),
+                },
+                {
+                    "label": "Asset Domain Rating",
+                    "value": 29,
+                    "display": "DR 29",
+                    "conversion": (
+                        "Domain Rating, not a share of the preceding measure. "
+                        "[SEO Jesus — AGcswUV4IEA @ 00:00:00]"
+                    ),
+                },
+                {
+                    "label": "Asset Referring Domains",
+                    "value": 144,
+                    "display": "144 referring domains",
+                    "conversion": (
+                        "Referring-domain count, not a conversion rate. "
+                        "[SEO Jesus — AGcswUV4IEA @ 00:00:00]"
+                    ),
+                },
+                {
+                    "label": "Displayed Traffic Before",
+                    "value": 3100,
+                    "display": "3,100",
+                    "conversion": (
+                        "Displayed traffic before the redirect. "
+                        "[SEO Jesus — AGcswUV4IEA @ 00:06:50]"
+                    ),
+                },
+                {
+                    "label": "Displayed Traffic After",
+                    "value": 7000,
+                    "display": "7,000",
+                    "conversion": (
+                        "Displayed traffic one week later; the speaker says "
+                        "one week is too early for reliable data. "
+                        "[SEO Jesus — AGcswUV4IEA @ 00:06:50] "
+                        "[SEO Jesus — AGcswUV4IEA @ 00:06:23]"
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-03-semantic-architecture-reference-measures",
+            "chapter_number": 3,
+            "title": "Semantic Architecture Reference Measures",
+            "subtitle": (
+                "Separate observations from Koray Tuğberk GÜBÜR "
+                "([ww7yHUSX5Ak @ 00:02:44]), Behzad Hussain "
+                "([NQCo-V1utn8 @ 00:00:38]), Semrush "
+                "([vnkjR9TE9Ok @ 00:03:35]), and Koray in the "
+                "Pavel Klimakov interview ([9RNJrGhH7ek @ 00:01:34])."
+            ),
+            "chart_type": "waterfall",
+            "note": (
+                "The digest supplies no additive six-bar waterfall. Each bar "
+                "therefore stands independently with kind 'total'; these "
+                "different units must not be accumulated or subtracted. "
+                "Koray Tuğberk GÜBÜR ([ww7yHUSX5Ak @ 00:05:41]) also "
+                "distinguishes a logged crawl from calculated relevance."
+            ),
+            "bars": [
+                {
+                    "label": "Finance Pages",
+                    "value": 400,
+                    "display": (
+                        "400 published pages "
+                        "[Koray Tuğberk GÜBÜR — ww7yHUSX5Ak @ 00:02:44]"
+                    ),
+                    "kind": "total",
+                },
+                {
+                    "label": "Earlier Daily Crawls",
+                    "value": 60000,
+                    "display": (
+                        "60,000 crawls a day "
+                        "[Koray Tuğberk GÜBÜR — ww7yHUSX5Ak @ 00:02:44]"
+                    ),
+                    "kind": "total",
+                },
+                {
+                    "label": "Map-Production Micro Steps",
+                    "value": 26,
+                    "display": (
+                        "26 micro steps "
+                        "[Behzad Hussain — NQCo-V1utn8 @ 00:00:38]"
+                    ),
+                    "kind": "total",
+                },
+                {
+                    "label": "First-Phase Fundamentals",
+                    "value": 5,
+                    "display": (
+                        "Five fundamentals "
+                        "[Behzad Hussain — NQCo-V1utn8 @ 00:01:45]"
+                    ),
+                    "kind": "total",
+                },
+                {
+                    "label": "Important-Page Click Limit",
+                    "value": 3,
+                    "display": (
+                        "Within three homepage clicks "
+                        "[Semrush — vnkjR9TE9Ok @ 00:03:35]"
+                    ),
+                    "kind": "total",
+                },
+                {
+                    "label": "Page for a Query Group",
+                    "value": 1,
+                    "display": (
+                        "One page for the described query group "
+                        "[Pavel Klimakov — 9RNJrGhH7ek @ 00:01:34; "
+                        "testimony by Koray Tuğberk GÜBÜR]"
+                    ),
+                    "kind": "total",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-04-keyword-case-reference-values",
+            "chapter_number": 2,
+            "title": "Keyword Metrics Beside Competing Titles",
+            "subtitle": (
+                "Robbie Richards ([P5ET0IvFReQ @ 00:02:38]; "
+                "[P5ET0IvFReQ @ 00:02:50]) presents the attorney cluster. "
+                "WeStudyFunnels ([PpHWPSjRYPI @ 00:01:51]; "
+                "[PpHWPSjRYPI @ 00:04:06]) examines the treadmill query."
+            ),
+            "chart_type": "horizontal_bars",
+            "unit": "Source-specific units shown in each bar; no shared scale",
+            "note": (
+                "Each min, max, and typical repeats a reported point value "
+                "because the digest supplies no ranges or typical-value "
+                "estimates for these observations. Robbie Richards "
+                "([P5ET0IvFReQ @ 00:03:19]) inspects competing URLs; "
+                "WeStudyFunnels ([PpHWPSjRYPI @ 00:05:39]) warns that low "
+                "backlink-led difficulty can coexist with strong domains "
+                "targeting the exact query."
+            ),
+            "bars": [
+                {
+                    "label": "Attorney Cluster Keywords",
+                    "min": 8,
+                    "max": 8,
+                    "typical": 8,
+                    "display": (
+                        "8 keywords "
+                        "[Robbie Richards — P5ET0IvFReQ @ 00:02:38]"
+                    ),
+                },
+                {
+                    "label": "Attorney Cluster Difficulty",
+                    "min": 5,
+                    "max": 5,
+                    "typical": 5,
+                    "display": (
+                        "5% KD "
+                        "[Robbie Richards — P5ET0IvFReQ @ 00:02:38] "
+                        "[Robbie Richards — P5ET0IvFReQ @ 00:02:50]"
+                    ),
+                },
+                {
+                    "label": "Attorney Cluster Volume",
+                    "min": 950,
+                    "max": 950,
+                    "typical": 950,
+                    "display": (
+                        "950 aggregate volume "
+                        "[Robbie Richards — P5ET0IvFReQ @ 00:02:50]"
+                    ),
+                },
+                {
+                    "label": "Treadmill Query Difficulty",
+                    "min": 30,
+                    "max": 30,
+                    "typical": 30,
+                    "display": (
+                        "KD 30 "
+                        "[WeStudyFunnels — PpHWPSjRYPI @ 00:01:51]"
+                    ),
+                },
+                {
+                    "label": "Treadmill Matching Titles",
+                    "min": 15,
+                    "max": 15,
+                    "typical": 15,
+                    "display": (
+                        "15 matching titles "
+                        "[WeStudyFunnels — PpHWPSjRYPI @ 00:04:06]"
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-05-backlink-route-specific-checks",
+            "chapter_number": 5,
+            "title": "Backlink Route-Specific Checks",
+            "subtitle": (
+                "Domain acquisition, digital PR, and journalist-pitch checks "
+                "from Grumpy SEO Guy ([ez24lr3G_Mc @ 00:23:17]), "
+                "Vasco's SEO Tips ([voMel_srl_w @ 00:08:41]), "
+                "Iron Goo ([Z5OwRBCX5ww @ 00:10:26]), and "
+                "Visibility on Purpose ([B1uNyKgJlXc @ 00:12:34])."
+            ),
+            "chart_type": "decision_tree",
+            "note": (
+                "These are route-specific checks, not a claim that purchasing "
+                "domains and pitching journalists form one acquisition method. "
+                "Grumpy SEO Guy ([ez24lr3G_Mc @ 00:05:19]) says not to "
+                "interlink portfolio sites; Iron Goo "
+                "([Z5OwRBCX5ww @ 00:12:13]) says to expect a handful of "
+                "good links rather than 50 and to judge who linked."
+            ),
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": (
+                        "For a portfolio purchase, has domain evidence been "
+                        "compared across tools? "
+                        "[Grumpy SEO Guy — ez24lr3G_Mc @ 00:23:17]"
+                    ),
+                    "pass_next": (
+                        "G2 for archived-history inspection; retain the "
+                        "speaker's DR 10 to 40 acquisition range. "
+                        "[Grumpy SEO Guy — ez24lr3G_Mc @ 00:35:45]"
+                    ),
+                    "fail_action": (
+                        "Compare the domain evidence across tools before buying. "
+                        "[Grumpy SEO Guy — ez24lr3G_Mc @ 00:23:17]"
+                    ),
+                },
+                {
+                    "gate": "G2",
+                    "question": (
+                        "Has archived history been inspected for an earlier "
+                        "casino or adult identity behind a rebrand? "
+                        "[Vasco's SEO Tips — voMel_srl_w @ 00:08:41]"
+                    ),
+                    "pass_next": (
+                        "Evaluate the domain with its history visible, rather "
+                        "than accepting current metrics alone. "
+                        "[Vasco's SEO Tips — voMel_srl_w @ 00:08:41]"
+                    ),
+                    "fail_action": (
+                        "Inspect archived history before accepting the domain. "
+                        "[Vasco's SEO Tips — voMel_srl_w @ 00:08:41]"
+                    ),
+                },
+                {
+                    "gate": "G3",
+                    "question": (
+                        "For digital PR, are the survey, numbers, and expert "
+                        "real rather than invented? "
+                        "[Iron Goo — Z5OwRBCX5ww @ 00:10:26]"
+                    ),
+                    "pass_next": (
+                        "Use a headline-like finding, method line, full-data "
+                        "access, and quotable source. "
+                        "[Iron Goo — Z5OwRBCX5ww @ 00:06:32]"
+                    ),
+                    "fail_action": (
+                        "Do not fill the campaign with fabricated research "
+                        "or a nonexistent expert. "
+                        "[Iron Goo — Z5OwRBCX5ww @ 00:10:26]"
+                    ),
+                },
+                {
+                    "gate": "G4",
+                    "question": (
+                        "For HARO or Qwoted, is the answer personalized "
+                        "rather than AI-written? "
+                        "[Visibility on Purpose — B1uNyKgJlXc @ 00:12:34]"
+                    ),
+                    "pass_next": (
+                        "Pitch material relevant to the subject matter "
+                        "and the source's expertise. "
+                        "[Julian Goldie SEO — LY7IFzytdLo @ 00:03:36]"
+                    ),
+                    "fail_action": (
+                        "Personalize the answer; distinguish grammar review "
+                        "from having AI write the pitch. "
+                        "[Visibility on Purpose — B1uNyKgJlXc @ 00:12:34]"
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-06-ad-monetization-measurement-architecture",
+            "chapter_number": 11,
+            "title": "Ad Monetization and Placement Measures",
+            "subtitle": (
+                "Revenue controls from Casey Botticello "
+                "([uSKcihbY0hs @ 00:21:27]), Meghan's Media "
+                "([XXTUzO1Y_1U @ 00:03:53]), CanEye "
+                "([FyVNDOxiU6o @ 00:04:15]), and Carl Broadbent "
+                "([feVaD3YiPFE @ 00:08:53])."
+            ),
+            "chart_type": "org_architecture",
+            "note": (
+                "This is an architecture of monetization measures, not a "
+                "staffing chart; the digest supplies no team headcount. "
+                "The spokes retain separate accounts and denominators. "
+                "She Knows SEO ([xRuzXK8HIFo @ 00:06:05]) says results "
+                "change significantly between sessions and page views. "
+                "Meghan's Media ([NRcTFL8qghY @ 00:04:05]) recommends "
+                "checking each placement's dollar contribution before removal."
+            ),
+            "center": {
+                "role": (
+                    "Ad-monetized website "
+                    "[David Kowalski — OzPRqoG7brI @ 00:10:53]"
+                ),
+                "headcount": "Measures rather than personnel; no staffing count supplied",
+                "focus": (
+                    "Ads pay on traffic; affiliate pays on intent; products "
+                    "pay on trust. "
+                    "[David Kowalski — OzPRqoG7brI @ 00:10:53]"
+                ),
+            },
+            "spokes": [
+                {
+                    "role": "Revenue Share",
+                    "type": "Reported network term",
+                    "kpi": (
+                        "Flat 75% revenue share in the speaker's account. "
+                        "[Casey Botticello — uSKcihbY0hs @ 00:21:27]"
+                    ),
+                },
+                {
+                    "role": "Raptive Monthly Earnings",
+                    "type": "Reported February account",
+                    "kpi": (
+                        "$55.22 average RPM alongside 46,000 sessions "
+                        "and $2,568 earnings. "
+                        "[Meghan's Media — XXTUzO1Y_1U @ 00:03:53]"
+                    ),
+                },
+                {
+                    "role": "Journey Opening Period",
+                    "type": "Reported first 30 days",
+                    "kpi": (
+                        "$16.15 RPM during the first 30 days. "
+                        "[CanEye — FyVNDOxiU6o @ 00:04:15]"
+                    ),
+                },
+                {
+                    "role": "Video-Ad Contribution",
+                    "type": "Reported placement earnings share",
+                    "kpi": (
+                        "8.3% of one website's displayed ad earnings. "
+                        "[Carl Broadbent — feVaD3YiPFE @ 00:08:53]"
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-07-programmatic-production-and-indexing",
+            "chapter_number": 4,
+            "title": "Programmatic Production Beside Indexing Outcomes",
+            "subtitle": (
+                "Matt Diggity ([4DgWUgtZGqQ @ 00:00:14]; "
+                "[4DgWUgtZGqQ @ 00:09:16]) reports the client case; "
+                "B2BSEOio ([uI61LP8Ue30 @ 00:01:19]) reports the "
+                "healthcare account's indexing counts."
+            ),
+            "chart_type": "stacked_comparison",
+            "total_range": (
+                "Separate case measures, not additive buckets or a combined total"
+            ),
+            "note": (
+                "The required comparison format holds independent observations, "
+                "not parts of one stack. Equal low and high values encode "
+                "reported points, not estimated ranges; 1,700 encodes only "
+                "the stated lower threshold for 'over 1,700.' Matt Diggity "
+                "([4DgWUgtZGqQ @ 00:04:06]) emphasizes input inspection and "
+                "internal-link opportunities; B2BSEOio "
+                "([uI61LP8Ue30 @ 00:04:09]) attributes the healthcare failure "
+                "to largely untouched, repetitive AI pages."
+            ),
+            "buckets": [
+                {
+                    "label": "Client Articles Produced",
+                    "low": 502,
+                    "high": 502,
+                    "notes": (
+                        "502 articles generated without AI in the reported "
+                        "agency case. "
+                        "[Matt Diggity — 4DgWUgtZGqQ @ 00:00:14]"
+                    ),
+                },
+                {
+                    "label": "Client Top-Ten Keywords",
+                    "low": 1923,
+                    "high": 1923,
+                    "notes": (
+                        "Reported endpoint of 1,923 top-ten keywords, "
+                        "up from 0; this counts keywords, not articles. "
+                        "[Matt Diggity — 4DgWUgtZGqQ @ 00:09:16]"
+                    ),
+                },
+                {
+                    "label": "Healthcare Pages Outside Index",
+                    "low": 1700,
+                    "high": 1700,
+                    "notes": (
+                        "Over 1,700 pages were outside the index. The numeric "
+                        "fields preserve the threshold, not an exact count "
+                        "or an upper bound. "
+                        "[B2BSEOio — uI61LP8Ue30 @ 00:01:19]"
+                    ),
+                },
+                {
+                    "label": "Healthcare Indexed Pages",
+                    "low": 400,
+                    "high": 400,
+                    "notes": (
+                        "400 indexed pages in the displayed healthcare "
+                        "Search Console account. "
+                        "[B2BSEOio — uI61LP8Ue30 @ 00:01:19]"
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-08-commercial-model-reference-roadmap",
+            "chapter_number": 12,
+            "title": "Commercial Model Reference Roadmap",
+            "subtitle": (
+                "Source practices from Gautam Prachi "
+                "([ctFRKtUiETo @ 00:05:09]), Samik Choudhury "
+                "([xbFsXyB1UZo @ 00:01:41]), Frey Chu "
+                "([NoUJBS6-yNQ @ 00:12:47]), and Jaryd Krause - "
+                "Buying Online Businesses ([O0q1EG7DNIc @ 00:06:44])."
+            ),
+            "chart_type": "timeline_roadmap",
+            "note": (
+                "Week labels are the requested presentation slots, not "
+                "speaker-reported deadlines or a transcript-backed four-week "
+                "implementation schedule. The entries cover separate "
+                "commercial models. Gautam Prachi "
+                "([ctFRKtUiETo @ 00:05:09]) supplies the 14-day trial duration; "
+                "Contentbase ([3Fkd3FP40iU @ 00:02:49]) says the programmatic "
+                "approach requires technical expertise and SEO understanding "
+                "and is not a set-it-and-forget-it solution."
+            ),
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Bound the Portfolio Trial",
+                    "deliverable": (
+                        "A free SEO trial offered to only one prospect "
+                        "for 14 days to develop experience and a testimonial. "
+                        "[Gautam Prachi — ctFRKtUiETo @ 00:05:09]"
+                    ),
+                    "gate": (
+                        "Keep the offer bounded to the speaker's one "
+                        "prospect and 14-day trial. "
+                        "[Gautam Prachi — ctFRKtUiETo @ 00:05:09]"
+                    ),
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Connect Templates to Search Intent",
+                    "deliverable": (
+                        "A reusable interface supplied with page-specific "
+                        "JSON or markdown for individual static pages. "
+                        "[Samik Choudhury — xbFsXyB1UZo @ 00:01:41]"
+                    ),
+                    "gate": (
+                        "The product must solve the problem of the search query. "
+                        "[SaaS SEO Engine — kBXz_ArlMVk @ 00:03:49]"
+                    ),
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Inspect Directory Records",
+                    "deliverable": (
+                        "Directory records checked against the intended niche; "
+                        "scraped results can contain junk. "
+                        "[Frey Chu — NoUJBS6-yNQ @ 00:12:47]"
+                    ),
+                    "gate": (
+                        "Do not treat returned directory data as automatically "
+                        "accurate. "
+                        "[Frey Chu — NoUJBS6-yNQ @ 00:12:47]"
+                    ),
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Investigate Acquisition Evidence",
+                    "deliverable": (
+                        "Independent purchase research alongside broker vetting. "
+                        "[Jaryd Krause - Buying Online Businesses — "
+                        "O0q1EG7DNIc @ 00:07:18]"
+                    ),
+                    "gate": (
+                        "Investigate beyond the broker listing; the reported "
+                        "seller withheld a PBN. Retain extra capital to operate "
+                        "the acquired business. "
+                        "[Jaryd Krause - Buying Online Businesses — "
+                        "O0q1EG7DNIc @ 00:06:44] "
+                        "[Mike Swigunski — w5fG8eKka5Y @ 00:04:47]"
+                    ),
+                },
+            ],
+        },
     ]
+
+
+VOLUME_010_POSITIONING_ALTERNATIVES: list[dict] = [
+    {
+        "title": "Local SEO Properties and Click Signals",
+        "subtitle": (
+            "Rank & Rent, intent-led local pages, and attributed CTR tests "
+            "from Ippei - Rank and Rent SEO "
+            "([uJ0bhk9MeDE @ 00:07:50]), Real Estate SEO & Web Design "
+            "([xDMs5FogvQ8 @ 00:01:08]), and William Jones "
+            "([qEmm1oiXm5U @ 00:03:46])."
+        ),
+        "audience": (
+            "Local lead-generation operators and real-estate website owners "
+            "considering the rental model described by Ippei - Rank and Rent SEO "
+            "([uJ0bhk9MeDE @ 00:07:50]) and converting-keyword priorities "
+            "described by Real Estate SEO & Web Design "
+            "([xDMs5FogvQ8 @ 00:01:08])."
+        ),
+        "research_basis": (
+            "Ippei - Rank and Rent SEO ([uJ0bhk9MeDE @ 00:20:44]) describes "
+            "a proposed rental-plus-commission hybrid. William Jones "
+            "([qEmm1oiXm5U @ 00:03:46]) emphasizes CTR testing. Chris Palmer SEO "
+            "([mg7C81Ti3DY @ 00:12:30]) uses a 28-day Search Console window. "
+            "Sterling Sky Inc ([krFtrxJsFok @ 00:01:57]) reports rankings "
+            "returning toward their prior level after activity stops."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=uJ0bhk9MeDE&t=470s",
+            "https://www.youtube.com/watch?v=xDMs5FogvQ8&t=68s",
+            "https://www.youtube.com/watch?v=uJ0bhk9MeDE&t=1244s",
+            "https://www.youtube.com/watch?v=qEmm1oiXm5U&t=226s",
+            "https://www.youtube.com/watch?v=mg7C81Ti3DY&t=750s",
+            "https://www.youtube.com/watch?v=krFtrxJsFok&t=117s",
+        ],
+        "validation_status": (
+            "Grounded strictly in Vol. 010 YouTube practitioner transcripts."
+        ),
+    },
+    {
+        "title": "Inherited Links and Third-Party Search Assets",
+        "subtitle": (
+            "Expired domains, Parasite SEO, backlink portfolios, and digital PR "
+            "from SirLinksalot ([nSLIbiyP5vc @ 00:04:11]), SEO Jesus "
+            "([AGcswUV4IEA @ 00:00:00]), Grumpy SEO Guy "
+            "([ez24lr3G_Mc @ 00:23:17]), and Fery Kaszoni "
+            "([BpLuK4tA5zw @ 00:03:10])."
+        ),
+        "audience": (
+            "Operators comparing historical-URL rebuilds described by "
+            "SirLinksalot ([nSLIbiyP5vc @ 00:04:11]) with domain acquisition "
+            "described by Grumpy SEO Guy ([ez24lr3G_Mc @ 00:23:17]) and "
+            "journalist outreach described by Fery Kaszoni "
+            "([BpLuK4tA5zw @ 00:03:10])."
+        ),
+        "research_basis": (
+            "SirLinksalot ([nSLIbiyP5vc @ 00:04:11]) prioritizes rebuilding "
+            "strong historical URLs. SEO Jesus ([AGcswUV4IEA @ 00:09:01]) "
+            "describes missing source-specific tracking in the LinkedIn "
+            "redirect experiment. Grumpy SEO Guy "
+            "([ez24lr3G_Mc @ 00:23:17]) compares domain evidence across tools. "
+            "Fery Kaszoni ([BpLuK4tA5zw @ 00:03:10]) builds outreach lists "
+            "from recent journalist coverage."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=nSLIbiyP5vc&t=251s",
+            "https://www.youtube.com/watch?v=AGcswUV4IEA&t=0s",
+            "https://www.youtube.com/watch?v=AGcswUV4IEA&t=541s",
+            "https://www.youtube.com/watch?v=ez24lr3G_Mc&t=1397s",
+            "https://www.youtube.com/watch?v=BpLuK4tA5zw&t=190s",
+        ],
+        "validation_status": (
+            "Grounded strictly in Vol. 010 YouTube practitioner transcripts."
+        ),
+    },
+    {
+        "title": "Programmatic Pages, AI Search, and Commercial Intent",
+        "subtitle": (
+            "Connected page systems and GEO measurement from Matt Diggity "
+            "([4DgWUgtZGqQ @ 00:04:20]), Samik Choudhury "
+            "([xbFsXyB1UZo @ 00:01:41]), and The Answer Lab | GEO & AEO "
+            "([yeLHXIInymI @ 00:07:25])."
+        ),
+        "audience": (
+            "Programmatic site builders using the reusable interfaces described "
+            "by Samik Choudhury ([xbFsXyB1UZo @ 00:01:41]), and businesses "
+            "pursuing brand naming and page citations in AI answers as described "
+            "by Alex Moreau | AI for Ads & SEO-GEO "
+            "([Oq7qV4_5W-A @ 00:00:16])."
+        ),
+        "research_basis": (
+            "Matt Diggity ([4DgWUgtZGqQ @ 00:04:20]) connects keyword "
+            "patterns, datasets, and imports. Lorraine Pawell - SEO AEO & "
+            "Content Strategy ([HYZv8hDMBvw @ 00:13:41]) recommends small "
+            "tests before expansion. The Answer Lab | GEO & AEO "
+            "([yeLHXIInymI @ 00:07:25]) compares the same questions, engine, "
+            "and market. SaaS SEO Engine ([kBXz_ArlMVk @ 00:03:49]) "
+            "requires the product to solve the search query's problem."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=4DgWUgtZGqQ&t=260s",
+            "https://www.youtube.com/watch?v=xbFsXyB1UZo&t=101s",
+            "https://www.youtube.com/watch?v=Oq7qV4_5W-A&t=16s",
+            "https://www.youtube.com/watch?v=HYZv8hDMBvw&t=821s",
+            "https://www.youtube.com/watch?v=yeLHXIInymI&t=445s",
+            "https://www.youtube.com/watch?v=kBXz_ArlMVk&t=229s",
+        ],
+        "validation_status": (
+            "Grounded strictly in Vol. 010 YouTube practitioner transcripts."
+        ),
+    },
+]
